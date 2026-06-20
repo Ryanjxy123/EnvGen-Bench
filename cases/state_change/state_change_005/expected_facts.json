@@ -1,0 +1,52 @@
+{
+  "case_id": "state_change_005",
+  "task_type": "state_change",
+  "facts": [
+    {
+      "id": "current_version",
+      "description": "Current version.",
+      "source": "env/release_status.csv + env/release_changes.md",
+      "importance": "critical",
+      "expected_value": "2.2",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "release_date",
+      "description": "Current release date.",
+      "source": "env/release_changes.md",
+      "importance": "critical",
+      "expected_value": "May 10",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "primary_feature",
+      "description": "Current feature.",
+      "source": "env/release_changes.md",
+      "importance": "critical",
+      "expected_value": "Offline Routes",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "support_email",
+      "description": "Current support email.",
+      "source": "env/release_changes.md",
+      "importance": "major",
+      "expected_value": "support@example.org",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "stale_release",
+      "description": "Superseded details.",
+      "source": "env/original_release.md",
+      "importance": "major",
+      "expected_value": [
+        "2.1",
+        "May 3",
+        "Offline Maps",
+        "old-help@example.org"
+      ],
+      "must_not_appear_in_image": true
+    }
+  ],
+  "calculation_notes": "Use release_status.csv for current version and release_changes.md for latest details."
+}

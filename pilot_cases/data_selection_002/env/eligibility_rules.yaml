@@ -1,0 +1,8 @@
+program: Neighborhood Climate Microgrants
+include_sector: climate
+max_requested_usd_inclusive: 50000
+required_status: eligible
+required_documents_complete: yes
+select_top_n: 2
+sort: score_desc
+deadline: 2026-03-05

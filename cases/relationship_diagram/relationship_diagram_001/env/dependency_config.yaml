@@ -1,0 +1,21 @@
+services:
+  web_app:
+    layer: frontend
+    calls: [auth_service, checkout_api]
+  auth_service:
+    layer: service
+    reads: [user_database]
+  checkout_api:
+    layer: service
+    calls: [inventory_service, payment_gateway]
+    publishes: [order_queue]
+  inventory_service:
+    layer: service
+    updates: [product_catalog]
+  fulfillment_worker:
+    layer: worker
+    consumes: [order_queue]
+    writes: [shipment_database]
+  recommendation_service:
+    layer: service
+    reads: [user_database, product_catalog]

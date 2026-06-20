@@ -1,0 +1,9 @@
+include_flow: booking
+exclude:
+  - Marketing Export
+edge_types:
+  - calls
+  - reads
+  - publishes
+  - consumes
+  - writes

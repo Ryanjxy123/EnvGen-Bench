@@ -1,0 +1,42 @@
+{
+  "case_id": "data_selection_005",
+  "task_type": "data_selection",
+  "facts": [
+    {
+      "id": "selected_shifts",
+      "description": "Selected Sunday trained shifts with capacity.",
+      "source": "env/volunteer_shifts.json + env/assignment_rules.md",
+      "importance": "critical",
+      "expected_value": [
+        "V502 Garden Guide",
+        "V504 Compost Demo"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "selection_rule",
+      "description": "Rank Sunday trained open shifts by priority.",
+      "source": "env/assignment_rules.md",
+      "importance": "critical",
+      "expected_value": "priority descending",
+      "must_appear_in_image": false
+    },
+    {
+      "id": "untrained_exclusion",
+      "description": "Kids Crafts is untrained.",
+      "source": "env/volunteer_shifts.json",
+      "importance": "major",
+      "expected_value": "V503",
+      "must_not_appear_in_image": true
+    },
+    {
+      "id": "full_shift_exclusion",
+      "description": "Evening Cleanup has zero capacity.",
+      "source": "env/volunteer_shifts.json",
+      "importance": "major",
+      "expected_value": "V505",
+      "must_not_appear_in_image": true
+    }
+  ],
+  "calculation_notes": "Filter Sunday, trained=true, capacity>0; sort priority desc; select two."
+}

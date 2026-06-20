@@ -1,0 +1,7 @@
+{
+  "category": "camping",
+  "min_stock": 20,
+  "status": "active",
+  "select_top_n": 2,
+  "sort": "margin_desc"
+}

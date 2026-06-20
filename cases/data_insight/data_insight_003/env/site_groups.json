@@ -1,0 +1,11 @@
+{
+  "public_facilities": [
+    "Library",
+    "Pool",
+    "Depot"
+  ],
+  "exclude": [
+    "Archive Warehouse"
+  ],
+  "metric": "annual_kwh_and_change"
+}

@@ -1,0 +1,55 @@
+{
+  "case_id": "design_specification_004",
+  "task_type": "design_specification",
+  "facts": [
+    {
+      "id": "brand_name",
+      "description": "Brand to present.",
+      "source": "env/market_launch.pdf",
+      "importance": "critical",
+      "expected_value": "Cedar Loop Market",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "message",
+      "description": "Launch message.",
+      "source": "env/market_launch.pdf",
+      "importance": "critical",
+      "expected_value": "Fresh stalls, short walks, local makers.",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "palette",
+      "description": "Palette.",
+      "source": "env/market_launch.pdf",
+      "importance": "critical",
+      "expected_value": [
+        "#2F5D50",
+        "#F8E9C8",
+        "#D9822B"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "layout_rule",
+      "description": "Layout rule.",
+      "source": "env/market_launch.pdf",
+      "importance": "major",
+      "expected_value": "logo lower-left",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "forbidden",
+      "description": "Forbidden visuals.",
+      "source": "env/market_launch.pdf",
+      "importance": "critical",
+      "expected_value": [
+        "neon palette",
+        "city skyline",
+        "luxury fashion"
+      ],
+      "must_not_appear_in_image": true
+    }
+  ],
+  "calculation_notes": "Use the PDF and supporting notes; preserve required inclusions and exclusions."
+}

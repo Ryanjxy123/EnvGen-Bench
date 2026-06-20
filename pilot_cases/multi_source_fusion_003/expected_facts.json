@@ -1,0 +1,70 @@
+{
+  "case_id": "multi_source_fusion_003",
+  "task_type": "multi_source_fusion",
+  "facts": [
+    {
+      "id": "revenue_winner",
+      "description": "Revenue-winning product.",
+      "source": "env/sales.sqlite",
+      "importance": "critical",
+      "expected_value": "NovaPack Pro",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "supported_points",
+      "description": "Supported selling points.",
+      "source": "env/product_notes.md",
+      "importance": "critical",
+      "expected_value": [
+        "compression panels",
+        "weather-resistant shell",
+        "quick-access tech pocket"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "brand_constraints",
+      "description": "Brand palette and tone.",
+      "source": "env/brand_rules.json",
+      "importance": "major",
+      "expected_value": [
+        "#1D3557",
+        "#F1FAEE",
+        "#E63946",
+        "durable, organized, travel-ready"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "web_required_size",
+      "description": "Instagram size/aspect guidance must come from web.",
+      "source": "web",
+      "importance": "critical",
+      "expected_value": "official current feed sizing guidance from Instagram or Meta",
+      "must_appear_in_image": false
+    },
+    {
+      "id": "wrong_product_exclusions",
+      "description": "Lower revenue/accessory products must not be promoted as main product.",
+      "source": "env/sales.sqlite + env/product_notes.md",
+      "importance": "major",
+      "expected_value": [
+        "NovaPack Mini",
+        "NovaPack Tag"
+      ],
+      "must_not_appear_in_image": true
+    }
+  ],
+  "calculation_notes": "Select product by revenue, not units. Web is only for platform size. Product reference is visual only.",
+  "web_facts": [
+    {
+      "description": "Current recommended Instagram feed image size or aspect ratio.",
+      "required_for_case": true,
+      "acceptable_sources": [
+        "Instagram help documentation",
+        "Meta business/help documentation",
+        "current reputable social media specification reference"
+      ]
+    }
+  ]
+}

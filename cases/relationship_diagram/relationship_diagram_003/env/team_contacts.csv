@@ -1,0 +1,6 @@
+person,role,reports_to,advisory
+Ari Patel,Incident Lead,Mina Torres,
+Mina Torres,Operations Director,,
+Jun Park,Facilities Coordinator,Ari Patel,
+Leah Stone,Volunteer Coordinator,Ari Patel,Community Advisory Board
+Community Advisory Board,Advisory only,,

@@ -1,0 +1,39 @@
+{
+  "case_id": "data_insight_005",
+  "task_type": "data_insight",
+  "facts": [
+    {
+      "id": "total_revenue",
+      "description": "Total revenue across channels.",
+      "source": "env/metric_notes.md + env/orders.sql",
+      "importance": "critical",
+      "expected_value": "10600",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "top_channel",
+      "description": "Top channel by revenue.",
+      "source": "env/metric_notes.md + env/orders.sql",
+      "importance": "critical",
+      "expected_value": "Online: 4200",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "lowest_channel",
+      "description": "Lowest revenue channel.",
+      "source": "env/metric_notes.md + env/orders.sql",
+      "importance": "major",
+      "expected_value": "Wholesale: 2800",
+      "must_appear_in_image": false
+    },
+    {
+      "id": "wrong_metric",
+      "description": "Order count should not be used.",
+      "source": "env/metric_notes.md",
+      "importance": "major",
+      "expected_value": "order count",
+      "must_not_appear_in_image": true
+    }
+  ],
+  "calculation_notes": "Sum revenue rows and rank by revenue."
+}

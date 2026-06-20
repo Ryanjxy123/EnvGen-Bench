@@ -1,0 +1,43 @@
+{
+  "case_id": "data_insight_003",
+  "task_type": "data_insight",
+  "facts": [
+    {
+      "id": "annual_total",
+      "description": "Annual total kWh across all public facilities.",
+      "source": "env/energy_seed.sql",
+      "importance": "critical",
+      "expected_value": 622000,
+      "must_appear_in_image": true
+    },
+    {
+      "id": "largest_site",
+      "description": "Pool has the largest annual energy use.",
+      "source": "env/energy_seed.sql",
+      "importance": "critical",
+      "expected_value": "Pool: 272000 kWh",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "q1_q4_changes",
+      "description": "Q1 to Q4 change by site.",
+      "source": "env/energy_seed.sql",
+      "importance": "critical",
+      "expected_value": [
+        "Library -9000 kWh",
+        "Pool +15000 kWh",
+        "Depot -10000 kWh"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "wrong_site_exclusion",
+      "description": "Archive Warehouse is excluded by mapping and not present in SQL data.",
+      "source": "env/site_groups.json",
+      "importance": "major",
+      "expected_value": "Archive Warehouse",
+      "must_not_appear_in_image": true
+    }
+  ],
+  "calculation_notes": "Sum all kWh rows for total. Site totals are Library 150000, Pool 272000, Depot 200000. Q1-to-Q4 changes use Q4 minus Q1."
+}

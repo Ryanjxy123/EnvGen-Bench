@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "expected_facts.schema.json",
+  "title": "Benchmark Case Expected Facts",
+  "type": "object",
+  "required": [
+    "case_id",
+    "task_type",
+    "facts"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*_[0-9]{3}$"
+    },
+    "task_type": {
+      "type": "string",
+      "enum": [
+        "data_selection",
+        "data_insight",
+        "document_brief",
+        "design_specification",
+        "procedure_instruction",
+        "relationship_diagram",
+        "state_change",
+        "multi_source_fusion"
+      ]
+    },
+    "facts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "description",
+          "source",
+          "importance"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9_]+$"
+          },
+          "description": {
+            "type": "string",
+            "minLength": 5
+          },
+          "source": {
+            "type": "string",
+            "minLength": 1
+          },
+          "importance": {
+            "type": "string",
+            "enum": [
+              "critical",
+              "major",
+              "minor"
+            ]
+          },
+          "expected_value": {},
+          "must_appear_in_image": {
+            "type": "boolean"
+          },
+          "must_not_appear_in_image": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "calculation_notes": {
+      "type": "string"
+    },
+    "web_facts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "description",
+          "required_for_case"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "description": {
+            "type": "string"
+          },
+          "required_for_case": {
+            "type": "boolean"
+          },
+          "acceptable_sources": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,57 @@
+{
+  "case_id": "document_brief_005",
+  "task_type": "document_brief",
+  "facts": [
+    {
+      "id": "service_name",
+      "description": "Service name.",
+      "source": "env/wellness_flyer.pdf",
+      "importance": "critical",
+      "expected_value": "Lunch Hour Wellness Check",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "time_place",
+      "description": "Time and place.",
+      "source": "env/wellness_flyer.pdf",
+      "importance": "critical",
+      "expected_value": [
+        "Wednesdays at 12:15 PM",
+        "Room 214"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "audience",
+      "description": "Audience.",
+      "source": "env/wellness_flyer.pdf",
+      "importance": "major",
+      "expected_value": "campus staff",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "offerings",
+      "description": "Supported offerings.",
+      "source": "env/wellness_flyer.pdf",
+      "importance": "critical",
+      "expected_value": [
+        "blood pressure station",
+        "quiet breathing prompt",
+        "referral card pickup"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "forbidden_claims",
+      "description": "Medical claims to avoid.",
+      "source": "env/wellness_flyer.pdf",
+      "importance": "major",
+      "expected_value": [
+        "diagnosis",
+        "prescription advice"
+      ],
+      "must_not_appear_in_image": true
+    }
+  ],
+  "calculation_notes": "Use the PDF and supporting notes; preserve required inclusions and exclusions."
+}

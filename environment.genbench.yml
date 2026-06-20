@@ -1,0 +1,11 @@
+﻿name: genbench
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pypdf
+  - reportlab
+  - poppler
+  - pdfplumber
+  - openpyxl
+  - jsonschema

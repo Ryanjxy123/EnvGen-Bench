@@ -1,0 +1,50 @@
+{
+  "case_id": "data_selection_002",
+  "task_type": "data_selection",
+  "facts": [
+    {
+      "id": "selected_grants",
+      "description": "Top qualifying grant winners after filtering.",
+      "source": "env/grant_applications.xlsx + env/eligibility_rules.yaml",
+      "importance": "critical",
+      "expected_value": [
+        "G205 Tree Canopy Fellows",
+        "G201 Cool Roof Block"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "ranking_rule",
+      "description": "Eligible applications are ranked by score descending.",
+      "source": "env/eligibility_rules.yaml",
+      "importance": "critical",
+      "expected_value": "G205 score 93 before G201 score 91",
+      "must_appear_in_image": false
+    },
+    {
+      "id": "late_exclusion",
+      "description": "Storm Drain Mapping is late and should not be announced.",
+      "source": "env/grant_applications.xlsx",
+      "importance": "major",
+      "expected_value": "G204",
+      "must_not_appear_in_image": true
+    },
+    {
+      "id": "budget_exclusion",
+      "description": "Heat Pump Co-op is over the budget cap.",
+      "source": "env/grant_applications.xlsx",
+      "importance": "major",
+      "expected_value": "G203",
+      "must_not_appear_in_image": true
+    },
+    {
+      "id": "wrong_sector_exclusion",
+      "description": "River Mural is arts sector, not climate.",
+      "source": "env/grant_applications.xlsx",
+      "importance": "major",
+      "expected_value": "G202",
+      "must_not_appear_in_image": true
+    }
+  ],
+  "calculation_notes": "Filter sector=climate, requested_usd<=50000, status=eligible, documents_complete=yes, submitted_on<=deadline; sort by score desc; select top 2."
+}

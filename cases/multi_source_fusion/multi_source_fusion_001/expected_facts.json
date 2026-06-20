@@ -1,0 +1,86 @@
+{
+  "case_id": "multi_source_fusion_001",
+  "task_type": "multi_source_fusion",
+  "facts": [
+    {
+      "id": "sales_winner",
+      "description": "Monthly sales-winning product by revenue and units.",
+      "source": "env/sales.csv",
+      "importance": "critical",
+      "expected_value": "HelioGrid Pulse",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "selling_points",
+      "description": "Supported product selling points.",
+      "source": "env/product_docs.md",
+      "importance": "critical",
+      "expected_value": [
+        "stores solar energy for evening use and outages",
+        "quiet wall-mounted design",
+        "app-guided energy insights"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "audience_tone",
+      "description": "Tone should fit homeowners with rooftop solar.",
+      "source": "env/audience_profile.json",
+      "importance": "major",
+      "expected_value": "confident, practical, optimistic",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "brand_constraints",
+      "description": "Use HelioGrid brand palette and avoid forbidden visual elements.",
+      "source": "env/brand_guide.pdf",
+      "importance": "major",
+      "expected_value": [
+        "#0B5FFF",
+        "#FFFFFF",
+        "#00A887",
+        "red background",
+        "cartoon mascot"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "visual_reference_assets",
+      "description": "Use the approved brand visual style documented in the PDF guide; no standalone synthetic logo/reference PNG is agent-visible.",
+      "source": "env/brand_guide.pdf",
+      "importance": "major",
+      "expected_value": "approved brand visual style from the brand guide",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "web_required_size",
+      "description": "Current Instagram feed size or aspect ratio must be obtained via web search.",
+      "source": "web",
+      "importance": "critical",
+      "expected_value": "official current feed sizing guidance from Instagram or Meta",
+      "must_appear_in_image": false
+    },
+    {
+      "id": "wrong_product_exclusions",
+      "description": "Do not promote lower-selling products or let web search override env-grounded product facts.",
+      "source": "env/sales.csv + env/product_docs.md",
+      "importance": "major",
+      "expected_value": [
+        "HelioGrid Mini",
+        "HelioGrid Sense"
+      ],
+      "must_not_appear_in_image": true
+    }
+  ],
+  "web_facts": [
+    {
+      "description": "Current recommended Instagram feed image size or aspect ratio.",
+      "required_for_case": true,
+      "acceptable_sources": [
+        "Instagram help documentation",
+        "Meta business/help documentation",
+        "current reputable social media specification reference"
+      ]
+    }
+  ]
+}

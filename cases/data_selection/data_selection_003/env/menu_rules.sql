@@ -1,0 +1,4 @@
+-- Select lunch specials for a nut-free quick-service poster.
+-- Requirements: meal_type='lunch', available=1, stock>=10,
+-- contains_nuts=0, prep_minutes<=10. Sort by margin_score DESC.
+-- Select top 2.

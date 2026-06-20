@@ -1,0 +1,55 @@
+{
+  "case_id": "data_insight_001",
+  "task_type": "data_insight",
+  "facts": [
+    {
+      "id": "total_revenue",
+      "description": "Total annual revenue across all months, categories, and regions.",
+      "source": "env/sales_2025.xlsx",
+      "importance": "critical",
+      "expected_value": 2043800,
+      "must_appear_in_image": true
+    },
+    {
+      "id": "highest_month",
+      "description": "The month with the highest total revenue is November.",
+      "source": "env/sales_2025.xlsx",
+      "importance": "critical",
+      "expected_value": "November 2025 revenue: 223100",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "fastest_quarter",
+      "description": "The fastest-growing quarter is Q2 versus Q1.",
+      "source": "env/sales_2025.xlsx",
+      "importance": "critical",
+      "expected_value": "Q2 growth over Q1: 20.9%",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "top_categories",
+      "description": "Top three categories by revenue.",
+      "source": "env/sales_2025.xlsx",
+      "importance": "critical",
+      "expected_value": [
+        "Audio: 740700",
+        "Accessories: 684500",
+        "Smart Home: 618600"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "wrong_metric_exclusions",
+      "description": "Do not substitute unit counts, regional rows, or December-only values for the requested annual revenue metrics.",
+      "source": "env/sales_2025.xlsx",
+      "importance": "major",
+      "expected_value": [
+        "units",
+        "North",
+        "South"
+      ],
+      "must_not_appear_in_image": true
+    }
+  ],
+  "calculation_notes": "Sum all revenue rows. Monthly totals identify November. Quarter totals are Q1=397000, Q2=479900, Q3=528900, Q4=638000. Q2 over Q1 is the fastest quarter-over-quarter growth: 82900 / 397000 = 20.9%."
+}

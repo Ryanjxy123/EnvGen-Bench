@@ -1,0 +1,3 @@
+Quick start note: the device should be charged for at least 20 minutes before
+first pairing. Do not press the reset pin unless support asks you to do so.
+The app pairing code appears after the blue indicator light pulses twice.

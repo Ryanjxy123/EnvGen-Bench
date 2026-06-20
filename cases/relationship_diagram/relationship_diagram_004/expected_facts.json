@@ -1,0 +1,78 @@
+{
+  "case_id": "relationship_diagram_004",
+  "task_type": "relationship_diagram",
+  "facts": [
+    {
+      "id": "nodes",
+      "description": "Booking flow nodes.",
+      "source": "env/service_notes.md + env/diagram_rules.yaml",
+      "importance": "critical",
+      "expected_value": [
+        "Mobile App",
+        "Profile API",
+        "Member DB",
+        "Booking API",
+        "Reminder Queue",
+        "Reminder Worker",
+        "Notification Log"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "edges",
+      "description": "Directed edges.",
+      "source": "env/service_notes.md",
+      "importance": "critical",
+      "expected_value": [
+        [
+          "Mobile App",
+          "Profile API"
+        ],
+        [
+          "Profile API",
+          "Member DB"
+        ],
+        [
+          "Mobile App",
+          "Booking API"
+        ],
+        [
+          "Booking API",
+          "Reminder Queue"
+        ],
+        [
+          "Reminder Worker",
+          "Reminder Queue"
+        ],
+        [
+          "Reminder Worker",
+          "Notification Log"
+        ]
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "relation_types",
+      "description": "Relation labels.",
+      "source": "env/diagram_rules.yaml",
+      "importance": "major",
+      "expected_value": [
+        "calls",
+        "reads",
+        "publishes",
+        "consumes",
+        "writes"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "exclude_export",
+      "description": "Marketing Export is unrelated.",
+      "source": "env/service_notes.md",
+      "importance": "major",
+      "expected_value": "Marketing Export",
+      "must_not_appear_in_image": true
+    }
+  ],
+  "calculation_notes": "Use booking path only; exclude Marketing Export."
+}

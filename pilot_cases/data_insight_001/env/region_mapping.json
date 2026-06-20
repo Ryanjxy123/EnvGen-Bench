@@ -1,0 +1,17 @@
+{
+  "North": [
+    "Boston",
+    "Hartford",
+    "Providence"
+  ],
+  "South": [
+    "Austin",
+    "Atlanta",
+    "Raleigh"
+  ],
+  "West": [
+    "Seattle",
+    "Portland",
+    "San Diego"
+  ]
+}

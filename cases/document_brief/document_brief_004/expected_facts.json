@@ -1,0 +1,57 @@
+{
+  "case_id": "document_brief_004",
+  "task_type": "document_brief",
+  "facts": [
+    {
+      "id": "program_title",
+      "description": "Program title.",
+      "source": "env/river_program.pdf",
+      "importance": "critical",
+      "expected_value": "River Skills Saturday",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "date_location",
+      "description": "Date and location.",
+      "source": "env/river_program.pdf",
+      "importance": "critical",
+      "expected_value": [
+        "August 9, 2026",
+        "Willow Bend Dock"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "audience",
+      "description": "Target audience.",
+      "source": "env/river_program.pdf",
+      "importance": "major",
+      "expected_value": "first-time paddlers and families",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "highlights",
+      "description": "Supported highlights.",
+      "source": "env/river_program.pdf",
+      "importance": "critical",
+      "expected_value": [
+        "life jacket fit check",
+        "shoreline safety basics",
+        "guided 20-minute practice loop"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "unsupported_details",
+      "description": "Unsupported claims.",
+      "source": "env/river_program.pdf",
+      "importance": "major",
+      "expected_value": [
+        "overnight camping",
+        "whitewater route"
+      ],
+      "must_not_appear_in_image": true
+    }
+  ],
+  "calculation_notes": "Use the PDF and supporting notes; preserve required inclusions and exclusions."
+}

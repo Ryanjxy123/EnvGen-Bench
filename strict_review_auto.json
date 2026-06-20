@@ -1,0 +1,2568 @@
+{
+  "mode": "pilot",
+  "cases_root": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\pilot_cases",
+  "cases": [
+    {
+      "case_id": "data_insight_001",
+      "task_type": "data_insight",
+      "mode": "pilot",
+      "total_score": 97,
+      "max_score": 100,
+      "decision": "pass",
+      "failed_gates": [],
+      "gates": {
+        "schema_gate": {
+          "name": "schema_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "source_traceability_gate": {
+          "name": "source_traceability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "semantic_consistency_gate": {
+          "name": "semantic_consistency_gate",
+          "passed": true,
+          "critical": true,
+          "reason": "highest_month: critical expected values not traceable to cited source: ['November 2025 revenue: 223100']."
+        },
+        "visual_asset_quality_gate": {
+          "name": "visual_asset_quality_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "pdf_realism_gate": {
+          "name": "pdf_realism_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "no_answer_leakage_gate": {
+          "name": "no_answer_leakage_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "scoring_usability_gate": {
+          "name": "scoring_usability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        }
+      },
+      "warnings": [],
+      "per_dimension_scores": {
+        "structural_validity": 20,
+        "source_traceability": 15,
+        "semantic_grounding": 17,
+        "task_operation_depth": 10,
+        "visual_asset_quality": 15,
+        "scoring_usability": 10,
+        "anti_leakage_and_negative_coverage": 10
+      },
+      "visual_asset_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "image_metrics": [],
+        "pdf_findings": []
+      },
+      "semantic_validation_findings": {
+        "findings": [
+          "highest_month: critical expected values not traceable to cited source: ['November 2025 revenue: 223100']."
+        ],
+        "warnings": [],
+        "severe": []
+      },
+      "leakage_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "leaked_values": [],
+        "approximate_values": []
+      },
+      "recommended_fix": [
+        "expected_facts 未完全通过来源追溯或语义复核；请重新读取 env 数据，检查筛选、聚合、状态更新或节点边关系。"
+      ],
+      "notes": [
+        "highest_month: critical expected values not traceable to cited source: ['November 2025 revenue: 223100']."
+      ]
+    },
+    {
+      "case_id": "data_insight_002",
+      "task_type": "data_insight",
+      "mode": "pilot",
+      "total_score": 97,
+      "max_score": 100,
+      "decision": "pass",
+      "failed_gates": [],
+      "gates": {
+        "schema_gate": {
+          "name": "schema_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "source_traceability_gate": {
+          "name": "source_traceability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "semantic_consistency_gate": {
+          "name": "semantic_consistency_gate",
+          "passed": true,
+          "critical": true,
+          "reason": "overall_avg_reduction: critical expected values not traceable to cited source: ['January average 37.0 min to March average 29.3 min; reduction 7.7 min']."
+        },
+        "visual_asset_quality_gate": {
+          "name": "visual_asset_quality_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "pdf_realism_gate": {
+          "name": "pdf_realism_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "no_answer_leakage_gate": {
+          "name": "no_answer_leakage_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "scoring_usability_gate": {
+          "name": "scoring_usability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        }
+      },
+      "warnings": [],
+      "per_dimension_scores": {
+        "structural_validity": 20,
+        "source_traceability": 15,
+        "semantic_grounding": 17,
+        "task_operation_depth": 10,
+        "visual_asset_quality": 15,
+        "scoring_usability": 10,
+        "anti_leakage_and_negative_coverage": 10
+      },
+      "visual_asset_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "image_metrics": [],
+        "pdf_findings": []
+      },
+      "semantic_validation_findings": {
+        "findings": [
+          "overall_avg_reduction: critical expected values not traceable to cited source: ['January average 37.0 min to March average 29.3 min; reduction 7.7 min']."
+        ],
+        "warnings": [],
+        "severe": []
+      },
+      "leakage_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "leaked_values": [],
+        "approximate_values": []
+      },
+      "recommended_fix": [
+        "expected_facts 未完全通过来源追溯或语义复核；请重新读取 env 数据，检查筛选、聚合、状态更新或节点边关系。"
+      ],
+      "notes": [
+        "overall_avg_reduction: critical expected values not traceable to cited source: ['January average 37.0 min to March average 29.3 min; reduction 7.7 min']."
+      ]
+    },
+    {
+      "case_id": "data_insight_003",
+      "task_type": "data_insight",
+      "mode": "pilot",
+      "total_score": 97,
+      "max_score": 100,
+      "decision": "pass",
+      "failed_gates": [],
+      "gates": {
+        "schema_gate": {
+          "name": "schema_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "source_traceability_gate": {
+          "name": "source_traceability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "semantic_consistency_gate": {
+          "name": "semantic_consistency_gate",
+          "passed": true,
+          "critical": true,
+          "reason": "annual_total: critical expected values not traceable to cited source: ['622000']."
+        },
+        "visual_asset_quality_gate": {
+          "name": "visual_asset_quality_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "pdf_realism_gate": {
+          "name": "pdf_realism_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "no_answer_leakage_gate": {
+          "name": "no_answer_leakage_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "scoring_usability_gate": {
+          "name": "scoring_usability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        }
+      },
+      "warnings": [],
+      "per_dimension_scores": {
+        "structural_validity": 20,
+        "source_traceability": 15,
+        "semantic_grounding": 17,
+        "task_operation_depth": 10,
+        "visual_asset_quality": 15,
+        "scoring_usability": 10,
+        "anti_leakage_and_negative_coverage": 10
+      },
+      "visual_asset_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "image_metrics": [],
+        "pdf_findings": []
+      },
+      "semantic_validation_findings": {
+        "findings": [
+          "annual_total: critical expected values not traceable to cited source: ['622000']."
+        ],
+        "warnings": [],
+        "severe": []
+      },
+      "leakage_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "leaked_values": [],
+        "approximate_values": []
+      },
+      "recommended_fix": [
+        "expected_facts 未完全通过来源追溯或语义复核；请重新读取 env 数据，检查筛选、聚合、状态更新或节点边关系。"
+      ],
+      "notes": [
+        "annual_total: critical expected values not traceable to cited source: ['622000']."
+      ]
+    },
+    {
+      "case_id": "data_selection_001",
+      "task_type": "data_selection",
+      "mode": "pilot",
+      "total_score": 94,
+      "max_score": 100,
+      "decision": "pass",
+      "failed_gates": [],
+      "gates": {
+        "schema_gate": {
+          "name": "schema_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "source_traceability_gate": {
+          "name": "source_traceability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "semantic_consistency_gate": {
+          "name": "semantic_consistency_gate",
+          "passed": true,
+          "critical": true,
+          "reason": "ranking_rule: critical expected values not traceable to cited source: ['P106 before P104 before P102'].; data_selection calculation_notes missing operation terms: ['select']."
+        },
+        "visual_asset_quality_gate": {
+          "name": "visual_asset_quality_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "pdf_realism_gate": {
+          "name": "pdf_realism_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "no_answer_leakage_gate": {
+          "name": "no_answer_leakage_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "scoring_usability_gate": {
+          "name": "scoring_usability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        }
+      },
+      "warnings": [],
+      "per_dimension_scores": {
+        "structural_validity": 20,
+        "source_traceability": 15,
+        "semantic_grounding": 14,
+        "task_operation_depth": 10,
+        "visual_asset_quality": 15,
+        "scoring_usability": 10,
+        "anti_leakage_and_negative_coverage": 10
+      },
+      "visual_asset_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "image_metrics": [],
+        "pdf_findings": []
+      },
+      "semantic_validation_findings": {
+        "findings": [
+          "ranking_rule: critical expected values not traceable to cited source: ['P106 before P104 before P102'].",
+          "data_selection calculation_notes missing operation terms: ['select']."
+        ],
+        "warnings": [],
+        "severe": []
+      },
+      "leakage_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "leaked_values": [],
+        "approximate_values": []
+      },
+      "recommended_fix": [
+        "expected_facts 未完全通过来源追溯或语义复核；请重新读取 env 数据，检查筛选、聚合、状态更新或节点边关系。"
+      ],
+      "notes": [
+        "ranking_rule: critical expected values not traceable to cited source: ['P106 before P104 before P102'].",
+        "data_selection calculation_notes missing operation terms: ['select']."
+      ]
+    },
+    {
+      "case_id": "data_selection_002",
+      "task_type": "data_selection",
+      "mode": "pilot",
+      "total_score": 97,
+      "max_score": 100,
+      "decision": "pass",
+      "failed_gates": [],
+      "gates": {
+        "schema_gate": {
+          "name": "schema_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "source_traceability_gate": {
+          "name": "source_traceability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "semantic_consistency_gate": {
+          "name": "semantic_consistency_gate",
+          "passed": true,
+          "critical": true,
+          "reason": "ranking_rule: critical expected values not traceable to cited source: ['G205 score 93 before G201 score 91']."
+        },
+        "visual_asset_quality_gate": {
+          "name": "visual_asset_quality_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "pdf_realism_gate": {
+          "name": "pdf_realism_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "no_answer_leakage_gate": {
+          "name": "no_answer_leakage_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "scoring_usability_gate": {
+          "name": "scoring_usability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        }
+      },
+      "warnings": [],
+      "per_dimension_scores": {
+        "structural_validity": 20,
+        "source_traceability": 15,
+        "semantic_grounding": 17,
+        "task_operation_depth": 10,
+        "visual_asset_quality": 15,
+        "scoring_usability": 10,
+        "anti_leakage_and_negative_coverage": 10
+      },
+      "visual_asset_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "image_metrics": [],
+        "pdf_findings": []
+      },
+      "semantic_validation_findings": {
+        "findings": [
+          "ranking_rule: critical expected values not traceable to cited source: ['G205 score 93 before G201 score 91']."
+        ],
+        "warnings": [],
+        "severe": []
+      },
+      "leakage_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "leaked_values": [],
+        "approximate_values": []
+      },
+      "recommended_fix": [
+        "expected_facts 未完全通过来源追溯或语义复核；请重新读取 env 数据，检查筛选、聚合、状态更新或节点边关系。"
+      ],
+      "notes": [
+        "ranking_rule: critical expected values not traceable to cited source: ['G205 score 93 before G201 score 91']."
+      ]
+    },
+    {
+      "case_id": "data_selection_003",
+      "task_type": "data_selection",
+      "mode": "pilot",
+      "total_score": 97,
+      "max_score": 100,
+      "decision": "pass",
+      "failed_gates": [],
+      "gates": {
+        "schema_gate": {
+          "name": "schema_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "source_traceability_gate": {
+          "name": "source_traceability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "semantic_consistency_gate": {
+          "name": "semantic_consistency_gate",
+          "passed": true,
+          "critical": true,
+          "reason": "ranking_rule: critical expected values not traceable to cited source: ['M304 margin 94 before M301 margin 92']."
+        },
+        "visual_asset_quality_gate": {
+          "name": "visual_asset_quality_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "pdf_realism_gate": {
+          "name": "pdf_realism_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "no_answer_leakage_gate": {
+          "name": "no_answer_leakage_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "scoring_usability_gate": {
+          "name": "scoring_usability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        }
+      },
+      "warnings": [],
+      "per_dimension_scores": {
+        "structural_validity": 20,
+        "source_traceability": 15,
+        "semantic_grounding": 17,
+        "task_operation_depth": 10,
+        "visual_asset_quality": 15,
+        "scoring_usability": 10,
+        "anti_leakage_and_negative_coverage": 10
+      },
+      "visual_asset_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "image_metrics": [],
+        "pdf_findings": []
+      },
+      "semantic_validation_findings": {
+        "findings": [
+          "ranking_rule: critical expected values not traceable to cited source: ['M304 margin 94 before M301 margin 92']."
+        ],
+        "warnings": [],
+        "severe": []
+      },
+      "leakage_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "leaked_values": [],
+        "approximate_values": []
+      },
+      "recommended_fix": [
+        "expected_facts 未完全通过来源追溯或语义复核；请重新读取 env 数据，检查筛选、聚合、状态更新或节点边关系。"
+      ],
+      "notes": [
+        "ranking_rule: critical expected values not traceable to cited source: ['M304 margin 94 before M301 margin 92']."
+      ]
+    },
+    {
+      "case_id": "design_specification_001",
+      "task_type": "design_specification",
+      "mode": "pilot",
+      "total_score": 100,
+      "max_score": 100,
+      "decision": "pass",
+      "failed_gates": [],
+      "gates": {
+        "schema_gate": {
+          "name": "schema_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "source_traceability_gate": {
+          "name": "source_traceability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "semantic_consistency_gate": {
+          "name": "semantic_consistency_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "visual_asset_quality_gate": {
+          "name": "visual_asset_quality_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "pdf_realism_gate": {
+          "name": "pdf_realism_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "no_answer_leakage_gate": {
+          "name": "no_answer_leakage_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "scoring_usability_gate": {
+          "name": "scoring_usability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        }
+      },
+      "warnings": [],
+      "per_dimension_scores": {
+        "structural_validity": 20,
+        "source_traceability": 15,
+        "semantic_grounding": 20,
+        "task_operation_depth": 10,
+        "visual_asset_quality": 15,
+        "scoring_usability": 10,
+        "anti_leakage_and_negative_coverage": 10
+      },
+      "visual_asset_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "image_metrics": [
+          {
+            "path": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\pilot_cases\\design_specification_001\\env\\heliogrid_logo.png",
+            "readable": true,
+            "width": 760,
+            "height": 560,
+            "sample_width": 256,
+            "sample_height": 189,
+            "nonwhite_ratio": 0.9756,
+            "white_ratio": 0.0244,
+            "near_black_ratio": 0.0,
+            "entropy": 3.7895,
+            "edge_density": 0.1706,
+            "dominant_color_ratio": 0.6496,
+            "connected_components": 1,
+            "average_hash": "00fffffffff74300"
+          },
+          {
+            "path": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\pilot_cases\\design_specification_001\\qa_render\\brand_guide-1.png",
+            "readable": true,
+            "width": 1200,
+            "height": 1600,
+            "sample_width": 192,
+            "sample_height": 256,
+            "nonwhite_ratio": 0.8609,
+            "white_ratio": 0.1391,
+            "near_black_ratio": 0.0,
+            "entropy": 4.9802,
+            "edge_density": 0.1147,
+            "dominant_color_ratio": 0.3374,
+            "connected_components": 13,
+            "average_hash": "000f1f7f7f7f013f"
+          }
+        ],
+        "pdf_findings": [
+          {
+            "path": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\pilot_cases\\design_specification_001\\env\\brand_guide.pdf",
+            "readable": true,
+            "page_count": 1,
+            "embedded_image_count": 1,
+            "extracted_text_length": 446,
+            "banned_tokens": [],
+            "render_count": 1
+          }
+        ]
+      },
+      "semantic_validation_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": []
+      },
+      "leakage_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "leaked_values": [],
+        "approximate_values": []
+      },
+      "recommended_fix": [
+        "No immediate fix required."
+      ],
+      "notes": []
+    },
+    {
+      "case_id": "design_specification_002",
+      "task_type": "design_specification",
+      "mode": "pilot",
+      "total_score": 100,
+      "max_score": 100,
+      "decision": "pass",
+      "failed_gates": [],
+      "gates": {
+        "schema_gate": {
+          "name": "schema_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "source_traceability_gate": {
+          "name": "source_traceability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "semantic_consistency_gate": {
+          "name": "semantic_consistency_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "visual_asset_quality_gate": {
+          "name": "visual_asset_quality_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "pdf_realism_gate": {
+          "name": "pdf_realism_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "no_answer_leakage_gate": {
+          "name": "no_answer_leakage_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "scoring_usability_gate": {
+          "name": "scoring_usability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        }
+      },
+      "warnings": [],
+      "per_dimension_scores": {
+        "structural_validity": 20,
+        "source_traceability": 15,
+        "semantic_grounding": 20,
+        "task_operation_depth": 10,
+        "visual_asset_quality": 15,
+        "scoring_usability": 10,
+        "anti_leakage_and_negative_coverage": 10
+      },
+      "visual_asset_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "image_metrics": [
+          {
+            "path": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\pilot_cases\\design_specification_002\\env\\museum_mark.png",
+            "readable": true,
+            "width": 760,
+            "height": 560,
+            "sample_width": 256,
+            "sample_height": 189,
+            "nonwhite_ratio": 0.9804,
+            "white_ratio": 0.0196,
+            "near_black_ratio": 0.0,
+            "entropy": 3.8199,
+            "edge_density": 0.1666,
+            "dominant_color_ratio": 0.644,
+            "connected_components": 1,
+            "average_hash": "00fffffff7c74f00"
+          },
+          {
+            "path": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\pilot_cases\\design_specification_002\\qa_render\\exhibit_style_guide-1.png",
+            "readable": true,
+            "width": 1200,
+            "height": 1600,
+            "sample_width": 192,
+            "sample_height": 256,
+            "nonwhite_ratio": 0.8695,
+            "white_ratio": 0.1305,
+            "near_black_ratio": 0.0,
+            "entropy": 4.6926,
+            "edge_density": 0.1138,
+            "dominant_color_ratio": 0.365,
+            "connected_components": 25,
+            "average_hash": "0070797f7f3f7f7f"
+          }
+        ],
+        "pdf_findings": [
+          {
+            "path": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\pilot_cases\\design_specification_002\\env\\exhibit_style_guide.pdf",
+            "readable": true,
+            "page_count": 1,
+            "embedded_image_count": 1,
+            "extracted_text_length": 401,
+            "banned_tokens": [],
+            "render_count": 1
+          }
+        ]
+      },
+      "semantic_validation_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": []
+      },
+      "leakage_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "leaked_values": [],
+        "approximate_values": []
+      },
+      "recommended_fix": [
+        "No immediate fix required."
+      ],
+      "notes": []
+    },
+    {
+      "case_id": "design_specification_003",
+      "task_type": "design_specification",
+      "mode": "pilot",
+      "total_score": 100,
+      "max_score": 100,
+      "decision": "pass",
+      "failed_gates": [],
+      "gates": {
+        "schema_gate": {
+          "name": "schema_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "source_traceability_gate": {
+          "name": "source_traceability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "semantic_consistency_gate": {
+          "name": "semantic_consistency_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "visual_asset_quality_gate": {
+          "name": "visual_asset_quality_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "pdf_realism_gate": {
+          "name": "pdf_realism_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "no_answer_leakage_gate": {
+          "name": "no_answer_leakage_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "scoring_usability_gate": {
+          "name": "scoring_usability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        }
+      },
+      "warnings": [],
+      "per_dimension_scores": {
+        "structural_validity": 20,
+        "source_traceability": 15,
+        "semantic_grounding": 20,
+        "task_operation_depth": 10,
+        "visual_asset_quality": 15,
+        "scoring_usability": 10,
+        "anti_leakage_and_negative_coverage": 10
+      },
+      "visual_asset_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "image_metrics": [
+          {
+            "path": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\pilot_cases\\design_specification_003\\env\\app_icon.png",
+            "readable": true,
+            "width": 760,
+            "height": 560,
+            "sample_width": 256,
+            "sample_height": 189,
+            "nonwhite_ratio": 0.9762,
+            "white_ratio": 0.0238,
+            "near_black_ratio": 0.0,
+            "entropy": 3.8303,
+            "edge_density": 0.1704,
+            "dominant_color_ratio": 0.6469,
+            "connected_components": 1,
+            "average_hash": "00ffffffefcf0f00"
+          },
+          {
+            "path": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\pilot_cases\\design_specification_003\\qa_render\\launch_style-1.png",
+            "readable": true,
+            "width": 1200,
+            "height": 1600,
+            "sample_width": 192,
+            "sample_height": 256,
+            "nonwhite_ratio": 0.8713,
+            "white_ratio": 0.1287,
+            "near_black_ratio": 0.0062,
+            "entropy": 4.8547,
+            "edge_density": 0.1177,
+            "dominant_color_ratio": 0.3412,
+            "connected_components": 27,
+            "average_hash": "00f0f0fefefcfcfc"
+          }
+        ],
+        "pdf_findings": [
+          {
+            "path": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\pilot_cases\\design_specification_003\\env\\launch_style.pdf",
+            "readable": true,
+            "page_count": 1,
+            "embedded_image_count": 1,
+            "extracted_text_length": 431,
+            "banned_tokens": [],
+            "render_count": 1
+          }
+        ]
+      },
+      "semantic_validation_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": []
+      },
+      "leakage_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "leaked_values": [],
+        "approximate_values": []
+      },
+      "recommended_fix": [
+        "No immediate fix required."
+      ],
+      "notes": []
+    },
+    {
+      "case_id": "document_brief_001",
+      "task_type": "document_brief",
+      "mode": "pilot",
+      "total_score": 100,
+      "max_score": 100,
+      "decision": "pass",
+      "failed_gates": [],
+      "gates": {
+        "schema_gate": {
+          "name": "schema_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "source_traceability_gate": {
+          "name": "source_traceability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "semantic_consistency_gate": {
+          "name": "semantic_consistency_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "visual_asset_quality_gate": {
+          "name": "visual_asset_quality_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "pdf_realism_gate": {
+          "name": "pdf_realism_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "no_answer_leakage_gate": {
+          "name": "no_answer_leakage_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "scoring_usability_gate": {
+          "name": "scoring_usability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        }
+      },
+      "warnings": [],
+      "per_dimension_scores": {
+        "structural_validity": 20,
+        "source_traceability": 15,
+        "semantic_grounding": 20,
+        "task_operation_depth": 10,
+        "visual_asset_quality": 15,
+        "scoring_usability": 10,
+        "anti_leakage_and_negative_coverage": 10
+      },
+      "visual_asset_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "image_metrics": [
+          {
+            "path": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\pilot_cases\\document_brief_001\\env\\course_context_chart.png",
+            "readable": true,
+            "width": 760,
+            "height": 560,
+            "sample_width": 256,
+            "sample_height": 189,
+            "nonwhite_ratio": 0.9858,
+            "white_ratio": 0.0142,
+            "near_black_ratio": 0.0,
+            "entropy": 3.7385,
+            "edge_density": 0.17,
+            "dominant_color_ratio": 0.6627,
+            "connected_components": 1,
+            "average_hash": "00fffefff7ee4f00"
+          },
+          {
+            "path": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\pilot_cases\\document_brief_001\\qa_render\\course_brief-1.png",
+            "readable": true,
+            "width": 1200,
+            "height": 1600,
+            "sample_width": 192,
+            "sample_height": 256,
+            "nonwhite_ratio": 0.8629,
+            "white_ratio": 0.1371,
+            "near_black_ratio": 0.0009,
+            "entropy": 4.9237,
+            "edge_density": 0.1534,
+            "dominant_color_ratio": 0.3893,
+            "connected_components": 12,
+            "average_hash": "000f0fffffff00ff"
+          }
+        ],
+        "pdf_findings": [
+          {
+            "path": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\pilot_cases\\document_brief_001\\env\\course_brief.pdf",
+            "readable": true,
+            "page_count": 1,
+            "embedded_image_count": 1,
+            "extracted_text_length": 683,
+            "banned_tokens": [],
+            "render_count": 1
+          }
+        ]
+      },
+      "semantic_validation_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": []
+      },
+      "leakage_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "leaked_values": [],
+        "approximate_values": []
+      },
+      "recommended_fix": [
+        "No immediate fix required."
+      ],
+      "notes": []
+    },
+    {
+      "case_id": "document_brief_002",
+      "task_type": "document_brief",
+      "mode": "pilot",
+      "total_score": 100,
+      "max_score": 100,
+      "decision": "pass",
+      "failed_gates": [],
+      "gates": {
+        "schema_gate": {
+          "name": "schema_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "source_traceability_gate": {
+          "name": "source_traceability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "semantic_consistency_gate": {
+          "name": "semantic_consistency_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "visual_asset_quality_gate": {
+          "name": "visual_asset_quality_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "pdf_realism_gate": {
+          "name": "pdf_realism_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "no_answer_leakage_gate": {
+          "name": "no_answer_leakage_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "scoring_usability_gate": {
+          "name": "scoring_usability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        }
+      },
+      "warnings": [],
+      "per_dimension_scores": {
+        "structural_validity": 20,
+        "source_traceability": 15,
+        "semantic_grounding": 20,
+        "task_operation_depth": 10,
+        "visual_asset_quality": 15,
+        "scoring_usability": 10,
+        "anti_leakage_and_negative_coverage": 10
+      },
+      "visual_asset_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "image_metrics": [
+          {
+            "path": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\pilot_cases\\document_brief_002\\env\\workshop_map.png",
+            "readable": true,
+            "width": 760,
+            "height": 560,
+            "sample_width": 256,
+            "sample_height": 189,
+            "nonwhite_ratio": 0.974,
+            "white_ratio": 0.026,
+            "near_black_ratio": 0.0,
+            "entropy": 3.732,
+            "edge_density": 0.1679,
+            "dominant_color_ratio": 0.6541,
+            "connected_components": 1,
+            "average_hash": "00ff7f7f7fcf0f00"
+          },
+          {
+            "path": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\pilot_cases\\document_brief_002\\qa_render\\workshop_brochure-1.png",
+            "readable": true,
+            "width": 1200,
+            "height": 1600,
+            "sample_width": 192,
+            "sample_height": 256,
+            "nonwhite_ratio": 0.8514,
+            "white_ratio": 0.1486,
+            "near_black_ratio": 0.0008,
+            "entropy": 4.4968,
+            "edge_density": 0.1342,
+            "dominant_color_ratio": 0.5448,
+            "connected_components": 15,
+            "average_hash": "00f0f0ff81ffffff"
+          }
+        ],
+        "pdf_findings": [
+          {
+            "path": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\pilot_cases\\document_brief_002\\env\\workshop_brochure.pdf",
+            "readable": true,
+            "page_count": 1,
+            "embedded_image_count": 1,
+            "extracted_text_length": 511,
+            "banned_tokens": [],
+            "render_count": 1
+          }
+        ]
+      },
+      "semantic_validation_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": []
+      },
+      "leakage_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "leaked_values": [],
+        "approximate_values": []
+      },
+      "recommended_fix": [
+        "No immediate fix required."
+      ],
+      "notes": []
+    },
+    {
+      "case_id": "document_brief_003",
+      "task_type": "document_brief",
+      "mode": "pilot",
+      "total_score": 100,
+      "max_score": 100,
+      "decision": "pass",
+      "failed_gates": [],
+      "gates": {
+        "schema_gate": {
+          "name": "schema_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "source_traceability_gate": {
+          "name": "source_traceability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "semantic_consistency_gate": {
+          "name": "semantic_consistency_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "visual_asset_quality_gate": {
+          "name": "visual_asset_quality_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "pdf_realism_gate": {
+          "name": "pdf_realism_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "no_answer_leakage_gate": {
+          "name": "no_answer_leakage_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "scoring_usability_gate": {
+          "name": "scoring_usability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        }
+      },
+      "warnings": [],
+      "per_dimension_scores": {
+        "structural_validity": 20,
+        "source_traceability": 15,
+        "semantic_grounding": 20,
+        "task_operation_depth": 10,
+        "visual_asset_quality": 15,
+        "scoring_usability": 10,
+        "anti_leakage_and_negative_coverage": 10
+      },
+      "visual_asset_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "image_metrics": [
+          {
+            "path": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\pilot_cases\\document_brief_003\\qa_render\\product_brief-1.png",
+            "readable": true,
+            "width": 1200,
+            "height": 1600,
+            "sample_width": 192,
+            "sample_height": 256,
+            "nonwhite_ratio": 0.8502,
+            "white_ratio": 0.1498,
+            "near_black_ratio": 0.0,
+            "entropy": 4.6343,
+            "edge_density": 0.1179,
+            "dominant_color_ratio": 0.5102,
+            "connected_components": 16,
+            "average_hash": "0071717f017f7f7f"
+          }
+        ],
+        "pdf_findings": [
+          {
+            "path": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\pilot_cases\\document_brief_003\\env\\product_brief.pdf",
+            "readable": true,
+            "page_count": 1,
+            "embedded_image_count": 1,
+            "extracted_text_length": 531,
+            "banned_tokens": [],
+            "render_count": 1
+          }
+        ]
+      },
+      "semantic_validation_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": []
+      },
+      "leakage_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "leaked_values": [],
+        "approximate_values": []
+      },
+      "recommended_fix": [
+        "No immediate fix required."
+      ],
+      "notes": []
+    },
+    {
+      "case_id": "multi_source_fusion_001",
+      "task_type": "multi_source_fusion",
+      "mode": "pilot",
+      "total_score": 96,
+      "max_score": 100,
+      "decision": "pass",
+      "failed_gates": [],
+      "gates": {
+        "schema_gate": {
+          "name": "schema_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "source_traceability_gate": {
+          "name": "source_traceability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "semantic_consistency_gate": {
+          "name": "semantic_consistency_gate",
+          "passed": true,
+          "critical": true,
+          "reason": "multi_source_fusion case lacks calculation_notes for derived facts."
+        },
+        "visual_asset_quality_gate": {
+          "name": "visual_asset_quality_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "pdf_realism_gate": {
+          "name": "pdf_realism_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "no_answer_leakage_gate": {
+          "name": "no_answer_leakage_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "scoring_usability_gate": {
+          "name": "scoring_usability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        }
+      },
+      "warnings": [],
+      "per_dimension_scores": {
+        "structural_validity": 20,
+        "source_traceability": 15,
+        "semantic_grounding": 16,
+        "task_operation_depth": 10,
+        "visual_asset_quality": 15,
+        "scoring_usability": 10,
+        "anti_leakage_and_negative_coverage": 10
+      },
+      "visual_asset_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "image_metrics": [
+          {
+            "path": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\pilot_cases\\multi_source_fusion_001\\env\\heliogrid_logo.png",
+            "readable": true,
+            "width": 760,
+            "height": 560,
+            "sample_width": 256,
+            "sample_height": 189,
+            "nonwhite_ratio": 0.9778,
+            "white_ratio": 0.0222,
+            "near_black_ratio": 0.0,
+            "entropy": 3.7647,
+            "edge_density": 0.1642,
+            "dominant_color_ratio": 0.653,
+            "connected_components": 1,
+            "average_hash": "007f7f7f7fcf0f00"
+          },
+          {
+            "path": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\pilot_cases\\multi_source_fusion_001\\qa_render\\brand_guide-1.png",
+            "readable": true,
+            "width": 1200,
+            "height": 1600,
+            "sample_width": 192,
+            "sample_height": 256,
+            "nonwhite_ratio": 0.8094,
+            "white_ratio": 0.1906,
+            "near_black_ratio": 0.0,
+            "entropy": 5.1085,
+            "edge_density": 0.1251,
+            "dominant_color_ratio": 0.3932,
+            "connected_components": 16,
+            "average_hash": "00f0f0ffffff8fe1"
+          }
+        ],
+        "pdf_findings": [
+          {
+            "path": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\pilot_cases\\multi_source_fusion_001\\env\\brand_guide.pdf",
+            "readable": true,
+            "page_count": 1,
+            "embedded_image_count": 1,
+            "extracted_text_length": 676,
+            "banned_tokens": [],
+            "render_count": 1
+          }
+        ]
+      },
+      "semantic_validation_findings": {
+        "findings": [
+          "multi_source_fusion case lacks calculation_notes for derived facts."
+        ],
+        "warnings": [],
+        "severe": []
+      },
+      "leakage_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "leaked_values": [],
+        "approximate_values": []
+      },
+      "recommended_fix": [
+        "expected_facts 未完全通过来源追溯或语义复核；请重新读取 env 数据，检查筛选、聚合、状态更新或节点边关系。"
+      ],
+      "notes": [
+        "multi_source_fusion case lacks calculation_notes for derived facts."
+      ]
+    },
+    {
+      "case_id": "multi_source_fusion_002",
+      "task_type": "multi_source_fusion",
+      "mode": "pilot",
+      "total_score": 100,
+      "max_score": 100,
+      "decision": "pass",
+      "failed_gates": [],
+      "gates": {
+        "schema_gate": {
+          "name": "schema_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "source_traceability_gate": {
+          "name": "source_traceability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "semantic_consistency_gate": {
+          "name": "semantic_consistency_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "visual_asset_quality_gate": {
+          "name": "visual_asset_quality_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "pdf_realism_gate": {
+          "name": "pdf_realism_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "no_answer_leakage_gate": {
+          "name": "no_answer_leakage_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "scoring_usability_gate": {
+          "name": "scoring_usability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        }
+      },
+      "warnings": [],
+      "per_dimension_scores": {
+        "structural_validity": 20,
+        "source_traceability": 15,
+        "semantic_grounding": 20,
+        "task_operation_depth": 10,
+        "visual_asset_quality": 15,
+        "scoring_usability": 10,
+        "anti_leakage_and_negative_coverage": 10
+      },
+      "visual_asset_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "image_metrics": [
+          {
+            "path": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\pilot_cases\\multi_source_fusion_002\\qa_render\\venue_brief-1.png",
+            "readable": true,
+            "width": 1200,
+            "height": 1600,
+            "sample_width": 192,
+            "sample_height": 256,
+            "nonwhite_ratio": 0.8458,
+            "white_ratio": 0.1542,
+            "near_black_ratio": 0.0006,
+            "entropy": 4.656,
+            "edge_density": 0.1217,
+            "dominant_color_ratio": 0.4843,
+            "connected_components": 14,
+            "average_hash": "00f8f0ffff00ffff"
+          }
+        ],
+        "pdf_findings": [
+          {
+            "path": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\pilot_cases\\multi_source_fusion_002\\env\\venue_brief.pdf",
+            "readable": true,
+            "page_count": 1,
+            "embedded_image_count": 1,
+            "extracted_text_length": 457,
+            "banned_tokens": [],
+            "render_count": 1
+          }
+        ]
+      },
+      "semantic_validation_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": []
+      },
+      "leakage_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "leaked_values": [],
+        "approximate_values": []
+      },
+      "recommended_fix": [
+        "No immediate fix required."
+      ],
+      "notes": []
+    },
+    {
+      "case_id": "multi_source_fusion_003",
+      "task_type": "multi_source_fusion",
+      "mode": "pilot",
+      "total_score": 100,
+      "max_score": 100,
+      "decision": "pass",
+      "failed_gates": [],
+      "gates": {
+        "schema_gate": {
+          "name": "schema_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "source_traceability_gate": {
+          "name": "source_traceability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "semantic_consistency_gate": {
+          "name": "semantic_consistency_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "visual_asset_quality_gate": {
+          "name": "visual_asset_quality_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "pdf_realism_gate": {
+          "name": "pdf_realism_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "no_answer_leakage_gate": {
+          "name": "no_answer_leakage_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "scoring_usability_gate": {
+          "name": "scoring_usability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        }
+      },
+      "warnings": [],
+      "per_dimension_scores": {
+        "structural_validity": 20,
+        "source_traceability": 15,
+        "semantic_grounding": 20,
+        "task_operation_depth": 10,
+        "visual_asset_quality": 15,
+        "scoring_usability": 10,
+        "anti_leakage_and_negative_coverage": 10
+      },
+      "visual_asset_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "image_metrics": [
+          {
+            "path": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\pilot_cases\\multi_source_fusion_003\\qa_render\\campaign_brief-1.png",
+            "readable": true,
+            "width": 1200,
+            "height": 1600,
+            "sample_width": 192,
+            "sample_height": 256,
+            "nonwhite_ratio": 0.8337,
+            "white_ratio": 0.1663,
+            "near_black_ratio": 0.0,
+            "entropy": 4.5755,
+            "edge_density": 0.1055,
+            "dominant_color_ratio": 0.4847,
+            "connected_components": 24,
+            "average_hash": "001f1fffff00ffff"
+          }
+        ],
+        "pdf_findings": [
+          {
+            "path": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\pilot_cases\\multi_source_fusion_003\\env\\campaign_brief.pdf",
+            "readable": true,
+            "page_count": 1,
+            "embedded_image_count": 1,
+            "extracted_text_length": 521,
+            "banned_tokens": [],
+            "render_count": 1
+          }
+        ]
+      },
+      "semantic_validation_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": []
+      },
+      "leakage_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "leaked_values": [],
+        "approximate_values": []
+      },
+      "recommended_fix": [
+        "No immediate fix required."
+      ],
+      "notes": []
+    },
+    {
+      "case_id": "procedure_instruction_001",
+      "task_type": "procedure_instruction",
+      "mode": "pilot",
+      "total_score": 100,
+      "max_score": 100,
+      "decision": "pass",
+      "failed_gates": [],
+      "gates": {
+        "schema_gate": {
+          "name": "schema_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "source_traceability_gate": {
+          "name": "source_traceability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "semantic_consistency_gate": {
+          "name": "semantic_consistency_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "visual_asset_quality_gate": {
+          "name": "visual_asset_quality_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "pdf_realism_gate": {
+          "name": "pdf_realism_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "no_answer_leakage_gate": {
+          "name": "no_answer_leakage_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "scoring_usability_gate": {
+          "name": "scoring_usability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        }
+      },
+      "warnings": [],
+      "per_dimension_scores": {
+        "structural_validity": 20,
+        "source_traceability": 15,
+        "semantic_grounding": 20,
+        "task_operation_depth": 10,
+        "visual_asset_quality": 15,
+        "scoring_usability": 10,
+        "anti_leakage_and_negative_coverage": 10
+      },
+      "visual_asset_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "image_metrics": [
+          {
+            "path": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\pilot_cases\\procedure_instruction_001\\env\\device_pairing_diagram.png",
+            "readable": true,
+            "width": 760,
+            "height": 560,
+            "sample_width": 256,
+            "sample_height": 189,
+            "nonwhite_ratio": 0.9988,
+            "white_ratio": 0.0012,
+            "near_black_ratio": 0.0,
+            "entropy": 3.8012,
+            "edge_density": 0.1657,
+            "dominant_color_ratio": 0.6635,
+            "connected_components": 1,
+            "average_hash": "00fffefefef24200"
+          },
+          {
+            "path": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\pilot_cases\\procedure_instruction_001\\qa_render\\user_manual-1.png",
+            "readable": true,
+            "width": 1200,
+            "height": 1600,
+            "sample_width": 192,
+            "sample_height": 256,
+            "nonwhite_ratio": 0.8577,
+            "white_ratio": 0.1423,
+            "near_black_ratio": 0.0061,
+            "entropy": 4.8563,
+            "edge_density": 0.1352,
+            "dominant_color_ratio": 0.4814,
+            "connected_components": 10,
+            "average_hash": "00f0707f3f7f7fff"
+          }
+        ],
+        "pdf_findings": [
+          {
+            "path": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\pilot_cases\\procedure_instruction_001\\env\\user_manual.pdf",
+            "readable": true,
+            "page_count": 1,
+            "embedded_image_count": 1,
+            "extracted_text_length": 613,
+            "banned_tokens": [],
+            "render_count": 1
+          }
+        ]
+      },
+      "semantic_validation_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": []
+      },
+      "leakage_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "leaked_values": [],
+        "approximate_values": []
+      },
+      "recommended_fix": [
+        "No immediate fix required."
+      ],
+      "notes": []
+    },
+    {
+      "case_id": "procedure_instruction_002",
+      "task_type": "procedure_instruction",
+      "mode": "pilot",
+      "total_score": 100,
+      "max_score": 100,
+      "decision": "pass",
+      "failed_gates": [],
+      "gates": {
+        "schema_gate": {
+          "name": "schema_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "source_traceability_gate": {
+          "name": "source_traceability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "semantic_consistency_gate": {
+          "name": "semantic_consistency_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "visual_asset_quality_gate": {
+          "name": "visual_asset_quality_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "pdf_realism_gate": {
+          "name": "pdf_realism_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "no_answer_leakage_gate": {
+          "name": "no_answer_leakage_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "scoring_usability_gate": {
+          "name": "scoring_usability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        }
+      },
+      "warnings": [],
+      "per_dimension_scores": {
+        "structural_validity": 20,
+        "source_traceability": 15,
+        "semantic_grounding": 20,
+        "task_operation_depth": 10,
+        "visual_asset_quality": 15,
+        "scoring_usability": 10,
+        "anti_leakage_and_negative_coverage": 10
+      },
+      "visual_asset_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "image_metrics": [
+          {
+            "path": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\pilot_cases\\procedure_instruction_002\\env\\safety_diagram.png",
+            "readable": true,
+            "width": 760,
+            "height": 560,
+            "sample_width": 256,
+            "sample_height": 189,
+            "nonwhite_ratio": 0.9737,
+            "white_ratio": 0.0263,
+            "near_black_ratio": 0.0,
+            "entropy": 3.7533,
+            "edge_density": 0.1636,
+            "dominant_color_ratio": 0.6581,
+            "connected_components": 1,
+            "average_hash": "00fffffffff70300"
+          },
+          {
+            "path": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\pilot_cases\\procedure_instruction_002\\qa_render\\safety_manual-1.png",
+            "readable": true,
+            "width": 1200,
+            "height": 1600,
+            "sample_width": 192,
+            "sample_height": 256,
+            "nonwhite_ratio": 0.8572,
+            "white_ratio": 0.1428,
+            "near_black_ratio": 0.0,
+            "entropy": 4.8548,
+            "edge_density": 0.1352,
+            "dominant_color_ratio": 0.3048,
+            "connected_components": 14,
+            "average_hash": "00f1f9ffffff0000"
+          }
+        ],
+        "pdf_findings": [
+          {
+            "path": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\pilot_cases\\procedure_instruction_002\\env\\safety_manual.pdf",
+            "readable": true,
+            "page_count": 1,
+            "embedded_image_count": 1,
+            "extracted_text_length": 432,
+            "banned_tokens": [],
+            "render_count": 1
+          }
+        ]
+      },
+      "semantic_validation_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": []
+      },
+      "leakage_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "leaked_values": [],
+        "approximate_values": []
+      },
+      "recommended_fix": [
+        "No immediate fix required."
+      ],
+      "notes": []
+    },
+    {
+      "case_id": "procedure_instruction_003",
+      "task_type": "procedure_instruction",
+      "mode": "pilot",
+      "total_score": 100,
+      "max_score": 100,
+      "decision": "pass",
+      "failed_gates": [],
+      "gates": {
+        "schema_gate": {
+          "name": "schema_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "source_traceability_gate": {
+          "name": "source_traceability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "semantic_consistency_gate": {
+          "name": "semantic_consistency_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "visual_asset_quality_gate": {
+          "name": "visual_asset_quality_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "pdf_realism_gate": {
+          "name": "pdf_realism_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "no_answer_leakage_gate": {
+          "name": "no_answer_leakage_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "scoring_usability_gate": {
+          "name": "scoring_usability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        }
+      },
+      "warnings": [],
+      "per_dimension_scores": {
+        "structural_validity": 20,
+        "source_traceability": 15,
+        "semantic_grounding": 20,
+        "task_operation_depth": 10,
+        "visual_asset_quality": 15,
+        "scoring_usability": 10,
+        "anti_leakage_and_negative_coverage": 10
+      },
+      "visual_asset_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "image_metrics": [
+          {
+            "path": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\pilot_cases\\procedure_instruction_003\\env\\lab_flow.png",
+            "readable": true,
+            "width": 760,
+            "height": 560,
+            "sample_width": 256,
+            "sample_height": 189,
+            "nonwhite_ratio": 0.9871,
+            "white_ratio": 0.0129,
+            "near_black_ratio": 0.0,
+            "entropy": 3.7984,
+            "edge_density": 0.1706,
+            "dominant_color_ratio": 0.6489,
+            "connected_components": 1,
+            "average_hash": "00ffffffffe70700"
+          },
+          {
+            "path": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\pilot_cases\\procedure_instruction_003\\qa_render\\lab_protocol-1.png",
+            "readable": true,
+            "width": 1200,
+            "height": 1600,
+            "sample_width": 192,
+            "sample_height": 256,
+            "nonwhite_ratio": 0.8387,
+            "white_ratio": 0.1613,
+            "near_black_ratio": 0.0,
+            "entropy": 4.2119,
+            "edge_density": 0.1042,
+            "dominant_color_ratio": 0.5999,
+            "connected_components": 19,
+            "average_hash": "000f0fff00ffffff"
+          }
+        ],
+        "pdf_findings": [
+          {
+            "path": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\pilot_cases\\procedure_instruction_003\\env\\lab_protocol.pdf",
+            "readable": true,
+            "page_count": 1,
+            "embedded_image_count": 1,
+            "extracted_text_length": 415,
+            "banned_tokens": [],
+            "render_count": 1
+          }
+        ]
+      },
+      "semantic_validation_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": []
+      },
+      "leakage_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "leaked_values": [],
+        "approximate_values": []
+      },
+      "recommended_fix": [
+        "No immediate fix required."
+      ],
+      "notes": []
+    },
+    {
+      "case_id": "relationship_diagram_001",
+      "task_type": "relationship_diagram",
+      "mode": "pilot",
+      "total_score": 100,
+      "max_score": 100,
+      "decision": "pass",
+      "failed_gates": [],
+      "gates": {
+        "schema_gate": {
+          "name": "schema_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "source_traceability_gate": {
+          "name": "source_traceability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "semantic_consistency_gate": {
+          "name": "semantic_consistency_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "visual_asset_quality_gate": {
+          "name": "visual_asset_quality_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "pdf_realism_gate": {
+          "name": "pdf_realism_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "no_answer_leakage_gate": {
+          "name": "no_answer_leakage_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "scoring_usability_gate": {
+          "name": "scoring_usability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        }
+      },
+      "warnings": [],
+      "per_dimension_scores": {
+        "structural_validity": 20,
+        "source_traceability": 15,
+        "semantic_grounding": 20,
+        "task_operation_depth": 10,
+        "visual_asset_quality": 15,
+        "scoring_usability": 10,
+        "anti_leakage_and_negative_coverage": 10
+      },
+      "visual_asset_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "image_metrics": [],
+        "pdf_findings": []
+      },
+      "semantic_validation_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": []
+      },
+      "leakage_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "leaked_values": [],
+        "approximate_values": []
+      },
+      "recommended_fix": [
+        "No immediate fix required."
+      ],
+      "notes": []
+    },
+    {
+      "case_id": "relationship_diagram_002",
+      "task_type": "relationship_diagram",
+      "mode": "pilot",
+      "total_score": 100,
+      "max_score": 100,
+      "decision": "pass",
+      "failed_gates": [],
+      "gates": {
+        "schema_gate": {
+          "name": "schema_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "source_traceability_gate": {
+          "name": "source_traceability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "semantic_consistency_gate": {
+          "name": "semantic_consistency_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "visual_asset_quality_gate": {
+          "name": "visual_asset_quality_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "pdf_realism_gate": {
+          "name": "pdf_realism_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "no_answer_leakage_gate": {
+          "name": "no_answer_leakage_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "scoring_usability_gate": {
+          "name": "scoring_usability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        }
+      },
+      "warnings": [],
+      "per_dimension_scores": {
+        "structural_validity": 20,
+        "source_traceability": 15,
+        "semantic_grounding": 20,
+        "task_operation_depth": 10,
+        "visual_asset_quality": 15,
+        "scoring_usability": 10,
+        "anti_leakage_and_negative_coverage": 10
+      },
+      "visual_asset_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "image_metrics": [],
+        "pdf_findings": []
+      },
+      "semantic_validation_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": []
+      },
+      "leakage_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "leaked_values": [],
+        "approximate_values": []
+      },
+      "recommended_fix": [
+        "No immediate fix required."
+      ],
+      "notes": []
+    },
+    {
+      "case_id": "relationship_diagram_003",
+      "task_type": "relationship_diagram",
+      "mode": "pilot",
+      "total_score": 100,
+      "max_score": 100,
+      "decision": "pass",
+      "failed_gates": [],
+      "gates": {
+        "schema_gate": {
+          "name": "schema_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "source_traceability_gate": {
+          "name": "source_traceability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "semantic_consistency_gate": {
+          "name": "semantic_consistency_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "visual_asset_quality_gate": {
+          "name": "visual_asset_quality_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "pdf_realism_gate": {
+          "name": "pdf_realism_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "no_answer_leakage_gate": {
+          "name": "no_answer_leakage_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "scoring_usability_gate": {
+          "name": "scoring_usability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        }
+      },
+      "warnings": [],
+      "per_dimension_scores": {
+        "structural_validity": 20,
+        "source_traceability": 15,
+        "semantic_grounding": 20,
+        "task_operation_depth": 10,
+        "visual_asset_quality": 15,
+        "scoring_usability": 10,
+        "anti_leakage_and_negative_coverage": 10
+      },
+      "visual_asset_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "image_metrics": [],
+        "pdf_findings": []
+      },
+      "semantic_validation_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": []
+      },
+      "leakage_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "leaked_values": [],
+        "approximate_values": []
+      },
+      "recommended_fix": [
+        "No immediate fix required."
+      ],
+      "notes": []
+    },
+    {
+      "case_id": "state_change_001",
+      "task_type": "state_change",
+      "mode": "pilot",
+      "total_score": 100,
+      "max_score": 100,
+      "decision": "pass",
+      "failed_gates": [],
+      "gates": {
+        "schema_gate": {
+          "name": "schema_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "source_traceability_gate": {
+          "name": "source_traceability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "semantic_consistency_gate": {
+          "name": "semantic_consistency_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "visual_asset_quality_gate": {
+          "name": "visual_asset_quality_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "pdf_realism_gate": {
+          "name": "pdf_realism_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "no_answer_leakage_gate": {
+          "name": "no_answer_leakage_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "scoring_usability_gate": {
+          "name": "scoring_usability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        }
+      },
+      "warnings": [],
+      "per_dimension_scores": {
+        "structural_validity": 20,
+        "source_traceability": 15,
+        "semantic_grounding": 20,
+        "task_operation_depth": 10,
+        "visual_asset_quality": 15,
+        "scoring_usability": 10,
+        "anti_leakage_and_negative_coverage": 10
+      },
+      "visual_asset_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "image_metrics": [],
+        "pdf_findings": []
+      },
+      "semantic_validation_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": []
+      },
+      "leakage_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "leaked_values": [],
+        "approximate_values": []
+      },
+      "recommended_fix": [
+        "No immediate fix required."
+      ],
+      "notes": []
+    },
+    {
+      "case_id": "state_change_002",
+      "task_type": "state_change",
+      "mode": "pilot",
+      "total_score": 100,
+      "max_score": 100,
+      "decision": "pass",
+      "failed_gates": [],
+      "gates": {
+        "schema_gate": {
+          "name": "schema_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "source_traceability_gate": {
+          "name": "source_traceability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "semantic_consistency_gate": {
+          "name": "semantic_consistency_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "visual_asset_quality_gate": {
+          "name": "visual_asset_quality_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "pdf_realism_gate": {
+          "name": "pdf_realism_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "no_answer_leakage_gate": {
+          "name": "no_answer_leakage_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "scoring_usability_gate": {
+          "name": "scoring_usability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        }
+      },
+      "warnings": [],
+      "per_dimension_scores": {
+        "structural_validity": 20,
+        "source_traceability": 15,
+        "semantic_grounding": 20,
+        "task_operation_depth": 10,
+        "visual_asset_quality": 15,
+        "scoring_usability": 10,
+        "anti_leakage_and_negative_coverage": 10
+      },
+      "visual_asset_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "image_metrics": [],
+        "pdf_findings": []
+      },
+      "semantic_validation_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": []
+      },
+      "leakage_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "leaked_values": [],
+        "approximate_values": []
+      },
+      "recommended_fix": [
+        "No immediate fix required."
+      ],
+      "notes": []
+    },
+    {
+      "case_id": "state_change_003",
+      "task_type": "state_change",
+      "mode": "pilot",
+      "total_score": 100,
+      "max_score": 100,
+      "decision": "pass",
+      "failed_gates": [],
+      "gates": {
+        "schema_gate": {
+          "name": "schema_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "source_traceability_gate": {
+          "name": "source_traceability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "semantic_consistency_gate": {
+          "name": "semantic_consistency_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "visual_asset_quality_gate": {
+          "name": "visual_asset_quality_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "pdf_realism_gate": {
+          "name": "pdf_realism_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "no_answer_leakage_gate": {
+          "name": "no_answer_leakage_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        },
+        "scoring_usability_gate": {
+          "name": "scoring_usability_gate",
+          "passed": true,
+          "critical": true,
+          "reason": ""
+        }
+      },
+      "warnings": [],
+      "per_dimension_scores": {
+        "structural_validity": 20,
+        "source_traceability": 15,
+        "semantic_grounding": 20,
+        "task_operation_depth": 10,
+        "visual_asset_quality": 15,
+        "scoring_usability": 10,
+        "anti_leakage_and_negative_coverage": 10
+      },
+      "visual_asset_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "image_metrics": [],
+        "pdf_findings": []
+      },
+      "semantic_validation_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": []
+      },
+      "leakage_findings": {
+        "findings": [],
+        "warnings": [],
+        "severe": [],
+        "leaked_values": [],
+        "approximate_values": []
+      },
+      "recommended_fix": [
+        "No immediate fix required."
+      ],
+      "notes": []
+    }
+  ]
+}

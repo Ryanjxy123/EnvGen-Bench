@@ -1,0 +1,88 @@
+{
+  "case_id": "relationship_diagram_001",
+  "task_type": "relationship_diagram",
+  "facts": [
+    {
+      "id": "core_entities",
+      "description": "Core checkout entities that should appear in the diagram.",
+      "source": "env/architecture_notes.md + env/dependency_config.yaml",
+      "importance": "critical",
+      "expected_value": [
+        "Web App",
+        "Auth Service",
+        "User Database",
+        "Checkout API",
+        "Inventory Service",
+        "Payment Gateway",
+        "Order Queue",
+        "Fulfillment Worker",
+        "Shipment Database"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "checkout_edges",
+      "description": "Required checkout flow edges.",
+      "source": "env/architecture_notes.md + env/dependency_config.yaml",
+      "importance": "critical",
+      "expected_value": [
+        [
+          "Web App",
+          "Auth Service"
+        ],
+        [
+          "Auth Service",
+          "User Database"
+        ],
+        [
+          "Web App",
+          "Checkout API"
+        ],
+        [
+          "Checkout API",
+          "Inventory Service"
+        ],
+        [
+          "Checkout API",
+          "Payment Gateway"
+        ],
+        [
+          "Checkout API",
+          "Order Queue"
+        ],
+        [
+          "Fulfillment Worker",
+          "Order Queue"
+        ],
+        [
+          "Fulfillment Worker",
+          "Shipment Database"
+        ]
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "relation_types",
+      "description": "The diagram should distinguish or clearly imply calls, reads, publishes, consumes, and writes where relevant.",
+      "source": "env/architecture_notes.md + env/dependency_config.yaml",
+      "importance": "major",
+      "expected_value": [
+        "calls",
+        "reads",
+        "publishes",
+        "consumes",
+        "writes"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "exclude_recommendation_path",
+      "description": "Recommendation Service exists but should not be shown as part of checkout flow.",
+      "source": "env/architecture_notes.md",
+      "importance": "major",
+      "expected_value": "Recommendation Service reads User Database and Product Catalog but is not checkout path.",
+      "must_not_appear_in_image": true
+    }
+  ],
+  "calculation_notes": "Use architecture_notes.md for prose relationships and dependency_config.yaml for layer and relation confirmation. The checkout path excludes Recommendation Service even though it has valid dependencies elsewhere."
+}

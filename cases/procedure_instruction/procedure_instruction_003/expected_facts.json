@@ -1,0 +1,45 @@
+{
+  "case_id": "procedure_instruction_003",
+  "task_type": "procedure_instruction",
+  "facts": [
+    {
+      "id": "normal_steps",
+      "description": "Normal workflow steps in order.",
+      "source": "env/lab_schedule.csv + env/lab_protocol.pdf",
+      "importance": "critical",
+      "expected_value": [
+        "Label sample tubes",
+        "Add buffer solution",
+        "Invert gently ten times",
+        "Rest at room temperature",
+        "Record color band result"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "gentle_inversion",
+      "description": "Caution says invert gently, not shake vigorously.",
+      "source": "env/lab_protocol.pdf",
+      "importance": "critical",
+      "expected_value": "Invert gently ten times",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "exclude_recovery",
+      "description": "Heat shock recovery is not a normal step.",
+      "source": "env/lab_schedule.csv + env/lab_protocol.pdf",
+      "importance": "major",
+      "expected_value": "Heat shock recovery",
+      "must_not_appear_in_image": true
+    },
+    {
+      "id": "wrong_action",
+      "description": "Do not say shake vigorously.",
+      "source": "env/lab_protocol.pdf",
+      "importance": "major",
+      "expected_value": "shake vigorously",
+      "must_not_appear_in_image": true
+    }
+  ],
+  "calculation_notes": "Use rows marked normal=yes and preserve numeric phase order. Protocol caution replaces any generic shaking language."
+}

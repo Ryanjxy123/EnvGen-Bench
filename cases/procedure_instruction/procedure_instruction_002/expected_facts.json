@@ -1,0 +1,45 @@
+{
+  "case_id": "procedure_instruction_002",
+  "task_type": "procedure_instruction",
+  "facts": [
+    {
+      "id": "step_order",
+      "description": "Correct 5-step setup order.",
+      "source": "env/safety_manual.pdf + env/quick_card.txt",
+      "importance": "critical",
+      "expected_value": [
+        "Ventilate",
+        "Insert two AA batteries",
+        "Wait for green ready light",
+        "Press Test once",
+        "Mount above prep station"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "ventilation_first",
+      "description": "Ventilation must happen before testing.",
+      "source": "env/safety_manual.pdf + env/quick_card.txt",
+      "importance": "critical",
+      "expected_value": "Ventilation before Press Test",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "exclude_bypass",
+      "description": "Bypass calibration is support-only.",
+      "source": "env/safety_manual.pdf",
+      "importance": "major",
+      "expected_value": "Bypass calibration",
+      "must_not_appear_in_image": true
+    },
+    {
+      "id": "exclude_wrong_order",
+      "description": "Do not test before green ready light.",
+      "source": "env/safety_manual.pdf + env/quick_card.txt",
+      "importance": "major",
+      "expected_value": "Press Test before green ready light",
+      "must_not_appear_in_image": true
+    }
+  ],
+  "calculation_notes": "Combine manual and quick card. Preserve normal setup order and exclude support-only bypass calibration."
+}

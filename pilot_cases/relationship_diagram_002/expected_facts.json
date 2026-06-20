@@ -1,0 +1,79 @@
+{
+  "case_id": "relationship_diagram_002",
+  "task_type": "relationship_diagram",
+  "facts": [
+    {
+      "id": "core_nodes",
+      "description": "Core intake nodes.",
+      "source": "env/vendor_flow.md + env/flow_config.yaml",
+      "importance": "critical",
+      "expected_value": [
+        "Supplier Portal",
+        "Intake API",
+        "Compliance Service",
+        "Vendor Database",
+        "Onboarding Queue",
+        "Onboarding Worker",
+        "Ticketing System"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "directed_edges",
+      "description": "Directed intake flow relationships.",
+      "source": "env/vendor_flow.md",
+      "importance": "critical",
+      "expected_value": [
+        [
+          "Supplier Portal",
+          "Intake API"
+        ],
+        [
+          "Intake API",
+          "Compliance Service"
+        ],
+        [
+          "Intake API",
+          "Vendor Database"
+        ],
+        [
+          "Intake API",
+          "Onboarding Queue"
+        ],
+        [
+          "Onboarding Worker",
+          "Onboarding Queue"
+        ],
+        [
+          "Onboarding Worker",
+          "Ticketing System"
+        ]
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "relation_types",
+      "description": "Relationship types should be represented or implied.",
+      "source": "env/vendor_flow.md",
+      "importance": "major",
+      "expected_value": [
+        "sends",
+        "validates",
+        "writes",
+        "publishes",
+        "consumes",
+        "creates"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "exclude_analytics",
+      "description": "Analytics Export is unrelated to intake path.",
+      "source": "env/vendor_flow.md + env/flow_config.yaml",
+      "importance": "major",
+      "expected_value": "Analytics Export",
+      "must_not_appear_in_image": true
+    }
+  ],
+  "calculation_notes": "Use vendor_flow.md for edges and flow_config.yaml for node confirmation. Analytics Export is a distractor."
+}

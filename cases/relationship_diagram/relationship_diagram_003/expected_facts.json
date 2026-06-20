@@ -1,0 +1,62 @@
+{
+  "case_id": "relationship_diagram_003",
+  "task_type": "relationship_diagram",
+  "facts": [
+    {
+      "id": "reporting_edges",
+      "description": "Solid reporting lines.",
+      "source": "env/team_contacts.csv",
+      "importance": "critical",
+      "expected_value": [
+        [
+          "Ari Patel",
+          "Mina Torres"
+        ],
+        [
+          "Jun Park",
+          "Ari Patel"
+        ],
+        [
+          "Leah Stone",
+          "Ari Patel"
+        ]
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "advisory_edge",
+      "description": "Dotted advisory relationship.",
+      "source": "env/team_contacts.csv + env/diagram_rules.md",
+      "importance": "critical",
+      "expected_value": [
+        "Leah Stone",
+        "Community Advisory Board",
+        "dotted advisory"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "core_people",
+      "description": "Core people and advisory group.",
+      "source": "env/team_contacts.csv",
+      "importance": "major",
+      "expected_value": [
+        "Ari Patel",
+        "Mina Torres",
+        "Jun Park",
+        "Leah Stone",
+        "Community Advisory Board"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "wrong_manager",
+      "description": "Community Advisory Board should not be shown as Leah's manager.",
+      "source": "env/diagram_rules.md",
+      "importance": "major",
+      "expected_value": "Community Advisory Board as manager",
+      "must_not_appear_in_image": true
+    }
+  ],
+  "calculation_notes": "Use reports_to for solid lines and advisory for dotted lines. Advisory board is not a management node."
+}

@@ -1,0 +1,50 @@
+{
+  "case_id": "document_brief_003",
+  "task_type": "document_brief",
+  "facts": [
+    {
+      "id": "product_name",
+      "description": "Product name.",
+      "source": "env/product_brief.pdf",
+      "importance": "critical",
+      "expected_value": "AirSense Lite",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "supported_claims",
+      "description": "Supported product claims.",
+      "source": "env/product_brief.pdf",
+      "importance": "critical",
+      "expected_value": [
+        "particulate trend categories",
+        "18 hours",
+        "quiet wall or shelf placement"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "audience_cta",
+      "description": "Audience and CTA.",
+      "source": "env/product_brief.pdf + env/sales_note.txt",
+      "importance": "critical",
+      "expected_value": [
+        "School facility teams and office managers",
+        "Request a classroom pilot kit"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "unsupported_claims",
+      "description": "Unsupported claims must not appear.",
+      "source": "env/product_brief.pdf + env/sales_note.txt",
+      "importance": "major",
+      "expected_value": [
+        "hospital certification",
+        "outdoor weather forecasting",
+        "allergen diagnosis"
+      ],
+      "must_not_appear_in_image": true
+    }
+  ],
+  "calculation_notes": "Extract and summarize the product brief. Highlight supported claims and CTA from the document; the panel image is visual orientation, not evidence for extra claims."
+}

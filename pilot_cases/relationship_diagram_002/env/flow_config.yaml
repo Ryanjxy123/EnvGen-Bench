@@ -1,0 +1,10 @@
+nodes:
+  supplier_portal: frontend
+  intake_api: service
+  compliance_service: service
+  vendor_database: datastore
+  onboarding_queue: queue
+  onboarding_worker: worker
+  ticketing_system: external
+  analytics_export: batch
+exclude_from_intake: [analytics_export]

@@ -1,0 +1,46 @@
+{
+  "case_id": "procedure_instruction_001",
+  "task_type": "procedure_instruction",
+  "facts": [
+    {
+      "id": "step_order",
+      "description": "Correct setup steps in order.",
+      "source": "env/user_manual.pdf + env/quick_start_notes.txt",
+      "importance": "critical",
+      "expected_value": [
+        "Charge device for at least 20 minutes",
+        "Install the LumaHome app",
+        "Power on until the blue light pulses twice",
+        "Scan the pairing code in the app",
+        "Name the device and confirm room",
+        "Run the first calibration"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "first_charge_requirement",
+      "description": "The first charge requirement should be included before pairing begins.",
+      "source": "env/user_manual.pdf + env/quick_start_notes.txt",
+      "importance": "critical",
+      "expected_value": "Charge for at least 20 minutes before setup.",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "pairing_cue",
+      "description": "The blue indicator light pulsing twice is the cue before app pairing.",
+      "source": "env/user_manual.pdf + env/quick_start_notes.txt",
+      "importance": "major",
+      "expected_value": "Blue indicator light pulses twice before scanning the pairing code.",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "avoid_reset",
+      "description": "Reset pin is troubleshooting-only and should not be a normal setup step.",
+      "source": "env/quick_start_notes.txt",
+      "importance": "major",
+      "expected_value": "Do not press the reset pin unless support asks you to do so.",
+      "must_not_appear_in_image": true
+    }
+  ],
+  "calculation_notes": "Combine the manual's setup procedure with quick_start_notes.txt. Preserve the normal setup sequence, include first-charge and blue-light readiness cues, and exclude reset-pin troubleshooting as a main step."
+}

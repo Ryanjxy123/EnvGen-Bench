@@ -1,0 +1,50 @@
+{
+  "case_id": "state_change_003",
+  "task_type": "state_change",
+  "facts": [
+    {
+      "id": "active_session",
+      "description": "Active session title.",
+      "source": "env/session_status.csv",
+      "importance": "critical",
+      "expected_value": "Civic Data Lab",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "current_details",
+      "description": "Current session details.",
+      "source": "env/agenda_diff.md + env/session_status.csv",
+      "importance": "critical",
+      "expected_value": [
+        "May 12, 2026",
+        "3:30 PM",
+        "Room 310",
+        "Dr. Nia Okafor",
+        "Applied Data Practice"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "stale_details",
+      "description": "Old/cancelled details must not appear.",
+      "source": "env/agenda_original.md + env/session_status.csv",
+      "importance": "critical",
+      "expected_value": [
+        "2:00 PM",
+        "Room 204",
+        "Elena Ruiz",
+        "Open Data Clinic"
+      ],
+      "must_not_appear_in_image": true
+    },
+    {
+      "id": "active_gate",
+      "description": "Use only the active row.",
+      "source": "env/session_status.csv",
+      "importance": "critical",
+      "expected_value": "status active",
+      "must_appear_in_image": false
+    }
+  ],
+  "calculation_notes": "Use session_status.csv as active/cancelled gate; agenda_diff.md resolves changed room, speaker, time, and track."
+}

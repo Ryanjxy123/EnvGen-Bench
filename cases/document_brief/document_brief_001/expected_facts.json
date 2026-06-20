@@ -1,0 +1,64 @@
+{
+  "case_id": "document_brief_001",
+  "task_type": "document_brief",
+  "facts": [
+    {
+      "id": "course_title",
+      "description": "Course title.",
+      "source": "env/course_brief.pdf",
+      "importance": "critical",
+      "expected_value": "Data Stories for Climate Action",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "instructor",
+      "description": "Instructor name.",
+      "source": "env/instructor_bio.md",
+      "importance": "critical",
+      "expected_value": "Dr. Maya Chen",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "schedule",
+      "description": "Course schedule.",
+      "source": "env/course_brief.pdf",
+      "importance": "major",
+      "expected_value": "Tuesdays and Thursdays, April 8-24, 2026, 6:30-8:00 PM",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "audience",
+      "description": "Target audience.",
+      "source": "env/course_brief.pdf",
+      "importance": "major",
+      "expected_value": "city staff, nonprofit analysts, and community organizers",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "three_highlights",
+      "description": "Three supported course highlights.",
+      "source": "env/course_brief.pdf",
+      "importance": "critical",
+      "expected_value": [
+        "turn raw climate datasets into public-facing narratives",
+        "build accessible charts for nontechnical audiences",
+        "shape a one-page action brief"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "unsupported_details",
+      "description": "Do not invent a venue, certificate, tuition amount, or instructor affiliation that is not present in the env files.",
+      "source": "env/course_brief.pdf + env/instructor_bio.md",
+      "importance": "major",
+      "expected_value": [
+        "venue",
+        "certificate",
+        "tuition amount",
+        "unsupported affiliation"
+      ],
+      "must_not_appear_in_image": true
+    }
+  ],
+  "calculation_notes": "Extract poster facts from course_brief.pdf and instructor_bio.md. Use exactly three highlights from the Learning Highlights section; do not turn registration cap or generic overview text into a highlight unless a revision explicitly asks for it."
+}

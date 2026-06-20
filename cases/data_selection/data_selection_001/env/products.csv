@@ -1,0 +1,11 @@
+product_id,name,category,status,inventory,discount_pct,price_usd,campaign_priority
+P101,Auralite Desk Lamp,Home,active,31,28,64.0,74
+P102,NovaSound Mini Speaker,Electronics,active,42,25,79.0,91
+P103,PulseFit Smart Band,Electronics,active,0,35,59.0,88
+P104,OrbitCharge Pad,Electronics,active,18,30,49.0,95
+P105,TravelNest Pillow,Travel,active,62,24,34.0,70
+P106,VisionDock 4K Hub,Electronics,active,27,22,119.0,97
+P107,ClearCall Webcam,Electronics,retired,15,40,89.0,99
+P108,LiteKeys Keyboard,Electronics,active,44,18,69.0,84
+P109,BrewEase Kettle,Kitchen,active,20,33,54.0,79
+P110,FocusBuds Air,Electronics,active,33,27,99.0,89

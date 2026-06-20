@@ -1,0 +1,51 @@
+{
+  "case_id": "design_specification_002",
+  "task_type": "design_specification",
+  "facts": [
+    {
+      "id": "required_copy",
+      "description": "Required exhibit copy.",
+      "source": "env/style_tokens.json",
+      "importance": "critical",
+      "expected_value": [
+        "Tides of Memory",
+        "A harbor history exhibition",
+        "Opening weekend reservations"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "palette",
+      "description": "Required palette.",
+      "source": "env/exhibit_style_guide.pdf",
+      "importance": "critical",
+      "expected_value": [
+        "#12355B",
+        "#FFF8EA",
+        "#B36A2E"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "mark_position",
+      "description": "Museum mark placement.",
+      "source": "env/exhibit_style_guide.pdf + env/style_tokens.json",
+      "importance": "critical",
+      "expected_value": "upper-left",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "forbidden_elements",
+      "description": "Forbidden visual elements.",
+      "source": "env/exhibit_style_guide.pdf",
+      "importance": "critical",
+      "expected_value": [
+        "neon colors",
+        "cartoon sea animals",
+        "distressed horror typography"
+      ],
+      "must_not_appear_in_image": true
+    }
+  ],
+  "calculation_notes": "Apply style_tokens.json for copy and the style guide PDF for brand constraints, palette, layout, logo placement, and forbidden elements."
+}

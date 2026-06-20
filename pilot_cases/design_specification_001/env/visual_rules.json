@@ -1,0 +1,20 @@
+{
+  "brand": "HelioGrid",
+  "required_palette": {
+    "primary": "#0B5FFF",
+    "secondary": "#FFFFFF",
+    "accent": "#00A887"
+  },
+  "forbidden": [
+    "red background",
+    "cartoon mascot",
+    "handwritten fonts",
+    "logo in lower-left corner"
+  ],
+  "layout": {
+    "title_zone": "top",
+    "logo_position": "upper-right",
+    "required_aspect_ratio": "1:1"
+  },
+  "tone": "clean, technical, optimistic"
+}

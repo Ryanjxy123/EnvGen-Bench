@@ -1,0 +1,47 @@
+{
+  "case_id": "state_change_002",
+  "task_type": "state_change",
+  "facts": [
+    {
+      "id": "active_route",
+      "description": "Active route to advertise.",
+      "source": "env/active_routes.csv",
+      "importance": "critical",
+      "expected_value": "Route 18",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "latest_dates",
+      "description": "Latest detour dates.",
+      "source": "env/amendments.md + env/active_routes.csv",
+      "importance": "critical",
+      "expected_value": "July 3-8, 2026",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "latest_path_stop",
+      "description": "Latest path and temporary stop.",
+      "source": "env/amendments.md + env/active_routes.csv",
+      "importance": "critical",
+      "expected_value": [
+        "Cedar Avenue",
+        "Cedar Library"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "stale_details",
+      "description": "Superseded or cancelled details must not appear.",
+      "source": "env/old_notice.md + env/amendments.md + env/active_routes.csv",
+      "importance": "critical",
+      "expected_value": [
+        "Pine Street",
+        "Old Mill",
+        "Express shuttle",
+        "Route 22"
+      ],
+      "must_not_appear_in_image": true
+    }
+  ],
+  "calculation_notes": "Use active_routes.csv to select active Route 18, then amendments.md for latest dates/path/stop. Old notice and Route 22 are distractors."
+}

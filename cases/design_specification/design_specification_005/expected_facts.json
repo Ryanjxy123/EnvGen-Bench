@@ -1,0 +1,55 @@
+{
+  "case_id": "design_specification_005",
+  "task_type": "design_specification",
+  "facts": [
+    {
+      "id": "product_name",
+      "description": "Product name.",
+      "source": "env/device_launch.pdf",
+      "importance": "critical",
+      "expected_value": "QuietDock Mini",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "tagline",
+      "description": "Tagline.",
+      "source": "env/device_launch.pdf",
+      "importance": "critical",
+      "expected_value": "Charge neatly where work happens.",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "palette",
+      "description": "Palette.",
+      "source": "env/device_launch.pdf",
+      "importance": "critical",
+      "expected_value": [
+        "#1C2541",
+        "#F5F7FA",
+        "#5BC0BE"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "layout_rule",
+      "description": "Layout rule.",
+      "source": "env/device_launch.pdf",
+      "importance": "major",
+      "expected_value": "product name above callout strip",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "forbidden",
+      "description": "Forbidden visuals.",
+      "source": "env/device_launch.pdf",
+      "importance": "critical",
+      "expected_value": [
+        "red warning theme",
+        "messy cable pile",
+        "cartoon robot"
+      ],
+      "must_not_appear_in_image": true
+    }
+  ],
+  "calculation_notes": "Use the PDF and supporting notes; preserve required inclusions and exclusions."
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "V501",
+    "name": "Morning Check-in",
+    "day": "Saturday",
+    "trained": true,
+    "capacity": 3,
+    "priority": 88
+  },
+  {
+    "id": "V502",
+    "name": "Garden Guide",
+    "day": "Sunday",
+    "trained": true,
+    "capacity": 4,
+    "priority": 95
+  },
+  {
+    "id": "V503",
+    "name": "Kids Crafts",
+    "day": "Sunday",
+    "trained": false,
+    "capacity": 5,
+    "priority": 91
+  },
+  {
+    "id": "V504",
+    "name": "Compost Demo",
+    "day": "Sunday",
+    "trained": true,
+    "capacity": 2,
+    "priority": 90
+  },
+  {
+    "id": "V505",
+    "name": "Evening Cleanup",
+    "day": "Sunday",
+    "trained": true,
+    "capacity": 0,
+    "priority": 99
+  }
+]

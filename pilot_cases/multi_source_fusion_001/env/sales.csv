@@ -1,0 +1,4 @@
+product_id,product_name,month,units_sold,revenue_usd
+HG-PULSE,HelioGrid Pulse,2026-05,1840,552000
+HG-MINI,HelioGrid Mini,2026-05,1210,302500
+HG-SENSE,HelioGrid Sense,2026-05,1430,214500

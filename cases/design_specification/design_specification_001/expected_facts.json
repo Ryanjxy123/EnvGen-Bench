@@ -1,0 +1,63 @@
+{
+  "case_id": "design_specification_001",
+  "task_type": "design_specification",
+  "facts": [
+    {
+      "id": "product_name",
+      "description": "Product name to promote.",
+      "source": "env/launch_copy.md",
+      "importance": "critical",
+      "expected_value": "HelioGrid Pulse",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "launch_message",
+      "description": "Required launch message.",
+      "source": "env/launch_copy.md",
+      "importance": "critical",
+      "expected_value": "Store solar power for the moments that matter.",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "palette",
+      "description": "Required palette is blue, white, and green accent.",
+      "source": "env/visual_rules.json + env/brand_guide.pdf",
+      "importance": "critical",
+      "expected_value": [
+        "#0B5FFF",
+        "#FFFFFF",
+        "#00A887"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "logo_position",
+      "description": "Logo should be upper-right.",
+      "source": "env/visual_rules.json",
+      "importance": "major",
+      "expected_value": "upper-right",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "approved_logo_asset",
+      "description": "Use the approved brand visual style documented in the PDF guide; no standalone synthetic logo/reference PNG is agent-visible.",
+      "source": "env/brand_guide.pdf",
+      "importance": "major",
+      "expected_value": "approved brand visual style from the brand guide",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "forbidden_elements",
+      "description": "Forbidden elements must not appear.",
+      "source": "env/visual_rules.json + env/brand_guide.pdf",
+      "importance": "critical",
+      "expected_value": [
+        "red background",
+        "cartoon mascot",
+        "handwritten fonts"
+      ],
+      "must_not_appear_in_image": true
+    }
+  ],
+  "calculation_notes": "Apply visual_rules.json as the machine-readable constraint source and use brand_guide.pdf to confirm the same palette, logo placement, approved logo asset, and forbidden elements. launch_copy.md provides required text."
+}

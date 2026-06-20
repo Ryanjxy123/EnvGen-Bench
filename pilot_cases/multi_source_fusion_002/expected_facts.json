@@ -1,0 +1,65 @@
+{
+  "case_id": "multi_source_fusion_002",
+  "task_type": "multi_source_fusion",
+  "facts": [
+    {
+      "id": "best_day",
+      "description": "Best visit day based on sunny weather, high temperature, and low rain.",
+      "source": "env/weather_summary.csv",
+      "importance": "critical",
+      "expected_value": "Sunday",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "weather_reason",
+      "description": "Weather reason for selected day.",
+      "source": "env/weather_summary.csv",
+      "importance": "critical",
+      "expected_value": "sunny, 76 F, 10% rain",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "venue_tone",
+      "description": "Venue and audience tone.",
+      "source": "env/venue_brief.pdf + env/audience.json",
+      "importance": "major",
+      "expected_value": [
+        "outdoor garden route",
+        "fresh, relaxed, outdoorsy"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "web_required_size",
+      "description": "Instagram size/aspect guidance must come from web.",
+      "source": "web",
+      "importance": "critical",
+      "expected_value": "official current feed sizing guidance from Instagram or Meta",
+      "must_appear_in_image": false
+    },
+    {
+      "id": "wrong_claims",
+      "description": "Forbidden venue claims must not appear.",
+      "source": "env/venue_brief.pdf + env/audience.json",
+      "importance": "major",
+      "expected_value": [
+        "indoor galleries",
+        "evening concerts",
+        "nightlife"
+      ],
+      "must_not_appear_in_image": true
+    }
+  ],
+  "calculation_notes": "Select the best day from weather_summary.csv: Sunday is sunny with highest temp and low rain. Web is only for platform size.",
+  "web_facts": [
+    {
+      "description": "Current recommended Instagram feed image size or aspect ratio.",
+      "required_for_case": true,
+      "acceptable_sources": [
+        "Instagram help documentation",
+        "Meta business/help documentation",
+        "current reputable social media specification reference"
+      ]
+    }
+  ]
+}

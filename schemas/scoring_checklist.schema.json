@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "scoring_checklist.schema.json",
+  "title": "Benchmark Case Scoring Checklist",
+  "type": "object",
+  "required": [
+    "case_id",
+    "dimensions"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*_[0-9]{3}$"
+    },
+    "dimensions": {
+      "type": "object",
+      "required": [
+        "task_completion",
+        "grounded_requirement_satisfaction",
+        "information_structuring",
+        "visual_rendering_quality"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "task_completion": {
+          "$ref": "#/$defs/dimension"
+        },
+        "grounded_requirement_satisfaction": {
+          "$ref": "#/$defs/dimension"
+        },
+        "information_structuring": {
+          "$ref": "#/$defs/dimension"
+        },
+        "visual_rendering_quality": {
+          "$ref": "#/$defs/dimension"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "dimension": {
+      "type": "object",
+      "required": [
+        "weight",
+        "items"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "weight": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "items": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "check",
+              "points"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z0-9_]+$"
+              },
+              "check": {
+                "type": "string",
+                "minLength": 5
+              },
+              "points": {
+                "type": "number",
+                "minimum": 0
+              },
+              "scoring_hint": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

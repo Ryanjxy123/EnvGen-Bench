@@ -1,0 +1,63 @@
+{
+  "case_id": "data_selection_001",
+  "task_type": "data_selection",
+  "facts": [
+    {
+      "id": "selected_products",
+      "description": "The eligible top 3 products are selected after filtering and priority sorting.",
+      "source": "env/products.csv + env/campaign_rules.json",
+      "importance": "critical",
+      "expected_value": [
+        "P106",
+        "P104",
+        "P102"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "ranking_rule",
+      "description": "Eligible products must follow campaign priority descending after filtering.",
+      "source": "env/campaign_rules.json",
+      "importance": "critical",
+      "expected_value": "P106 before P104 before P102",
+      "must_appear_in_image": false
+    },
+    {
+      "id": "selected_product_display_values",
+      "description": "Selected product display names, prices, and discount labels.",
+      "source": "env/products.csv",
+      "importance": "critical",
+      "expected_value": [
+        "VisionDock 4K Hub: $119.00, 22% off",
+        "OrbitCharge Pad: $49.00, 30% off",
+        "NovaSound Mini Speaker: $79.00, 25% off"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "excluded_inventory",
+      "description": "PulseFit Smart Band is excluded because inventory is 0.",
+      "source": "env/products.csv",
+      "importance": "major",
+      "expected_value": "P103",
+      "must_not_appear_in_image": true
+    },
+    {
+      "id": "excluded_status",
+      "description": "ClearCall Webcam is excluded because status is retired.",
+      "source": "env/products.csv",
+      "importance": "major",
+      "expected_value": "P107",
+      "must_not_appear_in_image": true
+    },
+    {
+      "id": "excluded_discount",
+      "description": "LiteKeys Keyboard is excluded because its discount is not greater than 20%.",
+      "source": "env/products.csv",
+      "importance": "major",
+      "expected_value": "P108",
+      "must_not_appear_in_image": true
+    }
+  ],
+  "calculation_notes": "Filter category=Electronics, status=active, inventory>0, discount_pct>20; sort by campaign_priority desc then discount_pct desc; take top 3."
+}

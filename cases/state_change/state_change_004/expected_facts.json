@@ -1,0 +1,51 @@
+{
+  "case_id": "state_change_004",
+  "task_type": "state_change",
+  "facts": [
+    {
+      "id": "active_event",
+      "description": "Active event.",
+      "source": "env/status.csv",
+      "importance": "critical",
+      "expected_value": "Farmers Market Pop-up",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "current_date",
+      "description": "Latest date.",
+      "source": "env/updates.md",
+      "importance": "critical",
+      "expected_value": "June 11",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "current_location",
+      "description": "Latest location.",
+      "source": "env/updates.md",
+      "importance": "critical",
+      "expected_value": "North Pavilion",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "current_sponsor",
+      "description": "Latest sponsor.",
+      "source": "env/updates.md",
+      "importance": "major",
+      "expected_value": "Local Roots Co-op",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "stale_details",
+      "description": "Superseded details.",
+      "source": "env/old_notice.md + env/updates.md",
+      "importance": "major",
+      "expected_value": [
+        "June 4",
+        "East Lawn",
+        "Green Crate"
+      ],
+      "must_not_appear_in_image": true
+    }
+  ],
+  "calculation_notes": "Use status.csv to select active event and updates.md for latest details."
+}

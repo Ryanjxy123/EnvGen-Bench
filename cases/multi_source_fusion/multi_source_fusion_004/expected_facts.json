@@ -1,0 +1,65 @@
+{
+  "case_id": "multi_source_fusion_004",
+  "task_type": "multi_source_fusion",
+  "facts": [
+    {
+      "id": "winning_offer",
+      "description": "Offer to promote.",
+      "source": "env/season_brief.pdf",
+      "importance": "critical",
+      "expected_value": "Sunset Garden Pass",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "supporting_points",
+      "description": "Selling points.",
+      "source": "env/season_brief.pdf",
+      "importance": "critical",
+      "expected_value": [
+        "evening garden access",
+        "guided herb walk",
+        "porch concert seating"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "audience_tone",
+      "description": "Tone.",
+      "source": "env/season_brief.pdf",
+      "importance": "major",
+      "expected_value": "relaxed, outdoorsy, local",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "web_required_size",
+      "description": "Platform sizing from web.",
+      "source": "web",
+      "importance": "critical",
+      "expected_value": "official current feed sizing guidance from Instagram or Meta",
+      "must_appear_in_image": false
+    },
+    {
+      "id": "wrong_claims",
+      "description": "Claims to avoid.",
+      "source": "env/season_brief.pdf",
+      "importance": "major",
+      "expected_value": [
+        "indoor ballroom",
+        "overnight stay"
+      ],
+      "must_not_appear_in_image": true
+    }
+  ],
+  "calculation_notes": "Use the PDF and supporting notes; preserve required inclusions and exclusions.",
+  "web_facts": [
+    {
+      "description": "Current recommended Instagram feed image size or aspect ratio.",
+      "required_for_case": true,
+      "acceptable_sources": [
+        "Instagram help documentation",
+        "Meta business/help documentation",
+        "current reputable social media specification reference"
+      ]
+    }
+  ]
+}

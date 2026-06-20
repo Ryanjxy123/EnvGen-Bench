@@ -1,0 +1,44 @@
+{
+  "case_id": "procedure_instruction_005",
+  "task_type": "procedure_instruction",
+  "facts": [
+    {
+      "id": "step_order",
+      "description": "Correct order.",
+      "source": "env/seedling_care.pdf",
+      "importance": "critical",
+      "expected_value": [
+        "Check label date",
+        "Mist soil surface",
+        "Move tray to bright indirect light",
+        "Log tray condition"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "water_rule",
+      "description": "Watering rule.",
+      "source": "env/seedling_care.pdf",
+      "importance": "critical",
+      "expected_value": "Mist soil surface; do not soak tray.",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "timing",
+      "description": "Timing cue.",
+      "source": "env/seedling_care.pdf",
+      "importance": "major",
+      "expected_value": "morning check",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "wrong_action",
+      "description": "Action to avoid.",
+      "source": "env/seedling_care.pdf",
+      "importance": "major",
+      "expected_value": "direct noon sun",
+      "must_not_appear_in_image": true
+    }
+  ],
+  "calculation_notes": "Use the PDF and supporting notes; preserve required inclusions and exclusions."
+}

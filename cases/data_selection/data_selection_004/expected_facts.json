@@ -1,0 +1,50 @@
+{
+  "case_id": "data_selection_004",
+  "task_type": "data_selection",
+  "facts": [
+    {
+      "id": "selected_items",
+      "description": "Top eligible camping products.",
+      "source": "env/shop_items.csv + env/feature_rules.json",
+      "importance": "critical",
+      "expected_value": [
+        "B403 Solar Lantern Duo",
+        "B405 Campfire Spice Set"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "ranking_rule",
+      "description": "Eligible items rank by margin descending.",
+      "source": "env/feature_rules.json",
+      "importance": "critical",
+      "expected_value": "margin_desc",
+      "must_appear_in_image": false
+    },
+    {
+      "id": "wrong_category_exclusion",
+      "description": "River Mug is gift category.",
+      "source": "env/shop_items.csv",
+      "importance": "major",
+      "expected_value": "B402",
+      "must_not_appear_in_image": true
+    },
+    {
+      "id": "low_stock_exclusion",
+      "description": "Map Bandana has stock below threshold.",
+      "source": "env/shop_items.csv",
+      "importance": "major",
+      "expected_value": "B404",
+      "must_not_appear_in_image": true
+    },
+    {
+      "id": "retired_exclusion",
+      "description": "Retired Stove Stand is retired.",
+      "source": "env/shop_items.csv",
+      "importance": "major",
+      "expected_value": "B406",
+      "must_not_appear_in_image": true
+    }
+  ],
+  "calculation_notes": "Filter category=camping, stock>=20, status=active; sort by margin desc; select top 2."
+}

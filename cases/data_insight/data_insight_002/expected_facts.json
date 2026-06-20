@@ -1,0 +1,43 @@
+{
+  "case_id": "data_insight_002",
+  "task_type": "data_insight",
+  "facts": [
+    {
+      "id": "overall_avg_reduction",
+      "description": "Average wait time across listed clinics drops from January to March.",
+      "source": "env/clinic_wait_times.xlsx",
+      "importance": "critical",
+      "expected_value": "January average 37.0 min to March average 29.3 min; reduction 7.7 min",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "largest_improvements",
+      "description": "Top two clinic improvements from January to March.",
+      "source": "env/clinic_wait_times.xlsx",
+      "importance": "critical",
+      "expected_value": [
+        "East improved 7 min",
+        "North improved 9 min",
+        "West improved 7 min"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "best_single_improvement",
+      "description": "North has the largest improvement.",
+      "source": "env/clinic_wait_times.xlsx",
+      "importance": "critical",
+      "expected_value": "North improved 9 min",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "exclude_cancelled",
+      "description": "South Annex appears only as a cancellation note and must not be summarized.",
+      "source": "env/clinic_wait_times.xlsx + env/clinic_targets.json",
+      "importance": "major",
+      "expected_value": "South Annex",
+      "must_not_appear_in_image": true
+    }
+  ],
+  "calculation_notes": "Calculate unweighted clinic averages for Jan and Mar across North, East, and West. Rank improvements by reduction from Jan avg_wait_min to Mar avg_wait_min; summarize the top improvement and tied improvements."
+}

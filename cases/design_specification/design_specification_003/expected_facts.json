@@ -1,0 +1,51 @@
+{
+  "case_id": "design_specification_003",
+  "task_type": "design_specification",
+  "facts": [
+    {
+      "id": "current_copy",
+      "description": "Current product and launch copy.",
+      "source": "env/design_tokens.json",
+      "importance": "critical",
+      "expected_value": [
+        "FlowForge Sprint",
+        "Plan the week in one calm board.",
+        "A focused planning space for small product teams."
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "current_palette",
+      "description": "Current palette.",
+      "source": "env/design_tokens.json + env/launch_style.pdf",
+      "importance": "critical",
+      "expected_value": [
+        "#0F2D2E",
+        "#F7F3E8",
+        "#FFB703"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "logo_position",
+      "description": "Logo should be top-right.",
+      "source": "env/design_tokens.json + env/launch_style.pdf",
+      "importance": "critical",
+      "expected_value": "top-right",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "deprecated_template",
+      "description": "Deprecated template values must not appear.",
+      "source": "env/old_template.md + env/design_tokens.json",
+      "importance": "critical",
+      "expected_value": [
+        "purple gradient",
+        "bottom-centered logo",
+        "Automate Everything"
+      ],
+      "must_not_appear_in_image": true
+    }
+  ],
+  "calculation_notes": "Use design_tokens.json and launch_style.pdf as current brand constraint sources for palette, layout, icon placement, and forbidden deprecated-template elements; old_template.md is a distractor."
+}

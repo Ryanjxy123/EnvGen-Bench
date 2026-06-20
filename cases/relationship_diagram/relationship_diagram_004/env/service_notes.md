@@ -1,0 +1,1 @@
+Mobile App calls Profile API. Profile API reads Member DB. Mobile App calls Booking API. Booking API publishes to Reminder Queue. Reminder Worker consumes Reminder Queue and writes Notification Log. Marketing Export reads Member DB but is outside booking.

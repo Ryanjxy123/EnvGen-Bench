@@ -1,0 +1,39 @@
+{
+  "case_id": "data_insight_004",
+  "task_type": "data_insight",
+  "facts": [
+    {
+      "id": "loan_total",
+      "description": "Total loans across branches.",
+      "source": "env/analysis_notes.md + env/library_month.csv",
+      "importance": "critical",
+      "expected_value": "770",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "loan_leader",
+      "description": "Highest branch by loans.",
+      "source": "env/analysis_notes.md + env/library_month.csv",
+      "importance": "critical",
+      "expected_value": "East: 310 loans",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "visit_context",
+      "description": "East visit count may be supporting context.",
+      "source": "env/analysis_notes.md",
+      "importance": "major",
+      "expected_value": "1310",
+      "must_appear_in_image": false
+    },
+    {
+      "id": "wrong_metric_exclusion",
+      "description": "Do not use visits as the main ranking metric.",
+      "source": "env/analysis_notes.md",
+      "importance": "major",
+      "expected_value": "visits",
+      "must_not_appear_in_image": true
+    }
+  ],
+  "calculation_notes": "Sum branch loans and rank by loans, not visits."
+}

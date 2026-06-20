@@ -1,0 +1,56 @@
+{
+  "case_id": "relationship_diagram_005",
+  "task_type": "relationship_diagram",
+  "facts": [
+    {
+      "id": "mentor_edges",
+      "description": "Solid mentor relationships.",
+      "source": "env/mentorship.csv",
+      "importance": "critical",
+      "expected_value": [
+        [
+          "Omar Reed",
+          "Dana Liu"
+        ],
+        [
+          "Priya Shah",
+          "Dana Liu"
+        ],
+        [
+          "Mina Cole",
+          "Omar Reed"
+        ]
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "advisory_edge",
+      "description": "Dotted advisory relationship.",
+      "source": "env/mentorship.csv + env/chart_rules.md",
+      "importance": "critical",
+      "expected_value": [
+        "Priya Shah",
+        "City Analytics Guild",
+        "dotted"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "lead_node",
+      "description": "Program lead node.",
+      "source": "env/mentorship.csv",
+      "importance": "major",
+      "expected_value": "Dana Liu",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "wrong_manager",
+      "description": "Advisory group is not a manager.",
+      "source": "env/chart_rules.md",
+      "importance": "major",
+      "expected_value": "City Analytics Guild is an advisory group, not a direct manager",
+      "must_not_appear_in_image": true
+    }
+  ],
+  "calculation_notes": "Use mentor for solid lines and advisory for dotted lines."
+}

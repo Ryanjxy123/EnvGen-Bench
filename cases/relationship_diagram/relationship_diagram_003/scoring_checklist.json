@@ -1,0 +1,79 @@
+{
+  "case_id": "relationship_diagram_003",
+  "dimensions": {
+    "task_completion": {
+      "weight": 0.2,
+      "items": [
+        {
+          "id": "output_type_relationship_diagram_003",
+          "check": "For relationship_diagram_003, the output is a finished escalation_org_chart for the node and edge mapping, not a worksheet, raw table, or generic mockup.",
+          "points": 4,
+          "scoring_hint": "2 = correct finished image type; 1 = correct topic but weak format; 0 = wrong artifact type."
+        },
+        {
+          "id": "operation_depth_relationship_diagram_003",
+          "check": "The image visibly resolves this case's node and edge mapping; reference facts include reporting_edges: Ari Patel, Mina Torres, Jun Park; advisory_edge: Leah Stone, Community Advisory Board, dotted advisory; core_people: Ari Patel, Mina Torres, Jun Park; wrong_manager: Community Advisory Board as manager.",
+          "points": 4,
+          "scoring_hint": "2 = operation is visibly resolved; 1 = operation partly reflected; 0 = copied unsolved source material."
+        }
+      ]
+    },
+    "grounded_requirement_satisfaction": {
+      "weight": 0.45,
+      "items": [
+        {
+          "id": "critical_fact_accuracy_relationship_diagram_003",
+          "check": "For relationship_diagram_003, accurately includes the critical expected facts reporting_edges, advisory_edge using these case values: reporting_edges: Ari Patel, Mina Torres, Jun Park; advisory_edge: Leah Stone, Community Advisory Board, dotted advisory; core_people: Ari Patel, Mina Torres, Jun Park; wrong_manager: Community Advisory Board as manager.",
+          "points": 8,
+          "scoring_hint": "2 = all critical facts correct; 1 = one minor omission or formatting issue; 0 = any critical fact is wrong or missing."
+        },
+        {
+          "id": "required_appear_facts_relationship_diagram_003",
+          "check": "Shows required appear facts reporting_edges, advisory_edge, core_people for relationship_diagram_003 without replacing them with unsupported alternatives; expected values include reporting_edges: Ari Patel, Mina Torres, Jun Park; advisory_edge: Leah Stone, Community Advisory Board, dotted advisory; core_people: Ari Patel, Mina Torres, Jun Park; wrong_manager: Community Advisory Board as manager.",
+          "points": 6,
+          "scoring_hint": "2 = all required facts appear clearly; 1 = most appear but one is ambiguous; 0 = multiple required facts are absent."
+        },
+        {
+          "id": "negative_exclusion_facts_relationship_diagram_003",
+          "check": "Does not show prohibited or stale facts wrong_manager in relationship_diagram_003; avoids unsupported claims from distractor env material.",
+          "points": 5,
+          "scoring_hint": "2 = no prohibited facts appear; 1 = one weak/ambiguous distractor; 0 = any explicit prohibited value appears."
+        }
+      ]
+    },
+    "information_structuring": {
+      "weight": 0.2,
+      "items": [
+        {
+          "id": "fact_hierarchy_relationship_diagram_003",
+          "check": "Organizes reporting_edges, advisory_edge as the primary message for relationship_diagram_003; supporting values are reporting_edges: Ari Patel, Mina Torres, Jun Park; advisory_edge: Leah Stone, Community Advisory Board, dotted advisory; core_people: Ari Patel, Mina Torres, Jun Park; wrong_manager: Community Advisory Board as manager.",
+          "points": 5,
+          "scoring_hint": "2 = hierarchy is clear and fact-driven; 1 = facts present but hierarchy is muddled; 0 = important facts are buried or missing."
+        },
+        {
+          "id": "robust_consistency_relationship_diagram_003",
+          "check": "Across repeated runs of relationship_diagram_003, the same critical facts, exclusions wrong_manager, ordering rules, and layout constraints must remain consistent.",
+          "points": 4,
+          "scoring_hint": "2 = stable facts and exclusions; 1 = minor wording drift only; 0 = selected facts or exclusions change."
+        }
+      ]
+    },
+    "visual_rendering_quality": {
+      "weight": 0.15,
+      "items": [
+        {
+          "id": "visual_clarity_relationship_diagram_003",
+          "check": "For relationship_diagram_003, uses clear visual hierarchy, readable typography, sufficient contrast, and non-crowded spacing at the intended escalation_org_chart size.",
+          "points": 4,
+          "scoring_hint": "2 = readable and polished; 1 = readable with minor clutter; 0 = unreadable or visually incoherent."
+        },
+        {
+          "id": "visual_layout_density_relationship_diagram_003",
+          "check": "The escalation_org_chart layout has appropriate information density, balanced image/text regions, crisp assets, platform-safe margins, and no placeholder-like areas.",
+          "points": 4,
+          "scoring_hint": "2 = balanced density and crisp assets; 1 = some weak spacing or density; 0 = blank, placeholder-like, or low-resolution."
+        }
+      ]
+    }
+  }
+}

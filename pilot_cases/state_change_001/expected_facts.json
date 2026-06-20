@@ -1,0 +1,60 @@
+{
+  "case_id": "state_change_001",
+  "task_type": "state_change",
+  "facts": [
+    {
+      "id": "latest_event",
+      "description": "Active event to advertise.",
+      "source": "env/current_status.csv",
+      "importance": "critical",
+      "expected_value": "Riverside Night Market",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "latest_date",
+      "description": "Latest valid event date.",
+      "source": "env/changelog.md + env/current_status.csv",
+      "importance": "critical",
+      "expected_value": "May 21, 2026",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "latest_location",
+      "description": "Latest valid location.",
+      "source": "env/changelog.md + env/current_status.csv",
+      "importance": "critical",
+      "expected_value": "Riverside Hall",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "latest_sponsor",
+      "description": "Latest valid sponsor.",
+      "source": "env/changelog.md + env/current_status.csv",
+      "importance": "major",
+      "expected_value": "GreenBridge Market",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "latest_theme",
+      "description": "Latest valid theme.",
+      "source": "env/changelog.md + env/current_status.csv",
+      "importance": "critical",
+      "expected_value": "Makers and Music Night",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "stale_details",
+      "description": "Superseded details must not appear.",
+      "source": "env/old_campaign.md + env/changelog.md",
+      "importance": "critical",
+      "expected_value": [
+        "May 14, 2026",
+        "Harbor Plaza",
+        "North Pier Foods",
+        "Lantern Tasting Walk"
+      ],
+      "must_not_appear_in_image": true
+    }
+  ],
+  "calculation_notes": "Use current_status.csv as the active/cancelled gate, then use changelog.md to resolve date, location, sponsor, and theme changes. old_campaign.md is superseded unless a value is unchanged and confirmed by current_status.csv."
+}

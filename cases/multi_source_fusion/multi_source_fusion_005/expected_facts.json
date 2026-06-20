@@ -1,0 +1,65 @@
+{
+  "case_id": "multi_source_fusion_005",
+  "task_type": "multi_source_fusion",
+  "facts": [
+    {
+      "id": "campaign_product",
+      "description": "Product to promote.",
+      "source": "env/desk_launch.pdf",
+      "importance": "critical",
+      "expected_value": "FocusLamp Go",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "selling_points",
+      "description": "Supported points.",
+      "source": "env/desk_launch.pdf",
+      "importance": "critical",
+      "expected_value": [
+        "fold-flat stand",
+        "warm dimmable light",
+        "USB-C travel pouch"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "brand_tone",
+      "description": "Tone.",
+      "source": "env/desk_launch.pdf",
+      "importance": "major",
+      "expected_value": "calm, portable, desk-friendly",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "web_required_size",
+      "description": "Platform sizing from web.",
+      "source": "web",
+      "importance": "critical",
+      "expected_value": "official current feed sizing guidance from Instagram or Meta",
+      "must_appear_in_image": false
+    },
+    {
+      "id": "wrong_claims",
+      "description": "Unsupported claims.",
+      "source": "env/desk_launch.pdf",
+      "importance": "major",
+      "expected_value": [
+        "medical therapy",
+        "outdoor floodlight"
+      ],
+      "must_not_appear_in_image": true
+    }
+  ],
+  "calculation_notes": "Use the PDF and supporting notes; preserve required inclusions and exclusions.",
+  "web_facts": [
+    {
+      "description": "Current recommended Instagram feed image size or aspect ratio.",
+      "required_for_case": true,
+      "acceptable_sources": [
+        "Instagram help documentation",
+        "Meta business/help documentation",
+        "current reputable social media specification reference"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "product": "FlowForge Sprint",
+  "headline": "Plan the week in one calm board.",
+  "supporting_line": "A focused planning space for small product teams.",
+  "palette": [
+    "#0F2D2E",
+    "#F7F3E8",
+    "#FFB703"
+  ],
+  "logo_position": "top-right",
+  "forbidden": [
+    "purple gradient",
+    "bottom-centered logo",
+    "Automate Everything"
+  ]
+}

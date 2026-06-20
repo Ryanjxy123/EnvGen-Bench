@@ -1,0 +1,7 @@
+phase,step,duration_min,normal
+1,Label sample tubes,5,yes
+2,Add buffer solution,8,yes
+3,Invert gently ten times,2,yes
+4,Rest at room temperature,10,yes
+5,Record color band result,5,yes
+X,Heat shock recovery,12,no

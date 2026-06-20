@@ -1,0 +1,50 @@
+{
+  "case_id": "document_brief_002",
+  "task_type": "document_brief",
+  "facts": [
+    {
+      "id": "workshop_title",
+      "description": "Workshop title.",
+      "source": "env/workshop_brochure.pdf",
+      "importance": "critical",
+      "expected_value": "Neighborhood Resilience Workshop",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "current_session",
+      "description": "Current date, location, and host.",
+      "source": "env/workshop_brochure.pdf",
+      "importance": "critical",
+      "expected_value": [
+        "June 18, 2026",
+        "Civic Hall Room B",
+        "City Resilience Office"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "takeaways",
+      "description": "Exactly three takeaways.",
+      "source": "env/workshop_brochure.pdf",
+      "importance": "critical",
+      "expected_value": [
+        "household readiness checklist",
+        "cooling and charging resources",
+        "neighbor check-in message"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "superseded_details",
+      "description": "Old appendix details must not appear.",
+      "source": "env/workshop_brochure.pdf",
+      "importance": "major",
+      "expected_value": [
+        "Room A",
+        "private sponsor"
+      ],
+      "must_not_appear_in_image": true
+    }
+  ],
+  "calculation_notes": "Extract and summarize current session details from the document. Highlight exactly three takeaways; appendix details are distractors."
+}

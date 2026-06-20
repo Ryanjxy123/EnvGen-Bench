@@ -1,0 +1,19 @@
+{
+  "campaign_name": "Weekend Electronics Flash Picks",
+  "include_category": "Electronics",
+  "required_status": "active",
+  "minimum_inventory_exclusive": 0,
+  "minimum_discount_pct_exclusive": 20,
+  "select_top_n": 3,
+  "sort_order": [
+    {
+      "field": "campaign_priority",
+      "direction": "desc"
+    },
+    {
+      "field": "discount_pct",
+      "direction": "desc"
+    }
+  ],
+  "required_image_copy": "Weekend tech deals selected from eligible inventory only"
+}
