@@ -12,7 +12,7 @@
         },
         {
           "id": "operation_depth_procedure_instruction_001",
-          "check": "The image visibly resolves this case's ordered procedure sequence; reference facts include step_order: Charge device for at least 20 minutes, Install the LumaHome app, Power on until the blue light pulses twice; first_charge_requirement: Charge for at least 20 minutes before setup.; pairing_cue: Blue indicator light pulses twice before scanning the pairing code.; avoid_reset: Do not press the reset pin unless support asks you to do so..",
+          "check": "The image visibly resolves this case's ordered procedure sequence; reference facts include step_order: Charge device for at least 20 minutes, Install the LumaHome app, Power on until the blue light pulses twice; first_charge_requirement: Charge for at least 20 minutes before setup.; pairing_cue: Blue indicator light pulses twice before scanning the pairing code.; reset_caution: Do not press the reset pin unless support asks you to do so.; avoid_reset_action: do not present the reset pin as a normal setup or pairing action.",
           "points": 4,
           "scoring_hint": "2 = operation is visibly resolved; 1 = operation partly reflected; 0 = copied unsolved source material."
         }
@@ -23,19 +23,19 @@
       "items": [
         {
           "id": "critical_fact_accuracy_procedure_instruction_001",
-          "check": "For procedure_instruction_001, accurately includes the critical expected facts step_order, first_charge_requirement using these case values: step_order: Charge device for at least 20 minutes, Install the LumaHome app, Power on until the blue light pulses twice; first_charge_requirement: Charge for at least 20 minutes before setup.; pairing_cue: Blue indicator light pulses twice before scanning the pairing code.; avoid_reset: Do not press the reset pin unless support asks you to do so..",
+          "check": "For procedure_instruction_001, accurately includes the critical expected facts step_order, first_charge_requirement using these case values: step_order: Charge device for at least 20 minutes, Install the LumaHome app, Power on until the blue light pulses twice; first_charge_requirement: Charge for at least 20 minutes before setup.; pairing_cue: Blue indicator light pulses twice before scanning the pairing code.; reset_caution: Do not press the reset pin unless support asks you to do so.; avoid_reset_action: do not present the reset pin as a normal setup or pairing action.",
           "points": 8,
           "scoring_hint": "2 = all critical facts correct; 1 = one minor omission or formatting issue; 0 = any critical fact is wrong or missing."
         },
         {
           "id": "required_appear_facts_procedure_instruction_001",
-          "check": "Shows required appear facts step_order, first_charge_requirement, pairing_cue for procedure_instruction_001 without replacing them with unsupported alternatives; expected values include step_order: Charge device for at least 20 minutes, Install the LumaHome app, Power on until the blue light pulses twice; first_charge_requirement: Charge for at least 20 minutes before setup.; pairing_cue: Blue indicator light pulses twice before scanning the pairing code.; avoid_reset: Do not press the reset pin unless support asks you to do so..",
+          "check": "Shows required appear facts step_order, first_charge_requirement, pairing_cue, reset_caution for procedure_instruction_001 without replacing them with unsupported alternatives; expected values include step_order: Charge device for at least 20 minutes, Install the LumaHome app, Power on until the blue light pulses twice; first_charge_requirement: Charge for at least 20 minutes before setup.; pairing_cue: Blue indicator light pulses twice before scanning the pairing code.; reset_caution: Do not press the reset pin unless support asks you to do so.; avoid_reset_action: do not present the reset pin as a normal setup or pairing action.",
           "points": 6,
           "scoring_hint": "2 = all required facts appear clearly; 1 = most appear but one is ambiguous; 0 = multiple required facts are absent."
         },
         {
           "id": "negative_exclusion_facts_procedure_instruction_001",
-          "check": "Does not show prohibited or stale facts avoid_reset in procedure_instruction_001; avoids unsupported claims from distractor env material.",
+          "check": "Does not show prohibited or stale facts avoid_reset_action in procedure_instruction_001; the reset caution itself is allowed and expected, but reset must not be shown as a normal setup or pairing step.",
           "points": 5,
           "scoring_hint": "2 = no prohibited facts appear; 1 = one weak/ambiguous distractor; 0 = any explicit prohibited value appears."
         }
@@ -46,13 +46,13 @@
       "items": [
         {
           "id": "fact_hierarchy_procedure_instruction_001",
-          "check": "Organizes step_order, first_charge_requirement as the primary message for procedure_instruction_001; supporting values are step_order: Charge device for at least 20 minutes, Install the LumaHome app, Power on until the blue light pulses twice; first_charge_requirement: Charge for at least 20 minutes before setup.; pairing_cue: Blue indicator light pulses twice before scanning the pairing code.; avoid_reset: Do not press the reset pin unless support asks you to do so..",
+          "check": "Organizes step_order, first_charge_requirement as the primary message for procedure_instruction_001; supporting values are step_order: Charge device for at least 20 minutes, Install the LumaHome app, Power on until the blue light pulses twice; first_charge_requirement: Charge for at least 20 minutes before setup.; pairing_cue: Blue indicator light pulses twice before scanning the pairing code.; reset_caution: Do not press the reset pin unless support asks you to do so.; avoid_reset_action: do not present the reset pin as a normal setup or pairing action.",
           "points": 5,
           "scoring_hint": "2 = hierarchy is clear and fact-driven; 1 = facts present but hierarchy is muddled; 0 = important facts are buried or missing."
         },
         {
           "id": "robust_consistency_procedure_instruction_001",
-          "check": "Across repeated runs of procedure_instruction_001, the same critical facts, exclusions avoid_reset, ordering rules, and layout constraints must remain consistent.",
+          "check": "Across repeated runs of procedure_instruction_001, the same critical facts, reset caution, exclusions avoid_reset_action, ordering rules, and layout constraints must remain consistent.",
           "points": 4,
           "scoring_hint": "2 = stable facts and exclusions; 1 = minor wording drift only; 0 = selected facts or exclusions change."
         }

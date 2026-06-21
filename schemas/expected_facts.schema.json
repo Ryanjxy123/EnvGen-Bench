@@ -66,6 +66,20 @@
           },
           "must_not_appear_in_image": {
             "type": "boolean"
+          },
+          "forbidden_patterns": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "allowed_patterns": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
           }
         }
       }
@@ -100,4 +114,3 @@
     }
   }
 }
-

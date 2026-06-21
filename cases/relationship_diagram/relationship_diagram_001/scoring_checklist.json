@@ -12,7 +12,7 @@
         },
         {
           "id": "operation_depth_relationship_diagram_001",
-          "check": "The image visibly resolves this case's node and edge mapping; reference facts include core_entities: Web App, Auth Service, User Database; checkout_edges: Web App, Auth Service, Auth Service; relation_types: calls, reads, publishes; exclude_recommendation_path: Recommendation Service reads User Database and Product Catalog but is not checkout path..",
+          "check": "The image visibly resolves this case's node and edge mapping; reference facts include core_entities: Web App, Auth Service, User Database; checkout_edges: Web App, Auth Service, Auth Service; relation_types: calls, reads, publishes; exclude_recommendation_path: Recommendation Service must not be shown as part of the checkout path.",
           "points": 4,
           "scoring_hint": "2 = operation is visibly resolved; 1 = operation partly reflected; 0 = copied unsolved source material."
         }
@@ -23,19 +23,19 @@
       "items": [
         {
           "id": "critical_fact_accuracy_relationship_diagram_001",
-          "check": "For relationship_diagram_001, accurately includes the critical expected facts core_entities, checkout_edges using these case values: core_entities: Web App, Auth Service, User Database; checkout_edges: Web App, Auth Service, Auth Service; relation_types: calls, reads, publishes; exclude_recommendation_path: Recommendation Service reads User Database and Product Catalog but is not checkout path..",
+          "check": "For relationship_diagram_001, accurately includes the critical expected facts core_entities, checkout_edges using these case values: core_entities: Web App, Auth Service, User Database; checkout_edges: Web App, Auth Service, Auth Service; relation_types: calls, reads, publishes; exclude_recommendation_path: Recommendation Service must not be shown as part of the checkout path.",
           "points": 8,
           "scoring_hint": "2 = all critical facts correct; 1 = one minor omission or formatting issue; 0 = any critical fact is wrong or missing."
         },
         {
           "id": "required_appear_facts_relationship_diagram_001",
-          "check": "Shows required appear facts core_entities, checkout_edges, relation_types for relationship_diagram_001 without replacing them with unsupported alternatives; expected values include core_entities: Web App, Auth Service, User Database; checkout_edges: Web App, Auth Service, Auth Service; relation_types: calls, reads, publishes; exclude_recommendation_path: Recommendation Service reads User Database and Product Catalog but is not checkout path..",
+          "check": "Shows required appear facts core_entities, checkout_edges, relation_types for relationship_diagram_001 without replacing them with unsupported alternatives; expected values include core_entities: Web App, Auth Service, User Database; checkout_edges: Web App, Auth Service, Auth Service; relation_types: calls, reads, publishes; exclude_recommendation_path: Recommendation Service must not be shown as part of the checkout path.",
           "points": 6,
           "scoring_hint": "2 = all required facts appear clearly; 1 = most appear but one is ambiguous; 0 = multiple required facts are absent."
         },
         {
           "id": "negative_exclusion_facts_relationship_diagram_001",
-          "check": "Does not show prohibited or stale facts exclude_recommendation_path in relationship_diagram_001; avoids unsupported claims from distractor env material.",
+          "check": "Does not show prohibited or stale facts exclude_recommendation_path in relationship_diagram_001; an exclusion note is acceptable, but Recommendation Service must not appear as a checkout-path dependency.",
           "points": 5,
           "scoring_hint": "2 = no prohibited facts appear; 1 = one weak/ambiguous distractor; 0 = any explicit prohibited value appears."
         }
@@ -46,7 +46,7 @@
       "items": [
         {
           "id": "fact_hierarchy_relationship_diagram_001",
-          "check": "Organizes core_entities, checkout_edges as the primary message for relationship_diagram_001; supporting values are core_entities: Web App, Auth Service, User Database; checkout_edges: Web App, Auth Service, Auth Service; relation_types: calls, reads, publishes; exclude_recommendation_path: Recommendation Service reads User Database and Product Catalog but is not checkout path..",
+          "check": "Organizes core_entities, checkout_edges as the primary message for relationship_diagram_001; supporting values are core_entities: Web App, Auth Service, User Database; checkout_edges: Web App, Auth Service, Auth Service; relation_types: calls, reads, publishes; exclude_recommendation_path: Recommendation Service must not be shown as part of the checkout path.",
           "points": 5,
           "scoring_hint": "2 = hierarchy is clear and fact-driven; 1 = facts present but hierarchy is muddled; 0 = important facts are buried or missing."
         },

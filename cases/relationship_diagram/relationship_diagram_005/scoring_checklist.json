@@ -12,7 +12,7 @@
         },
         {
           "id": "operation_depth_relationship_diagram_005",
-          "check": "The image visibly resolves this case's node and edge mapping; reference facts include mentor_edges: Omar Reed, Dana Liu, Priya Shah; advisory_edge: Priya Shah, City Analytics Guild, dotted; lead_node: Dana Liu; wrong_manager: City Analytics Guild is an advisory group, not a direct manager.",
+          "check": "The image visibly resolves this case's node and edge mapping; reference facts include mentor_edges: Omar Reed, Dana Liu, Priya Shah; advisory_edge: Priya Shah, City Analytics Guild, dotted; lead_node: Dana Liu; wrong_manager: City Analytics Guild must not be shown as a direct manager.",
           "points": 4,
           "scoring_hint": "2 = operation is visibly resolved; 1 = operation partly reflected; 0 = copied unsolved source material."
         }
@@ -23,19 +23,19 @@
       "items": [
         {
           "id": "critical_fact_accuracy_relationship_diagram_005",
-          "check": "For relationship_diagram_005, accurately includes the critical expected facts mentor_edges, advisory_edge using these case values: mentor_edges: Omar Reed, Dana Liu, Priya Shah; advisory_edge: Priya Shah, City Analytics Guild, dotted; lead_node: Dana Liu; wrong_manager: City Analytics Guild is an advisory group, not a direct manager.",
+          "check": "For relationship_diagram_005, accurately includes the critical expected facts mentor_edges, advisory_edge using these case values: mentor_edges: Omar Reed, Dana Liu, Priya Shah; advisory_edge: Priya Shah, City Analytics Guild, dotted; lead_node: Dana Liu; wrong_manager: City Analytics Guild must not be shown as a direct manager.",
           "points": 8,
           "scoring_hint": "2 = all critical facts correct; 1 = one minor omission or formatting issue; 0 = any critical fact is wrong or missing."
         },
         {
           "id": "required_appear_facts_relationship_diagram_005",
-          "check": "Shows required appear facts mentor_edges, advisory_edge, lead_node for relationship_diagram_005 without replacing them with unsupported alternatives; expected values include mentor_edges: Omar Reed, Dana Liu, Priya Shah; advisory_edge: Priya Shah, City Analytics Guild, dotted; lead_node: Dana Liu; wrong_manager: City Analytics Guild is an advisory group, not a direct manager.",
+          "check": "Shows required appear facts mentor_edges, advisory_edge, lead_node for relationship_diagram_005 without replacing them with unsupported alternatives; expected values include mentor_edges: Omar Reed, Dana Liu, Priya Shah; advisory_edge: Priya Shah, City Analytics Guild, dotted; lead_node: Dana Liu; wrong_manager: City Analytics Guild must not be shown as a direct manager.",
           "points": 6,
           "scoring_hint": "2 = all required facts appear clearly; 1 = most appear but one is ambiguous; 0 = multiple required facts are absent."
         },
         {
           "id": "negative_exclusion_facts_relationship_diagram_005",
-          "check": "Does not show prohibited or stale facts wrong_manager in relationship_diagram_005; avoids unsupported claims from distractor env material.",
+          "check": "Does not show prohibited or stale facts wrong_manager in relationship_diagram_005; showing City Analytics Guild as a dotted advisory link is required, but showing it as a direct manager is prohibited.",
           "points": 5,
           "scoring_hint": "2 = no prohibited facts appear; 1 = one weak/ambiguous distractor; 0 = any explicit prohibited value appears."
         }
@@ -46,7 +46,7 @@
       "items": [
         {
           "id": "fact_hierarchy_relationship_diagram_005",
-          "check": "Organizes mentor_edges, advisory_edge as the primary message for relationship_diagram_005; supporting values are mentor_edges: Omar Reed, Dana Liu, Priya Shah; advisory_edge: Priya Shah, City Analytics Guild, dotted; lead_node: Dana Liu; wrong_manager: City Analytics Guild is an advisory group, not a direct manager.",
+          "check": "Organizes mentor_edges, advisory_edge as the primary message for relationship_diagram_005; supporting values are mentor_edges: Omar Reed, Dana Liu, Priya Shah; advisory_edge: Priya Shah, City Analytics Guild, dotted; lead_node: Dana Liu; wrong_manager: City Analytics Guild must not be shown as a direct manager.",
           "points": 5,
           "scoring_hint": "2 = hierarchy is clear and fact-driven; 1 = facts present but hierarchy is muddled; 0 = important facts are buried or missing."
         },

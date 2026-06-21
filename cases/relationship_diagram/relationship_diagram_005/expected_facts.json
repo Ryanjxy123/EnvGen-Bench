@@ -48,7 +48,15 @@
       "description": "Advisory group is not a manager.",
       "source": "env/chart_rules.md",
       "importance": "major",
-      "expected_value": "City Analytics Guild is an advisory group, not a direct manager",
+      "expected_value": "City Analytics Guild as a direct manager",
+      "forbidden_patterns": [
+        "\\bcity\\s+analytics\\s+guild\\b[^.!?\\n;]{0,80}\\b(direct\\s+manager|manager|mentor|solid)\\b",
+        "\\b(direct\\s+manager|manager|mentor|solid)\\b[^.!?\\n;]{0,80}\\bcity\\s+analytics\\s+guild\\b"
+      ],
+      "allowed_patterns": [
+        "\\bcity\\s+analytics\\s+guild\\b[^.!?\\n;]{0,80}\\b(advisory|dotted|not\\s+(?:a\\s+)?direct\\s+manager|not\\s+(?:a\\s+)?manager)\\b",
+        "\\b(advisory|dotted|not\\s+(?:a\\s+)?direct\\s+manager|not\\s+(?:a\\s+)?manager)\\b[^.!?\\n;]{0,80}\\bcity\\s+analytics\\s+guild\\b"
+      ],
       "must_not_appear_in_image": true
     }
   ],

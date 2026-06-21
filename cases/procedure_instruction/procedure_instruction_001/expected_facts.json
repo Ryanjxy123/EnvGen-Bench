@@ -34,11 +34,30 @@
       "must_appear_in_image": true
     },
     {
-      "id": "avoid_reset",
-      "description": "Reset pin is troubleshooting-only and should not be a normal setup step.",
+      "id": "reset_caution",
+      "description": "Reset pin caution should be included without making reset part of normal setup.",
       "source": "env/quick_start_notes.txt",
       "importance": "major",
       "expected_value": "Do not press the reset pin unless support asks you to do so.",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "avoid_reset_action",
+      "description": "Reset pin must not be presented as a normal setup or pairing action.",
+      "source": "env/quick_start_notes.txt",
+      "importance": "major",
+      "expected_value": "press reset pin",
+      "forbidden_patterns": [
+        "\\bpress(?:ing)?\\s+(?:the\\s+)?reset\\s+pin\\b",
+        "\\buse\\s+(?:the\\s+)?reset\\s+pin\\b",
+        "\\breset\\s+pin\\b[^.!?\\n;]{0,80}\\b(pair|pairing|setup|set\\s*up|normal\\s+setup)\\b",
+        "\\b(pair|pairing|setup|set\\s*up)\\b[^.!?\\n;]{0,80}\\breset\\s+pin\\b"
+      ],
+      "allowed_patterns": [
+        "\\b(do\\s+not|don't|never|avoid)\\b[^.!?\\n;]{0,80}\\breset\\s+pin\\b",
+        "\\breset\\s+pin\\b[^.!?\\n;]{0,80}\\bunless\\s+support\\b",
+        "\\breset\\s+pin\\b[^.!?\\n;]{0,80}\\btroubleshooting\\s+only\\b"
+      ],
       "must_not_appear_in_image": true
     }
   ],

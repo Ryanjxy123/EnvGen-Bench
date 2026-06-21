@@ -80,7 +80,17 @@
       "description": "Recommendation Service exists but should not be shown as part of checkout flow.",
       "source": "env/architecture_notes.md",
       "importance": "major",
-      "expected_value": "Recommendation Service reads User Database and Product Catalog but is not checkout path.",
+      "expected_value": "Recommendation Service in checkout path",
+      "forbidden_patterns": [
+        "\\brecommendation\\s+service\\b[^.!?\\n;]{0,100}\\bcheckout\\s+(path|flow)\\b",
+        "\\bcheckout\\s+(path|flow)\\b[^.!?\\n;]{0,100}\\brecommendation\\s+service\\b",
+        "\\brecommendation\\s+service\\b[^.!?\\n;]{0,100}\\b(checkout\\s+api|inventory\\s+service|payment\\s+gateway|order\\s+queue)\\b",
+        "\\bproduct\\s+catalog\\b[^.!?\\n;]{0,100}\\bcheckout\\b"
+      ],
+      "allowed_patterns": [
+        "\\b(do\\s+not|don't|exclude|excluded|unrelated|not)\\b[^.!?\\n;]{0,100}\\brecommendation\\s+service\\b",
+        "\\brecommendation\\s+service\\b[^.!?\\n;]{0,100}\\b(not|excluded|unrelated)\\b[^.!?\\n;]{0,40}\\bcheckout\\s+(path|flow)\\b"
+      ],
       "must_not_appear_in_image": true
     }
   ],
