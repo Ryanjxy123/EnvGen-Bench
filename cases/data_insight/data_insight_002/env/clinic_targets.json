@@ -1,8 +1,0 @@
-{
-  "goal": "lower wait times",
-  "compare": "Jan to Mar",
-  "exclude": [
-    "South Annex"
-  ],
-  "highlight_top_n_improvements": 2
-}

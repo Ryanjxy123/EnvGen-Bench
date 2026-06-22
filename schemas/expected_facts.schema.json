@@ -61,6 +61,22 @@
             ]
           },
           "expected_value": {},
+          "canonical_answer": {},
+          "semantic_acceptance": {
+            "oneOf": [
+              {
+                "type": "string",
+                "minLength": 1
+              },
+              {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            ]
+          },
           "match_patterns": {
             "type": "array",
             "items": {

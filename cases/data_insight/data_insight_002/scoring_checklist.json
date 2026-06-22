@@ -1,20 +1,67 @@
 {
   "case_id": "data_insight_002",
+  "score_caps": [
+    {
+      "id": "unfiltered_ticket_export",
+      "max_total": 55,
+      "reason": "Uses all export rows or invalid statuses instead of the filtered customer-facing resolved set.",
+      "trigger": {
+        "type": "forbidden_final_answer",
+        "patterns": [
+          "\\b24\\s+(tickets|rows)\\b",
+          "\\b25\\s+(tickets|rows)\\b",
+          "\\b(cancelled|open|forecast|subtotal|draft|internal|test|may\\s+2026)\\b[^.!?\\n;]{0,80}\\b(answer|result|count|sla|rate|leader|fastest)\\b"
+        ],
+        "allowed_patterns": [
+          "\\b(exclude|excluded|excluding|without|not\\s+included|ignored|do\\s+not\\s+use)\\b[^.!?\\n;]{0,120}\\b(cancelled|open|forecast|subtotal|draft|internal|test|may\\s+2026|24\\s+(tickets|rows)|25\\s+(tickets|rows))\\b",
+          "\\b(cancelled|open|forecast|subtotal|draft|internal|test|may\\s+2026|24\\s+(tickets|rows)|25\\s+(tickets|rows))\\b[^.!?\\n;]{0,120}\\b(exclude|excluded|excluding|ignored|not\\s+included|not\\s+used|do\\s+not\\s+use)\\b"
+        ]
+      }
+    },
+    {
+      "id": "missing_plan_sla_join",
+      "max_total": 70,
+      "reason": "Does not apply plan-specific SLA thresholds from plan_sla.json.",
+      "trigger": {
+        "type": "missing_required_count",
+        "fact_ids": [
+          "first_response_sla_rate",
+          "best_sla_queue"
+        ],
+        "min_missing": 1
+      }
+    },
+    {
+      "id": "missing_two_core_metrics",
+      "max_total": 50,
+      "reason": "Missing two or more core computed metrics.",
+      "trigger": {
+        "type": "missing_required_count",
+        "fact_ids": [
+          "valid_ticket_count",
+          "first_response_sla_rate",
+          "fastest_handle_queue",
+          "best_sla_queue"
+        ],
+        "min_missing": 2
+      }
+    }
+  ],
   "dimensions": {
     "task_completion": {
       "weight": 0.2,
       "items": [
         {
           "id": "output_type_data_insight_002",
-          "check": "For data_insight_002, the output is a finished clinic_access_infographic for the aggregation and comparison result, not a worksheet, raw table, or generic mockup.",
+          "check": "The output is a finished support_ticket_efficiency_infographic for support leads, not a raw table or worksheet.",
           "points": 4,
-          "scoring_hint": "2 = correct finished image type; 1 = correct topic but weak format; 0 = wrong artifact type."
+          "scoring_hint": "2 = polished task-appropriate infographic; 1 = image exists but is weakly structured or partially task-aligned; 0 = wrong artifact type or raw-table/worksheet output."
         },
         {
           "id": "operation_depth_data_insight_002",
-          "check": "The image visibly resolves this case's aggregation and comparison result; reference facts include overall_avg_reduction: January average 37.0 min to March average 29.3 min; reduction 7.7 min; largest_improvements: East improved 7 min, North improved 9 min, West improved 7 min; best_single_improvement: North improved 9 min; exclude_cancelled: South Annex.",
+          "check": "Using semantic VLM/judge evaluation, the infographic should express the task-requested support conclusions from the filtered ticket set: 18 counted customer-facing resolved tickets, first-response SLA about 72% / 13 of 18, Billing as fastest handling queue, Account as best SLA queue, and a concise operational takeaway. Accept KPI cards, labels, chart annotations, or short text; average handle time is optional supporting context.",
           "points": 4,
-          "scoring_hint": "2 = operation is visibly resolved; 1 = operation partly reflected; 0 = copied unsolved source material."
+          "scoring_hint": "2 = all core computed results are present; 1 = several present but incomplete; 0 = no real computation."
         }
       ]
     },
@@ -23,21 +70,27 @@
       "items": [
         {
           "id": "critical_fact_accuracy_data_insight_002",
-          "check": "For data_insight_002, accurately includes the critical expected facts overall_avg_reduction, largest_improvements, best_single_improvement using these case values: overall_avg_reduction: January average 37.0 min to March average 29.3 min; reduction 7.7 min; largest_improvements: East improved 7 min, North improved 9 min, West improved 7 min; best_single_improvement: North improved 9 min; exclude_cancelled: South Annex.",
+          "check": "Judge semantically whether the core support conclusions are correct: valid ticket count 18; first-response SLA about 72% or 13/18; Billing is the fastest/lowest-handle-time queue; Account is best/highest on SLA. Percentages, fractions, rounded values, and synonymous queue-performance wording are acceptable; using invalid rows, a flat/wrong SLA rule, or wrong queue leaders is not.",
           "points": 8,
-          "scoring_hint": "2 = all critical facts correct; 1 = one minor omission or formatting issue; 0 = any critical fact is wrong or missing."
+          "scoring_hint": "2 = all core semantic conclusions are correct with acceptable rounding/phrasing; 1 = mostly correct with a minor ambiguity or one non-core omission; 0 = any core conclusion is missing, wrong, or based on invalid data."
         },
         {
-          "id": "required_appear_facts_data_insight_002",
-          "check": "Shows required appear facts overall_avg_reduction, largest_improvements, best_single_improvement for data_insight_002 without replacing them with unsupported alternatives; expected values include overall_avg_reduction: January average 37.0 min to March average 29.3 min; reduction 7.7 min; largest_improvements: East improved 7 min, North improved 9 min, West improved 7 min; best_single_improvement: North improved 9 min; exclude_cancelled: South Annex.",
-          "points": 6,
-          "scoring_hint": "2 = all required facts appear clearly; 1 = most appear but one is ambiguous; 0 = multiple required facts are absent."
+          "id": "filtering_data_insight_002",
+          "check": "Uses only June 2026 resolved customer_ticket rows from external requesters and excludes test, internal, draft_snapshot, forecast, subtotal, open, cancelled, and old-month records. This can be inferred from correct final values.",
+          "points": 7,
+          "scoring_hint": "2 = final values imply correct filtering; 1 = mostly correct with minor ambiguity; 0 = invalid rows drive a result."
         },
         {
-          "id": "negative_exclusion_facts_data_insight_002",
-          "check": "Does not show prohibited or stale facts exclude_cancelled in data_insight_002; avoids unsupported claims from distractor env material.",
+          "id": "sla_mapping_data_insight_002",
+          "check": "Semantically confirms plan-specific SLA thresholds were applied before calculating the SLA rate and queue SLA leader. This can be inferred from the correct 72%/13-of-18 overall SLA and Account as best SLA queue; the image need not describe the join mechanics.",
           "points": 5,
-          "scoring_hint": "2 = no prohibited facts appear; 1 = one weak/ambiguous distractor; 0 = any explicit prohibited value appears."
+          "scoring_hint": "2 = plan-specific SLA applied; 1 = SLA result present but mapping unclear; 0 = one flat threshold or wrong threshold used."
+        },
+        {
+          "id": "negative_exclusion_data_insight_002",
+          "check": "Does not present export row counts, forecast/subtotal values, invalid statuses, internal/test rows, or old-month rows as final answers.",
+          "points": 5,
+          "scoring_hint": "2 = no prohibited distractor used; 1 = ambiguous mention not used as answer; 0 = distractor is presented as a result."
         }
       ]
     },
@@ -46,15 +99,15 @@
       "items": [
         {
           "id": "fact_hierarchy_data_insight_002",
-          "check": "Organizes overall_avg_reduction, largest_improvements, best_single_improvement as the primary message for data_insight_002; supporting values are overall_avg_reduction: January average 37.0 min to March average 29.3 min; reduction 7.7 min; largest_improvements: East improved 7 min, North improved 9 min, West improved 7 min; best_single_improvement: North improved 9 min; exclude_cancelled: South Annex.",
+          "check": "Organizes ticket volume, SLA rate, fastest queue, SLA leader, and takeaway in a clear support-operations hierarchy. Supporting metrics such as average handle time may be included but are not required.",
           "points": 5,
-          "scoring_hint": "2 = hierarchy is clear and fact-driven; 1 = facts present but hierarchy is muddled; 0 = important facts are buried or missing."
+          "scoring_hint": "2 = clear hierarchy; 1 = facts present but crowded; 0 = important facts buried or missing."
         },
         {
-          "id": "robust_consistency_data_insight_002",
-          "check": "Across repeated runs of data_insight_002, the same critical facts, exclusions exclude_cancelled, ordering rules, and layout constraints must remain consistent.",
+          "id": "takeaway_data_insight_002",
+          "check": "Includes a concise operational takeaway grounded in the computed queue results. Accept equivalent wording; do not require a specific sentence.",
           "points": 4,
-          "scoring_hint": "2 = stable facts and exclusions; 1 = minor wording drift only; 0 = selected facts or exclusions change."
+          "scoring_hint": "2 = accurate insight; 1 = generic but not misleading; 0 = absent or contradicted."
         }
       ]
     },
@@ -63,15 +116,15 @@
       "items": [
         {
           "id": "visual_clarity_data_insight_002",
-          "check": "For data_insight_002, uses clear visual hierarchy, readable typography, sufficient contrast, and non-crowded spacing at the intended clinic_access_infographic size.",
+          "check": "Uses readable typography, clear contrast, and non-crowded spacing.",
           "points": 4,
-          "scoring_hint": "2 = readable and polished; 1 = readable with minor clutter; 0 = unreadable or visually incoherent."
+          "scoring_hint": "2 = readable and polished; 1 = minor clutter; 0 = unreadable."
         },
         {
-          "id": "visual_layout_density_data_insight_002",
-          "check": "The clinic_access_infographic layout has appropriate information density, balanced image/text regions, crisp assets, platform-safe margins, and no placeholder-like areas.",
+          "id": "visual_density_data_insight_002",
+          "check": "Balances KPI callouts, queue comparison, and takeaway without raw-table clutter or placeholder areas.",
           "points": 4,
-          "scoring_hint": "2 = balanced density and crisp assets; 1 = some weak spacing or density; 0 = blank, placeholder-like, or low-resolution."
+          "scoring_hint": "2 = balanced density; 1 = some weak spacing; 0 = blank or placeholder-like."
         }
       ]
     }

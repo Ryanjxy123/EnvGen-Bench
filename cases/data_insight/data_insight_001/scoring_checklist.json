@@ -90,11 +90,11 @@
           "id": "output_type_data_insight_001",
           "check": "For data_insight_001, the output is a finished annual_summary_infographic for leadership, not a worksheet, raw table, or generic mockup.",
           "points": 4,
-          "scoring_hint": "2 = polished leadership-ready infographic; 1 = correct topic but weak image format; 0 = wrong artifact type."
+          "scoring_hint": "2 = polished task-appropriate infographic; 1 = image exists but is weakly structured or partially task-aligned; 0 = wrong artifact type or raw-table/worksheet output."
         },
         {
           "id": "operation_depth_data_insight_001",
-          "check": "The image visibly resolves the requested sales analysis from raw rows: 2025 net revenue $1,431,000; November 2025 net revenue $170,000; Q2 grew 38.2% over Q1; top categories Smart Home $428,000 (29.9%), Audio $387,000 (27.0%), Accessories $304,500 (21.3%); strongest reporting region West $597,000 (41.7%); includes a short trend insight.",
+          "check": "Using semantic VLM/judge evaluation, the image should correctly express the task-requested sales story from filtered data: valid 2025 net revenue about $1.431M, November as the standout month, Q2 as the fastest QoQ improvement, Smart Home/Audio/Accessories as leading categories with share context, West as strongest mapped reporting region, and a concise trend insight. Accept KPI cards, chart labels, legends, titles, or short sentences; do not require exact wording or formatting.",
           "points": 4,
           "scoring_hint": "2 = all core computed results are present and coherent; 1 = several results present but incomplete; 0 = copied source material or no real computation."
         }
@@ -105,9 +105,9 @@
       "items": [
         {
           "id": "critical_fact_accuracy_data_insight_001",
-          "check": "Accurately includes all critical computed facts: total_2025_net_revenue=$1,431,000; highest_net_month=November 2025 $170,000; fastest_qoq_growth=Q2 over Q1 at 38.2%; top_categories_net_share=Smart Home $428,000 (29.9%), Audio $387,000 (27.0%), Accessories $304,500 (21.3%); strongest_reporting_region=West $597,000 (41.7%).",
+          "check": "Judge semantically whether all critical conclusions are correct: annual net revenue about $1.431M; standout month November about $170K; fastest momentum Q2 versus Q1, expressible as about +38% or +$91K; top categories Smart Home, Audio, Accessories with reasonable share context; strongest mapped reporting region West. Minor rounding, K/M abbreviations, currency punctuation, and natural-language phrasing are acceptable; wrong metric, wrong leader, wrong ranking, or missing share/region context is not.",
           "points": 8,
-          "scoring_hint": "2 = all critical facts correct; 1 = one minor rounding/format issue; 0 = any core metric is missing or materially wrong."
+          "scoring_hint": "2 = all core semantic conclusions are correct with acceptable rounding/phrasing; 1 = mostly correct with a minor ambiguity or one non-core omission; 0 = any core conclusion is missing, wrong, or based on invalid data."
         },
         {
           "id": "net_revenue_filtering_data_insight_001",
@@ -117,19 +117,19 @@
         },
         {
           "id": "region_mapping_data_insight_001",
-          "check": "Correctly uses region_mapping.json to map cities to reporting regions before ranking regions, yielding West as the strongest reporting region at $597,000 (41.7%). This can be inferred from the correct mapped region result; the image does not need to explain the mapping process.",
+          "check": "Semantically confirms cities were rolled up using the reporting-region mapping before ranking regions. This can be inferred from West being identified as the strongest mapped reporting region; the image does not need to explain the mapping process or show every mapped value.",
           "points": 5,
-          "scoring_hint": "2 = mapped reporting regions are used correctly; 1 = region result present but mapping is unclear; 0 = city names or source subtotals are treated as reporting regions."
+          "scoring_hint": "2 = mapped reporting-region conclusion is correct; 1 = West/result is present but mapping use is ambiguous; 0 = city names or source subtotals are treated as reporting regions."
         },
         {
           "id": "qoq_growth_data_insight_001",
-          "check": "Correctly identifies Q2 as the fastest improvement versus Q1. Full credit if shown as Q2 +38.2% over Q1, optionally with +$91K; basic credit if shown as Q2 +$91K vs Q1 without the percentage. Wrong if the quarter is not Q2 or if the highest quarter total is treated as fastest growth.",
+          "check": "Semantically confirms Q2 as the fastest quarter-over-quarter improvement versus Q1. Full credit if the image conveys the correct quarter and comparison using percent, dollar change, or natural language; wrong quarter, highest-total substitution, or no QoQ concept should fail.",
           "points": 5,
-          "scoring_hint": "2 = Q2 and percentage growth are correct; 1 = Q2 and +$91K versus Q1 are shown without percentage; 0 = wrong quarter, wrong comparison, or highest total substituted for fastest growth."
+          "scoring_hint": "2 = Q2 is correctly conveyed as the fastest QoQ improvement with an acceptable percent, dollar-change, or natural-language expression; 1 = Q2 is identified but comparison detail is thin; 0 = wrong quarter, wrong comparison, or highest total substituted for fastest growth."
         },
         {
           "id": "negative_exclusion_facts_data_insight_001",
-          "check": "Does not present prohibited metric or distractor values as final answers: units, order count, gross revenue, forecast revenue, subtotal/draft values such as $1,589,000, $1,600,000, $690,000, $615,000, or 2024 rows.",
+          "check": "Does not present prohibited metrics or distractor values as final answers: units, order count, gross revenue, forecast/subtotal/draft values, old-year rows, cancelled/returned rows, or test rows. Benign exclusion notes are allowed.",
           "points": 5,
           "scoring_hint": "2 = no prohibited metric language or distractor values used as final answers; 1 = one ambiguous mention not used as the answer; 0 = any prohibited value is presented as a result."
         }
@@ -146,7 +146,7 @@
         },
         {
           "id": "trend_insight_data_insight_001",
-          "check": "Includes one brief insight sentence that interprets the computed results, such as Q2 having the sharpest QoQ lift while November marks the annual peak.",
+          "check": "Includes a brief insight that accurately interprets the computed results, such as Q2 momentum and/or November peak. Accept equivalent natural-language insight; do not require sample wording.",
           "points": 4,
           "scoring_hint": "2 = insight is accurate and concise; 1 = generic but not misleading; 0 = absent or contradicted by the data."
         }

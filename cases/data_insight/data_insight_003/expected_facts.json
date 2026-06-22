@@ -3,41 +3,111 @@
   "task_type": "data_insight",
   "facts": [
     {
-      "id": "annual_total",
-      "description": "Annual total kWh across all public facilities.",
-      "source": "env/energy_seed.sql",
-      "importance": "critical",
-      "expected_value": 622000,
-      "must_appear_in_image": true
+      "id": "valid_shipment_count",
+      "description": "Supporting context: delivered July 2026 shipment rows after exclusions; denominator may be shown but is not explicitly required by task.md.",
+      "source": "env/shipments_july_2026.csv + env/delivery_rules.txt + env/carrier_notes.yaml",
+      "importance": "major",
+      "expected_value": [
+        "16 delivered shipments",
+        "16 valid shipments",
+        "16 shipments counted"
+      ],
+      "must_appear_in_image": false,
+      "canonical_answer": "Supporting context: 16 delivered July shipments after filtering",
+      "semantic_acceptance": "Supporting only. Do not require it as a standalone metric; it is acceptable if shown as denominator/context for on-time rate."
     },
     {
-      "id": "largest_site",
-      "description": "Pool has the largest annual energy use.",
-      "source": "env/energy_seed.sql",
-      "importance": "critical",
-      "expected_value": "Pool: 272000 kWh",
-      "must_appear_in_image": true
-    },
-    {
-      "id": "q1_q4_changes",
-      "description": "Q1 to Q4 change by site.",
-      "source": "env/energy_seed.sql",
+      "id": "overall_on_time_rate",
+      "description": "Share of valid shipments delivered within the zone-specific promised days.",
+      "source": "env/shipments_july_2026.csv + env/zone_promises.json",
       "importance": "critical",
       "expected_value": [
-        "Library -9000 kWh",
-        "Pool +15000 kWh",
-        "Depot -10000 kWh"
+        "11 of 16 on time",
+        "68.8% on-time rate",
+        "69% on-time rate"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "canonical_answer": "11 of 16 delivered shipments on time, 68.8%",
+      "semantic_acceptance": "Accept if overall on-time performance is shown as about 69%, 68.8%, or 11/16. It can be in a KPI, chart label, or sentence."
     },
     {
-      "id": "wrong_site_exclusion",
-      "description": "Archive Warehouse is excluded by mapping and not present in SQL data.",
-      "source": "env/site_groups.json",
+      "id": "average_transit_time",
+      "description": "Average delivery transit days for valid shipments.",
+      "source": "env/shipments_july_2026.csv + env/delivery_rules.txt",
+      "importance": "critical",
+      "expected_value": [
+        "Average transit: 3.5 days",
+        "Avg transit 3.5 days",
+        "3.5-day average transit"
+      ],
+      "must_appear_in_image": true,
+      "canonical_answer": "Average transit time is 3.5 days",
+      "semantic_acceptance": "Accept if average/mean transit or delivery time is shown as 3.5 days or an equivalent natural-language approximation such as three and a half days."
+    },
+    {
+      "id": "risk_region",
+      "description": "Reporting region with the lowest on-time rate.",
+      "source": "env/shipments_july_2026.csv + env/zone_promises.json",
+      "importance": "critical",
+      "expected_value": [
+        "Rural Belt: 25.0% on time",
+        "Rural Belt 25% on time",
+        "Rural Belt 1 of 4 on time"
+      ],
+      "must_appear_in_image": true,
+      "canonical_answer": "Rural Belt is the region needing attention, 1 of 4 / 25% on time",
+      "semantic_acceptance": "Accept if Rural Belt is identified as the risk/attention/weakest region. The 25% on-time detail is useful but the semantic region finding is the core requirement."
+    },
+    {
+      "id": "best_carrier",
+      "description": "Best carrier using on-time rate and the claim-cost tie-break rule.",
+      "source": "env/shipments_july_2026.csv + env/carrier_notes.yaml + env/delivery_rules.txt",
+      "importance": "critical",
+      "expected_value": [
+        "BlueRoute: 80.0% on time",
+        "BlueRoute 80% on time",
+        "BlueRoute wins the tie with $20 claims"
+      ],
+      "must_appear_in_image": true,
+      "canonical_answer": "BlueRoute is the best carrier after the tie rule, 80% on time and lower claims than CargoNorth",
+      "semantic_acceptance": "Accept if BlueRoute is selected as best/top carrier after applying the tie rule. It may explain the 80% rate or the lower claim-cost tie-break, but exact wording is not required."
+    },
+    {
+      "id": "delivery_takeaway",
+      "description": "Concise insight based on the computed logistics results.",
+      "source": "env/shipments_july_2026.csv + env/zone_promises.json",
       "importance": "major",
-      "expected_value": "Archive Warehouse",
-      "must_not_appear_in_image": true
+      "expected_value": [
+        "Rural Belt is the service-risk hotspot while BlueRoute leads carriers.",
+        "Rural Belt drives lateness; BlueRoute is the best carrier after the tie-break.",
+        "Metro is clean, but Rural Belt needs attention."
+      ],
+      "must_appear_in_image": true,
+      "canonical_answer": "Takeaway should highlight Rural Belt risk and/or BlueRoute leadership",
+      "semantic_acceptance": "Accept any concise logistics takeaway that is consistent with the computed on-time, region, transit, and carrier findings."
+    },
+    {
+      "id": "shipment_distractor_exclusions",
+      "description": "Do not use cancelled, return-only, test, forecast, subtotal, or non-July rows as final results.",
+      "source": "env/shipments_july_2026.csv + env/carrier_notes.yaml",
+      "importance": "major",
+      "expected_value": [
+        "invalid shipment distractor used"
+      ],
+      "forbidden_patterns": [
+        "\\b21\\s+(shipments|rows)\\b",
+        "\\b22\\s+(shipments|rows)\\b",
+        "\\b95\\s*%\\b[^.!?\\n;]{0,80}\\b(on[- ]time|on time)\\b",
+        "\\b(cancelled|return-only|return\\s+only|test|forecast|subtotal|june\\s+2026)\\b[^.!?\\n;]{0,80}\\b(answer|result|rate|carrier|region|shipment)\\b"
+      ],
+      "allowed_patterns": [
+        "\\b(exclude|excluded|excluding|without|not\\s+included|ignored)\\b[^.!?\\n;]{0,120}\\b(cancelled|return-only|return\\s+only|test|forecast|subtotal|june\\s+2026)\\b",
+        "\\b(cancelled|return-only|return\\s+only|test|forecast|subtotal|june\\s+2026)\\b[^.!?\\n;]{0,120}\\b(exclude|excluded|excluding|ignored|not\\s+included|not\\s+used)\\b"
+      ],
+      "must_not_appear_in_image": true,
+      "canonical_answer": "Do not use invalid shipment rows as final results",
+      "semantic_acceptance": "Strictly reject or cap if cancelled/return-only/test/forecast/subtotal/non-July rows or all-export row counts are used as final logistics results. Mentions that such rows were excluded are allowed."
     }
   ],
-  "calculation_notes": "Sum all kWh rows for total. Site totals are Library 150000, Pool 272000, Depot 200000. Q1-to-Q4 changes use Q4 minus Q1."
+  "calculation_notes": "Use only rows where ship_date is in July 2026, status=delivered, and record_type=shipment. Transit days are delivery_date minus ship_date. Join destination_zone to zone_promises.json and count on-time when transit_days <= promised_days. Valid shipment count=16; on-time count=11, so overall on-time rate=68.8%. Transit-day total=56, so average transit=3.5 days. Region on-time rates: Metro Core=4/4=100.0%, Coastline=3/4=75.0%, Mountain=3/4=75.0%, Rural Belt=1/4=25.0%. Carrier on-time rates: ArrowShip=3/6=50.0%, BlueRoute=4/5=80.0%, CargoNorth=4/5=80.0%; tie-break uses lower claim_usd total, so BlueRoute wins with $20 versus CargoNorth $40."
 }

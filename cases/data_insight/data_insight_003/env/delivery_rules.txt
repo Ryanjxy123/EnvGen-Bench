@@ -1,0 +1,12 @@
+Delivery performance rules
+
+Use delivered customer shipments from July 2026 only.
+
+Transit days = delivery_date minus ship_date.
+On-time = transit days less than or equal to promised_days for the destination_zone in zone_promises.json.
+Region reporting uses the reporting_region in zone_promises.json.
+Best carrier uses on-time rate among carriers with at least five valid shipments.
+If carriers tie on on-time rate, choose the carrier with the lower total claim_usd.
+Round percentages to one decimal place when possible.
+
+Do not use planning, subtotal, return-only, test, cancelled, or non-July rows.

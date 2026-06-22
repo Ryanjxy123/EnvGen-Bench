@@ -3,41 +3,111 @@
   "task_type": "data_insight",
   "facts": [
     {
-      "id": "overall_avg_reduction",
-      "description": "Average wait time across listed clinics drops from January to March.",
-      "source": "env/clinic_wait_times.xlsx",
-      "importance": "critical",
-      "expected_value": "January average 37.0 min to March average 29.3 min; reduction 7.7 min",
-      "must_appear_in_image": true
-    },
-    {
-      "id": "largest_improvements",
-      "description": "Top two clinic improvements from January to March.",
-      "source": "env/clinic_wait_times.xlsx",
+      "id": "valid_ticket_count",
+      "description": "Count of June 2026 customer-facing resolved ticket rows after all exclusions.",
+      "source": "env/tickets_june_2026.csv + env/support_rules.md + env/data_quality.yaml",
       "importance": "critical",
       "expected_value": [
-        "East improved 7 min",
-        "North improved 9 min",
-        "West improved 7 min"
+        "18 valid tickets",
+        "18 customer-facing resolved tickets",
+        "18 tickets counted"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "canonical_answer": "18 valid customer-facing resolved June tickets",
+      "semantic_acceptance": "Accept if the infographic communicates that 18 tickets/cases are counted after filtering. It may appear as denominator, KPI, or text; wording such as valid tickets, counted tickets, or resolved customer tickets is equivalent."
     },
     {
-      "id": "best_single_improvement",
-      "description": "North has the largest improvement.",
-      "source": "env/clinic_wait_times.xlsx",
+      "id": "first_response_sla_rate",
+      "description": "Share of valid tickets where first_response_min is within the plan-specific SLA threshold.",
+      "source": "env/tickets_june_2026.csv + env/plan_sla.json",
       "importance": "critical",
-      "expected_value": "North improved 9 min",
-      "must_appear_in_image": true
+      "expected_value": [
+        "13 of 18 met SLA",
+        "72.2% first-response SLA",
+        "72% first-response SLA"
+      ],
+      "must_appear_in_image": true,
+      "canonical_answer": "13 of 18 tickets met first-response SLA, 72.2%",
+      "semantic_acceptance": "Accept if first-response SLA performance is shown as about 72%, 72.2%, or 13/18. It can be a KPI, label, fraction, or sentence; exact hyphenation/case of SLA is irrelevant."
     },
     {
-      "id": "exclude_cancelled",
-      "description": "South Annex appears only as a cancellation note and must not be summarized.",
-      "source": "env/clinic_wait_times.xlsx + env/clinic_targets.json",
+      "id": "fastest_handle_queue",
+      "description": "Queue with the lowest median handle time among valid tickets.",
+      "source": "env/tickets_june_2026.csv + env/support_rules.md",
+      "importance": "critical",
+      "expected_value": [
+        "Billing median handle time: 41 min",
+        "Billing 41 min median handle",
+        "Billing is fastest at 41 min"
+      ],
+      "must_appear_in_image": true,
+      "canonical_answer": "Billing is the fastest handling queue, median handle time 41 minutes",
+      "semantic_acceptance": "Accept if Billing is identified as the fastest/quickest/lowest-handle-time queue. The 41-minute median is useful but the semantic leader is the core requirement."
+    },
+    {
+      "id": "best_sla_queue",
+      "description": "Queue with the highest plan-adjusted first-response SLA rate.",
+      "source": "env/tickets_june_2026.csv + env/plan_sla.json",
+      "importance": "critical",
+      "expected_value": [
+        "Account SLA rate: 83.3%",
+        "Account 83.3% SLA",
+        "Account 5 of 6 met SLA"
+      ],
+      "must_appear_in_image": true,
+      "canonical_answer": "Account is best on SLA, 5 of 6 / 83.3%",
+      "semantic_acceptance": "Accept if Account is identified as the best/highest SLA queue. It may include 83.3%, 83%, or 5/6, but the core is the correct queue and SLA context."
+    },
+    {
+      "id": "average_handle_time",
+      "description": "Supporting context: average handle time across valid tickets, useful but not explicitly required by task.md.",
+      "source": "env/tickets_june_2026.csv",
       "importance": "major",
-      "expected_value": "South Annex",
-      "must_not_appear_in_image": true
+      "expected_value": [
+        "Average handle time: 69.8 min",
+        "Avg handle time 69.8 min",
+        "70 min average handle time"
+      ],
+      "must_appear_in_image": false,
+      "canonical_answer": "Supporting context: average handle time is 69.8 minutes",
+      "semantic_acceptance": "Supporting only. Do not require it to appear; if shown, about 70 minutes / 69.8 minutes is correct."
+    },
+    {
+      "id": "support_takeaway",
+      "description": "Concise insight based on computed queue results.",
+      "source": "env/tickets_june_2026.csv + env/plan_sla.json",
+      "importance": "major",
+      "expected_value": [
+        "Account leads SLA performance while Billing handles fastest.",
+        "Billing is fastest, but Account has the strongest SLA compliance.",
+        "Technical work is slower while Account leads SLA."
+      ],
+      "must_appear_in_image": true,
+      "canonical_answer": "Takeaway should point to the computed support focus, e.g. Account leads SLA while Billing handles fastest",
+      "semantic_acceptance": "Accept any concise operational takeaway grounded in the computed queue results. It need not match the sample wording."
+    },
+    {
+      "id": "invalid_row_exclusions",
+      "description": "Do not use invalid rows, draft/forecast/subtotal records, open/cancelled tickets, internal/test requesters, or old-month rows as final results.",
+      "source": "env/tickets_june_2026.csv + env/data_quality.yaml",
+      "importance": "major",
+      "expected_value": [
+        "invalid support-ticket distractor used"
+      ],
+      "forbidden_patterns": [
+        "\\b24\\s+(tickets|rows)\\b",
+        "\\b25\\s+(tickets|rows)\\b",
+        "\\b92\\s*%\\b[^.!?\\n;]{0,80}\\b(sla|first[- ]response)\\b",
+        "\\b(cancelled|open|forecast|subtotal|draft|internal|test|may\\s+2026)\\b[^.!?\\n;]{0,80}\\b(answer|result|count|sla|rate|leader|fastest)\\b"
+      ],
+      "allowed_patterns": [
+        "\\b(exclude|excluded|excluding|without|not\\s+included|do\\s+not\\s+use|ignored)\\b[^.!?\\n;]{0,120}\\b(cancelled|open|forecast|subtotal|draft|internal|test|may\\s+2026)\\b",
+        "\\b(cancelled|open|forecast|subtotal|draft|internal|test|may\\s+2026)\\b[^.!?\\n;]{0,120}\\b(exclude|excluded|excluding|ignored|not\\s+included|not\\s+used)\\b"
+      ],
+      "must_not_appear_in_image": true,
+      "canonical_answer": "Do not use invalid support rows as final results",
+      "semantic_acceptance": "Strictly reject or cap if open/cancelled/internal/test/draft/forecast/subtotal/old-month rows or all-export row counts are treated as final customer-ticket results. Mentions that such rows were excluded are allowed."
     }
   ],
-  "calculation_notes": "Calculate unweighted clinic averages for Jan and Mar across North, East, and West. Rank improvements by reduction from Jan avg_wait_min to Mar avg_wait_min; summarize the top improvement and tied improvements."
+  "calculation_notes": "Use only rows with opened_date in June 2026, status=resolved, record_type=customer_ticket, and requester_type=external. Exclude record types forecast, subtotal, draft_snapshot, internal_test, plus cancelled/open statuses and old-month rows. Join plan_code to plan_sla.json and count an SLA hit when first_response_min <= first_response_sla_min. Valid ticket count=18; SLA hits=13, so first-response SLA rate=72.2%. Handle minutes sum to 1,256, so average handle time=69.8 min. Queue median handle times are Billing=41.0 min, Account=56.5 min, Technical=107.5 min. Queue SLA rates are Account=5/6=83.3%, Billing=4/6=66.7%, Technical=4/6=66.7%."
 }

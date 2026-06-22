@@ -1,0 +1,20 @@
+{
+  "zones": {
+    "Metro": {
+      "reporting_region": "Metro Core",
+      "promised_days": 1
+    },
+    "Coastal": {
+      "reporting_region": "Coastline",
+      "promised_days": 3
+    },
+    "Mountain": {
+      "reporting_region": "Mountain",
+      "promised_days": 4
+    },
+    "Rural": {
+      "reporting_region": "Rural Belt",
+      "promised_days": 5
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "skus": [
+    {
+      "sku_id": "K101",
+      "label": "Coffee Machines",
+      "category": "Appliances",
+      "starting_on_hand": 120,
+      "reorder_point": 35,
+      "active": true
+    },
+    {
+      "sku_id": "K202",
+      "label": "Water Filters",
+      "category": "Consumables",
+      "starting_on_hand": 300,
+      "reorder_point": 80,
+      "active": true
+    },
+    {
+      "sku_id": "K303",
+      "label": "Descaling Kits",
+      "category": "Consumables",
+      "starting_on_hand": 180,
+      "reorder_point": 45,
+      "active": true
+    },
+    {
+      "sku_id": "K404",
+      "label": "Milk Frothers",
+      "category": "Accessories",
+      "starting_on_hand": 90,
+      "reorder_point": 30,
+      "active": true
+    },
+    {
+      "sku_id": "K505",
+      "label": "Travel Mugs",
+      "category": "Accessories",
+      "starting_on_hand": 220,
+      "reorder_point": 70,
+      "active": true
+    },
+    {
+      "sku_id": "K606",
+      "label": "Legacy Pods",
+      "category": "Archived",
+      "starting_on_hand": 40,
+      "reorder_point": 10,
+      "active": false
+    }
+  ]
+}

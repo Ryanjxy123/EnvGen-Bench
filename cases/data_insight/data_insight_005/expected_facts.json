@@ -3,37 +3,111 @@
   "task_type": "data_insight",
   "facts": [
     {
-      "id": "total_revenue",
-      "description": "Total revenue across channels.",
-      "source": "env/metric_notes.md + env/orders.sql",
+      "id": "total_units_sold",
+      "description": "Total units sold from valid September sale movements for active SKUs.",
+      "source": "env/inventory_movements_sep_2026.csv + env/sku_catalog.json + env/inventory_rules.md",
       "importance": "critical",
-      "expected_value": "10600",
-      "must_appear_in_image": true
+      "expected_value": [
+        "762 units sold",
+        "total sold units: 762",
+        "762 actual units sold"
+      ],
+      "must_appear_in_image": true,
+      "canonical_answer": "762 valid September units sold",
+      "semantic_acceptance": "Accept if actual sold units are communicated as 762 after filtering. It may appear as a KPI, chart label, or short sentence; wording such as sales units or units sold is equivalent."
     },
     {
-      "id": "top_channel",
-      "description": "Top channel by revenue.",
-      "source": "env/metric_notes.md + env/orders.sql",
+      "id": "fastest_turnover_sku",
+      "description": "Active SKU with the highest inventory turnover ratio.",
+      "source": "env/inventory_movements_sep_2026.csv + env/sku_catalog.json",
       "importance": "critical",
-      "expected_value": "Online: 4200",
-      "must_appear_in_image": true
+      "expected_value": [
+        "K404 Milk Frothers: 2.16x turnover",
+        "K404 2.16x turnover",
+        "Milk Frothers 2.16x"
+      ],
+      "must_appear_in_image": true,
+      "canonical_answer": "K404 Milk Frothers turns fastest, turnover about 2.16x",
+      "semantic_acceptance": "Accept if K404 / Milk Frothers is identified as the fastest-turning or highest-turnover SKU. The 2.16x value is useful but exact formatting is not required."
     },
     {
-      "id": "lowest_channel",
-      "description": "Lowest revenue channel.",
-      "source": "env/metric_notes.md + env/orders.sql",
-      "importance": "major",
-      "expected_value": "Wholesale: 2800",
-      "must_appear_in_image": false
+      "id": "stockout_risk_items",
+      "description": "SKUs below reorder point, ranked by lowest days of cover.",
+      "source": "env/inventory_movements_sep_2026.csv + env/sku_catalog.json + env/inventory_rules.md",
+      "importance": "critical",
+      "expected_value": [
+        "K303 Descaling Kits: 5.4 days of cover",
+        "K303 5.4 days cover",
+        "K404 Milk Frothers: 6.0 days of cover",
+        "K404 6.0 days cover"
+      ],
+      "must_appear_in_image": true,
+      "canonical_answer": "Stockout-risk items are K303 Descaling Kits first, then K404 Milk Frothers; days of cover about 5.4 and 6.0",
+      "semantic_acceptance": "Accept if K303/Descaling Kits and K404/Milk Frothers are identified as the items closest to stockout, preferably with K303 first. Days-of-cover values may be rounded or omitted if the risk ranking is semantically clear."
     },
     {
-      "id": "wrong_metric",
-      "description": "Order count should not be used.",
-      "source": "env/metric_notes.md",
+      "id": "sell_through_leader",
+      "description": "SKU with the highest sell-through rate.",
+      "source": "env/inventory_movements_sep_2026.csv + env/sku_catalog.json",
+      "importance": "critical",
+      "expected_value": [
+        "K303 Descaling Kits: 83.3% sell-through",
+        "K303 83.3% sell-through",
+        "Descaling Kits 83.3%"
+      ],
+      "must_appear_in_image": true,
+      "canonical_answer": "K303 Descaling Kits leads sell-through at about 83.3%",
+      "semantic_acceptance": "Accept if K303 / Descaling Kits is identified as the sell-through leader. The result may be expressed as about 83%, 83.3%, or a leader label."
+    },
+    {
+      "id": "ending_inventory_total",
+      "description": "Supporting context: ending on-hand units across active SKUs; useful for risk explanation but not explicitly required by task.md.",
+      "source": "env/inventory_movements_sep_2026.csv + env/sku_catalog.json",
       "importance": "major",
-      "expected_value": "order count",
-      "must_not_appear_in_image": true
+      "expected_value": [
+        "417 ending units",
+        "ending inventory: 417",
+        "417 units on hand"
+      ],
+      "must_appear_in_image": false,
+      "canonical_answer": "Supporting context: ending inventory is 417 units",
+      "semantic_acceptance": "Supporting only. Do not require it to appear; if shown, about 417 units on hand is correct."
+    },
+    {
+      "id": "inventory_takeaway",
+      "description": "Concise insight based on computed inventory risk and velocity.",
+      "source": "env/inventory_movements_sep_2026.csv + env/sku_catalog.json",
+      "importance": "major",
+      "expected_value": [
+        "Descaling Kits and Milk Frothers need replenishment attention.",
+        "Milk Frothers turn fastest, while Descaling Kits have the thinnest cover.",
+        "K303 and K404 are the stockout-risk items."
+      ],
+      "must_appear_in_image": true,
+      "canonical_answer": "Takeaway should flag K303 and/or K404 replenishment or stockout risk",
+      "semantic_acceptance": "Accept any concise inventory takeaway grounded in the stockout-risk and velocity findings."
+    },
+    {
+      "id": "inventory_distractor_exclusions",
+      "description": "Do not use transfer, test, forecast, subtotal, inactive SKU, or old-month movement rows as final results.",
+      "source": "env/inventory_movements_sep_2026.csv + env/warehouse_overrides.yaml",
+      "importance": "major",
+      "expected_value": [
+        "invalid inventory distractor used"
+      ],
+      "forbidden_patterns": [
+        "\\b1,?177\\s+units\\b",
+        "\\b400\\s+units\\b[^.!?\\n;]{0,80}\\b(forecast|demand|sold|sales)\\b",
+        "\\b(transfer|test|forecast|subtotal|inactive|august\\s+2026)\\b[^.!?\\n;]{0,80}\\b(answer|result|sold|turnover|stockout|sell[- ]through|inventory)\\b"
+      ],
+      "allowed_patterns": [
+        "\\b(exclude|excluded|excluding|without|not\\s+included|ignored)\\b[^.!?\\n;]{0,120}\\b(transfer|test|forecast|subtotal|inactive|august\\s+2026)\\b",
+        "\\b(transfer|test|forecast|subtotal|inactive|august\\s+2026)\\b[^.!?\\n;]{0,120}\\b(exclude|excluded|excluding|ignored|not\\s+included|not\\s+used)\\b"
+      ],
+      "must_not_appear_in_image": true,
+      "canonical_answer": "Do not use invalid inventory movement rows as final results",
+      "semantic_acceptance": "Strictly reject or cap if transfers, tests, forecasts, subtotals, inactive SKUs, or old-month movements are treated as actual sales, turnover, stockout, or sell-through results. Mentions that such rows were excluded are allowed."
     }
   ],
-  "calculation_notes": "Sum revenue rows and rank by revenue."
+  "calculation_notes": "Use active SKUs in sku_catalog.json and valid September 2026 posted movement rows only. Include movement_type sale, receipt, and adjustment; exclude transfers, tests, forecasts, subtotals, inactive SKUs, and old-month movements. Ending on hand = starting_on_hand + receipts - sales + adjustments. Average inventory = (starting_on_hand + ending_on_hand) / 2. Turnover = units_sold / average_inventory. Sell-through = units_sold / (starting_on_hand + receipts). Days of cover = ending_on_hand / (units_sold / 30). Valid SKU results: K101 ending=40, sales=118, turnover=1.48x, sell-through=73.8%, days cover=10.2; K202 ending=185, sales=210, turnover=0.87x, sell-through=52.5%, days cover=26.4; K303 ending=27, sales=150, turnover=1.45x, sell-through=83.3%, days cover=5.4; K404 ending=25, sales=124, turnover=2.16x, sell-through=82.7%, days cover=6.0; K505 ending=140, sales=160, turnover=0.89x, sell-through=53.3%, days cover=26.3. Total valid sales=762 and total ending inventory=417. Stockout-risk items below reorder point are K303 and K404, ranked by days of cover."
 }

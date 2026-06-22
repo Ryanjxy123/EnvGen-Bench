@@ -12,7 +12,9 @@
         "2025 net revenue $1,431,000",
         "$1,431,000"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "canonical_answer": "$1,431,000 valid 2025 net revenue",
+      "semantic_acceptance": "Accept if the image clearly communicates the valid 2025 net revenue total as about $1.431M / $1,431,000 after discounts and refunds. It may appear in a KPI card, title, label, or short sentence; exact punctuation, currency formatting, and use of K/M abbreviations are not important."
     },
     {
       "id": "highest_net_month",
@@ -25,7 +27,9 @@
         "November 2025 $170,000",
         "Nov 2025 $170,000"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "canonical_answer": "November 2025 is the standout month at about $170,000 net revenue",
+      "semantic_acceptance": "Accept if November/Nov is identified as the highest or standout month with approximately $170K net revenue. The month may be shown in a chart label, callout, or sentence."
     },
     {
       "id": "fastest_qoq_growth",
@@ -37,11 +41,9 @@
         "Q2 +$91K vs Q1",
         "Q2 increased by $91K versus Q1"
       ],
-      "match_patterns": [
-        "\\bq2\\b[^.!?\\n;]{0,80}\\b(38\\.2\\s*%|38%|\\+\\s*\\$?91\\s*k|\\+\\s*91,?000|91\\s*k)\\b[^.!?\\n;]{0,80}\\b(q1|prior\\s+quarter|previous\\s+quarter)\\b",
-        "\\b(q1|prior\\s+quarter|previous\\s+quarter)\\b[^.!?\\n;]{0,80}\\bq2\\b[^.!?\\n;]{0,80}\\b(38\\.2\\s*%|38%|\\+\\s*\\$?91\\s*k|\\+\\s*91,?000|91\\s*k)\\b"
-      ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "canonical_answer": "Q2 is the quarter where momentum improved fastest, +38.2% / +$91K versus Q1",
+      "semantic_acceptance": "Accept if Q2 is identified as the fastest quarter-over-quarter improvement versus Q1. The explanation can use 38.2%, roughly 38%, +$91K, or natural-language wording such as sharpest lift; do not require both percent and dollar change."
     },
     {
       "id": "top_categories_net_share",
@@ -56,7 +58,9 @@
         "Accessories: $304,500 (21.3%)",
         "Accessories $304,500 (21.3%)"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "canonical_answer": "Top categories by valid net revenue share: Smart Home $428K (29.9%), Audio $387K (27.0%), Accessories $304.5K (21.3%)",
+      "semantic_acceptance": "Accept if the leading categories are Smart Home, Audio, and Accessories in that order or clearly as the top three, with shares or share-like context. Values may be rounded or abbreviated; minor formatting differences are fine, but wrong categories, wrong order, or missing share context should not pass."
     },
     {
       "id": "strongest_reporting_region",
@@ -67,7 +71,9 @@
         "West: $597,000 (41.7%)",
         "West $597,000 (41.7%)"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "canonical_answer": "West is the strongest reporting region, about $597K / 41.7%",
+      "semantic_acceptance": "Accept if West is identified as the strongest/top reporting region after applying the city-to-region mapping. The result can be expressed with dollars, share, or a leader callout; exact formatting is not required."
     },
     {
       "id": "trend_insight",
@@ -79,7 +85,9 @@
         "Q2 was the fastest-growing quarter and November was the peak month.",
         "Momentum improved fastest in Q2, with November as the year's highest month."
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "canonical_answer": "Trend insight notes fastest momentum in Q2 and/or November as the annual peak",
+      "semantic_acceptance": "Accept any concise, data-grounded trend sentence that correctly interprets the computed results, especially Q2 momentum and November peak. Do not require the sample wording."
     },
     {
       "id": "wrong_metric_and_distractor_exclusions",
@@ -105,7 +113,9 @@
         "\\b(do\\s+not|don't|not|avoid|exclude|excluding|excluded|without|instead\\s+of)\\b[^.!?\\n;]{0,100}\\b(units?|unit\\s+volume|order\\s+count|gross\\s+revenue|forecast|subtotal|draft|old-year|old\\s+year|2024)\\b",
         "\\b(units?|unit\\s+volume|order\\s+count|gross\\s+revenue|forecast|subtotal|draft|old-year|old\\s+year|2024)\\b[^.!?\\n;]{0,100}\\b(do\\s+not|don't|not|avoid|exclude|excluded|without|not\\s+used|not\\s+included)\\b"
       ],
-      "must_not_appear_in_image": true
+      "must_not_appear_in_image": true,
+      "canonical_answer": "Do not present invalid metrics or distractor rows as final answers",
+      "semantic_acceptance": "Strictly reject or cap if units/order count/gross revenue/forecast/subtotal/draft/old-year/cancelled/returned/test data are used as final sales results. Benign mentions that these rows were excluded are allowed."
     }
   ],
   "calculation_notes": "Use only rows where fiscal_year=2025, status=completed, and record_type=transaction. Compute net revenue per row as gross_revenue - discount - refund. Exclude cancelled, returned, internal_test, forecast, subtotal, annual_subtotal, regional_subtotal, draft_summary, and 2024 rows. Valid net revenue totals: annual=$1,431,000; monthly high is November=$170,000. Quarter totals are Q1=$238,000, Q2=$329,000, Q3=$388,500, Q4=$475,500, so QoQ growth is Q2=38.2%, Q3=18.1%, Q4=22.4%; fastest is Q2 over Q1. Category totals and shares of annual net revenue: Smart Home=$428,000 (29.9%), Audio=$387,000 (27.0%), Accessories=$304,500 (21.3%), Outdoor Tech=$178,000 (12.4%), Services=$133,500 (9.3%). City mapping produces reporting-region totals: West=$597,000 (41.7%), Northeast=$387,000 (27.0%), Central=$299,500 (20.9%), Southeast=$86,500 (6.0%), South Central=$61,000 (4.3%)."

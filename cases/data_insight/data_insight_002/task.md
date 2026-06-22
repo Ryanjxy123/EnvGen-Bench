@@ -1,4 +1,7 @@
-Create a clinic access infographic from the workbook and target note in the env
-folder. Calculate the total trend summary, compare growth/reduction, rank the
-top clinic improvements, and highlight the two clinics with the largest
-January-to-March improvement.
+Please turn the June support-ticket export into a clean infographic for the
+support leads. I care about customer-facing resolved tickets only, not every
+row in the export. Show how many tickets actually count, the first-response
+SLA rate, which queue is fastest to handle, which queue is best on SLA, and a
+short takeaway about where the team should focus next. Use the plan-specific
+SLA rules and keep test, internal, draft, forecast, subtotal, cancelled, open,
+and old-month rows out of the picture.
