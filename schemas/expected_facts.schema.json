@@ -61,6 +61,13 @@
             ]
           },
           "expected_value": {},
+          "match_patterns": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
           "must_appear_in_image": {
             "type": "boolean"
           },

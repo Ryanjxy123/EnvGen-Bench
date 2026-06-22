@@ -1,20 +1,102 @@
 {
   "case_id": "data_insight_001",
+  "score_caps": [
+    {
+      "id": "units_or_order_count_as_revenue",
+      "max_total": 45,
+      "reason": "Uses units or order count in place of revenue.",
+      "trigger": {
+        "type": "forbidden_final_answer",
+        "patterns": [
+          "\\b(units?|unit\\s+volume|order\\s+count)\\b[^.!?\\n;]{0,80}\\b(total|revenue|sales|result|answer|leader|ranking|story)\\b",
+          "\\b(total|revenue|sales|result|answer|leader|ranking|story)\\b[^.!?\\n;]{0,80}\\b(units?|unit\\s+volume|order\\s+count)\\b"
+        ],
+        "allowed_patterns": [
+          "\\b(do\\s+not|don't|not|avoid|exclude|excluding|excluded|without|instead\\s+of)\\b[^.!?\\n;]{0,100}\\b(units?|unit\\s+volume|order\\s+count)\\b",
+          "\\b(units?|unit\\s+volume|order\\s+count)\\b[^.!?\\n;]{0,100}\\b(do\\s+not|don't|not|avoid|exclude|excluded|without|not\\s+used|not\\s+included)\\b"
+        ]
+      }
+    },
+    {
+      "id": "gross_revenue_instead_of_net",
+      "max_total": 55,
+      "reason": "Uses gross revenue instead of net revenue.",
+      "trigger": {
+        "type": "forbidden_final_answer",
+        "patterns": [
+          "\\bgross\\s+revenue\\b[^.!?\\n;]{0,80}\\b(total|answer|result|annual|2025)\\b",
+          "\\b(total|answer|result|annual|2025)\\b[^.!?\\n;]{0,80}\\bgross\\s+revenue\\b"
+        ],
+        "allowed_patterns": [
+          "\\b(do\\s+not|don't|not|avoid|exclude|excluding|excluded|without|instead\\s+of)\\b[^.!?\\n;]{0,100}\\bgross\\s+revenue\\b",
+          "\\bgross\\s+revenue\\b[^.!?\\n;]{0,100}\\b(do\\s+not|don't|not|avoid|exclude|excluded|without|not\\s+used|not\\s+included)\\b"
+        ]
+      }
+    },
+    {
+      "id": "distractor_data_as_answer",
+      "max_total": 60,
+      "reason": "Uses forecast, subtotal, draft, or old-year data as the answer.",
+      "trigger": {
+        "type": "forbidden_final_answer",
+        "patterns": [
+          "\\$?1,?589,?000\\b",
+          "\\$?1,?600,?000\\b",
+          "\\$?690,?000\\b",
+          "\\$?615,?000\\b",
+          "\\b2024\\b[^.!?\\n;]{0,80}\\b(answer|result|annual|revenue|sales)\\b",
+          "\\b(forecast|subtotal|draft|old-year|old\\s+year)\\b[^.!?\\n;]{0,80}\\b(answer|result|total|revenue|sales)\\b"
+        ],
+        "allowed_patterns": [
+          "\\b(do\\s+not|don't|not|avoid|exclude|excluding|excluded|without|instead\\s+of)\\b[^.!?\\n;]{0,100}\\b(forecast|subtotal|draft|old-year|old\\s+year|2024)\\b",
+          "\\b(forecast|subtotal|draft|old-year|old\\s+year|2024)\\b[^.!?\\n;]{0,100}\\b(do\\s+not|don't|not|avoid|exclude|excluded|without|not\\s+used|not\\s+included)\\b"
+        ]
+      }
+    },
+    {
+      "id": "missing_region_mapping",
+      "max_total": 75,
+      "reason": "Does not use region_mapping.json to aggregate reporting region.",
+      "trigger": {
+        "type": "missing_required_count",
+        "fact_ids": [
+          "strongest_reporting_region"
+        ],
+        "min_missing": 1
+      }
+    },
+    {
+      "id": "missing_two_core_metrics",
+      "max_total": 50,
+      "reason": "Missing two or more core computed metrics.",
+      "trigger": {
+        "type": "missing_required_count",
+        "fact_ids": [
+          "total_2025_net_revenue",
+          "highest_net_month",
+          "fastest_qoq_growth",
+          "top_categories_net_share",
+          "strongest_reporting_region"
+        ],
+        "min_missing": 2
+      }
+    }
+  ],
   "dimensions": {
     "task_completion": {
       "weight": 0.2,
       "items": [
         {
           "id": "output_type_data_insight_001",
-          "check": "For data_insight_001, the output is a finished annual_summary_infographic for the aggregation and comparison result, not a worksheet, raw table, or generic mockup.",
+          "check": "For data_insight_001, the output is a finished annual_summary_infographic for leadership, not a worksheet, raw table, or generic mockup.",
           "points": 4,
-          "scoring_hint": "2 = correct finished image type; 1 = correct topic but weak format; 0 = wrong artifact type."
+          "scoring_hint": "2 = polished leadership-ready infographic; 1 = correct topic but weak image format; 0 = wrong artifact type."
         },
         {
           "id": "operation_depth_data_insight_001",
-          "check": "The image visibly resolves this case's aggregation and comparison result; reference facts include total_revenue: 2043800; highest_month: November 2025 revenue: 223100; fastest_quarter: Q2 growth over Q1: 20.9%; top_categories: Audio: 740700, Accessories: 684500, Smart Home: 618600; wrong_metric_exclusions: units, North, South.",
+          "check": "The image visibly resolves the requested sales analysis from raw rows: 2025 net revenue $1,431,000; November 2025 net revenue $170,000; Q2 grew 38.2% over Q1; top categories Smart Home $428,000 (29.9%), Audio $387,000 (27.0%), Accessories $304,500 (21.3%); strongest reporting region West $597,000 (41.7%); includes a short trend insight.",
           "points": 4,
-          "scoring_hint": "2 = operation is visibly resolved; 1 = operation partly reflected; 0 = copied unsolved source material."
+          "scoring_hint": "2 = all core computed results are present and coherent; 1 = several results present but incomplete; 0 = copied source material or no real computation."
         }
       ]
     },
@@ -23,21 +105,33 @@
       "items": [
         {
           "id": "critical_fact_accuracy_data_insight_001",
-          "check": "For data_insight_001, accurately includes the critical expected facts total_revenue, highest_month, fastest_quarter, top_categories using these case values: total_revenue: 2043800; highest_month: November 2025 revenue: 223100; fastest_quarter: Q2 growth over Q1: 20.9%; top_categories: Audio: 740700, Accessories: 684500, Smart Home: 618600; wrong_metric_exclusions: units, North, South.",
+          "check": "Accurately includes all critical computed facts: total_2025_net_revenue=$1,431,000; highest_net_month=November 2025 $170,000; fastest_qoq_growth=Q2 over Q1 at 38.2%; top_categories_net_share=Smart Home $428,000 (29.9%), Audio $387,000 (27.0%), Accessories $304,500 (21.3%); strongest_reporting_region=West $597,000 (41.7%).",
           "points": 8,
-          "scoring_hint": "2 = all critical facts correct; 1 = one minor omission or formatting issue; 0 = any critical fact is wrong or missing."
+          "scoring_hint": "2 = all critical facts correct; 1 = one minor rounding/format issue; 0 = any core metric is missing or materially wrong."
         },
         {
-          "id": "required_appear_facts_data_insight_001",
-          "check": "Shows required appear facts total_revenue, highest_month, fastest_quarter, top_categories for data_insight_001 without replacing them with unsupported alternatives; expected values include total_revenue: 2043800; highest_month: November 2025 revenue: 223100; fastest_quarter: Q2 growth over Q1: 20.9%; top_categories: Audio: 740700, Accessories: 684500, Smart Home: 618600; wrong_metric_exclusions: units, North, South.",
-          "points": 6,
-          "scoring_hint": "2 = all required facts appear clearly; 1 = most appear but one is ambiguous; 0 = multiple required facts are absent."
+          "id": "net_revenue_filtering_data_insight_001",
+          "check": "Uses net revenue = gross_revenue - discount - refund, and only includes 2025 completed transaction rows. This can be inferred from correct final core values and no distractor values; the image does not need to list every filtering rule.",
+          "points": 7,
+          "scoring_hint": "2 = final core values imply correct net filtering and no invalid rows; 1 = mostly correct with minor ambiguity; 0 = uses invalid rows or wrong metric."
+        },
+        {
+          "id": "region_mapping_data_insight_001",
+          "check": "Correctly uses region_mapping.json to map cities to reporting regions before ranking regions, yielding West as the strongest reporting region at $597,000 (41.7%). This can be inferred from the correct mapped region result; the image does not need to explain the mapping process.",
+          "points": 5,
+          "scoring_hint": "2 = mapped reporting regions are used correctly; 1 = region result present but mapping is unclear; 0 = city names or source subtotals are treated as reporting regions."
+        },
+        {
+          "id": "qoq_growth_data_insight_001",
+          "check": "Correctly identifies Q2 as the fastest improvement versus Q1. Full credit if shown as Q2 +38.2% over Q1, optionally with +$91K; basic credit if shown as Q2 +$91K vs Q1 without the percentage. Wrong if the quarter is not Q2 or if the highest quarter total is treated as fastest growth.",
+          "points": 5,
+          "scoring_hint": "2 = Q2 and percentage growth are correct; 1 = Q2 and +$91K versus Q1 are shown without percentage; 0 = wrong quarter, wrong comparison, or highest total substituted for fastest growth."
         },
         {
           "id": "negative_exclusion_facts_data_insight_001",
-          "check": "Does not show prohibited or stale facts wrong_metric_exclusions in data_insight_001; avoids unsupported claims from distractor env material.",
+          "check": "Does not present prohibited metric or distractor values as final answers: units, order count, gross revenue, forecast revenue, subtotal/draft values such as $1,589,000, $1,600,000, $690,000, $615,000, or 2024 rows.",
           "points": 5,
-          "scoring_hint": "2 = no prohibited facts appear; 1 = one weak/ambiguous distractor; 0 = any explicit prohibited value appears."
+          "scoring_hint": "2 = no prohibited metric language or distractor values used as final answers; 1 = one ambiguous mention not used as the answer; 0 = any prohibited value is presented as a result."
         }
       ]
     },
@@ -46,15 +140,15 @@
       "items": [
         {
           "id": "fact_hierarchy_data_insight_001",
-          "check": "Organizes total_revenue, highest_month, fastest_quarter, top_categories as the primary message for data_insight_001; supporting values are total_revenue: 2043800; highest_month: November 2025 revenue: 223100; fastest_quarter: Q2 growth over Q1: 20.9%; top_categories: Audio: 740700, Accessories: 684500, Smart Home: 618600; wrong_metric_exclusions: units, North, South.",
+          "check": "Organizes the annual net revenue, standout month, fastest QoQ quarter, top category shares, strongest reporting region, and concise insight into a clear leadership hierarchy.",
           "points": 5,
-          "scoring_hint": "2 = hierarchy is clear and fact-driven; 1 = facts present but hierarchy is muddled; 0 = important facts are buried or missing."
+          "scoring_hint": "2 = hierarchy is clear and executive-readable; 1 = facts present but crowded or weakly grouped; 0 = important facts buried or missing."
         },
         {
-          "id": "robust_consistency_data_insight_001",
-          "check": "Across repeated runs of data_insight_001, the same critical facts, exclusions wrong_metric_exclusions, ordering rules, and layout constraints must remain consistent.",
+          "id": "trend_insight_data_insight_001",
+          "check": "Includes one brief insight sentence that interprets the computed results, such as Q2 having the sharpest QoQ lift while November marks the annual peak.",
           "points": 4,
-          "scoring_hint": "2 = stable facts and exclusions; 1 = minor wording drift only; 0 = selected facts or exclusions change."
+          "scoring_hint": "2 = insight is accurate and concise; 1 = generic but not misleading; 0 = absent or contradicted by the data."
         }
       ]
     },
@@ -63,13 +157,13 @@
       "items": [
         {
           "id": "visual_clarity_data_insight_001",
-          "check": "For data_insight_001, uses clear visual hierarchy, readable typography, sufficient contrast, and non-crowded spacing at the intended annual_summary_infographic size.",
+          "check": "Uses readable typography, clear visual hierarchy, sufficient contrast, and non-crowded spacing for an annual_summary_infographic.",
           "points": 4,
           "scoring_hint": "2 = readable and polished; 1 = readable with minor clutter; 0 = unreadable or visually incoherent."
         },
         {
           "id": "visual_layout_density_data_insight_001",
-          "check": "The annual_summary_infographic layout has appropriate information density, balanced image/text regions, crisp assets, platform-safe margins, and no placeholder-like areas.",
+          "check": "The infographic balances KPIs, rankings, and the trend insight without raw-table clutter, placeholder-like areas, or low-resolution rendering.",
           "points": 4,
           "scoring_hint": "2 = balanced density and crisp assets; 1 = some weak spacing or density; 0 = blank, placeholder-like, or low-resolution."
         }

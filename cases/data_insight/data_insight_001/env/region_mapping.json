@@ -1,17 +1,24 @@
 {
-  "North": [
+  "Northeast": [
     "Boston",
-    "Hartford",
-    "Providence"
-  ],
-  "South": [
-    "Austin",
-    "Atlanta",
-    "Raleigh"
+    "Providence",
+    "Hartford"
   ],
   "West": [
     "Seattle",
     "Portland",
     "San Diego"
+  ],
+  "Central": [
+    "Chicago",
+    "Denver",
+    "Minneapolis"
+  ],
+  "Southeast": [
+    "Atlanta",
+    "Raleigh"
+  ],
+  "South Central": [
+    "Austin"
   ]
 }
