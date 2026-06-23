@@ -13,7 +13,8 @@
         "Move tray to bright indirect light",
         "Log tray condition"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "water_rule",
@@ -21,7 +22,8 @@
       "source": "env/seedling_care.pdf",
       "importance": "critical",
       "expected_value": "Mist soil surface; do not soak tray.",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "timing",
@@ -29,7 +31,8 @@
       "source": "env/seedling_care.pdf",
       "importance": "major",
       "expected_value": "morning check",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "major_required"
     },
     {
       "id": "wrong_action",
@@ -37,7 +40,8 @@
       "source": "env/seedling_care.pdf",
       "importance": "major",
       "expected_value": "direct noon sun",
-      "must_not_appear_in_image": true
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     }
   ],
   "calculation_notes": "Use the PDF and supporting notes; preserve required inclusions and exclusions."

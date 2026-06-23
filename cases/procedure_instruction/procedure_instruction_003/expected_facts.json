@@ -14,7 +14,8 @@
         "Rest at room temperature",
         "Record color band result"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "gentle_inversion",
@@ -22,7 +23,8 @@
       "source": "env/lab_protocol.pdf",
       "importance": "critical",
       "expected_value": "Invert gently ten times",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "exclude_recovery",
@@ -30,7 +32,8 @@
       "source": "env/lab_schedule.csv + env/lab_protocol.pdf",
       "importance": "major",
       "expected_value": "Heat shock recovery",
-      "must_not_appear_in_image": true
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     },
     {
       "id": "wrong_action",
@@ -38,7 +41,8 @@
       "source": "env/lab_protocol.pdf",
       "importance": "major",
       "expected_value": "shake vigorously",
-      "must_not_appear_in_image": true
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     }
   ],
   "calculation_notes": "Use rows marked normal=yes and preserve numeric phase order. Protocol caution replaces any generic shaking language."

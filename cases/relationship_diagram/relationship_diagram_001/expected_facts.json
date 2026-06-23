@@ -18,7 +18,8 @@
         "Fulfillment Worker",
         "Shipment Database"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "checkout_edges",
@@ -59,7 +60,8 @@
           "Shipment Database"
         ]
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "relation_types",
@@ -73,7 +75,8 @@
         "consumes",
         "writes"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "major_required"
     },
     {
       "id": "exclude_recommendation_path",
@@ -91,7 +94,8 @@
         "\\b(do\\s+not|don't|exclude|excluded|unrelated|not)\\b[^.!?\\n;]{0,100}\\brecommendation\\s+service\\b",
         "\\brecommendation\\s+service\\b[^.!?\\n;]{0,100}\\b(not|excluded|unrelated)\\b[^.!?\\n;]{0,40}\\bcheckout\\s+(path|flow)\\b"
       ],
-      "must_not_appear_in_image": true
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     }
   ],
   "calculation_notes": "Use architecture_notes.md for prose relationships and dependency_config.yaml for layer and relation confirmation. The checkout path excludes Recommendation Service even though it has valid dependencies elsewhere."

@@ -8,7 +8,8 @@
       "source": "env/current_status.csv",
       "importance": "critical",
       "expected_value": "Riverside Night Market",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "latest_date",
@@ -16,7 +17,8 @@
       "source": "env/changelog.md + env/current_status.csv",
       "importance": "critical",
       "expected_value": "May 21, 2026",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "latest_location",
@@ -24,7 +26,8 @@
       "source": "env/changelog.md + env/current_status.csv",
       "importance": "critical",
       "expected_value": "Riverside Hall",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "latest_sponsor",
@@ -32,7 +35,8 @@
       "source": "env/changelog.md + env/current_status.csv",
       "importance": "major",
       "expected_value": "GreenBridge Market",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "major_required"
     },
     {
       "id": "latest_theme",
@@ -40,7 +44,8 @@
       "source": "env/changelog.md + env/current_status.csv",
       "importance": "critical",
       "expected_value": "Makers and Music Night",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "stale_details",
@@ -53,7 +58,8 @@
         "North Pier Foods",
         "Lantern Tasting Walk"
       ],
-      "must_not_appear_in_image": true
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     }
   ],
   "calculation_notes": "Use current_status.csv as the active/cancelled gate, then use changelog.md to resolve date, location, sponsor, and theme changes. old_campaign.md is superseded unless a value is unchanged and confirmed by current_status.csv."

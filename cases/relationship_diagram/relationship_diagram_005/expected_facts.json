@@ -21,7 +21,8 @@
           "Omar Reed"
         ]
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "advisory_edge",
@@ -33,7 +34,8 @@
         "City Analytics Guild",
         "dotted"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "lead_node",
@@ -41,7 +43,8 @@
       "source": "env/mentorship.csv",
       "importance": "major",
       "expected_value": "Dana Liu",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "major_required"
     },
     {
       "id": "wrong_manager",
@@ -57,7 +60,8 @@
         "\\bcity\\s+analytics\\s+guild\\b[^.!?\\n;]{0,80}\\b(advisory|dotted|not\\s+(?:a\\s+)?direct\\s+manager|not\\s+(?:a\\s+)?manager)\\b",
         "\\b(advisory|dotted|not\\s+(?:a\\s+)?direct\\s+manager|not\\s+(?:a\\s+)?manager)\\b[^.!?\\n;]{0,80}\\bcity\\s+analytics\\s+guild\\b"
       ],
-      "must_not_appear_in_image": true
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     }
   ],
   "calculation_notes": "Use mentor for solid lines and advisory for dotted lines."

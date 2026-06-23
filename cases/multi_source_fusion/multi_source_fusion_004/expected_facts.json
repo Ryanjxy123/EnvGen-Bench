@@ -8,7 +8,8 @@
       "source": "env/season_brief.pdf",
       "importance": "critical",
       "expected_value": "Sunset Garden Pass",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "supporting_points",
@@ -20,7 +21,8 @@
         "guided herb walk",
         "porch concert seating"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "audience_tone",
@@ -28,7 +30,8 @@
       "source": "env/season_brief.pdf",
       "importance": "major",
       "expected_value": "relaxed, outdoorsy, local",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "major_required"
     },
     {
       "id": "web_required_size",
@@ -36,7 +39,8 @@
       "source": "web",
       "importance": "critical",
       "expected_value": "official current feed sizing guidance from Instagram or Meta",
-      "must_appear_in_image": false
+      "must_appear_in_image": false,
+      "evaluation_role": "optional"
     },
     {
       "id": "wrong_claims",
@@ -47,7 +51,8 @@
         "indoor ballroom",
         "overnight stay"
       ],
-      "must_not_appear_in_image": true
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     }
   ],
   "calculation_notes": "Use the PDF and supporting notes; preserve required inclusions and exclusions.",

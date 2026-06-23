@@ -8,7 +8,8 @@
       "source": "env/release_status.csv + env/release_changes.md",
       "importance": "critical",
       "expected_value": "2.2",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "release_date",
@@ -16,7 +17,8 @@
       "source": "env/release_changes.md",
       "importance": "critical",
       "expected_value": "May 10",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "primary_feature",
@@ -24,7 +26,8 @@
       "source": "env/release_changes.md",
       "importance": "critical",
       "expected_value": "Offline Routes",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "support_email",
@@ -32,7 +35,8 @@
       "source": "env/release_changes.md",
       "importance": "major",
       "expected_value": "support@example.org",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "major_required"
     },
     {
       "id": "stale_release",
@@ -45,7 +49,8 @@
         "Offline Maps",
         "old-help@example.org"
       ],
-      "must_not_appear_in_image": true
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     }
   ],
   "calculation_notes": "Use release_status.csv for current version and release_changes.md for latest details."

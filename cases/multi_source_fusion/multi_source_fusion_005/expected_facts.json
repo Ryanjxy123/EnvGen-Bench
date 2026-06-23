@@ -8,7 +8,8 @@
       "source": "env/desk_launch.pdf",
       "importance": "critical",
       "expected_value": "FocusLamp Go",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "selling_points",
@@ -20,7 +21,8 @@
         "warm dimmable light",
         "USB-C travel pouch"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "brand_tone",
@@ -28,7 +30,8 @@
       "source": "env/desk_launch.pdf",
       "importance": "major",
       "expected_value": "calm, portable, desk-friendly",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "major_required"
     },
     {
       "id": "web_required_size",
@@ -36,7 +39,8 @@
       "source": "web",
       "importance": "critical",
       "expected_value": "official current feed sizing guidance from Instagram or Meta",
-      "must_appear_in_image": false
+      "must_appear_in_image": false,
+      "evaluation_role": "optional"
     },
     {
       "id": "wrong_claims",
@@ -47,7 +51,8 @@
         "medical therapy",
         "outdoor floodlight"
       ],
-      "must_not_appear_in_image": true
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     }
   ],
   "calculation_notes": "Use the PDF and supporting notes; preserve required inclusions and exclusions.",

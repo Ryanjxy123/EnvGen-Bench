@@ -2,30 +2,34 @@
   "case_id": "procedure_instruction_001",
   "dimensions": {
     "task_completion": {
-      "weight": 0.2,
+      "weight": 0.15,
       "items": [
         {
           "id": "output_type_procedure_instruction_001",
           "check": "For procedure_instruction_001, the output is a finished onboarding_instruction_image for the ordered procedure sequence, not a worksheet, raw table, or generic mockup.",
           "points": 4,
-          "scoring_hint": "2 = correct finished image type; 1 = correct topic but weak format; 0 = wrong artifact type."
+          "scoring_hint": "2 = correct finished image type; 1 = correct topic but weak format; 0 = wrong artifact type. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
         },
         {
           "id": "operation_depth_procedure_instruction_001",
           "check": "The image visibly resolves this case's ordered procedure sequence; reference facts include step_order: Charge device for at least 20 minutes, Install the LumaHome app, Power on until the blue light pulses twice; first_charge_requirement: Charge for at least 20 minutes before setup.; pairing_cue: Blue indicator light pulses twice before scanning the pairing code.; reset_caution: Do not press the reset pin unless support asks you to do so.; avoid_reset_action: do not present the reset pin as a normal setup or pairing action.",
           "points": 4,
-          "scoring_hint": "2 = operation is visibly resolved; 1 = operation partly reflected; 0 = copied unsolved source material."
+          "scoring_hint": "2 = operation is visibly resolved; 1 = operation partly reflected; 0 = copied unsolved source material. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
         }
       ]
     },
     "grounded_requirement_satisfaction": {
-      "weight": 0.45,
+      "weight": 0.55,
       "items": [
         {
           "id": "critical_fact_accuracy_procedure_instruction_001",
           "check": "For procedure_instruction_001, accurately includes the critical expected facts step_order, first_charge_requirement using these case values: step_order: Charge device for at least 20 minutes, Install the LumaHome app, Power on until the blue light pulses twice; first_charge_requirement: Charge for at least 20 minutes before setup.; pairing_cue: Blue indicator light pulses twice before scanning the pairing code.; reset_caution: Do not press the reset pin unless support asks you to do so.; avoid_reset_action: do not present the reset pin as a normal setup or pairing action.",
           "points": 8,
-          "scoring_hint": "2 = all critical facts correct; 1 = one minor omission or formatting issue; 0 = any critical fact is wrong or missing."
+          "scoring_hint": "2 = all critical facts correct; 1 = one minor omission or formatting issue; 0 = any critical fact is wrong or missing.",
+          "fact_ids": [
+            "step_order",
+            "first_charge_requirement"
+          ]
         },
         {
           "id": "required_appear_facts_procedure_instruction_001",
@@ -37,24 +41,27 @@
           "id": "negative_exclusion_facts_procedure_instruction_001",
           "check": "Does not show prohibited or stale facts avoid_reset_action in procedure_instruction_001; the reset caution itself is allowed and expected, but reset must not be shown as a normal setup or pairing step.",
           "points": 5,
-          "scoring_hint": "2 = no prohibited facts appear; 1 = one weak/ambiguous distractor; 0 = any explicit prohibited value appears."
+          "scoring_hint": "2 = no prohibited facts appear; 1 = one weak/ambiguous distractor; 0 = any explicit prohibited value appears.",
+          "fact_ids": [
+            "avoid_reset_action"
+          ]
         }
       ]
     },
     "information_structuring": {
-      "weight": 0.2,
+      "weight": 0.15,
       "items": [
         {
           "id": "fact_hierarchy_procedure_instruction_001",
           "check": "Organizes step_order, first_charge_requirement as the primary message for procedure_instruction_001; supporting values are step_order: Charge device for at least 20 minutes, Install the LumaHome app, Power on until the blue light pulses twice; first_charge_requirement: Charge for at least 20 minutes before setup.; pairing_cue: Blue indicator light pulses twice before scanning the pairing code.; reset_caution: Do not press the reset pin unless support asks you to do so.; avoid_reset_action: do not present the reset pin as a normal setup or pairing action.",
           "points": 5,
-          "scoring_hint": "2 = hierarchy is clear and fact-driven; 1 = facts present but hierarchy is muddled; 0 = important facts are buried or missing."
+          "scoring_hint": "2 = hierarchy is clear and fact-driven; 1 = facts present but hierarchy is muddled; 0 = important facts are buried or missing. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
         },
         {
           "id": "robust_consistency_procedure_instruction_001",
           "check": "Across repeated runs of procedure_instruction_001, the same critical facts, reset caution, exclusions avoid_reset_action, ordering rules, and layout constraints must remain consistent.",
           "points": 4,
-          "scoring_hint": "2 = stable facts and exclusions; 1 = minor wording drift only; 0 = selected facts or exclusions change."
+          "scoring_hint": "2 = stable facts and exclusions; 1 = minor wording drift only; 0 = selected facts or exclusions change. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
         }
       ]
     },
@@ -65,13 +72,13 @@
           "id": "visual_clarity_procedure_instruction_001",
           "check": "For procedure_instruction_001, uses clear visual hierarchy, readable typography, sufficient contrast, and non-crowded spacing at the intended onboarding_instruction_image size.",
           "points": 4,
-          "scoring_hint": "2 = readable and polished; 1 = readable with minor clutter; 0 = unreadable or visually incoherent."
+          "scoring_hint": "2 = readable and polished; 1 = readable with minor clutter; 0 = unreadable or visually incoherent. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
         },
         {
           "id": "visual_layout_density_procedure_instruction_001",
           "check": "The onboarding_instruction_image layout has appropriate information density, balanced image/text regions, crisp assets, platform-safe margins, and no placeholder-like areas.",
           "points": 4,
-          "scoring_hint": "2 = balanced density and crisp assets; 1 = some weak spacing or density; 0 = blank, placeholder-like, or low-resolution."
+          "scoring_hint": "2 = balanced density and crisp assets; 1 = some weak spacing or density; 0 = blank, placeholder-like, or low-resolution. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
         }
       ]
     }

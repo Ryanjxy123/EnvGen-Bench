@@ -8,7 +8,8 @@
       "source": "env/sales.sqlite",
       "importance": "critical",
       "expected_value": "NovaPack Pro",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "supported_points",
@@ -20,7 +21,8 @@
         "weather-resistant shell",
         "quick-access tech pocket"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "brand_constraints",
@@ -33,7 +35,8 @@
         "#E63946",
         "durable, organized, travel-ready"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "major_required"
     },
     {
       "id": "web_required_size",
@@ -41,7 +44,8 @@
       "source": "web",
       "importance": "critical",
       "expected_value": "official current feed sizing guidance from Instagram or Meta",
-      "must_appear_in_image": false
+      "must_appear_in_image": false,
+      "evaluation_role": "optional"
     },
     {
       "id": "wrong_product_exclusions",
@@ -52,7 +56,8 @@
         "NovaPack Mini",
         "NovaPack Tag"
       ],
-      "must_not_appear_in_image": true
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     }
   ],
   "calculation_notes": "Select product by revenue, not units. Web is only for platform size. Product reference is visual only.",

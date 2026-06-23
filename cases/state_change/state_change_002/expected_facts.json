@@ -8,7 +8,8 @@
       "source": "env/active_routes.csv",
       "importance": "critical",
       "expected_value": "Route 18",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "latest_dates",
@@ -16,7 +17,8 @@
       "source": "env/amendments.md + env/active_routes.csv",
       "importance": "critical",
       "expected_value": "July 3-8, 2026",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "latest_path_stop",
@@ -27,7 +29,8 @@
         "Cedar Avenue",
         "Cedar Library"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "stale_details",
@@ -40,7 +43,8 @@
         "Express shuttle",
         "Route 22"
       ],
-      "must_not_appear_in_image": true
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     }
   ],
   "calculation_notes": "Use active_routes.csv to select active Route 18, then amendments.md for latest dates/path/stop. Old notice and Route 22 are distractors."

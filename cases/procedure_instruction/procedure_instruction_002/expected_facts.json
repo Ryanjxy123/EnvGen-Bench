@@ -14,7 +14,8 @@
         "Press Test once",
         "Mount above prep station"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "ventilation_first",
@@ -22,7 +23,8 @@
       "source": "env/safety_manual.pdf + env/quick_card.txt",
       "importance": "critical",
       "expected_value": "Ventilation before Press Test",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "exclude_bypass",
@@ -30,7 +32,8 @@
       "source": "env/safety_manual.pdf",
       "importance": "major",
       "expected_value": "Bypass calibration",
-      "must_not_appear_in_image": true
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     },
     {
       "id": "exclude_wrong_order",
@@ -38,7 +41,8 @@
       "source": "env/safety_manual.pdf + env/quick_card.txt",
       "importance": "major",
       "expected_value": "Press Test before green ready light",
-      "must_not_appear_in_image": true
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     }
   ],
   "calculation_notes": "Combine manual and quick card. Preserve normal setup order and exclude support-only bypass calibration."

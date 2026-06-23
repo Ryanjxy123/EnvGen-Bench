@@ -2,30 +2,36 @@
   "case_id": "state_change_001",
   "dimensions": {
     "task_completion": {
-      "weight": 0.2,
+      "weight": 0.15,
       "items": [
         {
           "id": "output_type_state_change_001",
           "check": "For state_change_001, the output is a finished current_event_poster for the latest-state resolution, not a worksheet, raw table, or generic mockup.",
           "points": 4,
-          "scoring_hint": "2 = correct finished image type; 1 = correct topic but weak format; 0 = wrong artifact type."
+          "scoring_hint": "2 = correct finished image type; 1 = correct topic but weak format; 0 = wrong artifact type. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
         },
         {
           "id": "operation_depth_state_change_001",
           "check": "The image visibly resolves this case's latest-state resolution; reference facts include latest_event: Riverside Night Market; latest_date: May 21, 2026; latest_location: Riverside Hall; latest_sponsor: GreenBridge Market; latest_theme: Makers and Music Night; stale_details: May 14, 2026, Harbor Plaza, North Pier Foods.",
           "points": 4,
-          "scoring_hint": "2 = operation is visibly resolved; 1 = operation partly reflected; 0 = copied unsolved source material."
+          "scoring_hint": "2 = operation is visibly resolved; 1 = operation partly reflected; 0 = copied unsolved source material. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
         }
       ]
     },
     "grounded_requirement_satisfaction": {
-      "weight": 0.45,
+      "weight": 0.55,
       "items": [
         {
           "id": "critical_fact_accuracy_state_change_001",
           "check": "For state_change_001, accurately includes the critical expected facts latest_event, latest_date, latest_location, latest_theme, stale_details using these case values: latest_event: Riverside Night Market; latest_date: May 21, 2026; latest_location: Riverside Hall; latest_sponsor: GreenBridge Market; latest_theme: Makers and Music Night; stale_details: May 14, 2026, Harbor Plaza, North Pier Foods.",
           "points": 8,
-          "scoring_hint": "2 = all critical facts correct; 1 = one minor omission or formatting issue; 0 = any critical fact is wrong or missing."
+          "scoring_hint": "2 = all critical facts correct; 1 = one minor omission or formatting issue; 0 = any critical fact is wrong or missing.",
+          "fact_ids": [
+            "latest_event",
+            "latest_date",
+            "latest_location",
+            "latest_theme"
+          ]
         },
         {
           "id": "required_appear_facts_state_change_001",
@@ -37,24 +43,27 @@
           "id": "negative_exclusion_facts_state_change_001",
           "check": "Does not show prohibited or stale facts stale_details in state_change_001; avoids unsupported claims from distractor env material.",
           "points": 5,
-          "scoring_hint": "2 = no prohibited facts appear; 1 = one weak/ambiguous distractor; 0 = any explicit prohibited value appears."
+          "scoring_hint": "2 = no prohibited facts appear; 1 = one weak/ambiguous distractor; 0 = any explicit prohibited value appears.",
+          "fact_ids": [
+            "stale_details"
+          ]
         }
       ]
     },
     "information_structuring": {
-      "weight": 0.2,
+      "weight": 0.15,
       "items": [
         {
           "id": "fact_hierarchy_state_change_001",
           "check": "Organizes latest_event, latest_date, latest_location, latest_theme as the primary message for state_change_001; supporting values are latest_event: Riverside Night Market; latest_date: May 21, 2026; latest_location: Riverside Hall; latest_sponsor: GreenBridge Market; latest_theme: Makers and Music Night; stale_details: May 14, 2026, Harbor Plaza, North Pier Foods.",
           "points": 5,
-          "scoring_hint": "2 = hierarchy is clear and fact-driven; 1 = facts present but hierarchy is muddled; 0 = important facts are buried or missing."
+          "scoring_hint": "2 = hierarchy is clear and fact-driven; 1 = facts present but hierarchy is muddled; 0 = important facts are buried or missing. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
         },
         {
           "id": "robust_consistency_state_change_001",
           "check": "Across repeated runs of state_change_001, the same critical facts, exclusions stale_details, ordering rules, and layout constraints must remain consistent.",
           "points": 4,
-          "scoring_hint": "2 = stable facts and exclusions; 1 = minor wording drift only; 0 = selected facts or exclusions change."
+          "scoring_hint": "2 = stable facts and exclusions; 1 = minor wording drift only; 0 = selected facts or exclusions change. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
         }
       ]
     },
@@ -65,13 +74,13 @@
           "id": "visual_clarity_state_change_001",
           "check": "For state_change_001, uses clear visual hierarchy, readable typography, sufficient contrast, and non-crowded spacing at the intended current_event_poster size.",
           "points": 4,
-          "scoring_hint": "2 = readable and polished; 1 = readable with minor clutter; 0 = unreadable or visually incoherent."
+          "scoring_hint": "2 = readable and polished; 1 = readable with minor clutter; 0 = unreadable or visually incoherent. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
         },
         {
           "id": "visual_layout_density_state_change_001",
           "check": "The current_event_poster layout has appropriate information density, balanced image/text regions, crisp assets, platform-safe margins, and no placeholder-like areas.",
           "points": 4,
-          "scoring_hint": "2 = balanced density and crisp assets; 1 = some weak spacing or density; 0 = blank, placeholder-like, or low-resolution."
+          "scoring_hint": "2 = balanced density and crisp assets; 1 = some weak spacing or density; 0 = blank, placeholder-like, or low-resolution. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
         }
       ]
     }

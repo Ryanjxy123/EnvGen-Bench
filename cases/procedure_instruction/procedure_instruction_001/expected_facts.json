@@ -15,7 +15,8 @@
         "Name the device and confirm room",
         "Run the first calibration"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "first_charge_requirement",
@@ -23,7 +24,8 @@
       "source": "env/user_manual.pdf + env/quick_start_notes.txt",
       "importance": "critical",
       "expected_value": "Charge for at least 20 minutes before setup.",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "pairing_cue",
@@ -31,7 +33,8 @@
       "source": "env/user_manual.pdf + env/quick_start_notes.txt",
       "importance": "major",
       "expected_value": "Blue indicator light pulses twice before scanning the pairing code.",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "major_required"
     },
     {
       "id": "reset_caution",
@@ -39,7 +42,8 @@
       "source": "env/quick_start_notes.txt",
       "importance": "major",
       "expected_value": "Do not press the reset pin unless support asks you to do so.",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "major_required"
     },
     {
       "id": "avoid_reset_action",
@@ -58,7 +62,8 @@
         "\\breset\\s+pin\\b[^.!?\\n;]{0,80}\\bunless\\s+support\\b",
         "\\breset\\s+pin\\b[^.!?\\n;]{0,80}\\btroubleshooting\\s+only\\b"
       ],
-      "must_not_appear_in_image": true
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     }
   ],
   "calculation_notes": "Combine the manual's setup procedure with quick_start_notes.txt. Preserve the normal setup sequence, include first-charge and blue-light readiness cues, and exclude reset-pin troubleshooting as a main step."

@@ -8,7 +8,8 @@
       "source": "env/session_status.csv",
       "importance": "critical",
       "expected_value": "Civic Data Lab",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "current_details",
@@ -22,7 +23,8 @@
         "Dr. Nia Okafor",
         "Applied Data Practice"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "stale_details",
@@ -35,7 +37,8 @@
         "Elena Ruiz",
         "Open Data Clinic"
       ],
-      "must_not_appear_in_image": true
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     },
     {
       "id": "active_gate",
@@ -43,7 +46,8 @@
       "source": "env/session_status.csv",
       "importance": "critical",
       "expected_value": "status active",
-      "must_appear_in_image": false
+      "must_appear_in_image": false,
+      "evaluation_role": "optional"
     }
   ],
   "calculation_notes": "Use session_status.csv as active/cancelled gate; agenda_diff.md resolves changed room, speaker, time, and track."

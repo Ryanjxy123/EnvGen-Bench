@@ -13,7 +13,8 @@
         "Close latch until it clicks",
         "Run print test"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "safety_cue",
@@ -21,7 +22,8 @@
       "source": "env/kiosk_setup.pdf",
       "importance": "critical",
       "expected_value": "Power light must be amber before opening panel.",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "normal_end_state",
@@ -29,7 +31,8 @@
       "source": "env/kiosk_setup.pdf",
       "importance": "major",
       "expected_value": "test receipt prints cleanly",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "major_required"
     },
     {
       "id": "wrong_action",
@@ -37,7 +40,8 @@
       "source": "env/kiosk_setup.pdf",
       "importance": "major",
       "expected_value": "force the latch",
-      "must_not_appear_in_image": true
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     }
   ],
   "calculation_notes": "Use the PDF and supporting notes; preserve required inclusions and exclusions."

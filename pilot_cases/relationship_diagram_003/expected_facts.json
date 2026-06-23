@@ -21,7 +21,8 @@
           "Ari Patel"
         ]
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "advisory_edge",
@@ -33,7 +34,8 @@
         "Community Advisory Board",
         "dotted advisory"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "core_people",
@@ -47,7 +49,8 @@
         "Leah Stone",
         "Community Advisory Board"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "major_required"
     },
     {
       "id": "wrong_manager",
@@ -55,7 +58,8 @@
       "source": "env/diagram_rules.md",
       "importance": "major",
       "expected_value": "Community Advisory Board as manager",
-      "must_not_appear_in_image": true
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     }
   ],
   "calculation_notes": "Use reports_to for solid lines and advisory for dotted lines. Advisory board is not a management node."

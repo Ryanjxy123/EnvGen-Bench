@@ -16,7 +16,8 @@
         "Reminder Worker",
         "Notification Log"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "edges",
@@ -49,7 +50,8 @@
           "Notification Log"
         ]
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "relation_types",
@@ -63,7 +65,8 @@
         "consumes",
         "writes"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "major_required"
     },
     {
       "id": "exclude_export",
@@ -71,7 +74,8 @@
       "source": "env/service_notes.md",
       "importance": "major",
       "expected_value": "Marketing Export",
-      "must_not_appear_in_image": true
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     }
   ],
   "calculation_notes": "Use booking path only; exclude Marketing Export."

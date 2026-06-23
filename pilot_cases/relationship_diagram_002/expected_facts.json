@@ -16,7 +16,8 @@
         "Onboarding Worker",
         "Ticketing System"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "directed_edges",
@@ -49,7 +50,8 @@
           "Ticketing System"
         ]
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "relation_types",
@@ -64,7 +66,8 @@
         "consumes",
         "creates"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "major_required"
     },
     {
       "id": "exclude_analytics",
@@ -72,7 +75,8 @@
       "source": "env/vendor_flow.md + env/flow_config.yaml",
       "importance": "major",
       "expected_value": "Analytics Export",
-      "must_not_appear_in_image": true
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     }
   ],
   "calculation_notes": "Use vendor_flow.md for edges and flow_config.yaml for node confirmation. Analytics Export is a distractor."

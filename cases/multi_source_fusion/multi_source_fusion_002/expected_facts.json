@@ -8,7 +8,8 @@
       "source": "env/weather_summary.csv",
       "importance": "critical",
       "expected_value": "Sunday",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "weather_reason",
@@ -16,7 +17,8 @@
       "source": "env/weather_summary.csv",
       "importance": "critical",
       "expected_value": "sunny, 76 F, 10% rain",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "venue_tone",
@@ -27,7 +29,8 @@
         "outdoor garden route",
         "fresh, relaxed, outdoorsy"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "major_required"
     },
     {
       "id": "web_required_size",
@@ -35,7 +38,8 @@
       "source": "web",
       "importance": "critical",
       "expected_value": "official current feed sizing guidance from Instagram or Meta",
-      "must_appear_in_image": false
+      "must_appear_in_image": false,
+      "evaluation_role": "optional"
     },
     {
       "id": "wrong_claims",
@@ -47,7 +51,8 @@
         "evening concerts",
         "nightlife"
       ],
-      "must_not_appear_in_image": true
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     }
   ],
   "calculation_notes": "Select the best day from weather_summary.csv: Sunday is sunny with highest temp and low rain. Web is only for platform size.",

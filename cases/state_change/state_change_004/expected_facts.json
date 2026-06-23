@@ -8,7 +8,8 @@
       "source": "env/status.csv",
       "importance": "critical",
       "expected_value": "Farmers Market Pop-up",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "current_date",
@@ -16,7 +17,8 @@
       "source": "env/updates.md",
       "importance": "critical",
       "expected_value": "June 11",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "current_location",
@@ -24,7 +26,8 @@
       "source": "env/updates.md",
       "importance": "critical",
       "expected_value": "North Pavilion",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "current_sponsor",
@@ -32,7 +35,8 @@
       "source": "env/updates.md",
       "importance": "major",
       "expected_value": "Local Roots Co-op",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "major_required"
     },
     {
       "id": "stale_details",
@@ -44,7 +48,8 @@
         "East Lawn",
         "Green Crate"
       ],
-      "must_not_appear_in_image": true
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     }
   ],
   "calculation_notes": "Use status.csv to select active event and updates.md for latest details."

@@ -8,7 +8,8 @@
       "source": "env/sales.csv",
       "importance": "critical",
       "expected_value": "HelioGrid Pulse",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "selling_points",
@@ -20,7 +21,8 @@
         "quiet wall-mounted design",
         "app-guided energy insights"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "audience_tone",
@@ -28,7 +30,8 @@
       "source": "env/audience_profile.json",
       "importance": "major",
       "expected_value": "confident, practical, optimistic",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "major_required"
     },
     {
       "id": "brand_constraints",
@@ -42,7 +45,8 @@
         "red background",
         "cartoon mascot"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "major_required"
     },
     {
       "id": "visual_reference_assets",
@@ -50,7 +54,8 @@
       "source": "env/brand_guide.pdf",
       "importance": "major",
       "expected_value": "approved brand visual style from the brand guide",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "major_required"
     },
     {
       "id": "web_required_size",
@@ -58,7 +63,8 @@
       "source": "web",
       "importance": "critical",
       "expected_value": "official current feed sizing guidance from Instagram or Meta",
-      "must_appear_in_image": false
+      "must_appear_in_image": false,
+      "evaluation_role": "optional"
     },
     {
       "id": "wrong_product_exclusions",
@@ -69,7 +75,8 @@
         "HelioGrid Mini",
         "HelioGrid Sense"
       ],
-      "must_not_appear_in_image": true
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     }
   ],
   "web_facts": [
