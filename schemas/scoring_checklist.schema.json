@@ -15,12 +15,6 @@
     },
     "dimensions": {
       "type": "object",
-      "required": [
-        "task_completion",
-        "grounded_requirement_satisfaction",
-        "information_structuring",
-        "visual_rendering_quality"
-      ],
       "additionalProperties": false,
       "properties": {
         "task_completion": {
@@ -34,10 +28,113 @@
         },
         "visual_rendering_quality": {
           "$ref": "#/$defs/dimension"
+        },
+        "visual_communication_quality": {
+          "$ref": "#/$defs/dimension"
+        },
+        "robustness": {
+          "$ref": "#/$defs/dimension"
+        }
+      },
+      "anyOf": [
+        {
+          "required": [
+            "task_completion",
+            "grounded_requirement_satisfaction",
+            "information_structuring",
+            "visual_rendering_quality"
+          ]
+        },
+        {
+          "required": [
+            "task_completion",
+            "grounded_requirement_satisfaction",
+            "information_structuring",
+            "visual_communication_quality",
+            "robustness"
+          ]
+        },
+        {
+          "required": [
+            "task_completion",
+            "grounded_requirement_satisfaction",
+            "visual_communication_quality",
+            "robustness"
+          ]
+        }
+      ]
+    },
+    "score_caps": {
+      "$ref": "#/$defs/caps"
+    },
+    "hard_caps": {
+      "$ref": "#/$defs/caps"
+    }
+  },
+  "$defs": {
+    "dimension": {
+      "type": "object",
+      "required": [
+        "weight",
+        "items"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "weight": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "items": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/checklist_item"
+          }
         }
       }
     },
-    "score_caps": {
+    "checklist_item": {
+      "type": "object",
+      "required": [
+        "id",
+        "check",
+        "points"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9_]+$"
+        },
+        "check": {
+          "type": "string",
+          "minLength": 5
+        },
+        "points": {
+          "type": "number",
+          "minimum": 0
+        },
+        "fact_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9_]+$"
+        },
+        "fact_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9_]+$"
+          }
+        },
+        "scoring_hint": {
+          "type": "string"
+        }
+      }
+    },
+    "caps": {
       "type": "array",
       "items": {
         "type": "object",
@@ -63,93 +160,79 @@
             "minLength": 3
           },
           "trigger": {
-            "type": "object",
-            "required": [
-              "type"
-            ],
-            "additionalProperties": false,
-            "properties": {
-              "type": {
-                "type": "string",
-                "enum": [
-                  "forbidden_final_answer",
-                  "missing_required_count"
-                ]
-              },
-              "patterns": {
-                "type": "array",
-                "items": {
-                  "type": "string",
-                  "minLength": 1
-                }
-              },
-              "allowed_patterns": {
-                "type": "array",
-                "items": {
-                  "type": "string",
-                  "minLength": 1
-                }
-              },
-              "fact_ids": {
-                "type": "array",
-                "items": {
-                  "type": "string",
-                  "pattern": "^[a-z0-9_]+$"
-                }
-              },
-              "min_missing": {
-                "type": "integer",
-                "minimum": 1
-              }
-            }
+            "$ref": "#/$defs/cap_trigger"
           }
         }
       }
-    }
-  },
-  "$defs": {
-    "dimension": {
+    },
+    "cap_trigger": {
       "type": "object",
       "required": [
-        "weight",
-        "items"
+        "type"
       ],
       "additionalProperties": false,
       "properties": {
-        "weight": {
-          "type": "number",
-          "minimum": 0,
-          "maximum": 1
+        "type": {
+          "type": "string",
+          "enum": [
+            "wrong_artifact_type",
+            "missing_required_fact",
+            "missing_required_count",
+            "missing_or_wrong_position_fact",
+            "aspect_ratio_mismatch",
+            "canvas_size_mismatch",
+            "forbidden_visual_use",
+            "forbidden_final_answer",
+            "aggregate_failure"
+          ]
         },
-        "items": {
+        "expected": {
+          "type": "string"
+        },
+        "expected_type": {
+          "type": "string"
+        },
+        "expected_position": {
+          "type": "string"
+        },
+        "fact_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9_]+$"
+        },
+        "fact_ids": {
           "type": "array",
-          "minItems": 1,
           "items": {
-            "type": "object",
-            "required": [
-              "id",
-              "check",
-              "points"
-            ],
-            "additionalProperties": false,
-            "properties": {
-              "id": {
-                "type": "string",
-                "pattern": "^[a-z0-9_]+$"
-              },
-              "check": {
-                "type": "string",
-                "minLength": 5
-              },
-              "points": {
-                "type": "number",
-                "minimum": 0
-              },
-              "scoring_hint": {
-                "type": "string"
-              }
-            }
+            "type": "string",
+            "pattern": "^[a-z0-9_]+$"
           }
+        },
+        "min_missing": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "min_failed": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "patterns": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "allowed_patterns": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "visual_role": {
+          "type": "string"
+        },
+        "forbidden_role": {
+          "type": "string"
         }
       }
     }

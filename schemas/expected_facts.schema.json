@@ -60,6 +60,15 @@
               "minor"
             ]
           },
+          "evaluation_role": {
+            "type": "string",
+            "enum": [
+              "critical_required",
+              "major_required",
+              "optional",
+              "negative_only"
+            ]
+          },
           "expected_value": {},
           "canonical_answer": {},
           "semantic_acceptance": {

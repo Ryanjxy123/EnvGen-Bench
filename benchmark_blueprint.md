@@ -49,14 +49,29 @@ Suggested web split per task type:
 
 | Dimension | Weight | Meaning |
 | --- | ---: | --- |
-| Task Completion | 20% | Whether the requested image type and basic task objective are completed |
-| Grounded Requirement Satisfaction | 45% | Whether content, data, entities, relations, steps, states, and constraints match `env/` and `task.md` |
-| Information Structuring | 20% | Whether complex environment information is selected, compressed, and organized for image expression |
+| Task Completion | 15% | Whether the final image completes the task's core output purpose, not merely whether an image exists |
+| Grounded Requirement Satisfaction | 55% | Whether required content, data, entities, relations, steps, states, and constraints match `env/` and `task.md` |
+| Information Structuring | 15% | Whether mostly-correct environment information is selected, compressed, grouped, and prioritized for image expression |
 | Visual Rendering Quality | 15% | Whether the generated image is readable, clear, visually coherent, and suitable for the task |
 
 Use `Visual Rendering Quality` as the canonical dimension name. If older notes
 use `Visual Communication Quality`, treat it as the same concept and normalize
 new files to `Visual Rendering Quality`.
+
+For legacy cases that still use a robustness dimension, use Task Completion
+15%, Grounded Requirement Satisfaction 50%, Information Structuring 15%, Visual
+Rendering / Communication Quality 10%, and Robustness 10%.
+
+Visual quality must not compensate for missing grounded facts. A polished
+placeholder, generic mockup, empty-field template, or image using text such as
+`coming soon`, `unavailable`, `pending`, `details will be available`, `cannot
+finalize`, or `not accessible` can receive visual-quality credit, but should
+score low on Task Completion, Grounded Requirement Satisfaction, and
+Information Structuring.
+
+Expected facts should distinguish `critical_required`, `major_required`,
+`optional`, and `negative_only` roles. Optional facts are not required to appear;
+negative-only facts should be scored only when wrongly included.
 
 ## Design Principles
 

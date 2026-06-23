@@ -128,6 +128,37 @@ Per-case scoring checklist aligned with the four benchmark dimensions:
 
 The checklist should be specific enough for human or model-assisted evaluation.
 
+Use the standard weights unless a legacy robustness dimension is still needed:
+
+- Standard: Task Completion 15%, Grounded Requirement Satisfaction 55%,
+  Information Structuring 15%, Visual Rendering Quality 15%.
+- Robustness-compatible: Task Completion 15%, Grounded Requirement Satisfaction
+  50%, Information Structuring 15%, Visual Quality 10%, Robustness 10%.
+
+Task Completion must check whether the image fulfills the task's core
+env-grounded purpose. A good-looking placeholder, template, empty-field mockup,
+or image saying `coming soon`, `pending`, `unavailable`, `details will be
+available`, `cannot finalize`, or `not accessible` should not score as a
+completed task.
+
+Grounded Requirement Satisfaction is the main score driver. Facts in
+`expected_facts.json` may use `evaluation_role`:
+
+- `critical_required`: must be visible in the image; missing or wrong values
+  should strongly reduce grounded credit.
+- `major_required`: must be visible but allows minor paraphrase.
+- `optional`: not required; absence should not reduce score.
+- `negative_only`: must not appear; score only when the image explicitly uses
+  the forbidden or unsupported detail.
+
+Information Structuring should be evaluated only after core facts are mostly
+correct. It measures selection, ordering, grouping, compression, and emphasis,
+not merely a neat layout.
+
+Visual Rendering Quality should judge only readability, hierarchy, contrast,
+composition, polish, and platform fit. Do not score forbidden facts, missing
+facts, env-read failures, or factual grounding under visual quality.
+
 ## Naming
 
 Use stable lowercase ids:
