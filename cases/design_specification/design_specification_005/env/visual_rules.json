@@ -1,0 +1,71 @@
+{
+  "brand": "QuietDock",
+  "campaign": "QuietDock Mini",
+  "image_type": "device_launch_social_image",
+  "required_format": {
+    "width_px": 1080,
+    "height_px": 1080,
+    "aspect_ratio": "1:1"
+  },
+  "palette": {
+    "primary": "#1C2541",
+    "background": "#F5F7FA",
+    "accent": "#5BC0BE",
+    "support": "#D7E4EA",
+    "semantic_note": "Use navy, cool white, and aqua as the dominant product-launch system; exact pixel-level matching is not required."
+  },
+  "logo": {
+    "active_treatment": "QuietDock QD mark or compact wordmark",
+    "required_position": "upper-left",
+    "safe_margin_px": 72,
+    "minimum_width_px": 128,
+    "forbidden_treatments": [
+      "old lightning badge"
+    ]
+  },
+  "layout": {
+    "required_zones": [
+      "upper-left current mark zone",
+      "top product name and headline zone",
+      "middle tidy dock hero zone",
+      "lower callout strip with supporting line and CTA"
+    ],
+    "cta_position": "lower callout strip",
+    "avoid": [
+      "emergency alert layout",
+      "messy cable cleanup before/after layout",
+      "cartoon robot badge layout"
+    ]
+  },
+  "hero_visual": {
+    "allowed_directions": [
+      "compact desk charging dock",
+      "phone and earbuds charging neatly",
+      "tidy modern workspace close-up",
+      "organized desk essentials around a small dock"
+    ],
+    "forbidden_active_roles": [
+      "messy cable pile as hero",
+      "cartoon robot as hero",
+      "red warning alert scene as background"
+    ],
+    "required_components": [
+      "compact charging dock visible",
+      "phone and earbuds charging visible",
+      "tidy modern workspace visible",
+      "organized desk essentials or cable-free cue visible"
+    ]
+  },
+  "unauthorized_claims": {
+    "rule": "Do not add unsupported promises, discounts, guarantees, free offers, safety claims, or performance claims unless they appear in the approved_current copy.",
+    "forbidden_examples": [
+      "guaranteed to remove every loose cable",
+      "save 50%",
+      "free magnetic modules",
+      "power through every crisis"
+    ]
+  },
+  "priority_notes": [
+    "campaign_brief.md is authoritative; only approved_current copy may be used as active final copy."
+  ]
+}

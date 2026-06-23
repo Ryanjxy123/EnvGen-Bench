@@ -1,0 +1,115 @@
+{
+  "brand": "Cedar Loop Market",
+  "campaign": "Neighborhood market launch",
+  "image_type": "market_launch_social_image",
+  "required_format": {
+    "width_px": 1080,
+    "height_px": 1080,
+    "aspect_ratio": "1:1"
+  },
+  "palette": {
+    "primary": "#2F5D50",
+    "background": "#F8E9C8",
+    "accent": "#D9822B",
+    "support": "#8BAA7C",
+    "semantic_note": "Use green, warm oat, and marigold as the dominant market system; exact pixel-level matching is not required."
+  },
+  "logo": {
+    "active_treatment": "Cedar Loop loop-leaf mark or friendly wordmark",
+    "required_position": "lower-left",
+    "safe_margin_px": 72,
+    "minimum_width_px": 148,
+    "forbidden_treatments": [
+      "old black crest"
+    ]
+  },
+  "typography": {
+    "headline": "friendly sturdy serif or warm humanist sans-serif",
+    "body": "clear market-signage sans-serif",
+    "forbidden": [
+      "luxury fashion serif as the dominant style",
+      "neon nightclub lettering",
+      "low-contrast script"
+    ]
+  },
+  "layout": {
+    "required_zones": [
+      "top brand name and launch message zone",
+      "middle neighborhood market-stall hero zone",
+      "lower-left logo zone",
+      "bottom date and CTA zone"
+    ],
+    "cta_position": "bottom area",
+    "avoid": [
+      "city skyline hero",
+      "luxury fashion editorial composition",
+      "neon night-market poster"
+    ]
+  },
+  "hero_visual": {
+    "allowed_directions": [
+      "fresh market stalls",
+      "local makers table",
+      "produce, flowers, bread, or ceramics",
+      "short pedestrian path through a neighborhood market",
+      "warm illustrated stall scene"
+    ],
+    "forbidden_active_roles": [
+      "city skyline as hero",
+      "luxury fashion model as hero",
+      "neon nightlife scene as background"
+    ],
+    "required_components": [
+      "market stalls visible",
+      "local makers or fresh goods visible",
+      "walkable path or loop cue visible",
+      "daytime neighborhood market cue visible"
+    ]
+  },
+  "forbidden_active_elements": [
+    {
+      "name": "neon palette",
+      "prohibited_roles": [
+        "dominant background",
+        "active brand color system"
+      ]
+    },
+    {
+      "name": "city skyline",
+      "prohibited_roles": [
+        "hero visual",
+        "dominant background",
+        "layout basis"
+      ]
+    },
+    {
+      "name": "luxury fashion",
+      "prohibited_roles": [
+        "hero visual",
+        "layout basis",
+        "active concept"
+      ]
+    },
+    {
+      "name": "old black crest",
+      "prohibited_roles": [
+        "primary logo",
+        "corner logo",
+        "brand signature"
+      ]
+    }
+  ],
+  "unauthorized_claims": {
+    "rule": "Do not add unsupported promises, discounts, guarantees, free offers, safety claims, or performance claims unless they appear in the approved_current copy.",
+    "forbidden_examples": [
+      "VIP access",
+      "exclusive bites",
+      "leasing now",
+      "save 50%",
+      "free groceries"
+    ]
+  },
+  "priority_notes": [
+    "campaign_brief.md is authoritative; only approved_current copy may be used as active final copy."
+  ]
+}

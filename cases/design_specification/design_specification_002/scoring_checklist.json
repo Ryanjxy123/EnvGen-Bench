@@ -2,78 +2,384 @@
   "case_id": "design_specification_002",
   "dimensions": {
     "task_completion": {
-      "weight": 0.2,
+      "label": "Task Completion",
+      "weight": 0.15,
       "items": [
         {
-          "id": "output_type_design_specification_002",
-          "check": "For design_specification_002, the output is a finished museum_exhibit_poster for the brand and visual constraint, not a worksheet, raw table, or generic mockup.",
-          "points": 4,
-          "scoring_hint": "2 = correct finished image type; 1 = correct topic but weak format; 0 = wrong artifact type."
+          "id": "finished_exhibit_poster",
+          "check": "The output is a finished 1080 x 1350 museum_exhibit_poster for the current approved campaign, not a worksheet, raw rule summary, generic mockup, or unrelated artifact.",
+          "points": 5,
+          "scoring_hint": "Full credit requires a finished target image artifact, not a spec summary, table, prompt-only answer, or unrelated mockup. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
         },
         {
-          "id": "operation_depth_design_specification_002",
-          "check": "The image visibly resolves this case's brand and visual constraint; reference facts include required_copy: Tides of Memory, A harbor history exhibition, Opening weekend reservations; palette: #12355B, #FFF8EA, #B36A2E; mark_position: upper-left; forbidden_elements: neon colors, cartoon sea animals, distressed horror typography.",
-          "points": 4,
-          "scoring_hint": "2 = operation is visibly resolved; 1 = operation partly reflected; 0 = copied unsolved source material."
+          "id": "current_campaign_goal_resolved",
+          "check": "The image resolves the current approved campaign using the approved copy, current logo/mark placement, current layout, required hero components, CTA, and no active deprecated elements.",
+          "points": 5,
+          "scoring_hint": "Full credit requires visible choices that follow current authoritative files rather than archived/draft/deprecated sources. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
         }
       ]
     },
     "grounded_requirement_satisfaction": {
-      "weight": 0.45,
+      "label": "Grounded Requirement Satisfaction",
+      "weight": 0.5,
       "items": [
         {
-          "id": "critical_fact_accuracy_design_specification_002",
-          "check": "For design_specification_002, accurately includes the critical expected facts required_copy, palette, mark_position, forbidden_elements using these case values: required_copy: Tides of Memory, A harbor history exhibition, Opening weekend reservations; palette: #12355B, #FFF8EA, #B36A2E; mark_position: upper-left; forbidden_elements: neon colors, cartoon sea animals, distressed horror typography.",
-          "points": 8,
-          "scoring_hint": "2 = all critical facts correct; 1 = one minor omission or formatting issue; 0 = any critical fact is wrong or missing."
+          "id": "required_copy_exact_accuracy",
+          "fact_ids": [
+            "required_title",
+            "required_subtitle",
+            "required_date_line",
+            "required_cta"
+          ],
+          "check": "All approved_current required copy facts are readable in the image with exact or near-exact wording, and archived/draft/test copy is not substituted.",
+          "points": 12,
+          "scoring_hint": "Use image evidence first. Missing product/title/headline, message/subtitle, supporting/date line, or CTA loses substantial credit; unsupported draft copy does not count."
         },
         {
-          "id": "required_appear_facts_design_specification_002",
-          "check": "Shows required appear facts required_copy, palette, mark_position for design_specification_002 without replacing them with unsupported alternatives; expected values include required_copy: Tides of Memory, A harbor history exhibition, Opening weekend reservations; palette: #12355B, #FFF8EA, #B36A2E; mark_position: upper-left; forbidden_elements: neon colors, cartoon sea animals, distressed horror typography.",
+          "id": "canvas_size_and_aspect_ratio",
+          "check": "The artifact uses exact 1080 x 1350 px canvas size and 4:5 aspect ratio; size and ratio are checked separately.",
           "points": 6,
-          "scoring_hint": "2 = all required facts appear clearly; 1 = most appear but one is ambiguous; 0 = multiple required facts are absent."
+          "scoring_hint": "Exact canvas size mismatch should reduce this checklist item but should not by itself hard-cap an otherwise correct square/vertical image. Wrong aspect ratio remains a hard-cap condition."
         },
         {
-          "id": "negative_exclusion_facts_design_specification_002",
-          "check": "Does not show prohibited or stale facts forbidden_elements in design_specification_002; avoids unsupported claims from distractor env material.",
-          "points": 5,
-          "scoring_hint": "2 = no prohibited facts appear; 1 = one weak/ambiguous distractor; 0 = any explicit prohibited value appears."
+          "id": "layout_zones_and_safe_areas",
+          "fact_ids": [
+            "museum_mark_position",
+            "title_zone",
+            "cta_zone",
+            "safe_margin",
+            "required_layout_zones"
+          ],
+          "check": "Logo/mark placement, title zone, CTA zone, safe margins, and current template zones are visibly correct and coherent.",
+          "points": 10,
+          "scoring_hint": "Deduct for unclear zones, wrong logo/CTA/title placement, or visibly unsafe margins. Do not treat uncertain safe margin alone as a core hard-cap failure unless key content is clearly clipped or off-canvas."
+        },
+        {
+          "id": "current_palette_and_style",
+          "check": "The image follows the current palette and brand tone from env rather than deprecated visual treatments.",
+          "points": 6,
+          "scoring_hint": "Exact hex sampling is not required, but the dominant visual system must clearly match current rules."
+        },
+        {
+          "id": "hero_components_complete",
+          "fact_ids": [
+            "hero_archival_harbor",
+            "hero_map_or_artifact",
+            "hero_museum_context",
+            "hero_restrained_non_horror"
+          ],
+          "check": "The hero visual includes every required component from env rather than only a generic thematic image.",
+          "points": 10,
+          "scoring_hint": "Give partial credit per component; a generic scene without the required product/context/function cues should score low."
+        },
+        {
+          "id": "deprecated_and_unsupported_exclusion",
+          "fact_ids": [
+            "deprecated_assets_not_active",
+            "old_slogan_not_active",
+            "old_logo_not_primary",
+            "unsupported_claims_not_present",
+            "forbidden_neon_palette",
+            "forbidden_wave_mascot",
+            "forbidden_storm_horror_template"
+          ],
+          "check": "Deprecated logos, stale slogans, forbidden templates/backgrounds/mascots, and unsupported marketing claims are not used as active final design elements.",
+          "points": 10,
+          "scoring_hint": "Explicit exclusion notes are acceptable, but active use in headline, logo, hero, background, CTA, or layout should lose credit and may trigger caps."
         }
       ]
     },
     "information_structuring": {
-      "weight": 0.2,
-      "items": [
-        {
-          "id": "fact_hierarchy_design_specification_002",
-          "check": "Organizes required_copy, palette, mark_position, forbidden_elements as the primary message for design_specification_002; supporting values are required_copy: Tides of Memory, A harbor history exhibition, Opening weekend reservations; palette: #12355B, #FFF8EA, #B36A2E; mark_position: upper-left; forbidden_elements: neon colors, cartoon sea animals, distressed horror typography.",
-          "points": 5,
-          "scoring_hint": "2 = hierarchy is clear and fact-driven; 1 = facts present but hierarchy is muddled; 0 = important facts are buried or missing."
-        },
-        {
-          "id": "robust_consistency_design_specification_002",
-          "check": "Across repeated runs of design_specification_002, the same critical facts, exclusions forbidden_elements, ordering rules, and layout constraints must remain consistent.",
-          "points": 4,
-          "scoring_hint": "2 = stable facts and exclusions; 1 = minor wording drift only; 0 = selected facts or exclusions change."
-        }
-      ]
-    },
-    "visual_rendering_quality": {
+      "label": "Information Structuring",
       "weight": 0.15,
       "items": [
         {
-          "id": "visual_clarity_design_specification_002",
-          "check": "For design_specification_002, uses clear visual hierarchy, readable typography, sufficient contrast, and non-crowded spacing at the intended museum_exhibit_poster size.",
-          "points": 4,
-          "scoring_hint": "2 = readable and polished; 1 = readable with minor clutter; 0 = unreadable or visually incoherent."
+          "id": "reasoned_content_selection_design_specification_002",
+          "check": "Selects, orders, groups, and compresses the env-grounded content into a coherent image message rather than copying raw source material or using placeholder content.",
+          "points": 6,
+          "fact_ids": [
+            "required_title",
+            "required_subtitle",
+            "required_date_line",
+            "required_cta",
+            "museum_mark_position",
+            "title_zone",
+            "cta_zone",
+            "safe_margin",
+            "required_layout_zones",
+            "hero_archival_harbor",
+            "hero_map_or_artifact",
+            "hero_museum_context",
+            "hero_restrained_non_horror"
+          ],
+          "scoring_hint": "Evaluate structuring only after checking that the core env facts are mostly correct; a tidy layout with missing core facts should score low. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
         },
         {
-          "id": "visual_layout_density_design_specification_002",
-          "check": "The museum_exhibit_poster layout has appropriate information density, balanced image/text regions, crisp assets, platform-safe margins, and no placeholder-like areas.",
+          "id": "fact_hierarchy_design_specification_002",
+          "check": "Highlights the primary required message and places supporting details in secondary visual roles appropriate to the target image type.",
           "points": 4,
-          "scoring_hint": "2 = balanced density and crisp assets; 1 = some weak spacing or density; 0 = blank, placeholder-like, or low-resolution."
+          "fact_ids": [
+            "required_title",
+            "required_subtitle",
+            "required_date_line",
+            "required_cta",
+            "museum_mark_position",
+            "title_zone",
+            "cta_zone",
+            "safe_margin",
+            "required_layout_zones",
+            "hero_archival_harbor",
+            "hero_map_or_artifact",
+            "hero_museum_context",
+            "hero_restrained_non_horror"
+          ],
+          "scoring_hint": "Reward correct emphasis and compression of grounded facts, not mere visual neatness. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
+        }
+      ]
+    },
+    "visual_communication_quality": {
+      "label": "Visual Communication Quality",
+      "weight": 0.1,
+      "items": [
+        {
+          "id": "readability_and_hierarchy",
+          "check": "Visible text is genuinely readable, non-overlapping, and organized with clear visual hierarchy.",
+          "points": 8,
+          "scoring_hint": "Judge legibility, contrast, type scale, hierarchy, and crowding only. Required copy accuracy is scored in Grounded Requirement Satisfaction."
+        },
+        {
+          "id": "composition_balance",
+          "check": "Composition is balanced, has a clear focal area, sufficient contrast, and coherent spacing.",
+          "points": 7,
+          "scoring_hint": "Reward polished visual organization; do not score required object/zone correctness here."
+        },
+        {
+          "id": "brand_expression_quality",
+          "check": "The final visual expression is coherent, polished, and appropriate for the requested image type.",
+          "points": 6,
+          "scoring_hint": "Judge aesthetic coherence and finish only. Brand-rule factual compliance is scored in Grounded Requirement Satisfaction."
+        },
+        {
+          "id": "finished_image_polish",
+          "check": "The output looks like a completed publication-ready image with intentional typography, background, imagery, and CTA styling.",
+          "points": 4,
+          "scoring_hint": "Penalize placeholder visuals, raw tables, visible spec dumps, or unfinished mockups. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
+        }
+      ]
+    },
+    "robustness": {
+      "label": "Robustness",
+      "weight": 0.1,
+      "items": [
+        {
+          "id": "version_conflict_resistance",
+          "fact_ids": [
+            "deprecated_assets_not_active",
+            "old_slogan_not_active",
+            "old_logo_not_primary",
+            "unsupported_claims_not_present",
+            "forbidden_neon_palette",
+            "forbidden_wave_mascot",
+            "forbidden_storm_horror_template"
+          ],
+          "check": "Correctly resists old-version, archived, draft, test, and deprecated distractors across copy, logo, hero, background, and layout.",
+          "points": 6,
+          "scoring_hint": "This is about applying file precedence and status labels, not merely omitting one deprecated phrase."
+        },
+        {
+          "id": "precedence_rule_application",
+          "fact_ids": [
+            "required_title",
+            "required_subtitle",
+            "required_date_line",
+            "required_cta",
+            "museum_mark_position",
+            "required_layout_zones"
+          ],
+          "check": "Applies env precedence: approved/current copy, visual_rules over older guides, platform_specs over template sizing, and deprecated_assets over asset_manifest.",
+          "points": 4,
+          "scoring_hint": "Full credit requires visible output choices that reflect the current authoritative files."
         }
       ]
     }
-  }
+  },
+  "hard_caps": [
+    {
+      "id": "not_target_image_type",
+      "max_total": 35,
+      "reason": "Output is not the requested finished target image type.",
+      "trigger": {
+        "type": "wrong_artifact_type",
+        "expected_type": "museum_exhibit_poster"
+      }
+    },
+    {
+      "id": "wrong_aspect_ratio",
+      "max_total": 70,
+      "reason": "Artifact uses a clearly wrong aspect ratio for the requested platform format.",
+      "trigger": {
+        "type": "aspect_ratio_mismatch",
+        "expected": "4:5"
+      }
+    },
+    {
+      "id": "missing_or_wrong_logo_position",
+      "max_total": 70,
+      "reason": "Current logo/mark is missing or placed in the wrong required safe-area position.",
+      "trigger": {
+        "type": "missing_or_wrong_position_fact",
+        "fact_id": "museum_mark_position",
+        "expected_position": "upper-left safe area"
+      }
+    },
+    {
+      "id": "old_slogan_used_as_active_claim",
+      "max_total": 60,
+      "reason": "Deprecated slogan or stale copy is used as active final headline, CTA, or claim.",
+      "trigger": {
+        "type": "forbidden_final_answer",
+        "patterns": [
+          "Shipwreck Screams"
+        ],
+        "allowed_patterns": [
+          "Shipwreck Screams.{0,120}(deprecated|do not use|excluded|forbidden|retired|old|draft|archived|test)",
+          "(deprecated|do not use|excluded|forbidden|retired|old|draft|archived|test).{0,120}Shipwreck Screams"
+        ],
+        "forbidden_role": "active_headline_subtitle_cta_or_claim"
+      }
+    },
+    {
+      "id": "old_logo_used_as_primary_logo",
+      "max_total": 60,
+      "reason": "Deprecated logo/mark is used as the primary active logo.",
+      "trigger": {
+        "type": "forbidden_visual_use",
+        "fact_id": "old_logo_not_primary",
+        "visual_role": "primary_logo_or_brand_mark"
+      }
+    },
+    {
+      "id": "deprecated_template_or_assets_active",
+      "max_total": 65,
+      "reason": "Deprecated template, hero, background, or asset direction is used as the layout or visual basis.",
+      "trigger": {
+        "type": "forbidden_visual_use",
+        "fact_id": "deprecated_assets_not_active",
+        "visual_role": "active_template_hero_background_or_layout_basis"
+      }
+    },
+    {
+      "id": "major_unsupported_claim",
+      "max_total": 65,
+      "reason": "Image adds unsupported guarantee, discount, free offer, or exaggerated claim not supported by approved_current env copy.",
+      "trigger": {
+        "type": "forbidden_visual_use",
+        "fact_id": "unsupported_claims_not_present",
+        "visual_role": "active_marketing_claim"
+      }
+    },
+    {
+      "id": "raw_spec_or_table_instead_of_image",
+      "max_total": 45,
+      "reason": "Output is a raw spec/table/worksheet rather than a polished final image.",
+      "trigger": {
+        "type": "aggregate_failure",
+        "fact_ids": [
+          "required_layout_zones",
+          "title_zone",
+          "cta_zone",
+          "hero_archival_harbor",
+          "hero_map_or_artifact",
+          "hero_museum_context",
+          "hero_restrained_non_horror"
+        ],
+        "min_failed": 4
+      }
+    },
+    {
+      "id": "ignores_core_current_system",
+      "max_total": 70,
+      "reason": "Multiple current core brand/layout/hero requirements fail, indicating the old or wrong spec was followed.",
+      "trigger": {
+        "type": "aggregate_failure",
+        "fact_ids": [
+          "current_palette",
+          "museum_mark_position",
+          "required_layout_zones",
+          "hero_archival_harbor",
+          "hero_map_or_artifact",
+          "hero_museum_context",
+          "hero_restrained_non_horror",
+          "deprecated_assets_not_active"
+        ],
+        "min_failed": 4
+      }
+    },
+    {
+      "id": "missing_required_title",
+      "max_total": 60,
+      "reason": "Required approved_current copy fact required_title is missing from the final image.",
+      "trigger": {
+        "type": "missing_required_fact",
+        "fact_id": "required_title"
+      }
+    },
+    {
+      "id": "missing_required_subtitle",
+      "max_total": 60,
+      "reason": "Required approved_current copy fact required_subtitle is missing from the final image.",
+      "trigger": {
+        "type": "missing_required_fact",
+        "fact_id": "required_subtitle"
+      }
+    },
+    {
+      "id": "missing_required_date_line",
+      "max_total": 60,
+      "reason": "Required approved_current copy fact required_date_line is missing from the final image.",
+      "trigger": {
+        "type": "missing_required_fact",
+        "fact_id": "required_date_line"
+      }
+    },
+    {
+      "id": "missing_required_cta",
+      "max_total": 60,
+      "reason": "Required approved_current copy fact required_cta is missing from the final image.",
+      "trigger": {
+        "type": "missing_required_fact",
+        "fact_id": "required_cta"
+      }
+    },
+    {
+      "id": "neon_palette_active",
+      "max_total": 60,
+      "reason": "Neon aquarium palette is used as active color system.",
+      "trigger": {
+        "type": "forbidden_visual_use",
+        "fact_id": "forbidden_neon_palette",
+        "visual_role": "active_forbidden_visual_element"
+      }
+    },
+    {
+      "id": "mascot_as_hero",
+      "max_total": 60,
+      "reason": "Cartoon wave or sea-animal mascot is used as hero or brand character.",
+      "trigger": {
+        "type": "forbidden_visual_use",
+        "fact_id": "forbidden_wave_mascot",
+        "visual_role": "active_forbidden_visual_element"
+      }
+    },
+    {
+      "id": "forbidden_template_used_as_layout_basis",
+      "max_total": 60,
+      "reason": "Deprecated storm horror template is used as layout or visual basis.",
+      "trigger": {
+        "type": "forbidden_visual_use",
+        "fact_id": "forbidden_storm_horror_template",
+        "visual_role": "active_forbidden_visual_element"
+      }
+    }
+  ]
 }

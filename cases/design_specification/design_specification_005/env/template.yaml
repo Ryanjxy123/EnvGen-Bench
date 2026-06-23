@@ -1,0 +1,21 @@
+template_name: quietdock_mini_square_launch_v2
+canvas:
+  preferred_width_px: 1080
+  preferred_height_px: 1080
+zones:
+  - id: logo_zone
+    role: current QuietDock mark
+    placement: upper-left
+  - id: copy_zone
+    role: product name and headline
+    placement: top third
+  - id: hero_zone
+    role: tidy compact charging dock visual
+    placement: middle
+  - id: callout_strip
+    role: supporting line and CTA
+    placement: lower area
+prohibited_layout_basis:
+  - emergency alert layout
+  - messy cable cleanup before-after layout
+  - cartoon robot badge layout

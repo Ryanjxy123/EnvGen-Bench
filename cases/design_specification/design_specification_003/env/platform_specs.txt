@@ -1,0 +1,9 @@
+Platform: square social product launch image
+Required canvas: 1080 x 1080 px
+Required aspect ratio: 1:1
+Safe margin: keep essential copy, app icon, and CTA at least 72 px from every edge.
+Minimum readable type: product name at least 34 px equivalent; headline at least 62 px; supporting line and CTA at least 30 px.
+Logo/icon: current FlowForge app icon or compact wordmark must be in the top-right safe area, not bottom-centered.
+Hero visual: planning-board UI may overlap the central and right zones but must not obscure required copy.
+CTA: place in the lower area as a restrained product action, not a large marketing banner.
+Override rule: these platform dimensions and safe margins override any looser proportions implied by template.yaml.

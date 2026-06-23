@@ -1,0 +1,10 @@
+Platform: square social product launch image
+Canvas: 1080 x 1080 px
+Aspect ratio: 1:1
+Outer safe margin: at least 72 px from all canvas edges for essential text and logos
+Preferred content width: keep primary text and CTA within 936 px
+Minimum readable text size: 38 px for required supporting line and CTA, 48 px for launch message, 76 px for product name
+CTA safe position: bottom zone or bottom safe area only; keep the CTA fully inside the outer safe margin
+Logo safe position: upper-right only; keep the logo fully inside the outer safe margin
+Background rule: avoid full-bleed red or red-dominant backgrounds; use blue, white, light neutral, or solar/green accents instead
+Priority: platform_specs.txt overrides template.yaml for size, safe margins, CTA position, logo position, and minimum type sizes

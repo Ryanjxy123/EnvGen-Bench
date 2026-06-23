@@ -1,1 +1,1 @@
-Create a compact product launch image using the visual guide. Preserve the required palette and avoid warning-style or cartoon visuals.
+帮我做一张 QuietDock Mini 设备发布图。请只根据 env 里的当前品牌规范、设备文案、平台尺寸和素材说明来做；里面有旧徽章、旧主题和草稿卖点，别把它们当正式内容。成品要像一张能直接发布的产品社交图。

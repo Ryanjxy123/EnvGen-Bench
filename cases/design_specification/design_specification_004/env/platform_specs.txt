@@ -1,0 +1,9 @@
+Platform: square social launch image
+Required canvas: 1080 x 1080 px
+Required aspect ratio: 1:1
+Safe margin: keep essential copy, logo, and CTA at least 72 px from every edge.
+Minimum readable type: brand name at least 58 px equivalent; launch message at least 38 px; date line and CTA at least 30 px.
+Logo: current Cedar Loop loop-leaf mark or friendly wordmark must be in the lower-left safe area.
+Hero visual: market-stall or maker imagery may occupy the middle and upper-middle area but must not obscure required copy.
+CTA: place in the bottom area, readable and inviting.
+Override rule: these platform dimensions and safe margins override any looser proportions implied by template.yaml.

@@ -1,0 +1,28 @@
+template_name: harborlight_exhibit_vertical_v2
+canvas:
+  preferred_width_px: 1080
+  preferred_height_px: 1350
+zones:
+  - id: mark_zone
+    role: current museum mark
+    placement: upper-left
+    notes: "Keep inside safe margin with clear space around the mark."
+  - id: title_zone
+    role: exhibit title and subtitle
+    placement: upper third
+    hierarchy: "title first, subtitle second"
+  - id: hero_zone
+    role: archival harbor-history visual
+    placement: middle
+    notes: "May use framed image, map texture, or artifact detail; should not become a horror or tourism scene."
+  - id: detail_zone
+    role: date line and optional supporting copy
+    placement: lower quarter
+  - id: cta_zone
+    role: reservation call to action
+    placement: lower area
+    notes: "CTA may be a copper rule, small button-like label, or typographic callout."
+prohibited_layout_basis:
+  - full-bleed storm horror template
+  - centered mascot badge
+  - neon aquarium event flyer

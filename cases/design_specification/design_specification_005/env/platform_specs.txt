@@ -1,0 +1,9 @@
+Platform: square social device launch image
+Required canvas: 1080 x 1080 px
+Required aspect ratio: 1:1
+Safe margin: keep essential copy, logo, and CTA at least 72 px from every edge.
+Minimum readable type: product name at least 40 px equivalent; headline at least 60 px; supporting line and CTA at least 30 px.
+Logo: current QuietDock QD mark or compact wordmark must be in the upper-left safe area.
+Hero visual: tidy dock/product visual may occupy the middle area but must not obscure required copy.
+CTA: place in the lower callout strip.
+Override rule: these platform dimensions and safe margins override any looser proportions implied by template.yaml.

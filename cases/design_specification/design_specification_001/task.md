@@ -1,4 +1,1 @@
-Use the brand guide, visual rules, and launch copy in the env folder to create
-a square product launch social image for the product named in the launch copy. Follow all brand and
-layout constraints. Web search is optional only for general social image
-presentation conventions; the env files are sufficient for the required facts.
+帮我做一张 HelioGrid 新品发布用的方形社交图。品牌规范、平台尺寸、文案版本、素材说明都在 env 文件夹里，请按当前有效的资料来，不要把旧版、草稿或已废弃的东西当正式元素使用。最后要是一张完整的促销发布图，不要做成规则摘要或表格。

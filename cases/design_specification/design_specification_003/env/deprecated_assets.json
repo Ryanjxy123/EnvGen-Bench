@@ -1,0 +1,48 @@
+{
+  "deprecated_assets": [
+    {
+      "name": "purple gradient",
+      "description": "Old full-canvas purple-to-blue launch gradient",
+      "must_not_be_used_as_active_design_element": true,
+      "prohibited_roles": [
+        "dominant background",
+        "active brand color system",
+        "layout basis"
+      ],
+      "allowed_context": "May be mentioned only in an explicit deprecated, excluded, or do-not-use context."
+    },
+    {
+      "name": "bottom-centered logo",
+      "description": "Old logo placement used in the deprecated launch template",
+      "must_not_be_used_as_active_design_element": true,
+      "prohibited_roles": [
+        "primary logo placement",
+        "layout basis"
+      ],
+      "allowed_context": "May be mentioned only in an explicit deprecated, excluded, or do-not-use context."
+    },
+    {
+      "name": "Automate Everything",
+      "description": "Retired slogan from the automation campaign",
+      "must_not_be_used_as_active_design_element": true,
+      "prohibited_roles": [
+        "headline",
+        "active slogan",
+        "CTA"
+      ],
+      "allowed_context": "May be mentioned only in an explicit deprecated, excluded, or do-not-use context."
+    },
+    {
+      "name": "lightning automation hero",
+      "description": "Old hero visual showing lightning bolts and automation arrows",
+      "must_not_be_used_as_active_design_element": true,
+      "prohibited_roles": [
+        "hero visual",
+        "dominant background",
+        "layout basis"
+      ],
+      "allowed_context": "May be mentioned only in an explicit deprecated, excluded, or do-not-use context."
+    }
+  ],
+  "override_note": "This file overrides asset_manifest.json and old_template.md for asset eligibility."
+}

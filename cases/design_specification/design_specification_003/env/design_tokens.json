@@ -1,16 +1,25 @@
 {
-  "product": "FlowForge Sprint",
-  "headline": "Plan the week in one calm board.",
-  "supporting_line": "A focused planning space for small product teams.",
-  "palette": [
-    "#0F2D2E",
-    "#F7F3E8",
-    "#FFB703"
-  ],
-  "logo_position": "top-right",
-  "forbidden": [
-    "purple gradient",
-    "bottom-centered logo",
-    "Automate Everything"
-  ]
+  "palette_tokens": {
+    "surface": "warm_cream",
+    "ink": "deep_green",
+    "focus": "amber_focus",
+    "support": "soft_sage"
+  },
+  "spacing_tokens": {
+    "safe_inset": "outer_72",
+    "copy_gap": "gap_24",
+    "panel_gap": "gap_32",
+    "card_padding": "pad_20"
+  },
+  "ui_tokens": {
+    "corner": "rounded_18",
+    "shadow": "soft_panel_shadow",
+    "card": "quiet_task_card",
+    "density": "calm_medium_density",
+    "divider": "hairline_sage"
+  },
+  "texture_tokens": {
+    "background": "matte_surface",
+    "accent_rule": "thin_amber_rule"
+  }
 }

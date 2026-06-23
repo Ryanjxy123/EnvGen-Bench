@@ -1,20 +1,55 @@
 {
   "brand": "HelioGrid",
+  "priority_notes": [
+    "visual_rules.json overrides brand_guide.pdf for machine-readable constraints.",
+    "platform_specs.txt overrides template.yaml for size, margins, safe areas, and minimum type sizes.",
+    "deprecated_assets.json overrides asset_manifest.json for asset eligibility.",
+    "launch_copy.md is authoritative for required copy.",
+    "launch_copy.md is authoritative; only approved_current copy may be used as active final copy."
+  ],
   "required_palette": {
     "primary": "#0B5FFF",
     "secondary": "#FFFFFF",
-    "accent": "#00A887"
+    "accent": "#00A887",
+    "supporting_neutral": "#EAF3FF"
   },
   "forbidden": [
-    "red background",
-    "cartoon mascot",
+    "large-area red background",
+    "cartoon mascot as hero visual or brand character",
     "handwritten fonts",
-    "logo in lower-left corner"
+    "logo in lower-left corner",
+    "old HelioGrid logo as primary logo",
+    "old slogan as headline or active brand claim",
+    "legacy diagonal template as layout basis"
   ],
   "layout": {
     "title_zone": "top",
+    "hero_visual_zone": "middle",
+    "cta_zone": "bottom safe area",
     "logo_position": "upper-right",
-    "required_aspect_ratio": "1:1"
+    "required_aspect_ratio": "1:1",
+    "required_zones": [
+      "top title and launch message zone",
+      "middle hero visual zone",
+      "bottom supporting line and CTA zone",
+      "upper-right logo zone"
+    ]
   },
-  "tone": "clean, technical, optimistic"
+  "hero_visual_requirements": [
+    "home energy storage battery visible",
+    "solar power context visible",
+    "modern home or residential setting visible",
+    "backup energy or grid resilience cue visible"
+  ],
+  "tone": "clean, technical, optimistic",
+  "unauthorized_claims": {
+    "rule": "Do not add unsupported promises, discounts, guarantees, free offers, safety claims, or performance claims unless they appear in the approved_current copy.",
+    "forbidden_examples": [
+      "100% guaranteed",
+      "free installation",
+      "save 50%",
+      "never lose power again",
+      "whole-home protection that never fails"
+    ]
+  }
 }

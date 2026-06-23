@@ -8,7 +8,8 @@
       "source": "env/launch_copy.md",
       "importance": "critical",
       "expected_value": "HelioGrid Pulse",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "launch_message",
@@ -16,7 +17,8 @@
       "source": "env/launch_copy.md",
       "importance": "critical",
       "expected_value": "Store solar power for the moments that matter.",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "palette",
@@ -28,7 +30,8 @@
         "#FFFFFF",
         "#00A887"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "logo_position",
@@ -36,7 +39,8 @@
       "source": "env/visual_rules.json",
       "importance": "major",
       "expected_value": "upper-right",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "major_required"
     },
     {
       "id": "approved_logo_asset",
@@ -44,7 +48,8 @@
       "source": "env/brand_guide.pdf",
       "importance": "major",
       "expected_value": "approved brand visual style from the brand guide",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "major_required"
     },
     {
       "id": "forbidden_elements",
@@ -56,7 +61,8 @@
         "cartoon mascot",
         "handwritten fonts"
       ],
-      "must_not_appear_in_image": true
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     }
   ],
   "calculation_notes": "Apply visual_rules.json as the machine-readable constraint source and use brand_guide.pdf to confirm the same palette, logo placement, approved logo asset, and forbidden elements. launch_copy.md provides required text."

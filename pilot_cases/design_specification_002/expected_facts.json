@@ -12,7 +12,8 @@
         "A harbor history exhibition",
         "Opening weekend reservations"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "palette",
@@ -24,7 +25,8 @@
         "#FFF8EA",
         "#B36A2E"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "mark_position",
@@ -32,7 +34,8 @@
       "source": "env/exhibit_style_guide.pdf + env/style_tokens.json",
       "importance": "critical",
       "expected_value": "upper-left",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "forbidden_elements",
@@ -44,7 +47,8 @@
         "cartoon sea animals",
         "distressed horror typography"
       ],
-      "must_not_appear_in_image": true
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     }
   ],
   "calculation_notes": "Apply style_tokens.json for copy and the style guide PDF for brand constraints, palette, layout, logo placement, and forbidden elements."

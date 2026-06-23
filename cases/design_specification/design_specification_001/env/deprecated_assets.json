@@ -1,0 +1,47 @@
+{
+  "priority": "This file overrides asset_manifest.json for asset eligibility.",
+  "deprecated_assets": [
+    {
+      "name": "Old HelioGrid logo",
+      "description": "orange sunburst icon with rounded lowercase heliogrid lettering",
+      "prohibited_use": "must not be used as the primary logo, corner logo, or active brand mark",
+      "allowed_context": "may be mentioned only in an explicit do-not-use or deprecated comparison context"
+    },
+    {
+      "name": "Power Your Tomorrow",
+      "description": "retired HelioGrid slogan",
+      "prohibited_use": "must not be used as headline, subtitle, CTA, or active brand claim",
+      "allowed_context": "may be mentioned only in an explicit deprecated or excluded context"
+    },
+    {
+      "name": "legacy diagonal slash template",
+      "description": "old launch template with a diagonal red-orange slash background and lower-left logo lockup",
+      "prohibited_use": "must not be used as the layout basis for the final image",
+      "allowed_context": "may be referenced only as an explicitly rejected old template"
+    },
+    {
+      "name": "red emergency outage background",
+      "description": "red-dominant emergency visual treatment",
+      "prohibited_use": "must not be used as a large-area or dominant background",
+      "allowed_context": "may be mentioned only as forbidden or deprecated"
+    },
+    {
+      "name": "cartoon plug mascot",
+      "description": "friendly illustrated plug character",
+      "prohibited_use": "must not be used as hero visual, brand character, or central image element",
+      "allowed_context": "may be mentioned only as forbidden or deprecated"
+    }
+  ],
+  "deprecated_colors": [
+    {
+      "name": "legacy warning red",
+      "value": "#D7263D",
+      "prohibited_use": "large-area background or dominant brand color"
+    },
+    {
+      "name": "legacy orange",
+      "value": "#FF8A00",
+      "prohibited_use": "primary brand color or old logo recreation"
+    }
+  ]
+}

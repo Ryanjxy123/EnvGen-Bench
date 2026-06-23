@@ -1,0 +1,104 @@
+{
+  "brand": "FlowForge",
+  "campaign": "FlowForge Sprint",
+  "image_type": "saas_feature_launch_image",
+  "required_format": {
+    "width_px": 1080,
+    "height_px": 1080,
+    "aspect_ratio": "1:1"
+  },
+  "palette": {
+    "primary": "#0F2D2E",
+    "background": "#F7F3E8",
+    "accent": "#FFB703",
+    "support": "#A8C7B5",
+    "semantic_note": "Use deep green, warm cream, and amber as the dominant launch system; exact pixel-level matching is not required."
+  },
+  "logo": {
+    "active_treatment": "FlowForge folded-path app icon or compact wordmark",
+    "required_position": "top-right",
+    "safe_margin_px": 72,
+    "minimum_width_px": 124,
+    "forbidden_positions": [
+      "bottom-centered"
+    ]
+  },
+  "typography": {
+    "headline": "clean geometric sans-serif with calm spacing",
+    "body": "readable UI sans-serif",
+    "forbidden": [
+      "condensed shouty poster type",
+      "script lettering",
+      "distressed type"
+    ]
+  },
+  "layout": {
+    "required_zones": [
+      "product and headline zone",
+      "top-right app icon zone",
+      "central or right planning-board UI hero zone",
+      "lower supporting line and CTA zone"
+    ],
+    "cta_position": "lower area",
+    "avoid": [
+      "bottom-centered logo layout",
+      "full-canvas purple gradient",
+      "busy dashboard wall"
+    ]
+  },
+  "hero_visual": {
+    "allowed_directions": [
+      "calm sprint planning board",
+      "weekly task cards arranged in a focused board",
+      "quiet product-team workspace UI",
+      "minimal interface panels with one highlighted planning column"
+    ],
+    "forbidden_active_roles": [
+      "lightning-bolt automation hero",
+      "generic smartphone photo as main subject",
+      "crowded analytics dashboard wall"
+    ],
+    "required_components": [
+      "planning-board UI visible",
+      "cards, columns, or weekly lanes visible",
+      "focus state or current week cue visible",
+      "product interface cue visible"
+    ]
+  },
+  "forbidden_active_elements": [
+    {
+      "name": "purple gradient",
+      "prohibited_roles": [
+        "dominant background",
+        "active brand color system"
+      ]
+    },
+    {
+      "name": "bottom-centered logo",
+      "prohibited_roles": [
+        "primary logo placement",
+        "layout basis"
+      ]
+    },
+    {
+      "name": "Automate Everything",
+      "prohibited_roles": [
+        "headline",
+        "active slogan",
+        "CTA"
+      ]
+    }
+  ],
+  "unauthorized_claims": {
+    "rule": "Do not add unsupported promises, discounts, guarantees, free offers, safety claims, or performance claims unless they appear in the approved_current copy.",
+    "forbidden_examples": [
+      "save 10 hours every week guaranteed",
+      "never misses a task",
+      "replace every manual process overnight",
+      "ship every roadmap twice as fast"
+    ]
+  },
+  "priority_notes": [
+    "campaign_brief.md is authoritative; only approved_current copy may be used as active final copy."
+  ]
+}

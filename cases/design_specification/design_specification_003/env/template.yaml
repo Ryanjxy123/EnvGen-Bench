@@ -1,0 +1,28 @@
+template_name: flowforge_sprint_square_v3
+canvas:
+  preferred_width_px: 1080
+  preferred_height_px: 1080
+zones:
+  - id: icon_zone
+    role: current app icon or compact wordmark
+    placement: top-right
+    notes: "Keep inside safe margin. Do not place bottom-centered."
+  - id: copy_zone
+    role: product name and headline
+    placement: upper-left to mid-left
+    hierarchy: "product name label, headline dominant"
+  - id: hero_zone
+    role: calm planning-board UI
+    placement: center-right
+    notes: "Use ordered cards, columns, or weekly board cues with restrained depth."
+  - id: support_zone
+    role: supporting line
+    placement: lower-left
+  - id: cta_zone
+    role: sprint preview call to action
+    placement: lower area
+    notes: "CTA should be visible but calmer than the headline."
+prohibited_layout_basis:
+  - full-canvas purple gradient
+  - bottom-centered logo template
+  - busy dashboard wall

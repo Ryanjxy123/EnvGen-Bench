@@ -1,0 +1,44 @@
+{
+  "current_assets": [
+    {
+      "id": "cedar_loop_leaf_mark",
+      "type": "brand_mark",
+      "description": "Loop-leaf mark or friendly Cedar Loop Market wordmark",
+      "eligible_roles": [
+        "lower-left logo",
+        "small brand signature"
+      ]
+    },
+    {
+      "id": "market_stall_scene",
+      "type": "hero_direction",
+      "description": "Warm neighborhood market stalls with produce, flowers, bread, ceramics, or local makers",
+      "eligible_roles": [
+        "hero visual",
+        "supporting background"
+      ]
+    },
+    {
+      "id": "walking_loop_path",
+      "type": "graphic_device",
+      "description": "Simple loop path line that suggests short walks through the market",
+      "eligible_roles": [
+        "subtle layout guide",
+        "CTA accent",
+        "background linework"
+      ]
+    }
+  ],
+  "non_primary_assets": [
+    {
+      "id": "produce_icon_set",
+      "type": "supporting_visual",
+      "description": "Small produce, flower, bread, or ceramic icons",
+      "eligible_roles": [
+        "secondary detail only"
+      ],
+      "limits": "Do not replace the market-stall hero or logo."
+    }
+  ],
+  "selection_note": "Use current_assets for active design choices unless deprecated_assets.json marks an item or direction as ineligible."
+}

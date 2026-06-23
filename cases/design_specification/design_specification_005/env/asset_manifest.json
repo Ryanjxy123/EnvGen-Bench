@@ -1,0 +1,32 @@
+{
+  "current_assets": [
+    {
+      "id": "quietdock_qd_mark",
+      "type": "brand_mark",
+      "description": "Compact QD mark or QuietDock wordmark",
+      "eligible_roles": [
+        "upper-left logo",
+        "small brand signature"
+      ]
+    },
+    {
+      "id": "tidy_dock_hero",
+      "type": "hero_direction",
+      "description": "Compact dock with phone, earbuds, and desk essentials arranged neatly",
+      "eligible_roles": [
+        "hero visual",
+        "product render"
+      ]
+    },
+    {
+      "id": "aqua_callout_strip",
+      "type": "graphic_device",
+      "description": "Soft aqua strip or pill for lower supporting line and CTA",
+      "eligible_roles": [
+        "callout strip",
+        "CTA accent"
+      ]
+    }
+  ],
+  "selection_note": "Use current_assets for active design choices unless deprecated_assets.json marks an item or direction as ineligible."
+}

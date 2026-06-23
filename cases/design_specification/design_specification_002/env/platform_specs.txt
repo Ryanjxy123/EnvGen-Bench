@@ -1,0 +1,9 @@
+Platform: museum social poster and lobby-screen crop source
+Required canvas: 1080 x 1350 px
+Required aspect ratio: 4:5 vertical
+Safe margin: keep all essential copy, mark, and CTA at least 64 px from every edge.
+Minimum readable type: title at least 74 px equivalent; subtitle at least 38 px; date line and CTA at least 30 px.
+Logo/mark: current Harborlight Museum mark must be in the upper-left safe area, not centered at the bottom.
+CTA: place in the lower poster area, visually distinct but not louder than the title.
+Contrast: text must remain readable against image or texture areas.
+Override rule: these platform dimensions and safe margins override any looser proportions implied by template.yaml.

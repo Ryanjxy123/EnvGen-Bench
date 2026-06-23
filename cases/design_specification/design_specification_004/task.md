@@ -1,1 +1,1 @@
-Use the visual guide in env to create a square launch image. Follow palette, layout, and forbidden-visual rules without adding unrelated luxury cues.
+帮我做一张 Cedar Loop Market 开业宣传图。env 里有品牌资料、平台规格、可用素材和一些过期方向；请按当前开业活动来做，不要用旧视觉或错误活动文案。最后要是可以发布的方形社交图。

@@ -12,7 +12,8 @@
         "Plan the week in one calm board.",
         "A focused planning space for small product teams."
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "current_palette",
@@ -24,7 +25,8 @@
         "#F7F3E8",
         "#FFB703"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "logo_position",
@@ -32,7 +34,8 @@
       "source": "env/design_tokens.json + env/launch_style.pdf",
       "importance": "critical",
       "expected_value": "top-right",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "deprecated_template",
@@ -44,7 +47,8 @@
         "bottom-centered logo",
         "Automate Everything"
       ],
-      "must_not_appear_in_image": true
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     }
   ],
   "calculation_notes": "Use design_tokens.json and launch_style.pdf as current brand constraint sources for palette, layout, icon placement, and forbidden deprecated-template elements; old_template.md is a distractor."

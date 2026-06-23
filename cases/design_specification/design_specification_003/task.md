@@ -1,3 +1,1 @@
-Use the current launch style files in the env folder to create a SaaS feature
-launch image. Apply current brand constraints, palette, layout, app icon, and
-forbidden old-template rules.
+帮我做一张 FlowForge 新功能上线图。资料、平台规格、当前文案和旧模板说明都在 env 文件夹里；请用当前有效的版本，不要照搬旧模板、旧口号或草稿文案。成品要是一张正式发布用的产品图。

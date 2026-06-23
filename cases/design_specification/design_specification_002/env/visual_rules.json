@@ -1,0 +1,103 @@
+{
+  "brand": "Harborlight Museum",
+  "campaign": "Tides of Memory",
+  "image_type": "museum_exhibit_poster",
+  "required_format": {
+    "width_px": 1080,
+    "height_px": 1350,
+    "aspect_ratio": "4:5"
+  },
+  "palette": {
+    "primary": "#12355B",
+    "background": "#FFF8EA",
+    "accent": "#B36A2E",
+    "support": "#6D8A96",
+    "semantic_note": "Use deep harbor blue, warm paper, and copper as the dominant system; exact pixel-level matching is not required."
+  },
+  "logo": {
+    "active_treatment": "Harborlight Museum wordmark or compact lighthouse-line mark",
+    "required_position": "upper-left",
+    "safe_margin_px": 64,
+    "minimum_width_px": 148,
+    "clear_space": "at least the height of the H in Harborlight"
+  },
+  "typography": {
+    "headline": "high-contrast editorial serif or refined museum display serif",
+    "body": "humanist sans-serif",
+    "forbidden": [
+      "distressed horror typography",
+      "brush script",
+      "cartoon bubble lettering"
+    ]
+  },
+  "layout": {
+    "required_zones": [
+      "upper-left mark zone",
+      "top title and subtitle zone",
+      "central archival harbor or map-inspired hero zone",
+      "lower date and CTA zone"
+    ],
+    "cta_position": "lower area",
+    "avoid": [
+      "full-bleed storm horror composition",
+      "centered mascot badge",
+      "dense worksheet-like rule blocks"
+    ]
+  },
+  "hero_visual": {
+    "allowed_directions": [
+      "archival harbor photograph treatment",
+      "historic port map texture",
+      "nautical artifact close-up",
+      "quiet museum-gallery maritime display"
+    ],
+    "forbidden_active_roles": [
+      "cartoon sea animal as hero",
+      "horror shipwreck scene as hero",
+      "tropical vacation beach as main subject"
+    ],
+    "required_components": [
+      "archival harbor-history visual visible",
+      "map, nautical artifact, or museum object cue visible",
+      "museum exhibition context visible",
+      "refined non-horror harbor-history cue visible"
+    ]
+  },
+  "forbidden_active_elements": [
+    {
+      "name": "neon palette",
+      "prohibited_roles": [
+        "dominant background",
+        "active brand color system"
+      ]
+    },
+    {
+      "name": "cartoon sea animals",
+      "prohibited_roles": [
+        "hero visual",
+        "brand character",
+        "central image element"
+      ]
+    },
+    {
+      "name": "Shipwreck Screams",
+      "prohibited_roles": [
+        "headline",
+        "active slogan",
+        "CTA"
+      ]
+    }
+  ],
+  "unauthorized_claims": {
+    "rule": "Do not add unsupported promises, discounts, guarantees, free offers, safety claims, or performance claims unless they appear in the approved_current copy.",
+    "forbidden_examples": [
+      "free admission for all",
+      "limited tickets guaranteed",
+      "save 50%",
+      "official city tourism pass"
+    ]
+  },
+  "priority_notes": [
+    "campaign_brief.md is authoritative; only approved_current copy may be used as active final copy."
+  ]
+}

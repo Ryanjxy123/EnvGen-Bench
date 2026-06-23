@@ -1,3 +1,1 @@
-Use the style guide, visual mark, and style tokens in the env folder to create
-an exhibit poster. Follow the palette, mark placement, and forbidden-element
-rules.
+帮我根据资料做一张 Harborlight Museum 展览宣传图。所有品牌规范、展览文案、尺寸和素材取舍都在 env 文件夹里；里面有旧活动和废弃素材，别把它们当成这次正式海报内容。成品要像能直接发布的展览海报。
