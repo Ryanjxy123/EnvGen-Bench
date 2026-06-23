@@ -3,62 +3,139 @@
   "task_type": "document_brief",
   "facts": [
     {
-      "id": "course_title",
-      "description": "Course title.",
-      "source": "env/course_brief.pdf",
+      "id": "final_public_course_title",
+      "description": "Final public course title to use as the poster title.",
+      "source": "env/course_brief.pdf, page 1 cover and page 2 Public-facing title lock",
       "importance": "critical",
-      "expected_value": "Data Stories for Climate Action",
-      "must_appear_in_image": true
+      "expected_value": "Climate Data Stories for Civic Action",
+      "semantic_acceptance": [
+        "Climate Data Stories for Civic Action",
+        "Climate Data Stories for Civic Action studio"
+      ],
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
-      "id": "instructor",
-      "description": "Instructor name.",
-      "source": "env/instructor_bio.md",
+      "id": "lead_instructor",
+      "description": "Lead instructor for the public course poster.",
+      "source": "env/course_brief.pdf, page 2 Teaching team note; env/instructor_bio.md",
       "importance": "critical",
       "expected_value": "Dr. Maya Chen",
-      "must_appear_in_image": true
+      "semantic_acceptance": "Maya Chen may appear with or without the Dr. honorific.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
-      "id": "schedule",
-      "description": "Course schedule.",
-      "source": "env/course_brief.pdf",
+      "id": "approved_schedule",
+      "description": "Approved public schedule, replacing older draft dates.",
+      "source": "env/course_brief.pdf, page 4 Approved public schedule card",
+      "importance": "critical",
+      "expected_value": "Wednesdays, May 6-27, 2026, 6:00-8:15 PM",
+      "semantic_acceptance": [
+        "Wednesdays, May 6, 13, 20, and 27, 2026, 6:00-8:15 PM",
+        "Wednesdays in May 2026, May 6-27, 6:00-8:15 PM"
+      ],
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "target_audience",
+      "description": "Public-facing target audience for the course.",
+      "source": "env/course_brief.pdf, page 3 Who this is for",
       "importance": "major",
-      "expected_value": "Tuesdays and Thursdays, April 8-24, 2026, 6:30-8:00 PM",
-      "must_appear_in_image": true
+      "expected_value": "city staff, nonprofit analysts, and community organizers working with climate or resilience data",
+      "semantic_acceptance": "Accept close paraphrases that preserve all three audience groups and the climate/resilience data context.",
+      "must_appear_in_image": true,
+      "evaluation_role": "major_required"
     },
     {
-      "id": "audience",
-      "description": "Target audience.",
-      "source": "env/course_brief.pdf",
-      "importance": "major",
-      "expected_value": "city staff, nonprofit analysts, and community organizers",
-      "must_appear_in_image": true
-    },
-    {
-      "id": "three_highlights",
-      "description": "Three supported course highlights.",
-      "source": "env/course_brief.pdf",
+      "id": "accepted_highlights",
+      "description": "Exactly three poster-safe learning highlights selected from the final public course outcomes.",
+      "source": "env/course_brief.pdf, page 5 Poster-safe learning outcomes",
       "importance": "critical",
       "expected_value": [
-        "turn raw climate datasets into public-facing narratives",
-        "build accessible charts for nontechnical audiences",
-        "shape a one-page action brief"
+        "Frame messy climate datasets as clear public narratives",
+        "Build accessible charts and map captions for nontechnical audiences",
+        "Leave with a one-page action brief for a local resilience decision"
       ],
-      "must_appear_in_image": true
+      "semantic_acceptance": "Accept concise paraphrases of these three outcomes. The image should include exactly three highlights, not a longer list.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
-      "id": "unsupported_details",
-      "description": "Do not invent a venue, certificate, tuition amount, or instructor affiliation that is not present in the env files.",
-      "source": "env/course_brief.pdf + env/instructor_bio.md",
+      "id": "public_cta",
+      "description": "Optional public call to action. It is not required to appear in the poster; evaluate it only if the poster includes a CTA.",
+      "source": "env/course_brief.pdf, page 7 Public copy block",
+      "importance": "minor",
+      "expected_value": "Apply by April 22, 2026 at civicdata.example/apply",
+      "semantic_acceptance": "Full credit is compatible with no CTA. If a CTA appears, it should use the public apply deadline and URL rather than waitlist, internal registration, an incorrect deadline, an incorrect URL, or unsupported details.",
+      "evaluation_role": "optional"
+    },
+    {
+      "id": "rejected_old_titles",
+      "description": "Do not use draft or internal titles as the poster title.",
+      "source": "env/course_brief.pdf, pages 2 and 7 revision notes",
+      "importance": "critical",
+      "expected_value": [
+        "Data Stories for Climate Action",
+        "Climate Dashboard Sprint",
+        "Resilience Evidence Lab"
+      ],
+      "must_not_appear_in_image": true,
+      "forbidden_patterns": [
+        "Data Stories for Climate Action",
+        "Climate Dashboard Sprint",
+        "Resilience Evidence Lab"
+      ],
+      "evaluation_role": "negative_only"
+    },
+    {
+      "id": "rejected_old_dates",
+      "description": "Do not use replaced or tentative schedule language.",
+      "source": "env/course_brief.pdf, page 4 schedule notes and page 6 FAQ",
+      "importance": "critical",
+      "expected_value": [
+        "April 8-24, 2026",
+        "Tuesdays and Thursdays",
+        "late April",
+        "time TBA"
+      ],
+      "must_not_appear_in_image": true,
+      "forbidden_patterns": [
+        "April 8-24",
+        "Tuesdays and Thursdays",
+        "late April",
+        "time TBA"
+      ],
+      "evaluation_role": "negative_only"
+    },
+    {
+      "id": "rejected_unconfirmed_details",
+      "description": "Do not include public-unsafe or unsupported details.",
+      "source": "env/course_brief.pdf, pages 4, 6, and 7 internal notes",
       "importance": "major",
       "expected_value": [
-        "venue",
-        "certificate",
-        "tuition amount",
-        "unsupported affiliation"
+        "venue TBA",
+        "tuition not yet published",
+        "certificate pending",
+        "registration cap of 32",
+        "internal sponsor Civic Futures Accelerator",
+        "draft affiliation Center for Planetary Informatics",
+        "waitlist note"
       ],
-      "must_not_appear_in_image": true
+      "must_not_appear_in_image": true,
+      "forbidden_patterns": [
+        "venue TBA",
+        "tuition",
+        "certificate",
+        "cap of 32",
+        "32 seats",
+        "Civic Futures Accelerator",
+        "Center for Planetary Informatics",
+        "waitlist"
+      ],
+      "evaluation_role": "negative_only"
     }
   ],
-  "calculation_notes": "Extract poster facts from course_brief.pdf and instructor_bio.md. Use exactly three highlights from the Learning Highlights section; do not turn registration cap or generic overview text into a highlight unless a revision explicitly asks for it."
+  "calculation_notes": "Required display facts are the final public title, lead instructor, approved schedule, target audience, and exactly three poster-safe highlights. The public CTA is optional and must not be scored as missing when omitted. The case is designed so the agent must read across a long prospectus and distinguish final public-facing content from draft notes, internal remarks, and unsupported details. Do not penalize light paraphrase of the three highlights."
 }

@@ -8,7 +8,8 @@
       "source": "env/river_program.pdf",
       "importance": "critical",
       "expected_value": "River Skills Saturday",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "date_location",
@@ -19,7 +20,8 @@
         "August 9, 2026",
         "Willow Bend Dock"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "audience",
@@ -27,7 +29,8 @@
       "source": "env/river_program.pdf",
       "importance": "major",
       "expected_value": "first-time paddlers and families",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "major_required"
     },
     {
       "id": "highlights",
@@ -39,7 +42,8 @@
         "shoreline safety basics",
         "guided 20-minute practice loop"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "unsupported_details",
@@ -50,7 +54,8 @@
         "overnight camping",
         "whitewater route"
       ],
-      "must_not_appear_in_image": true
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     }
   ],
   "calculation_notes": "Use the PDF and supporting notes; preserve required inclusions and exclusions."

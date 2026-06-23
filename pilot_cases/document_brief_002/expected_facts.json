@@ -8,7 +8,8 @@
       "source": "env/workshop_brochure.pdf",
       "importance": "critical",
       "expected_value": "Neighborhood Resilience Workshop",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "current_session",
@@ -20,7 +21,8 @@
         "Civic Hall Room B",
         "City Resilience Office"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "takeaways",
@@ -32,7 +34,8 @@
         "cooling and charging resources",
         "neighbor check-in message"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "superseded_details",
@@ -43,7 +46,8 @@
         "Room A",
         "private sponsor"
       ],
-      "must_not_appear_in_image": true
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     }
   ],
   "calculation_notes": "Extract and summarize current session details from the document. Highlight exactly three takeaways; appendix details are distractors."

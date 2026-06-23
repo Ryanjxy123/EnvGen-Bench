@@ -8,7 +8,8 @@
       "source": "env/product_brief.pdf",
       "importance": "critical",
       "expected_value": "AirSense Lite",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "supported_claims",
@@ -20,7 +21,8 @@
         "18 hours",
         "quiet wall or shelf placement"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "audience_cta",
@@ -31,7 +33,8 @@
         "School facility teams and office managers",
         "Request a classroom pilot kit"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "unsupported_claims",
@@ -43,7 +46,8 @@
         "outdoor weather forecasting",
         "allergen diagnosis"
       ],
-      "must_not_appear_in_image": true
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     }
   ],
   "calculation_notes": "Extract and summarize the product brief. Highlight supported claims and CTA from the document; the panel image is visual orientation, not evidence for extra claims."

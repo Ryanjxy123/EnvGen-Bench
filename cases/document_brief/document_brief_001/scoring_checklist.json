@@ -2,78 +2,184 @@
   "case_id": "document_brief_001",
   "dimensions": {
     "task_completion": {
-      "weight": 0.2,
+      "label": "Task Completion",
+      "weight": 0.15,
       "items": [
         {
-          "id": "output_type_document_brief_001",
-          "check": "For document_brief_001, the output is a finished course_poster for the document extraction brief, not a worksheet, raw table, or generic mockup.",
-          "points": 4,
-          "scoring_hint": "2 = correct finished image type; 1 = correct topic but weak format; 0 = wrong artifact type."
+          "id": "complete_public_poster",
+          "check": "The output is a finished public course or workshop promotional poster, not a notes page, extraction table, screenshot of source material, or generic summary.",
+          "points": 5,
+          "scoring_hint": "Full credit for a self-contained poster with promotional hierarchy; partial credit for a poster-like image that is incomplete or too document-like. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
         },
         {
-          "id": "operation_depth_document_brief_001",
-          "check": "The image visibly resolves this case's document extraction brief; reference facts include course_title: Data Stories for Climate Action; instructor: Dr. Maya Chen; schedule: Tuesdays and Thursdays, April 8-24, 2026, 6:30-8:00 PM; audience: city staff, nonprofit analysts, and community organizers; three_highlights: turn raw climate datasets into public-facing narratives, build accessible charts for nontechnical audiences, shape a one-page action brief; unsupported_details: venue, certificate, tuition amount.",
-          "points": 4,
-          "scoring_hint": "2 = operation is visibly resolved; 1 = operation partly reflected; 0 = copied unsolved source material."
+          "id": "required_content_scope",
+          "check": "The poster attempts to include only the required display content named in task.md: final public title, lead instructor, approved schedule, target audience, and exactly three learning highlights.",
+          "points": 5,
+          "fact_ids": [
+            "final_public_course_title",
+            "lead_instructor",
+            "approved_schedule",
+            "target_audience",
+            "accepted_highlights"
+          ],
+          "scoring_hint": "Do not require identical wording for highlights, but the output should clearly cover all requested content types. Do not penalize CTA omission. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
         }
       ]
     },
     "grounded_requirement_satisfaction": {
-      "weight": 0.45,
+      "label": "Grounded Requirement Satisfaction",
+      "weight": 0.55,
       "items": [
         {
-          "id": "critical_fact_accuracy_document_brief_001",
-          "check": "For document_brief_001, accurately includes the critical expected facts course_title, instructor, three_highlights using these case values: course_title: Data Stories for Climate Action; instructor: Dr. Maya Chen; schedule: Tuesdays and Thursdays, April 8-24, 2026, 6:30-8:00 PM; audience: city staff, nonprofit analysts, and community organizers; three_highlights: turn raw climate datasets into public-facing narratives, build accessible charts for nontechnical audiences, shape a one-page action brief; unsupported_details: venue, certificate, tuition amount.",
-          "points": 8,
-          "scoring_hint": "2 = all critical facts correct; 1 = one minor omission or formatting issue; 0 = any critical fact is wrong or missing."
+          "id": "title_from_final_public_version",
+          "check": "Uses the final public title, Climate Data Stories for Civic Action, rather than a draft or internal title.",
+          "points": 7,
+          "fact_id": "final_public_course_title",
+          "scoring_hint": "Minor punctuation or adding 'studio' is acceptable; replacing it with a draft title is not."
         },
         {
-          "id": "required_appear_facts_document_brief_001",
-          "check": "Shows required appear facts course_title, instructor, schedule, audience, three_highlights for document_brief_001 without replacing them with unsupported alternatives; expected values include course_title: Data Stories for Climate Action; instructor: Dr. Maya Chen; schedule: Tuesdays and Thursdays, April 8-24, 2026, 6:30-8:00 PM; audience: city staff, nonprofit analysts, and community organizers; three_highlights: turn raw climate datasets into public-facing narratives, build accessible charts for nontechnical audiences, shape a one-page action brief; unsupported_details: venue, certificate, tuition amount.",
+          "id": "lead_instructor_accuracy",
+          "check": "Identifies Dr. Maya Chen as the lead instructor and does not promote a guest contributor as the lead.",
           "points": 6,
-          "scoring_hint": "2 = all required facts appear clearly; 1 = most appear but one is ambiguous; 0 = multiple required facts are absent."
+          "fact_id": "lead_instructor",
+          "scoring_hint": "Maya Chen without the honorific is acceptable."
         },
         {
-          "id": "negative_exclusion_facts_document_brief_001",
-          "check": "Does not show prohibited or stale facts unsupported_details in document_brief_001; avoids unsupported claims from distractor env material.",
+          "id": "approved_schedule_accuracy",
+          "check": "Uses the approved public schedule: Wednesdays, May 6-27, 2026, 6:00-8:15 PM.",
+          "points": 7,
+          "fact_id": "approved_schedule",
+          "scoring_hint": "Accept listing all four Wednesday dates if the time is correct; do not accept replaced April dates or tentative language."
+        },
+        {
+          "id": "audience_accuracy",
+          "check": "Names the target audience as city staff, nonprofit analysts, and community organizers working with climate or resilience data.",
           "points": 5,
-          "scoring_hint": "2 = no prohibited facts appear; 1 = one weak/ambiguous distractor; 0 = any explicit prohibited value appears."
+          "fact_id": "target_audience",
+          "scoring_hint": "Close paraphrases are fine if all three audience groups remain recognizable."
+        },
+        {
+          "id": "three_grounded_highlights",
+          "check": "Includes exactly three poster-safe highlights grounded in the final outcomes: public narratives from messy climate data, accessible charts/map captions, and a one-page action brief.",
+          "points": 8,
+          "fact_id": "accepted_highlights",
+          "scoring_hint": "Do not penalize concise paraphrase; penalize adding extra highlights or choosing internal/process-only notes as highlights."
+        },
+        {
+          "id": "negative_exclusion",
+          "check": "Avoids draft, internal, unconfirmed, or unsupported details such as old titles, old dates, venue TBA, tuition, certificate claims, registration cap, internal sponsor, draft affiliation, or waitlist notes.",
+          "points": 6,
+          "fact_ids": [
+            "rejected_old_titles",
+            "rejected_old_dates",
+            "rejected_unconfirmed_details"
+          ],
+          "scoring_hint": "This is negative-only: award full credit when these details are absent. Penalize only explicit inclusion of prohibited details."
+        },
+        {
+          "id": "optional_cta_safety",
+          "check": "No call to action is required. If no CTA appears, award full credit; if a CTA appears, it must use the public apply deadline and URL rather than waitlist, internal registration, a wrong URL, a wrong deadline, or unsupported details.",
+          "points": 2,
+          "fact_id": "public_cta",
+          "scoring_hint": "Omitting the CTA earns full credit. Deduct only for an included CTA that is wrong, internal, unsupported, or misleading."
         }
       ]
     },
     "information_structuring": {
-      "weight": 0.2,
+      "label": "Information Structuring",
+      "weight": 0.15,
       "items": [
         {
-          "id": "fact_hierarchy_document_brief_001",
-          "check": "Organizes course_title, instructor, three_highlights as the primary message for document_brief_001; supporting values are course_title: Data Stories for Climate Action; instructor: Dr. Maya Chen; schedule: Tuesdays and Thursdays, April 8-24, 2026, 6:30-8:00 PM; audience: city staff, nonprofit analysts, and community organizers; three_highlights: turn raw climate datasets into public-facing narratives, build accessible charts for nontechnical audiences, shape a one-page action brief; unsupported_details: venue, certificate, tuition amount.",
+          "id": "poster_hierarchy",
+          "check": "Makes the course title and three learning highlights the main visual message, with schedule, audience, and instructor as clear supporting information.",
           "points": 5,
-          "scoring_hint": "2 = hierarchy is clear and fact-driven; 1 = facts present but hierarchy is muddled; 0 = important facts are buried or missing."
+          "scoring_hint": "The viewer should understand what the course is and why to attend before reading small details. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
         },
         {
-          "id": "robust_consistency_document_brief_001",
-          "check": "Across repeated runs of document_brief_001, the same critical facts, exclusions unsupported_details, ordering rules, and layout constraints must remain consistent.",
+          "id": "compressed_document_information",
+          "check": "Compresses the long brief into concise public-facing poster copy rather than copying long paragraphs, FAQ text, internal notes, or module tables.",
           "points": 4,
-          "scoring_hint": "2 = stable facts and exclusions; 1 = minor wording drift only; 0 = selected facts or exclusions change."
+          "scoring_hint": "Reward selective synthesis and readable text density. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
         }
       ]
     },
     "visual_rendering_quality": {
+      "label": "Visual Quality",
       "weight": 0.15,
       "items": [
         {
-          "id": "visual_clarity_document_brief_001",
-          "check": "For document_brief_001, uses clear visual hierarchy, readable typography, sufficient contrast, and non-crowded spacing at the intended course_poster size.",
-          "points": 4,
-          "scoring_hint": "2 = readable and polished; 1 = readable with minor clutter; 0 = unreadable or visually incoherent."
+          "id": "poster_visual_polish",
+          "check": "Looks like a polished course/workshop poster with deliberate typography, spacing, color, and composition rather than a plain document page or placeholder template.",
+          "points": 5,
+          "scoring_hint": "Style can vary; focus on professional poster communication. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
         },
         {
-          "id": "visual_layout_density_document_brief_001",
-          "check": "The course_poster layout has appropriate information density, balanced image/text regions, crisp assets, platform-safe margins, and no placeholder-like areas.",
+          "id": "readability",
+          "check": "All essential text is readable, non-overlapping, and has sufficient contrast at normal viewing size.",
+          "points": 5,
+          "scoring_hint": "Minor small-print issues are acceptable; core facts must remain legible. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
+        },
+        {
+          "id": "balanced_density",
+          "check": "Information density is appropriate for a poster: not overcrowded, not sparse, no obvious template placeholders or irrelevant filler.",
           "points": 4,
-          "scoring_hint": "2 = balanced density and crisp assets; 1 = some weak spacing or density; 0 = blank, placeholder-like, or low-resolution."
+          "scoring_hint": "Reward clean hierarchy and visual breathing room. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
         }
       ]
     }
-  }
+  },
+  "score_caps": [
+    {
+      "id": "not_image_or_not_poster",
+      "max_total": 55,
+      "reason": "The output does not produce a usable promotional poster image.",
+      "trigger": {
+        "type": "wrong_artifact_type",
+        "expected_type": "course/workshop promotional poster image"
+      }
+    },
+    {
+      "id": "core_fact_collapse",
+      "max_total": 60,
+      "reason": "Core facts are broadly wrong, such as using the wrong title, wrong schedule, and wrong lead instructor.",
+      "trigger": {
+        "type": "aggregate_failure",
+        "fact_ids": [
+          "final_public_course_title",
+          "lead_instructor",
+          "approved_schedule"
+        ],
+        "min_failed": 2
+      }
+    },
+    {
+      "id": "multiple_forbidden_details",
+      "max_total": 65,
+      "reason": "The poster explicitly includes multiple forbidden or unsupported details.",
+      "trigger": {
+        "type": "aggregate_failure",
+        "fact_ids": [
+          "rejected_old_titles",
+          "rejected_old_dates",
+          "rejected_unconfirmed_details"
+        ],
+        "min_failed": 2
+      }
+    },
+    {
+      "id": "core_text_unreadable",
+      "max_total": 50,
+      "reason": "Most core poster text is unreadable or visually incoherent.",
+      "trigger": {
+        "type": "aggregate_failure",
+        "fact_ids": [
+          "final_public_course_title",
+          "lead_instructor",
+          "approved_schedule",
+          "accepted_highlights"
+        ],
+        "min_failed": 3
+      }
+    }
+  ]
 }

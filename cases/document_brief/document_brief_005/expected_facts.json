@@ -8,7 +8,8 @@
       "source": "env/wellness_flyer.pdf",
       "importance": "critical",
       "expected_value": "Lunch Hour Wellness Check",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "time_place",
@@ -19,7 +20,8 @@
         "Wednesdays at 12:15 PM",
         "Room 214"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "audience",
@@ -27,7 +29,8 @@
       "source": "env/wellness_flyer.pdf",
       "importance": "major",
       "expected_value": "campus staff",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "major_required"
     },
     {
       "id": "offerings",
@@ -39,7 +42,8 @@
         "quiet breathing prompt",
         "referral card pickup"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "forbidden_claims",
@@ -50,7 +54,8 @@
         "diagnosis",
         "prescription advice"
       ],
-      "must_not_appear_in_image": true
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     }
   ],
   "calculation_notes": "Use the PDF and supporting notes; preserve required inclusions and exclusions."
