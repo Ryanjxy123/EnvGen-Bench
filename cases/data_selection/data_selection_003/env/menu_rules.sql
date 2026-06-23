@@ -1,4 +1,16 @@
--- Select lunch specials for a nut-free quick-service poster.
--- Requirements: meal_type='lunch', available=1, stock>=10,
--- contains_nuts=0, prep_minutes<=10. Sort by margin_score DESC.
--- Select top 2.
+-- Select cafe lunch specials for a nut-free quick-service display image.
+-- Source table: menu_items in menu_inventory.sqlite.
+-- Required filters:
+--   meal_type = 'lunch'
+--   status = 'active'
+--   available = 1
+--   stock > 10
+--   contains_nuts = 0
+--   prep_minutes <= 10
+--   service_window = 'weekday_lunch'
+-- Sort order:
+--   margin_score DESC
+--   prep_minutes ASC
+--   price_usd ASC
+-- Select top 3.
+-- Suggested image copy: Nut-free quick lunch specials

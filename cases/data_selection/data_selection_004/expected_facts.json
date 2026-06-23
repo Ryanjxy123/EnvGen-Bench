@@ -3,48 +3,164 @@
   "task_type": "data_selection",
   "facts": [
     {
-      "id": "selected_items",
-      "description": "Top eligible camping products.",
+      "id": "selected_products",
+      "description": "The final featured camping products are the top 3 eligible products after all filters and ranking rules.",
       "source": "env/shop_items.csv + env/feature_rules.json",
       "importance": "critical",
       "expected_value": [
-        "B403 Solar Lantern Duo",
-        "B405 Campfire Spice Set"
+        "Solar Lantern Duo",
+        "Campfire Spice Set",
+        "Alpine Sleep Pad"
       ],
-      "must_appear_in_image": true
+      "canonical_answer": {
+        "selected_skus_reference_only": [
+          "B403",
+          "B405",
+          "B407"
+        ],
+        "selected_product_names": [
+          "Solar Lantern Duo",
+          "Campfire Spice Set",
+          "Alpine Sleep Pad"
+        ]
+      },
+      "semantic_acceptance": "Accept any polished shelf-feature image that clearly features exactly these three camping products. SKUs may be omitted; product names must be identifiable and not replaced by unselected products.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
-      "id": "ranking_rule",
-      "description": "Eligible items rank by margin descending.",
-      "source": "env/feature_rules.json",
+      "id": "ranking_order",
+      "description": "Selected products must be displayed in the rule-based ranking order.",
+      "source": "env/shop_items.csv + env/feature_rules.json",
       "importance": "critical",
-      "expected_value": "margin_desc",
-      "must_appear_in_image": false
+      "expected_value": "Solar Lantern Duo before Campfire Spice Set before Alpine Sleep Pad",
+      "canonical_answer": [
+        "1. Solar Lantern Duo",
+        "2. Campfire Spice Set",
+        "3. Alpine Sleep Pad"
+      ],
+      "semantic_acceptance": "Accept left-to-right, top-to-bottom, numbered cards, or another clear ranking cue as long as the order is Solar Lantern Duo, then Campfire Spice Set, then Alpine Sleep Pad.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
-      "id": "wrong_category_exclusion",
-      "description": "River Mug is gift category.",
+      "id": "selected_product_display_values",
+      "description": "Each selected product must show the correct product name, feature price, and markdown label.",
       "source": "env/shop_items.csv",
-      "importance": "major",
-      "expected_value": "B402",
-      "must_not_appear_in_image": true
+      "importance": "critical",
+      "expected_value": [
+        "Solar Lantern Duo: $39.00, 20% off",
+        "Campfire Spice Set: $18.00, 15% off",
+        "Alpine Sleep Pad: $74.00, 25% off"
+      ],
+      "canonical_answer": {
+        "Solar Lantern Duo": {
+          "feature_price_usd": "39.00",
+          "markdown_label": "20% off"
+        },
+        "Campfire Spice Set": {
+          "feature_price_usd": "18.00",
+          "markdown_label": "15% off"
+        },
+        "Alpine Sleep Pad": {
+          "feature_price_usd": "74.00",
+          "markdown_label": "25% off"
+        }
+      },
+      "semantic_acceptance": "Prices may be rendered with or without .00 cents. Markdown labels may use equivalent wording such as 20% OFF, Save 20%, or 20 percent off. Values must be attached to the correct products.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
-      "id": "low_stock_exclusion",
-      "description": "Map Bandana has stock below threshold.",
-      "source": "env/shop_items.csv",
-      "importance": "major",
-      "expected_value": "B404",
-      "must_not_appear_in_image": true
+      "id": "unselected_products_not_featured",
+      "description": "Filtered-out products and eligible products below the top 3 cutoff must not appear as featured shelf products.",
+      "source": "env/shop_items.csv + env/feature_rules.json",
+      "importance": "critical",
+      "expected_value": [
+        "Trail Mix Kit",
+        "River Mug",
+        "Map Bandana",
+        "Retired Stove Stand",
+        "Test Tent Stakes",
+        "Winter Stove Kit",
+        "Packable Tarp",
+        "Bug Spray Duo",
+        "Zero Stock Hammock",
+        "Draft Firestarter",
+        "Archive Camp Chair",
+        "Compact Cook Pot",
+        "Solar Shower Bag",
+        "Internal Gear Bundle",
+        "Lake Picnic Blanket"
+      ],
+      "canonical_answer": "Only Solar Lantern Duo, Campfire Spice Set, and Alpine Sleep Pad should be featured.",
+      "semantic_acceptance": "The image may use generic camping visuals, but it must not label or promote any unselected catalog item as a featured product.",
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     },
     {
-      "id": "retired_exclusion",
-      "description": "Retired Stove Stand is retired.",
+      "id": "category_and_season_exclusions",
+      "description": "Wrong-category and wrong-season products are excluded even with high scores or markdowns.",
+      "source": "env/shop_items.csv + env/feature_rules.json",
+      "importance": "major",
+      "expected_value": [
+        "River Mug gift",
+        "Bug Spray Duo outdoor",
+        "Lake Picnic Blanket picnic",
+        "Winter Stove Kit winter_clearance"
+      ],
+      "canonical_answer": "Exclude River Mug, Bug Spray Duo, and Lake Picnic Blanket for category mismatch; exclude Winter Stove Kit for the wrong season_tag.",
+      "semantic_acceptance": "None of these products should be featured.",
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
+    },
+    {
+      "id": "stock_and_markdown_exclusions",
+      "description": "Products that fail stock or markdown thresholds are excluded.",
+      "source": "env/shop_items.csv + env/feature_rules.json",
+      "importance": "major",
+      "expected_value": [
+        "Map Bandana stock 20",
+        "Zero Stock Hammock stock 0",
+        "Compact Cook Pot markdown 14"
+      ],
+      "canonical_answer": "Exclude Map Bandana because stock 20 equals the exclusive threshold and is not greater than 20; exclude Zero Stock Hammock because stock is 0; exclude Compact Cook Pot because markdown 14 is below the inclusive 15% threshold.",
+      "semantic_acceptance": "None of these products should be featured.",
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
+    },
+    {
+      "id": "status_exclusions",
+      "description": "Non-active products are excluded.",
       "source": "env/shop_items.csv",
       "importance": "major",
-      "expected_value": "B406",
-      "must_not_appear_in_image": true
+      "expected_value": [
+        "Retired Stove Stand retired",
+        "Test Tent Stakes test",
+        "Draft Firestarter draft",
+        "Archive Camp Chair archived",
+        "Internal Gear Bundle internal"
+      ],
+      "canonical_answer": "Exclude Retired Stove Stand, Test Tent Stakes, Draft Firestarter, Archive Camp Chair, and Internal Gear Bundle because status is not active.",
+      "semantic_acceptance": "None of these products should be featured.",
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
+    },
+    {
+      "id": "eligible_but_below_top_n",
+      "description": "Eligible camping products below the top 3 cutoff are not final featured products.",
+      "source": "env/shop_items.csv + env/feature_rules.json",
+      "importance": "major",
+      "expected_value": [
+        "Trail Mix Kit",
+        "Packable Tarp",
+        "Solar Shower Bag"
+      ],
+      "canonical_answer": "Trail Mix Kit, Packable Tarp, and Solar Shower Bag pass filters but rank below the top 3 cutoff.",
+      "semantic_acceptance": "These products should not be promoted as featured shelf picks.",
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     }
   ],
-  "calculation_notes": "Filter category=camping, stock>=20, status=active; sort by margin desc; select top 2."
+  "calculation_notes": "Independent calculation: filter shop_items.csv by category=camping, status=active, season_tag=spring_camp, stock>20 because the stock threshold is exclusive, and markdown_pct>=15 because the markdown threshold is inclusive. Eligible rows are B403 Solar Lantern Duo (margin 96, markdown 20, price 39.00), B405 Campfire Spice Set (margin 94, markdown 15, price 18.00), B407 Alpine Sleep Pad (margin 91, markdown 25, price 74.00), B401 Trail Mix Kit (margin 88, markdown 18, price 14.00), B410 Packable Tarp (margin 85, markdown 16, price 29.00), and B416 Solar Shower Bag (margin 84, markdown 15, price 19.00). Sort by margin_score descending, then markdown_pct descending, then feature_price_usd ascending; there are no ties affecting the top 3. Sorted eligible order is B403, B405, B407, B401, B410, B416. select_top_n=3, so final featured products are Solar Lantern Duo ($39.00, 20% off), Campfire Spice Set ($18.00, 15% off), and Alpine Sleep Pad ($74.00, 25% off). Exclusions: B402 wrong category gift; B404 stock 20 equals exclusive threshold; B406 retired; B408 test; B409 winter_clearance wrong season; B411 wrong category outdoor; B412 stock 0; B413 draft; B414 archived; B415 markdown 14 below threshold; B417 internal; B418 wrong category picnic; B401, B410, and B416 are eligible but below top 3."
 }

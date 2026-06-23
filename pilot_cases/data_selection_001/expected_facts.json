@@ -12,7 +12,8 @@
         "P104",
         "P102"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "ranking_rule",
@@ -20,7 +21,8 @@
       "source": "env/campaign_rules.json",
       "importance": "critical",
       "expected_value": "P106 before P104 before P102",
-      "must_appear_in_image": false
+      "must_appear_in_image": false,
+      "evaluation_role": "optional"
     },
     {
       "id": "selected_product_display_values",
@@ -32,7 +34,8 @@
         "OrbitCharge Pad: $49.00, 30% off",
         "NovaSound Mini Speaker: $79.00, 25% off"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "excluded_inventory",
@@ -40,7 +43,8 @@
       "source": "env/products.csv",
       "importance": "major",
       "expected_value": "P103",
-      "must_not_appear_in_image": true
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     },
     {
       "id": "excluded_status",
@@ -48,7 +52,8 @@
       "source": "env/products.csv",
       "importance": "major",
       "expected_value": "P107",
-      "must_not_appear_in_image": true
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     },
     {
       "id": "excluded_discount",
@@ -56,7 +61,8 @@
       "source": "env/products.csv",
       "importance": "major",
       "expected_value": "P108",
-      "must_not_appear_in_image": true
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     }
   ],
   "calculation_notes": "Filter category=Electronics, status=active, inventory>0, discount_pct>20; sort by campaign_priority desc then discount_pct desc; take top 3."

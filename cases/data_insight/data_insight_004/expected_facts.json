@@ -14,7 +14,8 @@
       ],
       "must_appear_in_image": true,
       "canonical_answer": "12 valid customer accounts in the August 1-7 cohort",
-      "semantic_acceptance": "Accept if the cohort size is communicated as 12 valid/customer accounts. It may appear as a KPI, denominator, or short label."
+      "semantic_acceptance": "Accept if the cohort size is communicated as 12 valid/customer accounts. It may appear as a KPI, denominator, or short label.",
+      "evaluation_role": "critical_required"
     },
     {
       "id": "activation_rate",
@@ -28,7 +29,8 @@
       ],
       "must_appear_in_image": true,
       "canonical_answer": "9 of 12 activated, 75.0%",
-      "semantic_acceptance": "Accept if activation is shown as 75%, 75.0%, or 9/12. It may appear through KPI cards, chart labels, or text; exact wording is not required."
+      "semantic_acceptance": "Accept if activation is shown as 75%, 75.0%, or 9/12. It may appear through KPI cards, chart labels, or text; exact wording is not required.",
+      "evaluation_role": "critical_required"
     },
     {
       "id": "week4_retention_rate",
@@ -42,7 +44,8 @@
       ],
       "must_appear_in_image": true,
       "canonical_answer": "8 of 12 retained in week 4, 66.7%",
-      "semantic_acceptance": "Accept if week-4/W4 retention is shown as about 67%, 66.7%, or 8/12. Must be retention, not activation or all-month activity."
+      "semantic_acceptance": "Accept if week-4/W4 retention is shown as about 67%, 66.7%, or 8/12. Must be retention, not activation or all-month activity.",
+      "evaluation_role": "critical_required"
     },
     {
       "id": "strongest_retention_plan",
@@ -56,7 +59,8 @@
       ],
       "must_appear_in_image": true,
       "canonical_answer": "Enterprise has the strongest week-4 retention, 4 of 4 / 100%",
-      "semantic_acceptance": "Accept if Enterprise is identified as the plan segment with strongest/highest week-4 retention. Values may be shown as 100%, 4/4, or natural language such as perfect retention."
+      "semantic_acceptance": "Accept if Enterprise is identified as the plan segment with strongest/highest week-4 retention. Values may be shown as 100%, 4/4, or natural language such as perfect retention.",
+      "evaluation_role": "critical_required"
     },
     {
       "id": "automation_adoption_retained",
@@ -70,7 +74,8 @@
       ],
       "must_appear_in_image": true,
       "canonical_answer": "7 of 8 retained accounts used automation in week 4, 87.5%",
-      "semantic_acceptance": "Accept if automation adoption among retained accounts is shown as about 88%, 87.5%, or 7/8. The denominator must be retained accounts, not the whole cohort, unless the wording still makes the retained-account basis clear."
+      "semantic_acceptance": "Accept if automation adoption among retained accounts is shown as about 88%, 87.5%, or 7/8. The denominator must be retained accounts, not the whole cohort, unless the wording still makes the retained-account basis clear.",
+      "evaluation_role": "major_required"
     },
     {
       "id": "product_takeaway",
@@ -84,7 +89,8 @@
       ],
       "must_appear_in_image": true,
       "canonical_answer": "Takeaway should connect Enterprise retention and/or automation adoption to product focus",
-      "semantic_acceptance": "Accept any concise product takeaway grounded in the activation, week-4 retention, plan-segment, and automation findings."
+      "semantic_acceptance": "Accept any concise product takeaway grounded in the activation, week-4 retention, plan-segment, and automation findings.",
+      "evaluation_role": "major_required"
     },
     {
       "id": "saas_distractor_exclusions",
@@ -106,7 +112,8 @@
       ],
       "must_not_appear_in_image": true,
       "canonical_answer": "Do not use invalid SaaS cohort accounts or outside-window events as final results",
-      "semantic_acceptance": "Strictly reject or cap if employee/demo/cancelled/forecast/old-cohort accounts, all accounts, or outside-window events are treated as final cohort, activation, retention, or adoption results. Mentions that such records were excluded are allowed."
+      "semantic_acceptance": "Strictly reject or cap if employee/demo/cancelled/forecast/old-cohort accounts, all accounts, or outside-window events are treated as final cohort, activation, retention, or adoption results. Mentions that such records were excluded are allowed.",
+      "evaluation_role": "negative_only"
     }
   ],
   "calculation_notes": "Build the cohort from accounts with signup_date 2026-08-01 through 2026-08-07, account_type=customer, status in active/trial, and source_record=actual. Exclude employee, demo, cancelled, forecast, and old-cohort accounts. Activation requires both workspace_created and first_report_published within seven days of signup. Activated accounts are A01, A03, A04, A05, A07, A09, A10, A11, A12, so activation=9/12=75.0%. Week-4 retention requires at least one active event (dashboard_view, report_export, automation_run, or integration_sync) from day 22 through day 28 after signup. Retained accounts are A01, A03, A05, A06, A07, A09, A11, A12, so week-4 retention=8/12=66.7%. Plan retention rates: Pro=2/4=50.0%, Team=2/4=50.0%, Enterprise=4/4=100.0%; Enterprise is strongest. Automation adoption among retained accounts is A01, A03, A05, A07, A09, A11, A12 = 7/8 = 87.5%."

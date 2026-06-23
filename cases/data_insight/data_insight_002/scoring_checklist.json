@@ -49,65 +49,88 @@
   ],
   "dimensions": {
     "task_completion": {
-      "weight": 0.2,
+      "weight": 0.15,
       "items": [
         {
           "id": "output_type_data_insight_002",
           "check": "The output is a finished support_ticket_efficiency_infographic for support leads, not a raw table or worksheet.",
           "points": 4,
-          "scoring_hint": "2 = polished task-appropriate infographic; 1 = image exists but is weakly structured or partially task-aligned; 0 = wrong artifact type or raw-table/worksheet output."
+          "scoring_hint": "2 = polished task-appropriate infographic; 1 = image exists but is weakly structured or partially task-aligned; 0 = wrong artifact type or raw-table/worksheet output. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
         },
         {
           "id": "operation_depth_data_insight_002",
           "check": "Using semantic VLM/judge evaluation, the infographic should express the task-requested support conclusions from the filtered ticket set: 18 counted customer-facing resolved tickets, first-response SLA about 72% / 13 of 18, Billing as fastest handling queue, Account as best SLA queue, and a concise operational takeaway. Accept KPI cards, labels, chart annotations, or short text; average handle time is optional supporting context.",
           "points": 4,
-          "scoring_hint": "2 = all core computed results are present; 1 = several present but incomplete; 0 = no real computation."
+          "scoring_hint": "2 = all core computed results are present; 1 = several present but incomplete; 0 = no real computation. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
         }
       ]
     },
     "grounded_requirement_satisfaction": {
-      "weight": 0.45,
+      "weight": 0.55,
       "items": [
         {
           "id": "critical_fact_accuracy_data_insight_002",
           "check": "Judge semantically whether the core support conclusions are correct: valid ticket count 18; first-response SLA about 72% or 13/18; Billing is the fastest/lowest-handle-time queue; Account is best/highest on SLA. Percentages, fractions, rounded values, and synonymous queue-performance wording are acceptable; using invalid rows, a flat/wrong SLA rule, or wrong queue leaders is not.",
           "points": 8,
-          "scoring_hint": "2 = all core semantic conclusions are correct with acceptable rounding/phrasing; 1 = mostly correct with a minor ambiguity or one non-core omission; 0 = any core conclusion is missing, wrong, or based on invalid data."
+          "scoring_hint": "2 = all core semantic conclusions are correct with acceptable rounding/phrasing; 1 = mostly correct with a minor ambiguity or one non-core omission; 0 = any core conclusion is missing, wrong, or based on invalid data.",
+          "fact_ids": [
+            "valid_ticket_count",
+            "first_response_sla_rate",
+            "fastest_handle_queue",
+            "best_sla_queue"
+          ]
         },
         {
           "id": "filtering_data_insight_002",
           "check": "Uses only June 2026 resolved customer_ticket rows from external requesters and excludes test, internal, draft_snapshot, forecast, subtotal, open, cancelled, and old-month records. This can be inferred from correct final values.",
           "points": 7,
-          "scoring_hint": "2 = final values imply correct filtering; 1 = mostly correct with minor ambiguity; 0 = invalid rows drive a result."
+          "scoring_hint": "2 = final values imply correct filtering; 1 = mostly correct with minor ambiguity; 0 = invalid rows drive a result.",
+          "fact_ids": [
+            "valid_ticket_count",
+            "first_response_sla_rate",
+            "fastest_handle_queue",
+            "best_sla_queue",
+            "support_takeaway"
+          ]
         },
         {
           "id": "sla_mapping_data_insight_002",
           "check": "Semantically confirms plan-specific SLA thresholds were applied before calculating the SLA rate and queue SLA leader. This can be inferred from the correct 72%/13-of-18 overall SLA and Account as best SLA queue; the image need not describe the join mechanics.",
           "points": 5,
-          "scoring_hint": "2 = plan-specific SLA applied; 1 = SLA result present but mapping unclear; 0 = one flat threshold or wrong threshold used."
+          "scoring_hint": "2 = plan-specific SLA applied; 1 = SLA result present but mapping unclear; 0 = one flat threshold or wrong threshold used.",
+          "fact_ids": [
+            "valid_ticket_count",
+            "first_response_sla_rate",
+            "fastest_handle_queue",
+            "best_sla_queue",
+            "support_takeaway"
+          ]
         },
         {
           "id": "negative_exclusion_data_insight_002",
           "check": "Does not present export row counts, forecast/subtotal values, invalid statuses, internal/test rows, or old-month rows as final answers.",
           "points": 5,
-          "scoring_hint": "2 = no prohibited distractor used; 1 = ambiguous mention not used as answer; 0 = distractor is presented as a result."
+          "scoring_hint": "2 = no prohibited distractor used; 1 = ambiguous mention not used as answer; 0 = distractor is presented as a result.",
+          "fact_ids": [
+            "invalid_row_exclusions"
+          ]
         }
       ]
     },
     "information_structuring": {
-      "weight": 0.2,
+      "weight": 0.15,
       "items": [
         {
           "id": "fact_hierarchy_data_insight_002",
           "check": "Organizes ticket volume, SLA rate, fastest queue, SLA leader, and takeaway in a clear support-operations hierarchy. Supporting metrics such as average handle time may be included but are not required.",
           "points": 5,
-          "scoring_hint": "2 = clear hierarchy; 1 = facts present but crowded; 0 = important facts buried or missing."
+          "scoring_hint": "2 = clear hierarchy; 1 = facts present but crowded; 0 = important facts buried or missing. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
         },
         {
           "id": "takeaway_data_insight_002",
           "check": "Includes a concise operational takeaway grounded in the computed queue results. Accept equivalent wording; do not require a specific sentence.",
           "points": 4,
-          "scoring_hint": "2 = accurate insight; 1 = generic but not misleading; 0 = absent or contradicted."
+          "scoring_hint": "2 = accurate insight; 1 = generic but not misleading; 0 = absent or contradicted. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
         }
       ]
     },
@@ -118,13 +141,13 @@
           "id": "visual_clarity_data_insight_002",
           "check": "Uses readable typography, clear contrast, and non-crowded spacing.",
           "points": 4,
-          "scoring_hint": "2 = readable and polished; 1 = minor clutter; 0 = unreadable."
+          "scoring_hint": "2 = readable and polished; 1 = minor clutter; 0 = unreadable. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
         },
         {
           "id": "visual_density_data_insight_002",
           "check": "Balances KPI callouts, queue comparison, and takeaway without raw-table clutter or placeholder areas.",
           "points": 4,
-          "scoring_hint": "2 = balanced density; 1 = some weak spacing; 0 = blank or placeholder-like."
+          "scoring_hint": "2 = balanced density; 1 = some weak spacing; 0 = blank or placeholder-like. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
         }
       ]
     }

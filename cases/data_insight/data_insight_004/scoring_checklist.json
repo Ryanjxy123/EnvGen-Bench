@@ -50,65 +50,90 @@
   ],
   "dimensions": {
     "task_completion": {
-      "weight": 0.2,
+      "weight": 0.15,
       "items": [
         {
           "id": "output_type_data_insight_004",
           "check": "The output is a finished saas_retention_infographic for the product team, not a raw table or worksheet.",
           "points": 4,
-          "scoring_hint": "2 = polished task-appropriate infographic; 1 = image exists but is weakly structured or partially task-aligned; 0 = wrong artifact type or raw-table/worksheet output."
+          "scoring_hint": "2 = polished task-appropriate infographic; 1 = image exists but is weakly structured or partially task-aligned; 0 = wrong artifact type or raw-table/worksheet output. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
         },
         {
           "id": "operation_depth_data_insight_004",
           "check": "Using semantic VLM/judge evaluation, the infographic should express the task-requested SaaS cohort conclusions: cohort size 12, activation about 75% / 9 of 12, week-4 retention about 66.7% / 8 of 12, Enterprise as strongest retention segment, retained-account automation adoption about 87.5% / 7 of 8, and a concise product takeaway. Accept KPI cards, chart labels, segment callouts, or short text.",
           "points": 4,
-          "scoring_hint": "2 = all core computed results are present; 1 = several present but incomplete; 0 = no real computation."
+          "scoring_hint": "2 = all core computed results are present; 1 = several present but incomplete; 0 = no real computation. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
         }
       ]
     },
     "grounded_requirement_satisfaction": {
-      "weight": 0.45,
+      "weight": 0.55,
       "items": [
         {
           "id": "critical_fact_accuracy_data_insight_004",
           "check": "Judge semantically whether the core SaaS conclusions are correct: 12-account valid cohort; activation 75%/9-of-12; week-4 retention about 67%/8-of-12; Enterprise is strongest on week-4 retention; automation adoption among retained accounts is about 88%/7-of-8. Percentages, fractions, rounded values, and natural language are acceptable; wrong cohort, wrong event window, wrong segment, or wrong denominator is not.",
           "points": 8,
-          "scoring_hint": "2 = all core semantic conclusions are correct with acceptable rounding/phrasing; 1 = mostly correct with a minor ambiguity or one non-core omission; 0 = any core conclusion is missing, wrong, or based on invalid data."
+          "scoring_hint": "2 = all core semantic conclusions are correct with acceptable rounding/phrasing; 1 = mostly correct with a minor ambiguity or one non-core omission; 0 = any core conclusion is missing, wrong, or based on invalid data.",
+          "fact_ids": [
+            "cohort_size",
+            "activation_rate",
+            "week4_retention_rate",
+            "strongest_retention_plan"
+          ]
         },
         {
           "id": "filtering_data_insight_004",
           "check": "Uses only valid customer accounts in the August 1-7 cohort and excludes employee, demo, cancelled, forecast, and old-cohort accounts. This can be inferred from correct final values.",
           "points": 7,
-          "scoring_hint": "2 = final values imply correct filtering; 1 = mostly correct with minor ambiguity; 0 = invalid accounts drive a result."
+          "scoring_hint": "2 = final values imply correct filtering; 1 = mostly correct with minor ambiguity; 0 = invalid accounts drive a result.",
+          "fact_ids": [
+            "cohort_size",
+            "activation_rate",
+            "week4_retention_rate",
+            "strongest_retention_plan",
+            "automation_adoption_retained",
+            "product_takeaway"
+          ]
         },
         {
           "id": "window_logic_data_insight_004",
           "check": "Semantically confirms signup-relative activation and week-4 retention windows were used rather than calendar-month totals. The image need not explain the window mechanics if the conclusions are correct.",
           "points": 5,
-          "scoring_hint": "2 = signup-relative windows correct; 1 = one window unclear; 0 = calendar totals or wrong windows used."
+          "scoring_hint": "2 = signup-relative windows correct; 1 = one window unclear; 0 = calendar totals or wrong windows used.",
+          "fact_ids": [
+            "cohort_size",
+            "activation_rate",
+            "week4_retention_rate",
+            "strongest_retention_plan",
+            "automation_adoption_retained",
+            "product_takeaway"
+          ]
         },
         {
           "id": "negative_exclusion_data_insight_004",
           "check": "Does not present employee/demo/cancelled/forecast/old-cohort accounts or outside-window events as final answers.",
           "points": 5,
-          "scoring_hint": "2 = no prohibited distractor used; 1 = ambiguous mention not used as answer; 0 = distractor is presented as result."
+          "scoring_hint": "2 = no prohibited distractor used; 1 = ambiguous mention not used as answer; 0 = distractor is presented as result.",
+          "fact_ids": [
+            "saas_distractor_exclusions"
+          ]
         }
       ]
     },
     "information_structuring": {
-      "weight": 0.2,
+      "weight": 0.15,
       "items": [
         {
           "id": "fact_hierarchy_data_insight_004",
           "check": "Organizes cohort size, activation, retention, segment leader, automation adoption, and takeaway in a clear product-story hierarchy.",
           "points": 5,
-          "scoring_hint": "2 = clear hierarchy; 1 = facts present but crowded; 0 = important facts buried or missing."
+          "scoring_hint": "2 = clear hierarchy; 1 = facts present but crowded; 0 = important facts buried or missing. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
         },
         {
           "id": "takeaway_data_insight_004",
           "check": "Includes a concise product takeaway grounded in activation, week-4 retention, Enterprise segment strength, and/or retained-account automation adoption. Accept equivalent wording.",
           "points": 4,
-          "scoring_hint": "2 = accurate insight; 1 = generic but not misleading; 0 = absent or contradicted."
+          "scoring_hint": "2 = accurate insight; 1 = generic but not misleading; 0 = absent or contradicted. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
         }
       ]
     },
@@ -119,13 +144,13 @@
           "id": "visual_clarity_data_insight_004",
           "check": "Uses readable typography, clear contrast, and non-crowded spacing.",
           "points": 4,
-          "scoring_hint": "2 = readable and polished; 1 = minor clutter; 0 = unreadable."
+          "scoring_hint": "2 = readable and polished; 1 = minor clutter; 0 = unreadable. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
         },
         {
           "id": "visual_density_data_insight_004",
           "check": "Balances KPI callouts, plan comparison, automation adoption, and takeaway without raw-event clutter.",
           "points": 4,
-          "scoring_hint": "2 = balanced density; 1 = some weak spacing; 0 = blank or placeholder-like."
+          "scoring_hint": "2 = balanced density; 1 = some weak spacing; 0 = blank or placeholder-like. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
         }
       ]
     }

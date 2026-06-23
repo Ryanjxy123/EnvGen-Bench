@@ -50,65 +50,88 @@
   ],
   "dimensions": {
     "task_completion": {
-      "weight": 0.2,
+      "weight": 0.15,
       "items": [
         {
           "id": "output_type_data_insight_005",
           "check": "The output is a finished inventory_risk_infographic for retail ops, not a raw table or worksheet.",
           "points": 4,
-          "scoring_hint": "2 = polished task-appropriate infographic; 1 = image exists but is weakly structured or partially task-aligned; 0 = wrong artifact type or raw-table/worksheet output."
+          "scoring_hint": "2 = polished task-appropriate infographic; 1 = image exists but is weakly structured or partially task-aligned; 0 = wrong artifact type or raw-table/worksheet output. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
         },
         {
           "id": "operation_depth_data_insight_005",
           "check": "Using semantic VLM/judge evaluation, the infographic should express the task-requested inventory conclusions: 762 actual units sold, K404/Milk Frothers as fastest-turnover SKU, K303/Descaling Kits and K404/Milk Frothers as closest stockout-risk items, K303/Descaling Kits as sell-through leader, and a concise replenishment takeaway. Accept KPI cards, SKU labels, ranking bars, icons, or short text; ending inventory is optional supporting context.",
           "points": 4,
-          "scoring_hint": "2 = all core computed results are present; 1 = several present but incomplete; 0 = no real computation."
+          "scoring_hint": "2 = all core computed results are present; 1 = several present but incomplete; 0 = no real computation. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
         }
       ]
     },
     "grounded_requirement_satisfaction": {
-      "weight": 0.45,
+      "weight": 0.55,
       "items": [
         {
           "id": "critical_fact_accuracy_data_insight_005",
           "check": "Judge semantically whether the core inventory conclusions are correct: valid September sold units 762; fastest-turnover SKU K404/Milk Frothers; stockout-risk items K303/Descaling Kits first and K404/Milk Frothers next; sell-through leader K303/Descaling Kits. Supporting values such as 2.16x turnover, 5.4/6.0 days of cover, and 83.3% sell-through may be rounded or omitted if the leader/risk conclusions are clear; wrong SKU, wrong ranking, or unfiltered data is not acceptable.",
           "points": 8,
-          "scoring_hint": "2 = all core semantic conclusions are correct with acceptable rounding/phrasing; 1 = mostly correct with a minor ambiguity or one non-core omission; 0 = any core conclusion is missing, wrong, or based on invalid data."
+          "scoring_hint": "2 = all core semantic conclusions are correct with acceptable rounding/phrasing; 1 = mostly correct with a minor ambiguity or one non-core omission; 0 = any core conclusion is missing, wrong, or based on invalid data.",
+          "fact_ids": [
+            "total_units_sold",
+            "fastest_turnover_sku",
+            "stockout_risk_items",
+            "sell_through_leader"
+          ]
         },
         {
           "id": "filtering_data_insight_005",
           "check": "Uses only valid September posted sale/receipt/adjustment movements for active SKUs and excludes transfers, tests, forecasts, subtotals, inactive SKUs, and old-month rows. This can be inferred from correct final values.",
           "points": 7,
-          "scoring_hint": "2 = final values imply correct filtering; 1 = mostly correct with minor ambiguity; 0 = invalid rows drive a result."
+          "scoring_hint": "2 = final values imply correct filtering; 1 = mostly correct with minor ambiguity; 0 = invalid rows drive a result.",
+          "fact_ids": [
+            "total_units_sold",
+            "fastest_turnover_sku",
+            "stockout_risk_items",
+            "sell_through_leader",
+            "inventory_takeaway"
+          ]
         },
         {
           "id": "inventory_formula_data_insight_005",
           "check": "Semantically confirms inventory formulas used movements plus catalog starting inventory, active flags, and reorder points. This can be inferred from the correct turnover leader, stockout-risk items, and sell-through leader; the image need not show formulas.",
           "points": 5,
-          "scoring_hint": "2 = formulas applied correctly; 1 = one derived metric unclear; 0 = wrong inventory basis."
+          "scoring_hint": "2 = formulas applied correctly; 1 = one derived metric unclear; 0 = wrong inventory basis.",
+          "fact_ids": [
+            "total_units_sold",
+            "fastest_turnover_sku",
+            "stockout_risk_items",
+            "sell_through_leader",
+            "inventory_takeaway"
+          ]
         },
         {
           "id": "negative_exclusion_data_insight_005",
           "check": "Does not present transfer/test/forecast/subtotal/inactive/old-month values as actual sold units, turnover, stockout risk, or sell-through.",
           "points": 5,
-          "scoring_hint": "2 = no prohibited distractor used; 1 = ambiguous mention not used as answer; 0 = distractor is presented as result."
+          "scoring_hint": "2 = no prohibited distractor used; 1 = ambiguous mention not used as answer; 0 = distractor is presented as result.",
+          "fact_ids": [
+            "inventory_distractor_exclusions"
+          ]
         }
       ]
     },
     "information_structuring": {
-      "weight": 0.2,
+      "weight": 0.15,
       "items": [
         {
           "id": "fact_hierarchy_data_insight_005",
           "check": "Organizes total sold units, turnover leader, sell-through leader, stockout-risk items, and takeaway in a clear ops hierarchy. Ending inventory may appear as supporting context but is not required.",
           "points": 5,
-          "scoring_hint": "2 = clear hierarchy; 1 = facts present but crowded; 0 = important facts buried or missing."
+          "scoring_hint": "2 = clear hierarchy; 1 = facts present but crowded; 0 = important facts buried or missing. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
         },
         {
           "id": "takeaway_data_insight_005",
           "check": "Includes a concise inventory takeaway grounded in K303/K404 replenishment or stockout risk. Accept equivalent wording.",
           "points": 4,
-          "scoring_hint": "2 = accurate insight; 1 = generic but not misleading; 0 = absent or contradicted."
+          "scoring_hint": "2 = accurate insight; 1 = generic but not misleading; 0 = absent or contradicted. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
         }
       ]
     },
@@ -119,13 +142,13 @@
           "id": "visual_clarity_data_insight_005",
           "check": "Uses readable typography, clear contrast, and non-crowded spacing.",
           "points": 4,
-          "scoring_hint": "2 = readable and polished; 1 = minor clutter; 0 = unreadable."
+          "scoring_hint": "2 = readable and polished; 1 = minor clutter; 0 = unreadable. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
         },
         {
           "id": "visual_density_data_insight_005",
           "check": "Balances KPI callouts, SKU risk ranking, sell-through/turnover comparisons, and takeaway without raw-movement clutter.",
           "points": 4,
-          "scoring_hint": "2 = balanced density; 1 = some weak spacing; 0 = blank or placeholder-like."
+          "scoring_hint": "2 = balanced density; 1 = some weak spacing; 0 = blank or placeholder-like. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
         }
       ]
     }

@@ -3,40 +3,148 @@
   "task_type": "data_selection",
   "facts": [
     {
-      "id": "selected_shifts",
-      "description": "Selected Sunday trained shifts with capacity.",
+      "id": "selected_opportunities",
+      "description": "The final featured volunteer opportunities are the top 3 eligible Sunday shifts after all filters and ranking rules.",
       "source": "env/volunteer_shifts.json + env/assignment_rules.md",
       "importance": "critical",
       "expected_value": [
-        "V502 Garden Guide",
-        "V504 Compost Demo"
+        "Garden Guide",
+        "Compost Demo",
+        "Welcome Desk"
       ],
-      "must_appear_in_image": true
+      "canonical_answer": {
+        "selected_shift_ids_reference_only": [
+          "V502",
+          "V504",
+          "V513"
+        ],
+        "selected_opportunity_names": [
+          "Garden Guide",
+          "Compost Demo",
+          "Welcome Desk"
+        ]
+      },
+      "semantic_acceptance": "Accept any polished recruitment image that clearly features exactly these three Sunday opportunities. Shift IDs may be omitted; opportunity names must be identifiable and not replaced by unselected shifts.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
-      "id": "selection_rule",
-      "description": "Rank Sunday trained open shifts by priority.",
-      "source": "env/assignment_rules.md",
+      "id": "ranking_order",
+      "description": "Selected opportunities must be displayed in the rule-based ranking order.",
+      "source": "env/volunteer_shifts.json + env/assignment_rules.md",
       "importance": "critical",
-      "expected_value": "priority descending",
-      "must_appear_in_image": false
+      "expected_value": "Garden Guide before Compost Demo before Welcome Desk",
+      "canonical_answer": [
+        "1. Garden Guide",
+        "2. Compost Demo",
+        "3. Welcome Desk"
+      ],
+      "semantic_acceptance": "Accept left-to-right, top-to-bottom, numbered cards, or another clear ranking cue as long as the order is Garden Guide, then Compost Demo, then Welcome Desk.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
-      "id": "untrained_exclusion",
-      "description": "Kids Crafts is untrained.",
+      "id": "selected_opportunity_display_values",
+      "description": "Each selected opportunity must show the correct name, start time, and open capacity.",
       "source": "env/volunteer_shifts.json",
-      "importance": "major",
-      "expected_value": "V503",
-      "must_not_appear_in_image": true
+      "importance": "critical",
+      "expected_value": [
+        "Garden Guide: 10:00, 4 open spots",
+        "Compost Demo: 11:30, 2 open spots",
+        "Welcome Desk: 09:00, 3 open spots"
+      ],
+      "canonical_answer": {
+        "Garden Guide": {
+          "start_time": "10:00",
+          "capacity": 4
+        },
+        "Compost Demo": {
+          "start_time": "11:30",
+          "capacity": 2
+        },
+        "Welcome Desk": {
+          "start_time": "09:00",
+          "capacity": 3
+        }
+      },
+      "semantic_acceptance": "Times may be written in 24-hour or equivalent AM/PM format. Capacity may be labeled open spots, openings, volunteer slots, or similar, but values must be attached to the correct opportunity names.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
-      "id": "full_shift_exclusion",
-      "description": "Evening Cleanup has zero capacity.",
-      "source": "env/volunteer_shifts.json",
+      "id": "unselected_opportunities_not_featured",
+      "description": "Filtered-out shifts and eligible shifts below the top 3 cutoff must not appear as featured opportunities.",
+      "source": "env/volunteer_shifts.json + env/assignment_rules.md",
+      "importance": "critical",
+      "expected_value": [
+        "Morning Check-in",
+        "Kids Crafts",
+        "Evening Cleanup",
+        "Seed Swap Helper",
+        "Water Station",
+        "Archived Booth Setup",
+        "Test Greeter Slot",
+        "Cancelled Plant Haul",
+        "Private Donor Tour",
+        "Old Fair Info Desk",
+        "Low Priority Flyer Table",
+        "Draft Mulch Crew",
+        "Monday Tear-down"
+      ],
+      "canonical_answer": "Only Garden Guide, Compost Demo, and Welcome Desk should be featured.",
+      "semantic_acceptance": "The image may use generic volunteer imagery, but it must not label or promote any unselected shift as a featured opportunity.",
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
+    },
+    {
+      "id": "day_window_and_audience_exclusions",
+      "description": "Wrong-day, old-window, or internal-audience shifts are excluded.",
+      "source": "env/volunteer_shifts.json + env/assignment_rules.md",
       "importance": "major",
-      "expected_value": "V505",
-      "must_not_appear_in_image": true
+      "expected_value": [
+        "Morning Check-in Saturday",
+        "Monday Tear-down Monday",
+        "Old Fair Info Desk fall_fair_2025",
+        "Private Donor Tour internal"
+      ],
+      "canonical_answer": "Exclude Morning Check-in and Monday Tear-down for day mismatch; exclude Old Fair Info Desk for the wrong event window; exclude Private Donor Tour because audience is internal.",
+      "semantic_acceptance": "None of these shifts should be featured.",
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
+    },
+    {
+      "id": "status_training_and_capacity_exclusions",
+      "description": "Non-open, untrained, and full shifts are excluded.",
+      "source": "env/volunteer_shifts.json + env/assignment_rules.md",
+      "importance": "major",
+      "expected_value": [
+        "Kids Crafts trained_lead_ready false",
+        "Evening Cleanup capacity 0",
+        "Archived Booth Setup archived",
+        "Test Greeter Slot test",
+        "Cancelled Plant Haul cancelled",
+        "Draft Mulch Crew draft"
+      ],
+      "canonical_answer": "Exclude Kids Crafts because trained_lead_ready=false; exclude Evening Cleanup because capacity=0; exclude Archived Booth Setup, Test Greeter Slot, Cancelled Plant Haul, and Draft Mulch Crew because status is not open.",
+      "semantic_acceptance": "None of these shifts should be featured.",
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
+    },
+    {
+      "id": "priority_threshold_and_below_top_n",
+      "description": "Priority-threshold shifts and eligible shifts below the top 3 cutoff are not final featured opportunities.",
+      "source": "env/volunteer_shifts.json + env/assignment_rules.md",
+      "importance": "major",
+      "expected_value": [
+        "Low Priority Flyer Table priority 80",
+        "Seed Swap Helper",
+        "Water Station"
+      ],
+      "canonical_answer": "Exclude Low Priority Flyer Table because priority 80 equals the exclusive threshold and is not greater than 80. Seed Swap Helper and Water Station pass filters but rank below the top 3 cutoff.",
+      "semantic_acceptance": "None of these shifts should be promoted as featured opportunities.",
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     }
   ],
-  "calculation_notes": "Filter Sunday, trained=true, capacity>0; sort priority desc; select two."
+  "calculation_notes": "Independent calculation: filter volunteer_shifts.json by day=Sunday, status=open, trained_lead_ready=true, capacity>0, audience=public, event_window=spring_fair_2026, and priority>80 because the priority threshold is exclusive. Eligible rows are V502 Garden Guide (priority 96, start 10:00, capacity 4), V504 Compost Demo (priority 93, start 11:30, capacity 2), V513 Welcome Desk (priority 90, start 09:00, capacity 3), V506 Seed Swap Helper (priority 88, start 13:00, capacity 3), and V507 Water Station (priority 84, start 12:00, capacity 6). Sort by priority descending, then start_time ascending, then capacity descending; there are no ties affecting the top 3. Sorted eligible order is V502, V504, V513, V506, V507. Select top 3, so final featured opportunities are Garden Guide (10:00, 4 open spots), Compost Demo (11:30, 2 open spots), and Welcome Desk (09:00, 3 open spots). Exclusions: V501 Saturday; V503 trained_lead_ready=false; V505 capacity 0; V508 archived; V509 test; V510 cancelled; V511 internal audience; V512 fall_fair_2025 wrong event window; V514 priority 80 equals exclusive threshold; V515 draft; V516 Monday; V506 and V507 are eligible but below top 3."
 }

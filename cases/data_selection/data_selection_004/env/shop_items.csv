@@ -1,7 +1,19 @@
-sku,name,category,stock,margin,status
-B401,Trail Mix Kit,camping,42,31,active
-B402,River Mug,gift,60,35,active
-B403,Solar Lantern Duo,camping,27,44,active
-B404,Map Bandana,camping,8,38,active
-B405,Campfire Spice Set,camping,32,39,active
-B406,Retired Stove Stand,camping,35,46,retired
+sku,name,category,status,stock,feature_price_usd,markdown_pct,margin_score,season_tag
+B401,Trail Mix Kit,camping,active,42,14.00,18,88,spring_camp
+B402,River Mug,gift,active,60,12.00,25,99,spring_camp
+B403,Solar Lantern Duo,camping,active,27,39.00,20,96,spring_camp
+B404,Map Bandana,camping,active,20,9.00,22,97,spring_camp
+B405,Campfire Spice Set,camping,active,32,18.00,15,94,spring_camp
+B406,Retired Stove Stand,camping,retired,35,44.00,30,98,spring_camp
+B407,Alpine Sleep Pad,camping,active,24,74.00,25,91,spring_camp
+B408,Test Tent Stakes,camping,test,90,11.00,40,100,spring_camp
+B409,Winter Stove Kit,camping,active,28,89.00,35,95,winter_clearance
+B410,Packable Tarp,camping,active,23,29.00,16,85,spring_camp
+B411,Bug Spray Duo,outdoor,active,55,13.00,35,92,spring_camp
+B412,Zero Stock Hammock,camping,active,0,49.00,45,101,spring_camp
+B413,Draft Firestarter,camping,draft,44,8.00,50,102,spring_camp
+B414,Archive Camp Chair,camping,archived,31,35.00,28,93,spring_camp
+B415,Compact Cook Pot,camping,active,26,31.00,14,90,spring_camp
+B416,Solar Shower Bag,camping,active,21,19.00,15,84,spring_camp
+B417,Internal Gear Bundle,camping,internal,40,99.00,60,103,spring_camp
+B418,Lake Picnic Blanket,picnic,active,36,27.00,21,89,spring_camp

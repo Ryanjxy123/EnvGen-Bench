@@ -49,65 +49,92 @@
   ],
   "dimensions": {
     "task_completion": {
-      "weight": 0.2,
+      "weight": 0.15,
       "items": [
         {
           "id": "output_type_data_insight_003",
           "check": "The output is a finished delivery_performance_infographic for an ops review, not a raw table or worksheet.",
           "points": 4,
-          "scoring_hint": "2 = polished task-appropriate infographic; 1 = image exists but is weakly structured or partially task-aligned; 0 = wrong artifact type or raw-table/worksheet output."
+          "scoring_hint": "2 = polished task-appropriate infographic; 1 = image exists but is weakly structured or partially task-aligned; 0 = wrong artifact type or raw-table/worksheet output. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
         },
         {
           "id": "operation_depth_data_insight_003",
           "check": "Using semantic VLM/judge evaluation, the infographic should express the task-requested delivery conclusions: overall on-time rate about 69% / 11 of 16, average transit about 3.5 days, Rural Belt as the region needing attention, BlueRoute as best carrier after the tie rule, and a concise logistics takeaway. Accept KPI cards, chart labels, legends, or short text; the 16-shipment denominator is optional supporting context.",
           "points": 4,
-          "scoring_hint": "2 = all core computed results are present; 1 = several present but incomplete; 0 = no real computation."
+          "scoring_hint": "2 = all core computed results are present; 1 = several present but incomplete; 0 = no real computation. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
         }
       ]
     },
     "grounded_requirement_satisfaction": {
-      "weight": 0.45,
+      "weight": 0.55,
       "items": [
         {
           "id": "critical_fact_accuracy_data_insight_003",
           "check": "Judge semantically whether the core logistics conclusions are correct: on-time rate about 68.8%/69% or 11/16; average transit 3.5 days; Rural Belt is the risk/attention region; BlueRoute is selected as best carrier after the tie rule. Rounded numbers, fractions, and natural-language equivalents are acceptable; wrong time range, wrong region, wrong carrier, or ignoring zone promises/tie rule is not.",
           "points": 8,
-          "scoring_hint": "2 = all core semantic conclusions are correct with acceptable rounding/phrasing; 1 = mostly correct with a minor ambiguity or one non-core omission; 0 = any core conclusion is missing, wrong, or based on invalid data."
+          "scoring_hint": "2 = all core semantic conclusions are correct with acceptable rounding/phrasing; 1 = mostly correct with a minor ambiguity or one non-core omission; 0 = any core conclusion is missing, wrong, or based on invalid data.",
+          "fact_ids": [
+            "overall_on_time_rate",
+            "average_transit_time",
+            "risk_region",
+            "best_carrier"
+          ]
         },
         {
           "id": "filtering_data_insight_003",
           "check": "Uses only July 2026 delivered shipment rows and excludes cancelled, return-only, test, forecast, subtotal, and non-July rows. This can be inferred from correct final values.",
           "points": 7,
-          "scoring_hint": "2 = final values imply correct filtering; 1 = mostly correct with minor ambiguity; 0 = invalid rows drive a result."
+          "scoring_hint": "2 = final values imply correct filtering; 1 = mostly correct with minor ambiguity; 0 = invalid rows drive a result.",
+          "fact_ids": [
+            "overall_on_time_rate",
+            "average_transit_time",
+            "risk_region",
+            "best_carrier",
+            "delivery_takeaway"
+          ]
         },
         {
           "id": "zone_mapping_data_insight_003",
           "check": "Semantically confirms destination-zone promised days and reporting regions were used before judging on-time status and the risky region. This can be inferred from the correct overall rate and Rural Belt result; the image need not explain the join.",
           "points": 5,
-          "scoring_hint": "2 = zone mapping applied; 1 = result present but mapping unclear; 0 = flat promise or raw zones used incorrectly."
+          "scoring_hint": "2 = zone mapping applied; 1 = result present but mapping unclear; 0 = flat promise or raw zones used incorrectly.",
+          "fact_ids": [
+            "overall_on_time_rate",
+            "average_transit_time",
+            "risk_region",
+            "best_carrier",
+            "delivery_takeaway"
+          ]
         },
         {
           "id": "carrier_tie_break_data_insight_003",
           "check": "Semantically confirms BlueRoute is selected as the best carrier after applying the tie rule. Full credit if the lower claim-cost tie-break is explained; basic credit if BlueRoute is correctly selected without implying a wrong tie-break.",
           "points": 5,
-          "scoring_hint": "2 = tie-break correct; 1 = identifies tied carriers without selecting; 0 = wrong carrier."
+          "scoring_hint": "2 = tie-break correct; 1 = identifies tied carriers without selecting; 0 = wrong carrier.",
+          "fact_ids": [
+            "overall_on_time_rate",
+            "average_transit_time",
+            "risk_region",
+            "best_carrier",
+            "delivery_takeaway"
+          ]
         }
       ]
     },
     "information_structuring": {
-      "weight": 0.2,
+      "weight": 0.15,
       "items": [
         {
           "id": "fact_hierarchy_data_insight_003",
           "check": "Organizes on-time rate, transit time, risky region, best carrier, and takeaway in a clear ops hierarchy. The valid shipment count may appear as supporting context but is not required.",
           "points": 5,
-          "scoring_hint": "2 = clear hierarchy; 1 = facts present but crowded; 0 = important facts buried or missing."
+          "scoring_hint": "2 = clear hierarchy; 1 = facts present but crowded; 0 = important facts buried or missing. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
         },
         {
           "id": "takeaway_data_insight_003",
           "check": "Includes a concise logistics takeaway grounded in the computed on-time, transit, region, and carrier findings. Accept equivalent wording.",
           "points": 4,
-          "scoring_hint": "2 = accurate insight; 1 = generic but not misleading; 0 = absent or contradicted."
+          "scoring_hint": "2 = accurate insight; 1 = generic but not misleading; 0 = absent or contradicted. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
         }
       ]
     },
@@ -118,13 +145,13 @@
           "id": "visual_clarity_data_insight_003",
           "check": "Uses readable typography, clear contrast, and non-crowded spacing.",
           "points": 4,
-          "scoring_hint": "2 = readable and polished; 1 = minor clutter; 0 = unreadable."
+          "scoring_hint": "2 = readable and polished; 1 = minor clutter; 0 = unreadable. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
         },
         {
           "id": "visual_density_data_insight_003",
           "check": "Balances KPI callouts, region risk, carrier comparison, and takeaway without raw-table clutter.",
           "points": 4,
-          "scoring_hint": "2 = balanced density; 1 = some weak spacing; 0 = blank or placeholder-like."
+          "scoring_hint": "2 = balanced density; 1 = some weak spacing; 0 = blank or placeholder-like. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
         }
       ]
     }

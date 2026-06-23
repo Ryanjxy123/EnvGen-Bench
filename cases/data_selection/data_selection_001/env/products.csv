@@ -1,11 +1,21 @@
-product_id,name,category,status,inventory,discount_pct,price_usd,campaign_priority
-P101,Auralite Desk Lamp,Home,active,31,28,64.0,74
-P102,NovaSound Mini Speaker,Electronics,active,42,25,79.0,91
-P103,PulseFit Smart Band,Electronics,active,0,35,59.0,88
-P104,OrbitCharge Pad,Electronics,active,18,30,49.0,95
-P105,TravelNest Pillow,Travel,active,62,24,34.0,70
-P106,VisionDock 4K Hub,Electronics,active,27,22,119.0,97
-P107,ClearCall Webcam,Electronics,retired,15,40,89.0,99
-P108,LiteKeys Keyboard,Electronics,active,44,18,69.0,84
-P109,BrewEase Kettle,Kitchen,active,20,33,54.0,79
-P110,FocusBuds Air,Electronics,active,33,27,99.0,89
+product_id,name,category,status,inventory,discount_pct,price_usd,campaign_priority,campaign_window
+P201,Auralite Desk Lamp,Home,active,31,34,64.00,99,current_weekend
+P202,NovaSound Mini Speaker,Electronics,active,42,25,79.00,88,current_weekend
+P203,PulseFit Smart Band,Electronics,active,0,45,59.00,100,current_weekend
+P204,OrbitCharge Pad,Electronics,active,18,30,49.00,91,current_weekend
+P205,TravelNest Pillow,Travel,active,62,32,34.00,97,current_weekend
+P206,ClearCall Webcam,Electronics,retired,15,40,89.00,99,current_weekend
+P207,VisionDock 4K Hub,Electronics,active,27,22,119.00,96,current_weekend
+P208,LiteKeys Keyboard,Electronics,active,44,18,69.00,95,current_weekend
+P209,BrewEase Kettle,Kitchen,active,20,36,54.00,90,current_weekend
+P210,FocusBuds Air,Electronics,inactive,33,38,99.00,98,current_weekend
+P211,EdgeMate Router,Electronics,active,12,20,139.00,93,current_weekend
+P212,RetroWave Console,Electronics,active,9,55,199.00,92,old_clearance
+P213,PixelBeam Projector,Electronics,draft,14,50,249.00,101,current_weekend
+P214,LuminaFrame Smart Display,Electronics,active,22,24,149.00,98,current_weekend
+P215,TestTone Earbuds,Electronics,test,80,60,29.00,102,current_weekend
+P216,HydroGrip Bottle,Outdoor,active,77,45,24.00,96,current_weekend
+P217,DeskFlow USB Dock,Electronics,active,6,19,89.00,94,current_weekend
+P218,AeroBuds Pro,Electronics,active,41,35,129.00,94,current_weekend
+P219,ArchiveTab E-Reader,Electronics,active,17,28,109.00,89,old_spring_sale
+P220,StreamCue Remote,Electronics,active,25,28,39.00,82,current_weekend

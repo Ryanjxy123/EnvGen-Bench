@@ -4,60 +4,196 @@
   "facts": [
     {
       "id": "selected_products",
-      "description": "The eligible top 3 products are selected after filtering and priority sorting.",
+      "description": "The final featured products are the top 4 eligible products after applying all campaign filters and ranking rules.",
       "source": "env/products.csv + env/campaign_rules.json",
       "importance": "critical",
       "expected_value": [
-        "P106",
-        "P104",
-        "P102"
+        "P214 LuminaFrame Smart Display",
+        "P207 VisionDock 4K Hub",
+        "P218 AeroBuds Pro",
+        "P204 OrbitCharge Pad"
       ],
-      "must_appear_in_image": true
+      "canonical_answer": {
+        "selected_product_ids_reference_only": [
+          "P214",
+          "P207",
+          "P218",
+          "P204"
+        ],
+        "selected_product_names": [
+          "LuminaFrame Smart Display",
+          "VisionDock 4K Hub",
+          "AeroBuds Pro",
+          "OrbitCharge Pad"
+        ]
+      },
+      "semantic_acceptance": "Accept any polished poster layout that clearly features exactly these four products as the sale items. Product IDs may be omitted; the product names must be semantically identifiable and not replaced by unselected catalog items.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
-      "id": "ranking_rule",
-      "description": "Eligible products must follow campaign priority descending after filtering.",
-      "source": "env/campaign_rules.json",
+      "id": "ranking_order",
+      "description": "Featured products must appear in the campaign ranking order.",
+      "source": "env/products.csv + env/campaign_rules.json",
       "importance": "critical",
-      "expected_value": "P106 before P104 before P102",
-      "must_appear_in_image": false
+      "expected_value": "LuminaFrame Smart Display before VisionDock 4K Hub before AeroBuds Pro before OrbitCharge Pad",
+      "canonical_answer": [
+        "1. LuminaFrame Smart Display",
+        "2. VisionDock 4K Hub",
+        "3. AeroBuds Pro",
+        "4. OrbitCharge Pad"
+      ],
+      "semantic_acceptance": "Accept visual ranking through left-to-right order, top-to-bottom order, numbered cards, hero-to-secondary placement, or another clear promotional hierarchy, as long as the order is LuminaFrame, VisionDock, AeroBuds, then OrbitCharge.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "selected_product_display_values",
-      "description": "Selected product display names, prices, and discount labels.",
+      "description": "Each selected product must show the correct name, price, and discount label.",
       "source": "env/products.csv",
       "importance": "critical",
       "expected_value": [
+        "LuminaFrame Smart Display: $149.00, 24% off",
         "VisionDock 4K Hub: $119.00, 22% off",
-        "OrbitCharge Pad: $49.00, 30% off",
-        "NovaSound Mini Speaker: $79.00, 25% off"
+        "AeroBuds Pro: $129.00, 35% off",
+        "OrbitCharge Pad: $49.00, 30% off"
       ],
-      "must_appear_in_image": true
+      "canonical_answer": {
+        "LuminaFrame Smart Display": {
+          "price_usd": "149.00",
+          "discount_label": "24% off"
+        },
+        "VisionDock 4K Hub": {
+          "price_usd": "119.00",
+          "discount_label": "22% off"
+        },
+        "AeroBuds Pro": {
+          "price_usd": "129.00",
+          "discount_label": "35% off"
+        },
+        "OrbitCharge Pad": {
+          "price_usd": "49.00",
+          "discount_label": "30% off"
+        }
+      },
+      "semantic_acceptance": "Prices may be rendered as $149, $119, $129, and $49 or with .00 cents. Discount labels may use equivalent wording such as 24% OFF, Save 24%, or 24 percent off. The values must be attached to the correct product names.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
-      "id": "excluded_inventory",
-      "description": "PulseFit Smart Band is excluded because inventory is 0.",
-      "source": "env/products.csv",
-      "importance": "major",
-      "expected_value": "P103",
-      "must_not_appear_in_image": true
+      "id": "unselected_products_not_featured",
+      "description": "Products that are filtered out or fall below the top 4 cutoff must not appear as featured sale products.",
+      "source": "env/products.csv + env/campaign_rules.json",
+      "importance": "critical",
+      "expected_value": [
+        "Auralite Desk Lamp",
+        "NovaSound Mini Speaker",
+        "PulseFit Smart Band",
+        "TravelNest Pillow",
+        "ClearCall Webcam",
+        "LiteKeys Keyboard",
+        "BrewEase Kettle",
+        "FocusBuds Air",
+        "EdgeMate Router",
+        "RetroWave Console",
+        "PixelBeam Projector",
+        "TestTone Earbuds",
+        "HydroGrip Bottle",
+        "DeskFlow USB Dock",
+        "ArchiveTab E-Reader",
+        "StreamCue Remote"
+      ],
+      "canonical_answer": "Only LuminaFrame Smart Display, VisionDock 4K Hub, AeroBuds Pro, and OrbitCharge Pad should be featured. No other catalog product should be promoted.",
+      "semantic_acceptance": "The poster may include generic decorative product imagery, but it must not label or promote any unselected product as a campaign item.",
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     },
     {
-      "id": "excluded_status",
-      "description": "ClearCall Webcam is excluded because status is retired.",
+      "id": "inventory_zero_exclusion",
+      "description": "PulseFit Smart Band is excluded because inventory is 0, even though its priority and discount are high.",
       "source": "env/products.csv",
       "importance": "major",
-      "expected_value": "P107",
-      "must_not_appear_in_image": true
+      "expected_value": "P203 PulseFit Smart Band",
+      "canonical_answer": "Exclude PulseFit Smart Band due to inventory=0.",
+      "semantic_acceptance": "Must not be shown as a featured product.",
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     },
     {
-      "id": "excluded_discount",
-      "description": "LiteKeys Keyboard is excluded because its discount is not greater than 20%.",
+      "id": "status_exclusions",
+      "description": "Non-active products are excluded even when they have high discounts or priorities.",
       "source": "env/products.csv",
       "importance": "major",
-      "expected_value": "P108",
-      "must_not_appear_in_image": true
+      "expected_value": [
+        "P206 ClearCall Webcam retired",
+        "P210 FocusBuds Air inactive",
+        "P213 PixelBeam Projector draft",
+        "P215 TestTone Earbuds test"
+      ],
+      "canonical_answer": "Exclude ClearCall Webcam, FocusBuds Air, PixelBeam Projector, and TestTone Earbuds because status is not active.",
+      "semantic_acceptance": "None of these names should appear as promoted campaign products.",
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
+    },
+    {
+      "id": "discount_threshold_exclusions",
+      "description": "Products with discount_pct equal to or below the exclusive threshold are excluded.",
+      "source": "env/products.csv + env/campaign_rules.json",
+      "importance": "major",
+      "expected_value": [
+        "P208 LiteKeys Keyboard discount 18",
+        "P211 EdgeMate Router discount 20",
+        "P217 DeskFlow USB Dock discount 19"
+      ],
+      "canonical_answer": "Exclude LiteKeys Keyboard and DeskFlow USB Dock for discounts below 20%; exclude EdgeMate Router because 20% equals the exclusive threshold and is not greater than 20%.",
+      "semantic_acceptance": "None of these names should appear as promoted campaign products.",
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
+    },
+    {
+      "id": "wrong_category_exclusions",
+      "description": "Non-Electronics products are excluded even when their discount or priority is high.",
+      "source": "env/products.csv + env/campaign_rules.json",
+      "importance": "major",
+      "expected_value": [
+        "P201 Auralite Desk Lamp Home",
+        "P205 TravelNest Pillow Travel",
+        "P209 BrewEase Kettle Kitchen",
+        "P216 HydroGrip Bottle Outdoor"
+      ],
+      "canonical_answer": "Exclude Auralite Desk Lamp, TravelNest Pillow, BrewEase Kettle, and HydroGrip Bottle because their categories are not Electronics.",
+      "semantic_acceptance": "None of these names should appear as promoted campaign products.",
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
+    },
+    {
+      "id": "wrong_campaign_window_exclusions",
+      "description": "Old-campaign products are excluded even when they otherwise look eligible.",
+      "source": "env/products.csv + env/campaign_rules.json",
+      "importance": "major",
+      "expected_value": [
+        "P212 RetroWave Console old_clearance",
+        "P219 ArchiveTab E-Reader old_spring_sale"
+      ],
+      "canonical_answer": "Exclude RetroWave Console and ArchiveTab E-Reader because campaign_window is not current_weekend.",
+      "semantic_acceptance": "Neither old-campaign product should appear as a promoted campaign product.",
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
+    },
+    {
+      "id": "eligible_but_below_top_n",
+      "description": "Eligible products ranked below the top 4 are not final selected products.",
+      "source": "env/products.csv + env/campaign_rules.json",
+      "importance": "major",
+      "expected_value": [
+        "P202 NovaSound Mini Speaker",
+        "P220 StreamCue Remote"
+      ],
+      "canonical_answer": "NovaSound Mini Speaker and StreamCue Remote pass filters but rank below the top 4 cutoff, so they are not featured.",
+      "semantic_acceptance": "These products should not be promoted as featured sale items.",
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     }
   ],
-  "calculation_notes": "Filter category=Electronics, status=active, inventory>0, discount_pct>20; sort by campaign_priority desc then discount_pct desc; take top 3."
+  "calculation_notes": "Independent calculation: apply campaign_rules.json to products.csv. Required category is Electronics, required status is active, required campaign_window is current_weekend, inventory must be greater than 0, and discount_pct must be greater than 20 because both thresholds are exclusive. Eligible rows after filtering are P202 NovaSound Mini Speaker (priority 88, discount 25, price 79.00), P204 OrbitCharge Pad (priority 91, discount 30, price 49.00), P207 VisionDock 4K Hub (priority 96, discount 22, price 119.00), P214 LuminaFrame Smart Display (priority 98, discount 24, price 149.00), P218 AeroBuds Pro (priority 94, discount 35, price 129.00), and P220 StreamCue Remote (priority 82, discount 28, price 39.00). Sort by campaign_priority descending, then discount_pct descending, then price_usd ascending; there are no ties affecting the top 4. Sorted eligible order is P214, P207, P218, P204, P202, P220. select_top_n=4, so the final selected products are P214 LuminaFrame Smart Display ($149.00, 24% off), P207 VisionDock 4K Hub ($119.00, 22% off), P218 AeroBuds Pro ($129.00, 35% off), and P204 OrbitCharge Pad ($49.00, 30% off). Exclusions: P201 category Home; P203 inventory 0; P205 category Travel; P206 status retired; P208 discount 18 below threshold; P209 category Kitchen; P210 status inactive; P211 discount 20 equals exclusive threshold; P212 old_clearance campaign window; P213 draft status; P215 test status; P216 category Outdoor; P217 discount 19 below threshold; P219 old_spring_sale campaign window; P202 and P220 are eligible but below the top 4 cutoff."
 }

@@ -8,7 +8,8 @@
       "source": "env/energy_seed.sql",
       "importance": "critical",
       "expected_value": 622000,
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "largest_site",
@@ -16,7 +17,8 @@
       "source": "env/energy_seed.sql",
       "importance": "critical",
       "expected_value": "Pool: 272000 kWh",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "q1_q4_changes",
@@ -28,7 +30,8 @@
         "Pool +15000 kWh",
         "Depot -10000 kWh"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "wrong_site_exclusion",
@@ -36,7 +39,8 @@
       "source": "env/site_groups.json",
       "importance": "major",
       "expected_value": "Archive Warehouse",
-      "must_not_appear_in_image": true
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     }
   ],
   "calculation_notes": "Sum all kWh rows for total. Site totals are Library 150000, Pool 272000, Depot 200000. Q1-to-Q4 changes use Q4 minus Q1."

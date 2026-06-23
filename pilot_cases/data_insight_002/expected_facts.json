@@ -8,7 +8,8 @@
       "source": "env/clinic_wait_times.xlsx",
       "importance": "critical",
       "expected_value": "January average 37.0 min to March average 29.3 min; reduction 7.7 min",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "largest_improvements",
@@ -20,7 +21,8 @@
         "North improved 9 min",
         "West improved 7 min"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "best_single_improvement",
@@ -28,7 +30,8 @@
       "source": "env/clinic_wait_times.xlsx",
       "importance": "critical",
       "expected_value": "North improved 9 min",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "exclude_cancelled",
@@ -36,7 +39,8 @@
       "source": "env/clinic_wait_times.xlsx + env/clinic_targets.json",
       "importance": "major",
       "expected_value": "South Annex",
-      "must_not_appear_in_image": true
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     }
   ],
   "calculation_notes": "Calculate unweighted clinic averages for Jan and Mar across North, East, and West. Rank improvements by reduction from Jan avg_wait_min to Mar avg_wait_min; summarize the top improvement and tied improvements."

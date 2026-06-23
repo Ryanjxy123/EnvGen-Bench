@@ -14,7 +14,8 @@
       ],
       "must_appear_in_image": false,
       "canonical_answer": "Supporting context: 16 delivered July shipments after filtering",
-      "semantic_acceptance": "Supporting only. Do not require it as a standalone metric; it is acceptable if shown as denominator/context for on-time rate."
+      "semantic_acceptance": "Supporting only. Do not require it as a standalone metric; it is acceptable if shown as denominator/context for on-time rate.",
+      "evaluation_role": "optional"
     },
     {
       "id": "overall_on_time_rate",
@@ -28,7 +29,8 @@
       ],
       "must_appear_in_image": true,
       "canonical_answer": "11 of 16 delivered shipments on time, 68.8%",
-      "semantic_acceptance": "Accept if overall on-time performance is shown as about 69%, 68.8%, or 11/16. It can be in a KPI, chart label, or sentence."
+      "semantic_acceptance": "Accept if overall on-time performance is shown as about 69%, 68.8%, or 11/16. It can be in a KPI, chart label, or sentence.",
+      "evaluation_role": "critical_required"
     },
     {
       "id": "average_transit_time",
@@ -42,7 +44,8 @@
       ],
       "must_appear_in_image": true,
       "canonical_answer": "Average transit time is 3.5 days",
-      "semantic_acceptance": "Accept if average/mean transit or delivery time is shown as 3.5 days or an equivalent natural-language approximation such as three and a half days."
+      "semantic_acceptance": "Accept if average/mean transit or delivery time is shown as 3.5 days or an equivalent natural-language approximation such as three and a half days.",
+      "evaluation_role": "critical_required"
     },
     {
       "id": "risk_region",
@@ -56,7 +59,8 @@
       ],
       "must_appear_in_image": true,
       "canonical_answer": "Rural Belt is the region needing attention, 1 of 4 / 25% on time",
-      "semantic_acceptance": "Accept if Rural Belt is identified as the risk/attention/weakest region. The 25% on-time detail is useful but the semantic region finding is the core requirement."
+      "semantic_acceptance": "Accept if Rural Belt is identified as the risk/attention/weakest region. The 25% on-time detail is useful but the semantic region finding is the core requirement.",
+      "evaluation_role": "critical_required"
     },
     {
       "id": "best_carrier",
@@ -70,7 +74,8 @@
       ],
       "must_appear_in_image": true,
       "canonical_answer": "BlueRoute is the best carrier after the tie rule, 80% on time and lower claims than CargoNorth",
-      "semantic_acceptance": "Accept if BlueRoute is selected as best/top carrier after applying the tie rule. It may explain the 80% rate or the lower claim-cost tie-break, but exact wording is not required."
+      "semantic_acceptance": "Accept if BlueRoute is selected as best/top carrier after applying the tie rule. It may explain the 80% rate or the lower claim-cost tie-break, but exact wording is not required.",
+      "evaluation_role": "critical_required"
     },
     {
       "id": "delivery_takeaway",
@@ -84,7 +89,8 @@
       ],
       "must_appear_in_image": true,
       "canonical_answer": "Takeaway should highlight Rural Belt risk and/or BlueRoute leadership",
-      "semantic_acceptance": "Accept any concise logistics takeaway that is consistent with the computed on-time, region, transit, and carrier findings."
+      "semantic_acceptance": "Accept any concise logistics takeaway that is consistent with the computed on-time, region, transit, and carrier findings.",
+      "evaluation_role": "major_required"
     },
     {
       "id": "shipment_distractor_exclusions",
@@ -106,7 +112,8 @@
       ],
       "must_not_appear_in_image": true,
       "canonical_answer": "Do not use invalid shipment rows as final results",
-      "semantic_acceptance": "Strictly reject or cap if cancelled/return-only/test/forecast/subtotal/non-July rows or all-export row counts are used as final logistics results. Mentions that such rows were excluded are allowed."
+      "semantic_acceptance": "Strictly reject or cap if cancelled/return-only/test/forecast/subtotal/non-July rows or all-export row counts are used as final logistics results. Mentions that such rows were excluded are allowed.",
+      "evaluation_role": "negative_only"
     }
   ],
   "calculation_notes": "Use only rows where ship_date is in July 2026, status=delivered, and record_type=shipment. Transit days are delivery_date minus ship_date. Join destination_zone to zone_promises.json and count on-time when transit_days <= promised_days. Valid shipment count=16; on-time count=11, so overall on-time rate=68.8%. Transit-day total=56, so average transit=3.5 days. Region on-time rates: Metro Core=4/4=100.0%, Coastline=3/4=75.0%, Mountain=3/4=75.0%, Rural Belt=1/4=25.0%. Carrier on-time rates: ArrowShip=3/6=50.0%, BlueRoute=4/5=80.0%, CargoNorth=4/5=80.0%; tie-break uses lower claim_usd total, so BlueRoute wins with $20 versus CargoNorth $40."

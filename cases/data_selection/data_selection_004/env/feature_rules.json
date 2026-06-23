@@ -1,7 +1,24 @@
 {
-  "category": "camping",
-  "min_stock": 20,
-  "status": "active",
-  "select_top_n": 2,
-  "sort": "margin_desc"
+  "feature_name": "Spring Camping Shelf Feature",
+  "include_category": "camping",
+  "required_status": "active",
+  "required_season_tag": "spring_camp",
+  "minimum_stock_exclusive": 20,
+  "minimum_markdown_pct_inclusive": 15,
+  "select_top_n": 3,
+  "sort_order": [
+    {
+      "field": "margin_score",
+      "direction": "desc"
+    },
+    {
+      "field": "markdown_pct",
+      "direction": "desc"
+    },
+    {
+      "field": "feature_price_usd",
+      "direction": "asc"
+    }
+  ],
+  "required_image_copy": "Spring camping shelf picks"
 }

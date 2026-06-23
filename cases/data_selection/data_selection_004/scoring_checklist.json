@@ -2,59 +2,65 @@
   "case_id": "data_selection_004",
   "dimensions": {
     "task_completion": {
-      "weight": 0.2,
+      "weight": 0.15,
       "items": [
         {
           "id": "output_type_data_selection_004",
-          "check": "For data_selection_004, the output is a finished retail_feature_image for the filtering and ranking rule, not a worksheet, raw table, or generic mockup.",
+          "check": "Use semantic VLM/judge evaluation to decide whether the output is a finished retail_feature_image for a camping shelf feature, not a worksheet, raw table, source-data screenshot, or generic mockup.",
           "points": 4,
-          "scoring_hint": "2 = correct finished image type; 1 = correct topic but weak format; 0 = wrong artifact type."
+          "scoring_hint": "Full credit when the artifact reads as a polished retail feature image. Partial credit for a styled but weak feature. No credit for raw data, notes, or a non-image answer. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
         },
         {
-          "id": "operation_depth_data_selection_004",
-          "check": "The image visibly resolves this case's filtering and ranking rule; reference facts include selected_items: B403 Solar Lantern Duo, B405 Campfire Spice Set; ranking_rule: margin_desc; wrong_category_exclusion: B402; low_stock_exclusion: B404; retired_exclusion: B406.",
+          "id": "selection_task_resolution_data_selection_004",
+          "check": "Use semantic VLM/judge evaluation to determine whether the image filters the product catalog, ranks eligible products, and features only the final selected products.",
           "points": 4,
-          "scoring_hint": "2 = operation is visibly resolved; 1 = operation partly reflected; 0 = copied unsolved source material."
+          "scoring_hint": "Full credit when the final product set is clear. Partial credit when selection is ambiguous. No credit when the catalog is copied without selection. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
         }
       ]
     },
     "grounded_requirement_satisfaction": {
-      "weight": 0.45,
+      "weight": 0.55,
       "items": [
         {
-          "id": "critical_fact_accuracy_data_selection_004",
-          "check": "For data_selection_004, accurately includes the critical expected facts selected_items, ranking_rule using these case values: selected_items: B403 Solar Lantern Duo, B405 Campfire Spice Set; ranking_rule: margin_desc; wrong_category_exclusion: B402; low_stock_exclusion: B404; retired_exclusion: B406.",
+          "id": "critical_selected_set_accuracy_data_selection_004",
+          "check": "Semantic judge must verify that exactly these products are featured: Solar Lantern Duo, Campfire Spice Set, and Alpine Sleep Pad. SKUs are optional and should not be required.",
           "points": 8,
-          "scoring_hint": "2 = all critical facts correct; 1 = one minor omission or formatting issue; 0 = any critical fact is wrong or missing."
+          "scoring_hint": "Full credit for exactly the correct product set. Partial credit only for minor readability ambiguity. No credit if any product is replaced or an extra catalog item is featured."
         },
         {
-          "id": "required_appear_facts_data_selection_004",
-          "check": "Shows required appear facts selected_items for data_selection_004 without replacing them with unsupported alternatives; expected values include selected_items: B403 Solar Lantern Duo, B405 Campfire Spice Set; ranking_rule: margin_desc; wrong_category_exclusion: B402; low_stock_exclusion: B404; retired_exclusion: B406.",
+          "id": "critical_ranking_order_data_selection_004",
+          "check": "Semantic judge must verify the visible order is Solar Lantern Duo first, Campfire Spice Set second, and Alpine Sleep Pad third. Accept numbered cards, left-to-right, top-to-bottom, or another clear ranking cue.",
           "points": 6,
-          "scoring_hint": "2 = all required facts appear clearly; 1 = most appear but one is ambiguous; 0 = multiple required facts are absent."
+          "scoring_hint": "Full credit when ranking is clear and correct. Partial credit when the set is correct but rank is partly ambiguous. No credit when order is wrong or absent."
         },
         {
-          "id": "negative_exclusion_facts_data_selection_004",
-          "check": "Does not show prohibited or stale facts wrong_category_exclusion, low_stock_exclusion, retired_exclusion in data_selection_004; avoids unsupported claims from distractor env material.",
-          "points": 5,
-          "scoring_hint": "2 = no prohibited facts appear; 1 = one weak/ambiguous distractor; 0 = any explicit prohibited value appears."
+          "id": "critical_display_values_data_selection_004",
+          "check": "Semantic judge must verify each featured product displays the correct product name, feature price, and markdown label: Solar Lantern Duo $39.00 20% off; Campfire Spice Set $18.00 15% off; Alpine Sleep Pad $74.00 25% off. Accept equivalent currency and markdown wording.",
+          "points": 8,
+          "scoring_hint": "Full credit when all names, prices, and markdowns are correctly paired. Partial credit for one minor formatting/readability issue. No credit for wrong values or values attached to wrong products."
+        },
+        {
+          "id": "critical_exclusion_accuracy_data_selection_004",
+          "check": "Semantic judge must verify that unselected catalog products are not promoted as featured items, including wrong-category, wrong-season, low-stock, threshold-equal, markdown-below-threshold, non-active, internal, test, draft, archived, and below-top-N products.",
+          "points": 6,
+          "scoring_hint": "Full credit when no unselected product is featured. Partial credit for a faint ambiguous mention. No credit when any unselected product is clearly promoted."
         }
       ]
     },
     "information_structuring": {
-      "weight": 0.2,
+      "weight": 0.15,
       "items": [
         {
-          "id": "fact_hierarchy_data_selection_004",
-          "check": "Organizes selected_items, ranking_rule as the primary message for data_selection_004; supporting values are selected_items: B403 Solar Lantern Duo, B405 Campfire Spice Set; ranking_rule: margin_desc; wrong_category_exclusion: B402; low_stock_exclusion: B404; retired_exclusion: B406.",
+          "id": "retail_feature_hierarchy_data_selection_004",
+          "check": "Accept different retail layouts, including product cards, shelf tags, ranked feature slots, banners, price labels, or markdown badges, as long as selected products and values are easy to scan.",
           "points": 5,
-          "scoring_hint": "2 = hierarchy is clear and fact-driven; 1 = facts present but hierarchy is muddled; 0 = important facts are buried or missing."
+          "scoring_hint": "Full credit for clear hierarchy and scanability. Partial credit for cluttered but understandable layout. No credit when selected products are buried. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
         },
         {
-          "id": "robust_consistency_data_selection_004",
-          "check": "Across repeated runs of data_selection_004, the same critical facts, exclusions wrong_category_exclusion, low_stock_exclusion, retired_exclusion, ordering rules, and layout constraints must remain consistent.",
+          "id": "no_unnecessary_process_details_data_selection_004",
+          "check": "Do not require SKUs, full filter rules, stock counts, margin scores, season tags, or filtering process steps. Treat them only as supporting context if present and correct.",
           "points": 4,
-          "scoring_hint": "2 = stable facts and exclusions; 1 = minor wording drift only; 0 = selected facts or exclusions change."
+          "scoring_hint": "Full credit when the image focuses on featured products. Partial credit if extra metadata appears but does not dominate. No credit if process details overwhelm the feature. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
         }
       ]
     },
@@ -63,17 +69,89 @@
       "items": [
         {
           "id": "visual_clarity_data_selection_004",
-          "check": "For data_selection_004, uses clear visual hierarchy, readable typography, sufficient contrast, and non-crowded spacing at the intended retail_feature_image size.",
+          "check": "Use semantic VLM/judge evaluation for readable typography, clear hierarchy, sufficient contrast, polished retail styling, and non-crowded spacing.",
           "points": 4,
-          "scoring_hint": "2 = readable and polished; 1 = readable with minor clutter; 0 = unreadable or visually incoherent."
+          "scoring_hint": "Full credit for readable polished design. Partial credit for minor clutter or weak styling. No credit for unreadable or visually incoherent output. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
         },
         {
           "id": "visual_layout_density_data_selection_004",
-          "check": "The retail_feature_image layout has appropriate information density, balanced image/text regions, crisp assets, platform-safe margins, and no placeholder-like areas.",
+          "check": "The feature image should have balanced density, clear product/value pairing, platform-safe margins, and no placeholder-like empty regions.",
           "points": 4,
-          "scoring_hint": "2 = balanced density and crisp assets; 1 = some weak spacing or density; 0 = blank, placeholder-like, or low-resolution."
+          "scoring_hint": "Full credit for balanced density and clear sections. Partial credit for weak spacing. No credit for blank, placeholder-like, or low-resolution output. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
         }
       ]
     }
-  }
+  },
+  "score_caps": [
+    {
+      "id": "wrong_selected_product",
+      "max_total": 60,
+      "reason": "A non-selected catalog item appears without a clear exclusion/not-selected context, indicating it may be promoted as a featured camping product.",
+      "trigger": {
+        "type": "forbidden_final_answer",
+        "patterns": [
+          "Trail Mix Kit",
+          "River Mug",
+          "Map Bandana",
+          "Retired Stove Stand",
+          "Test Tent Stakes",
+          "Winter Stove Kit",
+          "Packable Tarp",
+          "Bug Spray Duo",
+          "Zero Stock Hammock",
+          "Draft Firestarter",
+          "Archive Camp Chair",
+          "Compact Cook Pot",
+          "Solar Shower Bag",
+          "Internal Gear Bundle",
+          "Lake Picnic Blanket"
+        ],
+        "allowed_patterns": [
+          "\\b(excluded|exclude|filtered out|not selected|not featured|not a featured product|not promoted|ineligible)\\b[\\s\\S]{0,120}\\b(Trail Mix Kit|River Mug|Map Bandana|Retired Stove Stand|Test Tent Stakes|Winter Stove Kit|Packable Tarp|Bug Spray Duo|Zero Stock Hammock|Draft Firestarter|Archive Camp Chair|Compact Cook Pot|Solar Shower Bag|Internal Gear Bundle|Lake Picnic Blanket)\\b",
+          "\\b(Trail Mix Kit|River Mug|Map Bandana|Retired Stove Stand|Test Tent Stakes|Winter Stove Kit|Packable Tarp|Bug Spray Duo|Zero Stock Hammock|Draft Firestarter|Archive Camp Chair|Compact Cook Pot|Solar Shower Bag|Internal Gear Bundle|Lake Picnic Blanket)\\b[\\s\\S]{0,120}\\b(excluded|exclude|filtered out|not selected|not featured|not a featured product|not promoted|ineligible)\\b"
+        ]
+      }
+    },
+    {
+      "id": "missing_selected_product",
+      "max_total": 55,
+      "reason": "One or more required selected products is missing.",
+      "trigger": {
+        "type": "missing_required_count",
+        "fact_ids": [
+          "selected_products",
+          "selected_product_display_values"
+        ],
+        "min_missing": 1
+      }
+    },
+    {
+      "id": "unfiltered_product_catalog",
+      "max_total": 45,
+      "reason": "The output appears to show the unfiltered catalog without a clear exclusion/not-selected context.",
+      "trigger": {
+        "type": "forbidden_final_answer",
+        "patterns": [
+          "sku\\s*,\\s*name\\s*,\\s*category\\s*,\\s*status",
+          "category\\s*,\\s*status\\s*,\\s*stock",
+          "feature_price_usd\\s*,\\s*markdown_pct\\s*,\\s*margin_score",
+          "margin_score\\s*,\\s*season_tag"
+        ]
+      }
+    },
+    {
+      "id": "raw_table_instead_of_feature",
+      "max_total": 40,
+      "reason": "The final artifact is a raw table, worksheet, or data dump instead of a polished retail feature image.",
+      "trigger": {
+        "type": "forbidden_final_answer",
+        "patterns": [
+          "\\|\\s*sku",
+          "sku\\s+name\\s+category",
+          "category\\s+status\\s+stock",
+          "stock\\s*,\\s*feature_price_usd\\s*,\\s*markdown_pct"
+        ]
+      }
+    }
+  ]
 }

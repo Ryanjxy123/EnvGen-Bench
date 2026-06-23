@@ -4,55 +4,174 @@
   "facts": [
     {
       "id": "selected_items",
-      "description": "Top two qualifying lunch specials.",
+      "description": "The final featured lunch items are the top 3 eligible menu items after all filters and ranking rules.",
       "source": "env/menu_inventory.sqlite + env/menu_rules.sql",
       "importance": "critical",
       "expected_value": [
-        "M304 Herbed Lentil Wrap",
-        "M301 Citrus Grain Bowl"
+        "Herbed Lentil Wrap",
+        "Citrus Grain Bowl",
+        "Miso Veggie Broth"
       ],
-      "must_appear_in_image": true
+      "canonical_answer": {
+        "selected_item_ids_reference_only": [
+          "M304",
+          "M301",
+          "M311"
+        ],
+        "selected_item_names": [
+          "Herbed Lentil Wrap",
+          "Citrus Grain Bowl",
+          "Miso Veggie Broth"
+        ]
+      },
+      "semantic_acceptance": "Accept any polished cafe display image that clearly features exactly these three lunch specials. Item IDs may be omitted; names must be identifiable and not replaced by unselected menu items.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
-      "id": "ranking_rule",
-      "description": "Sort qualifying items by margin_score descending.",
-      "source": "env/menu_rules.sql",
-      "importance": "critical",
-      "expected_value": "M304 margin 94 before M301 margin 92",
-      "must_appear_in_image": false
-    },
-    {
-      "id": "nut_free_quick_service",
-      "description": "Selected lunch specials are nut-free and quick-service.",
+      "id": "ranking_order",
+      "description": "Selected lunch specials must be displayed in the rule-based ranking order.",
       "source": "env/menu_inventory.sqlite + env/menu_rules.sql",
       "importance": "critical",
-      "expected_value": "nut-free quick-service lunch specials",
-      "must_appear_in_image": true
+      "expected_value": "Herbed Lentil Wrap before Citrus Grain Bowl before Miso Veggie Broth",
+      "canonical_answer": [
+        "1. Herbed Lentil Wrap",
+        "2. Citrus Grain Bowl",
+        "3. Miso Veggie Broth"
+      ],
+      "semantic_acceptance": "Accept left-to-right, top-to-bottom, numbered cards, or another clear ranking cue as long as the order is Herbed Lentil Wrap, then Citrus Grain Bowl, then Miso Veggie Broth.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
-      "id": "nut_exclusion",
-      "description": "Sesame Noodle Cup contains nuts and must not appear.",
+      "id": "selected_item_display_values",
+      "description": "Each selected item must show the correct name, price, and prep-time label.",
       "source": "env/menu_inventory.sqlite",
-      "importance": "major",
-      "expected_value": "M302",
-      "must_not_appear_in_image": true
+      "importance": "critical",
+      "expected_value": [
+        "Herbed Lentil Wrap: $9.50, 8 min prep",
+        "Citrus Grain Bowl: $11.00, 9 min prep",
+        "Miso Veggie Broth: $7.75, 6 min prep"
+      ],
+      "canonical_answer": {
+        "Herbed Lentil Wrap": {
+          "price_usd": "9.50",
+          "prep_minutes": 8
+        },
+        "Citrus Grain Bowl": {
+          "price_usd": "11.00",
+          "prep_minutes": 9
+        },
+        "Miso Veggie Broth": {
+          "price_usd": "7.75",
+          "prep_minutes": 6
+        }
+      },
+      "semantic_acceptance": "Prices may use equivalent currency formatting. Prep labels may be written as 8 min, ready in 8 minutes, or similar, but values must be attached to the correct item names.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
-      "id": "stock_exclusion",
-      "description": "Tomato Basil Soup has stock below 10.",
-      "source": "env/menu_inventory.sqlite",
-      "importance": "major",
-      "expected_value": "M303",
-      "must_not_appear_in_image": true
+      "id": "nut_free_quick_lunch_copy",
+      "description": "The image should communicate that the selected items are nut-free quick lunch specials.",
+      "source": "env/menu_rules.sql + task.md",
+      "importance": "critical",
+      "expected_value": "nut-free quick lunch specials",
+      "canonical_answer": "Nut-free quick lunch specials",
+      "semantic_acceptance": "Accept equivalent copy such as nut-free lunch picks, quick nut-free lunch, or fast nut-free lunch specials.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
-      "id": "availability_exclusion",
-      "description": "Roasted Veg Plate is unavailable.",
-      "source": "env/menu_inventory.sqlite",
+      "id": "unselected_items_not_featured",
+      "description": "Filtered-out items and eligible items below the top 3 cutoff must not appear as featured lunch specials.",
+      "source": "env/menu_inventory.sqlite + env/menu_rules.sql",
+      "importance": "critical",
+      "expected_value": [
+        "Sesame Noodle Cup",
+        "Tomato Basil Soup",
+        "Sunrise Oat Pot",
+        "Roasted Veg Plate",
+        "Coconut Curry Bowl",
+        "Archived Pita Stack",
+        "Test Falafel Box",
+        "Chickpea Salad Cup",
+        "Nutty Power Salad",
+        "Evening Rice Bowl",
+        "Old Menu Quinoa Cup",
+        "Draft Mezze Plate",
+        "Fast Bean Tacos",
+        "Sold Out Veg Pocket",
+        "Internal Staff Bowl"
+      ],
+      "canonical_answer": "Only Herbed Lentil Wrap, Citrus Grain Bowl, and Miso Veggie Broth should be featured.",
+      "semantic_acceptance": "The image may use generic food graphics, but it must not label or promote any unselected menu item as a lunch special.",
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
+    },
+    {
+      "id": "availability_stock_and_threshold_exclusions",
+      "description": "Unavailable, sold-out, and stock-threshold items are excluded.",
+      "source": "env/menu_inventory.sqlite + env/menu_rules.sql",
       "importance": "major",
-      "expected_value": "M306",
-      "must_not_appear_in_image": true
+      "expected_value": [
+        "Roasted Veg Plate unavailable",
+        "Sold Out Veg Pocket stock 0",
+        "Tomato Basil Soup stock 10"
+      ],
+      "canonical_answer": "Exclude Roasted Veg Plate because available=0; exclude Sold Out Veg Pocket because stock=0; exclude Tomato Basil Soup because stock 10 does not satisfy stock>10.",
+      "semantic_acceptance": "None of these items should be featured.",
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
+    },
+    {
+      "id": "status_window_and_test_exclusions",
+      "description": "Non-active, test, internal, draft, archived, or wrong-window items are excluded.",
+      "source": "env/menu_inventory.sqlite + env/menu_rules.sql",
+      "importance": "major",
+      "expected_value": [
+        "Archived Pita Stack archived",
+        "Test Falafel Box test",
+        "Old Menu Quinoa Cup winter_menu",
+        "Draft Mezze Plate draft",
+        "Internal Staff Bowl internal"
+      ],
+      "canonical_answer": "Exclude Archived Pita Stack, Test Falafel Box, Old Menu Quinoa Cup, Draft Mezze Plate, and Internal Staff Bowl because they fail status or service-window requirements.",
+      "semantic_acceptance": "None of these items should be featured.",
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
+    },
+    {
+      "id": "meal_nut_and_prep_exclusions",
+      "description": "Wrong meal type, nut-containing, and slow-prep items are excluded.",
+      "source": "env/menu_inventory.sqlite + env/menu_rules.sql",
+      "importance": "major",
+      "expected_value": [
+        "Sunrise Oat Pot breakfast",
+        "Evening Rice Bowl dinner",
+        "Sesame Noodle Cup contains nuts",
+        "Nutty Power Salad contains nuts",
+        "Coconut Curry Bowl prep 12"
+      ],
+      "canonical_answer": "Exclude Sunrise Oat Pot and Evening Rice Bowl for meal type mismatch; exclude Sesame Noodle Cup and Nutty Power Salad for contains_nuts=1; exclude Coconut Curry Bowl because prep_minutes=12 exceeds the limit.",
+      "semantic_acceptance": "None of these items should be featured.",
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
+    },
+    {
+      "id": "eligible_but_below_top_n",
+      "description": "Eligible lunch items below the top 3 cutoff are not final featured items.",
+      "source": "env/menu_inventory.sqlite + env/menu_rules.sql",
+      "importance": "major",
+      "expected_value": [
+        "Fast Bean Tacos",
+        "Chickpea Salad Cup"
+      ],
+      "canonical_answer": "Fast Bean Tacos and Chickpea Salad Cup pass filters but rank below the top 3 cutoff.",
+      "semantic_acceptance": "These items should not be promoted as featured lunch specials.",
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     }
   ],
-  "calculation_notes": "Filter lunch, available=1, stock>=10, contains_nuts=0, prep_minutes<=10; sort by margin_score desc; select top 2."
+  "calculation_notes": "Independent calculation: query menu_items and filter meal_type='lunch', status='active', available=1, stock>10, contains_nuts=0, prep_minutes<=10, and service_window='weekday_lunch'. Eligible rows are M304 Herbed Lentil Wrap (margin 97, prep 8, price 9.50), M301 Citrus Grain Bowl (margin 94, prep 9, price 11.00), M311 Miso Veggie Broth (margin 91, prep 6, price 7.75), M316 Fast Bean Tacos (margin 90, prep 10, price 8.95), and M310 Chickpea Salad Cup (margin 88, prep 7, price 8.25). Sort by margin_score descending, prep_minutes ascending, and price_usd ascending; there are no ties affecting top 3. Sorted eligible order is M304, M301, M311, M316, M310. Select top 3, so final featured items are Herbed Lentil Wrap ($9.50, 8 min prep), Citrus Grain Bowl ($11.00, 9 min prep), and Miso Veggie Broth ($7.75, 6 min prep). Exclusions: M302 contains nuts; M303 stock 10 equals the exclusive stock threshold and is not greater than 10; M305 breakfast; M306 available=0; M307 prep 12 exceeds limit; M308 archived; M309 test; M312 contains nuts; M313 dinner; M314 winter_menu wrong window; M315 draft; M317 stock 0; M318 internal; M316 and M310 are eligible but below top 3."
 }

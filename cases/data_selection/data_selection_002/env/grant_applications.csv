@@ -1,0 +1,19 @@
+application_id,project_name,sector,status,documents_complete,requested_usd,submitted_on,score,community_priority,program_round
+G201,River Mural Revival,arts,eligible,yes,18000,2026-03-01,98,96,spring_2026
+G202,Storm Drain Mapping,climate,eligible,yes,24000,2026-03-07,96,91,spring_2026
+G203,Heat Pump Co-op,climate,eligible,yes,51000,2026-03-02,95,89,spring_2026
+G204,Home Energy Kits,climate,eligible,no,30000,2026-03-01,93,93,spring_2026
+G205,Solar Pantry Pilot,climate,draft,yes,22000,2026-02-28,97,88,spring_2026
+G206,Transit Shade Stops,transportation,eligible,yes,42000,2026-02-27,94,95,spring_2026
+G207,Tree Canopy Fellows,climate,eligible,yes,42000,2026-03-01,94,87,spring_2026
+G208,Cool Roof Block,climate,eligible,yes,39000,2026-03-03,92,90,spring_2026
+G209,Compost Heat Watch,climate,eligible,yes,26000,2026-03-04,80,85,spring_2026
+G210,Flood Ready Neighbors,climate,eligible,yes,50000,2026-03-02,89,95,spring_2026
+G211,Archive Rain Barrel,climate,eligible,yes,28000,2026-02-20,91,94,winter_2025
+G212,Test Cooling Hub,climate,test,yes,19000,2026-02-25,99,99,spring_2026
+G213,Energy Coach Hotline,climate,eligible,yes,33000,2026-03-04,88,86,spring_2026
+G214,Internal Sensor Trial,climate,internal,yes,21000,2026-03-01,100,100,spring_2026
+G215,Rain Garden Crew,climate,eligible,yes,27000,2026-03-05,86,84,spring_2026
+G216,Cancelled Cool Bus,climate,cancelled,yes,25000,2026-03-01,90,97,spring_2026
+G217,Youth Climate Lab,education,eligible,yes,20000,2026-03-01,92,92,spring_2026
+G218,Porch Solar Library,climate,eligible,yes,48000,2026-03-06,87,83,spring_2026

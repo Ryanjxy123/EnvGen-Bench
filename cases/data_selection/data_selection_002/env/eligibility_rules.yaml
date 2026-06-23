@@ -1,8 +1,17 @@
 program: Neighborhood Climate Microgrants
 include_sector: climate
-max_requested_usd_inclusive: 50000
 required_status: eligible
 required_documents_complete: yes
-select_top_n: 2
-sort: score_desc
-deadline: 2026-03-05
+required_program_round: spring_2026
+max_requested_usd_inclusive: 50000
+deadline_inclusive: 2026-03-05
+minimum_score_exclusive: 80
+select_top_n: 3
+sort_order:
+  - field: score
+    direction: desc
+  - field: community_priority
+    direction: desc
+  - field: requested_usd
+    direction: asc
+required_image_copy: Spring climate microgrant winners

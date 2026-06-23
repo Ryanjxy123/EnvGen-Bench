@@ -11,7 +11,8 @@
         "G205 Tree Canopy Fellows",
         "G201 Cool Roof Block"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "ranking_rule",
@@ -19,7 +20,8 @@
       "source": "env/eligibility_rules.yaml",
       "importance": "critical",
       "expected_value": "G205 score 93 before G201 score 91",
-      "must_appear_in_image": false
+      "must_appear_in_image": false,
+      "evaluation_role": "optional"
     },
     {
       "id": "late_exclusion",
@@ -27,7 +29,8 @@
       "source": "env/grant_applications.xlsx",
       "importance": "major",
       "expected_value": "G204",
-      "must_not_appear_in_image": true
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     },
     {
       "id": "budget_exclusion",
@@ -35,7 +38,8 @@
       "source": "env/grant_applications.xlsx",
       "importance": "major",
       "expected_value": "G203",
-      "must_not_appear_in_image": true
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     },
     {
       "id": "wrong_sector_exclusion",
@@ -43,7 +47,8 @@
       "source": "env/grant_applications.xlsx",
       "importance": "major",
       "expected_value": "G202",
-      "must_not_appear_in_image": true
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     }
   ],
   "calculation_notes": "Filter sector=climate, requested_usd<=50000, status=eligible, documents_complete=yes, submitted_on<=deadline; sort by score desc; select top 2."

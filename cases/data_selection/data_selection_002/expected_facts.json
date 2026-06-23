@@ -4,47 +4,163 @@
   "facts": [
     {
       "id": "selected_grants",
-      "description": "Top qualifying grant winners after filtering.",
-      "source": "env/grant_applications.xlsx + env/eligibility_rules.yaml",
+      "description": "The final featured grant winners are the top 3 eligible applications after all filters and ranking rules.",
+      "source": "env/grant_applications.csv + env/eligibility_rules.yaml",
       "importance": "critical",
       "expected_value": [
-        "G205 Tree Canopy Fellows",
-        "G201 Cool Roof Block"
+        "Tree Canopy Fellows",
+        "Cool Roof Block",
+        "Flood Ready Neighbors"
       ],
-      "must_appear_in_image": true
+      "canonical_answer": {
+        "selected_application_ids_reference_only": [
+          "G207",
+          "G208",
+          "G210"
+        ],
+        "selected_project_names": [
+          "Tree Canopy Fellows",
+          "Cool Roof Block",
+          "Flood Ready Neighbors"
+        ]
+      },
+      "semantic_acceptance": "Accept any polished winner announcement image that clearly features exactly these three projects as winners. Application IDs may be omitted; the project names must be identifiable and not replaced by unselected applications.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
-      "id": "ranking_rule",
-      "description": "Eligible applications are ranked by score descending.",
-      "source": "env/eligibility_rules.yaml",
+      "id": "ranking_order",
+      "description": "Selected winners must be displayed in the ranking order from highest to lowest.",
+      "source": "env/grant_applications.csv + env/eligibility_rules.yaml",
       "importance": "critical",
-      "expected_value": "G205 score 93 before G201 score 91",
-      "must_appear_in_image": false
+      "expected_value": "Tree Canopy Fellows before Cool Roof Block before Flood Ready Neighbors",
+      "canonical_answer": [
+        "1. Tree Canopy Fellows",
+        "2. Cool Roof Block",
+        "3. Flood Ready Neighbors"
+      ],
+      "semantic_acceptance": "Accept left-to-right, top-to-bottom, numbered placements, or another clear visual hierarchy as long as the order is Tree Canopy Fellows, then Cool Roof Block, then Flood Ready Neighbors.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
-      "id": "late_exclusion",
-      "description": "Storm Drain Mapping is late and should not be announced.",
-      "source": "env/grant_applications.xlsx",
-      "importance": "major",
-      "expected_value": "G204",
-      "must_not_appear_in_image": true
+      "id": "selected_grant_display_values",
+      "description": "Each selected winner must show the correct project name, requested grant amount, and score label.",
+      "source": "env/grant_applications.csv",
+      "importance": "critical",
+      "expected_value": [
+        "Tree Canopy Fellows: $42,000 requested, score 94",
+        "Cool Roof Block: $39,000 requested, score 92",
+        "Flood Ready Neighbors: $50,000 requested, score 89"
+      ],
+      "canonical_answer": {
+        "Tree Canopy Fellows": {
+          "requested_usd": "42000",
+          "score": 94
+        },
+        "Cool Roof Block": {
+          "requested_usd": "39000",
+          "score": 92
+        },
+        "Flood Ready Neighbors": {
+          "requested_usd": "50000",
+          "score": 89
+        }
+      },
+      "semantic_acceptance": "Grant amounts may be formatted as $42,000, $39,000, and $50,000 or equivalent whole-dollar formats. Score labels may use wording such as Score 94 or 94 pts, but values must be attached to the correct projects.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
-      "id": "budget_exclusion",
-      "description": "Heat Pump Co-op is over the budget cap.",
-      "source": "env/grant_applications.xlsx",
-      "importance": "major",
-      "expected_value": "G203",
-      "must_not_appear_in_image": true
+      "id": "unselected_grants_not_featured",
+      "description": "Applications that are filtered out or rank below the top 3 cutoff must not appear as winners.",
+      "source": "env/grant_applications.csv + env/eligibility_rules.yaml",
+      "importance": "critical",
+      "expected_value": [
+        "River Mural Revival",
+        "Storm Drain Mapping",
+        "Heat Pump Co-op",
+        "Home Energy Kits",
+        "Solar Pantry Pilot",
+        "Transit Shade Stops",
+        "Compost Heat Watch",
+        "Archive Rain Barrel",
+        "Test Cooling Hub",
+        "Energy Coach Hotline",
+        "Internal Sensor Trial",
+        "Rain Garden Crew",
+        "Cancelled Cool Bus",
+        "Youth Climate Lab",
+        "Porch Solar Library"
+      ],
+      "canonical_answer": "Only Tree Canopy Fellows, Cool Roof Block, and Flood Ready Neighbors should be announced as winners.",
+      "semantic_acceptance": "The image may use generic celebratory graphics, but it must not label or present any unselected application as a winner.",
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     },
     {
-      "id": "wrong_sector_exclusion",
-      "description": "River Mural is arts sector, not climate.",
-      "source": "env/grant_applications.xlsx",
+      "id": "deadline_and_budget_exclusions",
+      "description": "Late or over-budget applications are excluded even with high scores.",
+      "source": "env/grant_applications.csv + env/eligibility_rules.yaml",
       "importance": "major",
-      "expected_value": "G202",
-      "must_not_appear_in_image": true
+      "expected_value": [
+        "Storm Drain Mapping late",
+        "Porch Solar Library late",
+        "Heat Pump Co-op over budget"
+      ],
+      "canonical_answer": "Exclude Storm Drain Mapping and Porch Solar Library for dates after the inclusive deadline; exclude Heat Pump Co-op for requested_usd above 50000.",
+      "semantic_acceptance": "None of these projects should be shown as winners.",
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
+    },
+    {
+      "id": "status_and_internal_exclusions",
+      "description": "Draft, test, internal, cancelled, or incomplete applications are excluded.",
+      "source": "env/grant_applications.csv",
+      "importance": "major",
+      "expected_value": [
+        "Home Energy Kits incomplete documents",
+        "Solar Pantry Pilot draft",
+        "Test Cooling Hub test",
+        "Internal Sensor Trial internal",
+        "Cancelled Cool Bus cancelled"
+      ],
+      "canonical_answer": "Exclude Home Energy Kits, Solar Pantry Pilot, Test Cooling Hub, Internal Sensor Trial, and Cancelled Cool Bus because they fail status or document requirements.",
+      "semantic_acceptance": "None of these projects should be shown as winners.",
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
+    },
+    {
+      "id": "sector_round_and_threshold_exclusions",
+      "description": "Wrong-sector, wrong-round, and score-threshold applications are excluded.",
+      "source": "env/grant_applications.csv + env/eligibility_rules.yaml",
+      "importance": "major",
+      "expected_value": [
+        "River Mural Revival arts",
+        "Transit Shade Stops transportation",
+        "Youth Climate Lab education",
+        "Archive Rain Barrel winter_2025",
+        "Compost Heat Watch score 80"
+      ],
+      "canonical_answer": "Exclude River Mural Revival, Transit Shade Stops, and Youth Climate Lab for sector mismatch; exclude Archive Rain Barrel for the wrong program round; exclude Compost Heat Watch because score 80 equals the exclusive threshold and is not greater than 80.",
+      "semantic_acceptance": "None of these projects should be shown as winners.",
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
+    },
+    {
+      "id": "eligible_but_below_top_n",
+      "description": "Eligible applications below the top 3 cutoff are not final winners.",
+      "source": "env/grant_applications.csv + env/eligibility_rules.yaml",
+      "importance": "major",
+      "expected_value": [
+        "Energy Coach Hotline",
+        "Rain Garden Crew"
+      ],
+      "canonical_answer": "Energy Coach Hotline and Rain Garden Crew pass filters but rank below the top 3 cutoff.",
+      "semantic_acceptance": "These projects should not be promoted as winners.",
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     }
   ],
-  "calculation_notes": "Filter sector=climate, requested_usd<=50000, status=eligible, documents_complete=yes, submitted_on<=deadline; sort by score desc; select top 2."
+  "calculation_notes": "Independent calculation: filter grant_applications.csv by sector=climate, status=eligible, documents_complete=yes, program_round=spring_2026, requested_usd<=50000, submitted_on<=2026-03-05, and score>80 because the score threshold is exclusive. Eligible rows are G207 Tree Canopy Fellows (score 94, community_priority 87, requested 42000), G208 Cool Roof Block (score 92, community_priority 90, requested 39000), G210 Flood Ready Neighbors (score 89, community_priority 95, requested 50000), G213 Energy Coach Hotline (score 88, community_priority 86, requested 33000), and G215 Rain Garden Crew (score 86, community_priority 84, requested 27000). Sort by score descending, then community_priority descending, then requested_usd ascending; there are no ties affecting the top 3. Sorted eligible order is G207, G208, G210, G213, G215. select_top_n=3, so final winners are Tree Canopy Fellows ($42,000 requested, score 94), Cool Roof Block ($39,000 requested, score 92), and Flood Ready Neighbors ($50,000 requested, score 89). Exclusions: G201 wrong sector arts; G202 late after deadline; G203 requested 51000 over budget; G204 documents_complete=no; G205 draft status; G206 wrong sector transportation; G209 score 80 equals exclusive threshold; G211 winter_2025 wrong round; G212 test status; G214 internal status; G216 cancelled status; G217 wrong sector education; G218 late after deadline; G213 and G215 are eligible but below top 3."
 }

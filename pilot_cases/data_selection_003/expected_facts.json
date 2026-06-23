@@ -11,7 +11,8 @@
         "M304 Herbed Lentil Wrap",
         "M301 Citrus Grain Bowl"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "ranking_rule",
@@ -19,7 +20,8 @@
       "source": "env/menu_rules.sql",
       "importance": "critical",
       "expected_value": "M304 margin 94 before M301 margin 92",
-      "must_appear_in_image": false
+      "must_appear_in_image": false,
+      "evaluation_role": "optional"
     },
     {
       "id": "nut_free_quick_service",
@@ -27,7 +29,8 @@
       "source": "env/menu_inventory.sqlite + env/menu_rules.sql",
       "importance": "critical",
       "expected_value": "nut-free quick-service lunch specials",
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
       "id": "nut_exclusion",
@@ -35,7 +38,8 @@
       "source": "env/menu_inventory.sqlite",
       "importance": "major",
       "expected_value": "M302",
-      "must_not_appear_in_image": true
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     },
     {
       "id": "stock_exclusion",
@@ -43,7 +47,8 @@
       "source": "env/menu_inventory.sqlite",
       "importance": "major",
       "expected_value": "M303",
-      "must_not_appear_in_image": true
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     },
     {
       "id": "availability_exclusion",
@@ -51,7 +56,8 @@
       "source": "env/menu_inventory.sqlite",
       "importance": "major",
       "expected_value": "M306",
-      "must_not_appear_in_image": true
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     }
   ],
   "calculation_notes": "Filter lunch, available=1, stock>=10, contains_nuts=0, prep_minutes<=10; sort by margin_score desc; select top 2."
