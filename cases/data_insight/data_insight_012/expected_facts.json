@@ -1,0 +1,128 @@
+{
+  "case_id": "data_insight_012",
+  "task_type": "data_insight",
+  "facts": [
+    {
+      "id": "anomaly_score_leader",
+      "description": "District ranked highest by normalized weighted water-loss anomaly score after applying profile mapping and exclusion rules.",
+      "source": "env/district_meter_readings.csv + env/district_profiles.csv + env/leak_triage_rules.json",
+      "importance": "critical",
+      "expected_value": [
+        "Old Mill: 95.7",
+        "Old Mill anomaly score 95.7"
+      ],
+      "canonical_answer": "Old Mill is the top anomaly district with score 95.7",
+      "semantic_acceptance": "Accept if Old Mill is shown as the highest anomaly-score district with score near 95.7.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "fastest_loss_rate_increase",
+      "description": "District with the largest Q4 versus Q3 water-loss-rate change in percentage points.",
+      "source": "env/district_meter_readings.csv + env/leak_triage_rules.json",
+      "importance": "critical",
+      "expected_value": [
+        "Harbor Flats: 5.8 pp",
+        "Harbor Flats fastest loss-rate growth"
+      ],
+      "canonical_answer": "Harbor Flats has the fastest loss-rate increase at about 5.8 percentage points",
+      "semantic_acceptance": "Accept if Harbor Flats is identified as the largest loss-rate increase with about 5.8 percentage points.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "loss_volume_hotspot",
+      "description": "District with the highest Q4 water-loss volume in kiloliters.",
+      "source": "env/district_meter_readings.csv",
+      "importance": "critical",
+      "expected_value": [
+        "Southworks Main: 4,940 kL",
+        "Southworks Main highest water-loss volume"
+      ],
+      "canonical_answer": "Southworks Main has the highest Q4 water-loss volume at 4,940 kL",
+      "semantic_acceptance": "Accept if Southworks Main is shown as the loss-volume hotspot near 4,940 kL.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "pressure_alert_hotspot",
+      "description": "District with the highest Q4 pressure-alert rate per 1,000 service connections.",
+      "source": "env/district_meter_readings.csv + env/district_profiles.csv",
+      "importance": "critical",
+      "expected_value": [
+        "Airport Spur: 97.6 per 1,000",
+        "Airport Spur pressure alert hotspot"
+      ],
+      "canonical_answer": "Airport Spur has the highest pressure-alert rate at about 97.6 per 1,000 connections",
+      "semantic_acceptance": "Accept if Airport Spur is identified as the pressure-alert rate hotspot.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "regional_loss_hotspot",
+      "description": "Region with the highest aggregate Q4 water-loss volume.",
+      "source": "env/district_meter_readings.csv + env/district_profiles.csv",
+      "importance": "critical",
+      "expected_value": [
+        "South: 9,110 kL",
+        "South regional water-loss hotspot"
+      ],
+      "canonical_answer": "South is the region with the highest Q4 water-loss volume at 9,110 kL",
+      "semantic_acceptance": "Accept if South is shown as the regional loss hotspot near 9,110 kL.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "high_priority_threshold_count",
+      "description": "Count of districts at or above the high-priority anomaly-score threshold.",
+      "source": "env/leak_triage_rules.json + env/district_meter_readings.csv + env/district_profiles.csv",
+      "importance": "critical",
+      "expected_value": [
+        "2 high-priority districts",
+        "threshold count 2"
+      ],
+      "canonical_answer": "2 districts meet the high-priority threshold",
+      "semantic_acceptance": "Accept if the visual states that 2 districts are high priority under the configured threshold.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "median_loss_rate_context",
+      "description": "Median Q4 district water-loss rate for context.",
+      "source": "env/district_meter_readings.csv",
+      "importance": "major",
+      "expected_value": [
+        "median loss rate 7.8%"
+      ],
+      "canonical_answer": "Median Q4 loss rate is about 7.8%",
+      "semantic_acceptance": "Accept if a median or network-wide context loss-rate value close to the expected value is included.",
+      "must_appear_in_image": true,
+      "evaluation_role": "major_required"
+    },
+    {
+      "id": "water_distractor_exclusions",
+      "description": "Do not use forecast, subtotal, test, or old-period rows as final water-loss metrics.",
+      "source": "env/district_meter_readings.csv + env/leak_triage_rules.json",
+      "importance": "major",
+      "expected_value": [
+        "invalid water record used"
+      ],
+      "forbidden_patterns": [
+        "\\b99,?999\\b",
+        "\\b88,?888\\b",
+        "\\b77,?777\\b",
+        "\\bforecast\\b[^.!?\\n;]{0,80}\\b(result|answer|leader|score|loss)\\b",
+        "\\bsubtotal\\b[^.!?\\n;]{0,80}\\b(result|answer|leader|score|loss)\\b",
+        "\\bold[_ -]?period\\b[^.!?\\n;]{0,80}\\b(result|answer|leader|score|loss)\\b"
+      ],
+      "allowed_patterns": [
+        "\\b(exclude|excluded|excluding|ignore|ignored|not\\s+used)\\b[^.!?\\n;]{0,140}\\b(forecast|subtotal|old)"
+      ],
+      "must_not_appear_in_image": true,
+      "canonical_answer": "Invalid water network rows must not be used as final metrics.",
+      "semantic_acceptance": "Reject or cap if invalid rows are treated as final metrics. Exclusion notes are allowed.",
+      "evaluation_role": "negative_only"
+    }
+  ],
+  "calculation_notes": "Join district readings to profiles by zone_id. Use only actual closed records. Q3 baseline months are 2026-07 through 2026-09; Q4 analysis months are 2026-10 through 2026-12. Water-loss volume is pumped minus billed usage. Loss rate is loss divided by pumped water. Anomaly score min-max normalizes Q4 loss rate, loss-rate change, alert rate per 1,000 connections, and criticality, then applies weights 0.35, 0.25, 0.20, and 0.20. The high threshold is 70.0, with tie-breaks by rounded score, Q4 loss volume, district criticality, and district name. Median Q4 loss rate is used as context. Top anomaly district is Old Mill at 95.7. Fastest loss-rate increase is Harbor Flats at 5.8 percentage points. Loss-volume hotspot is Southworks Main at 4,940 kL. Pressure-alert hotspot is Airport Spur at 97.6 per 1,000 connections. Regional loss hotspot is South at 9,110 kL. High-priority district count is 2 and median Q4 loss rate is 7.8%."
+}

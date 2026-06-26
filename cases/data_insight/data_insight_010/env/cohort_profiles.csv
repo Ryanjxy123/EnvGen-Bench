@@ -1,0 +1,11 @@
+entity_id,entity_name,group_name,scale_denominator,criticality,profile_status
+E01,Grade 6 North,North,420,35,active
+E02,Grade 7 East,East,475,48,active
+E03,Grade 8 South,South,530,61,active
+E04,Grade 9 West,West,585,74,active
+E05,Newcomer Hub,Specialized,640,87,active
+E06,STEM Track,North,695,40,active
+E07,Arts Track,East,750,53,active
+E08,Dual Language,South,805,66,active
+E09,Rural Cohort,West,860,79,active
+E10,Transfer Cohort,Specialized,915,92,active

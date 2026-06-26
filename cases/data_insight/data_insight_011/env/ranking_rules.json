@@ -1,0 +1,42 @@
+{
+  "include_status": "closed",
+  "include_record_type": "actual",
+  "periods": {
+    "baseline_months": [
+      "2026-07",
+      "2026-08",
+      "2026-09"
+    ],
+    "analysis_months": [
+      "2026-10",
+      "2026-11",
+      "2026-12"
+    ]
+  },
+  "metrics": {
+    "net_revenue": "gross_sales minus return_value",
+    "return_rate": "Q4 return_value divided by Q4 gross_sales",
+    "revenue_per_labor_hour": "Q4 net_revenue divided by Q4 labor_hours",
+    "staffing_coverage": "covered_hours divided by scheduled_hours"
+  },
+  "composite_index_weights": {
+    "revenue_per_labor_hour": 0.4,
+    "growth_pct": 0.25,
+    "return_rate_inverse": 0.2,
+    "staffing_coverage": 0.15
+  },
+  "normalization": "Min-max normalize each component across active stores; invert return_rate so lower is better.",
+  "display_rounding": "Round percentages and index scores to one decimal for display.",
+  "tie_break_order": [
+    "higher rounded priority_index",
+    "higher Q4 net_revenue",
+    "lower return_rate",
+    "alphabetical store_name"
+  ],
+  "exclude_records": [
+    "forecast",
+    "subtotal",
+    "test",
+    "old_period"
+  ]
+}

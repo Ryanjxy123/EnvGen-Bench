@@ -98,7 +98,8 @@
           "points": 4,
           "scoring_hint": "2 = all core computed results are present and coherent; 1 = several results present but incomplete; 0 = copied source material or no real computation. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
         }
-      ]
+      ],
+      "label": "Task Completion"
     },
     "grounded_requirement_satisfaction": {
       "weight": 0.55,
@@ -148,7 +149,8 @@
           "id": "qoq_growth_data_insight_001",
           "check": "Semantically confirms Q2 as the fastest quarter-over-quarter improvement versus Q1. Full credit if the image conveys the correct quarter and comparison using percent, dollar change, or natural language; wrong quarter, highest-total substitution, or no QoQ concept should fail.",
           "points": 5,
-          "scoring_hint": "2 = Q2 is correctly conveyed as the fastest QoQ improvement with an acceptable percent, dollar-change, or natural-language expression; 1 = Q2 is identified but comparison detail is thin; 0 = wrong quarter, wrong comparison, or highest total substituted for fastest growth."
+          "scoring_hint": "2 = Q2 is correctly conveyed as the fastest QoQ improvement with an acceptable percent, dollar-change, or natural-language expression; 1 = Q2 is identified but comparison detail is thin; 0 = wrong quarter, wrong comparison, or highest total substituted for fastest growth.",
+          "fact_id": "fastest_qoq_growth"
         },
         {
           "id": "negative_exclusion_facts_data_insight_001",
@@ -159,7 +161,8 @@
             "wrong_metric_and_distractor_exclusions"
           ]
         }
-      ]
+      ],
+      "label": "Grounded Requirement Satisfaction"
     },
     "information_structuring": {
       "weight": 0.15,
@@ -176,9 +179,10 @@
           "points": 4,
           "scoring_hint": "2 = insight is accurate and concise; 1 = generic but not misleading; 0 = absent or contradicted by the data. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
         }
-      ]
+      ],
+      "label": "Information Structuring"
     },
-    "visual_rendering_quality": {
+    "visual_communication_quality": {
       "weight": 0.15,
       "items": [
         {
@@ -193,7 +197,8 @@
           "points": 4,
           "scoring_hint": "2 = balanced density and crisp assets; 1 = some weak spacing or density; 0 = blank, placeholder-like, or low-resolution. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
         }
-      ]
+      ],
+      "label": "Visual Communication Quality"
     }
   }
 }

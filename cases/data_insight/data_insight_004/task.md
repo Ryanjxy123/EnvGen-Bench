@@ -1,5 +1,3 @@
-Can you make an infographic for the product team from the August onboarding
-cohort files? I want the real customer cohort, not employee/demo/cancelled or
-forecast accounts. Please show the cohort size, activation rate, week-4
-retention, the plan segment with the strongest retention, automation adoption
-among retained accounts, and one crisp product takeaway.
+Create a transit route reliability infographic for service reliability intervention.
+Use the closed-env panel data, profiles, rules, and notes to identify the highest-priority focus area and the supporting operational signals.
+Present a concise decision story using the configured rules, period boundaries, and exclusions; do not expose raw CSV dumps or formula scratchwork.

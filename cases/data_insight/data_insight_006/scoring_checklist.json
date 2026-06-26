@@ -1,0 +1,165 @@
+{
+  "case_id": "data_insight_006",
+  "dimensions": {
+    "task_completion": {
+      "weight": 0.15,
+      "items": [
+        {
+          "id": "output_type_data_insight_006",
+          "check": "The output should be a finished campus_energy_infographic for a facilities review, not a raw spreadsheet, notes page, or generic dashboard placeholder.",
+          "points": 4,
+          "scoring_hint": "Full credit when the artifact reads as a polished energy-use infographic with clear KPI treatment."
+        },
+        {
+          "id": "energy_insight_resolution_data_insight_006",
+          "check": "The infographic should visibly resolve the energy insight task by aggregating valid meter readings, normalizing intensity, applying demand-watch rules, and presenting a decision-oriented takeaway.",
+          "points": 4,
+          "scoring_hint": "Full credit when the main computed insights are present and not replaced by source-table copying."
+        }
+      ],
+      "label": "Task Completion"
+    },
+    "grounded_requirement_satisfaction": {
+      "weight": 0.55,
+      "items": [
+        {
+          "id": "critical_total_actual_kwh_data_insight_006",
+          "check": "Verify that total actual October metered usage is shown as 66,620 kWh or an equivalent 66.6K kWh expression.",
+          "points": 5,
+          "fact_id": "total_actual_kwh",
+          "scoring_hint": "No credit if subtotal, estimated, forecast, or old-period values are used."
+        },
+        {
+          "id": "critical_peak_usage_period_data_insight_006",
+          "check": "Verify that the peak usage period is 2026-10-31 with about 11,980 kWh.",
+          "points": 5,
+          "fact_id": "peak_usage_period",
+          "scoring_hint": "Partial credit only if the correct period is identified but the value is ambiguous."
+        },
+        {
+          "id": "critical_intensity_data_insight_006",
+          "check": "Verify that Data Center is identified as the highest-intensity building at about 871.5 kWh per 1,000 sq ft.",
+          "points": 6,
+          "fact_id": "highest_intensity_building",
+          "scoring_hint": "Full credit requires normalized intensity, not raw kWh alone."
+        },
+        {
+          "id": "critical_demand_watch_data_insight_006",
+          "check": "Verify that all buildings exceeding the demand-watch threshold are identified.",
+          "points": 5,
+          "fact_id": "demand_watch_buildings",
+          "scoring_hint": "Full credit requires applying the threshold from the rules file."
+        },
+        {
+          "id": "critical_demand_risk_data_insight_006",
+          "check": "Verify that Data Center is identified as the highest demand-risk building with a 520 kW peak.",
+          "points": 5,
+          "fact_id": "demand_risk_building",
+          "scoring_hint": "Full credit requires the valid peak-demand row, not forecast or subtotal rows."
+        },
+        {
+          "id": "critical_usage_share_data_insight_006",
+          "check": "Verify that Science Hall is shown as the largest usage-share building at about 29.2% of valid kWh.",
+          "points": 4,
+          "fact_id": "highest_usage_share",
+          "scoring_hint": "Accept minor rounding differences around the stated share."
+        },
+        {
+          "id": "negative_energy_distractors_data_insight_006",
+          "check": "Verify that estimates, test rows, subtotals, forecasts, old-period rows, cancelled rows, demos, drafts, and non-meter notes are not used as final metrics.",
+          "points": 4,
+          "fact_id": "energy_distractor_exclusions",
+          "scoring_hint": "Mentioning exclusions is fine; using them as answers is not."
+        }
+      ],
+      "label": "Grounded Requirement Satisfaction"
+    },
+    "information_structuring": {
+      "weight": 0.15,
+      "items": [
+        {
+          "id": "energy_hierarchy_data_insight_006",
+          "check": "The image should organize total use, peak period, normalized intensity, demand-watch exposure, usage share, and takeaway into a scanable facilities-review hierarchy.",
+          "points": 5,
+          "fact_ids": [
+            "total_actual_kwh",
+            "peak_usage_period",
+            "highest_intensity_building",
+            "demand_watch_buildings",
+            "demand_risk_building",
+            "highest_usage_share"
+          ]
+        },
+        {
+          "id": "energy_takeaway_structuring_data_insight_006",
+          "check": "The takeaway should be concise and connected to the computed results rather than restating generic energy advice.",
+          "points": 4,
+          "fact_id": "energy_takeaway"
+        }
+      ],
+      "label": "Information Structuring"
+    },
+    "visual_communication_quality": {
+      "weight": 0.15,
+      "items": [
+        {
+          "id": "visual_clarity_data_insight_006",
+          "check": "Judge readability, contrast, visual hierarchy, and chart/KPI legibility at infographic size.",
+          "points": 4
+        },
+        {
+          "id": "visual_density_data_insight_006",
+          "check": "The layout should be dense enough for review use while avoiding overlapping labels, tiny text, or empty placeholder regions.",
+          "points": 4
+        }
+      ],
+      "label": "Visual Communication Quality"
+    }
+  },
+  "score_caps": [
+    {
+      "id": "missing_energy_metric",
+      "max_total": 55,
+      "reason": "A required core energy metric is missing.",
+      "trigger": {
+        "type": "missing_required_count",
+        "fact_ids": [
+          "total_actual_kwh",
+          "peak_usage_period",
+          "highest_intensity_building",
+          "demand_watch_buildings",
+          "demand_risk_building",
+          "highest_usage_share"
+        ],
+        "min_missing": 1
+      }
+    },
+    {
+      "id": "uses_energy_distractor",
+      "max_total": 60,
+      "reason": "The image uses invalid energy rows as final results.",
+      "trigger": {
+        "type": "forbidden_final_answer",
+        "patterns": [
+          "100,000 kWh",
+          "estimated result",
+          "forecast result",
+          "test result",
+          "old-period result"
+        ]
+      }
+    },
+    {
+      "id": "raw_table_instead_of_infographic",
+      "max_total": 40,
+      "reason": "The output is a raw table or spreadsheet dump instead of an infographic.",
+      "trigger": {
+        "type": "forbidden_final_answer",
+        "patterns": [
+          "week_start,building,campus_zone,kwh",
+          "\\|\\s*week_start\\s*\\|"
+        ]
+      }
+    }
+  ]
+}

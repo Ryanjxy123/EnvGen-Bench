@@ -1,0 +1,130 @@
+{
+  "case_id": "data_insight_006",
+  "task_type": "data_insight",
+  "facts": [
+    {
+      "id": "total_actual_kwh",
+      "description": "Total October kWh from actual meter_reading rows only after exclusions.",
+      "source": "env/campus_energy_oct_2026.csv + env/tariff_rules.json",
+      "importance": "critical",
+      "expected_value": [
+        "66,620 kWh",
+        "66.6K kWh",
+        "total actual kWh 66,620"
+      ],
+      "canonical_answer": "66,620 actual October kWh",
+      "semantic_acceptance": "Accept if total actual October consumption is shown as 66,620 kWh or about 66.6K kWh.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "peak_usage_period",
+      "description": "Included period with the highest total kWh across buildings.",
+      "source": "env/campus_energy_oct_2026.csv",
+      "importance": "critical",
+      "expected_value": [
+        "2026-10-31: 11,980 kWh",
+        "2026-10-31 peak 11,980 kWh"
+      ],
+      "canonical_answer": "The 2026-10-31 period is the peak usage period at 11,980 kWh",
+      "semantic_acceptance": "Accept if 2026-10-31 is identified as the peak period with about 12.0K kWh.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "highest_intensity_building",
+      "description": "Building with the highest kWh per 1,000 occupied square feet.",
+      "source": "env/campus_energy_oct_2026.csv + env/tariff_rules.json",
+      "importance": "critical",
+      "expected_value": [
+        "Data Center: 871.5 kWh per 1,000 sq ft",
+        "Data Center 871.5 kWh/ksqft"
+      ],
+      "canonical_answer": "Data Center has the highest energy intensity at about 871.5 kWh per 1,000 occupied square feet",
+      "semantic_acceptance": "Accept if Data Center is identified as the highest-intensity building, with values near 871.5 kWh per 1,000 sq ft.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "demand_watch_buildings",
+      "description": "Buildings exceeding the demand watch threshold.",
+      "source": "env/campus_energy_oct_2026.csv + env/tariff_rules.json + env/facility_notes.md",
+      "importance": "critical",
+      "expected_value": [
+        "Data Center 520 kW, Science Hall 452 kW",
+        "2 buildings exceed 400 kW"
+      ],
+      "canonical_answer": "Demand-watch buildings are Data Center 520 kW, Science Hall 452 kW, each above the 400 kW threshold",
+      "semantic_acceptance": "Accept if both demand-watch buildings are identified and the threshold logic is clear.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "demand_risk_building",
+      "description": "Highest peak-demand building after applying the demand watch threshold.",
+      "source": "env/campus_energy_oct_2026.csv + env/tariff_rules.json + env/facility_notes.md",
+      "importance": "critical",
+      "expected_value": [
+        "Data Center peak demand: 520 kW",
+        "Data Center highest demand risk"
+      ],
+      "canonical_answer": "Data Center is the highest demand-risk building, peaking at 520 kW",
+      "semantic_acceptance": "Accept if Data Center is called out as the top demand risk because it has the highest valid peak demand.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "highest_usage_share",
+      "description": "Largest building share of valid October kWh.",
+      "source": "env/campus_energy_oct_2026.csv",
+      "importance": "critical",
+      "expected_value": [
+        "Science Hall: 29.2% of valid kWh",
+        "Science Hall share 29.2%"
+      ],
+      "canonical_answer": "Science Hall has the largest usage share at about 29.2% of valid October kWh",
+      "semantic_acceptance": "Accept if Science Hall is identified as the largest usage-share building with a value near 29.2%.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "energy_takeaway",
+      "description": "Concise operations insight based on the computed energy results.",
+      "source": "env/campus_energy_oct_2026.csv + env/facility_notes.md",
+      "importance": "major",
+      "expected_value": [
+        "Data Center is the demand-watch priority while Science Hall drives the largest usage share.",
+        "2026-10-31 is the peak period and demand exposure is concentrated in Data Center."
+      ],
+      "canonical_answer": "Takeaway should connect the peak period, normalized intensity, demand-watch exposure, and operating focus.",
+      "semantic_acceptance": "Accept any concise, data-grounded takeaway that correctly prioritizes the computed demand/usage/intensity signals.",
+      "must_appear_in_image": true,
+      "evaluation_role": "major_required"
+    },
+    {
+      "id": "energy_distractor_exclusions",
+      "description": "Do not use estimates, tests, subtotals, forecasts, old periods, cancelled entries, demos, drafts, or non-meter rows as final results.",
+      "source": "env/campus_energy_oct_2026.csv + env/tariff_rules.json",
+      "importance": "major",
+      "expected_value": [
+        "invalid campus energy distractor used"
+      ],
+      "forbidden_patterns": [
+        "\\b100,?000\\s*kWh\\b",
+        "\\b3600\\s*kWh\\b",
+        "\\bestimated\\b[^.!?\\n;]{0,80}\\b(result|answer|total|peak)\\b",
+        "\\bforecast\\b[^.!?\\n;]{0,80}\\b(result|answer|total|peak)\\b",
+        "\\btest\\b[^.!?\\n;]{0,80}\\b(result|answer|total|peak)\\b",
+        "\\bSeptember\\b[^.!?\\n;]{0,80}\\b(result|answer|total|peak)\\b"
+      ],
+      "allowed_patterns": [
+        "\\b(exclude|excluded|excluding|ignore|ignored|not\\s+used)\\b[^.!?\\n;]{0,140}\\b(estimated|test|subtotal|forecast|old|prior|cancelled|demo|draft)\\b"
+      ],
+      "must_not_appear_in_image": true,
+      "canonical_answer": "Invalid energy rows must not be used as final metrics",
+      "semantic_acceptance": "Reject or cap if invalid rows are treated as final energy metrics. Exclusion notes are allowed.",
+      "evaluation_role": "negative_only"
+    }
+  ],
+  "calculation_notes": "Filter campus_energy_oct_2026.csv to 2026-10 rows where record_type=meter_reading and status=actual. Exclude subtotal, forecast, estimated, test, old_period, manual_note, demo, draft, cancelled, and non-meter rows. Valid row count = 30 from 42 total rows. Total kWh = 66,620. Period totals are 2026-10-01: 10,280, 2026-10-08: 10,320, 2026-10-15: 10,850, 2026-10-22: 11,430, 2026-10-29: 11,760, 2026-10-31: 11,980; peak period is 2026-10-31 at 11,980 kWh. Building totals are Arts Annex 6,320, Data Center 17,430, Library North 13,570, Science Hall 19,470, Wellness Center 9,830. Energy intensity per 1,000 occupied square feet is Arts Annex 225.7, Data Center 871.5, Library North 246.7, Science Hall 278.1, Wellness Center 234.0; Data Center is highest. Demand-watch threshold is 400 kW; watch buildings are Data Center 520 kW, Science Hall 452 kW. The highest peak-demand risk is Data Center at 520 kW. Largest usage share is Science Hall at 29.2%."
+}

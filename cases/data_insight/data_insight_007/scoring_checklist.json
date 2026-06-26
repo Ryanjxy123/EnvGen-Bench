@@ -1,0 +1,170 @@
+{
+  "case_id": "data_insight_007",
+  "dimensions": {
+    "task_completion": {
+      "weight": 0.15,
+      "items": [
+        {
+          "id": "output_type_data_insight_007",
+          "check": "The output should be a finished hospital capacity pressure infographic, not raw CSV rows or a generic dashboard.",
+          "points": 4
+        },
+        {
+          "id": "decision_resolution_data_insight_007",
+          "check": "The infographic should resolve the priority decision using period comparison, rates, normalization, thresholds, and exclusions.",
+          "points": 4
+        }
+      ],
+      "label": "Task Completion"
+    },
+    "grounded_requirement_satisfaction": {
+      "weight": 0.55,
+      "items": [
+        {
+          "id": "critical_score_leader_data_insight_007",
+          "check": "Verify that Pediatric West is the top score entity with score about 82.9.",
+          "points": 6,
+          "fact_id": "hospital_capacity_score_leader"
+        },
+        {
+          "id": "critical_lowest_data_insight_007",
+          "check": "Verify that Neuro Tower is the lowest score entity with score about 19.0.",
+          "points": 4,
+          "fact_id": "hospital_capacity_lowest_score"
+        },
+        {
+          "id": "critical_change_data_insight_007",
+          "check": "Verify that Pediatric West has the largest gap-rate increase at about 2.7 percentage points.",
+          "points": 5,
+          "fact_id": "hospital_capacity_fastest_gap_change"
+        },
+        {
+          "id": "critical_volume_data_insight_007",
+          "check": "Verify that Oncology East has the highest gap volume at about 540.",
+          "points": 5,
+          "fact_id": "hospital_capacity_gap_volume_hotspot"
+        },
+        {
+          "id": "critical_incident_data_insight_007",
+          "check": "Verify that Cardiac Stepdown has the highest incident rate at about 49.6 per 1,000.",
+          "points": 5,
+          "fact_id": "hospital_capacity_incident_rate_hotspot"
+        },
+        {
+          "id": "critical_group_data_insight_007",
+          "check": "Verify that Core is the group hotspot at about 996.",
+          "points": 5,
+          "fact_id": "hospital_capacity_group_gap_hotspot"
+        },
+        {
+          "id": "critical_threshold_data_insight_007",
+          "check": "Verify that 2 entities meet the high-priority threshold.",
+          "points": 5,
+          "fact_id": "hospital_capacity_threshold_count"
+        },
+        {
+          "id": "negative_distractors_data_insight_007",
+          "check": "Verify that forecast, subtotal, and old-period rows are not used as final metrics.",
+          "points": 4,
+          "fact_id": "hospital_capacity_distractor_exclusions"
+        }
+      ],
+      "label": "Grounded Requirement Satisfaction"
+    },
+    "information_structuring": {
+      "weight": 0.15,
+      "items": [
+        {
+          "id": "priority_hierarchy_data_insight_007",
+          "check": "The image should organize priority score, gap volume, rate change, incident signal, group hotspot, and threshold count into a clear decision hierarchy.",
+          "points": 5,
+          "fact_ids": [
+            "hospital_capacity_score_leader",
+            "hospital_capacity_lowest_score",
+            "hospital_capacity_fastest_gap_change",
+            "hospital_capacity_gap_volume_hotspot",
+            "hospital_capacity_incident_rate_hotspot",
+            "hospital_capacity_group_gap_hotspot",
+            "hospital_capacity_threshold_count"
+          ]
+        },
+        {
+          "id": "action_takeaway_data_insight_007",
+          "check": "The takeaway should connect the top priority with at least one supporting operational signal.",
+          "points": 4,
+          "fact_ids": [
+            "hospital_capacity_score_leader",
+            "hospital_capacity_incident_rate_hotspot",
+            "hospital_capacity_gap_volume_hotspot"
+          ]
+        }
+      ],
+      "label": "Information Structuring"
+    },
+    "visual_communication_quality": {
+      "weight": 0.15,
+      "items": [
+        {
+          "id": "visual_clarity_data_insight_007",
+          "check": "Judge readability, contrast, hierarchy, and label legibility at infographic size.",
+          "points": 4
+        },
+        {
+          "id": "visual_density_data_insight_007",
+          "check": "The layout should be dense enough for operations review while avoiding overlapping labels or raw table dumps.",
+          "points": 4
+        }
+      ],
+      "label": "Visual Communication Quality"
+    }
+  },
+  "score_caps": [
+    {
+      "id": "missing_panel_core_fact",
+      "max_total": 55,
+      "reason": "A required panel critical fact is missing.",
+      "trigger": {
+        "type": "missing_required_count",
+        "fact_ids": [
+          "hospital_capacity_score_leader",
+          "hospital_capacity_lowest_score",
+          "hospital_capacity_fastest_gap_change",
+          "hospital_capacity_gap_volume_hotspot",
+          "hospital_capacity_incident_rate_hotspot",
+          "hospital_capacity_group_gap_hotspot",
+          "hospital_capacity_threshold_count"
+        ],
+        "min_missing": 1
+      }
+    },
+    {
+      "id": "uses_invalid_panel_rows",
+      "max_total": 60,
+      "reason": "The image uses forecast, subtotal, or old-period rows as final results.",
+      "trigger": {
+        "type": "forbidden_final_answer",
+        "patterns": [
+          "99999",
+          "88888",
+          "77777",
+          "forecast result",
+          "subtotal result",
+          "old_period result"
+        ]
+      }
+    },
+    {
+      "id": "raw_panel_dump",
+      "max_total": 40,
+      "reason": "The output is a raw CSV/table dump instead of an infographic.",
+      "trigger": {
+        "type": "forbidden_final_answer",
+        "patterns": [
+          "entity_id,",
+          "staffed_bed_days",
+          "record_type,status"
+        ]
+      }
+    }
+  ]
+}

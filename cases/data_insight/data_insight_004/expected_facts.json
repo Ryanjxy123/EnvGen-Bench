@@ -3,118 +3,127 @@
   "task_type": "data_insight",
   "facts": [
     {
-      "id": "cohort_size",
-      "description": "Valid customer accounts signed up from 2026-08-01 through 2026-08-07 after exclusions.",
-      "source": "env/accounts.json + env/exclusions.yaml + env/retention_rules.md",
+      "id": "transit_reliability_score_leader",
+      "description": "Top route corridor by weighted reliability_risk_score after exclusions, profile mapping, normalization, and tie-breaks.",
+      "source": "env/route_panel.csv + env/route_profiles.csv + env/reliability_rules.json",
       "importance": "critical",
       "expected_value": [
-        "12 accounts in cohort",
-        "12-account cohort",
-        "cohort size: 12"
+        "Airport Rapid: 82.9",
+        "Airport Rapid top score"
       ],
+      "canonical_answer": "Airport Rapid is the top priority with score 82.9",
+      "semantic_acceptance": "Accept if Airport Rapid is shown as the highest priority with score near 82.9.",
       "must_appear_in_image": true,
-      "canonical_answer": "12 valid customer accounts in the August 1-7 cohort",
-      "semantic_acceptance": "Accept if the cohort size is communicated as 12 valid/customer accounts. It may appear as a KPI, denominator, or short label.",
       "evaluation_role": "critical_required"
     },
     {
-      "id": "activation_rate",
-      "description": "Share of cohort accounts that completed both activation events within seven days of signup.",
-      "source": "env/product_events_august_2026.csv + env/accounts.json + env/retention_rules.md",
+      "id": "transit_reliability_lowest_score",
+      "description": "Lowest-risk or lowest-priority route corridor by weighted score.",
+      "source": "env/route_panel.csv + env/route_profiles.csv + env/reliability_rules.json",
       "importance": "critical",
       "expected_value": [
-        "9 of 12 activated",
-        "75.0% activation",
-        "75% activation rate"
+        "Harbor Shuttle: 19.0",
+        "Harbor Shuttle lowest score"
       ],
+      "canonical_answer": "Harbor Shuttle is the lowest-ranked entity with score 19.0",
+      "semantic_acceptance": "Accept if Harbor Shuttle is identified as the lowest score entity.",
       "must_appear_in_image": true,
-      "canonical_answer": "9 of 12 activated, 75.0%",
-      "semantic_acceptance": "Accept if activation is shown as 75%, 75.0%, or 9/12. It may appear through KPI cards, chart labels, or text; exact wording is not required.",
       "evaluation_role": "critical_required"
     },
     {
-      "id": "week4_retention_rate",
-      "description": "Share of cohort accounts with an active event during days 22-28 after signup.",
-      "source": "env/product_events_august_2026.csv + env/accounts.json + env/retention_rules.md",
+      "id": "transit_reliability_fastest_gap_change",
+      "description": "Entity with the largest analysis-period gap-rate increase versus baseline.",
+      "source": "env/route_panel.csv + env/reliability_rules.json",
       "importance": "critical",
       "expected_value": [
-        "8 of 12 retained in week 4",
-        "66.7% week-4 retention",
-        "67% week-4 retention"
+        "Airport Rapid: 2.7 pp",
+        "Airport Rapid fastest gap-rate change"
       ],
+      "canonical_answer": "Airport Rapid has the fastest gap-rate increase at about 2.7 percentage points",
+      "semantic_acceptance": "Accept if Airport Rapid is identified as largest gap-rate increase.",
       "must_appear_in_image": true,
-      "canonical_answer": "8 of 12 retained in week 4, 66.7%",
-      "semantic_acceptance": "Accept if week-4/W4 retention is shown as about 67%, 66.7%, or 8/12. Must be retention, not activation or all-month activity.",
       "evaluation_role": "critical_required"
     },
     {
-      "id": "strongest_retention_plan",
-      "description": "Plan segment with the highest week-4 retention rate.",
-      "source": "env/product_events_august_2026.csv + env/accounts.json",
+      "id": "transit_reliability_gap_volume_hotspot",
+      "description": "Entity with the highest analysis-period gap volume.",
+      "source": "env/route_panel.csv",
       "importance": "critical",
       "expected_value": [
-        "Enterprise: 100.0% week-4 retention",
-        "Enterprise 100% retained",
-        "Enterprise 4 of 4 retained"
+        "Market Spine: 540",
+        "Market Spine highest gap volume"
       ],
+      "canonical_answer": "Market Spine has the highest analysis-period gap volume at 540",
+      "semantic_acceptance": "Accept if Market Spine is shown as the gap-volume hotspot near 540.",
       "must_appear_in_image": true,
-      "canonical_answer": "Enterprise has the strongest week-4 retention, 4 of 4 / 100%",
-      "semantic_acceptance": "Accept if Enterprise is identified as the plan segment with strongest/highest week-4 retention. Values may be shown as 100%, 4/4, or natural language such as perfect retention.",
       "evaluation_role": "critical_required"
     },
     {
-      "id": "automation_adoption_retained",
-      "description": "Retained accounts that used automation_run during their week-4 window.",
-      "source": "env/product_events_august_2026.csv + env/retention_rules.md",
+      "id": "transit_reliability_incident_rate_hotspot",
+      "description": "Entity with the highest analysis-period incident rate per 1,000 scale units.",
+      "source": "env/route_panel.csv + env/route_profiles.csv",
+      "importance": "critical",
+      "expected_value": [
+        "Hill Connector: 49.6 per 1,000",
+        "Hill Connector incident-rate hotspot"
+      ],
+      "canonical_answer": "Hill Connector has the highest incident rate at about 49.6 per 1,000",
+      "semantic_acceptance": "Accept if Hill Connector is identified as incident-rate hotspot.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "transit_reliability_group_gap_hotspot",
+      "description": "Service District with the highest aggregate analysis-period gap volume.",
+      "source": "env/route_panel.csv + env/route_profiles.csv",
+      "importance": "critical",
+      "expected_value": [
+        "East: 996",
+        "East group hotspot"
+      ],
+      "canonical_answer": "East is the group hotspot at 996",
+      "semantic_acceptance": "Accept if East is identified as the leading group hotspot.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "transit_reliability_threshold_count",
+      "description": "Count of entities at or above the high-priority score threshold.",
+      "source": "env/reliability_rules.json + env/route_panel.csv + env/route_profiles.csv",
+      "importance": "critical",
+      "expected_value": [
+        "2 high-priority entities",
+        "threshold count 2"
+      ],
+      "canonical_answer": "2 entities meet the high-priority threshold",
+      "semantic_acceptance": "Accept if the image states that 2 entities are high priority under the configured threshold.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "transit_reliability_distractor_exclusions",
+      "description": "Do not use forecast, subtotal, test, or old-period rows as final metrics.",
+      "source": "env/route_panel.csv + env/reliability_rules.json",
       "importance": "major",
       "expected_value": [
-        "7 of 8 retained accounts used automation",
-        "87.5% automation adoption among retained",
-        "88% automation adoption among retained"
-      ],
-      "must_appear_in_image": true,
-      "canonical_answer": "7 of 8 retained accounts used automation in week 4, 87.5%",
-      "semantic_acceptance": "Accept if automation adoption among retained accounts is shown as about 88%, 87.5%, or 7/8. The denominator must be retained accounts, not the whole cohort, unless the wording still makes the retained-account basis clear.",
-      "evaluation_role": "major_required"
-    },
-    {
-      "id": "product_takeaway",
-      "description": "Concise insight based on computed onboarding and retention results.",
-      "source": "env/product_events_august_2026.csv + env/accounts.json",
-      "importance": "major",
-      "expected_value": [
-        "Enterprise retention is perfect, and automation is common among retained accounts.",
-        "Activation is 75%, but week-4 retention is strongest in Enterprise.",
-        "Automation usage is a strong retained-account signal, especially in Enterprise."
-      ],
-      "must_appear_in_image": true,
-      "canonical_answer": "Takeaway should connect Enterprise retention and/or automation adoption to product focus",
-      "semantic_acceptance": "Accept any concise product takeaway grounded in the activation, week-4 retention, plan-segment, and automation findings.",
-      "evaluation_role": "major_required"
-    },
-    {
-      "id": "saas_distractor_exclusions",
-      "description": "Do not use employee, demo, cancelled, forecast, old-cohort, or outside-window events as final answers.",
-      "source": "env/accounts.json + env/product_events_august_2026.csv + env/exclusions.yaml",
-      "importance": "major",
-      "expected_value": [
-        "invalid SaaS cohort distractor used"
+        "invalid panel record used"
       ],
       "forbidden_patterns": [
-        "\\b16\\s+(accounts|account)\\b",
-        "\\b17\\s+(accounts|account)\\b",
-        "\\b(100\\s*%\\s*(activation|activated)|(activation|activated)(\\s+rate)?\\s*[:=]?\\s*100\\s*%)\\b",
-        "\\b(employee|demo|cancelled|forecast|july\\s+2026|outside\\s+window)\\b[^.!?\\n;]{0,80}\\b(answer|result|cohort|activation|retention|adoption)\\b"
+        "\\b99,?999\\b",
+        "\\b88,?888\\b",
+        "\\b77,?777\\b",
+        "\\bforecast\\b[^.!?\\n;]{0,80}\\b(result|answer|leader|score|gap)\\b",
+        "\\bsubtotal\\b[^.!?\\n;]{0,80}\\b(result|answer|leader|score|gap)\\b",
+        "\\bold[_ -]?period\\b[^.!?\\n;]{0,80}\\b(result|answer|leader|score|gap)\\b"
       ],
       "allowed_patterns": [
-        "\\b(exclude|excluded|excluding|without|not\\s+included|ignored|do\\s+not\\s+use)\\b[^.!?\\n;]{0,120}\\b(employee|demo|cancelled|forecast|july\\s+2026|outside\\s+window|16\\s+accounts?|17\\s+accounts?)\\b",
-        "\\b(employee|demo|cancelled|forecast|july\\s+2026|outside\\s+window|16\\s+accounts?|17\\s+accounts?)\\b[^.!?\\n;]{0,120}\\b(exclude|excluded|excluding|ignored|not\\s+included|not\\s+used|do\\s+not\\s+use)\\b"
+        "\\b(exclude|excluded|excluding|ignore|ignored|not\\s+used)\\b[^.!?\\n;]{0,140}\\b(forecast|subtotal|old)"
       ],
       "must_not_appear_in_image": true,
-      "canonical_answer": "Do not use invalid SaaS cohort accounts or outside-window events as final results",
-      "semantic_acceptance": "Strictly reject or cap if employee/demo/cancelled/forecast/old-cohort accounts, all accounts, or outside-window events are treated as final cohort, activation, retention, or adoption results. Mentions that such records were excluded are allowed.",
+      "canonical_answer": "Invalid panel rows must not be used as final metrics.",
+      "semantic_acceptance": "Reject or cap if invalid rows are treated as final metrics. Exclusion notes are allowed.",
       "evaluation_role": "negative_only"
     }
   ],
-  "calculation_notes": "Build the cohort from accounts with signup_date 2026-08-01 through 2026-08-07, account_type=customer, status in active/trial, and source_record=actual. Exclude employee, demo, cancelled, forecast, and old-cohort accounts. Activation requires both workspace_created and first_report_published within seven days of signup. Activated accounts are A01, A03, A04, A05, A07, A09, A10, A11, A12, so activation=9/12=75.0%. Week-4 retention requires at least one active event (dashboard_view, report_export, automation_run, or integration_sync) from day 22 through day 28 after signup. Retained accounts are A01, A03, A05, A06, A07, A09, A11, A12, so week-4 retention=8/12=66.7%. Plan retention rates: Pro=2/4=50.0%, Team=2/4=50.0%, Enterprise=4/4=100.0%; Enterprise is strongest. Automation adoption among retained accounts is A01, A03, A05, A07, A09, A11, A12 = 7/8 = 87.5%."
+  "calculation_notes": "Join route_panel.csv to route_profiles.csv by entity_id. Use only actual closed records. Baseline months are 2026-07 through 2026-09; analysis months are 2026-10 through 2026-12. Gap volume is scheduled_trips minus on_time_trips. Gap rate is gap divided by scheduled_trips. reliability_risk_score min-max normalizes analysis gap rate, gap-rate change, incident rate per 1,000, and criticality, then applies configured weights. Tie-break order is rounded score, analysis gap volume, criticality, and entity name. Top score entity is Airport Rapid at 82.9. Lowest score entity is Harbor Shuttle at 19.0. Fastest gap-rate increase is Airport Rapid at 2.7 percentage points. Gap-volume hotspot is Market Spine at 540. Incident-rate hotspot is Hill Connector at 49.6 per 1,000. Group hotspot is East at 996. High-priority count is 2."
 }

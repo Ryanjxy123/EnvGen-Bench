@@ -1,156 +1,170 @@
 {
   "case_id": "data_insight_005",
-  "score_caps": [
-    {
-      "id": "unfiltered_inventory_movements",
-      "max_total": 55,
-      "reason": "Uses transfer, forecast, subtotal, test, inactive, or old-month rows as actual inventory results.",
-      "trigger": {
-        "type": "forbidden_final_answer",
-        "patterns": [
-          "\\b1,?177\\s+units\\b",
-          "\\b400\\s+units\\b[^.!?\\n;]{0,80}\\b(forecast|demand|sold|sales)\\b",
-          "\\b(transfer|test|forecast|subtotal|inactive|august\\s+2026)\\b[^.!?\\n;]{0,80}\\b(answer|result|sold|turnover|stockout|sell[- ]through|inventory)\\b"
-        ],
-        "allowed_patterns": [
-          "\\b(exclude|excluded|excluding|without|not\\s+included|ignored|do\\s+not\\s+use)\\b[^.!?\\n;]{0,120}\\b(transfer|test|forecast|subtotal|inactive|august\\s+2026|1,?177\\s+units|400\\s+units)\\b",
-          "\\b(transfer|test|forecast|subtotal|inactive|august\\s+2026|1,?177\\s+units|400\\s+units)\\b[^.!?\\n;]{0,120}\\b(exclude|excluded|excluding|ignored|not\\s+included|not\\s+used|do\\s+not\\s+use)\\b"
-        ]
-      }
-    },
-    {
-      "id": "missing_catalog_join",
-      "max_total": 70,
-      "reason": "Does not use sku_catalog.json for starting inventory, reorder points, and active SKU filtering.",
-      "trigger": {
-        "type": "missing_required_count",
-        "fact_ids": [
-          "fastest_turnover_sku",
-          "stockout_risk_items",
-          "sell_through_leader"
-        ],
-        "min_missing": 1
-      }
-    },
-    {
-      "id": "missing_two_core_metrics",
-      "max_total": 50,
-      "reason": "Missing two or more core computed inventory metrics.",
-      "trigger": {
-        "type": "missing_required_count",
-        "fact_ids": [
-          "total_units_sold",
-          "fastest_turnover_sku",
-          "stockout_risk_items",
-          "sell_through_leader"
-        ],
-        "min_missing": 2
-      }
-    }
-  ],
   "dimensions": {
     "task_completion": {
       "weight": 0.15,
       "items": [
         {
           "id": "output_type_data_insight_005",
-          "check": "The output is a finished inventory_risk_infographic for retail ops, not a raw table or worksheet.",
-          "points": 4,
-          "scoring_hint": "2 = polished task-appropriate infographic; 1 = image exists but is weakly structured or partially task-aligned; 0 = wrong artifact type or raw-table/worksheet output. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
+          "check": "The output should be a finished grant compliance monitoring infographic, not raw CSV rows or a generic dashboard.",
+          "points": 4
         },
         {
-          "id": "operation_depth_data_insight_005",
-          "check": "Using semantic VLM/judge evaluation, the infographic should express the task-requested inventory conclusions: 762 actual units sold, K404/Milk Frothers as fastest-turnover SKU, K303/Descaling Kits and K404/Milk Frothers as closest stockout-risk items, K303/Descaling Kits as sell-through leader, and a concise replenishment takeaway. Accept KPI cards, SKU labels, ranking bars, icons, or short text; ending inventory is optional supporting context.",
-          "points": 4,
-          "scoring_hint": "2 = all core computed results are present; 1 = several present but incomplete; 0 = no real computation. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
+          "id": "decision_resolution_data_insight_005",
+          "check": "The infographic should resolve the priority decision using period comparison, rates, normalization, thresholds, and exclusions.",
+          "points": 4
         }
-      ]
+      ],
+      "label": "Task Completion"
     },
     "grounded_requirement_satisfaction": {
       "weight": 0.55,
       "items": [
         {
-          "id": "critical_fact_accuracy_data_insight_005",
-          "check": "Judge semantically whether the core inventory conclusions are correct: valid September sold units 762; fastest-turnover SKU K404/Milk Frothers; stockout-risk items K303/Descaling Kits first and K404/Milk Frothers next; sell-through leader K303/Descaling Kits. Supporting values such as 2.16x turnover, 5.4/6.0 days of cover, and 83.3% sell-through may be rounded or omitted if the leader/risk conclusions are clear; wrong SKU, wrong ranking, or unfiltered data is not acceptable.",
-          "points": 8,
-          "scoring_hint": "2 = all core semantic conclusions are correct with acceptable rounding/phrasing; 1 = mostly correct with a minor ambiguity or one non-core omission; 0 = any core conclusion is missing, wrong, or based on invalid data.",
-          "fact_ids": [
-            "total_units_sold",
-            "fastest_turnover_sku",
-            "stockout_risk_items",
-            "sell_through_leader"
-          ]
+          "id": "critical_score_leader_data_insight_005",
+          "check": "Verify that Solar Schools is the top score entity with score about 82.9.",
+          "points": 6,
+          "fact_id": "grants_compliance_score_leader"
         },
         {
-          "id": "filtering_data_insight_005",
-          "check": "Uses only valid September posted sale/receipt/adjustment movements for active SKUs and excludes transfers, tests, forecasts, subtotals, inactive SKUs, and old-month rows. This can be inferred from correct final values.",
-          "points": 7,
-          "scoring_hint": "2 = final values imply correct filtering; 1 = mostly correct with minor ambiguity; 0 = invalid rows drive a result.",
-          "fact_ids": [
-            "total_units_sold",
-            "fastest_turnover_sku",
-            "stockout_risk_items",
-            "sell_through_leader",
-            "inventory_takeaway"
-          ]
+          "id": "critical_lowest_data_insight_005",
+          "check": "Verify that Rural Mobility is the lowest score entity with score about 19.0.",
+          "points": 4,
+          "fact_id": "grants_compliance_lowest_score"
         },
         {
-          "id": "inventory_formula_data_insight_005",
-          "check": "Semantically confirms inventory formulas used movements plus catalog starting inventory, active flags, and reorder points. This can be inferred from the correct turnover leader, stockout-risk items, and sell-through leader; the image need not show formulas.",
+          "id": "critical_change_data_insight_005",
+          "check": "Verify that Solar Schools has the largest gap-rate increase at about 2.7 percentage points.",
           "points": 5,
-          "scoring_hint": "2 = formulas applied correctly; 1 = one derived metric unclear; 0 = wrong inventory basis.",
-          "fact_ids": [
-            "total_units_sold",
-            "fastest_turnover_sku",
-            "stockout_risk_items",
-            "sell_through_leader",
-            "inventory_takeaway"
-          ]
+          "fact_id": "grants_compliance_fastest_gap_change"
         },
         {
-          "id": "negative_exclusion_data_insight_005",
-          "check": "Does not present transfer/test/forecast/subtotal/inactive/old-month values as actual sold units, turnover, stockout risk, or sell-through.",
+          "id": "critical_volume_data_insight_005",
+          "check": "Verify that Digital Skills has the highest gap volume at about 540.",
           "points": 5,
-          "scoring_hint": "2 = no prohibited distractor used; 1 = ambiguous mention not used as answer; 0 = distractor is presented as result.",
-          "fact_ids": [
-            "inventory_distractor_exclusions"
-          ]
+          "fact_id": "grants_compliance_gap_volume_hotspot"
+        },
+        {
+          "id": "critical_incident_data_insight_005",
+          "check": "Verify that Food Relief has the highest incident rate at about 49.6 per 1,000.",
+          "points": 5,
+          "fact_id": "grants_compliance_incident_rate_hotspot"
+        },
+        {
+          "id": "critical_group_data_insight_005",
+          "check": "Verify that Housing is the group hotspot at about 996.",
+          "points": 5,
+          "fact_id": "grants_compliance_group_gap_hotspot"
+        },
+        {
+          "id": "critical_threshold_data_insight_005",
+          "check": "Verify that 2 entities meet the high-priority threshold.",
+          "points": 5,
+          "fact_id": "grants_compliance_threshold_count"
+        },
+        {
+          "id": "negative_distractors_data_insight_005",
+          "check": "Verify that forecast, subtotal, and old-period rows are not used as final metrics.",
+          "points": 4,
+          "fact_id": "grants_compliance_distractor_exclusions"
         }
-      ]
+      ],
+      "label": "Grounded Requirement Satisfaction"
     },
     "information_structuring": {
       "weight": 0.15,
       "items": [
         {
-          "id": "fact_hierarchy_data_insight_005",
-          "check": "Organizes total sold units, turnover leader, sell-through leader, stockout-risk items, and takeaway in a clear ops hierarchy. Ending inventory may appear as supporting context but is not required.",
+          "id": "priority_hierarchy_data_insight_005",
+          "check": "The image should organize priority score, gap volume, rate change, incident signal, group hotspot, and threshold count into a clear decision hierarchy.",
           "points": 5,
-          "scoring_hint": "2 = clear hierarchy; 1 = facts present but crowded; 0 = important facts buried or missing. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
+          "fact_ids": [
+            "grants_compliance_score_leader",
+            "grants_compliance_lowest_score",
+            "grants_compliance_fastest_gap_change",
+            "grants_compliance_gap_volume_hotspot",
+            "grants_compliance_incident_rate_hotspot",
+            "grants_compliance_group_gap_hotspot",
+            "grants_compliance_threshold_count"
+          ]
         },
         {
-          "id": "takeaway_data_insight_005",
-          "check": "Includes a concise inventory takeaway grounded in K303/K404 replenishment or stockout risk. Accept equivalent wording.",
+          "id": "action_takeaway_data_insight_005",
+          "check": "The takeaway should connect the top priority with at least one supporting operational signal.",
           "points": 4,
-          "scoring_hint": "2 = accurate insight; 1 = generic but not misleading; 0 = absent or contradicted. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
+          "fact_ids": [
+            "grants_compliance_score_leader",
+            "grants_compliance_incident_rate_hotspot",
+            "grants_compliance_gap_volume_hotspot"
+          ]
         }
-      ]
+      ],
+      "label": "Information Structuring"
     },
-    "visual_rendering_quality": {
+    "visual_communication_quality": {
       "weight": 0.15,
       "items": [
         {
           "id": "visual_clarity_data_insight_005",
-          "check": "Uses readable typography, clear contrast, and non-crowded spacing.",
-          "points": 4,
-          "scoring_hint": "2 = readable and polished; 1 = minor clutter; 0 = unreadable. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
+          "check": "Judge readability, contrast, hierarchy, and label legibility at infographic size.",
+          "points": 4
         },
         {
           "id": "visual_density_data_insight_005",
-          "check": "Balances KPI callouts, SKU risk ranking, sell-through/turnover comparisons, and takeaway without raw-movement clutter.",
-          "points": 4,
-          "scoring_hint": "2 = balanced density; 1 = some weak spacing; 0 = blank or placeholder-like. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
+          "check": "The layout should be dense enough for operations review while avoiding overlapping labels or raw table dumps.",
+          "points": 4
         }
-      ]
+      ],
+      "label": "Visual Communication Quality"
     }
-  }
+  },
+  "score_caps": [
+    {
+      "id": "missing_panel_core_fact",
+      "max_total": 55,
+      "reason": "A required panel critical fact is missing.",
+      "trigger": {
+        "type": "missing_required_count",
+        "fact_ids": [
+          "grants_compliance_score_leader",
+          "grants_compliance_lowest_score",
+          "grants_compliance_fastest_gap_change",
+          "grants_compliance_gap_volume_hotspot",
+          "grants_compliance_incident_rate_hotspot",
+          "grants_compliance_group_gap_hotspot",
+          "grants_compliance_threshold_count"
+        ],
+        "min_missing": 1
+      }
+    },
+    {
+      "id": "uses_invalid_panel_rows",
+      "max_total": 60,
+      "reason": "The image uses forecast, subtotal, or old-period rows as final results.",
+      "trigger": {
+        "type": "forbidden_final_answer",
+        "patterns": [
+          "99999",
+          "88888",
+          "77777",
+          "forecast result",
+          "subtotal result",
+          "old_period result"
+        ]
+      }
+    },
+    {
+      "id": "raw_panel_dump",
+      "max_total": 40,
+      "reason": "The output is a raw CSV/table dump instead of an infographic.",
+      "trigger": {
+        "type": "forbidden_final_answer",
+        "patterns": [
+          "entity_id,",
+          "approved_budget_k",
+          "record_type,status"
+        ]
+      }
+    }
+  ]
 }

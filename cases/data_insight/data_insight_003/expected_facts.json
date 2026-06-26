@@ -3,118 +3,127 @@
   "task_type": "data_insight",
   "facts": [
     {
-      "id": "valid_shipment_count",
-      "description": "Supporting context: delivered July 2026 shipment rows after exclusions; denominator may be shown but is not explicitly required by task.md.",
-      "source": "env/shipments_july_2026.csv + env/delivery_rules.txt + env/carrier_notes.yaml",
+      "id": "subscription_retention_score_leader",
+      "description": "Top customer segment by weighted retention_risk_score after exclusions, profile mapping, normalization, and tie-breaks.",
+      "source": "env/segment_panel.csv + env/segment_profiles.csv + env/retention_rules.json",
+      "importance": "critical",
+      "expected_value": [
+        "Creator Pro: 82.9",
+        "Creator Pro top score"
+      ],
+      "canonical_answer": "Creator Pro is the top priority with score 82.9",
+      "semantic_acceptance": "Accept if Creator Pro is shown as the highest priority with score near 82.9.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "subscription_retention_lowest_score",
+      "description": "Lowest-risk or lowest-priority customer segment by weighted score.",
+      "source": "env/segment_panel.csv + env/segment_profiles.csv + env/retention_rules.json",
+      "importance": "critical",
+      "expected_value": [
+        "Finance Pods: 19.0",
+        "Finance Pods lowest score"
+      ],
+      "canonical_answer": "Finance Pods is the lowest-ranked entity with score 19.0",
+      "semantic_acceptance": "Accept if Finance Pods is identified as the lowest score entity.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "subscription_retention_fastest_gap_change",
+      "description": "Entity with the largest analysis-period gap-rate increase versus baseline.",
+      "source": "env/segment_panel.csv + env/retention_rules.json",
+      "importance": "critical",
+      "expected_value": [
+        "Creator Pro: 2.7 pp",
+        "Creator Pro fastest gap-rate change"
+      ],
+      "canonical_answer": "Creator Pro has the fastest gap-rate increase at about 2.7 percentage points",
+      "semantic_acceptance": "Accept if Creator Pro is identified as largest gap-rate increase.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "subscription_retention_gap_volume_hotspot",
+      "description": "Entity with the highest analysis-period gap volume.",
+      "source": "env/segment_panel.csv",
+      "importance": "critical",
+      "expected_value": [
+        "Enterprise Lite: 540",
+        "Enterprise Lite highest gap volume"
+      ],
+      "canonical_answer": "Enterprise Lite has the highest analysis-period gap volume at 540",
+      "semantic_acceptance": "Accept if Enterprise Lite is shown as the gap-volume hotspot near 540.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "subscription_retention_incident_rate_hotspot",
+      "description": "Entity with the highest analysis-period incident rate per 1,000 scale units.",
+      "source": "env/segment_panel.csv + env/segment_profiles.csv",
+      "importance": "critical",
+      "expected_value": [
+        "Campus Plans: 49.6 per 1,000",
+        "Campus Plans incident-rate hotspot"
+      ],
+      "canonical_answer": "Campus Plans has the highest incident rate at about 49.6 per 1,000",
+      "semantic_acceptance": "Accept if Campus Plans is identified as incident-rate hotspot.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "subscription_retention_group_gap_hotspot",
+      "description": "Market Region with the highest aggregate analysis-period gap volume.",
+      "source": "env/segment_panel.csv + env/segment_profiles.csv",
+      "importance": "critical",
+      "expected_value": [
+        "Agency: 996",
+        "Agency group hotspot"
+      ],
+      "canonical_answer": "Agency is the group hotspot at 996",
+      "semantic_acceptance": "Accept if Agency is identified as the leading group hotspot.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "subscription_retention_threshold_count",
+      "description": "Count of entities at or above the high-priority score threshold.",
+      "source": "env/retention_rules.json + env/segment_panel.csv + env/segment_profiles.csv",
+      "importance": "critical",
+      "expected_value": [
+        "2 high-priority entities",
+        "threshold count 2"
+      ],
+      "canonical_answer": "2 entities meet the high-priority threshold",
+      "semantic_acceptance": "Accept if the image states that 2 entities are high priority under the configured threshold.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "subscription_retention_distractor_exclusions",
+      "description": "Do not use forecast, subtotal, test, or old-period rows as final metrics.",
+      "source": "env/segment_panel.csv + env/retention_rules.json",
       "importance": "major",
       "expected_value": [
-        "16 delivered shipments",
-        "16 valid shipments",
-        "16 shipments counted"
-      ],
-      "must_appear_in_image": false,
-      "canonical_answer": "Supporting context: 16 delivered July shipments after filtering",
-      "semantic_acceptance": "Supporting only. Do not require it as a standalone metric; it is acceptable if shown as denominator/context for on-time rate.",
-      "evaluation_role": "optional"
-    },
-    {
-      "id": "overall_on_time_rate",
-      "description": "Share of valid shipments delivered within the zone-specific promised days.",
-      "source": "env/shipments_july_2026.csv + env/zone_promises.json",
-      "importance": "critical",
-      "expected_value": [
-        "11 of 16 on time",
-        "68.8% on-time rate",
-        "69% on-time rate"
-      ],
-      "must_appear_in_image": true,
-      "canonical_answer": "11 of 16 delivered shipments on time, 68.8%",
-      "semantic_acceptance": "Accept if overall on-time performance is shown as about 69%, 68.8%, or 11/16. It can be in a KPI, chart label, or sentence.",
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "average_transit_time",
-      "description": "Average delivery transit days for valid shipments.",
-      "source": "env/shipments_july_2026.csv + env/delivery_rules.txt",
-      "importance": "critical",
-      "expected_value": [
-        "Average transit: 3.5 days",
-        "Avg transit 3.5 days",
-        "3.5-day average transit"
-      ],
-      "must_appear_in_image": true,
-      "canonical_answer": "Average transit time is 3.5 days",
-      "semantic_acceptance": "Accept if average/mean transit or delivery time is shown as 3.5 days or an equivalent natural-language approximation such as three and a half days.",
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "risk_region",
-      "description": "Reporting region with the lowest on-time rate.",
-      "source": "env/shipments_july_2026.csv + env/zone_promises.json",
-      "importance": "critical",
-      "expected_value": [
-        "Rural Belt: 25.0% on time",
-        "Rural Belt 25% on time",
-        "Rural Belt 1 of 4 on time"
-      ],
-      "must_appear_in_image": true,
-      "canonical_answer": "Rural Belt is the region needing attention, 1 of 4 / 25% on time",
-      "semantic_acceptance": "Accept if Rural Belt is identified as the risk/attention/weakest region. The 25% on-time detail is useful but the semantic region finding is the core requirement.",
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "best_carrier",
-      "description": "Best carrier using on-time rate and the claim-cost tie-break rule.",
-      "source": "env/shipments_july_2026.csv + env/carrier_notes.yaml + env/delivery_rules.txt",
-      "importance": "critical",
-      "expected_value": [
-        "BlueRoute: 80.0% on time",
-        "BlueRoute 80% on time",
-        "BlueRoute wins the tie with $20 claims"
-      ],
-      "must_appear_in_image": true,
-      "canonical_answer": "BlueRoute is the best carrier after the tie rule, 80% on time and lower claims than CargoNorth",
-      "semantic_acceptance": "Accept if BlueRoute is selected as best/top carrier after applying the tie rule. It may explain the 80% rate or the lower claim-cost tie-break, but exact wording is not required.",
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "delivery_takeaway",
-      "description": "Concise insight based on the computed logistics results.",
-      "source": "env/shipments_july_2026.csv + env/zone_promises.json",
-      "importance": "major",
-      "expected_value": [
-        "Rural Belt is the service-risk hotspot while BlueRoute leads carriers.",
-        "Rural Belt drives lateness; BlueRoute is the best carrier after the tie-break.",
-        "Metro is clean, but Rural Belt needs attention."
-      ],
-      "must_appear_in_image": true,
-      "canonical_answer": "Takeaway should highlight Rural Belt risk and/or BlueRoute leadership",
-      "semantic_acceptance": "Accept any concise logistics takeaway that is consistent with the computed on-time, region, transit, and carrier findings.",
-      "evaluation_role": "major_required"
-    },
-    {
-      "id": "shipment_distractor_exclusions",
-      "description": "Do not use cancelled, return-only, test, forecast, subtotal, or non-July rows as final results.",
-      "source": "env/shipments_july_2026.csv + env/carrier_notes.yaml",
-      "importance": "major",
-      "expected_value": [
-        "invalid shipment distractor used"
+        "invalid panel record used"
       ],
       "forbidden_patterns": [
-        "\\b21\\s+(shipments|rows)\\b",
-        "\\b22\\s+(shipments|rows)\\b",
-        "\\b95\\s*%\\b[^.!?\\n;]{0,80}\\b(on[- ]time|on time)\\b",
-        "\\b(cancelled|return-only|return\\s+only|test|forecast|subtotal|june\\s+2026)\\b[^.!?\\n;]{0,80}\\b(answer|result|rate|carrier|region|shipment)\\b"
+        "\\b99,?999\\b",
+        "\\b88,?888\\b",
+        "\\b77,?777\\b",
+        "\\bforecast\\b[^.!?\\n;]{0,80}\\b(result|answer|leader|score|gap)\\b",
+        "\\bsubtotal\\b[^.!?\\n;]{0,80}\\b(result|answer|leader|score|gap)\\b",
+        "\\bold[_ -]?period\\b[^.!?\\n;]{0,80}\\b(result|answer|leader|score|gap)\\b"
       ],
       "allowed_patterns": [
-        "\\b(exclude|excluded|excluding|without|not\\s+included|ignored)\\b[^.!?\\n;]{0,120}\\b(cancelled|return-only|return\\s+only|test|forecast|subtotal|june\\s+2026)\\b",
-        "\\b(cancelled|return-only|return\\s+only|test|forecast|subtotal|june\\s+2026)\\b[^.!?\\n;]{0,120}\\b(exclude|excluded|excluding|ignored|not\\s+included|not\\s+used)\\b"
+        "\\b(exclude|excluded|excluding|ignore|ignored|not\\s+used)\\b[^.!?\\n;]{0,140}\\b(forecast|subtotal|old)"
       ],
       "must_not_appear_in_image": true,
-      "canonical_answer": "Do not use invalid shipment rows as final results",
-      "semantic_acceptance": "Strictly reject or cap if cancelled/return-only/test/forecast/subtotal/non-July rows or all-export row counts are used as final logistics results. Mentions that such rows were excluded are allowed.",
+      "canonical_answer": "Invalid panel rows must not be used as final metrics.",
+      "semantic_acceptance": "Reject or cap if invalid rows are treated as final metrics. Exclusion notes are allowed.",
       "evaluation_role": "negative_only"
     }
   ],
-  "calculation_notes": "Use only rows where ship_date is in July 2026, status=delivered, and record_type=shipment. Transit days are delivery_date minus ship_date. Join destination_zone to zone_promises.json and count on-time when transit_days <= promised_days. Valid shipment count=16; on-time count=11, so overall on-time rate=68.8%. Transit-day total=56, so average transit=3.5 days. Region on-time rates: Metro Core=4/4=100.0%, Coastline=3/4=75.0%, Mountain=3/4=75.0%, Rural Belt=1/4=25.0%. Carrier on-time rates: ArrowShip=3/6=50.0%, BlueRoute=4/5=80.0%, CargoNorth=4/5=80.0%; tie-break uses lower claim_usd total, so BlueRoute wins with $20 versus CargoNorth $40."
+  "calculation_notes": "Join segment_panel.csv to segment_profiles.csv by entity_id. Use only actual closed records. Baseline months are 2026-07 through 2026-09; analysis months are 2026-10 through 2026-12. Gap volume is active_accounts minus retained_accounts. Gap rate is gap divided by active_accounts. retention_risk_score min-max normalizes analysis gap rate, gap-rate change, incident rate per 1,000, and criticality, then applies configured weights. Tie-break order is rounded score, analysis gap volume, criticality, and entity name. Top score entity is Creator Pro at 82.9. Lowest score entity is Finance Pods at 19.0. Fastest gap-rate increase is Creator Pro at 2.7 percentage points. Gap-volume hotspot is Enterprise Lite at 540. Incident-rate hotspot is Campus Plans at 49.6 per 1,000. Group hotspot is Agency at 996. High-priority count is 2."
 }

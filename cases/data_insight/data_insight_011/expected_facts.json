@@ -1,0 +1,130 @@
+{
+  "case_id": "data_insight_011",
+  "task_type": "data_insight",
+  "facts": [
+    {
+      "id": "priority_index_leader",
+      "description": "Top active store by weighted Q4 priority index after joins, normalization, exclusions, and tie-break rules.",
+      "source": "env/store_ops.sqlite + env/ranking_rules.json",
+      "importance": "critical",
+      "expected_value": [
+        "Central Tech Plaza: 98.2",
+        "Central Tech Plaza priority index 98.2"
+      ],
+      "canonical_answer": "Central Tech Plaza ranks first with a weighted priority index of 98.2",
+      "semantic_acceptance": "Accept if Central Tech Plaza is shown as the top priority-index store with score near 98.2.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "priority_index_risk_store",
+      "description": "Lowest active store by weighted Q4 priority index.",
+      "source": "env/store_ops.sqlite + env/ranking_rules.json",
+      "importance": "critical",
+      "expected_value": [
+        "Bayview Outlet: 0.0",
+        "Bayview Outlet lowest priority index"
+      ],
+      "canonical_answer": "Bayview Outlet is the lowest-ranked store with a priority index of 0.0",
+      "semantic_acceptance": "Accept if Bayview Outlet is identified as the weakest priority-index store.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "region_net_revenue_leader",
+      "description": "Region with the highest Q4 net revenue across active stores.",
+      "source": "env/store_ops.sqlite",
+      "importance": "critical",
+      "expected_value": [
+        "Central: $2,492,700",
+        "Central net revenue leader"
+      ],
+      "canonical_answer": "Central leads Q4 net revenue at $2,492,700",
+      "semantic_acceptance": "Accept if Central is identified as the Q4 net revenue leading region with value near $2,492,700.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "growth_leader",
+      "description": "Store with the largest Q4 net revenue growth versus Q3.",
+      "source": "env/store_ops.sqlite + env/ranking_rules.json",
+      "importance": "critical",
+      "expected_value": [
+        "Airport Express: 23.0%",
+        "Airport Express growth leader"
+      ],
+      "canonical_answer": "Airport Express has the largest Q4-vs-Q3 net revenue growth at about 23.0%",
+      "semantic_acceptance": "Accept if Airport Express is identified as the growth leader with about 23.0%.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "return_rate_hotspot",
+      "description": "Store with the highest Q4 return rate among active stores.",
+      "source": "env/store_ops.sqlite + env/ranking_rules.json",
+      "importance": "critical",
+      "expected_value": [
+        "Bayview Outlet: 6.5%",
+        "Bayview Outlet highest return rate"
+      ],
+      "canonical_answer": "Bayview Outlet has the highest Q4 return rate at about 6.5%",
+      "semantic_acceptance": "Accept if Bayview Outlet is identified as the return-rate hotspot with about 6.5%.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "staffing_risk_region",
+      "description": "Region with the lowest Q4 staffing coverage.",
+      "source": "env/store_ops.sqlite + env/ranking_rules.json",
+      "importance": "critical",
+      "expected_value": [
+        "South: 94.9%",
+        "South lowest staffing coverage"
+      ],
+      "canonical_answer": "South has the lowest Q4 staffing coverage at about 94.9%",
+      "semantic_acceptance": "Accept if South is identified as the lowest staffing-coverage region.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "retail_triage_takeaway",
+      "description": "Concise operations takeaway grounded in the computed composite, returns, growth, and staffing signals.",
+      "source": "env/store_ops.sqlite + env/ranking_rules.json + env/operations_notes.md",
+      "importance": "major",
+      "expected_value": [
+        "Central Tech Plaza is the top opportunity while Bayview Outlet needs triage.",
+        "Watch Bayview Outlet for returns and South for staffing coverage."
+      ],
+      "canonical_answer": "Takeaway should connect the top index store, weak store, return-rate hotspot, and staffing risk region.",
+      "semantic_acceptance": "Accept any concise, data-grounded takeaway that connects the computed priorities and risks.",
+      "must_appear_in_image": true,
+      "evaluation_role": "major_required"
+    },
+    {
+      "id": "retail_distractor_exclusions",
+      "description": "Do not use forecast, subtotal, test, old_period, or non-closed records as final metrics.",
+      "source": "env/store_ops.sqlite + env/ranking_rules.json",
+      "importance": "major",
+      "expected_value": [
+        "invalid retail operations distractor used"
+      ],
+      "forbidden_patterns": [
+        "\\b999,?999\\b",
+        "\\b888,?888\\b",
+        "\\b55,?555\\b",
+        "\\bforecast\\b[^.!?\\n;]{0,80}\\b(result|answer|leader|rank|score)\\b",
+        "\\bsubtotal\\b[^.!?\\n;]{0,80}\\b(result|answer|leader|rank|score)\\b",
+        "\\btest\\b[^.!?\\n;]{0,80}\\b(result|answer|leader|rank|score)\\b",
+        "\\bold[_ -]?period\\b[^.!?\\n;]{0,80}\\b(result|answer|leader|rank|score)\\b"
+      ],
+      "allowed_patterns": [
+        "\\b(exclude|excluded|excluding|ignore|ignored|not\\s+used)\\b[^.!?\\n;]{0,140}\\b(forecast|subtotal|test|old)"
+      ],
+      "must_not_appear_in_image": true,
+      "canonical_answer": "Invalid operational rows must not be used as final metrics",
+      "semantic_acceptance": "Reject or cap if invalid rows are treated as final metrics. Exclusion notes are allowed.",
+      "evaluation_role": "negative_only"
+    }
+  ],
+  "calculation_notes": "Join stores to sales, returns, and staffing by store_id. Use only record_type=actual and status=closed. Q3 baseline months are 2026-07 through 2026-09; Q4 analysis months are 2026-10 through 2026-12. Net revenue = gross_sales - return_value. Composite index uses min-max normalized revenue_per_labor_hour, growth_pct, inverse return_rate, and staffing_coverage with weights 0.40, 0.25, 0.20, and 0.15. Tie-break order is higher rounded priority_index, higher Q4 net revenue, lower return rate, then alphabetical store name. Top priority store is Central Tech Plaza at 98.2. Lowest priority store is Bayview Outlet at 0.0. Region net revenue leader is Central at $2,492,700. Growth leader is Airport Express at 23.0%. Highest return-rate store is Bayview Outlet at 6.5%. Lowest staffing coverage region is South at 94.9%."
+}

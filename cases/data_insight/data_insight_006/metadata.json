@@ -1,0 +1,43 @@
+{
+  "case_id": "data_insight_006",
+  "task_type": "data_insight",
+  "web_policy": "closed_env",
+  "target_image_type": "campus_energy_infographic",
+  "difficulty": "hard",
+  "env_files": [
+    {
+      "path": "env/campus_energy_oct_2026.csv",
+      "role": "Weekly campus building meter log with actual rows and operational distractors",
+      "format": "csv",
+      "origin": "manual",
+      "reproducibility_note": "Benchmark-authored controlled dataset for energy aggregation, intensity, and exclusion reasoning"
+    },
+    {
+      "path": "env/tariff_rules.json",
+      "role": "Inclusion rules, intensity metric, and demand-risk threshold",
+      "format": "json",
+      "origin": "manual",
+      "reproducibility_note": "Benchmark-authored rules for stable closed-env calculation"
+    },
+    {
+      "path": "env/facility_notes.md",
+      "role": "Facilities guidance about metric interpretation and distractor handling",
+      "format": "md",
+      "origin": "manual",
+      "reproducibility_note": "Benchmark-authored notes for evaluator traceability"
+    }
+  ],
+  "source_policy": {
+    "agent_visible_files": [
+      "env/",
+      "task.md"
+    ],
+    "evaluator_only_files": [
+      "metadata.json",
+      "expected_facts.json",
+      "scoring_checklist.json"
+    ],
+    "web_usage_note": "Closed-env case: web access is not allowed; solve from env files only."
+  },
+  "notes": "Data Insight case focused on filtering, aggregation, weekly peak detection, share calculation, intensity normalization, cross-file demand threshold use, and distractor exclusion."
+}

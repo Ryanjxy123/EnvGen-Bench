@@ -1,0 +1,9 @@
+{
+  "include_month": "2026-10",
+  "include_record_type": "meter_reading",
+  "include_status": "actual",
+  "exclude_statuses": ["estimated", "test"],
+  "exclude_record_types": ["subtotal", "forecast", "manual_note"],
+  "intensity_metric": "kWh per 1,000 occupied square feet",
+  "demand_watch_kw_threshold": 400
+}
