@@ -1,51 +1,28 @@
 {
   "deprecated_assets": [
     {
-      "name": "Harborlight Kids Wave mascot",
-      "description": "Smiling cartoon wave from an old family program",
-      "must_not_be_used_as_active_design_element": true,
-      "prohibited_roles": [
-        "primary logo",
-        "hero visual",
-        "brand character",
-        "central image element"
-      ],
-      "allowed_context": "May be mentioned only in an explicit deprecated, excluded, or do-not-use context."
+      "name": "Northstar Arts Annex",
+      "prohibited_use": "campus/location name"
     },
     {
-      "name": "Shipwreck Screams",
-      "description": "Retired Halloween harbor event slogan",
-      "must_not_be_used_as_active_design_element": true,
-      "prohibited_roles": [
-        "headline",
-        "active slogan",
-        "CTA"
-      ],
-      "allowed_context": "May be mentioned only in an explicit deprecated, excluded, or do-not-use context."
+      "name": "June 8",
+      "prohibited_use": "active event date"
     },
     {
-      "name": "neon aquarium palette",
-      "description": "Electric cyan, magenta, and lime palette from an old aquarium partnership",
-      "must_not_be_used_as_active_design_element": true,
-      "prohibited_roles": [
-        "dominant background",
-        "active brand color system",
-        "headline treatment"
-      ],
-      "allowed_context": "May be mentioned only in an explicit forbidden, deprecated, excluded, or do-not-use context."
+      "name": "Apply now",
+      "prohibited_use": "CTA"
     },
     {
-      "name": "storm horror template",
-      "description": "Full-bleed lightning shipwreck poster with distressed type",
-      "must_not_be_used_as_active_design_element": true,
-      "prohibited_roles": [
-        "layout basis",
-        "dominant background",
-        "hero visual",
-        "primary typography"
-      ],
-      "allowed_context": "May be mentioned only in an explicit deprecated, excluded, or do-not-use context."
+      "name": "graduation cap stock photo",
+      "prohibited_use": "hero visual"
+    },
+    {
+      "name": "old maroon crest",
+      "prohibited_use": "logo or palette"
+    },
+    {
+      "name": "50% tuition scholarship",
+      "prohibited_use": "marketing claim"
     }
-  ],
-  "override_note": "This file overrides asset_manifest.json for asset eligibility."
+  ]
 }

@@ -1,0 +1,11 @@
+Platform: Community square social post
+Required canvas: 1200 x 1200 px
+Required aspect ratio: 1:1 square
+Old conflicting platform to ignore: Transit card 1080 x 1920.
+Top safe zone: 90 px.
+Bottom safe zone: 120 px.
+Side safe margin: 80 px.
+Logo: top-left safe area.
+CTA: bottom safe area phone/help line.
+Text density: no more than 6 short text blocks; headline should be largest and at most 2 lines.
+Hero: must stay readable without covering CTA, disclosure, or source line.

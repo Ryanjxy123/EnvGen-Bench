@@ -1,50 +1,24 @@
 {
   "deprecated_assets": [
     {
-      "name": "neon night-market palette",
-      "description": "Electric magenta, cyan, and black palette from an old evening pilot",
-      "must_not_be_used_as_active_design_element": true,
-      "prohibited_roles": [
-        "dominant background",
-        "active brand color system",
-        "headline treatment"
-      ],
-      "allowed_context": "May be mentioned only in an explicit forbidden, deprecated, excluded, or do-not-use context."
+      "name": "Earn 8% automatically",
+      "prohibited_use": "headline or claim"
     },
     {
-      "name": "city skyline",
-      "description": "Downtown skyline image direction from a real-estate partnership proposal",
-      "must_not_be_used_as_active_design_element": true,
-      "prohibited_roles": [
-        "hero visual",
-        "dominant background",
-        "layout basis"
-      ],
-      "allowed_context": "May be mentioned only in an explicit forbidden, deprecated, excluded, or do-not-use context."
+      "name": "FDIC insured",
+      "prohibited_use": "claim"
     },
     {
-      "name": "luxury fashion cues",
-      "description": "Editorial model poses, black-gold styling, and boutique fashion cropping",
-      "must_not_be_used_as_active_design_element": true,
-      "prohibited_roles": [
-        "hero visual",
-        "layout basis",
-        "active concept",
-        "primary typography style"
-      ],
-      "allowed_context": "May be mentioned only in an explicit forbidden, deprecated, excluded, or do-not-use context."
+      "name": "gold bank seal",
+      "prohibited_use": "logo or trust badge"
     },
     {
-      "name": "old black crest",
-      "description": "Retired formal crest used before the loop-leaf identity",
-      "must_not_be_used_as_active_design_element": true,
-      "prohibited_roles": [
-        "primary logo",
-        "corner logo",
-        "brand signature"
-      ],
-      "allowed_context": "May be mentioned only in an explicit deprecated, excluded, or do-not-use context."
+      "name": "crypto coin hero",
+      "prohibited_use": "hero visual"
+    },
+    {
+      "name": "green stock chart background",
+      "prohibited_use": "background"
     }
-  ],
-  "override_note": "This file overrides asset_manifest.json for asset eligibility."
+  ]
 }

@@ -2,65 +2,50 @@
   "case_id": "design_specification_005",
   "task_type": "design_specification",
   "web_policy": "closed_env",
-  "target_image_type": "device_launch_social_image",
+  "target_image_type": "instagram_story_wayfinding_image",
   "difficulty": "hard",
   "env_files": [
     {
-      "path": "env/device_launch.pdf",
-      "role": "Natural QuietDock device launch brand guide describing positioning, palette, mark use, desk-product imagery, typography, layout tendencies, and style boundaries",
-      "format": "pdf",
-      "origin": "generated",
-      "reproducibility_note": "Regenerated during design_specification hard-case repair",
-      "conversion_note": "The PDF is a text-based natural brand guide. It does not expose required campaign copy as a checklist and does not include a standalone agent-visible source image."
-    },
-    {
-      "path": "env/campaign_brief.md",
-      "role": "Campaign copy candidates with approved_current, archived, draft, and test variants; only approved_current is valid final copy",
+      "path": "env/latest_update.md",
+      "role": "Latest campaign update with authoritative copy, replacements, and priority order",
       "format": "md",
       "origin": "generated",
-      "reproducibility_note": "Generated during design_specification hard-case repair"
-    },
-    {
-      "path": "env/visual_rules.json",
-      "role": "Machine-readable current visual rules, hero component requirements, forbidden visual elements, precedence, and unauthorized-claim constraints",
-      "format": "json",
-      "origin": "generated",
-      "reproducibility_note": "Generated during design_specification hard-case repair"
+      "reproducibility_note": "Generated during design_specification difficulty optimization"
     },
     {
       "path": "env/platform_specs.txt",
-      "role": "Square social platform size, safe margin, type, logo, and CTA specifications",
+      "role": "Current Instagram Story size, safe-area, hierarchy, density, and placement constraints",
       "format": "txt",
       "origin": "generated",
-      "reproducibility_note": "Generated during design_specification hard-case repair"
+      "reproducibility_note": "Generated during design_specification difficulty optimization"
     },
     {
-      "path": "env/template.yaml",
-      "role": "Structured launch-social layout zones for product copy, hero device, callout strip, logo, and CTA",
-      "format": "yaml",
+      "path": "env/visual_rules.json",
+      "role": "Current brand palette, design rules, hero requirements, and forbidden styles",
+      "format": "json",
       "origin": "generated",
-      "reproducibility_note": "Generated during design_specification hard-case repair"
+      "reproducibility_note": "Generated during design_specification difficulty optimization"
     },
     {
       "path": "env/asset_manifest.json",
-      "role": "Current eligible QuietDock brand mark, product hero directions, and supporting graphic assets",
+      "role": "Allowed current logo, hero, icon, badge, or helper assets",
       "format": "json",
       "origin": "generated",
-      "reproducibility_note": "Generated during design_specification hard-case repair"
+      "reproducibility_note": "Generated during design_specification difficulty optimization"
     },
     {
       "path": "env/deprecated_assets.json",
-      "role": "Deprecated and forbidden assets, stale slogans, old templates, and prohibited active uses that override asset_manifest.json",
+      "role": "Deprecated copy, colors, claims, logos, templates, and plausible wrong assets that must not be active",
       "format": "json",
       "origin": "generated",
-      "reproducibility_note": "Generated during design_specification hard-case repair"
+      "reproducibility_note": "Generated during design_specification difficulty optimization"
     },
     {
-      "path": "env/style_guide.md",
-      "role": "Typography, color, product-rendering, hierarchy, accessibility, and file precedence guidance",
+      "path": "env/brand_brief.md",
+      "role": "Compact current brand context replacing the poorly rendered PDF guide",
       "format": "md",
       "origin": "generated",
-      "reproducibility_note": "Generated during design_specification hard-case repair"
+      "reproducibility_note": "Generated during design_specification difficulty optimization"
     }
   ],
   "source_policy": {
@@ -75,5 +60,5 @@
     ],
     "web_usage_note": "Closed-env case: solve only from env files and task.md; do not use the web."
   },
-  "notes": "Closed-env design specification case with current/legacy/deprecated version conflicts, approved-copy selection, layout constraints, hero-component requirements, and role-based forbidden asset exclusions."
+  "notes": "Lightly optimized design-specification-to-image case with six env files, no PDF dependency, latest-update priority conflict, Instagram Story constraints, current palette resolution, allowed assets, and deprecated exclusions."
 }

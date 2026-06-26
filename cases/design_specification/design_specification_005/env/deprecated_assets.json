@@ -1,49 +1,40 @@
 {
   "deprecated_assets": [
     {
-      "name": "red warning theme",
-      "description": "Old emergency charging-alert palette",
-      "must_not_be_used_as_active_design_element": true,
-      "prohibited_roles": [
-        "dominant background",
-        "active brand color system",
-        "headline treatment"
-      ],
-      "allowed_context": "May be mentioned only in an explicit forbidden, deprecated, excluded, or do-not-use context."
+      "name": "Main Hall A",
+      "prohibited_use": "destination"
     },
     {
-      "name": "messy cable pile",
-      "description": "Old problem-solution visual showing tangled cables",
-      "must_not_be_used_as_active_design_element": true,
-      "prohibited_roles": [
-        "hero visual",
-        "dominant background",
-        "layout basis"
-      ],
-      "allowed_context": "May be mentioned only in an explicit forbidden, deprecated, excluded, or do-not-use context."
+      "name": "September 15",
+      "prohibited_use": "date"
     },
     {
-      "name": "cartoon robot",
-      "description": "Retired helper mascot from an earlier accessories campaign",
-      "must_not_be_used_as_active_design_element": true,
-      "prohibited_roles": [
-        "hero visual",
-        "brand character",
-        "central image element"
-      ],
-      "allowed_context": "May be mentioned only in an explicit deprecated, excluded, or do-not-use context."
+      "name": "Smart City Gala",
+      "prohibited_use": "event message"
     },
     {
-      "name": "old lightning badge",
-      "description": "Retired charging badge used before the current QD mark",
-      "must_not_be_used_as_active_design_element": true,
-      "prohibited_roles": [
-        "primary logo",
-        "corner logo",
-        "brand signature"
-      ],
-      "allowed_context": "May be mentioned only in an explicit deprecated, excluded, or do-not-use context."
+      "name": "Follow sponsor signs",
+      "prohibited_use": "directional CTA"
+    },
+    {
+      "name": "Register now",
+      "prohibited_use": "CTA"
+    },
+    {
+      "name": "sponsor logo wall",
+      "prohibited_use": "background or primary mark"
+    },
+    {
+      "name": "old maroon and gold palette",
+      "prohibited_use": "active color system"
+    },
+    {
+      "name": "old block-M logo",
+      "prohibited_use": "logo"
+    },
+    {
+      "name": "America's #1 construction expo",
+      "prohibited_use": "unverified claim"
     }
-  ],
-  "override_note": "This file overrides asset_manifest.json for asset eligibility."
+  ]
 }

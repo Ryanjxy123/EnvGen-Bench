@@ -1,0 +1,11 @@
+Platform: Mobile in-app banner
+Required canvas: 1080 x 566 px
+Required aspect ratio: 1.91:1 horizontal
+Old conflicting platform to ignore: 4:5 social feed 1080 x 1350.
+Top safe zone: 40 px.
+Bottom safe zone: 48 px.
+Side safe margin: 56 px.
+Logo: top-left inside mobile banner safe margin.
+CTA: right side button inside safe margin.
+Text density: no more than 6 short text blocks; headline should be largest and at most 2 lines.
+Hero: must stay readable without covering CTA, disclosure, or source line.

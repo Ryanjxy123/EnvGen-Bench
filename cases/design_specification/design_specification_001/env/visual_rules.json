@@ -1,55 +1,59 @@
 {
-  "brand": "HelioGrid",
+  "brand": "FlowForge",
+  "active_campaign": "FlowForge Sprint",
   "priority_notes": [
-    "visual_rules.json overrides brand_guide.pdf for machine-readable constraints.",
-    "platform_specs.txt overrides template.yaml for size, margins, safe areas, and minimum type sizes.",
-    "deprecated_assets.json overrides asset_manifest.json for asset eligibility.",
-    "launch_copy.md is authoritative for required copy.",
-    "launch_copy.md is authoritative; only approved_current copy may be used as active final copy."
+    "latest_update.md is authoritative for active copy and placement",
+    "platform_specs.txt controls final size and safe areas",
+    "current_palette controls active color tokens",
+    "deprecated_assets.json excludes retired visual directions"
   ],
-  "required_palette": {
-    "primary": "#0B5FFF",
-    "secondary": "#FFFFFF",
-    "accent": "#00A887",
-    "supporting_neutral": "#EAF3FF"
+  "current_palette": {
+    "ink_deep": "#0F2D2E",
+    "cream_canvas": "#F7F3E8",
+    "amber_focus": "#FFB703",
+    "sage_panel": "#A8C7B5",
+    "white_text": "#FFFFFF"
   },
-  "forbidden": [
-    "large-area red background",
-    "cartoon mascot as hero visual or brand character",
-    "handwritten fonts",
-    "logo in lower-left corner",
-    "old HelioGrid logo as primary logo",
-    "old slogan as headline or active brand claim",
-    "legacy diagonal template as layout basis"
-  ],
-  "layout": {
-    "title_zone": "top",
-    "hero_visual_zone": "middle",
-    "cta_zone": "bottom safe area",
-    "logo_position": "upper-right",
-    "required_aspect_ratio": "1:1",
-    "required_zones": [
-      "top title and launch message zone",
-      "middle hero visual zone",
-      "bottom supporting line and CTA zone",
-      "upper-right logo zone"
+  "semantic_color_use": {
+    "background": "cream_canvas or ink_deep",
+    "cta_fill": "amber_focus",
+    "ui_panel_support": "sage_panel"
+  },
+  "style": {
+    "tone": "calm, focused, modern SaaS product-led",
+    "typography": "geometric sans headline with readable UI sans body",
+    "forbidden_type": [
+      "condensed shouty poster type",
+      "script lettering",
+      "distressed type"
     ]
+  },
+  "layout_requirements": {
+    "copy_column": "left side",
+    "logo_position": "top-right safe area",
+    "cta_position": "lower-left safe area aligned to copy column",
+    "headline_max_lines": 2,
+    "hero_zone": "right or center-right UI panel",
+    "alignment": "copy and CTA share a consistent left edge",
+    "copy_column": "left 44% of canvas",
+    "ui_hero_zone": "right 50% of canvas"
   },
   "hero_visual_requirements": [
-    "home energy storage battery visible",
-    "solar power context visible",
-    "modern home or residential setting visible",
-    "backup energy or grid resilience cue visible"
+    "planning-board UI visible",
+    "cards, columns, or weekly lanes visible",
+    "current week or focus-state cue visible",
+    "product interface cue visible without a crowded analytics dashboard"
   ],
-  "tone": "clean, technical, optimistic",
   "unauthorized_claims": {
-    "rule": "Do not add unsupported promises, discounts, guarantees, free offers, safety claims, or performance claims unless they appear in the approved_current copy.",
     "forbidden_examples": [
-      "100% guaranteed",
-      "free installation",
-      "save 50%",
-      "never lose power again",
-      "whole-home protection that never fails"
+      "save 10 hours every week guaranteed",
+      "never misses a task",
+      "replace every manual process overnight",
+      "ship every roadmap twice as fast"
     ]
-  }
+  },
+  "deprecated_palette": [
+    "purple automation gradient",
+    "automation red"
+  ]
 }

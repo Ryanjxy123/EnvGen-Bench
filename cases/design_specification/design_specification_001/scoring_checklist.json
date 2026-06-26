@@ -6,86 +6,67 @@
       "weight": 0.15,
       "items": [
         {
-          "id": "finished_square_launch_image",
-          "check": "The output is a finished 1080 x 1080 product_launch_social_image for the current approved campaign, not a worksheet, raw rule summary, generic mockup, or unrelated artifact.",
-          "points": 5,
-          "scoring_hint": "Full credit requires a finished target image artifact, not a spec summary, table, prompt-only answer, or unrelated mockup. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
-        },
-        {
-          "id": "current_campaign_goal_resolved",
-          "check": "The image resolves the current approved campaign using the approved copy, current logo/mark placement, current layout, required hero components, CTA, and no active deprecated elements.",
-          "points": 5,
-          "scoring_hint": "Full credit requires visible choices that follow current authoritative files rather than archived/draft/deprecated sources. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
+          "id": "finished_target_image",
+          "check": "Output is a finished saas_feature_linkedin_image with the active current campaign, not a rule summary or worksheet.",
+          "points": 10
         }
       ]
     },
     "grounded_requirement_satisfaction": {
       "label": "Grounded Requirement Satisfaction",
-      "weight": 0.5,
+      "weight": 0.55,
       "items": [
         {
-          "id": "required_copy_exact_accuracy",
+          "id": "ocr_copy_accuracy",
           "fact_ids": [
-            "product_name",
-            "required_launch_message",
-            "required_supporting_line",
-            "required_cta"
+            "primary_copy_01",
+            "primary_copy_02",
+            "primary_copy_03",
+            "primary_copy_04"
           ],
-          "check": "All approved_current required copy facts are readable in the image with exact or near-exact wording, and archived/draft/test copy is not substituted.",
-          "points": 12,
-          "scoring_hint": "Use image evidence first. Missing product/title/headline, message/subtitle, supporting/date line, or CTA loses substantial credit; unsupported draft copy does not count."
+          "check": "Required title, product/event facts, CTA, dates, locations, disclosures, or source lines are OCR-readable and match the latest update rather than old files.",
+          "points": 14
         },
         {
-          "id": "canvas_size_and_aspect_ratio",
-          "check": "The artifact uses exact 1080 x 1080 px canvas size and 1:1 aspect ratio; size and ratio are checked separately.",
-          "points": 6,
-          "scoring_hint": "Exact canvas size mismatch should reduce this checklist item but should not by itself hard-cap an otherwise correct square/vertical image. Wrong aspect ratio remains a hard-cap condition."
-        },
-        {
-          "id": "layout_zones_and_safe_areas",
+          "id": "format_safe_area_hierarchy",
           "fact_ids": [
-            "required_logo_position",
-            "title_zone",
-            "cta_zone",
-            "safe_margin",
-            "required_layout_zones"
+            "canvas_size",
+            "aspect_ratio",
+            "safe_area",
+            "logo_position",
+            "cta_position"
           ],
-          "check": "Logo/mark placement, title zone, CTA zone, safe margins, and current template zones are visibly correct and coherent.",
-          "points": 10,
-          "scoring_hint": "Deduct for unclear zones, wrong logo/CTA/title placement, or visibly unsafe margins. Do not treat uncertain safe margin alone as a core hard-cap failure unless key content is clearly clipped or off-canvas."
+          "check": "Canvas ratio, safe areas, logo/CTA placement, headline line limits, and hierarchy follow current platform specs.",
+          "points": 14,
+          "scoring_hint": "Do not give near-full credit when margins, line limits, disclosure/source size, or alignment cannot be confirmed."
         },
         {
-          "id": "current_palette_and_style",
-          "check": "The image follows the current palette and brand tone from env rather than deprecated visual treatments.",
-          "points": 6,
-          "scoring_hint": "Exact hex sampling is not required, but the dominant visual system must clearly match current rules."
-        },
-        {
-          "id": "hero_components_complete",
+          "id": "token_and_style_resolution",
           "fact_ids": [
-            "hero_battery_product",
-            "hero_solar_context",
-            "hero_residential_setting",
-            "hero_backup_cue"
+            "palette_tokens"
           ],
-          "check": "The hero visual includes every required component from env rather than only a generic thematic image.",
-          "points": 10,
-          "scoring_hint": "Give partial credit per component; a generic scene without the required product/context/function cues should score low."
+          "check": "Uses current color tokens and current style direction from env rules rather than deprecated palettes.",
+          "points": 8
         },
         {
-          "id": "deprecated_and_unsupported_exclusion",
+          "id": "hero_and_required_visuals",
           "fact_ids": [
-            "deprecated_assets_not_active",
-            "old_slogan_not_active",
-            "old_logo_not_primary",
-            "unsupported_claims_not_present",
-            "forbidden_red_dominant_background",
-            "forbidden_cartoon_mascot",
-            "forbidden_legacy_diagonal_template"
+            "hero_component_1",
+            "hero_component_2",
+            "hero_component_3",
+            "hero_component_4"
           ],
-          "check": "Deprecated logos, stale slogans, forbidden templates/backgrounds/mascots, and unsupported marketing claims are not used as active final design elements.",
-          "points": 10,
-          "scoring_hint": "Explicit exclusion notes are acceptable, but active use in headline, logo, hero, background, CTA, or layout should lose credit and may trigger caps."
+          "check": "Includes the required domain-specific visual elements with correct role and prominence.",
+          "points": 12
+        },
+        {
+          "id": "deprecated_and_claim_exclusion",
+          "fact_ids": [
+            "forbidden_elements_not_active",
+            "archive_not_active"
+          ],
+          "check": "Excludes deprecated copy, archive-only instructions, old dimensions, banned logos, old colors, forbidden claims, and plausible but wrong assets.",
+          "points": 12
         }
       ]
     },
@@ -94,111 +75,53 @@
       "weight": 0.15,
       "items": [
         {
-          "id": "reasoned_content_selection_design_specification_001",
-          "check": "Selects, orders, groups, and compresses the env-grounded content into a coherent image message rather than copying raw source material or using placeholder content.",
-          "points": 6,
+          "id": "multi_source_rule_resolution",
           "fact_ids": [
-            "product_name",
-            "required_launch_message",
-            "required_supporting_line",
-            "required_cta",
-            "required_logo_position",
-            "title_zone",
-            "cta_zone",
-            "safe_margin",
-            "required_layout_zones",
-            "hero_battery_product",
-            "hero_solar_context",
-            "hero_residential_setting",
-            "hero_backup_cue"
+            "primary_copy_01",
+            "primary_copy_02",
+            "primary_copy_03",
+            "primary_copy_04",
+            "canvas_size",
+            "logo_position",
+            "cta_position"
           ],
-          "scoring_hint": "Evaluate structuring only after checking that the core env facts are mostly correct; a tidy layout with missing core facts should score low. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
+          "check": "Correctly resolves conflicts between latest update, platform specs, visual rules, asset manifest, brand brief, and deprecated assets.",
+          "points": 8
         },
         {
-          "id": "fact_hierarchy_design_specification_001",
-          "check": "Highlights the primary required message and places supporting details in secondary visual roles appropriate to the target image type.",
-          "points": 4,
+          "id": "visual_hierarchy",
+          "check": "Prioritizes the primary message, supporting details, CTA, and required fine print/source line appropriately for the target platform.",
+          "points": 6
+        },
+        {
+          "id": "distractor_resistance",
           "fact_ids": [
-            "product_name",
-            "required_launch_message",
-            "required_supporting_line",
-            "required_cta",
-            "required_logo_position",
-            "title_zone",
-            "cta_zone",
-            "safe_margin",
-            "required_layout_zones",
-            "hero_battery_product",
-            "hero_solar_context",
-            "hero_residential_setting",
-            "hero_backup_cue"
+            "forbidden_elements_not_active",
+            "archive_not_active"
           ],
-          "scoring_hint": "Reward correct emphasis and compression of grounded facts, not mere visual neatness. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
+          "check": "Resists at least two plausible deprecated or conflicting rules/materials in the env.",
+          "points": 6
+        },
+        {
+          "id": "constraint_execution",
+          "check": "Executes nuanced constraints such as line limits, disclosure/source sizing, safe zones, alignment, contrast overlays, or directional prominence.",
+          "points": 4
         }
       ]
     },
     "visual_communication_quality": {
       "label": "Visual Communication Quality",
-      "weight": 0.1,
+      "weight": 0.15,
       "items": [
         {
-          "id": "readability_and_hierarchy",
-          "check": "Visible text is genuinely readable, non-overlapping, and organized with clear visual hierarchy.",
-          "points": 8,
-          "scoring_hint": "Judge legibility, contrast, type scale, hierarchy, and crowding only. Required copy accuracy is scored in Grounded Requirement Satisfaction."
+          "id": "readability",
+          "check": "Text is readable, high-contrast, non-overlapping, and not placed over busy/bright backgrounds without required treatment.",
+          "points": 8
         },
         {
-          "id": "composition_balance",
-          "check": "Composition is balanced, has a clear focal area, sufficient contrast, and coherent spacing.",
-          "points": 7,
-          "scoring_hint": "Reward polished visual organization; do not score required object/zone correctness here."
-        },
-        {
-          "id": "brand_expression_quality",
-          "check": "The final visual expression is coherent, polished, and appropriate for the requested image type.",
-          "points": 6,
-          "scoring_hint": "Judge aesthetic coherence and finish only. Brand-rule factual compliance is scored in Grounded Requirement Satisfaction."
-        },
-        {
-          "id": "finished_image_polish",
-          "check": "The output looks like a completed publication-ready image with intentional typography, background, imagery, and CTA styling.",
-          "points": 4,
-          "scoring_hint": "Penalize placeholder visuals, raw tables, visible spec dumps, or unfinished mockups. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
-        }
-      ]
-    },
-    "robustness": {
-      "label": "Robustness",
-      "weight": 0.1,
-      "items": [
-        {
-          "id": "version_conflict_resistance",
-          "fact_ids": [
-            "deprecated_assets_not_active",
-            "old_slogan_not_active",
-            "old_logo_not_primary",
-            "unsupported_claims_not_present",
-            "forbidden_red_dominant_background",
-            "forbidden_cartoon_mascot",
-            "forbidden_legacy_diagonal_template"
-          ],
-          "check": "Correctly resists old-version, archived, draft, test, and deprecated distractors across copy, logo, hero, background, and layout.",
-          "points": 6,
-          "scoring_hint": "This is about applying file precedence and status labels, not merely omitting one deprecated phrase."
-        },
-        {
-          "id": "precedence_rule_application",
-          "fact_ids": [
-            "product_name",
-            "required_launch_message",
-            "required_supporting_line",
-            "required_cta",
-            "required_logo_position",
-            "required_layout_zones"
-          ],
-          "check": "Applies env precedence: approved/current copy, visual_rules over older guides, platform_specs over template sizing, and deprecated_assets over asset_manifest.",
-          "points": 4,
-          "scoring_hint": "Full credit requires visible output choices that reflect the current authoritative files."
+          "id": "composition",
+          "check": "Composition is polished, balanced, and appropriate to the industry and platform.",
+          "points": 7
         }
       ]
     }
@@ -206,179 +129,64 @@
   "hard_caps": [
     {
       "id": "not_target_image_type",
-      "max_total": 35,
-      "reason": "Output is not the requested finished target image type.",
+      "max_total": 45,
+      "reason": "Output is not the requested finished image type.",
       "trigger": {
         "type": "wrong_artifact_type",
-        "expected_type": "product_launch_social_image"
+        "expected_type": "saas_feature_linkedin_image"
       }
     },
     {
       "id": "wrong_aspect_ratio",
-      "max_total": 70,
-      "reason": "Artifact uses a clearly wrong aspect ratio for the requested platform format.",
+      "max_total": 75,
+      "reason": "Aspect ratio is clearly wrong for the active platform.",
       "trigger": {
         "type": "aspect_ratio_mismatch",
-        "expected": "1:1"
+        "expected": "1.91:1"
       }
     },
     {
-      "id": "missing_or_wrong_logo_position",
+      "id": "missing_multiple_core_copy_facts",
       "max_total": 70,
-      "reason": "Current logo/mark is missing or placed in the wrong required safe-area position.",
-      "trigger": {
-        "type": "missing_or_wrong_position_fact",
-        "fact_id": "required_logo_position",
-        "expected_position": "upper-right safe area"
-      }
-    },
-    {
-      "id": "old_slogan_used_as_active_claim",
-      "max_total": 60,
-      "reason": "Deprecated slogan or stale copy is used as active final headline, CTA, or claim.",
-      "trigger": {
-        "type": "forbidden_final_answer",
-        "patterns": [
-          "Power Your Tomorrow"
-        ],
-        "allowed_patterns": [
-          "Power Your Tomorrow.{0,120}(deprecated|do not use|excluded|forbidden|retired|old|draft|archived|test)",
-          "(deprecated|do not use|excluded|forbidden|retired|old|draft|archived|test).{0,120}Power Your Tomorrow"
-        ],
-        "forbidden_role": "active_headline_subtitle_cta_or_claim"
-      }
-    },
-    {
-      "id": "old_logo_used_as_primary_logo",
-      "max_total": 60,
-      "reason": "Deprecated logo/mark is used as the primary active logo.",
-      "trigger": {
-        "type": "forbidden_visual_use",
-        "fact_id": "old_logo_not_primary",
-        "visual_role": "primary_logo_or_brand_mark"
-      }
-    },
-    {
-      "id": "deprecated_template_or_assets_active",
-      "max_total": 65,
-      "reason": "Deprecated template, hero, background, or asset direction is used as the layout or visual basis.",
-      "trigger": {
-        "type": "forbidden_visual_use",
-        "fact_id": "deprecated_assets_not_active",
-        "visual_role": "active_template_hero_background_or_layout_basis"
-      }
-    },
-    {
-      "id": "major_unsupported_claim",
-      "max_total": 65,
-      "reason": "Image adds unsupported guarantee, discount, free offer, or exaggerated claim not supported by approved_current env copy.",
-      "trigger": {
-        "type": "forbidden_visual_use",
-        "fact_id": "unsupported_claims_not_present",
-        "visual_role": "active_marketing_claim"
-      }
-    },
-    {
-      "id": "raw_spec_or_table_instead_of_image",
-      "max_total": 45,
-      "reason": "Output is a raw spec/table/worksheet rather than a polished final image.",
+      "reason": "Multiple latest-update copy facts are missing or replaced by old env copy.",
       "trigger": {
         "type": "aggregate_failure",
         "fact_ids": [
-          "required_layout_zones",
-          "title_zone",
-          "cta_zone",
-          "hero_battery_product",
-          "hero_solar_context",
-          "hero_residential_setting",
-          "hero_backup_cue"
+          "primary_copy_01",
+          "primary_copy_02",
+          "primary_copy_03",
+          "primary_copy_04"
         ],
-        "min_failed": 4
+        "min_failed": 2
       }
     },
     {
-      "id": "ignores_core_current_system",
-      "max_total": 70,
-      "reason": "Multiple current core brand/layout/hero requirements fail, indicating the old or wrong spec was followed.",
+      "id": "active_forbidden_material",
+      "max_total": 65,
+      "reason": "Deprecated copy, banned claim, old logo, or prohibited asset is used as an active final element.",
+      "trigger": {
+        "type": "forbidden_visual_use",
+        "fact_id": "forbidden_elements_not_active",
+        "visual_role": "active_final_design_element"
+      }
+    },
+    {
+      "id": "unreadable_or_raw_spec",
+      "max_total": 55,
+      "reason": "Output is unreadable, raw specs, a table, or a prompt instead of a designed image.",
       "trigger": {
         "type": "aggregate_failure",
         "fact_ids": [
-          "allowed_palette",
-          "required_logo_position",
-          "required_layout_zones",
-          "hero_battery_product",
-          "hero_solar_context",
-          "hero_residential_setting",
-          "hero_backup_cue",
-          "deprecated_assets_not_active"
+          "primary_copy_01",
+          "primary_copy_02",
+          "primary_copy_03",
+          "primary_copy_04",
+          "hero_component_1",
+          "hero_component_2",
+          "hero_component_3",
+          "hero_component_4"
         ],
-        "min_failed": 4
-      }
-    },
-    {
-      "id": "missing_product_name",
-      "max_total": 60,
-      "reason": "Required approved_current copy fact product_name is missing from the final image.",
-      "trigger": {
-        "type": "missing_required_fact",
-        "fact_id": "product_name"
-      }
-    },
-    {
-      "id": "missing_required_launch_message",
-      "max_total": 60,
-      "reason": "Required approved_current copy fact required_launch_message is missing from the final image.",
-      "trigger": {
-        "type": "missing_required_fact",
-        "fact_id": "required_launch_message"
-      }
-    },
-    {
-      "id": "missing_required_supporting_line",
-      "max_total": 60,
-      "reason": "Required approved_current copy fact required_supporting_line is missing from the final image.",
-      "trigger": {
-        "type": "missing_required_fact",
-        "fact_id": "required_supporting_line"
-      }
-    },
-    {
-      "id": "missing_required_cta",
-      "max_total": 60,
-      "reason": "Required approved_current copy fact required_cta is missing from the final image.",
-      "trigger": {
-        "type": "missing_required_fact",
-        "fact_id": "required_cta"
-      }
-    },
-    {
-      "id": "red_dominant_background",
-      "max_total": 60,
-      "reason": "Red-dominant background is used as active background.",
-      "trigger": {
-        "type": "forbidden_visual_use",
-        "fact_id": "forbidden_red_dominant_background",
-        "visual_role": "active_forbidden_visual_element"
-      }
-    },
-    {
-      "id": "cartoon_mascot_hero",
-      "max_total": 60,
-      "reason": "Cartoon mascot is used as hero visual or brand character.",
-      "trigger": {
-        "type": "forbidden_visual_use",
-        "fact_id": "forbidden_cartoon_mascot",
-        "visual_role": "active_forbidden_visual_element"
-      }
-    },
-    {
-      "id": "forbidden_template_used_as_layout_basis",
-      "max_total": 60,
-      "reason": "Deprecated diagonal template is used as the layout basis.",
-      "trigger": {
-        "type": "forbidden_visual_use",
-        "fact_id": "forbidden_legacy_diagonal_template",
-        "visual_role": "active_forbidden_visual_element"
+        "min_failed": 5
       }
     }
   ]

@@ -1,44 +1,16 @@
 {
-  "current_assets": [
+  "allowed_assets": [
     {
-      "id": "harborlight_wordmark_current",
-      "type": "brand_mark",
-      "description": "Harborlight Museum wordmark or compact lighthouse-line mark",
-      "eligible_roles": [
-        "upper-left logo",
-        "small brand signature"
-      ]
+      "id": "current_horizontal_wordmark",
+      "allowed_use": "upper-left logo"
     },
     {
-      "id": "archival_harbor_tone",
-      "type": "hero_direction",
-      "description": "Archival harbor, dock, map, or maritime artifact visual direction with restrained museum treatment",
-      "eligible_roles": [
-        "hero visual",
-        "background texture"
-      ]
+      "id": "studio_critique_wall",
+      "allowed_use": "hero/background"
     },
     {
-      "id": "copper_rule_lines",
-      "type": "graphic_device",
-      "description": "Thin copper rules, coordinate ticks, or map-grid marks",
-      "eligible_roles": [
-        "section divider",
-        "CTA emphasis",
-        "subtle texture"
-      ]
+      "id": "portfolio_review_badge",
+      "allowed_use": "small supporting badge only"
     }
-  ],
-  "non_primary_assets": [
-    {
-      "id": "wave_pattern_soft",
-      "type": "pattern",
-      "description": "Subtle wave-line pattern",
-      "eligible_roles": [
-        "secondary texture only"
-      ],
-      "limits": "Do not use as a mascot, logo, or dominant background."
-    }
-  ],
-  "selection_note": "Use current_assets for active design choices unless deprecated_assets.json marks an item or direction as ineligible."
+  ]
 }

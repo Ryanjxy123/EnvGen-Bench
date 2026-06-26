@@ -2,65 +2,50 @@
   "case_id": "design_specification_004",
   "task_type": "design_specification",
   "web_policy": "closed_env",
-  "target_image_type": "market_launch_social_image",
+  "target_image_type": "finance_app_compliance_ad",
   "difficulty": "hard",
   "env_files": [
     {
-      "path": "env/market_launch.pdf",
-      "role": "Natural Cedar Loop Market brand guide describing positioning, color, mark use, visual language, layout tendencies, typography, and style boundaries",
-      "format": "pdf",
-      "origin": "generated",
-      "reproducibility_note": "Regenerated during design_specification hard-case repair",
-      "conversion_note": "The PDF is a text-based natural brand guide. It does not expose evaluator-only answers and does not include a standalone agent-visible source image."
-    },
-    {
-      "path": "env/campaign_brief.md",
-      "role": "Campaign copy candidates with approved_current, archived, draft, and test variants; only approved_current is valid final copy",
+      "path": "env/latest_update.md",
+      "role": "Latest campaign update with authoritative copy, replacements, and priority order",
       "format": "md",
       "origin": "generated",
-      "reproducibility_note": "Generated during design_specification hard-case repair"
-    },
-    {
-      "path": "env/visual_rules.json",
-      "role": "Machine-readable current visual rules, hero component requirements, forbidden visual elements, precedence, and unauthorized-claim constraints",
-      "format": "json",
-      "origin": "generated",
-      "reproducibility_note": "Generated during design_specification hard-case repair"
+      "reproducibility_note": "Generated during design_specification difficulty optimization"
     },
     {
       "path": "env/platform_specs.txt",
-      "role": "Square social platform size, safe margin, type, logo, and CTA specifications",
+      "role": "Current platform size, safe-area, hierarchy, contrast, and placement constraints",
       "format": "txt",
       "origin": "generated",
-      "reproducibility_note": "Generated during design_specification hard-case repair"
+      "reproducibility_note": "Generated during design_specification difficulty optimization"
     },
     {
-      "path": "env/template.yaml",
-      "role": "Structured launch-social layout zones for brand name, message, market hero, logo, date, and CTA",
-      "format": "yaml",
+      "path": "env/visual_rules.json",
+      "role": "Current palette, design rules, hero requirements, style constraints, and conditional rules",
+      "format": "json",
       "origin": "generated",
-      "reproducibility_note": "Generated during design_specification hard-case repair"
+      "reproducibility_note": "Generated during design_specification difficulty optimization"
     },
     {
       "path": "env/asset_manifest.json",
-      "role": "Current eligible Cedar Loop brand mark, market hero directions, and graphic support assets",
+      "role": "Allowed current logo, hero, icon, badge, or helper assets",
       "format": "json",
       "origin": "generated",
-      "reproducibility_note": "Generated during design_specification hard-case repair"
+      "reproducibility_note": "Generated during design_specification difficulty optimization"
     },
     {
       "path": "env/deprecated_assets.json",
-      "role": "Deprecated and forbidden assets, stale slogans, old templates, and prohibited active uses that override asset_manifest.json",
+      "role": "Deprecated copy, colors, claims, logos, templates, and plausible wrong assets that must not be active",
       "format": "json",
       "origin": "generated",
-      "reproducibility_note": "Generated during design_specification hard-case repair"
+      "reproducibility_note": "Generated during design_specification difficulty optimization"
     },
     {
-      "path": "env/style_guide.md",
-      "role": "Typography, color, illustration, hierarchy, accessibility, and file precedence guidance",
-      "format": "md",
+      "path": "env/compliance_rules.txt",
+      "role": "Financial compliance disclosure and prohibited-claim rules",
+      "format": "txt",
       "origin": "generated",
-      "reproducibility_note": "Generated during design_specification hard-case repair"
+      "reproducibility_note": "Generated during design_specification difficulty optimization"
     }
   ],
   "source_policy": {
@@ -75,5 +60,5 @@
     ],
     "web_usage_note": "Closed-env case: solve only from env files and task.md; do not use the web."
   },
-  "notes": "Closed-env design specification case with current/legacy/deprecated version conflicts, approved-copy selection, layout constraints, hero-component requirements, and role-based forbidden asset exclusions."
+  "notes": "Lightly optimized design-specification case with compact env, financial compliance rules, latest-update priority, 4:5 platform constraints, current palette resolution, and deprecated exclusions."
 }

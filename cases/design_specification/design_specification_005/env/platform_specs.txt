@@ -1,9 +1,9 @@
-Platform: square social device launch image
-Required canvas: 1080 x 1080 px
-Required aspect ratio: 1:1
-Safe margin: keep essential copy, logo, and CTA at least 72 px from every edge.
-Minimum readable type: product name at least 40 px equivalent; headline at least 60 px; supporting line and CTA at least 30 px.
-Logo: current QuietDock QD mark or compact wordmark must be in the upper-left safe area.
-Hero visual: tidy dock/product visual may occupy the middle area but must not obscure required copy.
-CTA: place in the lower callout strip.
-Override rule: these platform dimensions and safe margins override any looser proportions implied by template.yaml.
+Platform: Instagram Story
+Required canvas: 1080 x 1920 px
+Required aspect ratio: 9:16 vertical
+Top safe zone: keep essential content below the top 180 px.
+Bottom safe zone: keep essential content above the bottom 240 px.
+Logo: MetroBuild Expo wordmark near the top, below the top safe zone.
+CTA/helper: near the bottom, above the bottom safe zone.
+Text density: no more than 5 short text blocks; destination should be largest and at most 2 lines.
+Directional cue: arrow or path should be visually dominant and easy to follow on mobile.

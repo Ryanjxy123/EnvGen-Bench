@@ -3,6 +3,16 @@
 Cases where the agent must obey brand, style, layout, or visual constraints
 before generating an image.
 
+## Env Minimalism And Variation
+
+Keep each Design Specification-to-Image env to the smallest viable set, typically 4-6 files: `latest_update.md`, `platform_specs.txt`, `visual_rules.json`, `asset_manifest.json`, `deprecated_assets.json`, and optionally `brand_brief.md`.
+
+Use difficulty from priority conflicts, platform constraints, current visual-rule application, allowed asset use, and deprecated-material exclusion. Do not create difficulty by piling up redundant files.
+
+Vary future cases across both domain and image shape: technology product launch images, medical service ads, education course promos, financial brand posters, environmental nonprofit graphics, B2B SaaS LinkedIn ads, community Instagram posters, and ecommerce product ads.
+
+Prefer `brand_brief.md` when a PDF duplicates other files or renders poorly. If a PDF is required, keep it to 1-2 clean text-layer pages with clear hierarchy and no final-answer leakage.
+
 ## PDF Brand Guide Optimization
 
 For `Design Specification-to-Image` cases, any brand guide PDF should look like a natural brand or visual-system manual, not an answer sheet, evaluator checklist, or raw rule table.

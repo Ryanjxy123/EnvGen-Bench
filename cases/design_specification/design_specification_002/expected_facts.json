@@ -3,313 +3,210 @@
   "task_type": "design_specification",
   "facts": [
     {
-      "id": "required_title",
-      "description": "The current approved exhibit title must appear as the main poster title.",
-      "source": "env/campaign_brief.md",
+      "id": "primary_copy_01",
+      "description": "Required visible text: Open Studio Day",
+      "source": "env/latest_update.md",
       "importance": "critical",
-      "expected_value": "Tides of Memory",
-      "canonical_answer": "Tides of Memory",
-      "semantic_acceptance": "Exact approved_current wording 'Tides of Memory' should be readable in the final image; minor punctuation/spacing differences are acceptable only if the wording remains unambiguous.",
+      "expected_value": "Open Studio Day",
+      "canonical_answer": "Open Studio Day",
+      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image.",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "required_subtitle",
-      "description": "The current approved subtitle must appear near the title.",
-      "source": "env/campaign_brief.md",
+      "id": "primary_copy_02",
+      "description": "Required visible text: Northstar Design School",
+      "source": "env/latest_update.md",
       "importance": "critical",
-      "expected_value": "A harbor history exhibition",
-      "canonical_answer": "A harbor history exhibition",
-      "semantic_acceptance": "Exact approved_current wording 'A harbor history exhibition' should be readable in the final image; minor punctuation/spacing differences are acceptable only if the wording remains unambiguous.",
+      "expected_value": "Northstar Design School",
+      "canonical_answer": "Northstar Design School",
+      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image.",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "required_date_line",
-      "description": "The current approved date line must appear in the lower information area.",
-      "source": "env/campaign_brief.md",
+      "id": "primary_copy_03",
+      "description": "Required visible text: July 12",
+      "source": "env/latest_update.md",
       "importance": "critical",
-      "expected_value": "May 3 - August 18",
-      "canonical_answer": "May 3 - August 18",
-      "semantic_acceptance": "Exact approved_current wording 'May 3 - August 18' should be readable in the final image; minor punctuation/spacing differences are acceptable only if the wording remains unambiguous.",
+      "expected_value": "July 12",
+      "canonical_answer": "July 12",
+      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image.",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "required_cta",
-      "description": "The current approved CTA must appear as the poster call to action.",
-      "source": "env/campaign_brief.md",
+      "id": "primary_copy_04",
+      "description": "Required visible text: 10 AM - 2 PM",
+      "source": "env/latest_update.md",
       "importance": "critical",
-      "expected_value": "Reserve opening weekend",
-      "canonical_answer": "Reserve opening weekend",
-      "semantic_acceptance": "Exact approved_current wording 'Reserve opening weekend' should be readable in the final image; minor punctuation/spacing differences are acceptable only if the wording remains unambiguous.",
+      "expected_value": "10 AM - 2 PM",
+      "canonical_answer": "10 AM - 2 PM",
+      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image.",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
+    },
+    {
+      "id": "primary_copy_05",
+      "description": "Required visible text: 88 Beacon Ave, Studio Hall",
+      "source": "env/latest_update.md",
+      "importance": "critical",
+      "expected_value": "88 Beacon Ave, Studio Hall",
+      "canonical_answer": "88 Beacon Ave, Studio Hall",
+      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "primary_copy_06",
+      "description": "Required visible text: RSVP for portfolio tours",
+      "source": "env/latest_update.md",
+      "importance": "critical",
+      "expected_value": "RSVP for portfolio tours",
+      "canonical_answer": "RSVP for portfolio tours",
+      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "archive_not_active",
+      "description": "Archive-only admissions text and layout directions must not become active final content.",
+      "source": "env/latest_update.md",
+      "importance": "critical",
+      "must_not_appear_in_image": true,
+      "forbidden_patterns": [
+        "Northstar Arts Annex",
+        "June 8",
+        "Apply now",
+        "graduation cap stock photo",
+        "old maroon crest",
+        "50% tuition scholarship"
+      ],
+      "allowed_patterns": [
+        "Northstar Arts Annex.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
+        "June 8.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
+        "Apply now.{0,120}(deprecated|do not use|archived|retired|forbidden|old)"
+      ],
+      "evaluation_role": "negative_only"
     },
     {
       "id": "canvas_size",
-      "description": "The artifact should use exact 1080 x 1350 px canvas size.",
-      "source": "env/platform_specs.txt; env/visual_rules.json; env/template.yaml",
-      "importance": "critical",
-      "expected_value": "1080 x 1350 px",
-      "semantic_acceptance": "Image metadata should be 1080 by 1350 pixels; this is separate from aspect ratio.",
-      "evaluation_role": "optional"
-    },
-    {
-      "id": "poster_aspect_ratio",
-      "description": "The artifact must have 4:5 aspect ratio.",
-      "source": "env/platform_specs.txt; env/visual_rules.json; env/template.yaml",
-      "importance": "critical",
-      "expected_value": "4:5",
-      "semantic_acceptance": "Rendered output has 4:5 aspect ratio; visible crop should not be landscape or another format.",
-      "evaluation_role": "optional"
-    },
-    {
-      "id": "current_palette",
-      "description": "The poster must use the current deep harbor blue, warm paper, and copper museum palette.",
-      "source": "env/visual_rules.json; env/style_guide.md",
-      "importance": "critical",
-      "expected_value": [
-        "#12355B",
-        "#FFF8EA",
-        "#B36A2E",
-        "#6D8A96"
-      ],
-      "semantic_acceptance": "Dominant visual system should clearly follow the current palette from env; exact pixel-level hex matching is not required.",
-      "evaluation_role": "optional"
-    },
-    {
-      "id": "museum_mark_position",
-      "description": "The current Harborlight Museum mark must sit in the upper-left safe area.",
-      "source": "env/visual_rules.json; env/platform_specs.txt; env/template.yaml; env/asset_manifest.json",
-      "importance": "critical",
-      "expected_value": "upper-left safe area",
-      "semantic_acceptance": "Current logo/mark treatment is visibly placed in the upper-left safe area and is not replaced by a deprecated mark.",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "title_zone",
-      "description": "Title and subtitle occupy the upper title area with museum-poster hierarchy.",
-      "source": "env/template.yaml; env/platform_specs.txt; env/visual_rules.json",
-      "importance": "critical",
-      "expected_value": "Title and subtitle occupy the upper title area with museum-poster hierarchy.",
-      "semantic_acceptance": "The title/headline area is visually clear and follows the current layout zone.",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "cta_zone",
-      "description": "Date line and CTA appear in the lower poster area.",
-      "source": "env/template.yaml; env/platform_specs.txt; env/visual_rules.json",
-      "importance": "critical",
-      "expected_value": "Date line and CTA appear in the lower poster area.",
-      "semantic_acceptance": "CTA and related lower information are visibly placed in the required CTA zone.",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "safe_margin",
-      "description": "Essential copy, logo, and CTA stay inside the 64 px safe margin.",
+      "description": "Final artifact uses the required pixel canvas.",
       "source": "env/platform_specs.txt",
-      "importance": "major",
-      "expected_value": "64 px",
-      "semantic_acceptance": "No essential text, logo, or CTA is clipped, flush to the edge, or outside a visibly safe area.",
-      "must_appear_in_image": true,
+      "importance": "critical",
+      "expected_value": "1080 x 1920 px",
       "evaluation_role": "major_required"
     },
     {
-      "id": "required_layout_zones",
-      "description": "The current template zones must be visible and coherent.",
-      "source": "env/template.yaml; env/visual_rules.json",
+      "id": "aspect_ratio",
+      "description": "Final artifact uses the required aspect ratio.",
+      "source": "env/platform_specs.txt",
       "importance": "critical",
-      "expected_value": [
-        "upper-left mark zone",
-        "top title and subtitle zone",
-        "central archival harbor or map-inspired hero zone",
-        "lower date and CTA zone"
-      ],
-      "semantic_acceptance": "The composition visibly uses the current zones listed in env/template.yaml and visual_rules.json.",
+      "expected_value": "9:16",
+      "evaluation_role": "major_required"
+    },
+    {
+      "id": "safe_area",
+      "description": "Essential text, logo, and CTA stay inside required safe areas.",
+      "source": "env/platform_specs.txt",
+      "importance": "critical",
+      "expected_value": "72 px side margin; CTA above 176 px bottom safe zone",
+      "semantic_acceptance": "Treat small placement deviations as normal checklist deductions, not hard-cap failures, if the content remains readable and broadly inside the safe area.",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "hero_archival_harbor",
-      "description": "Hero visual includes archival harbor-history imagery or treatment.",
-      "source": "env/visual_rules.json; env/asset_manifest.json; env/style_guide.md; env/template.yaml",
+      "id": "logo_position",
+      "description": "Current logo/wordmark appears in required position.",
+      "source": "env/platform_specs.txt; env/visual_rules.json; env/asset_manifest.json",
       "importance": "critical",
-      "expected_value": "archival harbor-history visual visible",
-      "semantic_acceptance": "The hero visual must show this component clearly enough for a viewer to recognize: archival harbor-history visual visible.",
+      "expected_value": "upper-left below top UI safe zone",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "hero_map_or_artifact",
-      "description": "Hero visual includes a historic port map, nautical artifact, coordinate grid, or museum object cue.",
-      "source": "env/visual_rules.json; env/asset_manifest.json; env/style_guide.md; env/template.yaml",
+      "id": "cta_position",
+      "description": "CTA/helper appears in the required zone and safe area.",
+      "source": "env/platform_specs.txt; env/visual_rules.json",
       "importance": "critical",
-      "expected_value": "map, nautical artifact, or museum object cue visible",
-      "semantic_acceptance": "The hero visual must show this component clearly enough for a viewer to recognize: map, nautical artifact, or museum object cue visible.",
+      "expected_value": "bottom third above UI safe zone",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "hero_museum_context",
-      "description": "Visual treatment reads as a museum exhibition, not tourism or aquarium advertising.",
-      "source": "env/visual_rules.json; env/asset_manifest.json; env/style_guide.md; env/template.yaml",
-      "importance": "critical",
-      "expected_value": "museum exhibition context visible",
-      "semantic_acceptance": "The hero visual must show this component clearly enough for a viewer to recognize: museum exhibition context visible.",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "hero_restrained_non_horror",
-      "description": "Hero avoids horror shipwreck spectacle and uses refined archival restraint.",
-      "source": "env/visual_rules.json; env/asset_manifest.json; env/style_guide.md; env/template.yaml",
-      "importance": "critical",
-      "expected_value": "refined non-horror harbor-history cue visible",
-      "semantic_acceptance": "The hero visual must show this component clearly enough for a viewer to recognize: refined non-horror harbor-history cue visible.",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "deprecated_assets_not_active",
-      "description": "Deprecated assets, templates, stale slogans, wrong campaign copy, and forbidden directions must not be used as active final design elements.",
-      "source": "env/deprecated_assets.json; env/visual_rules.json; env/asset_manifest.json; env/campaign_brief.md",
-      "importance": "critical",
-      "semantic_acceptance": "Deprecated items may appear only in explicit do-not-use/deprecated/excluded context, never as active final design elements.",
-      "must_not_appear_in_image": true,
-      "forbidden_patterns": [
-        "Harborlight Kids Wave mascot",
-        "Shipwreck Screams",
-        "neon aquarium palette",
-        "storm horror template",
-        "Neon Reef Nights"
-      ],
-      "allowed_patterns": [
-        "Harborlight Kids Wave mascot.{0,120}(deprecated|do not use|excluded|forbidden|retired|old|draft|archived|test)",
-        "(deprecated|do not use|excluded|forbidden|retired|old|draft|archived|test).{0,120}Harborlight Kids Wave mascot",
-        "Shipwreck Screams.{0,120}(deprecated|do not use|excluded|forbidden|retired|old|draft|archived|test)",
-        "(deprecated|do not use|excluded|forbidden|retired|old|draft|archived|test).{0,120}Shipwreck Screams"
-      ],
-      "evaluation_role": "negative_only"
-    },
-    {
-      "id": "old_slogan_not_active",
-      "description": "Old or deprecated slogan/copy 'Shipwreck Screams' must not be used as active headline, subtitle, supporting line, CTA, or claim.",
-      "source": "env/deprecated_assets.json; env/campaign_brief.md",
-      "importance": "critical",
-      "semantic_acceptance": "The old copy may only appear in explicit exclusion/deprecated context, not as active final poster text.",
-      "must_not_appear_in_image": true,
-      "forbidden_patterns": [
-        "Shipwreck Screams"
-      ],
-      "allowed_patterns": [
-        "Shipwreck Screams.{0,120}(deprecated|do not use|excluded|forbidden|retired|old|draft|archived|test)",
-        "(deprecated|do not use|excluded|forbidden|retired|old|draft|archived|test).{0,120}Shipwreck Screams"
-      ],
-      "evaluation_role": "negative_only"
-    },
-    {
-      "id": "old_logo_not_primary",
-      "description": "Old logo/mark treatment 'Harborlight Kids Wave mascot' must not be used as the primary logo or brand mark.",
-      "source": "env/deprecated_assets.json; env/asset_manifest.json",
-      "importance": "critical",
-      "semantic_acceptance": "The old logo/mark may only appear in explicit exclusion/deprecated context, not as the active visible logo.",
-      "must_not_appear_in_image": true,
-      "forbidden_patterns": [
-        "Harborlight Kids Wave mascot"
-      ],
-      "allowed_patterns": [
-        "Harborlight Kids Wave mascot.{0,120}(deprecated|do not use|excluded|forbidden|retired|old|draft|archived|test)",
-        "(deprecated|do not use|excluded|forbidden|retired|old|draft|archived|test).{0,120}Harborlight Kids Wave mascot"
-      ],
-      "evaluation_role": "negative_only"
-    },
-    {
-      "id": "unsupported_claims_not_present",
-      "description": "The image must not add unsupported guarantees, discounts, free offers, safety promises, or exaggerated performance claims not present in approved_current copy.",
-      "source": "env/visual_rules.json; env/campaign_brief.md",
-      "importance": "critical",
-      "semantic_acceptance": "Forbidden if presented as active marketing copy; acceptable only if clearly shown as draft/test/do-not-use material.",
-      "must_not_appear_in_image": true,
-      "forbidden_patterns": [
-        "free admission for all",
-        "limited tickets guaranteed",
-        "save 50%",
-        "official city tourism pass"
-      ],
-      "allowed_patterns": [
-        "free admission for all.{0,120}(deprecated|do not use|excluded|forbidden|retired|old|draft|archived|test)",
-        "(deprecated|do not use|excluded|forbidden|retired|old|draft|archived|test).{0,120}free admission for all",
-        "limited tickets guaranteed.{0,120}(deprecated|do not use|excluded|forbidden|retired|old|draft|archived|test)",
-        "(deprecated|do not use|excluded|forbidden|retired|old|draft|archived|test).{0,120}limited tickets guaranteed"
-      ],
-      "evaluation_role": "negative_only"
-    },
-    {
-      "id": "style_tone",
-      "description": "The final image should maintain refined, archival, accessible harbor-history museum style.",
-      "source": "env/visual_rules.json; env/style_guide.md",
+      "id": "palette_tokens",
+      "description": "Current color tokens are used as dominant palette.",
+      "source": "env/visual_rules.json; env/brand_brief.md",
       "importance": "major",
-      "expected_value": "refined, archival, accessible harbor-history museum style",
-      "semantic_acceptance": "Overall visible style should match the current brand tone and avoid deprecated genre cues.",
-      "evaluation_role": "optional"
+      "expected_value": [
+        "#102A43",
+        "#FFF3D6",
+        "#F28C28",
+        "#2BB3C0"
+      ],
+      "semantic_acceptance": "Exact pixel hex matching is not required, but deprecated palettes should not dominate.",
+      "evaluation_role": "major_required"
     },
     {
-      "id": "forbidden_neon_palette",
-      "description": "Neon aquarium palette must not be used as the active color system.",
-      "source": "env/visual_rules.json; env/deprecated_assets.json; env/style_guide.md",
+      "id": "hero_component_1",
+      "description": "studio workspace visible",
+      "source": "env/visual_rules.json; env/asset_manifest.json",
+      "importance": "critical",
+      "expected_value": "studio workspace visible",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "hero_component_2",
+      "description": "student portfolio or critique wall visible",
+      "source": "env/visual_rules.json; env/asset_manifest.json",
+      "importance": "critical",
+      "expected_value": "student portfolio or critique wall visible",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "hero_component_3",
+      "description": "hands-on design material visible",
+      "source": "env/visual_rules.json; env/asset_manifest.json",
+      "importance": "critical",
+      "expected_value": "hands-on design material visible",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "hero_component_4",
+      "description": "open-day visitor cue visible",
+      "source": "env/visual_rules.json; env/asset_manifest.json",
+      "importance": "critical",
+      "expected_value": "open-day visitor cue visible",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "forbidden_elements_not_active",
+      "description": "Deprecated copy, assets, claims, colors, and old specs are not used as active final design elements.",
+      "source": "env/deprecated_assets.json; env/latest_update.md; env/visual_rules.json; env/brand_brief.md",
       "importance": "critical",
       "must_not_appear_in_image": true,
       "forbidden_patterns": [
-        "neon aquarium palette",
-        "neon palette"
+        "Northstar Arts Annex",
+        "June 8",
+        "Apply now",
+        "graduation cap stock photo",
+        "old maroon crest",
+        "50% tuition scholarship"
       ],
       "allowed_patterns": [
-        "neon aquarium palette.{0,120}(deprecated|do not use|excluded|forbidden|retired|old)",
-        "(deprecated|do not use|excluded|forbidden|retired|old).{0,120}neon aquarium palette"
+        "Northstar Arts Annex.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
+        "June 8.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
+        "Apply now.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
+        "graduation cap stock photo.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
+        "old maroon crest.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
+        "50% tuition scholarship.{0,120}(deprecated|do not use|archived|retired|forbidden|old)"
       ],
-      "semantic_acceptance": "Forbidden only when presented as an active final design element; explicit do-not-use/deprecated/excluded mentions are allowed.",
-      "evaluation_role": "negative_only"
-    },
-    {
-      "id": "forbidden_wave_mascot",
-      "description": "Harborlight Kids Wave mascot or cartoon sea animal must not be used as hero or brand character.",
-      "source": "env/visual_rules.json; env/deprecated_assets.json; env/style_guide.md",
-      "importance": "critical",
-      "must_not_appear_in_image": true,
-      "forbidden_patterns": [
-        "Harborlight Kids Wave mascot",
-        "cartoon sea animals",
-        "cartoon wave"
-      ],
-      "allowed_patterns": [
-        "Harborlight Kids Wave mascot.{0,120}(deprecated|do not use|excluded|forbidden|retired|old)",
-        "(deprecated|do not use|excluded|forbidden|retired|old).{0,120}Harborlight Kids Wave mascot"
-      ],
-      "semantic_acceptance": "Forbidden only when presented as an active final design element; explicit do-not-use/deprecated/excluded mentions are allowed.",
-      "evaluation_role": "negative_only"
-    },
-    {
-      "id": "forbidden_storm_horror_template",
-      "description": "Storm horror template must not be used as layout basis, hero, background, or primary typography.",
-      "source": "env/visual_rules.json; env/deprecated_assets.json; env/style_guide.md",
-      "importance": "critical",
-      "must_not_appear_in_image": true,
-      "forbidden_patterns": [
-        "storm horror template",
-        "full-bleed storm horror",
-        "horror shipwreck scene"
-      ],
-      "allowed_patterns": [
-        "storm horror template.{0,120}(deprecated|do not use|excluded|forbidden|retired|old)",
-        "(deprecated|do not use|excluded|forbidden|retired|old).{0,120}storm horror template"
-      ],
-      "semantic_acceptance": "Forbidden only when presented as an active final design element; explicit do-not-use/deprecated/excluded mentions are allowed.",
       "evaluation_role": "negative_only"
     }
   ],
-  "calculation_notes": "All expected facts are derived from task-visible env files. The final copy is selected by choosing the approved_current row in env/campaign_brief.md and rejecting archived, draft, test, and deprecated rows. Platform specs require 1080 x 1350 px and 4:5 aspect ratio with 64 px safe margin. Current layout requires upper-left mark zone, top title and subtitle zone, central archival harbor or map-inspired hero zone, lower date and CTA zone. Hero visual must include: archival harbor-history visual visible, map, nautical artifact, or museum object cue visible, museum exhibition context visible, refined non-horror harbor-history cue visible. Deprecated exclusions are role-based: Harborlight Kids Wave mascot, Shipwreck Screams, neon aquarium palette, storm horror template, Neon Reef Nights; they may be mentioned only in explicit excluded/deprecated/do-not-use context and must not be active final design elements. Unsupported claim examples rejected from draft/test copy: free admission for all, limited tickets guaranteed, save 50%, official city tourism pass. Additional specific forbidden visual caps are derived from visual_rules.json, deprecated_assets.json, and style_guide.md for concrete old-template or forbidden-asset failures."
+  "calculation_notes": "Facts require multi-source resolution across latest_update, platform specs, visual rules, asset manifest, brand brief, and deprecated exclusions. Core scoring facts are traceable to task-visible env rules; minor layout deviations should be normal checklist deductions rather than hard-cap failures."
 }

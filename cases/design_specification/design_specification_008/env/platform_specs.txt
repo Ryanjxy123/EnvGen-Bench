@@ -1,0 +1,11 @@
+Platform: Web leaderboard banner
+Required canvas: 1440 x 480 px
+Required aspect ratio: 3:1 horizontal
+Old conflicting platform to ignore: LinkedIn sponsored feed 1200 x 627.
+Top safe zone: 40 px.
+Bottom safe zone: 44 px.
+Side safe margin: 72 px.
+Logo: left safe area above headline.
+CTA: right safe area button.
+Text density: no more than 6 short text blocks; headline should be largest and at most 2 lines.
+Hero: must stay readable without covering CTA, disclosure, or source line.

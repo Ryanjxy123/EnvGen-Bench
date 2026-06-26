@@ -1,44 +1,20 @@
 {
-  "current_assets": [
+  "allowed_assets": [
     {
-      "id": "flowforge_folded_path_icon",
-      "type": "brand_mark",
-      "description": "Compact folded-path app icon or wordmark",
-      "eligible_roles": [
-        "top-right logo",
-        "small product signature"
-      ]
+      "id": "water_drop_line_icon",
+      "allowed_use": "step icon"
     },
     {
-      "id": "sprint_board_ui",
-      "type": "hero_direction",
-      "description": "Calm weekly planning board with cards, columns, and one highlighted focus lane",
-      "eligible_roles": [
-        "hero visual",
-        "interface mockup"
-      ]
+      "id": "shade_tree_line_icon",
+      "allowed_use": "step icon"
     },
     {
-      "id": "amber_focus_chip",
-      "type": "graphic_device",
-      "description": "Small amber chip or rule used to emphasize current sprint focus",
-      "eligible_roles": [
-        "CTA accent",
-        "selected UI state",
-        "small proof chip"
-      ]
-    }
-  ],
-  "non_primary_assets": [
+      "id": "phone_help_line_icon",
+      "allowed_use": "step icon"
+    },
     {
-      "id": "team_avatar_dots",
-      "type": "supporting_visual",
-      "description": "Small circular avatar dots",
-      "eligible_roles": [
-        "secondary UI detail only"
-      ],
-      "limits": "Do not use as the logo, main hero, or dominant pattern."
+      "id": "pulsewell_wordmark",
+      "allowed_use": "small footer or top mark"
     }
-  ],
-  "selection_note": "Use current_assets for active design choices unless deprecated_assets.json marks an item or direction as ineligible."
+  ]
 }

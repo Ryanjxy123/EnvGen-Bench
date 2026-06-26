@@ -1,43 +1,20 @@
 {
-  "priority_notes": [
-    "deprecated_assets.json overrides this file for asset eligibility.",
-    "visual_rules.json controls brand and forbidden visual semantics."
-  ],
-  "current_brand_assets": [
+  "current_allowed_assets": [
     {
-      "asset_id": "current_heliogrid_wordmark",
-      "display_name": "HelioGrid current wordmark",
-      "allowed_use": "primary logo in upper-right logo zone",
-      "visual_description": "modern blue HelioGrid wordmark with green pulse accent"
-    }
-  ],
-  "approved_hero_directions": [
-    {
-      "asset_id": "home_battery_modern_residence",
-      "allowed_use": "main hero visual",
-      "visual_description": "sleek home battery unit beside a modern house with rooftop solar"
+      "id": "flowforge_horizontal_wordmark_2026",
+      "role": "logo",
+      "allowed_use": "top-right safe-area brand mark only"
     },
     {
-      "asset_id": "solar_backup_energy_scene",
-      "allowed_use": "main hero visual or secondary visual cue",
-      "visual_description": "solar panels, battery backup, and clean energy flow lines"
-    }
-  ],
-  "allowed_supporting_visuals": [
-    "subtle grid lines",
-    "solar energy flow arcs",
-    "minimal battery status icon",
-    "soft blue-white gradient",
-    "small green accent shapes"
-  ],
-  "not_for_primary_use": [
-    {
-      "asset_id": "generic_red_power_warning_background",
-      "reason": "red-dominant background conflicts with current launch palette"
+      "id": "sprint_board_ui_mock",
+      "role": "hero",
+      "allowed_use": "right-side planning-board UI with cards and lanes"
     },
     {
-      "asset_id": "smiling_sun_cartoon_mascot",
-      "reason": "cartoon mascot conflicts with clean technical launch style"
+      "id": "amber_focus_badge",
+      "role": "badge",
+      "allowed_use": "optional proof chip or CTA accent"
     }
-  ]
+  ],
+  "selection_rule": "Use current_allowed_assets unless deprecated_assets.json excludes the direction."
 }

@@ -1,0 +1,1 @@
+Please create a finished community_public_service_square for Harbor County Services. Use the env files to resolve current platform specs, visual rules, allowed assets, domain restrictions, and deprecated materials. Follow the stated priority order and produce the final compliant image, not a rule summary, worksheet, or draft.

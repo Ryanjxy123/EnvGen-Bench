@@ -1,0 +1,29 @@
+{
+  "candidate_assets": [
+    {
+      "id": "current_shift_planner_ui_wide",
+      "role": "hero",
+      "allowed_use": "wide web banner UI crop",
+      "current_campaign_allowed": true
+    },
+    {
+      "id": "linkedin_square_dashboard_crop",
+      "role": "archive",
+      "allowed_use": "old LinkedIn crop; wrong aspect for current web banner",
+      "current_campaign_allowed": false
+    },
+    {
+      "id": "ai_robot_operator_illustration",
+      "role": "restricted",
+      "allowed_use": "prohibited replacement/automation cue",
+      "current_campaign_allowed": false
+    },
+    {
+      "id": "site_filter_chip",
+      "role": "support",
+      "allowed_use": "small UI support element",
+      "current_campaign_allowed": true
+    }
+  ],
+  "selection_rule": "Use only assets with current_campaign_allowed=true and allowed_use matching the current platform and visual_rules.json."
+}

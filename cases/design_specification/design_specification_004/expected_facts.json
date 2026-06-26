@@ -3,314 +3,199 @@
   "task_type": "design_specification",
   "facts": [
     {
-      "id": "brand_name",
-      "description": "The current approved brand name must appear prominently.",
-      "source": "env/campaign_brief.md",
+      "id": "primary_copy_01",
+      "description": "Required visible text: LedgerLite Cash Reserve",
+      "source": "env/latest_update.md",
       "importance": "critical",
-      "expected_value": "Cedar Loop Market",
-      "canonical_answer": "Cedar Loop Market",
-      "semantic_acceptance": "Exact approved_current wording 'Cedar Loop Market' should be readable in the final image; minor punctuation/spacing differences are acceptable only if the wording remains unambiguous.",
+      "expected_value": "LedgerLite Cash Reserve",
+      "canonical_answer": "LedgerLite Cash Reserve",
+      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image.",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "required_launch_message",
-      "description": "The current approved launch message must appear.",
-      "source": "env/campaign_brief.md",
+      "id": "primary_copy_02",
+      "description": "Required visible text: Set aside cash without the spreadsheet.",
+      "source": "env/latest_update.md",
       "importance": "critical",
-      "expected_value": "Fresh stalls, short walks, local makers.",
-      "canonical_answer": "Fresh stalls, short walks, local makers.",
-      "semantic_acceptance": "Exact approved_current wording 'Fresh stalls, short walks, local makers.' should be readable in the final image; minor punctuation/spacing differences are acceptable only if the wording remains unambiguous.",
+      "expected_value": "Set aside cash without the spreadsheet.",
+      "canonical_answer": "Set aside cash without the spreadsheet.",
+      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image.",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "required_date_line",
-      "description": "The current approved date line must appear.",
-      "source": "env/campaign_brief.md",
+      "id": "primary_copy_03",
+      "description": "Required visible text: Buckets, reminders, and balances in one app.",
+      "source": "env/latest_update.md",
       "importance": "critical",
-      "expected_value": "Opening Saturdays in June",
-      "canonical_answer": "Opening Saturdays in June",
-      "semantic_acceptance": "Exact approved_current wording 'Opening Saturdays in June' should be readable in the final image; minor punctuation/spacing differences are acceptable only if the wording remains unambiguous.",
+      "expected_value": "Buckets, reminders, and balances in one app.",
+      "canonical_answer": "Buckets, reminders, and balances in one app.",
+      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image.",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "required_cta",
-      "description": "The current approved CTA must appear.",
-      "source": "env/campaign_brief.md",
+      "id": "primary_copy_04",
+      "description": "Required visible text: Join the waitlist",
+      "source": "env/latest_update.md",
       "importance": "critical",
-      "expected_value": "Meet us on the loop",
-      "canonical_answer": "Meet us on the loop",
-      "semantic_acceptance": "Exact approved_current wording 'Meet us on the loop' should be readable in the final image; minor punctuation/spacing differences are acceptable only if the wording remains unambiguous.",
+      "expected_value": "Join the waitlist",
+      "canonical_answer": "Join the waitlist",
+      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image.",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
+    },
+    {
+      "id": "primary_copy_05",
+      "description": "Required visible text: Not a bank. No investment advice.",
+      "source": "env/latest_update.md",
+      "importance": "critical",
+      "expected_value": "Not a bank. No investment advice.",
+      "canonical_answer": "Not a bank. No investment advice.",
+      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "archive_not_active",
+      "description": "Archive-only finance claims and visuals must not become active final content.",
+      "source": "env/latest_update.md",
+      "importance": "critical",
+      "must_not_appear_in_image": true,
+      "forbidden_patterns": [
+        "Earn 8% automatically",
+        "Get guaranteed returns",
+        "LedgerLite Cash Boost"
+      ],
+      "allowed_patterns": [
+        "Earn 8% automatically.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
+        "Get guaranteed returns.{0,120}(deprecated|do not use|archived|retired|forbidden|old)"
+      ],
+      "evaluation_role": "negative_only"
     },
     {
       "id": "canvas_size",
-      "description": "The artifact should use exact 1080 x 1080 px canvas size.",
-      "source": "env/platform_specs.txt; env/visual_rules.json; env/template.yaml",
-      "importance": "critical",
-      "expected_value": "1080 x 1080 px",
-      "semantic_acceptance": "Image metadata should be 1080 by 1080 pixels; this is separate from aspect ratio.",
-      "evaluation_role": "optional"
-    },
-    {
-      "id": "required_aspect_ratio",
-      "description": "The artifact must have 1:1 aspect ratio.",
-      "source": "env/platform_specs.txt; env/visual_rules.json; env/template.yaml",
-      "importance": "critical",
-      "expected_value": "1:1",
-      "semantic_acceptance": "Rendered output has 1:1 aspect ratio; visible crop should not be landscape or another format.",
-      "evaluation_role": "optional"
-    },
-    {
-      "id": "current_palette",
-      "description": "The image must use the current market green, warm oat, marigold, and soft leaf-green palette.",
-      "source": "env/visual_rules.json; env/style_guide.md",
-      "importance": "critical",
-      "expected_value": [
-        "#2F5D50",
-        "#F8E9C8",
-        "#D9822B",
-        "#8BAA7C"
-      ],
-      "semantic_acceptance": "Dominant visual system should clearly follow the current palette from env; exact pixel-level hex matching is not required.",
-      "evaluation_role": "optional"
-    },
-    {
-      "id": "logo_position",
-      "description": "The current Cedar Loop loop-leaf mark or friendly wordmark must sit in the lower-left safe area.",
-      "source": "env/visual_rules.json; env/platform_specs.txt; env/template.yaml; env/asset_manifest.json",
-      "importance": "critical",
-      "expected_value": "lower-left safe area",
-      "semantic_acceptance": "Current logo/mark treatment is visibly placed in the lower-left safe area and is not replaced by a deprecated mark.",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "title_zone",
-      "description": "Brand name and launch message occupy the top third with brand-first hierarchy.",
-      "source": "env/template.yaml; env/platform_specs.txt; env/visual_rules.json",
-      "importance": "critical",
-      "expected_value": "Brand name and launch message occupy the top third with brand-first hierarchy.",
-      "semantic_acceptance": "The title/headline area is visually clear and follows the current layout zone.",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "cta_zone",
-      "description": "Date line and CTA appear in the bottom area.",
-      "source": "env/template.yaml; env/platform_specs.txt; env/visual_rules.json",
-      "importance": "critical",
-      "expected_value": "Date line and CTA appear in the bottom area.",
-      "semantic_acceptance": "CTA and related lower information are visibly placed in the required CTA zone.",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "safe_margin",
-      "description": "Essential copy, logo, and CTA stay inside the 72 px safe margin.",
+      "description": "Final artifact uses the required pixel canvas.",
       "source": "env/platform_specs.txt",
-      "importance": "major",
-      "expected_value": "72 px",
-      "semantic_acceptance": "No essential text, logo, or CTA is clipped, flush to the edge, or outside a visibly safe area.",
-      "must_appear_in_image": true,
+      "importance": "critical",
+      "expected_value": "1080 x 1350 px",
       "evaluation_role": "major_required"
     },
     {
-      "id": "required_layout_zones",
-      "description": "The current template zones must be visible and coherent.",
-      "source": "env/template.yaml; env/visual_rules.json",
+      "id": "aspect_ratio",
+      "description": "Final artifact uses the required aspect ratio.",
+      "source": "env/platform_specs.txt",
       "importance": "critical",
-      "expected_value": [
-        "top brand name and launch message zone",
-        "middle neighborhood market-stall hero zone",
-        "lower-left logo zone",
-        "bottom date and CTA zone"
-      ],
-      "semantic_acceptance": "The composition visibly uses the current zones listed in env/template.yaml and visual_rules.json.",
+      "expected_value": "4:5",
+      "evaluation_role": "major_required"
+    },
+    {
+      "id": "safe_area",
+      "description": "Essential text, logo, and CTA stay inside required safe areas.",
+      "source": "env/platform_specs.txt",
+      "importance": "critical",
+      "expected_value": "72 px",
+      "semantic_acceptance": "Treat small placement deviations as normal checklist deductions, not hard-cap failures, if the content remains readable and broadly inside the safe area.",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "hero_market_stalls",
-      "description": "Hero visual shows fresh neighborhood market stalls.",
-      "source": "env/visual_rules.json; env/asset_manifest.json; env/style_guide.md; env/template.yaml",
+      "id": "logo_position",
+      "description": "Current logo/wordmark appears in required position.",
+      "source": "env/platform_specs.txt; env/visual_rules.json; env/asset_manifest.json",
       "importance": "critical",
-      "expected_value": "market stalls visible",
-      "semantic_acceptance": "The hero visual must show this component clearly enough for a viewer to recognize: market stalls visible.",
+      "expected_value": "top-left safe area",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "hero_local_makers_goods",
-      "description": "Hero visual includes local maker or fresh goods cues such as produce, flowers, bread, or ceramics.",
-      "source": "env/visual_rules.json; env/asset_manifest.json; env/style_guide.md; env/template.yaml",
+      "id": "cta_position",
+      "description": "CTA/helper appears in the required zone and safe area.",
+      "source": "env/platform_specs.txt; env/visual_rules.json",
       "importance": "critical",
-      "expected_value": "local makers or fresh goods visible",
-      "semantic_acceptance": "The hero visual must show this component clearly enough for a viewer to recognize: local makers or fresh goods visible.",
+      "expected_value": "lower third above disclosure",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "hero_walkable_path",
-      "description": "Hero visual includes a short walking loop, path line, or walkable neighborhood cue.",
-      "source": "env/visual_rules.json; env/asset_manifest.json; env/style_guide.md; env/template.yaml",
-      "importance": "critical",
-      "expected_value": "walkable path or loop cue visible",
-      "semantic_acceptance": "The hero visual must show this component clearly enough for a viewer to recognize: walkable path or loop cue visible.",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "hero_daytime_neighborhood",
-      "description": "Hero visual reads as a daytime neighborhood market, not nightlife or downtown real-estate.",
-      "source": "env/visual_rules.json; env/asset_manifest.json; env/style_guide.md; env/template.yaml",
-      "importance": "critical",
-      "expected_value": "daytime neighborhood market cue visible",
-      "semantic_acceptance": "The hero visual must show this component clearly enough for a viewer to recognize: daytime neighborhood market cue visible.",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "deprecated_assets_not_active",
-      "description": "Deprecated assets, templates, stale slogans, wrong campaign copy, and forbidden directions must not be used as active final design elements.",
-      "source": "env/deprecated_assets.json; env/visual_rules.json; env/asset_manifest.json; env/campaign_brief.md",
-      "importance": "critical",
-      "semantic_acceptance": "Deprecated items may appear only in explicit do-not-use/deprecated/excluded context, never as active final design elements.",
-      "must_not_appear_in_image": true,
-      "forbidden_patterns": [
-        "neon night-market palette",
-        "city skyline",
-        "luxury fashion cues",
-        "old black crest",
-        "Cedar Loop Night Market",
-        "Cedar Loop District"
-      ],
-      "allowed_patterns": [
-        "neon night-market palette.{0,120}(deprecated|do not use|excluded|forbidden|retired|old|draft|archived|test)",
-        "(deprecated|do not use|excluded|forbidden|retired|old|draft|archived|test).{0,120}neon night-market palette",
-        "city skyline.{0,120}(deprecated|do not use|excluded|forbidden|retired|old|draft|archived|test)",
-        "(deprecated|do not use|excluded|forbidden|retired|old|draft|archived|test).{0,120}city skyline"
-      ],
-      "evaluation_role": "negative_only"
-    },
-    {
-      "id": "old_slogan_not_active",
-      "description": "Old or deprecated slogan/copy 'Neon nights, exclusive bites.' must not be used as active headline, subtitle, supporting line, CTA, or claim.",
-      "source": "env/deprecated_assets.json; env/campaign_brief.md",
-      "importance": "critical",
-      "semantic_acceptance": "The old copy may only appear in explicit exclusion/deprecated context, not as active final poster text.",
-      "must_not_appear_in_image": true,
-      "forbidden_patterns": [
-        "Neon nights, exclusive bites."
-      ],
-      "allowed_patterns": [
-        "Neon nights, exclusive bites..{0,120}(deprecated|do not use|excluded|forbidden|retired|old|draft|archived|test)",
-        "(deprecated|do not use|excluded|forbidden|retired|old|draft|archived|test).{0,120}Neon nights, exclusive bites."
-      ],
-      "evaluation_role": "negative_only"
-    },
-    {
-      "id": "old_logo_not_primary",
-      "description": "Old logo/mark treatment 'old black crest' must not be used as the primary logo or brand mark.",
-      "source": "env/deprecated_assets.json; env/asset_manifest.json",
-      "importance": "critical",
-      "semantic_acceptance": "The old logo/mark may only appear in explicit exclusion/deprecated context, not as the active visible logo.",
-      "must_not_appear_in_image": true,
-      "forbidden_patterns": [
-        "old black crest"
-      ],
-      "allowed_patterns": [
-        "old black crest.{0,120}(deprecated|do not use|excluded|forbidden|retired|old|draft|archived|test)",
-        "(deprecated|do not use|excluded|forbidden|retired|old|draft|archived|test).{0,120}old black crest"
-      ],
-      "evaluation_role": "negative_only"
-    },
-    {
-      "id": "unsupported_claims_not_present",
-      "description": "The image must not add unsupported guarantees, discounts, free offers, safety promises, or exaggerated performance claims not present in approved_current copy.",
-      "source": "env/visual_rules.json; env/campaign_brief.md",
-      "importance": "critical",
-      "semantic_acceptance": "Forbidden if presented as active marketing copy; acceptable only if clearly shown as draft/test/do-not-use material.",
-      "must_not_appear_in_image": true,
-      "forbidden_patterns": [
-        "VIP access",
-        "exclusive bites",
-        "leasing now",
-        "save 50%",
-        "free groceries"
-      ],
-      "allowed_patterns": [
-        "VIP access.{0,120}(deprecated|do not use|excluded|forbidden|retired|old|draft|archived|test)",
-        "(deprecated|do not use|excluded|forbidden|retired|old|draft|archived|test).{0,120}VIP access",
-        "exclusive bites.{0,120}(deprecated|do not use|excluded|forbidden|retired|old|draft|archived|test)",
-        "(deprecated|do not use|excluded|forbidden|retired|old|draft|archived|test).{0,120}exclusive bites"
-      ],
-      "evaluation_role": "negative_only"
-    },
-    {
-      "id": "style_tone",
-      "description": "The final image should maintain warm, walkable, local, fresh, maker-friendly market style.",
-      "source": "env/visual_rules.json; env/style_guide.md",
+      "id": "palette_tokens",
+      "description": "Current color tokens are used as dominant palette.",
+      "source": "env/visual_rules.json",
       "importance": "major",
-      "expected_value": "warm, walkable, local, fresh, maker-friendly market style",
-      "semantic_acceptance": "Overall visible style should match the current brand tone and avoid deprecated genre cues.",
-      "evaluation_role": "optional"
+      "expected_value": [
+        "#172033",
+        "#CFF7E8",
+        "#2F6BFF",
+        "#F7F8FA"
+      ],
+      "semantic_acceptance": "Exact pixel hex matching is not required, but deprecated palettes should not dominate.",
+      "evaluation_role": "major_required"
     },
     {
-      "id": "forbidden_neon_palette",
-      "description": "Neon night-market palette must not be used as active color system.",
-      "source": "env/visual_rules.json; env/deprecated_assets.json; env/style_guide.md",
+      "id": "hero_component_1",
+      "description": "phone app interface visible",
+      "source": "env/visual_rules.json; env/asset_manifest.json",
+      "importance": "critical",
+      "expected_value": "phone app interface visible",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "hero_component_2",
+      "description": "cash bucket or balance organization cue visible",
+      "source": "env/visual_rules.json; env/asset_manifest.json",
+      "importance": "critical",
+      "expected_value": "cash bucket or balance organization cue visible",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "hero_component_3",
+      "description": "reminder or calendar cue visible",
+      "source": "env/visual_rules.json; env/asset_manifest.json",
+      "importance": "critical",
+      "expected_value": "reminder or calendar cue visible",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "hero_component_4",
+      "description": "calm household budgeting context visible",
+      "source": "env/visual_rules.json; env/asset_manifest.json",
+      "importance": "critical",
+      "expected_value": "calm household budgeting context visible",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "forbidden_elements_not_active",
+      "description": "Deprecated copy, assets, claims, colors, and old specs are not used as active final design elements.",
+      "source": "env/deprecated_assets.json; env/compliance_rules.txt; env/latest_update.md; env/visual_rules.json",
       "importance": "critical",
       "must_not_appear_in_image": true,
       "forbidden_patterns": [
-        "neon night-market palette",
-        "neon palette"
+        "Earn 8% automatically",
+        "FDIC insured",
+        "guaranteed returns",
+        "crypto yield",
+        "gold bank seal",
+        "green stock chart background",
+        "APY",
+        "risk-free savings"
       ],
       "allowed_patterns": [
-        "neon night-market palette.{0,120}(deprecated|do not use|excluded|forbidden|retired|old)",
-        "(deprecated|do not use|excluded|forbidden|retired|old).{0,120}neon night-market palette"
+        "Earn 8% automatically.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
+        "FDIC insured.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
+        "guaranteed returns.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
+        "crypto yield.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
+        "gold bank seal.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
+        "green stock chart background.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
+        "APY.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
+        "risk-free savings.{0,120}(deprecated|do not use|archived|retired|forbidden|old)"
       ],
-      "semantic_acceptance": "Forbidden only when presented as an active final design element; explicit do-not-use/deprecated/excluded mentions are allowed.",
-      "evaluation_role": "negative_only"
-    },
-    {
-      "id": "forbidden_city_skyline",
-      "description": "City skyline must not be used as hero, dominant background, or layout basis.",
-      "source": "env/visual_rules.json; env/deprecated_assets.json; env/style_guide.md",
-      "importance": "critical",
-      "must_not_appear_in_image": true,
-      "forbidden_patterns": [
-        "city skyline",
-        "downtown skyline"
-      ],
-      "allowed_patterns": [
-        "city skyline.{0,120}(deprecated|do not use|excluded|forbidden|retired|old)",
-        "(deprecated|do not use|excluded|forbidden|retired|old).{0,120}city skyline"
-      ],
-      "semantic_acceptance": "Forbidden only when presented as an active final design element; explicit do-not-use/deprecated/excluded mentions are allowed.",
-      "evaluation_role": "negative_only"
-    },
-    {
-      "id": "forbidden_luxury_fashion",
-      "description": "Luxury fashion cues must not be used as active concept, hero, typography, or layout basis.",
-      "source": "env/visual_rules.json; env/deprecated_assets.json; env/style_guide.md",
-      "importance": "critical",
-      "must_not_appear_in_image": true,
-      "forbidden_patterns": [
-        "luxury fashion cues",
-        "luxury fashion",
-        "VIP access"
-      ],
-      "allowed_patterns": [
-        "luxury fashion cues.{0,120}(deprecated|do not use|excluded|forbidden|retired|old)",
-        "(deprecated|do not use|excluded|forbidden|retired|old).{0,120}luxury fashion cues"
-      ],
-      "semantic_acceptance": "Forbidden only when presented as an active final design element; explicit do-not-use/deprecated/excluded mentions are allowed.",
       "evaluation_role": "negative_only"
     }
   ],
-  "calculation_notes": "All expected facts are derived from task-visible env files. The final copy is selected by choosing the approved_current row in env/campaign_brief.md and rejecting archived, draft, test, and deprecated rows. Platform specs require 1080 x 1080 px and 1:1 aspect ratio with 72 px safe margin. Current layout requires top brand name and launch message zone, middle neighborhood market-stall hero zone, lower-left logo zone, bottom date and CTA zone. Hero visual must include: market stalls visible, local makers or fresh goods visible, walkable path or loop cue visible, daytime neighborhood market cue visible. Deprecated exclusions are role-based: neon night-market palette, city skyline, luxury fashion cues, old black crest, Cedar Loop Night Market, Cedar Loop District; they may be mentioned only in explicit excluded/deprecated/do-not-use context and must not be active final design elements. Unsupported claim examples rejected from draft/test copy: VIP access, exclusive bites, leasing now, save 50%, free groceries. Additional specific forbidden visual caps are derived from visual_rules.json, deprecated_assets.json, and style_guide.md for concrete old-template or forbidden-asset failures."
+  "calculation_notes": "Facts require multi-source resolution across latest_update, compliance rules, platform specs, visual rules, asset manifest, and deprecated exclusions. Core scoring facts are traceable to task-visible env rules; minor layout deviations should be normal checklist deductions rather than hard-cap failures."
 }
