@@ -26,42 +26,15 @@
         "information_structuring": {
           "$ref": "#/$defs/dimension"
         },
-        "visual_rendering_quality": {
-          "$ref": "#/$defs/dimension"
-        },
         "visual_communication_quality": {
-          "$ref": "#/$defs/dimension"
-        },
-        "robustness": {
           "$ref": "#/$defs/dimension"
         }
       },
-      "anyOf": [
-        {
-          "required": [
-            "task_completion",
-            "grounded_requirement_satisfaction",
-            "information_structuring",
-            "visual_rendering_quality"
-          ]
-        },
-        {
-          "required": [
-            "task_completion",
-            "grounded_requirement_satisfaction",
-            "information_structuring",
-            "visual_communication_quality",
-            "robustness"
-          ]
-        },
-        {
-          "required": [
-            "task_completion",
-            "grounded_requirement_satisfaction",
-            "visual_communication_quality",
-            "robustness"
-          ]
-        }
+      "required": [
+        "task_completion",
+        "grounded_requirement_satisfaction",
+        "information_structuring",
+        "visual_communication_quality"
       ]
     },
     "score_caps": {

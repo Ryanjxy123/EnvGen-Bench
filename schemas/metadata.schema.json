@@ -81,7 +81,9 @@
               "public_download",
               "public_crawl",
               "derived",
-              "mixed"
+              "mixed",
+              "downloaded",
+              "generated_from_source_excerpt"
             ]
           },
           "source_url": {
@@ -97,6 +99,25 @@
             "type": "string"
           },
           "conversion_note": {
+            "type": "string"
+          },
+          "local_path": {
+            "type": "string"
+          },
+          "asset_path": {
+            "type": "string"
+          },
+          "whether_original_or_adapted": {
+            "type": "string"
+          },
+          "text_extract_check": {
+            "type": "string"
+          },
+          "page_count": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "adaptation_note": {
             "type": "string"
           }
         }

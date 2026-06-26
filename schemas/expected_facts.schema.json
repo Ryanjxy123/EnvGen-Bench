@@ -69,13 +69,22 @@
               "negative_only"
             ]
           },
+          "fact_type": {
+            "type": "string",
+            "enum": [
+              "visible_copy",
+              "visual_requirement",
+              "negative_only",
+              "resolution_fact",
+              "conditional_fact"
+            ]
+          },
           "expected_value": {},
           "canonical_answer": {},
           "semantic_acceptance": {
             "oneOf": [
               {
-                "type": "string",
-                "minLength": 1
+                "type": "string"
               },
               {
                 "type": "array",
@@ -112,6 +121,12 @@
               "type": "string",
               "minLength": 1
             }
+          },
+          "source_section": {
+            "type": "string"
+          },
+          "source_page_hint": {
+            "type": "string"
           }
         }
       }
