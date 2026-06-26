@@ -1,0 +1,43 @@
+{
+  "select_top_n": 4,
+  "equals": {
+    "status": "active",
+    "service_window": "outreach_week_2026",
+    "audience": "public"
+  },
+  "bool_true": {
+    "cold_chain_ready": true,
+    "accessible": true
+  },
+  "gte": {
+    "capacity": 40
+  },
+  "gt": {
+    "priority_score": 82
+  },
+  "lte": {
+    "distance_miles": 12
+  },
+  "group_limit": {
+    "field": "district",
+    "max": 1
+  },
+  "sort": [
+    {
+      "field": "priority_score",
+      "direction": "desc"
+    },
+    {
+      "field": "no_show_risk",
+      "direction": "asc"
+    },
+    {
+      "field": "distance_miles",
+      "direction": "asc"
+    },
+    {
+      "field": "name",
+      "direction": "asc"
+    }
+  ]
+}

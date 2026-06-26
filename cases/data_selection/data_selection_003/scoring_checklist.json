@@ -16,7 +16,8 @@
           "points": 4,
           "scoring_hint": "Full credit when the final item set is clear. Partial credit when selection is ambiguous. No credit when the database table is copied without selection. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
         }
-      ]
+      ],
+      "label": "Task Completion"
     },
     "grounded_requirement_satisfaction": {
       "weight": 0.55,
@@ -57,7 +58,8 @@
             "nut_free_quick_lunch_copy"
           ]
         }
-      ]
+      ],
+      "label": "Grounded Requirement Satisfaction"
     },
     "information_structuring": {
       "weight": 0.15,
@@ -74,9 +76,10 @@
           "points": 4,
           "scoring_hint": "Full credit when the display focuses on selected specials. Partial credit if extra metadata appears but does not dominate. No credit if process details overwhelm the display. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
         }
-      ]
+      ],
+      "label": "Information Structuring"
     },
-    "visual_rendering_quality": {
+    "visual_communication_quality": {
       "weight": 0.15,
       "items": [
         {
@@ -91,7 +94,8 @@
           "points": 4,
           "scoring_hint": "Full credit for balanced density and clear sections. Partial credit for weak spacing. No credit for blank, placeholder-like, or low-resolution output. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
         }
-      ]
+      ],
+      "label": "Visual Communication Quality"
     }
   },
   "score_caps": [

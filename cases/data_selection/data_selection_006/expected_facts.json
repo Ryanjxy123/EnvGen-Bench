@@ -1,0 +1,244 @@
+{
+  "case_id": "data_selection_006",
+  "task_type": "data_selection",
+  "facts": [
+    {
+      "id": "selected_objects",
+      "description": "Final selected objects after all eligibility filters, ranking rules, optional group limits, and top-N cutoff.",
+      "source": "env/artifact_candidates.csv + env/exhibit_rules.json + env/curator_notes.md",
+      "importance": "critical",
+      "expected_value": [
+        "Quilted Harbor Map",
+        "Brass Transit Token Set",
+        "Flood Ledger Pages",
+        "Canal Workers Banner",
+        "Neighborhood Radio Mic",
+        "Market Stall Ledger"
+      ],
+      "canonical_answer": {
+        "selected_ids_reference_only": [
+          "A801",
+          "A802",
+          "A803",
+          "A804",
+          "A805",
+          "A806"
+        ],
+        "selected_names": [
+          "Quilted Harbor Map",
+          "Brass Transit Token Set",
+          "Flood Ledger Pages",
+          "Canal Workers Banner",
+          "Neighborhood Radio Mic",
+          "Market Stall Ledger"
+        ]
+      },
+      "semantic_acceptance": "Accept if exactly these selected objects are featured; IDs may be omitted but names must be identifiable.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "ranking_order",
+      "description": "Selected objects must appear in rule-based ranking order after tie-breaks and any group-limit application.",
+      "source": "env/artifact_candidates.csv + env/exhibit_rules.json + env/curator_notes.md",
+      "importance": "critical",
+      "expected_value": "Quilted Harbor Map before Brass Transit Token Set before Flood Ledger Pages before Canal Workers Banner before Neighborhood Radio Mic before Market Stall Ledger",
+      "canonical_answer": [
+        "1. Quilted Harbor Map",
+        "2. Brass Transit Token Set",
+        "3. Flood Ledger Pages",
+        "4. Canal Workers Banner",
+        "5. Neighborhood Radio Mic",
+        "6. Market Stall Ledger"
+      ],
+      "semantic_acceptance": "Accept left-to-right, top-to-bottom, numbered, or hero-to-secondary order if it preserves the expected ranking.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "selected_object_display_values",
+      "description": "Each selected object must show the correct name and required display fields.",
+      "source": "env/artifact_candidates.csv",
+      "importance": "critical",
+      "expected_value": [
+        "Quilted Harbor Map, gallery: North Gallery, era: 1880s, care score: 91",
+        "Brass Transit Token Set, gallery: Transit Alcove, era: 1910s, care score: 88",
+        "Flood Ledger Pages, gallery: River Room, era: 1937, care score: 95",
+        "Canal Workers Banner, gallery: North Gallery, era: 1904, care score: 90",
+        "Neighborhood Radio Mic, gallery: Sound Nook, era: 1968, care score: 86",
+        "Market Stall Ledger, gallery: River Room, era: 1922, care score: 84"
+      ],
+      "canonical_answer": {
+        "Quilted Harbor Map": {
+          "gallery": "North Gallery",
+          "era_label": "1880s",
+          "condition_risk": 91
+        },
+        "Brass Transit Token Set": {
+          "gallery": "Transit Alcove",
+          "era_label": "1910s",
+          "condition_risk": 88
+        },
+        "Flood Ledger Pages": {
+          "gallery": "River Room",
+          "era_label": "1937",
+          "condition_risk": 95
+        },
+        "Canal Workers Banner": {
+          "gallery": "North Gallery",
+          "era_label": "1904",
+          "condition_risk": 90
+        },
+        "Neighborhood Radio Mic": {
+          "gallery": "Sound Nook",
+          "era_label": "1968",
+          "condition_risk": 86
+        },
+        "Market Stall Ledger": {
+          "gallery": "River Room",
+          "era_label": "1922",
+          "condition_risk": 84
+        }
+      },
+      "semantic_acceptance": "Accept equivalent formatting when display values are attached to the correct selected names.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "group_limit_compliance",
+      "description": "The final selection obeys the at-most-2-per-collection group limit after sorting.",
+      "source": "env/artifact_candidates.csv + env/exhibit_rules.json + env/curator_notes.md",
+      "importance": "critical",
+      "expected_value": "Archives: 2, Civic Objects: 1, Media: 1, Textiles: 2",
+      "canonical_answer": "Selected group counts are Archives: 2, Civic Objects: 1, Media: 1, Textiles: 2; no collection exceeds 2.",
+      "semantic_acceptance": "Accept if the image does not add extra featured objects that would violate the group cap.",
+      "must_appear_in_image": false,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "unselected_objects_not_featured",
+      "description": "Filtered-out, group-cap-blocked where applicable, and below-cutoff eligible candidates must not appear as final featured selections.",
+      "source": "env/artifact_candidates.csv + env/exhibit_rules.json + env/curator_notes.md",
+      "importance": "critical",
+      "expected_value": [
+        "Draft Streetcar Poster",
+        "Private Donor Medal",
+        "Uncleared Protest Sign",
+        "Winter Loan Lantern",
+        "Fragile Glass Plate",
+        "Oversize Canal Gate",
+        "Archive Test Label",
+        "Internal Staff Badge",
+        "Low Score Handbill",
+        "Slow Install Clock",
+        "Cancelled Photo Album",
+        "Archived Wharf Sketch",
+        "Dockworker Union Sash",
+        "Ceramic Ferry Tile",
+        "Oral History Phone",
+        "Youth Zine Cabinet"
+      ],
+      "canonical_answer": "Only the selected_objects list should be featured as final selections.",
+      "semantic_acceptance": "The image may mention exclusion context, but must not promote any unselected object as selected.",
+      "must_not_appear_in_image": true,
+      "forbidden_patterns": [
+        "Draft\\ Streetcar\\ Poster",
+        "Private\\ Donor\\ Medal",
+        "Uncleared\\ Protest\\ Sign",
+        "Winter\\ Loan\\ Lantern",
+        "Fragile\\ Glass\\ Plate",
+        "Oversize\\ Canal\\ Gate",
+        "Archive\\ Test\\ Label",
+        "Internal\\ Staff\\ Badge",
+        "Low\\ Score\\ Handbill",
+        "Slow\\ Install\\ Clock",
+        "Cancelled\\ Photo\\ Album",
+        "Archived\\ Wharf\\ Sketch",
+        "Dockworker\\ Union\\ Sash",
+        "Ceramic\\ Ferry\\ Tile",
+        "Oral\\ History\\ Phone",
+        "Youth\\ Zine\\ Cabinet"
+      ],
+      "allowed_patterns": [
+        "\\b(excluded|exclude|filtered out|not selected|not featured|ineligible|below cutoff|blocked)\\b[\\s\\S]{0,120}\\b(Draft\\ Streetcar\\ Poster|Private\\ Donor\\ Medal|Uncleared\\ Protest\\ Sign|Winter\\ Loan\\ Lantern|Fragile\\ Glass\\ Plate|Oversize\\ Canal\\ Gate|Archive\\ Test\\ Label|Internal\\ Staff\\ Badge|Low\\ Score\\ Handbill|Slow\\ Install\\ Clock|Cancelled\\ Photo\\ Album|Archived\\ Wharf\\ Sketch|Dockworker\\ Union\\ Sash|Ceramic\\ Ferry\\ Tile|Oral\\ History\\ Phone|Youth\\ Zine\\ Cabinet)\\b",
+        "\\b(Draft\\ Streetcar\\ Poster|Private\\ Donor\\ Medal|Uncleared\\ Protest\\ Sign|Winter\\ Loan\\ Lantern|Fragile\\ Glass\\ Plate|Oversize\\ Canal\\ Gate|Archive\\ Test\\ Label|Internal\\ Staff\\ Badge|Low\\ Score\\ Handbill|Slow\\ Install\\ Clock|Cancelled\\ Photo\\ Album|Archived\\ Wharf\\ Sketch|Dockworker\\ Union\\ Sash|Ceramic\\ Ferry\\ Tile|Oral\\ History\\ Phone|Youth\\ Zine\\ Cabinet)\\b[\\s\\S]{0,120}\\b(excluded|exclude|filtered out|not selected|not featured|ineligible|below cutoff|blocked)\\b"
+      ],
+      "evaluation_role": "negative_only"
+    },
+    {
+      "id": "eligibility_exclusions",
+      "description": "Candidates failing status, window, eligibility, threshold, readiness, rights, or setup rules are not final selections.",
+      "source": "env/artifact_candidates.csv + env/exhibit_rules.json + env/curator_notes.md",
+      "importance": "major",
+      "expected_value": [
+        "Draft Streetcar Poster",
+        "Private Donor Medal",
+        "Uncleared Protest Sign",
+        "Winter Loan Lantern",
+        "Fragile Glass Plate",
+        "Oversize Canal Gate",
+        "Archive Test Label",
+        "Internal Staff Badge",
+        "Low Score Handbill",
+        "Slow Install Clock",
+        "Cancelled Photo Album",
+        "Archived Wharf Sketch"
+      ],
+      "canonical_answer": "Rows failing eligibility filters are excluded before ranking.",
+      "semantic_acceptance": "No eligibility-failed candidate should be promoted as selected.",
+      "must_not_appear_in_image": true,
+      "forbidden_patterns": [
+        "Draft\\ Streetcar\\ Poster",
+        "Private\\ Donor\\ Medal",
+        "Uncleared\\ Protest\\ Sign",
+        "Winter\\ Loan\\ Lantern",
+        "Fragile\\ Glass\\ Plate",
+        "Oversize\\ Canal\\ Gate",
+        "Archive\\ Test\\ Label",
+        "Internal\\ Staff\\ Badge",
+        "Low\\ Score\\ Handbill",
+        "Slow\\ Install\\ Clock",
+        "Cancelled\\ Photo\\ Album",
+        "Archived\\ Wharf\\ Sketch"
+      ],
+      "evaluation_role": "negative_only"
+    },
+    {
+      "id": "group_cap_exclusions",
+      "description": "Eligible candidates blocked by the collection group limit are not final selections.",
+      "source": "env/artifact_candidates.csv + env/exhibit_rules.json + env/curator_notes.md",
+      "importance": "major",
+      "expected_value": [
+        "Dockworker Union Sash"
+      ],
+      "canonical_answer": "Eligible rows that exceed the collection cap are excluded after ranking.",
+      "semantic_acceptance": "No group-cap-blocked candidate should be promoted as selected.",
+      "must_not_appear_in_image": true,
+      "forbidden_patterns": [
+        "Dockworker\\ Union\\ Sash"
+      ],
+      "evaluation_role": "negative_only"
+    },
+    {
+      "id": "eligible_below_cutoff",
+      "description": "Eligible candidates below the final top-N cutoff are not final selections.",
+      "source": "env/artifact_candidates.csv + env/exhibit_rules.json + env/curator_notes.md",
+      "importance": "major",
+      "expected_value": [
+        "Ceramic Ferry Tile",
+        "Oral History Phone",
+        "Youth Zine Cabinet"
+      ],
+      "canonical_answer": "Eligible but lower-ranked rows remain unfeatured because they fall below the selected top-N after group limits.",
+      "semantic_acceptance": "Below-cutoff candidates should not be promoted as final selections.",
+      "must_not_appear_in_image": true,
+      "forbidden_patterns": [
+        "Ceramic\\ Ferry\\ Tile",
+        "Oral\\ History\\ Phone",
+        "Youth\\ Zine\\ Cabinet"
+      ],
+      "evaluation_role": "negative_only"
+    }
+  ],
+  "calculation_notes": "Independent calculation: read artifact_candidates.csv and exhibit_rules.json. Filter rows with equals={'status': 'approved', 'exhibit_window': 'spring_2027', 'loan_ready': 'yes', 'rights_cleared': 'yes'}, in={}, gt={'narrative_score': 85}, gte={}, lte={'install_minutes': 60, 'fragility_level': 3}, bool_true={}. Sort eligible rows by [{'field': 'narrative_score', 'direction': 'desc'}, {'field': 'condition_risk', 'direction': 'desc'}, {'field': 'install_minutes', 'direction': 'asc'}, {'field': 'name', 'direction': 'asc'}]. Apply group cap collection<=2 while scanning the ranked list, then select top 6. Eligible ranked order is A801, A802, A803, A804, A821, A805, A806, A807, A808, A822. Selected IDs are A801, A802, A803, A804, A805, A806. Group-cap blocked IDs are A821. Eligible below-cutoff IDs are A807, A808, A822. Exclude eligibility-failed IDs A809, A810, A811, A812, A813, A814, A815, A816, A817, A818, A819, A820; also exclude group-cap-blocked and below-cutoff eligible rows from final featured selections."
+}

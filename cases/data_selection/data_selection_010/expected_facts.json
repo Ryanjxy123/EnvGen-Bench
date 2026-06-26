@@ -1,0 +1,306 @@
+{
+  "case_id": "data_selection_010",
+  "task_type": "data_selection",
+  "facts": [
+    {
+      "id": "selected_objects",
+      "description": "Final selected objects after all eligibility filters, ranking rules, optional group limits, and top-N cutoff.",
+      "source": "env/workshop_recommendations.sqlite + env/recommendation_rules.json + env/join_notes.md",
+      "importance": "critical",
+      "expected_value": [
+        "Repair Cafe: Small Appliances",
+        "Intro to Community Composting",
+        "Neighborhood Oral History Lab",
+        "Family Budget Clinic",
+        "Podcast Story Sprint"
+      ],
+      "canonical_answer": {
+        "selected_ids_reference_only": [
+          "W951",
+          "W952",
+          "W953",
+          "W955",
+          "W957"
+        ],
+        "selected_names": [
+          "Repair Cafe: Small Appliances",
+          "Intro to Community Composting",
+          "Neighborhood Oral History Lab",
+          "Family Budget Clinic",
+          "Podcast Story Sprint"
+        ]
+      },
+      "semantic_acceptance": "Accept if exactly these selected objects are featured; IDs may be omitted but names must be identifiable.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "ranking_order",
+      "description": "Selected objects must appear in rule-based ranking order after tie-breaks and any group-limit application.",
+      "source": "env/workshop_recommendations.sqlite + env/recommendation_rules.json + env/join_notes.md",
+      "importance": "critical",
+      "expected_value": "Repair Cafe: Small Appliances before Intro to Community Composting before Neighborhood Oral History Lab before Family Budget Clinic before Podcast Story Sprint",
+      "canonical_answer": [
+        "1. Repair Cafe: Small Appliances",
+        "2. Intro to Community Composting",
+        "3. Neighborhood Oral History Lab",
+        "4. Family Budget Clinic",
+        "5. Podcast Story Sprint"
+      ],
+      "semantic_acceptance": "Accept left-to-right, top-to-bottom, numbered, or hero-to-secondary order if it preserves the expected ranking.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "selected_object_display_values",
+      "description": "Each selected object must show the correct name and required display fields.",
+      "source": "env/workshop_recommendations.sqlite",
+      "importance": "critical",
+      "expected_value": [
+        "Repair Cafe: Small Appliances, category: Maker Skills, district: River North, seats: 40, time: evening",
+        "Intro to Community Composting, category: Climate & Garden, district: Market East, seats: 28, time: morning",
+        "Neighborhood Oral History Lab, category: Local Stories, district: River North, seats: 22, time: afternoon",
+        "Family Budget Clinic, category: Money Help, district: Market East, seats: 32, time: evening",
+        "Podcast Story Sprint, category: Media Lab, district: Lakeside, seats: 18, time: evening"
+      ],
+      "canonical_answer": {
+        "Repair Cafe: Small Appliances": {
+          "category_label": "Maker Skills",
+          "district_name": "River North",
+          "seat_capacity": 40,
+          "time_band": "evening"
+        },
+        "Intro to Community Composting": {
+          "category_label": "Climate & Garden",
+          "district_name": "Market East",
+          "seat_capacity": 28,
+          "time_band": "morning"
+        },
+        "Neighborhood Oral History Lab": {
+          "category_label": "Local Stories",
+          "district_name": "River North",
+          "seat_capacity": 22,
+          "time_band": "afternoon"
+        },
+        "Family Budget Clinic": {
+          "category_label": "Money Help",
+          "district_name": "Market East",
+          "seat_capacity": 32,
+          "time_band": "evening"
+        },
+        "Podcast Story Sprint": {
+          "category_label": "Media Lab",
+          "district_name": "Lakeside",
+          "seat_capacity": 18,
+          "time_band": "evening"
+        }
+      },
+      "semantic_acceptance": "Accept equivalent formatting when display values are attached to the correct selected names.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "group_limit_compliance",
+      "description": "The final selection obeys the at-most-1-per-category_label group limit after sorting.",
+      "source": "env/workshop_recommendations.sqlite + env/recommendation_rules.json + env/join_notes.md",
+      "importance": "critical",
+      "expected_value": "Climate & Garden: 1, Local Stories: 1, Maker Skills: 1, Media Lab: 1, Money Help: 1",
+      "canonical_answer": "Selected group counts are Climate & Garden: 1, Local Stories: 1, Maker Skills: 1, Media Lab: 1, Money Help: 1; no category_label exceeds 1.",
+      "semantic_acceptance": "Accept if the image does not add extra featured objects that would violate the group cap.",
+      "must_appear_in_image": false,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "mapping_display_values",
+      "description": "Mapped display labels from support sheets or join tables must be shown instead of raw codes and attached to the correct selected objects.",
+      "source": "env/workshop_recommendations.sqlite + env/recommendation_rules.json + env/join_notes.md",
+      "importance": "critical",
+      "expected_value": [
+        "Repair Cafe: Small Appliances: category_code MAK -> Maker Skills",
+        "Repair Cafe: Small Appliances: district_code D1 -> River North",
+        "Intro to Community Composting: category_code ECO -> Climate & Garden",
+        "Intro to Community Composting: district_code D2 -> Market East",
+        "Neighborhood Oral History Lab: category_code HIS -> Local Stories",
+        "Neighborhood Oral History Lab: district_code D1 -> River North",
+        "Family Budget Clinic: category_code FIN -> Money Help",
+        "Family Budget Clinic: district_code D2 -> Market East",
+        "Podcast Story Sprint: category_code MEDIA -> Media Lab",
+        "Podcast Story Sprint: district_code D3 -> Lakeside"
+      ],
+      "canonical_answer": {
+        "Repair Cafe: Small Appliances": {
+          "category_label": "Maker Skills",
+          "district_name": "River North"
+        },
+        "Intro to Community Composting": {
+          "category_label": "Climate & Garden",
+          "district_name": "Market East"
+        },
+        "Neighborhood Oral History Lab": {
+          "category_label": "Local Stories",
+          "district_name": "River North"
+        },
+        "Family Budget Clinic": {
+          "category_label": "Money Help",
+          "district_name": "Market East"
+        },
+        "Podcast Story Sprint": {
+          "category_label": "Media Lab",
+          "district_name": "Lakeside"
+        }
+      },
+      "semantic_acceptance": "Accept if mapped labels, not raw codes, are visibly bound to the correct selected names.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "unselected_objects_not_featured",
+      "description": "Filtered-out, group-cap-blocked where applicable, and below-cutoff eligible candidates must not appear as final featured selections.",
+      "source": "env/workshop_recommendations.sqlite + env/recommendation_rules.json + env/join_notes.md",
+      "importance": "critical",
+      "expected_value": [
+        "Archived Resume Night",
+        "Staff Training Facilitation Lab",
+        "Uninsured Tool Share Demo",
+        "Old Summer Seed Saving",
+        "Tiny Class Robotics",
+        "Long All-Day Grant Writing",
+        "Draft Sewing Circle",
+        "Cancelled Tax Help Prep",
+        "Internal Grant Review Circle",
+        "Test Tool Safety Lab",
+        "Training Volunteer Orientation",
+        "Private Sponsor Podcast Night",
+        "Old Autumn Budget Clinic",
+        "Retired Repair Bench Demo",
+        "Inactive Food Policy Forum",
+        "Bike Tune-Up Basics",
+        "Native Plant Balcony Planters",
+        "Tenant Rights Paperwork Help",
+        "Digital Privacy Walkthrough",
+        "Community Mediation Basics",
+        "Food Co-op Starter Session",
+        "Public Art Sketch Jam"
+      ],
+      "canonical_answer": "Only the selected_objects list should be featured as final selections.",
+      "semantic_acceptance": "The image may mention exclusion context, but must not promote any unselected object as selected.",
+      "must_not_appear_in_image": true,
+      "forbidden_patterns": [
+        "Archived\\ Resume\\ Night",
+        "Staff\\ Training\\ Facilitation\\ Lab",
+        "Uninsured\\ Tool\\ Share\\ Demo",
+        "Old\\ Summer\\ Seed\\ Saving",
+        "Tiny\\ Class\\ Robotics",
+        "Long\\ All\\-Day\\ Grant\\ Writing",
+        "Draft\\ Sewing\\ Circle",
+        "Cancelled\\ Tax\\ Help\\ Prep",
+        "Internal\\ Grant\\ Review\\ Circle",
+        "Test\\ Tool\\ Safety\\ Lab",
+        "Training\\ Volunteer\\ Orientation",
+        "Private\\ Sponsor\\ Podcast\\ Night",
+        "Old\\ Autumn\\ Budget\\ Clinic",
+        "Retired\\ Repair\\ Bench\\ Demo",
+        "Inactive\\ Food\\ Policy\\ Forum",
+        "Bike\\ Tune\\-Up\\ Basics",
+        "Native\\ Plant\\ Balcony\\ Planters",
+        "Tenant\\ Rights\\ Paperwork\\ Help",
+        "Digital\\ Privacy\\ Walkthrough",
+        "Community\\ Mediation\\ Basics",
+        "Food\\ Co\\-op\\ Starter\\ Session",
+        "Public\\ Art\\ Sketch\\ Jam"
+      ],
+      "allowed_patterns": [
+        "\\b(excluded|exclude|filtered out|not selected|not featured|ineligible|below cutoff|blocked)\\b[\\s\\S]{0,120}\\b(Archived\\ Resume\\ Night|Staff\\ Training\\ Facilitation\\ Lab|Uninsured\\ Tool\\ Share\\ Demo|Old\\ Summer\\ Seed\\ Saving|Tiny\\ Class\\ Robotics|Long\\ All\\-Day\\ Grant\\ Writing|Draft\\ Sewing\\ Circle|Cancelled\\ Tax\\ Help\\ Prep|Internal\\ Grant\\ Review\\ Circle|Test\\ Tool\\ Safety\\ Lab|Training\\ Volunteer\\ Orientation|Private\\ Sponsor\\ Podcast\\ Night|Old\\ Autumn\\ Budget\\ Clinic|Retired\\ Repair\\ Bench\\ Demo|Inactive\\ Food\\ Policy\\ Forum|Bike\\ Tune\\-Up\\ Basics|Native\\ Plant\\ Balcony\\ Planters|Tenant\\ Rights\\ Paperwork\\ Help|Digital\\ Privacy\\ Walkthrough|Community\\ Mediation\\ Basics)\\b",
+        "\\b(Archived\\ Resume\\ Night|Staff\\ Training\\ Facilitation\\ Lab|Uninsured\\ Tool\\ Share\\ Demo|Old\\ Summer\\ Seed\\ Saving|Tiny\\ Class\\ Robotics|Long\\ All\\-Day\\ Grant\\ Writing|Draft\\ Sewing\\ Circle|Cancelled\\ Tax\\ Help\\ Prep|Internal\\ Grant\\ Review\\ Circle|Test\\ Tool\\ Safety\\ Lab|Training\\ Volunteer\\ Orientation|Private\\ Sponsor\\ Podcast\\ Night|Old\\ Autumn\\ Budget\\ Clinic|Retired\\ Repair\\ Bench\\ Demo|Inactive\\ Food\\ Policy\\ Forum|Bike\\ Tune\\-Up\\ Basics|Native\\ Plant\\ Balcony\\ Planters|Tenant\\ Rights\\ Paperwork\\ Help|Digital\\ Privacy\\ Walkthrough|Community\\ Mediation\\ Basics)\\b[\\s\\S]{0,120}\\b(excluded|exclude|filtered out|not selected|not featured|ineligible|below cutoff|blocked)\\b"
+      ],
+      "evaluation_role": "negative_only"
+    },
+    {
+      "id": "eligibility_exclusions",
+      "description": "Candidates failing status, window, eligibility, threshold, readiness, rights, or setup rules are not final selections.",
+      "source": "env/workshop_recommendations.sqlite + env/recommendation_rules.json + env/join_notes.md",
+      "importance": "major",
+      "expected_value": [
+        "Archived Resume Night",
+        "Staff Training Facilitation Lab",
+        "Uninsured Tool Share Demo",
+        "Old Summer Seed Saving",
+        "Tiny Class Robotics",
+        "Long All-Day Grant Writing",
+        "Draft Sewing Circle",
+        "Cancelled Tax Help Prep",
+        "Internal Grant Review Circle",
+        "Test Tool Safety Lab",
+        "Training Volunteer Orientation",
+        "Private Sponsor Podcast Night",
+        "Old Autumn Budget Clinic",
+        "Retired Repair Bench Demo",
+        "Inactive Food Policy Forum"
+      ],
+      "canonical_answer": "Rows failing eligibility filters are excluded before ranking.",
+      "semantic_acceptance": "No eligibility-failed candidate should be promoted as selected.",
+      "must_not_appear_in_image": true,
+      "forbidden_patterns": [
+        "Archived\\ Resume\\ Night",
+        "Staff\\ Training\\ Facilitation\\ Lab",
+        "Uninsured\\ Tool\\ Share\\ Demo",
+        "Old\\ Summer\\ Seed\\ Saving",
+        "Tiny\\ Class\\ Robotics",
+        "Long\\ All\\-Day\\ Grant\\ Writing",
+        "Draft\\ Sewing\\ Circle",
+        "Cancelled\\ Tax\\ Help\\ Prep",
+        "Internal\\ Grant\\ Review\\ Circle",
+        "Test\\ Tool\\ Safety\\ Lab",
+        "Training\\ Volunteer\\ Orientation",
+        "Private\\ Sponsor\\ Podcast\\ Night",
+        "Old\\ Autumn\\ Budget\\ Clinic",
+        "Retired\\ Repair\\ Bench\\ Demo",
+        "Inactive\\ Food\\ Policy\\ Forum"
+      ],
+      "evaluation_role": "negative_only"
+    },
+    {
+      "id": "group_cap_exclusions",
+      "description": "Eligible candidates blocked by the category_label group limit are not final selections.",
+      "source": "env/workshop_recommendations.sqlite + env/recommendation_rules.json + env/join_notes.md",
+      "importance": "major",
+      "expected_value": [
+        "Bike Tune-Up Basics",
+        "Native Plant Balcony Planters"
+      ],
+      "canonical_answer": "Eligible rows that exceed the category_label cap are excluded after ranking.",
+      "semantic_acceptance": "No group-cap-blocked candidate should be promoted as selected.",
+      "must_not_appear_in_image": true,
+      "forbidden_patterns": [
+        "Bike\\ Tune\\-Up\\ Basics",
+        "Native\\ Plant\\ Balcony\\ Planters"
+      ],
+      "evaluation_role": "negative_only"
+    },
+    {
+      "id": "eligible_below_cutoff",
+      "description": "Eligible candidates below the final top-N cutoff are not final selections.",
+      "source": "env/workshop_recommendations.sqlite + env/recommendation_rules.json + env/join_notes.md",
+      "importance": "major",
+      "expected_value": [
+        "Tenant Rights Paperwork Help",
+        "Digital Privacy Walkthrough",
+        "Community Mediation Basics",
+        "Food Co-op Starter Session",
+        "Public Art Sketch Jam"
+      ],
+      "canonical_answer": "Eligible but lower-ranked rows remain unfeatured because they fall below the selected top-N after group limits.",
+      "semantic_acceptance": "Below-cutoff candidates should not be promoted as final selections.",
+      "must_not_appear_in_image": true,
+      "forbidden_patterns": [
+        "Tenant\\ Rights\\ Paperwork\\ Help",
+        "Digital\\ Privacy\\ Walkthrough",
+        "Community\\ Mediation\\ Basics",
+        "Food\\ Co\\-op\\ Starter\\ Session",
+        "Public\\ Art\\ Sketch\\ Jam"
+      ],
+      "evaluation_role": "negative_only"
+    }
+  ],
+  "calculation_notes": "Independent calculation: read workshop_recommendations.sqlite and recommendation_rules.json. Apply mappings [{'table': 'category_limits', 'source_field': 'category_code', 'code_field': 'category_code', 'label_field': 'category_label', 'target_field': 'category_label'}, {'table': 'category_limits', 'source_field': 'category_code', 'code_field': 'category_code', 'label_field': 'eligible_category', 'target_field': 'eligible_category'}, {'table': 'district_mapping', 'source_field': 'district_code', 'code_field': 'district_code', 'label_field': 'district_name', 'target_field': 'district_name'}] from support tables/sheets before evaluating rules and display values. Filter rows with equals={'status': 'published', 'term': 'winter_2027', 'eligible_category': 1}, in={}, gt={}, gte={'community_score': 82, 'seat_capacity': 18}, lte={'duration_minutes': 60, 'setup_complexity': 3}, bool_true={'public_signup': True, 'insurance_ok': True}. Sort eligible rows by [{'field': 'community_score', 'direction': 'desc'}, {'field': 'seat_capacity', 'direction': 'desc'}, {'field': 'duration_minutes', 'direction': 'asc'}, {'field': 'name', 'direction': 'asc'}]. No-cap top 5 IDs would be W951, W952, W953, W954, W955. Apply group cap category_label<=1 while scanning the ranked list, then select top 5. Eligible ranked order is W951, W952, W953, W954, W955, W956, W957, W958, W965, W966, W970, W969. Selected IDs are W951, W952, W953, W955, W957. Group-cap blocked IDs are W954, W956. Eligible below-cutoff IDs are W958, W965, W966, W970, W969. Exclude eligibility-failed IDs W959, W960, W961, W962, W963, W964, W967, W968, W971, W972, W973, W974, W975, W976, W977; also exclude group-cap-blocked and below-cutoff eligible rows from final featured selections."
+}

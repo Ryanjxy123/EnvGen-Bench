@@ -1,0 +1,246 @@
+{
+  "case_id": "data_selection_007",
+  "task_type": "data_selection",
+  "facts": [
+    {
+      "id": "selected_objects",
+      "description": "Final selected objects after all eligibility filters, ranking rules, optional group limits, and top-N cutoff.",
+      "source": "env/cooling_sites.csv + env/activation_rules.json + env/operations_notes.md",
+      "importance": "critical",
+      "expected_value": [
+        "Riverside Cooling Library",
+        "Maple Senior Hall",
+        "Civic Dome Annex",
+        "Bayview Recreation Room",
+        "Hillcrest Learning Hub"
+      ],
+      "canonical_answer": {
+        "selected_ids_reference_only": [
+          "C601",
+          "C602",
+          "C603",
+          "C604",
+          "C605"
+        ],
+        "selected_names": [
+          "Riverside Cooling Library",
+          "Maple Senior Hall",
+          "Civic Dome Annex",
+          "Bayview Recreation Room",
+          "Hillcrest Learning Hub"
+        ]
+      },
+      "semantic_acceptance": "Accept if exactly these selected objects are featured; IDs may be omitted but names must be identifiable.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "ranking_order",
+      "description": "Selected objects must appear in rule-based ranking order after tie-breaks and any group-limit application.",
+      "source": "env/cooling_sites.csv + env/activation_rules.json + env/operations_notes.md",
+      "importance": "critical",
+      "expected_value": "Riverside Cooling Library before Maple Senior Hall before Civic Dome Annex before Bayview Recreation Room before Hillcrest Learning Hub",
+      "canonical_answer": [
+        "1. Riverside Cooling Library",
+        "2. Maple Senior Hall",
+        "3. Civic Dome Annex",
+        "4. Bayview Recreation Room",
+        "5. Hillcrest Learning Hub"
+      ],
+      "semantic_acceptance": "Accept left-to-right, top-to-bottom, numbered, or hero-to-secondary order if it preserves the expected ranking.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "selected_object_display_values",
+      "description": "Each selected object must show the correct name and required display fields.",
+      "source": "env/cooling_sites.csv",
+      "importance": "critical",
+      "expected_value": [
+        "Riverside Cooling Library, neighborhood: Riverside, cooling capacity: 118, opening: 09:00",
+        "Maple Senior Hall, neighborhood: Maple, cooling capacity: 92, opening: 10:00",
+        "Civic Dome Annex, neighborhood: Civic, cooling capacity: 130, opening: 08:30",
+        "Bayview Recreation Room, neighborhood: Bayview, cooling capacity: 86, opening: 09:30",
+        "Hillcrest Learning Hub, neighborhood: Hillcrest, cooling capacity: 78, opening: 10:30"
+      ],
+      "canonical_answer": {
+        "Riverside Cooling Library": {
+          "neighborhood": "Riverside",
+          "cooling_capacity": 118,
+          "opening_time": "09:00"
+        },
+        "Maple Senior Hall": {
+          "neighborhood": "Maple",
+          "cooling_capacity": 92,
+          "opening_time": "10:00"
+        },
+        "Civic Dome Annex": {
+          "neighborhood": "Civic",
+          "cooling_capacity": 130,
+          "opening_time": "08:30"
+        },
+        "Bayview Recreation Room": {
+          "neighborhood": "Bayview",
+          "cooling_capacity": 86,
+          "opening_time": "09:30"
+        },
+        "Hillcrest Learning Hub": {
+          "neighborhood": "Hillcrest",
+          "cooling_capacity": 78,
+          "opening_time": "10:30"
+        }
+      },
+      "semantic_acceptance": "Accept equivalent formatting when display values are attached to the correct selected names.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "group_limit_compliance",
+      "description": "The final selection obeys the at-most-2-per-zone group limit after sorting.",
+      "source": "env/cooling_sites.csv + env/activation_rules.json + env/operations_notes.md",
+      "importance": "critical",
+      "expected_value": "Central: 1, North: 2, South: 1, West: 1",
+      "canonical_answer": "Selected group counts are Central: 1, North: 2, South: 1, West: 1; no zone exceeds 2.",
+      "semantic_acceptance": "Accept if the image does not add extra featured objects that would violate the group cap.",
+      "must_appear_in_image": false,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "unselected_objects_not_featured",
+      "description": "Filtered-out, group-cap-blocked where applicable, and below-cutoff eligible candidates must not appear as final featured selections.",
+      "source": "env/cooling_sites.csv + env/activation_rules.json + env/operations_notes.md",
+      "importance": "critical",
+      "expected_value": [
+        "Harbor Drill Shelter",
+        "Closed Train Hall",
+        "Old Heatwave Tent",
+        "Pop-up Fan Depot",
+        "Basement Meeting Room",
+        "Stair-only Clubhouse",
+        "Generator Pending Gym",
+        "Inspection Hold Center",
+        "Costly Convention Hall",
+        "Low Risk Reading Room",
+        "Test Cooling Pod",
+        "Draft Wellness Room",
+        "Internal Staff Lounge",
+        "Archived Civic Basement",
+        "North Pier Field House",
+        "Sunset School Gym",
+        "Market Street Atrium",
+        "Lagoon Arts Lobby",
+        "Tiny Chapel Hall"
+      ],
+      "canonical_answer": "Only the selected_objects list should be featured as final selections.",
+      "semantic_acceptance": "The image may mention exclusion context, but must not promote any unselected object as selected.",
+      "must_not_appear_in_image": true,
+      "forbidden_patterns": [
+        "Harbor\\ Drill\\ Shelter",
+        "Closed\\ Train\\ Hall",
+        "Old\\ Heatwave\\ Tent",
+        "Pop\\-up\\ Fan\\ Depot",
+        "Basement\\ Meeting\\ Room",
+        "Stair\\-only\\ Clubhouse",
+        "Generator\\ Pending\\ Gym",
+        "Inspection\\ Hold\\ Center",
+        "Costly\\ Convention\\ Hall",
+        "Low\\ Risk\\ Reading\\ Room",
+        "Test\\ Cooling\\ Pod",
+        "Draft\\ Wellness\\ Room",
+        "Internal\\ Staff\\ Lounge",
+        "Archived\\ Civic\\ Basement",
+        "North\\ Pier\\ Field\\ House",
+        "Sunset\\ School\\ Gym",
+        "Market\\ Street\\ Atrium",
+        "Lagoon\\ Arts\\ Lobby",
+        "Tiny\\ Chapel\\ Hall"
+      ],
+      "allowed_patterns": [
+        "\\b(excluded|exclude|filtered out|not selected|not featured|ineligible|below cutoff|blocked)\\b[\\s\\S]{0,120}\\b(Harbor\\ Drill\\ Shelter|Closed\\ Train\\ Hall|Old\\ Heatwave\\ Tent|Pop\\-up\\ Fan\\ Depot|Basement\\ Meeting\\ Room|Stair\\-only\\ Clubhouse|Generator\\ Pending\\ Gym|Inspection\\ Hold\\ Center|Costly\\ Convention\\ Hall|Low\\ Risk\\ Reading\\ Room|Test\\ Cooling\\ Pod|Draft\\ Wellness\\ Room|Internal\\ Staff\\ Lounge|Archived\\ Civic\\ Basement|North\\ Pier\\ Field\\ House|Sunset\\ School\\ Gym|Market\\ Street\\ Atrium|Lagoon\\ Arts\\ Lobby|Tiny\\ Chapel\\ Hall)\\b",
+        "\\b(Harbor\\ Drill\\ Shelter|Closed\\ Train\\ Hall|Old\\ Heatwave\\ Tent|Pop\\-up\\ Fan\\ Depot|Basement\\ Meeting\\ Room|Stair\\-only\\ Clubhouse|Generator\\ Pending\\ Gym|Inspection\\ Hold\\ Center|Costly\\ Convention\\ Hall|Low\\ Risk\\ Reading\\ Room|Test\\ Cooling\\ Pod|Draft\\ Wellness\\ Room|Internal\\ Staff\\ Lounge|Archived\\ Civic\\ Basement|North\\ Pier\\ Field\\ House|Sunset\\ School\\ Gym|Market\\ Street\\ Atrium|Lagoon\\ Arts\\ Lobby|Tiny\\ Chapel\\ Hall)\\b[\\s\\S]{0,120}\\b(excluded|exclude|filtered out|not selected|not featured|ineligible|below cutoff|blocked)\\b"
+      ],
+      "evaluation_role": "negative_only"
+    },
+    {
+      "id": "eligibility_exclusions",
+      "description": "Candidates failing status, window, eligibility, threshold, readiness, rights, or setup rules are not final selections.",
+      "source": "env/cooling_sites.csv + env/activation_rules.json + env/operations_notes.md",
+      "importance": "major",
+      "expected_value": [
+        "Harbor Drill Shelter",
+        "Closed Train Hall",
+        "Old Heatwave Tent",
+        "Pop-up Fan Depot",
+        "Basement Meeting Room",
+        "Stair-only Clubhouse",
+        "Generator Pending Gym",
+        "Inspection Hold Center",
+        "Costly Convention Hall",
+        "Low Risk Reading Room",
+        "Test Cooling Pod",
+        "Draft Wellness Room",
+        "Internal Staff Lounge",
+        "Archived Civic Basement"
+      ],
+      "canonical_answer": "Rows failing eligibility filters are excluded before ranking.",
+      "semantic_acceptance": "No eligibility-failed candidate should be promoted as selected.",
+      "must_not_appear_in_image": true,
+      "forbidden_patterns": [
+        "Harbor\\ Drill\\ Shelter",
+        "Closed\\ Train\\ Hall",
+        "Old\\ Heatwave\\ Tent",
+        "Pop\\-up\\ Fan\\ Depot",
+        "Basement\\ Meeting\\ Room",
+        "Stair\\-only\\ Clubhouse",
+        "Generator\\ Pending\\ Gym",
+        "Inspection\\ Hold\\ Center",
+        "Costly\\ Convention\\ Hall",
+        "Low\\ Risk\\ Reading\\ Room",
+        "Test\\ Cooling\\ Pod",
+        "Draft\\ Wellness\\ Room",
+        "Internal\\ Staff\\ Lounge",
+        "Archived\\ Civic\\ Basement"
+      ],
+      "evaluation_role": "negative_only"
+    },
+    {
+      "id": "group_cap_exclusions",
+      "description": "Eligible candidates blocked by the zone group limit are not final selections.",
+      "source": "env/cooling_sites.csv + env/activation_rules.json + env/operations_notes.md",
+      "importance": "major",
+      "expected_value": [
+        "North Pier Field House"
+      ],
+      "canonical_answer": "Eligible rows that exceed the zone cap are excluded after ranking.",
+      "semantic_acceptance": "No group-cap-blocked candidate should be promoted as selected.",
+      "must_not_appear_in_image": true,
+      "forbidden_patterns": [
+        "North\\ Pier\\ Field\\ House"
+      ],
+      "evaluation_role": "negative_only"
+    },
+    {
+      "id": "eligible_below_cutoff",
+      "description": "Eligible candidates below the final top-N cutoff are not final selections.",
+      "source": "env/cooling_sites.csv + env/activation_rules.json + env/operations_notes.md",
+      "importance": "major",
+      "expected_value": [
+        "Sunset School Gym",
+        "Market Street Atrium",
+        "Lagoon Arts Lobby",
+        "Tiny Chapel Hall"
+      ],
+      "canonical_answer": "Eligible but lower-ranked rows remain unfeatured because they fall below the selected top-N after group limits.",
+      "semantic_acceptance": "Below-cutoff candidates should not be promoted as final selections.",
+      "must_not_appear_in_image": true,
+      "forbidden_patterns": [
+        "Sunset\\ School\\ Gym",
+        "Market\\ Street\\ Atrium",
+        "Lagoon\\ Arts\\ Lobby",
+        "Tiny\\ Chapel\\ Hall"
+      ],
+      "evaluation_role": "negative_only"
+    }
+  ],
+  "calculation_notes": "Independent calculation: read cooling_sites.csv and activation_rules.json. Filter rows with equals={'status': 'ready', 'event_window': 'heatwave_july_2026', 'accessibility': 'yes', 'backup_power': 'yes', 'inspection': 'pass'}, in={'site_type': ['library', 'community_center', 'school_gym']}, gt={'cooling_capacity': 60, 'heat_risk_score': 80}, gte={}, lte={'setup_cost_usd': 9000}, bool_true={}. Sort eligible rows by [{'field': 'heat_risk_score', 'direction': 'desc'}, {'field': 'cooling_capacity', 'direction': 'desc'}, {'field': 'transit_score', 'direction': 'desc'}, {'field': 'setup_cost_usd', 'direction': 'asc'}, {'field': 'name', 'direction': 'asc'}]. Apply group cap zone<=2 while scanning the ranked list, then select top 5. Eligible ranked order is C601, C602, C603, C604, C605, C606, C607, C608, C609, C622. Selected IDs are C601, C602, C603, C604, C605. Group-cap blocked IDs are C606. Eligible below-cutoff IDs are C607, C608, C609, C622. Exclude eligibility-failed IDs C610, C611, C612, C613, C614, C615, C616, C617, C618, C619, C620, C621, C623, C624; also exclude group-cap-blocked and below-cutoff eligible rows from final featured selections."
+}

@@ -1,0 +1,224 @@
+{
+  "case_id": "data_selection_008",
+  "task_type": "data_selection",
+  "facts": [
+    {
+      "id": "selected_objects",
+      "description": "Final selected objects after all eligibility filters, ranking rules, optional group limits, and top-N cutoff.",
+      "source": "env/clinic_route.sqlite + env/route_rules.json + env/route_rules.sql",
+      "importance": "critical",
+      "expected_value": [
+        "Cedar Plaza Clinic Stop",
+        "Juniper School Lot",
+        "Canal Market Stop",
+        "Oak Towers Courtyard"
+      ],
+      "canonical_answer": {
+        "selected_ids_reference_only": [
+          "M701",
+          "M702",
+          "M703",
+          "M704"
+        ],
+        "selected_names": [
+          "Cedar Plaza Clinic Stop",
+          "Juniper School Lot",
+          "Canal Market Stop",
+          "Oak Towers Courtyard"
+        ]
+      },
+      "semantic_acceptance": "Accept if exactly these selected objects are featured; IDs may be omitted but names must be identifiable.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "ranking_order",
+      "description": "Selected objects must appear in rule-based ranking order after tie-breaks and any group-limit application.",
+      "source": "env/clinic_route.sqlite + env/route_rules.json + env/route_rules.sql",
+      "importance": "critical",
+      "expected_value": "Cedar Plaza Clinic Stop before Juniper School Lot before Canal Market Stop before Oak Towers Courtyard",
+      "canonical_answer": [
+        "1. Cedar Plaza Clinic Stop",
+        "2. Juniper School Lot",
+        "3. Canal Market Stop",
+        "4. Oak Towers Courtyard"
+      ],
+      "semantic_acceptance": "Accept left-to-right, top-to-bottom, numbered, or hero-to-secondary order if it preserves the expected ranking.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "selected_object_display_values",
+      "description": "Each selected object must show the correct name and required display fields.",
+      "source": "env/clinic_route.sqlite",
+      "importance": "critical",
+      "expected_value": [
+        "Cedar Plaza Clinic Stop, arrival: 08:30, daily capacity: 68, lane: pediatric",
+        "Juniper School Lot, arrival: 09:45, daily capacity: 74, lane: family",
+        "Canal Market Stop, arrival: 11:00, daily capacity: 61, lane: adult",
+        "Oak Towers Courtyard, arrival: 12:30, daily capacity: 52, lane: family"
+      ],
+      "canonical_answer": {
+        "Cedar Plaza Clinic Stop": {
+          "arrival_slot": "08:30",
+          "capacity": 68,
+          "service_lane": "pediatric"
+        },
+        "Juniper School Lot": {
+          "arrival_slot": "09:45",
+          "capacity": 74,
+          "service_lane": "family"
+        },
+        "Canal Market Stop": {
+          "arrival_slot": "11:00",
+          "capacity": 61,
+          "service_lane": "adult"
+        },
+        "Oak Towers Courtyard": {
+          "arrival_slot": "12:30",
+          "capacity": 52,
+          "service_lane": "family"
+        }
+      },
+      "semantic_acceptance": "Accept equivalent formatting when display values are attached to the correct selected names.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "group_limit_compliance",
+      "description": "The final selection obeys the at-most-1-per-district group limit after sorting.",
+      "source": "env/clinic_route.sqlite + env/route_rules.json + env/route_rules.sql",
+      "importance": "critical",
+      "expected_value": "D1: 1, D2: 1, D3: 1, D4: 1",
+      "canonical_answer": "Selected group counts are D1: 1, D2: 1, D3: 1, D4: 1; no district exceeds 1.",
+      "semantic_acceptance": "Accept if the image does not add extra featured objects that would violate the group cap.",
+      "must_appear_in_image": false,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "unselected_objects_not_featured",
+      "description": "Filtered-out, group-cap-blocked where applicable, and below-cutoff eligible candidates must not appear as final featured selections.",
+      "source": "env/clinic_route.sqlite + env/route_rules.json + env/route_rules.sql",
+      "importance": "critical",
+      "expected_value": [
+        "Archive Mall Stop",
+        "Private Employer Bay",
+        "Cold Chain Pending Church",
+        "Stair Access Hall",
+        "Low Capacity Pantry",
+        "Far North Depot",
+        "Old Outreach Stop",
+        "Draft Wellness Tent",
+        "Priority Threshold Gym",
+        "Cancelled Library Stop",
+        "Training Route Bay",
+        "Beacon Park Loop",
+        "Pine Transit Bay",
+        "Elm Health Desk",
+        "Harbor Family Room",
+        "Maple Towers Lobby"
+      ],
+      "canonical_answer": "Only the selected_objects list should be featured as final selections.",
+      "semantic_acceptance": "The image may mention exclusion context, but must not promote any unselected object as selected.",
+      "must_not_appear_in_image": true,
+      "forbidden_patterns": [
+        "Archive\\ Mall\\ Stop",
+        "Private\\ Employer\\ Bay",
+        "Cold\\ Chain\\ Pending\\ Church",
+        "Stair\\ Access\\ Hall",
+        "Low\\ Capacity\\ Pantry",
+        "Far\\ North\\ Depot",
+        "Old\\ Outreach\\ Stop",
+        "Draft\\ Wellness\\ Tent",
+        "Priority\\ Threshold\\ Gym",
+        "Cancelled\\ Library\\ Stop",
+        "Training\\ Route\\ Bay",
+        "Beacon\\ Park\\ Loop",
+        "Pine\\ Transit\\ Bay",
+        "Elm\\ Health\\ Desk",
+        "Harbor\\ Family\\ Room",
+        "Maple\\ Towers\\ Lobby"
+      ],
+      "allowed_patterns": [
+        "\\b(excluded|exclude|filtered out|not selected|not featured|ineligible|below cutoff|blocked)\\b[\\s\\S]{0,120}\\b(Archive\\ Mall\\ Stop|Private\\ Employer\\ Bay|Cold\\ Chain\\ Pending\\ Church|Stair\\ Access\\ Hall|Low\\ Capacity\\ Pantry|Far\\ North\\ Depot|Old\\ Outreach\\ Stop|Draft\\ Wellness\\ Tent|Priority\\ Threshold\\ Gym|Cancelled\\ Library\\ Stop|Training\\ Route\\ Bay|Beacon\\ Park\\ Loop|Pine\\ Transit\\ Bay|Elm\\ Health\\ Desk|Harbor\\ Family\\ Room|Maple\\ Towers\\ Lobby)\\b",
+        "\\b(Archive\\ Mall\\ Stop|Private\\ Employer\\ Bay|Cold\\ Chain\\ Pending\\ Church|Stair\\ Access\\ Hall|Low\\ Capacity\\ Pantry|Far\\ North\\ Depot|Old\\ Outreach\\ Stop|Draft\\ Wellness\\ Tent|Priority\\ Threshold\\ Gym|Cancelled\\ Library\\ Stop|Training\\ Route\\ Bay|Beacon\\ Park\\ Loop|Pine\\ Transit\\ Bay|Elm\\ Health\\ Desk|Harbor\\ Family\\ Room|Maple\\ Towers\\ Lobby)\\b[\\s\\S]{0,120}\\b(excluded|exclude|filtered out|not selected|not featured|ineligible|below cutoff|blocked)\\b"
+      ],
+      "evaluation_role": "negative_only"
+    },
+    {
+      "id": "eligibility_exclusions",
+      "description": "Candidates failing status, window, eligibility, threshold, readiness, rights, or setup rules are not final selections.",
+      "source": "env/clinic_route.sqlite + env/route_rules.json + env/route_rules.sql",
+      "importance": "major",
+      "expected_value": [
+        "Archive Mall Stop",
+        "Private Employer Bay",
+        "Cold Chain Pending Church",
+        "Stair Access Hall",
+        "Low Capacity Pantry",
+        "Far North Depot",
+        "Old Outreach Stop",
+        "Draft Wellness Tent",
+        "Priority Threshold Gym",
+        "Cancelled Library Stop",
+        "Training Route Bay"
+      ],
+      "canonical_answer": "Rows failing eligibility filters are excluded before ranking.",
+      "semantic_acceptance": "No eligibility-failed candidate should be promoted as selected.",
+      "must_not_appear_in_image": true,
+      "forbidden_patterns": [
+        "Archive\\ Mall\\ Stop",
+        "Private\\ Employer\\ Bay",
+        "Cold\\ Chain\\ Pending\\ Church",
+        "Stair\\ Access\\ Hall",
+        "Low\\ Capacity\\ Pantry",
+        "Far\\ North\\ Depot",
+        "Old\\ Outreach\\ Stop",
+        "Draft\\ Wellness\\ Tent",
+        "Priority\\ Threshold\\ Gym",
+        "Cancelled\\ Library\\ Stop",
+        "Training\\ Route\\ Bay"
+      ],
+      "evaluation_role": "negative_only"
+    },
+    {
+      "id": "group_cap_exclusions",
+      "description": "Eligible candidates blocked by the district group limit are not final selections.",
+      "source": "env/clinic_route.sqlite + env/route_rules.json + env/route_rules.sql",
+      "importance": "major",
+      "expected_value": [
+        "Beacon Park Loop",
+        "Pine Transit Bay",
+        "Elm Health Desk",
+        "Harbor Family Room"
+      ],
+      "canonical_answer": "Eligible rows that exceed the district cap are excluded after ranking.",
+      "semantic_acceptance": "No group-cap-blocked candidate should be promoted as selected.",
+      "must_not_appear_in_image": true,
+      "forbidden_patterns": [
+        "Beacon\\ Park\\ Loop",
+        "Pine\\ Transit\\ Bay",
+        "Elm\\ Health\\ Desk",
+        "Harbor\\ Family\\ Room"
+      ],
+      "evaluation_role": "negative_only"
+    },
+    {
+      "id": "eligible_below_cutoff",
+      "description": "Eligible candidates below the final top-N cutoff are not final selections.",
+      "source": "env/clinic_route.sqlite + env/route_rules.json + env/route_rules.sql",
+      "importance": "major",
+      "expected_value": [
+        "Maple Towers Lobby"
+      ],
+      "canonical_answer": "Eligible but lower-ranked rows remain unfeatured because they fall below the selected top-N after group limits.",
+      "semantic_acceptance": "Below-cutoff candidates should not be promoted as final selections.",
+      "must_not_appear_in_image": true,
+      "forbidden_patterns": [
+        "Maple\\ Towers\\ Lobby"
+      ],
+      "evaluation_role": "negative_only"
+    }
+  ],
+  "calculation_notes": "Independent calculation: read clinic_route.sqlite and route_rules.json. Filter rows with equals={'status': 'active', 'service_window': 'outreach_week_2026', 'audience': 'public'}, in={}, gt={'priority_score': 82}, gte={'capacity': 40}, lte={'distance_miles': 12}, bool_true={'cold_chain_ready': True, 'accessible': True}. Sort eligible rows by [{'field': 'priority_score', 'direction': 'desc'}, {'field': 'no_show_risk', 'direction': 'asc'}, {'field': 'distance_miles', 'direction': 'asc'}, {'field': 'name', 'direction': 'asc'}]. Apply group cap district<=1 while scanning the ranked list, then select top 4. Eligible ranked order is M701, M702, M703, M704, M705, M706, M707, M708, M720. Selected IDs are M701, M702, M703, M704. Group-cap blocked IDs are M705, M706, M707, M708. Eligible below-cutoff IDs are M720. Exclude eligibility-failed IDs M709, M710, M711, M712, M713, M714, M715, M716, M717, M718, M719; also exclude group-cap-blocked and below-cutoff eligible rows from final featured selections."
+}

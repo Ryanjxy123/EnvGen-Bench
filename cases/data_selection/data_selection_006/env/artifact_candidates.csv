@@ -1,0 +1,23 @@
+artifact_id,name,collection,gallery,status,exhibit_window,loan_ready,rights_cleared,narrative_score,condition_risk,install_minutes,fragility_level,era_label
+A801,Quilted Harbor Map,Textiles,North Gallery,approved,spring_2027,yes,yes,96,91,32,2,1880s
+A802,Brass Transit Token Set,Civic Objects,Transit Alcove,approved,spring_2027,yes,yes,94,88,24,1,1910s
+A803,Flood Ledger Pages,Archives,River Room,approved,spring_2027,yes,yes,93,95,28,3,1937
+A804,Canal Workers Banner,Textiles,North Gallery,approved,spring_2027,yes,yes,92,90,35,2,1904
+A805,Neighborhood Radio Mic,Media,Sound Nook,approved,spring_2027,yes,yes,91,86,18,1,1968
+A806,Market Stall Ledger,Archives,River Room,approved,spring_2027,yes,yes,90,84,20,2,1922
+A807,Ceramic Ferry Tile,Civic Objects,Transit Alcove,approved,spring_2027,yes,yes,89,89,26,2,1895
+A808,Oral History Phone,Media,Sound Nook,approved,spring_2027,yes,yes,88,87,22,1,1974
+A809,Draft Streetcar Poster,Prints,Print Wall,draft,spring_2027,yes,yes,99,92,14,1,1920s
+A810,Private Donor Medal,Civic Objects,Transit Alcove,approved,spring_2027,no,yes,97,91,10,1,1901
+A811,Uncleared Protest Sign,Textiles,North Gallery,approved,spring_2027,yes,no,95,93,12,2,1970
+A812,Winter Loan Lantern,Civic Objects,Transit Alcove,approved,winter_2026,yes,yes,96,94,16,1,1888
+A813,Fragile Glass Plate,Archives,River Room,approved,spring_2027,yes,yes,94,99,45,5,1890
+A814,Oversize Canal Gate,Civic Objects,Transit Alcove,approved,spring_2027,yes,yes,93,92,75,2,1875
+A815,Archive Test Label,Prints,Print Wall,test,spring_2027,yes,yes,94,85,9,1,1900
+A816,Internal Staff Badge,Civic Objects,Transit Alcove,internal,spring_2027,yes,yes,90,90,11,1,1950
+A817,Low Score Handbill,Prints,Print Wall,approved,spring_2027,yes,yes,80,84,13,1,1912
+A818,Slow Install Clock,Civic Objects,Transit Alcove,approved,spring_2027,yes,yes,91,90,61,2,1884
+A819,Cancelled Photo Album,Archives,River Room,cancelled,spring_2027,yes,yes,95,93,18,2,1909
+A820,Archived Wharf Sketch,Prints,Print Wall,archived,spring_2027,yes,yes,92,86,12,1,1860
+A821,Dockworker Union Sash,Textiles,North Gallery,approved,spring_2027,yes,yes,91,89,29,2,1919
+A822,Youth Zine Cabinet,Prints,Print Wall,approved,spring_2027,yes,yes,86,83,17,1,1986

@@ -1,0 +1,309 @@
+{
+  "case_id": "data_selection_009",
+  "task_type": "data_selection",
+  "facts": [
+    {
+      "id": "selected_objects",
+      "description": "Final selected objects after all eligibility filters, ranking rules, optional group limits, and top-N cutoff.",
+      "source": "env/library_resources.xlsx + env/spotlight_rules.json + env/campaign_brief.md",
+      "importance": "critical",
+      "expected_value": [
+        "Rain Garden Starter Kit",
+        "Mango Languages Family Pass",
+        "Ukulele Lending Set",
+        "Night Sky Telescope",
+        "Local History Scan Station"
+      ],
+      "canonical_answer": {
+        "selected_ids_reference_only": [
+          "R901",
+          "R902",
+          "R903",
+          "R905",
+          "R906"
+        ],
+        "selected_names": [
+          "Rain Garden Starter Kit",
+          "Mango Languages Family Pass",
+          "Ukulele Lending Set",
+          "Night Sky Telescope",
+          "Local History Scan Station"
+        ]
+      },
+      "semantic_acceptance": "Accept if exactly these selected objects are featured; IDs may be omitted but names must be identifiable.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "ranking_order",
+      "description": "Selected objects must appear in rule-based ranking order after tie-breaks and any group-limit application.",
+      "source": "env/library_resources.xlsx + env/spotlight_rules.json + env/campaign_brief.md",
+      "importance": "critical",
+      "expected_value": "Rain Garden Starter Kit before Mango Languages Family Pass before Ukulele Lending Set before Night Sky Telescope before Local History Scan Station",
+      "canonical_answer": [
+        "1. Rain Garden Starter Kit",
+        "2. Mango Languages Family Pass",
+        "3. Ukulele Lending Set",
+        "4. Night Sky Telescope",
+        "5. Local History Scan Station"
+      ],
+      "semantic_acceptance": "Accept left-to-right, top-to-bottom, numbered, or hero-to-secondary order if it preserves the expected ranking.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "selected_object_display_values",
+      "description": "Each selected object must show the correct name and required display fields.",
+      "source": "env/library_resources.xlsx",
+      "importance": "critical",
+      "expected_value": [
+        "Rain Garden Starter Kit, category: Maker & Creativity, branch: North Branch, available units: 72",
+        "Mango Languages Family Pass, category: Digital Access, branch: East Branch, available units: 120",
+        "Ukulele Lending Set, category: Music Lending, branch: North Branch, available units: 32",
+        "Night Sky Telescope, category: STEM Discovery, branch: West Branch, available units: 18",
+        "Local History Scan Station, category: Local History, branch: East Branch, available units: 46"
+      ],
+      "canonical_answer": {
+        "Rain Garden Starter Kit": {
+          "category_label": "Maker & Creativity",
+          "branch_name": "North Branch",
+          "available_units": 72
+        },
+        "Mango Languages Family Pass": {
+          "category_label": "Digital Access",
+          "branch_name": "East Branch",
+          "available_units": 120
+        },
+        "Ukulele Lending Set": {
+          "category_label": "Music Lending",
+          "branch_name": "North Branch",
+          "available_units": 32
+        },
+        "Night Sky Telescope": {
+          "category_label": "STEM Discovery",
+          "branch_name": "West Branch",
+          "available_units": 18
+        },
+        "Local History Scan Station": {
+          "category_label": "Local History",
+          "branch_name": "East Branch",
+          "available_units": 46
+        }
+      },
+      "semantic_acceptance": "Accept equivalent formatting when display values are attached to the correct selected names.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "group_limit_compliance",
+      "description": "The final selection obeys the at-most-1-per-category_label group limit after sorting.",
+      "source": "env/library_resources.xlsx + env/spotlight_rules.json + env/campaign_brief.md",
+      "importance": "critical",
+      "expected_value": "Digital Access: 1, Local History: 1, Maker & Creativity: 1, Music Lending: 1, STEM Discovery: 1",
+      "canonical_answer": "Selected group counts are Digital Access: 1, Local History: 1, Maker & Creativity: 1, Music Lending: 1, STEM Discovery: 1; no category_label exceeds 1.",
+      "semantic_acceptance": "Accept if the image does not add extra featured objects that would violate the group cap.",
+      "must_appear_in_image": false,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "mapping_display_values",
+      "description": "Mapped display labels from support sheets or join tables must be shown instead of raw codes and attached to the correct selected objects.",
+      "source": "env/library_resources.xlsx + env/spotlight_rules.json + env/campaign_brief.md",
+      "importance": "critical",
+      "expected_value": [
+        "Rain Garden Starter Kit: category_code MAKER -> Maker & Creativity",
+        "Rain Garden Starter Kit: branch_code NORTH -> North Branch",
+        "Mango Languages Family Pass: category_code DIGITAL -> Digital Access",
+        "Mango Languages Family Pass: branch_code EAST -> East Branch",
+        "Ukulele Lending Set: category_code MUSIC -> Music Lending",
+        "Ukulele Lending Set: branch_code NORTH -> North Branch",
+        "Night Sky Telescope: category_code STEM -> STEM Discovery",
+        "Night Sky Telescope: branch_code WEST -> West Branch",
+        "Local History Scan Station: category_code ARCHIVE -> Local History",
+        "Local History Scan Station: branch_code EAST -> East Branch"
+      ],
+      "canonical_answer": {
+        "Rain Garden Starter Kit": {
+          "category_label": "Maker & Creativity",
+          "branch_name": "North Branch"
+        },
+        "Mango Languages Family Pass": {
+          "category_label": "Digital Access",
+          "branch_name": "East Branch"
+        },
+        "Ukulele Lending Set": {
+          "category_label": "Music Lending",
+          "branch_name": "North Branch"
+        },
+        "Night Sky Telescope": {
+          "category_label": "STEM Discovery",
+          "branch_name": "West Branch"
+        },
+        "Local History Scan Station": {
+          "category_label": "Local History",
+          "branch_name": "East Branch"
+        }
+      },
+      "semantic_acceptance": "Accept if mapped labels, not raw codes, are visibly bound to the correct selected names.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "unselected_objects_not_featured",
+      "description": "Filtered-out, group-cap-blocked where applicable, and below-cutoff eligible candidates must not appear as final featured selections.",
+      "source": "env/library_resources.xlsx + env/spotlight_rules.json + env/campaign_brief.md",
+      "importance": "critical",
+      "expected_value": [
+        "Archived Vinyl Sampler",
+        "Staff Training VR Kit",
+        "Uncleared Film Pass",
+        "Summer Old Reading Bag",
+        "Low Stock Craft Box",
+        "Fragile Print Portfolio",
+        "Draft Coding Robot",
+        "Cancelled Museum Pass",
+        "Internal Genealogy Tablet",
+        "Test Media Editing Laptop",
+        "Training Storytime Puppet Kit",
+        "Private Donor Room Pass",
+        "Old Winter Reading Badge",
+        "Retired Vinyl Listening Dock",
+        "Demo Family Tablet Stand",
+        "Inactive Coding Club Bot",
+        "Private Local Map Portfolio",
+        "Seed Library Bundle",
+        "Board Game Discovery Crate",
+        "Mobile Hotspot Pack",
+        "Puzzle Exchange Cart",
+        "Podcast Booth Voucher",
+        "Zine Swap Starter Box",
+        "Language Conversation Cards"
+      ],
+      "canonical_answer": "Only the selected_objects list should be featured as final selections.",
+      "semantic_acceptance": "The image may mention exclusion context, but must not promote any unselected object as selected.",
+      "must_not_appear_in_image": true,
+      "forbidden_patterns": [
+        "Archived\\ Vinyl\\ Sampler",
+        "Staff\\ Training\\ VR\\ Kit",
+        "Uncleared\\ Film\\ Pass",
+        "Summer\\ Old\\ Reading\\ Bag",
+        "Low\\ Stock\\ Craft\\ Box",
+        "Fragile\\ Print\\ Portfolio",
+        "Draft\\ Coding\\ Robot",
+        "Cancelled\\ Museum\\ Pass",
+        "Internal\\ Genealogy\\ Tablet",
+        "Test\\ Media\\ Editing\\ Laptop",
+        "Training\\ Storytime\\ Puppet\\ Kit",
+        "Private\\ Donor\\ Room\\ Pass",
+        "Old\\ Winter\\ Reading\\ Badge",
+        "Retired\\ Vinyl\\ Listening\\ Dock",
+        "Demo\\ Family\\ Tablet\\ Stand",
+        "Inactive\\ Coding\\ Club\\ Bot",
+        "Private\\ Local\\ Map\\ Portfolio",
+        "Seed\\ Library\\ Bundle",
+        "Board\\ Game\\ Discovery\\ Crate",
+        "Mobile\\ Hotspot\\ Pack",
+        "Puzzle\\ Exchange\\ Cart",
+        "Podcast\\ Booth\\ Voucher",
+        "Zine\\ Swap\\ Starter\\ Box",
+        "Language\\ Conversation\\ Cards"
+      ],
+      "allowed_patterns": [
+        "\\b(excluded|exclude|filtered out|not selected|not featured|ineligible|below cutoff|blocked)\\b[\\s\\S]{0,120}\\b(Archived\\ Vinyl\\ Sampler|Staff\\ Training\\ VR\\ Kit|Uncleared\\ Film\\ Pass|Summer\\ Old\\ Reading\\ Bag|Low\\ Stock\\ Craft\\ Box|Fragile\\ Print\\ Portfolio|Draft\\ Coding\\ Robot|Cancelled\\ Museum\\ Pass|Internal\\ Genealogy\\ Tablet|Test\\ Media\\ Editing\\ Laptop|Training\\ Storytime\\ Puppet\\ Kit|Private\\ Donor\\ Room\\ Pass|Old\\ Winter\\ Reading\\ Badge|Retired\\ Vinyl\\ Listening\\ Dock|Demo\\ Family\\ Tablet\\ Stand|Inactive\\ Coding\\ Club\\ Bot|Private\\ Local\\ Map\\ Portfolio|Seed\\ Library\\ Bundle|Board\\ Game\\ Discovery\\ Crate|Mobile\\ Hotspot\\ Pack)\\b",
+        "\\b(Archived\\ Vinyl\\ Sampler|Staff\\ Training\\ VR\\ Kit|Uncleared\\ Film\\ Pass|Summer\\ Old\\ Reading\\ Bag|Low\\ Stock\\ Craft\\ Box|Fragile\\ Print\\ Portfolio|Draft\\ Coding\\ Robot|Cancelled\\ Museum\\ Pass|Internal\\ Genealogy\\ Tablet|Test\\ Media\\ Editing\\ Laptop|Training\\ Storytime\\ Puppet\\ Kit|Private\\ Donor\\ Room\\ Pass|Old\\ Winter\\ Reading\\ Badge|Retired\\ Vinyl\\ Listening\\ Dock|Demo\\ Family\\ Tablet\\ Stand|Inactive\\ Coding\\ Club\\ Bot|Private\\ Local\\ Map\\ Portfolio|Seed\\ Library\\ Bundle|Board\\ Game\\ Discovery\\ Crate|Mobile\\ Hotspot\\ Pack)\\b[\\s\\S]{0,120}\\b(excluded|exclude|filtered out|not selected|not featured|ineligible|below cutoff|blocked)\\b"
+      ],
+      "evaluation_role": "negative_only"
+    },
+    {
+      "id": "eligibility_exclusions",
+      "description": "Candidates failing status, window, eligibility, threshold, readiness, rights, or setup rules are not final selections.",
+      "source": "env/library_resources.xlsx + env/spotlight_rules.json + env/campaign_brief.md",
+      "importance": "major",
+      "expected_value": [
+        "Archived Vinyl Sampler",
+        "Staff Training VR Kit",
+        "Uncleared Film Pass",
+        "Summer Old Reading Bag",
+        "Low Stock Craft Box",
+        "Fragile Print Portfolio",
+        "Draft Coding Robot",
+        "Cancelled Museum Pass",
+        "Internal Genealogy Tablet",
+        "Test Media Editing Laptop",
+        "Training Storytime Puppet Kit",
+        "Private Donor Room Pass",
+        "Old Winter Reading Badge",
+        "Retired Vinyl Listening Dock",
+        "Demo Family Tablet Stand",
+        "Inactive Coding Club Bot",
+        "Private Local Map Portfolio"
+      ],
+      "canonical_answer": "Rows failing eligibility filters are excluded before ranking.",
+      "semantic_acceptance": "No eligibility-failed candidate should be promoted as selected.",
+      "must_not_appear_in_image": true,
+      "forbidden_patterns": [
+        "Archived\\ Vinyl\\ Sampler",
+        "Staff\\ Training\\ VR\\ Kit",
+        "Uncleared\\ Film\\ Pass",
+        "Summer\\ Old\\ Reading\\ Bag",
+        "Low\\ Stock\\ Craft\\ Box",
+        "Fragile\\ Print\\ Portfolio",
+        "Draft\\ Coding\\ Robot",
+        "Cancelled\\ Museum\\ Pass",
+        "Internal\\ Genealogy\\ Tablet",
+        "Test\\ Media\\ Editing\\ Laptop",
+        "Training\\ Storytime\\ Puppet\\ Kit",
+        "Private\\ Donor\\ Room\\ Pass",
+        "Old\\ Winter\\ Reading\\ Badge",
+        "Retired\\ Vinyl\\ Listening\\ Dock",
+        "Demo\\ Family\\ Tablet\\ Stand",
+        "Inactive\\ Coding\\ Club\\ Bot",
+        "Private\\ Local\\ Map\\ Portfolio"
+      ],
+      "evaluation_role": "negative_only"
+    },
+    {
+      "id": "group_cap_exclusions",
+      "description": "Eligible candidates blocked by the category_label group limit are not final selections.",
+      "source": "env/library_resources.xlsx + env/spotlight_rules.json + env/campaign_brief.md",
+      "importance": "major",
+      "expected_value": [
+        "Seed Library Bundle"
+      ],
+      "canonical_answer": "Eligible rows that exceed the category_label cap are excluded after ranking.",
+      "semantic_acceptance": "No group-cap-blocked candidate should be promoted as selected.",
+      "must_not_appear_in_image": true,
+      "forbidden_patterns": [
+        "Seed\\ Library\\ Bundle"
+      ],
+      "evaluation_role": "negative_only"
+    },
+    {
+      "id": "eligible_below_cutoff",
+      "description": "Eligible candidates below the final top-N cutoff are not final selections.",
+      "source": "env/library_resources.xlsx + env/spotlight_rules.json + env/campaign_brief.md",
+      "importance": "major",
+      "expected_value": [
+        "Board Game Discovery Crate",
+        "Mobile Hotspot Pack",
+        "Puzzle Exchange Cart",
+        "Podcast Booth Voucher",
+        "Zine Swap Starter Box",
+        "Language Conversation Cards"
+      ],
+      "canonical_answer": "Eligible but lower-ranked rows remain unfeatured because they fall below the selected top-N after group limits.",
+      "semantic_acceptance": "Below-cutoff candidates should not be promoted as final selections.",
+      "must_not_appear_in_image": true,
+      "forbidden_patterns": [
+        "Board\\ Game\\ Discovery\\ Crate",
+        "Mobile\\ Hotspot\\ Pack",
+        "Puzzle\\ Exchange\\ Cart",
+        "Podcast\\ Booth\\ Voucher",
+        "Zine\\ Swap\\ Starter\\ Box",
+        "Language\\ Conversation\\ Cards"
+      ],
+      "evaluation_role": "negative_only"
+    }
+  ],
+  "calculation_notes": "Independent calculation: read library_resources.xlsx and spotlight_rules.json. Apply mappings [{'table': 'category_mapping', 'source_field': 'category_code', 'code_field': 'category_code', 'label_field': 'category_label', 'target_field': 'category_label'}, {'table': 'branch_mapping', 'source_field': 'branch_code', 'code_field': 'branch_code', 'label_field': 'branch_name', 'target_field': 'branch_name'}] from support tables/sheets before evaluating rules and display values. Filter rows with equals={'status': 'READY', 'campaign_window': 'library_week_2027'}, in={}, gt={}, gte={'community_priority': 84, 'available_units': 10}, lte={'handling_level': 5}, bool_true={'public_ready': True, 'rights_ok': True}. Sort eligible rows by [{'field': 'community_priority', 'direction': 'desc'}, {'field': 'available_units', 'direction': 'desc'}, {'field': 'handling_level', 'direction': 'asc'}, {'field': 'name', 'direction': 'asc'}]. No-cap top 5 IDs would be R901, R902, R903, R904, R905. Apply group cap category_label<=1 while scanning the ranked list, then select top 5. Eligible ranked order is R901, R902, R903, R904, R905, R906, R907, R908, R915, R916, R919, R920. Selected IDs are R901, R902, R903, R905, R906. Group-cap blocked IDs are R904. Eligible below-cutoff IDs are R907, R908, R915, R916, R919, R920. Exclude eligibility-failed IDs R909, R910, R911, R912, R913, R914, R917, R918, R921, R922, R923, R924, R925, R926, R927, R928, R929; also exclude group-cap-blocked and below-cutoff eligible rows from final featured selections."
+}
