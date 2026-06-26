@@ -1,0 +1,36 @@
+{
+  "case_strength_score": 52,
+  "case_strength_level": "weak",
+  "metrics": {
+    "total_structured_rows": 18,
+    "candidate_valid_rows": 12,
+    "candidate_distractor_rows": 6,
+    "distractor_ratio": 0.3333,
+    "env_file_count": 2,
+    "supplemental_rule_files": [
+      "menu_rules.sql"
+    ],
+    "critical_fact_count": 5,
+    "negative_fact_count": 5,
+    "complex_critical_fact_count": 2,
+    "operation_count": 5
+  },
+  "strengths": [
+    "data scale reaches data-selection hard target",
+    "distractor ratio reaches hard target",
+    "case uses separate rule/support files",
+    "critical fact coverage is broad"
+  ],
+  "weaknesses": [
+    "fewer than three ranking/quota/threshold facts",
+    "direct_value_leak in task.md: nut-free quick lunch specials",
+    "direct_value_leak in task.md: Nut-free quick lunch specials",
+    "critical facts are not fully bound by grounded checklist items"
+  ],
+  "strong_blockers": [
+    "answer leakage detected",
+    "selection complexity below hard threshold"
+  ],
+  "recommended_improvements": [],
+  "mode": "heuristic_data_selection_strength_review"
+}

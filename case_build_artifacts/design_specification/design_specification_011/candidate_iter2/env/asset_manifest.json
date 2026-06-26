@@ -1,0 +1,29 @@
+{
+  "candidate_assets": [
+    {
+      "id": "current_cinnamon_oats_packshot",
+      "role": "hero",
+      "allowed_use": "main packshot for current starter pack",
+      "current_campaign_allowed": true
+    },
+    {
+      "id": "old_vanilla_tub_packshot",
+      "role": "archive",
+      "allowed_use": "old packaging; not current launch",
+      "current_campaign_allowed": false
+    },
+    {
+      "id": "doctor_coat_endorsement_photo",
+      "role": "restricted",
+      "allowed_use": "prohibited medical-style endorsement",
+      "current_campaign_allowed": false
+    },
+    {
+      "id": "nutrition_facts_mini_panel",
+      "role": "support",
+      "allowed_use": "small support element only, not the hero",
+      "current_campaign_allowed": true
+    }
+  ],
+  "selection_rule": "Use only assets with current_campaign_allowed=true and allowed_use matching the current platform and visual_rules.json."
+}

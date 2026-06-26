@@ -1,0 +1,9 @@
+{
+  "status": "pass",
+  "agentic_audit_score": 100,
+  "too_easy_risk": false,
+  "blind_guess_leakage_risk": false,
+  "shortcut_risk": false,
+  "reasoning": [],
+  "recommended_difficulty_upgrade": []
+}

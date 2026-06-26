@@ -1,0 +1,41 @@
+{
+  "brand": "LumaNest Home",
+  "domain": "ecommerce",
+  "current_palette": [
+    "#4B5563",
+    "#F2D7B6",
+    "#FFFDF8",
+    "#B45309"
+  ],
+  "style": {
+    "tone": "warm ecommerce, tactile, premium but not luxury hype",
+    "type": "clear high-legibility sans",
+    "avoid": [
+      "crowded template",
+      "low contrast",
+      "archive campaign styling"
+    ]
+  },
+  "layout_requirements": {
+    "logo_position": "top-left safe area",
+    "headline_zone": "primary safe area",
+    "cta_position": "bottom-right safe area",
+    "hero_zone": "main visual zone",
+    "text_density": "no more than 6 short text blocks"
+  },
+  "hero_visual_requirements": [
+    "current matte oat kettle packshot visible",
+    "soft glow cue visible",
+    "launch price badge visible",
+    "CTA button visible"
+  ],
+  "conditional_rules": [
+    "If the hero background is busy or bright, place copy on a solid or high-opacity panel.",
+    "If a source/disclosure line is present, keep it readable in the lower safe area."
+  ],
+  "forbidden_style": [
+    "medical-grade steel",
+    "web hero banner layout",
+    "energy_star_like_badge"
+  ]
+}

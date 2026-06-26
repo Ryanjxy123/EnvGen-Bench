@@ -1,0 +1,171 @@
+{
+  "candidate_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\case_build_artifacts\\data_insight\\data_insight_012\\candidate_iter2",
+  "candidate_signature": {
+    "target_image_type": "water_loss_anomaly_infographic",
+    "formats": [
+      "csv",
+      "json",
+      "md"
+    ],
+    "env_count": 4,
+    "topic_tokens_sample": [
+      "anomaly",
+      "boundaries",
+      "calculations",
+      "changes",
+      "closed-env",
+      "concise",
+      "configured",
+      "counts",
+      "create",
+      "crews",
+      "csv",
+      "data_insight",
+      "distractor",
+      "district",
+      "dumps",
+      "exclusion",
+      "exclusions",
+      "expose",
+      "field",
+      "first",
+      "focus",
+      "formula",
+      "generated",
+      "hard",
+      "identify",
+      "inspection",
+      "intervention",
+      "json",
+      "loss-rate",
+      "mapping"
+    ],
+    "calc_tokens": [
+      "analysis",
+      "anomaly",
+      "baseline",
+      "join",
+      "mapping",
+      "median",
+      "normalized",
+      "region",
+      "threshold",
+      "weighted"
+    ],
+    "fact_tokens_sample": [
+      "anomaly_score_leader",
+      "fastest_loss_rate_increase",
+      "high_priority_threshold_count",
+      "loss_volume_hotspot",
+      "median_loss_rate_context",
+      "pressure_alert_hotspot",
+      "regional_loss_hotspot",
+      "water_distractor_exclusions"
+    ],
+    "answer_pattern_tokens": [
+      "anomaly_score_leader",
+      "fastest_loss_rate_increase",
+      "high_priority_threshold_count",
+      "loss_volume_hotspot",
+      "median_loss_rate_context",
+      "named_entities",
+      "numeric_values",
+      "percentage_values",
+      "pressure_alert_hotspot",
+      "regional_loss_hotspot"
+    ]
+  },
+  "max_similarity": 0.2186,
+  "diversity_score": 78,
+  "high_similarity": false,
+  "threshold": 0.72,
+  "nearest_case": {
+    "case_id": "data_insight_011",
+    "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_insight\\data_insight_011",
+    "similarity": 0.2186,
+    "components": {
+      "target_image_type": 0.0,
+      "env_file_types": 0.5,
+      "file_structure": 0.2203,
+      "domain_theme": 0.19,
+      "core_calculation_chain": 0.4,
+      "critical_fact_types": 0.0,
+      "answer_entity_value_pattern": 0.1667
+    }
+  },
+  "top_comparisons": [
+    {
+      "case_id": "data_insight_011",
+      "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_insight\\data_insight_011",
+      "similarity": 0.2186,
+      "components": {
+        "target_image_type": 0.0,
+        "env_file_types": 0.5,
+        "file_structure": 0.2203,
+        "domain_theme": 0.19,
+        "core_calculation_chain": 0.4,
+        "critical_fact_types": 0.0,
+        "answer_entity_value_pattern": 0.1667
+      }
+    },
+    {
+      "case_id": "data_insight_006",
+      "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_insight\\data_insight_006",
+      "similarity": 0.1935,
+      "components": {
+        "target_image_type": 0.0,
+        "env_file_types": 1.0,
+        "file_structure": 0.1404,
+        "domain_theme": 0.1154,
+        "core_calculation_chain": 0.0769,
+        "critical_fact_types": 0.0,
+        "answer_entity_value_pattern": 0.1765
+      }
+    },
+    {
+      "case_id": "data_insight_002",
+      "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_insight\\data_insight_002",
+      "similarity": 0.1679,
+      "components": {
+        "target_image_type": 0.0,
+        "env_file_types": 0.75,
+        "file_structure": 0.0806,
+        "domain_theme": 0.05,
+        "core_calculation_chain": 0.25,
+        "critical_fact_types": 0.0,
+        "answer_entity_value_pattern": 0.125
+      }
+    },
+    {
+      "case_id": "data_insight_001",
+      "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_insight\\data_insight_001",
+      "similarity": 0.1552,
+      "components": {
+        "target_image_type": 0.0,
+        "env_file_types": 0.75,
+        "file_structure": 0.0864,
+        "domain_theme": 0.0476,
+        "core_calculation_chain": 0.1538,
+        "critical_fact_types": 0.0,
+        "answer_entity_value_pattern": 0.1765
+      }
+    },
+    {
+      "case_id": "data_insight_010",
+      "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_insight\\data_insight_010",
+      "similarity": 0.155,
+      "components": {
+        "target_image_type": 0.0,
+        "env_file_types": 1.0,
+        "file_structure": 0.1,
+        "domain_theme": 0.045,
+        "core_calculation_chain": 0.0,
+        "critical_fact_types": 0.0,
+        "answer_entity_value_pattern": 0.125
+      }
+    }
+  ],
+  "decision": "diversity_ok",
+  "iteration": 2,
+  "variant": "csv_json_anomaly"
+}

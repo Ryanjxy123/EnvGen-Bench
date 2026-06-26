@@ -1,0 +1,40 @@
+{
+  "select_top_n": 5,
+  "equals": {
+    "status": "READY",
+    "campaign_window": "library_week_2027"
+  },
+  "bool_true": {
+    "public_ready": true,
+    "rights_ok": true
+  },
+  "gte": {
+    "community_priority": 84,
+    "available_units": 10
+  },
+  "lte": {
+    "handling_level": 5
+  },
+  "group_limit": {
+    "field": "category_label",
+    "max": 1
+  },
+  "sort": [
+    {
+      "field": "community_priority",
+      "direction": "desc"
+    },
+    {
+      "field": "available_units",
+      "direction": "desc"
+    },
+    {
+      "field": "handling_level",
+      "direction": "asc"
+    },
+    {
+      "field": "name",
+      "direction": "asc"
+    }
+  ]
+}

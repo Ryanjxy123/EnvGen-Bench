@@ -1,0 +1,172 @@
+{
+  "case_id": "data_selection_007",
+  "dimensions": {
+    "task_completion": {
+      "weight": 0.15,
+      "items": [
+        {
+          "id": "output_type_data_selection_007",
+          "check": "Judge whether the output is a finished cooling_center_activation_board, not a worksheet, raw table, source-data screenshot, or generic mockup.",
+          "points": 4,
+          "scoring_hint": "Full credit when the artifact is polished and purpose-fit; no credit for raw data or placeholder content."
+        },
+        {
+          "id": "selection_task_resolution_data_selection_007",
+          "check": "Verify that the image resolves the data-selection task by filtering candidates, ranking them, applying any stated group limit, and featuring only the final selected objects.",
+          "points": 4,
+          "fact_ids": [
+            "selected_objects",
+            "ranking_order",
+            "group_limit_compliance"
+          ],
+          "scoring_hint": "Selection must be visible through the final featured set and order."
+        }
+      ]
+    },
+    "grounded_requirement_satisfaction": {
+      "weight": 0.55,
+      "items": [
+        {
+          "id": "critical_selected_set_accuracy_data_selection_007",
+          "check": "Verify that exactly these objects are featured: Riverside Cooling Library, Maple Senior Hall, Civic Dome Annex, Bayview Recreation Room, Hillcrest Learning Hub.",
+          "points": 8,
+          "fact_id": "selected_objects",
+          "scoring_hint": "No credit if any selected object is replaced or an extra candidate is promoted."
+        },
+        {
+          "id": "critical_ranking_order_data_selection_007",
+          "check": "Verify that visible order or hierarchy is: Riverside Cooling Library > Maple Senior Hall > Civic Dome Annex > Bayview Recreation Room > Hillcrest Learning Hub.",
+          "points": 6,
+          "fact_id": "ranking_order",
+          "scoring_hint": "Accept any clear layout order that preserves the ranking."
+        },
+        {
+          "id": "critical_display_values_data_selection_007",
+          "check": "Verify that each selected object displays the required paired values from the source data.",
+          "points": 8,
+          "fact_id": "selected_object_display_values",
+          "scoring_hint": "Values must be attached to the correct selected object names."
+        },
+        {
+          "id": "critical_group_limit_data_selection_007",
+          "check": "Verify that no added featured object or substituted candidate violates the group cap stated in the rules.",
+          "points": 5,
+          "fact_id": "group_limit_compliance",
+          "scoring_hint": "Full credit when the selected set implicitly satisfies the cap."
+        },
+        {
+          "id": "critical_exclusion_accuracy_data_selection_007",
+          "check": "Verify that unselected candidates are not promoted as final featured selections, including eligibility failures, group-cap-blocked rows when applicable, and eligible-but-below-cutoff rows.",
+          "points": 7,
+          "fact_ids": [
+            "unselected_objects_not_featured",
+            "eligibility_exclusions",
+            "group_cap_exclusions",
+            "eligible_below_cutoff"
+          ],
+          "scoring_hint": "Mentioning exclusions is allowed; using them as selected answers is not."
+        }
+      ]
+    },
+    "information_structuring": {
+      "weight": 0.15,
+      "items": [
+        {
+          "id": "selection_hierarchy_data_selection_007",
+          "check": "The layout should make the final selection set, ranking hierarchy, and value pairings easy to scan.",
+          "points": 5,
+          "fact_ids": [
+            "selected_objects",
+            "ranking_order",
+            "selected_object_display_values"
+          ]
+        },
+        {
+          "id": "no_process_overload_data_selection_007",
+          "check": "Do not let raw filtering process details, IDs, or table fields overwhelm the requested image artifact.",
+          "points": 4,
+          "scoring_hint": "Supporting details may appear only if the final selected objects remain primary."
+        }
+      ]
+    },
+    "visual_rendering_quality": {
+      "weight": 0.15,
+      "items": [
+        {
+          "id": "visual_clarity_data_selection_007",
+          "check": "Judge readability, contrast, visual hierarchy, and clear text-value pairing.",
+          "points": 4
+        },
+        {
+          "id": "visual_density_data_selection_007",
+          "check": "The image should be information-rich but not crowded, blank, or placeholder-like.",
+          "points": 4
+        }
+      ]
+    }
+  },
+  "score_caps": [
+    {
+      "id": "wrong_selected_object",
+      "max_total": 60,
+      "reason": "A non-selected candidate appears as a final featured selection.",
+      "trigger": {
+        "type": "forbidden_final_answer",
+        "patterns": [
+          "Harbor Drill Shelter",
+          "Closed Train Hall",
+          "Old Heatwave Tent",
+          "Pop-up Fan Depot",
+          "Basement Meeting Room",
+          "Stair-only Clubhouse",
+          "Generator Pending Gym",
+          "Inspection Hold Center",
+          "Costly Convention Hall",
+          "Low Risk Reading Room",
+          "Test Cooling Pod",
+          "Draft Wellness Room",
+          "Internal Staff Lounge",
+          "Archived Civic Basement",
+          "North Pier Field House",
+          "Sunset School Gym",
+          "Market Street Atrium",
+          "Lagoon Arts Lobby",
+          "Tiny Chapel Hall"
+        ],
+        "allowed_patterns": [
+          "\\b(excluded|exclude|filtered out|not selected|not featured|ineligible|below cutoff|blocked)\\b[\\s\\S]{0,120}\\b(Harbor\\ Drill\\ Shelter|Closed\\ Train\\ Hall|Old\\ Heatwave\\ Tent|Pop\\-up\\ Fan\\ Depot|Basement\\ Meeting\\ Room|Stair\\-only\\ Clubhouse|Generator\\ Pending\\ Gym|Inspection\\ Hold\\ Center|Costly\\ Convention\\ Hall|Low\\ Risk\\ Reading\\ Room|Test\\ Cooling\\ Pod|Draft\\ Wellness\\ Room|Internal\\ Staff\\ Lounge|Archived\\ Civic\\ Basement|North\\ Pier\\ Field\\ House|Sunset\\ School\\ Gym|Market\\ Street\\ Atrium|Lagoon\\ Arts\\ Lobby|Tiny\\ Chapel\\ Hall)\\b",
+          "\\b(Harbor\\ Drill\\ Shelter|Closed\\ Train\\ Hall|Old\\ Heatwave\\ Tent|Pop\\-up\\ Fan\\ Depot|Basement\\ Meeting\\ Room|Stair\\-only\\ Clubhouse|Generator\\ Pending\\ Gym|Inspection\\ Hold\\ Center|Costly\\ Convention\\ Hall|Low\\ Risk\\ Reading\\ Room|Test\\ Cooling\\ Pod|Draft\\ Wellness\\ Room|Internal\\ Staff\\ Lounge|Archived\\ Civic\\ Basement|North\\ Pier\\ Field\\ House|Sunset\\ School\\ Gym|Market\\ Street\\ Atrium|Lagoon\\ Arts\\ Lobby|Tiny\\ Chapel\\ Hall)\\b[\\s\\S]{0,120}\\b(excluded|exclude|filtered out|not selected|not featured|ineligible|below cutoff|blocked)\\b"
+        ]
+      }
+    },
+    {
+      "id": "missing_selected_object",
+      "max_total": 55,
+      "reason": "One or more required selected objects is missing.",
+      "trigger": {
+        "type": "missing_required_count",
+        "fact_ids": [
+          "selected_objects",
+          "selected_object_display_values"
+        ],
+        "min_missing": 1
+      }
+    },
+    {
+      "id": "raw_table_instead_of_image",
+      "max_total": 40,
+      "reason": "The final artifact is a raw table, SQL result, JSON dump, or worksheet rather than the requested image.",
+      "trigger": {
+        "type": "forbidden_final_answer",
+        "patterns": [
+          "\\|\\s*site_id",
+          "site_id\\s*,\\s*name",
+          "CREATE\\s+TABLE",
+          "SELECT\\s+\\*",
+          "INSERT\\s+INTO",
+          "(?:\\|[^\\n]*){4,}\\n(?:\\|[^\\n]*){4,}"
+        ]
+      }
+    }
+  ]
+}

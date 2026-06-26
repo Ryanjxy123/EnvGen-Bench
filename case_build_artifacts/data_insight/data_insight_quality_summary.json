@@ -1,0 +1,175 @@
+{
+  "cases_root": "benchmark\\cases\\data_insight",
+  "artifact_root": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\case_build_artifacts\\data_insight",
+  "cases": [
+    {
+      "case_id": "data_insight_001",
+      "static_score": 91,
+      "agentic_score": null,
+      "case_strength_score": null,
+      "final_quality_score": 84,
+      "final_quality_level": "pass",
+      "too_easy_risk": null,
+      "leakage_risk": null,
+      "shortcut_risk": null,
+      "case_strength_level": null,
+      "top_recommended_fixes": [
+        "Bind every critical_required fact to grounded checklist items and keep grounded scoring dominant.",
+        "Add clearer rule files or calculation notes so an independent auditor can recompute critical facts from env files."
+      ]
+    },
+    {
+      "case_id": "data_insight_002",
+      "static_score": 100,
+      "agentic_score": null,
+      "case_strength_score": null,
+      "final_quality_score": 84,
+      "final_quality_level": "pass",
+      "too_easy_risk": null,
+      "leakage_risk": null,
+      "shortcut_risk": null,
+      "case_strength_level": null,
+      "top_recommended_fixes": [
+        "Add clearer rule files or calculation notes so an independent auditor can recompute critical facts from env files."
+      ]
+    },
+    {
+      "case_id": "data_insight_003",
+      "static_score": 100,
+      "agentic_score": null,
+      "case_strength_score": null,
+      "final_quality_score": 84,
+      "final_quality_level": "pass",
+      "too_easy_risk": null,
+      "leakage_risk": null,
+      "shortcut_risk": null,
+      "case_strength_level": null,
+      "top_recommended_fixes": []
+    },
+    {
+      "case_id": "data_insight_004",
+      "static_score": 100,
+      "agentic_score": null,
+      "case_strength_score": null,
+      "final_quality_score": 84,
+      "final_quality_level": "pass",
+      "too_easy_risk": null,
+      "leakage_risk": null,
+      "shortcut_risk": null,
+      "case_strength_level": null,
+      "top_recommended_fixes": [
+        "Add clearer rule files or calculation notes so an independent auditor can recompute critical facts from env files."
+      ]
+    },
+    {
+      "case_id": "data_insight_005",
+      "static_score": 100,
+      "agentic_score": null,
+      "case_strength_score": null,
+      "final_quality_score": 84,
+      "final_quality_level": "pass",
+      "too_easy_risk": null,
+      "leakage_risk": null,
+      "shortcut_risk": null,
+      "case_strength_level": null,
+      "top_recommended_fixes": []
+    },
+    {
+      "case_id": "data_insight_006",
+      "static_score": 100,
+      "agentic_score": null,
+      "case_strength_score": null,
+      "final_quality_score": 84,
+      "final_quality_level": "pass",
+      "too_easy_risk": null,
+      "leakage_risk": null,
+      "shortcut_risk": null,
+      "case_strength_level": null,
+      "top_recommended_fixes": []
+    },
+    {
+      "case_id": "data_insight_007",
+      "static_score": 100,
+      "agentic_score": null,
+      "case_strength_score": null,
+      "final_quality_score": 84,
+      "final_quality_level": "pass",
+      "too_easy_risk": null,
+      "leakage_risk": null,
+      "shortcut_risk": null,
+      "case_strength_level": null,
+      "top_recommended_fixes": [
+        "Add clearer rule files or calculation notes so an independent auditor can recompute critical facts from env files."
+      ]
+    },
+    {
+      "case_id": "data_insight_008",
+      "static_score": 100,
+      "agentic_score": null,
+      "case_strength_score": null,
+      "final_quality_score": 84,
+      "final_quality_level": "pass",
+      "too_easy_risk": null,
+      "leakage_risk": null,
+      "shortcut_risk": null,
+      "case_strength_level": null,
+      "top_recommended_fixes": [
+        "Add clearer rule files or calculation notes so an independent auditor can recompute critical facts from env files."
+      ]
+    },
+    {
+      "case_id": "data_insight_009",
+      "static_score": 100,
+      "agentic_score": null,
+      "case_strength_score": null,
+      "final_quality_score": 84,
+      "final_quality_level": "pass",
+      "too_easy_risk": null,
+      "leakage_risk": null,
+      "shortcut_risk": null,
+      "case_strength_level": null,
+      "top_recommended_fixes": []
+    },
+    {
+      "case_id": "data_insight_010",
+      "static_score": 100,
+      "agentic_score": null,
+      "case_strength_score": null,
+      "final_quality_score": 84,
+      "final_quality_level": "pass",
+      "too_easy_risk": null,
+      "leakage_risk": null,
+      "shortcut_risk": null,
+      "case_strength_level": null,
+      "top_recommended_fixes": []
+    },
+    {
+      "case_id": "data_insight_011",
+      "static_score": 100,
+      "agentic_score": null,
+      "case_strength_score": null,
+      "final_quality_score": 84,
+      "final_quality_level": "pass",
+      "too_easy_risk": null,
+      "leakage_risk": null,
+      "shortcut_risk": null,
+      "case_strength_level": null,
+      "top_recommended_fixes": []
+    },
+    {
+      "case_id": "data_insight_012",
+      "static_score": 100,
+      "agentic_score": null,
+      "case_strength_score": null,
+      "final_quality_score": 84,
+      "final_quality_level": "pass",
+      "too_easy_risk": null,
+      "leakage_risk": null,
+      "shortcut_risk": null,
+      "case_strength_level": null,
+      "top_recommended_fixes": [
+        "Add clearer rule files or calculation notes so an independent auditor can recompute critical facts from env files."
+      ]
+    }
+  ]
+}

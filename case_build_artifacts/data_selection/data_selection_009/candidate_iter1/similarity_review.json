@@ -1,0 +1,177 @@
+{
+  "candidate_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\case_build_artifacts\\data_selection\\data_selection_009\\candidate_iter1",
+  "candidate_signature": {
+    "target_image_type": "library_resource_spotlight_card",
+    "formats": [
+      "xlsx",
+      "json",
+      "md"
+    ],
+    "topic_tokens_sample": [
+      "answer",
+      "archived",
+      "blocked",
+      "branch",
+      "breaks",
+      "campaign",
+      "cancelled",
+      "cap",
+      "caps",
+      "card",
+      "case",
+      "category",
+      "changing",
+      "codes",
+      "condition",
+      "create",
+      "data",
+      "distractors",
+      "draft",
+      "failed",
+      "feature",
+      "file",
+      "filtering",
+      "friendly",
+      "generated",
+      "group",
+      "handling",
+      "hard",
+      "high",
+      "highest"
+    ],
+    "rule_tokens": [
+      "cap",
+      "eligible",
+      "exclude",
+      "filter",
+      "group",
+      "select",
+      "sort",
+      "top"
+    ],
+    "fact_tokens_sample": [
+      "compliance",
+      "display",
+      "featured",
+      "group",
+      "limit",
+      "mapping",
+      "not",
+      "object",
+      "objects",
+      "order",
+      "ranking",
+      "selected",
+      "unselected",
+      "values"
+    ],
+    "answer_pattern_tokens": [
+      "critical_required",
+      "eligibility_exclusions",
+      "eligible_below_cutoff",
+      "group_cap_exclusions",
+      "group_limit_compliance",
+      "mapping_display_values",
+      "negative",
+      "negative_only",
+      "positive",
+      "ranking_order",
+      "selected_object_display_values",
+      "selected_objects",
+      "unselected_objects_not_featured"
+    ]
+  },
+  "max_similarity": 0.4017,
+  "diversity_score": 60,
+  "high_similarity": false,
+  "threshold": 0.7,
+  "nearest_case": {
+    "case_id": "data_selection_006",
+    "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_selection\\data_selection_006",
+    "similarity": 0.4017,
+    "components": {
+      "target_image_type": 0.0,
+      "env_file_types": 0.5,
+      "file_structure": 0.3714,
+      "domain_theme": 0.3434,
+      "selection_rule_chain": 1.0,
+      "critical_fact_types": 0.9286,
+      "answer_pattern": 0.9231
+    }
+  },
+  "top_comparisons": [
+    {
+      "case_id": "data_selection_006",
+      "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_selection\\data_selection_006",
+      "similarity": 0.4017,
+      "components": {
+        "target_image_type": 0.0,
+        "env_file_types": 0.5,
+        "file_structure": 0.3714,
+        "domain_theme": 0.3434,
+        "selection_rule_chain": 1.0,
+        "critical_fact_types": 0.9286,
+        "answer_pattern": 0.9231
+      }
+    },
+    {
+      "case_id": "data_selection_008",
+      "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_selection\\data_selection_008",
+      "similarity": 0.3822,
+      "components": {
+        "target_image_type": 0.0,
+        "env_file_types": 0.2,
+        "file_structure": 0.5267,
+        "domain_theme": 0.3011,
+        "selection_rule_chain": 1.0,
+        "critical_fact_types": 0.9286,
+        "answer_pattern": 0.9231
+      }
+    },
+    {
+      "case_id": "data_selection_007",
+      "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_selection\\data_selection_007",
+      "similarity": 0.3802,
+      "components": {
+        "target_image_type": 0.0,
+        "env_file_types": 0.5,
+        "file_structure": 0.3438,
+        "domain_theme": 0.2952,
+        "selection_rule_chain": 1.0,
+        "critical_fact_types": 0.9286,
+        "answer_pattern": 0.9231
+      }
+    },
+    {
+      "case_id": "data_selection_005",
+      "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_selection\\data_selection_005",
+      "similarity": 0.1787,
+      "components": {
+        "target_image_type": 0.0,
+        "env_file_types": 0.6667,
+        "file_structure": 0.1127,
+        "domain_theme": 0.0962,
+        "selection_rule_chain": 0.5556,
+        "critical_fact_types": 0.5,
+        "answer_pattern": 0.2632
+      }
+    },
+    {
+      "case_id": "data_selection_004",
+      "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_selection\\data_selection_004",
+      "similarity": 0.1633,
+      "components": {
+        "target_image_type": 0.0,
+        "env_file_types": 0.25,
+        "file_structure": 0.0966,
+        "domain_theme": 0.1154,
+        "selection_rule_chain": 0.5556,
+        "critical_fact_types": 0.5,
+        "answer_pattern": 0.25
+      }
+    }
+  ],
+  "decision": "diversity_ok",
+  "iteration": 1,
+  "variant": "library_resource_spotlight"
+}

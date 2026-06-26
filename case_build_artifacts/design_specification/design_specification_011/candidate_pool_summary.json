@@ -1,0 +1,143 @@
+{
+  "case_id": "design_specification_011",
+  "variant": "auto",
+  "artifact_root": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\case_build_artifacts\\design_specification\\design_specification_011",
+  "formal_case_dir": "benchmark\\cases\\design_specification\\design_specification_011",
+  "accepted": false,
+  "selected_iteration": null,
+  "selected_variant": null,
+  "no_write": false,
+  "failure_reason": "No candidate reached strong level with diversity pass.",
+  "candidates": [
+    {
+      "iteration": 1,
+      "candidate_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\case_build_artifacts\\design_specification\\design_specification_011\\candidate_iter1",
+      "variant": "environment_transit_shelter",
+      "domain": "environment",
+      "platform": "Transit shelter DOOH",
+      "target_image_type": "environmental_transit_shelter_ad",
+      "level": "revise",
+      "score": 90,
+      "strength_signals": {
+        "platform_conflict": true,
+        "asset_ambiguity": true,
+        "priority_conflict": true,
+        "compliance_or_visual_trap": true,
+        "layout_space_pressure": true
+      },
+      "signal_count": 5,
+      "diversity_score": 0,
+      "max_similarity": 1.0,
+      "nearest_case_id": "design_specification_006",
+      "high_similarity": true,
+      "status": "discarded_high_similarity",
+      "blockers": [
+        "candidate is highly similar to existing design_specification case"
+      ]
+    },
+    {
+      "iteration": 2,
+      "candidate_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\case_build_artifacts\\design_specification\\design_specification_011\\candidate_iter2",
+      "variant": "nutrition_mobile_banner",
+      "domain": "food_nutrition",
+      "platform": "Mobile in-app banner",
+      "target_image_type": "nutrition_mobile_banner_ad",
+      "level": "revise",
+      "score": 90,
+      "strength_signals": {
+        "platform_conflict": true,
+        "asset_ambiguity": true,
+        "priority_conflict": true,
+        "compliance_or_visual_trap": true,
+        "layout_space_pressure": true
+      },
+      "signal_count": 5,
+      "diversity_score": 0,
+      "max_similarity": 1.0,
+      "nearest_case_id": "design_specification_007",
+      "high_similarity": true,
+      "status": "discarded_high_similarity",
+      "blockers": [
+        "candidate is highly similar to existing design_specification case"
+      ]
+    },
+    {
+      "iteration": 3,
+      "candidate_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\case_build_artifacts\\design_specification\\design_specification_011\\candidate_iter3",
+      "variant": "saas_web_banner",
+      "domain": "saas",
+      "platform": "Web leaderboard banner",
+      "target_image_type": "saas_web_leaderboard_banner",
+      "level": "revise",
+      "score": 90,
+      "strength_signals": {
+        "platform_conflict": true,
+        "asset_ambiguity": true,
+        "priority_conflict": true,
+        "compliance_or_visual_trap": true,
+        "layout_space_pressure": true
+      },
+      "signal_count": 5,
+      "diversity_score": 0,
+      "max_similarity": 1.0,
+      "nearest_case_id": "design_specification_008",
+      "high_similarity": true,
+      "status": "discarded_high_similarity",
+      "blockers": [
+        "candidate is highly similar to existing design_specification case"
+      ]
+    },
+    {
+      "iteration": 4,
+      "candidate_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\case_build_artifacts\\design_specification\\design_specification_011\\candidate_iter4",
+      "variant": "community_service_square",
+      "domain": "community",
+      "platform": "Community square social post",
+      "target_image_type": "community_public_service_square",
+      "level": "revise",
+      "score": 90,
+      "strength_signals": {
+        "platform_conflict": true,
+        "asset_ambiguity": true,
+        "priority_conflict": true,
+        "compliance_or_visual_trap": true,
+        "layout_space_pressure": true
+      },
+      "signal_count": 5,
+      "diversity_score": 0,
+      "max_similarity": 1.0,
+      "nearest_case_id": "design_specification_009",
+      "high_similarity": true,
+      "status": "discarded_high_similarity",
+      "blockers": [
+        "candidate is highly similar to existing design_specification case"
+      ]
+    },
+    {
+      "iteration": 5,
+      "candidate_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\case_build_artifacts\\design_specification\\design_specification_011\\candidate_iter5",
+      "variant": "ecommerce_product_card",
+      "domain": "ecommerce",
+      "platform": "Retail app square product card",
+      "target_image_type": "ecommerce_product_launch_card",
+      "level": "revise",
+      "score": 90,
+      "strength_signals": {
+        "platform_conflict": true,
+        "asset_ambiguity": true,
+        "priority_conflict": true,
+        "compliance_or_visual_trap": true,
+        "layout_space_pressure": true
+      },
+      "signal_count": 5,
+      "diversity_score": 0,
+      "max_similarity": 1.0,
+      "nearest_case_id": "design_specification_010",
+      "high_similarity": true,
+      "status": "discarded_high_similarity",
+      "blockers": [
+        "candidate is highly similar to existing design_specification case"
+      ]
+    }
+  ]
+}

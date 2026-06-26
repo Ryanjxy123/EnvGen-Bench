@@ -1,0 +1,109 @@
+{
+  "cases_root": "benchmark\\cases\\design_specification",
+  "cases": [
+    {
+      "case_id": "design_specification_001",
+      "final_quality_score": 100,
+      "final_quality_level": "strong",
+      "strength_signals": {
+        "platform_conflict": true,
+        "asset_ambiguity": true,
+        "priority_conflict": true,
+        "compliance_or_visual_trap": true,
+        "layout_space_pressure": true
+      },
+      "diversity_score": 37
+    },
+    {
+      "case_id": "design_specification_002",
+      "final_quality_score": 100,
+      "final_quality_level": "strong",
+      "strength_signals": {
+        "platform_conflict": true,
+        "asset_ambiguity": true,
+        "priority_conflict": true,
+        "compliance_or_visual_trap": true,
+        "layout_space_pressure": true
+      },
+      "diversity_score": 62
+    },
+    {
+      "case_id": "design_specification_003",
+      "final_quality_score": 100,
+      "final_quality_level": "strong",
+      "strength_signals": {
+        "platform_conflict": true,
+        "asset_ambiguity": true,
+        "priority_conflict": true,
+        "compliance_or_visual_trap": true,
+        "layout_space_pressure": true
+      },
+      "diversity_score": 37
+    },
+    {
+      "case_id": "design_specification_004",
+      "final_quality_score": 100,
+      "final_quality_level": "strong",
+      "strength_signals": {
+        "platform_conflict": true,
+        "asset_ambiguity": true,
+        "priority_conflict": true,
+        "compliance_or_visual_trap": true,
+        "layout_space_pressure": true
+      },
+      "diversity_score": 62
+    },
+    {
+      "case_id": "design_specification_005",
+      "final_quality_score": 100,
+      "final_quality_level": "strong",
+      "strength_signals": {
+        "platform_conflict": true,
+        "asset_ambiguity": true,
+        "priority_conflict": true,
+        "compliance_or_visual_trap": true,
+        "layout_space_pressure": true
+      },
+      "diversity_score": 52
+    },
+    {
+      "case_id": "design_specification_006",
+      "final_quality_score": 100,
+      "final_quality_level": "strong",
+      "strength_signals": {
+        "platform_conflict": true,
+        "asset_ambiguity": true,
+        "priority_conflict": true,
+        "compliance_or_visual_trap": true,
+        "layout_space_pressure": true
+      },
+      "diversity_score": 77
+    },
+    {
+      "case_id": "design_specification_007",
+      "final_quality_score": 100,
+      "final_quality_level": "strong",
+      "strength_signals": {
+        "platform_conflict": true,
+        "asset_ambiguity": true,
+        "priority_conflict": true,
+        "compliance_or_visual_trap": true,
+        "layout_space_pressure": true
+      },
+      "diversity_score": 37
+    },
+    {
+      "case_id": "design_specification_008",
+      "final_quality_score": 100,
+      "final_quality_level": "strong",
+      "strength_signals": {
+        "platform_conflict": true,
+        "asset_ambiguity": true,
+        "priority_conflict": true,
+        "compliance_or_visual_trap": true,
+        "layout_space_pressure": true
+      },
+      "diversity_score": 37
+    }
+  ]
+}

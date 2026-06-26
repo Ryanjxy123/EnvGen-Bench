@@ -1,0 +1,29 @@
+{
+  "candidate_assets": [
+    {
+      "id": "current_canopyloop_leaf_wordmark",
+      "role": "logo",
+      "allowed_use": "top-left logo for current DOOH campaign",
+      "current_campaign_allowed": true
+    },
+    {
+      "id": "rivergate_cleanup_route_map",
+      "role": "hero",
+      "allowed_use": "main route/map hero for transit shelter",
+      "current_campaign_allowed": true
+    },
+    {
+      "id": "sea_turtle_rescue_photo",
+      "role": "archive",
+      "allowed_use": "archive-only social story image; not for city cleanup route",
+      "current_campaign_allowed": false
+    },
+    {
+      "id": "certified_zero_waste_badge",
+      "role": "badge",
+      "allowed_use": "restricted; do not use because certification is not approved",
+      "current_campaign_allowed": false
+    }
+  ],
+  "selection_rule": "Use only assets with current_campaign_allowed=true and allowed_use matching the current platform and visual_rules.json."
+}

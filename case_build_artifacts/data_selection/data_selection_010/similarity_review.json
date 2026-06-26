@@ -1,0 +1,181 @@
+{
+  "reviews": [
+    {
+      "candidate_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\case_build_artifacts\\data_selection\\data_selection_010\\candidate_iter1",
+      "candidate_signature": {
+        "target_image_type": "workshop_recommendation_flyer",
+        "formats": [
+          "sqlite",
+          "json",
+          "md"
+        ],
+        "topic_tokens_sample": [
+          "answer",
+          "archived",
+          "band",
+          "before",
+          "blocked",
+          "breaks",
+          "cancelled",
+          "cap",
+          "capacity",
+          "caps",
+          "case",
+          "category",
+          "changing",
+          "choose",
+          "codes",
+          "community",
+          "condition",
+          "create",
+          "data",
+          "database",
+          "deciding",
+          "display",
+          "distractors",
+          "district",
+          "draft",
+          "eligibility",
+          "failed",
+          "feature",
+          "filtering",
+          "flyer"
+        ],
+        "rule_tokens": [
+          "cap",
+          "eligible",
+          "exclude",
+          "filter",
+          "group",
+          "select",
+          "sort",
+          "top"
+        ],
+        "fact_tokens_sample": [
+          "compliance",
+          "display",
+          "featured",
+          "group",
+          "limit",
+          "mapping",
+          "not",
+          "object",
+          "objects",
+          "order",
+          "ranking",
+          "selected",
+          "unselected",
+          "values"
+        ],
+        "answer_pattern_tokens": [
+          "critical_required",
+          "eligibility_exclusions",
+          "eligible_below_cutoff",
+          "group_cap_exclusions",
+          "group_limit_compliance",
+          "mapping_display_values",
+          "negative",
+          "negative_only",
+          "positive",
+          "ranking_order",
+          "selected_object_display_values",
+          "selected_objects",
+          "unselected_objects_not_featured"
+        ]
+      },
+      "max_similarity": 0.4408,
+      "diversity_score": 56,
+      "high_similarity": false,
+      "threshold": 0.7,
+      "nearest_case": {
+        "case_id": "data_selection_009",
+        "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_selection\\data_selection_009",
+        "similarity": 0.4408,
+        "components": {
+          "target_image_type": 0.0,
+          "env_file_types": 0.5,
+          "file_structure": 0.6242,
+          "domain_theme": 0.3646,
+          "selection_rule_chain": 1.0,
+          "critical_fact_types": 1.0,
+          "answer_pattern": 1.0
+        }
+      },
+      "top_comparisons": [
+        {
+          "case_id": "data_selection_009",
+          "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_selection\\data_selection_009",
+          "similarity": 0.4408,
+          "components": {
+            "target_image_type": 0.0,
+            "env_file_types": 0.5,
+            "file_structure": 0.6242,
+            "domain_theme": 0.3646,
+            "selection_rule_chain": 1.0,
+            "critical_fact_types": 1.0,
+            "answer_pattern": 1.0
+          }
+        },
+        {
+          "case_id": "data_selection_008",
+          "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_selection\\data_selection_008",
+          "similarity": 0.4115,
+          "components": {
+            "target_image_type": 0.0,
+            "env_file_types": 0.5,
+            "file_structure": 0.5828,
+            "domain_theme": 0.3256,
+            "selection_rule_chain": 1.0,
+            "critical_fact_types": 0.9286,
+            "answer_pattern": 0.9231
+          }
+        },
+        {
+          "case_id": "data_selection_006",
+          "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_selection\\data_selection_006",
+          "similarity": 0.4044,
+          "components": {
+            "target_image_type": 0.0,
+            "env_file_types": 0.5,
+            "file_structure": 0.3484,
+            "domain_theme": 0.3548,
+            "selection_rule_chain": 1.0,
+            "critical_fact_types": 0.9286,
+            "answer_pattern": 0.9231
+          }
+        },
+        {
+          "case_id": "data_selection_007",
+          "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_selection\\data_selection_007",
+          "similarity": 0.3831,
+          "components": {
+            "target_image_type": 0.0,
+            "env_file_types": 0.5,
+            "file_structure": 0.3405,
+            "domain_theme": 0.303,
+            "selection_rule_chain": 1.0,
+            "critical_fact_types": 0.9286,
+            "answer_pattern": 0.9231
+          }
+        },
+        {
+          "case_id": "data_selection_005",
+          "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_selection\\data_selection_005",
+          "similarity": 0.1903,
+          "components": {
+            "target_image_type": 0.0,
+            "env_file_types": 0.6667,
+            "file_structure": 0.1075,
+            "domain_theme": 0.1263,
+            "selection_rule_chain": 0.5556,
+            "critical_fact_types": 0.5,
+            "answer_pattern": 0.2632
+          }
+        }
+      ],
+      "decision": "diversity_ok",
+      "iteration": 1,
+      "variant": "workshop_recommendation_join"
+    }
+  ]
+}

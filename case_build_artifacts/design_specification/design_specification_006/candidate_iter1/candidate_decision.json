@@ -1,0 +1,24 @@
+{
+  "iteration": 1,
+  "candidate_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\case_build_artifacts\\design_specification\\design_specification_006\\candidate_iter1",
+  "variant": "environment_transit_shelter",
+  "domain": "environment",
+  "platform": "Transit shelter DOOH",
+  "target_image_type": "environmental_transit_shelter_ad",
+  "level": "strong",
+  "score": 100,
+  "strength_signals": {
+    "platform_conflict": true,
+    "asset_ambiguity": true,
+    "priority_conflict": true,
+    "compliance_or_visual_trap": true,
+    "layout_space_pressure": true
+  },
+  "signal_count": 5,
+  "diversity_score": 77,
+  "max_similarity": 0.23,
+  "nearest_case_id": "design_specification_001",
+  "high_similarity": false,
+  "status": "accepted_strong",
+  "blockers": []
+}

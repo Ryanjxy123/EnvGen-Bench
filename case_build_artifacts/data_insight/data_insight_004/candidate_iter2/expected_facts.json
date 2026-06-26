@@ -1,0 +1,129 @@
+{
+  "case_id": "data_insight_004",
+  "task_type": "data_insight",
+  "facts": [
+    {
+      "id": "transit_reliability_score_leader",
+      "description": "Top route corridor by weighted reliability_risk_score after exclusions, profile mapping, normalization, and tie-breaks.",
+      "source": "env/route_panel.csv + env/route_profiles.csv + env/reliability_rules.json",
+      "importance": "critical",
+      "expected_value": [
+        "Airport Rapid: 82.9",
+        "Airport Rapid top score"
+      ],
+      "canonical_answer": "Airport Rapid is the top priority with score 82.9",
+      "semantic_acceptance": "Accept if Airport Rapid is shown as the highest priority with score near 82.9.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "transit_reliability_lowest_score",
+      "description": "Lowest-risk or lowest-priority route corridor by weighted score.",
+      "source": "env/route_panel.csv + env/route_profiles.csv + env/reliability_rules.json",
+      "importance": "critical",
+      "expected_value": [
+        "Harbor Shuttle: 19.0",
+        "Harbor Shuttle lowest score"
+      ],
+      "canonical_answer": "Harbor Shuttle is the lowest-ranked entity with score 19.0",
+      "semantic_acceptance": "Accept if Harbor Shuttle is identified as the lowest score entity.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "transit_reliability_fastest_gap_change",
+      "description": "Entity with the largest analysis-period gap-rate increase versus baseline.",
+      "source": "env/route_panel.csv + env/reliability_rules.json",
+      "importance": "critical",
+      "expected_value": [
+        "Airport Rapid: 2.7 pp",
+        "Airport Rapid fastest gap-rate change"
+      ],
+      "canonical_answer": "Airport Rapid has the fastest gap-rate increase at about 2.7 percentage points",
+      "semantic_acceptance": "Accept if Airport Rapid is identified as largest gap-rate increase.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "transit_reliability_gap_volume_hotspot",
+      "description": "Entity with the highest analysis-period gap volume.",
+      "source": "env/route_panel.csv",
+      "importance": "critical",
+      "expected_value": [
+        "Market Spine: 540",
+        "Market Spine highest gap volume"
+      ],
+      "canonical_answer": "Market Spine has the highest analysis-period gap volume at 540",
+      "semantic_acceptance": "Accept if Market Spine is shown as the gap-volume hotspot near 540.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "transit_reliability_incident_rate_hotspot",
+      "description": "Entity with the highest analysis-period incident rate per 1,000 scale units.",
+      "source": "env/route_panel.csv + env/route_profiles.csv",
+      "importance": "critical",
+      "expected_value": [
+        "Hill Connector: 49.6 per 1,000",
+        "Hill Connector incident-rate hotspot"
+      ],
+      "canonical_answer": "Hill Connector has the highest incident rate at about 49.6 per 1,000",
+      "semantic_acceptance": "Accept if Hill Connector is identified as incident-rate hotspot.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "transit_reliability_group_gap_hotspot",
+      "description": "Service District with the highest aggregate analysis-period gap volume.",
+      "source": "env/route_panel.csv + env/route_profiles.csv",
+      "importance": "critical",
+      "expected_value": [
+        "East: 996",
+        "East group hotspot"
+      ],
+      "canonical_answer": "East is the group hotspot at 996",
+      "semantic_acceptance": "Accept if East is identified as the leading group hotspot.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "transit_reliability_threshold_count",
+      "description": "Count of entities at or above the high-priority score threshold.",
+      "source": "env/reliability_rules.json + env/route_panel.csv + env/route_profiles.csv",
+      "importance": "critical",
+      "expected_value": [
+        "2 high-priority entities",
+        "threshold count 2"
+      ],
+      "canonical_answer": "2 entities meet the high-priority threshold",
+      "semantic_acceptance": "Accept if the image states that 2 entities are high priority under the configured threshold.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "transit_reliability_distractor_exclusions",
+      "description": "Do not use forecast, subtotal, test, or old-period rows as final metrics.",
+      "source": "env/route_panel.csv + env/reliability_rules.json",
+      "importance": "major",
+      "expected_value": [
+        "invalid panel record used"
+      ],
+      "forbidden_patterns": [
+        "\\b99,?999\\b",
+        "\\b88,?888\\b",
+        "\\b77,?777\\b",
+        "\\bforecast\\b[^.!?\\n;]{0,80}\\b(result|answer|leader|score|gap)\\b",
+        "\\bsubtotal\\b[^.!?\\n;]{0,80}\\b(result|answer|leader|score|gap)\\b",
+        "\\bold[_ -]?period\\b[^.!?\\n;]{0,80}\\b(result|answer|leader|score|gap)\\b"
+      ],
+      "allowed_patterns": [
+        "\\b(exclude|excluded|excluding|ignore|ignored|not\\s+used)\\b[^.!?\\n;]{0,140}\\b(forecast|subtotal|old)"
+      ],
+      "must_not_appear_in_image": true,
+      "canonical_answer": "Invalid panel rows must not be used as final metrics.",
+      "semantic_acceptance": "Reject or cap if invalid rows are treated as final metrics. Exclusion notes are allowed.",
+      "evaluation_role": "negative_only"
+    }
+  ],
+  "calculation_notes": "Join route_panel.csv to route_profiles.csv by entity_id. Use only actual closed records. Baseline months are 2026-07 through 2026-09; analysis months are 2026-10 through 2026-12. Gap volume is scheduled_trips minus on_time_trips. Gap rate is gap divided by scheduled_trips. reliability_risk_score min-max normalizes analysis gap rate, gap-rate change, incident rate per 1,000, and criticality, then applies configured weights. Tie-break order is rounded score, analysis gap volume, criticality, and entity name. Top score entity is Airport Rapid at 82.9. Lowest score entity is Harbor Shuttle at 19.0. Fastest gap-rate increase is Airport Rapid at 2.7 percentage points. Gap-volume hotspot is Market Spine at 540. Incident-rate hotspot is Hill Connector at 49.6 per 1,000. Group hotspot is East at 996. High-priority count is 2."
+}

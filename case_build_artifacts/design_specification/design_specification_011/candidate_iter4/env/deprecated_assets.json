@@ -1,0 +1,24 @@
+{
+  "deprecated_assets": [
+    {
+      "name": "Civic Gym",
+      "prohibited_use": "active final image content"
+    },
+    {
+      "name": "Open 9 AM to 5 PM",
+      "prohibited_use": "active final image content"
+    },
+    {
+      "name": "Call 555-0199",
+      "prohibited_use": "active final image content"
+    },
+    {
+      "name": "Transit card layout",
+      "prohibited_use": "active final image content"
+    },
+    {
+      "name": "emergency siren icon",
+      "prohibited_use": "active final image content"
+    }
+  ]
+}

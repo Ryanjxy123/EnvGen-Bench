@@ -1,0 +1,387 @@
+[
+  {
+    "task_type": "data_insight",
+    "case_id": "data_insight_001",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "data_insight",
+    "case_id": "data_insight_002",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "data_insight",
+    "case_id": "data_insight_003",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "data_insight",
+    "case_id": "data_insight_004",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "data_insight",
+    "case_id": "data_insight_005",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "data_insight",
+    "case_id": "data_insight_006",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "data_insight",
+    "case_id": "data_insight_007",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "data_insight",
+    "case_id": "data_insight_008",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "data_insight",
+    "case_id": "data_insight_009",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "data_insight",
+    "case_id": "data_insight_010",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "data_insight",
+    "case_id": "data_insight_011",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "data_insight",
+    "case_id": "data_insight_012",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "data_selection",
+    "case_id": "data_selection_001",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "data_selection",
+    "case_id": "data_selection_002",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "data_selection",
+    "case_id": "data_selection_003",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "data_selection",
+    "case_id": "data_selection_004",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "data_selection",
+    "case_id": "data_selection_005",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "data_selection",
+    "case_id": "data_selection_006",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "data_selection",
+    "case_id": "data_selection_007",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "data_selection",
+    "case_id": "data_selection_008",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "data_selection",
+    "case_id": "data_selection_009",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "data_selection",
+    "case_id": "data_selection_010",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "design_specification",
+    "case_id": "design_specification_001",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality|robustness",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": true
+  },
+  {
+    "task_type": "design_specification",
+    "case_id": "design_specification_002",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality|robustness",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": true
+  },
+  {
+    "task_type": "design_specification",
+    "case_id": "design_specification_003",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality|robustness",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": true
+  },
+  {
+    "task_type": "design_specification",
+    "case_id": "design_specification_004",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality|robustness",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": true
+  },
+  {
+    "task_type": "design_specification",
+    "case_id": "design_specification_005",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality|robustness",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": true
+  },
+  {
+    "task_type": "design_specification",
+    "case_id": "design_specification_006",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality|robustness",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": true
+  },
+  {
+    "task_type": "design_specification",
+    "case_id": "design_specification_007",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality|robustness",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": true
+  },
+  {
+    "task_type": "design_specification",
+    "case_id": "design_specification_008",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality|robustness",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": true
+  },
+  {
+    "task_type": "document_brief",
+    "case_id": "document_brief_001",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "document_brief",
+    "case_id": "document_brief_002",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "document_brief",
+    "case_id": "document_brief_003",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "document_brief",
+    "case_id": "document_brief_004",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "document_brief",
+    "case_id": "document_brief_005",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "multi_source_fusion",
+    "case_id": "multi_source_fusion_001",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "multi_source_fusion",
+    "case_id": "multi_source_fusion_002",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "multi_source_fusion",
+    "case_id": "multi_source_fusion_003",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "multi_source_fusion",
+    "case_id": "multi_source_fusion_004",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "multi_source_fusion",
+    "case_id": "multi_source_fusion_005",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "procedure_instruction",
+    "case_id": "procedure_instruction_001",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "procedure_instruction",
+    "case_id": "procedure_instruction_002",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "procedure_instruction",
+    "case_id": "procedure_instruction_003",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "procedure_instruction",
+    "case_id": "procedure_instruction_004",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "procedure_instruction",
+    "case_id": "procedure_instruction_005",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "relationship_diagram",
+    "case_id": "relationship_diagram_001",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "relationship_diagram",
+    "case_id": "relationship_diagram_002",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "relationship_diagram",
+    "case_id": "relationship_diagram_003",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "relationship_diagram",
+    "case_id": "relationship_diagram_004",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "relationship_diagram",
+    "case_id": "relationship_diagram_005",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "state_change",
+    "case_id": "state_change_001",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "state_change",
+    "case_id": "state_change_002",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "state_change",
+    "case_id": "state_change_003",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "state_change",
+    "case_id": "state_change_004",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  },
+  {
+    "task_type": "state_change",
+    "case_id": "state_change_005",
+    "original": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_rendering_quality",
+    "new": "task_completion|grounded_requirement_satisfaction|information_structuring|visual_communication_quality",
+    "migrated_robustness": false
+  }
+]

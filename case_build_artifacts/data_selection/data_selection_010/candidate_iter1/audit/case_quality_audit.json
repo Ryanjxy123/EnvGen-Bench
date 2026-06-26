@@ -1,0 +1,161 @@
+{
+  "case_id": "data_selection_010",
+  "task_type": "data_selection",
+  "static_audit_score": 100,
+  "static_quality_level": "strong",
+  "agentic_audit_score": 100,
+  "case_strength_score": 100,
+  "final_quality_score": 100,
+  "final_quality_level": "strong",
+  "overall_quality_score": 100,
+  "quality_level": "strong",
+  "strong_level_blockers": [],
+  "issue_summary": [],
+  "checks": {
+    "structure": {
+      "status": "pass",
+      "issues": [],
+      "warnings": []
+    },
+    "data_selection_validity": {
+      "status": "pass",
+      "operation_hits": {
+        "filtering": true,
+        "ranking": true,
+        "quota_or_limit": true,
+        "negative_exclusion": true,
+        "display_values": true
+      },
+      "operation_count": 5,
+      "too_direct_or_too_easy": false,
+      "issues": []
+    },
+    "independent_recompute": {
+      "status": "pass",
+      "notes": [],
+      "mismatches": [],
+      "computed_facts": {
+        "table_profile": {
+          "total_structured_rows": 37,
+          "candidate_valid_rows": 24,
+          "candidate_distractor_rows": 13,
+          "distractor_ratio": 0.3514,
+          "formats": {
+            "sqlite": 1,
+            "json": 1,
+            "md": 1
+          },
+          "table_counts": {
+            "workshop_recommendations.sqlite": 3
+          },
+          "groupish_columns": {
+            "category_code": 1,
+            "category_label": 1,
+            "eligible_category": 1,
+            "max_selected": 1
+          },
+          "numeric_columns": {}
+        }
+      }
+    },
+    "difficulty_signal": {
+      "status": "pass",
+      "difficulty_score": 100,
+      "difficulty_level": "strong",
+      "positive_signals": [
+        "metadata declares hard difficulty",
+        "structured row count is sufficient for selection",
+        "high distractor ratio",
+        "uses multiple env formats or multi-table structure",
+        "at least five critical facts",
+        "broad negative/unselected coverage",
+        "critical facts encode ranking/quota/threshold reasoning",
+        "all selection operation families detected"
+      ],
+      "issues": [],
+      "total_structured_rows": 37,
+      "valid_rows": 24,
+      "distractor_ratio": 0.3514,
+      "critical_fact_count": 6,
+      "negative_fact_count": 4,
+      "complex_critical_fact_count": 4
+    },
+    "answer_leakage": {
+      "status": "pass",
+      "leaks": [],
+      "issues": []
+    },
+    "distractor_audit": {
+      "status": "pass",
+      "negative_fact_count": 4,
+      "found_distractor_tokens": [
+        "archived",
+        "cancelled",
+        "demo",
+        "draft",
+        "inactive",
+        "internal",
+        "old",
+        "private",
+        "retired",
+        "test",
+        "training"
+      ],
+      "forbidden_pattern_count": 44,
+      "would_change_answer_if_used": true,
+      "issues": []
+    },
+    "checklist_audit": {
+      "status": "pass",
+      "fact_binding_complete": true,
+      "negative_fact_count": 4,
+      "score_cap_count": 3,
+      "issues": []
+    },
+    "run_result_audit": {
+      "status": "pass",
+      "issues": []
+    },
+    "agentic_audit": {
+      "status": "pass",
+      "agentic_audit_score": 100,
+      "too_easy_risk": false,
+      "blind_guess_leakage_risk": false,
+      "shortcut_risk": false,
+      "reasoning": [],
+      "recommended_difficulty_upgrade": []
+    },
+    "case_strength_review": {
+      "case_strength_score": 100,
+      "case_strength_level": "strong",
+      "metrics": {
+        "total_structured_rows": 37,
+        "candidate_valid_rows": 24,
+        "candidate_distractor_rows": 13,
+        "distractor_ratio": 0.3514,
+        "env_file_count": 3,
+        "supplemental_rule_files": [
+          "recommendation_rules.json",
+          "join_notes.md"
+        ],
+        "critical_fact_count": 6,
+        "negative_fact_count": 4,
+        "complex_critical_fact_count": 4,
+        "operation_count": 5
+      },
+      "strengths": [
+        "data scale reaches data-selection hard target",
+        "distractor ratio reaches hard target",
+        "case uses separate rule/support files",
+        "critical fact coverage is broad",
+        "critical facts require ranking, threshold, or quota reasoning",
+        "no answer leakage detected"
+      ],
+      "weaknesses": [],
+      "strong_blockers": [],
+      "recommended_improvements": [],
+      "mode": "heuristic_data_selection_strength_review"
+    }
+  },
+  "recommended_fixes": []
+}

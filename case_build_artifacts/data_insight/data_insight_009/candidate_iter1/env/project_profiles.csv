@@ -1,0 +1,11 @@
+entity_id,entity_name,group_name,scale_denominator,criticality,profile_status
+E01,Flood Gate A,Flood,420,35,active
+E02,Shade Corridor,Heat,475,48,active
+E03,Pump Station C,Storm,530,61,active
+E04,Wetland Ring,Power,585,74,active
+E05,Cool Roofs,Slope,640,87,active
+E06,Creek Buffer,Flood,695,40,active
+E07,Backup Power,Heat,750,53,active
+E08,Storm Garden,Storm,805,66,active
+E09,Slope Net,Power,860,79,active
+E10,Drain Upgrade,Slope,915,92,active

@@ -1,0 +1,132 @@
+{
+  "case_id": "data_selection_006",
+  "task_type": "data_selection",
+  "static_audit_score": 100,
+  "static_quality_level": "strong",
+  "agentic_audit_score": null,
+  "case_strength_score": null,
+  "final_quality_score": 100,
+  "final_quality_level": "strong",
+  "overall_quality_score": 100,
+  "quality_level": "strong",
+  "strong_level_blockers": [],
+  "issue_summary": [],
+  "checks": {
+    "structure": {
+      "status": "pass",
+      "issues": [],
+      "warnings": []
+    },
+    "data_selection_validity": {
+      "status": "pass",
+      "operation_hits": {
+        "filtering": true,
+        "ranking": true,
+        "quota_or_limit": true,
+        "negative_exclusion": true,
+        "display_values": true
+      },
+      "operation_count": 5,
+      "too_direct_or_too_easy": false,
+      "issues": []
+    },
+    "independent_recompute": {
+      "status": "pass",
+      "notes": [],
+      "mismatches": [],
+      "computed_facts": {
+        "table_profile": {
+          "total_structured_rows": 22,
+          "candidate_valid_rows": 15,
+          "candidate_distractor_rows": 7,
+          "distractor_ratio": 0.3182,
+          "formats": {
+            "csv": 1,
+            "json": 1,
+            "md": 1
+          },
+          "table_counts": {},
+          "groupish_columns": {
+            "collection": 1,
+            "gallery": 1,
+            "status": 1,
+            "exhibit_window": 1,
+            "loan_ready": 1,
+            "rights_cleared": 1,
+            "fragility_level": 1
+          },
+          "numeric_columns": {
+            "narrative_score": 1,
+            "condition_risk": 1,
+            "install_minutes": 1,
+            "fragility_level": 1,
+            "era_label": 1
+          }
+        }
+      }
+    },
+    "difficulty_signal": {
+      "status": "pass",
+      "difficulty_score": 100,
+      "difficulty_level": "strong",
+      "positive_signals": [
+        "metadata declares hard difficulty",
+        "structured row count is sufficient for selection",
+        "high distractor ratio",
+        "uses multiple env formats or multi-table structure",
+        "at least five critical facts",
+        "broad negative/unselected coverage",
+        "critical facts encode ranking/quota/threshold reasoning",
+        "all selection operation families detected"
+      ],
+      "issues": [],
+      "total_structured_rows": 22,
+      "valid_rows": 15,
+      "distractor_ratio": 0.3182,
+      "critical_fact_count": 5,
+      "negative_fact_count": 4,
+      "complex_critical_fact_count": 5
+    },
+    "answer_leakage": {
+      "status": "pass",
+      "leaks": [],
+      "issues": []
+    },
+    "distractor_audit": {
+      "status": "pass",
+      "negative_fact_count": 4,
+      "found_distractor_tokens": [
+        "archived",
+        "cancelled",
+        "draft",
+        "internal",
+        "old",
+        "private",
+        "test"
+      ],
+      "forbidden_pattern_count": 32,
+      "would_change_answer_if_used": true,
+      "issues": []
+    },
+    "checklist_audit": {
+      "status": "pass",
+      "fact_binding_complete": true,
+      "negative_fact_count": 4,
+      "score_cap_count": 3,
+      "issues": []
+    },
+    "run_result_audit": {
+      "status": "pass",
+      "issues": []
+    },
+    "agentic_audit": {
+      "status": "not_run",
+      "agentic_audit_score": null
+    },
+    "case_strength_review": {
+      "status": "not_run",
+      "case_strength_score": null
+    }
+  },
+  "recommended_fixes": []
+}

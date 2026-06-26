@@ -1,0 +1,21 @@
+{
+  "agentic_audit_score": 78,
+  "too_easy_risk": "low",
+  "difficulty_reasoning": [
+    "task asks for many metric slots explicitly, increasing directness"
+  ],
+  "recommended_difficulty_upgrade": [
+    "Ask for a business decision or infographic goal rather than listing every metric slot."
+  ],
+  "blind_guess_leakage_risk": "medium",
+  "guessed_facts_without_env": [
+    "Task/metadata may expose the metric slots strongly enough to predict parts of the answer shape."
+  ],
+  "leakage_notes": [],
+  "shortcut_risk": "low",
+  "shortcut_paths": [],
+  "fixes": [
+    "Ask for a business decision or infographic goal rather than listing every metric slot."
+  ],
+  "mode": "heuristic_agentic_proxy"
+}

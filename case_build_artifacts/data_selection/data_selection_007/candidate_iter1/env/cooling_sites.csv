@@ -1,0 +1,25 @@
+site_id,name,neighborhood,zone,status,event_window,site_type,cooling_capacity,heat_risk_score,transit_score,accessibility,backup_power,inspection,setup_cost_usd,opening_time
+C601,Riverside Cooling Library,Riverside,North,ready,heatwave_july_2026,library,118,97,88,yes,yes,pass,7200,09:00
+C602,Maple Senior Hall,Maple,North,ready,heatwave_july_2026,community_center,92,94,82,yes,yes,pass,6400,10:00
+C603,Civic Dome Annex,Civic,Central,ready,heatwave_july_2026,school_gym,130,93,86,yes,yes,pass,8500,08:30
+C604,Bayview Recreation Room,Bayview,South,ready,heatwave_july_2026,community_center,86,92,91,yes,yes,pass,6100,09:30
+C605,Hillcrest Learning Hub,Hillcrest,West,ready,heatwave_july_2026,library,78,90,84,yes,yes,pass,5800,10:30
+C606,North Pier Field House,Pier,North,ready,heatwave_july_2026,community_center,105,89,79,yes,yes,pass,6200,09:15
+C607,Sunset School Gym,Sunset,West,ready,heatwave_july_2026,school_gym,101,87,77,yes,yes,pass,5900,11:00
+C608,Market Street Atrium,Market,Central,ready,heatwave_july_2026,library,94,86,90,yes,yes,pass,7600,08:45
+C609,Lagoon Arts Lobby,Lagoon,South,ready,heatwave_july_2026,community_center,73,84,88,yes,yes,pass,5400,10:15
+C610,Harbor Drill Shelter,Harbor,South,ready,heatwave_july_2026,community_center,180,99,99,yes,yes,drill,5000,08:00
+C611,Closed Train Hall,Depot,Central,closed,heatwave_july_2026,library,200,98,92,yes,yes,pass,7000,08:00
+C612,Old Heatwave Tent,Old Town,West,ready,heatwave_june_2025,community_center,120,96,88,yes,yes,pass,5000,08:00
+C613,Pop-up Fan Depot,Riverside,North,ready,heatwave_july_2026,warehouse,150,95,83,yes,yes,pass,4200,09:00
+C614,Basement Meeting Room,Civic,Central,ready,heatwave_july_2026,community_center,55,91,80,yes,yes,pass,3900,12:00
+C615,Stair-only Clubhouse,Maple,North,ready,heatwave_july_2026,library,90,90,85,no,yes,pass,4700,09:00
+C616,Generator Pending Gym,Bayview,South,ready,heatwave_july_2026,school_gym,115,88,81,yes,no,pass,5200,10:00
+C617,Inspection Hold Center,Hillcrest,West,ready,heatwave_july_2026,community_center,96,87,83,yes,yes,fail,5100,10:30
+C618,Costly Convention Hall,Market,Central,ready,heatwave_july_2026,community_center,220,99,95,yes,yes,pass,14500,08:00
+C619,Low Risk Reading Room,Lagoon,South,ready,heatwave_july_2026,library,82,80,84,yes,yes,pass,4300,11:00
+C620,Test Cooling Pod,Test Yard,West,test,heatwave_july_2026,community_center,100,95,90,yes,yes,pass,3000,09:00
+C621,Draft Wellness Room,Civic,Central,draft,heatwave_july_2026,library,88,88,82,yes,yes,pass,4200,10:00
+C622,Tiny Chapel Hall,Bayview,South,ready,heatwave_july_2026,community_center,61,83,79,yes,yes,pass,4800,13:00
+C623,Internal Staff Lounge,Maple,North,internal,heatwave_july_2026,library,130,96,89,yes,yes,pass,3500,08:15
+C624,Archived Civic Basement,Civic,Central,archived,heatwave_july_2026,school_gym,111,90,90,yes,yes,pass,6200,09:00

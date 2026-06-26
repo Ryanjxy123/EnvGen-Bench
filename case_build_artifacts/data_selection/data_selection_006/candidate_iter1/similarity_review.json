@@ -1,0 +1,175 @@
+{
+  "candidate_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\case_build_artifacts\\data_selection\\data_selection_006\\candidate_iter1",
+  "candidate_signature": {
+    "target_image_type": "museum_exhibit_feature_panel",
+    "formats": [
+      "csv",
+      "json",
+      "md"
+    ],
+    "topic_tokens_sample": [
+      "answer",
+      "artifact",
+      "artifacts",
+      "blocked",
+      "breaks",
+      "cancelled",
+      "candidate",
+      "cap",
+      "caps",
+      "care",
+      "case",
+      "changing",
+      "choose",
+      "collection",
+      "community",
+      "condition",
+      "create",
+      "curator",
+      "curatorial",
+      "data",
+      "distractors",
+      "draft",
+      "each",
+      "era",
+      "exhibit",
+      "failed",
+      "feature",
+      "featured",
+      "filtering",
+      "fragile"
+    ],
+    "rule_tokens": [
+      "cap",
+      "eligible",
+      "exclude",
+      "filter",
+      "group",
+      "select",
+      "sort",
+      "top"
+    ],
+    "fact_tokens_sample": [
+      "compliance",
+      "display",
+      "featured",
+      "group",
+      "limit",
+      "not",
+      "object",
+      "objects",
+      "order",
+      "ranking",
+      "selected",
+      "unselected",
+      "values"
+    ],
+    "answer_pattern_tokens": [
+      "critical_required",
+      "eligibility_exclusions",
+      "eligible_below_cutoff",
+      "group_cap_exclusions",
+      "group_limit_compliance",
+      "negative",
+      "negative_only",
+      "positive",
+      "ranking_order",
+      "selected_object_display_values",
+      "selected_objects",
+      "unselected_objects_not_featured"
+    ]
+  },
+  "max_similarity": 0.4016,
+  "diversity_score": 60,
+  "high_similarity": false,
+  "threshold": 0.7,
+  "nearest_case": {
+    "case_id": "data_selection_007",
+    "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_selection\\data_selection_007",
+    "similarity": 0.4016,
+    "components": {
+      "target_image_type": 0.0,
+      "env_file_types": 1.0,
+      "file_structure": 0.3088,
+      "domain_theme": 0.2673,
+      "selection_rule_chain": 1.0,
+      "critical_fact_types": 1.0,
+      "answer_pattern": 1.0
+    }
+  },
+  "top_comparisons": [
+    {
+      "case_id": "data_selection_007",
+      "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_selection\\data_selection_007",
+      "similarity": 0.4016,
+      "components": {
+        "target_image_type": 0.0,
+        "env_file_types": 1.0,
+        "file_structure": 0.3088,
+        "domain_theme": 0.2673,
+        "selection_rule_chain": 1.0,
+        "critical_fact_types": 1.0,
+        "answer_pattern": 1.0
+      }
+    },
+    {
+      "case_id": "data_selection_008",
+      "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_selection\\data_selection_008",
+      "similarity": 0.369,
+      "components": {
+        "target_image_type": 0.0,
+        "env_file_types": 0.2,
+        "file_structure": 0.3738,
+        "domain_theme": 0.2727,
+        "selection_rule_chain": 1.0,
+        "critical_fact_types": 1.0,
+        "answer_pattern": 1.0
+      }
+    },
+    {
+      "case_id": "data_selection_004",
+      "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_selection\\data_selection_004",
+      "similarity": 0.2503,
+      "components": {
+        "target_image_type": 0.1667,
+        "env_file_types": 0.6667,
+        "file_structure": 0.0969,
+        "domain_theme": 0.1684,
+        "selection_rule_chain": 0.5556,
+        "critical_fact_types": 0.5333,
+        "answer_pattern": 0.2632
+      }
+    },
+    {
+      "case_id": "data_selection_005",
+      "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_selection\\data_selection_005",
+      "similarity": 0.1961,
+      "components": {
+        "target_image_type": 0.0,
+        "env_file_types": 0.6667,
+        "file_structure": 0.0927,
+        "domain_theme": 0.1354,
+        "selection_rule_chain": 0.5556,
+        "critical_fact_types": 0.5333,
+        "answer_pattern": 0.2778
+      }
+    },
+    {
+      "case_id": "data_selection_001",
+      "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_selection\\data_selection_001",
+      "similarity": 0.1892,
+      "components": {
+        "target_image_type": 0.0,
+        "env_file_types": 0.6667,
+        "file_structure": 0.0714,
+        "domain_theme": 0.1515,
+        "selection_rule_chain": 0.4444,
+        "critical_fact_types": 0.5333,
+        "answer_pattern": 0.2381
+      }
+    }
+  ],
+  "decision": "diversity_ok",
+  "iteration": 1,
+  "variant": "museum_exhibit_shortlist"
+}

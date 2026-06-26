@@ -1,0 +1,164 @@
+{
+  "case_id": "data_insight_002",
+  "dimensions": {
+    "task_completion": {
+      "weight": 0.15,
+      "items": [
+        {
+          "id": "output_type_data_insight_002",
+          "check": "The output should be a finished water-loss intervention infographic, not raw CSV rows or a generic dashboard.",
+          "points": 4
+        },
+        {
+          "id": "decision_resolution_data_insight_002",
+          "check": "The infographic should resolve where to inspect first using loss rate, change, alert rate, criticality, thresholds, and exclusions.",
+          "points": 4
+        }
+      ]
+    },
+    "grounded_requirement_satisfaction": {
+      "weight": 0.55,
+      "items": [
+        {
+          "id": "critical_anomaly_leader_data_insight_002",
+          "check": "Verify that Old Mill is the top anomaly district with score about 95.7.",
+          "points": 6,
+          "fact_id": "anomaly_score_leader"
+        },
+        {
+          "id": "critical_fastest_increase_data_insight_002",
+          "check": "Verify that Harbor Flats has the largest loss-rate increase at about 5.8 percentage points.",
+          "points": 5,
+          "fact_id": "fastest_loss_rate_increase"
+        },
+        {
+          "id": "critical_loss_volume_data_insight_002",
+          "check": "Verify that Southworks Main has the highest Q4 water-loss volume at about 4,940 kL.",
+          "points": 5,
+          "fact_id": "loss_volume_hotspot"
+        },
+        {
+          "id": "critical_pressure_data_insight_002",
+          "check": "Verify that Airport Spur has the highest pressure-alert rate at about 97.6 per 1,000 connections.",
+          "points": 5,
+          "fact_id": "pressure_alert_hotspot"
+        },
+        {
+          "id": "critical_region_loss_data_insight_002",
+          "check": "Verify that South is the regional loss hotspot at about 9,110 kL.",
+          "points": 5,
+          "fact_id": "regional_loss_hotspot"
+        },
+        {
+          "id": "critical_threshold_count_data_insight_002",
+          "check": "Verify that 2 districts meet the high-priority threshold.",
+          "points": 5,
+          "fact_id": "high_priority_threshold_count"
+        },
+        {
+          "id": "major_median_context_data_insight_002",
+          "check": "Verify that the network median Q4 loss rate is about 7.8% if shown as context.",
+          "points": 3,
+          "fact_id": "median_loss_rate_context"
+        },
+        {
+          "id": "negative_water_distractors_data_insight_002",
+          "check": "Verify that forecast, subtotal, and old-period records are not used as final water-loss metrics.",
+          "points": 4,
+          "fact_id": "water_distractor_exclusions"
+        }
+      ]
+    },
+    "information_structuring": {
+      "weight": 0.15,
+      "items": [
+        {
+          "id": "water_triage_hierarchy_data_insight_002",
+          "check": "The image should organize inspection priority, loss volume, rate change, alert pressure, region context, and threshold count into a clear intervention hierarchy.",
+          "points": 5,
+          "fact_ids": [
+            "anomaly_score_leader",
+            "fastest_loss_rate_increase",
+            "loss_volume_hotspot",
+            "pressure_alert_hotspot",
+            "regional_loss_hotspot",
+            "high_priority_threshold_count"
+          ]
+        },
+        {
+          "id": "water_action_takeaway_data_insight_002",
+          "check": "The takeaway should connect the anomaly score with at least one operational intervention signal.",
+          "points": 4,
+          "fact_ids": [
+            "anomaly_score_leader",
+            "pressure_alert_hotspot",
+            "loss_volume_hotspot"
+          ]
+        }
+      ]
+    },
+    "visual_rendering_quality": {
+      "weight": 0.15,
+      "items": [
+        {
+          "id": "visual_clarity_data_insight_002",
+          "check": "Judge readability, contrast, hierarchy, and label legibility at infographic size.",
+          "points": 4
+        },
+        {
+          "id": "visual_density_data_insight_002",
+          "check": "The layout should be dense enough for operations review while avoiding overlapping labels or raw table dumps.",
+          "points": 4
+        }
+      ]
+    }
+  },
+  "score_caps": [
+    {
+      "id": "missing_water_core_fact",
+      "max_total": 55,
+      "reason": "A required water-loss critical fact is missing.",
+      "trigger": {
+        "type": "missing_required_count",
+        "fact_ids": [
+          "anomaly_score_leader",
+          "fastest_loss_rate_increase",
+          "loss_volume_hotspot",
+          "pressure_alert_hotspot",
+          "regional_loss_hotspot",
+          "high_priority_threshold_count"
+        ],
+        "min_missing": 1
+      }
+    },
+    {
+      "id": "uses_invalid_water_rows",
+      "max_total": 60,
+      "reason": "The image uses forecast, subtotal, or old-period rows as final results.",
+      "trigger": {
+        "type": "forbidden_final_answer",
+        "patterns": [
+          "99999",
+          "88888",
+          "77777",
+          "forecast result",
+          "subtotal result",
+          "old_period result"
+        ]
+      }
+    },
+    {
+      "id": "raw_csv_dump",
+      "max_total": 40,
+      "reason": "The output is a raw CSV/table dump instead of an infographic.",
+      "trigger": {
+        "type": "forbidden_final_answer",
+        "patterns": [
+          "zone_id,",
+          "water_pumped_kl",
+          "record_type,status"
+        ]
+      }
+    }
+  ]
+}

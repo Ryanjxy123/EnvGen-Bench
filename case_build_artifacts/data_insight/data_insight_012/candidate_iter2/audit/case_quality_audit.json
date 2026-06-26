@@ -1,0 +1,290 @@
+{
+  "case_id": "data_insight_012",
+  "task_type": "data_insight",
+  "static_audit_score": 100,
+  "static_quality_level": "pass",
+  "agentic_audit_score": 100,
+  "case_strength_score": 100,
+  "final_quality_score": 100,
+  "final_quality_level": "strong",
+  "overall_quality_score": 100,
+  "quality_level": "strong",
+  "strong_level_blockers": [],
+  "issue_summary": [],
+  "checks": {
+    "structure": {
+      "status": "pass",
+      "issues": [],
+      "warnings": []
+    },
+    "data_insight_validity": {
+      "status": "pass",
+      "operation_hits": {
+        "filtering": true,
+        "aggregation": true,
+        "group_comparison": true,
+        "rule_interpretation": true,
+        "takeaway": true
+      },
+      "operation_count": 5,
+      "too_direct_or_too_easy": false,
+      "issues": []
+    },
+    "independent_recompute": {
+      "status": "warn",
+      "computed_facts": {
+        "table_profile": {
+          "total_structured_rows": 91,
+          "candidate_valid_rows": 69,
+          "candidate_distractor_rows": 22,
+          "distractor_ratio": 0.2418,
+          "formats": {
+            "csv": 2,
+            "json": 1,
+            "md": 1
+          },
+          "table_counts": {},
+          "numeric_aggregates_sample": {
+            "district_meter_readings.csv:water_pumped_kl": {
+              "sum": 652560.0,
+              "avg": 10876.0,
+              "median": 10185.0,
+              "min": 7600.0,
+              "max": 16120.0,
+              "count": 60.0
+            },
+            "district_meter_readings.csv:billed_usage_kl": {
+              "sum": 604350.0,
+              "avg": 10072.5,
+              "median": 9665.0,
+              "min": 7130.0,
+              "max": 14300.0,
+              "count": 60.0
+            },
+            "district_meter_readings.csv:pressure_alerts": {
+              "sum": 299.0,
+              "avg": 4.9833,
+              "median": 4.0,
+              "min": 1.0,
+              "max": 15.0,
+              "count": 60.0
+            },
+            "district_profiles.csv:service_connections": {
+              "sum": 6260.0,
+              "avg": 695.5556,
+              "median": 700.0,
+              "min": 410.0,
+              "max": 980.0,
+              "count": 9.0
+            },
+            "district_profiles.csv:district_criticality": {
+              "sum": 525.0,
+              "avg": 58.3333,
+              "median": 55.0,
+              "min": 35.0,
+              "max": 85.0,
+              "count": 9.0
+            }
+          },
+          "group_leader_candidates": [
+            {
+              "file": "district_meter_readings.csv",
+              "group_by": "month",
+              "metric": "water_pumped_kl",
+              "leader": "2026-12",
+              "leader_sum": 113730.0
+            },
+            {
+              "file": "district_meter_readings.csv",
+              "group_by": "month",
+              "metric": "billed_usage_kl",
+              "leader": "2026-12",
+              "leader_sum": 102990.0
+            },
+            {
+              "file": "district_meter_readings.csv",
+              "group_by": "month",
+              "metric": "pressure_alerts",
+              "leader": "2026-12",
+              "leader_sum": 71.0
+            },
+            {
+              "file": "district_meter_readings.csv",
+              "group_by": "zone_id",
+              "metric": "water_pumped_kl",
+              "leader": "Z04",
+              "leader_sum": 92420.0
+            },
+            {
+              "file": "district_meter_readings.csv",
+              "group_by": "zone_id",
+              "metric": "billed_usage_kl",
+              "leader": "Z04",
+              "leader_sum": 83870.0
+            },
+            {
+              "file": "district_meter_readings.csv",
+              "group_by": "zone_id",
+              "metric": "pressure_alerts",
+              "leader": "Z06",
+              "leader_sum": 60.0
+            }
+          ]
+        },
+        "note": "Generic recompute profile; domain-specific formulas still require human/model audit when marked warn."
+      },
+      "expected_fact_match": {
+        "anomaly_score_leader": {
+          "status": "supported",
+          "numeric_hit": false,
+          "phrase_hits": 1
+        },
+        "fastest_loss_rate_increase": {
+          "status": "supported",
+          "numeric_hit": false,
+          "phrase_hits": 1
+        },
+        "loss_volume_hotspot": {
+          "status": "supported",
+          "numeric_hit": false,
+          "phrase_hits": 1
+        },
+        "pressure_alert_hotspot": {
+          "status": "supported",
+          "numeric_hit": false,
+          "phrase_hits": 1
+        },
+        "regional_loss_hotspot": {
+          "status": "supported",
+          "numeric_hit": false,
+          "phrase_hits": 1
+        },
+        "high_priority_threshold_count": {
+          "status": "not_independently_verified"
+        }
+      },
+      "mismatches": [],
+      "notes": [
+        "Critical fact high_priority_threshold_count was not independently verified by generic recompute heuristics."
+      ]
+    },
+    "difficulty_signal": {
+      "status": "pass",
+      "difficulty_signal_score": 100,
+      "difficulty_level": "strong",
+      "positive_signals": [
+        "valid rows >= 20",
+        "distractor ratio >= 15%",
+        "at least two env files",
+        "at least four critical facts",
+        "at least two calculated critical facts",
+        "four or more data-insight operation families",
+        "contains normalization/rate/median/threshold/tie signal"
+      ],
+      "issues": [],
+      "valid_rows": 69,
+      "total_rows": 91,
+      "distractor_rows": 22,
+      "distractor_ratio": 0.2418,
+      "critical_fact_count": 6,
+      "calculated_critical_fact_count": 6
+    },
+    "answer_leakage": {
+      "status": "pass",
+      "leaks": [],
+      "issues": []
+    },
+    "distractor_audit": {
+      "status": "pass",
+      "distractor_types": [
+        "forecast",
+        "old",
+        "subtotal",
+        "test",
+        "total"
+      ],
+      "would_change_answer_if_used": true,
+      "covered_by_negative_facts": true,
+      "issues": []
+    },
+    "checklist_audit": {
+      "status": "pass",
+      "fact_binding_complete": true,
+      "negative_check_robust": true,
+      "cap_reasonable": true,
+      "issues": []
+    },
+    "run_result_audit": {
+      "status": "not_provided",
+      "present_files": {
+        "evaluator_detail": false,
+        "final_answer": false,
+        "generation_prompt": false
+      },
+      "issues": [],
+      "notes": [
+        "No run-result artifacts supplied."
+      ]
+    },
+    "agentic_audit": {
+      "agentic_audit_score": 100,
+      "too_easy_risk": "low",
+      "difficulty_reasoning": [],
+      "recommended_difficulty_upgrade": [],
+      "blind_guess_leakage_risk": "low",
+      "guessed_facts_without_env": [],
+      "leakage_notes": [],
+      "shortcut_risk": "low",
+      "shortcut_paths": [],
+      "fixes": [],
+      "mode": "heuristic_agentic_proxy"
+    },
+    "case_strength_review": {
+      "case_strength_score": 100,
+      "case_strength_level": "strong",
+      "metrics": {
+        "total_structured_rows": 91,
+        "candidate_valid_rows": 69,
+        "candidate_distractor_rows": 22,
+        "distractor_ratio": 0.2418,
+        "structured_formats": {
+          "csv": 2,
+          "json": 1,
+          "md": 1
+        },
+        "table_counts": {},
+        "structure_shape": "mixed_file_types",
+        "env_file_count": 4,
+        "supplemental_rule_files": [
+          "env/leak_triage_rules.json",
+          "env/field_notes.md"
+        ],
+        "critical_fact_count": 6,
+        "calculated_critical_fact_count": 6,
+        "operation_count": 5,
+        "task_directness_score": 0,
+        "answer_leakage_status": "pass",
+        "grounded_fact_binding_complete": true,
+        "distractors_answer_changing": true
+      },
+      "strengths": [
+        "data scale reaches the strong target",
+        "valid-row count reaches the strong target",
+        "distractor ratio reaches the strong target",
+        "case uses separate rule/support files",
+        "case uses a higher-diversity structure: mixed_file_types",
+        "critical fact coverage is broad",
+        "critical facts require calculation or cross-file reasoning",
+        "task is not overly slot-listed",
+        "no answer leakage detected"
+      ],
+      "weaknesses": [],
+      "strong_blockers": [],
+      "recommended_improvements": [],
+      "mode": "heuristic_case_strength_review"
+    }
+  },
+  "recommended_fixes": [
+    "Add clearer rule files or calculation notes so an independent auditor can recompute critical facts from env files."
+  ]
+}

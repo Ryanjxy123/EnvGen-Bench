@@ -1,0 +1,46 @@
+{
+  "case_strength_score": 100,
+  "case_strength_level": "strong",
+  "metrics": {
+    "total_structured_rows": 204,
+    "candidate_valid_rows": 107,
+    "candidate_distractor_rows": 97,
+    "distractor_ratio": 0.4755,
+    "structured_formats": {
+      "sqlite": 1,
+      "json": 1,
+      "md": 1
+    },
+    "table_counts": {
+      "store_ops.sqlite": 5
+    },
+    "structure_shape": "sqlite_multi_table",
+    "env_file_count": 3,
+    "supplemental_rule_files": [
+      "env/ranking_rules.json",
+      "env/operations_notes.md"
+    ],
+    "critical_fact_count": 6,
+    "calculated_critical_fact_count": 6,
+    "operation_count": 5,
+    "task_directness_score": 2,
+    "answer_leakage_status": "pass",
+    "grounded_fact_binding_complete": true,
+    "distractors_answer_changing": true
+  },
+  "strengths": [
+    "data scale reaches the strong target",
+    "valid-row count reaches the strong target",
+    "distractor ratio reaches the strong target",
+    "case uses separate rule/support files",
+    "case uses a higher-diversity structure: sqlite_multi_table",
+    "critical fact coverage is broad",
+    "critical facts require calculation or cross-file reasoning",
+    "task is not overly slot-listed",
+    "no answer leakage detected"
+  ],
+  "weaknesses": [],
+  "strong_blockers": [],
+  "recommended_improvements": [],
+  "mode": "heuristic_case_strength_review"
+}

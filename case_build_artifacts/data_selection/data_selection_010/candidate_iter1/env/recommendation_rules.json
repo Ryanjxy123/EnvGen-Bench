@@ -1,0 +1,42 @@
+{
+  "select_top_n": 5,
+  "equals": {
+    "status": "published",
+    "term": "winter_2027",
+    "eligible_category": 1
+  },
+  "bool_true": {
+    "public_signup": true,
+    "insurance_ok": true
+  },
+  "gte": {
+    "community_score": 82,
+    "seat_capacity": 18
+  },
+  "lte": {
+    "duration_minutes": 60,
+    "setup_complexity": 3
+  },
+  "group_limit": {
+    "field": "category_label",
+    "max": 1
+  },
+  "sort": [
+    {
+      "field": "community_score",
+      "direction": "desc"
+    },
+    {
+      "field": "seat_capacity",
+      "direction": "desc"
+    },
+    {
+      "field": "duration_minutes",
+      "direction": "asc"
+    },
+    {
+      "field": "name",
+      "direction": "asc"
+    }
+  ]
+}

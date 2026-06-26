@@ -1,0 +1,184 @@
+{
+  "iteration": 2,
+  "source_iteration": 1,
+  "source_level": "strong",
+  "source_score": 100,
+  "strong_blockers": [],
+  "recommended_fixes": [],
+  "task_style": "goal_oriented",
+  "regenerate_reason": "Prior candidate was too similar to an existing data_insight case; regenerate with a more diverse shape.",
+  "similarity_review": {
+    "candidate_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\case_build_artifacts\\data_insight\\data_insight_012\\candidate_iter1",
+    "candidate_signature": {
+      "target_image_type": "retail_store_triage_infographic",
+      "formats": [
+        "json",
+        "md",
+        "sqlite"
+      ],
+      "env_count": 3,
+      "topic_tokens_sample": [
+        "action",
+        "aggregation",
+        "analyst",
+        "apply",
+        "area",
+        "artifact",
+        "closed-env",
+        "comparison",
+        "composite",
+        "concise",
+        "copying",
+        "coverage",
+        "create",
+        "data_insight",
+        "distractor",
+        "dumps",
+        "exclude",
+        "exclusion",
+        "exposing",
+        "final",
+        "formulas",
+        "generated",
+        "hard",
+        "ignore",
+        "important",
+        "include",
+        "index",
+        "intervention",
+        "joins",
+        "leadership"
+      ],
+      "calc_tokens": [
+        "analysis",
+        "baseline",
+        "composite",
+        "growth",
+        "join",
+        "joins",
+        "normalization",
+        "normalized",
+        "region",
+        "tie-break",
+        "weighted"
+      ],
+      "fact_tokens_sample": [
+        "growth_leader",
+        "priority_index_leader",
+        "priority_index_risk_store",
+        "region_net_revenue_leader",
+        "retail_distractor_exclusions",
+        "retail_triage_takeaway",
+        "return_rate_hotspot",
+        "staffing_risk_region"
+      ],
+      "answer_pattern_tokens": [
+        "currency_values",
+        "growth_leader",
+        "named_entities",
+        "numeric_values",
+        "percentage_values",
+        "priority_index_leader",
+        "priority_index_risk_store",
+        "region_net_revenue_leader",
+        "retail_triage_takeaway",
+        "return_rate_hotspot",
+        "staffing_risk_region"
+      ]
+    },
+    "max_similarity": 1.0,
+    "diversity_score": 0,
+    "high_similarity": true,
+    "threshold": 0.72,
+    "nearest_case": {
+      "case_id": "data_insight_011",
+      "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_insight\\data_insight_011",
+      "similarity": 1.0,
+      "components": {
+        "target_image_type": 1.0,
+        "env_file_types": 1.0,
+        "file_structure": 1.0,
+        "domain_theme": 1.0,
+        "core_calculation_chain": 1.0,
+        "critical_fact_types": 1.0,
+        "answer_entity_value_pattern": 1.0
+      }
+    },
+    "top_comparisons": [
+      {
+        "case_id": "data_insight_011",
+        "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_insight\\data_insight_011",
+        "similarity": 1.0,
+        "components": {
+          "target_image_type": 1.0,
+          "env_file_types": 1.0,
+          "file_structure": 1.0,
+          "domain_theme": 1.0,
+          "core_calculation_chain": 1.0,
+          "critical_fact_types": 1.0,
+          "answer_entity_value_pattern": 1.0
+        }
+      },
+      {
+        "case_id": "data_insight_006",
+        "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_insight\\data_insight_006",
+        "similarity": 0.1258,
+        "components": {
+          "target_image_type": 0.0,
+          "env_file_types": 0.5,
+          "file_structure": 0.1176,
+          "domain_theme": 0.1682,
+          "core_calculation_chain": 0.0,
+          "critical_fact_types": 0.0,
+          "answer_entity_value_pattern": 0.1667
+        }
+      },
+      {
+        "case_id": "data_insight_001",
+        "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_insight\\data_insight_001",
+        "similarity": 0.116,
+        "components": {
+          "target_image_type": 0.0,
+          "env_file_types": 0.4,
+          "file_structure": 0.0811,
+          "domain_theme": 0.0522,
+          "core_calculation_chain": 0.1429,
+          "critical_fact_types": 0.0,
+          "answer_entity_value_pattern": 0.2353
+        }
+      },
+      {
+        "case_id": "data_insight_009",
+        "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_insight\\data_insight_009",
+        "similarity": 0.1066,
+        "components": {
+          "target_image_type": 0.0,
+          "env_file_types": 0.5,
+          "file_structure": 0.0545,
+          "domain_theme": 0.0952,
+          "core_calculation_chain": 0.0,
+          "critical_fact_types": 0.0,
+          "answer_entity_value_pattern": 0.2353
+        }
+      },
+      {
+        "case_id": "data_insight_003",
+        "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_insight\\data_insight_003",
+        "similarity": 0.106,
+        "components": {
+          "target_image_type": 0.0,
+          "env_file_types": 0.1667,
+          "file_structure": 0.069,
+          "domain_theme": 0.0729,
+          "core_calculation_chain": 0.2308,
+          "critical_fact_types": 0.0,
+          "answer_entity_value_pattern": 0.2353
+        }
+      }
+    ],
+    "decision": "reject_candidate_regenerate",
+    "iteration": 1,
+    "variant": "sqlite_multitable_weighted"
+  },
+  "force_variant": "csv_json_anomaly"
+}

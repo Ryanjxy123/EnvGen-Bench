@@ -1,0 +1,11 @@
+entity_id,entity_name,group_name,scale_denominator,criticality,profile_status
+E01,Home Basics,Home,420,35,active
+E02,Outdoor Pro,Lifestyle,475,48,active
+E03,Beauty Mix,Electronics,530,61,active
+E04,Gadget Hub,Family,585,74,active
+E05,Pet Supply,Auto,640,87,active
+E06,Kitchen Plus,Home,695,40,active
+E07,Fitness Mart,Lifestyle,750,53,active
+E08,Baby Corner,Electronics,805,66,active
+E09,Auto Shelf,Family,860,79,active
+E10,Office Depot,Auto,915,92,active

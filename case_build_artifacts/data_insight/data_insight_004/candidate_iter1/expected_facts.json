@@ -1,0 +1,129 @@
+{
+  "case_id": "data_insight_004",
+  "task_type": "data_insight",
+  "facts": [
+    {
+      "id": "subscription_retention_score_leader",
+      "description": "Top customer segment by weighted retention_risk_score after exclusions, profile mapping, normalization, and tie-breaks.",
+      "source": "env/segment_panel.csv + env/segment_profiles.csv + env/retention_rules.json",
+      "importance": "critical",
+      "expected_value": [
+        "Creator Pro: 82.9",
+        "Creator Pro top score"
+      ],
+      "canonical_answer": "Creator Pro is the top priority with score 82.9",
+      "semantic_acceptance": "Accept if Creator Pro is shown as the highest priority with score near 82.9.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "subscription_retention_lowest_score",
+      "description": "Lowest-risk or lowest-priority customer segment by weighted score.",
+      "source": "env/segment_panel.csv + env/segment_profiles.csv + env/retention_rules.json",
+      "importance": "critical",
+      "expected_value": [
+        "Finance Pods: 19.0",
+        "Finance Pods lowest score"
+      ],
+      "canonical_answer": "Finance Pods is the lowest-ranked entity with score 19.0",
+      "semantic_acceptance": "Accept if Finance Pods is identified as the lowest score entity.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "subscription_retention_fastest_gap_change",
+      "description": "Entity with the largest analysis-period gap-rate increase versus baseline.",
+      "source": "env/segment_panel.csv + env/retention_rules.json",
+      "importance": "critical",
+      "expected_value": [
+        "Creator Pro: 2.7 pp",
+        "Creator Pro fastest gap-rate change"
+      ],
+      "canonical_answer": "Creator Pro has the fastest gap-rate increase at about 2.7 percentage points",
+      "semantic_acceptance": "Accept if Creator Pro is identified as largest gap-rate increase.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "subscription_retention_gap_volume_hotspot",
+      "description": "Entity with the highest analysis-period gap volume.",
+      "source": "env/segment_panel.csv",
+      "importance": "critical",
+      "expected_value": [
+        "Enterprise Lite: 540",
+        "Enterprise Lite highest gap volume"
+      ],
+      "canonical_answer": "Enterprise Lite has the highest analysis-period gap volume at 540",
+      "semantic_acceptance": "Accept if Enterprise Lite is shown as the gap-volume hotspot near 540.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "subscription_retention_incident_rate_hotspot",
+      "description": "Entity with the highest analysis-period incident rate per 1,000 scale units.",
+      "source": "env/segment_panel.csv + env/segment_profiles.csv",
+      "importance": "critical",
+      "expected_value": [
+        "Campus Plans: 49.6 per 1,000",
+        "Campus Plans incident-rate hotspot"
+      ],
+      "canonical_answer": "Campus Plans has the highest incident rate at about 49.6 per 1,000",
+      "semantic_acceptance": "Accept if Campus Plans is identified as incident-rate hotspot.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "subscription_retention_group_gap_hotspot",
+      "description": "Market Region with the highest aggregate analysis-period gap volume.",
+      "source": "env/segment_panel.csv + env/segment_profiles.csv",
+      "importance": "critical",
+      "expected_value": [
+        "Agency: 996",
+        "Agency group hotspot"
+      ],
+      "canonical_answer": "Agency is the group hotspot at 996",
+      "semantic_acceptance": "Accept if Agency is identified as the leading group hotspot.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "subscription_retention_threshold_count",
+      "description": "Count of entities at or above the high-priority score threshold.",
+      "source": "env/retention_rules.json + env/segment_panel.csv + env/segment_profiles.csv",
+      "importance": "critical",
+      "expected_value": [
+        "2 high-priority entities",
+        "threshold count 2"
+      ],
+      "canonical_answer": "2 entities meet the high-priority threshold",
+      "semantic_acceptance": "Accept if the image states that 2 entities are high priority under the configured threshold.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "subscription_retention_distractor_exclusions",
+      "description": "Do not use forecast, subtotal, test, or old-period rows as final metrics.",
+      "source": "env/segment_panel.csv + env/retention_rules.json",
+      "importance": "major",
+      "expected_value": [
+        "invalid panel record used"
+      ],
+      "forbidden_patterns": [
+        "\\b99,?999\\b",
+        "\\b88,?888\\b",
+        "\\b77,?777\\b",
+        "\\bforecast\\b[^.!?\\n;]{0,80}\\b(result|answer|leader|score|gap)\\b",
+        "\\bsubtotal\\b[^.!?\\n;]{0,80}\\b(result|answer|leader|score|gap)\\b",
+        "\\bold[_ -]?period\\b[^.!?\\n;]{0,80}\\b(result|answer|leader|score|gap)\\b"
+      ],
+      "allowed_patterns": [
+        "\\b(exclude|excluded|excluding|ignore|ignored|not\\s+used)\\b[^.!?\\n;]{0,140}\\b(forecast|subtotal|old)"
+      ],
+      "must_not_appear_in_image": true,
+      "canonical_answer": "Invalid panel rows must not be used as final metrics.",
+      "semantic_acceptance": "Reject or cap if invalid rows are treated as final metrics. Exclusion notes are allowed.",
+      "evaluation_role": "negative_only"
+    }
+  ],
+  "calculation_notes": "Join segment_panel.csv to segment_profiles.csv by entity_id. Use only actual closed records. Baseline months are 2026-07 through 2026-09; analysis months are 2026-10 through 2026-12. Gap volume is active_accounts minus retained_accounts. Gap rate is gap divided by active_accounts. retention_risk_score min-max normalizes analysis gap rate, gap-rate change, incident rate per 1,000, and criticality, then applies configured weights. Tie-break order is rounded score, analysis gap volume, criticality, and entity name. Top score entity is Creator Pro at 82.9. Lowest score entity is Finance Pods at 19.0. Fastest gap-rate increase is Creator Pro at 2.7 percentage points. Gap-volume hotspot is Enterprise Lite at 540. Incident-rate hotspot is Campus Plans at 49.6 per 1,000. Group hotspot is Agency at 996. High-priority count is 2."
+}

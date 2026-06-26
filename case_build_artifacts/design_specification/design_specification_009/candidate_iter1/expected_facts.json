@@ -1,0 +1,271 @@
+{
+  "case_id": "design_specification_009",
+  "task_type": "design_specification",
+  "facts": [
+    {
+      "id": "primary_copy_01",
+      "description": "Required visible text: Cooling Center Hours Updated",
+      "source": "env/latest_update.md",
+      "importance": "critical",
+      "expected_value": "Cooling Center Hours Updated",
+      "evaluation_role": "critical_required",
+      "fact_type": "visible_copy",
+      "canonical_answer": "Cooling Center Hours Updated",
+      "must_appear_in_image": true,
+      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image."
+    },
+    {
+      "id": "primary_copy_02",
+      "description": "Required visible text: Open noon to 8 PM through Friday",
+      "source": "env/latest_update.md",
+      "importance": "critical",
+      "expected_value": "Open noon to 8 PM through Friday",
+      "evaluation_role": "critical_required",
+      "fact_type": "visible_copy",
+      "canonical_answer": "Open noon to 8 PM through Friday",
+      "must_appear_in_image": true,
+      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image."
+    },
+    {
+      "id": "primary_copy_03",
+      "description": "Required visible text: Harbor Library Annex",
+      "source": "env/latest_update.md",
+      "importance": "critical",
+      "expected_value": "Harbor Library Annex",
+      "evaluation_role": "critical_required",
+      "fact_type": "visible_copy",
+      "canonical_answer": "Harbor Library Annex",
+      "must_appear_in_image": true,
+      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image."
+    },
+    {
+      "id": "primary_copy_04",
+      "description": "Required visible text: Free rides on Route 6",
+      "source": "env/latest_update.md",
+      "importance": "critical",
+      "expected_value": "Free rides on Route 6",
+      "evaluation_role": "critical_required",
+      "fact_type": "visible_copy",
+      "canonical_answer": "Free rides on Route 6",
+      "must_appear_in_image": true,
+      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image."
+    },
+    {
+      "id": "primary_copy_05",
+      "description": "Required visible text: Call 311 for accessibility help",
+      "source": "env/latest_update.md",
+      "importance": "critical",
+      "expected_value": "Call 311 for accessibility help",
+      "evaluation_role": "critical_required",
+      "fact_type": "visible_copy",
+      "canonical_answer": "Call 311 for accessibility help",
+      "must_appear_in_image": true,
+      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image."
+    },
+    {
+      "id": "canvas_size",
+      "description": "Final artifact uses the current platform pixel canvas.",
+      "source": "env/platform_specs.txt",
+      "importance": "critical",
+      "expected_value": "1200 x 1200 px",
+      "evaluation_role": "major_required",
+      "fact_type": "visual_requirement",
+      "canonical_answer": "1200 x 1200 px"
+    },
+    {
+      "id": "aspect_ratio",
+      "description": "Final artifact uses the current platform aspect ratio.",
+      "source": "env/platform_specs.txt",
+      "importance": "critical",
+      "expected_value": "1:1 square",
+      "evaluation_role": "major_required",
+      "fact_type": "visual_requirement",
+      "canonical_answer": "1:1 square"
+    },
+    {
+      "id": "safe_area",
+      "description": "Essential copy, logo, CTA, hero, and disclosure/source line stay broadly inside safe zones.",
+      "source": "env/platform_specs.txt",
+      "importance": "critical",
+      "expected_value": "top 90 px; bottom 120 px; side 80 px",
+      "evaluation_role": "critical_required",
+      "fact_type": "visual_requirement",
+      "canonical_answer": "top 90 px; bottom 120 px; side 80 px",
+      "semantic_acceptance": "Minor safe-zone drift should be checklist deduction only, not a hard cap."
+    },
+    {
+      "id": "logo_position",
+      "description": "Current logo appears in the required platform position.",
+      "source": "env/platform_specs.txt; env/visual_rules.json; env/asset_manifest.json",
+      "importance": "critical",
+      "expected_value": "top-left safe area",
+      "evaluation_role": "critical_required",
+      "fact_type": "visual_requirement",
+      "canonical_answer": "top-left safe area"
+    },
+    {
+      "id": "cta_position",
+      "description": "CTA appears in the required platform position.",
+      "source": "env/platform_specs.txt; env/visual_rules.json",
+      "importance": "critical",
+      "expected_value": "bottom safe area phone/help line",
+      "evaluation_role": "critical_required",
+      "fact_type": "visual_requirement",
+      "canonical_answer": "bottom safe area phone/help line"
+    },
+    {
+      "id": "text_density",
+      "description": "Text density follows the platform limit.",
+      "source": "env/platform_specs.txt; env/visual_rules.json",
+      "importance": "major",
+      "expected_value": "no more than 6 short text blocks",
+      "evaluation_role": "major_required",
+      "fact_type": "visual_requirement",
+      "canonical_answer": "no more than 6 short text blocks"
+    },
+    {
+      "id": "palette_tokens",
+      "description": "Current palette is dominant and archive palette is not dominant.",
+      "source": "env/visual_rules.json",
+      "importance": "major",
+      "expected_value": [
+        "#0D4C92",
+        "#F9D65C",
+        "#F7FBFF",
+        "#1F2937"
+      ],
+      "evaluation_role": "major_required",
+      "fact_type": "visual_requirement",
+      "semantic_acceptance": "Exact hex matching is not required, but deprecated palettes should not dominate."
+    },
+    {
+      "id": "required_asset_usage",
+      "description": "Required current campaign asset is used in its allowed role.",
+      "source": "env/asset_manifest.json; env/latest_update.md",
+      "importance": "critical",
+      "expected_value": "current_county_services_wordmark",
+      "evaluation_role": "critical_required",
+      "fact_type": "visual_requirement",
+      "canonical_answer": "current_county_services_wordmark"
+    },
+    {
+      "id": "hero_component_1",
+      "description": "cooling center building or library cue visible",
+      "source": "env/visual_rules.json; env/asset_manifest.json",
+      "importance": "critical",
+      "expected_value": "cooling center building or library cue visible",
+      "evaluation_role": "critical_required",
+      "fact_type": "visual_requirement",
+      "canonical_answer": "cooling center building or library cue visible"
+    },
+    {
+      "id": "hero_component_2",
+      "description": "bus/route support cue visible",
+      "source": "env/visual_rules.json; env/asset_manifest.json",
+      "importance": "critical",
+      "expected_value": "bus/route support cue visible",
+      "evaluation_role": "critical_required",
+      "fact_type": "visual_requirement",
+      "canonical_answer": "bus/route support cue visible"
+    },
+    {
+      "id": "hero_component_3",
+      "description": "accessibility help cue visible",
+      "source": "env/visual_rules.json; env/asset_manifest.json",
+      "importance": "critical",
+      "expected_value": "accessibility help cue visible",
+      "evaluation_role": "critical_required",
+      "fact_type": "visual_requirement",
+      "canonical_answer": "accessibility help cue visible"
+    },
+    {
+      "id": "hero_component_4",
+      "description": "high-contrast public notice layout visible",
+      "source": "env/visual_rules.json; env/asset_manifest.json",
+      "importance": "critical",
+      "expected_value": "high-contrast public notice layout visible",
+      "evaluation_role": "critical_required",
+      "fact_type": "visual_requirement",
+      "canonical_answer": "high-contrast public notice layout visible"
+    },
+    {
+      "id": "platform_conflict",
+      "description": "Current platform overrides the old platform spec.",
+      "source": "env/latest_update.md; env/platform_specs.txt; env/deprecated_assets.json",
+      "importance": "critical",
+      "expected_value": "use Community square social post not Transit card 1080 x 1920",
+      "evaluation_role": "critical_required",
+      "fact_type": "resolution_fact",
+      "canonical_answer": "use Community square social post not Transit card 1080 x 1920",
+      "semantic_acceptance": "Score from final canvas/platform evidence, not from OCR text repeating the rule."
+    },
+    {
+      "id": "asset_ambiguity",
+      "description": "Only current-campaign-allowed assets are active final elements.",
+      "source": "env/asset_manifest.json; env/deprecated_assets.json",
+      "importance": "critical",
+      "expected_value": "use only current_campaign_allowed assets for active logo/hero/support roles",
+      "evaluation_role": "critical_required",
+      "fact_type": "resolution_fact",
+      "canonical_answer": "use only current_campaign_allowed assets for active logo/hero/support roles",
+      "semantic_acceptance": "Score from current asset selection and exclusion of deprecated assets, not from OCR text repeating the rule."
+    },
+    {
+      "id": "priority_conflict",
+      "description": "Priority order is resolved in favor of latest_update and current specs.",
+      "source": "env/latest_update.md",
+      "importance": "critical",
+      "expected_value": "latest_update.md > platform_specs.txt > visual_rules.json > asset_manifest.json",
+      "evaluation_role": "critical_required",
+      "fact_type": "resolution_fact",
+      "canonical_answer": "latest_update.md > platform_specs.txt > visual_rules.json > asset_manifest.json",
+      "semantic_acceptance": "Score from final use of latest/current requirements over old requirements, not from OCR text repeating the priority order."
+    },
+    {
+      "id": "conditional_rules",
+      "description": "Busy or bright hero backgrounds use a readable copy panel.",
+      "source": "env/visual_rules.json",
+      "importance": "major",
+      "expected_value": "solid or high-opacity panel when needed",
+      "evaluation_role": "major_required",
+      "fact_type": "conditional_fact",
+      "canonical_answer": "solid or high-opacity panel when needed",
+      "semantic_acceptance": "Score from visual readability treatment when the condition applies, not from OCR text repeating the rule."
+    },
+    {
+      "id": "compliance_requirements",
+      "description": "Domain claim and visual traps are avoided.",
+      "source": "env/service_rules.txt; env/deprecated_assets.json",
+      "importance": "critical",
+      "expected_value": "avoid prohibited claims and restricted visual habits",
+      "evaluation_role": "critical_required",
+      "fact_type": "negative_only",
+      "canonical_answer": "avoid prohibited claims and restricted visual habits",
+      "semantic_acceptance": "Score from absence of prohibited claims and restricted visual treatments in the final design."
+    },
+    {
+      "id": "forbidden_elements_not_active",
+      "description": "Deprecated copy, claims, logos, assets, old platform specs, and restricted visuals are not active final content.",
+      "source": "env/deprecated_assets.json; env/service_rules.txt; env/latest_update.md; env/visual_rules.json",
+      "importance": "critical",
+      "must_not_appear_in_image": true,
+      "forbidden_patterns": [
+        "Civic Gym",
+        "Open 9 AM to 5 PM",
+        "Call 555-0199",
+        "Transit card layout",
+        "emergency siren icon"
+      ],
+      "allowed_patterns": [
+        "Civic Gym.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
+        "Open 9 AM to 5 PM.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
+        "Call 555\\-0199.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
+        "Transit card layout.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
+        "emergency siren icon.{0,120}(deprecated|do not use|archived|retired|forbidden|old)"
+      ],
+      "evaluation_role": "negative_only",
+      "fact_type": "negative_only"
+    }
+  ],
+  "calculation_notes": "Generated facts bind design-specification difficulty to task-visible env rules: platform conflict, asset ambiguity, priority conflict, compliance/visual traps, and layout pressure. Minor placement deviations should be checklist deductions rather than hard caps."
+}

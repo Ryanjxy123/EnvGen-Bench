@@ -1,0 +1,51 @@
+{
+  "case_strength_score": 92,
+  "case_strength_level": "adequate",
+  "metrics": {
+    "total_structured_rows": 83,
+    "candidate_valid_rows": 66,
+    "candidate_distractor_rows": 17,
+    "distractor_ratio": 0.2048,
+    "structured_formats": {
+      "xlsx": 1,
+      "md": 2,
+      "json": 1,
+      "csv": 1
+    },
+    "table_counts": {},
+    "structure_shape": "mixed_file_types",
+    "env_file_count": 5,
+    "supplemental_rule_files": [
+      "env/metric_rules.md",
+      "env/region_mapping.json",
+      "env/manager_notes.md"
+    ],
+    "critical_fact_count": 5,
+    "calculated_critical_fact_count": 4,
+    "operation_count": 5,
+    "task_directness_score": 6,
+    "answer_leakage_status": "pass",
+    "grounded_fact_binding_complete": true,
+    "distractors_answer_changing": true
+  },
+  "strengths": [
+    "data scale reaches the strong target",
+    "valid-row count reaches the strong target",
+    "distractor ratio reaches the strong target",
+    "case uses separate rule/support files",
+    "case uses a higher-diversity structure: mixed_file_types",
+    "critical fact coverage is broad",
+    "critical facts require calculation or cross-file reasoning",
+    "no answer leakage detected"
+  ],
+  "weaknesses": [
+    "task asks for too many metric slots directly"
+  ],
+  "strong_blockers": [
+    "task is too direct"
+  ],
+  "recommended_improvements": [
+    "Ask for a decision artifact or infographic goal rather than listing every metric slot."
+  ],
+  "mode": "heuristic_case_strength_review"
+}

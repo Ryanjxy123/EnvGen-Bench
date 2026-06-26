@@ -1,0 +1,38 @@
+{
+  "select_top_n": 6,
+  "equals": {
+    "status": "approved",
+    "exhibit_window": "spring_2027",
+    "loan_ready": "yes",
+    "rights_cleared": "yes"
+  },
+  "gt": {
+    "narrative_score": 85
+  },
+  "lte": {
+    "install_minutes": 60,
+    "fragility_level": 3
+  },
+  "group_limit": {
+    "field": "collection",
+    "max": 2
+  },
+  "sort": [
+    {
+      "field": "narrative_score",
+      "direction": "desc"
+    },
+    {
+      "field": "condition_risk",
+      "direction": "desc"
+    },
+    {
+      "field": "install_minutes",
+      "direction": "asc"
+    },
+    {
+      "field": "name",
+      "direction": "asc"
+    }
+  ]
+}

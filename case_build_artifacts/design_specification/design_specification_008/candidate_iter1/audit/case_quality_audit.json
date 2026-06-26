@@ -1,0 +1,194 @@
+{
+  "case_id": "design_specification_008",
+  "task_type": "design_specification",
+  "static_audit_score": 100,
+  "static_quality_level": "strong",
+  "case_strength_score": 100,
+  "final_quality_score": 100,
+  "final_quality_level": "strong",
+  "overall_quality_score": 100,
+  "quality_level": "strong",
+  "strong_level_blockers": [],
+  "issue_summary": [],
+  "checks": {
+    "structure": {
+      "status": "pass",
+      "issues": [],
+      "warnings": [],
+      "env_file_count": 6
+    },
+    "reference_integrity": {
+      "status": "pass",
+      "issues": [],
+      "fact_ids": [
+        "aspect_ratio",
+        "asset_ambiguity",
+        "canvas_size",
+        "compliance_requirements",
+        "conditional_rules",
+        "cta_position",
+        "forbidden_elements_not_active",
+        "hero_component_1",
+        "hero_component_2",
+        "hero_component_3",
+        "hero_component_4",
+        "logo_position",
+        "palette_tokens",
+        "platform_conflict",
+        "primary_copy_01",
+        "primary_copy_02",
+        "primary_copy_03",
+        "primary_copy_04",
+        "primary_copy_05",
+        "priority_conflict",
+        "required_asset_usage",
+        "safe_area",
+        "text_density"
+      ]
+    },
+    "answer_leakage": {
+      "status": "pass",
+      "issues": []
+    },
+    "fairness": {
+      "status": "pass",
+      "issues": [],
+      "warnings": []
+    },
+    "case_strength_review": {
+      "status": "strong",
+      "signal_count": 5,
+      "signals": {
+        "platform_conflict": true,
+        "asset_ambiguity": true,
+        "priority_conflict": true,
+        "compliance_or_visual_trap": true,
+        "layout_space_pressure": true
+      },
+      "evidence": {
+        "platform_conflict": [
+          "old/current platform or dimension conflict appears in env and platform facts are scored"
+        ],
+        "asset_ambiguity": [
+          "asset manifest contains multiple/restricted assets and asset/visual facts are scored"
+        ],
+        "priority_conflict": [
+          "priority chain appears in env and conflict/multi-source resolution is scored"
+        ],
+        "compliance_or_visual_trap": [
+          "forbidden claims/styles appear in env and negative/compliance facts are scored"
+        ],
+        "layout_space_pressure": [
+          "safe-zone, logo/CTA/hero/disclosure constraints appear in env and layout facts are scored"
+        ]
+      },
+      "issues": []
+    },
+    "diversity_review": {
+      "status": "pass",
+      "candidate_signature": {
+        "case_id": "design_specification_008",
+        "domain": "saas",
+        "platform": "linkedin",
+        "target_image_type": "saas_web_leaderboard_banner",
+        "formats": [
+          "json",
+          "json",
+          "json",
+          "md",
+          "md",
+          "txt"
+        ],
+        "signal_keys": [
+          "asset_ambiguity",
+          "compliance_or_visual_trap",
+          "layout_space_pressure",
+          "platform_conflict",
+          "priority_conflict"
+        ]
+      },
+      "max_similarity": 0.63,
+      "diversity_score": 37,
+      "high_similarity": false,
+      "nearest_case": {
+        "case_id": "design_specification_001",
+        "similarity": 0.63,
+        "components": {
+          "target": 0.0,
+          "domain": 1.0,
+          "platform": 1.0,
+          "conflict_mechanism": 1.0,
+          "forbidden_patterns": 0.0,
+          "env_shape": 1.0
+        }
+      },
+      "top_comparisons": [
+        {
+          "case_id": "design_specification_001",
+          "similarity": 0.63,
+          "components": {
+            "target": 0.0,
+            "domain": 1.0,
+            "platform": 1.0,
+            "conflict_mechanism": 1.0,
+            "forbidden_patterns": 0.0,
+            "env_shape": 1.0
+          }
+        },
+        {
+          "case_id": "design_specification_005",
+          "similarity": 0.48,
+          "components": {
+            "target": 0.0,
+            "domain": 1.0,
+            "platform": 0.0,
+            "conflict_mechanism": 1.0,
+            "forbidden_patterns": 0.0,
+            "env_shape": 1.0
+          }
+        },
+        {
+          "case_id": "design_specification_002",
+          "similarity": 0.23,
+          "components": {
+            "target": 0.0,
+            "domain": 0.0,
+            "platform": 0.0,
+            "conflict_mechanism": 1.0,
+            "forbidden_patterns": 0.0,
+            "env_shape": 1.0
+          }
+        },
+        {
+          "case_id": "design_specification_003",
+          "similarity": 0.23,
+          "components": {
+            "target": 0.0,
+            "domain": 0.0,
+            "platform": 0.0,
+            "conflict_mechanism": 1.0,
+            "forbidden_patterns": 0.0,
+            "env_shape": 1.0
+          }
+        },
+        {
+          "case_id": "design_specification_004",
+          "similarity": 0.23,
+          "components": {
+            "target": 0.0,
+            "domain": 0.0,
+            "platform": 0.0,
+            "conflict_mechanism": 1.0,
+            "forbidden_patterns": 0.0,
+            "env_shape": 1.0
+          }
+        }
+      ]
+    },
+    "run_result_audit": {
+      "status": "pass",
+      "issues": []
+    }
+  },
+  "recommended_fixes": []
+}

@@ -1,0 +1,286 @@
+{
+  "case_id": "data_insight_001",
+  "task_type": "data_insight",
+  "static_audit_score": 91,
+  "static_quality_level": "pass",
+  "agentic_audit_score": null,
+  "case_strength_score": null,
+  "final_quality_score": 84,
+  "final_quality_level": "pass",
+  "overall_quality_score": 84,
+  "quality_level": "pass",
+  "strong_level_blockers": [
+    "Strong is capped at pass until --strength case_strength_review runs."
+  ],
+  "issue_summary": [
+    "No obvious raw table / spreadsheet dump cap found.",
+    "Strong is capped at pass until --strength case_strength_review runs."
+  ],
+  "checks": {
+    "structure": {
+      "status": "pass",
+      "issues": [],
+      "warnings": []
+    },
+    "data_insight_validity": {
+      "status": "pass",
+      "operation_hits": {
+        "filtering": true,
+        "aggregation": true,
+        "group_comparison": true,
+        "rule_interpretation": true,
+        "takeaway": true
+      },
+      "operation_count": 5,
+      "too_direct_or_too_easy": false,
+      "issues": []
+    },
+    "independent_recompute": {
+      "status": "warn",
+      "computed_facts": {
+        "table_profile": {
+          "total_structured_rows": 83,
+          "candidate_valid_rows": 66,
+          "candidate_distractor_rows": 17,
+          "distractor_ratio": 0.2048,
+          "formats": {
+            "xlsx": 1,
+            "md": 2,
+            "json": 1,
+            "csv": 1
+          },
+          "table_counts": {},
+          "numeric_aggregates_sample": {
+            "sales_2025.xlsx:fiscal_year": {
+              "sum": 121500.0,
+              "avg": 2025.0,
+              "median": 2025.0,
+              "min": 2025.0,
+              "max": 2025.0,
+              "count": 60.0
+            },
+            "sales_2025.xlsx:gross_revenue": {
+              "sum": 1520833.0,
+              "avg": 25347.2167,
+              "median": 23496.0,
+              "min": 7476.0,
+              "max": 55536.0,
+              "count": 60.0
+            },
+            "sales_2025.xlsx:discount": {
+              "sum": 75771.0,
+              "avg": 1262.85,
+              "median": 1147.5,
+              "min": 360.0,
+              "max": 3172.0,
+              "count": 60.0
+            },
+            "sales_2025.xlsx:refund": {
+              "sum": 14062.0,
+              "avg": 234.3667,
+              "median": 187.5,
+              "min": 49.0,
+              "max": 882.0,
+              "count": 60.0
+            },
+            "sales_2025.xlsx:units": {
+              "sum": 5583.0,
+              "avg": 93.05,
+              "median": 87.0,
+              "min": 12.0,
+              "max": 271.0,
+              "count": 60.0
+            },
+            "sales_2025.xlsx:order_count": {
+              "sum": 60.0,
+              "avg": 1.0,
+              "median": 1.0,
+              "min": 1.0,
+              "max": 1.0,
+              "count": 60.0
+            }
+          },
+          "group_leader_candidates": [
+            {
+              "file": "sales_2025.xlsx",
+              "group_by": "category",
+              "metric": "fiscal_year",
+              "leader": "Smart Home",
+              "leader_sum": 24300.0
+            },
+            {
+              "file": "sales_2025.xlsx",
+              "group_by": "category",
+              "metric": "gross_revenue",
+              "leader": "Smart Home",
+              "leader_sum": 454930.0
+            },
+            {
+              "file": "sales_2025.xlsx",
+              "group_by": "category",
+              "metric": "discount",
+              "leader": "Smart Home",
+              "leader_sum": 22636.0
+            },
+            {
+              "file": "sales_2025.xlsx",
+              "group_by": "category",
+              "metric": "refund",
+              "leader": "Smart Home",
+              "leader_sum": 4294.0
+            },
+            {
+              "file": "sales_2025.xlsx",
+              "group_by": "category",
+              "metric": "units",
+              "leader": "Accessories",
+              "leader_sum": 2175.0
+            },
+            {
+              "file": "sales_2025.xlsx",
+              "group_by": "channel",
+              "metric": "fiscal_year",
+              "leader": "Direct",
+              "leader_sum": 40500.0
+            },
+            {
+              "file": "sales_2025.xlsx",
+              "group_by": "channel",
+              "metric": "gross_revenue",
+              "leader": "Retail",
+              "leader_sum": 511899.0
+            },
+            {
+              "file": "sales_2025.xlsx",
+              "group_by": "channel",
+              "metric": "discount",
+              "leader": "Partner",
+              "leader_sum": 29007.0
+            },
+            {
+              "file": "sales_2025.xlsx",
+              "group_by": "channel",
+              "metric": "refund",
+              "leader": "Retail",
+              "leader_sum": 5073.0
+            },
+            {
+              "file": "sales_2025.xlsx",
+              "group_by": "channel",
+              "metric": "units",
+              "leader": "Partner",
+              "leader_sum": 1889.0
+            }
+          ]
+        },
+        "note": "Generic recompute profile; domain-specific formulas still require human/model audit when marked warn."
+      },
+      "expected_fact_match": {
+        "total_2025_net_revenue": {
+          "status": "supported",
+          "numeric_hit": true,
+          "phrase_hits": 0
+        },
+        "highest_net_month": {
+          "status": "supported",
+          "numeric_hit": true,
+          "phrase_hits": 0
+        },
+        "fastest_qoq_growth": {
+          "status": "not_independently_verified"
+        },
+        "top_categories_net_share": {
+          "status": "supported",
+          "numeric_hit": false,
+          "phrase_hits": 3
+        },
+        "strongest_reporting_region": {
+          "status": "not_independently_verified"
+        }
+      },
+      "mismatches": [],
+      "notes": [
+        "Critical fact fastest_qoq_growth was not independently verified by generic recompute heuristics.",
+        "Critical fact strongest_reporting_region was not independently verified by generic recompute heuristics."
+      ]
+    },
+    "difficulty_signal": {
+      "status": "pass",
+      "difficulty_signal_score": 100,
+      "difficulty_level": "strong",
+      "positive_signals": [
+        "valid rows >= 20",
+        "distractor ratio >= 15%",
+        "at least two env files",
+        "at least four critical facts",
+        "at least two calculated critical facts",
+        "four or more data-insight operation families",
+        "contains normalization/rate/median/threshold/tie signal"
+      ],
+      "issues": [],
+      "valid_rows": 66,
+      "total_rows": 83,
+      "distractor_rows": 17,
+      "distractor_ratio": 0.2048,
+      "critical_fact_count": 5,
+      "calculated_critical_fact_count": 4
+    },
+    "answer_leakage": {
+      "status": "pass",
+      "leaks": [],
+      "issues": []
+    },
+    "distractor_audit": {
+      "status": "pass",
+      "distractor_types": [
+        "cancelled",
+        "draft",
+        "estimate",
+        "forecast",
+        "internal",
+        "old",
+        "prior quarter",
+        "returned",
+        "subtotal",
+        "test",
+        "total"
+      ],
+      "would_change_answer_if_used": true,
+      "covered_by_negative_facts": true,
+      "issues": []
+    },
+    "checklist_audit": {
+      "status": "warn",
+      "fact_binding_complete": true,
+      "negative_check_robust": true,
+      "cap_reasonable": true,
+      "issues": [
+        "No obvious raw table / spreadsheet dump cap found."
+      ]
+    },
+    "run_result_audit": {
+      "status": "not_provided",
+      "present_files": {
+        "evaluator_detail": false,
+        "final_answer": false,
+        "generation_prompt": false
+      },
+      "issues": [],
+      "notes": [
+        "No run-result artifacts supplied."
+      ]
+    },
+    "agentic_audit": {
+      "status": "not_run",
+      "agentic_audit_score": null
+    },
+    "case_strength_review": {
+      "status": "not_run",
+      "case_strength_score": null
+    }
+  },
+  "recommended_fixes": [
+    "Bind every critical_required fact to grounded checklist items and keep grounded scoring dominant.",
+    "Add clearer rule files or calculation notes so an independent auditor can recompute critical facts from env files."
+  ]
+}

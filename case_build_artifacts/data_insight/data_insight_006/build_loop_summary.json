@@ -1,0 +1,39 @@
+{
+  "case_id": "data_insight_006",
+  "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_insight\\data_insight_006",
+  "artifact_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\case_build_artifacts\\data_insight\\data_insight_006",
+  "max_iters": 2,
+  "iterations_used": 0,
+  "initial_level": "strong",
+  "initial_score": 100,
+  "final_level": "strong",
+  "final_score": 100,
+  "status": "strong",
+  "final_blockers": [],
+  "iterations": [
+    {
+      "iteration": 1,
+      "before_level": "strong",
+      "before_score": 100,
+      "decision": "already_strong",
+      "applied_changes": []
+    }
+  ],
+  "removed_case_root_artifacts_before_run": [
+    "adversarial_solver_audit.json",
+    "agentic_audit.json",
+    "build_loop_summary.json",
+    "build_loop_summary.md",
+    "case_quality_audit.iter0.json",
+    "case_quality_audit.iter0.md",
+    "case_quality_audit.iter1.json",
+    "case_quality_audit.iter1.md",
+    "case_quality_audit.json",
+    "case_quality_audit.md",
+    "improvement_plan.iter1.json"
+  ],
+  "removed_case_root_artifacts_after_run": [],
+  "audit_snapshots": [
+    "case_quality_audit.iter0.json"
+  ]
+}

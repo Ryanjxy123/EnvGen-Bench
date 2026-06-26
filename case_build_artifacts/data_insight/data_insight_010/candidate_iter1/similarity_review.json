@@ -1,0 +1,171 @@
+{
+  "candidate_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\case_build_artifacts\\data_insight\\data_insight_010\\candidate_iter1",
+  "candidate_signature": {
+    "target_image_type": "school_attendance_recovery_infographic",
+    "formats": [
+      "csv",
+      "json",
+      "md"
+    ],
+    "env_count": 4,
+    "topic_tokens_sample": [
+      "aggregation",
+      "area",
+      "attendance",
+      "boundaries",
+      "closed-env",
+      "concise",
+      "configured",
+      "counts",
+      "create",
+      "csv",
+      "data_insight",
+      "decision",
+      "distractor",
+      "dumps",
+      "exclusion",
+      "exclusions",
+      "expose",
+      "focus",
+      "formula",
+      "generated",
+      "group",
+      "hard",
+      "highest-priority",
+      "identify",
+      "json",
+      "mapping",
+      "multi-period",
+      "normalized",
+      "not",
+      "notes"
+    ],
+    "calc_tokens": [
+      "analysis",
+      "baseline",
+      "csv",
+      "group",
+      "join",
+      "mapping",
+      "normalization",
+      "threshold",
+      "tie-break",
+      "weighted"
+    ],
+    "fact_tokens_sample": [
+      "school_attendance_distractor_exclusions",
+      "school_attendance_fastest_gap_change",
+      "school_attendance_gap_volume_hotspot",
+      "school_attendance_group_gap_hotspot",
+      "school_attendance_incident_rate_hotspot",
+      "school_attendance_lowest_score",
+      "school_attendance_score_leader",
+      "school_attendance_threshold_count"
+    ],
+    "answer_pattern_tokens": [
+      "named_entities",
+      "numeric_values",
+      "percentage_values",
+      "school_attendance_fastest_gap_change",
+      "school_attendance_gap_volume_hotspot",
+      "school_attendance_group_gap_hotspot",
+      "school_attendance_incident_rate_hotspot",
+      "school_attendance_lowest_score",
+      "school_attendance_score_leader",
+      "school_attendance_threshold_count"
+    ]
+  },
+  "max_similarity": 0.578,
+  "diversity_score": 42,
+  "high_similarity": false,
+  "threshold": 0.72,
+  "nearest_case": {
+    "case_id": "data_insight_008",
+    "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_insight\\data_insight_008",
+    "similarity": 0.578,
+    "components": {
+      "target_image_type": 0.0,
+      "env_file_types": 1.0,
+      "file_structure": 0.5882,
+      "domain_theme": 0.8491,
+      "core_calculation_chain": 1.0,
+      "critical_fact_types": 0.0,
+      "answer_entity_value_pattern": 0.1765
+    }
+  },
+  "top_comparisons": [
+    {
+      "case_id": "data_insight_008",
+      "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_insight\\data_insight_008",
+      "similarity": 0.578,
+      "components": {
+        "target_image_type": 0.0,
+        "env_file_types": 1.0,
+        "file_structure": 0.5882,
+        "domain_theme": 0.8491,
+        "core_calculation_chain": 1.0,
+        "critical_fact_types": 0.0,
+        "answer_entity_value_pattern": 0.1765
+      }
+    },
+    {
+      "case_id": "data_insight_002",
+      "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_insight\\data_insight_002",
+      "similarity": 0.575,
+      "components": {
+        "target_image_type": 0.0,
+        "env_file_types": 1.0,
+        "file_structure": 0.6122,
+        "domain_theme": 0.8148,
+        "core_calculation_chain": 1.0,
+        "critical_fact_types": 0.0,
+        "answer_entity_value_pattern": 0.1765
+      }
+    },
+    {
+      "case_id": "data_insight_007",
+      "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_insight\\data_insight_007",
+      "similarity": 0.5731,
+      "components": {
+        "target_image_type": 0.0,
+        "env_file_types": 1.0,
+        "file_structure": 0.6,
+        "domain_theme": 0.8148,
+        "core_calculation_chain": 1.0,
+        "critical_fact_types": 0.0,
+        "answer_entity_value_pattern": 0.1765
+      }
+    },
+    {
+      "case_id": "data_insight_005",
+      "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_insight\\data_insight_005",
+      "similarity": 0.5712,
+      "components": {
+        "target_image_type": 0.0,
+        "env_file_types": 1.0,
+        "file_structure": 0.5882,
+        "domain_theme": 0.8148,
+        "core_calculation_chain": 1.0,
+        "critical_fact_types": 0.0,
+        "answer_entity_value_pattern": 0.1765
+      }
+    },
+    {
+      "case_id": "data_insight_004",
+      "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_insight\\data_insight_004",
+      "similarity": 0.5701,
+      "components": {
+        "target_image_type": 0.0,
+        "env_file_types": 1.0,
+        "file_structure": 0.6,
+        "domain_theme": 0.8,
+        "core_calculation_chain": 1.0,
+        "critical_fact_types": 0.0,
+        "answer_entity_value_pattern": 0.1765
+      }
+    }
+  ],
+  "decision": "diversity_ok",
+  "iteration": 1,
+  "variant": "panel_school_attendance"
+}

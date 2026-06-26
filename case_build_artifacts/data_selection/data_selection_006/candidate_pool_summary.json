@@ -1,0 +1,35 @@
+{
+  "case_id": "data_selection_006",
+  "variant": "museum_exhibit_shortlist",
+  "artifact_root": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\case_build_artifacts\\data_selection\\data_selection_006",
+  "formal_case_dir": "benchmark\\cases\\data_selection\\data_selection_006",
+  "max_iters": 3,
+  "accepted": true,
+  "selected_iteration": 1,
+  "selected_candidate_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\case_build_artifacts\\data_selection\\data_selection_006\\candidate_iter1",
+  "selected_variant": "museum_exhibit_shortlist",
+  "selected_diversity_score": 60,
+  "selected_max_similarity": 0.4016,
+  "admission_rule": "Accept first strong candidate only when similarity is below 0.7; else best candidate with level >= pass, score >= 85, diversity >= 35, and no high-similarity flag.",
+  "failure_reason": null,
+  "similarity_review_path": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\case_build_artifacts\\data_selection\\data_selection_006\\similarity_review.json",
+  "candidates": [
+    {
+      "iteration": 1,
+      "candidate_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\case_build_artifacts\\data_selection\\data_selection_006\\candidate_iter1",
+      "variant": "museum_exhibit_shortlist",
+      "level": "strong",
+      "score": 100,
+      "static_score": 100,
+      "agentic_score": 100,
+      "case_strength_score": 100,
+      "diversity_score": 60,
+      "max_similarity": 0.4016,
+      "nearest_case_id": "data_selection_007",
+      "high_similarity": false,
+      "status": "accepted_strong",
+      "strong_blockers": [],
+      "recommended_fixes": []
+    }
+  ]
+}

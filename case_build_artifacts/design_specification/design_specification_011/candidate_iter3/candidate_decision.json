@@ -1,0 +1,26 @@
+{
+  "iteration": 3,
+  "candidate_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\case_build_artifacts\\design_specification\\design_specification_011\\candidate_iter3",
+  "variant": "saas_web_banner",
+  "domain": "saas",
+  "platform": "Web leaderboard banner",
+  "target_image_type": "saas_web_leaderboard_banner",
+  "level": "revise",
+  "score": 90,
+  "strength_signals": {
+    "platform_conflict": true,
+    "asset_ambiguity": true,
+    "priority_conflict": true,
+    "compliance_or_visual_trap": true,
+    "layout_space_pressure": true
+  },
+  "signal_count": 5,
+  "diversity_score": 0,
+  "max_similarity": 1.0,
+  "nearest_case_id": "design_specification_008",
+  "high_similarity": true,
+  "status": "discarded_high_similarity",
+  "blockers": [
+    "candidate is highly similar to existing design_specification case"
+  ]
+}

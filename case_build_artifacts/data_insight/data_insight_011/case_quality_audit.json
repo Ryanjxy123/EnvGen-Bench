@@ -1,0 +1,162 @@
+{
+  "case_id": "data_insight_011",
+  "task_type": "data_insight",
+  "static_audit_score": 100,
+  "static_quality_level": "pass",
+  "agentic_audit_score": null,
+  "case_strength_score": null,
+  "final_quality_score": 84,
+  "final_quality_level": "pass",
+  "overall_quality_score": 84,
+  "quality_level": "pass",
+  "strong_level_blockers": [
+    "Strong is capped at pass until --strength case_strength_review runs."
+  ],
+  "issue_summary": [
+    "Strong is capped at pass until --strength case_strength_review runs."
+  ],
+  "checks": {
+    "structure": {
+      "status": "pass",
+      "issues": [],
+      "warnings": []
+    },
+    "data_insight_validity": {
+      "status": "pass",
+      "operation_hits": {
+        "filtering": true,
+        "aggregation": true,
+        "group_comparison": true,
+        "rule_interpretation": true,
+        "takeaway": true
+      },
+      "operation_count": 5,
+      "too_direct_or_too_easy": false,
+      "issues": []
+    },
+    "independent_recompute": {
+      "status": "pass",
+      "computed_facts": {
+        "table_profile": {
+          "total_structured_rows": 204,
+          "candidate_valid_rows": 107,
+          "candidate_distractor_rows": 97,
+          "distractor_ratio": 0.4755,
+          "formats": {
+            "sqlite": 1,
+            "json": 1,
+            "md": 1
+          },
+          "table_counts": {
+            "store_ops.sqlite": 5
+          },
+          "numeric_aggregates_sample": {},
+          "group_leader_candidates": []
+        },
+        "note": "Generic recompute profile; domain-specific formulas still require human/model audit when marked warn."
+      },
+      "expected_fact_match": {
+        "priority_index_leader": {
+          "status": "supported",
+          "numeric_hit": false,
+          "phrase_hits": 1
+        },
+        "priority_index_risk_store": {
+          "status": "supported",
+          "numeric_hit": false,
+          "phrase_hits": 1
+        },
+        "region_net_revenue_leader": {
+          "status": "supported",
+          "numeric_hit": false,
+          "phrase_hits": 1
+        },
+        "growth_leader": {
+          "status": "supported",
+          "numeric_hit": false,
+          "phrase_hits": 1
+        },
+        "return_rate_hotspot": {
+          "status": "supported",
+          "numeric_hit": false,
+          "phrase_hits": 1
+        },
+        "staffing_risk_region": {
+          "status": "supported",
+          "numeric_hit": false,
+          "phrase_hits": 1
+        }
+      },
+      "mismatches": [],
+      "notes": []
+    },
+    "difficulty_signal": {
+      "status": "pass",
+      "difficulty_signal_score": 100,
+      "difficulty_level": "strong",
+      "positive_signals": [
+        "valid rows >= 20",
+        "distractor ratio >= 15%",
+        "at least two env files",
+        "at least four critical facts",
+        "at least two calculated critical facts",
+        "four or more data-insight operation families",
+        "contains normalization/rate/median/threshold/tie signal"
+      ],
+      "issues": [],
+      "valid_rows": 107,
+      "total_rows": 204,
+      "distractor_rows": 97,
+      "distractor_ratio": 0.4755,
+      "critical_fact_count": 6,
+      "calculated_critical_fact_count": 6
+    },
+    "answer_leakage": {
+      "status": "pass",
+      "leaks": [],
+      "issues": []
+    },
+    "distractor_audit": {
+      "status": "pass",
+      "distractor_types": [
+        "forecast",
+        "old",
+        "staff",
+        "subtotal",
+        "test",
+        "total"
+      ],
+      "would_change_answer_if_used": true,
+      "covered_by_negative_facts": true,
+      "issues": []
+    },
+    "checklist_audit": {
+      "status": "pass",
+      "fact_binding_complete": true,
+      "negative_check_robust": true,
+      "cap_reasonable": true,
+      "issues": []
+    },
+    "run_result_audit": {
+      "status": "not_provided",
+      "present_files": {
+        "evaluator_detail": false,
+        "final_answer": false,
+        "generation_prompt": false
+      },
+      "issues": [],
+      "notes": [
+        "No run-result artifacts supplied."
+      ]
+    },
+    "agentic_audit": {
+      "status": "not_run",
+      "agentic_audit_score": null
+    },
+    "case_strength_review": {
+      "status": "not_run",
+      "case_strength_score": null
+    }
+  },
+  "recommended_fixes": []
+}

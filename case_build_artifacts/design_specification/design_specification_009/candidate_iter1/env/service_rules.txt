@@ -1,0 +1,1 @@
+Allowed: current hours, current location, route support, 311 accessibility help. Forbidden active content: Civic Gym, 9 AM to 5 PM, Call 555-0199, emergency siren icon, panic language. Keep text plain and accessible.

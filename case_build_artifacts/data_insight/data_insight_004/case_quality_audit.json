@@ -1,0 +1,264 @@
+{
+  "case_id": "data_insight_004",
+  "task_type": "data_insight",
+  "static_audit_score": 100,
+  "static_quality_level": "pass",
+  "agentic_audit_score": null,
+  "case_strength_score": null,
+  "final_quality_score": 84,
+  "final_quality_level": "pass",
+  "overall_quality_score": 84,
+  "quality_level": "pass",
+  "strong_level_blockers": [
+    "Strong is capped at pass until --strength case_strength_review runs."
+  ],
+  "issue_summary": [
+    "Strong is capped at pass until --strength case_strength_review runs."
+  ],
+  "checks": {
+    "structure": {
+      "status": "pass",
+      "issues": [],
+      "warnings": []
+    },
+    "data_insight_validity": {
+      "status": "pass",
+      "operation_hits": {
+        "filtering": true,
+        "aggregation": true,
+        "group_comparison": true,
+        "rule_interpretation": true,
+        "takeaway": true
+      },
+      "operation_count": 5,
+      "too_direct_or_too_easy": false,
+      "issues": []
+    },
+    "independent_recompute": {
+      "status": "warn",
+      "computed_facts": {
+        "table_profile": {
+          "total_structured_rows": 100,
+          "candidate_valid_rows": 70,
+          "candidate_distractor_rows": 30,
+          "distractor_ratio": 0.3,
+          "formats": {
+            "csv": 2,
+            "json": 1,
+            "md": 1
+          },
+          "table_counts": {},
+          "numeric_aggregates_sample": {
+            "route_panel.csv:scheduled_trips": {
+              "sum": 86925.0,
+              "avg": 1448.75,
+              "median": 1432.5,
+              "min": 900.0,
+              "max": 1990.0,
+              "count": 60.0
+            },
+            "route_panel.csv:on_time_trips": {
+              "sum": 79701.0,
+              "avg": 1328.35,
+              "median": 1317.0,
+              "min": 828.0,
+              "max": 1842.0,
+              "count": 60.0
+            },
+            "route_panel.csv:crowding_reports": {
+              "sum": 339.0,
+              "avg": 5.65,
+              "median": 6.0,
+              "min": 2.0,
+              "max": 10.0,
+              "count": 60.0
+            },
+            "route_profiles.csv:scale_denominator": {
+              "sum": 6675.0,
+              "avg": 667.5,
+              "median": 667.5,
+              "min": 420.0,
+              "max": 915.0,
+              "count": 10.0
+            },
+            "route_profiles.csv:criticality": {
+              "sum": 635.0,
+              "avg": 63.5,
+              "median": 63.5,
+              "min": 35.0,
+              "max": 92.0,
+              "count": 10.0
+            }
+          },
+          "group_leader_candidates": [
+            {
+              "file": "route_panel.csv",
+              "group_by": "month",
+              "metric": "scheduled_trips",
+              "leader": "2026-12",
+              "leader_sum": 15250.0
+            },
+            {
+              "file": "route_panel.csv",
+              "group_by": "month",
+              "metric": "on_time_trips",
+              "leader": "2026-12",
+              "leader_sum": 13942.0
+            },
+            {
+              "file": "route_panel.csv",
+              "group_by": "month",
+              "metric": "crowding_reports",
+              "leader": "2026-11",
+              "leader_sum": 73.0
+            },
+            {
+              "file": "route_panel.csv",
+              "group_by": "entity_id",
+              "metric": "scheduled_trips",
+              "leader": "E10",
+              "leader_sum": 11505.0
+            },
+            {
+              "file": "route_panel.csv",
+              "group_by": "entity_id",
+              "metric": "on_time_trips",
+              "leader": "E10",
+              "leader_sum": 10617.0
+            },
+            {
+              "file": "route_panel.csv",
+              "group_by": "entity_id",
+              "metric": "crowding_reports",
+              "leader": "E04",
+              "leader_sum": 45.0
+            },
+            {
+              "file": "route_profiles.csv",
+              "group_by": "group_name",
+              "metric": "scale_denominator",
+              "leader": "East",
+              "leader_sum": 1555.0
+            },
+            {
+              "file": "route_profiles.csv",
+              "group_by": "group_name",
+              "metric": "criticality",
+              "leader": "East",
+              "leader_sum": 179.0
+            }
+          ]
+        },
+        "note": "Generic recompute profile; domain-specific formulas still require human/model audit when marked warn."
+      },
+      "expected_fact_match": {
+        "transit_reliability_score_leader": {
+          "status": "supported",
+          "numeric_hit": false,
+          "phrase_hits": 1
+        },
+        "transit_reliability_lowest_score": {
+          "status": "supported",
+          "numeric_hit": false,
+          "phrase_hits": 1
+        },
+        "transit_reliability_fastest_gap_change": {
+          "status": "supported",
+          "numeric_hit": false,
+          "phrase_hits": 1
+        },
+        "transit_reliability_gap_volume_hotspot": {
+          "status": "supported",
+          "numeric_hit": false,
+          "phrase_hits": 1
+        },
+        "transit_reliability_incident_rate_hotspot": {
+          "status": "supported",
+          "numeric_hit": false,
+          "phrase_hits": 1
+        },
+        "transit_reliability_group_gap_hotspot": {
+          "status": "not_independently_verified"
+        },
+        "transit_reliability_threshold_count": {
+          "status": "supported",
+          "numeric_hit": true,
+          "phrase_hits": 0
+        }
+      },
+      "mismatches": [],
+      "notes": [
+        "Critical fact transit_reliability_group_gap_hotspot was not independently verified by generic recompute heuristics."
+      ]
+    },
+    "difficulty_signal": {
+      "status": "pass",
+      "difficulty_signal_score": 100,
+      "difficulty_level": "strong",
+      "positive_signals": [
+        "valid rows >= 20",
+        "distractor ratio >= 15%",
+        "at least two env files",
+        "at least four critical facts",
+        "at least two calculated critical facts",
+        "four or more data-insight operation families",
+        "contains normalization/rate/median/threshold/tie signal"
+      ],
+      "issues": [],
+      "valid_rows": 70,
+      "total_rows": 100,
+      "distractor_rows": 30,
+      "distractor_ratio": 0.3,
+      "critical_fact_count": 7,
+      "calculated_critical_fact_count": 7
+    },
+    "answer_leakage": {
+      "status": "pass",
+      "leaks": [],
+      "issues": []
+    },
+    "distractor_audit": {
+      "status": "pass",
+      "distractor_types": [
+        "forecast",
+        "old",
+        "subtotal",
+        "test",
+        "total"
+      ],
+      "would_change_answer_if_used": true,
+      "covered_by_negative_facts": true,
+      "issues": []
+    },
+    "checklist_audit": {
+      "status": "pass",
+      "fact_binding_complete": true,
+      "negative_check_robust": true,
+      "cap_reasonable": true,
+      "issues": []
+    },
+    "run_result_audit": {
+      "status": "not_provided",
+      "present_files": {
+        "evaluator_detail": false,
+        "final_answer": false,
+        "generation_prompt": false
+      },
+      "issues": [],
+      "notes": [
+        "No run-result artifacts supplied."
+      ]
+    },
+    "agentic_audit": {
+      "status": "not_run",
+      "agentic_audit_score": null
+    },
+    "case_strength_review": {
+      "status": "not_run",
+      "case_strength_score": null
+    }
+  },
+  "recommended_fixes": [
+    "Add clearer rule files or calculation notes so an independent auditor can recompute critical facts from env files."
+  ]
+}

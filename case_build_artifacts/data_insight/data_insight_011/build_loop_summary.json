@@ -1,0 +1,27 @@
+{
+  "case_id": "data_insight_011",
+  "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_insight\\data_insight_011",
+  "artifact_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\case_build_artifacts\\data_insight\\data_insight_011",
+  "max_iters": 2,
+  "iterations_used": 0,
+  "initial_level": "strong",
+  "initial_score": 100,
+  "final_level": "strong",
+  "final_score": 100,
+  "status": "strong",
+  "final_blockers": [],
+  "iterations": [
+    {
+      "iteration": 1,
+      "before_level": "strong",
+      "before_score": 100,
+      "decision": "already_strong",
+      "applied_changes": []
+    }
+  ],
+  "removed_case_root_artifacts_before_run": [],
+  "removed_case_root_artifacts_after_run": [],
+  "audit_snapshots": [
+    "case_quality_audit.iter0.json"
+  ]
+}

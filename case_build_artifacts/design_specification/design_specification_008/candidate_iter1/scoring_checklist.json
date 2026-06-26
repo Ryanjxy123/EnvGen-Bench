@@ -1,0 +1,200 @@
+{
+  "case_id": "design_specification_008",
+  "dimensions": {
+    "task_completion": {
+      "label": "Task Completion",
+      "weight": 0.15,
+      "items": [
+        {
+          "id": "finished_target_image",
+          "check": "Output is a finished saas_web_leaderboard_banner, not a rule summary, worksheet, or draft.",
+          "points": 10
+        }
+      ]
+    },
+    "grounded_requirement_satisfaction": {
+      "label": "Grounded Requirement Satisfaction",
+      "weight": 0.5,
+      "items": [
+        {
+          "id": "ocr_copy_accuracy",
+          "fact_ids": [
+            "primary_copy_01",
+            "primary_copy_02",
+            "primary_copy_03",
+            "primary_copy_04",
+            "primary_copy_05"
+          ],
+          "check": "Required latest-update copy is OCR-readable and not replaced by archive copy.",
+          "points": 14
+        },
+        {
+          "id": "platform_and_layout",
+          "fact_ids": [
+            "canvas_size",
+            "aspect_ratio",
+            "safe_area",
+            "logo_position",
+            "cta_position",
+            "text_density"
+          ],
+          "check": "Current platform ratio, safe zones, logo/CTA placement, and text density broadly follow platform specs.",
+          "points": 14,
+          "scoring_hint": "Do not hard-cap minor safe-zone or density drift if the image remains readable."
+        },
+        {
+          "id": "asset_and_visual_requirements",
+          "fact_ids": [
+            "required_asset_usage",
+            "hero_component_1",
+            "hero_component_2",
+            "hero_component_3",
+            "hero_component_4"
+          ],
+          "check": "Uses current allowed assets and required hero elements in appropriate roles.",
+          "points": 12
+        },
+        {
+          "id": "style_and_conditionals",
+          "fact_ids": [
+            "palette_tokens",
+            "conditional_rules"
+          ],
+          "check": "Current palette, tone, and conditional readability rules are followed.",
+          "points": 8
+        },
+        {
+          "id": "forbidden_and_compliance_exclusion",
+          "fact_ids": [
+            "compliance_requirements",
+            "forbidden_elements_not_active"
+          ],
+          "check": "Explicitly forbidden claims, restricted visuals, old assets, old platform specs, and deprecated copy are not active final content.",
+          "points": 12
+        }
+      ]
+    },
+    "information_structuring": {
+      "label": "Information Structuring",
+      "weight": 0.15,
+      "items": [
+        {
+          "id": "conflict_resolution",
+          "fact_ids": [
+            "platform_conflict",
+            "asset_ambiguity",
+            "priority_conflict"
+          ],
+          "check": "Resolves platform, asset, and priority conflicts according to env rules.",
+          "points": 8
+        },
+        {
+          "id": "visual_hierarchy",
+          "check": "Primary message, hero, CTA, support copy, and disclosure/source line are organized for the target platform.",
+          "points": 6
+        }
+      ]
+    },
+    "visual_communication_quality": {
+      "label": "Visual Communication Quality",
+      "weight": 0.1,
+      "items": [
+        {
+          "id": "readability",
+          "check": "Text is readable, high contrast, and non-overlapping.",
+          "points": 8
+        },
+        {
+          "id": "composition",
+          "check": "Composition is polished and appropriate to the domain and platform.",
+          "points": 7
+        }
+      ]
+    },
+    "robustness": {
+      "label": "Robustness",
+      "weight": 0.1,
+      "items": [
+        {
+          "id": "distractor_resistance",
+          "fact_ids": [
+            "forbidden_elements_not_active",
+            "asset_ambiguity"
+          ],
+          "check": "Resists plausible deprecated assets and conflicting rules.",
+          "points": 6
+        },
+        {
+          "id": "constraint_execution",
+          "check": "Executes nuanced constraints without turning the output into specs or a table.",
+          "points": 4
+        }
+      ]
+    }
+  },
+  "hard_caps": [
+    {
+      "id": "not_target_image_type",
+      "max_total": 45,
+      "reason": "Output is not the requested finished image type.",
+      "trigger": {
+        "type": "wrong_artifact_type",
+        "expected_type": "saas_web_leaderboard_banner"
+      }
+    },
+    {
+      "id": "wrong_aspect_ratio",
+      "max_total": 75,
+      "reason": "Aspect ratio is clearly wrong for the current platform.",
+      "trigger": {
+        "type": "aspect_ratio_mismatch",
+        "expected": "3:1 horizontal"
+      }
+    },
+    {
+      "id": "missing_multiple_core_copy_facts",
+      "max_total": 70,
+      "reason": "Multiple latest-update copy facts are missing or replaced by archive copy.",
+      "trigger": {
+        "type": "aggregate_failure",
+        "fact_ids": [
+          "primary_copy_01",
+          "primary_copy_02",
+          "primary_copy_03",
+          "primary_copy_04",
+          "primary_copy_05"
+        ],
+        "min_failed": 2
+      }
+    },
+    {
+      "id": "active_forbidden_material",
+      "max_total": 65,
+      "reason": "A clearly forbidden claim, logo, asset, or deprecated platform material is active in the final image.",
+      "trigger": {
+        "type": "forbidden_visual_use",
+        "fact_id": "forbidden_elements_not_active",
+        "visual_role": "active_final_design_element"
+      }
+    },
+    {
+      "id": "unreadable_or_raw_spec",
+      "max_total": 55,
+      "reason": "Output is unreadable, raw specs, a table, or a prompt instead of a designed image.",
+      "trigger": {
+        "type": "aggregate_failure",
+        "fact_ids": [
+          "primary_copy_01",
+          "primary_copy_02",
+          "primary_copy_03",
+          "primary_copy_04",
+          "primary_copy_05",
+          "required_asset_usage",
+          "hero_component_1",
+          "hero_component_2"
+        ],
+        "min_failed": 5
+      }
+    }
+  ]
+}

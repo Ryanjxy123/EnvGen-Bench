@@ -1,0 +1,171 @@
+{
+  "candidate_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\case_build_artifacts\\data_insight\\data_insight_009\\candidate_iter1",
+  "candidate_signature": {
+    "target_image_type": "climate_resilience_project_infographic",
+    "formats": [
+      "csv",
+      "json",
+      "md"
+    ],
+    "env_count": 4,
+    "topic_tokens_sample": [
+      "aggregation",
+      "area",
+      "boundaries",
+      "climate",
+      "climate_resilience_project_infographic",
+      "closed-env",
+      "concise",
+      "configured",
+      "counts",
+      "create",
+      "csv",
+      "data_insight",
+      "decision",
+      "delivery",
+      "distractor",
+      "dumps",
+      "exclusion",
+      "exclusions",
+      "expose",
+      "focus",
+      "formula",
+      "generated",
+      "group",
+      "hard",
+      "highest-priority",
+      "identify",
+      "json",
+      "mapping",
+      "multi-period",
+      "normalized"
+    ],
+    "calc_tokens": [
+      "analysis",
+      "baseline",
+      "csv",
+      "group",
+      "join",
+      "mapping",
+      "normalization",
+      "threshold",
+      "tie-break",
+      "weighted"
+    ],
+    "fact_tokens_sample": [
+      "climate_resilience_distractor_exclusions",
+      "climate_resilience_fastest_gap_change",
+      "climate_resilience_gap_volume_hotspot",
+      "climate_resilience_group_gap_hotspot",
+      "climate_resilience_incident_rate_hotspot",
+      "climate_resilience_lowest_score",
+      "climate_resilience_score_leader",
+      "climate_resilience_threshold_count"
+    ],
+    "answer_pattern_tokens": [
+      "climate_resilience_fastest_gap_change",
+      "climate_resilience_gap_volume_hotspot",
+      "climate_resilience_group_gap_hotspot",
+      "climate_resilience_incident_rate_hotspot",
+      "climate_resilience_lowest_score",
+      "climate_resilience_score_leader",
+      "climate_resilience_threshold_count",
+      "named_entities",
+      "numeric_values",
+      "percentage_values"
+    ]
+  },
+  "max_similarity": 0.577,
+  "diversity_score": 42,
+  "high_similarity": false,
+  "threshold": 0.72,
+  "nearest_case": {
+    "case_id": "data_insight_008",
+    "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_insight\\data_insight_008",
+    "similarity": 0.577,
+    "components": {
+      "target_image_type": 0.0,
+      "env_file_types": 1.0,
+      "file_structure": 0.62,
+      "domain_theme": 0.8182,
+      "core_calculation_chain": 1.0,
+      "critical_fact_types": 0.0,
+      "answer_entity_value_pattern": 0.1765
+    }
+  },
+  "top_comparisons": [
+    {
+      "case_id": "data_insight_008",
+      "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_insight\\data_insight_008",
+      "similarity": 0.577,
+      "components": {
+        "target_image_type": 0.0,
+        "env_file_types": 1.0,
+        "file_structure": 0.62,
+        "domain_theme": 0.8182,
+        "core_calculation_chain": 1.0,
+        "critical_fact_types": 0.0,
+        "answer_entity_value_pattern": 0.1765
+      }
+    },
+    {
+      "case_id": "data_insight_005",
+      "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_insight\\data_insight_005",
+      "similarity": 0.5719,
+      "components": {
+        "target_image_type": 0.0,
+        "env_file_types": 1.0,
+        "file_structure": 0.5882,
+        "domain_theme": 0.8182,
+        "core_calculation_chain": 1.0,
+        "critical_fact_types": 0.0,
+        "answer_entity_value_pattern": 0.1765
+      }
+    },
+    {
+      "case_id": "data_insight_002",
+      "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_insight\\data_insight_002",
+      "similarity": 0.5692,
+      "components": {
+        "target_image_type": 0.0,
+        "env_file_types": 1.0,
+        "file_structure": 0.6122,
+        "domain_theme": 0.7857,
+        "core_calculation_chain": 1.0,
+        "critical_fact_types": 0.0,
+        "answer_entity_value_pattern": 0.1765
+      }
+    },
+    {
+      "case_id": "data_insight_007",
+      "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_insight\\data_insight_007",
+      "similarity": 0.5673,
+      "components": {
+        "target_image_type": 0.0,
+        "env_file_types": 1.0,
+        "file_structure": 0.6,
+        "domain_theme": 0.7857,
+        "core_calculation_chain": 1.0,
+        "critical_fact_types": 0.0,
+        "answer_entity_value_pattern": 0.1765
+      }
+    },
+    {
+      "case_id": "data_insight_004",
+      "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_insight\\data_insight_004",
+      "similarity": 0.5645,
+      "components": {
+        "target_image_type": 0.0,
+        "env_file_types": 1.0,
+        "file_structure": 0.6,
+        "domain_theme": 0.7719,
+        "core_calculation_chain": 1.0,
+        "critical_fact_types": 0.0,
+        "answer_entity_value_pattern": 0.1765
+      }
+    }
+  ],
+  "decision": "diversity_ok",
+  "iteration": 1,
+  "variant": "panel_climate_resilience"
+}

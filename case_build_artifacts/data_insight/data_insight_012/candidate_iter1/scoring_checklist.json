@@ -1,0 +1,155 @@
+{
+  "case_id": "data_insight_012",
+  "dimensions": {
+    "task_completion": {
+      "weight": 0.15,
+      "items": [
+        {
+          "id": "output_type_data_insight_012",
+          "check": "The output should be a finished retail store triage infographic, not a raw table, SQL dump, or generic KPI dashboard.",
+          "points": 4
+        },
+        {
+          "id": "triage_resolution_data_insight_012",
+          "check": "The infographic should resolve the store-priority task using joins, Q3/Q4 comparison, weighted scoring, and exclusion rules.",
+          "points": 4
+        }
+      ]
+    },
+    "grounded_requirement_satisfaction": {
+      "weight": 0.55,
+      "items": [
+        {
+          "id": "critical_priority_leader_data_insight_012",
+          "check": "Verify that Central Tech Plaza is the top priority-index store with score about 98.2.",
+          "points": 6,
+          "fact_id": "priority_index_leader"
+        },
+        {
+          "id": "critical_priority_risk_data_insight_012",
+          "check": "Verify that Bayview Outlet is the lowest priority-index store with score about 0.0.",
+          "points": 5,
+          "fact_id": "priority_index_risk_store"
+        },
+        {
+          "id": "critical_region_leader_data_insight_012",
+          "check": "Verify that Central is the Q4 net revenue leading region at about $2,492,700.",
+          "points": 5,
+          "fact_id": "region_net_revenue_leader"
+        },
+        {
+          "id": "critical_growth_leader_data_insight_012",
+          "check": "Verify that Airport Express is the Q4-vs-Q3 growth leader at about 23.0%.",
+          "points": 5,
+          "fact_id": "growth_leader"
+        },
+        {
+          "id": "critical_return_hotspot_data_insight_012",
+          "check": "Verify that Bayview Outlet is the highest Q4 return-rate store at about 6.5%.",
+          "points": 5,
+          "fact_id": "return_rate_hotspot"
+        },
+        {
+          "id": "critical_staffing_region_data_insight_012",
+          "check": "Verify that South is the lowest Q4 staffing-coverage region at about 94.9%.",
+          "points": 5,
+          "fact_id": "staffing_risk_region"
+        },
+        {
+          "id": "negative_retail_distractors_data_insight_012",
+          "check": "Verify that forecast, subtotal, test, old-period, and non-closed rows are not used as final metrics.",
+          "points": 4,
+          "fact_id": "retail_distractor_exclusions"
+        }
+      ]
+    },
+    "information_structuring": {
+      "weight": 0.15,
+      "items": [
+        {
+          "id": "retail_triage_hierarchy_data_insight_012",
+          "check": "The image should organize priority rank, regional performance, growth, return risk, staffing coverage, and takeaway into a clear operations-triage hierarchy.",
+          "points": 5,
+          "fact_ids": [
+            "priority_index_leader",
+            "priority_index_risk_store",
+            "region_net_revenue_leader",
+            "growth_leader",
+            "return_rate_hotspot",
+            "staffing_risk_region"
+          ]
+        },
+        {
+          "id": "retail_takeaway_data_insight_012",
+          "check": "The takeaway should be concise and connected to the computed priority and risk signals.",
+          "points": 4,
+          "fact_id": "retail_triage_takeaway"
+        }
+      ]
+    },
+    "visual_rendering_quality": {
+      "weight": 0.15,
+      "items": [
+        {
+          "id": "visual_clarity_data_insight_012",
+          "check": "Judge readability, contrast, visual hierarchy, and chart/KPI legibility at infographic size.",
+          "points": 4
+        },
+        {
+          "id": "visual_density_data_insight_012",
+          "check": "The layout should be dense enough for retail operations review while avoiding overlapping labels or raw table dumps.",
+          "points": 4
+        }
+      ]
+    }
+  },
+  "score_caps": [
+    {
+      "id": "missing_retail_core_fact",
+      "max_total": 55,
+      "reason": "A required core retail operations fact is missing.",
+      "trigger": {
+        "type": "missing_required_count",
+        "fact_ids": [
+          "priority_index_leader",
+          "priority_index_risk_store",
+          "region_net_revenue_leader",
+          "growth_leader",
+          "return_rate_hotspot",
+          "staffing_risk_region"
+        ],
+        "min_missing": 1
+      }
+    },
+    {
+      "id": "uses_invalid_retail_rows",
+      "max_total": 60,
+      "reason": "The image uses forecast, subtotal, test, or old-period rows as final results.",
+      "trigger": {
+        "type": "forbidden_final_answer",
+        "patterns": [
+          "999999",
+          "888888",
+          "55555",
+          "forecast result",
+          "subtotal result",
+          "test result"
+        ]
+      }
+    },
+    {
+      "id": "raw_sql_or_table_dump",
+      "max_total": 40,
+      "reason": "The output is a raw SQL/table dump instead of an infographic.",
+      "trigger": {
+        "type": "forbidden_final_answer",
+        "patterns": [
+          "SELECT ",
+          "CREATE TABLE",
+          "store_id |",
+          "gross_sales"
+        ]
+      }
+    }
+  ]
+}

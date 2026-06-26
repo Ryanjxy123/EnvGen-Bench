@@ -1,0 +1,41 @@
+{
+  "case_strength_score": 42,
+  "case_strength_level": "weak",
+  "metrics": {
+    "total_structured_rows": 18,
+    "candidate_valid_rows": 13,
+    "candidate_distractor_rows": 5,
+    "distractor_ratio": 0.2778,
+    "env_file_count": 2,
+    "supplemental_rule_files": [
+      "feature_rules.json"
+    ],
+    "critical_fact_count": 4,
+    "negative_fact_count": 5,
+    "complex_critical_fact_count": 2,
+    "operation_count": 4
+  },
+  "strengths": [
+    "data scale reaches data-selection hard target",
+    "case uses separate rule/support files",
+    "no answer leakage detected"
+  ],
+  "weaknesses": [
+    "distractor ratio below 30%",
+    "fewer than five critical facts",
+    "fewer than three ranking/quota/threshold facts",
+    "not all selection operation families are represented",
+    "distractors do not appear answer-changing",
+    "critical facts are not fully bound by grounded checklist items"
+  ],
+  "strong_blockers": [
+    "distractor ratio below strong threshold",
+    "fewer than five critical facts",
+    "selection complexity below hard threshold"
+  ],
+  "recommended_improvements": [
+    "Add answer-changing distractors.",
+    "Add tempting threshold, status, group-cap, and below-cutoff distractors."
+  ],
+  "mode": "heuristic_data_selection_strength_review"
+}

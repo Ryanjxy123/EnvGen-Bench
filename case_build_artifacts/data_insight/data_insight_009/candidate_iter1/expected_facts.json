@@ -1,0 +1,129 @@
+{
+  "case_id": "data_insight_009",
+  "task_type": "data_insight",
+  "facts": [
+    {
+      "id": "climate_resilience_score_leader",
+      "description": "Top resilience project by weighted delivery_risk_score after exclusions, profile mapping, normalization, and tie-breaks.",
+      "source": "env/project_panel.csv + env/project_profiles.csv + env/resilience_rules.json",
+      "importance": "critical",
+      "expected_value": [
+        "Pump Station C: 82.9",
+        "Pump Station C top score"
+      ],
+      "canonical_answer": "Pump Station C is the top priority with score 82.9",
+      "semantic_acceptance": "Accept if Pump Station C is shown as the highest priority with score near 82.9.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "climate_resilience_lowest_score",
+      "description": "Lowest-risk or lowest-priority resilience project by weighted score.",
+      "source": "env/project_panel.csv + env/project_profiles.csv + env/resilience_rules.json",
+      "importance": "critical",
+      "expected_value": [
+        "Creek Buffer: 19.0",
+        "Creek Buffer lowest score"
+      ],
+      "canonical_answer": "Creek Buffer is the lowest-ranked entity with score 19.0",
+      "semantic_acceptance": "Accept if Creek Buffer is identified as the lowest score entity.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "climate_resilience_fastest_gap_change",
+      "description": "Entity with the largest analysis-period gap-rate increase versus baseline.",
+      "source": "env/project_panel.csv + env/resilience_rules.json",
+      "importance": "critical",
+      "expected_value": [
+        "Pump Station C: 2.7 pp",
+        "Pump Station C fastest gap-rate change"
+      ],
+      "canonical_answer": "Pump Station C has the fastest gap-rate increase at about 2.7 percentage points",
+      "semantic_acceptance": "Accept if Pump Station C is identified as largest gap-rate increase.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "climate_resilience_gap_volume_hotspot",
+      "description": "Entity with the highest analysis-period gap volume.",
+      "source": "env/project_panel.csv",
+      "importance": "critical",
+      "expected_value": [
+        "Cool Roofs: 540",
+        "Cool Roofs highest gap volume"
+      ],
+      "canonical_answer": "Cool Roofs has the highest analysis-period gap volume at 540",
+      "semantic_acceptance": "Accept if Cool Roofs is shown as the gap-volume hotspot near 540.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "climate_resilience_incident_rate_hotspot",
+      "description": "Entity with the highest analysis-period incident rate per 1,000 scale units.",
+      "source": "env/project_panel.csv + env/project_profiles.csv",
+      "importance": "critical",
+      "expected_value": [
+        "Wetland Ring: 49.6 per 1,000",
+        "Wetland Ring incident-rate hotspot"
+      ],
+      "canonical_answer": "Wetland Ring has the highest incident rate at about 49.6 per 1,000",
+      "semantic_acceptance": "Accept if Wetland Ring is identified as incident-rate hotspot.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "climate_resilience_group_gap_hotspot",
+      "description": "Hazard Basin with the highest aggregate analysis-period gap volume.",
+      "source": "env/project_panel.csv + env/project_profiles.csv",
+      "importance": "critical",
+      "expected_value": [
+        "Slope: 996",
+        "Slope group hotspot"
+      ],
+      "canonical_answer": "Slope is the group hotspot at 996",
+      "semantic_acceptance": "Accept if Slope is identified as the leading group hotspot.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "climate_resilience_threshold_count",
+      "description": "Count of entities at or above the high-priority score threshold.",
+      "source": "env/resilience_rules.json + env/project_panel.csv + env/project_profiles.csv",
+      "importance": "critical",
+      "expected_value": [
+        "2 high-priority entities",
+        "threshold count 2"
+      ],
+      "canonical_answer": "2 entities meet the high-priority threshold",
+      "semantic_acceptance": "Accept if the image states that 2 entities are high priority under the configured threshold.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "climate_resilience_distractor_exclusions",
+      "description": "Do not use forecast, subtotal, test, or old-period rows as final metrics.",
+      "source": "env/project_panel.csv + env/resilience_rules.json",
+      "importance": "major",
+      "expected_value": [
+        "invalid panel record used"
+      ],
+      "forbidden_patterns": [
+        "\\b99,?999\\b",
+        "\\b88,?888\\b",
+        "\\b77,?777\\b",
+        "\\bforecast\\b[^.!?\\n;]{0,80}\\b(result|answer|leader|score|gap)\\b",
+        "\\bsubtotal\\b[^.!?\\n;]{0,80}\\b(result|answer|leader|score|gap)\\b",
+        "\\bold[_ -]?period\\b[^.!?\\n;]{0,80}\\b(result|answer|leader|score|gap)\\b"
+      ],
+      "allowed_patterns": [
+        "\\b(exclude|excluded|excluding|ignore|ignored|not\\s+used)\\b[^.!?\\n;]{0,140}\\b(forecast|subtotal|old)"
+      ],
+      "must_not_appear_in_image": true,
+      "canonical_answer": "Invalid panel rows must not be used as final metrics.",
+      "semantic_acceptance": "Reject or cap if invalid rows are treated as final metrics. Exclusion notes are allowed.",
+      "evaluation_role": "negative_only"
+    }
+  ],
+  "calculation_notes": "Join project_panel.csv to project_profiles.csv by entity_id. Use only actual closed records. Baseline months are 2026-07 through 2026-09; analysis months are 2026-10 through 2026-12. Gap volume is planned_benefit_score minus verified_benefit_score. Gap rate is gap divided by planned_benefit_score. delivery_risk_score min-max normalizes analysis gap rate, gap-rate change, incident rate per 1,000, and criticality, then applies configured weights. Tie-break order is rounded score, analysis gap volume, criticality, and entity name. Top score entity is Pump Station C at 82.9. Lowest score entity is Creek Buffer at 19.0. Fastest gap-rate increase is Pump Station C at 2.7 percentage points. Gap-volume hotspot is Cool Roofs at 540. Incident-rate hotspot is Wetland Ring at 49.6 per 1,000. Group hotspot is Slope at 996. High-priority count is 2."
+}

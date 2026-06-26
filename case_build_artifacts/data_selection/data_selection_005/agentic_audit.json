@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "agentic_audit_score": 80,
+  "too_easy_risk": false,
+  "blind_guess_leakage_risk": false,
+  "shortcut_risk": false,
+  "reasoning": [
+    "fewer than five critical facts"
+  ],
+  "recommended_difficulty_upgrade": [
+    "Add group caps, tie-breaks, threshold-edge distractors, or below-cutoff eligible distractors."
+  ]
+}

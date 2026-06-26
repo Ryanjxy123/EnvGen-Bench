@@ -1,0 +1,54 @@
+{
+  "case_id": "data_insight_003",
+  "variant": "auto",
+  "artifact_root": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\case_build_artifacts\\data_insight\\data_insight_003",
+  "formal_case_dir": "benchmark\\cases\\data_insight\\data_insight_003",
+  "max_iters": 3,
+  "accepted": true,
+  "selected_iteration": 2,
+  "selected_candidate_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\case_build_artifacts\\data_insight\\data_insight_003\\candidate_iter2",
+  "selected_variant": "panel_subscription_retention",
+  "selected_diversity_score": 44,
+  "selected_max_similarity": 0.5636,
+  "admission_rule": "Accept first strong candidate only when similarity is below 0.72; else best candidate with level >= pass, score >= 85, diversity >= 35, and no high-similarity flag.",
+  "failure_reason": null,
+  "similarity_review_path": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\case_build_artifacts\\data_insight\\data_insight_003\\similarity_review.json",
+  "candidates": [
+    {
+      "iteration": 1,
+      "candidate_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\case_build_artifacts\\data_insight\\data_insight_003\\candidate_iter1",
+      "variant": "panel_warehouse_quality",
+      "level": "strong",
+      "score": 100,
+      "static_score": 100,
+      "agentic_score": 100,
+      "case_strength_score": 100,
+      "diversity_score": 0,
+      "max_similarity": 1.0,
+      "nearest_case_id": "data_insight_002",
+      "high_similarity": true,
+      "status": "discarded_high_similarity",
+      "strong_blockers": [],
+      "recommended_fixes": [
+        "Add clearer rule files or calculation notes so an independent auditor can recompute critical facts from env files."
+      ]
+    },
+    {
+      "iteration": 2,
+      "candidate_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\case_build_artifacts\\data_insight\\data_insight_003\\candidate_iter2",
+      "variant": "panel_subscription_retention",
+      "level": "strong",
+      "score": 100,
+      "static_score": 100,
+      "agentic_score": 100,
+      "case_strength_score": 100,
+      "diversity_score": 44,
+      "max_similarity": 0.5636,
+      "nearest_case_id": "data_insight_002",
+      "high_similarity": false,
+      "status": "accepted_strong",
+      "strong_blockers": [],
+      "recommended_fixes": []
+    }
+  ]
+}

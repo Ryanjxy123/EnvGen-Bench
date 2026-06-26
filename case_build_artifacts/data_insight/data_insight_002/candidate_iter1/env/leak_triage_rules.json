@@ -1,0 +1,44 @@
+{
+  "include_status": "closed",
+  "include_record_type": "actual",
+  "baseline_months": [
+    "2026-07",
+    "2026-08",
+    "2026-09"
+  ],
+  "analysis_months": [
+    "2026-10",
+    "2026-11",
+    "2026-12"
+  ],
+  "metrics": {
+    "water_loss_kl": "water_pumped_kl minus billed_usage_kl",
+    "loss_rate_pct": "water_loss_kl divided by water_pumped_kl times 100",
+    "loss_rate_change_pct_points": "Q4 loss_rate_pct minus Q3 loss_rate_pct",
+    "alert_rate_per_1000_connections": "Q4 pressure_alerts divided by service_connections times 1000"
+  },
+  "anomaly_score_weights": {
+    "q4_loss_rate_pct": 0.35,
+    "loss_rate_change_pct_points": 0.25,
+    "alert_rate_per_1000_connections": 0.2,
+    "district_criticality": 0.2
+  },
+  "normalization": "Min-max normalize all anomaly score components across districts before applying weights.",
+  "priority_thresholds": {
+    "high": 70.0,
+    "watch": 50.0
+  },
+  "display_rounding": "Round rates, score, and percent-point changes to one decimal.",
+  "tie_break_order": [
+    "higher rounded anomaly score",
+    "higher Q4 water_loss_kl",
+    "higher district_criticality",
+    "alphabetical district_name"
+  ],
+  "exclude_records": [
+    "forecast",
+    "subtotal",
+    "test",
+    "old_period"
+  ]
+}

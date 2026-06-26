@@ -1,0 +1,29 @@
+{
+  "candidate_assets": [
+    {
+      "id": "current_matte_oat_kettle_packshot",
+      "role": "hero",
+      "allowed_use": "main current packaging/product image",
+      "current_campaign_allowed": true
+    },
+    {
+      "id": "old_chrome_kettle_packshot",
+      "role": "archive",
+      "allowed_use": "old finish; not current launch",
+      "current_campaign_allowed": false
+    },
+    {
+      "id": "energy_star_like_badge",
+      "role": "restricted",
+      "allowed_use": "not certified; do not use",
+      "current_campaign_allowed": false
+    },
+    {
+      "id": "price_badge_launch",
+      "role": "support",
+      "allowed_use": "small launch price badge",
+      "current_campaign_allowed": true
+    }
+  ],
+  "selection_rule": "Use only assets with current_campaign_allowed=true and allowed_use matching the current platform and visual_rules.json."
+}

@@ -1,0 +1,271 @@
+{
+  "case_id": "design_specification_011",
+  "task_type": "design_specification",
+  "facts": [
+    {
+      "id": "primary_copy_01",
+      "description": "Required visible text: NorthGrid Shift Planner",
+      "source": "env/latest_update.md",
+      "importance": "critical",
+      "expected_value": "NorthGrid Shift Planner",
+      "evaluation_role": "critical_required",
+      "fact_type": "visible_copy",
+      "canonical_answer": "NorthGrid Shift Planner",
+      "must_appear_in_image": true,
+      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image."
+    },
+    {
+      "id": "primary_copy_02",
+      "description": "Required visible text: Balance coverage before the week starts.",
+      "source": "env/latest_update.md",
+      "importance": "critical",
+      "expected_value": "Balance coverage before the week starts.",
+      "evaluation_role": "critical_required",
+      "fact_type": "visible_copy",
+      "canonical_answer": "Balance coverage before the week starts.",
+      "must_appear_in_image": true,
+      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image."
+    },
+    {
+      "id": "primary_copy_03",
+      "description": "Required visible text: See staffing gaps by site",
+      "source": "env/latest_update.md",
+      "importance": "critical",
+      "expected_value": "See staffing gaps by site",
+      "evaluation_role": "critical_required",
+      "fact_type": "visible_copy",
+      "canonical_answer": "See staffing gaps by site",
+      "must_appear_in_image": true,
+      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image."
+    },
+    {
+      "id": "primary_copy_04",
+      "description": "Required visible text: Book a planning demo",
+      "source": "env/latest_update.md",
+      "importance": "critical",
+      "expected_value": "Book a planning demo",
+      "evaluation_role": "critical_required",
+      "fact_type": "visible_copy",
+      "canonical_answer": "Book a planning demo",
+      "must_appear_in_image": true,
+      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image."
+    },
+    {
+      "id": "primary_copy_05",
+      "description": "Required visible text: For operations teams",
+      "source": "env/latest_update.md",
+      "importance": "critical",
+      "expected_value": "For operations teams",
+      "evaluation_role": "critical_required",
+      "fact_type": "visible_copy",
+      "canonical_answer": "For operations teams",
+      "must_appear_in_image": true,
+      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image."
+    },
+    {
+      "id": "canvas_size",
+      "description": "Final artifact uses the current platform pixel canvas.",
+      "source": "env/platform_specs.txt",
+      "importance": "critical",
+      "expected_value": "1440 x 480 px",
+      "evaluation_role": "major_required",
+      "fact_type": "visual_requirement",
+      "canonical_answer": "1440 x 480 px"
+    },
+    {
+      "id": "aspect_ratio",
+      "description": "Final artifact uses the current platform aspect ratio.",
+      "source": "env/platform_specs.txt",
+      "importance": "critical",
+      "expected_value": "3:1 horizontal",
+      "evaluation_role": "major_required",
+      "fact_type": "visual_requirement",
+      "canonical_answer": "3:1 horizontal"
+    },
+    {
+      "id": "safe_area",
+      "description": "Essential copy, logo, CTA, hero, and disclosure/source line stay broadly inside safe zones.",
+      "source": "env/platform_specs.txt",
+      "importance": "critical",
+      "expected_value": "top 40 px; bottom 44 px; side 72 px",
+      "evaluation_role": "critical_required",
+      "fact_type": "visual_requirement",
+      "canonical_answer": "top 40 px; bottom 44 px; side 72 px",
+      "semantic_acceptance": "Minor safe-zone drift should be checklist deduction only, not a hard cap."
+    },
+    {
+      "id": "logo_position",
+      "description": "Current logo appears in the required platform position.",
+      "source": "env/platform_specs.txt; env/visual_rules.json; env/asset_manifest.json",
+      "importance": "critical",
+      "expected_value": "left safe area above headline",
+      "evaluation_role": "critical_required",
+      "fact_type": "visual_requirement",
+      "canonical_answer": "left safe area above headline"
+    },
+    {
+      "id": "cta_position",
+      "description": "CTA appears in the required platform position.",
+      "source": "env/platform_specs.txt; env/visual_rules.json",
+      "importance": "critical",
+      "expected_value": "right safe area button",
+      "evaluation_role": "critical_required",
+      "fact_type": "visual_requirement",
+      "canonical_answer": "right safe area button"
+    },
+    {
+      "id": "text_density",
+      "description": "Text density follows the platform limit.",
+      "source": "env/platform_specs.txt; env/visual_rules.json",
+      "importance": "major",
+      "expected_value": "no more than 6 short text blocks",
+      "evaluation_role": "major_required",
+      "fact_type": "visual_requirement",
+      "canonical_answer": "no more than 6 short text blocks"
+    },
+    {
+      "id": "palette_tokens",
+      "description": "Current palette is dominant and archive palette is not dominant.",
+      "source": "env/visual_rules.json",
+      "importance": "major",
+      "expected_value": [
+        "#16213E",
+        "#00B3A4",
+        "#F5F7FB",
+        "#FFB84D"
+      ],
+      "evaluation_role": "major_required",
+      "fact_type": "visual_requirement",
+      "semantic_acceptance": "Exact hex matching is not required, but deprecated palettes should not dominate."
+    },
+    {
+      "id": "required_asset_usage",
+      "description": "Required current campaign asset is used in its allowed role.",
+      "source": "env/asset_manifest.json; env/latest_update.md",
+      "importance": "critical",
+      "expected_value": "current_shift_planner_ui_wide",
+      "evaluation_role": "critical_required",
+      "fact_type": "visual_requirement",
+      "canonical_answer": "current_shift_planner_ui_wide"
+    },
+    {
+      "id": "hero_component_1",
+      "description": "shift-planning UI visible",
+      "source": "env/visual_rules.json; env/asset_manifest.json",
+      "importance": "critical",
+      "expected_value": "shift-planning UI visible",
+      "evaluation_role": "critical_required",
+      "fact_type": "visual_requirement",
+      "canonical_answer": "shift-planning UI visible"
+    },
+    {
+      "id": "hero_component_2",
+      "description": "coverage gaps or weekly lanes visible",
+      "source": "env/visual_rules.json; env/asset_manifest.json",
+      "importance": "critical",
+      "expected_value": "coverage gaps or weekly lanes visible",
+      "evaluation_role": "critical_required",
+      "fact_type": "visual_requirement",
+      "canonical_answer": "coverage gaps or weekly lanes visible"
+    },
+    {
+      "id": "hero_component_3",
+      "description": "site filter cue visible",
+      "source": "env/visual_rules.json; env/asset_manifest.json",
+      "importance": "critical",
+      "expected_value": "site filter cue visible",
+      "evaluation_role": "critical_required",
+      "fact_type": "visual_requirement",
+      "canonical_answer": "site filter cue visible"
+    },
+    {
+      "id": "hero_component_4",
+      "description": "web banner layout visible",
+      "source": "env/visual_rules.json; env/asset_manifest.json",
+      "importance": "critical",
+      "expected_value": "web banner layout visible",
+      "evaluation_role": "critical_required",
+      "fact_type": "visual_requirement",
+      "canonical_answer": "web banner layout visible"
+    },
+    {
+      "id": "platform_conflict",
+      "description": "Current platform overrides the old platform spec.",
+      "source": "env/latest_update.md; env/platform_specs.txt; env/deprecated_assets.json",
+      "importance": "critical",
+      "expected_value": "use Web leaderboard banner not LinkedIn sponsored feed 1200 x 627",
+      "evaluation_role": "critical_required",
+      "fact_type": "resolution_fact",
+      "canonical_answer": "use Web leaderboard banner not LinkedIn sponsored feed 1200 x 627",
+      "semantic_acceptance": "Score from final canvas/platform evidence, not from OCR text repeating the rule."
+    },
+    {
+      "id": "asset_ambiguity",
+      "description": "Only current-campaign-allowed assets are active final elements.",
+      "source": "env/asset_manifest.json; env/deprecated_assets.json",
+      "importance": "critical",
+      "expected_value": "use only current_campaign_allowed assets for active logo/hero/support roles",
+      "evaluation_role": "critical_required",
+      "fact_type": "resolution_fact",
+      "canonical_answer": "use only current_campaign_allowed assets for active logo/hero/support roles",
+      "semantic_acceptance": "Score from current asset selection and exclusion of deprecated assets, not from OCR text repeating the rule."
+    },
+    {
+      "id": "priority_conflict",
+      "description": "Priority order is resolved in favor of latest_update and current specs.",
+      "source": "env/latest_update.md",
+      "importance": "critical",
+      "expected_value": "latest_update.md > platform_specs.txt > visual_rules.json > asset_manifest.json",
+      "evaluation_role": "critical_required",
+      "fact_type": "resolution_fact",
+      "canonical_answer": "latest_update.md > platform_specs.txt > visual_rules.json > asset_manifest.json",
+      "semantic_acceptance": "Score from final use of latest/current requirements over old requirements, not from OCR text repeating the priority order."
+    },
+    {
+      "id": "conditional_rules",
+      "description": "Busy or bright hero backgrounds use a readable copy panel.",
+      "source": "env/visual_rules.json",
+      "importance": "major",
+      "expected_value": "solid or high-opacity panel when needed",
+      "evaluation_role": "major_required",
+      "fact_type": "conditional_fact",
+      "canonical_answer": "solid or high-opacity panel when needed",
+      "semantic_acceptance": "Score from visual readability treatment when the condition applies, not from OCR text repeating the rule."
+    },
+    {
+      "id": "compliance_requirements",
+      "description": "Domain claim and visual traps are avoided.",
+      "source": "env/product_messaging.md; env/deprecated_assets.json",
+      "importance": "critical",
+      "expected_value": "avoid prohibited claims and restricted visual habits",
+      "evaluation_role": "critical_required",
+      "fact_type": "negative_only",
+      "canonical_answer": "avoid prohibited claims and restricted visual habits",
+      "semantic_acceptance": "Score from absence of prohibited claims and restricted visual treatments in the final design."
+    },
+    {
+      "id": "forbidden_elements_not_active",
+      "description": "Deprecated copy, claims, logos, assets, old platform specs, and restricted visuals are not active final content.",
+      "source": "env/deprecated_assets.json; env/product_messaging.md; env/latest_update.md; env/visual_rules.json",
+      "importance": "critical",
+      "must_not_appear_in_image": true,
+      "forbidden_patterns": [
+        "Replace every scheduler",
+        "AI runs your workforce",
+        "LinkedIn feed layout",
+        "robot operator hero",
+        "guaranteed 2x efficiency"
+      ],
+      "allowed_patterns": [
+        "Replace every scheduler.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
+        "AI runs your workforce.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
+        "LinkedIn feed layout.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
+        "robot operator hero.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
+        "guaranteed 2x efficiency.{0,120}(deprecated|do not use|archived|retired|forbidden|old)"
+      ],
+      "evaluation_role": "negative_only",
+      "fact_type": "negative_only"
+    }
+  ],
+  "calculation_notes": "Generated facts bind design-specification difficulty to task-visible env rules: platform conflict, asset ambiguity, priority conflict, compliance/visual traps, and layout pressure. Minor placement deviations should be checklist deductions rather than hard caps."
+}

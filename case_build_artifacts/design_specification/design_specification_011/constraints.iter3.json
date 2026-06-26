@@ -1,0 +1,12 @@
+{
+  "iteration": 3,
+  "source_level": "revise",
+  "source_score": 90,
+  "strong_blockers": [
+    "candidate is highly similar to existing design_specification case"
+  ],
+  "recommended_fixes": [
+    "Regenerate with a different domain, platform, target image type, or conflict mechanism."
+  ],
+  "force_variant": "saas_web_banner"
+}

@@ -1,0 +1,151 @@
+{
+  "case_id": "data_selection_004",
+  "task_type": "data_selection",
+  "static_audit_score": 64,
+  "static_quality_level": "revise",
+  "agentic_audit_score": null,
+  "case_strength_score": null,
+  "final_quality_score": 64,
+  "final_quality_level": "revise",
+  "overall_quality_score": 64,
+  "quality_level": "revise",
+  "strong_level_blockers": [
+    "fewer than 3 ranking/quota/threshold critical facts",
+    "fewer than 5 critical facts"
+  ],
+  "issue_summary": [
+    "distractor ratio below 30%",
+    "fewer than five critical facts",
+    "too few selection-complexity critical facts",
+    "few structured distractor rows detected",
+    "negative facts have too few forbidden_patterns",
+    "Critical facts not bound by grounded checklist items: ['ranking_order', 'selected_product_display_values', 'selected_products', 'unselected_products_not_featured']",
+    "Negative facts are not sufficiently covered by grounded items or score caps",
+    "fewer than 3 ranking/quota/threshold critical facts",
+    "fewer than 5 critical facts"
+  ],
+  "checks": {
+    "structure": {
+      "status": "pass",
+      "issues": [],
+      "warnings": []
+    },
+    "data_selection_validity": {
+      "status": "pass",
+      "operation_hits": {
+        "filtering": true,
+        "ranking": true,
+        "quota_or_limit": false,
+        "negative_exclusion": true,
+        "display_values": true
+      },
+      "operation_count": 4,
+      "too_direct_or_too_easy": false,
+      "issues": []
+    },
+    "independent_recompute": {
+      "status": "warn",
+      "notes": [
+        "calculation_notes do not mention exclude"
+      ],
+      "mismatches": [],
+      "computed_facts": {
+        "table_profile": {
+          "total_structured_rows": 18,
+          "candidate_valid_rows": 13,
+          "candidate_distractor_rows": 5,
+          "distractor_ratio": 0.2778,
+          "formats": {
+            "csv": 1,
+            "json": 1
+          },
+          "table_counts": {},
+          "groupish_columns": {
+            "category": 1,
+            "status": 1,
+            "season_tag": 1
+          },
+          "numeric_columns": {
+            "stock": 1,
+            "feature_price_usd": 1,
+            "markdown_pct": 1,
+            "margin_score": 1
+          }
+        }
+      }
+    },
+    "difficulty_signal": {
+      "status": "warn",
+      "difficulty_score": 45,
+      "difficulty_level": "weak",
+      "positive_signals": [
+        "structured row count is sufficient for selection",
+        "uses multiple env formats or multi-table structure",
+        "broad negative/unselected coverage"
+      ],
+      "issues": [
+        "distractor ratio below 30%",
+        "fewer than five critical facts",
+        "too few selection-complexity critical facts"
+      ],
+      "total_structured_rows": 18,
+      "valid_rows": 13,
+      "distractor_ratio": 0.2778,
+      "critical_fact_count": 4,
+      "negative_fact_count": 5,
+      "complex_critical_fact_count": 2
+    },
+    "answer_leakage": {
+      "status": "pass",
+      "leaks": [],
+      "issues": []
+    },
+    "distractor_audit": {
+      "status": "warn",
+      "negative_fact_count": 5,
+      "found_distractor_tokens": [
+        "archived",
+        "draft",
+        "internal",
+        "retired",
+        "test"
+      ],
+      "forbidden_pattern_count": 0,
+      "would_change_answer_if_used": false,
+      "issues": [
+        "few structured distractor rows detected",
+        "negative facts have too few forbidden_patterns"
+      ]
+    },
+    "checklist_audit": {
+      "status": "warn",
+      "fact_binding_complete": false,
+      "negative_fact_count": 5,
+      "score_cap_count": 4,
+      "issues": [
+        "Critical facts not bound by grounded checklist items: ['ranking_order', 'selected_product_display_values', 'selected_products', 'unselected_products_not_featured']",
+        "Negative facts are not sufficiently covered by grounded items or score caps"
+      ]
+    },
+    "run_result_audit": {
+      "status": "pass",
+      "issues": []
+    },
+    "agentic_audit": {
+      "status": "not_run",
+      "agentic_audit_score": null
+    },
+    "case_strength_review": {
+      "status": "not_run",
+      "case_strength_score": null
+    }
+  },
+  "recommended_fixes": [
+    "Add explicit filtering, ranking, group-limit/tie-break, display-value, and negative-exclusion signals.",
+    "Add more tempting answer-changing distractors.",
+    "Make critical facts depend on thresholds, ranking, tie-breaks, group caps, or below-cutoff exclusions.",
+    "Bind distractors to negative facts with forbidden_patterns and score caps.",
+    "Bind every critical_required fact to grounded checklist items.",
+    "Clarify evaluator-only calculation_notes so expected facts can be recomputed from env files."
+  ]
+}

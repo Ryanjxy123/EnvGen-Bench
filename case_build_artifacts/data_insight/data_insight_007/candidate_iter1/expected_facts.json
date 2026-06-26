@@ -1,0 +1,129 @@
+{
+  "case_id": "data_insight_007",
+  "task_type": "data_insight",
+  "facts": [
+    {
+      "id": "hospital_capacity_score_leader",
+      "description": "Top care unit by weighted capacity_pressure_score after exclusions, profile mapping, normalization, and tie-breaks.",
+      "source": "env/unit_panel.csv + env/unit_profiles.csv + env/capacity_rules.json",
+      "importance": "critical",
+      "expected_value": [
+        "Pediatric West: 82.9",
+        "Pediatric West top score"
+      ],
+      "canonical_answer": "Pediatric West is the top priority with score 82.9",
+      "semantic_acceptance": "Accept if Pediatric West is shown as the highest priority with score near 82.9.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "hospital_capacity_lowest_score",
+      "description": "Lowest-risk or lowest-priority care unit by weighted score.",
+      "source": "env/unit_panel.csv + env/unit_profiles.csv + env/capacity_rules.json",
+      "importance": "critical",
+      "expected_value": [
+        "Neuro Tower: 19.0",
+        "Neuro Tower lowest score"
+      ],
+      "canonical_answer": "Neuro Tower is the lowest-ranked entity with score 19.0",
+      "semantic_acceptance": "Accept if Neuro Tower is identified as the lowest score entity.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "hospital_capacity_fastest_gap_change",
+      "description": "Entity with the largest analysis-period gap-rate increase versus baseline.",
+      "source": "env/unit_panel.csv + env/capacity_rules.json",
+      "importance": "critical",
+      "expected_value": [
+        "Pediatric West: 2.7 pp",
+        "Pediatric West fastest gap-rate change"
+      ],
+      "canonical_answer": "Pediatric West has the fastest gap-rate increase at about 2.7 percentage points",
+      "semantic_acceptance": "Accept if Pediatric West is identified as largest gap-rate increase.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "hospital_capacity_gap_volume_hotspot",
+      "description": "Entity with the highest analysis-period gap volume.",
+      "source": "env/unit_panel.csv",
+      "importance": "critical",
+      "expected_value": [
+        "Oncology East: 540",
+        "Oncology East highest gap volume"
+      ],
+      "canonical_answer": "Oncology East has the highest analysis-period gap volume at 540",
+      "semantic_acceptance": "Accept if Oncology East is shown as the gap-volume hotspot near 540.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "hospital_capacity_incident_rate_hotspot",
+      "description": "Entity with the highest analysis-period incident rate per 1,000 scale units.",
+      "source": "env/unit_panel.csv + env/unit_profiles.csv",
+      "importance": "critical",
+      "expected_value": [
+        "Cardiac Stepdown: 49.6 per 1,000",
+        "Cardiac Stepdown incident-rate hotspot"
+      ],
+      "canonical_answer": "Cardiac Stepdown has the highest incident rate at about 49.6 per 1,000",
+      "semantic_acceptance": "Accept if Cardiac Stepdown is identified as incident-rate hotspot.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "hospital_capacity_group_gap_hotspot",
+      "description": "Hospital Campus with the highest aggregate analysis-period gap volume.",
+      "source": "env/unit_panel.csv + env/unit_profiles.csv",
+      "importance": "critical",
+      "expected_value": [
+        "Core: 996",
+        "Core group hotspot"
+      ],
+      "canonical_answer": "Core is the group hotspot at 996",
+      "semantic_acceptance": "Accept if Core is identified as the leading group hotspot.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "hospital_capacity_threshold_count",
+      "description": "Count of entities at or above the high-priority score threshold.",
+      "source": "env/capacity_rules.json + env/unit_panel.csv + env/unit_profiles.csv",
+      "importance": "critical",
+      "expected_value": [
+        "2 high-priority entities",
+        "threshold count 2"
+      ],
+      "canonical_answer": "2 entities meet the high-priority threshold",
+      "semantic_acceptance": "Accept if the image states that 2 entities are high priority under the configured threshold.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "hospital_capacity_distractor_exclusions",
+      "description": "Do not use forecast, subtotal, test, or old-period rows as final metrics.",
+      "source": "env/unit_panel.csv + env/capacity_rules.json",
+      "importance": "major",
+      "expected_value": [
+        "invalid panel record used"
+      ],
+      "forbidden_patterns": [
+        "\\b99,?999\\b",
+        "\\b88,?888\\b",
+        "\\b77,?777\\b",
+        "\\bforecast\\b[^.!?\\n;]{0,80}\\b(result|answer|leader|score|gap)\\b",
+        "\\bsubtotal\\b[^.!?\\n;]{0,80}\\b(result|answer|leader|score|gap)\\b",
+        "\\bold[_ -]?period\\b[^.!?\\n;]{0,80}\\b(result|answer|leader|score|gap)\\b"
+      ],
+      "allowed_patterns": [
+        "\\b(exclude|excluded|excluding|ignore|ignored|not\\s+used)\\b[^.!?\\n;]{0,140}\\b(forecast|subtotal|old)"
+      ],
+      "must_not_appear_in_image": true,
+      "canonical_answer": "Invalid panel rows must not be used as final metrics.",
+      "semantic_acceptance": "Reject or cap if invalid rows are treated as final metrics. Exclusion notes are allowed.",
+      "evaluation_role": "negative_only"
+    }
+  ],
+  "calculation_notes": "Join unit_panel.csv to unit_profiles.csv by entity_id. Use only actual closed records. Baseline months are 2026-07 through 2026-09; analysis months are 2026-10 through 2026-12. Gap volume is staffed_bed_days minus available_bed_days. Gap rate is gap divided by staffed_bed_days. capacity_pressure_score min-max normalizes analysis gap rate, gap-rate change, incident rate per 1,000, and criticality, then applies configured weights. Tie-break order is rounded score, analysis gap volume, criticality, and entity name. Top score entity is Pediatric West at 82.9. Lowest score entity is Neuro Tower at 19.0. Fastest gap-rate increase is Pediatric West at 2.7 percentage points. Gap-volume hotspot is Oncology East at 540. Incident-rate hotspot is Cardiac Stepdown at 49.6 per 1,000. Group hotspot is Core at 996. High-priority count is 2."
+}

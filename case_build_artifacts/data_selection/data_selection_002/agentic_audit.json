@@ -1,0 +1,15 @@
+{
+  "status": "warn",
+  "agentic_audit_score": 54,
+  "too_easy_risk": true,
+  "blind_guess_leakage_risk": false,
+  "shortcut_risk": true,
+  "reasoning": [
+    "fewer than five critical facts",
+    "not all data-selection operation families appear",
+    "distractor ratio below hard selection target"
+  ],
+  "recommended_difficulty_upgrade": [
+    "Add group caps, tie-breaks, threshold-edge distractors, or below-cutoff eligible distractors."
+  ]
+}

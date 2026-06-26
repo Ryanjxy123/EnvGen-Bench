@@ -1,0 +1,38 @@
+{
+  "case_strength_score": 58,
+  "case_strength_level": "weak",
+  "metrics": {
+    "total_structured_rows": 16,
+    "candidate_valid_rows": 9,
+    "candidate_distractor_rows": 7,
+    "distractor_ratio": 0.4375,
+    "env_file_count": 2,
+    "supplemental_rule_files": [
+      "assignment_rules.md"
+    ],
+    "critical_fact_count": 4,
+    "negative_fact_count": 4,
+    "complex_critical_fact_count": 2,
+    "operation_count": 5
+  },
+  "strengths": [
+    "distractor ratio reaches hard target",
+    "case uses separate rule/support files",
+    "no answer leakage detected"
+  ],
+  "weaknesses": [
+    "total structured rows below 18",
+    "fewer than five critical facts",
+    "fewer than three ranking/quota/threshold facts",
+    "critical facts are not fully bound by grounded checklist items"
+  ],
+  "strong_blockers": [
+    "fewer than five critical facts",
+    "row count below strong threshold",
+    "selection complexity below hard threshold"
+  ],
+  "recommended_improvements": [
+    "Increase candidate/distractor rows."
+  ],
+  "mode": "heuristic_data_selection_strength_review"
+}

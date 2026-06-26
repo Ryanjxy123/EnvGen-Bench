@@ -1,0 +1,346 @@
+{
+  "reviews": [
+    {
+      "candidate_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\case_build_artifacts\\data_insight\\data_insight_005\\candidate_iter1",
+      "candidate_signature": {
+        "target_image_type": "transit_reliability_ops_infographic",
+        "formats": [
+          "csv",
+          "json",
+          "md"
+        ],
+        "env_count": 4,
+        "topic_tokens_sample": [
+          "aggregation",
+          "area",
+          "boundaries",
+          "closed-env",
+          "concise",
+          "configured",
+          "counts",
+          "create",
+          "csv",
+          "data_insight",
+          "decision",
+          "distractor",
+          "dumps",
+          "exclusion",
+          "exclusions",
+          "expose",
+          "focus",
+          "formula",
+          "generated",
+          "group",
+          "hard",
+          "highest-priority",
+          "identify",
+          "intervention",
+          "json",
+          "mapping",
+          "multi-period",
+          "normalized",
+          "not",
+          "notes"
+        ],
+        "calc_tokens": [
+          "analysis",
+          "baseline",
+          "csv",
+          "group",
+          "join",
+          "mapping",
+          "normalization",
+          "threshold",
+          "tie-break",
+          "weighted"
+        ],
+        "fact_tokens_sample": [
+          "transit_reliability_distractor_exclusions",
+          "transit_reliability_fastest_gap_change",
+          "transit_reliability_gap_volume_hotspot",
+          "transit_reliability_group_gap_hotspot",
+          "transit_reliability_incident_rate_hotspot",
+          "transit_reliability_lowest_score",
+          "transit_reliability_score_leader",
+          "transit_reliability_threshold_count"
+        ],
+        "answer_pattern_tokens": [
+          "named_entities",
+          "numeric_values",
+          "percentage_values",
+          "transit_reliability_fastest_gap_change",
+          "transit_reliability_gap_volume_hotspot",
+          "transit_reliability_group_gap_hotspot",
+          "transit_reliability_incident_rate_hotspot",
+          "transit_reliability_lowest_score",
+          "transit_reliability_score_leader",
+          "transit_reliability_threshold_count"
+        ]
+      },
+      "max_similarity": 1.0,
+      "diversity_score": 0,
+      "high_similarity": true,
+      "threshold": 0.72,
+      "nearest_case": {
+        "case_id": "data_insight_004",
+        "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_insight\\data_insight_004",
+        "similarity": 1.0,
+        "components": {
+          "target_image_type": 1.0,
+          "env_file_types": 1.0,
+          "file_structure": 1.0,
+          "domain_theme": 1.0,
+          "core_calculation_chain": 1.0,
+          "critical_fact_types": 1.0,
+          "answer_entity_value_pattern": 1.0
+        }
+      },
+      "top_comparisons": [
+        {
+          "case_id": "data_insight_004",
+          "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_insight\\data_insight_004",
+          "similarity": 1.0,
+          "components": {
+            "target_image_type": 1.0,
+            "env_file_types": 1.0,
+            "file_structure": 1.0,
+            "domain_theme": 1.0,
+            "core_calculation_chain": 1.0,
+            "critical_fact_types": 1.0,
+            "answer_entity_value_pattern": 1.0
+          }
+        },
+        {
+          "case_id": "data_insight_002",
+          "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_insight\\data_insight_002",
+          "similarity": 0.5787,
+          "components": {
+            "target_image_type": 0.0,
+            "env_file_types": 1.0,
+            "file_structure": 0.6122,
+            "domain_theme": 0.8333,
+            "core_calculation_chain": 1.0,
+            "critical_fact_types": 0.0,
+            "answer_entity_value_pattern": 0.1765
+          }
+        },
+        {
+          "case_id": "data_insight_003",
+          "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_insight\\data_insight_003",
+          "similarity": 0.5585,
+          "components": {
+            "target_image_type": 0.0,
+            "env_file_types": 1.0,
+            "file_structure": 0.5882,
+            "domain_theme": 0.8333,
+            "core_calculation_chain": 0.9091,
+            "critical_fact_types": 0.0,
+            "answer_entity_value_pattern": 0.1765
+          }
+        },
+        {
+          "case_id": "data_insight_012",
+          "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_insight\\data_insight_012",
+          "similarity": 0.384,
+          "components": {
+            "target_image_type": 0.0,
+            "env_file_types": 1.0,
+            "file_structure": 0.4545,
+            "domain_theme": 0.5,
+            "core_calculation_chain": 0.4286,
+            "critical_fact_types": 0.0,
+            "answer_entity_value_pattern": 0.1765
+          }
+        },
+        {
+          "case_id": "data_insight_011",
+          "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_insight\\data_insight_011",
+          "similarity": 0.2142,
+          "components": {
+            "target_image_type": 0.0,
+            "env_file_types": 0.5,
+            "file_structure": 0.1803,
+            "domain_theme": 0.2,
+            "core_calculation_chain": 0.4,
+            "critical_fact_types": 0.0,
+            "answer_entity_value_pattern": 0.1667
+          }
+        }
+      ],
+      "decision": "reject_candidate_regenerate",
+      "iteration": 1,
+      "variant": "panel_transit_reliability"
+    },
+    {
+      "candidate_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\case_build_artifacts\\data_insight\\data_insight_005\\candidate_iter2",
+      "candidate_signature": {
+        "target_image_type": "grant_compliance_monitoring_infographic",
+        "formats": [
+          "csv",
+          "json",
+          "md"
+        ],
+        "env_count": 4,
+        "topic_tokens_sample": [
+          "aggregation",
+          "area",
+          "boundaries",
+          "closed-env",
+          "compliance",
+          "concise",
+          "configured",
+          "counts",
+          "create",
+          "csv",
+          "data_insight",
+          "decision",
+          "distractor",
+          "dumps",
+          "exclusion",
+          "exclusions",
+          "expose",
+          "focus",
+          "formula",
+          "generated",
+          "grant",
+          "grant_compliance_monitoring_infographic",
+          "group",
+          "hard",
+          "highest-priority",
+          "identify",
+          "json",
+          "mapping",
+          "monitoring",
+          "multi-period"
+        ],
+        "calc_tokens": [
+          "analysis",
+          "baseline",
+          "csv",
+          "group",
+          "join",
+          "mapping",
+          "normalization",
+          "threshold",
+          "tie-break",
+          "weighted"
+        ],
+        "fact_tokens_sample": [
+          "grants_compliance_distractor_exclusions",
+          "grants_compliance_fastest_gap_change",
+          "grants_compliance_gap_volume_hotspot",
+          "grants_compliance_group_gap_hotspot",
+          "grants_compliance_incident_rate_hotspot",
+          "grants_compliance_lowest_score",
+          "grants_compliance_score_leader",
+          "grants_compliance_threshold_count"
+        ],
+        "answer_pattern_tokens": [
+          "grants_compliance_fastest_gap_change",
+          "grants_compliance_gap_volume_hotspot",
+          "grants_compliance_group_gap_hotspot",
+          "grants_compliance_incident_rate_hotspot",
+          "grants_compliance_lowest_score",
+          "grants_compliance_score_leader",
+          "grants_compliance_threshold_count",
+          "named_entities",
+          "numeric_values",
+          "percentage_values"
+        ]
+      },
+      "max_similarity": 0.5731,
+      "diversity_score": 43,
+      "high_similarity": false,
+      "threshold": 0.72,
+      "nearest_case": {
+        "case_id": "data_insight_002",
+        "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_insight\\data_insight_002",
+        "similarity": 0.5731,
+        "components": {
+          "target_image_type": 0.0,
+          "env_file_types": 1.0,
+          "file_structure": 0.6,
+          "domain_theme": 0.8148,
+          "core_calculation_chain": 1.0,
+          "critical_fact_types": 0.0,
+          "answer_entity_value_pattern": 0.1765
+        }
+      },
+      "top_comparisons": [
+        {
+          "case_id": "data_insight_002",
+          "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_insight\\data_insight_002",
+          "similarity": 0.5731,
+          "components": {
+            "target_image_type": 0.0,
+            "env_file_types": 1.0,
+            "file_structure": 0.6,
+            "domain_theme": 0.8148,
+            "core_calculation_chain": 1.0,
+            "critical_fact_types": 0.0,
+            "answer_entity_value_pattern": 0.1765
+          }
+        },
+        {
+          "case_id": "data_insight_004",
+          "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_insight\\data_insight_004",
+          "similarity": 0.5682,
+          "components": {
+            "target_image_type": 0.0,
+            "env_file_types": 1.0,
+            "file_structure": 0.5882,
+            "domain_theme": 0.8,
+            "core_calculation_chain": 1.0,
+            "critical_fact_types": 0.0,
+            "answer_entity_value_pattern": 0.1765
+          }
+        },
+        {
+          "case_id": "data_insight_003",
+          "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_insight\\data_insight_003",
+          "similarity": 0.553,
+          "components": {
+            "target_image_type": 0.0,
+            "env_file_types": 1.0,
+            "file_structure": 0.5769,
+            "domain_theme": 0.8148,
+            "core_calculation_chain": 0.9091,
+            "critical_fact_types": 0.0,
+            "answer_entity_value_pattern": 0.1765
+          }
+        },
+        {
+          "case_id": "data_insight_012",
+          "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_insight\\data_insight_012",
+          "similarity": 0.3801,
+          "components": {
+            "target_image_type": 0.0,
+            "env_file_types": 1.0,
+            "file_structure": 0.4211,
+            "domain_theme": 0.5072,
+            "core_calculation_chain": 0.4286,
+            "critical_fact_types": 0.0,
+            "answer_entity_value_pattern": 0.1765
+          }
+        },
+        {
+          "case_id": "data_insight_011",
+          "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_insight\\data_insight_011",
+          "similarity": 0.2141,
+          "components": {
+            "target_image_type": 0.0,
+            "env_file_types": 0.5,
+            "file_structure": 0.1774,
+            "domain_theme": 0.2021,
+            "core_calculation_chain": 0.4,
+            "critical_fact_types": 0.0,
+            "answer_entity_value_pattern": 0.1667
+          }
+        }
+      ],
+      "decision": "diversity_ok",
+      "iteration": 2,
+      "variant": "panel_grants_compliance"
+    }
+  ]
+}

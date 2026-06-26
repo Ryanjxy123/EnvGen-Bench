@@ -1,0 +1,11 @@
+zone_id,district_name,region,network_type,service_connections,district_criticality,profile_status
+Z01,North Loop,North,residential,820,45,active
+Z02,Harbor Flats,Central,mixed_use,690,55,active
+Z03,Hillcrest Grid,North,residential,760,40,active
+Z04,Southworks Main,South,industrial,520,80,active
+Z05,Central Core,Central,commercial,980,70,active
+Z06,Airport Spur,West,transport,410,85,active
+Z07,Lakeside West,West,residential,640,50,active
+Z08,University East,East,institutional,740,65,active
+Z09,Old Mill,South,industrial,390,90,active
+Z10,Meadow Park,East,residential,700,35,active

@@ -1,0 +1,37 @@
+{
+  "case_id": "design_specification_007",
+  "variant": "auto",
+  "artifact_root": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\case_build_artifacts\\design_specification\\design_specification_007",
+  "formal_case_dir": "benchmark\\cases\\design_specification\\design_specification_007",
+  "accepted": true,
+  "selected_iteration": 1,
+  "selected_variant": "nutrition_mobile_banner",
+  "no_write": false,
+  "failure_reason": null,
+  "candidates": [
+    {
+      "iteration": 1,
+      "candidate_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\case_build_artifacts\\design_specification\\design_specification_007\\candidate_iter1",
+      "variant": "nutrition_mobile_banner",
+      "domain": "food_nutrition",
+      "platform": "Mobile in-app banner",
+      "target_image_type": "nutrition_mobile_banner_ad",
+      "level": "strong",
+      "score": 100,
+      "strength_signals": {
+        "platform_conflict": true,
+        "asset_ambiguity": true,
+        "priority_conflict": true,
+        "compliance_or_visual_trap": true,
+        "layout_space_pressure": true
+      },
+      "signal_count": 5,
+      "diversity_score": 37,
+      "max_similarity": 0.63,
+      "nearest_case_id": "design_specification_003",
+      "high_similarity": false,
+      "status": "accepted_strong",
+      "blockers": []
+    }
+  ]
+}

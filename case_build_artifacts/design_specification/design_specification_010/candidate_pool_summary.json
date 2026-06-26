@@ -1,0 +1,37 @@
+{
+  "case_id": "design_specification_010",
+  "variant": "auto",
+  "artifact_root": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\case_build_artifacts\\design_specification\\design_specification_010",
+  "formal_case_dir": "benchmark\\cases\\design_specification\\design_specification_010",
+  "accepted": true,
+  "selected_iteration": 1,
+  "selected_variant": "ecommerce_product_card",
+  "no_write": false,
+  "failure_reason": null,
+  "candidates": [
+    {
+      "iteration": 1,
+      "candidate_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\case_build_artifacts\\design_specification\\design_specification_010\\candidate_iter1",
+      "variant": "ecommerce_product_card",
+      "domain": "ecommerce",
+      "platform": "Retail app square product card",
+      "target_image_type": "ecommerce_product_launch_card",
+      "level": "strong",
+      "score": 100,
+      "strength_signals": {
+        "platform_conflict": true,
+        "asset_ambiguity": true,
+        "priority_conflict": true,
+        "compliance_or_visual_trap": true,
+        "layout_space_pressure": true
+      },
+      "signal_count": 5,
+      "diversity_score": 77,
+      "max_similarity": 0.23,
+      "nearest_case_id": "design_specification_001",
+      "high_similarity": false,
+      "status": "accepted_strong",
+      "blockers": []
+    }
+  ]
+}

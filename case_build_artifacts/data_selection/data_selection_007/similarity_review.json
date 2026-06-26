@@ -1,0 +1,179 @@
+{
+  "reviews": [
+    {
+      "candidate_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\case_build_artifacts\\data_selection\\data_selection_007\\candidate_iter1",
+      "candidate_signature": {
+        "target_image_type": "cooling_center_activation_board",
+        "formats": [
+          "csv",
+          "json",
+          "md"
+        ],
+        "topic_tokens_sample": [
+          "activation",
+          "answer",
+          "backup",
+          "board",
+          "breaks",
+          "budget",
+          "capacity",
+          "caps",
+          "case",
+          "center",
+          "centers",
+          "changing",
+          "choose",
+          "chosen",
+          "condition",
+          "cooling",
+          "create",
+          "data",
+          "distractors",
+          "draft",
+          "each",
+          "emergency",
+          "facing",
+          "failed",
+          "filtering",
+          "first",
+          "generated",
+          "group",
+          "hard",
+          "heatwave"
+        ],
+        "rule_tokens": [
+          "cap",
+          "eligible",
+          "exclude",
+          "filter",
+          "group",
+          "select",
+          "sort",
+          "top"
+        ],
+        "fact_tokens_sample": [
+          "compliance",
+          "display",
+          "featured",
+          "group",
+          "limit",
+          "not",
+          "object",
+          "objects",
+          "order",
+          "ranking",
+          "selected",
+          "unselected",
+          "values"
+        ],
+        "answer_pattern_tokens": [
+          "critical_required",
+          "eligibility_exclusions",
+          "eligible_below_cutoff",
+          "group_cap_exclusions",
+          "group_limit_compliance",
+          "negative",
+          "negative_only",
+          "positive",
+          "ranking_order",
+          "selected_object_display_values",
+          "selected_objects",
+          "unselected_objects_not_featured"
+        ]
+      },
+      "max_similarity": 0.4301,
+      "diversity_score": 57,
+      "high_similarity": false,
+      "threshold": 0.7,
+      "nearest_case": {
+        "case_id": "data_selection_006",
+        "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_selection\\data_selection_006",
+        "similarity": 0.4301,
+        "components": {
+          "target_image_type": 0.0,
+          "env_file_types": 1.0,
+          "file_structure": 0.3173,
+          "domain_theme": 0.3367,
+          "selection_rule_chain": 1.0,
+          "critical_fact_types": 1.0,
+          "answer_pattern": 1.0
+        }
+      },
+      "top_comparisons": [
+        {
+          "case_id": "data_selection_006",
+          "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_selection\\data_selection_006",
+          "similarity": 0.4301,
+          "components": {
+            "target_image_type": 0.0,
+            "env_file_types": 1.0,
+            "file_structure": 0.3173,
+            "domain_theme": 0.3367,
+            "selection_rule_chain": 1.0,
+            "critical_fact_types": 1.0,
+            "answer_pattern": 1.0
+          }
+        },
+        {
+          "case_id": "data_selection_008",
+          "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_selection\\data_selection_008",
+          "similarity": 0.3464,
+          "components": {
+            "target_image_type": 0.0,
+            "env_file_types": 0.2,
+            "file_structure": 0.3704,
+            "domain_theme": 0.217,
+            "selection_rule_chain": 1.0,
+            "critical_fact_types": 1.0,
+            "answer_pattern": 1.0
+          }
+        },
+        {
+          "case_id": "data_selection_005",
+          "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_selection\\data_selection_005",
+          "similarity": 0.1903,
+          "components": {
+            "target_image_type": 0.0,
+            "env_file_types": 0.6667,
+            "file_structure": 0.0963,
+            "domain_theme": 0.12,
+            "selection_rule_chain": 0.5556,
+            "critical_fact_types": 0.5333,
+            "answer_pattern": 0.2778
+          }
+        },
+        {
+          "case_id": "data_selection_004",
+          "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_selection\\data_selection_004",
+          "similarity": 0.188,
+          "components": {
+            "target_image_type": 0.0,
+            "env_file_types": 0.6667,
+            "file_structure": 0.0923,
+            "domain_theme": 0.1176,
+            "selection_rule_chain": 0.5556,
+            "critical_fact_types": 0.5333,
+            "answer_pattern": 0.2632
+          }
+        },
+        {
+          "case_id": "data_selection_001",
+          "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_selection\\data_selection_001",
+          "similarity": 0.1793,
+          "components": {
+            "target_image_type": 0.0,
+            "env_file_types": 0.6667,
+            "file_structure": 0.0797,
+            "domain_theme": 0.125,
+            "selection_rule_chain": 0.4444,
+            "critical_fact_types": 0.5333,
+            "answer_pattern": 0.2381
+          }
+        }
+      ],
+      "decision": "diversity_ok",
+      "iteration": 1,
+      "variant": "cooling_center_activation"
+    }
+  ]
+}

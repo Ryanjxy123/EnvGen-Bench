@@ -1,0 +1,50 @@
+{
+  "select_top_n": 5,
+  "equals": {
+    "status": "ready",
+    "event_window": "heatwave_july_2026",
+    "accessibility": "yes",
+    "backup_power": "yes",
+    "inspection": "pass"
+  },
+  "in": {
+    "site_type": [
+      "library",
+      "community_center",
+      "school_gym"
+    ]
+  },
+  "gt": {
+    "cooling_capacity": 60,
+    "heat_risk_score": 80
+  },
+  "lte": {
+    "setup_cost_usd": 9000
+  },
+  "group_limit": {
+    "field": "zone",
+    "max": 2
+  },
+  "sort": [
+    {
+      "field": "heat_risk_score",
+      "direction": "desc"
+    },
+    {
+      "field": "cooling_capacity",
+      "direction": "desc"
+    },
+    {
+      "field": "transit_score",
+      "direction": "desc"
+    },
+    {
+      "field": "setup_cost_usd",
+      "direction": "asc"
+    },
+    {
+      "field": "name",
+      "direction": "asc"
+    }
+  ]
+}

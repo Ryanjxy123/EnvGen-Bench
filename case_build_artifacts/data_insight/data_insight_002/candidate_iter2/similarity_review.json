@@ -1,0 +1,171 @@
+{
+  "candidate_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\case_build_artifacts\\data_insight\\data_insight_002\\candidate_iter2",
+  "candidate_signature": {
+    "target_image_type": "warehouse_quality_triage_infographic",
+    "formats": [
+      "csv",
+      "json",
+      "md"
+    ],
+    "env_count": 4,
+    "topic_tokens_sample": [
+      "aggregation",
+      "area",
+      "boundaries",
+      "closed-env",
+      "concise",
+      "configured",
+      "counts",
+      "create",
+      "csv",
+      "data_insight",
+      "decision",
+      "distractor",
+      "dumps",
+      "exclusion",
+      "exclusions",
+      "expose",
+      "focus",
+      "formula",
+      "fulfillment",
+      "generated",
+      "group",
+      "hard",
+      "highest-priority",
+      "identify",
+      "intervention",
+      "json",
+      "mapping",
+      "multi-period",
+      "normalized",
+      "not"
+    ],
+    "calc_tokens": [
+      "analysis",
+      "baseline",
+      "csv",
+      "group",
+      "join",
+      "mapping",
+      "normalization",
+      "threshold",
+      "tie-break",
+      "weighted"
+    ],
+    "fact_tokens_sample": [
+      "warehouse_quality_distractor_exclusions",
+      "warehouse_quality_fastest_gap_change",
+      "warehouse_quality_gap_volume_hotspot",
+      "warehouse_quality_group_gap_hotspot",
+      "warehouse_quality_incident_rate_hotspot",
+      "warehouse_quality_lowest_score",
+      "warehouse_quality_score_leader",
+      "warehouse_quality_threshold_count"
+    ],
+    "answer_pattern_tokens": [
+      "named_entities",
+      "numeric_values",
+      "percentage_values",
+      "warehouse_quality_fastest_gap_change",
+      "warehouse_quality_gap_volume_hotspot",
+      "warehouse_quality_group_gap_hotspot",
+      "warehouse_quality_incident_rate_hotspot",
+      "warehouse_quality_lowest_score",
+      "warehouse_quality_score_leader",
+      "warehouse_quality_threshold_count"
+    ]
+  },
+  "max_similarity": 0.3825,
+  "diversity_score": 62,
+  "high_similarity": false,
+  "threshold": 0.72,
+  "nearest_case": {
+    "case_id": "data_insight_012",
+    "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_insight\\data_insight_012",
+    "similarity": 0.3825,
+    "components": {
+      "target_image_type": 0.0,
+      "env_file_types": 1.0,
+      "file_structure": 0.4364,
+      "domain_theme": 0.5072,
+      "core_calculation_chain": 0.4286,
+      "critical_fact_types": 0.0,
+      "answer_entity_value_pattern": 0.1765
+    }
+  },
+  "top_comparisons": [
+    {
+      "case_id": "data_insight_012",
+      "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_insight\\data_insight_012",
+      "similarity": 0.3825,
+      "components": {
+        "target_image_type": 0.0,
+        "env_file_types": 1.0,
+        "file_structure": 0.4364,
+        "domain_theme": 0.5072,
+        "core_calculation_chain": 0.4286,
+        "critical_fact_types": 0.0,
+        "answer_entity_value_pattern": 0.1765
+      }
+    },
+    {
+      "case_id": "data_insight_011",
+      "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_insight\\data_insight_011",
+      "similarity": 0.2151,
+      "components": {
+        "target_image_type": 0.0,
+        "env_file_types": 0.5,
+        "file_structure": 0.1833,
+        "domain_theme": 0.2021,
+        "core_calculation_chain": 0.4,
+        "critical_fact_types": 0.0,
+        "answer_entity_value_pattern": 0.1667
+      }
+    },
+    {
+      "case_id": "data_insight_006",
+      "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_insight\\data_insight_006",
+      "similarity": 0.1985,
+      "components": {
+        "target_image_type": 0.0,
+        "env_file_types": 1.0,
+        "file_structure": 0.1034,
+        "domain_theme": 0.0891,
+        "core_calculation_chain": 0.1667,
+        "critical_fact_types": 0.0,
+        "answer_entity_value_pattern": 0.1765
+      }
+    },
+    {
+      "case_id": "data_insight_009",
+      "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_insight\\data_insight_009",
+      "similarity": 0.1709,
+      "components": {
+        "target_image_type": 0.0,
+        "env_file_types": 1.0,
+        "file_structure": 0.0656,
+        "domain_theme": 0.0417,
+        "core_calculation_chain": 0.1,
+        "critical_fact_types": 0.0,
+        "answer_entity_value_pattern": 0.1765
+      }
+    },
+    {
+      "case_id": "data_insight_008",
+      "case_dir": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\cases\\data_insight\\data_insight_008",
+      "similarity": 0.153,
+      "components": {
+        "target_image_type": 0.0,
+        "env_file_types": 1.0,
+        "file_structure": 0.0877,
+        "domain_theme": 0.0449,
+        "core_calculation_chain": 0.0,
+        "critical_fact_types": 0.0,
+        "answer_entity_value_pattern": 0.125
+      }
+    }
+  ],
+  "decision": "diversity_ok",
+  "iteration": 2,
+  "variant": "panel_warehouse_quality"
+}

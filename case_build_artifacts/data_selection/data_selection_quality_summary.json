@@ -1,0 +1,126 @@
+{
+  "cases_root": "benchmark\\cases\\data_selection",
+  "artifact_root": "D:\\projects\\agent generation\\our_benchmark\\benchmark\\case_build_artifacts\\data_selection",
+  "cases": [
+    {
+      "case_id": "data_selection_001",
+      "static_score": 63,
+      "agentic_score": null,
+      "case_strength_score": null,
+      "final_quality_score": 63,
+      "final_quality_level": "revise",
+      "case_strength_level": null,
+      "top_recommended_fixes": [
+        "Add explicit filtering, ranking, group-limit/tie-break, display-value, and negative-exclusion signals.",
+        "Make critical facts depend on thresholds, ranking, tie-breaks, group caps, or below-cutoff exclusions.",
+        "Bind distractors to negative facts with forbidden_patterns and score caps."
+      ]
+    },
+    {
+      "case_id": "data_selection_002",
+      "static_score": 69,
+      "agentic_score": null,
+      "case_strength_score": null,
+      "final_quality_score": 69,
+      "final_quality_level": "revise",
+      "case_strength_level": null,
+      "top_recommended_fixes": [
+        "Add explicit filtering, ranking, group-limit/tie-break, display-value, and negative-exclusion signals.",
+        "Add more tempting answer-changing distractors.",
+        "Bind distractors to negative facts with forbidden_patterns and score caps."
+      ]
+    },
+    {
+      "case_id": "data_selection_003",
+      "static_score": 58,
+      "agentic_score": null,
+      "case_strength_score": null,
+      "final_quality_score": 49,
+      "final_quality_level": "reject",
+      "case_strength_level": null,
+      "top_recommended_fixes": [
+        "Remove final selected objects, rankings, and answer artifacts from task.md, metadata notes, and env file names.",
+        "Make critical facts depend on thresholds, ranking, tie-breaks, group caps, or below-cutoff exclusions.",
+        "Bind distractors to negative facts with forbidden_patterns and score caps."
+      ]
+    },
+    {
+      "case_id": "data_selection_004",
+      "static_score": 64,
+      "agentic_score": null,
+      "case_strength_score": null,
+      "final_quality_score": 64,
+      "final_quality_level": "revise",
+      "case_strength_level": null,
+      "top_recommended_fixes": [
+        "Add explicit filtering, ranking, group-limit/tie-break, display-value, and negative-exclusion signals.",
+        "Add more tempting answer-changing distractors.",
+        "Make critical facts depend on thresholds, ranking, tie-breaks, group caps, or below-cutoff exclusions."
+      ]
+    },
+    {
+      "case_id": "data_selection_005",
+      "static_score": 68,
+      "agentic_score": null,
+      "case_strength_score": null,
+      "final_quality_score": 68,
+      "final_quality_level": "revise",
+      "case_strength_level": null,
+      "top_recommended_fixes": [
+        "Make critical facts depend on thresholds, ranking, tie-breaks, group caps, or below-cutoff exclusions.",
+        "Bind distractors to negative facts with forbidden_patterns and score caps.",
+        "Bind every critical_required fact to grounded checklist items."
+      ]
+    },
+    {
+      "case_id": "data_selection_006",
+      "static_score": 100,
+      "agentic_score": null,
+      "case_strength_score": null,
+      "final_quality_score": 100,
+      "final_quality_level": "strong",
+      "case_strength_level": null,
+      "top_recommended_fixes": []
+    },
+    {
+      "case_id": "data_selection_007",
+      "static_score": 100,
+      "agentic_score": null,
+      "case_strength_score": null,
+      "final_quality_score": 100,
+      "final_quality_level": "strong",
+      "case_strength_level": null,
+      "top_recommended_fixes": []
+    },
+    {
+      "case_id": "data_selection_008",
+      "static_score": 100,
+      "agentic_score": null,
+      "case_strength_score": null,
+      "final_quality_score": 100,
+      "final_quality_level": "strong",
+      "case_strength_level": null,
+      "top_recommended_fixes": []
+    },
+    {
+      "case_id": "data_selection_009",
+      "static_score": 100,
+      "agentic_score": null,
+      "case_strength_score": null,
+      "final_quality_score": 100,
+      "final_quality_level": "strong",
+      "case_strength_level": null,
+      "top_recommended_fixes": []
+    },
+    {
+      "case_id": "data_selection_010",
+      "static_score": 100,
+      "agentic_score": null,
+      "case_strength_score": null,
+      "final_quality_score": 100,
+      "final_quality_level": "strong",
+      "case_strength_level": null,
+      "top_recommended_fixes": []
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "case_id": "data_selection_003",
+  "task_type": "data_selection",
+  "static_audit_score": 58,
+  "static_quality_level": "reject",
+  "agentic_audit_score": null,
+  "case_strength_score": null,
+  "final_quality_score": 49,
+  "final_quality_level": "reject",
+  "overall_quality_score": 49,
+  "quality_level": "reject",
+  "strong_level_blockers": [
+    "Severe issue blocks acceptance."
+  ],
+  "issue_summary": [
+    "too few selection-complexity critical facts",
+    "direct_value_leak in task.md: nut-free quick lunch specials",
+    "direct_value_leak in task.md: Nut-free quick lunch specials",
+    "negative facts have too few forbidden_patterns",
+    "Critical facts not bound by grounded checklist items: ['unselected_items_not_featured']",
+    "Negative facts are not sufficiently covered by grounded items or score caps",
+    "Severe issue blocks acceptance."
+  ],
+  "checks": {
+    "structure": {
+      "status": "pass",
+      "issues": [],
+      "warnings": []
+    },
+    "data_selection_validity": {
+      "status": "pass",
+      "operation_hits": {
+        "filtering": true,
+        "ranking": true,
+        "quota_or_limit": true,
+        "negative_exclusion": true,
+        "display_values": true
+      },
+      "operation_count": 5,
+      "too_direct_or_too_easy": false,
+      "issues": []
+    },
+    "independent_recompute": {
+      "status": "warn",
+      "notes": [
+        "calculation_notes do not mention exclude"
+      ],
+      "mismatches": [],
+      "computed_facts": {
+        "table_profile": {
+          "total_structured_rows": 18,
+          "candidate_valid_rows": 12,
+          "candidate_distractor_rows": 6,
+          "distractor_ratio": 0.3333,
+          "formats": {
+            "sqlite": 1,
+            "sql": 1
+          },
+          "table_counts": {
+            "menu_inventory.sqlite": 1
+          },
+          "groupish_columns": {
+            "meal_type": 1,
+            "status": 1,
+            "available": 1,
+            "contains_nuts": 1,
+            "prep_minutes": 1,
+            "service_window": 1
+          },
+          "numeric_columns": {
+            "available": 1,
+            "stock": 1,
+            "contains_nuts": 1,
+            "prep_minutes": 1,
+            "price_usd": 1,
+            "margin_score": 1
+          }
+        }
+      }
+    },
+    "difficulty_signal": {
+      "status": "pass",
+      "difficulty_score": 80,
+      "difficulty_level": "adequate",
+      "positive_signals": [
+        "structured row count is sufficient for selection",
+        "high distractor ratio",
+        "uses multiple env formats or multi-table structure",
+        "at least five critical facts",
+        "broad negative/unselected coverage",
+        "all selection operation families detected"
+      ],
+      "issues": [
+        "too few selection-complexity critical facts"
+      ],
+      "total_structured_rows": 18,
+      "valid_rows": 12,
+      "distractor_ratio": 0.3333,
+      "critical_fact_count": 5,
+      "negative_fact_count": 5,
+      "complex_critical_fact_count": 2
+    },
+    "answer_leakage": {
+      "status": "fail",
+      "leaks": [
+        {
+          "type": "direct_value_leak",
+          "fact_id": "nut_free_quick_lunch_copy",
+          "location": "task.md",
+          "value": "nut-free quick lunch specials"
+        },
+        {
+          "type": "direct_value_leak",
+          "fact_id": "nut_free_quick_lunch_copy",
+          "location": "task.md",
+          "value": "Nut-free quick lunch specials"
+        }
+      ],
+      "issues": [
+        "direct_value_leak in task.md: nut-free quick lunch specials",
+        "direct_value_leak in task.md: Nut-free quick lunch specials"
+      ]
+    },
+    "distractor_audit": {
+      "status": "warn",
+      "negative_fact_count": 5,
+      "found_distractor_tokens": [
+        "archived",
+        "draft",
+        "internal",
+        "old",
+        "test"
+      ],
+      "forbidden_pattern_count": 0,
+      "would_change_answer_if_used": true,
+      "issues": [
+        "negative facts have too few forbidden_patterns"
+      ]
+    },
+    "checklist_audit": {
+      "status": "warn",
+      "fact_binding_complete": false,
+      "negative_fact_count": 5,
+      "score_cap_count": 4,
+      "issues": [
+        "Critical facts not bound by grounded checklist items: ['unselected_items_not_featured']",
+        "Negative facts are not sufficiently covered by grounded items or score caps"
+      ]
+    },
+    "run_result_audit": {
+      "status": "pass",
+      "issues": []
+    },
+    "agentic_audit": {
+      "status": "not_run",
+      "agentic_audit_score": null
+    },
+    "case_strength_review": {
+      "status": "not_run",
+      "case_strength_score": null
+    }
+  },
+  "recommended_fixes": [
+    "Remove final selected objects, rankings, and answer artifacts from task.md, metadata notes, and env file names.",
+    "Make critical facts depend on thresholds, ranking, tie-breaks, group caps, or below-cutoff exclusions.",
+    "Bind distractors to negative facts with forbidden_patterns and score caps.",
+    "Bind every critical_required fact to grounded checklist items.",
+    "Clarify evaluator-only calculation_notes so expected facts can be recomputed from env files."
+  ]
+}

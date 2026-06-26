@@ -1,0 +1,254 @@
+{
+  "case_id": "data_insight_006",
+  "task_type": "data_insight",
+  "static_audit_score": 100,
+  "static_quality_level": "pass",
+  "agentic_audit_score": null,
+  "case_strength_score": null,
+  "final_quality_score": 84,
+  "final_quality_level": "pass",
+  "overall_quality_score": 84,
+  "quality_level": "pass",
+  "strong_level_blockers": [
+    "Strong is capped at pass until --strength case_strength_review runs."
+  ],
+  "issue_summary": [
+    "Strong is capped at pass until --strength case_strength_review runs."
+  ],
+  "checks": {
+    "structure": {
+      "status": "pass",
+      "issues": [],
+      "warnings": []
+    },
+    "data_insight_validity": {
+      "status": "pass",
+      "operation_hits": {
+        "filtering": true,
+        "aggregation": true,
+        "group_comparison": true,
+        "rule_interpretation": true,
+        "takeaway": true
+      },
+      "operation_count": 5,
+      "too_direct_or_too_easy": false,
+      "issues": []
+    },
+    "independent_recompute": {
+      "status": "pass",
+      "computed_facts": {
+        "table_profile": {
+          "total_structured_rows": 42,
+          "candidate_valid_rows": 30,
+          "candidate_distractor_rows": 12,
+          "distractor_ratio": 0.2857,
+          "formats": {
+            "csv": 1,
+            "json": 1,
+            "md": 1
+          },
+          "table_counts": {},
+          "numeric_aggregates_sample": {
+            "campus_energy_oct_2026.csv:kwh": {
+              "sum": 66620.0,
+              "avg": 2220.6667,
+              "median": 2315.0,
+              "min": 980.0,
+              "max": 3500.0,
+              "count": 30.0
+            },
+            "campus_energy_oct_2026.csv:demand_kw": {
+              "sum": 8714.0,
+              "avg": 290.4667,
+              "median": 226.0,
+              "min": 110.0,
+              "max": 520.0,
+              "count": 30.0
+            },
+            "campus_energy_oct_2026.csv:occupied_sqft": {
+              "sum": 1290000.0,
+              "avg": 43000.0,
+              "median": 42000.0,
+              "min": 20000.0,
+              "max": 70000.0,
+              "count": 30.0
+            }
+          },
+          "group_leader_candidates": [
+            {
+              "file": "campus_energy_oct_2026.csv",
+              "group_by": "week_start",
+              "metric": "kwh",
+              "leader": "2026-10-31",
+              "leader_sum": 11980.0
+            },
+            {
+              "file": "campus_energy_oct_2026.csv",
+              "group_by": "week_start",
+              "metric": "demand_kw",
+              "leader": "2026-10-31",
+              "leader_sum": 1524.0
+            },
+            {
+              "file": "campus_energy_oct_2026.csv",
+              "group_by": "week_start",
+              "metric": "occupied_sqft",
+              "leader": "2026-10-01",
+              "leader_sum": 215000.0
+            },
+            {
+              "file": "campus_energy_oct_2026.csv",
+              "group_by": "building",
+              "metric": "kwh",
+              "leader": "Science Hall",
+              "leader_sum": 19470.0
+            },
+            {
+              "file": "campus_energy_oct_2026.csv",
+              "group_by": "building",
+              "metric": "demand_kw",
+              "leader": "Data Center",
+              "leader_sum": 2982.0
+            },
+            {
+              "file": "campus_energy_oct_2026.csv",
+              "group_by": "building",
+              "metric": "occupied_sqft",
+              "leader": "Science Hall",
+              "leader_sum": 420000.0
+            },
+            {
+              "file": "campus_energy_oct_2026.csv",
+              "group_by": "campus_zone",
+              "metric": "kwh",
+              "leader": "Academic",
+              "leader_sum": 19890.0
+            },
+            {
+              "file": "campus_energy_oct_2026.csv",
+              "group_by": "campus_zone",
+              "metric": "demand_kw",
+              "leader": "Operations",
+              "leader_sum": 2982.0
+            },
+            {
+              "file": "campus_energy_oct_2026.csv",
+              "group_by": "campus_zone",
+              "metric": "occupied_sqft",
+              "leader": "Academic",
+              "leader_sum": 498000.0
+            }
+          ]
+        },
+        "note": "Generic recompute profile; domain-specific formulas still require human/model audit when marked warn."
+      },
+      "expected_fact_match": {
+        "total_actual_kwh": {
+          "status": "supported",
+          "numeric_hit": true,
+          "phrase_hits": 0
+        },
+        "peak_usage_period": {
+          "status": "supported",
+          "numeric_hit": true,
+          "phrase_hits": 0
+        },
+        "highest_intensity_building": {
+          "status": "supported",
+          "numeric_hit": false,
+          "phrase_hits": 1
+        },
+        "demand_watch_buildings": {
+          "status": "supported",
+          "numeric_hit": true,
+          "phrase_hits": 0
+        },
+        "demand_risk_building": {
+          "status": "supported",
+          "numeric_hit": true,
+          "phrase_hits": 0
+        },
+        "highest_usage_share": {
+          "status": "supported",
+          "numeric_hit": false,
+          "phrase_hits": 1
+        }
+      },
+      "mismatches": [],
+      "notes": []
+    },
+    "difficulty_signal": {
+      "status": "pass",
+      "difficulty_signal_score": 100,
+      "difficulty_level": "strong",
+      "positive_signals": [
+        "valid rows >= 20",
+        "distractor ratio >= 15%",
+        "at least two env files",
+        "at least four critical facts",
+        "at least two calculated critical facts",
+        "four or more data-insight operation families",
+        "contains normalization/rate/median/threshold/tie signal"
+      ],
+      "issues": [],
+      "valid_rows": 30,
+      "total_rows": 42,
+      "distractor_rows": 12,
+      "distractor_ratio": 0.2857,
+      "critical_fact_count": 6,
+      "calculated_critical_fact_count": 6
+    },
+    "answer_leakage": {
+      "status": "pass",
+      "leaks": [],
+      "issues": []
+    },
+    "distractor_audit": {
+      "status": "pass",
+      "distractor_types": [
+        "cancelled",
+        "demo",
+        "draft",
+        "estimate",
+        "estimated",
+        "forecast",
+        "internal",
+        "old",
+        "subtotal",
+        "test",
+        "total"
+      ],
+      "would_change_answer_if_used": true,
+      "covered_by_negative_facts": true,
+      "issues": []
+    },
+    "checklist_audit": {
+      "status": "pass",
+      "fact_binding_complete": true,
+      "negative_check_robust": true,
+      "cap_reasonable": true,
+      "issues": []
+    },
+    "run_result_audit": {
+      "status": "not_provided",
+      "present_files": {
+        "evaluator_detail": false,
+        "final_answer": false,
+        "generation_prompt": false
+      },
+      "issues": [],
+      "notes": [
+        "No run-result artifacts supplied."
+      ]
+    },
+    "agentic_audit": {
+      "status": "not_run",
+      "agentic_audit_score": null
+    },
+    "case_strength_review": {
+      "status": "not_run",
+      "case_strength_score": null
+    }
+  },
+  "recommended_fixes": []
+}

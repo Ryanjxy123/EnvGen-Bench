@@ -1,0 +1,11 @@
+entity_id,entity_name,group_name,scale_denominator,criticality,profile_status
+E01,Blue Crosstown,Central,420,35,active
+E02,River Loop,Airport,475,48,active
+E03,Airport Rapid,Hill,530,61,active
+E04,Hill Connector,Harbor,585,74,active
+E05,Market Spine,East,640,87,active
+E06,Harbor Shuttle,Central,695,40,active
+E07,Campus Link,Airport,750,53,active
+E08,East Local,Hill,805,66,active
+E09,West Express,Harbor,860,79,active
+E10,Night Grid,East,915,92,active

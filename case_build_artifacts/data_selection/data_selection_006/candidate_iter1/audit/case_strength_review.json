@@ -1,0 +1,31 @@
+{
+  "case_strength_score": 100,
+  "case_strength_level": "strong",
+  "metrics": {
+    "total_structured_rows": 22,
+    "candidate_valid_rows": 15,
+    "candidate_distractor_rows": 7,
+    "distractor_ratio": 0.3182,
+    "env_file_count": 3,
+    "supplemental_rule_files": [
+      "exhibit_rules.json",
+      "curator_notes.md"
+    ],
+    "critical_fact_count": 5,
+    "negative_fact_count": 4,
+    "complex_critical_fact_count": 5,
+    "operation_count": 5
+  },
+  "strengths": [
+    "data scale reaches data-selection hard target",
+    "distractor ratio reaches hard target",
+    "case uses separate rule/support files",
+    "critical fact coverage is broad",
+    "critical facts require ranking, threshold, or quota reasoning",
+    "no answer leakage detected"
+  ],
+  "weaknesses": [],
+  "strong_blockers": [],
+  "recommended_improvements": [],
+  "mode": "heuristic_data_selection_strength_review"
+}

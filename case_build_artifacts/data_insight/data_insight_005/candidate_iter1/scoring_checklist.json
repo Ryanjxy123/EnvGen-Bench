@@ -1,0 +1,166 @@
+{
+  "case_id": "data_insight_005",
+  "dimensions": {
+    "task_completion": {
+      "weight": 0.15,
+      "items": [
+        {
+          "id": "output_type_data_insight_005",
+          "check": "The output should be a finished transit route reliability infographic, not raw CSV rows or a generic dashboard.",
+          "points": 4
+        },
+        {
+          "id": "decision_resolution_data_insight_005",
+          "check": "The infographic should resolve the priority decision using period comparison, rates, normalization, thresholds, and exclusions.",
+          "points": 4
+        }
+      ]
+    },
+    "grounded_requirement_satisfaction": {
+      "weight": 0.55,
+      "items": [
+        {
+          "id": "critical_score_leader_data_insight_005",
+          "check": "Verify that Airport Rapid is the top score entity with score about 82.9.",
+          "points": 6,
+          "fact_id": "transit_reliability_score_leader"
+        },
+        {
+          "id": "critical_lowest_data_insight_005",
+          "check": "Verify that Harbor Shuttle is the lowest score entity with score about 19.0.",
+          "points": 4,
+          "fact_id": "transit_reliability_lowest_score"
+        },
+        {
+          "id": "critical_change_data_insight_005",
+          "check": "Verify that Airport Rapid has the largest gap-rate increase at about 2.7 percentage points.",
+          "points": 5,
+          "fact_id": "transit_reliability_fastest_gap_change"
+        },
+        {
+          "id": "critical_volume_data_insight_005",
+          "check": "Verify that Market Spine has the highest gap volume at about 540.",
+          "points": 5,
+          "fact_id": "transit_reliability_gap_volume_hotspot"
+        },
+        {
+          "id": "critical_incident_data_insight_005",
+          "check": "Verify that Hill Connector has the highest incident rate at about 49.6 per 1,000.",
+          "points": 5,
+          "fact_id": "transit_reliability_incident_rate_hotspot"
+        },
+        {
+          "id": "critical_group_data_insight_005",
+          "check": "Verify that East is the group hotspot at about 996.",
+          "points": 5,
+          "fact_id": "transit_reliability_group_gap_hotspot"
+        },
+        {
+          "id": "critical_threshold_data_insight_005",
+          "check": "Verify that 2 entities meet the high-priority threshold.",
+          "points": 5,
+          "fact_id": "transit_reliability_threshold_count"
+        },
+        {
+          "id": "negative_distractors_data_insight_005",
+          "check": "Verify that forecast, subtotal, and old-period rows are not used as final metrics.",
+          "points": 4,
+          "fact_id": "transit_reliability_distractor_exclusions"
+        }
+      ]
+    },
+    "information_structuring": {
+      "weight": 0.15,
+      "items": [
+        {
+          "id": "priority_hierarchy_data_insight_005",
+          "check": "The image should organize priority score, gap volume, rate change, incident signal, group hotspot, and threshold count into a clear decision hierarchy.",
+          "points": 5,
+          "fact_ids": [
+            "transit_reliability_score_leader",
+            "transit_reliability_lowest_score",
+            "transit_reliability_fastest_gap_change",
+            "transit_reliability_gap_volume_hotspot",
+            "transit_reliability_incident_rate_hotspot",
+            "transit_reliability_group_gap_hotspot",
+            "transit_reliability_threshold_count"
+          ]
+        },
+        {
+          "id": "action_takeaway_data_insight_005",
+          "check": "The takeaway should connect the top priority with at least one supporting operational signal.",
+          "points": 4,
+          "fact_ids": [
+            "transit_reliability_score_leader",
+            "transit_reliability_incident_rate_hotspot",
+            "transit_reliability_gap_volume_hotspot"
+          ]
+        }
+      ]
+    },
+    "visual_rendering_quality": {
+      "weight": 0.15,
+      "items": [
+        {
+          "id": "visual_clarity_data_insight_005",
+          "check": "Judge readability, contrast, hierarchy, and label legibility at infographic size.",
+          "points": 4
+        },
+        {
+          "id": "visual_density_data_insight_005",
+          "check": "The layout should be dense enough for operations review while avoiding overlapping labels or raw table dumps.",
+          "points": 4
+        }
+      ]
+    }
+  },
+  "score_caps": [
+    {
+      "id": "missing_panel_core_fact",
+      "max_total": 55,
+      "reason": "A required panel critical fact is missing.",
+      "trigger": {
+        "type": "missing_required_count",
+        "fact_ids": [
+          "transit_reliability_score_leader",
+          "transit_reliability_lowest_score",
+          "transit_reliability_fastest_gap_change",
+          "transit_reliability_gap_volume_hotspot",
+          "transit_reliability_incident_rate_hotspot",
+          "transit_reliability_group_gap_hotspot",
+          "transit_reliability_threshold_count"
+        ],
+        "min_missing": 1
+      }
+    },
+    {
+      "id": "uses_invalid_panel_rows",
+      "max_total": 60,
+      "reason": "The image uses forecast, subtotal, or old-period rows as final results.",
+      "trigger": {
+        "type": "forbidden_final_answer",
+        "patterns": [
+          "99999",
+          "88888",
+          "77777",
+          "forecast result",
+          "subtotal result",
+          "old_period result"
+        ]
+      }
+    },
+    {
+      "id": "raw_panel_dump",
+      "max_total": 40,
+      "reason": "The output is a raw CSV/table dump instead of an infographic.",
+      "trigger": {
+        "type": "forbidden_final_answer",
+        "patterns": [
+          "entity_id,",
+          "scheduled_trips",
+          "record_type,status"
+        ]
+      }
+    }
+  ]
+}

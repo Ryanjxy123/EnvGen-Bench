@@ -1,0 +1,281 @@
+{
+  "case_id": "design_specification_006",
+  "task_type": "design_specification",
+  "facts": [
+    {
+      "id": "primary_copy_01",
+      "description": "Required visible text: CanopyLoop Clean Streets Weekend",
+      "source": "env/latest_update.md",
+      "importance": "critical",
+      "expected_value": "CanopyLoop Clean Streets Weekend",
+      "evaluation_role": "critical_required",
+      "canonical_answer": "CanopyLoop Clean Streets Weekend",
+      "must_appear_in_image": true,
+      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image."
+    },
+    {
+      "id": "primary_copy_02",
+      "description": "Required visible text: Bring one bag. Leave with a cleaner block.",
+      "source": "env/latest_update.md",
+      "importance": "critical",
+      "expected_value": "Bring one bag. Leave with a cleaner block.",
+      "evaluation_role": "critical_required",
+      "canonical_answer": "Bring one bag. Leave with a cleaner block.",
+      "must_appear_in_image": true,
+      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image."
+    },
+    {
+      "id": "primary_copy_03",
+      "description": "Required visible text: Saturday, May 9",
+      "source": "env/latest_update.md",
+      "importance": "critical",
+      "expected_value": "Saturday, May 9",
+      "evaluation_role": "critical_required",
+      "canonical_answer": "Saturday, May 9",
+      "must_appear_in_image": true,
+      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image."
+    },
+    {
+      "id": "primary_copy_04",
+      "description": "Required visible text: Meet at Rivergate Station",
+      "source": "env/latest_update.md",
+      "importance": "critical",
+      "expected_value": "Meet at Rivergate Station",
+      "evaluation_role": "critical_required",
+      "canonical_answer": "Meet at Rivergate Station",
+      "must_appear_in_image": true,
+      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image."
+    },
+    {
+      "id": "primary_copy_05",
+      "description": "Required visible text: Scan to join a cleanup route",
+      "source": "env/latest_update.md",
+      "importance": "critical",
+      "expected_value": "Scan to join a cleanup route",
+      "evaluation_role": "critical_required",
+      "canonical_answer": "Scan to join a cleanup route",
+      "must_appear_in_image": true,
+      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image."
+    },
+    {
+      "id": "primary_copy_06",
+      "description": "Required visible text: City partner program",
+      "source": "env/latest_update.md",
+      "importance": "critical",
+      "expected_value": "City partner program",
+      "evaluation_role": "critical_required",
+      "canonical_answer": "City partner program",
+      "must_appear_in_image": true,
+      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image."
+    },
+    {
+      "id": "canvas_size",
+      "description": "Final artifact uses the current platform pixel canvas.",
+      "source": "env/platform_specs.txt",
+      "importance": "critical",
+      "expected_value": "1080 x 1920 px",
+      "evaluation_role": "major_required",
+      "canonical_answer": "1080 x 1920 px",
+      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image."
+    },
+    {
+      "id": "aspect_ratio",
+      "description": "Final artifact uses the current platform aspect ratio.",
+      "source": "env/platform_specs.txt",
+      "importance": "critical",
+      "expected_value": "9:16 vertical",
+      "evaluation_role": "major_required",
+      "canonical_answer": "9:16 vertical",
+      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image."
+    },
+    {
+      "id": "safe_area",
+      "description": "Essential copy, logo, CTA, hero, and disclosure/source line stay broadly inside safe zones.",
+      "source": "env/platform_specs.txt",
+      "importance": "critical",
+      "expected_value": "top 160 px; bottom 220 px; side 88 px",
+      "evaluation_role": "critical_required",
+      "canonical_answer": "top 160 px; bottom 220 px; side 88 px",
+      "must_appear_in_image": true,
+      "semantic_acceptance": "Minor safe-zone drift should be checklist deduction only, not a hard cap."
+    },
+    {
+      "id": "logo_position",
+      "description": "Current logo appears in the required platform position.",
+      "source": "env/platform_specs.txt; env/visual_rules.json; env/asset_manifest.json",
+      "importance": "critical",
+      "expected_value": "top-left below transit shelter top safe zone",
+      "evaluation_role": "critical_required",
+      "canonical_answer": "top-left below transit shelter top safe zone",
+      "must_appear_in_image": true,
+      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image."
+    },
+    {
+      "id": "cta_position",
+      "description": "CTA appears in the required platform position.",
+      "source": "env/platform_specs.txt; env/visual_rules.json",
+      "importance": "critical",
+      "expected_value": "bottom-right above QR/source safe zone",
+      "evaluation_role": "critical_required",
+      "canonical_answer": "bottom-right above QR/source safe zone",
+      "must_appear_in_image": true,
+      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image."
+    },
+    {
+      "id": "text_density",
+      "description": "Text density follows the platform limit.",
+      "source": "env/platform_specs.txt; env/visual_rules.json",
+      "importance": "major",
+      "expected_value": "no more than 6 short text blocks",
+      "evaluation_role": "major_required",
+      "canonical_answer": "no more than 6 short text blocks",
+      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image."
+    },
+    {
+      "id": "palette_tokens",
+      "description": "Current palette is dominant and archive palette is not dominant.",
+      "source": "env/visual_rules.json",
+      "importance": "major",
+      "expected_value": [
+        "#0B5D4A",
+        "#B8E986",
+        "#F3F7EC",
+        "#16302B"
+      ],
+      "evaluation_role": "major_required",
+      "semantic_acceptance": "Exact hex matching is not required, but deprecated palettes should not dominate."
+    },
+    {
+      "id": "required_asset_usage",
+      "description": "Required current campaign asset is used in its allowed role.",
+      "source": "env/asset_manifest.json; env/latest_update.md",
+      "importance": "critical",
+      "expected_value": "current_canopyloop_leaf_wordmark",
+      "evaluation_role": "critical_required",
+      "canonical_answer": "current_canopyloop_leaf_wordmark",
+      "must_appear_in_image": true,
+      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image."
+    },
+    {
+      "id": "hero_component_1",
+      "description": "neighborhood cleanup volunteers visible",
+      "source": "env/visual_rules.json; env/asset_manifest.json",
+      "importance": "critical",
+      "expected_value": "neighborhood cleanup volunteers visible",
+      "evaluation_role": "critical_required",
+      "canonical_answer": "neighborhood cleanup volunteers visible",
+      "must_appear_in_image": true,
+      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image."
+    },
+    {
+      "id": "hero_component_2",
+      "description": "green route line visible",
+      "source": "env/visual_rules.json; env/asset_manifest.json",
+      "importance": "critical",
+      "expected_value": "green route line visible",
+      "evaluation_role": "critical_required",
+      "canonical_answer": "green route line visible",
+      "must_appear_in_image": true,
+      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image."
+    },
+    {
+      "id": "hero_component_3",
+      "description": "transit shelter map or station cue visible",
+      "source": "env/visual_rules.json; env/asset_manifest.json",
+      "importance": "critical",
+      "expected_value": "transit shelter map or station cue visible",
+      "evaluation_role": "critical_required",
+      "canonical_answer": "transit shelter map or station cue visible",
+      "must_appear_in_image": true,
+      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image."
+    },
+    {
+      "id": "hero_component_4",
+      "description": "QR route helper visible",
+      "source": "env/visual_rules.json; env/asset_manifest.json",
+      "importance": "critical",
+      "expected_value": "QR route helper visible",
+      "evaluation_role": "critical_required",
+      "canonical_answer": "QR route helper visible",
+      "must_appear_in_image": true,
+      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image."
+    },
+    {
+      "id": "platform_conflict",
+      "description": "Current platform overrides the old platform spec.",
+      "source": "env/latest_update.md; env/platform_specs.txt; env/deprecated_assets.json",
+      "importance": "critical",
+      "expected_value": "use Transit shelter DOOH not Instagram square 1080 x 1080",
+      "evaluation_role": "critical_required",
+      "canonical_answer": "use Transit shelter DOOH not Instagram square 1080 x 1080",
+      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image."
+    },
+    {
+      "id": "asset_ambiguity",
+      "description": "Only current-campaign-allowed assets are active final elements.",
+      "source": "env/asset_manifest.json; env/deprecated_assets.json",
+      "importance": "critical",
+      "expected_value": "use only current_campaign_allowed assets for active logo/hero/support roles",
+      "evaluation_role": "critical_required",
+      "canonical_answer": "use only current_campaign_allowed assets for active logo/hero/support roles",
+      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image."
+    },
+    {
+      "id": "priority_conflict",
+      "description": "Priority order is resolved in favor of latest_update and current specs.",
+      "source": "env/latest_update.md",
+      "importance": "critical",
+      "expected_value": "latest_update.md > platform_specs.txt > visual_rules.json > asset_manifest.json",
+      "evaluation_role": "critical_required",
+      "canonical_answer": "latest_update.md > platform_specs.txt > visual_rules.json > asset_manifest.json",
+      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image."
+    },
+    {
+      "id": "conditional_rules",
+      "description": "Busy or bright hero backgrounds use a readable copy panel.",
+      "source": "env/visual_rules.json",
+      "importance": "major",
+      "expected_value": "solid or high-opacity panel when needed",
+      "evaluation_role": "major_required",
+      "canonical_answer": "solid or high-opacity panel when needed",
+      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image."
+    },
+    {
+      "id": "compliance_requirements",
+      "description": "Domain claim and visual traps are avoided.",
+      "source": "env/impact_claims.txt; env/deprecated_assets.json",
+      "importance": "critical",
+      "expected_value": "avoid prohibited claims and restricted visual habits",
+      "evaluation_role": "critical_required",
+      "canonical_answer": "avoid prohibited claims and restricted visual habits",
+      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image."
+    },
+    {
+      "id": "forbidden_elements_not_active",
+      "description": "Deprecated copy, claims, logos, assets, old platform specs, and restricted visuals are not active final content.",
+      "source": "env/deprecated_assets.json; env/impact_claims.txt; env/latest_update.md; env/visual_rules.json",
+      "importance": "critical",
+      "must_not_appear_in_image": true,
+      "forbidden_patterns": [
+        "Zero waste guaranteed",
+        "Sea Turtle Action Day",
+        "April 18",
+        "old wave logo",
+        "Instagram square layout",
+        "disaster flood imagery",
+        "certified_zero_waste_badge"
+      ],
+      "allowed_patterns": [
+        "Zero waste guaranteed.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
+        "Sea Turtle Action Day.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
+        "April 18.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
+        "old wave logo.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
+        "Instagram square layout.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
+        "disaster flood imagery.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
+        "certified_zero_waste_badge.{0,120}(deprecated|do not use|archived|retired|forbidden|old)"
+      ],
+      "evaluation_role": "negative_only"
+    }
+  ],
+  "calculation_notes": "Generated facts bind design-specification difficulty to task-visible env rules: platform conflict, asset ambiguity, priority conflict, compliance/visual traps, and layout pressure. Minor placement deviations should be checklist deductions rather than hard caps."
+}

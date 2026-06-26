@@ -1,0 +1,44 @@
+{
+  "case_strength_score": 100,
+  "case_strength_level": "strong",
+  "metrics": {
+    "total_structured_rows": 100,
+    "candidate_valid_rows": 68,
+    "candidate_distractor_rows": 32,
+    "distractor_ratio": 0.32,
+    "structured_formats": {
+      "csv": 2,
+      "json": 1,
+      "md": 1
+    },
+    "table_counts": {},
+    "structure_shape": "mixed_file_types",
+    "env_file_count": 4,
+    "supplemental_rule_files": [
+      "env/compliance_rules.json",
+      "env/compliance_notes.md"
+    ],
+    "critical_fact_count": 7,
+    "calculated_critical_fact_count": 7,
+    "operation_count": 5,
+    "task_directness_score": 0,
+    "answer_leakage_status": "pass",
+    "grounded_fact_binding_complete": true,
+    "distractors_answer_changing": true
+  },
+  "strengths": [
+    "data scale reaches the strong target",
+    "valid-row count reaches the strong target",
+    "distractor ratio reaches the strong target",
+    "case uses separate rule/support files",
+    "case uses a higher-diversity structure: mixed_file_types",
+    "critical fact coverage is broad",
+    "critical facts require calculation or cross-file reasoning",
+    "task is not overly slot-listed",
+    "no answer leakage detected"
+  ],
+  "weaknesses": [],
+  "strong_blockers": [],
+  "recommended_improvements": [],
+  "mode": "heuristic_case_strength_review"
+}

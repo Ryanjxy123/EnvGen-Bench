@@ -1,0 +1,13 @@
+{
+  "agentic_audit_score": 100,
+  "too_easy_risk": "low",
+  "difficulty_reasoning": [],
+  "recommended_difficulty_upgrade": [],
+  "blind_guess_leakage_risk": "low",
+  "guessed_facts_without_env": [],
+  "leakage_notes": [],
+  "shortcut_risk": "low",
+  "shortcut_paths": [],
+  "fixes": [],
+  "mode": "heuristic_agentic_proxy"
+}

@@ -1,0 +1,11 @@
+{
+  "status": "warn",
+  "agentic_audit_score": 40,
+  "too_easy_risk": false,
+  "blind_guess_leakage_risk": true,
+  "shortcut_risk": false,
+  "reasoning": [
+    "answer leakage detected"
+  ],
+  "recommended_difficulty_upgrade": []
+}

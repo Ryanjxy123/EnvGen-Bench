@@ -1,0 +1,24 @@
+{
+  "deprecated_assets": [
+    {
+      "name": "Replace every scheduler",
+      "prohibited_use": "active final image content"
+    },
+    {
+      "name": "AI runs your workforce",
+      "prohibited_use": "active final image content"
+    },
+    {
+      "name": "LinkedIn feed layout",
+      "prohibited_use": "active final image content"
+    },
+    {
+      "name": "robot operator hero",
+      "prohibited_use": "active final image content"
+    },
+    {
+      "name": "guaranteed 2x efficiency",
+      "prohibited_use": "active final image content"
+    }
+  ]
+}

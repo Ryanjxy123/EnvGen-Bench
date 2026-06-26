@@ -1,0 +1,29 @@
+{
+  "candidate_assets": [
+    {
+      "id": "current_county_services_wordmark",
+      "role": "logo",
+      "allowed_use": "top-left county logo",
+      "current_campaign_allowed": true
+    },
+    {
+      "id": "library_annex_building",
+      "role": "hero",
+      "allowed_use": "current cooling center location",
+      "current_campaign_allowed": true
+    },
+    {
+      "id": "old_civic_gym_photo",
+      "role": "archive",
+      "allowed_use": "old location; not active",
+      "current_campaign_allowed": false
+    },
+    {
+      "id": "emergency_siren_icon",
+      "role": "restricted",
+      "allowed_use": "too alarmist for current notice",
+      "current_campaign_allowed": false
+    }
+  ],
+  "selection_rule": "Use only assets with current_campaign_allowed=true and allowed_use matching the current platform and visual_rules.json."
+}
