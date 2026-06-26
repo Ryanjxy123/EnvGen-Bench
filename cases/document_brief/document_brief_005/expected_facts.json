@@ -3,60 +3,176 @@
   "task_type": "document_brief",
   "facts": [
     {
-      "id": "service_name",
-      "description": "Service name.",
-      "source": "env/wellness_flyer.pdf",
+      "id": "final_public_title",
+      "description": "Report title or faithful shortened title.",
+      "source": "env/main_brief.pdf cover/front matter",
+      "source_section": "env/main_brief.pdf cover/front matter",
       "importance": "critical",
-      "expected_value": "Lunch Hour Wellness Check",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
+      "expected_value": "Climate Change and Social Vulnerability in the United States: A Focus on Six Impacts",
+      "evaluation_role": "critical_required",
+      "semantic_acceptance": "Accept faithful shortened title if EPA/social vulnerability/six impacts meaning is preserved.",
+      "must_appear_in_image": true
     },
     {
-      "id": "time_place",
-      "description": "Time and place.",
-      "source": "env/wellness_flyer.pdf",
+      "id": "lead_agency",
+      "description": "Lead public agency/source line.",
+      "source": "env/main_brief.pdf front matter recommended citation",
+      "source_section": "env/main_brief.pdf front matter recommended citation",
       "importance": "critical",
-      "expected_value": [
-        "Wednesdays at 12:15 PM",
-        "Room 214"
-      ],
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
+      "expected_value": "U.S. Environmental Protection Agency",
+      "evaluation_role": "critical_required",
+      "semantic_acceptance": "Accept EPA or U.S. EPA.",
+      "must_appear_in_image": true
     },
     {
-      "id": "audience",
-      "description": "Audience.",
-      "source": "env/wellness_flyer.pdf",
+      "id": "target_population_or_scope",
+      "description": "Target population or report scope.",
+      "source": "env/main_brief.pdf Executive Summary Table ES.1 and pages 5-9",
+      "source_section": "env/main_brief.pdf Executive Summary Table ES.1 and pages 5-9",
       "importance": "major",
-      "expected_value": "campus staff",
-      "must_appear_in_image": true,
-      "evaluation_role": "major_required"
+      "expected_value": "socially vulnerable groups in the contiguous U.S.; groups include low income, minority, no high school diploma, and age 65 and older",
+      "evaluation_role": "major_required",
+      "semantic_acceptance": "Accept concise wording preserving vulnerable groups and contiguous U.S. scope.",
+      "must_appear_in_image": true
     },
     {
-      "id": "offerings",
-      "description": "Supported offerings.",
-      "source": "env/wellness_flyer.pdf",
+      "id": "accepted_findings_candidate_pool",
+      "description": "Candidate finding pool; image should select exactly three, not all.",
+      "source": "env/main_brief.pdf Executive Summary pages 6-8",
+      "source_section": "env/main_brief.pdf Executive Summary pages 6-8",
       "importance": "critical",
       "expected_value": [
-        "blood pressure station",
-        "quiet breathing prompt",
-        "referral card pickup"
+        "Black people are 40% more likely to live in highest projected heat-mortality areas.",
+        "Black people are 34% more likely in highest projected childhood-asthma pollution areas.",
+        "Hispanic/Latino people are 43% more likely in highest projected heat-related labor-loss areas.",
+        "Hispanic/Latino people are 50% more likely in highest projected high-tide traffic-delay areas.",
+        "American Indian/Alaska Native people are 48% more likely where land inundation is highest.",
+        "American Indian/Alaska Native people are 37% more likely in highest projected labor-loss areas.",
+        "Asian people are 23% more likely in highest projected high-tide traffic-delay areas.",
+        "Low-income/no-diploma groups are about 25% more likely in highest projected labor-loss areas."
       ],
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
+      "evaluation_role": "critical_required",
+      "semantic_acceptance": "The image must include exactly three evidence cards selected from this pool or close paraphrases. Do not require all pool items. Each selected card should preserve the numeric comparison accurately.",
+      "must_appear_in_image": true
     },
     {
-      "id": "forbidden_claims",
-      "description": "Medical claims to avoid.",
-      "source": "env/wellness_flyer.pdf",
+      "id": "evidence_card_length",
+      "description": "Evidence cards should be concise.",
+      "source": "task.md",
+      "source_section": "task.md",
       "importance": "major",
+      "expected_value": "Each evidence card should be 12-18 English words",
+      "evaluation_role": "major_required",
+      "semantic_acceptance": "Allow minor word-count tolerance if the cards are concise and not paragraph-like."
+    },
+    {
+      "id": "limitation_caution",
+      "description": "Limitation footer.",
+      "source": "env/main_brief.pdf Executive Summary page 5; env/source_excerpt.md",
+      "source_section": "env/main_brief.pdf Executive Summary page 5; env/source_excerpt.md",
+      "importance": "major",
+      "expected_value": "The analyses are limited to the contiguous U.S.",
+      "evaluation_role": "major_required",
+      "semantic_acceptance": "Must preserve contiguous U.S. limitation; can also say Alaska/Hawaii are not covered.",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "optional_public_cta",
+      "description": "Optional public source CTA.",
+      "source": "env/main_brief.pdf front matter data availability",
+      "source_section": "env/main_brief.pdf front matter data availability",
+      "importance": "minor",
+      "expected_value": "Optional: point readers to EPA technical appendices and data if space allows.",
+      "evaluation_role": "optional",
+      "semantic_acceptance": "CTA is optional; do not invent a campaign deadline, donation ask, or registration link."
+    },
+    {
+      "id": "rejected_uncovered_geography",
+      "description": "Unsupported geography claims.",
+      "source": "env/main_brief.pdf Executive Summary page 5; env/source_excerpt.md",
+      "source_section": "env/main_brief.pdf Executive Summary page 5; env/source_excerpt.md",
+      "importance": "critical",
       "expected_value": [
-        "diagnosis",
-        "prescription advice"
+        "Alaska covered",
+        "Hawaii covered",
+        "all U.S. territories covered"
       ],
+      "evaluation_role": "negative_only",
+      "semantic_acceptance": "",
       "must_not_appear_in_image": true,
-      "evaluation_role": "negative_only"
+      "forbidden_patterns": [
+        "covers Alaska",
+        "covers Hawaii",
+        "Alaska and Hawaii are covered",
+        "all U.S. territories are covered",
+        "nationwide including Alaska",
+        "nationwide including Hawaii"
+      ]
+    },
+    {
+      "id": "rejected_policy_or_funding_claims",
+      "description": "Unsupported policy/funding/CTA claims.",
+      "source": "env/source_excerpt.md",
+      "source_section": "env/source_excerpt.md",
+      "importance": "major",
+      "expected_value": [
+        "adopted policy",
+        "new funding",
+        "campaign deadline",
+        "donate now",
+        "registration deadline"
+      ],
+      "evaluation_role": "negative_only",
+      "semantic_acceptance": "",
+      "must_not_appear_in_image": true,
+      "forbidden_patterns": [
+        "adopted policy",
+        "new funding",
+        "funding secured",
+        "donate now",
+        "campaign deadline",
+        "registration deadline"
+      ]
+    },
+    {
+      "id": "rejected_wrong_group_claim",
+      "description": "Unsupported claim about adults 65 and older being most likely across impacts.",
+      "source": "env/main_brief.pdf Executive Summary page 7; env/source_excerpt.md",
+      "source_section": "env/main_brief.pdf Executive Summary page 7; env/source_excerpt.md",
+      "importance": "major",
+      "expected_value": "Adults age 65 and older are the group most likely to live in all highest-impact areas",
+      "evaluation_role": "negative_only",
+      "semantic_acceptance": "",
+      "must_not_appear_in_image": true,
+      "forbidden_patterns": [
+        "65 and older are the most likely",
+        "older adults are most likely across all",
+        "seniors face the highest risk across all"
+      ]
+    },
+    {
+      "id": "rejected_numeric_errors",
+      "description": "Incorrect or unsupported numbers are forbidden.",
+      "source": "env/main_brief.pdf Executive Summary pages 6-8",
+      "source_section": "env/main_brief.pdf Executive Summary pages 6-8",
+      "importance": "critical",
+      "expected_value": [
+        "wrong percentages",
+        "unsupported numbers",
+        "numbers not in the report"
+      ],
+      "evaluation_role": "negative_only",
+      "semantic_acceptance": "",
+      "must_not_appear_in_image": true,
+      "forbidden_patterns": [
+        "41% Black",
+        "40% Hispanic",
+        "50% labor hour",
+        "43% traffic delay",
+        "unsupported number",
+        "uncited percentage"
+      ]
     }
   ],
-  "calculation_notes": "Use the PDF and supporting notes; preserve required inclusions and exclusions."
+  "calculation_notes": "The positive findings are a candidate pool. The poster should display exactly three evidence cards selected from the pool, with accurate numbers/comparisons and concise 12-18 word phrasing. Omission of the optional CTA is not penalized. Negative-only facts are penalized only if included."
 }

@@ -14,7 +14,12 @@
       "source_url": "benchmark/public_assets/workshop.jpg",
       "retrieved_at": "2026-06-19",
       "license_note": "Uses the repository's cached public benchmark asset; no web access is needed by the agent.",
-      "conversion_note": "The standalone image file is not exposed as an env file. The PDF intentionally distributes final facts among draft notes, FAQ, module descriptions, and internal remarks."
+      "conversion_note": "The standalone image file is not exposed as an env file. The PDF intentionally distributes final facts among draft notes, FAQ, module descriptions, and internal remarks.",
+      "asset_path": "benchmark/public_assets/workshop.jpg",
+      "adaptation_note": "Benchmark-authored course prospectus PDF; synthetic, not downloaded.",
+      "whether_original_or_adapted": "synthetic benchmark-authored PDF",
+      "page_count": 7,
+      "text_extract_check": "Text layer is generated with ReportLab and validated by pypdf extraction."
     },
     {
       "path": "env/instructor_bio.md",
@@ -36,5 +41,5 @@
     ],
     "web_usage_note": "Follow web_policy. Closed-env cases should be solved from cached env files only."
   },
-  "notes": "Difficulty refresh: course_brief.pdf is a 7-page brochure/prospectus with realistic distractors. Agent-visible files avoid an answer checklist; evaluator-only files contain ground truth and negative facts."
+  "notes": "Benchmark-authored course prospectus PDF; synthetic, not downloaded. It avoids benchmark labels in the agent-visible PDF while preserving distractors and final facts in natural document language."
 }

@@ -103,8 +103,8 @@
         }
       ]
     },
-    "visual_rendering_quality": {
-      "label": "Visual Quality",
+    "visual_communication_quality": {
+      "label": "Visual Communication Quality",
       "weight": 0.15,
       "items": [
         {

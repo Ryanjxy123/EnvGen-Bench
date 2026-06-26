@@ -3,52 +3,134 @@
   "task_type": "document_brief",
   "facts": [
     {
-      "id": "product_name",
-      "description": "Product name.",
-      "source": "env/product_brief.pdf",
+      "id": "final_public_title",
+      "description": "Final public title or name to display.",
+      "source": "env/main_brief.pdf; supporting note env/curator_note.md; main brief page 2 title lock",
       "importance": "critical",
-      "expected_value": "AirSense Lite",
+      "expected_value": "Harbor Voices: Mapping a Working Waterfront",
+      "evaluation_role": "critical_required",
+      "semantic_acceptance": "Accept exact wording and minor punctuation/case differences only; do not accept draft or internal names.",
       "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
+      "source_section": "env/main_brief.pdf; supporting note env/curator_note.md; main brief page 2 title lock"
     },
     {
-      "id": "supported_claims",
-      "description": "Supported product claims.",
-      "source": "env/product_brief.pdf",
+      "id": "approved_timing",
+      "description": "Approved public date, schedule, or launch window.",
+      "source": "env/main_brief.pdf; supporting note env/curator_note.md; main brief page 4 approved timing",
+      "importance": "critical",
+      "expected_value": "Opens September 12, 2026; Thursdays-Sundays, 11 AM-5 PM",
+      "evaluation_role": "critical_required",
+      "semantic_acceptance": "Accept concise equivalent formatting that preserves the approved date/time/window.",
+      "must_appear_in_image": true,
+      "source_section": "env/main_brief.pdf; supporting note env/curator_note.md; main brief page 4 approved timing"
+    },
+    {
+      "id": "responsible_lead",
+      "description": "Responsible public lead organization or team.",
+      "source": "env/main_brief.pdf; supporting note env/curator_note.md; main brief page 2 lead entity and supporting note",
+      "importance": "critical",
+      "expected_value": "North Pier Museum Curatorial Team",
+      "evaluation_role": "critical_required",
+      "semantic_acceptance": "Accept the named lead with minor wording variation; do not replace it with partners, sponsors, guests, or sales contributors.",
+      "must_appear_in_image": true,
+      "source_section": "env/main_brief.pdf; supporting note env/curator_note.md; main brief page 2 lead entity and supporting note"
+    },
+    {
+      "id": "target_audience",
+      "description": "Target audience or public context requested by task.md.",
+      "source": "env/main_brief.pdf; supporting note env/curator_note.md; main brief page 3 audience section",
+      "importance": "major",
+      "expected_value": "families, local history visitors, and middle-school groups",
+      "evaluation_role": "major_required",
+      "semantic_acceptance": "Accept close paraphrases that preserve the intended public audience/context.",
+      "must_appear_in_image": true,
+      "source_section": "env/main_brief.pdf; supporting note env/curator_note.md; main brief page 3 audience section"
+    },
+    {
+      "id": "accepted_highlights",
+      "description": "Exactly three poster-safe highlights, claims, findings, or takeaways.",
+      "source": "env/main_brief.pdf; supporting note env/curator_note.md; main brief page 5 approved highlights",
       "importance": "critical",
       "expected_value": [
-        "particulate trend categories",
-        "18 hours",
-        "quiet wall or shelf placement"
+        "Listen to oral-history clips from dockworkers",
+        "Trace trade routes on layered harbor maps",
+        "Compare tools and photographs from working piers"
       ],
+      "evaluation_role": "critical_required",
+      "semantic_acceptance": "Accept concise paraphrases of the three approved items. The image should include exactly three, not a longer list.",
       "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
+      "source_section": "env/main_brief.pdf; supporting note env/curator_note.md; main brief page 5 approved highlights"
     },
     {
-      "id": "audience_cta",
-      "description": "Audience and CTA.",
-      "source": "env/product_brief.pdf + env/sales_note.txt",
+      "id": "optional_public_cta",
+      "description": "Optional public call to action if included.",
+      "source": "env/main_brief.pdf; supporting note env/curator_note.md; main brief page 7 public copy block",
+      "importance": "minor",
+      "expected_value": "Optional CTA if space allows: School group inquiries open after August 28, 2026.",
+      "evaluation_role": "optional",
+      "semantic_acceptance": "No CTA is required. If included, it should use the public-facing CTA rather than waitlist, internal registration, or pending details.",
+      "source_section": "env/main_brief.pdf; supporting note env/curator_note.md; main brief page 7 public copy block"
+    },
+    {
+      "id": "rejected_old_titles",
+      "description": "Draft or internal titles/names must not be used as the public headline.",
+      "source": "env/main_brief.pdf; supporting note env/curator_note.md; main brief pages 2 and 7 archive strings",
       "importance": "critical",
       "expected_value": [
-        "School facility teams and office managers",
-        "Request a classroom pilot kit"
+        "Harbor Machines",
+        "Dockside Futures",
+        "Waterfront Memory Lab"
       ],
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
+      "evaluation_role": "negative_only",
+      "must_not_appear_in_image": true,
+      "forbidden_patterns": [
+        "Harbor Machines",
+        "Dockside Futures",
+        "Waterfront Memory Lab"
+      ],
+      "source_section": "env/main_brief.pdf; supporting note env/curator_note.md; main brief pages 2 and 7 archive strings"
     },
     {
-      "id": "unsupported_claims",
-      "description": "Unsupported claims must not appear.",
-      "source": "env/product_brief.pdf + env/sales_note.txt",
+      "id": "rejected_old_timing",
+      "description": "Old, replaced, or tentative timing must not be used.",
+      "source": "env/main_brief.pdf; supporting note env/curator_note.md; main brief page 4 replaced timing and page 7 archive strings",
+      "importance": "critical",
+      "expected_value": [
+        "August 29 opening"
+      ],
+      "evaluation_role": "negative_only",
+      "must_not_appear_in_image": true,
+      "forbidden_patterns": [
+        "August 29",
+        "August 29 opening"
+      ],
+      "source_section": "env/main_brief.pdf; supporting note env/curator_note.md; main brief page 4 replaced timing and page 7 archive strings"
+    },
+    {
+      "id": "rejected_unconfirmed_details",
+      "description": "Internal, pending, unpublished, or unsupported details must not appear.",
+      "source": "env/main_brief.pdf; supporting note env/curator_note.md; main brief pages 4, 6, and 7 operations notes",
       "importance": "major",
       "expected_value": [
-        "hospital certification",
-        "outdoor weather forecasting",
-        "allergen diagnosis"
+        "Seabright Foundation gala",
+        "ticket price",
+        "VR alcove or school credit"
       ],
+      "evaluation_role": "negative_only",
       "must_not_appear_in_image": true,
-      "evaluation_role": "negative_only"
+      "forbidden_patterns": [
+        "Harbor Machines",
+        "Dockside Futures",
+        "Waterfront Memory Lab",
+        "August 29",
+        "Seabright Foundation",
+        "ticket price",
+        "VR alcove",
+        "school credit",
+        "gala"
+      ],
+      "source_section": "env/main_brief.pdf; supporting note env/curator_note.md; main brief pages 4, 6, and 7 operations notes"
     }
   ],
-  "calculation_notes": "Extract and summarize the product brief. Highlight supported claims and CTA from the document; the panel image is visual orientation, not evidence for extra claims."
+  "calculation_notes": "Required display facts are the final title/name, approved timing, responsible lead, target audience/context, and exactly three approved highlights/claims/findings. Optional CTA omission must not be penalized. Negative-only facts should be scored only when they are explicitly included as public-facing content."
 }

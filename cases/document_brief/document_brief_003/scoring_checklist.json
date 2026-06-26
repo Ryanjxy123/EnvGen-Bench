@@ -2,86 +2,180 @@
   "case_id": "document_brief_003",
   "dimensions": {
     "task_completion": {
+      "label": "Task Completion",
       "weight": 0.15,
       "items": [
         {
-          "id": "output_type_document_brief_003",
-          "check": "For document_brief_003, the output is a finished product_intro_image for the document extraction brief, not a worksheet, raw table, or generic mockup.",
-          "points": 4,
-          "scoring_hint": "2 = correct finished image type; 1 = correct topic but weak format; 0 = wrong artifact type. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
+          "id": "complete_public_artifact",
+          "check": "The output is a finished exhibit_intro_graphic for public-facing use, not a notes page, extraction table, source screenshot, generic mockup, or placeholder.",
+          "points": 5,
+          "scoring_hint": "Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
         },
         {
-          "id": "operation_depth_document_brief_003",
-          "check": "The image visibly resolves this case's document extraction brief; reference facts include product_name: AirSense Lite; supported_claims: particulate trend categories, 18 hours, quiet wall or shelf placement; audience_cta: School facility teams and office managers, Request a classroom pilot kit; unsupported_claims: hospital certification, outdoor weather forecasting, allergen diagnosis.",
-          "points": 4,
-          "scoring_hint": "2 = operation is visibly resolved; 1 = operation partly reflected; 0 = copied unsolved source material. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
+          "id": "required_content_scope",
+          "check": "The image attempts to include the required display content requested in task.md: final public title/name, approved timing, responsible person or organization, target audience or public context, and exactly three poster-safe highlights or claims.",
+          "points": 5,
+          "fact_ids": [
+            "final_public_title",
+            "approved_timing",
+            "responsible_lead",
+            "target_audience",
+            "accepted_highlights"
+          ],
+          "scoring_hint": "Do not require identical phrasing, but the required content types must be visible. Optional details are not required."
         }
       ]
     },
     "grounded_requirement_satisfaction": {
+      "label": "Grounded Requirement Satisfaction",
       "weight": 0.55,
       "items": [
         {
-          "id": "critical_fact_accuracy_document_brief_003",
-          "check": "For document_brief_003, accurately includes the critical expected facts product_name, supported_claims, audience_cta using these case values: product_name: AirSense Lite; supported_claims: particulate trend categories, 18 hours, quiet wall or shelf placement; audience_cta: School facility teams and office managers, Request a classroom pilot kit; unsupported_claims: hospital certification, outdoor weather forecasting, allergen diagnosis.",
-          "points": 8,
-          "scoring_hint": "2 = all critical facts correct; 1 = one minor omission or formatting issue; 0 = any critical fact is wrong or missing.",
+          "id": "critical_required_accuracy",
+          "check": "Critical required facts are taken from the final public version rather than draft, internal, outdated, pending, or unsupported material.",
+          "points": 14,
           "fact_ids": [
-            "product_name",
-            "supported_claims",
-            "audience_cta"
-          ]
+            "final_public_title",
+            "approved_timing",
+            "responsible_lead",
+            "accepted_highlights"
+          ],
+          "scoring_hint": "Critical fact omissions or substitutions should heavily reduce this item. Light paraphrase is acceptable when the meaning remains correct."
         },
         {
-          "id": "required_appear_facts_document_brief_003",
-          "check": "Shows required appear facts product_name, supported_claims, audience_cta for document_brief_003 without replacing them with unsupported alternatives; expected values include product_name: AirSense Lite; supported_claims: particulate trend categories, 18 hours, quiet wall or shelf placement; audience_cta: School facility teams and office managers, Request a classroom pilot kit; unsupported_claims: hospital certification, outdoor weather forecasting, allergen diagnosis.",
+          "id": "major_required_accuracy",
+          "check": "Major required context, including target audience or public context, is grounded in the documents and visible in the image.",
           "points": 6,
-          "scoring_hint": "2 = all required facts appear clearly; 1 = most appear but one is ambiguous; 0 = multiple required facts are absent."
+          "fact_ids": [
+            "target_audience"
+          ],
+          "scoring_hint": "Accept concise wording, but do not credit broad generic audiences that lose the documented scope."
         },
         {
-          "id": "negative_exclusion_facts_document_brief_003",
-          "check": "Does not show prohibited or stale facts unsupported_claims in document_brief_003; avoids unsupported claims from distractor env material.",
-          "points": 5,
-          "scoring_hint": "2 = no prohibited facts appear; 1 = one weak/ambiguous distractor; 0 = any explicit prohibited value appears.",
+          "id": "exactly_three_highlights",
+          "check": "The image includes exactly three poster-safe highlights, claims, findings, or takeaways selected from approved public-facing material.",
+          "points": 8,
           "fact_ids": [
-            "unsupported_claims"
-          ]
+            "accepted_highlights"
+          ],
+          "scoring_hint": "Do not penalize concise paraphrase; penalize adding extra highlights or using internal/process-only notes as highlights."
+        },
+        {
+          "id": "negative_exclusion",
+          "check": "Avoids old titles, old dates, unconfirmed venue, unpublished price, pending credential/award/certification, internal sponsor, draft affiliation, waitlist/internal registration, and unsupported claims when present in the env documents.",
+          "points": 8,
+          "fact_ids": [
+            "rejected_old_titles",
+            "rejected_old_timing",
+            "rejected_unconfirmed_details"
+          ],
+          "scoring_hint": "Negative-only: award full credit when these details are absent. Penalize only explicit inclusion of prohibited details."
+        },
+        {
+          "id": "optional_detail_safety",
+          "check": "Optional details are not required. If optional CTA, location, or supporting context appears, it must use confirmed public-facing information rather than internal or outdated notes.",
+          "points": 2,
+          "fact_ids": [
+            "optional_public_cta"
+          ],
+          "scoring_hint": "Omission of optional details earns full credit; deduct only for included details that are wrong, internal, unsupported, or misleading."
         }
       ]
     },
     "information_structuring": {
+      "label": "Information Structuring",
       "weight": 0.15,
       "items": [
         {
-          "id": "fact_hierarchy_document_brief_003",
-          "check": "Organizes product_name, supported_claims, audience_cta as the primary message for document_brief_003; supporting values are product_name: AirSense Lite; supported_claims: particulate trend categories, 18 hours, quiet wall or shelf placement; audience_cta: School facility teams and office managers, Request a classroom pilot kit; unsupported_claims: hospital certification, outdoor weather forecasting, allergen diagnosis.",
+          "id": "reasoned_content_selection",
+          "check": "Selects, compresses, groups, and prioritizes the long document into a clear public-facing image message rather than copying raw paragraphs, FAQ text, or internal notes.",
           "points": 5,
-          "scoring_hint": "2 = hierarchy is clear and fact-driven; 1 = facts present but hierarchy is muddled; 0 = important facts are buried or missing. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
+          "fact_ids": [
+            "final_public_title",
+            "approved_timing",
+            "responsible_lead",
+            "target_audience",
+            "accepted_highlights"
+          ],
+          "scoring_hint": "Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
         },
         {
-          "id": "robust_consistency_document_brief_003",
-          "check": "Across repeated runs of document_brief_003, the same critical facts, exclusions unsupported_claims, ordering rules, and layout constraints must remain consistent.",
+          "id": "visual_fact_hierarchy",
+          "check": "Makes the title/name and three highlights or claims the main message, with timing, lead entity, and audience/context as supporting information.",
           "points": 4,
-          "scoring_hint": "2 = stable facts and exclusions; 1 = minor wording drift only; 0 = selected facts or exclusions change. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
+          "fact_ids": [
+            "final_public_title",
+            "approved_timing",
+            "responsible_lead",
+            "target_audience",
+            "accepted_highlights"
+          ],
+          "scoring_hint": "Reward correct emphasis and compression of grounded facts, not mere visual neatness."
         }
       ]
     },
-    "visual_rendering_quality": {
+    "visual_communication_quality": {
+      "label": "Visual Communication Quality",
       "weight": 0.15,
       "items": [
         {
-          "id": "visual_clarity_document_brief_003",
-          "check": "For document_brief_003, uses clear visual hierarchy, readable typography, sufficient contrast, and non-crowded spacing at the intended product_intro_image size.",
-          "points": 4,
-          "scoring_hint": "2 = readable and polished; 1 = readable with minor clutter; 0 = unreadable or visually incoherent. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
+          "id": "visual_polish",
+          "check": "Looks like a polished public poster, intro image, or advocacy visual with intentional typography, spacing, color, and composition.",
+          "points": 5,
+          "scoring_hint": "Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this item to compensate for missing or incorrect env facts."
         },
         {
-          "id": "visual_layout_density_document_brief_003",
-          "check": "The product_intro_image layout has appropriate information density, balanced image/text regions, crisp assets, platform-safe margins, and no placeholder-like areas.",
+          "id": "readability",
+          "check": "All essential visible text is genuinely readable, non-overlapping, and high contrast at normal viewing size.",
+          "points": 5,
+          "scoring_hint": "Missing facts are not unreadable text; reduce this only when text that appears in the image is visually hard to read."
+        },
+        {
+          "id": "balanced_density",
+          "check": "Information density is appropriate for the target image type: not overcrowded, not sparse, and not placeholder-like.",
           "points": 4,
-          "scoring_hint": "2 = balanced density and crisp assets; 1 = some weak spacing or density; 0 = blank, placeholder-like, or low-resolution. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
+          "scoring_hint": "Reward clean hierarchy and breathing room independent of factual correctness."
         }
       ]
     }
-  }
+  },
+  "score_caps": [
+    {
+      "id": "not_image_or_wrong_artifact",
+      "max_total": 55,
+      "reason": "The output does not produce a usable public-facing target image.",
+      "trigger": {
+        "type": "wrong_artifact_type",
+        "expected_type": "exhibit_intro_graphic"
+      }
+    },
+    {
+      "id": "core_fact_collapse",
+      "max_total": 60,
+      "reason": "Multiple core facts such as title/name, timing, or lead entity are wrong or missing.",
+      "trigger": {
+        "type": "aggregate_failure",
+        "fact_ids": [
+          "final_public_title",
+          "approved_timing",
+          "responsible_lead"
+        ],
+        "min_failed": 2
+      }
+    },
+    {
+      "id": "multiple_forbidden_details",
+      "max_total": 65,
+      "reason": "The image explicitly includes multiple forbidden, outdated, internal, or unsupported details.",
+      "trigger": {
+        "type": "aggregate_failure",
+        "fact_ids": [
+          "rejected_old_titles",
+          "rejected_old_timing",
+          "rejected_unconfirmed_details"
+        ],
+        "min_failed": 2
+      }
+    }
+  ]
 }

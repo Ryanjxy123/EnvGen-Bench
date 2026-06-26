@@ -1,3 +1,1 @@
-Read the workshop brochure in the env folder and create a public workshop
-poster. Use the current session details and exactly three takeaways. Ignore
-superseded appendix details.
+Read the brief and supporting note in the env folder. Create a polished community project poster for public-facing use. Include the final public title/name, approved date or schedule, responsible person or organization, target audience or public context, and exactly three poster-safe highlights grounded in the documents. Use only confirmed public-facing information and avoid draft, internal, outdated, pending, or unsupported details. A call to action is optional; if included, it must be supported by public-facing document text.

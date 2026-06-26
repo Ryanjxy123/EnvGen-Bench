@@ -3,52 +3,134 @@
   "task_type": "document_brief",
   "facts": [
     {
-      "id": "workshop_title",
-      "description": "Workshop title.",
-      "source": "env/workshop_brochure.pdf",
+      "id": "final_public_title",
+      "description": "Final public title or name to display.",
+      "source": "env/main_brief.pdf; supporting note env/organizer_note.md; main brief page 2 title lock",
       "importance": "critical",
-      "expected_value": "Neighborhood Resilience Workshop",
+      "expected_value": "HeatReady Block Walk",
+      "evaluation_role": "critical_required",
+      "semantic_acceptance": "Accept exact wording and minor punctuation/case differences only; do not accept draft or internal names.",
       "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
+      "source_section": "env/main_brief.pdf; supporting note env/organizer_note.md; main brief page 2 title lock"
     },
     {
-      "id": "current_session",
-      "description": "Current date, location, and host.",
-      "source": "env/workshop_brochure.pdf",
+      "id": "approved_timing",
+      "description": "Approved public date, schedule, or launch window.",
+      "source": "env/main_brief.pdf; supporting note env/organizer_note.md; main brief page 4 approved timing",
+      "importance": "critical",
+      "expected_value": "Saturday, July 18, 2026, 9:30 AM-12:00 PM",
+      "evaluation_role": "critical_required",
+      "semantic_acceptance": "Accept concise equivalent formatting that preserves the approved date/time/window.",
+      "must_appear_in_image": true,
+      "source_section": "env/main_brief.pdf; supporting note env/organizer_note.md; main brief page 4 approved timing"
+    },
+    {
+      "id": "responsible_lead",
+      "description": "Responsible public lead organization or team.",
+      "source": "env/main_brief.pdf; supporting note env/organizer_note.md; main brief page 2 lead entity and supporting note",
+      "importance": "critical",
+      "expected_value": "Eastside Resilience Office",
+      "evaluation_role": "critical_required",
+      "semantic_acceptance": "Accept the named lead with minor wording variation; do not replace it with partners, sponsors, guests, or sales contributors.",
+      "must_appear_in_image": true,
+      "source_section": "env/main_brief.pdf; supporting note env/organizer_note.md; main brief page 2 lead entity and supporting note"
+    },
+    {
+      "id": "target_audience",
+      "description": "Target audience or public context requested by task.md.",
+      "source": "env/main_brief.pdf; supporting note env/organizer_note.md; main brief page 3 audience section",
+      "importance": "major",
+      "expected_value": "renters, older adults, and neighborhood volunteers in the Eastside flats",
+      "evaluation_role": "major_required",
+      "semantic_acceptance": "Accept close paraphrases that preserve the intended public audience/context.",
+      "must_appear_in_image": true,
+      "source_section": "env/main_brief.pdf; supporting note env/organizer_note.md; main brief page 3 audience section"
+    },
+    {
+      "id": "accepted_highlights",
+      "description": "Exactly three poster-safe highlights, claims, findings, or takeaways.",
+      "source": "env/main_brief.pdf; supporting note env/organizer_note.md; main brief page 5 approved highlights",
       "importance": "critical",
       "expected_value": [
-        "June 18, 2026",
-        "Civic Hall Room B",
-        "City Resilience Office"
+        "Map shaded rest stops and water refill points",
+        "Practice a door-to-door heat check-in script",
+        "Take home a cooling resource card for neighbors"
       ],
+      "evaluation_role": "critical_required",
+      "semantic_acceptance": "Accept concise paraphrases of the three approved items. The image should include exactly three, not a longer list.",
       "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
+      "source_section": "env/main_brief.pdf; supporting note env/organizer_note.md; main brief page 5 approved highlights"
     },
     {
-      "id": "takeaways",
-      "description": "Exactly three takeaways.",
-      "source": "env/workshop_brochure.pdf",
+      "id": "optional_public_cta",
+      "description": "Optional public call to action if included.",
+      "source": "env/main_brief.pdf; supporting note env/organizer_note.md; main brief page 7 public copy block",
+      "importance": "minor",
+      "expected_value": "Optional CTA if space allows: Sign up for route details by July 10, 2026.",
+      "evaluation_role": "optional",
+      "semantic_acceptance": "No CTA is required. If included, it should use the public-facing CTA rather than waitlist, internal registration, or pending details.",
+      "source_section": "env/main_brief.pdf; supporting note env/organizer_note.md; main brief page 7 public copy block"
+    },
+    {
+      "id": "rejected_old_titles",
+      "description": "Draft or internal titles/names must not be used as the public headline.",
+      "source": "env/main_brief.pdf; supporting note env/organizer_note.md; main brief pages 2 and 7 archive strings",
       "importance": "critical",
       "expected_value": [
-        "household readiness checklist",
-        "cooling and charging resources",
-        "neighbor check-in message"
+        "Summer Safety Canvass",
+        "Heat Check Day",
+        "Cool Streets Sprint"
       ],
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
+      "evaluation_role": "negative_only",
+      "must_not_appear_in_image": true,
+      "forbidden_patterns": [
+        "Summer Safety Canvass",
+        "Heat Check Day",
+        "Cool Streets Sprint"
+      ],
+      "source_section": "env/main_brief.pdf; supporting note env/organizer_note.md; main brief pages 2 and 7 archive strings"
     },
     {
-      "id": "superseded_details",
-      "description": "Old appendix details must not appear.",
-      "source": "env/workshop_brochure.pdf",
+      "id": "rejected_old_timing",
+      "description": "Old, replaced, or tentative timing must not be used.",
+      "source": "env/main_brief.pdf; supporting note env/organizer_note.md; main brief page 4 replaced timing and page 7 archive strings",
+      "importance": "critical",
+      "expected_value": [
+        "June 27 morning walk"
+      ],
+      "evaluation_role": "negative_only",
+      "must_not_appear_in_image": true,
+      "forbidden_patterns": [
+        "June 27",
+        "June 27 morning walk"
+      ],
+      "source_section": "env/main_brief.pdf; supporting note env/organizer_note.md; main brief page 4 replaced timing and page 7 archive strings"
+    },
+    {
+      "id": "rejected_unconfirmed_details",
+      "description": "Internal, pending, unpublished, or unsupported details must not appear.",
+      "source": "env/main_brief.pdf; supporting note env/organizer_note.md; main brief pages 4, 6, and 7 operations notes",
       "importance": "major",
       "expected_value": [
-        "Room A",
-        "private sponsor"
+        "Northline Energy sponsor",
+        "gift cards",
+        "venue TBA or cap of 40"
       ],
+      "evaluation_role": "negative_only",
       "must_not_appear_in_image": true,
-      "evaluation_role": "negative_only"
+      "forbidden_patterns": [
+        "Summer Safety Canvass",
+        "Heat Check Day",
+        "Cool Streets Sprint",
+        "June 27",
+        "Parkside Gym",
+        "Northline Energy",
+        "gift card",
+        "cap of 40",
+        "venue TBA"
+      ],
+      "source_section": "env/main_brief.pdf; supporting note env/organizer_note.md; main brief pages 4, 6, and 7 operations notes"
     }
   ],
-  "calculation_notes": "Extract and summarize current session details from the document. Highlight exactly three takeaways; appendix details are distractors."
+  "calculation_notes": "Required display facts are the final title/name, approved timing, responsible lead, target audience/context, and exactly three approved highlights/claims/findings. Optional CTA omission must not be penalized. Negative-only facts should be scored only when they are explicitly included as public-facing content."
 }

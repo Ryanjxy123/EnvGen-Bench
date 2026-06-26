@@ -3,60 +3,212 @@
   "task_type": "document_brief",
   "facts": [
     {
-      "id": "program_title",
-      "description": "Program title.",
-      "source": "env/river_program.pdf",
+      "id": "source_count",
+      "description": "At least three public sources are used.",
+      "source": "web search results and source labels in final image",
+      "source_section": "web search results and source labels in final image",
       "importance": "critical",
-      "expected_value": "River Skills Saturday",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
+      "expected_value": ">=3 public sources",
+      "evaluation_role": "critical_required",
+      "semantic_acceptance": "The image should visibly label at least three sources or include source labels sufficient to identify them.",
+      "must_appear_in_image": true
     },
     {
-      "id": "date_location",
-      "description": "Date and location.",
-      "source": "env/river_program.pdf",
+      "id": "at_least_two_sources_are_papers_or_pdfs",
+      "description": "At least two sources are formal research/paper sources.",
+      "source": "web search results and source labels in final image",
+      "source_section": "web search results and source labels in final image",
       "importance": "critical",
-      "expected_value": [
-        "August 9, 2026",
-        "Willow Bend Dock"
-      ],
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
+      "expected_value": "At least two paper PDFs, arXiv/preprint PDFs, conference paper pages, journal article pages, or formal paper pages",
+      "evaluation_role": "critical_required",
+      "semantic_acceptance": "Do not count Wikipedia, blogs, news, or press releases toward this paper-source minimum.",
+      "must_appear_in_image": true
     },
     {
-      "id": "audience",
-      "description": "Target audience.",
-      "source": "env/river_program.pdf",
+      "id": "source_titles_and_urls_recorded",
+      "description": "Source titles and URLs or compact URL cues are visible.",
+      "source": "final image source labels",
+      "source_section": "final image source labels",
       "importance": "major",
-      "expected_value": "first-time paddlers and families",
-      "must_appear_in_image": true,
-      "evaluation_role": "major_required"
+      "expected_value": "Three source labels with titles/authors and URLs/domains/venues",
+      "evaluation_role": "major_required",
+      "semantic_acceptance": "Accept compact labels such as author/year + arXiv, journal, DOI, .gov, or URL cue.",
+      "must_appear_in_image": true
     },
     {
-      "id": "highlights",
-      "description": "Supported highlights.",
-      "source": "env/river_program.pdf",
+      "id": "synthesis_title",
+      "description": "Synthesized title for the infographic.",
+      "source": "task.md and sourced evidence",
+      "source_section": "task.md and sourced evidence",
+      "importance": "major",
+      "expected_value": "A synthesized public title about flood adaptation equity or climate-health vulnerability",
+      "evaluation_role": "major_required",
+      "semantic_acceptance": "Must not simply copy a single paper title.",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "problem_statement",
+      "description": "Brief problem statement.",
+      "source": "task.md and sourced evidence",
+      "source_section": "task.md and sourced evidence",
+      "importance": "major",
+      "expected_value": "A one-sentence problem statement about flood adaptation equity or climate-health vulnerability",
+      "evaluation_role": "major_required",
+      "semantic_acceptance": "",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "three_insights_are_grounded",
+      "description": "Exactly three cross-paper insights grounded in multiple sources.",
+      "source": "web-sourced papers/reports",
+      "source_section": "web-sourced papers/reports",
+      "importance": "critical",
+      "expected_value": "Exactly three insights that synthesize across sources rather than summarizing one source",
+      "evaluation_role": "critical_required",
+      "semantic_acceptance": "Each insight should be traceable to at least one credible source, and collectively the three should draw on multiple sources.",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "method_or_dataset_comparison_present",
+      "description": "Method or dataset comparison across sources.",
+      "source": "web-sourced papers/reports",
+      "source_section": "web-sourced papers/reports",
+      "importance": "critical",
+      "expected_value": "A comparison of methods, datasets, study regions, populations, or vulnerability measures across sources",
+      "evaluation_role": "critical_required",
+      "semantic_acceptance": "",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "limitation_present",
+      "description": "Limitation or uncertainty is visible.",
+      "source": "web-sourced papers/reports",
+      "source_section": "web-sourced papers/reports",
+      "importance": "major",
+      "expected_value": "A limitation or uncertainty about methods, scope, causality, generalization, or data coverage",
+      "evaluation_role": "major_required",
+      "semantic_acceptance": "",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "public_takeaway",
+      "description": "Public-facing takeaway is visible.",
+      "source": "web-sourced papers/reports",
+      "source_section": "web-sourced papers/reports",
+      "importance": "major",
+      "expected_value": "A practical takeaway for public communication or planning that follows from the sources",
+      "evaluation_role": "major_required",
+      "semantic_acceptance": "",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "optional_public_cta",
+      "description": "Optional source CTA.",
+      "source": "task.md",
+      "source_section": "task.md",
+      "importance": "minor",
+      "expected_value": "No CTA required; if included, it should point to the listed sources or further reading without inventing a deadline.",
+      "evaluation_role": "optional",
+      "semantic_acceptance": ""
+    },
+    {
+      "id": "rejected_insufficient_sources",
+      "description": "Forbidden insufficient sourcing.",
+      "source": "env/source_requirements.md",
+      "source_section": "env/source_requirements.md",
       "importance": "critical",
       "expected_value": [
-        "life jacket fit check",
-        "shoreline safety basics",
-        "guided 20-minute practice loop"
+        "single source",
+        "only one paper",
+        "only Wikipedia",
+        "only blogs",
+        "only news stories",
+        "only press releases",
+        "abstract snippets only"
       ],
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "unsupported_details",
-      "description": "Unsupported claims.",
-      "source": "env/river_program.pdf",
-      "importance": "major",
-      "expected_value": [
-        "overnight camping",
-        "whitewater route"
-      ],
+      "evaluation_role": "negative_only",
+      "semantic_acceptance": "",
       "must_not_appear_in_image": true,
-      "evaluation_role": "negative_only"
+      "forbidden_patterns": [
+        "single source",
+        "one paper only",
+        "Wikipedia only",
+        "blog only",
+        "news only",
+        "press release only",
+        "abstract only"
+      ]
+    },
+    {
+      "id": "rejected_hallucinated_numeric_claims",
+      "description": "Unsupported numeric claims are forbidden.",
+      "source": "env/source_requirements.md",
+      "source_section": "env/source_requirements.md",
+      "importance": "critical",
+      "expected_value": [
+        "numeric claims not tied to a cited source",
+        "invented percentages",
+        "invented sample sizes",
+        "invented dates"
+      ],
+      "evaluation_role": "negative_only",
+      "semantic_acceptance": "",
+      "must_not_appear_in_image": true,
+      "forbidden_patterns": [
+        "uncited percentage",
+        "invented percentage",
+        "invented sample",
+        "unsupported number",
+        "hallucinated numeric"
+      ]
+    },
+    {
+      "id": "rejected_overclaims",
+      "description": "Unsupported policy/causal/generalization claims are forbidden.",
+      "source": "env/source_requirements.md",
+      "source_section": "env/source_requirements.md",
+      "importance": "major",
+      "expected_value": [
+        "proves policy works everywhere",
+        "guarantees adaptation equity",
+        "universal causal proof",
+        "all communities benefit equally"
+      ],
+      "evaluation_role": "negative_only",
+      "semantic_acceptance": "",
+      "must_not_appear_in_image": true,
+      "forbidden_patterns": [
+        "proves policy works everywhere",
+        "guarantees adaptation equity",
+        "universal causal",
+        "all communities benefit equally"
+      ]
     }
   ],
-  "calculation_notes": "Use the PDF and supporting notes; preserve required inclusions and exclusions."
+  "web_facts": [
+    {
+      "description": "The agent must locate and use at least three public sources about flood adaptation equity and climate-health vulnerability.",
+      "required_for_case": true,
+      "acceptable_sources": [
+        "paper PDF",
+        "arXiv/preprint",
+        "conference paper page",
+        "journal article page",
+        "official paper page",
+        "government/NGO technical report"
+      ]
+    },
+    {
+      "description": "At least two sources must be formal paper or PDF-style research sources.",
+      "required_for_case": true,
+      "acceptable_sources": [
+        "paper PDF",
+        "arXiv/preprint",
+        "conference paper page",
+        "journal article page",
+        "official paper page"
+      ]
+    }
+  ],
+  "calculation_notes": "This is a web_required document_brief case. The evaluator should not expect one fixed set of source titles or insight wording. Required checks are source count, source quality, visible source labels/URLs, exactly three grounded cross-paper insights, method/dataset comparison, limitation, public takeaway, and no unsupported numeric or policy overclaims."
 }

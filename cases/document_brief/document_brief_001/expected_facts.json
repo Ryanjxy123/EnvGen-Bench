@@ -13,7 +13,8 @@
         "Climate Data Stories for Civic Action studio"
       ],
       "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
+      "evaluation_role": "critical_required",
+      "source_section": "env/course_brief.pdf, page 1 cover and page 2 Public-facing title lock"
     },
     {
       "id": "lead_instructor",
@@ -23,7 +24,8 @@
       "expected_value": "Dr. Maya Chen",
       "semantic_acceptance": "Maya Chen may appear with or without the Dr. honorific.",
       "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
+      "evaluation_role": "critical_required",
+      "source_section": "env/course_brief.pdf, page 2 Teaching team note; env/instructor_bio.md"
     },
     {
       "id": "approved_schedule",
@@ -36,7 +38,8 @@
         "Wednesdays in May 2026, May 6-27, 6:00-8:15 PM"
       ],
       "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
+      "evaluation_role": "critical_required",
+      "source_section": "env/course_brief.pdf, page 4 Approved public schedule card"
     },
     {
       "id": "target_audience",
@@ -46,7 +49,8 @@
       "expected_value": "city staff, nonprofit analysts, and community organizers working with climate or resilience data",
       "semantic_acceptance": "Accept close paraphrases that preserve all three audience groups and the climate/resilience data context.",
       "must_appear_in_image": true,
-      "evaluation_role": "major_required"
+      "evaluation_role": "major_required",
+      "source_section": "env/course_brief.pdf, page 3 Who this is for"
     },
     {
       "id": "accepted_highlights",
@@ -60,7 +64,8 @@
       ],
       "semantic_acceptance": "Accept concise paraphrases of these three outcomes. The image should include exactly three highlights, not a longer list.",
       "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
+      "evaluation_role": "critical_required",
+      "source_section": "env/course_brief.pdf, page 5 Poster-safe learning outcomes"
     },
     {
       "id": "public_cta",
@@ -69,7 +74,8 @@
       "importance": "minor",
       "expected_value": "Apply by April 22, 2026 at civicdata.example/apply",
       "semantic_acceptance": "Full credit is compatible with no CTA. If a CTA appears, it should use the public apply deadline and URL rather than waitlist, internal registration, an incorrect deadline, an incorrect URL, or unsupported details.",
-      "evaluation_role": "optional"
+      "evaluation_role": "optional",
+      "source_section": "env/course_brief.pdf, page 7 Public copy block"
     },
     {
       "id": "rejected_old_titles",
@@ -87,7 +93,8 @@
         "Climate Dashboard Sprint",
         "Resilience Evidence Lab"
       ],
-      "evaluation_role": "negative_only"
+      "evaluation_role": "negative_only",
+      "source_section": "env/course_brief.pdf, pages 2 and 7 revision notes"
     },
     {
       "id": "rejected_old_dates",
@@ -107,7 +114,8 @@
         "late April",
         "time TBA"
       ],
-      "evaluation_role": "negative_only"
+      "evaluation_role": "negative_only",
+      "source_section": "env/course_brief.pdf, page 4 schedule notes and page 6 FAQ"
     },
     {
       "id": "rejected_unconfirmed_details",
@@ -134,7 +142,8 @@
         "Center for Planetary Informatics",
         "waitlist"
       ],
-      "evaluation_role": "negative_only"
+      "evaluation_role": "negative_only",
+      "source_section": "env/course_brief.pdf, pages 4, 6, and 7 internal notes"
     }
   ],
   "calculation_notes": "Required display facts are the final public title, lead instructor, approved schedule, target audience, and exactly three poster-safe highlights. The public CTA is optional and must not be scored as missing when omitted. The case is designed so the agent must read across a long prospectus and distinguish final public-facing content from draft notes, internal remarks, and unsupported details. Do not penalize light paraphrase of the three highlights."

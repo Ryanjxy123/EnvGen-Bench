@@ -1,3 +1,1 @@
-Read the product documents in the env folder and create a concise product
-introduction image. Highlight supported claims and avoid unsupported medical,
-outdoor weather, or certification claims.
+Read the brief and supporting note in the env folder. Create a polished public exhibit introduction graphic for public-facing use. Include the final public title/name, approved date or schedule, responsible person or organization, target audience or public context, and exactly three poster-safe highlights grounded in the documents. Use only confirmed public-facing information and avoid draft, internal, outdated, pending, or unsupported details. A call to action is optional; if included, it must be supported by public-facing document text.
