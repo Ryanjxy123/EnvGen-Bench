@@ -1,1 +1,0 @@
-Please create a finished environmental_transit_shelter_ad for CanopyLoop. Use the env files to resolve current platform specs, visual rules, allowed assets, domain restrictions, and deprecated materials. Follow the stated priority order and produce the final compliant image, not a rule summary, worksheet, or draft.
