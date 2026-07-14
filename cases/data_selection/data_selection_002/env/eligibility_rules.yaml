@@ -1,17 +1,100 @@
-program: Neighborhood Climate Microgrants
-include_sector: climate
-required_status: eligible
-required_documents_complete: yes
-required_program_round: spring_2026
-max_requested_usd_inclusive: 50000
-deadline_inclusive: 2026-03-05
-minimum_score_exclusive: 80
-select_top_n: 3
-sort_order:
-  - field: score
-    direction: desc
-  - field: community_priority
-    direction: desc
-  - field: requested_usd
-    direction: asc
-required_image_copy: Spring climate microgrant winners
+program_name: Neighborhood Climate Microgrants
+selection_as_of: '2026-03-24T18:00:00-07:00'
+application_rules:
+  required_track_code: climate_resilience
+  required_program_round: spring_2026
+  required_application_status: submitted
+  submission_deadline_inclusive: '2026-03-05T17:00:00-08:00'
+  max_requested_usd_inclusive: 55000
+history_resolution:
+  candidate_record: timestamp must be on or before selection_as_of
+  record_to_use: use the latest timestamp for the relevant entity; if timestamps tie, use the highest revision/version number
+  ignore_later_records: true
+organization_rules:
+  timestamp_field: effective_at
+  entity_key: organization_id
+  revision_field: revision_no
+  required_registration_status: active
+  required_tax_clearance: clear
+  required_conflict_review: cleared
+  required_insurance_status: current
+document_rules:
+  timestamp_field: checked_at
+  entity_key: application_id
+  revision_field: revision_no
+  required_packet_status: complete
+  required_budget_attachment_status: approved
+  allowed_site_authorization_status:
+    - verified
+    - not_required
+panel_rules:
+  candidate_review_stage: final
+  required_review_status: complete
+  timestamp_field: reviewed_at
+  entity_key: application_id
+  revision_field: review_version
+  minimum_score_exclusive: 84
+  minimum_community_priority_inclusive: 80
+  minimum_equity_score_inclusive: 78
+budget_rules:
+  timestamp_field: reviewed_at
+  entity_key: application_id
+  revision_field: revision_no
+  required_budget_status: approved
+  allowed_cost_share_status:
+    - verified
+    - not_required
+  approved_award_must_not_exceed_requested: true
+  max_approved_award_usd_inclusive: 50000
+ranking:
+  sort_order:
+    - field: score
+      direction: desc
+    - field: community_priority
+      direction: desc
+    - field: equity_score
+      direction: desc
+    - field: approved_award_usd
+      direction: asc
+    - field: application_id
+      direction: asc
+cohort_selection:
+  select_top_n: 4
+  procedure: Walk the ranked eligible list from top to bottom. Add a project only when its public_district is not already represented, fewer than two already-selected projects share its focus_area, and adding its approved award keeps the running total at or below the cohort cap. Skip a project that fails any condition and continue. Stop after four projects. Do not backtrack.
+  distinct_public_districts: true
+  max_projects_per_focus_area_inclusive: 2
+  total_approved_award_cap_usd_inclusive: 180000
+display_labels:
+  urban_heat: Heat relief
+  building_cooling: Efficient cooling
+  flood_resilience: Flood resilience
+  green_infrastructure: Green infrastructure
+  home_weatherization: Home weatherization
+announcement_requirements:
+  heading: Spring 2026 Neighborhood Climate Microgrant Awardees
+  show_selection_date: true
+  show_funding_summary: true
+  show_selection_scores: true
+  awardee_fields:
+    - rank
+    - project_name
+    - public_name
+    - public_district
+    - focus_area_display_label
+    - requested_usd
+    - approved_award_usd
+    - reduction_usd
+    - reduction_percent
+    - final_panel_score
+    - community_priority
+    - equity_score
+  amount_labels:
+    requested: Requested
+    approved: Approved award
+    reduction: Reduction
+  score_labels:
+    final: Final panel score
+    priority: Community priority
+    equity: Equity score
+  include_focus_visual_cue: true
+  footer_note: Awards shown are approved amounts as of March 24, 2026.

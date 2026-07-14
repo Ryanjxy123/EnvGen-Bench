@@ -1,167 +1,74 @@
 {
   "case_id": "data_selection_001",
-  "dimensions": {
-    "task_completion": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "output_type_data_selection_001",
-          "check": "Use semantic VLM/judge evaluation to decide whether the output is a finished promotional_poster for Weekend Electronics Flash Picks, not a worksheet, source-data screenshot, raw table, or generic mockup.",
-          "points": 4,
-          "scoring_hint": "Full credit when the artifact reads as a polished sale poster. Partial credit for a visually styled but weak poster. No credit for raw data, notes, or a non-image answer. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
-        },
-        {
-          "id": "selection_task_resolution_data_selection_001",
-          "check": "Use semantic VLM/judge evaluation to determine whether the poster visibly resolves the data selection task: it filters the product catalog, ranks eligible products, and promotes only the final selected products.",
-          "points": 4,
-          "scoring_hint": "Full credit when the poster clearly reflects the final selected set. Partial credit when it appears promotional but includes ambiguity about selection. No credit when the catalog is copied without selection. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
-        }
-      ],
-      "label": "Task Completion"
-    },
-    "grounded_requirement_satisfaction": {
-      "weight": 0.55,
-      "items": [
-        {
-          "id": "critical_selected_set_accuracy_data_selection_001",
-          "check": "Semantic judge must verify that exactly these selected products are featured as campaign sale items: LuminaFrame Smart Display, VisionDock 4K Hub, AeroBuds Pro, and OrbitCharge Pad. Product IDs are optional and should not be required.",
-          "points": 8,
-          "scoring_hint": "Full credit for exactly the correct featured set. Partial credit only for a minor readability ambiguity. No credit if any selected product is replaced or an extra catalog product is promoted."
-        },
-        {
-          "id": "critical_ranking_order_data_selection_001",
-          "check": "Semantic judge must verify the featured order or hierarchy is LuminaFrame Smart Display first, VisionDock 4K Hub second, AeroBuds Pro third, and OrbitCharge Pad fourth. Accept left-to-right, top-to-bottom, numbered cards, hero/secondary layout, or another clear ranking cue.",
-          "points": 6,
-          "scoring_hint": "Full credit when ranking is clear and correct. Partial credit when the set is correct but rank is partly ambiguous. No credit when ordering is wrong or absent."
-        },
-        {
-          "id": "critical_display_values_data_selection_001",
-          "check": "Semantic judge must verify each featured product displays the correct product name, price, and discount label: LuminaFrame Smart Display $149.00 24% off; VisionDock 4K Hub $119.00 22% off; AeroBuds Pro $129.00 35% off; OrbitCharge Pad $49.00 30% off. Accept equivalent price formatting without trailing cents and equivalent discount wording.",
-          "points": 8,
-          "scoring_hint": "Full credit when all names, prices, and discounts are correctly paired. Partial credit for one minor formatting/readability issue. No credit for wrong values or values attached to the wrong products."
-        },
-        {
-          "id": "critical_exclusion_accuracy_data_selection_001",
-          "check": "Semantic judge must verify that unselected catalog products are not promoted as main sale products. This includes zero-inventory, inactive, retired, draft, test, old-campaign, wrong-category, below-threshold, threshold-equal, and below-top-N products.",
-          "points": 6,
-          "scoring_hint": "Full credit when no unselected product is featured. Partial credit for a faint ambiguous decorative mention. No credit when any unselected product is clearly promoted.",
-          "fact_ids": [
-            "selected_products",
-            "ranking_order",
-            "selected_product_display_values"
-          ]
-        }
-      ],
-      "label": "Grounded Requirement Satisfaction"
-    },
-    "information_structuring": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "poster_product_hierarchy_data_selection_001",
-          "check": "Accept different promotional layouts, including product cards, ranked recommendation slots, banner sections, price tags, or discount corner badges, as long as the selected products and their values are easy to scan.",
-          "points": 5,
-          "scoring_hint": "Full credit for clear hierarchy and scanability. Partial credit for cluttered but understandable layout. No credit when the selection is buried or visually confused. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
-        },
-        {
-          "id": "no_unnecessary_process_details_data_selection_001",
-          "check": "Do not require product IDs, full filter rules, inventory counts, priority values, or filtering process steps. Treat them only as supporting context if present and correct; they must not distract from the promotional poster.",
-          "points": 4,
-          "scoring_hint": "Full credit when the poster focuses on selected sale products. Partial credit if extra metadata appears but does not dominate. No credit if process details or catalog fields overwhelm the poster. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
-        }
-      ],
-      "label": "Information Structuring"
-    },
-    "visual_communication_quality": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "visual_clarity_data_selection_001",
-          "check": "Use semantic VLM/judge evaluation for visual quality: clear hierarchy, readable typography, sufficient contrast, polished sale styling, and non-crowded spacing at poster size.",
-          "points": 4,
-          "scoring_hint": "Full credit for readable polished design. Partial credit for minor clutter or weak styling. No credit for unreadable or visually incoherent output. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
-        },
-        {
-          "id": "visual_layout_density_data_selection_001",
-          "check": "The promotional poster should have balanced density, clear product/value pairing, crisp assets or product representations, platform-safe margins, and no placeholder-like empty regions.",
-          "points": 4,
-          "scoring_hint": "Full credit for balanced density and clear product cards/sections. Partial credit for weak spacing. No credit for blank, placeholder-like, or low-resolution output. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
-        }
-      ],
-      "label": "Visual Communication Quality"
-    }
+  "evaluation_mode": "image_vqa_0_2",
+  "dimension_weights": {
+    "grounded_requirement_satisfaction": 0.8,
+    "visual_rendering_quality": 0.2
   },
-  "score_caps": [
-    {
-      "id": "wrong_selected_product",
-      "max_total": 60,
-      "reason": "A non-selected product appears without a clear exclusion/not-selected context, indicating it may be promoted as a campaign sale item.",
-      "trigger": {
-        "type": "forbidden_final_answer",
-        "patterns": [
-          "Auralite Desk Lamp",
-          "NovaSound Mini Speaker",
-          "PulseFit Smart Band",
-          "TravelNest Pillow",
-          "ClearCall Webcam",
-          "LiteKeys Keyboard",
-          "BrewEase Kettle",
-          "FocusBuds Air",
-          "EdgeMate Router",
-          "RetroWave Console",
-          "PixelBeam Projector",
-          "TestTone Earbuds",
-          "HydroGrip Bottle",
-          "DeskFlow USB Dock",
-          "ArchiveTab E-Reader",
-          "StreamCue Remote"
-        ],
-        "allowed_patterns": [
-          "\\b(excluded|exclude|filtered out|not selected|not featured|not a sale item|not promoted|ineligible)\\b[\\s\\S]{0,120}\\b(Auralite Desk Lamp|NovaSound Mini Speaker|PulseFit Smart Band|TravelNest Pillow|ClearCall Webcam|LiteKeys Keyboard|BrewEase Kettle|FocusBuds Air|EdgeMate Router|RetroWave Console|PixelBeam Projector|TestTone Earbuds|HydroGrip Bottle|DeskFlow USB Dock|ArchiveTab E-Reader|StreamCue Remote)\\b",
-          "\\b(Auralite Desk Lamp|NovaSound Mini Speaker|PulseFit Smart Band|TravelNest Pillow|ClearCall Webcam|LiteKeys Keyboard|BrewEase Kettle|FocusBuds Air|EdgeMate Router|RetroWave Console|PixelBeam Projector|TestTone Earbuds|HydroGrip Bottle|DeskFlow USB Dock|ArchiveTab E-Reader|StreamCue Remote)\\b[\\s\\S]{0,120}\\b(excluded|exclude|filtered out|not selected|not featured|not a sale item|not promoted|ineligible)\\b"
-        ]
+  "grounded_requirement_satisfaction": {
+    "vqa_items": [
+      {
+        "id": "grounded_q01",
+        "question": "What final selection or displayed result does the image show for The final featured products are the top 4 eligible products after applying all campaign filters and ranking rules?",
+        "expected_answer": "selected_product_ids_reference_only: P214 | P207 | P218 | P204; selected_product_names: LuminaFrame Smart Display | VisionDock 4K Hub | AeroBuds Pro | OrbitCharge Pad",
+        "acceptance_rule": "Accept any polished poster layout that clearly features exactly these four products as the sale items. Product IDs may be omitted; the product names must be semantically identifiable and not replaced by unselected catalog items."
+      },
+      {
+        "id": "grounded_q02",
+        "question": "What final selection or displayed result does the image show for Featured products must appear in the campaign ranking order?",
+        "expected_answer": "1. LuminaFrame Smart Display | 2. VisionDock 4K Hub | 3. AeroBuds Pro | 4. OrbitCharge Pad",
+        "acceptance_rule": "Accept visual ranking through left-to-right order, top-to-bottom order, numbered cards, hero-to-secondary placement, or another clear promotional hierarchy, as long as the order is LuminaFrame, VisionDock, AeroBuds, then OrbitCharge."
+      },
+      {
+        "id": "grounded_q03",
+        "question": "What final selection or displayed result does the image show for Each selected product must show the correct name, price, and discount label?",
+        "expected_answer": "LuminaFrame Smart Display: price_usd: 149.00; discount_label: 24% off; VisionDock 4K Hub: price_usd: 119.00; discount_label: 22% off; AeroBuds Pro: price_usd: 129.00; discount_label: 35% off; OrbitCharge Pad: price_usd: 49.00; discount_label: 30% off",
+        "acceptance_rule": "Prices may be rendered as $149, $119, $129, and $49 or with .00 cents. Discount labels may use equivalent wording such as 24% OFF, Save 24%, or 24 percent off. The values must be attached to the correct product names."
+      },
+      {
+        "id": "grounded_q04",
+        "question": "Does the image actively present any prohibited, excluded, deprecated, or superseded content covered by Products that are filtered out or fall below the top 4 cutoff must not appear as featured sale products; PulseFit Smart Band is excluded because inventory is 0, even though its priority and discount are high? If yes, list it.",
+        "expected_answer": "No",
+        "acceptance_rule": "Only No earns credit; none of the prohibited content may be active in the final image. Prohibited evaluator-only references: Auralite Desk Lamp | NovaSound Mini Speaker | PulseFit Smart Band | TravelNest Pillow | ClearCall Webcam | LiteKeys Keyboard | BrewEase Kettle | FocusBuds Air | EdgeMate Router | RetroWave Console | PixelBeam Projector | TestTone Earbuds | HydroGrip Bottle | DeskFlow USB Dock | ArchiveTab E-Reader | StreamCue Remote | P203 PulseFit Smart Band. The poster may include generic decorative product imagery, but it must not label or promote any unselected product as a campaign item. Must not be shown as a featured product."
+      },
+      {
+        "id": "grounded_q05",
+        "question": "Does the image actively present any prohibited, excluded, deprecated, or superseded content covered by Non-active products are excluded even when they have high discounts or priorities; Products with discount_pct equal to or below the exclusive threshold are excluded? If yes, list it.",
+        "expected_answer": "No",
+        "acceptance_rule": "Only No earns credit; none of the prohibited content may be active in the final image. Prohibited evaluator-only references: P206 ClearCall Webcam retired | P210 FocusBuds Air inactive | P213 PixelBeam Projector draft | P215 TestTone Earbuds test | P208 LiteKeys Keyboard discount 18 | P211 EdgeMate Router discount 20 | P217 DeskFlow USB Dock discount 19. None of these names should appear as promoted campaign products. None of these names should appear as promoted campaign products."
+      },
+      {
+        "id": "grounded_q06",
+        "question": "Does the image actively present any prohibited, excluded, deprecated, or superseded content covered by Non-Electronics products are excluded even when their discount or priority is high; Old-campaign products are excluded even when they otherwise look eligible? If yes, list it.",
+        "expected_answer": "No",
+        "acceptance_rule": "Only No earns credit; none of the prohibited content may be active in the final image. Prohibited evaluator-only references: P201 Auralite Desk Lamp Home | P205 TravelNest Pillow Travel | P209 BrewEase Kettle Kitchen | P216 HydroGrip Bottle Outdoor | P212 RetroWave Console old_clearance | P219 ArchiveTab E-Reader old_spring_sale. None of these names should appear as promoted campaign products. Neither old-campaign product should appear as a promoted campaign product."
+      },
+      {
+        "id": "grounded_q07",
+        "question": "Does the image actively present any prohibited, excluded, deprecated, or superseded content covered by Eligible products ranked below the top 4 are not final selected products? If yes, list it.",
+        "expected_answer": "No",
+        "acceptance_rule": "Only No earns credit; none of the prohibited content may be active in the final image. Prohibited evaluator-only references: P202 NovaSound Mini Speaker | P220 StreamCue Remote. These products should not be promoted as featured sale items."
+      },
+      {
+        "id": "grounded_q08",
+        "question": "Is the information for The final featured products are the top 4 eligible products after applying all campaign filters and ranking rules visibly labeled and unambiguous in the image?",
+        "expected_answer": "Yes",
+        "acceptance_rule": "Accept Yes only when the relevant information is visibly present, identifiable, and not contradicted elsewhere in the image."
       }
-    },
-    {
-      "id": "missing_selected_product",
-      "max_total": 55,
-      "reason": "One or more required selected products is missing from the poster.",
-      "trigger": {
-        "type": "missing_required_count",
-        "fact_ids": [
-          "selected_products",
-          "selected_product_display_values"
-        ],
-        "min_missing": 1
+    ]
+  },
+  "visual_rendering_quality": {
+    "image_type": "promotional_poster",
+    "vqa_items": [
+      {
+        "id": "visual_q01",
+        "question": "As a promotional poster or recommendation flyer, does the image create an immediate focal offer, clearly prioritize featured items and details, and combine persuasive visual energy with elegant hierarchy, readable action information, and high-end poster craft?",
+        "score_criteria": {
+          "2": "Award 2 only if the poster is exceptionally compelling and publication-ready: the core offer or recommendation is understood instantly; featured items, prices or details, and action information are clearly separated and easy to scan; the hero focal point is strong; typography, imagery, color, spacing, alignment, and margins are sophisticated and cohesive; promotional emphasis feels deliberate rather than loud or generic; and the whole composition is memorable, balanced, and nearly flawless. No cramped details, unclear CTA, generic sale-template look, weak imagery, malformed text, clipping, overlap, or visible cleanup issue is allowed. Any meaningful professional revision prevents 2.",
+          "1": "Award 1 if the poster is understandable, usable, and visually decent or attractive, but it remains ordinary or has visible flaws such as a modest focal point, cramped details, uneven item emphasis, generic promotional styling, slightly weak CTA, or minor typography and spacing issues.",
+          "0": "Award 0 even when the offer is technically present if the poster looks visibly poor, confusing, or unconvincing: focal hierarchy is weak, items or action details are hard to scan, imagery or typography is crude, composition is cluttered or empty, or the result requires substantial redesign. Blank, corrupted, severely unreadable, clipped, or broken posters are also 0."
+        }
       }
-    },
-    {
-      "id": "unfiltered_product_catalog",
-      "max_total": 45,
-      "reason": "The output appears to show the unfiltered catalog or many source products without a clear exclusion/not-selected context.",
-      "trigger": {
-        "type": "forbidden_final_answer",
-        "patterns": [
-          "product_id\\s*,\\s*name\\s*,\\s*category\\s*,\\s*status",
-          "category\\s*,\\s*status\\s*,\\s*inventory\\s*,\\s*discount_pct",
-          "inventory\\s*,\\s*discount_pct\\s*,\\s*price_usd\\s*,\\s*campaign_priority",
-          "campaign_priority\\s*,\\s*campaign_window"
-        ]
-      }
-    },
-    {
-      "id": "raw_table_instead_of_poster",
-      "max_total": 40,
-      "reason": "The final artifact is a raw table, worksheet, or data dump instead of a polished promotional poster.",
-      "trigger": {
-        "type": "forbidden_final_answer",
-        "patterns": [
-          "\\|\\s*product",
-          "product_id\\s+name\\s+category",
-          "category\\s+status\\s+inventory\\s+discount",
-          "inventory\\s*,\\s*discount_pct\\s*,\\s*price_usd"
-        ]
-      }
-    }
-  ]
+    ]
+  }
 }

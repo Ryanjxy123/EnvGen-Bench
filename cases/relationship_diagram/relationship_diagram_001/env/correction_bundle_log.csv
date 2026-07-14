@@ -1,0 +1,7 @@
+bundle_id,catalog_release,scope,event_at,state,effective_at,note
+CB-0626-A,4.8,Central Service-to-Cash,2026-06-26T11:30:00,APPROVED,2026-06-26T12:00:00,Prior correction bundle
+CB-0626-A,4.8,Central Service-to-Cash,2026-06-30T14:10:00,SUPERSEDED,2026-06-30T14:10:00,Replaced by CB-0626-B
+CB-0626-B,4.8,Central Service-to-Cash,2026-06-30T14:12:00,APPROVED,2026-06-30T14:15:00,Current controlled correction bundle
+CB-0626-B,4.8,Central Service-to-Cash,2026-06-30T15:20:00,RELEASED,2026-06-30T15:30:00,Released for 16:30 architecture snapshot
+CB-0701-A,4.9,Central Service-to-Cash,2026-06-30T15:25:00,APPROVED,2026-07-01T09:00:00,Future catalog bundle
+CB-0630-P,4.8,Post-payment,2026-06-30T15:00:00,RELEASED,2026-06-30T15:10:00,Different process scope

@@ -1,91 +1,116 @@
 {
   "case_id": "procedure_instruction_003",
-  "dimensions": {
-    "task_completion": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "output_type_procedure_instruction_003",
-          "check": "For procedure_instruction_003, the output is a finished classroom_lab_workflow_image for the ordered procedure sequence, not a worksheet, raw table, or generic mockup.",
-          "points": 4,
-          "scoring_hint": "2 = correct finished image type; 1 = correct topic but weak format; 0 = wrong artifact type. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
-        },
-        {
-          "id": "operation_depth_procedure_instruction_003",
-          "check": "The image visibly resolves this case's ordered procedure sequence; reference facts include normal_steps: Label sample tubes, Add buffer solution, Invert gently ten times; gentle_inversion: Invert gently ten times; exclude_recovery: Heat shock recovery; wrong_action: shake vigorously.",
-          "points": 4,
-          "scoring_hint": "2 = operation is visibly resolved; 1 = operation partly reflected; 0 = copied unsolved source material. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
+  "evaluation_mode": "image_vqa_0_2",
+  "dimension_weights": {
+    "grounded_requirement_satisfaction": 0.8,
+    "visual_rendering_quality": 0.2
+  },
+  "grounded_requirement_satisfaction": {
+    "vqa_items": [
+      {
+        "id": "grounded_q01",
+        "question": "What approved session identity does the ST-07 card use?",
+        "expected_answer": "BIO 214 Section 02, Outbreak Tracing ELISA, September 16, 2026 at 13:00, room SCI-214, station ST-07.",
+        "acceptance_rule": "Score 2 if the course/section and activity are correct and the date, start time, room, and station all match the approved student session. Score 1 if the correct session is clearly identified but one scheduling or station field is omitted while every shown value is correct. Score 0 if two or more fields are missing, any shown value is wrong, or a makeup, instructor-only, superseded-room, pending-time, or other-protocol record is used."
+      },
+      {
+        "id": "grounded_q02",
+        "question": "Which active sample token is assigned to each ST-07 seat at class start?",
+        "expected_answer": "A=S02-K17, B=S02-M04, C=S02-R22, D=S02-V31. S02-T09 is the superseded seat-D token.",
+        "acceptance_rule": "Score 2 if all four seat-to-token mappings use the latest approved assignments. Score 1 if exactly three active mappings are correct and the fourth is omitted, with no superseded or pending token shown. Score 0 if two or fewer mappings are correct, any seat is mapped to the wrong token, or S02-T09/S02-X88 is treated as active."
+      },
+      {
+        "id": "grounded_q03",
+        "question": "Which released bulletins form the current rule basis for this card?",
+        "expected_answer": "OPS-27 controls strip topology, control validation, triplicate calls, and tracing; OPS-30 controls token labels, contamination response, result records, safety, and disposal; OPS-34 controls the ST-07 route, kit and lots, lot-specific read window, and dead-volume issue calculation.",
+        "acceptance_rule": "Score 2 if OPS-27, OPS-30, and OPS-34 are all identified and their three broad topic groups are assigned correctly. Score 1 if two of the three current bulletins and their scopes are correct and no obsolete bulletin changes the card. Score 0 if only one current bulletin is represented, a current bulletin is replaced by OPS-24/29/31/35, or an obsolete, pending, or draft rule changes an instruction."
+      },
+      {
+        "id": "grounded_q04",
+        "question": "What token-based sample-sharing method is shown before the assay begins?",
+        "expected_answer": "Label the yellow tube and sharing transfer pipet with the active token; transfer the full approximately 750 µl to the scheduled partner, mix gently by pipetting, take back about 750 µl/half, record the partner token in round order, and discard the sharing pipet after round 3.",
+        "acceptance_rule": "Score 2 if the token-label group, transfer/mix/return group, and ordered-record/disposal group are all correct. Score 1 if any two groups are complete and the third is only incomplete, without using names/initials or changing the transfer direction. Score 0 if fewer than two groups are correct, the wrong identifier is required, no sample is returned, or the sharing pipet is reused after the final round."
+      },
+      {
+        "id": "grounded_q05",
+        "question": "What exact three-round exchange route is shown after translating the released seat route to active tokens?",
+        "expected_answer": "Round 1: S02-K17↔S02-R22 and S02-M04↔S02-V31. Round 2: S02-K17↔S02-M04 and S02-R22↔S02-V31. Round 3: S02-K17↔S02-V31 and S02-M04↔S02-R22. Route ID XR-ST07-B.",
+        "acceptance_rule": "Score 2 if all three rounds use the correct token pairings in the correct order and identify XR-ST07-B. Score 1 if two rounds are correct and the third is omitted or if all three rounds are correct but the route ID is omitted. Score 0 if one or fewer rounds is correct, round order is changed, a superseded token is used, or the superseded/pending route is followed."
+      },
+      {
+        "id": "grounded_q06",
+        "question": "How are the two strips assigned and how is each 12-well strip mapped?",
+        "expected_answer": "Strip 1 uses A/S02-K17 and B/S02-M04; Strip 2 uses C/S02-R22 and D/S02-V31. On both strips, wells 1-3 are positive control, 4-6 negative control, 7-9 the first listed token, and 10-12 the second listed token.",
+        "acceptance_rule": "Score 2 if both active-token strip pairs and the complete common 3+3+3+3 well map are correct. Score 1 if the pair assignments are fully correct but one well range is unclear, or the well map is complete but one token label is omitted. Score 0 if a strip pair is wrong, a superseded token appears, controls are reversed, or the allocation is materially different."
+      },
+      {
+        "id": "grounded_q07",
+        "question": "What released station kit and strip-specific P50 equipment are assigned?",
+        "expected_answer": "Station release REL-ST07-B, equipment kit KIT-ST07-R2, Strip 1 P50-214-17, and Strip 2 P50-214-23.",
+        "acceptance_rule": "Score 2 if the station release ID, equipment-kit ID, and both strip-specific P50 IDs are correct. Score 1 if the release and kit are correct but one P50 ID is omitted, or both P50 IDs are correct but one higher-level release identifier is omitted. Score 0 if two or more identifiers are absent/wrong, the strip equipment is swapped without explanation, or REL-ST07-A/C or KIT-ST07-R1/R3 is used."
+      },
+      {
+        "id": "grounded_q08",
+        "question": "Which released reagent lots and substrate read window govern ST-07?",
+        "expected_answer": "Control pack CTRL-26-44, antibody pack AB-26-72, substrate SUB-26-155, with a 6-8 minute read-and-record window after substrate.",
+        "acceptance_rule": "Score 2 if all three active lot IDs and the 6-8 minute window are correct. Score 1 if any three of these four facts are correct and no superseded, pending, quarantined, expired, or different-protocol lot is shown. Score 0 if two or fewer facts are correct, SUB-26-144/166 is used, or the read window conflicts with the active substrate QC."
+      },
+      {
+        "id": "grounded_q09",
+        "question": "What four assay stages, waits, wash counts, and final no-wash condition are shown?",
+        "expected_answer": "Controls and student samples: 50 µl per assigned well, wait 5 minutes, wash twice. Primary antibody: 50 µl to all wells, wait 5 minutes, wash twice. Secondary antibody: 50 µl to all wells, wait 5 minutes, wash three times. Substrate: 50 µl to all wells, read at 6-8 minutes, with no wash afterward.",
+        "acceptance_rule": "Score 2 if all four stages are in order and each stage has the correct amount, wait/read condition, and wash count. Score 1 if three stages are fully correct and the remaining stage is incomplete but not contradictory. Score 0 if two or fewer stages are correct, antibody order is reversed, a wash count is wrong in a way that changes the procedure, substrate is washed, or the active read window is replaced by an obsolete value."
+      },
+      {
+        "id": "grounded_q10",
+        "question": "What derived timing, wash, and assay-dispense totals are shown for the station?",
+        "expected_answer": "21-23 timed minutes; 7 complete wash cycles per strip and 14 for the station; 96 separate 50 µl assay dispenses totaling 4800 µl (4.8 ml), excluding wash buffer and sample sharing.",
+        "acceptance_rule": "Score 2 if the timing group, wash-total group, and dispense/volume group are all correct with their scopes. Score 1 if any two groups are correct and the third is omitted, with no contradictory total. Score 0 if one or fewer groups is correct, per-strip and station scopes are confused, or wash/sample-sharing liquid is included in the 4.8 ml."
+      },
+      {
+        "id": "grounded_q11",
+        "question": "What issue quantities result from the active reserve, dead-volume, and rounding rules?",
+        "expected_answer": "Positive control 375 µl and negative control 375 µl; primary antibody 1400 µl and secondary antibody 1400 µl; substrate 1400 µl. The method is clean volume +12% reserve + assigned-lot dead volume, then round upward to the lot's 25 µl increment; student samples are not pooled or reserved.",
+        "acceptance_rule": "Score 2 if the control-quantity group, antibody-quantity group, and substrate/method group are all correct. Score 1 if any two groups are correct and the third is omitted, with no use of a conflicting reserve or unrounded value. Score 0 if one or fewer groups is correct, the old 350/1350 values are used as current, student samples are pooled/reserved, or dead volume is ignored while claiming the current rule."
+      },
+      {
+        "id": "grounded_q12",
+        "question": "How does the card define a complete wash and handle a tip or wash-pipet boundary breach?",
+        "expected_answer": "Drain by inverting and gently tapping over towels, move to a fresh towel/zone, fill every well with wash buffer without cross-well splash, then invert and gently tap again. Keep one wash pipet per strip. Discard and replace a contaminated source tip; remove and replace a breached wash pipet and notify the instructor.",
+        "acceptance_rule": "Score 2 if the drain-fill-drain wash group, strip-specific wash-pipet boundary group, and two breach-response group are all correct. Score 1 if any two groups are complete and the third is incomplete but not unsafe. Score 0 if fewer than two groups are correct, vigorous mixing/cross-well transfer is directed, or a contaminated tip or wash pipet remains in use."
+      },
+      {
+        "id": "grounded_q13",
+        "question": "How are strips validated and student triplicates classified?",
+        "expected_answer": "Each strip passes only with 3/3 blue positive controls and 0/3 blue negative controls. On a valid strip, 3/3 blue student wells are positive, 0/3 blue negative, and 1/3 or 2/3 blue indeterminate. Invalid strips are not interpreted or traced; indeterminate results are not traced.",
+        "acceptance_rule": "Score 2 if the exact control gate, the three-way student-call matrix, and the invalid/indeterminate no-trace handling are all correct. Score 1 if any two groups are complete and the third is omitted without a contradictory call. Score 0 if fewer than two groups are correct, majority voting is used, one strip validates the other, or invalid/indeterminate results are treated as definite traceable results."
+      },
+      {
+        "id": "grounded_q14",
+        "question": "What traceability record and transmission-tracing rule does the card require?",
+        "expected_answer": "Record route XR-ST07-B, station release REL-ST07-B, kit KIT-ST07-R2, lots CTRL-26-44/AB-26-72/SUB-26-155; for each strip record control status, both tokens, each exact three-well pattern, final calls, and read time. Trace only from a valid strip with a definite positive result, never from invalid or indeterminate results.",
+        "acceptance_rule": "Score 2 if the release/lot traceability group, the analytical result-record group, and the valid-definite-positive tracing gate are all present. Score 1 if any two groups are complete and the third is omitted, with no incorrect tracing instruction. Score 0 if fewer than two groups are correct, obsolete IDs are recorded as current, exact patterns/read time are both absent, or invalid/indeterminate results can initiate tracing."
+      },
+      {
+        "id": "grounded_q15",
+        "question": "What current safety and end-of-run disposal rules are shown?",
+        "expected_answer": "Wear gloves and protective eyewear, keep food/drink out, and wash hands with soap before and after. For an eye splash, start eyewash immediately for at least 15 minutes and alert the instructor. Put used micropipette tips in sharps; put strips, towels, sharing pipets, and wash pipets in the labeled biohazard tray; return no used item to clean supply.",
+        "acceptance_rule": "Score 2 if the PPE/hygiene group, eye-splash response group, and disposal/no-return group are all correct. Score 1 if any two groups are complete and the third is omitted, with no unsafe contradiction. Score 0 if fewer than two groups are correct, the eye response is materially wrong, tips go to biohazard instead of sharps, liquid-waste/sink disposal is adopted, or used items return to clean supply."
+      }
+    ]
+  },
+  "visual_rendering_quality": {
+    "image_type": "instructional_guide",
+    "vqa_items": [
+      {
+        "id": "visual_q01",
+        "question": "As an instructional guide, workflow image, setup card, safety card, care guide, or classroom bench card, does the image transform the procedure into a complete, glance-followable, and operationally safe visual aid rather than a densely typeset instruction sheet? Evaluate whether users can distinguish each action, object, quantity, condition, transition, repetition, warning, checkpoint, and completion cue without repeatedly reading paragraph-like text. Judge the entire artifact at its intended physical viewing size, including the smallest instructional text, the visual encoding of sequence and repeated cycles, the placement of warnings beside the relevant actions, the correspondence of icons or diagrams to the instructions, and the consistency and completeness of the page. Do not award 2 merely because the steps are numbered, factually present, aligned, color-coded, or technically readable.",
+        "score_criteria": {
+          "2": "Award 2 only if **all** of the following real-deployment gates are clearly satisfied. Failure of any one gate limits the score to 1 at most:\n\n  1. **Glance-followable action structure:** Each step must expose the principal action, object, quantity or setting, and immediate outcome through clear visual separation. Users should not need to parse paragraph-like prose or several similarly weighted sentences to determine what to do next.\n  2. **Operational sequence clarity:** The order, phase changes, branches, returns, waits, repetitions, and completion points must be visually unmistakable. Repeated cycles such as washing, checking, tightening, watering, restarting, or waiting must be encoded so that the number of repetitions and the point of return cannot be confused.\n  3. **Action-to-visual correspondence:** Icons, diagrams, illustrations, arrows, panels, or other visual devices must materially clarify tools, orientation, placement, motion, connections, quantities, or expected states. Visuals are not mandatory for every step, but a predominantly text-only guide must demonstrate exceptional typographic process design and cannot resemble a memo, worksheet, manual excerpt, or numbered document.\n  4. **Immediate parameter recognition:** Critical quantities, durations, temperatures, counts, directions, settings, materials, and result criteria must be visually distinct from explanatory text. Important parameters buried inside sentences, long lines, or low-emphasis body copy prevent 2.\n  5. **Contextual warning placement:** Safety warnings, contamination risks, prohibited actions, fragile steps, and irreversible actions must appear at or immediately beside the step where the risk occurs. A general warning block placed only at the bottom or far from the relevant action is insufficient for 2 when users could act before seeing it.\n  6. **Warning hierarchy proportional to risk:** High-risk warnings must be visually more prominent than routine notes and must not rely only on a small icon, pale background, or dense sentence. The user must be able to distinguish danger, caution, timing, optional advice, and ordinary instruction instantly.\n  7. **Normal-size readability under use conditions:** Every meaningful instruction, warning, label, parameter, legend, and result cue must be comfortably readable at the intended print or display size while the user is performing the task. Small body text, tightly packed lines, long text blocks, or narrow line spacing that demand close inspection prevent 2.\n  8. **Controlled information density:** Steps must be concise enough to scan during execution. Dense multi-sentence steps, excessive parenthetical information, long inline lists, repeated procedural prose, or numerous facts with equal visual weight prevent 2 even when no text is technically illegible.\n  9. **Distinct checkpoints and outcomes:** Wait states, validation checks, success conditions, failure conditions, result interpretation, and final completion cues must be visually separated from ordinary actions. Users must know when to stop, verify, repeat, proceed, or seek help without searching through body text.\n  10. **Complete and polished artifact:** The full sequence, final section, warnings, footer, legends, and completion state must be visibly contained and finished. No clipped content, orphaned heading, malformed glyph, inconsistent numbering, ambiguous color coding, weak contrast, unstable alignment, incomplete final step, or visible production residue is allowed.\n\n  A clean numbered page made mainly of bold step titles followed by small explanatory paragraphs, with limited action diagrams and warnings separated from their relevant steps, is an organized instruction sheet rather than an exceptional instructional visual and cannot receive 2.",
+          "1": "Award 1 if the guide is understandable, mostly complete, and generally usable, but still requires visible refinement before dependable real-world deployment. Typical 1-point outputs include clearly numbered but text-heavy procedures; long explanatory lines beneath each step; limited diagrams or action icons; quantities and timings embedded inside prose; repeated cycles explained verbally rather than visually; warnings placed mainly in separate footer boxes; modest distinction between action, parameter, note, and result; small but readable text; generic colored labels; uneven spacing; or a layout that resembles a formatted handout, manual page, checklist, or classroom worksheet. A guide may be accurate, aligned, and logically ordered yet still receive only 1 when users must read carefully rather than act at a glance.",
+          "0": "Award 0 if the guide is visually unreliable, materially difficult to follow, incomplete, or unsafe for practical use. This includes cases where sequence or phase boundaries are confusing; steps, repetitions, quantities, directions, tools, warnings, or result criteria are difficult to locate; essential safety information is visually buried or detached from the risky action; text density or size makes consultation impractical during execution; icons or diagrams conflict with the instructions; the final state is unclear; or substantial redesign is required to prevent mistakes. Blank, corrupted, severely unreadable, clipped, overlapping, misleading, materially incomplete, or otherwise broken outputs are also 0."
         }
-      ],
-      "label": "Task Completion"
-    },
-    "grounded_requirement_satisfaction": {
-      "weight": 0.55,
-      "items": [
-        {
-          "id": "critical_fact_accuracy_procedure_instruction_003",
-          "check": "For procedure_instruction_003, accurately includes the critical expected facts normal_steps, gentle_inversion using these case values: normal_steps: Label sample tubes, Add buffer solution, Invert gently ten times; gentle_inversion: Invert gently ten times; exclude_recovery: Heat shock recovery; wrong_action: shake vigorously.",
-          "points": 8,
-          "scoring_hint": "2 = all critical facts correct; 1 = one minor omission or formatting issue; 0 = any critical fact is wrong or missing.",
-          "fact_ids": [
-            "normal_steps",
-            "gentle_inversion"
-          ]
-        },
-        {
-          "id": "required_appear_facts_procedure_instruction_003",
-          "check": "Shows required appear facts normal_steps, gentle_inversion for procedure_instruction_003 without replacing them with unsupported alternatives; expected values include normal_steps: Label sample tubes, Add buffer solution, Invert gently ten times; gentle_inversion: Invert gently ten times; exclude_recovery: Heat shock recovery; wrong_action: shake vigorously.",
-          "points": 6,
-          "scoring_hint": "2 = all required facts appear clearly; 1 = most appear but one is ambiguous; 0 = multiple required facts are absent."
-        },
-        {
-          "id": "negative_exclusion_facts_procedure_instruction_003",
-          "check": "Does not show prohibited or stale facts exclude_recovery, wrong_action in procedure_instruction_003; avoids unsupported claims from distractor env material.",
-          "points": 5,
-          "scoring_hint": "2 = no prohibited facts appear; 1 = one weak/ambiguous distractor; 0 = any explicit prohibited value appears.",
-          "fact_ids": [
-            "exclude_recovery",
-            "wrong_action"
-          ]
-        }
-      ],
-      "label": "Grounded Requirement Satisfaction"
-    },
-    "information_structuring": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "fact_hierarchy_procedure_instruction_003",
-          "check": "Organizes normal_steps, gentle_inversion as the primary message for procedure_instruction_003; supporting values are normal_steps: Label sample tubes, Add buffer solution, Invert gently ten times; gentle_inversion: Invert gently ten times; exclude_recovery: Heat shock recovery; wrong_action: shake vigorously.",
-          "points": 5,
-          "scoring_hint": "2 = hierarchy is clear and fact-driven; 1 = facts present but hierarchy is muddled; 0 = important facts are buried or missing. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
-        },
-        {
-          "id": "robust_consistency_procedure_instruction_003",
-          "check": "Across repeated runs of procedure_instruction_003, the same critical facts, exclusions exclude_recovery, wrong_action, ordering rules, and layout constraints must remain consistent.",
-          "points": 4,
-          "scoring_hint": "2 = stable facts and exclusions; 1 = minor wording drift only; 0 = selected facts or exclusions change. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
-        }
-      ],
-      "label": "Information Structuring"
-    },
-    "visual_communication_quality": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "visual_clarity_procedure_instruction_003",
-          "check": "For procedure_instruction_003, uses clear visual hierarchy, readable typography, sufficient contrast, and non-crowded spacing at the intended classroom_lab_workflow_image size.",
-          "points": 4,
-          "scoring_hint": "2 = readable and polished; 1 = readable with minor clutter; 0 = unreadable or visually incoherent. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
-        },
-        {
-          "id": "visual_layout_density_procedure_instruction_003",
-          "check": "The classroom_lab_workflow_image layout has appropriate information density, balanced image/text regions, crisp assets, platform-safe margins, and no placeholder-like areas.",
-          "points": 4,
-          "scoring_hint": "2 = balanced density and crisp assets; 1 = some weak spacing or density; 0 = blank, placeholder-like, or low-resolution. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
-        }
-      ],
-      "label": "Visual Communication Quality"
-    }
+      }
+    ]
   }
 }

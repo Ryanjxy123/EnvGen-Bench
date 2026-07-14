@@ -1,197 +1,98 @@
 {
   "case_id": "design_specification_004",
-  "dimensions": {
-    "task_completion": {
-      "label": "Task Completion",
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "finished_target_image",
-          "check": "Output is a finished finance_app_compliance_ad with the active current campaign, not a rule summary or worksheet.",
-          "points": 10
-        }
-      ]
-    },
-    "grounded_requirement_satisfaction": {
-      "label": "Grounded Requirement Satisfaction",
-      "weight": 0.55,
-      "items": [
-        {
-          "id": "ocr_copy_accuracy",
-          "fact_ids": [
-            "primary_copy_01",
-            "primary_copy_02",
-            "primary_copy_03",
-            "primary_copy_04",
-            "primary_copy_05"
-          ],
-          "check": "Required title, product/event facts, CTA, dates, locations, disclosures, or source lines are OCR-readable and match the latest update rather than old files.",
-          "points": 14
-        },
-        {
-          "id": "format_safe_area_hierarchy",
-          "fact_ids": [
-            "canvas_size",
-            "aspect_ratio",
-            "safe_area",
-            "logo_position",
-            "cta_position"
-          ],
-          "check": "Canvas ratio, safe areas, logo/CTA placement, headline line limits, and hierarchy follow current platform specs.",
-          "points": 14,
-          "scoring_hint": "Do not give near-full credit when margins, line limits, disclosure/source size, or alignment cannot be confirmed."
-        },
-        {
-          "id": "token_and_style_resolution",
-          "fact_ids": [
-            "palette_tokens"
-          ],
-          "check": "Uses current color tokens and current style direction from env rules rather than deprecated palettes.",
-          "points": 8
-        },
-        {
-          "id": "hero_and_required_visuals",
-          "fact_ids": [
-            "hero_component_1",
-            "hero_component_2",
-            "hero_component_3",
-            "hero_component_4"
-          ],
-          "check": "Includes the required domain-specific visual elements with correct role and prominence.",
-          "points": 12
-        },
-        {
-          "id": "deprecated_and_claim_exclusion",
-          "fact_ids": [
-            "archive_not_active",
-            "forbidden_elements_not_active"
-          ],
-          "check": "Excludes archive-only finance claims, deprecated copy, old dimensions, banned logos, old colors, forbidden claims, and plausible but wrong assets.",
-          "points": 12
-        }
-      ]
-    },
-    "information_structuring": {
-      "label": "Information Structuring",
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "multi_source_rule_resolution",
-          "fact_ids": [
-            "primary_copy_01",
-            "primary_copy_02",
-            "primary_copy_03",
-            "primary_copy_04",
-            "primary_copy_05",
-            "canvas_size",
-            "logo_position",
-            "cta_position"
-          ],
-          "check": "Correctly resolves conflicts between latest update, compliance rules, platform specs, visual rules, asset manifest, and deprecated assets.",
-          "points": 8
-        },
-        {
-          "id": "visual_hierarchy",
-          "check": "Prioritizes the primary message, supporting details, CTA, and required fine print/source line appropriately for the target platform.",
-          "points": 6
-        },
-        {
-          "id": "distractor_resistance",
-          "fact_ids": [
-            "archive_not_active",
-            "forbidden_elements_not_active"
-          ],
-          "check": "Resists at least two plausible deprecated or conflicting rules/materials in the env.",
-          "points": 6
-        },
-        {
-          "id": "constraint_execution",
-          "check": "Executes nuanced constraints such as line limits, disclosure/source sizing, safe zones, alignment, contrast overlays, or directional prominence.",
-          "points": 4
-        }
-      ]
-    },
-    "visual_communication_quality": {
-      "label": "Visual Communication Quality",
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "readability",
-          "check": "Text is readable, high-contrast, non-overlapping, and not placed over busy/bright backgrounds without required treatment.",
-          "points": 8
-        },
-        {
-          "id": "composition",
-          "check": "Composition is polished, balanced, and appropriate to the industry and platform.",
-          "points": 7
-        }
-      ]
-    }
+  "evaluation_mode": "image_vqa_0_2",
+  "dimension_weights": {
+    "grounded_requirement_satisfaction": 0.8,
+    "visual_rendering_quality": 0.2
   },
-  "hard_caps": [
-    {
-      "id": "not_target_image_type",
-      "max_total": 45,
-      "reason": "Output is not the requested finished image type.",
-      "trigger": {
-        "type": "wrong_artifact_type",
-        "expected_type": "finance_app_compliance_ad"
+  "grounded_requirement_satisfaction": {
+    "vqa_items": [
+      {
+        "id": "grounded_q01",
+        "question": "Does the ad show both the exact product name and the exact final campaign marker selected from the approved release package?",
+        "expected_answer": "It shows both \"LedgerLite Cash Reserve\" and \"HOUSEHOLD PILOT · US\".",
+        "acceptance_rule": "Score 2 only if both strings are clearly readable and materially exact. Score 1 only if LedgerLite Cash Reserve remains unambiguously identifiable but the campaign marker has one minor punctuation or readability defect. Score 0 if the product identity is materially wrong or unreadable, or if the campaign marker is missing, replaced, or uses a legacy form such as HOUSEHOLD BETA · US."
+      },
+      {
+        "id": "grounded_q02",
+        "question": "Does the ad use the exact approved headline and support line from the final resolved release package?",
+        "expected_answer": "Headline: \"Plan the bill week before payday.\" Support line: \"Review bills, set buffers, and schedule manual reminders.\"",
+        "acceptance_rule": "Score 2 only if both lines are present, readable, and materially exact. Score 1 only if both remain clearly identifiable and exactly one line has a minor punctuation or legibility defect. Score 0 if either line is absent, paraphrased, replaced by legacy copy, or materially unreadable."
+      },
+      {
+        "id": "grounded_q03",
+        "question": "Does the ad contain the exact audience statement and the exact availability statement from the selected package?",
+        "expected_answer": "It states \"For households tracking 3–5 monthly bills.\" and \"Private beta opens 18 Aug 2026\".",
+        "acceptance_rule": "Score 2 only if both statements are present, readable, and exact. Score 1 only if both remain identifiable and exactly one minor punctuation or legibility defect occurs. Score 0 if either statement is absent, uses a legacy audience or availability phrase, or cannot be verified directly."
+      },
+      {
+        "id": "grounded_q04",
+        "question": "Does the ad show the exact final CTA together with the required landing path?",
+        "expected_answer": "The CTA is \"Request household beta access\" and the visible landing path is \"ledgerlite.com/household-beta\".",
+        "acceptance_rule": "Score 2 only if both the CTA and landing path are clearly readable and exact. Score 1 only if both are present and exactly one has a minor punctuation or legibility defect. Score 0 if either is missing, if the CTA is Request beta access or another action, or if a different destination is shown."
+      },
+      {
+        "id": "grounded_q05",
+        "question": "Does the ad reproduce the complete final legal disclosure selected through DISC-081?",
+        "expected_answer": "The complete disclosure reads \"Planning tool only. Not a bank. No automatic transfers. No interest or investment advice.\"",
+        "acceptance_rule": "Score 2 only if all four legal clauses are clearly readable in the stated order with materially exact wording. Score 1 only if the complete meaning is preserved and exactly one insignificant punctuation or article defect occurs. Score 0 if any clause is omitted, shortened to a legacy disclosure, materially reworded, or unreadable."
+      },
+      {
+        "id": "grounded_q06",
+        "question": "Does the mandatory feature badge contain both exact approved lines?",
+        "expected_answer": "The badge reads \"Manual review only\" and \"No autopilot transfers\" and includes the current blue check symbol.",
+        "acceptance_rule": "Score 2 only if both lines and the check symbol are directly visible and correct. Score 1 only if both lines are exact but the small check symbol is unclear, or the symbol is correct and exactly one line has a minor legibility defect. Score 0 if a line is missing, the badge is absent, or another badge or automation message such as Manual moves only / No automatic transfers is used."
+      },
+      {
+        "id": "grounded_q07",
+        "question": "Does the selected phone interface show the exact beta header and available balance?",
+        "expected_answer": "The interface shows \"Bill Week Beta\" and \"$2,730\" available to assign.",
+        "acceptance_rule": "Score 2 only if both the beta header and exact balance are clearly readable. Score 1 only if the correct interface is unmistakable but exactly one of the two values is partly obscured or has one character unclear. Score 0 if the header or balance is materially different, including legacy Cash Reserve Beta / $2,615 or Cash Reserve / $2,480 screens."
+      },
+      {
+        "id": "grounded_q08",
+        "question": "Does the phone interface show all three approved buckets with their exact amounts and percentages?",
+        "expected_answer": "Rent — $1,180 — 74%; Utilities — $520 — 49%; Buffer — $1,030 — 64%.",
+        "acceptance_rule": "Score 2 only if all nine fields—three names, three amounts, and three percentages—are clearly readable and exact. Score 1 only if eight of the nine fields are exact and the remaining field has a minor legibility defect. Score 0 if two or more fields are wrong or missing, or if legacy Utilities $460, Buffer $915, or similar values are shown."
+      },
+      {
+        "id": "grounded_q09",
+        "question": "Does the phone interface show the exact approved reminder content?",
+        "expected_answer": "It shows \"Utility review\", \"Reminder · Aug 24\", and \"Move $140 before payday\".",
+        "acceptance_rule": "Score 2 only if all three reminder strings are readable and exact. Score 1 only if all three remain identifiable and exactly one contains a minor punctuation or legibility defect. Score 0 if any one is absent or materially different, including Utilities check-in, Aug 22, or Move $120 after payday."
+      },
+      {
+        "id": "grounded_q10",
+        "question": "Does the supporting household photo match the exact approved document-planning asset?",
+        "expected_answer": "It is the close document-planning crop with a man holding a smartphone on the left, a woman writing on printed forms on the right, a black calculator in the lower-left area, and a white mug at the right; faces are not fully shown.",
+        "acceptance_rule": "Score 2 only if all five identifying cues are visible. Score 1 only if the same close document-planning scene is identifiable but exactly one cue is cropped or unclear. Score 0 if two or more cues are absent or another photo family is used."
+      },
+      {
+        "id": "grounded_q11",
+        "question": "Does the ad use the approved logo family together with the approved ledger background family?",
+        "expected_answer": "The current horizontal LedgerLite logo is used together with the light ledger background featuring three blue left rules, pale mint arcs in the upper-right, subtle horizontal ledger rules, and a navy band at the bottom.",
+        "acceptance_rule": "Score 2 only if the exact logo family and at least four stated background identifiers are directly visible. Score 1 only if the correct logo family and background family are still clear but exactly one background identifier is mostly cropped or obscured. Score 0 if the logo family is wrong, or if the background is replaced by another field or materially different palette."
+      },
+      {
+        "id": "grounded_q12",
+        "question": "Does the delivered ad avoid all known legacy release-package strings, legacy UI values, and internal production text?",
+        "expected_answer": "It must not show legacy strings such as HOUSEHOLD BETA · US, Plan for bills before payday., Assign cash manually across bills, buffers, and reminders., For households managing 2–4 recurring bills., Private beta · 18 Aug 2026, Request beta access, ledgerlite.com/reserve-beta, Manual moves only, No automatic transfers, $2,615, Utilities check-in, or the shortened disclosure Planning tool only. Not a bank. No interest or investment advice.; and it must not expose package IDs, asset IDs, profile IDs, approval states, or worksheet metadata.",
+        "acceptance_rule": "Score 2 only if none of the listed legacy strings or internal production artifacts is visible. Score 1 only if the compliant current content clearly dominates but one tiny ambiguous fragment cannot be classified confidently and no explicit legacy string is readable. Score 0 if any listed legacy string is clearly visible, or if internal IDs, approval states, or worksheet metadata are exposed."
       }
-    },
-    {
-      "id": "wrong_aspect_ratio",
-      "max_total": 75,
-      "reason": "Aspect ratio is clearly wrong for the active platform.",
-      "trigger": {
-        "type": "aspect_ratio_mismatch",
-        "expected": "4:5"
+    ]
+  },
+  "visual_rendering_quality": {
+    "image_type": "paid_social_ad",
+    "vqa_items": [
+      {
+        "id": "visual_q01",
+        "question": "As a paid social-media advertisement, does the image integrate brand, approved hero visual, headline, benefit or event message, proof or compliance content, and CTA into one platform-native, conversion-focused, highly polished composition rather than an internal draft or generic template?",
+        "score_criteria": {
+          "2": "Award 2 only if the ad is exceptional and ready for paid placement without revision: brand, hero, message, benefit or proof, CTA, and required compliance text form one decisive focal hierarchy; the crop feels native to the declared platform; all essential text is readable at intended feed or story size; visual style is distinctive, premium, and coherent; and spacing, typography, imagery, contrast, and safe zones are meticulously controlled. No generic template feel, weak hero, competing copy, detached CTA, undersized disclaimer, malformed glyph, awkward crop, or visible rendering flaw is allowed. Any meaningful campaign-quality concern prevents 2.",
+          "1": "Award 1 if the ad is clear, usable, and looks acceptable or good, but it remains ordinary or visibly imperfect—for example, generic styling, modest brand or hero prominence, slightly small compliance text, competing messages, detached CTA, or a somewhat awkward crop.",
+          "0": "Award 0 even when all expected elements are present if the ad looks visibly poor or would not be credible as paid media: focal hierarchy is weak, brand or offer is unclear, crop is badly handled, text is difficult to read, disclaimer or CTA is unusable, or the composition appears amateurish and needs substantial redesign. Blank, corrupted, severely unreadable, or broken outputs are also 0."
+        }
       }
-    },
-    {
-      "id": "missing_multiple_core_copy_facts",
-      "max_total": 70,
-      "reason": "Multiple latest-update copy facts are missing or replaced by old env copy.",
-      "trigger": {
-        "type": "aggregate_failure",
-        "fact_ids": [
-          "primary_copy_01",
-          "primary_copy_02",
-          "primary_copy_03",
-          "primary_copy_04",
-          "primary_copy_05"
-        ],
-        "min_failed": 2
-      }
-    },
-    {
-      "id": "active_forbidden_material",
-      "max_total": 65,
-      "reason": "Deprecated copy, banned claim, old logo, or prohibited asset is used as an active final element.",
-      "trigger": {
-        "type": "forbidden_visual_use",
-        "fact_id": "forbidden_elements_not_active",
-        "visual_role": "active_final_design_element"
-      }
-    },
-    {
-      "id": "unreadable_or_raw_spec",
-      "max_total": 55,
-      "reason": "Output is unreadable, raw specs, a table, or a prompt instead of a designed image.",
-      "trigger": {
-        "type": "aggregate_failure",
-        "fact_ids": [
-          "primary_copy_01",
-          "primary_copy_02",
-          "primary_copy_03",
-          "primary_copy_04",
-          "primary_copy_05",
-          "hero_component_1",
-          "hero_component_2",
-          "hero_component_3",
-          "hero_component_4"
-        ],
-        "min_failed": 5
-      }
-    }
-  ]
+    ]
+  }
 }

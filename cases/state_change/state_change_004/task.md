@@ -1,1 +1,29 @@
-Use the old notice, updates, and status table to create a current pop-up event image. Use current details and avoid superseded date, location, or sponsor.
+# Publish the resolved OrbitDesk Sync 4.12 servicing checkpoint
+
+Product Marketing needs one customer-facing rollout announcement for **OrbitDesk Sync 4.12.0**.
+
+Use the archived brief only for historical launch context. Use `env/public_release_governance.md` as the authoritative procedure and `env/software_release_operations.xlsx` as the operational source. Resolve release `OD-SYNC-412` exactly as it stood at **7:15 PM UTC on September 24, 2026**.
+
+This is a state-change task, not a latest-row lookup. Resolve the current state and the immediately preceding published customer checkpoint independently. Apply approval quorum and latest-action rules, validate code-valued candidates with fallback, apply telemetry corrections, calculate weighted coverage, compare checkpoint-to-checkpoint changes, resolve policy specificity and expirations, validate copy/build/issue/support catalogs, and evaluate the customer stage and next checkpoint.
+
+Create one public rollout announcement graphic containing:
+
+- product name, semantic version, public availability date, customer-facing current-as-of timestamp, current release state, and public channel;
+- the resolved customer stage, the previous published checkpoint timestamp, and the next checkpoint timestamp;
+- current and previous manual-download delivered/eligible counts and percentages, plus the change in delivered count and percentage points;
+- current and previous worldwide automatic-update delivered/eligible counts and weighted percentages, plus the change in delivered count, eligible count, and percentage points;
+- for North America, Europe, Asia-Pacific except Japan, Japan, and Latin America: the corrected current delivered/eligible counts, current percentage, and percentage-point change from the previous published checkpoint;
+- every active non-general eligibility qualification from the current selected policy, with cohort, region, affected deployment method, decision or end timestamp, and fallback;
+- a concise eligibility-change summary identifying which qualifications were added, expired, or continued since the previous checkpoint;
+- the validated current headline, benefit line, and exactly three validated release highlights;
+- platform, minimum system, architecture, full-installer size, update-payload size, and the percentage by which the update payload is smaller than the full installer;
+- every current published issue in the selected issue pack, including severity, affected cohort, and complete workaround;
+- a concise issue-change summary identifying newly published issues, resolved issues, and any severity change since the previous checkpoint;
+- the current CTA label and complete destination;
+- a brief customer-facing explanation of why the release is in the resolved stage, using manual coverage, weighted automatic coverage, the lowest regional percentage, regional direction of travel, active qualification count, and current high-severity issue count.
+
+The announcement must distinguish public availability, manual-download availability, automatic-update delivery, and cohort-specific eligibility. Do not average regional percentages. Do not use uncorrected, preliminary, staging, secondary-source, monitoring, future, rejected, draft, scheduled, expired, or superseded values as current.
+
+Keep the artifact public-facing. Do not expose release/change/approval/build/manifest/snapshot/correction/policy/decision/feature/issue/route/checkpoint codes, workflow states, sequence numbers, internal approval timestamps, supersession chains, or invalid candidates.
+
+Use concise public-facing wording, but keep current-state facts and checkpoint-to-checkpoint changes explicit enough to verify. Avoid compressing multiple unrelated facts into ambiguous shorthand.

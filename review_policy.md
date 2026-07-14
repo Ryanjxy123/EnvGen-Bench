@@ -1,8 +1,9 @@
 # Strict Review Policy
 
-`benchmark/scripts/strict_review_cases.py` is the canonical strict reviewer for
-case promotion. It intentionally scores harder than `auto_review_cases.py` and
-uses gates in addition to a numeric score.
+This document defines the quality gates for case promotion. It is a normative
+authoring policy, not a generated review report. The former
+`benchmark/scripts/strict_review_cases.py` and `auto_review_cases.py` tools are
+no longer present; use the live audit and validation commands below.
 
 ## Decision Values
 
@@ -84,10 +85,10 @@ with `origin=public_download` or `origin=public_crawl` and complete source
 metadata. Synthetic PDF visuals are allowed only as fallback material and should
 not receive full realism credit by default.
 
-The strict reviewer uses heuristics including render dimensions, non-white pixel
-ratio, image entropy, edge density, connected component count, dominant-color
-ratio, embedded PDF image count, page render availability, banned placeholder
-tokens, and perceptual hash similarity.
+Reviews may use heuristics including render dimensions, non-white pixel ratio,
+image entropy, edge density, connected component count, dominant-color ratio,
+embedded PDF image count, page render availability, banned placeholder tokens,
+and perceptual hash similarity.
 
 ## Semantic Grounding Rules
 
@@ -109,16 +110,27 @@ critical expected values. One critical answer value appearing in `task.md`
 forces revision. Multiple critical answer values appearing in `task.md` are a
 reject-level issue.
 
-## Commands
+## Current Commands
+
+Inventory the active dataset:
 
 ```powershell
-python benchmark\scripts\strict_review_cases.py --cases-root benchmark\pilot_cases --mode pilot
+python skills\genbench-case-builder\scripts\case_inventory.py --cases-root benchmark\cases
 ```
+
+Run the non-destructive bundle audit:
 
 ```powershell
-python benchmark\scripts\strict_review_cases.py --cases-root benchmark\cases --mode full
+python skills\genbench-case-builder\scripts\case_bundle_audit.py --cases-root benchmark\cases
 ```
 
-Reports are written to `benchmark/strict_review_auto.json` and
-`benchmark/strict_review_auto.md` in pilot mode, or `benchmark/strict_review_full.*`
-in full mode.
+Run repository validation:
+
+```powershell
+python envgen-evaluation\scripts\validate_cases.py --case-root benchmark\cases
+```
+
+Do not commit generated audit reports or review caches to the benchmark root.
+Type-specific builders may create temporary files under
+`benchmark/case_build_artifacts/`; remove them after the formal case has been
+promoted unless an audit trail is intentionally being retained.

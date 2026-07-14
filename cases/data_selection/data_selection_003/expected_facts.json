@@ -3,175 +3,371 @@
   "task_type": "data_selection",
   "facts": [
     {
-      "id": "selected_items",
-      "description": "The final featured lunch items are the top 3 eligible menu items after all filters and ranking rules.",
-      "source": "env/menu_inventory.sqlite + env/menu_rules.sql",
+      "id": "announcement_identity",
+      "description": "Exact promotion identity, service context, and offer condition.",
+      "source": "task.md + env/menu_rules.sql",
+      "importance": "critical",
+      "expected_value": {
+        "heading": "Nut-Free Quick Lunch Specials",
+        "context": "Downtown — April 15 — 11:00 AM–2:00 PM",
+        "offer": "Offer valid 11:00 AM–2:00 PM or while supplies last."
+      },
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "selected_portfolio",
+      "description": "Unique five-item globally feasible portfolio from the top-16 eligible shortlist.",
+      "source": "all fourteen env tables + env/menu_rules.sql",
       "importance": "critical",
       "expected_value": [
         "Herbed Lentil Wrap",
         "Citrus Grain Bowl",
-        "Miso Veggie Broth"
+        "Smoky Black Bean Sandwich",
+        "Miso Tomato Plate",
+        "Cedar Brown Rice Cup"
       ],
       "canonical_answer": {
-        "selected_item_ids_reference_only": [
-          "M304",
-          "M301",
-          "M311"
+        "item_ids_reference_only": [
+          "MI-2512",
+          "MI-6991",
+          "MI-1754",
+          "MI-3467",
+          "MI-6622"
         ],
-        "selected_item_names": [
-          "Herbed Lentil Wrap",
-          "Citrus Grain Bowl",
-          "Miso Veggie Broth"
+        "eligibility_ranks": [
+          1,
+          2,
+          5,
+          12,
+          13
         ]
       },
-      "semantic_acceptance": "Accept any polished cafe display image that clearly features exactly these three lunch specials. Item IDs may be omitted; names must be identifiable and not replaced by unselected menu items.",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "ranking_order",
-      "description": "Selected lunch specials must be displayed in the rule-based ranking order.",
-      "source": "env/menu_inventory.sqlite + env/menu_rules.sql",
+      "id": "complete_item_records",
+      "description": "Controlling customer records after lot, reserve, station, and noon-projection calculations.",
+      "source": "all fourteen tables in env/menu_inventory.sqlite",
       "importance": "critical",
-      "expected_value": "Herbed Lentil Wrap before Citrus Grain Bowl before Miso Veggie Broth",
-      "canonical_answer": [
-        "1. Herbed Lentil Wrap",
-        "2. Citrus Grain Bowl",
-        "3. Miso Veggie Broth"
-      ],
-      "semantic_acceptance": "Accept left-to-right, top-to-bottom, numbered cards, or another clear ranking cue as long as the order is Herbed Lentil Wrap, then Citrus Grain Bowl, then Miso Veggie Broth.",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "selected_item_display_values",
-      "description": "Each selected item must show the correct name, price, and prep-time label.",
-      "source": "env/menu_inventory.sqlite",
-      "importance": "critical",
-      "expected_value": [
-        "Herbed Lentil Wrap: $9.50, 8 min prep",
-        "Citrus Grain Bowl: $11.00, 9 min prep",
-        "Miso Veggie Broth: $7.75, 6 min prep"
-      ],
-      "canonical_answer": {
+      "expected_value": {
         "Herbed Lentil Wrap": {
-          "price_usd": "9.50",
-          "prep_minutes": 8
+          "eligibility_rank": 1,
+          "dietary_label": "Vegan",
+          "regular_price_usd": 9.5,
+          "special_price_usd": 8.25,
+          "savings_usd": 1.25,
+          "discount_pct": 13.2,
+          "effective_prep_minutes": 9,
+          "calories": 460,
+          "protein_g": 19,
+          "sodium_mg": 620,
+          "customer_rating": 4.8,
+          "open_now": 23,
+          "projected_noon": 14,
+          "service_outlook": "Balanced",
+          "protein_value_per_10g_usd": 4.34,
+          "menu_format": "wrap",
+          "station_code": "hot_line"
         },
         "Citrus Grain Bowl": {
-          "price_usd": "11.00",
-          "prep_minutes": 9
+          "eligibility_rank": 2,
+          "dietary_label": "Vegan • Gluten-free",
+          "regular_price_usd": 11.0,
+          "special_price_usd": 9.5,
+          "savings_usd": 1.5,
+          "discount_pct": 13.6,
+          "effective_prep_minutes": 10,
+          "calories": 520,
+          "protein_g": 17,
+          "sodium_mg": 740,
+          "customer_rating": 4.7,
+          "open_now": 22,
+          "projected_noon": 12,
+          "service_outlook": "At-risk",
+          "protein_value_per_10g_usd": 5.59,
+          "menu_format": "bowl",
+          "station_code": "cold_line"
         },
-        "Miso Veggie Broth": {
-          "price_usd": "7.75",
-          "prep_minutes": 6
+        "Smoky Black Bean Sandwich": {
+          "eligibility_rank": 5,
+          "dietary_label": "Vegan • Gluten-free",
+          "regular_price_usd": 12.0,
+          "special_price_usd": 10.44,
+          "savings_usd": 1.56,
+          "discount_pct": 13.0,
+          "effective_prep_minutes": 10,
+          "calories": 586,
+          "protein_g": 13,
+          "sodium_mg": 855,
+          "customer_rating": 4.7,
+          "open_now": 39,
+          "projected_noon": 28,
+          "service_outlook": "Strong",
+          "protein_value_per_10g_usd": 8.03,
+          "menu_format": "sandwich",
+          "station_code": "hot_line"
+        },
+        "Miso Tomato Plate": {
+          "eligibility_rank": 12,
+          "dietary_label": "Vegetarian • Gluten-free",
+          "regular_price_usd": 7.5,
+          "special_price_usd": 6.53,
+          "savings_usd": 0.97,
+          "discount_pct": 12.9,
+          "effective_prep_minutes": 8,
+          "calories": 301,
+          "protein_g": 15,
+          "sodium_mg": 593,
+          "customer_rating": 4.7,
+          "open_now": 27,
+          "projected_noon": 18,
+          "service_outlook": "Balanced",
+          "protein_value_per_10g_usd": 4.35,
+          "menu_format": "plate",
+          "station_code": "soup_station"
+        },
+        "Cedar Brown Rice Cup": {
+          "eligibility_rank": 13,
+          "dietary_label": "Vegan • Gluten-free",
+          "regular_price_usd": 7.75,
+          "special_price_usd": 6.67,
+          "savings_usd": 1.08,
+          "discount_pct": 13.9,
+          "effective_prep_minutes": 9,
+          "calories": 600,
+          "protein_g": 20,
+          "sodium_mg": 626,
+          "customer_rating": 4.2,
+          "open_now": 42,
+          "projected_noon": 28,
+          "service_outlook": "Strong",
+          "protein_value_per_10g_usd": 3.34,
+          "menu_format": "cup",
+          "station_code": "grill"
         }
       },
-      "semantic_acceptance": "Prices may use equivalent currency formatting. Prep labels may be written as 8 min, ready in 8 minutes, or similar, but values must be attached to the correct item names.",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "nut_free_quick_lunch_copy",
-      "description": "The image should communicate that the selected items are nut-free quick lunch specials.",
-      "source": "env/menu_rules.sql + task.md",
-      "importance": "critical",
-      "expected_value": "nut-free quick lunch specials",
-      "canonical_answer": "Nut-free quick lunch specials",
-      "semantic_acceptance": "Accept equivalent copy such as nut-free lunch picks, quick nut-free lunch, or fast nut-free lunch specials.",
+      "id": "quick_picks",
+      "description": "Ten complete selected-portfolio superlatives, including the projected-noon tie.",
+      "source": "selected item records",
+      "importance": "major",
+      "expected_value": {
+        "fastest": "Miso Tomato Plate — 8 min",
+        "highest_protein": "Cedar Brown Rice Cup — 20g",
+        "biggest_savings": "Smoky Black Bean Sandwich — $1.56",
+        "largest_discount": "Cedar Brown Rice Cup — 13.9%",
+        "lowest_special": "Miso Tomato Plate — $6.53",
+        "lowest_sodium": "Miso Tomato Plate — 593mg",
+        "top_rating": "Herbed Lentil Wrap — 4.8/5",
+        "most_open_now": "Cedar Brown Rice Cup — 42",
+        "most_projected_noon": "Smoky Black Bean Sandwich and Cedar Brown Rice Cup — 28 each",
+        "best_protein_value": "Cedar Brown Rice Cup — $3.34/10g protein"
+      },
       "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
+      "evaluation_role": "required"
     },
     {
-      "id": "unselected_items_not_featured",
-      "description": "Filtered-out items and eligible items below the top 3 cutoff must not appear as featured lunch specials.",
-      "source": "env/menu_inventory.sqlite + env/menu_rules.sql",
+      "id": "find_your_fit",
+      "description": "Complete set memberships for seven customer filters.",
+      "source": "selected item records",
+      "importance": "major",
+      "expected_value": {
+        "special_under_9": [
+          "Herbed Lentil Wrap",
+          "Miso Tomato Plate",
+          "Cedar Brown Rice Cup"
+        ],
+        "protein_at_least_18": [
+          "Herbed Lentil Wrap",
+          "Cedar Brown Rice Cup"
+        ],
+        "sodium_under_700": [
+          "Herbed Lentil Wrap",
+          "Miso Tomato Plate",
+          "Cedar Brown Rice Cup"
+        ],
+        "gluten_free": [
+          "Citrus Grain Bowl",
+          "Smoky Black Bean Sandwich",
+          "Miso Tomato Plate",
+          "Cedar Brown Rice Cup"
+        ],
+        "vegan": [
+          "Herbed Lentil Wrap",
+          "Citrus Grain Bowl",
+          "Smoky Black Bean Sandwich",
+          "Cedar Brown Rice Cup"
+        ],
+        "effective_prep_9_or_less": [
+          "Herbed Lentil Wrap",
+          "Miso Tomato Plate",
+          "Cedar Brown Rice Cup"
+        ],
+        "projected_noon_20_or_more": [
+          "Smoky Black Bean Sandwich",
+          "Cedar Brown Rice Cup"
+        ]
+      },
+      "must_appear_in_image": true,
+      "evaluation_role": "required"
+    },
+    {
+      "id": "portfolio_snapshot",
+      "description": "Portfolio totals, averages, median, extrema, service quantities, and diversity counts.",
+      "source": "selected item records",
+      "importance": "major",
+      "expected_value": {
+        "combined_regular": 47.75,
+        "combined_special": 41.39,
+        "combined_savings": 6.36,
+        "blended_discount_pct": 13.3,
+        "average_special": 8.28,
+        "median_special": 8.25,
+        "average_effective_prep": 9.2,
+        "average_protein": 16.8,
+        "total_protein": 84,
+        "total_calories": 2467,
+        "total_sodium": 3434,
+        "average_rating": 4.62,
+        "total_open_now": 153,
+        "total_projected_noon": 100,
+        "maximum_sodium": 855,
+        "distinct_formats": 5,
+        "distinct_stations": 4
+      },
+      "must_appear_in_image": true,
+      "evaluation_role": "required"
+    },
+    {
+      "id": "pair_ideas",
+      "description": "Budget, protein, and noon-supply pairs under the stated deterministic rules.",
+      "source": "selected item records + env/menu_rules.sql",
+      "importance": "major",
+      "expected_value": {
+        "Budget Duo": {
+          "items": [
+            "Cedar Brown Rice Cup",
+            "Miso Tomato Plate"
+          ],
+          "special": 13.2,
+          "savings": 2.05,
+          "protein": 35,
+          "calories": 901,
+          "projected_noon": 46,
+          "open_now": 69
+        },
+        "Protein Duo": {
+          "items": [
+            "Cedar Brown Rice Cup",
+            "Herbed Lentil Wrap"
+          ],
+          "special": 14.92,
+          "savings": 2.33,
+          "protein": 39,
+          "calories": 1060,
+          "projected_noon": 42,
+          "open_now": 65
+        },
+        "Noon-Safe Duo": {
+          "items": [
+            "Cedar Brown Rice Cup",
+            "Smoky Black Bean Sandwich"
+          ],
+          "special": 17.11,
+          "savings": 2.64,
+          "protein": 33,
+          "calories": 1186,
+          "projected_noon": 56,
+          "open_now": 81
+        }
+      },
+      "must_appear_in_image": true,
+      "evaluation_role": "required"
+    },
+    {
+      "id": "mix_counts",
+      "description": "Overlapping dietary counts and service-outlook counts.",
+      "source": "selected item records",
+      "importance": "major",
+      "expected_value": {
+        "dietary_mix": {
+          "Vegan": 4,
+          "Gluten-free": 4,
+          "Vegetarian": 5
+        },
+        "outlook_mix": {
+          "At-risk": 1,
+          "Balanced": 2,
+          "Strong": 2
+        }
+      },
+      "must_appear_in_image": true,
+      "evaluation_role": "required"
+    },
+    {
+      "id": "near_miss_exclusions",
+      "description": "High-ranked candidates that fail the complete portfolio rules are not promoted.",
+      "source": "eligible shortlist + portfolio constraints",
       "importance": "critical",
       "expected_value": [
-        "Sesame Noodle Cup",
-        "Tomato Basil Soup",
-        "Sunrise Oat Pot",
-        "Roasted Veg Plate",
-        "Coconut Curry Bowl",
-        "Archived Pita Stack",
-        "Test Falafel Box",
-        "Chickpea Salad Cup",
-        "Nutty Power Salad",
-        "Evening Rice Bowl",
-        "Old Menu Quinoa Cup",
-        "Draft Mezze Plate",
-        "Fast Bean Tacos",
-        "Sold Out Veg Pocket",
-        "Internal Staff Bowl"
+        "Miso Veggie Broth",
+        "Woodland Squash Tacos",
+        "Savory Cauliflower Wrap",
+        "South Market Cauliflower Cup",
+        "Roasted Barley Bowl",
+        "Bright Couscous Plate",
+        "Meadow White Bean Cup",
+        "Stoneground Cauliflower Cup"
       ],
-      "canonical_answer": "Only Herbed Lentil Wrap, Citrus Grain Bowl, and Miso Veggie Broth should be featured.",
-      "semantic_acceptance": "The image may use generic food graphics, but it must not label or promote any unselected menu item as a lunch special.",
-      "must_not_appear_in_image": true,
-      "evaluation_role": "negative_only"
-    },
-    {
-      "id": "availability_stock_and_threshold_exclusions",
-      "description": "Unavailable, sold-out, and stock-threshold items are excluded.",
-      "source": "env/menu_inventory.sqlite + env/menu_rules.sql",
-      "importance": "major",
-      "expected_value": [
-        "Roasted Veg Plate unavailable",
-        "Sold Out Veg Pocket stock 0",
-        "Tomato Basil Soup stock 10"
-      ],
-      "canonical_answer": "Exclude Roasted Veg Plate because available=0; exclude Sold Out Veg Pocket because stock=0; exclude Tomato Basil Soup because stock 10 does not satisfy stock>10.",
-      "semantic_acceptance": "None of these items should be featured.",
-      "must_not_appear_in_image": true,
-      "evaluation_role": "negative_only"
-    },
-    {
-      "id": "status_window_and_test_exclusions",
-      "description": "Non-active, test, internal, draft, archived, or wrong-window items are excluded.",
-      "source": "env/menu_inventory.sqlite + env/menu_rules.sql",
-      "importance": "major",
-      "expected_value": [
-        "Archived Pita Stack archived",
-        "Test Falafel Box test",
-        "Old Menu Quinoa Cup winter_menu",
-        "Draft Mezze Plate draft",
-        "Internal Staff Bowl internal"
-      ],
-      "canonical_answer": "Exclude Archived Pita Stack, Test Falafel Box, Old Menu Quinoa Cup, Draft Mezze Plate, and Internal Staff Bowl because they fail status or service-window requirements.",
-      "semantic_acceptance": "None of these items should be featured.",
-      "must_not_appear_in_image": true,
-      "evaluation_role": "negative_only"
-    },
-    {
-      "id": "meal_nut_and_prep_exclusions",
-      "description": "Wrong meal type, nut-containing, and slow-prep items are excluded.",
-      "source": "env/menu_inventory.sqlite + env/menu_rules.sql",
-      "importance": "major",
-      "expected_value": [
-        "Sunrise Oat Pot breakfast",
-        "Evening Rice Bowl dinner",
-        "Sesame Noodle Cup contains nuts",
-        "Nutty Power Salad contains nuts",
-        "Coconut Curry Bowl prep 12"
-      ],
-      "canonical_answer": "Exclude Sunrise Oat Pot and Evening Rice Bowl for meal type mismatch; exclude Sesame Noodle Cup and Nutty Power Salad for contains_nuts=1; exclude Coconut Curry Bowl because prep_minutes=12 exceeds the limit.",
-      "semantic_acceptance": "None of these items should be featured.",
-      "must_not_appear_in_image": true,
-      "evaluation_role": "negative_only"
-    },
-    {
-      "id": "eligible_but_below_top_n",
-      "description": "Eligible lunch items below the top 3 cutoff are not final featured items.",
-      "source": "env/menu_inventory.sqlite + env/menu_rules.sql",
-      "importance": "major",
-      "expected_value": [
-        "Fast Bean Tacos",
-        "Chickpea Salad Cup"
-      ],
-      "canonical_answer": "Fast Bean Tacos and Chickpea Salad Cup pass filters but rank below the top 3 cutoff.",
-      "semantic_acceptance": "These items should not be promoted as featured lunch specials.",
+      "canonical_answer": "Only the five selected items may receive featured, Quick Pick, filter, or Pair Idea status.",
       "must_not_appear_in_image": true,
       "evaluation_role": "negative_only"
     }
   ],
-  "calculation_notes": "Independent calculation: query menu_items and filter meal_type='lunch', status='active', available=1, stock>10, contains_nuts=0, prep_minutes<=10, and service_window='weekday_lunch'. Eligible rows are M304 Herbed Lentil Wrap (margin 97, prep 8, price 9.50), M301 Citrus Grain Bowl (margin 94, prep 9, price 11.00), M311 Miso Veggie Broth (margin 91, prep 6, price 7.75), M316 Fast Bean Tacos (margin 90, prep 10, price 8.95), and M310 Chickpea Salad Cup (margin 88, prep 7, price 8.25). Sort by margin_score descending, prep_minutes ascending, and price_usd ascending; there are no ties affecting top 3. Sorted eligible order is M304, M301, M311, M316, M310. Select top 3, so final featured items are Herbed Lentil Wrap ($9.50, 8 min prep), Citrus Grain Bowl ($11.00, 9 min prep), and Miso Veggie Broth ($7.75, 6 min prep). Exclusions: M302 contains nuts; M303 stock 10 equals the exclusive stock threshold and is not greater than 10; M305 breakfast; M306 available=0; M307 prep 12 exceeds limit; M308 archived; M309 test; M312 contains nuts; M313 dinner; M314 winter_menu wrong window; M315 draft; M317 stock 0; M318 internal; M316 and M310 are eligible but below top 3."
+  "calculation_notes": {
+    "decision_time": "2026-04-15 10:30:00",
+    "eligible_count": 16,
+    "shortlist_size": 16,
+    "feasible_portfolios": 1,
+    "selected_rank_vector": [
+      1,
+      2,
+      5,
+      12,
+      13
+    ],
+    "selection_constraints": {
+      "formats": 5,
+      "minimum_stations": 4,
+      "minimum_vegan": 4,
+      "minimum_gluten_free": 4,
+      "combined_special_cap": 42.0,
+      "minimum_open_now": 150,
+      "minimum_projected_noon": 100,
+      "minimum_average_rating": 4.6,
+      "minimum_total_protein": 84,
+      "maximum_total_sodium": 3500
+    },
+    "table_counts": {
+      "allergen_assessments": 788,
+      "catering_holds": 867,
+      "dietary_certifications": 828,
+      "ingredient_lot_reviews": 1800,
+      "inventory_snapshots": 1071,
+      "menu_items": 360,
+      "nutrition_reviews": 834,
+      "performance_metrics": 648,
+      "preorder_reservations": 844,
+      "promotion_reviews": 945,
+      "service_forecasts": 761,
+      "service_reserves": 1800,
+      "station_service_levels": 20,
+      "supplier_clearances": 757
+    }
+  }
 }

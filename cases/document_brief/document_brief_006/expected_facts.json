@@ -1,0 +1,174 @@
+{
+  "case_id": "document_brief_006",
+  "task_type": "document_brief",
+  "facts": [
+    {
+      "id": "nims_model_and_structures",
+      "description": "Use NIMS 2017 and identify all four official command-and-coordination structures.",
+      "source": "env/FEMA_NIMS_2017_Learning_Materials.pptx, slides 1-2 and 19",
+      "importance": "critical",
+      "expected_value": [
+        "NIMS 2017",
+        "Incident Command System (ICS)",
+        "Emergency Operations Centers (EOCs)",
+        "Multiagency Coordination Group (MAC Group)",
+        "Joint Information System (JIS)"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "official_hierarchy",
+      "description": "JIS is the fourth structure and operates across ICS, EOCs, and MAC Group; JIC manages JIS activities; MACS is only an umbrella term if used.",
+      "source": "FEMA slides 19, 39-42",
+      "importance": "critical",
+      "expected_value": "Four peer structures; JIS cross-cutting; JIC subordinate/center; MACS umbrella only",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "ics_complete_role",
+      "description": "ICS handles on-scene tactical incident management, command/objectives, operational organization, and Unified Command when authorities share responsibility.",
+      "source": "FEMA slides 21, 24 and related command-and-coordination content",
+      "importance": "critical",
+      "expected_value": "On-scene tactical command and operational organization, including Unified Command concept",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "eoc_relationship_recipients",
+      "description": "EOC provides off-scene support to incident command, on-scene personnel, and other EOCs without taking tactical command.",
+      "source": "FEMA slides 29-31",
+      "importance": "critical",
+      "expected_value": [
+        "Off-scene support",
+        "Incident command",
+        "On-scene personnel",
+        "Other EOCs",
+        "No tactical command"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "eoc_functions_and_variability",
+      "description": "Universal EOC functions are distinguished from variable organization and activation examples.",
+      "source": "FEMA slides 30-36",
+      "importance": "critical",
+      "expected_value": [
+        "Information management",
+        "Resource management",
+        "Communicating policy decisions",
+        "EOC organization varies"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "mac_participation_responsibilities",
+      "description": "MAC Group participation and decision roles include senior administrators/executives, supported participant categories, strategic policy, scarce resources, and cooperative decisions.",
+      "source": "FEMA slides 38-39",
+      "importance": "critical",
+      "expected_value": [
+        "Senior administrators or executives",
+        "Designees or NGO representatives",
+        "Strategic policy guidance",
+        "Scarce-resource prioritization/allocation",
+        "Cooperative multiagency decisions"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "mac_full_boundary",
+      "description": "MAC Group does not command incidents or field tactics and does not replace operations, coordination, or dispatch.",
+      "source": "FEMA slide 39",
+      "importance": "critical",
+      "expected_value": [
+        "No incident command",
+        "No field-tactical direction",
+        "Does not replace operations, coordination, or dispatch"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "jis_purpose_audience_quality",
+      "description": "JIS integrates incident information and public affairs for public and stakeholders using the source quality standard.",
+      "source": "FEMA slide 40",
+      "importance": "critical",
+      "expected_value": [
+        "Integrates incident information and public affairs",
+        "Public",
+        "Stakeholders",
+        "Consistent",
+        "Coordinated",
+        "Accurate",
+        "Accessible",
+        "Timely",
+        "Complete"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "jis_scope_jic_activities",
+      "description": "JIS supports all three other structures; JIC manages JIS activities; activity examples are source-grounded.",
+      "source": "FEMA slides 40-41",
+      "importance": "critical",
+      "expected_value": [
+        "ICS",
+        "EOCs",
+        "MAC Group",
+        "JIC manages/coordinates JIS activities",
+        "Interagency messaging",
+        "Public-information plans/strategies",
+        "Leadership advice",
+        "Rumor management"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "review_priority_method",
+      "description": "Eligible feedback is ranked by distinct eligible-session prevalence, then response count, then recency.",
+      "source": "env/Partner_Agency_Orientation_Handoff.docx and env/Partner_Orientation_Review_Log.xlsx",
+      "importance": "critical",
+      "expected_value": "Join sheets; eligible submitted participant surveys from completed Spring 2026 Partner Orientation sessions; rank by distinct sessions",
+      "must_appear_in_image": false
+    },
+    {
+      "id": "selected_theme_set",
+      "description": "Three highest-ranked eligible clarification themes.",
+      "source": "env/Partner_Orientation_Review_Log.xlsx under the handoff method",
+      "importance": "critical",
+      "expected_value": [
+        "MAC policy/resource decisions versus operational command",
+        "EOC common functions versus one fixed organization/activation model",
+        "JIS public scope, audience, and information standards versus internal/EOC-only communications"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "clarification_format",
+      "description": "Exactly three misconception-plus-correction notes without quotes, counts, unanswered questions, or a fourth topic.",
+      "source": "env/Partner_Agency_Orientation_Handoff.docx",
+      "importance": "major",
+      "expected_value": "Exactly three complete corrections",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "scenario_mappings",
+      "description": "Four concurrent actions map to ICS/UC, EOC, MAC Group, and JIS through JIC with their detailed roles and boundaries preserved.",
+      "source": "env/Spring_2026_Partner_Exercise_Scenario.docx and FEMA source",
+      "importance": "critical",
+      "expected_value": {
+        "A": "ICS/Unified Command",
+        "B": "EOC",
+        "C": "MAC Group",
+        "D": "JIS coordinated through JIC"
+      },
+      "must_appear_in_image": true
+    },
+    {
+      "id": "off_scope_and_source",
+      "description": "FEMA NIMS 2017 attribution is included and off-scope or unsupported additions are excluded.",
+      "source": "env/Partner_Agency_Orientation_Handoff.docx",
+      "importance": "major",
+      "expected_value": "FEMA NIMS 2017 source line; no active 2008 comparison, Planning P, detailed workflows, activation table, detailed org charts, course sequence, contacts, or local logo",
+      "must_appear_in_image": true
+    }
+  ],
+  "calibration_note": "Grounded score-2 thresholds require complete multi-part source synthesis. The checklist does not use typography, layout, aesthetic, overlap, clipping, or other general visual-quality conditions; the unchanged single visual VQA remains responsible for those judgments."
+}

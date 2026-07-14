@@ -1,0 +1,12 @@
+wave_id,bundle_id,catalog_release,scope,environment,event_at,state,effective_at,note
+DW-0630-A,CB-0626-B,4.8,Central Service-to-Cash,production,2026-06-30T15:05:00,APPROVED,2026-06-30T15:20:00,Initial production wave
+DW-0630-A,CB-0626-B,4.8,Central Service-to-Cash,production,2026-06-30T15:28:00,ACTIVATED,2026-06-30T15:30:00,Initial activation
+DW-0630-A,CB-0626-B,4.8,Central Service-to-Cash,production,2026-06-30T15:42:00,SUPERSEDED,2026-06-30T15:42:00,Replaced by consolidated wave
+DW-0630-C,CB-0626-B,4.8,Central Service-to-Cash,production,2026-06-30T15:25:00,APPROVED,2026-06-30T16:00:00,Consolidated production wave
+DW-0630-C,CB-0626-B,4.8,Central Service-to-Cash,production,2026-06-30T15:45:00,RELEASED,2026-06-30T16:00:00,Released to production control
+DW-0630-C,CB-0626-B,4.8,Central Service-to-Cash,production,2026-06-30T15:55:00,ACTIVATED,2026-06-30T16:00:00,Current wave for 16:30 snapshot
+DW-0630-D,CB-0626-B,4.8,Central Service-to-Cash,production,2026-06-30T16:05:00,APPROVED,2026-06-30T16:25:00,Approved after request cutoff
+DW-0630-D,CB-0626-B,4.8,Central Service-to-Cash,production,2026-06-30T16:24:00,ACTIVATED,2026-06-30T16:25:00,Activated after deployment cutoff
+DW-0701-A,CB-0701-A,4.9,Central Service-to-Cash,production,2026-06-30T15:50:00,ACTIVATED,2026-07-01T09:00:00,Future catalog wave
+DW-0630-P,CB-0630-P,4.8,Post-payment,production,2026-06-30T15:35:00,ACTIVATED,2026-06-30T15:40:00,Different process scope
+DW-0630-S,CB-0626-B,4.8,Central Service-to-Cash,staging,2026-06-30T15:30:00,ACTIVATED,2026-06-30T15:35:00,Staging validation wave

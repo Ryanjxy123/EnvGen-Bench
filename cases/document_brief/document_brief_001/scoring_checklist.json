@@ -1,185 +1,98 @@
 {
   "case_id": "document_brief_001",
-  "dimensions": {
-    "task_completion": {
-      "label": "Task Completion",
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "complete_public_poster",
-          "check": "The output is a finished public course or workshop promotional poster, not a notes page, extraction table, screenshot of source material, or generic summary.",
-          "points": 5,
-          "scoring_hint": "Full credit for a self-contained poster with promotional hierarchy; partial credit for a poster-like image that is incomplete or too document-like. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
-        },
-        {
-          "id": "required_content_scope",
-          "check": "The poster attempts to include only the required display content named in task.md: final public title, lead instructor, approved schedule, target audience, and exactly three learning highlights.",
-          "points": 5,
-          "fact_ids": [
-            "final_public_course_title",
-            "lead_instructor",
-            "approved_schedule",
-            "target_audience",
-            "accepted_highlights"
-          ],
-          "scoring_hint": "Do not require identical wording for highlights, but the output should clearly cover all requested content types. Do not penalize CTA omission. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
-        }
-      ]
-    },
-    "grounded_requirement_satisfaction": {
-      "label": "Grounded Requirement Satisfaction",
-      "weight": 0.55,
-      "items": [
-        {
-          "id": "title_from_final_public_version",
-          "check": "Uses the final public title, Climate Data Stories for Civic Action, rather than a draft or internal title.",
-          "points": 7,
-          "fact_id": "final_public_course_title",
-          "scoring_hint": "Minor punctuation or adding 'studio' is acceptable; replacing it with a draft title is not."
-        },
-        {
-          "id": "lead_instructor_accuracy",
-          "check": "Identifies Dr. Maya Chen as the lead instructor and does not promote a guest contributor as the lead.",
-          "points": 6,
-          "fact_id": "lead_instructor",
-          "scoring_hint": "Maya Chen without the honorific is acceptable."
-        },
-        {
-          "id": "approved_schedule_accuracy",
-          "check": "Uses the approved public schedule: Wednesdays, May 6-27, 2026, 6:00-8:15 PM.",
-          "points": 7,
-          "fact_id": "approved_schedule",
-          "scoring_hint": "Accept listing all four Wednesday dates if the time is correct; do not accept replaced April dates or tentative language."
-        },
-        {
-          "id": "audience_accuracy",
-          "check": "Names the target audience as city staff, nonprofit analysts, and community organizers working with climate or resilience data.",
-          "points": 5,
-          "fact_id": "target_audience",
-          "scoring_hint": "Close paraphrases are fine if all three audience groups remain recognizable."
-        },
-        {
-          "id": "three_grounded_highlights",
-          "check": "Includes exactly three poster-safe highlights grounded in the final outcomes: public narratives from messy climate data, accessible charts/map captions, and a one-page action brief.",
-          "points": 8,
-          "fact_id": "accepted_highlights",
-          "scoring_hint": "Do not penalize concise paraphrase; penalize adding extra highlights or choosing internal/process-only notes as highlights."
-        },
-        {
-          "id": "negative_exclusion",
-          "check": "Avoids draft, internal, unconfirmed, or unsupported details such as old titles, old dates, venue TBA, tuition, certificate claims, registration cap, internal sponsor, draft affiliation, or waitlist notes.",
-          "points": 6,
-          "fact_ids": [
-            "rejected_old_titles",
-            "rejected_old_dates",
-            "rejected_unconfirmed_details"
-          ],
-          "scoring_hint": "This is negative-only: award full credit when these details are absent. Penalize only explicit inclusion of prohibited details."
-        },
-        {
-          "id": "optional_cta_safety",
-          "check": "No call to action is required. If no CTA appears, award full credit; if a CTA appears, it must use the public apply deadline and URL rather than waitlist, internal registration, a wrong URL, a wrong deadline, or unsupported details.",
-          "points": 2,
-          "fact_id": "public_cta",
-          "scoring_hint": "Omitting the CTA earns full credit. Deduct only for an included CTA that is wrong, internal, unsupported, or misleading."
-        }
-      ]
-    },
-    "information_structuring": {
-      "label": "Information Structuring",
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "poster_hierarchy",
-          "check": "Makes the course title and three learning highlights the main visual message, with schedule, audience, and instructor as clear supporting information.",
-          "points": 5,
-          "scoring_hint": "The viewer should understand what the course is and why to attend before reading small details. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
-        },
-        {
-          "id": "compressed_document_information",
-          "check": "Compresses the long brief into concise public-facing poster copy rather than copying long paragraphs, FAQ text, internal notes, or module tables.",
-          "points": 4,
-          "scoring_hint": "Reward selective synthesis and readable text density. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
-        }
-      ]
-    },
-    "visual_communication_quality": {
-      "label": "Visual Communication Quality",
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "poster_visual_polish",
-          "check": "Looks like a polished course/workshop poster with deliberate typography, spacing, color, and composition rather than a plain document page or placeholder template.",
-          "points": 5,
-          "scoring_hint": "Style can vary; focus on professional poster communication. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
-        },
-        {
-          "id": "readability",
-          "check": "All essential text is readable, non-overlapping, and has sufficient contrast at normal viewing size.",
-          "points": 5,
-          "scoring_hint": "Minor small-print issues are acceptable; core facts must remain legible. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
-        },
-        {
-          "id": "balanced_density",
-          "check": "Information density is appropriate for a poster: not overcrowded, not sparse, no obvious template placeholders or irrelevant filler.",
-          "points": 4,
-          "scoring_hint": "Reward clean hierarchy and visual breathing room. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
-        }
-      ]
-    }
+  "evaluation_mode": "image_vqa_0_2",
+  "dimension_weights": {
+    "grounded_requirement_satisfaction": 0.8,
+    "visual_rendering_quality": 0.2
   },
-  "score_caps": [
-    {
-      "id": "not_image_or_not_poster",
-      "max_total": 55,
-      "reason": "The output does not produce a usable promotional poster image.",
-      "trigger": {
-        "type": "wrong_artifact_type",
-        "expected_type": "course/workshop promotional poster image"
+  "grounded_requirement_satisfaction": {
+    "vqa_items": [
+      {
+        "id": "grounded_q01",
+        "question": "Does the poster clearly identify the requested course and term without letting the header dominate the page?",
+        "expected_answer": "Fly Fishing Fundamentals: From Casting to Catching; PE-087; Spring 2026, presented in a compact readable header.",
+        "acceptance_rule": "Score 2 if the full title, PE-087, and Spring 2026 are all clearly readable and the header remains compact, normally within two or three lines. Score 1 if all identity facts are correct but the title is noticeably oversized, or one minor term element is omitted without ambiguity. Score 0 if the course or code is wrong, missing, or unreadable."
+      },
+      {
+        "id": "grounded_q02",
+        "question": "What reconciled overall date range and session count are presented?",
+        "expected_answer": "March 24-April 23, 2026; five sessions.",
+        "acceptance_rule": "Score 2 if the March 24-April 23 run and five-session count are both clear. Score 1 if the range is correct but the year or session count is weak, with Spring 2026 otherwise clear. Score 0 if April 21 is presented as the final date, the count is wrong, or the run is missing."
+      },
+      {
+        "id": "grounded_q03",
+        "question": "How is the indoor foundation stage shown?",
+        "expected_answer": "March 24, March 31, and April 7; 5:30 PM-7:30 PM; Garrett Information Enterprise Center, Room 111, McHenry.",
+        "acceptance_rule": "Score 2 if the three indoor dates, both time endpoints, and GIEC Room 111 or the expanded facility name are clearly grouped as the indoor stage. Score 1 if the first-three indoor sequence and 5:30-7:30 PM time are correct but the dates or updated room are incomplete, including use of the catalog's older McH or McHenry label. Score 0 if the indoor stage is missing, materially wrong, or confused with the outdoor stage."
+      },
+      {
+        "id": "grounded_q04",
+        "question": "How is the outdoor practice stage shown?",
+        "expected_answer": "April 14 and April 23; 6:00 PM-8:00 PM; Deep Creek Lake State Park Discovery Center, McHenry; weather dependent.",
+        "acceptance_rule": "Score 2 if both updated dates, both time endpoints, the Discovery Center meeting place, and the weather caveat are grouped as the outdoor stage. Score 1 if the final-two outdoor structure, 6:00-8:00 PM time, weather caveat, and April 14 are correct but April 23 or the updated meeting place is missing or replaced by the catalog's older April 21 or McH detail. Score 0 if the outdoor stage is missing, uses the wrong time or setting, or is confused with the indoor stage."
+      },
+      {
+        "id": "grounded_q05",
+        "question": "What current price and registration action are displayed?",
+        "expected_answer": "$95; Register by March 19, 2026; garrettcollege.edu/cewd/register.",
+        "acceptance_rule": "Score 2 if $95, a clearly labeled March 19 deadline, and the exact URL are all readable, with the deadline and URL together as one CTA. Score 1 if all three are correct but separated or one label or year is weak. Score 0 if the URL is missing or wrong, or if $89 or March 17 is presented as current."
+      },
+      {
+        "id": "grounded_q06",
+        "question": "Who is the instructor, and who is the course intended for?",
+        "expected_answer": "Instructor Rita Lewis; beginners and people refining existing fly-fishing skills.",
+        "acceptance_rule": "Score 2 if Rita Lewis is clearly identified as instructor and both audience groups are represented in one concise line. Score 1 if the instructor is correct but only one audience group is stated, or both groups are present with a minor readability issue. Score 0 if the instructor is wrong or absent, or no suitable audience is identifiable."
+      },
+      {
+        "id": "grounded_q07",
+        "question": "Do the learning takeaways follow the requested count, order, and level of detail?",
+        "expected_answer": "Exactly three concise takeaways ordered as gear choice, rod setup and knots, then casting; they mention equipment such as rods, fly lines, and reels, rod assembly or essential knots, and casting accuracy and distance.",
+        "acceptance_rule": "Score 2 if exactly three takeaways appear in the requested order and all three are specifically grounded. Score 1 if exactly three and all categories are present but one takeaway is generic, slightly long, or out of order. Score 0 if the count is not three, fewer than two categories are grounded, or unsupported outcomes are added."
+      },
+      {
+        "id": "grounded_q08",
+        "question": "What participant-preparation note is included for the outdoor sessions?",
+        "expected_answer": "Loaner rods are available; participants should bring weather-ready layers and a valid Maryland fishing license for the outdoor sessions.",
+        "acceptance_rule": "Score 2 if loaner rods, weather-ready clothing, and the Maryland fishing-license requirement are all clearly tied to outdoor participation. Score 1 if two of the three ideas are clear and no conflicting instruction appears. Score 0 if the note is missing, says participants must bring their own rod, or omits most of the released instruction."
+      },
+      {
+        "id": "grounded_q09",
+        "question": "Are the eligible course image and current Garrett College CEWD mark used correctly?",
+        "expected_answer": "The stream-casting image from media_104.jpg appears once as a contained panel or banner, and the horizontal brand_26_h.png mark appears undistorted in the footer; the expired image and retired seal are absent.",
+        "acceptance_rule": "Score 2 if both supplied current assets are recognizable, proportionally correct, and placed according to the campaign treatment. Score 1 if one asset is fully correct and the other is present but weakly cropped, cramped, or slightly distorted. Score 0 if a generated fishing scene, another course image, expired crop, retired seal, invented logo, or missing current mark is used."
+      },
+      {
+        "id": "grounded_q10",
+        "question": "Does the poster follow the campaign palette and typography?",
+        "expected_answer": "Teal, charcoal, warm gray, and white dominate; yellow is a small deadline accent; typography is clean sans serif with no script or decorative display face.",
+        "acceptance_rule": "Score 2 if the campaign palette and sans-serif system are consistently used. Score 1 if the correct system clearly dominates but one minor off-palette accent or one small non-sans treatment appears. Score 0 if navy or olive dominates, script or serif display type is prominent, or several decorative type styles are mixed."
+      },
+      {
+        "id": "grounded_q11",
+        "question": "Is the poster organized as a readable course spotlight rather than a crowded generic flyer?",
+        "expected_answer": "Compact title, one contained image, two labeled schedule stages, concise key facts, one preparation note, exactly three takeaways, a prominent deadline-plus-URL CTA, and a clear footer mark; important text stays readable at reduced size.",
+        "acceptance_rule": "Score 2 if all major sections are easy to find in a sensible reading order and the schedule and CTA remain prominent and readable. Score 1 if the overall order works but one section is overly dense, too small, or visually secondary. Score 0 if the title or artwork consumes excessive space, the schedule is a prose block, the CTA is buried or absent, or the layout resembles a crowded administrative form."
+      },
+      {
+        "id": "grounded_q12",
+        "question": "What unrelated course information or internal-only copy is visible?",
+        "expected_answer": "None. No second course title or code, unrelated instructor, phone or email, certification or prerequisite, full instructor biography, full catalog paragraph, or registrar audit note should appear.",
+        "acceptance_rule": "Score 2 if none of the listed unrelated or internal-only material appears. Score 1 if one harmless source reference is tiny, clearly nonactive, and cannot be mistaken for public course information. Score 0 if another course's content, contact details, certification or prerequisite language, biography, copied catalog paragraph, or audit note is presented as part of the poster."
       }
-    },
-    {
-      "id": "core_fact_collapse",
-      "max_total": 60,
-      "reason": "Core facts are broadly wrong, such as using the wrong title, wrong schedule, and wrong lead instructor.",
-      "trigger": {
-        "type": "aggregate_failure",
-        "fact_ids": [
-          "final_public_course_title",
-          "lead_instructor",
-          "approved_schedule"
-        ],
-        "min_failed": 2
+    ]
+  },
+  "visual_rendering_quality": {
+    "image_type": "promotional_poster",
+    "vqa_items": [
+      {
+        "id": "visual_q01",
+        "question": "As a promotional poster or recommendation flyer, does the image create an immediate focal offer, clearly prioritize featured items and details, and combine persuasive visual energy with elegant hierarchy, readable action information, and high-end poster craft?",
+        "score_criteria": {
+          "2": "Award 2 only if the poster is exceptionally compelling and publication-ready: the core offer or recommendation is understood instantly; featured items, prices or details, and action information are clearly separated and easy to scan; the hero focal point is strong; typography, imagery, color, spacing, alignment, and margins are sophisticated and cohesive; promotional emphasis feels deliberate rather than loud or generic; and the whole composition is memorable, balanced, and nearly flawless. No cramped details, unclear CTA, generic sale-template look, weak imagery, malformed text, clipping, overlap, or visible cleanup issue is allowed. Any meaningful professional revision prevents 2.",
+          "1": "Award 1 if the poster is understandable, usable, and visually decent or attractive, but it remains ordinary or has visible flaws such as a modest focal point, cramped details, uneven item emphasis, generic promotional styling, slightly weak CTA, or minor typography and spacing issues.",
+          "0": "Award 0 even when the offer is technically present if the poster looks visibly poor, confusing, or unconvincing: focal hierarchy is weak, items or action details are hard to scan, imagery or typography is crude, composition is cluttered or empty, or the result requires substantial redesign. Blank, corrupted, severely unreadable, clipped, or broken posters are also 0."
+        }
       }
-    },
-    {
-      "id": "multiple_forbidden_details",
-      "max_total": 65,
-      "reason": "The poster explicitly includes multiple forbidden or unsupported details.",
-      "trigger": {
-        "type": "aggregate_failure",
-        "fact_ids": [
-          "rejected_old_titles",
-          "rejected_old_dates",
-          "rejected_unconfirmed_details"
-        ],
-        "min_failed": 2
-      }
-    },
-    {
-      "id": "core_text_unreadable",
-      "max_total": 50,
-      "reason": "Most core poster text is unreadable or visually incoherent.",
-      "trigger": {
-        "type": "aggregate_failure",
-        "fact_ids": [
-          "final_public_course_title",
-          "lead_instructor",
-          "approved_schedule",
-          "accepted_highlights"
-        ],
-        "min_failed": 3
-      }
-    }
-  ]
+    ]
+  }
 }

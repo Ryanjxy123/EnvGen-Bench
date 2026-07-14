@@ -1,44 +1,51 @@
 {
+  "review_name": "Q3 grant monitoring snapshot",
   "include_status": "closed",
   "include_record_type": "actual",
+  "include_grant_cycle": "FY2026",
+  "include_profile_status": "active",
   "baseline_months": [
+    "2026-04",
+    "2026-05",
+    "2026-06"
+  ],
+  "analysis_months": [
     "2026-07",
     "2026-08",
     "2026-09"
   ],
-  "analysis_months": [
-    "2026-10",
-    "2026-11",
-    "2026-12"
-  ],
   "metrics": {
-    "gap_rate_pct": "(approved_budget_k minus verified_spend_k) divided by approved_budget_k times 100",
+    "gap_volume_k": "approved_budget_k minus verified_spend_k",
+    "gap_rate_pct": "gap_volume_k divided by approved_budget_k times 100",
     "gap_rate_change_pct_points": "analysis gap_rate_pct minus baseline gap_rate_pct",
-    "incident_rate_per_1000": "analysis late_reports divided by profile scale_denominator times 1000",
-    "compliance_risk_score": "weighted normalized gap rate, gap-rate change, incident rate, and criticality"
+    "late_report_rate_per_1000": "analysis late_reports divided by profile scale_denominator times 1000",
+    "finding_rate_per_1000": "analysis unresolved_findings divided by profile scale_denominator times 1000",
+    "compliance_attention_score": "weighted normalized gap rate, gap-rate change, late-report rate, finding rate, and criticality"
   },
   "score_weights": {
-    "analysis_gap_rate_pct": 0.35,
-    "gap_rate_change_pct_points": 0.25,
-    "incident_rate_per_1000": 0.2,
-    "criticality": 0.2
+    "analysis_gap_rate_pct": 0.3,
+    "gap_rate_change_pct_points": 0.2,
+    "late_report_rate_per_1000": 0.2,
+    "finding_rate_per_1000": 0.15,
+    "criticality": 0.15
   },
-  "normalization": "Min-max normalize each component across active entities before applying weights.",
+  "normalization": "Min-max normalize each score component across included active programs before applying weights.",
   "priority_thresholds": {
     "high": 70.0,
     "watch": 50.0
   },
   "display_rounding": "Round percentages, percentage-point changes, rates, and scores to one decimal.",
   "tie_break_order": [
-    "higher rounded compliance_risk_score",
+    "higher rounded compliance_attention_score",
     "higher analysis gap volume",
     "higher criticality",
-    "alphabetical entity_name"
+    "alphabetical program_name"
   ],
   "exclude_records": [
-    "forecast",
-    "subtotal",
-    "test",
-    "old_period"
+    "forecast rows",
+    "subtotal rows",
+    "open or draft rows",
+    "prior grant-cycle rows",
+    "inactive profile rows"
   ]
 }

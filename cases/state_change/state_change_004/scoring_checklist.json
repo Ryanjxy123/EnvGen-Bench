@@ -1,91 +1,146 @@
 {
   "case_id": "state_change_004",
-  "dimensions": {
-    "task_completion": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "output_type_state_change_004",
-          "check": "For state_change_004, the output is a finished current_event_poster for the latest-state resolution, not a worksheet, raw table, or generic mockup.",
-          "points": 4,
-          "scoring_hint": "2 = correct finished image type; 1 = correct topic but weak format; 0 = wrong artifact type. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
-        },
-        {
-          "id": "operation_depth_state_change_004",
-          "check": "The image visibly resolves this case's latest-state resolution; reference facts include active_event: Farmers Market Pop-up; current_date: June 11; current_location: North Pavilion; current_sponsor: Local Roots Co-op; stale_details: June 4, East Lawn, Green Crate.",
-          "points": 4,
-          "scoring_hint": "2 = operation is visibly resolved; 1 = operation partly reflected; 0 = copied unsolved source material. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
+  "evaluation_mode": "image_vqa_0_2",
+  "dimension_weights": {
+    "grounded_requirement_satisfaction": 0.8,
+    "visual_rendering_quality": 0.2
+  },
+  "grounded_requirement_satisfaction": {
+    "vqa_items": [
+      {
+        "id": "grounded_q01",
+        "question": "What product, version, and current customer-facing timestamp are presented?",
+        "expected_answer": "OrbitDesk Sync 4.12.0; current as of September 24, 2026 at 7:15 PM UTC.",
+        "acceptance_rule": "Score 2 only if the product name, full version, date, clock time, and UTC qualifier are all correct. Score 1 if the product/version is correct and exactly one timestamp element is omitted or lightly abbreviated without changing the meaning. Score 0 if the product/version is wrong or two or more timestamp elements are missing or incorrect."
+      },
+      {
+        "id": "grounded_q02",
+        "question": "What public availability date, current release state, and public channel are stated?",
+        "expected_answer": "Publicly available September 15, 2026; Servicing rollout; Stable.",
+        "acceptance_rule": "Score 2 only if all three facts are present and exact. Score 1 if exactly two are correct and the third is omitted or slightly shortened. Score 0 if one or fewer are correct, or if General Availability, Fully rolled out, Preview, Maintenance hold, or another non-current state/channel is presented."
+      },
+      {
+        "id": "grounded_q03",
+        "question": "What resolved customer stage and previous public checkpoint are shown?",
+        "expected_answer": "Wave 4 controlled servicing; previous public checkpoint September 23, 2026 at 6:45 PM UTC.",
+        "acceptance_rule": "Score 2 only if the exact stage label and the complete previous checkpoint timestamp are both correct. Score 1 if the stage is correct and the previous checkpoint date is correct but exactly one timing element is omitted. Score 0 if the stage is wrong, the date is wrong, or the image shows Initial general availability, Wave 5, Fully rolled out, or another competing stage."
+      },
+      {
+        "id": "grounded_q04",
+        "question": "What next checkpoint is stated, and what scheduling basis is given for it?",
+        "expected_answer": "Next checkpoint September 30, 2026 at 4:00 PM UTC, after skipping the September 28 release freeze.",
+        "acceptance_rule": "Score 2 only if the next checkpoint date, clock time, UTC qualifier, and release-freeze basis are all correct. Score 1 if the date is correct and exactly one of time, UTC, or freeze detail is omitted. Score 0 if the next checkpoint date is wrong, two or more timing/basis elements are missing, or a different checkpoint such as September 26 is shown."
+      },
+      {
+        "id": "grounded_q05",
+        "question": "What complete current manual-download result is presented?",
+        "expected_answer": "Current manual download: 184,500 of 184,500 download-entitled tenant workspaces worldwide (100.0%).",
+        "acceptance_rule": "Score 2 only if delivered count, eligible count, percentage, population basis, and Worldwide scope are all correct. Score 1 if the counts and percentage are correct and exactly one of basis or scope is omitted. Score 0 if any displayed current count or percentage is wrong, or if two or more required components are missing."
+      },
+      {
+        "id": "grounded_q06",
+        "question": "What previous manual-download result and manual change are presented?",
+        "expected_answer": "Previous manual download: 184,000 of 184,500 (99.7%); change +500 delivered and +0.3 percentage points.",
+        "acceptance_rule": "Score 2 only if the previous delivered count, previous eligible count, previous percentage, delivered-count change, and percentage-point change are all correct. Score 1 if the previous snapshot is correct and exactly one of the two change measures is omitted. Score 0 if any displayed previous or change value is wrong, or if two or more required components are absent."
+      },
+      {
+        "id": "grounded_q07",
+        "question": "What complete current worldwide automatic-update result is presented?",
+        "expected_answer": "Current worldwide automatic update: 1,090,000 of 1,285,000 eligible Windows devices worldwide (84.8%).",
+        "acceptance_rule": "Score 2 only if delivered count, eligible count, weighted percentage, population basis, and Worldwide scope are all correct. Score 1 if the counts and percentage are correct and exactly one of basis or scope is omitted. Score 0 if any displayed current worldwide automatic-update number is wrong, if an averaged regional percentage is used, or if two or more required components are absent."
+      },
+      {
+        "id": "grounded_q08",
+        "question": "What previous worldwide automatic-update result and worldwide change are presented?",
+        "expected_answer": "Previous worldwide automatic update: 1,060,950 of 1,280,000 (82.9%); changes +29,050 delivered, +5,000 eligible, and +1.9 percentage points.",
+        "acceptance_rule": "Score 2 only if the previous delivered count, previous eligible count, previous percentage, delivered change, eligible change, and percentage-point change are all correct. Score 1 if the previous snapshot is correct and exactly one change measure is omitted. Score 0 if any displayed value is wrong or if two or more required components are missing."
+      },
+      {
+        "id": "grounded_q09",
+        "question": "What are the corrected current regional automatic-update results for North America and Europe?",
+        "expected_answer": "North America 383,800 of 422,000 (90.9%), +0.9 pp; Europe 275,000 of 311,000 (88.4%), +1.9 pp.",
+        "acceptance_rule": "Score 2 only if both regions have the correct delivered count, eligible count, current percentage, and percentage-point change. Score 1 if one region is completely correct and the other is omitted or has exactly one incorrect component. Score 0 if neither region is complete or if counts/percentages are assigned to the wrong region."
+      },
+      {
+        "id": "grounded_q10",
+        "question": "What are the corrected current regional automatic-update results for Asia-Pacific except Japan, Japan, and Latin America?",
+        "expected_answer": "Asia-Pacific except Japan 223,200 of 282,000 (79.1%), +0.6 pp; Japan 78,000 of 120,000 (65.0%), +5.0 pp; Latin America 130,000 of 150,000 (86.7%), +4.7 pp.",
+        "acceptance_rule": "Score 2 only if all three regions have the correct delivered count, eligible count, current percentage, and percentage-point change. Score 1 if exactly two regions are completely correct and the third is omitted or has exactly one incorrect component. Score 0 if fewer than two are complete, APAC improperly includes Japan, or any region is materially wrong."
+      },
+      {
+        "id": "grounded_q11",
+        "question": "Which active non-general eligibility qualifications are communicated for legacy proxy, regulated tenants, and unattended Windows devices?",
+        "expected_answer": "Legacy proxy managed Windows devices worldwide: automatic updates paused, manual installer available. Regulated tenants in Germany and Austria: automatic updates deferred through September 30, 2026 at 8:00 AM UTC, admin-controlled deployment available. Unattended Windows devices in Japan: automatic updates limited to the pilot ring, manual installer available.",
+        "acceptance_rule": "Score 2 only if all three qualifications include the correct cohort, region, decision or end timestamp, and fallback. Score 1 if exactly two qualifications are fully correct and the third is omitted or missing one supporting detail. Score 0 if fewer than two are complete or if any qualification is materially wrong."
+      },
+      {
+        "id": "grounded_q12",
+        "question": "Which active non-general eligibility qualifications are communicated for Education tenants in Brazil and pooled VDI Windows devices in Europe?",
+        "expected_answer": "Education tenants in Brazil: automatic updates capped at 50% through September 27, 2026 at 12:00 PM UTC, manual installer available. Pooled VDI Windows devices in Europe: automatic updates paused through September 26, 2026 at 6:00 AM UTC, admin-controlled deployment available.",
+        "acceptance_rule": "Score 2 only if both qualifications include the correct cohort, region, decision or end timestamp, and fallback. Score 1 if one qualification is fully correct and the other is omitted or missing one supporting detail. Score 0 if neither is complete or if either is materially wrong."
+      },
+      {
+        "id": "grounded_q13",
+        "question": "What qualification changes since the previous public checkpoint are stated?",
+        "expected_answer": "Added: Education tenants in Brazil and pooled VDI Windows devices in Europe. Expired: metered-network Windows devices in North America. Continued: legacy proxy worldwide, regulated tenants in Germany and Austria, and unattended Windows devices in Japan.",
+        "acceptance_rule": "Score 2 only if both additions, the one expiration, and the three continuing qualifications are all correctly classified. Score 1 if the added/expired/continued groups are mostly correct and exactly one qualification is omitted without being misclassified. Score 0 if two or more classifications are missing or wrong, or if an active rule is called expired or vice versa."
+      },
+      {
+        "id": "grounded_q14",
+        "question": "What validated launch headline, benefit line, and exact three release highlights are used?",
+        "expected_answer": "Headline: “Move forward with safer sync control.” Benefit line: “Faster recovery, clearer rollout choices, and smaller update transfers.” Highlights: Block-level delta transfer; Metered-network pause and resume; Resumable background recovery.",
+        "acceptance_rule": "Score 2 only if both copy lines and all three exact highlights are present, with no extra or superseded claim. Score 1 if one copy line and all three highlights are correct, or if both copy lines and exactly two highlights are correct with the third omitted. Score 0 if two or more required items are wrong or absent, or if older copy is used."
+      },
+      {
+        "id": "grounded_q15",
+        "question": "What complete validated platform and package specification is stated?",
+        "expected_answer": "Windows desktop; Windows 11 24H2 or later; x64; 211 MB full installer; 63 MB update payload; update payload 70.1% smaller than the full installer.",
+        "acceptance_rule": "Score 2 only if all six package facts are correct. Score 1 if five are correct and the sixth is omitted or rounded without becoming a different package. Score 0 if any core package value is wrong, if full and update sizes are confused, or if two or more required facts are absent."
+      },
+      {
+        "id": "grounded_q16",
+        "question": "What current published issues are communicated?",
+        "expected_answer": "Three issues are current: High legacy-proxy first-sign-in delay for managed Windows devices using legacy proxy authentication, workaround re-authenticate once or use the manual installer; Low metered-network background-recovery pause after sleep for Windows laptops on metered connections, workaround open OrbitDesk Sync and choose Resume background recovery; Medium stale completion status after host restart for pooled VDI Windows devices, workaround sign out and sign back in, then verify Sync status.",
+        "acceptance_rule": "Score 2 only if all three issues include the correct severity, affected cohort, and complete workaround. Score 1 if exactly two issues are fully correct and the third is omitted or missing one supporting detail. Score 0 if fewer than two are complete, if a wrong issue is shown, or if the image claims there are no published issues."
+      },
+      {
+        "id": "grounded_q17",
+        "question": "What issue changes since the previous public checkpoint are stated?",
+        "expected_answer": "The legacy-proxy issue continues and escalates from Medium to High; the metered-network issue continues at Low severity; the pooled-VDI issue is newly published; duplicate completion notifications after a large-file retry are resolved.",
+        "acceptance_rule": "Score 2 only if the continuing proxy issue and its Medium-to-High escalation, the continuing Low-severity metered issue, the newly published pooled-VDI issue, and the resolved duplicate-notification issue are all correctly classified. Score 1 if three of the four change facts are correct and the fourth is omitted. Score 0 if two or more are wrong or absent, or if a current issue is labeled resolved or vice versa."
+      },
+      {
+        "id": "grounded_q18",
+        "question": "What exact current customer action and destination are provided?",
+        "expected_answer": "Review rollout status and choose an install path — support.orbitdesk.example/sync/4-12/wave-4-checkpoint.",
+        "acceptance_rule": "Score 2 only if the exact CTA label and complete destination are both present. Score 1 if the CTA meaning is correct and the destination is recognizably related but incomplete, or vice versa. Score 0 if both are wrong, or if an older GA/servicing-wave route or a future route is used."
+      },
+      {
+        "id": "grounded_q19",
+        "question": "What stage-rationale facts are presented to justify the resolved customer stage?",
+        "expected_answer": "Manual coverage 100.0%; worldwide automatic coverage 84.8%; lowest region Japan at 65.0%; all five regions are non-decreasing; there are five active non-general qualifications; and there is one High-severity issue.",
+        "acceptance_rule": "Score 2 only if all six rationale facts are present and correct. Score 1 if five of the six are correct and the sixth is omitted. Score 0 if any displayed rationale fact is wrong or if two or more are missing."
+      },
+      {
+        "id": "grounded_q20",
+        "question": "What final stage conclusion is communicated based on those gate facts?",
+        "expected_answer": "Wave 4 passes and Wave 5 fails.",
+        "acceptance_rule": "Score 2 only if both conclusions are explicitly correct. Score 1 if Wave 4 is correctly stated but Wave 5 is omitted. Score 0 if Wave 5 is shown as passing, if another stage is claimed, or if the conclusion contradicts the displayed gate facts."
+      }
+    ]
+  },
+  "visual_rendering_quality": {
+    "image_type": "release_announcement",
+    "vqa_items": [
+      {
+        "id": "visual_q01",
+        "question": "As a current software release or rollout announcement, does the image transform the product identity, version, release state, availability or rollout timing, key improvements, qualifications, and next action into a distinctive, publication-ready launch visual rather than a readable specification sheet? Judge the immediacy of the current-state message, the visual prominence of version and status, the synthesis of launch highlights, the treatment of rollout or availability information, the strength and placement of the CTA, the intentional use of the full canvas, and whether the result feels like a designed customer launch campaign instead of a document, release note, help-center page, or technical fact sheet. Do not award 2 merely because the text is correct, aligned, legible, and separated by section rules.",
+        "score_criteria": {
+          "2": "Award 2 only if **all** of the following launch-quality gates are clearly satisfied; failure of any one gate limits the score to 1 at most:\n\n  1. **Immediate release-state communication:** Product identity, current version or rollout state, maturity or channel, and primary availability timing must be understood within seconds. Version and current status must function as deliberate launch elements, not merely appear inside a large heading or subtitle.\n  2. **Campaign-level visual concept:** The composition must have a distinctive product-launch identity through product imagery, interface visuals, branded illustration, rollout graphics, purposeful iconography, or an exceptionally strong typographic concept. Product imagery is not mandatory, but a text-only design must demonstrate outstanding art direction and cannot resemble a memo, release note, brochure page, or specification sheet.\n  3. **Visual synthesis of information:** Key improvements, rollout stages, eligibility, exceptions, system requirements, and supporting qualifications must be edited and visually grouped according to customer priority. Raw label-value lines, long technical lists, repeated plain text sections, or information separated only by horizontal rules do not constitute exceptional visual communication.\n  4. **Decisive hierarchy:** The release message, customer benefit, launch highlights, rollout timing, qualifications, and action must have clearly different visual weights. Supporting compatibility or deployment details must not compete with the release headline or make the announcement feel like documentation.\n  5. **Integrated and actionable CTA:** The next action must be prominent, specific, visually resolved, and clearly connected to the release message. A plain outlined rectangle, detached footer link, generic text button, or CTA surrounded by excessive empty space prevents 2.\n  6. **Whole-canvas composition:** Content, imagery, negative space, margins, and vertical rhythm must be intentionally balanced across the complete canvas. There may be no conspicuous unused lower region, top-heavy composition, oversized canvas, abrupt end to the designed content, or large blank area that makes the artifact appear unfinished.\n  7. **Premium production finish:** Typography, color, spacing, alignment, section transitions, badges, visual accents, and brand treatment must feel refined and consistent at normal viewing size. No tiny qualification text, weak contrast, awkward line break, generic divider treatment, malformed glyph, clipping, overlap, accidental crop, unstable alignment, or visible cleanup issue is allowed.\n\n  A clean and accurate one-column announcement composed mainly of headings, label-value text, bullet points, horizontal dividers, and a basic CTA is a usable release information sheet, not an exceptional launch artifact, and cannot receive 2.",
+          "1": "Award 1 if the announcement is clear, readable, correct-looking, and substantially usable, but still needs visible creative or compositional refinement before prominent customer publication. Typical 1-point outputs include polished but document-like release summaries; plain single-column layouts; technical details presented as label-value lists; repeated horizontal section dividers; limited product imagery or launch storytelling; generic corporate colors; weak separation between launch highlights and system requirements; modest version or status treatment; a basic or detached CTA; excessive unused space; top-heavy content distribution; or styling that resembles release notes, documentation, a slide, or a help-center article. An artifact may be perfectly legible and free of rendering defects yet still receive only 1 when it communicates information without creating a convincing launch experience.",
+          "0": "Award 0 if the announcement is visually poor, unreliable, materially confusing, or unsuitable for customer publication. This includes cases where product identity, current version, release state, timing, eligibility, rollout scope, or next action is difficult to identify; current and superseded states visually compete; important qualifications are hidden or unreadable; hierarchy is chaotic; the layout is severely empty, crowded, fragmented, or unfinished; the CTA is effectively unusable; or substantial redesign is required. Blank, corrupted, severely unreadable, clipped, overlapping, misleading, or otherwise broken outputs are also 0."
         }
-      ],
-      "label": "Task Completion"
-    },
-    "grounded_requirement_satisfaction": {
-      "weight": 0.55,
-      "items": [
-        {
-          "id": "critical_fact_accuracy_state_change_004",
-          "check": "For state_change_004, accurately includes the critical expected facts active_event, current_date, current_location using these case values: active_event: Farmers Market Pop-up; current_date: June 11; current_location: North Pavilion; current_sponsor: Local Roots Co-op; stale_details: June 4, East Lawn, Green Crate.",
-          "points": 8,
-          "scoring_hint": "2 = all critical facts correct; 1 = one minor omission or formatting issue; 0 = any critical fact is wrong or missing.",
-          "fact_ids": [
-            "active_event",
-            "current_date",
-            "current_location"
-          ]
-        },
-        {
-          "id": "required_appear_facts_state_change_004",
-          "check": "Shows required appear facts active_event, current_date, current_location, current_sponsor for state_change_004 without replacing them with unsupported alternatives; expected values include active_event: Farmers Market Pop-up; current_date: June 11; current_location: North Pavilion; current_sponsor: Local Roots Co-op; stale_details: June 4, East Lawn, Green Crate.",
-          "points": 6,
-          "scoring_hint": "2 = all required facts appear clearly; 1 = most appear but one is ambiguous; 0 = multiple required facts are absent."
-        },
-        {
-          "id": "negative_exclusion_facts_state_change_004",
-          "check": "Does not show prohibited or stale facts stale_details in state_change_004; avoids unsupported claims from distractor env material.",
-          "points": 5,
-          "scoring_hint": "2 = no prohibited facts appear; 1 = one weak/ambiguous distractor; 0 = any explicit prohibited value appears.",
-          "fact_ids": [
-            "stale_details"
-          ]
-        }
-      ],
-      "label": "Grounded Requirement Satisfaction"
-    },
-    "information_structuring": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "fact_hierarchy_state_change_004",
-          "check": "Organizes active_event, current_date, current_location as the primary message for state_change_004; supporting values are active_event: Farmers Market Pop-up; current_date: June 11; current_location: North Pavilion; current_sponsor: Local Roots Co-op; stale_details: June 4, East Lawn, Green Crate.",
-          "points": 5,
-          "scoring_hint": "2 = hierarchy is clear and fact-driven; 1 = facts present but hierarchy is muddled; 0 = important facts are buried or missing. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
-        },
-        {
-          "id": "robust_consistency_state_change_004",
-          "check": "Across repeated runs of state_change_004, the same critical facts, exclusions stale_details, ordering rules, and layout constraints must remain consistent.",
-          "points": 4,
-          "scoring_hint": "2 = stable facts and exclusions; 1 = minor wording drift only; 0 = selected facts or exclusions change. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
-        }
-      ],
-      "label": "Information Structuring"
-    },
-    "visual_communication_quality": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "visual_clarity_state_change_004",
-          "check": "For state_change_004, uses clear visual hierarchy, readable typography, sufficient contrast, and non-crowded spacing at the intended current_event_poster size.",
-          "points": 4,
-          "scoring_hint": "2 = readable and polished; 1 = readable with minor clutter; 0 = unreadable or visually incoherent. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
-        },
-        {
-          "id": "visual_layout_density_state_change_004",
-          "check": "The current_event_poster layout has appropriate information density, balanced image/text regions, crisp assets, platform-safe margins, and no placeholder-like areas.",
-          "points": 4,
-          "scoring_hint": "2 = balanced density and crisp assets; 1 = some weak spacing or density; 0 = blank, placeholder-like, or low-resolution. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
-        }
-      ],
-      "label": "Visual Communication Quality"
-    }
+      }
+    ]
   }
 }

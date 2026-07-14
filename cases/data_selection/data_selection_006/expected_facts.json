@@ -3,242 +3,445 @@
   "task_type": "data_selection",
   "facts": [
     {
-      "id": "selected_objects",
-      "description": "Final selected objects after all eligibility filters, ranking rules, optional group limits, and top-N cutoff.",
-      "source": "env/artifact_candidates.csv + env/exhibit_rules.json + env/curator_notes.md",
+      "id": "panel_identity",
+      "description": "Exact public panel identity and exhibition dates.",
+      "source": "task.md + env/curatorial_brief.docx",
+      "importance": "critical",
+      "expected_value": {
+        "title": "Working Waterfront: Featured Objects",
+        "subtitle": "Spring 2027 Community History Exhibition",
+        "exhibition_dates": "March 20–August 15, 2027"
+      },
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "final_selected_order",
+      "description": "Final seven-object set after current-record resolution, selection, and two ordered resource replacements.",
+      "source": "all env files",
       "importance": "critical",
       "expected_value": [
         "Quilted Harbor Map",
         "Brass Transit Token Set",
         "Flood Ledger Pages",
-        "Canal Workers Banner",
         "Neighborhood Radio Mic",
-        "Market Stall Ledger"
+        "Market Stall Ledger",
+        "Canal Workers Banner",
+        "Harbor Signal Lantern"
       ],
       "canonical_answer": {
-        "selected_ids_reference_only": [
-          "A801",
-          "A802",
-          "A803",
-          "A804",
-          "A805",
-          "A806"
+        "eligible_rank_vector": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          8,
+          9
         ],
-        "selected_names": [
-          "Quilted Harbor Map",
-          "Brass Transit Token Set",
-          "Flood Ledger Pages",
-          "Canal Workers Banner",
-          "Neighborhood Radio Mic",
-          "Market Stall Ledger"
+        "selected_accession_numbers_reference_only": [
+          "CHM.1987.042",
+          "CHM.1969.118",
+          "CHM.2002.031",
+          "CHM.1994.205",
+          "CHM.1956.089",
+          "CHM.1978.064",
+          "CHM.1980.143"
         ]
       },
-      "semantic_acceptance": "Accept if exactly these selected objects are featured; IDs may be omitted but names must be identifiable.",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "ranking_order",
-      "description": "Selected objects must appear in rule-based ranking order after tie-breaks and any group-limit application.",
-      "source": "env/artifact_candidates.csv + env/exhibit_rules.json + env/curator_notes.md",
+      "id": "selected_object_public_records",
+      "description": "Complete public record required for each final featured object.",
+      "source": "all env files",
       "importance": "critical",
-      "expected_value": "Quilted Harbor Map before Brass Transit Token Set before Flood Ledger Pages before Canal Workers Banner before Neighborhood Radio Mic before Market Stall Ledger",
-      "canonical_answer": [
-        "1. Quilted Harbor Map",
-        "2. Brass Transit Token Set",
-        "3. Flood Ledger Pages",
-        "4. Canal Workers Banner",
-        "5. Neighborhood Radio Mic",
-        "6. Market Stall Ledger"
-      ],
-      "semantic_acceptance": "Accept left-to-right, top-to-bottom, numbered, or hero-to-secondary order if it preserves the expected ranking.",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "selected_object_display_values",
-      "description": "Each selected object must show the correct name and required display fields.",
-      "source": "env/artifact_candidates.csv",
-      "importance": "critical",
-      "expected_value": [
-        "Quilted Harbor Map, gallery: North Gallery, era: 1880s, care score: 91",
-        "Brass Transit Token Set, gallery: Transit Alcove, era: 1910s, care score: 88",
-        "Flood Ledger Pages, gallery: River Room, era: 1937, care score: 95",
-        "Canal Workers Banner, gallery: North Gallery, era: 1904, care score: 90",
-        "Neighborhood Radio Mic, gallery: Sound Nook, era: 1968, care score: 86",
-        "Market Stall Ledger, gallery: River Room, era: 1922, care score: 84"
-      ],
-      "canonical_answer": {
+      "expected_value": {
         "Quilted Harbor Map": {
+          "priority": 1,
+          "accession_no": "CHM.1987.042",
+          "era_year": "1886",
+          "primary_material": "Cotton, wool, and indigo dye",
           "gallery": "North Gallery",
-          "era_label": "1880s",
-          "condition_risk": 91
+          "zone_id": "NG-01",
+          "story_theme": "Waterfront Work",
+          "public_credit_line": "Gift of the Harbor Quilters Guild",
+          "on_view_start": "2027-03-20",
+          "on_view_end": "2027-08-15",
+          "inclusive_days": 149,
+          "accessibility_feature": "Tactile replica",
+          "interpretive_hook": "Hand-stitched routes trace women’s waterfront labor.",
+          "eligible_rank": 1,
+          "curatorial_score": 97.4
         },
         "Brass Transit Token Set": {
+          "priority": 2,
+          "accession_no": "CHM.1969.118",
+          "era_year": "1914",
+          "primary_material": "Stamped brass",
           "gallery": "Transit Alcove",
-          "era_label": "1910s",
-          "condition_risk": 88
+          "zone_id": "TA-02",
+          "story_theme": "Transit and Movement",
+          "public_credit_line": "City Transit Archive transfer",
+          "on_view_start": "2027-03-20",
+          "on_view_end": "2027-08-15",
+          "inclusive_days": 149,
+          "accessibility_feature": "Audio stop",
+          "interpretive_hook": "Fare tokens reveal the city’s shifting transit network.",
+          "eligible_rank": 2,
+          "curatorial_score": 96.55
         },
         "Flood Ledger Pages": {
+          "priority": 3,
+          "accession_no": "CHM.2002.031",
+          "era_year": "1937",
+          "primary_material": "Ink on bound paper",
           "gallery": "River Room",
-          "era_label": "1937",
-          "condition_risk": 95
-        },
-        "Canal Workers Banner": {
-          "gallery": "North Gallery",
-          "era_label": "1904",
-          "condition_risk": 90
+          "zone_id": "RR-01",
+          "story_theme": "Flood and Resilience",
+          "public_credit_line": "Riverside Mutual Aid Society papers",
+          "on_view_start": "2027-03-20",
+          "on_view_end": "2027-05-31",
+          "inclusive_days": 73,
+          "accessibility_feature": "Large-print transcript",
+          "interpretive_hook": "Daily entries document the 1937 river emergency.",
+          "eligible_rank": 3,
+          "curatorial_score": 96.25
         },
         "Neighborhood Radio Mic": {
+          "priority": 4,
+          "accession_no": "CHM.1994.205",
+          "era_year": "1968",
+          "primary_material": "Steel, aluminum, and Bakelite",
           "gallery": "Sound Nook",
-          "era_label": "1968",
-          "condition_risk": 86
+          "zone_id": "SN-01",
+          "story_theme": "Community Voice",
+          "public_credit_line": "Community Radio 8 collection",
+          "on_view_start": "2027-03-20",
+          "on_view_end": "2027-08-15",
+          "inclusive_days": 149,
+          "accessibility_feature": "Audio stop",
+          "interpretive_hook": "This microphone carried neighborhood voices onto local air.",
+          "eligible_rank": 5,
+          "curatorial_score": 95.8
         },
         "Market Stall Ledger": {
-          "gallery": "River Room",
-          "era_label": "1922",
-          "condition_risk": 84
+          "priority": 5,
+          "accession_no": "CHM.1956.089",
+          "era_year": "1922",
+          "primary_material": "Pencil and ink on paper",
+          "gallery": "Market Gallery",
+          "zone_id": "MG-01",
+          "story_theme": "Markets and Exchange",
+          "public_credit_line": "Lina Moretti family deposit",
+          "on_view_start": "2027-06-01",
+          "on_view_end": "2027-08-15",
+          "inclusive_days": 76,
+          "accessibility_feature": "Large-print transcript",
+          "interpretive_hook": "Sales entries map immigrant commerce along the wharf.",
+          "eligible_rank": 7,
+          "curatorial_score": 95.1
+        },
+        "Canal Workers Banner": {
+          "priority": 6,
+          "accession_no": "CHM.1978.064",
+          "era_year": "1904",
+          "primary_material": "Painted silk and cotton braid",
+          "gallery": "North Gallery",
+          "zone_id": "NG-02",
+          "story_theme": "Waterfront Work",
+          "public_credit_line": "Canal Workers Local 14 collection",
+          "on_view_start": "2027-03-20",
+          "on_view_end": "2027-08-15",
+          "inclusive_days": 149,
+          "accessibility_feature": "Tactile replica",
+          "interpretive_hook": "Union lettering made dockworker solidarity visible.",
+          "eligible_rank": 8,
+          "curatorial_score": 94.7
+        },
+        "Harbor Signal Lantern": {
+          "priority": 7,
+          "accession_no": "CHM.1980.143",
+          "era_year": "1928",
+          "primary_material": "Copper, glass, and painted steel",
+          "gallery": "Transit Alcove",
+          "zone_id": "TA-03",
+          "story_theme": "Transit and Movement",
+          "public_credit_line": "Harbor Master’s Office transfer",
+          "on_view_start": "2027-03-20",
+          "on_view_end": "2027-08-15",
+          "inclusive_days": 149,
+          "accessibility_feature": "Audio stop",
+          "interpretive_hook": "Color signals coordinated harbor traffic before radio.",
+          "eligible_rank": 9,
+          "curatorial_score": 93.85
         }
       },
-      "semantic_acceptance": "Accept equivalent formatting when display values are attached to the correct selected names.",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "group_limit_compliance",
-      "description": "The final selection obeys the at-most-2-per-collection group limit after sorting.",
-      "source": "env/artifact_candidates.csv + env/exhibit_rules.json + env/curator_notes.md",
+      "id": "rotation_notice",
+      "description": "The approved conservation rotation pair and inclusive on-view durations.",
+      "source": "env/conservation_display_review.xlsx",
       "importance": "critical",
-      "expected_value": "Archives: 2, Civic Objects: 1, Media: 1, Textiles: 2",
-      "canonical_answer": "Selected group counts are Archives: 2, Civic Objects: 1, Media: 1, Textiles: 2; no collection exceeds 2.",
-      "semantic_acceptance": "Accept if the image does not add extra featured objects that would violate the group cap.",
-      "must_appear_in_image": false,
+      "expected_value": {
+        "Flood Ledger Pages": {
+          "range": "March 20–May 31, 2027",
+          "inclusive_days": 73
+        },
+        "Market Stall Ledger": {
+          "range": "June 1–August 15, 2027",
+          "inclusive_days": 76
+        }
+      },
+      "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "unselected_objects_not_featured",
-      "description": "Filtered-out, group-cap-blocked where applicable, and below-cutoff eligible candidates must not appear as final featured selections.",
-      "source": "env/artifact_candidates.csv + env/exhibit_rules.json + env/curator_notes.md",
+      "id": "visitor_route",
+      "description": "Official gallery route with complete selected membership and counts.",
+      "source": "env/gallery_install_plan.xlsx + final selection",
       "importance": "critical",
       "expected_value": [
-        "Draft Streetcar Poster",
-        "Private Donor Medal",
-        "Uncleared Protest Sign",
-        "Winter Loan Lantern",
-        "Fragile Glass Plate",
-        "Oversize Canal Gate",
-        "Archive Test Label",
-        "Internal Staff Badge",
-        "Low Score Handbill",
-        "Slow Install Clock",
-        "Cancelled Photo Album",
-        "Archived Wharf Sketch",
-        "Dockworker Union Sash",
-        "Ceramic Ferry Tile",
-        "Oral History Phone",
-        "Youth Zine Cabinet"
+        {
+          "gallery": "North Gallery",
+          "count": 2,
+          "objects": [
+            "Quilted Harbor Map",
+            "Canal Workers Banner"
+          ]
+        },
+        {
+          "gallery": "Transit Alcove",
+          "count": 2,
+          "objects": [
+            "Brass Transit Token Set",
+            "Harbor Signal Lantern"
+          ]
+        },
+        {
+          "gallery": "River Room",
+          "count": 1,
+          "objects": [
+            "Flood Ledger Pages"
+          ]
+        },
+        {
+          "gallery": "Sound Nook",
+          "count": 1,
+          "objects": [
+            "Neighborhood Radio Mic"
+          ]
+        },
+        {
+          "gallery": "Market Gallery",
+          "count": 1,
+          "objects": [
+            "Market Stall Ledger"
+          ]
+        }
       ],
-      "canonical_answer": "Only the selected_objects list should be featured as final selections.",
-      "semantic_acceptance": "The image may mention exclusion context, but must not promote any unselected object as selected.",
-      "must_not_appear_in_image": true,
-      "forbidden_patterns": [
-        "Draft\\ Streetcar\\ Poster",
-        "Private\\ Donor\\ Medal",
-        "Uncleared\\ Protest\\ Sign",
-        "Winter\\ Loan\\ Lantern",
-        "Fragile\\ Glass\\ Plate",
-        "Oversize\\ Canal\\ Gate",
-        "Archive\\ Test\\ Label",
-        "Internal\\ Staff\\ Badge",
-        "Low\\ Score\\ Handbill",
-        "Slow\\ Install\\ Clock",
-        "Cancelled\\ Photo\\ Album",
-        "Archived\\ Wharf\\ Sketch",
-        "Dockworker\\ Union\\ Sash",
-        "Ceramic\\ Ferry\\ Tile",
-        "Oral\\ History\\ Phone",
-        "Youth\\ Zine\\ Cabinet"
-      ],
-      "allowed_patterns": [
-        "\\b(excluded|exclude|filtered out|not selected|not featured|ineligible|below cutoff|blocked)\\b[\\s\\S]{0,120}\\b(Draft\\ Streetcar\\ Poster|Private\\ Donor\\ Medal|Uncleared\\ Protest\\ Sign|Winter\\ Loan\\ Lantern|Fragile\\ Glass\\ Plate|Oversize\\ Canal\\ Gate|Archive\\ Test\\ Label|Internal\\ Staff\\ Badge|Low\\ Score\\ Handbill|Slow\\ Install\\ Clock|Cancelled\\ Photo\\ Album|Archived\\ Wharf\\ Sketch|Dockworker\\ Union\\ Sash|Ceramic\\ Ferry\\ Tile|Oral\\ History\\ Phone|Youth\\ Zine\\ Cabinet)\\b",
-        "\\b(Draft\\ Streetcar\\ Poster|Private\\ Donor\\ Medal|Uncleared\\ Protest\\ Sign|Winter\\ Loan\\ Lantern|Fragile\\ Glass\\ Plate|Oversize\\ Canal\\ Gate|Archive\\ Test\\ Label|Internal\\ Staff\\ Badge|Low\\ Score\\ Handbill|Slow\\ Install\\ Clock|Cancelled\\ Photo\\ Album|Archived\\ Wharf\\ Sketch|Dockworker\\ Union\\ Sash|Ceramic\\ Ferry\\ Tile|Oral\\ History\\ Phone|Youth\\ Zine\\ Cabinet)\\b[\\s\\S]{0,120}\\b(excluded|exclude|filtered out|not selected|not featured|ineligible|below cutoff|blocked)\\b"
-      ],
-      "evaluation_role": "negative_only"
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
-      "id": "eligibility_exclusions",
-      "description": "Candidates failing status, window, eligibility, threshold, readiness, rights, or setup rules are not final selections.",
-      "source": "env/artifact_candidates.csv + env/exhibit_rules.json + env/curator_notes.md",
-      "importance": "major",
-      "expected_value": [
-        "Draft Streetcar Poster",
-        "Private Donor Medal",
-        "Uncleared Protest Sign",
-        "Winter Loan Lantern",
-        "Fragile Glass Plate",
-        "Oversize Canal Gate",
-        "Archive Test Label",
-        "Internal Staff Badge",
-        "Low Score Handbill",
-        "Slow Install Clock",
-        "Cancelled Photo Album",
-        "Archived Wharf Sketch"
-      ],
-      "canonical_answer": "Rows failing eligibility filters are excluded before ranking.",
-      "semantic_acceptance": "No eligibility-failed candidate should be promoted as selected.",
-      "must_not_appear_in_image": true,
-      "forbidden_patterns": [
-        "Draft\\ Streetcar\\ Poster",
-        "Private\\ Donor\\ Medal",
-        "Uncleared\\ Protest\\ Sign",
-        "Winter\\ Loan\\ Lantern",
-        "Fragile\\ Glass\\ Plate",
-        "Oversize\\ Canal\\ Gate",
-        "Archive\\ Test\\ Label",
-        "Internal\\ Staff\\ Badge",
-        "Low\\ Score\\ Handbill",
-        "Slow\\ Install\\ Clock",
-        "Cancelled\\ Photo\\ Album",
-        "Archived\\ Wharf\\ Sketch"
-      ],
-      "evaluation_role": "negative_only"
+      "id": "selection_snapshot",
+      "description": "All derived public portfolio metrics.",
+      "source": "derived from final selection",
+      "importance": "critical",
+      "expected_value": {
+        "featured_object_count": 7,
+        "gallery_count": 5,
+        "theme_count": 5,
+        "earliest_year": 1886,
+        "latest_year": 1968,
+        "numeric_year_span": 82,
+        "gallery_distribution": {
+          "North Gallery": 2,
+          "Transit Alcove": 2,
+          "River Room": 1,
+          "Sound Nook": 1,
+          "Market Gallery": 1
+        },
+        "theme_distribution": {
+          "Waterfront Work": 2,
+          "Transit and Movement": 2,
+          "Flood and Resilience": 1,
+          "Community Voice": 1,
+          "Markets and Exchange": 1
+        },
+        "collection_distribution": {
+          "Textiles": 2,
+          "Civic Objects": 1,
+          "Archives": 2,
+          "Media": 1,
+          "Tools and Trades": 1
+        },
+        "object_type_count": 6,
+        "audio_stop_count": 3,
+        "tactile_replica_count": 2,
+        "large_print_transcript_count": 2,
+        "full_run_object_count": 5,
+        "limited_run_rotation_object_count": 2
+      },
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
-      "id": "group_cap_exclusions",
-      "description": "Eligible candidates blocked by the collection group limit are not final selections.",
-      "source": "env/artifact_candidates.csv + env/exhibit_rules.json + env/curator_notes.md",
-      "importance": "major",
-      "expected_value": [
-        "Dockworker Union Sash"
-      ],
-      "canonical_answer": "Eligible rows that exceed the collection cap are excluded after ranking.",
-      "semantic_acceptance": "No group-cap-blocked candidate should be promoted as selected.",
+      "id": "no_extra_objects",
+      "description": "No non-selected object may receive featured, route, rotation, or recommendation status.",
+      "source": "final selection",
+      "importance": "critical",
+      "expected_value": "Only the seven final selected objects receive public status.",
       "must_not_appear_in_image": true,
-      "forbidden_patterns": [
-        "Dockworker\\ Union\\ Sash"
-      ],
-      "evaluation_role": "negative_only"
-    },
-    {
-      "id": "eligible_below_cutoff",
-      "description": "Eligible candidates below the final top-N cutoff are not final selections.",
-      "source": "env/artifact_candidates.csv + env/exhibit_rules.json + env/curator_notes.md",
-      "importance": "major",
-      "expected_value": [
-        "Ceramic Ferry Tile",
-        "Oral History Phone",
-        "Youth Zine Cabinet"
-      ],
-      "canonical_answer": "Eligible but lower-ranked rows remain unfeatured because they fall below the selected top-N after group limits.",
-      "semantic_acceptance": "Below-cutoff candidates should not be promoted as final selections.",
-      "must_not_appear_in_image": true,
-      "forbidden_patterns": [
-        "Ceramic\\ Ferry\\ Tile",
-        "Oral\\ History\\ Phone",
-        "Youth\\ Zine\\ Cabinet"
-      ],
       "evaluation_role": "negative_only"
     }
   ],
-  "calculation_notes": "Independent calculation: read artifact_candidates.csv and exhibit_rules.json. Filter rows with equals={'status': 'approved', 'exhibit_window': 'spring_2027', 'loan_ready': 'yes', 'rights_cleared': 'yes'}, in={}, gt={'narrative_score': 85}, gte={}, lte={'install_minutes': 60, 'fragility_level': 3}, bool_true={}. Sort eligible rows by [{'field': 'narrative_score', 'direction': 'desc'}, {'field': 'condition_risk', 'direction': 'desc'}, {'field': 'install_minutes', 'direction': 'asc'}, {'field': 'name', 'direction': 'asc'}]. Apply group cap collection<=2 while scanning the ranked list, then select top 6. Eligible ranked order is A801, A802, A803, A804, A821, A805, A806, A807, A808, A822. Selected IDs are A801, A802, A803, A804, A805, A806. Group-cap blocked IDs are A821. Eligible below-cutoff IDs are A807, A808, A822. Exclude eligibility-failed IDs A809, A810, A811, A812, A813, A814, A815, A816, A817, A818, A819, A820; also exclude group-cap-blocked and below-cutoff eligible rows from final featured selections."
+  "calculation_notes": {
+    "selection_as_of": "2027-02-18T16:00:00",
+    "campaign_rights_start": "2027-02-25",
+    "exhibition_start": "2027-03-20",
+    "exhibition_end": "2027-08-15",
+    "exhibition_days": 149,
+    "structured_row_counts": {
+      "object_register": 240,
+      "curatorial_reviews": 512,
+      "interpretation_reviews": 493,
+      "loan_insurance": 490,
+      "rights_credits": 489,
+      "conservation_assessments": 487,
+      "display_requirements": 240,
+      "rotation_approvals": 240,
+      "gallery_zones": 36,
+      "placement_requests": 240,
+      "install_shifts": 12,
+      "case_inventory": 6,
+      "visitor_route_plan": 6
+    },
+    "individually_eligible_count": 12,
+    "eligible_ranking": [
+      {
+        "rank": 1,
+        "accession_no": "CHM.1987.042",
+        "display_title": "Quilted Harbor Map",
+        "curatorial_score": 97.4,
+        "community_relevance": 99,
+        "crew_minutes": 495
+      },
+      {
+        "rank": 2,
+        "accession_no": "CHM.1969.118",
+        "display_title": "Brass Transit Token Set",
+        "curatorial_score": 96.55,
+        "community_relevance": 98,
+        "crew_minutes": 110
+      },
+      {
+        "rank": 3,
+        "accession_no": "CHM.2002.031",
+        "display_title": "Flood Ledger Pages",
+        "curatorial_score": 96.25,
+        "community_relevance": 98,
+        "crew_minutes": 170
+      },
+      {
+        "rank": 4,
+        "accession_no": "CHM.1988.177",
+        "display_title": "Dockyard Safety Poster",
+        "curatorial_score": 95.8,
+        "community_relevance": 97,
+        "crew_minutes": 80
+      },
+      {
+        "rank": 5,
+        "accession_no": "CHM.1994.205",
+        "display_title": "Neighborhood Radio Mic",
+        "curatorial_score": 95.8,
+        "community_relevance": 97,
+        "crew_minutes": 300
+      },
+      {
+        "rank": 6,
+        "accession_no": "CHM.1971.222",
+        "display_title": "Wharf Crane Control Lever",
+        "curatorial_score": 95.4,
+        "community_relevance": 96,
+        "crew_minutes": 460
+      },
+      {
+        "rank": 7,
+        "accession_no": "CHM.1956.089",
+        "display_title": "Market Stall Ledger",
+        "curatorial_score": 95.1,
+        "community_relevance": 96,
+        "crew_minutes": 140
+      },
+      {
+        "rank": 8,
+        "accession_no": "CHM.1978.064",
+        "display_title": "Canal Workers Banner",
+        "curatorial_score": 94.7,
+        "community_relevance": 95,
+        "crew_minutes": 450
+      },
+      {
+        "rank": 9,
+        "accession_no": "CHM.1980.143",
+        "display_title": "Harbor Signal Lantern",
+        "curatorial_score": 93.85,
+        "community_relevance": 94,
+        "crew_minutes": 160
+      },
+      {
+        "rank": 10,
+        "accession_no": "CHM.1982.244",
+        "display_title": "Canal Toll Booth Sign",
+        "curatorial_score": 90.4,
+        "community_relevance": 90,
+        "crew_minutes": 120
+      },
+      {
+        "rank": 11,
+        "accession_no": "CHM.2004.036",
+        "display_title": "Harbor Sign 08",
+        "curatorial_score": 87.3,
+        "community_relevance": 87,
+        "crew_minutes": 292
+      },
+      {
+        "rank": 12,
+        "accession_no": "CHM.2021.276",
+        "display_title": "Wharf Signal Flag 59",
+        "curatorial_score": 86.15,
+        "community_relevance": 84,
+        "crew_minutes": 180
+      }
+    ],
+    "provisional_set": [
+      "Quilted Harbor Map",
+      "Brass Transit Token Set",
+      "Flood Ledger Pages",
+      "Dockyard Safety Poster",
+      "Neighborhood Radio Mic",
+      "Wharf Crane Control Lever",
+      "Market Stall Ledger"
+    ],
+    "resource_replacement_trace": [
+      "Remove Dockyard Safety Poster for zone conflict MG-01.",
+      "Add Harbor Signal Lantern (eligible rank 9).",
+      "Remove Wharf Crane Control Lever for case conflict open_plinth.",
+      "Add Canal Workers Banner (eligible rank 8)."
+    ],
+    "final_eligible_rank_vector": [
+      1,
+      2,
+      3,
+      5,
+      7,
+      8,
+      9
+    ]
+  }
 }

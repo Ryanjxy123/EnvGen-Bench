@@ -1,228 +1,98 @@
 {
   "case_id": "document_brief_004",
-  "dimensions": {
-    "task_completion": {
-      "label": "Task Completion",
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "finished_public_visual",
-          "check": "The output is a finished web-sourced public research infographic, not notes, a text-only summary, a generic placeholder, or a source screenshot.",
-          "points": 5,
-          "scoring_hint": "Placeholder content should score low even if visually polished."
-        },
-        {
-          "id": "required_content_scope",
-          "check": "The image attempts all required display elements explicitly requested in task.md.",
-          "points": 5,
-          "fact_ids": [
-            "source_count",
-            "at_least_two_sources_are_papers_or_pdfs",
-            "source_titles_and_urls_recorded",
-            "synthesis_title",
-            "problem_statement",
-            "three_insights_are_grounded",
-            "method_or_dataset_comparison_present",
-            "limitation_present",
-            "public_takeaway"
-          ],
-          "scoring_hint": "Optional details are not required."
-        }
-      ]
-    },
-    "grounded_requirement_satisfaction": {
-      "label": "Grounded Requirement Satisfaction",
-      "weight": 0.55,
-      "items": [
-        {
-          "id": "critical_required_accuracy",
-          "check": "Critical required facts are accurate, grounded, and visible in the final image.",
-          "points": 14,
-          "fact_ids": [
-            "source_count",
-            "at_least_two_sources_are_papers_or_pdfs",
-            "three_insights_are_grounded",
-            "method_or_dataset_comparison_present"
-          ],
-          "scoring_hint": "Critical omissions or unsupported substitutions should heavily reduce this item."
-        },
-        {
-          "id": "major_required_accuracy",
-          "check": "Major required context is visible and grounded.",
-          "points": 8,
-          "fact_ids": [
-            "source_titles_and_urls_recorded",
-            "synthesis_title",
-            "problem_statement",
-            "limitation_present",
-            "public_takeaway"
-          ],
-          "scoring_hint": "Accept concise paraphrase when meaning is preserved."
-        },
-        {
-          "id": "source_quality_and_count",
-          "check": "Uses at least three public sources, with at least two formal paper/PDF-style sources, and records source labels/URLs or URL cues.",
-          "points": 10,
-          "fact_ids": [
-            "source_count",
-            "at_least_two_sources_are_papers_or_pdfs",
-            "source_titles_and_urls_recorded"
-          ],
-          "scoring_hint": "Do not give high grounded credit for one paper, Wikipedia/blog/news-only sourcing, or unlabeled sources."
-        },
-        {
-          "id": "cross_paper_synthesis",
-          "check": "Provides exactly three insights that synthesize across sources rather than summarizing a single source.",
-          "points": 10,
-          "fact_ids": [
-            "three_insights_are_grounded",
-            "method_or_dataset_comparison_present"
-          ],
-          "scoring_hint": "Credit requires grounded synthesis; unrelated facts copied from separate abstracts should receive limited credit."
-        },
-        {
-          "id": "no_hallucinated_numbers",
-          "check": "Any numeric claims are directly tied to cited sources; unsupported percentages, dates, sample sizes, or effect sizes are absent.",
-          "points": 6,
-          "fact_ids": [
-            "rejected_hallucinated_numeric_claims"
-          ],
-          "scoring_hint": "Full credit when no unsupported numeric claims appear; deduct for numbers that cannot be traced to a listed source."
-        },
-        {
-          "id": "negative_exclusion",
-          "check": "Avoids prohibited sources, unsupported details, old scope, invented numbers, and other overclaims.",
-          "points": 8,
-          "fact_ids": [
-            "rejected_insufficient_sources",
-            "rejected_hallucinated_numeric_claims",
-            "rejected_overclaims"
-          ],
-          "scoring_hint": "Negative-only: award full credit when prohibited details are absent. Deduct only for explicit inclusion."
-        },
-        {
-          "id": "optional_detail_safety",
-          "check": "Optional details are not required; if included they must be supported by document or source text.",
-          "points": 2,
-          "fact_ids": [
-            "optional_public_cta"
-          ],
-          "scoring_hint": "Omission of optional details earns full credit."
-        }
-      ]
-    },
-    "information_structuring": {
-      "label": "Information Structuring",
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "selection_and_compression",
-          "check": "Selects, compresses, and prioritizes long-document or multi-source evidence into a clear public visual message.",
-          "points": 5,
-          "fact_ids": [
-            "source_count",
-            "at_least_two_sources_are_papers_or_pdfs",
-            "source_titles_and_urls_recorded",
-            "synthesis_title",
-            "problem_statement",
-            "three_insights_are_grounded",
-            "method_or_dataset_comparison_present",
-            "limitation_present",
-            "public_takeaway"
-          ],
-          "scoring_hint": "Structuring credit requires mostly correct grounded facts; a tidy generic layout should score low."
-        },
-        {
-          "id": "visual_hierarchy",
-          "check": "Uses a clear visual hierarchy that makes title/topic and three evidence/insight cards primary.",
-          "points": 4,
-          "fact_ids": [
-            "source_count",
-            "at_least_two_sources_are_papers_or_pdfs",
-            "source_titles_and_urls_recorded",
-            "synthesis_title",
-            "problem_statement",
-            "three_insights_are_grounded",
-            "method_or_dataset_comparison_present",
-            "limitation_present",
-            "public_takeaway"
-          ],
-          "scoring_hint": "Reward correct information hierarchy, not mere neatness."
-        }
-      ]
-    },
-    "visual_communication_quality": {
-      "label": "Visual Communication Quality",
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "visual_quality",
-          "check": "The image is readable, polished, visually coherent, and appropriate for the requested public visual.",
-          "points": 5,
-          "scoring_hint": "Visual quality should not compensate for missing grounded facts."
-        },
-        {
-          "id": "legibility",
-          "check": "Core text is legible, non-overlapping, and sufficiently contrasted.",
-          "points": 4,
-          "scoring_hint": "Only penalize actual visual unreadability."
-        }
-      ]
-    }
+  "evaluation_mode": "image_vqa_0_2",
+  "dimension_weights": {
+    "grounded_requirement_satisfaction": 0.8,
+    "visual_rendering_quality": 0.2
   },
-  "score_caps": [
-    {
-      "id": "wrong_artifact",
-      "max_total": 55,
-      "reason": "The output is not a usable public-facing image for the requested task.",
-      "trigger": {
-        "type": "wrong_artifact_type",
-        "expected_type": "web-sourced public research infographic"
+  "grounded_requirement_satisfaction": {
+    "vqa_items": [
+      {
+        "id": "grounded_q01",
+        "question": "What public-facing information does the image show for At least three public sources are used?",
+        "expected_answer": ">=3 public sources",
+        "acceptance_rule": "The image should visibly label at least three sources or include source labels sufficient to identify them."
+      },
+      {
+        "id": "grounded_q02",
+        "question": "What public-facing information does the image show for At least two sources are formal research/paper sources?",
+        "expected_answer": "At least two paper PDFs, arXiv/preprint PDFs, conference paper pages, journal article pages, or formal paper pages",
+        "acceptance_rule": "Do not count Wikipedia, blogs, news, or press releases toward this paper-source minimum."
+      },
+      {
+        "id": "grounded_q03",
+        "question": "What public-facing information does the image show for Source titles and URLs or compact URL cues are visible?",
+        "expected_answer": "Three source labels with titles/authors and URLs/domains/venues",
+        "acceptance_rule": "Accept compact labels such as author/year + arXiv, journal, DOI, .gov, or URL cue."
+      },
+      {
+        "id": "grounded_q04",
+        "question": "What public-facing information does the image show for Synthesized title for the infographic?",
+        "expected_answer": "A synthesized public title about flood adaptation equity or climate-health vulnerability",
+        "acceptance_rule": "Must not simply copy a single paper title."
+      },
+      {
+        "id": "grounded_q05",
+        "question": "What public-facing information does the image show for Brief problem statement?",
+        "expected_answer": "A one-sentence problem statement about flood adaptation equity or climate-health vulnerability",
+        "acceptance_rule": "Accept semantically equivalent visible text. Allow capitalization, spacing, punctuation, and minor formatting differences; numbers, order, direction, units, and named entities must remain materially correct."
+      },
+      {
+        "id": "grounded_q06",
+        "question": "What public-facing information does the image show for Exactly three cross-paper insights grounded in multiple sources?",
+        "expected_answer": "Exactly three insights that synthesize across sources rather than summarizing one source",
+        "acceptance_rule": "Each insight should be traceable to at least one credible source, and collectively the three should draw on multiple sources."
+      },
+      {
+        "id": "grounded_q07",
+        "question": "What public-facing information does the image show for Method or dataset comparison across sources?",
+        "expected_answer": "A comparison of methods, datasets, study regions, populations, or vulnerability measures across sources",
+        "acceptance_rule": "Accept semantically equivalent visible text. Allow capitalization, spacing, punctuation, and minor formatting differences; numbers, order, direction, units, and named entities must remain materially correct."
+      },
+      {
+        "id": "grounded_q08",
+        "question": "What public-facing information does the image show for Limitation or uncertainty is visible?",
+        "expected_answer": "A limitation or uncertainty about methods, scope, causality, generalization, or data coverage",
+        "acceptance_rule": "Accept semantically equivalent visible text. Allow capitalization, spacing, punctuation, and minor formatting differences; numbers, order, direction, units, and named entities must remain materially correct."
+      },
+      {
+        "id": "grounded_q09",
+        "question": "What public-facing information does the image show for Public-facing takeaway is visible?",
+        "expected_answer": "A practical takeaway for public communication or planning that follows from the sources",
+        "acceptance_rule": "Accept semantically equivalent visible text. Allow capitalization, spacing, punctuation, and minor formatting differences; numbers, order, direction, units, and named entities must remain materially correct."
+      },
+      {
+        "id": "grounded_q10",
+        "question": "Does the image actively present any prohibited, excluded, deprecated, or superseded content covered by Forbidden insufficient sourcing? If yes, list it.",
+        "expected_answer": "No",
+        "acceptance_rule": "Only No earns credit; none of the prohibited content may be active in the final image. Prohibited evaluator-only references: single source | only one paper | only Wikipedia | only blogs | only news stories | only press releases | abstract snippets only."
+      },
+      {
+        "id": "grounded_q11",
+        "question": "Does the image actively present any prohibited, excluded, deprecated, or superseded content covered by Unsupported numeric claims are forbidden? If yes, list it.",
+        "expected_answer": "No",
+        "acceptance_rule": "Only No earns credit; none of the prohibited content may be active in the final image. Prohibited evaluator-only references: numeric claims not tied to a cited source | invented percentages | invented sample sizes | invented dates."
+      },
+      {
+        "id": "grounded_q12",
+        "question": "Does the image actively present any prohibited, excluded, deprecated, or superseded content covered by Unsupported policy/causal/generalization claims are forbidden? If yes, list it.",
+        "expected_answer": "No",
+        "acceptance_rule": "Only No earns credit; none of the prohibited content may be active in the final image. Prohibited evaluator-only references: proves policy works everywhere | guarantees adaptation equity | universal causal proof | all communities benefit equally."
       }
-    },
-    {
-      "id": "core_fact_collapse",
-      "max_total": 60,
-      "reason": "Multiple critical facts are missing or wrong.",
-      "trigger": {
-        "type": "aggregate_failure",
-        "fact_ids": [
-          "source_count",
-          "at_least_two_sources_are_papers_or_pdfs",
-          "three_insights_are_grounded",
-          "method_or_dataset_comparison_present"
-        ],
-        "min_failed": 2
+    ]
+  },
+  "visual_rendering_quality": {
+    "image_type": "research_infographic",
+    "vqa_items": [
+      {
+        "id": "visual_q01",
+        "question": "As a research-synthesis infographic, does the image visually separate sources, cross-paper findings, method or dataset comparisons, limitations, uncertainty, and public takeaway while maintaining clear provenance, restrained claims, and exceptional evidence-driven design?",
+        "score_criteria": {
+          "2": "Award 2 only if the infographic is outstanding and publication-ready: sources and provenance are immediately identifiable; synthesis across papers is visually explicit rather than a list of summaries; method or dataset comparison is easy to interpret; limitations and uncertainty receive appropriate prominence; the takeaway is clear but not overstated; all citations, labels, values, and notes are readable; and hierarchy, charts, spacing, typography, color, and density are exceptionally controlled. No buried sources, cramped citations, misleading emphasis, generic card dump, weak synthesis, malformed glyph, clipping, or rendering defect is allowed. Any uncertainty about evidentiary clarity prevents 2.",
+          "1": "Award 1 if the research story is understandable and substantially usable, but it has visible weaknesses such as small citations, modest cross-source synthesis, ordinary comparison encoding, underemphasized limitations, dense copy, or generally generic infographic styling.",
+          "0": "Award 0 even when research content is present if the visual treatment makes the evidence unreliable or difficult to inspect: provenance is unclear, sources blend together, comparisons or limitations are buried, claims are visually overstated, hierarchy is poor, or substantial redesign is needed. Blank, corrupted, severely unreadable, materially misleading, or broken outputs are also 0."
+        }
       }
-    },
-    {
-      "id": "multiple_forbidden",
-      "max_total": 65,
-      "reason": "Multiple forbidden or unsupported details are included as public facts.",
-      "trigger": {
-        "type": "aggregate_failure",
-        "fact_ids": [
-          "rejected_insufficient_sources",
-          "rejected_hallucinated_numeric_claims",
-          "rejected_overclaims"
-        ],
-        "min_failed": 2
-      }
-    },
-    {
-      "id": "core_text_unreadable",
-      "max_total": 50,
-      "reason": "Most core image text is unreadable or visually incoherent.",
-      "trigger": {
-        "type": "aggregate_failure",
-        "fact_ids": [
-          "source_count",
-          "at_least_two_sources_are_papers_or_pdfs",
-          "three_insights_are_grounded",
-          "method_or_dataset_comparison_present"
-        ],
-        "min_failed": 3
-      }
-    }
-  ]
+    ]
+  }
 }

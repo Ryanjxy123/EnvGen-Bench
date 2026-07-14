@@ -49,25 +49,20 @@ Suggested web split per task type:
 
 | Dimension | Weight | Meaning |
 | --- | ---: | --- |
-| Task Completion | 15% | Whether the final image completes the task's core output purpose, not merely whether an image exists |
-| Grounded Requirement Satisfaction | 55% | Whether required content, data, entities, relations, steps, states, and constraints match `env/` and `task.md` |
-| Information Structuring | 15% | Whether mostly-correct environment information is selected, compressed, grouped, and prioritized for image expression |
-| Visual Rendering Quality | 15% | Whether the generated image is readable, clear, visually coherent, and suitable for the task |
+| Grounded Requirement Satisfaction | 80% | Per-case grounded VQAs scored `0/1/2`, averaged, and scaled to 0-100 |
+| Visual Rendering Quality | 20% | One case-owned type-specific visual VQA scored `0/1/2` using explicit criteria |
 
-Use `Visual Rendering Quality` as the canonical dimension name. If older notes
-use `Visual Communication Quality`, treat it as the same concept and normalize
-new files to `Visual Rendering Quality`.
-
-For legacy cases that still use a robustness dimension, use Task Completion
-15%, Grounded Requirement Satisfaction 50%, Information Structuring 15%, Visual
-Rendering / Communication Quality 10%, and Robustness 10%.
+Use `Visual Rendering Quality` as the canonical dimension name. Every case fixes
+its visual type, one visual VQA, and score-0/1/2 criteria. Cases of the same
+visual type must use identical visual VQA text and criteria. Runtime type
+classification is not part of scoring.
 
 Visual quality must not compensate for missing grounded facts. A polished
 placeholder, generic mockup, empty-field template, or image using text such as
 `coming soon`, `unavailable`, `pending`, `details will be available`, `cannot
 finalize`, or `not accessible` can receive visual-quality credit, but should
-score low on Task Completion, Grounded Requirement Satisfaction, and
-Information Structuring.
+score low on Grounded Requirement Satisfaction. Missing or invalid output is a
+task-completion gate that produces total score 0 before judge calls.
 
 Expected facts should distinguish `critical_required`, `major_required`,
 `optional`, and `negative_only` roles. Optional facts are not required to appear;
@@ -186,24 +181,14 @@ Rules:
 - If a web source later disappears, the cached env file should still make the
   case solvable.
 
-Helper command for caching a public image or PDF:
+When caching an external asset, place it directly under the case's `env/`
+directory and record its URL, retrieval date, license note, conversion note,
+SHA-256, and file size in `metadata.json` or an adjacent source sidecar.
 
-```powershell
-D:\MiniConda\envs\genbench\python.exe benchmark\scripts\fetch_public_asset.py `
-  --url "https://example.org/public-asset.png" `
-  --out "pilot_cases/example_001/env/public_asset.png" `
-  --license-note "Public-domain or clearly licensed source; verify before use." `
-  --conversion-note "Downloaded unchanged; later embedded in generated PDF."
-```
+## Expansion Workflow
 
-The helper writes the asset and a `.source.json` sidecar with URL, retrieval
-date, license note, conversion note, SHA-256, and file size. The case metadata
-should still include the same source information for evaluator visibility.
-
-## Pilot-First Workflow
-
-1. Create one pilot case for each task dimension.
-2. Review whether each pilot has enough but not excessive environment evidence.
-3. Refine the schemas based on real pilot needs.
-4. Extract task-specific templates only after pilots are stable.
-5. Expand to the full 200-case set.
+1. Inventory the active cases and choose an unused case id.
+2. Build the case under `benchmark/cases/<task_type>/<case_id>/`.
+3. Audit evidence sufficiency, provenance, leakage, and scoring coverage.
+4. Run schema and repository validation against `benchmark/cases/`.
+5. Promote only cases that pass the quality gates in `review_policy.md`.

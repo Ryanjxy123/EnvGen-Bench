@@ -1,165 +1,116 @@
 {
   "case_id": "data_insight_006",
-  "dimensions": {
-    "task_completion": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "output_type_data_insight_006",
-          "check": "The output should be a finished campus_energy_infographic for a facilities review, not a raw spreadsheet, notes page, or generic dashboard placeholder.",
-          "points": 4,
-          "scoring_hint": "Full credit when the artifact reads as a polished energy-use infographic with clear KPI treatment."
-        },
-        {
-          "id": "energy_insight_resolution_data_insight_006",
-          "check": "The infographic should visibly resolve the energy insight task by aggregating valid meter readings, normalizing intensity, applying demand-watch rules, and presenting a decision-oriented takeaway.",
-          "points": 4,
-          "scoring_hint": "Full credit when the main computed insights are present and not replaced by source-table copying."
-        }
-      ],
-      "label": "Task Completion"
-    },
-    "grounded_requirement_satisfaction": {
-      "weight": 0.55,
-      "items": [
-        {
-          "id": "critical_total_actual_kwh_data_insight_006",
-          "check": "Verify that total actual October metered usage is shown as 66,620 kWh or an equivalent 66.6K kWh expression.",
-          "points": 5,
-          "fact_id": "total_actual_kwh",
-          "scoring_hint": "No credit if subtotal, estimated, forecast, or old-period values are used."
-        },
-        {
-          "id": "critical_peak_usage_period_data_insight_006",
-          "check": "Verify that the peak usage period is 2026-10-31 with about 11,980 kWh.",
-          "points": 5,
-          "fact_id": "peak_usage_period",
-          "scoring_hint": "Partial credit only if the correct period is identified but the value is ambiguous."
-        },
-        {
-          "id": "critical_intensity_data_insight_006",
-          "check": "Verify that Data Center is identified as the highest-intensity building at about 871.5 kWh per 1,000 sq ft.",
-          "points": 6,
-          "fact_id": "highest_intensity_building",
-          "scoring_hint": "Full credit requires normalized intensity, not raw kWh alone."
-        },
-        {
-          "id": "critical_demand_watch_data_insight_006",
-          "check": "Verify that all buildings exceeding the demand-watch threshold are identified.",
-          "points": 5,
-          "fact_id": "demand_watch_buildings",
-          "scoring_hint": "Full credit requires applying the threshold from the rules file."
-        },
-        {
-          "id": "critical_demand_risk_data_insight_006",
-          "check": "Verify that Data Center is identified as the highest demand-risk building with a 520 kW peak.",
-          "points": 5,
-          "fact_id": "demand_risk_building",
-          "scoring_hint": "Full credit requires the valid peak-demand row, not forecast or subtotal rows."
-        },
-        {
-          "id": "critical_usage_share_data_insight_006",
-          "check": "Verify that Science Hall is shown as the largest usage-share building at about 29.2% of valid kWh.",
-          "points": 4,
-          "fact_id": "highest_usage_share",
-          "scoring_hint": "Accept minor rounding differences around the stated share."
-        },
-        {
-          "id": "negative_energy_distractors_data_insight_006",
-          "check": "Verify that estimates, test rows, subtotals, forecasts, old-period rows, cancelled rows, demos, drafts, and non-meter notes are not used as final metrics.",
-          "points": 4,
-          "fact_id": "energy_distractor_exclusions",
-          "scoring_hint": "Mentioning exclusions is fine; using them as answers is not."
-        }
-      ],
-      "label": "Grounded Requirement Satisfaction"
-    },
-    "information_structuring": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "energy_hierarchy_data_insight_006",
-          "check": "The image should organize total use, peak period, normalized intensity, demand-watch exposure, usage share, and takeaway into a scanable facilities-review hierarchy.",
-          "points": 5,
-          "fact_ids": [
-            "total_actual_kwh",
-            "peak_usage_period",
-            "highest_intensity_building",
-            "demand_watch_buildings",
-            "demand_risk_building",
-            "highest_usage_share"
-          ]
-        },
-        {
-          "id": "energy_takeaway_structuring_data_insight_006",
-          "check": "The takeaway should be concise and connected to the computed results rather than restating generic energy advice.",
-          "points": 4,
-          "fact_id": "energy_takeaway"
-        }
-      ],
-      "label": "Information Structuring"
-    },
-    "visual_communication_quality": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "visual_clarity_data_insight_006",
-          "check": "Judge readability, contrast, visual hierarchy, and chart/KPI legibility at infographic size.",
-          "points": 4
-        },
-        {
-          "id": "visual_density_data_insight_006",
-          "check": "The layout should be dense enough for review use while avoiding overlapping labels, tiny text, or empty placeholder regions.",
-          "points": 4
-        }
-      ],
-      "label": "Visual Communication Quality"
-    }
+  "evaluation_mode": "image_vqa_0_2",
+  "dimension_weights": {
+    "grounded_requirement_satisfaction": 0.8,
+    "visual_rendering_quality": 0.2
   },
-  "score_caps": [
-    {
-      "id": "missing_energy_metric",
-      "max_total": 55,
-      "reason": "A required core energy metric is missing.",
-      "trigger": {
-        "type": "missing_required_count",
-        "fact_ids": [
-          "total_actual_kwh",
-          "peak_usage_period",
-          "highest_intensity_building",
-          "demand_watch_buildings",
-          "demand_risk_building",
-          "highest_usage_share"
-        ],
-        "min_missing": 1
+  "grounded_requirement_satisfaction": {
+    "vqa_items": [
+      {
+        "id": "grounded_q01",
+        "question": "What analysis cycle, comparison cycle, and final-row eligibility basis does the snapshot state?",
+        "expected_answer": "OCT-2026 / October 2026 compared with BASELINE-2026; latest eligible posted, approved, operational interval-meter revision; active meter mapping; in-scope active facility; approved FY2026-R2 calibration valid on the reading date.",
+        "acceptance_rule": "Score 2 only if the image explicitly states both cycles and all six basis elements: interval-meter, posted, approved, operational, latest revision, and valid active mapping/profile/calibration treatment. Score 1 only if both cycles and at least four of the six basis elements are stated without contradiction. Score 0 if either cycle is wrong or absent, fewer than four basis elements are present, or any stated rule contradicts the protocol."
+      },
+      {
+        "id": "grounded_q02",
+        "question": "What post-filter review coverage and October rejection audit are reported?",
+        "expected_answer": "22 included facilities, 30 contributing meters, 150 retained October rows, and 54 rejected OCT-2026 candidate rows.",
+        "acceptance_rule": "Score 2 only if all four counts are explicitly shown and correctly labeled. Score 1 only if exactly three counts are correct, or all four are present with one minor labeling ambiguity that does not change what is counted. Score 0 if two or fewer counts are correct, a count is attached to the wrong population, or candidate and retained rows are conflated."
+      },
+      {
+        "id": "grounded_q03",
+        "question": "What adjusted October total, five-week baseline-equivalent, and campus change are reported?",
+        "expected_answer": "349,178 adjusted kWh; 312,500 kWh five-week baseline-equivalent; +11.7%.",
+        "acceptance_rule": "Score 2 only if all three values are explicitly shown with the total and baseline-equivalent correctly distinguished and the + sign or increase direction preserved. Score 1 only if two values are correct and the third is omitted or rounded beyond the requested precision. Score 0 if fewer than two are correct, raw kWh is substituted, the baseline is treated as an eight-week total, or the direction/sign is wrong."
+      },
+      {
+        "id": "grounded_q04",
+        "question": "Which campus week is identified as the October peak, and what value and monthly share are attached to it?",
+        "expected_answer": "2026-10-31 / Oct 31, 2026; 78,914 adjusted kWh; 22.6% of October use.",
+        "acceptance_rule": "Score 2 only if the date, adjusted kWh, and 22.6% monthly share are all present and associated with the same peak week. Score 1 only if the correct date and value are shown but the share is absent or imprecise. Score 0 if the date or value is wrong, the share is attached to another metric, or only a generic end-of-month statement is given."
+      },
+      {
+        "id": "grounded_q05",
+        "question": "What are the top three facilities by adjusted October use, in order, with their values?",
+        "expected_answer": "1) Research Computing Lab 25,545 kWh; 2) Whitaker Science Hall 24,780 kWh; 3) Data Sciences Center 24,480 kWh.",
+        "acceptance_rule": "Score 2 only if all three facilities, order, and values are correct. Score 1 only if the correct three facilities appear and at least two values are correct but there is one ordering or value defect. Score 0 if any required facility is missing, an extra facility displaces the top three, two or more values are wrong, or the order materially changes."
+      },
+      {
+        "id": "grounded_q06",
+        "question": "What individual October-use shares are shown for the top three facilities, and what is their combined share?",
+        "expected_answer": "Research Computing Lab 7.3%; Whitaker Science Hall 7.1%; Data Sciences Center 7.0%; combined 21.4%.",
+        "acceptance_rule": "Score 2 only if all three entity-share associations and the 21.4% combined share are explicit. Score 1 only if all three facilities are paired with shares and exactly one share or the combined figure is missing or off by no more than 0.2 percentage points. Score 0 if two or more shares are absent/wrong, values are attached to the wrong facilities, or the combined share is presented as an individual share."
+      },
+      {
+        "id": "grounded_q07",
+        "question": "Which campus area leads adjusted October use, and what value and campus share are reported?",
+        "expected_answer": "Labs; 123,385 adjusted kWh; 35.3%.",
+        "acceptance_rule": "Score 2 only if Labs is explicitly identified as the leading area and both 123,385 adjusted kWh and 35.3% are shown. Score 1 only if Labs and one of the two values are correct. Score 0 if another area leads, both values are absent/wrong, or a facility is mistaken for the campus-area result."
+      },
+      {
+        "id": "grounded_q08",
+        "question": "Which two eligible facilities have the highest normalized intensity, in order, and what intensities are reported?",
+        "expected_answer": "Research Computing Lab 1,216.4; Network Operations Center 933.3 kWh per 1,000 occupied sq ft.",
+        "acceptance_rule": "Score 2 only if both facilities, order, values, and the per-1,000-occupied-square-foot unit are correct. Score 1 only if both facilities and order are correct but one value or the occupancy-normalized unit is incomplete. Score 0 if either facility is wrong/missing, order is reversed, or monthly kWh or kW is presented as intensity."
+      },
+      {
+        "id": "grounded_q09",
+        "question": "Which facilities are classified as demand watch after matching load class and campus area thresholds?",
+        "expected_answer": "Exactly five: Research Computing Lab, Central Plant, Data Sciences Center, Network Operations Center, and Whitaker Science Hall.",
+        "acceptance_rule": "Score 2 only if exactly these five facilities are identified as the complete watch set, with no additions or omissions. Score 1 only if four of the five are correct and no more than one incorrect facility is included. Score 0 if three or fewer are correct, two or more incorrect facilities are added, or the result is not clearly a threshold-based watch set."
+      },
+      {
+        "id": "grounded_q10",
+        "question": "What maximum demand, matched threshold, and exceedance are reported for the three highest-demand watch facilities?",
+        "expected_answer": "Research Computing Lab 748.6 kW vs 650.0 kW (+15.2%); Central Plant 731.8 vs 690.0 (+6.1%); Data Sciences Center 712.4 vs 660.0 (+7.9%).",
+        "acceptance_rule": "Score 2 only if all three facilities are in correct demand order and every demand, threshold, and exceedance value is correctly associated. Score 1 only if all three facilities are correct and at least six of the nine numeric fields are correct, with no facility-value swaps. Score 0 if a facility is wrong/missing, fewer than six numeric fields are correct, threshold and demand are reversed, or exceedance is reported as an absolute kW difference instead of a percentage."
+      },
+      {
+        "id": "grounded_q11",
+        "question": "What maximum demand, matched threshold, and exceedance are reported for the remaining demand-watch facilities?",
+        "expected_answer": "Network Operations Center 624.9 kW vs 560.0 kW (+11.6%); Whitaker Science Hall 563.5 vs 540.0 (+4.4%).",
+        "acceptance_rule": "Score 2 only if both facilities and all six numeric fields are correct and correctly associated. Score 1 only if both facilities are correct and at least four of the six numeric fields are correct without a facility-value swap. Score 0 if either facility is missing/wrong, fewer than four numeric fields are correct, or a non-watch facility is substituted."
+      },
+      {
+        "id": "grounded_q12",
+        "question": "Which two facilities show the strongest increases from baseline weekly average, and what percentages are reported?",
+        "expected_answer": "Data Sciences Center +36.0%; Research Computing Lab +31.0%, in that order.",
+        "acceptance_rule": "Score 2 only if both facilities, order, positive signs, and percentages are correct. Score 1 only if both facilities are correct but one value is absent or rounded by more than 0.2 percentage points. Score 0 if either facility is wrong/missing, order is reversed, the sign is wrong, or October totals are compared directly with eight-week baseline totals."
+      },
+      {
+        "id": "grounded_q13",
+        "question": "Which two facilities show the largest decreases from baseline weekly average, and what percentages are reported?",
+        "expected_answer": "Performing Arts Annex -12.0%; Campus Bookstore -7.0%, in that order.",
+        "acceptance_rule": "Score 2 only if both facilities, order, negative signs, and percentages are correct. Score 1 only if both facilities are correct but one value is absent or rounded by more than 0.2 percentage points. Score 0 if either facility is wrong/missing, order is reversed, either decrease is shown as positive, or a different comparison basis is used."
+      },
+      {
+        "id": "grounded_q14",
+        "question": "Does the snapshot state the calculation treatment needed to keep multi-meter demand, baseline change, and intensity logically correct?",
+        "expected_answer": "Yes: adjust each retained meter with the valid multiplier; sum meters by facility and week; use the maximum weekly facility demand for threshold comparison; compare October and baseline weekly averages; calculate intensity only for intensity-eligible facilities.",
+        "acceptance_rule": "Score 2 only if all five treatment statements are explicit and none is contradicted. Score 1 only if at least four are explicit and correct. Score 0 if three or fewer are present, meter peaks are simply compared meter-by-meter, baseline totals are compared across unequal week counts, or intensity eligibility is ignored."
+      },
+      {
+        "id": "grounded_q15",
+        "question": "What exclusion audit is stated for superseded, non-final, retired, invalid-calibration, and out-of-scope data?",
+        "expected_answer": "Earlier eligible revisions; pending, estimated, provisional, and reference rows; retired meter mappings; invalid/future/expired calibration rows; Alumni Conference Center; and Storage Annex are excluded from final metrics.",
+        "acceptance_rule": "Score 2 only if the image explicitly covers all five exclusion categories and names both out-of-scope facilities. Score 1 only if at least four categories are stated and both facilities are named, or all five categories are stated but one facility name is omitted. Score 0 if fewer than four categories are stated, either excluded facility is presented as a final result, or excluded/non-final data is described as included evidence."
       }
-    },
-    {
-      "id": "uses_energy_distractor",
-      "max_total": 60,
-      "reason": "The image uses invalid energy rows as final results.",
-      "trigger": {
-        "type": "forbidden_final_answer",
-        "patterns": [
-          "100,000 kWh",
-          "estimated result",
-          "forecast result",
-          "test result",
-          "old-period result"
-        ]
+    ]
+  },
+  "visual_rendering_quality": {
+    "image_type": "executive_dashboard",
+    "vqa_items": [
+      {
+        "id": "visual_q01",
+        "question": "As an executive dashboard or decision snapshot, does the image surface the primary decision immediately through a disciplined KPI hierarchy, meaningful comparison, aligned values and statuses, restrained emphasis, and highly polished meeting-ready composition?",
+        "score_criteria": {
+          "2": "Award 2 only if the dashboard is exceptional and genuinely executive-ready: the central decision or priority is obvious within seconds; ranked comparisons, statuses, and supporting KPIs are visually coherent and numerically aligned; all values, units, labels, and notes are readable; the grid, spacing, typography, color, and emphasis are precise and restrained; charts and cards are purposeful rather than repetitive; and the whole page feels custom, calm, and authoritative. There must be no disconnected KPI-card dump, raw-worksheet feel, excessive density, weak status encoding, clipping, malformed text, or visible cleanup issue. Any meaningful revision a senior design reviewer would request prevents 2.",
+          "1": "Award 1 if the dashboard is understandable, usable in a meeting, and visually decent, but it has visible shortcomings such as generic card layout, weak comparison, small secondary text, uneven grid spacing, excessive density, modest decision emphasis, or ordinary styling.",
+          "0": "Award 0 even if metrics are shown when the dashboard visually fails as a decision tool: the main decision is buried, values or statuses are hard to compare, the page resembles a raw worksheet, hierarchy is chaotic, density is poorly managed, or the design looks noticeably weak and requires substantial redesign. Blank, corrupted, severely unreadable, or materially misleading outputs are also 0."
+        }
       }
-    },
-    {
-      "id": "raw_table_instead_of_infographic",
-      "max_total": 40,
-      "reason": "The output is a raw table or spreadsheet dump instead of an infographic.",
-      "trigger": {
-        "type": "forbidden_final_answer",
-        "patterns": [
-          "week_start,building,campus_zone,kwh",
-          "\\|\\s*week_start\\s*\\|"
-        ]
-      }
-    }
-  ]
+    ]
+  }
 }

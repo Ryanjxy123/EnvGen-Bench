@@ -1,19 +1,545 @@
-application_id,project_name,sector,status,documents_complete,requested_usd,submitted_on,score,community_priority,program_round
-G201,River Mural Revival,arts,eligible,yes,18000,2026-03-01,98,96,spring_2026
-G202,Storm Drain Mapping,climate,eligible,yes,24000,2026-03-07,96,91,spring_2026
-G203,Heat Pump Co-op,climate,eligible,yes,51000,2026-03-02,95,89,spring_2026
-G204,Home Energy Kits,climate,eligible,no,30000,2026-03-01,93,93,spring_2026
-G205,Solar Pantry Pilot,climate,draft,yes,22000,2026-02-28,97,88,spring_2026
-G206,Transit Shade Stops,transportation,eligible,yes,42000,2026-02-27,94,95,spring_2026
-G207,Tree Canopy Fellows,climate,eligible,yes,42000,2026-03-01,94,87,spring_2026
-G208,Cool Roof Block,climate,eligible,yes,39000,2026-03-03,92,90,spring_2026
-G209,Compost Heat Watch,climate,eligible,yes,26000,2026-03-04,80,85,spring_2026
-G210,Flood Ready Neighbors,climate,eligible,yes,50000,2026-03-02,89,95,spring_2026
-G211,Archive Rain Barrel,climate,eligible,yes,28000,2026-02-20,91,94,winter_2025
-G212,Test Cooling Hub,climate,test,yes,19000,2026-02-25,99,99,spring_2026
-G213,Energy Coach Hotline,climate,eligible,yes,33000,2026-03-04,88,86,spring_2026
-G214,Internal Sensor Trial,climate,internal,yes,21000,2026-03-01,100,100,spring_2026
-G215,Rain Garden Crew,climate,eligible,yes,27000,2026-03-05,86,84,spring_2026
-G216,Cancelled Cool Bus,climate,cancelled,yes,25000,2026-03-01,90,97,spring_2026
-G217,Youth Climate Lab,education,eligible,yes,20000,2026-03-01,92,92,spring_2026
-G218,Porch Solar Library,climate,eligible,yes,48000,2026-03-06,87,83,spring_2026
+application_id,project_name,organization_id,track_code,program_round,focus_area,public_district,requested_usd,submitted_at,application_status
+A26-5176,Northgate Green Alley Partnership,ORG-0478,climate_resilience,spring_2026,green_infrastructure,Harbor Point,20500,2026-02-09T15:00:00-08:00,submitted
+A26-8309,Redwood Cool Roof Partnership,ORG-0240,climate_resilience,fall_2025,flood_resilience,River Ward,12500,2026-02-15T08:00:00-08:00,submitted
+A26-1778,Crescent Hill Heat Resilience Hubs,ORG-0231,climate_resilience,spring_2026,urban_heat,Oak Junction,34000,2026-02-08T10:00:00-08:00,submitted
+A26-1004,Hawthorne Public Art Workshop,ORG-0200,neighborhood_arts,spring_2026,green_infrastructure,River Ward,62000,2026-02-18T10:30:00-08:00,submitted
+A26-5019,Glen Park Heat Relief Collaborative,ORG-0354,climate_resilience,spring_2026,urban_heat,West Terrace,56000,2026-03-11T22:34:00-08:00,submitted
+A26-3326,Oak Terrace Native Plant Corridor,ORG-0001,climate_resilience,spring_2026,urban_heat,Central Commons,12000,2026-02-24T12:00:00-08:00,submitted
+A26-6954,Eastwood Community Solar Library,ORG-0124,climate_resilience,summer_2026,urban_heat,Cedar Basin,56000,2026-03-03T14:00:00-08:00,submitted
+A26-8483,Kingston Community Solar Library,ORG-0158,climate_resilience,summer_2026,home_weatherization,West Terrace,45500,2026-03-08T15:30:00-08:00,submitted
+A26-3823,Sherwood Green Alley Project,ORG-0023,climate_resilience,spring_2026,urban_heat,Central Commons,28000,2026-02-02T13:00:00-08:00,submitted
+A26-6031,College Park Entrepreneur Coaching Circle,ORG-0179,small_business,spring_2026,flood_resilience,Cedar Basin,29500,2026-02-09T11:20:00-08:00,submitted
+A26-5042,Harborview Weatherization Collective,ORG-0371,climate_resilience,spring_2026,home_weatherization,West Terrace,28500,2026-02-02T15:10:00-08:00,submitted
+A26-5158,Parkview Cooling Commons,ORG-0467,climate_resilience,fall_2025,home_weatherization,North Ridge,56000,2026-02-19T11:40:00-08:00,submitted
+A26-5696,Hawthorne Community Solar Library,ORG-0208,climate_resilience,spring_2026,flood_resilience,Cedar Basin,51000,2026-03-06T11:50:00-08:00,submitted
+A26-5103,Kingsley Porch Cooling Partnership,ORG-0423,climate_resilience,spring_2026,urban_heat,South Harbor,24000,2026-03-08T21:02:00-08:00,submitted
+A26-8474,Franklin Public Art Workshop,ORG-0121,neighborhood_arts,spring_2026,building_cooling,Hill Corridor,23000,2026-03-04T11:20:00-08:00,submitted
+A26-5000,West End Resilient Homes Network,ORG-0340,climate_resilience,spring_2026,green_infrastructure,River Ward,34500,2026-03-10T22:39:00-08:00,submitted
+A26-9407,Greenfield Creek Restoration Collaborative,ORG-0060,climate_resilience,spring_2026,home_weatherization,North Ridge,24000,2026-01-26T10:10:00-08:00,submitted
+A26-5087,Highland Neighborhood Canopy Fund,ORG-0409,climate_resilience,spring_2026,building_cooling,North Ridge,61000,2026-01-23T11:10:00-08:00,submitted
+A26-7367,Millbrook Heat Relief Partnership,ORG-0139,climate_resilience,spring_2026,green_infrastructure,Meadow Loop,28000,2026-01-26T16:20:00-08:00,submitted
+A26-7111,South Market Home Energy Coaching,ORG-0059,climate_resilience,spring_2026,green_infrastructure,Hill Corridor,17000,2026-03-12T12:20:00-08:00,submitted
+A26-9624,Westhaven Stormwater Action Group,ORG-0077,climate_resilience,spring_2026,home_weatherization,Harbor Point,62500,2026-02-01T16:50:00-08:00,submitted
+A26-2914,Flood Ready Neighbors,ORG-0088,climate_resilience,spring_2026,flood_resilience,River Ward,52000,2026-03-02T09:35:00-08:00,submitted
+A26-5118,West End Community Cooling Hub,ORG-0436,small_business,spring_2026,building_cooling,West Terrace,20000,2026-02-27T13:20:00-08:00,submitted
+A26-5993,Laurel Heights Fresh Food Cooperative,ORG-0074,food_security,winter_2025,home_weatherization,East Market,58000,2026-03-02T11:00:00-08:00,pending_correction
+A26-5156,Ashland Native Plant Corridor,ORG-0171,climate_resilience,spring_2026,urban_heat,Lake District,42000,2026-01-21T12:10:00-08:00,submitted
+A26-5396,Terrace Park Home Energy Coaching,ORG-0070,climate_resilience,spring_2026,green_infrastructure,West Terrace,59500,2026-02-09T14:10:00-08:00,submitted
+A26-0896,Belmont Safe Routes Partnership,ORG-0074,urban_mobility,spring_2026,home_weatherization,Central Commons,45500,2026-02-07T08:30:00-08:00,submitted
+A26-5144,Glen Park Resilient Homes Network,ORG-0456,youth_learning,spring_2026,building_cooling,East Market,25000,2026-03-13T17:15:00-08:00,submitted
+A26-6808,College Park Emergency Cooling Outreach,ORG-0216,climate_resilience,spring_2026,green_infrastructure,Central Commons,35500,2026-02-03T09:10:00-08:00,draft
+A26-9016,Lakeside Transit Access Team,ORG-0248,urban_mobility,spring_2026,flood_resilience,Cedar Basin,51000,2026-01-18T14:40:00-08:00,submitted
+A26-0199,Belmont Rain Garden Network,ORG-0063,climate_resilience,spring_2026,flood_resilience,South Harbor,34500,2026-02-10T09:10:00-08:00,submitted
+A26-5100,Maplewood Drainage Action Group,ORG-0191,climate_resilience,spring_2026,urban_heat,Central Commons,55500,2026-02-02T12:30:00-08:00,submitted
+A26-9933,Woodland Community Solar Library,ORG-0262,climate_resilience,spring_2026,building_cooling,Meadow Loop,55500,2026-03-18T14:10:00-08:00,submitted
+A26-8457,Monroe Heights Heat Relief Partnership,ORG-0053,climate_resilience,spring_2026,building_cooling,Oak Junction,52000,2026-02-06T12:40:00-08:00,submitted
+A26-4984,Hillcrest Building Efficiency Collaborative,ORG-0225,climate_resilience,spring_2026,flood_resilience,Lake District,11500,2026-01-28T14:20:00-08:00,submitted
+A26-3108,Northgate Energy Retrofit Collective,ORG-0173,climate_resilience,spring_2026,home_weatherization,North Ridge,55001,2026-02-27T10:30:00-08:00,submitted
+A26-5132,Willow Creek Native Plant Corridor,ORG-0448,climate_resilience,spring_2026,home_weatherization,Cedar Basin,18500,2026-02-25T15:30:00-08:00,submitted
+A26-6401,Elmwood Creek Restoration Collaborative,ORG-0026,climate_resilience,spring_2026,green_infrastructure,West Terrace,60500,2026-01-15T11:30:00-08:00,submitted
+A26-7566,Sherwood Compost Education Network,ORG-0002,climate_resilience,spring_2026,green_infrastructure,Oak Junction,44000,2026-02-04T12:20:00-08:00,submitted
+A26-6046,Valley View Emergency Cooling Outreach,ORG-0263,climate_resilience,summer_2026,flood_resilience,North Ridge,19000,2026-03-11T16:40:00-08:00,submitted
+A26-1773,Highland Compost Education Network,ORG-0128,climate_resilience,spring_2026,home_weatherization,South Harbor,32000,2026-03-11T09:20:00-08:00,submitted
+A26-5093,Elmwood Resilient Homes Network,ORG-0415,climate_resilience,spring_2026,home_weatherization,Oak Junction,37500,2026-03-05T21:48:00-08:00,withdrawn
+A26-7021,Greenfield Flood Preparedness Team,ORG-0104,climate_resilience,summer_2026,flood_resilience,Lake District,23500,2026-03-12T10:40:00-08:00,submitted
+A26-2619,Willow Creek Weatherization Team,ORG-0272,climate_resilience,spring_2026,home_weatherization,Cedar Basin,30000,2026-03-05T14:20:00-08:00,submitted
+A26-5148,Fairview Stormwater Block Initiative,ORG-0458,climate_resilience,winter_2025,flood_resilience,Oak Junction,55000,2026-03-10T20:17:00-08:00,submitted
+A26-4531,Franklin Entrepreneur Coaching Circle,ORG-0124,small_business,spring_2026,green_infrastructure,Hill Corridor,14500,2026-03-11T12:20:00-08:00,submitted
+A26-5159,Parkview Drainage Action Group,ORG-0468,climate_resilience,spring_2026,green_infrastructure,Hill Corridor,53000,2026-03-05T08:30:00-08:00,submitted
+A26-2739,Northgate Artist Mentor Network,ORG-0199,neighborhood_arts,spring_2026,home_weatherization,East Market,47500,2026-01-23T15:30:00-08:00,submitted
+A26-1251,Sherwood Public Art Workshop,ORG-0099,neighborhood_arts,spring_2026,green_infrastructure,West Terrace,20500,2026-03-13T09:10:00-08:00,submitted
+A26-5072,Kingsley Urban Forestry Fellows,ORG-0396,climate_resilience,spring_2026,green_infrastructure,West Terrace,56500,2026-02-10T16:00:00-08:00,submitted
+A26-8260,Willow Creek Main Street Market Lab,ORG-0107,small_business,spring_2026,urban_heat,Harbor Point,40000,2026-03-09T10:40:00-08:00,withdrawn
+A26-5106,Union Square Native Plant Corridor,ORG-0112,climate_resilience,spring_2026,home_weatherization,Central Commons,64000,2026-03-08T11:40:00-08:00,submitted
+A26-5970,Harbor Point Cool Roof Partnership,ORG-0195,climate_resilience,spring_2026,building_cooling,South Harbor,59500,2026-02-23T08:00:00-08:00,submitted
+A26-8377,Laurel Heights Heat Resilience Hubs,ORG-0051,climate_resilience,spring_2026,flood_resilience,Hill Corridor,54000,2026-02-01T09:40:00-08:00,submitted
+A26-5001,Kingsley Native Plant Corridor,ORG-0341,climate_resilience,spring_2026,urban_heat,Harbor Point,42500,2026-02-18T16:00:00-08:00,submitted
+A26-2026,Prairie View Wellness Navigation Team,ORG-0034,community_health,winter_2025,green_infrastructure,Oak Junction,51000,2026-02-26T14:40:00-08:00,submitted
+A26-2278,Pleasant Valley Rain Garden Network,ORG-0012,climate_resilience,spring_2026,building_cooling,Meadow Loop,10000,2026-02-08T12:40:00-08:00,submitted
+A26-5171,Stonebridge Rain Garden Network,ORG-0082,climate_resilience,winter_2025,home_weatherization,Lake District,44500,2026-02-13T15:40:00-08:00,submitted
+A26-2211,Valley View Canopy Renewal Project,ORG-0033,climate_resilience,spring_2026,home_weatherization,Meadow Loop,49000,2026-03-09T12:30:00-08:00,submitted
+A26-5152,Lincoln Heights Green Alley Partnership,ORG-0462,climate_resilience,spring_2026,home_weatherization,East Market,25500,2026-01-21T11:20:00-08:00,submitted
+A26-1145,Westhaven Compost Education Network,ORG-0027,climate_resilience,winter_2025,flood_resilience,Meadow Loop,18000,2026-03-12T14:20:00-08:00,submitted
+A26-7535,Kingston Main Street Market Lab,ORG-0277,small_business,spring_2026,home_weatherization,South Harbor,46500,2026-03-04T13:30:00-08:00,submitted
+A26-9969,Meadow Park Flood Preparedness Team,ORG-0124,climate_resilience,spring_2026,flood_resilience,East Market,27000,2026-02-15T16:20:00-08:00,submitted
+A26-9698,Riverside Heat Resilience Hubs,ORG-0022,climate_resilience,spring_2026,home_weatherization,Harbor Point,57500,2026-03-04T16:30:00-08:00,submitted
+A26-9486,Pine Ridge Heat Relief Partnership,ORG-0118,climate_resilience,winter_2025,urban_heat,Cedar Basin,31000,2026-02-18T16:50:00-08:00,withdrawn
+A26-1889,Parkview Home Energy Team,ORG-0218,climate_resilience,spring_2026,home_weatherization,West Terrace,28000,2026-03-02T08:50:00-08:00,withdrawn
+A26-8681,Terrace Park Neighborhood Shade Plan,ORG-0167,climate_resilience,spring_2026,building_cooling,South Harbor,16500,2026-02-28T10:00:00-08:00,submitted
+A26-5400,Yorktown Green Alley Project,ORG-0136,climate_resilience,spring_2026,building_cooling,Central Commons,22500,2026-01-15T14:10:00-08:00,submitted
+A26-5157,Brookfield Resilient Homes Network,ORG-0466,climate_resilience,spring_2026,flood_resilience,Oak Junction,60500,2026-01-12T15:00:00-08:00,submitted
+A26-2482,Grandview Tree Stewardship Network,ORG-0047,climate_resilience,spring_2026,urban_heat,North Ridge,25500,2026-01-15T10:40:00-08:00,withdrawn
+A26-5048,Yorktown Heat Relief Collaborative,ORG-0376,climate_resilience,spring_2026,flood_resilience,East Market,19000,2026-03-04T16:30:00-08:00,submitted
+A26-0361,Eastwood Home Energy Coaching,ORG-0003,climate_resilience,spring_2026,green_infrastructure,Harbor Point,12500,2026-03-15T14:30:00-08:00,submitted
+A26-1289,Northgate Heat Relief Partnership,ORG-0197,climate_resilience,spring_2026,building_cooling,Central Commons,29000,2026-02-20T11:30:00-08:00,submitted
+A26-8931,Franklin Neighborhood Shade Plan,ORG-0060,climate_resilience,fall_2025,home_weatherization,Harbor Point,30500,2026-03-14T12:00:00-08:00,submitted
+A26-8229,Spring Hill Community Solar Library,ORG-0091,climate_resilience,spring_2026,building_cooling,Lake District,57000,2026-01-24T08:30:00-08:00,pending_correction
+A26-5081,Meadow Park Main Street Market Lab,ORG-0229,small_business,spring_2026,green_infrastructure,East Market,18500,2026-02-18T16:50:00-08:00,submitted
+A26-5086,Elmwood Flood Readiness Team,ORG-0408,climate_resilience,spring_2026,flood_resilience,Lake District,19000,2026-01-23T10:40:00-08:00,submitted
+A26-1873,University Heights Heat Resilience Hubs,ORG-0078,climate_resilience,winter_2025,building_cooling,Hill Corridor,63000,2026-03-15T16:50:00-08:00,submitted
+A26-0003,Crescent Hill Stormwater Action Group,ORG-0023,climate_resilience,spring_2026,home_weatherization,North Ridge,23000,2026-02-16T09:30:00-08:00,submitted
+A26-0953,Brookfield Native Plant Corridor,ORG-0120,climate_resilience,spring_2026,building_cooling,Meadow Loop,64500,2026-03-14T14:10:00-08:00,submitted
+A26-4074,Clearwater Neighborhood Shade Plan,ORG-0108,climate_resilience,spring_2026,flood_resilience,River Ward,26000,2026-01-30T14:30:00-08:00,submitted
+A26-3419,Oak Terrace Youth Leadership Academy,ORG-0224,youth_learning,spring_2026,urban_heat,West Terrace,12000,2026-01-21T09:10:00-08:00,submitted
+A26-8645,Redwood Resilience Resource Center,ORG-0130,climate_resilience,spring_2026,flood_resilience,Harbor Point,46000,2026-02-19T13:10:00-08:00,submitted
+A26-5045,Claremont Resilience Resource Center,ORG-0373,climate_resilience,spring_2026,urban_heat,North Ridge,52500,2026-02-15T12:30:00-08:00,submitted
+A26-3426,Stonebridge Local Vendor Support,ORG-0279,small_business,spring_2026,urban_heat,Harbor Point,28500,2026-03-11T14:50:00-08:00,submitted
+A26-5062,Stonebridge Stormwater Block Initiative,ORG-0387,climate_resilience,spring_2026,building_cooling,River Ward,30000,2026-02-21T12:10:00-08:00,submitted
+A26-4993,Sherwood Emergency Cooling Outreach,ORG-0100,climate_resilience,spring_2026,green_infrastructure,Lake District,50500,2026-03-01T10:20:00-08:00,submitted
+A26-5007,Fox Hollow Drainage Action Group,ORG-0034,climate_resilience,fall_2025,urban_heat,North Ridge,28500,2026-02-16T09:40:00-08:00,submitted
+A26-1932,Crescent Hill Compost Education Network,ORG-0058,climate_resilience,spring_2026,urban_heat,Meadow Loop,53500,2026-03-02T11:00:00-08:00,draft
+A26-6617,Cedar Grove Mental Health First Aid,ORG-0162,community_health,spring_2026,building_cooling,Cedar Basin,42500,2026-02-19T14:20:00-08:00,submitted
+A26-6298,Harbor Point Public Art Workshop,ORG-0218,neighborhood_arts,spring_2026,green_infrastructure,North Ridge,15500,2026-02-15T10:50:00-08:00,pending_correction
+A26-5173,Fox Hollow Creek Buffer Project,ORG-0475,urban_mobility,spring_2026,urban_heat,Cedar Basin,36000,2026-01-18T11:40:00-08:00,submitted
+A26-8029,Crescent Hill Energy Savings Workshop Series,ORG-0031,climate_resilience,winter_2025,green_infrastructure,South Harbor,22500,2026-03-01T13:10:00-08:00,submitted
+A26-6742,Harbor Point Safe Routes Partnership,ORG-0165,urban_mobility,spring_2026,building_cooling,North Ridge,52500,2026-01-26T16:40:00-08:00,submitted
+A26-4138,New Hope Building Efficiency Collaborative,ORG-0110,climate_resilience,spring_2026,building_cooling,North Ridge,49500,2026-01-27T09:00:00-08:00,submitted
+A26-5149,Lakewood Cool Roof Cooperative,ORG-0459,climate_resilience,winter_2025,green_infrastructure,Meadow Loop,55000,2026-03-05T09:30:00-08:00,submitted
+A26-4453,Meadow Park Heat Resilience Hubs,ORG-0181,climate_resilience,spring_2026,green_infrastructure,Harbor Point,17500,2026-02-09T15:20:00-08:00,submitted
+A26-1258,Kingston Heat Resilience Hubs,ORG-0244,climate_resilience,fall_2025,building_cooling,Central Commons,64500,2026-03-02T14:50:00-08:00,submitted
+A26-5170,Grand Avenue Cooling Commons,ORG-0473,climate_resilience,spring_2026,urban_heat,Harbor Point,53500,2026-01-17T15:00:00-08:00,submitted
+A26-1001,Hillcrest Energy Savings Workshop Series,ORG-0144,climate_resilience,spring_2026,flood_resilience,West Terrace,10500,2026-03-07T09:30:00-08:00,submitted
+A26-9726,Lakeside Neighborhood Shade Plan,ORG-0015,climate_resilience,spring_2026,home_weatherization,Central Commons,29500,2026-03-10T09:20:00-08:00,submitted
+A26-6254,Northgate Native Plant Corridor,ORG-0248,climate_resilience,spring_2026,urban_heat,North Ridge,50000,2026-02-03T08:10:00-08:00,submitted
+A26-5169,Eastwood Tree Stewardship Circle,ORG-0104,climate_resilience,spring_2026,urban_heat,Oak Junction,45500,2026-01-11T13:20:00-08:00,submitted
+A26-3179,Franklin Home Energy Coaching,ORG-0277,climate_resilience,fall_2025,building_cooling,South Harbor,31500,2026-02-16T14:30:00-08:00,duplicate
+A26-5179,Yorktown Cooling Commons,ORG-0481,climate_resilience,spring_2026,urban_heat,Lake District,43000,2026-01-24T13:30:00-08:00,submitted
+A26-5182,Pinehurst Cool Roof Cooperative,ORG-0483,climate_resilience,spring_2026,urban_heat,River Ward,47000,2026-01-24T13:30:00-08:00,submitted
+A26-5239,Belmont Wellness Navigation Team,ORG-0124,community_health,spring_2026,flood_resilience,Central Commons,26500,2026-01-28T09:00:00-08:00,withdrawn
+A26-3425,Yorktown Business Skills Workshop,ORG-0093,small_business,spring_2026,flood_resilience,East Market,36000,2026-01-25T08:30:00-08:00,submitted
+A26-6165,Belmont Compost Education Network,ORG-0257,climate_resilience,spring_2026,home_weatherization,South Harbor,65000,2026-02-11T16:40:00-08:00,submitted
+A26-5113,Willow Creek Urban Forestry Fellows,ORG-0431,climate_resilience,spring_2026,green_infrastructure,Central Commons,50500,2026-01-31T13:50:00-08:00,submitted
+A26-3657,University Heights Stormwater Action Group,ORG-0209,climate_resilience,spring_2026,flood_resilience,East Market,60000,2026-01-28T14:20:00-08:00,submitted
+A26-5011,Kingsley Community Cooling Hub,ORG-0347,neighborhood_arts,spring_2026,urban_heat,East Market,44000,2026-01-18T09:50:00-08:00,submitted
+A26-8545,Lakeside After-School Learning Lab,ORG-0068,youth_learning,spring_2026,home_weatherization,River Ward,50000,2026-01-22T16:00:00-08:00,submitted
+A26-3079,Clearwater Tree Stewardship Network,ORG-0221,climate_resilience,spring_2026,flood_resilience,Hill Corridor,48500,2026-03-09T14:10:00-08:00,submitted
+A26-5043,Pinehurst Resilience Resource Center,ORG-0223,climate_resilience,spring_2026,building_cooling,West Terrace,50000,2026-01-29T15:10:00-08:00,submitted
+A26-5274,Ashland Neighborhood Shade Plan,ORG-0257,climate_resilience,spring_2026,green_infrastructure,Oak Junction,34500,2026-02-09T11:30:00-08:00,submitted
+A26-1270,Millbrook Food Recovery Team,ORG-0033,food_security,spring_2026,home_weatherization,Oak Junction,15500,2026-01-19T16:50:00-08:00,submitted
+A26-8002,Maplewood Building Efficiency Collaborative,ORG-0230,climate_resilience,fall_2025,green_infrastructure,South Harbor,28500,2026-01-29T13:20:00-08:00,submitted
+A26-5070,Civic Center Resilient Homes Network,ORG-0394,climate_resilience,spring_2026,urban_heat,North Ridge,41000,2026-02-20T10:30:00-08:00,submitted
+A26-2800,Quarry District Cool Roof Partnership,ORG-0240,climate_resilience,spring_2026,urban_heat,Lake District,61000,2026-02-01T15:00:00-08:00,withdrawn
+A26-9305,Yorktown Entrepreneur Coaching Circle,ORG-0067,small_business,winter_2025,green_infrastructure,Harbor Point,31500,2026-03-07T16:50:00-08:00,submitted
+A26-1970,Spring Hill Canopy Renewal Project,ORG-0186,climate_resilience,spring_2026,flood_resilience,West Terrace,12500,2026-01-25T16:20:00-08:00,submitted
+A26-2159,Meadow Park Cool Roof Partnership,ORG-0175,climate_resilience,fall_2025,green_infrastructure,Lake District,63000,2026-03-08T12:00:00-08:00,submitted
+A26-0622,Ashland Flood Preparedness Team,ORG-0011,climate_resilience,fall_2025,flood_resilience,North Ridge,51000,2026-01-28T13:10:00-08:00,submitted
+A26-5032,Maplewood Heat Relief Collaborative,ORG-0088,climate_resilience,spring_2026,flood_resilience,River Ward,56000,2026-02-18T16:30:00-08:00,submitted
+A26-6126,Juniper Square Main Street Market Lab,ORG-0138,small_business,spring_2026,green_infrastructure,Hill Corridor,60000,2026-03-04T14:10:00-08:00,submitted
+A26-5160,Eastwood Drainage Action Group,ORG-0005,climate_resilience,summer_2026,flood_resilience,River Ward,22000,2026-01-25T14:50:00-08:00,submitted
+A26-5373,Juniper Square Food Recovery Team,ORG-0014,food_security,spring_2026,green_infrastructure,Central Commons,24500,2026-03-03T10:30:00-08:00,duplicate
+A26-5051,Stonebridge Tree Stewardship Circle,ORG-0379,climate_resilience,summer_2026,building_cooling,South Harbor,28500,2026-03-06T18:44:00-08:00,submitted
+A26-8259,Greenfield Building Efficiency Collaborative,ORG-0153,climate_resilience,fall_2025,urban_heat,Meadow Loop,23500,2026-03-05T12:10:00-08:00,submitted
+A26-1817,Eastwood Resilience Resource Center,ORG-0191,climate_resilience,spring_2026,building_cooling,Cedar Basin,39500,2026-03-15T13:20:00-08:00,submitted
+A26-4857,Laurel Heights Cool Roof Partnership,ORG-0172,climate_resilience,fall_2025,home_weatherization,Cedar Basin,61500,2026-03-06T14:10:00-08:00,submitted
+A26-9587,Redwood STEM Mentoring Network,ORG-0165,youth_learning,spring_2026,urban_heat,River Ward,24000,2026-02-16T16:20:00-08:00,submitted
+A26-6289,South Market Canopy Renewal Project,ORG-0101,climate_resilience,fall_2025,green_infrastructure,Harbor Point,14500,2026-03-17T08:00:00-08:00,submitted
+A26-5003,Eastwood Creek Buffer Project,ORG-0257,climate_resilience,winter_2025,building_cooling,River Ward,34000,2026-02-26T12:00:00-08:00,submitted
+A26-4430,Grandview Home Energy Coaching,ORG-0145,climate_resilience,spring_2026,flood_resilience,Oak Junction,18000,2026-02-04T09:50:00-08:00,submitted
+A26-5129,Lakeside Creek Buffer Project,ORG-0445,climate_resilience,spring_2026,green_infrastructure,South Harbor,26000,2026-02-16T09:50:00-08:00,submitted
+A26-5116,Yorktown Flood Readiness Team,ORG-0434,climate_resilience,summer_2026,building_cooling,Hill Corridor,57000,2026-01-19T14:30:00-08:00,submitted
+A26-8544,Quarry District Weatherization Support Team,ORG-0083,climate_resilience,spring_2026,green_infrastructure,West Terrace,51500,2026-01-26T12:30:00-08:00,submitted
+A26-7117,Westhaven Mental Health First Aid,ORG-0143,community_health,fall_2025,building_cooling,Central Commons,28000,2026-01-29T08:00:00-08:00,submitted
+A26-5065,Ashland Cool Roof Cooperative,ORG-0390,climate_resilience,spring_2026,flood_resilience,Harbor Point,57500,2026-01-15T12:20:00-08:00,submitted
+A26-6129,Lincoln Heights Building Efficiency Collaborative,ORG-0217,climate_resilience,spring_2026,green_infrastructure,North Ridge,16500,2026-01-31T13:30:00-08:00,submitted
+A26-5076,Stonebridge Heat Relief Collaborative,ORG-0399,climate_resilience,spring_2026,flood_resilience,Hill Corridor,44000,2026-01-31T14:20:00-08:00,submitted
+A26-3873,Oak Terrace Emergency Cooling Outreach,ORG-0129,climate_resilience,spring_2026,flood_resilience,North Ridge,15000,2026-01-22T12:40:00-08:00,submitted
+A26-3833,Ashland Maternal Health Support,ORG-0062,community_health,spring_2026,home_weatherization,Meadow Loop,60500,2026-01-21T10:50:00-08:00,pending_correction
+A26-5033,Glen Park Cool Roof Cooperative,ORG-0362,climate_resilience,spring_2026,home_weatherization,Hill Corridor,21000,2026-01-13T14:00:00-08:00,duplicate
+A26-5088,Fairview Porch Cooling Partnership,ORG-0410,climate_resilience,spring_2026,green_infrastructure,Central Commons,37500,2026-02-16T12:10:00-08:00,draft
+A26-5067,Harborview Rain Garden Network,ORG-0392,climate_resilience,fall_2025,urban_heat,Oak Junction,54500,2026-01-17T15:30:00-08:00,submitted
+A26-2711,South Market Shade Partnership,ORG-0149,climate_resilience,spring_2026,urban_heat,South Harbor,41000,2026-03-02T10:05:00-08:00,submitted
+A26-4495,Maplewood Rain Garden Network,ORG-0275,climate_resilience,spring_2026,flood_resilience,Harbor Point,24000,2026-03-13T15:30:00-08:00,submitted
+A26-6752,Lincoln Heights Neighborhood Grocery Delivery,ORG-0224,food_security,spring_2026,flood_resilience,Meadow Loop,19500,2026-01-27T10:20:00-08:00,draft
+A26-4218,Lakeside Cooling Commons,ORG-0332,climate_resilience,spring_2026,building_cooling,Lake District,46000,2026-02-25T09:15:00-08:00,submitted
+A26-7784,Westhaven Neighborhood Shade Plan,ORG-0213,climate_resilience,spring_2026,building_cooling,Lake District,53000,2026-02-18T08:20:00-08:00,submitted
+A26-5018,Riverside Creek Buffer Project,ORG-0353,climate_resilience,spring_2026,building_cooling,Harbor Point,62500,2026-01-29T11:40:00-08:00,draft
+A26-5172,Stonebridge Cool Roof Cooperative,ORG-0474,climate_resilience,spring_2026,building_cooling,East Market,40000,2026-03-08T19:06:00-08:00,submitted
+A26-5142,Fairview Rain Garden Network,ORG-0454,climate_resilience,spring_2026,flood_resilience,West Terrace,26000,2026-02-07T13:50:00-08:00,submitted
+A26-5078,Kingsley Green Alley Partnership,ORG-0401,climate_resilience,spring_2026,home_weatherization,East Market,29000,2026-02-16T13:10:00-08:00,submitted
+A26-1069,Oak Terrace Cool Roof Partnership,ORG-0279,climate_resilience,winter_2025,home_weatherization,Oak Junction,39000,2026-01-22T10:10:00-08:00,submitted
+A26-5112,Highland Cooling Commons,ORG-0430,climate_resilience,spring_2026,green_infrastructure,Lake District,35000,2026-01-11T09:40:00-08:00,submitted
+A26-5135,Lincoln Heights Stormwater Block Initiative,ORG-0451,youth_learning,spring_2026,green_infrastructure,Oak Junction,31000,2026-02-19T12:40:00-08:00,draft
+A26-5669,Fox Hollow Business Skills Workshop,ORG-0250,small_business,spring_2026,building_cooling,Central Commons,54000,2026-02-20T13:30:00-08:00,submitted
+A26-3512,University Heights Emergency Cooling Outreach,ORG-0071,climate_resilience,spring_2026,flood_resilience,West Terrace,62000,2026-03-18T16:40:00-08:00,withdrawn
+A26-4787,Old Town Community Solar Library,ORG-0269,climate_resilience,spring_2026,flood_resilience,Lake District,55500,2026-01-24T16:40:00-08:00,submitted
+A26-9872,Prairie View Artist Mentor Network,ORG-0204,neighborhood_arts,spring_2026,green_infrastructure,River Ward,35500,2026-02-11T10:50:00-08:00,submitted
+A26-8199,Garden District Tree Stewardship Network,ORG-0136,climate_resilience,spring_2026,flood_resilience,Hill Corridor,53000,2026-01-29T14:20:00-08:00,submitted
+A26-6575,Lakeside Stormwater Action Group,ORG-0025,climate_resilience,spring_2026,urban_heat,Central Commons,46000,2026-01-31T12:20:00-08:00,draft
+A26-5066,Grand Avenue Creek Buffer Project,ORG-0391,climate_resilience,spring_2026,flood_resilience,Harbor Point,42000,2026-02-24T11:50:00-08:00,pending_correction
+A26-9555,Eastwood Rain Garden Network,ORG-0203,climate_resilience,spring_2026,home_weatherization,Central Commons,38500,2026-03-03T11:50:00-08:00,submitted
+A26-7380,College Park Building Efficiency Collaborative,ORG-0048,climate_resilience,spring_2026,flood_resilience,North Ridge,36000,2026-01-17T12:40:00-08:00,withdrawn
+A26-5109,Pinehurst Community Cooling Hub,ORG-0427,urban_mobility,spring_2026,green_infrastructure,Lake District,30000,2026-02-13T09:40:00-08:00,submitted
+A26-2449,Ashland Building Efficiency Collaborative,ORG-0040,climate_resilience,spring_2026,flood_resilience,Central Commons,13500,2026-02-01T11:10:00-08:00,submitted
+A26-1347,Prairie View Energy Savings Workshop Series,ORG-0057,climate_resilience,spring_2026,urban_heat,North Ridge,29000,2026-02-27T12:50:00-08:00,submitted
+A26-5175,Lincoln Heights Resilience Resource Center,ORG-0477,climate_resilience,spring_2026,home_weatherization,North Ridge,42500,2026-03-01T14:20:00-08:00,submitted
+A26-9525,Brookfield Heat Relief Partnership,ORG-0070,climate_resilience,spring_2026,green_infrastructure,East Market,61000,2026-01-25T12:10:00-08:00,submitted
+A26-8689,Valley View Neighborhood Shade Plan,ORG-0141,climate_resilience,winter_2025,green_infrastructure,West Terrace,14500,2026-01-30T10:20:00-08:00,duplicate
+A26-2709,Bayview Resilience Resource Center,ORG-0052,climate_resilience,spring_2026,green_infrastructure,Lake District,43500,2026-02-28T11:40:00-08:00,submitted
+A26-5036,Claremont Cool Roof Cooperative,ORG-0365,climate_resilience,spring_2026,building_cooling,Lake District,38000,2026-02-27T12:20:00-08:00,submitted
+A26-1343,Pleasant Valley Artist Mentor Network,ORG-0103,neighborhood_arts,spring_2026,green_infrastructure,South Harbor,44500,2026-02-18T14:10:00-08:00,pending_correction
+A26-5039,Northgate Shade Corridor Project,ORG-0368,climate_resilience,spring_2026,urban_heat,Hill Corridor,54500,2026-02-26T14:50:00-08:00,submitted
+A26-5177,Willow Creek Rain Garden Network,ORG-0479,climate_resilience,spring_2026,green_infrastructure,North Ridge,33500,2026-02-02T14:40:00-08:00,submitted
+A26-5080,Grand Avenue Drainage Action Group,ORG-0403,climate_resilience,spring_2026,urban_heat,Oak Junction,29500,2026-02-01T16:40:00-08:00,submitted
+A26-2157,Prairie View Heat Resilience Hubs,ORG-0207,climate_resilience,spring_2026,building_cooling,Oak Junction,32500,2026-03-10T08:00:00-08:00,submitted
+A26-7399,Crescent Hill Wellness Navigation Team,ORG-0226,community_health,spring_2026,flood_resilience,Lake District,65000,2026-03-06T08:00:00-08:00,submitted
+A26-9115,Quarry District Transit Access Team,ORG-0257,urban_mobility,spring_2026,urban_heat,Meadow Loop,31000,2026-02-20T15:40:00-08:00,submitted
+A26-5030,Meadow Park Green Alley Partnership,ORG-0351,climate_resilience,spring_2026,home_weatherization,East Market,35000,2026-01-31T12:50:00-08:00,submitted
+A26-1579,Millbrook Resilience Resource Center,ORG-0202,climate_resilience,spring_2026,home_weatherization,East Market,37500,2026-01-15T15:30:00-08:00,submitted
+A26-2052,Maplewood Community Solar Library,ORG-0125,climate_resilience,spring_2026,flood_resilience,Lake District,20000,2026-01-24T15:10:00-08:00,submitted
+A26-5005,Elmwood Climate Ready Blocks,ORG-0343,climate_resilience,spring_2026,flood_resilience,Meadow Loop,55000,2026-03-07T21:10:00-08:00,withdrawn
+A26-0135,Maplewood Cool Roof Partnership,ORG-0160,climate_resilience,spring_2026,green_infrastructure,Central Commons,27500,2026-02-10T10:40:00-08:00,submitted
+A26-1026,Quarry District Resilience Resource Center,ORG-0025,climate_resilience,winter_2025,building_cooling,Hill Corridor,55000,2026-02-02T11:20:00-08:00,submitted
+A26-5102,Cedar Grove Green Alley Partnership,ORG-0422,climate_resilience,spring_2026,home_weatherization,North Ridge,38000,2026-02-04T13:50:00-08:00,submitted
+A26-5137,Yorktown Drainage Action Group,ORG-0346,climate_resilience,winter_2025,home_weatherization,West Terrace,50000,2026-03-08T22:44:00-08:00,submitted
+A26-5146,Fox Hollow Weatherization Collective,ORG-0222,climate_resilience,winter_2025,green_infrastructure,Hill Corridor,34500,2026-01-14T12:00:00-08:00,duplicate
+A26-5117,Juniper Neighborhood Canopy Fund,ORG-0435,climate_resilience,winter_2025,flood_resilience,Hill Corridor,38000,2026-02-20T13:20:00-08:00,submitted
+A26-7547,Riverside Emergency Cooling Outreach,ORG-0133,climate_resilience,spring_2026,home_weatherization,Meadow Loop,16000,2026-03-04T14:30:00-08:00,submitted
+A26-8896,New Hope Native Plant Corridor,ORG-0222,climate_resilience,spring_2026,flood_resilience,River Ward,40000,2026-02-06T08:30:00-08:00,submitted
+A26-9984,Spring Hill Resilience Resource Center,ORG-0102,climate_resilience,spring_2026,flood_resilience,Lake District,40000,2026-01-19T11:30:00-08:00,submitted
+A26-2275,Pine Ridge Public Art Workshop,ORG-0031,neighborhood_arts,spring_2026,green_infrastructure,Lake District,40500,2026-02-13T08:00:00-08:00,withdrawn
+A26-5021,Kingsley Climate Ready Blocks,ORG-0069,climate_resilience,spring_2026,flood_resilience,South Harbor,63500,2026-02-09T10:00:00-08:00,submitted
+A26-5098,Lakewood Resilience Resource Center,ORG-0419,climate_resilience,spring_2026,flood_resilience,Harbor Point,44500,2026-02-01T13:30:00-08:00,submitted
+A26-8285,Magnolia Park Home Energy Coaching,ORG-0227,climate_resilience,spring_2026,home_weatherization,River Ward,52000,2026-02-28T15:40:00-08:00,submitted
+A26-5125,Eastwood Cooling Commons,ORG-0442,climate_resilience,spring_2026,home_weatherization,Central Commons,26000,2026-03-07T22:02:00-08:00,submitted
+A26-5133,Highland Creek Buffer Project,ORG-0449,climate_resilience,spring_2026,green_infrastructure,Central Commons,47000,2026-01-22T09:00:00-08:00,submitted
+A26-0241,Westhaven Cool Roof Partnership,ORG-0247,climate_resilience,fall_2025,green_infrastructure,Central Commons,48500,2026-01-29T08:40:00-08:00,submitted
+A26-5029,Juniper Square Weatherization Support Team,ORG-0120,climate_resilience,spring_2026,urban_heat,Meadow Loop,21500,2026-02-02T16:20:00-08:00,submitted
+A26-5104,Yorktown Community Cooling Hub,ORG-0353,climate_resilience,spring_2026,building_cooling,Cedar Basin,28000,2026-01-31T10:10:00-08:00,submitted
+A26-6326,Orchard Lane Flood Preparedness Team,ORG-0161,climate_resilience,winter_2025,building_cooling,East Market,64500,2026-02-07T15:30:00-08:00,submitted
+A26-7528,Valley View Public Art Workshop,ORG-0153,neighborhood_arts,fall_2025,home_weatherization,East Market,17500,2026-03-10T13:20:00-08:00,submitted
+A26-8803,Pleasant Valley Weatherization Support Team,ORG-0226,climate_resilience,spring_2026,green_infrastructure,Central Commons,53500,2026-03-05T14:10:00-08:00,submitted
+A26-0685,Maplewood Creek Restoration Collaborative,ORG-0260,climate_resilience,spring_2026,green_infrastructure,River Ward,15500,2026-02-06T12:10:00-08:00,submitted
+A26-7923,Glenwood Mental Health First Aid,ORG-0075,community_health,spring_2026,home_weatherization,River Ward,18500,2026-01-16T10:30:00-08:00,pending_correction
+A26-8081,Oak Terrace Canopy Renewal Project,ORG-0135,climate_resilience,spring_2026,building_cooling,East Market,19500,2026-02-13T15:50:00-08:00,submitted
+A26-5064,Cedar Grove Stormwater Block Initiative,ORG-0389,food_security,spring_2026,building_cooling,Hill Corridor,23000,2026-03-03T11:50:00-08:00,submitted
+A26-2381,Prairie View Native Plant Corridor,ORG-0142,climate_resilience,spring_2026,flood_resilience,Lake District,54000,2026-01-27T14:50:00-08:00,submitted
+A26-5008,Oak Terrace Cool Roof Cooperative,ORG-0255,community_health,fall_2025,building_cooling,Harbor Point,57000,2026-01-16T10:10:00-08:00,submitted
+A26-1243,Glenwood Rain Garden Network,ORG-0145,climate_resilience,spring_2026,flood_resilience,Central Commons,50000,2026-02-12T12:40:00-08:00,submitted
+A26-8176,University Heights Cool Roof Partnership,ORG-0030,climate_resilience,spring_2026,green_infrastructure,Oak Junction,61500,2026-02-11T16:10:00-08:00,submitted
+A26-1732,Kingston Artist Mentor Network,ORG-0105,neighborhood_arts,spring_2026,home_weatherization,West Terrace,55500,2026-03-09T08:50:00-08:00,submitted
+A26-8574,Lincoln Heights Canopy Renewal Project,ORG-0223,climate_resilience,winter_2025,urban_heat,Meadow Loop,54500,2026-01-15T09:10:00-08:00,submitted
+A26-0620,Redwood Rain Garden Network,ORG-0261,climate_resilience,summer_2026,building_cooling,Oak Junction,62500,2026-01-25T13:40:00-08:00,submitted
+A26-5013,Stonebridge Community Cooling Hub,ORG-0348,community_health,spring_2026,green_infrastructure,Harbor Point,20000,2026-03-04T13:00:00-08:00,submitted
+A26-5442,Woodland Energy Savings Workshop Series,ORG-0023,climate_resilience,spring_2026,green_infrastructure,South Harbor,47000,2026-03-17T16:30:00-08:00,draft
+A26-0188,Juniper Square Pedestrian Safety Collaborative,ORG-0122,urban_mobility,spring_2026,urban_heat,Meadow Loop,24000,2026-03-01T13:50:00-08:00,submitted
+A26-4333,Fox Hollow Youth Leadership Academy,ORG-0106,youth_learning,spring_2026,flood_resilience,Central Commons,55000,2026-02-23T12:10:00-08:00,submitted
+A26-5145,Fox Hollow Cool Roof Cooperative,ORG-0457,climate_resilience,spring_2026,flood_resilience,Oak Junction,33000,2026-03-06T21:03:00-08:00,submitted
+A26-2807,Magnolia Park After-School Learning Lab,ORG-0182,youth_learning,spring_2026,flood_resilience,North Ridge,34500,2026-02-12T14:20:00-08:00,draft
+A26-2606,Terrace Park STEM Mentoring Network,ORG-0213,youth_learning,spring_2026,flood_resilience,East Market,63500,2026-02-07T13:30:00-08:00,submitted
+A26-5168,Hillcrest Flood Readiness Team,ORG-0472,small_business,spring_2026,flood_resilience,River Ward,28500,2026-02-18T14:30:00-08:00,submitted
+A26-5069,Glen Park Cooling Commons,ORG-0393,climate_resilience,spring_2026,building_cooling,South Harbor,22000,2026-03-05T20:37:00-08:00,submitted
+A26-1673,Crescent Hill Community Solar Library,ORG-0098,climate_resilience,fall_2025,building_cooling,Cedar Basin,57500,2026-03-17T08:20:00-08:00,submitted
+A26-2088,Laurel Heights Compost Education Network,ORG-0259,climate_resilience,fall_2025,building_cooling,Cedar Basin,23000,2026-01-19T08:40:00-08:00,submitted
+A26-1099,Brighton Wellness Navigation Team,ORG-0192,community_health,fall_2025,building_cooling,Central Commons,51500,2026-02-21T12:40:00-08:00,submitted
+A26-5122,Cedar Grove Tree Stewardship Circle,ORG-0439,neighborhood_arts,spring_2026,home_weatherization,South Harbor,42500,2026-02-17T13:50:00-08:00,submitted
+A26-3016,Valley View Creek Restoration Collaborative,ORG-0226,climate_resilience,spring_2026,urban_heat,Harbor Point,54500,2026-02-05T12:50:00-08:00,submitted
+A26-4608,Glenwood Fresh Food Cooperative,ORG-0254,food_security,spring_2026,home_weatherization,River Ward,61000,2026-03-09T14:30:00-08:00,submitted
+A26-4829,Clearwater Cool Roof Partnership,ORG-0012,climate_resilience,spring_2026,urban_heat,North Ridge,48500,2026-03-08T08:40:00-08:00,submitted
+A26-1175,Franklin Canopy Renewal Project,ORG-0061,climate_resilience,spring_2026,green_infrastructure,East Market,50001,2026-03-05T13:00:00-08:00,submitted
+A26-9855,Riverbend Wellness Navigation Team,ORG-0185,community_health,spring_2026,building_cooling,West Terrace,37500,2026-02-16T14:10:00-08:00,submitted
+A26-9690,Pine Ridge Wellness Navigation Team,ORG-0077,community_health,spring_2026,green_infrastructure,Cedar Basin,39500,2026-02-13T12:00:00-08:00,submitted
+A26-5578,Bayview Compost Education Network,ORG-0154,climate_resilience,spring_2026,home_weatherization,East Market,37000,2026-02-12T10:10:00-08:00,submitted
+A26-5015,Harborview Green Alley Partnership,ORG-0350,climate_resilience,fall_2025,building_cooling,East Market,18000,2026-01-17T09:50:00-08:00,draft
+A26-2120,Pleasant Valley Heat Resilience Hubs,ORG-0117,climate_resilience,spring_2026,flood_resilience,West Terrace,29000,2026-01-15T16:50:00-08:00,submitted
+A26-5074,Civic Center Weatherization Collective,ORG-0241,climate_resilience,winter_2025,home_weatherization,Hill Corridor,21500,2026-02-04T14:00:00-08:00,submitted
+A26-5174,Glen Park Shade Corridor Project,ORG-0476,climate_resilience,spring_2026,flood_resilience,Harbor Point,61500,2026-03-09T20:50:00-08:00,submitted
+A26-3095,Greenfield Stormwater Action Group,ORG-0233,climate_resilience,spring_2026,green_infrastructure,River Ward,50000,2026-01-16T15:00:00-08:00,submitted
+A26-5115,Meadow Park Heat Relief Collaborative,ORG-0433,climate_resilience,spring_2026,building_cooling,Hill Corridor,60500,2026-01-19T09:10:00-08:00,duplicate
+A26-1814,Ashland Tree Stewardship Network,ORG-0128,climate_resilience,spring_2026,urban_heat,Harbor Point,37000,2026-02-04T14:10:00-08:00,submitted
+A26-1881,College Park Local Vendor Support,ORG-0065,small_business,spring_2026,home_weatherization,Central Commons,21000,2026-02-01T16:20:00-08:00,submitted
+A26-5110,Juniper Cooling Commons,ORG-0428,community_health,spring_2026,green_infrastructure,Harbor Point,53500,2026-02-26T09:00:00-08:00,submitted
+A26-0126,Jefferson Commons Weatherization Support Team,ORG-0210,climate_resilience,fall_2025,green_infrastructure,West Terrace,11000,2026-02-25T11:50:00-08:00,submitted
+A26-6094,Lincoln Heights Emergency Cooling Outreach,ORG-0238,climate_resilience,spring_2026,home_weatherization,Hill Corridor,56500,2026-01-30T15:50:00-08:00,submitted
+A26-3069,Prairie View Building Efficiency Collaborative,ORG-0230,climate_resilience,spring_2026,urban_heat,Harbor Point,12000,2026-02-23T15:00:00-08:00,submitted
+A26-6723,Yorktown Safe Routes Partnership,ORG-0137,urban_mobility,spring_2026,building_cooling,Cedar Basin,49000,2026-02-05T09:30:00-08:00,submitted
+A26-2542,Prairie View Neighborhood Shade Plan,ORG-0142,climate_resilience,spring_2026,urban_heat,Cedar Basin,18000,2026-02-17T13:00:00-08:00,withdrawn
+A26-1502,Lakeside Stormwater Alliance,ORG-0096,urban_mobility,spring_2026,urban_heat,West Terrace,32000,2026-03-01T11:00:00-08:00,submitted
+A26-8336,Maplewood Home Energy Coaching,ORG-0075,climate_resilience,spring_2026,urban_heat,North Ridge,18000,2026-02-17T16:10:00-08:00,submitted
+A26-1154,Bayview Tree Stewardship Network,ORG-0113,climate_resilience,spring_2026,home_weatherization,Meadow Loop,31000,2026-02-10T10:20:00-08:00,submitted
+A26-4054,Wellington Resilience Resource Center,ORG-0067,climate_resilience,winter_2025,home_weatherization,Hill Corridor,12000,2026-03-05T16:50:00-08:00,submitted
+A26-9797,Juniper Square Energy Savings Workshop Series,ORG-0085,climate_resilience,spring_2026,building_cooling,Harbor Point,63500,2026-01-15T13:00:00-08:00,draft
+A26-3732,Maplewood Stormwater Action Group,ORG-0277,climate_resilience,spring_2026,home_weatherization,West Terrace,50500,2026-01-20T09:00:00-08:00,submitted
+A26-3051,Crescent Hill Native Plant Corridor,ORG-0219,climate_resilience,spring_2026,home_weatherization,Meadow Loop,35000,2026-02-06T14:20:00-08:00,submitted
+A26-2493,New Hope Maternal Health Support,ORG-0005,community_health,spring_2026,urban_heat,East Market,49000,2026-02-03T11:30:00-08:00,submitted
+A26-2142,Wellington Energy Savings Workshop Series,ORG-0072,climate_resilience,spring_2026,home_weatherization,Central Commons,10000,2026-02-27T10:30:00-08:00,submitted
+A26-5085,Grand Avenue Green Alley Partnership,ORG-0407,climate_resilience,spring_2026,building_cooling,Lake District,49500,2026-03-02T16:00:00-08:00,submitted
+A26-0754,Willow Creek Compost Education Network,ORG-0066,climate_resilience,spring_2026,building_cooling,Cedar Basin,25500,2026-02-13T13:40:00-08:00,submitted
+A26-3405,Willow Creek Canopy Renewal Project,ORG-0066,climate_resilience,spring_2026,building_cooling,Hill Corridor,23500,2026-03-06T16:30:00-08:00,draft
+A26-5095,Northgate Porch Cooling Partnership,ORG-0365,climate_resilience,spring_2026,green_infrastructure,Lake District,27500,2026-02-21T10:50:00-08:00,submitted
+A26-5089,Hillcrest Drainage Action Group,ORG-0411,climate_resilience,spring_2026,green_infrastructure,South Harbor,26500,2026-02-02T13:30:00-08:00,submitted
+A26-4862,Greenfield Canopy Renewal Project,ORG-0205,climate_resilience,spring_2026,home_weatherization,River Ward,24500,2026-02-11T14:20:00-08:00,submitted
+A26-4010,Valley View Business Skills Workshop,ORG-0096,small_business,spring_2026,urban_heat,Oak Junction,46500,2026-02-11T13:10:00-08:00,duplicate
+A26-5020,Lincoln Heights Cooling Commons,ORG-0355,climate_resilience,spring_2026,home_weatherization,East Market,48000,2026-02-18T11:10:00-08:00,submitted
+A26-5040,South Market Cool Roof Cooperative,ORG-0369,climate_resilience,spring_2026,flood_resilience,East Market,45500,2026-01-28T11:10:00-08:00,submitted
+A26-5050,Glen Park Flood Readiness Team,ORG-0378,climate_resilience,spring_2026,green_infrastructure,Meadow Loop,50500,2026-01-17T09:10:00-08:00,pending_correction
+A26-3080,Cedar Grove Native Plant Corridor,ORG-0159,climate_resilience,winter_2025,building_cooling,West Terrace,58000,2026-01-18T15:50:00-08:00,submitted
+A26-5153,Cedar Grove Creek Buffer Project,ORG-0463,climate_resilience,spring_2026,building_cooling,Oak Junction,21500,2026-01-31T11:50:00-08:00,submitted
+A26-3936,Willow Creek Senior Wellness Program,ORG-0018,community_health,spring_2026,home_weatherization,East Market,42000,2026-03-13T12:50:00-08:00,submitted
+A26-5028,Juniper Resilience Resource Center,ORG-0360,climate_resilience,spring_2026,urban_heat,South Harbor,23500,2026-01-31T13:10:00-08:00,submitted
+A26-5002,Brookfield Neighborhood Canopy Fund,ORG-0136,climate_resilience,winter_2025,home_weatherization,Harbor Point,26500,2026-02-28T11:50:00-08:00,submitted
+A26-1357,Yorktown Resilience Resource Center,ORG-0188,climate_resilience,winter_2025,green_infrastructure,Central Commons,19000,2026-01-18T14:30:00-08:00,submitted
+A26-6215,Riverside After-School Learning Lab,ORG-0057,youth_learning,spring_2026,building_cooling,South Harbor,43000,2026-03-06T12:00:00-08:00,submitted
+A26-0335,University Heights Energy Savings Workshop Series,ORG-0278,climate_resilience,fall_2025,building_cooling,Meadow Loop,64000,2026-02-15T08:20:00-08:00,submitted
+A26-5128,Lakeside Stormwater Block Initiative,ORG-0444,climate_resilience,spring_2026,urban_heat,Lake District,36500,2026-01-18T14:10:00-08:00,submitted
+A26-1430,Old Town Tree Stewardship Network,ORG-0135,climate_resilience,spring_2026,building_cooling,West Terrace,39500,2026-01-24T13:50:00-08:00,submitted
+A26-1695,Hawthorne Compost Education Network,ORG-0027,climate_resilience,spring_2026,green_infrastructure,Lake District,59000,2026-02-04T10:00:00-08:00,submitted
+A26-1358,Meadow Park Canopy Renewal Project,ORG-0113,climate_resilience,spring_2026,flood_resilience,Cedar Basin,52500,2026-03-18T13:10:00-08:00,submitted
+A26-7082,Redwood Entrepreneur Coaching Circle,ORG-0217,small_business,spring_2026,home_weatherization,Hill Corridor,30000,2026-02-04T15:20:00-08:00,submitted
+A26-0015,Brookfield Neighborhood Grocery Delivery,ORG-0159,food_security,winter_2025,urban_heat,Hill Corridor,46500,2026-03-08T11:40:00-08:00,submitted
+A26-5099,Fox Hollow Tree Stewardship Circle,ORG-0420,climate_resilience,fall_2025,building_cooling,Harbor Point,59000,2026-03-02T15:50:00-08:00,submitted
+A26-9014,Elmwood Canopy Renewal Project,ORG-0247,climate_resilience,spring_2026,building_cooling,River Ward,46000,2026-02-09T14:40:00-08:00,submitted
+A26-5096,South Market Tree Stewardship Circle,ORG-0417,climate_resilience,spring_2026,urban_heat,Lake District,28000,2026-01-24T10:20:00-08:00,submitted
+A26-9269,Greenfield Rain Garden Network,ORG-0172,climate_resilience,spring_2026,flood_resilience,East Market,11500,2026-02-05T14:00:00-08:00,draft
+A26-5024,Oak Terrace Creek Buffer Project,ORG-0357,climate_resilience,spring_2026,green_infrastructure,North Ridge,24000,2026-01-12T13:50:00-08:00,submitted
+A26-0328,Yorktown Home Energy Coaching,ORG-0063,climate_resilience,spring_2026,green_infrastructure,South Harbor,19500,2026-03-14T10:50:00-08:00,submitted
+A26-5044,Hillcrest Weatherization Collective,ORG-0372,climate_resilience,spring_2026,urban_heat,Oak Junction,60000,2026-01-20T09:50:00-08:00,submitted
+A26-1723,College Park Neighborhood Grocery Delivery,ORG-0104,food_security,spring_2026,green_infrastructure,River Ward,53500,2026-03-16T13:30:00-08:00,submitted
+A26-5114,Northgate Tree Stewardship Circle,ORG-0432,climate_resilience,fall_2025,building_cooling,South Harbor,64500,2026-01-22T10:40:00-08:00,submitted
+A26-3815,Spring Hill Local Vendor Support,ORG-0023,small_business,spring_2026,building_cooling,South Harbor,62000,2026-01-18T12:00:00-08:00,duplicate
+A26-3484,Old Town Emergency Cooling Outreach,ORG-0058,climate_resilience,spring_2026,home_weatherization,Lake District,49500,2026-02-21T09:30:00-08:00,submitted
+A26-9834,Garden District Emergency Cooling Outreach,ORG-0067,climate_resilience,spring_2026,home_weatherization,Hill Corridor,39000,2026-02-22T13:50:00-08:00,submitted
+A26-5055,Cedar Grove Flood Readiness Team,ORG-0382,urban_mobility,spring_2026,home_weatherization,Oak Junction,39500,2026-02-12T12:30:00-08:00,submitted
+A26-9411,Maplewood Heat Resilience Hubs,ORG-0170,climate_resilience,spring_2026,building_cooling,River Ward,59500,2026-01-31T15:10:00-08:00,submitted
+A26-5136,Oak Terrace Weatherization Collective,ORG-0452,climate_resilience,spring_2026,building_cooling,North Ridge,22500,2026-01-16T14:30:00-08:00,submitted
+A26-5166,Grand Avenue Flood Readiness Team,ORG-0470,climate_resilience,spring_2026,green_infrastructure,River Ward,35000,2026-02-02T14:40:00-08:00,submitted
+A26-5063,Claremont Native Plant Corridor,ORG-0388,climate_resilience,spring_2026,urban_heat,Central Commons,41500,2026-02-13T13:50:00-08:00,submitted
+A26-6965,Union Square Local Vendor Support,ORG-0032,small_business,spring_2026,green_infrastructure,Hill Corridor,50500,2026-01-19T11:30:00-08:00,submitted
+A26-6312,Old Town Community Pantry Network,ORG-0082,food_security,spring_2026,flood_resilience,East Market,64500,2026-01-16T09:40:00-08:00,submitted
+A26-8862,Ashland Creative Placemaking Team,ORG-0106,neighborhood_arts,spring_2026,home_weatherization,Lake District,62500,2026-03-04T08:00:00-08:00,submitted
+A26-9786,Fox Hollow Reading Partnership,ORG-0110,youth_learning,spring_2026,green_infrastructure,River Ward,20000,2026-02-16T16:30:00-08:00,submitted
+A26-5165,Lakeside Compost Education Network,ORG-0117,climate_resilience,spring_2026,home_weatherization,River Ward,22000,2026-02-19T14:30:00-08:00,submitted
+A26-5151,Grand Avenue Resilience Resource Center,ORG-0461,climate_resilience,spring_2026,urban_heat,North Ridge,24500,2026-02-03T09:30:00-08:00,submitted
+A26-4142,Magnolia Park Community Solar Library,ORG-0085,climate_resilience,spring_2026,green_infrastructure,Oak Junction,55000,2026-01-24T08:30:00-08:00,submitted
+A26-5124,Grand Avenue Porch Cooling Partnership,ORG-0441,climate_resilience,winter_2025,building_cooling,Cedar Basin,44000,2026-03-04T16:10:00-08:00,submitted
+A26-9935,Yorktown Compost Education Network,ORG-0209,climate_resilience,spring_2026,home_weatherization,West Terrace,32500,2026-01-19T14:00:00-08:00,submitted
+A26-5119,Maplewood Shade Corridor Project,ORG-0437,climate_resilience,spring_2026,urban_heat,Central Commons,46000,2026-03-09T19:21:00-08:00,submitted
+A26-2370,Riverbend Resilience Center,ORG-0052,climate_resilience,spring_2026,flood_resilience,River Ward,36000,2026-03-05T17:01:00-08:00,submitted
+A26-8764,Stonebridge Home Energy Coaching,ORG-0098,climate_resilience,spring_2026,building_cooling,South Harbor,46500,2026-03-01T12:10:00-08:00,submitted
+A26-1505,Union Square Emergency Cooling Outreach,ORG-0225,climate_resilience,spring_2026,green_infrastructure,River Ward,59000,2026-02-03T12:00:00-08:00,submitted
+A26-5163,Fox Hollow Porch Cooling Partnership,ORG-0203,climate_resilience,spring_2026,flood_resilience,Meadow Loop,21000,2026-02-16T12:50:00-08:00,submitted
+A26-5134,Highland Climate Ready Blocks,ORG-0450,community_health,spring_2026,urban_heat,Hill Corridor,58500,2026-01-21T13:00:00-08:00,submitted
+A26-2367,Parkside Mental Health First Aid,ORG-0083,community_health,spring_2026,green_infrastructure,North Ridge,56000,2026-03-12T13:00:00-08:00,withdrawn
+A26-5038,Stonebridge Shade Corridor Project,ORG-0367,community_health,spring_2026,home_weatherization,North Ridge,19500,2026-02-22T15:00:00-08:00,submitted
+A26-1298,Rosewood Heat Resilience Hubs,ORG-0264,climate_resilience,spring_2026,building_cooling,Cedar Basin,60500,2026-03-12T11:40:00-08:00,submitted
+A26-5140,Kingsley Shade Corridor Project,ORG-0333,climate_resilience,spring_2026,urban_heat,Meadow Loop,56500,2026-02-12T11:30:00-08:00,submitted
+A26-5155,Northgate Resilience Resource Center,ORG-0465,urban_mobility,spring_2026,building_cooling,Lake District,25500,2026-03-01T16:20:00-08:00,submitted
+A26-5083,Meadow Park Stormwater Block Initiative,ORG-0405,climate_resilience,spring_2026,building_cooling,Cedar Basin,58500,2026-03-08T19:31:00-08:00,submitted
+A26-4804,Redwood Neighborhood Shade Plan,ORG-0149,climate_resilience,summer_2026,building_cooling,East Market,18000,2026-02-12T14:50:00-08:00,submitted
+A26-5075,Glen Park Porch Cooling Partnership,ORG-0398,climate_resilience,winter_2025,urban_heat,West Terrace,36500,2026-02-14T11:10:00-08:00,submitted
+A26-5120,Northgate Creek Buffer Project,ORG-0100,climate_resilience,spring_2026,flood_resilience,Central Commons,36000,2026-01-19T13:00:00-08:00,submitted
+A26-1176,Union Square Community Pantry Network,ORG-0087,food_security,spring_2026,urban_heat,West Terrace,63000,2026-03-01T16:10:00-08:00,submitted
+A26-1206,Hawthorne Main Street Market Lab,ORG-0271,small_business,winter_2025,home_weatherization,North Ridge,51000,2026-03-12T15:20:00-08:00,submitted
+A26-1830,Meadow Park Heat Relief Partnership,ORG-0265,climate_resilience,summer_2026,urban_heat,South Harbor,43000,2026-01-16T11:10:00-08:00,submitted
+A26-5010,Oak Terrace Heat Relief Collaborative,ORG-0346,climate_resilience,spring_2026,home_weatherization,Meadow Loop,45000,2026-02-14T12:20:00-08:00,submitted
+A26-2977,Fairview Food Recovery Team,ORG-0017,food_security,spring_2026,urban_heat,Lake District,34000,2026-02-18T09:10:00-08:00,pending_correction
+A26-5071,Lincoln Heights Flood Readiness Team,ORG-0395,climate_resilience,spring_2026,urban_heat,North Ridge,42500,2026-02-09T10:50:00-08:00,submitted
+A26-1380,Bayview Wellness Navigation Team,ORG-0035,community_health,spring_2026,urban_heat,West Terrace,32000,2026-02-06T08:40:00-08:00,submitted
+A26-5675,South Market Emergency Cooling Outreach,ORG-0265,climate_resilience,spring_2026,building_cooling,South Harbor,44500,2026-02-21T12:40:00-08:00,submitted
+A26-2239,Highland After-School Learning Lab,ORG-0146,youth_learning,spring_2026,flood_resilience,Hill Corridor,63000,2026-01-24T10:30:00-08:00,submitted
+A26-9928,South Market Business Skills Workshop,ORG-0123,small_business,spring_2026,building_cooling,Cedar Basin,56000,2026-02-28T08:40:00-08:00,withdrawn
+A26-7612,Pine Ridge Heat Resilience Hubs,ORG-0158,climate_resilience,spring_2026,flood_resilience,East Market,42000,2026-03-15T13:30:00-08:00,submitted
+A26-0179,South Market Flood Preparedness Team,ORG-0074,climate_resilience,winter_2025,home_weatherization,Cedar Basin,54000,2026-02-22T09:50:00-08:00,submitted
+A26-4264,Garden District Community Solar Library,ORG-0033,climate_resilience,spring_2026,building_cooling,River Ward,44500,2026-01-21T12:00:00-08:00,submitted
+A26-5164,Lakeside Shade Corridor Project,ORG-0012,climate_resilience,spring_2026,building_cooling,Meadow Loop,26000,2026-01-19T12:30:00-08:00,submitted
+A26-5097,Fairview Tree Stewardship Circle,ORG-0418,climate_resilience,spring_2026,building_cooling,Oak Junction,40000,2026-02-04T14:40:00-08:00,submitted
+A26-5143,Yorktown Stormwater Block Initiative,ORG-0455,climate_resilience,spring_2026,home_weatherization,Meadow Loop,22000,2026-03-06T17:32:00-08:00,submitted
+A26-5547,Magnolia Park Rain Garden Network,ORG-0243,climate_resilience,winter_2025,flood_resilience,Hill Corridor,30000,2026-02-18T16:40:00-08:00,submitted
+A26-0408,Ashland Community Pantry Network,ORG-0176,food_security,winter_2025,home_weatherization,North Ridge,26500,2026-01-27T14:10:00-08:00,submitted
+A26-5079,Cedar Grove Rain Garden Network,ORG-0402,climate_resilience,spring_2026,urban_heat,River Ward,35000,2026-03-11T18:19:00-08:00,submitted
+A26-0600,Old Town Community Music Series,ORG-0051,neighborhood_arts,spring_2026,green_infrastructure,West Terrace,43500,2026-01-27T13:40:00-08:00,submitted
+A26-5893,Brighton Community Solar Library,ORG-0156,climate_resilience,spring_2026,home_weatherization,South Harbor,65000,2026-02-15T10:30:00-08:00,submitted
+A26-2531,Terrace Park Rain Garden Network,ORG-0053,climate_resilience,spring_2026,building_cooling,Hill Corridor,35500,2026-02-18T16:00:00-08:00,submitted
+A26-8731,Lakeside Native Plant Corridor,ORG-0047,climate_resilience,spring_2026,urban_heat,Lake District,24500,2026-02-18T14:50:00-08:00,duplicate
+A26-5121,Yorktown Rain Garden Network,ORG-0438,climate_resilience,spring_2026,urban_heat,North Ridge,39000,2026-02-01T11:40:00-08:00,submitted
+A26-9218,Greenfield Tree Stewardship Network,ORG-0220,climate_resilience,winter_2025,flood_resilience,Harbor Point,34500,2026-02-26T12:00:00-08:00,withdrawn
+A26-7834,Hawthorne Senior Wellness Program,ORG-0041,community_health,spring_2026,home_weatherization,North Ridge,36000,2026-03-14T10:30:00-08:00,pending_correction
+A26-5138,Brighton Building Efficiency Collaborative,ORG-0123,climate_resilience,spring_2026,building_cooling,Meadow Loop,21500,2026-02-05T10:50:00-08:00,submitted
+A26-5094,South Market Climate Ready Blocks,ORG-0416,climate_resilience,spring_2026,flood_resilience,Meadow Loop,55000,2026-03-05T11:30:00-08:00,submitted
+A26-0934,University Heights Compost Education Network,ORG-0144,climate_resilience,spring_2026,flood_resilience,East Market,15000,2026-02-27T15:10:00-08:00,submitted
+A26-6018,Ashland Rain Garden Network,ORG-0255,climate_resilience,spring_2026,urban_heat,Oak Junction,53000,2026-01-29T12:20:00-08:00,submitted
+A26-8014,Glenwood Local Vendor Support,ORG-0084,small_business,spring_2026,home_weatherization,North Ridge,55000,2026-03-16T16:50:00-08:00,submitted
+A26-5068,South Market Urban Forestry Fellows,ORG-0179,climate_resilience,spring_2026,green_infrastructure,Harbor Point,38000,2026-01-13T10:00:00-08:00,withdrawn
+A26-2233,Glenwood Resilience Resource Center,ORG-0008,climate_resilience,spring_2026,building_cooling,North Ridge,62500,2026-01-28T10:00:00-08:00,submitted
+A26-4568,Valley View Compost Education Network,ORG-0130,climate_resilience,spring_2026,urban_heat,River Ward,21500,2026-01-22T14:30:00-08:00,submitted
+A26-0166,Old Town Food Recovery Team,ORG-0163,food_security,spring_2026,urban_heat,North Ridge,47000,2026-02-15T14:30:00-08:00,submitted
+A26-0632,Cool Roof Block,ORG-0204,climate_resilience,spring_2026,building_cooling,East Market,45000,2026-03-03T11:45:00-08:00,submitted
+A26-5141,Lakeside Porch Cooling Partnership,ORG-0413,neighborhood_arts,spring_2026,urban_heat,Harbor Point,24500,2026-02-05T13:50:00-08:00,submitted
+A26-5049,Hillcrest Urban Forestry Fellows,ORG-0377,climate_resilience,spring_2026,building_cooling,West Terrace,43500,2026-02-05T13:20:00-08:00,submitted
+A26-5139,Harborview Stormwater Block Initiative,ORG-0453,climate_resilience,spring_2026,urban_heat,South Harbor,32000,2026-02-28T14:50:00-08:00,submitted
+A26-2064,Magnolia Park Emergency Cooling Outreach,ORG-0147,climate_resilience,spring_2026,building_cooling,Lake District,50000,2026-01-25T11:10:00-08:00,submitted
+A26-3635,Terrace Park Cool Roof Partnership,ORG-0270,climate_resilience,spring_2026,urban_heat,North Ridge,21500,2026-03-01T08:10:00-08:00,submitted
+A26-5027,Pinehurst Heat Relief Collaborative,ORG-0359,climate_resilience,spring_2026,urban_heat,Cedar Basin,35000,2026-02-01T15:00:00-08:00,submitted
+A26-4847,Millbrook Heat Resilience Hubs,ORG-0052,climate_resilience,spring_2026,flood_resilience,Oak Junction,56500,2026-02-11T13:40:00-08:00,submitted
+A26-0044,Juniper Square Building Efficiency Collaborative,ORG-0019,climate_resilience,winter_2025,urban_heat,Meadow Loop,29500,2026-01-27T12:30:00-08:00,submitted
+A26-0307,Cedar Grove Flood Preparedness Team,ORG-0227,climate_resilience,winter_2025,flood_resilience,West Terrace,40500,2026-01-15T09:30:00-08:00,draft
+A26-5126,Bayview Heat Relief Collaborative,ORG-0443,food_security,spring_2026,building_cooling,East Market,43500,2026-01-24T10:50:00-08:00,submitted
+A26-5035,Brookfield Urban Forestry Fellows,ORG-0364,climate_resilience,spring_2026,green_infrastructure,River Ward,53000,2026-01-13T15:20:00-08:00,submitted
+A26-2224,College Park Heat Relief Partnership,ORG-0062,climate_resilience,spring_2026,green_infrastructure,East Market,38000,2026-02-26T10:10:00-08:00,submitted
+A26-4506,Maplewood Resilience Resource Center,ORG-0101,climate_resilience,spring_2026,green_infrastructure,River Ward,38000,2026-02-22T10:40:00-08:00,submitted
+A26-3848,Hillcrest Heat Resilience Hubs,ORG-0039,climate_resilience,spring_2026,building_cooling,Meadow Loop,39000,2026-02-05T16:20:00-08:00,submitted
+A26-4951,Rosewood Emergency Cooling Outreach,ORG-0116,climate_resilience,spring_2026,urban_heat,Harbor Point,55000,2026-03-17T11:40:00-08:00,withdrawn
+A26-6375,Garden District After-School Learning Lab,ORG-0161,youth_learning,fall_2025,home_weatherization,Meadow Loop,58500,2026-02-14T16:00:00-08:00,submitted
+A26-8205,Westhaven Flood Preparedness Team,ORG-0180,climate_resilience,spring_2026,urban_heat,South Harbor,43000,2026-02-15T13:30:00-08:00,submitted
+A26-0841,Meadow Park Rain Garden Network,ORG-0186,climate_resilience,spring_2026,green_infrastructure,Meadow Loop,37000,2026-03-05T16:30:00-08:00,submitted
+A26-8836,Highland Entrepreneur Coaching Circle,ORG-0172,small_business,spring_2026,green_infrastructure,East Market,25000,2026-02-07T09:20:00-08:00,submitted
+A26-5012,Elmwood Creek Buffer Project,ORG-0123,climate_resilience,spring_2026,green_infrastructure,South Harbor,44500,2026-02-03T12:40:00-08:00,submitted
+A26-5108,South Market Drainage Action Group,ORG-0426,climate_resilience,spring_2026,urban_heat,Central Commons,27500,2026-03-05T09:30:00-08:00,submitted
+A26-5060,Northgate Heat Relief Collaborative,ORG-0386,climate_resilience,spring_2026,building_cooling,River Ward,25000,2026-01-26T10:50:00-08:00,submitted
+A26-4438,Garden District Compost Education Network,ORG-0068,climate_resilience,spring_2026,flood_resilience,East Market,60500,2026-02-19T13:50:00-08:00,submitted
+A26-5057,Riverside Shade Corridor Project,ORG-0384,neighborhood_arts,spring_2026,building_cooling,Lake District,19000,2026-01-15T12:20:00-08:00,duplicate
+A26-1847,Tree Canopy Fellows,ORG-0117,climate_resilience,spring_2026,urban_heat,North Ridge,49500,2026-03-01T14:20:00-08:00,submitted
+A26-1265,Rosewood Heat Relief Partnership,ORG-0185,climate_resilience,spring_2026,home_weatherization,Cedar Basin,27500,2026-01-19T08:40:00-08:00,submitted
+A26-5105,Lakewood Flood Readiness Team,ORG-0424,climate_resilience,spring_2026,green_infrastructure,Lake District,41500,2026-02-23T15:00:00-08:00,submitted
+A26-5026,Claremont Community Cooling Hub,ORG-0358,climate_resilience,fall_2025,urban_heat,South Harbor,23000,2026-03-05T21:31:00-08:00,submitted
+A26-8629,Franklin Rain Garden Network,ORG-0033,climate_resilience,spring_2026,building_cooling,East Market,25500,2026-01-24T13:10:00-08:00,submitted
+A26-7725,Harbor Point Main Street Market Lab,ORG-0277,small_business,spring_2026,building_cooling,East Market,15000,2026-03-16T09:20:00-08:00,submitted
+A26-6280,Elmwood Local Vendor Support,ORG-0258,small_business,spring_2026,flood_resilience,Oak Junction,10500,2026-03-15T10:00:00-08:00,submitted
+A26-5091,Lakewood Climate Ready Blocks,ORG-0413,urban_mobility,spring_2026,urban_heat,East Market,37000,2026-01-13T11:00:00-08:00,submitted
+A26-5154,Willow Creek Resilience Resource Center,ORG-0464,climate_resilience,fall_2025,home_weatherization,Lake District,51000,2026-02-18T15:10:00-08:00,submitted
+A26-0715,Lakeside Youth Leadership Academy,ORG-0006,youth_learning,spring_2026,building_cooling,Cedar Basin,46500,2026-03-11T13:40:00-08:00,submitted
+A26-5006,Lincoln Heights Weatherization Collective,ORG-0344,climate_resilience,spring_2026,home_weatherization,Oak Junction,29000,2026-01-12T11:30:00-08:00,duplicate
+A26-4971,Cedar Grove Creek Restoration Collaborative,ORG-0099,climate_resilience,fall_2025,green_infrastructure,Central Commons,49000,2026-02-09T14:30:00-08:00,submitted
+A26-0309,South Market Youth Leadership Academy,ORG-0052,youth_learning,spring_2026,home_weatherization,North Ridge,63500,2026-02-04T15:20:00-08:00,submitted
+A26-4805,Sherwood Tree Stewardship Network,ORG-0035,climate_resilience,spring_2026,flood_resilience,Lake District,33500,2026-01-21T11:40:00-08:00,submitted
+A26-4060,Monroe Heights Main Street Market Lab,ORG-0199,small_business,fall_2025,home_weatherization,West Terrace,30000,2026-01-18T12:50:00-08:00,submitted
+A26-5107,Lakewood Resilient Homes Network,ORG-0425,climate_resilience,spring_2026,building_cooling,Hill Corridor,24500,2026-02-07T09:20:00-08:00,submitted
+A26-0994,Cedar Grove Cooling Network,ORG-0266,climate_resilience,spring_2026,building_cooling,Cedar Basin,34000,2026-03-01T15:10:00-08:00,submitted
+A26-5111,Fairview Shade Corridor Project,ORG-0429,small_business,spring_2026,green_infrastructure,Hill Corridor,42500,2026-02-02T13:20:00-08:00,submitted
+A26-6067,Hillcrest Community Music Series,ORG-0056,neighborhood_arts,spring_2026,building_cooling,Meadow Loop,64500,2026-01-30T16:30:00-08:00,submitted
+A26-3554,Monroe Heights Flood Preparedness Team,ORG-0042,climate_resilience,spring_2026,flood_resilience,River Ward,46500,2026-03-04T10:50:00-08:00,submitted
+A26-4394,Terrace Park Wellness Navigation Team,ORG-0278,community_health,spring_2026,building_cooling,East Market,63000,2026-02-23T09:10:00-08:00,submitted
+A26-0536,Valley View Stormwater Action Group,ORG-0159,climate_resilience,spring_2026,flood_resilience,Harbor Point,56500,2026-03-12T14:20:00-08:00,submitted
+A26-5046,Fox Hollow Native Plant Corridor,ORG-0374,climate_resilience,winter_2025,flood_resilience,East Market,32500,2026-02-04T09:20:00-08:00,submitted
+A26-1237,Northgate Canopy Renewal Project,ORG-0152,climate_resilience,spring_2026,home_weatherization,North Ridge,11500,2026-02-23T09:40:00-08:00,withdrawn
+A26-5014,Highland Tree Stewardship Circle,ORG-0349,climate_resilience,spring_2026,green_infrastructure,Lake District,28500,2026-02-10T14:40:00-08:00,submitted
+A26-5054,Lakeside Climate Ready Blocks,ORG-0381,climate_resilience,spring_2026,home_weatherization,Harbor Point,34000,2026-01-30T15:50:00-08:00,submitted
+A26-3614,Fox Hollow Energy Savings Workshop Series,ORG-0140,climate_resilience,spring_2026,urban_heat,Meadow Loop,59000,2026-02-12T15:10:00-08:00,submitted
+A26-6587,Grandview Emergency Cooling Outreach,ORG-0077,climate_resilience,spring_2026,green_infrastructure,River Ward,55000,2026-02-05T15:40:00-08:00,pending_correction
+A26-9458,Laurel Heights Youth Leadership Academy,ORG-0189,youth_learning,winter_2025,urban_heat,South Harbor,36000,2026-02-21T13:50:00-08:00,submitted
+A26-2525,Wellington Weatherization Support Team,ORG-0155,climate_resilience,spring_2026,home_weatherization,South Harbor,35000,2026-01-29T10:30:00-08:00,submitted
+A26-9806,Brighton Rain Garden Network,ORG-0199,climate_resilience,spring_2026,flood_resilience,Central Commons,32500,2026-02-19T11:20:00-08:00,submitted
+A26-6127,Parkside Stormwater Action Group,ORG-0071,climate_resilience,summer_2026,flood_resilience,Central Commons,46500,2026-03-11T08:40:00-08:00,submitted
+A26-5053,Harborview Flood Readiness Team,ORG-0068,climate_resilience,spring_2026,building_cooling,River Ward,41500,2026-02-07T14:50:00-08:00,submitted
+A26-5037,Ashland Community Cooling Hub,ORG-0366,climate_resilience,spring_2026,urban_heat,Oak Junction,63500,2026-03-13T20:30:00-08:00,submitted
+A26-6064,Ashland Reading Partnership,ORG-0085,youth_learning,spring_2026,home_weatherization,Meadow Loop,57500,2026-01-21T16:30:00-08:00,submitted
+A26-5183,Stonebridge Flood Readiness Team,ORG-0128,climate_resilience,spring_2026,flood_resilience,Harbor Point,42500,2026-03-10T20:25:00-08:00,submitted
+A26-5092,West End Weatherization Collective,ORG-0414,climate_resilience,spring_2026,urban_heat,North Ridge,47500,2026-01-25T09:00:00-08:00,submitted
+A26-5090,South Market Shade Corridor Project,ORG-0412,climate_resilience,spring_2026,building_cooling,Cedar Basin,30000,2026-02-25T12:00:00-08:00,duplicate
+A26-4318,South Market STEM Mentoring Network,ORG-0074,youth_learning,spring_2026,flood_resilience,Meadow Loop,38000,2026-01-29T16:00:00-08:00,submitted
+A26-1995,Maplewood Weatherization Support Team,ORG-0121,climate_resilience,spring_2026,building_cooling,South Harbor,35500,2026-02-06T12:30:00-08:00,submitted
+A26-5130,Elmwood Green Alley Partnership,ORG-0446,climate_resilience,spring_2026,flood_resilience,West Terrace,35500,2026-02-25T09:20:00-08:00,submitted
+A26-8576,Lincoln Heights Creek Restoration Collaborative,ORG-0107,climate_resilience,spring_2026,green_infrastructure,East Market,29500,2026-02-13T13:50:00-08:00,submitted
+A26-7705,Lakeside Building Efficiency Collaborative,ORG-0280,climate_resilience,spring_2026,home_weatherization,Lake District,22000,2026-01-23T15:50:00-08:00,submitted
+A26-4127,Juniper Shade Corridors,ORG-0331,climate_resilience,spring_2026,urban_heat,North Ridge,47500,2026-02-26T16:40:00-08:00,submitted
+A26-2933,Ashland After-School Learning Lab,ORG-0185,youth_learning,summer_2026,green_infrastructure,River Ward,62000,2026-01-28T08:00:00-08:00,draft
+A26-5127,Grand Avenue Community Cooling Hub,ORG-0227,climate_resilience,spring_2026,flood_resilience,South Harbor,57500,2026-03-13T22:25:00-08:00,submitted
+A26-9316,Millbrook Tree Stewardship Network,ORG-0041,climate_resilience,winter_2025,flood_resilience,North Ridge,29000,2026-03-01T10:20:00-08:00,submitted
+A26-5101,Pinehurst Tree Stewardship Circle,ORG-0421,climate_resilience,spring_2026,building_cooling,West Terrace,48000,2026-01-15T09:10:00-08:00,submitted
+A26-2031,Millbrook Native Plant Corridor,ORG-0135,climate_resilience,fall_2025,urban_heat,Lake District,27500,2026-02-24T15:50:00-08:00,submitted
+A26-8788,Parkside Building Efficiency Collaborative,ORG-0040,climate_resilience,fall_2025,flood_resilience,Cedar Basin,59500,2026-02-27T15:40:00-08:00,submitted
+A26-5059,Fox Hollow Community Cooling Hub,ORG-0078,climate_resilience,spring_2026,home_weatherization,Harbor Point,45000,2026-03-02T15:20:00-08:00,submitted
+A26-1548,Greenfield Resilience Resource Center,ORG-0171,climate_resilience,spring_2026,flood_resilience,Lake District,44000,2026-03-07T09:10:00-08:00,submitted
+A26-1244,Meadow Park Emergency Cooling Outreach,ORG-0081,climate_resilience,spring_2026,green_infrastructure,River Ward,34000,2026-02-06T13:10:00-08:00,pending_correction
+A26-0304,Stonebridge Flood Preparedness Team,ORG-0122,climate_resilience,spring_2026,urban_heat,Harbor Point,56500,2026-03-12T10:20:00-08:00,submitted
+A26-0918,Redwood Stormwater Action Group,ORG-0191,climate_resilience,spring_2026,flood_resilience,West Terrace,21500,2026-03-15T13:50:00-08:00,submitted
+A26-5004,Oak Terrace Porch Cooling Partnership,ORG-0342,climate_resilience,fall_2025,flood_resilience,Oak Junction,26500,2026-02-17T10:50:00-08:00,submitted
+A26-4388,West End Stormwater Lab,ORG-0333,climate_resilience,spring_2026,flood_resilience,West Terrace,44000,2026-02-24T15:35:00-08:00,submitted
+A26-0201,Rosewood Creek Restoration Collaborative,ORG-0275,climate_resilience,spring_2026,green_infrastructure,North Ridge,40500,2026-03-15T16:00:00-08:00,draft
+A26-0817,Laurel Heights Weatherization Support Team,ORG-0213,climate_resilience,spring_2026,green_infrastructure,South Harbor,33000,2026-01-25T11:30:00-08:00,duplicate
+A26-8698,Spring Hill Heat Relief Partnership,ORG-0158,climate_resilience,spring_2026,green_infrastructure,Harbor Point,52000,2026-02-19T09:40:00-08:00,submitted
+A26-5162,Highland Tree Stewardship Network,ORG-0150,climate_resilience,spring_2026,building_cooling,Oak Junction,39000,2026-02-08T09:50:00-08:00,submitted
+A26-5082,Yorktown Weatherization Collective,ORG-0404,climate_resilience,spring_2026,urban_heat,Oak Junction,52000,2026-01-26T12:20:00-08:00,submitted
+A26-4229,Brookfield Cool Roof Partnership,ORG-0100,climate_resilience,spring_2026,green_infrastructure,Central Commons,29000,2026-03-06T10:30:00-08:00,submitted
+A26-2434,South Market Artist Mentor Network,ORG-0069,neighborhood_arts,winter_2025,home_weatherization,South Harbor,16000,2026-02-09T10:50:00-08:00,submitted
+A26-1331,Fairview Green Alley Project,ORG-0162,climate_resilience,spring_2026,home_weatherization,Oak Junction,23500,2026-01-21T12:50:00-08:00,submitted
+A26-1133,Hillcrest Creek Restoration Collaborative,ORG-0144,climate_resilience,spring_2026,urban_heat,Central Commons,37000,2026-03-10T12:00:00-08:00,withdrawn
+A26-5022,Civic Center Tree Stewardship Circle,ORG-0356,climate_resilience,spring_2026,flood_resilience,West Terrace,31000,2026-01-31T13:40:00-08:00,submitted
+A26-5047,Brookfield Flood Readiness Team,ORG-0375,climate_resilience,spring_2026,green_infrastructure,Meadow Loop,56000,2026-02-27T12:40:00-08:00,submitted
+A26-0200,Glenwood Community Solar Library,ORG-0099,climate_resilience,spring_2026,home_weatherization,Harbor Point,59500,2026-02-20T15:00:00-08:00,submitted
+A26-8770,Quarry District Neighborhood Grocery Delivery,ORG-0266,food_security,spring_2026,urban_heat,River Ward,16500,2026-03-07T11:50:00-08:00,submitted
+A26-6061,Eastwood Community Pantry Network,ORG-0020,food_security,spring_2026,building_cooling,West Terrace,31500,2026-03-09T16:20:00-08:00,submitted
+A26-5034,Grand Avenue Resilient Homes Network,ORG-0363,neighborhood_arts,spring_2026,urban_heat,West Terrace,63500,2026-03-09T17:26:00-08:00,submitted
+A26-5181,Hillcrest Native Plant Corridor,ORG-0034,climate_resilience,spring_2026,urban_heat,East Market,50500,2026-02-18T13:00:00-08:00,submitted
+A26-5147,Lakewood Rain Garden Network,ORG-0418,climate_resilience,spring_2026,home_weatherization,North Ridge,20500,2026-03-11T21:45:00-08:00,submitted
+A26-5016,Kingsley Stormwater Block Initiative,ORG-0351,climate_resilience,spring_2026,building_cooling,Harbor Point,48000,2026-02-13T13:30:00-08:00,submitted
+A26-5123,Lincoln Heights Climate Ready Blocks,ORG-0440,climate_resilience,spring_2026,building_cooling,Cedar Basin,44000,2026-01-20T14:10:00-08:00,submitted
+A26-0932,Brighton Weatherization Support Team,ORG-0058,climate_resilience,winter_2025,flood_resilience,Lake District,28000,2026-01-22T12:00:00-08:00,submitted
+A26-5180,Parkview Urban Forestry Fellows,ORG-0482,climate_resilience,fall_2025,building_cooling,Meadow Loop,27000,2026-02-03T10:00:00-08:00,submitted
+A26-5191,Meadow Park Home Energy Coaching,ORG-0131,climate_resilience,spring_2026,home_weatherization,North Ridge,41000,2026-03-14T14:40:00-08:00,draft
+A26-5573,Fairview Weatherization Support Team,ORG-0069,climate_resilience,spring_2026,home_weatherization,Hill Corridor,12000,2026-02-22T14:50:00-08:00,submitted
+A26-1158,Elmwood Heat Relief Partnership,ORG-0144,climate_resilience,summer_2026,green_infrastructure,Lake District,57000,2026-01-29T15:20:00-08:00,submitted
+A26-5161,West End Green Alley Partnership,ORG-0469,community_health,fall_2025,building_cooling,Oak Junction,29000,2026-03-04T11:50:00-08:00,submitted
+A26-0122,Kingston Flood Preparedness Team,ORG-0088,climate_resilience,spring_2026,home_weatherization,Central Commons,55000,2026-01-17T16:30:00-08:00,submitted
+A26-2861,Willow Creek Community Solar Library,ORG-0024,climate_resilience,winter_2025,green_infrastructure,East Market,11000,2026-02-08T15:50:00-08:00,submitted
+A26-4732,Franklin Native Plant Corridor,ORG-0225,climate_resilience,spring_2026,building_cooling,East Market,51500,2026-02-18T11:30:00-08:00,submitted
+A26-5167,Kingsley Tree Stewardship Circle,ORG-0471,climate_resilience,spring_2026,building_cooling,East Market,62500,2026-01-28T15:30:00-08:00,submitted
+A26-5009,Juniper Tree Stewardship Circle,ORG-0345,urban_mobility,spring_2026,building_cooling,Central Commons,42500,2026-03-10T18:02:00-08:00,duplicate
+A26-9230,Highland Public Art Workshop,ORG-0041,neighborhood_arts,spring_2026,flood_resilience,Lake District,19500,2026-02-08T11:20:00-08:00,submitted
+A26-2486,Prairie View Community Pantry Network,ORG-0163,food_security,spring_2026,urban_heat,East Market,40000,2026-01-31T16:50:00-08:00,submitted
+A26-6359,Millbrook Building Efficiency Collaborative,ORG-0208,climate_resilience,spring_2026,flood_resilience,River Ward,15500,2026-02-10T11:30:00-08:00,submitted
+A26-8466,Parkside Native Plant Corridor,ORG-0214,climate_resilience,spring_2026,home_weatherization,South Harbor,54500,2026-02-18T12:30:00-08:00,submitted
+A26-0138,Bayview Pedestrian Safety Collaborative,ORG-0157,urban_mobility,spring_2026,building_cooling,Central Commons,52500,2026-01-16T09:30:00-08:00,submitted
+A26-4793,Parkside Canopy Renewal Project,ORG-0249,climate_resilience,spring_2026,flood_resilience,Cedar Basin,47000,2026-03-05T11:20:00-08:00,withdrawn
+A26-5031,Elmwood Rain Garden Network,ORG-0361,climate_resilience,spring_2026,urban_heat,Central Commons,58000,2026-01-15T09:00:00-08:00,submitted
+A26-5052,Lakewood Green Alley Partnership,ORG-0380,climate_resilience,spring_2026,urban_heat,Lake District,35500,2026-01-19T13:40:00-08:00,submitted
+A26-5073,Eastwood Urban Forestry Fellows,ORG-0397,small_business,spring_2026,home_weatherization,Central Commons,26500,2026-01-27T15:50:00-08:00,submitted
+A26-0737,Grandview Creative Placemaking Team,ORG-0058,neighborhood_arts,spring_2026,flood_resilience,Central Commons,51500,2026-02-10T08:10:00-08:00,submitted
+A26-7987,Spring Hill Green Alley Project,ORG-0128,climate_resilience,spring_2026,building_cooling,Oak Junction,20000,2026-02-10T13:10:00-08:00,submitted
+A26-3355,Franklin Business Skills Workshop,ORG-0071,small_business,spring_2026,home_weatherization,River Ward,19500,2026-02-10T13:10:00-08:00,submitted
+A26-2356,Yorktown Wellness Navigation Team,ORG-0064,community_health,summer_2026,building_cooling,Meadow Loop,24000,2026-02-10T10:50:00-08:00,pending_correction
+A26-6745,Cedar Grove Emergency Cooling Outreach,ORG-0170,climate_resilience,spring_2026,home_weatherization,Harbor Point,41000,2026-01-22T11:00:00-08:00,submitted
+A26-8425,Spring Hill Flood Preparedness Team,ORG-0093,climate_resilience,spring_2026,green_infrastructure,Cedar Basin,63000,2026-01-17T11:50:00-08:00,submitted
+A26-0399,Rosewood Rain Garden Network,ORG-0047,climate_resilience,spring_2026,building_cooling,Meadow Loop,55500,2026-02-14T11:50:00-08:00,submitted
+A26-6726,Juniper Square Native Plant Corridor,ORG-0235,climate_resilience,spring_2026,building_cooling,River Ward,48000,2026-03-03T09:00:00-08:00,submitted
+A26-5769,Parkside Creative Placemaking Team,ORG-0180,neighborhood_arts,spring_2026,building_cooling,Oak Junction,17000,2026-03-14T12:20:00-08:00,submitted
+A26-5041,Elmwood Porch Cooling Partnership,ORG-0370,climate_resilience,spring_2026,home_weatherization,Hill Corridor,19500,2026-01-26T13:40:00-08:00,submitted
+A26-2331,Pleasant Valley Local Vendor Support,ORG-0265,small_business,spring_2026,home_weatherization,East Market,41000,2026-01-25T12:40:00-08:00,submitted
+A26-5681,Parkside Cool Roof Partnership,ORG-0170,climate_resilience,fall_2025,flood_resilience,Lake District,47000,2026-02-07T12:50:00-08:00,submitted
+A26-5084,West End Urban Forestry Fellows,ORG-0406,climate_resilience,spring_2026,home_weatherization,Meadow Loop,55000,2026-02-28T10:10:00-08:00,submitted
+A26-3722,Rosewood After-School Learning Lab,ORG-0057,youth_learning,spring_2026,home_weatherization,Central Commons,55000,2026-02-12T10:40:00-08:00,submitted
+A26-5131,Maplewood Climate Ready Blocks,ORG-0447,climate_resilience,spring_2026,green_infrastructure,Hill Corridor,25500,2026-02-07T10:10:00-08:00,submitted
+A26-5061,Crescent Hill Creative Placemaking Team,ORG-0083,neighborhood_arts,spring_2026,building_cooling,North Ridge,14500,2026-03-08T14:40:00-08:00,submitted
+A26-7110,Parkside Heat Relief Partnership,ORG-0037,climate_resilience,spring_2026,green_infrastructure,North Ridge,56500,2026-01-18T12:30:00-08:00,submitted
+A26-6525,Oak Terrace Green Alley Project,ORG-0217,climate_resilience,spring_2026,home_weatherization,Hill Corridor,48500,2026-02-14T09:30:00-08:00,duplicate
+A26-3538,Westhaven Home Energy Coaching,ORG-0105,climate_resilience,spring_2026,flood_resilience,Oak Junction,17000,2026-02-05T15:20:00-08:00,submitted
+A26-3028,Lakeside Energy Savings Workshop Series,ORG-0078,climate_resilience,spring_2026,home_weatherization,South Harbor,42500,2026-02-23T15:20:00-08:00,submitted
+A26-5017,Juniper Creek Buffer Project,ORG-0352,climate_resilience,spring_2026,urban_heat,Meadow Loop,22000,2026-01-30T09:40:00-08:00,submitted
+A26-5490,Rosewood Resilience Resource Center,ORG-0219,climate_resilience,fall_2025,building_cooling,River Ward,45000,2026-03-17T15:20:00-08:00,submitted
+A26-5150,Lakeside Heat Relief Collaborative,ORG-0460,climate_resilience,spring_2026,building_cooling,West Terrace,35000,2026-02-25T15:00:00-08:00,submitted
+A26-4985,Glenwood Food Recovery Team,ORG-0166,food_security,summer_2026,flood_resilience,Oak Junction,59500,2026-02-08T12:10:00-08:00,pending_correction
+A26-0646,Monroe Heights Neighborhood Shade Plan,ORG-0182,climate_resilience,spring_2026,building_cooling,River Ward,23500,2026-01-16T10:40:00-08:00,submitted
+A26-2244,Eastwood Heat Relief Network,ORG-0034,climate_resilience,spring_2026,urban_heat,East Market,35000,2026-03-04T12:00:00-08:00,submitted
+A26-5824,Brighton Senior Wellness Program,ORG-0112,community_health,winter_2025,urban_heat,South Harbor,33000,2026-02-24T08:00:00-08:00,draft
+A26-8910,Clearwater Emergency Cooling Outreach,ORG-0060,climate_resilience,spring_2026,flood_resilience,Cedar Basin,41500,2026-02-25T10:30:00-08:00,pending_correction
+A26-8854,Lakeside Home Energy Coaching,ORG-0243,climate_resilience,spring_2026,flood_resilience,East Market,17500,2026-02-18T16:10:00-08:00,submitted
+A26-4737,Parkside Weatherization Support Team,ORG-0124,climate_resilience,spring_2026,home_weatherization,Lake District,37500,2026-02-08T12:00:00-08:00,pending_correction
+A26-3929,Ashland Energy Savings Workshop Series,ORG-0228,climate_resilience,spring_2026,flood_resilience,East Market,50000,2026-02-24T09:10:00-08:00,submitted
+A26-7651,Yorktown Neighborhood Shade Plan,ORG-0205,climate_resilience,winter_2025,home_weatherization,Cedar Basin,34500,2026-03-03T12:00:00-08:00,submitted
+A26-9809,Jefferson Commons Flood Preparedness Team,ORG-0143,climate_resilience,spring_2026,green_infrastructure,Central Commons,14500,2026-03-07T12:30:00-08:00,draft
+A26-5056,Civic Center Flood Readiness Team,ORG-0383,climate_resilience,spring_2026,green_infrastructure,Central Commons,61000,2026-01-21T10:40:00-08:00,submitted
+A26-2660,Pleasant Valley Resilience Resource Center,ORG-0051,climate_resilience,winter_2025,green_infrastructure,North Ridge,10000,2026-03-06T14:10:00-08:00,submitted
+A26-5058,Ashland Shade Corridor Project,ORG-0385,climate_resilience,winter_2025,building_cooling,Cedar Basin,25500,2026-03-02T10:50:00-08:00,submitted
+A26-3000,Elmwood Native Plant Corridor,ORG-0006,climate_resilience,spring_2026,urban_heat,Lake District,50000,2026-01-15T09:40:00-08:00,submitted
+A26-1934,Eastwood Transit Access Team,ORG-0194,urban_mobility,spring_2026,home_weatherization,Lake District,14000,2026-02-16T14:40:00-08:00,submitted
+A26-1455,Harbor Heat Network,ORG-0241,climate_resilience,spring_2026,urban_heat,South Harbor,50000,2026-02-28T13:15:00-08:00,submitted
+A26-7239,Cedar Grove Weatherization Support Team,ORG-0093,climate_resilience,spring_2026,flood_resilience,North Ridge,60500,2026-02-11T14:40:00-08:00,submitted
+A26-3984,Millbrook Creek Restoration Collaborative,ORG-0219,climate_resilience,spring_2026,flood_resilience,West Terrace,18500,2026-01-23T13:40:00-08:00,submitted
+A26-4057,Fox Hollow Community Solar Library,ORG-0082,climate_resilience,summer_2026,green_infrastructure,Lake District,41000,2026-03-17T12:30:00-08:00,submitted
+A26-9571,Woodland Weatherization Support Team,ORG-0278,climate_resilience,spring_2026,urban_heat,North Ridge,38500,2026-02-23T14:00:00-08:00,submitted
+A26-4873,Franklin Creative Placemaking Team,ORG-0139,neighborhood_arts,spring_2026,green_infrastructure,Meadow Loop,24000,2026-01-24T09:50:00-08:00,submitted
+A26-5473,Oak Terrace Creek Restoration Collaborative,ORG-0007,climate_resilience,spring_2026,home_weatherization,Meadow Loop,51000,2026-03-15T12:40:00-08:00,submitted
+A26-4687,New Hope Community Solar Library,ORG-0249,climate_resilience,spring_2026,flood_resilience,Central Commons,21000,2026-03-11T15:20:00-08:00,submitted
+A26-3907,Juniper Square Home Energy Coaching,ORG-0220,climate_resilience,spring_2026,flood_resilience,North Ridge,58000,2026-03-03T08:20:00-08:00,submitted
+A26-2183,Old Town Compost Education Network,ORG-0107,climate_resilience,spring_2026,flood_resilience,East Market,27000,2026-02-21T11:00:00-08:00,pending_correction
+A26-5025,Pinehurst Native Plant Corridor,ORG-0064,climate_resilience,spring_2026,home_weatherization,Oak Junction,58000,2026-01-31T16:10:00-08:00,submitted
+A26-2888,Sherwood Native Plant Corridor,ORG-0170,climate_resilience,spring_2026,flood_resilience,West Terrace,21000,2026-02-12T09:30:00-08:00,withdrawn
+A26-5023,Harborview Cooling Commons,ORG-0216,climate_resilience,summer_2026,urban_heat,West Terrace,28000,2026-02-01T09:10:00-08:00,submitted
+A26-5077,Grand Avenue Cool Roof Cooperative,ORG-0400,climate_resilience,spring_2026,flood_resilience,Hill Corridor,48000,2026-03-11T21:24:00-08:00,submitted
+A26-1447,Kingston Emergency Cooling Outreach,ORG-0025,climate_resilience,spring_2026,home_weatherization,Central Commons,17000,2026-01-26T08:50:00-08:00,submitted
+A26-3114,Stonebridge Neighborhood Shade Plan,ORG-0230,climate_resilience,spring_2026,flood_resilience,North Ridge,45500,2026-01-17T16:30:00-08:00,submitted
+A26-9295,Quarry District Compost Education Network,ORG-0072,climate_resilience,spring_2026,urban_heat,Hill Corridor,18500,2026-03-14T12:40:00-08:00,pending_correction
+A26-5178,Fairview Community Cooling Hub,ORG-0480,climate_resilience,spring_2026,urban_heat,Central Commons,46000,2026-02-18T13:20:00-08:00,submitted
+A26-1998,Central Climate Canopy,ORG-0601,climate_resilience,spring_2026,urban_heat,Civic Center,42000,2026-02-20T10:15:00-08:00,submitted
+A26-1999,Bayview Cooling Commons,ORG-0602,climate_resilience,spring_2026,building_cooling,Bayview,46000,2026-02-21T11:20:00-08:00,submitted
+A26-2000,Maple Flood Ready Blocks,ORG-0603,climate_resilience,spring_2026,flood_resilience,Maple Junction,43000,2026-02-22T09:40:00-08:00,submitted
+A26-2001,West Terrace Shade Corridors,ORG-0604,climate_resilience,spring_2026,urban_heat,West Terrace,42000,2026-02-23T14:05:00-08:00,submitted

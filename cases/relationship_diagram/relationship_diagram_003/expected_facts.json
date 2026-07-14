@@ -3,64 +3,428 @@
   "task_type": "relationship_diagram",
   "facts": [
     {
-      "id": "reporting_edges",
-      "description": "Solid reporting lines.",
-      "source": "env/team_contacts.csv",
+      "id": "scope_and_control_time",
+      "description": "Exact operating scope, title, snapshot time, and bulletin cut-off.",
+      "source": "task.md",
       "importance": "critical",
-      "expected_value": [
-        [
-          "Ari Patel",
-          "Mina Torres"
-        ],
-        [
-          "Jun Park",
-          "Ari Patel"
-        ],
-        [
-          "Leah Stone",
-          "Ari Patel"
+      "expected_value": {
+        "title": "Central Campus Building Safety Escalation | Weekday Business Hours | 30 Jun 2026",
+        "scope_line": "Snapshot: 15:00 local | Control cutoff: 14:45 local",
+        "areas": [
+          "Executive Oversight",
+          "Command Spine",
+          "Functional Response",
+          "Advisory / External"
         ]
-      ],
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
+      },
+      "must_appear_in_image": true
     },
     {
-      "id": "advisory_edge",
-      "description": "Dotted advisory relationship.",
-      "source": "env/team_contacts.csv + env/diagram_rules.md",
+      "id": "active_people",
+      "description": "Exact current people and incident roles after base assignments, duty overrides, and released control bulletins.",
+      "source": "env/campus_operations_directory.xlsx + env/june_operating_model_review.docx + env/incident_escalation_handbook.pdf",
       "importance": "critical",
       "expected_value": [
-        "Leah Stone",
-        "Community Advisory Board",
-        "dotted advisory"
+        {
+          "name": "Dana Brooks",
+          "incident_role": "Executive Sponsor",
+          "area": "Executive Oversight"
+        },
+        {
+          "name": "Mina Torres",
+          "incident_role": "Facilities Director",
+          "area": "Executive Oversight"
+        },
+        {
+          "name": "Ari Patel",
+          "incident_role": "Site Operations Manager",
+          "area": "Command Spine"
+        },
+        {
+          "name": "Marcus Hale",
+          "incident_role": "Incident Commander",
+          "area": "Command Spine"
+        },
+        {
+          "name": "Amina Shah",
+          "incident_role": "Building Systems Lead",
+          "area": "Functional Response"
+        },
+        {
+          "name": "Priya Nair",
+          "incident_role": "Electrical Response Lead",
+          "area": "Functional Response"
+        },
+        {
+          "name": "Mateo Silva",
+          "incident_role": "Mechanical Response Lead",
+          "area": "Functional Response"
+        },
+        {
+          "name": "Leah Stone",
+          "incident_role": "Access Coordinator",
+          "area": "Functional Response"
+        },
+        {
+          "name": "Riley West",
+          "incident_role": "Logistics Coordinator",
+          "area": "Functional Response"
+        },
+        {
+          "name": "Omar Price",
+          "incident_role": "Recovery Coordinator",
+          "area": "Functional Response"
+        },
+        {
+          "name": "Zoe Kim",
+          "incident_role": "Security Liaison",
+          "area": "Functional Response"
+        },
+        {
+          "name": "Eli Morgan",
+          "incident_role": "Safety Officer",
+          "area": "Functional Response"
+        },
+        {
+          "name": "Sofia Reed",
+          "incident_role": "Communications Lead",
+          "area": "Functional Response"
+        },
+        {
+          "name": "Tessa Wong",
+          "incident_role": "Student Affairs Liaison",
+          "area": "Functional Response"
+        },
+        {
+          "name": "Dev Chen",
+          "incident_role": "IT Continuity Lead",
+          "area": "Functional Response"
+        }
       ],
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
+      "must_appear_in_image": true
     },
     {
-      "id": "core_people",
-      "description": "Core people and advisory group.",
-      "source": "env/team_contacts.csv",
+      "id": "active_advisory_external_nodes",
+      "description": "Exact external and advisory node set for the 15:00 snapshot.",
+      "source": "env/campus_operations_directory.xlsx",
       "importance": "major",
       "expected_value": [
-        "Ari Patel",
-        "Mina Torres",
-        "Jun Park",
-        "Leah Stone",
-        "Community Advisory Board"
+        {
+          "name": "Central Emergency Dispatch",
+          "node_type": "External service"
+        },
+        {
+          "name": "Community Advisory Board",
+          "node_type": "Advisory group"
+        },
+        {
+          "name": "EHS Review Council",
+          "node_type": "Advisory group"
+        },
+        {
+          "name": "Accessibility Advisory Panel",
+          "node_type": "Advisory group"
+        },
+        {
+          "name": "Continuity Planning Forum",
+          "node_type": "Advisory group"
+        },
+        {
+          "name": "Capital Works Coordination Cell",
+          "node_type": "Advisory group"
+        }
       ],
-      "must_appear_in_image": true,
-      "evaluation_role": "major_required"
+      "must_appear_in_image": true
     },
     {
-      "id": "wrong_manager",
-      "description": "Community Advisory Board should not be shown as Leah's manager.",
-      "source": "env/diagram_rules.md",
+      "id": "solid_reporting_edges",
+      "description": "Exact active direct-reporting relationships, including temporary bulletin reporting.",
+      "source": "env/campus_operations_directory.xlsx",
+      "importance": "critical",
+      "expected_value": [
+        {
+          "source": "Mina Torres",
+          "target": "Dana Brooks",
+          "control": "Directory"
+        },
+        {
+          "source": "Ari Patel",
+          "target": "Mina Torres",
+          "control": "Directory"
+        },
+        {
+          "source": "Marcus Hale",
+          "target": "Ari Patel",
+          "control": "Directory after CB-0001 substitution"
+        },
+        {
+          "source": "Amina Shah",
+          "target": "Ari Patel",
+          "control": "Directory after CB-0002 substitution"
+        },
+        {
+          "source": "Leah Stone",
+          "target": "Ari Patel",
+          "control": "Directory"
+        },
+        {
+          "source": "Omar Price",
+          "target": "Ari Patel",
+          "control": "Directory"
+        },
+        {
+          "source": "Priya Nair",
+          "target": "Amina Shah",
+          "control": "CB-0005"
+        },
+        {
+          "source": "Mateo Silva",
+          "target": "Amina Shah",
+          "control": "CB-0006"
+        },
+        {
+          "source": "Riley West",
+          "target": "Marcus Hale",
+          "control": "CB-0008"
+        }
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "dashed_routes",
+      "description": "Exact current escalation and external-notification routes with controlling references, endpoints, triggers, and severities.",
+      "source": "env/campus_operations_directory.xlsx + env/incident_escalation_handbook.pdf",
+      "importance": "critical",
+      "expected_value": [
+        {
+          "reference": "ER-0001",
+          "source": "Amina Shah",
+          "target": "Marcus Hale",
+          "trigger": "Operational impact confirmed",
+          "severity": "All severities"
+        },
+        {
+          "reference": "ER-0002",
+          "source": "Leah Stone",
+          "target": "Marcus Hale",
+          "trigger": "Access, crowd, or volunteer impact",
+          "severity": "All severities"
+        },
+        {
+          "reference": "ER-0003",
+          "source": "Zoe Kim",
+          "target": "Marcus Hale",
+          "trigger": "Security support requested",
+          "severity": "All severities"
+        },
+        {
+          "reference": "ER-0004",
+          "source": "Eli Morgan",
+          "target": "Marcus Hale",
+          "trigger": "Safety or regulatory concern",
+          "severity": "All severities"
+        },
+        {
+          "reference": "ER-0005",
+          "source": "Sofia Reed",
+          "target": "Marcus Hale",
+          "trigger": "Public or stakeholder messaging needed",
+          "severity": "Severity 2-3"
+        },
+        {
+          "reference": "ER-0006",
+          "source": "Tessa Wong",
+          "target": "Marcus Hale",
+          "trigger": "Student service impact",
+          "severity": "Severity 2-3"
+        },
+        {
+          "reference": "ER-0007",
+          "source": "Dev Chen",
+          "target": "Marcus Hale",
+          "trigger": "IT or digital-service dependency",
+          "severity": "Severity 2-3"
+        },
+        {
+          "reference": "ER-0701",
+          "source": "Omar Price",
+          "target": "Marcus Hale",
+          "trigger": "Recovery phase declared",
+          "severity": "Severity 2-3"
+        },
+        {
+          "reference": "CB-0003",
+          "source": "Priya Nair",
+          "target": "Marcus Hale",
+          "trigger": "Electrical isolation exceeds 30 min",
+          "severity": "Severity 2-3"
+        },
+        {
+          "reference": "CB-0004",
+          "source": "Mateo Silva",
+          "target": "Marcus Hale",
+          "trigger": "Mechanical isolation affects occupied space",
+          "severity": "Severity 2-3"
+        },
+        {
+          "reference": "ER-0008",
+          "source": "Marcus Hale",
+          "target": "Mina Torres",
+          "trigger": "Significant operational impact",
+          "severity": "Severity 2-3"
+        },
+        {
+          "reference": "ER-0009",
+          "source": "Marcus Hale",
+          "target": "Dana Brooks",
+          "trigger": "Enterprise or prolonged disruption",
+          "severity": "Severity 3"
+        },
+        {
+          "reference": "ER-0010",
+          "source": "Marcus Hale",
+          "target": "Central Emergency Dispatch",
+          "trigger": "Life safety or public emergency",
+          "severity": "Any severity when triggered"
+        }
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "dotted_relationships",
+      "description": "Exact advisory relationships with controlling reference and mode.",
+      "source": "env/campus_operations_directory.xlsx + env/incident_escalation_handbook.pdf",
+      "importance": "critical",
+      "expected_value": [
+        {
+          "reference": "SE-0001",
+          "source": "Community Advisory Board",
+          "target": "Leah Stone",
+          "mode": "Consulted"
+        },
+        {
+          "reference": "SE-0002",
+          "source": "EHS Review Council",
+          "target": "Eli Morgan",
+          "mode": "Advisory"
+        },
+        {
+          "reference": "SE-0003",
+          "source": "Accessibility Advisory Panel",
+          "target": "Tessa Wong",
+          "mode": "Consulted"
+        },
+        {
+          "reference": "SE-0801",
+          "source": "Continuity Planning Forum",
+          "target": "Omar Price",
+          "mode": "Advisory"
+        },
+        {
+          "reference": "CB-0007",
+          "source": "Capital Works Coordination Cell",
+          "target": "Amina Shah",
+          "mode": "Consulted"
+        }
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "precedence_decisions",
+      "description": "Required reconciliation outcomes at 15:00.",
+      "source": "all env files",
+      "importance": "critical",
+      "expected_value": [
+        "Marcus Hale replaces Elena Rossi as Incident Commander from CB-0001",
+        "Amina Shah replaces Jun Park as Building Systems Lead from CB-0002",
+        "Tessa Wong replaces Nadia Cole as Student Affairs Liaison from DO-0001",
+        "Omar Price is the current Recovery Coordinator; Marin Cole is ended and Maya Lewis is pending/future",
+        "Sofia Reed remains Communications Lead because the Marco Ito proposal is pending",
+        "Priya Nair and Mateo Silva temporarily report to Amina Shah under CB-0005 and CB-0006",
+        "Riley West temporarily reports to Marcus Hale under CB-0008"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "relationship_inventory",
+      "description": "Exact relationship counts after all valid additions and substitutions.",
+      "source": "all env files",
+      "importance": "critical",
+      "expected_value": {
+        "solid_reporting": 9,
+        "dashed_escalation_or_notification": 13,
+        "dotted_advisory": 5,
+        "total_relationships": 27
+      },
+      "must_appear_in_image": true
+    },
+    {
+      "id": "legend",
+      "description": "Required relationship-type legend.",
+      "source": "task.md + handbook",
       "importance": "major",
-      "expected_value": "Community Advisory Board as manager",
-      "must_not_appear_in_image": true,
-      "evaluation_role": "negative_only"
+      "expected_value": {
+        "solid_dark": "Direct reporting",
+        "dashed_red": "Incident escalation / Emergency notification",
+        "dotted_gray": "Advisory / Consulted"
+      },
+      "must_appear_in_image": true
+    },
+    {
+      "id": "audit_labels",
+      "description": "Every non-reporting connector carries the correct controlling reference and condition or mode.",
+      "source": "task.md + handbook",
+      "importance": "critical",
+      "expected_value": {
+        "dashed_label_components": [
+          "ER- or CB- reference",
+          "trigger",
+          "severity scope"
+        ],
+        "dotted_label_components": [
+          "SE- or CB- reference",
+          "relationship mode"
+        ],
+        "temporary_reporting_references": [
+          "CB-0005",
+          "CB-0006",
+          "CB-0008"
+        ]
+      },
+      "must_appear_in_image": true
+    },
+    {
+      "id": "exclusions",
+      "description": "Invalid or superseded records excluded from the active graph.",
+      "source": "all env files",
+      "importance": "critical",
+      "expected_value": [
+        "Elena Rossi as active Incident Commander",
+        "Jun Park as active Building Systems Lead",
+        "Nadia Cole as active Student Affairs Liaison",
+        "Marin Cole",
+        "Maya Lewis",
+        "Marco Ito",
+        "other campuses",
+        "evening, overnight, or weekend coverage",
+        "fire alarm, medical response, security incident, or utility outage networks",
+        "draft, pending, rejected, withdrawn, expired, scheduled, later-issued, or inactive bulletins"
+      ],
+      "must_appear_in_image": false
+    },
+    {
+      "id": "relationship_integrity",
+      "description": "No unsupported duplicate or wrong-type relationship.",
+      "source": "handbook + workbook",
+      "importance": "critical",
+      "expected_value": [
+        "Advisory groups and Central Emergency Dispatch remain outside management hierarchy",
+        "No functional escalation points to Ari Patel",
+        "Riley West has one solid route to Marcus Hale and no dashed duplicate",
+        "ADD_ROUTE bulletins do not delete current base routes",
+        "All role-based endpoints follow active substituted holders"
+      ],
+      "must_appear_in_image": true
     }
-  ],
-  "calculation_notes": "Use reports_to for solid lines and advisory for dotted lines. Advisory board is not a management node."
+  ]
 }

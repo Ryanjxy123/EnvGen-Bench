@@ -3,148 +3,123 @@
   "task_type": "document_brief",
   "facts": [
     {
-      "id": "final_public_course_title",
-      "description": "Final public course title to use as the poster title.",
-      "source": "env/course_brief.pdf, page 1 cover and page 2 Public-facing title lock",
+      "id": "course_identity",
+      "description": "Public course identity and term.",
+      "source": "env/Spring_2026_Continuing_Education_Catalog.pdf page 13; env/Spring_Course_Spotlight_Request.docx",
       "importance": "critical",
-      "expected_value": "Climate Data Stories for Civic Action",
-      "semantic_acceptance": [
-        "Climate Data Stories for Civic Action",
-        "Climate Data Stories for Civic Action studio"
-      ],
+      "expected_value": "Fly Fishing Fundamentals: From Casting to Catching; PE-087; Spring 2026",
       "must_appear_in_image": true,
-      "evaluation_role": "critical_required",
-      "source_section": "env/course_brief.pdf, page 1 cover and page 2 Public-facing title lock"
+      "evaluation_role": "critical_required"
     },
     {
-      "id": "lead_instructor",
-      "description": "Lead instructor for the public course poster.",
-      "source": "env/course_brief.pdf, page 2 Teaching team note; env/instructor_bio.md",
+      "id": "updated_course_run",
+      "description": "Reconciled overall run and session count.",
+      "source": "Catalog page 13 plus applicable registrar records effective by 2026-02-20",
       "importance": "critical",
-      "expected_value": "Dr. Maya Chen",
-      "semantic_acceptance": "Maya Chen may appear with or without the Dr. honorific.",
+      "expected_value": "March 24-April 23, 2026; 5 sessions",
+      "semantic_acceptance": "Accept Mar 24-Apr 23 and equivalent date formatting. Spring 2026 may convey the year.",
       "must_appear_in_image": true,
-      "evaluation_role": "critical_required",
-      "source_section": "env/course_brief.pdf, page 2 Teaching team note; env/instructor_bio.md"
+      "evaluation_role": "critical_required"
     },
     {
-      "id": "approved_schedule",
-      "description": "Approved public schedule, replacing older draft dates.",
-      "source": "env/course_brief.pdf, page 4 Approved public schedule card",
+      "id": "indoor_stage",
+      "description": "Indoor foundation stage with inferred session dates and updated room.",
+      "source": "Catalog pages 2 and 13 plus applicable registrar records",
       "importance": "critical",
-      "expected_value": "Wednesdays, May 6-27, 2026, 6:00-8:15 PM",
-      "semantic_acceptance": [
-        "Wednesdays, May 6, 13, 20, and 27, 2026, 6:00-8:15 PM",
-        "Wednesdays in May 2026, May 6-27, 6:00-8:15 PM"
-      ],
+      "expected_value": "March 24, March 31, and April 7; 5:30 PM-7:30 PM; Garrett Information Enterprise Center, Room 111, McHenry",
+      "semantic_acceptance": "Accept GIEC with Room 111 as a concise facility label, but the full public facility name is preferred.",
       "must_appear_in_image": true,
-      "evaluation_role": "critical_required",
-      "source_section": "env/course_brief.pdf, page 4 Approved public schedule card"
+      "evaluation_role": "critical_required"
     },
     {
-      "id": "target_audience",
-      "description": "Public-facing target audience for the course.",
-      "source": "env/course_brief.pdf, page 3 Who this is for",
+      "id": "outdoor_stage",
+      "description": "Updated outdoor practice dates, time, meeting place, and caveat.",
+      "source": "Catalog page 13 plus applicable registrar records",
+      "importance": "critical",
+      "expected_value": "April 14 and April 23; 6:00 PM-8:00 PM; Deep Creek Lake State Park Discovery Center, McHenry; weather dependent",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "fee_deadline_cta",
+      "description": "Current price and public registration action.",
+      "source": "Applicable registrar records and campaign standards",
+      "importance": "critical",
+      "expected_value": "$95; Register by March 19, 2026; garrettcollege.edu/cewd/register",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "instructor_audience",
+      "description": "Instructor and both intended experience groups.",
+      "source": "Catalog page 13 and creative request",
       "importance": "major",
-      "expected_value": "city staff, nonprofit analysts, and community organizers working with climate or resilience data",
-      "semantic_acceptance": "Accept close paraphrases that preserve all three audience groups and the climate/resilience data context.",
+      "expected_value": "Instructor Rita Lewis; suitable for beginners and people refining existing fly-fishing skills",
       "must_appear_in_image": true,
-      "evaluation_role": "major_required",
-      "source_section": "env/course_brief.pdf, page 3 Who this is for"
+      "evaluation_role": "major_required"
     },
     {
-      "id": "accepted_highlights",
-      "description": "Exactly three poster-safe learning highlights selected from the final public course outcomes.",
-      "source": "env/course_brief.pdf, page 5 Poster-safe learning outcomes",
+      "id": "learning_takeaways",
+      "description": "Exactly three ordered and grounded learning takeaways.",
+      "source": "Catalog page 13 and creative request",
       "importance": "critical",
-      "expected_value": [
-        "Frame messy climate datasets as clear public narratives",
-        "Build accessible charts and map captions for nontechnical audiences",
-        "Leave with a one-page action brief for a local resilience decision"
-      ],
-      "semantic_acceptance": "Accept concise paraphrases of these three outcomes. The image should include exactly three highlights, not a longer list.",
+      "expected_value": {
+        "count_and_order": "Exactly three, ordered gear choice, setup and knots, then casting",
+        "gear": "Essential equipment, preferably rods, fly lines, and reels",
+        "setup": "Rod assembly plus essential knots or gear assembly",
+        "casting": "Casting accuracy and distance"
+      },
       "must_appear_in_image": true,
-      "evaluation_role": "critical_required",
-      "source_section": "env/course_brief.pdf, page 5 Poster-safe learning outcomes"
+      "evaluation_role": "critical_required"
     },
     {
-      "id": "public_cta",
-      "description": "Optional public call to action. It is not required to appear in the poster; evaluate it only if the poster includes a CTA.",
-      "source": "env/course_brief.pdf, page 7 Public copy block",
-      "importance": "minor",
-      "expected_value": "Apply by April 22, 2026 at civicdata.example/apply",
-      "semantic_acceptance": "Full credit is compatible with no CTA. If a CTA appears, it should use the public apply deadline and URL rather than waitlist, internal registration, an incorrect deadline, an incorrect URL, or unsupported details.",
-      "evaluation_role": "optional",
-      "source_section": "env/course_brief.pdf, page 7 Public copy block"
-    },
-    {
-      "id": "rejected_old_titles",
-      "description": "Do not use draft or internal titles as the poster title.",
-      "source": "env/course_brief.pdf, pages 2 and 7 revision notes",
-      "importance": "critical",
-      "expected_value": [
-        "Data Stories for Climate Action",
-        "Climate Dashboard Sprint",
-        "Resilience Evidence Lab"
-      ],
-      "must_not_appear_in_image": true,
-      "forbidden_patterns": [
-        "Data Stories for Climate Action",
-        "Climate Dashboard Sprint",
-        "Resilience Evidence Lab"
-      ],
-      "evaluation_role": "negative_only",
-      "source_section": "env/course_brief.pdf, pages 2 and 7 revision notes"
-    },
-    {
-      "id": "rejected_old_dates",
-      "description": "Do not use replaced or tentative schedule language.",
-      "source": "env/course_brief.pdf, page 4 schedule notes and page 6 FAQ",
-      "importance": "critical",
-      "expected_value": [
-        "April 8-24, 2026",
-        "Tuesdays and Thursdays",
-        "late April",
-        "time TBA"
-      ],
-      "must_not_appear_in_image": true,
-      "forbidden_patterns": [
-        "April 8-24",
-        "Tuesdays and Thursdays",
-        "late April",
-        "time TBA"
-      ],
-      "evaluation_role": "negative_only",
-      "source_section": "env/course_brief.pdf, page 4 schedule notes and page 6 FAQ"
-    },
-    {
-      "id": "rejected_unconfirmed_details",
-      "description": "Do not include public-unsafe or unsupported details.",
-      "source": "env/course_brief.pdf, pages 4, 6, and 7 internal notes",
+      "id": "participant_preparation",
+      "description": "Latest released participant-preparation instruction.",
+      "source": "Applicable registrar participant_note record effective 2026-02-19",
       "importance": "major",
-      "expected_value": [
-        "venue TBA",
-        "tuition not yet published",
-        "certificate pending",
-        "registration cap of 32",
-        "internal sponsor Civic Futures Accelerator",
-        "draft affiliation Center for Planetary Informatics",
-        "waitlist note"
-      ],
+      "expected_value": "Loaner rods are available; bring weather-ready layers and a valid Maryland fishing license for the outdoor sessions",
+      "semantic_acceptance": "Concise paraphrases are acceptable if all three ideas remain clear.",
+      "must_appear_in_image": true,
+      "evaluation_role": "major_required"
+    },
+    {
+      "id": "eligible_assets",
+      "description": "Current course image and campaign mark selected from the asset library.",
+      "source": "env/Spring_2026_Campaign_Standards.pdf page 3; env/assets/",
+      "importance": "critical",
+      "expected_value": "Use media_104.jpg as one contained course image and brand_26_h.png as the undistorted footer mark; do not use media_118.jpg or brand_24_s.png",
+      "must_appear_in_image": true,
       "must_not_appear_in_image": true,
-      "forbidden_patterns": [
-        "venue TBA",
-        "tuition",
-        "certificate",
-        "cap of 32",
-        "32 seats",
-        "Civic Futures Accelerator",
-        "Center for Planetary Informatics",
-        "waitlist"
-      ],
-      "evaluation_role": "negative_only",
-      "source_section": "env/course_brief.pdf, pages 4, 6, and 7 internal notes"
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "campaign_visual_system",
+      "description": "Case-specific palette and typography.",
+      "source": "env/Spring_2026_Campaign_Standards.pdf pages 1-2",
+      "importance": "major",
+      "expected_value": "Teal, charcoal, warm gray, and white dominate; yellow is a small deadline accent; clean sans-serif typography; no script, serif display, brush, western, or novelty type",
+      "must_appear_in_image": true,
+      "must_not_appear_in_image": true,
+      "evaluation_role": "major_required"
+    },
+    {
+      "id": "poster_hierarchy",
+      "description": "Readable public-facing information architecture.",
+      "source": "env/Spring_2026_Campaign_Standards.pdf page 2",
+      "importance": "major",
+      "expected_value": "Compact title, one contained course image, two labeled schedule stages, concise key facts, one participant note, exactly three takeaways, prominent deadline-plus-URL CTA, and unobstructed footer mark",
+      "must_appear_in_image": true,
+      "evaluation_role": "major_required"
+    },
+    {
+      "id": "exclude_unrelated_copy",
+      "description": "No neighboring-course or internal audit material should be published.",
+      "source": "All env sources",
+      "importance": "major",
+      "expected_value": "No second course title or code, another instructor, phone or email, certification or prerequisite, full instructor biography, full catalog paragraph, or audit note",
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
     }
   ],
-  "calculation_notes": "Required display facts are the final public title, lead instructor, approved schedule, target audience, and exactly three poster-safe highlights. The public CTA is optional and must not be scored as missing when omitted. The case is designed so the agent must read across a long prospectus and distinguish final public-facing content from draft notes, internal remarks, and unsupported details. Do not penalize light paraphrase of the three highlights."
+  "calculation_notes": "The agent must reconcile catalog facts with a 340-row audit log under an as-of date. The first three indoor dates are derived from the five-session sequence and the catalog's two stated outdoor dates; the final outdoor date, facilities, fee, deadline, CTA, and preparation note come from applicable registrar records. Asset selection requires matching subject, rights window, channel, and current identity rather than relying on answer-like filenames."
 }

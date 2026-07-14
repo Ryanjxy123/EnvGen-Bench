@@ -3,68 +3,128 @@
   "task_type": "procedure_instruction",
   "facts": [
     {
-      "id": "step_order",
-      "description": "Correct setup steps in order.",
-      "source": "env/user_manual.pdf + env/quick_start_notes.txt",
+      "id": "phase_structure",
+      "description": "The instructional image is divided into one-time setup and recurring presentation use.",
+      "source": "task.md",
       "importance": "critical",
-      "expected_value": [
-        "Charge device for at least 20 minutes",
-        "Install the LumaHome app",
-        "Power on until the blue light pulses twice",
-        "Scan the pairing code in the app",
-        "Name the device and confirm room",
-        "Run the first calibration"
-      ],
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
+      "expected_value": {
+        "sections": ["First-time room setup", "Each presentation"],
+        "main_step_count": 8
+      },
+      "must_appear_in_image": true
     },
     {
-      "id": "first_charge_requirement",
-      "description": "The first charge requirement should be included before pairing begins.",
-      "source": "env/user_manual.pdf + env/quick_start_notes.txt",
+      "id": "wireless_module_installation",
+      "description": "The optional wireless LAN module is installed correctly before wireless setup.",
+      "source": "env/epson_powerlite_109w_quick_setup.pdf, page 3",
       "importance": "critical",
-      "expected_value": "Charge for at least 20 minutes before setup.",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
+      "expected_value": "Remove the wireless LAN module cover screw, insert the optional module into the projector USB-A port, then reinstall and secure the cover. The guide identifies module part V12H731P02.",
+      "must_appear_in_image": true
     },
     {
-      "id": "pairing_cue",
-      "description": "The blue indicator light pulsing twice is the cue before app pairing.",
-      "source": "env/user_manual.pdf + env/quick_start_notes.txt",
+      "id": "projector_startup",
+      "description": "The projector is powered on with the correct physical preparation and ready-state cue.",
+      "source": "env/epson_powerlite_109w_quick_setup.pdf, page 1",
       "importance": "major",
-      "expected_value": "Blue indicator light pulses twice before scanning the pairing code.",
-      "must_appear_in_image": true,
-      "evaluation_role": "major_required"
+      "expected_value": "Plug in the projector, open the A/V Mute slide fully, press Power, and wait for the Status light to flash blue and then remain on.",
+      "must_appear_in_image": true
     },
     {
-      "id": "reset_caution",
-      "description": "Reset pin caution should be included without making reset part of normal setup.",
-      "source": "env/quick_start_notes.txt",
-      "importance": "major",
-      "expected_value": "Do not press the reset pin unless support asks you to do so.",
-      "must_appear_in_image": true,
-      "evaluation_role": "major_required"
+      "id": "advanced_mode_selection",
+      "description": "The room access-point workflow uses Advanced rather than Quick connection mode.",
+      "source": "env/epson_powerlite_109w_quick_setup.pdf, page 3; env/epson_iprojection_operation_guide.pdf, pages 18 and 21-22",
+      "importance": "critical",
+      "expected_value": "Use Advanced Connection Mode because the projector and laptop connect through the room router or access point.",
+      "must_appear_in_image": true
     },
     {
-      "id": "avoid_reset_action",
-      "description": "Reset pin must not be presented as a normal setup or pairing action.",
-      "source": "env/quick_start_notes.txt",
+      "id": "projector_network_configuration",
+      "description": "The projector wireless settings are enabled, configured, and saved.",
+      "source": "env/epson_powerlite_109w_quick_setup.pdf, page 3",
+      "importance": "critical",
+      "expected_value": "Menu > Network > Wireless LAN On > Network Configuration > Wireless LAN; select Advanced, enter the necessary network settings, and choose Complete to save and exit.",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "network_information",
+      "description": "The setup uses administrator-provided access-point information rather than invented credentials.",
+      "source": "env/epson_iprojection_operation_guide.pdf, pages 21-22",
       "importance": "major",
-      "expected_value": "press reset pin",
-      "forbidden_patterns": [
-        "\\bpress(?:ing)?\\s+(?:the\\s+)?reset\\s+pin\\b",
-        "\\buse\\s+(?:the\\s+)?reset\\s+pin\\b",
-        "\\breset\\s+pin\\b[^.!?\\n;]{0,80}\\b(pair|pairing|setup|set\\s*up|normal\\s+setup)\\b",
-        "\\b(pair|pairing|setup|set\\s*up)\\b[^.!?\\n;]{0,80}\\breset\\s+pin\\b"
-      ],
-      "allowed_patterns": [
-        "\\b(do\\s+not|don't|never|avoid)\\b[^.!?\\n;]{0,80}\\breset\\s+pin\\b",
-        "\\breset\\s+pin\\b[^.!?\\n;]{0,80}\\bunless\\s+support\\b",
-        "\\breset\\s+pin\\b[^.!?\\n;]{0,80}\\btroubleshooting\\s+only\\b"
-      ],
-      "must_not_appear_in_image": true,
-      "evaluation_role": "negative_only"
+      "expected_value": "Obtain the room access point SSID and security settings from the network administrator and use them for projector setup.",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "windows_laptop_preparation",
+      "description": "The presentation laptop is prepared for the same network workflow.",
+      "source": "env/epson_iprojection_operation_guide.pdf, pages 16, 21, and 34",
+      "importance": "major",
+      "expected_value": "Install or start Epson iProjection on the Windows 10 laptop and connect the laptop to the same room network as the projector.",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "lan_standby",
+      "description": "The projector is switched to the LAN standby screen before software connection.",
+      "source": "env/epson_iprojection_operation_guide.pdf, pages 33-34",
+      "importance": "major",
+      "expected_value": "Press LAN or Source Search to switch the input to LAN and display the LAN standby screen.",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "software_join_flow",
+      "description": "The normal software flow selects the correct mode, finds the projector, and joins it.",
+      "source": "env/epson_iprojection_operation_guide.pdf, pages 34-36 and 38",
+      "importance": "critical",
+      "expected_value": "Start Epson iProjection, choose Advanced Connection Mode, use Automatic search, select the intended projector from the Projector List, and click Join.",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "keyword_verification",
+      "description": "Keyword verification is handled only when the projector requests it.",
+      "source": "env/epson_iprojection_operation_guide.pdf, pages 35-36",
+      "importance": "major",
+      "expected_value": "If the keyword entry screen appears, enter the Projector Keyword displayed on the projection screen and confirm.",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "projection_success",
+      "description": "The image gives a visible success cue for the joined session.",
+      "source": "env/epson_iprojection_operation_guide.pdf, pages 35-36",
+      "importance": "major",
+      "expected_value": "The computer screen is projected and the Epson iProjection toolbar appears; the input may switch to LAN automatically.",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "disconnect_and_shutdown",
+      "description": "The session is ended through the software before the projector is shut down.",
+      "source": "env/epson_iprojection_operation_guide.pdf, pages 53-54; env/epson_powerlite_109w_quick_setup.pdf, page 1",
+      "importance": "critical",
+      "expected_value": "Use Leave to disconnect the laptop, then press the projector Power button twice to shut it down.",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "exclude_alternative_paths",
+      "description": "Connection paths that do not match the assigned room-network workflow are not promoted as numbered steps.",
+      "source": "task.md; both env documents",
+      "importance": "major",
+      "expected_value": "Do not use Quick direct connection, HDMI, VGA, USB Display, wired LAN, mobile QR-code projection, MHL, or a Quick Wireless Connection USB key as required main steps.",
+      "must_not_appear_as_main_step": true
+    },
+    {
+      "id": "exclude_noncore_features",
+      "description": "Troubleshooting and optional collaboration features remain outside the normal workflow.",
+      "source": "task.md; env/epson_iprojection_operation_guide.pdf",
+      "importance": "major",
+      "expected_value": "Do not make troubleshooting, moderator mode, participant controls, mirroring, multi-projector projection, thumbnail selection, bandwidth control, shortcut creation, or USB-key creation part of the numbered procedure.",
+      "must_not_appear_as_main_step": true
+    },
+    {
+      "id": "critical_sequence",
+      "description": "Critical dependencies and the end-of-session order are preserved.",
+      "source": "both env documents",
+      "importance": "critical",
+      "expected_value": "Complete one-time projector and laptop preparation before the recurring session; display LAN standby before joining; join before projection; use Leave before pressing Power twice. Projector-network setup and laptop-software preparation may swap within the first-time section.",
+      "must_appear_in_image": true
     }
   ],
-  "calculation_notes": "Combine the manual's setup procedure with quick_start_notes.txt. Preserve the normal setup sequence, include first-charge and blue-light readiness cues, and exclude reset-pin troubleshooting as a main step."
+  "synthesis_notes": "The eight main steps should merge closely related substeps without changing their dependency order. The documents intentionally include several other valid connection methods and advanced features; they are natural distractors for this specific room-Wi-Fi task."
 }

@@ -1,186 +1,80 @@
 {
   "case_id": "data_selection_010",
-  "dimensions": {
-    "task_completion": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "output_type_data_selection_010",
-          "check": "Judge whether the output is a finished workshop_recommendation_flyer, not a worksheet, raw table, source-data screenshot, or generic mockup.",
-          "points": 4,
-          "scoring_hint": "Full credit when the artifact is polished and purpose-fit; no credit for raw data or placeholder content."
-        },
-        {
-          "id": "selection_task_resolution_data_selection_010",
-          "check": "Verify that the image resolves the data-selection task by filtering candidates, ranking them, applying any stated group limit, and featuring only the final selected objects.",
-          "points": 4,
-          "fact_ids": [
-            "selected_objects",
-            "ranking_order",
-            "group_limit_compliance"
-          ],
-          "scoring_hint": "Selection must be visible through the final featured set and order."
-        }
-      ],
-      "label": "Task Completion"
-    },
-    "grounded_requirement_satisfaction": {
-      "weight": 0.55,
-      "items": [
-        {
-          "id": "critical_selected_set_accuracy_data_selection_010",
-          "check": "Verify that exactly these objects are featured: Repair Cafe: Small Appliances, Intro to Community Composting, Neighborhood Oral History Lab, Family Budget Clinic, Podcast Story Sprint.",
-          "points": 8,
-          "fact_id": "selected_objects",
-          "scoring_hint": "No credit if any selected object is replaced or an extra candidate is promoted."
-        },
-        {
-          "id": "critical_ranking_order_data_selection_010",
-          "check": "Verify that visible order or hierarchy is: Repair Cafe: Small Appliances > Intro to Community Composting > Neighborhood Oral History Lab > Family Budget Clinic > Podcast Story Sprint.",
-          "points": 6,
-          "fact_id": "ranking_order",
-          "scoring_hint": "Accept any clear layout order that preserves the ranking."
-        },
-        {
-          "id": "critical_display_values_data_selection_010",
-          "check": "Verify that each selected object displays the required paired values from the source data.",
-          "points": 8,
-          "fact_id": "selected_object_display_values",
-          "scoring_hint": "Values must be attached to the correct selected object names."
-        },
-        {
-          "id": "critical_mapping_display_values_data_selection_010",
-          "check": "Verify that mapped labels from support sheets or join tables are displayed instead of raw codes and are bound to the correct selected objects.",
-          "points": 6,
-          "fact_id": "mapping_display_values",
-          "scoring_hint": "No credit for showing only raw category, district, branch, or service codes where labels are required."
-        },
-        {
-          "id": "critical_group_limit_data_selection_010",
-          "check": "Verify that no added featured object or substituted candidate violates the group cap stated in the rules.",
-          "points": 5,
-          "fact_id": "group_limit_compliance",
-          "scoring_hint": "Full credit when the selected set implicitly satisfies the cap."
-        },
-        {
-          "id": "critical_exclusion_accuracy_data_selection_010",
-          "check": "Verify that unselected candidates are not promoted as final featured selections, including eligibility failures, group-cap-blocked rows when applicable, and eligible-but-below-cutoff rows.",
-          "points": 7,
-          "fact_ids": [
-            "unselected_objects_not_featured",
-            "eligibility_exclusions",
-            "group_cap_exclusions",
-            "eligible_below_cutoff"
-          ],
-          "scoring_hint": "Mentioning exclusions is allowed; using them as selected answers is not."
-        }
-      ],
-      "label": "Grounded Requirement Satisfaction"
-    },
-    "information_structuring": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "selection_hierarchy_data_selection_010",
-          "check": "The layout should make the final selection set, ranking hierarchy, and value pairings easy to scan.",
-          "points": 5,
-          "fact_ids": [
-            "selected_objects",
-            "ranking_order",
-            "selected_object_display_values"
-          ]
-        },
-        {
-          "id": "no_process_overload_data_selection_010",
-          "check": "Do not let raw filtering process details, IDs, or table fields overwhelm the requested image artifact.",
-          "points": 4,
-          "scoring_hint": "Supporting details may appear only if the final selected objects remain primary."
-        }
-      ],
-      "label": "Information Structuring"
-    },
-    "visual_communication_quality": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "visual_clarity_data_selection_010",
-          "check": "Judge readability, contrast, visual hierarchy, and clear text-value pairing.",
-          "points": 4
-        },
-        {
-          "id": "visual_density_data_selection_010",
-          "check": "The image should be information-rich but not crowded, blank, or placeholder-like.",
-          "points": 4
-        }
-      ],
-      "label": "Visual Communication Quality"
-    }
+  "evaluation_mode": "image_vqa_0_2",
+  "dimension_weights": {
+    "grounded_requirement_satisfaction": 0.8,
+    "visual_rendering_quality": 0.2
   },
-  "score_caps": [
-    {
-      "id": "wrong_selected_object",
-      "max_total": 60,
-      "reason": "A non-selected candidate appears as a final featured selection.",
-      "trigger": {
-        "type": "forbidden_final_answer",
-        "patterns": [
-          "Archived Resume Night",
-          "Staff Training Facilitation Lab",
-          "Uninsured Tool Share Demo",
-          "Old Summer Seed Saving",
-          "Tiny Class Robotics",
-          "Long All-Day Grant Writing",
-          "Draft Sewing Circle",
-          "Cancelled Tax Help Prep",
-          "Internal Grant Review Circle",
-          "Test Tool Safety Lab",
-          "Training Volunteer Orientation",
-          "Private Sponsor Podcast Night",
-          "Old Autumn Budget Clinic",
-          "Retired Repair Bench Demo",
-          "Inactive Food Policy Forum",
-          "Bike Tune-Up Basics",
-          "Native Plant Balcony Planters",
-          "Tenant Rights Paperwork Help",
-          "Digital Privacy Walkthrough",
-          "Community Mediation Basics",
-          "Food Co-op Starter Session",
-          "Public Art Sketch Jam"
-        ],
-        "allowed_patterns": [
-          "\\b(excluded|exclude|filtered out|not selected|not featured|ineligible|below cutoff|blocked)\\b[\\s\\S]{0,120}\\b(Archived\\ Resume\\ Night|Staff\\ Training\\ Facilitation\\ Lab|Uninsured\\ Tool\\ Share\\ Demo|Old\\ Summer\\ Seed\\ Saving|Tiny\\ Class\\ Robotics|Long\\ All\\-Day\\ Grant\\ Writing|Draft\\ Sewing\\ Circle|Cancelled\\ Tax\\ Help\\ Prep|Internal\\ Grant\\ Review\\ Circle|Test\\ Tool\\ Safety\\ Lab|Training\\ Volunteer\\ Orientation|Private\\ Sponsor\\ Podcast\\ Night|Old\\ Autumn\\ Budget\\ Clinic|Retired\\ Repair\\ Bench\\ Demo|Inactive\\ Food\\ Policy\\ Forum|Bike\\ Tune\\-Up\\ Basics|Native\\ Plant\\ Balcony\\ Planters|Tenant\\ Rights\\ Paperwork\\ Help|Digital\\ Privacy\\ Walkthrough|Community\\ Mediation\\ Basics|Food\\ Co\\-op\\ Starter\\ Session|Public\\ Art\\ Sketch\\ Jam)\\b",
-          "\\b(Archived\\ Resume\\ Night|Staff\\ Training\\ Facilitation\\ Lab|Uninsured\\ Tool\\ Share\\ Demo|Old\\ Summer\\ Seed\\ Saving|Tiny\\ Class\\ Robotics|Long\\ All\\-Day\\ Grant\\ Writing|Draft\\ Sewing\\ Circle|Cancelled\\ Tax\\ Help\\ Prep|Internal\\ Grant\\ Review\\ Circle|Test\\ Tool\\ Safety\\ Lab|Training\\ Volunteer\\ Orientation|Private\\ Sponsor\\ Podcast\\ Night|Old\\ Autumn\\ Budget\\ Clinic|Retired\\ Repair\\ Bench\\ Demo|Inactive\\ Food\\ Policy\\ Forum|Bike\\ Tune\\-Up\\ Basics|Native\\ Plant\\ Balcony\\ Planters|Tenant\\ Rights\\ Paperwork\\ Help|Digital\\ Privacy\\ Walkthrough|Community\\ Mediation\\ Basics|Food\\ Co\\-op\\ Starter\\ Session|Public\\ Art\\ Sketch\\ Jam)\\b[\\s\\S]{0,120}\\b(excluded|exclude|filtered out|not selected|not featured|ineligible|below cutoff|blocked)\\b"
-        ]
+  "grounded_requirement_satisfaction": {
+    "vqa_items": [
+      {
+        "id": "grounded_q01",
+        "question": "What final selection or displayed result does the image show for Final selected objects after all eligibility filters, ranking rules, optional group limits, and top-N cutoff?",
+        "expected_answer": "selected_ids_reference_only: W951 | W952 | W953 | W955 | W957; selected_names: Repair Cafe: Small Appliances | Intro to Community Composting | Neighborhood Oral History Lab | Family Budget Clinic | Podcast Story Sprint",
+        "acceptance_rule": "Accept if exactly these selected objects are featured; IDs may be omitted but names must be identifiable."
+      },
+      {
+        "id": "grounded_q02",
+        "question": "What final selection or displayed result does the image show for Selected objects must appear in rule-based ranking order after tie-breaks and any group-limit application?",
+        "expected_answer": "1. Repair Cafe: Small Appliances | 2. Intro to Community Composting | 3. Neighborhood Oral History Lab | 4. Family Budget Clinic | 5. Podcast Story Sprint",
+        "acceptance_rule": "Accept left-to-right, top-to-bottom, numbered, or hero-to-secondary order if it preserves the expected ranking."
+      },
+      {
+        "id": "grounded_q03",
+        "question": "What final selection or displayed result does the image show for Each selected object must show the correct name and required display fields?",
+        "expected_answer": "Repair Cafe: Small Appliances: category_label: Maker Skills; district_name: River North; seat_capacity: 40; time_band: evening; Intro to Community Composting: category_label: Climate & Garden; district_name: Market East; seat_capacity: 28; time_band: morning; Neighborhood Oral History Lab: category_label: Local Stories; district_name: River North; seat_capacity: 22; time_band: afternoon; Family Budget Clinic: category_label: Money Help; district_name: Market East; seat_capacity: 32; time_band: evening; Podcast Story Sprint: category_label: Media Lab; district_name: Lakeside; seat_capacity: 18; time_band: evening",
+        "acceptance_rule": "Accept equivalent formatting when display values are attached to the correct selected names."
+      },
+      {
+        "id": "grounded_q04",
+        "question": "What final selection or displayed result does the image show for The final selection obeys the at-most-1-per-category_label group limit after sorting?",
+        "expected_answer": "Selected group counts are Climate & Garden: 1, Local Stories: 1, Maker Skills: 1, Media Lab: 1, Money Help: 1; no category_label exceeds 1.",
+        "acceptance_rule": "Accept if the image does not add extra featured objects that would violate the group cap."
+      },
+      {
+        "id": "grounded_q05",
+        "question": "What final selection or displayed result does the image show for Mapped display labels from support sheets or join tables must be shown instead of raw codes and attached to the correct selected objects?",
+        "expected_answer": "Repair Cafe: Small Appliances: category_label: Maker Skills; district_name: River North; Intro to Community Composting: category_label: Climate & Garden; district_name: Market East; Neighborhood Oral History Lab: category_label: Local Stories; district_name: River North; Family Budget Clinic: category_label: Money Help; district_name: Market East; Podcast Story Sprint: category_label: Media Lab; district_name: Lakeside",
+        "acceptance_rule": "Accept if mapped labels, not raw codes, are visibly bound to the correct selected names."
+      },
+      {
+        "id": "grounded_q06",
+        "question": "Does the image actively present any prohibited, excluded, deprecated, or superseded content covered by Filtered-out, group-cap-blocked where applicable, and below-cutoff eligible candidates must not appear as final featured selections? If yes, list it.",
+        "expected_answer": "No",
+        "acceptance_rule": "Only No earns credit; none of the prohibited content may be active in the final image. Prohibited evaluator-only references: Archived Resume Night | Staff Training Facilitation Lab | Uninsured Tool Share Demo | Old Summer Seed Saving | Tiny Class Robotics | Long All-Day Grant Writing | Draft Sewing Circle | Cancelled Tax Help Prep | Internal Grant Review Circle | Test Tool Safety Lab | Training Volunteer Orientation | Private Sponsor Podcast Night | Old Autumn Budget Clinic | Retired Repair Bench Demo | Inactive Food Policy Forum | Bike Tune-Up Basics | Native Plant Balcony Planters | Tenant Rights Paperwork Help | Digital Privacy Walkthrough | Community Mediation Basics | Food Co-op Starter Session | Public Art Sketch Jam. The image may mention exclusion context, but must not promote any unselected object as selected."
+      },
+      {
+        "id": "grounded_q07",
+        "question": "Does the image actively present any prohibited, excluded, deprecated, or superseded content covered by Candidates failing status, window, eligibility, threshold, readiness, rights, or setup rules are not final selections? If yes, list it.",
+        "expected_answer": "No",
+        "acceptance_rule": "Only No earns credit; none of the prohibited content may be active in the final image. Prohibited evaluator-only references: Archived Resume Night | Staff Training Facilitation Lab | Uninsured Tool Share Demo | Old Summer Seed Saving | Tiny Class Robotics | Long All-Day Grant Writing | Draft Sewing Circle | Cancelled Tax Help Prep | Internal Grant Review Circle | Test Tool Safety Lab | Training Volunteer Orientation | Private Sponsor Podcast Night | Old Autumn Budget Clinic | Retired Repair Bench Demo | Inactive Food Policy Forum. No eligibility-failed candidate should be promoted as selected."
+      },
+      {
+        "id": "grounded_q08",
+        "question": "Does the image actively present any prohibited, excluded, deprecated, or superseded content covered by Eligible candidates blocked by the category_label group limit are not final selections? If yes, list it.",
+        "expected_answer": "No",
+        "acceptance_rule": "Only No earns credit; none of the prohibited content may be active in the final image. Prohibited evaluator-only references: Bike Tune-Up Basics | Native Plant Balcony Planters. No group-cap-blocked candidate should be promoted as selected."
+      },
+      {
+        "id": "grounded_q09",
+        "question": "Does the image actively present any prohibited, excluded, deprecated, or superseded content covered by Eligible candidates below the final top-N cutoff are not final selections? If yes, list it.",
+        "expected_answer": "No",
+        "acceptance_rule": "Only No earns credit; none of the prohibited content may be active in the final image. Prohibited evaluator-only references: Tenant Rights Paperwork Help | Digital Privacy Walkthrough | Community Mediation Basics | Food Co-op Starter Session | Public Art Sketch Jam. Below-cutoff candidates should not be promoted as final selections."
       }
-    },
-    {
-      "id": "missing_selected_object",
-      "max_total": 55,
-      "reason": "One or more required selected objects is missing.",
-      "trigger": {
-        "type": "missing_required_count",
-        "fact_ids": [
-          "selected_objects",
-          "selected_object_display_values"
-        ],
-        "min_missing": 1
+    ]
+  },
+  "visual_rendering_quality": {
+    "image_type": "promotional_poster",
+    "vqa_items": [
+      {
+        "id": "visual_q01",
+        "question": "As a promotional poster or recommendation flyer, does the image create an immediate focal offer, clearly prioritize featured items and details, and combine persuasive visual energy with elegant hierarchy, readable action information, and high-end poster craft?",
+        "score_criteria": {
+          "2": "Award 2 only if the poster is exceptionally compelling and publication-ready: the core offer or recommendation is understood instantly; featured items, prices or details, and action information are clearly separated and easy to scan; the hero focal point is strong; typography, imagery, color, spacing, alignment, and margins are sophisticated and cohesive; promotional emphasis feels deliberate rather than loud or generic; and the whole composition is memorable, balanced, and nearly flawless. No cramped details, unclear CTA, generic sale-template look, weak imagery, malformed text, clipping, overlap, or visible cleanup issue is allowed. Any meaningful professional revision prevents 2.",
+          "1": "Award 1 if the poster is understandable, usable, and visually decent or attractive, but it remains ordinary or has visible flaws such as a modest focal point, cramped details, uneven item emphasis, generic promotional styling, slightly weak CTA, or minor typography and spacing issues.",
+          "0": "Award 0 even when the offer is technically present if the poster looks visibly poor, confusing, or unconvincing: focal hierarchy is weak, items or action details are hard to scan, imagery or typography is crude, composition is cluttered or empty, or the result requires substantial redesign. Blank, corrupted, severely unreadable, clipped, or broken posters are also 0."
+        }
       }
-    },
-    {
-      "id": "raw_table_instead_of_image",
-      "max_total": 40,
-      "reason": "The final artifact is a raw table, SQL result, JSON dump, or worksheet rather than the requested image.",
-      "trigger": {
-        "type": "forbidden_final_answer",
-        "patterns": [
-          "\\|\\s*workshop_id",
-          "workshop_id\\s*,\\s*name",
-          "CREATE\\s+TABLE",
-          "SELECT\\s+\\*",
-          "INSERT\\s+INTO",
-          "(?:\\|[^\\n]*){4,}\\n(?:\\|[^\\n]*){4,}"
-        ]
-      }
-    }
-  ]
+    ]
+  }
 }

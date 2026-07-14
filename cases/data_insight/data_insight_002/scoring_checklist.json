@@ -1,170 +1,116 @@
 {
   "case_id": "data_insight_002",
-  "dimensions": {
-    "task_completion": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "output_type_data_insight_002",
-          "check": "The output should be a finished warehouse fulfillment quality infographic, not raw CSV rows or a generic dashboard.",
-          "points": 4
-        },
-        {
-          "id": "decision_resolution_data_insight_002",
-          "check": "The infographic should resolve the priority decision using period comparison, rates, normalization, thresholds, and exclusions.",
-          "points": 4
-        }
-      ],
-      "label": "Task Completion"
-    },
-    "grounded_requirement_satisfaction": {
-      "weight": 0.55,
-      "items": [
-        {
-          "id": "critical_score_leader_data_insight_002",
-          "check": "Verify that Pick East is the top score entity with score about 82.9.",
-          "points": 6,
-          "fact_id": "warehouse_quality_score_leader"
-        },
-        {
-          "id": "critical_lowest_data_insight_002",
-          "check": "Verify that Bulk Bay is the lowest score entity with score about 19.0.",
-          "points": 4,
-          "fact_id": "warehouse_quality_lowest_score"
-        },
-        {
-          "id": "critical_change_data_insight_002",
-          "check": "Verify that Pick East has the largest gap-rate increase at about 2.7 percentage points.",
-          "points": 5,
-          "fact_id": "warehouse_quality_fastest_gap_change"
-        },
-        {
-          "id": "critical_volume_data_insight_002",
-          "check": "Verify that Cold Chain has the highest gap volume at about 540.",
-          "points": 5,
-          "fact_id": "warehouse_quality_gap_volume_hotspot"
-        },
-        {
-          "id": "critical_incident_data_insight_002",
-          "check": "Verify that Returns South has the highest incident rate at about 49.6 per 1,000.",
-          "points": 5,
-          "fact_id": "warehouse_quality_incident_rate_hotspot"
-        },
-        {
-          "id": "critical_group_data_insight_002",
-          "check": "Verify that West is the group hotspot at about 996.",
-          "points": 5,
-          "fact_id": "warehouse_quality_group_gap_hotspot"
-        },
-        {
-          "id": "critical_threshold_data_insight_002",
-          "check": "Verify that 2 entities meet the high-priority threshold.",
-          "points": 5,
-          "fact_id": "warehouse_quality_threshold_count"
-        },
-        {
-          "id": "negative_distractors_data_insight_002",
-          "check": "Verify that forecast, subtotal, and old-period rows are not used as final metrics.",
-          "points": 4,
-          "fact_id": "warehouse_quality_distractor_exclusions"
-        }
-      ],
-      "label": "Grounded Requirement Satisfaction"
-    },
-    "information_structuring": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "priority_hierarchy_data_insight_002",
-          "check": "The image should organize priority score, gap volume, rate change, incident signal, group hotspot, and threshold count into a clear decision hierarchy.",
-          "points": 5,
-          "fact_ids": [
-            "warehouse_quality_score_leader",
-            "warehouse_quality_lowest_score",
-            "warehouse_quality_fastest_gap_change",
-            "warehouse_quality_gap_volume_hotspot",
-            "warehouse_quality_incident_rate_hotspot",
-            "warehouse_quality_group_gap_hotspot",
-            "warehouse_quality_threshold_count"
-          ]
-        },
-        {
-          "id": "action_takeaway_data_insight_002",
-          "check": "The takeaway should connect the top priority with at least one supporting operational signal.",
-          "points": 4,
-          "fact_ids": [
-            "warehouse_quality_score_leader",
-            "warehouse_quality_incident_rate_hotspot",
-            "warehouse_quality_gap_volume_hotspot"
-          ]
-        }
-      ],
-      "label": "Information Structuring"
-    },
-    "visual_communication_quality": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "visual_clarity_data_insight_002",
-          "check": "Judge readability, contrast, hierarchy, and label legibility at infographic size.",
-          "points": 4
-        },
-        {
-          "id": "visual_density_data_insight_002",
-          "check": "The layout should be dense enough for operations review while avoiding overlapping labels or raw table dumps.",
-          "points": 4
-        }
-      ],
-      "label": "Visual Communication Quality"
-    }
+  "evaluation_mode": "image_vqa_0_2",
+  "dimension_weights": {
+    "grounded_requirement_satisfaction": 0.8,
+    "visual_rendering_quality": 0.2
   },
-  "score_caps": [
-    {
-      "id": "missing_panel_core_fact",
-      "max_total": 55,
-      "reason": "A required panel critical fact is missing.",
-      "trigger": {
-        "type": "missing_required_count",
-        "fact_ids": [
-          "warehouse_quality_score_leader",
-          "warehouse_quality_lowest_score",
-          "warehouse_quality_fastest_gap_change",
-          "warehouse_quality_gap_volume_hotspot",
-          "warehouse_quality_incident_rate_hotspot",
-          "warehouse_quality_group_gap_hotspot",
-          "warehouse_quality_threshold_count"
-        ],
-        "min_missing": 1
+  "grounded_requirement_satisfaction": {
+    "vqa_items": [
+      {
+        "id": "grounded_q01",
+        "question": "What cutoff week, review window, baseline window, and later incomplete weeks are used?",
+        "expected_answer": "Cutoff 2027-01-03; review 2026-11-15 through 2027-01-03; baseline 2026-09-20 through 2026-11-08; weeks ending 2027-01-10 and 2027-01-17 are incomplete and excluded.",
+        "acceptance_rule": "Score 2 only if the cutoff, both exact eight-week windows, and both rejected later week-ending dates are all stated correctly. Score 1 only if the cutoff and review window are correct but the baseline or one/both rejected weeks are missing or incomplete. Score 0 if the cutoff or review window is wrong, a later partial week is used, or multiple dates are materially incorrect."
+      },
+      {
+        "id": "grounded_q02",
+        "question": "What network review-window reconciliation totals are reported for shipped units, accepted units, gap units, and gap rate?",
+        "expected_answer": "95,363.2 shipped standard units; 89,753.8 accepted standard units; 5,609.4 gap standard units; 5.88% gap rate.",
+        "acceptance_rule": "Score 2 only if all four measures are explicitly tied to the review window and match within ±1.0 standard unit for the three totals and ±0.02 percentage points for the rate. Score 1 only if at least two measures are correct and one is the gap total or gap rate, with units clearly distinguished. Score 0 if the reconciliation is absent, raw reported quantities are used, or two or more measures are materially wrong."
+      },
+      {
+        "id": "grounded_q03",
+        "question": "Who is the raw priority leader, what exact score is shown, and which current approved action covers it?",
+        "expected_answer": "Pick East (E03), score 97.6, covered by Approved / Active action QI-2714.",
+        "acceptance_rule": "Score 2 only if the area name, cell ID, one-decimal score, action ID, approval state, and Active status are all correct. Score 1 only if Pick East and the score are correct but the action ID or one status detail is missing. Score 0 if the leader or score is wrong, or if Pick East is presented as uncovered."
+      },
+      {
+        "id": "grounded_q04",
+        "question": "Which area receives the one new intervention, what score does it have, why is it eligible, and what is its score lead over the watchlist choice?",
+        "expected_answer": "Cold Chain (E05), score 93.0, eligible because it has no current approved Active/Monitoring action at cutoff, leading Robotics Cell by 6.1 points.",
+        "acceptance_rule": "Score 2 only if Cold Chain, E05, the one-decimal score, uncovered eligibility basis, watchlist comparator, and 6.0-point lead are all correct. Score 1 only if Cold Chain is selected correctly and at least two of the score, eligibility reason, comparator, or margin are correct. Score 0 if another area is selected, a non-current action is treated as coverage, or the decision is unsupported."
+      },
+      {
+        "id": "grounded_q05",
+        "question": "Which uncovered area is placed on watch, what score does it have, and how far does it trail the intervention choice?",
+        "expected_answer": "Robotics Cell (E13), score 87.0, uncovered at cutoff and trailing Cold Chain by 6.1 points.",
+        "acceptance_rule": "Score 2 only if Robotics Cell, E13, the one-decimal score, uncovered status, intervention comparator, and 6.0-point deficit are all correct. Score 1 only if Robotics Cell is correct and at least two numeric/status details are correct. Score 0 if another area is placed on watch or the future scheduled action is incorrectly treated as current coverage."
+      },
+      {
+        "id": "grounded_q06",
+        "question": "Which areas are in the high-priority set, and how is that set split between currently covered and intervention-eligible areas?",
+        "expected_answer": "High priority: Pick East (E03), Cold Chain (E05), Robotics Cell (E13), Returns South (E04). Covered: Pick East and Returns South. Eligible: Cold Chain and Robotics Cell. Counts: 4 high, 2 covered, 2 eligible.",
+        "acceptance_rule": "Score 2 only if all four members, all IDs, the covered/eligible assignment, and all three counts are correct. Score 1 only if at least three members are correct and the 4/2/2 count split is shown without reversing covered and eligible groups. Score 0 if the high-priority membership or count is materially wrong."
+      },
+      {
+        "id": "grounded_q07",
+        "question": "What are ranks 1 through 7, including cell IDs, one-decimal priority scores, and current-action coverage?",
+        "expected_answer": "Pick East (E03) 97.6 > Cold Chain (E05) 93.0 > Robotics Cell (E13) 87.0 > Returns South (E04) 79.6 > Crossdock West (E07) 53.5 > Export Dock (E12) 46.9 > Small Parcel (E08) 41.6. Pick East is covered by Approved/Active QI-2714; Returns South is covered by Approved/Monitoring QI-2689; Cold Chain, Robotics Cell, Crossdock West, Export Dock and Small Parcel are uncovered at cutoff.",
+        "acceptance_rule": "Score 2 only if all seven areas appear in the exact order with correct IDs, scores within ±0.1, and correct coverage for every listed area. Score 1 only if ranks 1–4 are exact and at least two of ranks 5–7 are correctly ordered and scored, with Pick East and Returns South coverage correct. Score 0 if the top four order is wrong, several scores are absent, or non-current actions are treated as coverage."
+      },
+      {
+        "id": "grounded_q08",
+        "question": "What are ranks 8 through 14, including cell IDs, one-decimal scores, current coverage, and the lowest-priority comparison?",
+        "expected_answer": "Parcel Merge (E11) 35.6 > Sort Central (E02) 31.4 > Vendor Intake (E10) 25.5 > Pack North (E01) 24.0 > Oversize Lane (E14) 18.7 > Reserve Storage (E09) 10.1 > Bulk Bay (E06) 0.0. Sort Central is covered by Approved/Monitoring QI-2655; the other six are uncovered. Bulk Bay is the lowest-priority comparison.",
+        "acceptance_rule": "Score 2 only if all seven lower-ranked areas appear in the exact order with correct IDs and scores within ±0.1, Sort Central coverage is correct, and Bulk Bay is identified as the lowest comparison. Score 1 only if at least five of seven are correctly ordered and scored and the lowest comparison is correct. Score 0 if the lower ranking is mostly absent, materially misordered, or uses packet values."
+      },
+      {
+        "id": "grounded_q09",
+        "question": "What baseline gap rate, review gap rate, and percentage-point change are reported for the three highest raw-risk areas?",
+        "expected_answer": "Pick East (E03): 4.20% → 9.00% (+4.80 pp); Cold Chain (E05): 5.10% → 9.20% (+4.10 pp); Robotics Cell (E13): 4.10% → 8.51% (+4.41 pp)",
+        "acceptance_rule": "Score 2 only if all three areas and all nine numeric values are correct within ±0.02 percentage points, with percent and percentage-point units kept distinct. Score 1 only if all three areas are correct and at least six of the nine values are correct, including the direction of change for each. Score 0 if an area is wrong, baseline and review are confused, or multiple values are materially incorrect."
+      },
+      {
+        "id": "grounded_q10",
+        "question": "Which area has the largest review gap volume, and what gap volume, network share, and repeat-breach count are reported?",
+        "expected_answer": "Cold Chain (E05): 808.2 standard gap units, 14.4% of network gap, and 7/8 review weeks above the control limit.",
+        "acceptance_rule": "Score 2 only if the area/ID, gap volume within ±1.0 unit, network share within ±0.1 percentage points, and 7-of-8 breach count are all correct. Score 1 only if Cold Chain is correct and at least two of the three numerical details are correct. Score 0 if another area is named, reported quantities are used instead of standard units, or the breach count is unsupported."
+      },
+      {
+        "id": "grounded_q11",
+        "question": "Which area has the highest valid severity-weighted incident rate, and what rate, valid-ticket count, severity points, and denominator support it?",
+        "expected_answer": "Returns South (E04): 68.2 severity points per 1,000 scale units; 8 valid tickets; 27 severity points; 396 scale-unit denominator.",
+        "acceptance_rule": "Score 2 only if the area/ID and all four numerical components are correct within ±0.1 for the rate and exactly for the counts/denominator. Score 1 only if Returns South is correct and at least two supporting numerical components are correct with the per-1,000 basis clear. Score 0 if another area is named, unweighted ticket count is substituted for the metric, or invalid tickets are included."
+      },
+      {
+        "id": "grounded_q12",
+        "question": "Which two effective warehouse zones have the largest review gap totals, what are their totals, and what is the margin between them?",
+        "expected_answer": "West: 1,733.3 standard gap units; East: 1,136.6; West leads by 596.6.",
+        "acceptance_rule": "Score 2 only if West and East are in the correct order and both totals plus the margin are correct within ±1.0 standard unit. Score 1 only if both zones are correct and at least one total is correct, but the other total or margin is missing. Score 0 if another zone is first/second, old zone mappings are used, or area-level values are substituted."
+      },
+      {
+        "id": "grounded_q13",
+        "question": "Which material review-period profile transitions changed conversion or zone assignment, when did each take effect, and how many review weeks used the new profile?",
+        "expected_answer": "Cold Chain (E05) standard_units_per_reported 10 → 12 effective 2026-12-06, 5 review weeks on new profile; Robotics Cell (E13) standard_units_per_reported 1 → 1.25 effective 2026-11-29, 6 review weeks on new profile; Crossdock West (E07) warehouse_zone Central → West effective 2026-12-13, 4 review weeks on new profile; Export Dock (E12) warehouse_zone South → East effective 2026-12-27, 2 review weeks on new profile.",
+        "acceptance_rule": "Score 2 only if all four affected areas/IDs, exact changes, effective dates, and post-change review-week counts are correct. Score 1 only if at least two transitions are complete and correct across all four fields. Score 0 if fewer than two are correct, effective dates are ignored, or old conversion/zone values are presented as final."
+      },
+      {
+        "id": "grounded_q14",
+        "question": "What record-selection and incident-filtering audit counts are reported?",
+        "expected_answer": "224 selected baseline+review area-week records; 73 earlier approved revisions discarded; 59 non-approved Fulfillment revisions ignored; 108 non-Fulfillment rows excluded; 216 incident rows inside review dates; 76 valid incidents; 140 rejected incidents.",
+        "acceptance_rule": "Score 2 only if all seven counts are correct and their categories are not conflated. Score 1 only if the 224 selected count, 76 valid count, 140 rejected count, and at least two of the remaining four counts are correct. Score 0 if the audit is absent, packet control counts are used, or selected and discarded populations are mixed."
+      },
+      {
+        "id": "grounded_q15",
+        "question": "What priority weights, severity weights, thresholds, and tie-break sequence are stated?",
+        "expected_answer": "Priority weights: 30% review gap rate, 20% gap-rate worsening, 20% severity-weighted incident rate, 15% average criticality, 15% repeat-breach share. Severity: Minor 1, Major 2, Critical 4. High ≥75.0; Watch 55.0–74.9. Tie-break: rounded score, review gap volume, average criticality, area name.",
+        "acceptance_rule": "Score 2 only if all five priority weights are mapped to the correct components, all three severity weights, both thresholds, and the complete four-step tie-break are correct. Score 1 only if all five priority weights and both thresholds are correct but exactly one of the severity or tie-break blocks is incomplete. Score 0 if the formula is materially different, weights do not total 100%, or packet/draft methodology is used."
       }
-    },
-    {
-      "id": "uses_invalid_panel_rows",
-      "max_total": 60,
-      "reason": "The image uses forecast, subtotal, or old-period rows as final results.",
-      "trigger": {
-        "type": "forbidden_final_answer",
-        "patterns": [
-          "99999",
-          "88888",
-          "77777",
-          "forecast result",
-          "subtotal result",
-          "old_period result"
-        ]
+    ]
+  },
+  "visual_rendering_quality": {
+    "image_type": "executive_dashboard",
+    "vqa_items": [
+      {
+        "id": "visual_q01",
+        "question": "As an executive dashboard or decision snapshot, does the image surface the primary decision immediately through a disciplined KPI hierarchy, meaningful comparison, aligned values and statuses, restrained emphasis, and highly polished meeting-ready composition?",
+        "score_criteria": {
+          "2": "Award 2 only if the dashboard is exceptional and genuinely executive-ready: the central decision or priority is obvious within seconds; ranked comparisons, statuses, and supporting KPIs are visually coherent and numerically aligned; all values, units, labels, and notes are readable; the grid, spacing, typography, color, and emphasis are precise and restrained; charts and cards are purposeful rather than repetitive; and the whole page feels custom, calm, and authoritative. There must be no disconnected KPI-card dump, raw-worksheet feel, excessive density, weak status encoding, clipping, malformed text, or visible cleanup issue. Any meaningful revision a senior design reviewer would request prevents 2.",
+          "1": "Award 1 if the dashboard is understandable, usable in a meeting, and visually decent, but it has visible shortcomings such as generic card layout, weak comparison, small secondary text, uneven grid spacing, excessive density, modest decision emphasis, or ordinary styling.",
+          "0": "Award 0 even if metrics are shown when the dashboard visually fails as a decision tool: the main decision is buried, values or statuses are hard to compare, the page resembles a raw worksheet, hierarchy is chaotic, density is poorly managed, or the design looks noticeably weak and requires substantial redesign. Blank, corrupted, severely unreadable, or materially misleading outputs are also 0."
+        }
       }
-    },
-    {
-      "id": "raw_panel_dump",
-      "max_total": 40,
-      "reason": "The output is a raw CSV/table dump instead of an infographic.",
-      "trigger": {
-        "type": "forbidden_final_answer",
-        "patterns": [
-          "entity_id,",
-          "shipped_units",
-          "record_type,status"
-        ]
-      }
-    }
-  ]
+    ]
+  }
 }

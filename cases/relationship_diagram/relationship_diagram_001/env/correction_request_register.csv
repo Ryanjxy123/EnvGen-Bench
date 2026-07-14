@@ -1,0 +1,65 @@
+request_id,bundle_id,apply_sequence,change_type,target,proposed_change,supersedes_request_id,dependency_ids,proposed_effective_at,scope,environment
+CR-4801,CB-0626-B,10,ADD_ENTITY,Request Coverage Decision,Add Planning & Dispatch entity Request Coverage Decision; PK coverage_decision_id; FKs request_id and agreement_asset_id.,,,2026-06-30T13:00:00,Central Service-to-Cash,production
+CR-4802,CB-0626-B,20,REMOVE_FK,Service Request.agreement_id,Retire the direct optional agreement_id FK from Service Request after coverage-decision cutover.,CR-4816,CR-4801,2026-06-30T13:05:00,Central Service-to-Cash,production
+CR-4803,CB-0626-B,30,RENAME_ENTITY,Request SLA Event,Rename Request SLA Event to Request Commitment Event.,,,2026-06-30T13:10:00,Central Service-to-Cash,production
+CR-4804,CB-0626-B,31,RENAME_PK,Request Commitment Event,Use request_commitment_event_id as the current primary key.,,CR-4803,2026-06-30T13:11:00,Central Service-to-Cash,production
+CR-4805,CB-0626-B,32,RENAME_FACT,Request Commitment Event,Replace event_type with commitment_type as the single non-key fact.,,CR-4803,2026-06-30T13:12:00,Central Service-to-Cash,production
+CR-4806,CB-0626-B,40,RENAME_ENTITY,Work Order Checklist,Rename Work Order Checklist to Work Order Close Gate.,CR-4824,,2026-06-30T13:20:00,Central Service-to-Cash,production
+CR-4807,CB-0626-B,41,RENAME_PK,Work Order Close Gate,Use work_order_close_gate_id as the current primary key.,,CR-4806,2026-06-30T13:21:00,Central Service-to-Cash,production
+CR-4808,CB-0626-B,42,RENAME_FACT,Work Order Close Gate,Replace completion_state with gate_state as the single non-key fact.,,CR-4806,2026-06-30T13:22:00,Central Service-to-Cash,production
+CR-4809,CB-0626-B,50,ADD_FACT,Request Coverage Decision,Show decision_state as the single non-key fact.,,CR-4801,2026-06-30T13:30:00,Central Service-to-Cash,production
+CR-4810,CB-0626-B,51,ADD_RELATIONSHIP,Service Request -> Request Coverage Decision,Each decision belongs to one Service Request; a request has 0..N decisions; FK request_id.,,CR-4801,2026-06-30T13:31:00,Central Service-to-Cash,production
+CR-4811,CB-0626-B,52,ADD_RELATIONSHIP,Agreement Asset -> Request Coverage Decision,Each decision belongs to one Agreement Asset; an Agreement Asset has 0..N decisions; FK agreement_asset_id.,,CR-4801,2026-06-30T13:32:00,Central Service-to-Cash,production
+CR-4812,CB-0626-B,60,ADD_ENTITY,Invoice Settlement,Add Invoice Settlement between Invoice and Payment.,,,2026-06-30T14:00:00,Central Service-to-Cash,production
+CR-4813,CB-0626-B,61,ADD_RELATIONSHIP,Invoice -> Payment,Add direct Invoice-to-Payment relationship.,,,2026-06-30T14:01:00,Central Service-to-Cash,production
+CR-4814,CB-0626-B,62,ADD_ENTITY,Work Order Dependency,Add Work Order Dependency to Planning & Dispatch.,,,2026-07-15T00:00:00,Central Service-to-Cash,production
+CR-4815,CB-0626-B,63,ADD_FK,Service Request.agreement_asset_id,Add agreement_asset_id directly to Service Request.,,,2026-07-01T00:00:00,Central Service-to-Cash,production
+CR-4816,CB-0626-A,15,RETAIN_FK,Service Request.agreement_id,Keep agreement_id on Service Request.,,,2026-06-26T12:00:00,Central Service-to-Cash,production
+CR-4817,CB-0626-B,64,RENAME_ENTITY,Visit Signature,Rename Visit Signature to Customer Acceptance.,,,2026-06-30T14:05:00,Central Service-to-Cash,production
+CR-4818,CB-0701-A,10,ADD_ENTITY,Payment Method,Add Payment Method to Billing & Cash.,,,2026-07-01T09:00:00,Central Service-to-Cash,production
+CR-4819,CB-0626-B,65,ADD_ENTITY,Refund,Add Refund after cash allocation.,,,2026-06-30T14:10:00,Post-payment,production
+CR-4820,CB-0626-B,66,ADD_ENTITY,Request Comment,Add Request Comment to Planning & Dispatch.,,,2026-06-30T14:11:00,Collaboration,production
+CR-4821,CB-0626-B,67,REMOVE_ENTITY,Invoice Adjustment,Remove Invoice Adjustment from the controlled model.,,,2026-06-30T14:12:00,Central Service-to-Cash,production
+CR-4822,CB-0626-B,68,RENAME_FACT,Payment Allocation,Replace allocated_amount with allocation_status.,,,2026-06-30T14:13:00,Central Service-to-Cash,production
+CR-4823,CB-0626-B,69,ADD_RELATIONSHIP,Work Order -> Technician,Add direct Work Order-to-Technician relationship.,,,2026-06-30T14:14:00,Central Service-to-Cash,production
+CR-4824,CB-0626-A,35,RENAME_ENTITY,Work Order Checklist,Rename Work Order Checklist to Work Order Ready Check.,,,2026-06-26T12:30:00,Central Service-to-Cash,production
+CR-4825,CB-0626-B,70,RENAME_FACT,Payment Allocation,Replace allocated_amount with applied_amount as the single displayed business fact.,,,2026-06-30T15:40:00,Central Service-to-Cash,production
+CR-4826,CB-0626-B,71,RENAME_FACT,Visit Signature,Replace signer_role with acceptance_role as the single displayed business fact.,,,2026-06-30T15:41:00,Central Service-to-Cash,production
+CR-4827,CB-0701-A,80,ADD_ENTITY,Agreement Renewal Window,Add Entity proposal for Agreement Renewal Window.,,,2026-07-01T09:00:00,Central Service-to-Cash,production
+CR-4828,CB-0701-A,81,ADD_RELATIONSHIP,Asset Warranty Claim,Add Relationship proposal for Asset Warranty Claim.,,,2026-07-01T09:05:00,Central Service-to-Cash,production
+CR-4829,CB-0701-A,82,RENAME_FACT,Customer Preference,Rename Fact proposal for Customer Preference.,,,2026-07-01T09:10:00,Central Service-to-Cash,production
+CR-4830,CB-0701-A,83,ADD_FK,Location Access Note,Add Fk proposal for Location Access Note.,,,2026-07-01T09:15:00,Central Service-to-Cash,production
+CR-4831,CB-0701-A,84,ADD_ENTITY,Request Escalation Note,Add Entity proposal for Request Escalation Note.,,,2026-07-02T09:00:00,Central Service-to-Cash,production
+CR-4832,CB-0701-A,85,ADD_RELATIONSHIP,Request Attachment,Add Relationship proposal for Request Attachment.,,,2026-07-02T09:05:00,Central Service-to-Cash,production
+CR-4833,CB-0701-A,86,RENAME_FACT,Dispatch Queue,Rename Fact proposal for Dispatch Queue.,,,2026-07-02T09:10:00,Central Service-to-Cash,production
+CR-4834,CB-0701-A,87,ADD_FK,Technician Route,Add Fk proposal for Technician Route.,,,2026-07-02T09:15:00,Central Service-to-Cash,production
+CR-4835,CB-0626-B,88,ADD_ENTITY,Visit Media,Add Entity proposal for Visit Media.,,,2026-06-30T15:18:00,Post-payment,production
+CR-4836,CB-0626-B,89,ADD_RELATIONSHIP,Visit Expense,Add Relationship proposal for Visit Expense.,,,2026-06-30T15:19:00,Collaboration,production
+CR-4837,CB-0626-B,90,RENAME_ENTITY,Field Inspection,Rename Entity proposal for Field Inspection.,,,2026-06-30T15:20:00,Installed Base,production
+CR-4838,CB-0626-B,91,REMOVE_ENTITY,Part Reservation,Remove Entity proposal for Part Reservation.,,,2026-06-30T15:21:00,Procurement,production
+CR-4839,CB-0626-B,92,ADD_ENTITY,Invoice Delivery,Add Entity proposal for Invoice Delivery.,,,2026-06-30T15:22:00,Post-payment,production
+CR-4840,CB-0626-B,93,ADD_RELATIONSHIP,Invoice Tax Detail,Add Relationship proposal for Invoice Tax Detail.,,,2026-06-30T15:23:00,Collaboration,production
+CR-4841,CB-0626-B,94,RENAME_ENTITY,Credit Memo,Rename Entity proposal for Credit Memo.,,,2026-06-30T15:24:00,Installed Base,production
+CR-4842,CB-0626-B,95,REMOVE_ENTITY,Refund,Remove Entity proposal for Refund.,,,2026-06-30T15:25:00,Procurement,production
+CR-4843,CB-0626-B,96,ADD_ENTITY,Cash Application Batch,Add Entity proposal for Cash Application Batch.,,,2026-06-30T15:16:00,Central Service-to-Cash,staging
+CR-4844,CB-0626-B,97,ADD_RELATIONSHIP,Bank Statement Line,Add Relationship proposal for Bank Statement Line.,,,2026-06-30T15:17:00,Central Service-to-Cash,staging
+CR-4845,CB-0626-B,98,RENAME_FACT,Payment Method,Rename Fact proposal for Payment Method.,,,2026-06-30T15:18:00,Central Service-to-Cash,staging
+CR-4846,CB-0626-B,99,REMOVE_FK,Settlement Instruction,Remove Fk proposal for Settlement Instruction.,,,2026-06-30T15:19:00,Central Service-to-Cash,staging
+CR-4847,CB-0626-B,100,ADD_ENTITY,Work Order Dependency,Add Entity proposal for Work Order Dependency.,,,2026-06-30T15:20:00,Central Service-to-Cash,staging
+CR-4848,CB-0626-B,101,ADD_RELATIONSHIP,Request Comment,Add Relationship proposal for Request Comment.,,,2026-06-30T15:21:00,Central Service-to-Cash,staging
+CR-4849,CB-0626-B,102,RENAME_FACT,Customer Acceptance,Rename Fact proposal for Customer Acceptance.,,,2026-06-30T15:22:00,Central Service-to-Cash,staging
+CR-4850,CB-0626-B,103,REMOVE_FK,Service Entitlement,Remove Fk proposal for Service Entitlement.,,,2026-06-30T15:23:00,Central Service-to-Cash,staging
+CR-4851,CB-0626-B,104,ADD_ENTITY,Coverage Exception,Add Entity proposal for Coverage Exception.,,,2026-06-30T15:24:00,Central Service-to-Cash,production
+CR-4852,CB-0626-B,105,ADD_RELATIONSHIP,SLA Breach Review,Add Relationship proposal for SLA Breach Review.,,,2026-06-30T15:25:00,Central Service-to-Cash,production
+CR-4853,CB-0626-B,106,RENAME_FACT,Technician Availability,Rename Fact proposal for Technician Availability.,,,2026-06-30T15:26:00,Central Service-to-Cash,production
+CR-4854,CB-0626-B,107,ADD_ENTITY,Parts Backorder,Add Entity proposal for Parts Backorder.,,,2026-06-30T15:27:00,Central Service-to-Cash,production
+CR-4855,CB-0626-B,108,ADD_RELATIONSHIP,Invoice Settlement,Add Relationship proposal for Invoice Settlement.,,,2026-06-30T15:28:00,Central Service-to-Cash,production
+CR-4856,CB-0626-B,109,RENAME_FACT,Payment Reversal,Rename Fact proposal for Payment Reversal.,,,2026-06-30T15:29:00,Central Service-to-Cash,production
+CR-4857,CB-0626-B,110,ADD_RELATIONSHIP,Asset Meter Reading,Add Relationship proposal for Asset Meter Reading.,,,2026-06-30T15:30:00,Central Service-to-Cash,production
+CR-4858,CB-0626-B,111,RENAME_FACT,Visit Checklist,Rename Fact proposal for Visit Checklist.,,,2026-06-30T15:31:00,Central Service-to-Cash,production
+CR-4859,CB-0626-B,112,ADD_ENTITY,Agreement Contact,Add Entity proposal for Agreement Contact.,,,2026-06-30T15:32:00,Central Service-to-Cash,production
+CR-4860,CB-0626-B,113,RENAME_ENTITY,Location Contact,Rename Entity proposal for Location Contact.,,,2026-06-30T15:33:00,Central Service-to-Cash,production
+CR-4861,CB-0626-B,114,RENAME_FACT,Work Order Handoff,Rename Fact proposal for Work Order Handoff.,,CR-4851,2026-06-30T15:34:00,Central Service-to-Cash,production
+CR-4862,CB-0626-B,115,REMOVE_FK,Service Request Audit,Remove Fk proposal for Service Request Audit.,,CR-4852,2026-06-30T15:35:00,Central Service-to-Cash,production
+CR-4863,CB-0626-B,116,ADD_ENTITY,Invoice Approval,Add Entity proposal for Invoice Approval.,,CR-4857,2026-06-30T15:36:00,Central Service-to-Cash,production
+CR-4864,CB-0626-B,117,ADD_RELATIONSHIP,Payment Reconciliation,Add Relationship proposal for Payment Reconciliation.,,CR-4858,2026-06-30T15:37:00,Central Service-to-Cash,production

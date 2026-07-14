@@ -3,91 +3,109 @@
   "task_type": "multi_source_fusion",
   "facts": [
     {
-      "id": "sales_winner",
-      "description": "Monthly sales-winning product by revenue and units.",
-      "source": "env/sales.csv",
+      "id": "selected_product",
+      "source": "May_2026_Sales_Workbook.xlsx + Regional_Pilot_Service_Areas.csv",
       "importance": "critical",
-      "expected_value": "HelioGrid Pulse",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
+      "expected_value": "HelioGrid Flex",
+      "must_appear_in_image": true
     },
     {
-      "id": "selling_points",
-      "description": "Supported product selling points.",
-      "source": "env/product_docs.md",
+      "id": "selected_region",
+      "source": "May_2026_Sales_Workbook.xlsx",
       "importance": "critical",
-      "expected_value": [
-        "stores solar energy for evening use and outages",
-        "quiet wall-mounted design",
-        "app-guided energy insights"
-      ],
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
+      "expected_value": "Central",
+      "must_appear_in_image": true
     },
     {
-      "id": "audience_tone",
-      "description": "Tone should fit homeowners with rooftop solar.",
-      "source": "env/audience_profile.json",
-      "importance": "major",
-      "expected_value": "confident, practical, optimistic",
-      "must_appear_in_image": true,
-      "evaluation_role": "major_required"
-    },
-    {
-      "id": "brand_constraints",
-      "description": "Use HelioGrid brand palette and avoid forbidden visual elements.",
-      "source": "env/brand_guide.pdf",
-      "importance": "major",
-      "expected_value": [
-        "#0B5FFF",
-        "#FFFFFF",
-        "#00A887",
-        "red background",
-        "cartoon mascot"
-      ],
-      "must_appear_in_image": true,
-      "evaluation_role": "major_required"
-    },
-    {
-      "id": "visual_reference_assets",
-      "description": "Use the approved brand visual style documented in the PDF guide; no standalone synthetic logo/reference PNG is agent-visible.",
-      "source": "env/brand_guide.pdf",
-      "importance": "major",
-      "expected_value": "approved brand visual style from the brand guide",
-      "must_appear_in_image": true,
-      "evaluation_role": "major_required"
-    },
-    {
-      "id": "web_required_size",
-      "description": "Current Instagram feed size or aspect ratio must be obtained via web search.",
-      "source": "web",
+      "id": "selected_load_track",
+      "source": "Central_Load_Track_Eligibility.csv + selected-line contribution",
       "importance": "critical",
-      "expected_value": "official current feed sizing guidance from Instagram or Meta",
-      "must_appear_in_image": false,
-      "evaluation_role": "optional"
+      "expected_value": "EV_CHARGER; 95990.21 versus HEAT_PUMP 91365.68; EV_CHARGER leads by 4624.53.",
+      "must_appear_in_image": true
     },
     {
-      "id": "wrong_product_exclusions",
-      "description": "Do not promote lower-selling products or let web search override env-grounded product facts.",
-      "source": "env/sales.csv + env/product_docs.md",
-      "importance": "major",
-      "expected_value": [
-        "HelioGrid Mini",
-        "HelioGrid Sense"
-      ],
-      "must_not_appear_in_image": true,
-      "evaluation_role": "negative_only"
-    }
-  ],
-  "web_facts": [
+      "id": "selected_utility_program",
+      "source": "Central_Load_Track_Eligibility.csv + selected-line contribution",
+      "importance": "critical",
+      "expected_value": "LoneStar FlexCharge; 50990.21 versus Heartland EV Shift 45000.00; LoneStar leads by 5990.21.",
+      "must_appear_in_image": true
+    },
     {
-      "description": "Current recommended Instagram feed image size or aspect ratio.",
-      "required_for_case": true,
-      "acceptable_sources": [
-        "Instagram help documentation",
-        "Meta business/help documentation",
-        "current reputable social media specification reference"
-      ]
+      "id": "campaign_label",
+      "source": "June_18_Central_Load_Track_Routing_Addendum.md",
+      "importance": "critical",
+      "expected_value": "Central EV Solar Conversion Pilot",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "badge",
+      "source": "June_18_Central_Load_Track_Routing_Addendum.md",
+      "importance": "critical",
+      "expected_value": "May 2026 Central EV-Track Program-Eligible Net-Contribution Leader",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "lead_benefit",
+      "source": "June_18_Central_Load_Track_Routing_Addendum.md",
+      "importance": "critical",
+      "expected_value": "Coordinate rooftop solar with qualifying Level 2 charging during participating utility event windows, with normal charging schedules outside events.",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "proof_charging_profile",
+      "source": "June_18_Central_Load_Track_Routing_Addendum.md",
+      "importance": "critical",
+      "expected_value": "Installer-set EV charging profiles align rooftop-solar input with a compatible Level 2 charger.",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "proof_event_status",
+      "source": "June_18_Central_Load_Track_Routing_Addendum.md",
+      "importance": "critical",
+      "expected_value": "App event status shows when charging timing is active and when the normal charging schedule resumes.",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "cta",
+      "source": "June_18_Central_Load_Track_Routing_Addendum.md",
+      "importance": "critical",
+      "expected_value": "Check LoneStar EV-flex eligibility",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "qualification",
+      "source": "June_18_Central_Load_Track_Routing_Addendum.md",
+      "importance": "critical",
+      "expected_value": "Owner-occupied Central rooftop-solar home in a participating LoneStar FlexCharge territory, compatible inverter pathway, verified qualifying Level 2 EV charger.",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "disclosures",
+      "source": "June_18_Central_Load_Track_Routing_Addendum.md",
+      "importance": "critical",
+      "expected_value": "No guarantee; four EV-specific variability factors; eligible LoneStar FlexCharge territories in TX with within-state variation; utility enrollment, site review and charger verification before activation; event-window timing change; override allowed with possible benefit reduction.",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "background_asset",
+      "source": "Creative_Asset_Register.xlsx",
+      "importance": "critical",
+      "expected_value": "AST-104B / central_rooftop_home.jpg, detached Central residential rooftop-solar background.",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "product_asset",
+      "source": "Creative_Asset_Register.xlsx",
+      "importance": "critical",
+      "expected_value": "AST-208 / flex_current_inverter.jpg reduced to one clean wall-mounted HelioGrid Flex enclosure with no supplier mark, label, exposed connector, loose lead, unrelated equipment, or room frame.",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "exclusions",
+      "source": "All env sources",
+      "importance": "critical",
+      "expected_value": "No combined EV-or-heat-pump audience, non-winning utility program, generic C-C2 copy, unsupported claim, internal value, code, or ID.",
+      "must_appear_in_image": true
     }
   ]
 }

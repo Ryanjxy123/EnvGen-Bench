@@ -2,29 +2,50 @@
   "case_id": "data_insight_006",
   "task_type": "data_insight",
   "web_policy": "closed_env",
-  "target_image_type": "campus_energy_infographic",
-  "difficulty": "hard",
+  "target_image_type": "campus_energy_review_snapshot",
+  "difficulty": "very_hard",
   "env_files": [
     {
-      "path": "env/campus_energy_oct_2026.csv",
-      "role": "Weekly campus building meter log with actual rows and operational distractors",
+      "path": "env/campus_energy_register.csv",
+      "role": "Interleaved campus meter register containing baseline and October readings, corrected revisions, and non-final distractor rows",
       "format": "csv",
-      "origin": "manual",
-      "reproducibility_note": "Benchmark-authored controlled dataset for energy aggregation, intensity, and exclusion reasoning"
+      "origin": "benchmark_authored"
     },
     {
-      "path": "env/tariff_rules.json",
-      "role": "Inclusion rules, intensity metric, and demand-risk threshold",
+      "path": "env/facility_profiles.csv",
+      "role": "Facility names, campus areas, occupied square feet, load classes, review scope, intensity eligibility, and profile state",
+      "format": "csv",
+      "origin": "benchmark_authored"
+    },
+    {
+      "path": "env/meter_registry.csv",
+      "role": "Meter-to-facility mappings with active windows, meter roles, and mapping states",
+      "format": "csv",
+      "origin": "benchmark_authored"
+    },
+    {
+      "path": "env/meter_calibration.csv",
+      "role": "Approved, draft, expired, and future calibration records with effective windows and calibration families",
+      "format": "csv",
+      "origin": "benchmark_authored"
+    },
+    {
+      "path": "env/demand_thresholds.csv",
+      "role": "Demand-watch thresholds keyed by load class, campus area, effective cycle, and state",
+      "format": "csv",
+      "origin": "benchmark_authored"
+    },
+    {
+      "path": "env/campus_energy_rules.json",
+      "role": "Review-cycle pointers and protocol references without precomputed answers",
       "format": "json",
-      "origin": "manual",
-      "reproducibility_note": "Benchmark-authored rules for stable closed-env calculation"
+      "origin": "benchmark_authored"
     },
     {
-      "path": "env/facility_notes.md",
-      "role": "Facilities guidance about metric interpretation and distractor handling",
-      "format": "md",
-      "origin": "manual",
-      "reproducibility_note": "Benchmark-authored notes for evaluator traceability"
+      "path": "env/energy_review_protocol.md",
+      "role": "Natural-language eligibility, deduplication, join, aggregation, normalization, threshold, comparison, and audit instructions",
+      "format": "markdown",
+      "origin": "benchmark_authored"
     }
   ],
   "source_policy": {
@@ -39,5 +60,5 @@
     ],
     "web_usage_note": "Closed-env case: web access is not allowed; solve from env files only."
   },
-  "notes": "Data Insight case focused on filtering, aggregation, weekly peak detection, share calculation, intensity normalization, cross-file demand threshold use, and distractor exclusion."
+  "notes": "Very hard closed-env data-insight case with 24 facilities, multi-meter aggregation, revision resolution, temporal joins, calibration-family filtering, composite threshold lookup, baseline normalization, and audit reconciliation."
 }

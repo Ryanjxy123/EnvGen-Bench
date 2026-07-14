@@ -1,11 +1,11 @@
-Platform: Retail app square product card
-Required canvas: 1200 x 1200 px
-Required aspect ratio: 1:1 square
-Old conflicting platform to ignore: Web hero banner 1440 x 480.
-Top safe zone: 80 px.
-Bottom safe zone: 100 px.
-Side safe margin: 72 px.
-Logo: top-left safe area.
-CTA: bottom-right safe area.
+Platform: Email header banner
+Required canvas: 1600 x 600 px
+Required aspect ratio: 8:3 wide horizontal
+Old conflicting platform to ignore: Clinic poster 4:5 vertical.
+Top safe zone: 52 px.
+Bottom safe zone: 64 px.
+Side safe margin: 96 px.
+Logo: top-right inside email header safe zone.
+CTA: center-right portal button with phone line below.
 Text density: no more than 6 short text blocks; headline should be largest and at most 2 lines.
 Hero: must stay readable without covering CTA, disclosure, or source line.

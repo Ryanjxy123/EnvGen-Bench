@@ -1,28 +1,38 @@
 # Environment-Grounded Image Generation Benchmark
 
-This benchmark evaluates whether an agent can use environment files to generate
-a correct image plan and final image. The core ability under test is grounded
-information handling before image generation, not generic image prompting.
+This benchmark evaluates whether an agent can use environment files to produce
+a grounded image plan and final image. The core capability under test is
+retrieving, filtering, calculating, combining, and verifying information before
+image generation—not generic image prompting.
 
-The expected agent workflow is:
+The expected workflow is:
 
 ```text
 Read environment files
-Understand the user task
+Understand the task
 Retrieve / filter / calculate / extract / combine / verify facts
 Build image-generation conditions
 Generate the final image
 Score the image against environment-grounded facts
 ```
 
-## Current Stage
+## Current Dataset
 
-This directory contains the benchmark skeleton, 8 polished seed pilot cases, 16
-additional development cases, and the plan for controlled expansion. It does
-not lock every task type into one fixed file format.
+The active dataset contains 58 cases under `benchmark/cases/`:
 
-The current working set has 24 cases under `benchmark/pilot_cases/`. These are
-development cases, not the final published `benchmark/cases/` set.
+| Task type | Cases |
+| --- | ---: |
+| `data_insight` | 12 |
+| `data_selection` | 10 |
+| `design_specification` | 10 |
+| `document_brief` | 6 |
+| `multi_source_fusion` | 5 |
+| `procedure_instruction` | 5 |
+| `relationship_diagram` | 5 |
+| `state_change` | 5 |
+
+The former pilot dataset and case-generation artifacts are no longer part of
+the repository. `benchmark/cases/` is the only active case root.
 
 ## Directory Layout
 
@@ -31,27 +41,28 @@ benchmark/
 +-- README.md
 +-- benchmark_blueprint.md
 +-- case_skeleton.md
-+-- case_generation_plan.md
-+-- pilot_plan.md
++-- environment.genbench.yml
++-- review_policy.md
++-- scoring_templates.md
++-- visual_vqa_catalog.md
 +-- schemas/
 |   +-- metadata.schema.json
 |   +-- expected_facts.schema.json
 |   +-- scoring_checklist.schema.json
-+-- pilot_cases/
 +-- cases/
-    +-- data_selection/
     +-- data_insight/
-    +-- document_brief/
+    +-- data_selection/
     +-- design_specification/
+    +-- document_brief/
+    +-- multi_source_fusion/
     +-- procedure_instruction/
     +-- relationship_diagram/
     +-- state_change/
-    +-- multi_source_fusion/
 ```
 
-## Case Files
+## Case Contract
 
-Every benchmark case should use the same outer shell:
+Every case uses the same outer structure:
 
 ```text
 <case_id>/
@@ -62,39 +73,52 @@ Every benchmark case should use the same outer shell:
 +-- scoring_checklist.json
 ```
 
-The `env/` directory is intentionally flexible. A case should include only the
-files needed for that task, such as CSV, XLSX, JSON, SQLite, PDF, MD, TXT,
-HTML, YAML, PNG, JPG, or other formats allowed by the task dimension.
-
-The v1 benchmark avoids office-document env files that require heavyweight
-external renderers, keeping validation lightweight and portable.
-
-## Visibility
+`env/` contains only the files needed for the task. Cases may use CSV, XLSX,
+JSON, SQLite, PDF, DOCX, PPTX, Markdown, text, YAML, images, and other formats
+appropriate to the task. Consumers must provide the readers or renderers needed
+for the formats used by the selected cases.
 
 Files visible to the tested agent:
 
 - `env/`
 - `task.md`
 
-Files used by benchmark builders, validators, and evaluators:
+Evaluator-only files:
 
 - `metadata.json`
 - `expected_facts.json`
 - `scoring_checklist.json`
 
-## Validation And Review
+Review caches such as `qa_render/` are evaluator-only and must never be copied
+into an agent workspace.
 
-Automation for validation, review, and model benchmarking lives under
-`evaluation/` so that `benchmark/` stays focused on benchmark definitions and
-case assets.
+## Validation And Evaluation
 
-Run generic validation and review over any case root:
+Validation and model-evaluation code lives in the sibling
+`envgen-evaluation/` project. Run commands from the workspace root.
+
+Validate all active cases:
 
 ```powershell
-D:\MiniConda\envs\genbench\python.exe evaluation\scripts\validate_cases.py --cases-root benchmark\pilot_cases
-D:\MiniConda\envs\genbench\python.exe evaluation\scripts\auto_review_cases.py --cases-root benchmark\pilot_cases
-D:\MiniConda\envs\genbench\python.exe evaluation\scripts\strict_review_cases.py --cases-root benchmark\pilot_cases --mode full
+python envgen-evaluation/scripts/validate_cases.py --case-root benchmark/cases
 ```
 
-The older pilot-specific scripts are kept for compatibility, but new expansion
-work should use the generic scripts.
+Validate selected cases:
+
+```powershell
+python envgen-evaluation/scripts/validate_cases.py `
+  --case-root benchmark/cases `
+  --dimension data_insight `
+  --cases data_insight_001,data_insight_002
+```
+
+Generate the visual VQA catalog after adding or changing cases:
+
+```powershell
+python envgen-evaluation/scripts/generate_visual_vqa_catalog.py `
+  --case-root benchmark/cases `
+  --output benchmark/visual_vqa_catalog.md
+```
+
+See `envgen-evaluation/README.md` and `envgen-evaluation/RUNBOOK.md` for model
+generation, scoring, and end-to-end evaluation commands.

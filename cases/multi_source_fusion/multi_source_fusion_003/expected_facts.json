@@ -3,73 +3,167 @@
   "task_type": "multi_source_fusion",
   "facts": [
     {
-      "id": "revenue_winner",
-      "description": "Revenue-winning product.",
-      "source": "env/sales.sqlite",
+      "id": "selected_product",
+      "description": "Product with the highest campaign-eligible May contribution after current order versions, active FT-26 customer scope, accepted credits, and qualifying partner funding or fees.",
+      "source": "env/May_2026_NovaPack_Sales_Workbook.xlsx + env/Customer_Program_Eligibility.csv + env/Partner_Funding_and_Fees.xlsx",
       "importance": "critical",
-      "expected_value": "NovaPack Pro",
+      "expected_value": "NovaPack Trek",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "supported_points",
-      "description": "Supported selling points.",
-      "source": "env/product_notes.md",
+      "id": "performance_badge",
+      "description": "Current customer-facing performance cue without the underlying financial result.",
+      "source": "env/Q2_Product_Claims_Register.docx + env/June_06_Paid_Social_Change_Control.docx",
       "importance": "critical",
-      "expected_value": [
-        "compression panels",
-        "weather-resistant shell",
-        "quick-access tech pocket"
-      ],
+      "expected_value": "May 2026 Program-Eligible Contribution Leader",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "brand_constraints",
-      "description": "Brand palette and tone.",
-      "source": "env/brand_rules.json",
+      "id": "customer_segment",
+      "description": "Largest contribution segment for the selected product after the same current close and adjustment basis.",
+      "source": "env/May_2026_NovaPack_Sales_Workbook.xlsx + env/Customer_Program_Eligibility.csv + env/Partner_Funding_and_Fees.xlsx",
+      "importance": "critical",
+      "expected_value": "Field Consultants",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "audience_qualification",
+      "description": "Current employer-trial audience qualification.",
+      "source": "env/Employer_Travel_Trial_Compliance_Addendum.docx",
+      "importance": "critical",
+      "expected_value": "For verified consulting and engineering employees booking 3-7 night client-site trips.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "campaign_label",
+      "description": "Current campaign label for the routed objective.",
+      "source": "env/Q2_Product_Claims_Register.docx + env/Paid_Social_Placement_Matrix.xlsx",
       "importance": "major",
-      "expected_value": [
-        "#1D3557",
-        "#F1FAEE",
-        "#E63946",
-        "durable, organized, travel-ready"
-      ],
+      "expected_value": "FIELD MOBILITY PILOT",
       "must_appear_in_image": true,
       "evaluation_role": "major_required"
     },
     {
-      "id": "web_required_size",
-      "description": "Instagram size/aspect guidance must come from web.",
-      "source": "web",
+      "id": "lead_benefit",
+      "description": "Current BT-R4 lead benefit.",
+      "source": "env/Q2_Product_Claims_Register.docx",
       "importance": "critical",
-      "expected_value": "official current feed sizing guidance from Instagram or Meta",
-      "must_appear_in_image": false,
-      "evaluation_role": "optional"
+      "expected_value": "Move from airport to client site with one organized travel pack.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
     },
     {
-      "id": "wrong_product_exclusions",
-      "description": "Lower revenue/accessory products must not be promoted as main product.",
-      "source": "env/sales.sqlite + env/product_notes.md",
+      "id": "supporting_proofs",
+      "description": "Exactly two current BT-R4 proof points.",
+      "source": "env/Q2_Product_Claims_Register.docx",
+      "importance": "critical",
+      "expected_value": [
+        "Clamshell access separates site gear from client-ready clothing.",
+        "Padded 16-inch tech sleeve keeps a laptop and charger within reach."
+      ],
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "cta",
+      "description": "Current employer-trial CTA pattern.",
+      "source": "env/Paid_Social_Placement_Matrix.xlsx + env/June_06_Paid_Social_Change_Control.docx",
+      "importance": "critical",
+      "expected_value": "Check employer travel eligibility",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "disclosures",
+      "description": "Complete current three-part employer-trial disclosure package.",
+      "source": "env/Employer_Travel_Trial_Compliance_Addendum.docx",
+      "importance": "critical",
+      "expected_value": [
+        "Employer participation and itinerary approval are required.",
+        "Carry-on acceptance varies by airline and aircraft.",
+        "Laptop, PPE, and tracking accessories are not included."
+      ],
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "placement",
+      "description": "Current Instagram employer-trial portrait-feed placement.",
+      "source": "env/Paid_Social_Placement_Matrix.xlsx + env/Instagram_Ad_Format_Specs.pdf",
+      "importance": "major",
+      "expected_value": "Instagram Portrait Feed, 1080 x 1350, 4:5, current BT-R4 employer-trial route",
+      "must_appear_in_image": true,
+      "evaluation_role": "major_required"
+    },
+    {
+      "id": "brand_identity",
+      "description": "Current NovaPack paid-social identity.",
+      "source": "env/NovaPack_Brand_Copy_Guardrails.docx + env/Creative_Asset_Register.xlsx",
+      "importance": "major",
+      "expected_value": "A-2001.png current horizontal NovaPack wordmark; retired A-2000 orbit identity absent",
+      "must_appear_in_image": true,
+      "evaluation_role": "major_required"
+    },
+    {
+      "id": "product_asset",
+      "description": "Current product source for the selected product and objective.",
+      "source": "env/Creative_Asset_Register.xlsx + env/campaign_assets/",
+      "importance": "critical",
+      "expected_value": "A-1024.jpg current NovaPack Trek field-travel pack",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "audience_asset",
+      "description": "Current audience setting for the employer-trial route.",
+      "source": "env/Creative_Asset_Register.xlsx + env/campaign_assets/",
+      "importance": "major",
+      "expected_value": "A-1025.jpg airport/client-site transition setting with laptop and field-travel cues",
+      "must_appear_in_image": true,
+      "evaluation_role": "major_required"
+    },
+    {
+      "id": "wrong_content_exclusions",
+      "description": "Superseded, future, wrong-product, unsupported, or wrong-objective content must be absent.",
+      "source": "env/Q2_Product_Claims_Register.docx + env/June_06_Paid_Social_Change_Control.docx + env/NovaPack_Brand_Copy_Guardrails.docx",
+      "importance": "critical",
+      "expected_value": [
+        "NovaPack Pro consumer package",
+        "Shop Now or Shop NovaPack Pro",
+        "BT-R3 and BT-R5 wording",
+        "50 percent packing claim",
+        "fully waterproof",
+        "lifetime airline-damage replacement",
+        "extreme-expedition survival",
+        "price or discount",
+        "family, child-focused, luxury-runway, or leisure-only positioning"
+      ],
+      "must_not_appear_in_image": true,
+      "evaluation_role": "negative_only"
+    },
+    {
+      "id": "internal_exclusions",
+      "description": "Internal close data and workflow identifiers must remain off the creative.",
+      "source": "env/May_2026_NovaPack_Sales_Workbook.xlsx + env/Partner_Funding_and_Fees.xlsx + env/May_Paid_Social_Request_Jordan.docx",
       "importance": "major",
       "expected_value": [
-        "NovaPack Mini",
-        "NovaPack Tag"
+        "financial amounts",
+        "unit counts",
+        "customer or transaction IDs",
+        "program or placement keys",
+        "adjustment IDs",
+        "revision codes",
+        "version numbers",
+        "approval states",
+        "working notes"
       ],
       "must_not_appear_in_image": true,
       "evaluation_role": "negative_only"
     }
   ],
-  "calculation_notes": "Select product by revenue, not units. Web is only for platform size. Product reference is visual only.",
-  "web_facts": [
-    {
-      "description": "Current recommended Instagram feed image size or aspect ratio.",
-      "required_for_case": true,
-      "acceptable_sources": [
-        "Instagram help documentation",
-        "Meta business/help documentation",
-        "current reputable social media specification reference"
-      ]
-    }
-  ]
+  "calculation_notes": "At the 2026-06-03 18:00 close snapshot, current active FT-26 customers, included May customer orders, accepted credits posted by 2026-06-02, and qualifying current program entries produce campaign-eligible contribution of approximately 171000.00 for NovaPack Trek, 170500.00 for NovaPack Pro, and 170200.00 for NovaPack Expand. For NovaPack Trek, segment-scoped entries and proportional allocation of All entries make Field Consultants the leading segment. Raw revenue, ignored customer eligibility, superseded funding versions, future entries, mismatched program codes, or consumer placement routing can produce different answers."
 }

@@ -2,50 +2,40 @@
   "case_id": "design_specification_001",
   "task_type": "design_specification",
   "web_policy": "closed_env",
-  "target_image_type": "saas_feature_linkedin_image",
-  "difficulty": "hard",
+  "target_image_type": "saas_feature_linkedin_paid_image",
+  "difficulty": "expert",
+  "reference_date": "2026-06-24",
+  "creative_freeze": "2026-06-23T17:00:00Z",
   "env_files": [
     {
-      "path": "env/latest_update.md",
-      "role": "Latest campaign update with authoritative copy, replacements, and priority order",
-      "format": "md",
-      "origin": "generated",
-      "reproducibility_note": "Generated during design_specification difficulty optimization"
+      "path": "env/Sprint_Launch_Creative_Brief_v5.0.docx",
+      "role": "Version 5.1 launch brief defining decision precedence, message-package assembly, asset checks, and delivery rules",
+      "format": "docx"
     },
     {
-      "path": "env/platform_specs.txt",
-      "role": "Current platform size, safe-area, hierarchy, contrast, and placement constraints",
-      "format": "txt",
-      "origin": "generated",
-      "reproducibility_note": "Generated during design_specification difficulty optimization"
+      "path": "env/FlowForge_Brand_Guidelines_2026.pdf",
+      "role": "Brand, crop, hierarchy, CTA, proof-chip, palette, and source-integrity requirements",
+      "format": "pdf"
     },
     {
-      "path": "env/visual_rules.json",
-      "role": "Current palette, design rules, hero requirements, style constraints, and conditional rules",
-      "format": "json",
-      "origin": "generated",
-      "reproducibility_note": "Generated during design_specification difficulty optimization"
+      "path": "env/Campaign_Operations.xlsx",
+      "role": "Platform, base copy, layout, and launch-message selection data with independent revision histories; includes 96 message packages and 140 package events",
+      "format": "xlsx"
     },
     {
-      "path": "env/asset_manifest.json",
-      "role": "Allowed current logo, hero, icon, badge, or helper assets",
-      "format": "json",
-      "origin": "generated",
-      "reproducibility_note": "Generated during design_specification difficulty optimization"
+      "path": "env/Creative_Asset_Register.xlsx",
+      "role": "290 indexed assets with expanded approval, usage, rights, and version records, including activation-specific launch-week variants",
+      "format": "xlsx"
     },
     {
-      "path": "env/deprecated_assets.json",
-      "role": "Deprecated copy, colors, claims, logos, templates, and plausible wrong assets that must not be active",
-      "format": "json",
-      "origin": "generated",
-      "reproducibility_note": "Generated during design_specification difficulty optimization"
+      "path": "env/asset_library/files/",
+      "role": "281 neutral-ID PNG assets containing valid and near-miss logo, interface, background, and proof-chip files",
+      "format": "folder"
     },
     {
-      "path": "env/brand_brief.md",
-      "role": "Compact brand context replacing duplicate archive PDF material",
-      "format": "md",
-      "origin": "generated",
-      "reproducibility_note": "Generated during design_specification difficulty optimization"
+      "format": "xlsx",
+      "path": "env/Launch_Activation_Register.xlsx",
+      "role": "160 activation packages, status events, six consumer-message catalogs, experiment assignments, board-content variants, and asset bundles"
     }
   ],
   "source_policy": {
@@ -58,7 +48,14 @@
       "expected_facts.json",
       "scoring_checklist.json"
     ],
-    "web_usage_note": "Closed-env case: solve only from env files and task.md; do not use the web."
+    "web_usage_note": "Closed-env case. Web use is prohibited."
   },
-  "notes": "Lightly optimized design-specification case with compact env, latest-update priority, LinkedIn platform constraints, current palette resolution, allowed assets, and deprecated exclusions."
+  "difficulty_design": [
+    "The case now adds a post-message activation layer whose latest pre-freeze Active state must be resolved after the base copy, layout, and message package.",
+    "Activation fields are distributed across six catalogs and override the message package, creating a realistic multi-source precedence chain rather than a single lookup.",
+    "An experiment assignment links the activation to a board-content record and an asset bundle; the bundle assets must then pass independent approval, usage, rights, and version checks.",
+    "The activation workbook contains more than one thousand structured records with high-similarity market, language, timing, and status distractors.",
+    "Grounded VQAs use small, rational groups of two to four verifiable facts; score 2 requires complete agreement without using a single oversized all-or-nothing checklist."
+  ],
+  "notes": "The final solution is assembled through base copy -> launch message -> activation -> catalogs -> experiment -> board content and asset bundle. Activation values supersede the earlier message-package values."
 }

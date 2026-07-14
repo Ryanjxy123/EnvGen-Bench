@@ -1,188 +1,80 @@
 {
   "case_id": "data_selection_009",
-  "dimensions": {
-    "task_completion": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "output_type_data_selection_009",
-          "check": "Judge whether the output is a finished library_resource_spotlight_card, not a worksheet, raw table, source-data screenshot, or generic mockup.",
-          "points": 4,
-          "scoring_hint": "Full credit when the artifact is polished and purpose-fit; no credit for raw data or placeholder content."
-        },
-        {
-          "id": "selection_task_resolution_data_selection_009",
-          "check": "Verify that the image resolves the data-selection task by filtering candidates, ranking them, applying any stated group limit, and featuring only the final selected objects.",
-          "points": 4,
-          "fact_ids": [
-            "selected_objects",
-            "ranking_order",
-            "group_limit_compliance"
-          ],
-          "scoring_hint": "Selection must be visible through the final featured set and order."
-        }
-      ],
-      "label": "Task Completion"
-    },
-    "grounded_requirement_satisfaction": {
-      "weight": 0.55,
-      "items": [
-        {
-          "id": "critical_selected_set_accuracy_data_selection_009",
-          "check": "Verify that exactly these objects are featured: Rain Garden Starter Kit, Mango Languages Family Pass, Ukulele Lending Set, Night Sky Telescope, Local History Scan Station.",
-          "points": 8,
-          "fact_id": "selected_objects",
-          "scoring_hint": "No credit if any selected object is replaced or an extra candidate is promoted."
-        },
-        {
-          "id": "critical_ranking_order_data_selection_009",
-          "check": "Verify that visible order or hierarchy is: Rain Garden Starter Kit > Mango Languages Family Pass > Ukulele Lending Set > Night Sky Telescope > Local History Scan Station.",
-          "points": 6,
-          "fact_id": "ranking_order",
-          "scoring_hint": "Accept any clear layout order that preserves the ranking."
-        },
-        {
-          "id": "critical_display_values_data_selection_009",
-          "check": "Verify that each selected object displays the required paired values from the source data.",
-          "points": 8,
-          "fact_id": "selected_object_display_values",
-          "scoring_hint": "Values must be attached to the correct selected object names."
-        },
-        {
-          "id": "critical_mapping_display_values_data_selection_009",
-          "check": "Verify that mapped labels from support sheets or join tables are displayed instead of raw codes and are bound to the correct selected objects.",
-          "points": 6,
-          "fact_id": "mapping_display_values",
-          "scoring_hint": "No credit for showing only raw category, district, branch, or service codes where labels are required."
-        },
-        {
-          "id": "critical_group_limit_data_selection_009",
-          "check": "Verify that no added featured object or substituted candidate violates the group cap stated in the rules.",
-          "points": 5,
-          "fact_id": "group_limit_compliance",
-          "scoring_hint": "Full credit when the selected set implicitly satisfies the cap."
-        },
-        {
-          "id": "critical_exclusion_accuracy_data_selection_009",
-          "check": "Verify that unselected candidates are not promoted as final featured selections, including eligibility failures, group-cap-blocked rows when applicable, and eligible-but-below-cutoff rows.",
-          "points": 7,
-          "fact_ids": [
-            "unselected_objects_not_featured",
-            "eligibility_exclusions",
-            "group_cap_exclusions",
-            "eligible_below_cutoff"
-          ],
-          "scoring_hint": "Mentioning exclusions is allowed; using them as selected answers is not."
-        }
-      ],
-      "label": "Grounded Requirement Satisfaction"
-    },
-    "information_structuring": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "selection_hierarchy_data_selection_009",
-          "check": "The layout should make the final selection set, ranking hierarchy, and value pairings easy to scan.",
-          "points": 5,
-          "fact_ids": [
-            "selected_objects",
-            "ranking_order",
-            "selected_object_display_values"
-          ]
-        },
-        {
-          "id": "no_process_overload_data_selection_009",
-          "check": "Do not let raw filtering process details, IDs, or table fields overwhelm the requested image artifact.",
-          "points": 4,
-          "scoring_hint": "Supporting details may appear only if the final selected objects remain primary."
-        }
-      ],
-      "label": "Information Structuring"
-    },
-    "visual_communication_quality": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "visual_clarity_data_selection_009",
-          "check": "Judge readability, contrast, visual hierarchy, and clear text-value pairing.",
-          "points": 4
-        },
-        {
-          "id": "visual_density_data_selection_009",
-          "check": "The image should be information-rich but not crowded, blank, or placeholder-like.",
-          "points": 4
-        }
-      ],
-      "label": "Visual Communication Quality"
-    }
+  "evaluation_mode": "image_vqa_0_2",
+  "dimension_weights": {
+    "grounded_requirement_satisfaction": 0.8,
+    "visual_rendering_quality": 0.2
   },
-  "score_caps": [
-    {
-      "id": "wrong_selected_object",
-      "max_total": 60,
-      "reason": "A non-selected candidate appears as a final featured selection.",
-      "trigger": {
-        "type": "forbidden_final_answer",
-        "patterns": [
-          "Archived Vinyl Sampler",
-          "Staff Training VR Kit",
-          "Uncleared Film Pass",
-          "Summer Old Reading Bag",
-          "Low Stock Craft Box",
-          "Fragile Print Portfolio",
-          "Draft Coding Robot",
-          "Cancelled Museum Pass",
-          "Internal Genealogy Tablet",
-          "Test Media Editing Laptop",
-          "Training Storytime Puppet Kit",
-          "Private Donor Room Pass",
-          "Old Winter Reading Badge",
-          "Retired Vinyl Listening Dock",
-          "Demo Family Tablet Stand",
-          "Inactive Coding Club Bot",
-          "Private Local Map Portfolio",
-          "Seed Library Bundle",
-          "Board Game Discovery Crate",
-          "Mobile Hotspot Pack",
-          "Puzzle Exchange Cart",
-          "Podcast Booth Voucher",
-          "Zine Swap Starter Box",
-          "Language Conversation Cards"
-        ],
-        "allowed_patterns": [
-          "\\b(excluded|exclude|filtered out|not selected|not featured|ineligible|below cutoff|blocked)\\b[\\s\\S]{0,120}\\b(Archived\\ Vinyl\\ Sampler|Staff\\ Training\\ VR\\ Kit|Uncleared\\ Film\\ Pass|Summer\\ Old\\ Reading\\ Bag|Low\\ Stock\\ Craft\\ Box|Fragile\\ Print\\ Portfolio|Draft\\ Coding\\ Robot|Cancelled\\ Museum\\ Pass|Internal\\ Genealogy\\ Tablet|Test\\ Media\\ Editing\\ Laptop|Training\\ Storytime\\ Puppet\\ Kit|Private\\ Donor\\ Room\\ Pass|Old\\ Winter\\ Reading\\ Badge|Retired\\ Vinyl\\ Listening\\ Dock|Demo\\ Family\\ Tablet\\ Stand|Inactive\\ Coding\\ Club\\ Bot|Private\\ Local\\ Map\\ Portfolio|Seed\\ Library\\ Bundle|Board\\ Game\\ Discovery\\ Crate|Mobile\\ Hotspot\\ Pack|Puzzle\\ Exchange\\ Cart|Podcast\\ Booth\\ Voucher|Zine\\ Swap\\ Starter\\ Box|Language\\ Conversation\\ Cards)\\b",
-          "\\b(Archived\\ Vinyl\\ Sampler|Staff\\ Training\\ VR\\ Kit|Uncleared\\ Film\\ Pass|Summer\\ Old\\ Reading\\ Bag|Low\\ Stock\\ Craft\\ Box|Fragile\\ Print\\ Portfolio|Draft\\ Coding\\ Robot|Cancelled\\ Museum\\ Pass|Internal\\ Genealogy\\ Tablet|Test\\ Media\\ Editing\\ Laptop|Training\\ Storytime\\ Puppet\\ Kit|Private\\ Donor\\ Room\\ Pass|Old\\ Winter\\ Reading\\ Badge|Retired\\ Vinyl\\ Listening\\ Dock|Demo\\ Family\\ Tablet\\ Stand|Inactive\\ Coding\\ Club\\ Bot|Private\\ Local\\ Map\\ Portfolio|Seed\\ Library\\ Bundle|Board\\ Game\\ Discovery\\ Crate|Mobile\\ Hotspot\\ Pack|Puzzle\\ Exchange\\ Cart|Podcast\\ Booth\\ Voucher|Zine\\ Swap\\ Starter\\ Box|Language\\ Conversation\\ Cards)\\b[\\s\\S]{0,120}\\b(excluded|exclude|filtered out|not selected|not featured|ineligible|below cutoff|blocked)\\b"
-        ]
+  "grounded_requirement_satisfaction": {
+    "vqa_items": [
+      {
+        "id": "grounded_q01",
+        "question": "What final selection or displayed result does the image show for Final selected objects after all eligibility filters, ranking rules, optional group limits, and top-N cutoff?",
+        "expected_answer": "selected_ids_reference_only: R901 | R902 | R903 | R905 | R906; selected_names: Rain Garden Starter Kit | Mango Languages Family Pass | Ukulele Lending Set | Night Sky Telescope | Local History Scan Station",
+        "acceptance_rule": "Accept if exactly these selected objects are featured; IDs may be omitted but names must be identifiable."
+      },
+      {
+        "id": "grounded_q02",
+        "question": "What final selection or displayed result does the image show for Selected objects must appear in rule-based ranking order after tie-breaks and any group-limit application?",
+        "expected_answer": "1. Rain Garden Starter Kit | 2. Mango Languages Family Pass | 3. Ukulele Lending Set | 4. Night Sky Telescope | 5. Local History Scan Station",
+        "acceptance_rule": "Accept left-to-right, top-to-bottom, numbered, or hero-to-secondary order if it preserves the expected ranking."
+      },
+      {
+        "id": "grounded_q03",
+        "question": "What final selection or displayed result does the image show for Each selected object must show the correct name and required display fields?",
+        "expected_answer": "Rain Garden Starter Kit: category_label: Maker & Creativity; branch_name: North Branch; available_units: 72; Mango Languages Family Pass: category_label: Digital Access; branch_name: East Branch; available_units: 120; Ukulele Lending Set: category_label: Music Lending; branch_name: North Branch; available_units: 32; Night Sky Telescope: category_label: STEM Discovery; branch_name: West Branch; available_units: 18; Local History Scan Station: category_label: Local History; branch_name: East Branch; available_units: 46",
+        "acceptance_rule": "Accept equivalent formatting when display values are attached to the correct selected names."
+      },
+      {
+        "id": "grounded_q04",
+        "question": "What final selection or displayed result does the image show for The final selection obeys the at-most-1-per-category_label group limit after sorting?",
+        "expected_answer": "Selected group counts are Digital Access: 1, Local History: 1, Maker & Creativity: 1, Music Lending: 1, STEM Discovery: 1; no category_label exceeds 1.",
+        "acceptance_rule": "Accept if the image does not add extra featured objects that would violate the group cap."
+      },
+      {
+        "id": "grounded_q05",
+        "question": "What final selection or displayed result does the image show for Mapped display labels from support sheets or join tables must be shown instead of raw codes and attached to the correct selected objects?",
+        "expected_answer": "Rain Garden Starter Kit: category_label: Maker & Creativity; branch_name: North Branch; Mango Languages Family Pass: category_label: Digital Access; branch_name: East Branch; Ukulele Lending Set: category_label: Music Lending; branch_name: North Branch; Night Sky Telescope: category_label: STEM Discovery; branch_name: West Branch; Local History Scan Station: category_label: Local History; branch_name: East Branch",
+        "acceptance_rule": "Accept if mapped labels, not raw codes, are visibly bound to the correct selected names."
+      },
+      {
+        "id": "grounded_q06",
+        "question": "Does the image actively present any prohibited, excluded, deprecated, or superseded content covered by Filtered-out, group-cap-blocked where applicable, and below-cutoff eligible candidates must not appear as final featured selections? If yes, list it.",
+        "expected_answer": "No",
+        "acceptance_rule": "Only No earns credit; none of the prohibited content may be active in the final image. Prohibited evaluator-only references: Archived Vinyl Sampler | Staff Training VR Kit | Uncleared Film Pass | Summer Old Reading Bag | Low Stock Craft Box | Fragile Print Portfolio | Draft Coding Robot | Cancelled Museum Pass | Internal Genealogy Tablet | Test Media Editing Laptop | Training Storytime Puppet Kit | Private Donor Room Pass | Old Winter Reading Badge | Retired Vinyl Listening Dock | Demo Family Tablet Stand | Inactive Coding Club Bot | Private Local Map Portfolio | Seed Library Bundle | Board Game Discovery Crate | Mobile Hotspot Pack | Puzzle Exchange Cart | Podcast Booth Voucher | Zine Swap Starter Box | Language Conversation Cards. The image may mention exclusion context, but must not promote any unselected object as selected."
+      },
+      {
+        "id": "grounded_q07",
+        "question": "Does the image actively present any prohibited, excluded, deprecated, or superseded content covered by Candidates failing status, window, eligibility, threshold, readiness, rights, or setup rules are not final selections? If yes, list it.",
+        "expected_answer": "No",
+        "acceptance_rule": "Only No earns credit; none of the prohibited content may be active in the final image. Prohibited evaluator-only references: Archived Vinyl Sampler | Staff Training VR Kit | Uncleared Film Pass | Summer Old Reading Bag | Low Stock Craft Box | Fragile Print Portfolio | Draft Coding Robot | Cancelled Museum Pass | Internal Genealogy Tablet | Test Media Editing Laptop | Training Storytime Puppet Kit | Private Donor Room Pass | Old Winter Reading Badge | Retired Vinyl Listening Dock | Demo Family Tablet Stand | Inactive Coding Club Bot | Private Local Map Portfolio. No eligibility-failed candidate should be promoted as selected."
+      },
+      {
+        "id": "grounded_q08",
+        "question": "Does the image actively present any prohibited, excluded, deprecated, or superseded content covered by Eligible candidates blocked by the category_label group limit are not final selections? If yes, list it.",
+        "expected_answer": "No",
+        "acceptance_rule": "Only No earns credit; none of the prohibited content may be active in the final image. Prohibited evaluator-only references: Seed Library Bundle. No group-cap-blocked candidate should be promoted as selected."
+      },
+      {
+        "id": "grounded_q09",
+        "question": "Does the image actively present any prohibited, excluded, deprecated, or superseded content covered by Eligible candidates below the final top-N cutoff are not final selections? If yes, list it.",
+        "expected_answer": "No",
+        "acceptance_rule": "Only No earns credit; none of the prohibited content may be active in the final image. Prohibited evaluator-only references: Board Game Discovery Crate | Mobile Hotspot Pack | Puzzle Exchange Cart | Podcast Booth Voucher | Zine Swap Starter Box | Language Conversation Cards. Below-cutoff candidates should not be promoted as final selections."
       }
-    },
-    {
-      "id": "missing_selected_object",
-      "max_total": 55,
-      "reason": "One or more required selected objects is missing.",
-      "trigger": {
-        "type": "missing_required_count",
-        "fact_ids": [
-          "selected_objects",
-          "selected_object_display_values"
-        ],
-        "min_missing": 1
+    ]
+  },
+  "visual_rendering_quality": {
+    "image_type": "customer_display_card",
+    "vqa_items": [
+      {
+        "id": "visual_q01",
+        "question": "As a customer-facing menu, resource spotlight, or counter-display card, does the image convert the featured entries and their names, prices or equivalent decision values, categories, availability, and supporting details into a genuinely display-ready visual that can be understood quickly at normal viewing size without zooming? Evaluate the smallest meaningful text, the distinction between primary choices and secondary evidence, the efficiency of comparison, the visual treatment of summaries or recommendations, the use of the full canvas, and whether the result feels intentionally merchandised rather than like a report, worksheet, webpage, or collection of bordered text boxes. Do not award 2 merely because the information is complete, aligned, or free of rendering errors.",
+        "score_criteria": {
+          "2": "Award 2 only if **all** of the following professional-display gates are clearly satisfied; failure of any one gate limits the score to 1 at most:\n\n  1. **Immediate decision hierarchy:** The featured entries, their principal value or benefit, and the most important category, status, price, availability, or recommendation cue can be identified within seconds. Primary, secondary, and tertiary information are unmistakably differentiated rather than presented with nearly equal visual weight.\n  2. **Normal-size readability:** Every meaningful label and supporting value, including the smallest summary, availability, nutrition, metadata, or recommendation text, is comfortably readable at the intended display size without zooming or close inspection. Dense small print, tightly packed lines, or long low-emphasis lists prevent 2.\n  3. **Visual synthesis rather than information dumping:** Comparisons, highlights, summaries, and recommendations are visually distilled through purposeful typography, badges, icons, grouping, concise callouts, charts, imagery, or other appropriate devices. Long bullet inventories, paragraph-like metadata blocks, raw calculations, or report-style summaries cannot receive 2 even when accurate.\n  4. **Refined entry design:** Repeated entries have deliberate rhythm, proportion, internal alignment, and selective emphasis. They must not resemble default bordered rows, spreadsheet records, form fields, plain database cards, or mechanically duplicated text panels. Imagery is not mandatory, but an image-free design must demonstrate exceptional typographic composition and visual merchandising.\n  5. **Whole-canvas composition:** Content density, negative space, margins, and vertical distribution are intentionally balanced across the complete canvas. There may be no conspicuous unused lower region, oversized canvas, large empty areas inside entries, top-heavy arrangement, or visible sense that the design ended before the canvas did.\n  6. **Production finish:** Typography, spacing, dividers, color, contrast, alignment, status treatments, and emphasis are consistently polished, accessible, and specific to the customer context. No malformed glyph, bracket-like placeholder styling, clipping, overlap, accidental crop, weak contrast, unstable baseline, inconsistent column alignment, or visible production residue is allowed.\n\n  A design that is accurate and orderly but text-heavy, generic, repetitive, report-like, sparsely filled, or dependent on numerous small bullet points is not exceptional and must not receive 2.",
+          "1": "Award 1 if the card is understandable, factually presentable, and substantially usable, but requires visible design refinement before professional customer display. Typical 1-point outputs include clean repeated cards with weak visual differentiation; small but technically readable supporting text; dense nutrition, metadata, summary, or recommendation sections; long bullet lists; report-like or worksheet-like organization; ordinary typography; plain bordered panels; weak price, status, or benefit emphasis; inconsistent information density; excessive empty space within or below the content; or a composition that is easy to read only through careful inspection. A result may be complete, aligned, and error-free yet still receive only 1 when it organizes information rather than visually communicating and merchandising it.",
+          "0": "Award 0 if the card is visually poor, amateurish, unreliable, or impractical for customer use. This includes cases where featured entries or their key values are difficult to identify or compare; important text is too small, crowded, or low-contrast for normal viewing; hierarchy is confusing; summaries overwhelm the featured content; the layout is severely empty, dense, repetitive, or badly proportioned; alignment and spacing materially impair scanning; or substantial redesign is required. Blank, corrupted, severely unreadable, clipped, overlapping, misleading, or otherwise broken outputs are also 0."
+        }
       }
-    },
-    {
-      "id": "raw_table_instead_of_image",
-      "max_total": 40,
-      "reason": "The final artifact is a raw table, SQL result, JSON dump, or worksheet rather than the requested image.",
-      "trigger": {
-        "type": "forbidden_final_answer",
-        "patterns": [
-          "\\|\\s*resource_id",
-          "resource_id\\s*,\\s*name",
-          "CREATE\\s+TABLE",
-          "SELECT\\s+\\*",
-          "INSERT\\s+INTO",
-          "(?:\\|[^\\n]*){4,}\\n(?:\\|[^\\n]*){4,}"
-        ]
-      }
-    }
-  ]
+    ]
+  }
 }

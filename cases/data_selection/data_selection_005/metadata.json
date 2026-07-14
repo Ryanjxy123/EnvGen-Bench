@@ -3,21 +3,61 @@
   "task_type": "data_selection",
   "web_policy": "closed_env",
   "target_image_type": "volunteer_recruitment_image",
-  "difficulty": "medium",
+  "difficulty": "very_hard",
   "env_files": [
     {
-      "path": "env/volunteer_shifts.json",
-      "role": "Volunteer shift options with day, status, training readiness, capacity, priority, time, audience, and event window",
+      "path": "env/volunteer_opportunities.json",
+      "role": "Opportunity identity, role family, shift, capacity, age and staffing thresholds",
       "format": "json",
-      "origin": "manual",
-      "reproducibility_note": "Manually optimized for stable Data Selection-to-Image filtering, ranking, and distractor coverage"
+      "origin": "benchmark-authored"
+    },
+    {
+      "path": "env/registration_snapshots.json",
+      "role": "Versioned confirmed, reserved, standby and registration status records",
+      "format": "json",
+      "origin": "benchmark-authored"
+    },
+    {
+      "path": "env/capacity_holds.json",
+      "role": "Versioned active group and issued-offer holds deducted from public openings",
+      "format": "json",
+      "origin": "benchmark-authored"
+    },
+    {
+      "path": "env/staffing_readiness.json",
+      "role": "Versioned lead, orientation, check-in and supervisor readiness",
+      "format": "json",
+      "origin": "benchmark-authored"
+    },
+    {
+      "path": "env/safety_route_reviews.json",
+      "role": "Versioned safety, route, equipment and emergency-plan reviews",
+      "format": "json",
+      "origin": "benchmark-authored"
+    },
+    {
+      "path": "env/public_requirements.json",
+      "role": "Versioned check-in lead time, meeting zone, orientation and fit attributes",
+      "format": "json",
+      "origin": "benchmark-authored"
+    },
+    {
+      "path": "env/attendance_metrics.json",
+      "role": "Versioned attendance reliability and recruitment ranking measures",
+      "format": "json",
+      "origin": "benchmark-authored"
+    },
+    {
+      "path": "env/site_schedule.json",
+      "role": "Versioned public event, registration, contact and rain-plan information",
+      "format": "json",
+      "origin": "benchmark-authored"
     },
     {
       "path": "env/assignment_rules.md",
-      "role": "Selection rules for recruitment image",
+      "role": "As-of resolution, eligibility, public openings, ranking, portfolio and public calculation rules",
       "format": "md",
-      "origin": "manual",
-      "reproducibility_note": "Manually optimized for stable Data Selection-to-Image filtering, ranking, and distractor coverage"
+      "origin": "benchmark-authored"
     }
   ],
   "source_policy": {
@@ -30,7 +70,24 @@
       "expected_facts.json",
       "scoring_checklist.json"
     ],
-    "web_usage_note": "Closed-env case: web access is not allowed; solve from env files only."
+    "web_usage_note": "Closed-env case; web is prohibited."
   },
-  "notes": "Optimized as a Data Selection-to-Image volunteer recruitment image case with evaluator-only semantic acceptance criteria."
+  "data_profile": {
+    "row_counts": {
+      "volunteer_opportunities.json": 360,
+      "registration_snapshots.json": 1097,
+      "staffing_readiness.json": 726,
+      "attendance_metrics.json": 530,
+      "site_schedule.json": 423,
+      "public_requirements.json": 745,
+      "capacity_holds.json": 734,
+      "safety_route_reviews.json": 735
+    },
+    "total_env_records": 5350,
+    "eligible_before_portfolio": 14,
+    "ranked_pool_size": 12,
+    "valid_portfolios": 18,
+    "final_selected": 5
+  },
+  "notes": "Strengthened versioned multi-source volunteer portfolio selection with same-time revision traps, post-cutoff decoys, active hold deductions, safety and public-fit controls, constrained five-role portfolio optimization, check-in calculations, set membership, summary metrics, and non-overlapping pair selection."
 }

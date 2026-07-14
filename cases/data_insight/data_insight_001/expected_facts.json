@@ -3,40 +3,59 @@
   "task_type": "data_insight",
   "facts": [
     {
+      "id": "valid_data_scope",
+      "description": "Only 2025 completed transaction rows are valid; invalid statuses, record types, forecasts, subtotals, drafts, tests, returns, cancellations, and old-year rows are excluded.",
+      "source": "env/sales_2025.xlsx + env/sales_2025.xlsx README sheet",
+      "importance": "critical",
+      "canonical_answer": "Use only fiscal_year=2025, status=completed, record_type=transaction rows.",
+      "semantic_acceptance": "Accept if the final image values imply the correct valid-row scope. The image does not need to list the rule, but values based on forecast, subtotal, cancelled, returned, test, draft, or old-year rows should fail.",
+      "must_appear_in_image": false,
+      "evaluation_role": "critical_supporting"
+    },
+    {
+      "id": "net_revenue_definition",
+      "description": "Net revenue is gross revenue minus discount minus refund.",
+      "source": "env/sales_2025.xlsx README sheet",
+      "importance": "critical",
+      "canonical_answer": "net revenue = gross_revenue - discount - refund",
+      "semantic_acceptance": "Accept if the displayed revenue totals match the net-revenue calculation. The formula itself does not need to be printed.",
+      "must_appear_in_image": false,
+      "evaluation_role": "critical_supporting"
+    },
+    {
       "id": "total_2025_net_revenue",
       "description": "Total net revenue for valid 2025 completed transaction rows only.",
-      "source": "env/sales_2025.xlsx + env/metric_rules.md",
+      "source": "env/sales_2025.xlsx + env/sales_2025.xlsx README sheet",
       "importance": "critical",
       "expected_value": [
         "2025 net revenue: $1,431,000",
-        "2025 net revenue $1,431,000",
+        "$1.431M",
         "$1,431,000"
       ],
       "must_appear_in_image": true,
       "canonical_answer": "$1,431,000 valid 2025 net revenue",
-      "semantic_acceptance": "Accept if the image clearly communicates the valid 2025 net revenue total as about $1.431M / $1,431,000 after discounts and refunds. It may appear in a KPI card, title, label, or short sentence; exact punctuation, currency formatting, and use of K/M abbreviations are not important.",
+      "semantic_acceptance": "Accept if the image clearly communicates valid 2025 net revenue as about $1.431M / $1,431,000 after discounts and refunds. Currency punctuation, K/M abbreviation, and minor rounding are acceptable.",
       "evaluation_role": "critical_required"
     },
     {
       "id": "highest_net_month",
-      "description": "The highest net-revenue month after filtering invalid rows.",
-      "source": "env/sales_2025.xlsx + env/metric_rules.md",
+      "description": "The highest net-revenue month after valid-row filtering and net-revenue calculation.",
+      "source": "env/sales_2025.xlsx + env/sales_2025.xlsx README sheet",
       "importance": "critical",
       "expected_value": [
         "November 2025 net revenue: $170,000",
-        "November 2025 net revenue $170,000",
-        "November 2025 $170,000",
-        "Nov 2025 $170,000"
+        "Nov 2025 $170K",
+        "November $170,000"
       ],
       "must_appear_in_image": true,
       "canonical_answer": "November 2025 is the standout month at about $170,000 net revenue",
-      "semantic_acceptance": "Accept if November/Nov is identified as the highest or standout month with approximately $170K net revenue. The month may be shown in a chart label, callout, or sentence.",
+      "semantic_acceptance": "Accept if November/Nov is identified as the highest or standout month with approximately $170K net revenue.",
       "evaluation_role": "critical_required"
     },
     {
       "id": "fastest_qoq_growth",
       "description": "Fastest-growing quarter by quarter-over-quarter net revenue growth.",
-      "source": "env/sales_2025.xlsx + env/metric_rules.md",
+      "source": "env/sales_2025.xlsx + env/sales_2025.xlsx README sheet",
       "importance": "critical",
       "expected_value": [
         "Q2 grew 38.2% over Q1",
@@ -45,39 +64,50 @@
       ],
       "must_appear_in_image": true,
       "canonical_answer": "Q2 is the quarter where momentum improved fastest, +38.2% / +$91K versus Q1",
-      "semantic_acceptance": "Accept if Q2 is identified as the fastest quarter-over-quarter improvement versus Q1. The explanation can use 38.2%, roughly 38%, +$91K, or natural-language wording such as sharpest lift; do not require both percent and dollar change.",
+      "semantic_acceptance": "Accept if Q2 is identified as the fastest quarter-over-quarter improvement versus Q1. The image may use percent growth, dollar change, or clear natural-language wording. Do not accept Q4 merely because Q4 has the highest quarter total.",
       "evaluation_role": "critical_required"
     },
     {
       "id": "top_categories_net_share",
-      "description": "Top three product categories by net revenue and share of valid annual net revenue.",
-      "source": "env/sales_2025.xlsx + env/metric_rules.md",
+      "description": "Top three product categories by valid annual net revenue and their share context.",
+      "source": "env/sales_2025.xlsx + env/sales_2025.xlsx README sheet",
       "importance": "critical",
       "expected_value": [
         "Smart Home: $428,000 (29.9%)",
-        "Smart Home $428,000 (29.9%)",
         "Audio: $387,000 (27.0%)",
-        "Audio $387,000 (27.0%)",
-        "Accessories: $304,500 (21.3%)",
-        "Accessories $304,500 (21.3%)"
+        "Accessories: $304,500 (21.3%)"
       ],
       "must_appear_in_image": true,
       "canonical_answer": "Top categories by valid net revenue share: Smart Home $428K (29.9%), Audio $387K (27.0%), Accessories $304.5K (21.3%)",
-      "semantic_acceptance": "Accept if the leading categories are Smart Home, Audio, and Accessories in that order or clearly as the top three, with shares or share-like context. Values may be rounded or abbreviated; minor formatting differences are fine, but wrong categories, wrong order, or missing share context should not pass.",
+      "semantic_acceptance": "Accept if Smart Home, Audio, and Accessories are shown as the top three categories with share-like context. Values may be rounded. Wrong categories, wrong order, or no share context should fail.",
       "evaluation_role": "critical_required"
+    },
+    {
+      "id": "top_categories_combined_share",
+      "description": "Optional combined annual net-revenue share of the top three product categories.",
+      "source": "env/sales_2025.xlsx + env/sales_2025.xlsx README sheet",
+      "importance": "minor",
+      "expected_value": [
+        "Top three categories: about 78.2%"
+      ],
+      "must_appear_in_image": false,
+      "canonical_answer": "If shown, the top three categories together represent about 78.2% of annual net revenue",
+      "semantic_acceptance": "Omission is fully acceptable. If a combined top-three share is displayed, accept approximately 78.2%, including reasonable rounding; penalize only an incorrect displayed combined share.",
+      "evaluation_role": "optional"
     },
     {
       "id": "strongest_reporting_region",
       "description": "Strongest reporting region after mapping each city through region_mapping.json.",
-      "source": "env/sales_2025.xlsx + env/region_mapping.json + env/metric_rules.md",
+      "source": "env/sales_2025.xlsx + env/sales_2025.xlsx City Region Lookup sheet + env/sales_2025.xlsx README sheet",
       "importance": "critical",
       "expected_value": [
         "West: $597,000 (41.7%)",
-        "West $597,000 (41.7%)"
+        "West $597K",
+        "West 41.7%"
       ],
       "must_appear_in_image": true,
       "canonical_answer": "West is the strongest reporting region, about $597K / 41.7%",
-      "semantic_acceptance": "Accept if West is identified as the strongest/top reporting region after applying the city-to-region mapping. The result can be expressed with dollars, share, or a leader callout; exact formatting is not required.",
+      "semantic_acceptance": "Accept if West is identified as the strongest/top reporting region after applying the city-to-reporting-region mapping. Dollars, share, or a clear leader callout are acceptable.",
       "evaluation_role": "critical_required"
     },
     {
@@ -87,18 +117,18 @@
       "importance": "major",
       "expected_value": [
         "Q2 had the sharpest QoQ lift, while November marked the annual peak.",
-        "Q2 was the fastest-growing quarter and November was the peak month.",
-        "Momentum improved fastest in Q2, with November as the year's highest month."
+        "Momentum improved fastest in Q2, with November as the year's highest month.",
+        "Q2 was the fastest-growing quarter and November was the peak month."
       ],
       "must_appear_in_image": true,
       "canonical_answer": "Trend insight notes fastest momentum in Q2 and/or November as the annual peak",
-      "semantic_acceptance": "Accept any concise, data-grounded trend sentence that correctly interprets the computed results, especially Q2 momentum and November peak. Do not require the sample wording.",
+      "semantic_acceptance": "Accept any concise, data-grounded trend sentence that correctly interprets the computed results, especially Q2 momentum and November peak. Do not require sample wording.",
       "evaluation_role": "major_required"
     },
     {
       "id": "wrong_metric_and_distractor_exclusions",
-      "description": "Do not use unit, order-count, gross, forecast, subtotal, draft, old-year, cancelled, returned, or test-row values as the answer.",
-      "source": "env/sales_2025.xlsx + env/metric_rules.md + env/optional_distractors.csv",
+      "description": "Do not use unit, order-count, gross, forecast, subtotal, draft, old-year, cancelled, returned, pending, manual-review, adjustment, rollup, snapshot, or test-row values as final answers.",
+      "source": "env/sales_2025.xlsx + env/sales_2025.xlsx README sheet + env/planning_extract.csv",
       "importance": "major",
       "expected_value": [
         "wrong metric or distractor used as final answer"
@@ -113,7 +143,14 @@
         "\\$?690,?000\\b",
         "\\$?615,?000\\b",
         "\\b2024\\b[^.!?\\n;]{0,80}\\b(answer|result|annual|revenue|sales)\\b",
-        "\\b(forecast|subtotal|draft|old-year|old\\s+year)\\b[^.!?\\n;]{0,80}\\b(answer|result|total|revenue|sales)\\b"
+        "\\b(forecast|subtotal|draft|old-year|old\\s+year)\\b[^.!?\\n;]{0,80}\\b(answer|result|total|revenue|sales)\\b",
+        "\\$?525,?000\\b",
+        "\\$?705,?000\\b",
+        "\\$?498,?000\\b",
+        "\\$?1,?623,?000\\b",
+        "\\$?1,?750,?000\\b",
+        "\\$?1,?760,?000\\b",
+        "\\b(pending|manual[_\\s-]?review|duplicate[_\\s-]?reversal|adjustment|rollup|snapshot)\\b[^.!?\\n;]{0,80}\\b(answer|result|total|revenue|sales)\\b"
       ],
       "allowed_patterns": [
         "\\b(do\\s+not|don't|not|avoid|exclude|excluding|excluded|without|instead\\s+of)\\b[^.!?\\n;]{0,100}\\b(units?|unit\\s+volume|order\\s+count|gross\\s+revenue|forecast|subtotal|draft|old-year|old\\s+year|2024)\\b",
@@ -121,9 +158,9 @@
       ],
       "must_not_appear_in_image": true,
       "canonical_answer": "Do not present invalid metrics or distractor rows as final answers",
-      "semantic_acceptance": "Strictly reject or cap if units/order count/gross revenue/forecast/subtotal/draft/old-year/cancelled/returned/test data are used as final sales results. Benign mentions that these rows were excluded are allowed.",
+      "semantic_acceptance": "Strictly reject or cap if units/order count/gross revenue/forecast/subtotal/draft/old-year/cancelled/returned/pending/manual-review/adjustment/rollup/snapshot/test data are used as final sales results. Benign mentions that these rows were excluded are allowed.",
       "evaluation_role": "negative_only"
     }
   ],
-  "calculation_notes": "Use only rows where fiscal_year=2025, status=completed, and record_type=transaction. Compute net revenue per row as gross_revenue - discount - refund. Exclude cancelled, returned, internal_test, forecast, subtotal, annual_subtotal, regional_subtotal, draft_summary, and 2024 rows. Valid net revenue totals: annual=$1,431,000; monthly high is November=$170,000. Quarter totals are Q1=$238,000, Q2=$329,000, Q3=$388,500, Q4=$475,500, so QoQ growth is Q2=38.2%, Q3=18.1%, Q4=22.4%; fastest is Q2 over Q1. Category totals and shares of annual net revenue: Smart Home=$428,000 (29.9%), Audio=$387,000 (27.0%), Accessories=$304,500 (21.3%), Outdoor Tech=$178,000 (12.4%), Services=$133,500 (9.3%). City mapping produces reporting-region totals: West=$597,000 (41.7%), Northeast=$387,000 (27.0%), Central=$299,500 (20.9%), Southeast=$86,500 (6.0%), South Central=$61,000 (4.3%)."
+  "calculation_notes": "Use only rows where fiscal_year=2025, status=completed, and record_type=transaction. Compute net revenue per row as gross_revenue - discount - refund. Exclude cancelled, returned, pending, manual_review, internal_test, adjustment, forecast, subtotal, rollup, snapshot, draft, and 2024 rows. Valid net revenue totals: annual=$1,431,000; monthly high is November=$170,000. Quarter totals are Q1=$238,000, Q2=$329,000, Q3=$388,500, Q4=$475,500, so QoQ growth is Q2=38.2%, Q3=18.1%, Q4=22.4%; fastest is Q2 over Q1. Category totals and shares of annual net revenue: Smart Home=$428,000 (29.9%), Audio=$387,000 (27.0%), Accessories=$304,500 (21.3%), Outdoor Tech=$178,000 (12.4%), Services=$133,500 (9.3%). City mapping produces reporting-region totals: West=$597,000 (41.7%), Northeast=$387,000 (27.0%), Central=$299,500 (20.9%), Southeast=$86,500 (6.0%), South Central=$61,000 (4.3%)."
 }

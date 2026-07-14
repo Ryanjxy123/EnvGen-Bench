@@ -1,0 +1,16 @@
+load_class,campus_area,threshold_kw,effective_cycle,threshold_state
+standard,Academic Core,430,OCT-2026,active
+standard,Student Life,390,OCT-2026,active
+standard,Administration,410,OCT-2026,active
+lab,Labs,540,OCT-2026,active
+clinical,Labs,500,OCT-2026,active
+high_compute,Labs,660,OCT-2026,active
+high_compute,Operations,650,OCT-2026,active
+operations,Operations,560,OCT-2026,active
+utility,Utilities,690,OCT-2026,active
+residential,Residential,500,OCT-2026,active
+food_service,Student Life,470,OCT-2026,active
+athletics,Student Life,520,OCT-2026,active
+retail,Student Life,350,OCT-2026,active
+lab,Labs,500,SEP-2026,expired
+high_compute,Operations,610,OCT-2026,draft

@@ -1,0 +1,25 @@
+facility_id,facility_name,campus_area,occupied_sqft,load_class,include_in_review,intensity_eligible,profile_state
+F01,Main Library,Academic Core,62000,standard,1,1,active
+F02,Whitaker Science Hall,Labs,76000,lab,1,1,active
+F03,Student Wellness Center,Student Life,46000,standard,1,1,active
+F04,Performing Arts Annex,Academic Core,31000,standard,1,1,active
+F05,Network Operations Center,Operations,24000,operations,1,1,active
+F06,East Residence Hall,Residential,68000,residential,1,1,active
+F07,Engineering Labs,Labs,82000,lab,1,1,active
+F08,West Residence Hall,Residential,72000,residential,1,1,active
+F09,Campus Dining Commons,Student Life,54000,food_service,1,1,active
+F10,Fine Arts Center,Academic Core,44000,standard,1,1,active
+F11,Central Plant,Utilities,38000,utility,1,0,active
+F12,Health Sciences Clinic,Labs,59000,clinical,1,1,active
+F13,Administration Building,Administration,52000,standard,1,1,active
+F14,Athletics Pavilion,Student Life,88000,athletics,1,1,active
+F15,Research Computing Lab,Operations,21000,high_compute,1,1,active
+F16,South Residence Hall,Residential,70000,residential,1,1,active
+F17,Innovation Hub,Labs,47000,lab,1,1,active
+F18,Data Sciences Center,Labs,33000,high_compute,1,1,active
+F19,Campus Bookstore,Student Life,28000,retail,1,1,active
+F20,Child Development Center,Student Life,25000,standard,1,1,active
+F21,Transit Maintenance Depot,Operations,41000,operations,1,1,active
+F22,Greenhouse Complex,Labs,36000,lab,1,1,active
+F23,Alumni Conference Center,External Programs,57000,standard,0,1,active
+F24,Storage Annex,Operations,19000,standard,0,0,inactive

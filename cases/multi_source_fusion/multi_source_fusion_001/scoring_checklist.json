@@ -1,90 +1,182 @@
 {
   "case_id": "multi_source_fusion_001",
-  "dimensions": {
-    "task_completion": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "output_type_multi_source_fusion_001",
-          "check": "For multi_source_fusion_001, the output is a finished social_media_campaign_image for the cross-file fusion and web-bounded sizing, not a worksheet, raw table, or generic mockup.",
-          "points": 4,
-          "scoring_hint": "2 = correct finished image type; 1 = correct topic but weak format; 0 = wrong artifact type. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
-        },
-        {
-          "id": "operation_depth_multi_source_fusion_001",
-          "check": "The image visibly resolves this case's cross-file fusion and web-bounded sizing; reference facts include sales_winner: HelioGrid Pulse; selling_points: stores solar energy for evening use and outages, quiet wall-mounted design, app-guided energy insights; audience_tone: confident, practical, optimistic; brand_constraints: #0B5FFF, #FFFFFF, #00A887; visual_reference_assets: approved brand visual style from the brand guide; web_required_size: official current feed sizing guidance from Instagram or Meta; wrong_product_exclusions: HelioGrid Mini, HelioGrid Sense.",
-          "points": 4,
-          "scoring_hint": "2 = operation is visibly resolved; 1 = operation partly reflected; 0 = copied unsolved source material. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
+  "evaluation_mode": "image_vqa_0_2",
+  "dimension_weights": {
+    "grounded_requirement_satisfaction": 0.8,
+    "visual_rendering_quality": 0.2
+  },
+  "grounded_requirement_satisfaction": {
+    "vqa_items": [
+      {
+        "id": "grounded_q01",
+        "question": "Which HelioGrid product is the sole campaign product?",
+        "expected_answer": "HelioGrid Flex.",
+        "acceptance_rule": "Score 2 if the complete name “HelioGrid Flex” is explicit and no second HelioGrid product is promoted. Score 1 if “Flex” is unmistakable but the brand prefix is omitted. Score 0 if Flex is absent, another product is primary, or another HelioGrid product is co-featured."
+      },
+      {
+        "id": "grounded_q02",
+        "question": "Which reporting region controls the campaign?",
+        "expected_answer": "Central.",
+        "acceptance_rule": "Score 2 if Central is explicit as the campaign region. Score 1 if the content is clearly Central-program specific but the region name itself is omitted. Score 0 if another region is named, the campaign is generic/national, or Central cannot be inferred."
+      },
+      {
+        "id": "grounded_q03",
+        "question": "Which flexible-load track won the post-selection routing calculation?",
+        "expected_answer": "The Level 2 EV-charger track, not the heat-pump track or a combined EV-or-heat-pump audience.",
+        "acceptance_rule": "Score 2 if the campaign explicitly targets qualifying Level 2 EV charging and excludes heat-pump or combined alternatives. Score 1 if EV charging is clearly primary and heat-pump language is only incidental. Score 0 if EV and heat pump are presented as co-equal alternatives, the track is generic flexible loads, or heat pump is selected."
+      },
+      {
+        "id": "grounded_q04",
+        "question": "Which utility program is selected inside the winning EV track?",
+        "expected_answer": "LoneStar FlexCharge.",
+        "acceptance_rule": "Score 2 if LoneStar FlexCharge is explicit. Score 1 if LoneStar is explicit but the full program name is shortened without ambiguity. Score 0 if the program is absent, generic, or another utility program is named."
+      },
+      {
+        "id": "grounded_q05",
+        "question": "What current campaign label is shown?",
+        "expected_answer": "Central EV Solar Conversion Pilot.",
+        "acceptance_rule": "Score 2 only if “Central EV Solar Conversion Pilot” or a semantically exact equivalent is shown. Score 1 if the label retains Central, EV, and solar-conversion pilot meaning but is mildly shortened. Score 0 if EV is omitted, a generic Central conversion label is used, or another track/objective appears."
+      },
+      {
+        "id": "grounded_q06",
+        "question": "What complete leadership badge is shown?",
+        "expected_answer": "May 2026 Central EV-Track Program-Eligible Net-Contribution Leader.",
+        "acceptance_rule": "Score 2 only if May 2026, Central, EV-Track, Program-Eligible, Net-Contribution, and Leader are all present. Score 1 if exactly one non-period qualifier is omitted. Score 0 if two or more components are missing, the track/region is wrong, or a generic sales/revenue badge is used."
+      },
+      {
+        "id": "grounded_q07",
+        "question": "What is the current EV-track lead benefit?",
+        "expected_answer": "Coordinate rooftop solar with qualifying Level 2 charging during participating utility event windows, with normal charging schedules outside events.",
+        "acceptance_rule": "Score 2 if the message is specifically about qualifying Level 2 charging during utility event windows and normal charging outside events. Score 1 if the EV-charging/event-window purpose is clear but one timing qualifier is omitted. Score 0 if the copy remains generic flexible-load language, includes heat-pump alternatives, or changes the objective."
+      },
+      {
+        "id": "grounded_q08",
+        "question": "What installer-set EV proof point is used?",
+        "expected_answer": "Installer-set EV charging profiles align rooftop-solar input with a compatible Level 2 charger.",
+        "acceptance_rule": "Score 2 if the proof is specifically about installer-set EV charging profiles and a compatible Level 2 charger. Score 1 if the EV-profile meaning is clear but either installer-set or compatible is omitted. Score 0 if heat pumps are offered as an alternative, the proof is generic, or another proof role is used."
+      },
+      {
+        "id": "grounded_q09",
+        "question": "What app-status proof point is used?",
+        "expected_answer": "App event status shows when charging timing is active and when the normal charging schedule resumes.",
+        "acceptance_rule": "Score 2 if both active charging timing and normal charging-schedule resumption are explicit. Score 1 if active-and-resume timing is clear but charging is described only generically. Score 0 if either active status or schedule resumption is absent, or another app claim is used."
+      },
+      {
+        "id": "grounded_q10",
+        "question": "What action is the viewer asked to take?",
+        "expected_answer": "Check LoneStar EV-flex eligibility.",
+        "acceptance_rule": "Score 2 only if the CTA explicitly asks to check LoneStar EV-flex eligibility. Score 1 if it asks to check Central EV eligibility but omits the program name. Score 0 if EV is omitted, the CTA is a generic conversion-pilot check, waitlist, purchase, quote, or learn-more action."
+      },
+      {
+        "id": "grounded_q11",
+        "question": "What household base is named in the qualification?",
+        "expected_answer": "Owner-occupied Central rooftop-solar homes.",
+        "acceptance_rule": "Score 2 if owner-occupied, Central, and rooftop-solar are all explicit. Score 1 if exactly one of those three qualifiers is omitted. Score 0 if two or more are omitted or the audience is renter, apartment, commercial, another region, or generic national."
+      },
+      {
+        "id": "grounded_q12",
+        "question": "What equipment configuration is required?",
+        "expected_answer": "A compatible inverter pathway and a verified qualifying Level 2 EV charger.",
+        "acceptance_rule": "Score 2 if both the compatible inverter pathway and verified qualifying Level 2 EV charger are explicit. Score 1 if exactly one equipment qualifier is incomplete or if a heat-pump alternative remains alongside the EV charger. Score 0 if the EV charger is absent, another track is selected, or both equipment conditions are missing."
+      },
+      {
+        "id": "grounded_q13",
+        "question": "What utility-program participation is required?",
+        "expected_answer": "The home must be in a participating LoneStar FlexCharge territory.",
+        "acceptance_rule": "Score 2 if participating LoneStar FlexCharge territory is explicit. Score 1 if participating LoneStar territory is clear but the full program name is shortened. Score 0 if the program is absent, generic participating-utility language is used, or another utility program is named."
+      },
+      {
+        "id": "grounded_q14",
+        "question": "Does the image state that outcomes are not guaranteed?",
+        "expected_answer": "Energy-cost and charging outcomes are not guaranteed.",
+        "acceptance_rule": "Score 2 if the no-guarantee statement covers both energy-cost and charging outcomes. Score 1 if a clear no-guarantee statement appears but only one outcome type is named. Score 0 if the no-guarantee meaning is absent or a guaranteed result is implied."
+      },
+      {
+        "id": "grounded_q15",
+        "question": "Which factors are stated to affect outcomes?",
+        "expected_answer": "Solar production, vehicle charging demand, utility event frequency, and installer settings.",
+        "acceptance_rule": "Score 2 if all four factors are explicit. Score 1 if exactly one factor is missing or vehicle charging demand is replaced by generic household demand. Score 0 if two or more factors are missing or only a generic results-vary statement appears."
+      },
+      {
+        "id": "grounded_q16",
+        "question": "What geographic availability limitation is stated?",
+        "expected_answer": "Eligible LoneStar FlexCharge territories in TX only, with availability potentially differing within the state.",
+        "acceptance_rule": "Score 2 if TX-only LoneStar territory scope and within-state variation are explicit. Score 1 if TX and within-state variation are present but the program name is omitted, or if LoneStar and TX are present but the variation condition is omitted. Score 0 if additional states are presented as current, TX is absent, or statewide/universal availability is implied."
+      },
+      {
+        "id": "grounded_q17",
+        "question": "What enrollment and site-review conditions apply before activation?",
+        "expected_answer": "Utility enrollment and an installer site review are required before activation.",
+        "acceptance_rule": "Score 2 if both utility enrollment and installer site review are required before activation. Score 1 if exactly one prerequisite is stated with the correct timing. Score 0 if both are absent or the timing is wrong."
+      },
+      {
+        "id": "grounded_q18",
+        "question": "What charger-specific verification is required before activation?",
+        "expected_answer": "Compatible Level 2 charger verification is required before activation.",
+        "acceptance_rule": "Score 2 if charger verification and before-activation timing are explicit. Score 1 if charger verification is present but the timing is unclear. Score 0 if charger verification is absent or another device is verified instead."
+      },
+      {
+        "id": "grounded_q19",
+        "question": "What may happen to charging timing during utility events?",
+        "expected_answer": "Charging timing may change during utility event windows.",
+        "acceptance_rule": "Score 2 if charging-timing change during utility event windows is explicit. Score 1 if generic flexible-load timing change is stated without charging specificity. Score 0 if the timing-change meaning or event-window condition is absent."
+      },
+      {
+        "id": "grounded_q20",
+        "question": "What customer override consequence is disclosed?",
+        "expected_answer": "Customers can override an event, and overriding may reduce program benefits.",
+        "acceptance_rule": "Score 2 if both override permission and possible reduced program benefits are explicit. Score 1 if override is allowed but the consequence is omitted, or the consequence is stated without clear override permission. Score 0 if both meanings are absent or override is disallowed."
+      },
+      {
+        "id": "grounded_q21",
+        "question": "Does the campaign use the approved residential background role?",
+        "expected_answer": "A detached Central residential home with a recognizable rooftop-solar array.",
+        "acceptance_rule": "Score 2 if a detached residential rooftop-solar home compatible with the Central source is clearly used. Score 1 if a detached rooftop-solar home is clear but regional source identity is uncertain. Score 0 if the setting is apartment, commercial, non-solar, wrong-region, or absent."
+      },
+      {
+        "id": "grounded_q22",
+        "question": "Is a single current HelioGrid Flex conversion enclosure used as the product hero?",
+        "expected_answer": "One current wall-mounted Flex conversion enclosure is identifiable; no second product or schematic substitutes for it.",
+        "acceptance_rule": "Score 2 if one current wall-mounted Flex enclosure is clearly isolated as the product hero. Score 1 if a wall-mounted conversion enclosure is present but exact Flex identity is uncertain. Score 0 if the product is absent, another product is used, multiple devices compete, or a schematic/reference image substitutes for the hero."
+      },
+      {
+        "id": "grounded_q23",
+        "question": "Are readable supplier or third-party marks removed from the product source?",
+        "expected_answer": "No readable supplier name, third-party brand, warning label, or test label remains.",
+        "acceptance_rule": "Score 2 if none of those marks or labels is readable. Score 1 if one minor non-readable remnant remains. Score 0 if any supplier/third-party brand, warning label, or test label is readable."
+      },
+      {
+        "id": "grounded_q24",
+        "question": "Are exposed connectors and loose leads removed?",
+        "expected_answer": "No exposed connector or loose lead remains on or around the product enclosure.",
+        "acceptance_rule": "Score 2 if no exposed connector or loose lead is visible. Score 1 if one minor ambiguous cable remnant remains. Score 0 if exposed connectors or loose leads are clearly visible."
+      },
+      {
+        "id": "grounded_q25",
+        "question": "Are unrelated equipment and reference-room context removed?",
+        "expected_answer": "No unrelated panel, instrument, engineering-room context, or uncropped reference-frame content remains.",
+        "acceptance_rule": "Score 2 if the enclosure is isolated without unrelated equipment or room/reference context. Score 1 if one minor ambiguous background remnant remains. Score 0 if unrelated equipment or substantial engineering-room/reference framing is visible."
+      },
+      {
+        "id": "grounded_q26",
+        "question": "Does the image avoid unsupported claims and internal values or identifiers?",
+        "expected_answer": "No unsupported guarantee, universal-control/availability claim, price/savings/capacity/warranty claim, internal amount, calculation, customer detail, ID, key, code, or workbook field is visible; the approved badge metric wording without a number is allowed.",
+        "acceptance_rule": "Score 2 if all prohibited claims and internal values/identifiers are absent. Score 1 if no number, guarantee, calculation, or sensitive identifier is exposed but one harmless internal-sounding fragment remains. Score 0 if any unsupported numerical/guaranteed claim, internal amount/calculation, customer detail, ID/key/code, or workbook field is visible."
+      }
+    ]
+  },
+  "visual_rendering_quality": {
+    "image_type": "social_campaign_creative",
+    "vqa_items": [
+      {
+        "id": "visual_q01",
+        "question": "As a customer-facing social campaign creative, does the image fuse the selected subject or product, audience-relevant setting, campaign message, approved benefit or proof, brand identity, and CTA into one distinctive, platform-native, highly polished feed composition?",
+        "score_criteria": {
+          "2": "Award 2 only if the creative is exceptional and ready for campaign deployment: the subject or product is unmistakably dominant; setting, message, proof, brand, and CTA reinforce one another in a single coherent concept; the crop feels native to the intended feed placement; essential text is readable at feed size; and imagery, typography, color, spacing, and finish are distinctive, premium, and meticulously controlled. No generic campaign template, weak subject focus, disconnected proof, competing copy, detached CTA, awkward crop, malformed text, or rendering flaw is allowed. Any meaningful campaign-quality concern prevents 2.",
+          "1": "Award 1 if the creative is coherent, usable, and visually decent or attractive, but it remains ordinary or visibly imperfect—for example, generic styling, modest product or destination focus, disconnected proof points, competing copy, a weak CTA, or a slightly awkward crop.",
+          "0": "Award 0 even when campaign elements are present if the output looks poor or fails to cohere: subject, setting, message, proof, brand, and CTA feel disconnected; focal hierarchy is weak; text or crop is badly handled; or the composition requires substantial redesign before use. Blank, corrupted, severely unreadable, or broken creatives are also 0."
         }
-      ],
-      "label": "Task Completion"
-    },
-    "grounded_requirement_satisfaction": {
-      "weight": 0.55,
-      "items": [
-        {
-          "id": "critical_fact_accuracy_multi_source_fusion_001",
-          "check": "For multi_source_fusion_001, accurately includes the critical expected facts sales_winner, selling_points, web_required_size using these case values: sales_winner: HelioGrid Pulse; selling_points: stores solar energy for evening use and outages, quiet wall-mounted design, app-guided energy insights; audience_tone: confident, practical, optimistic; brand_constraints: #0B5FFF, #FFFFFF, #00A887; visual_reference_assets: approved brand visual style from the brand guide; web_required_size: official current feed sizing guidance from Instagram or Meta; wrong_product_exclusions: HelioGrid Mini, HelioGrid Sense.",
-          "points": 8,
-          "scoring_hint": "2 = all critical facts correct; 1 = one minor omission or formatting issue; 0 = any critical fact is wrong or missing.",
-          "fact_ids": [
-            "sales_winner",
-            "selling_points"
-          ]
-        },
-        {
-          "id": "required_appear_facts_multi_source_fusion_001",
-          "check": "Shows required appear facts sales_winner, selling_points, audience_tone, brand_constraints, visual_reference_assets for multi_source_fusion_001 without replacing them with unsupported alternatives; expected values include sales_winner: HelioGrid Pulse; selling_points: stores solar energy for evening use and outages, quiet wall-mounted design, app-guided energy insights; audience_tone: confident, practical, optimistic; brand_constraints: #0B5FFF, #FFFFFF, #00A887; visual_reference_assets: approved brand visual style from the brand guide; web_required_size: official current feed sizing guidance from Instagram or Meta; wrong_product_exclusions: HelioGrid Mini, HelioGrid Sense.",
-          "points": 6,
-          "scoring_hint": "2 = all required facts appear clearly; 1 = most appear but one is ambiguous; 0 = multiple required facts are absent."
-        },
-        {
-          "id": "negative_exclusion_facts_multi_source_fusion_001",
-          "check": "Does not show prohibited or stale facts wrong_product_exclusions in multi_source_fusion_001; avoids unsupported claims from distractor env material.",
-          "points": 5,
-          "scoring_hint": "2 = no prohibited facts appear; 1 = one weak/ambiguous distractor; 0 = any explicit prohibited value appears.",
-          "fact_ids": [
-            "wrong_product_exclusions"
-          ]
-        }
-      ],
-      "label": "Grounded Requirement Satisfaction"
-    },
-    "information_structuring": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "fact_hierarchy_multi_source_fusion_001",
-          "check": "Organizes sales_winner, selling_points, web_required_size as the primary message for multi_source_fusion_001; supporting values are sales_winner: HelioGrid Pulse; selling_points: stores solar energy for evening use and outages, quiet wall-mounted design, app-guided energy insights; audience_tone: confident, practical, optimistic; brand_constraints: #0B5FFF, #FFFFFF, #00A887; visual_reference_assets: approved brand visual style from the brand guide; web_required_size: official current feed sizing guidance from Instagram or Meta; wrong_product_exclusions: HelioGrid Mini, HelioGrid Sense.",
-          "points": 5,
-          "scoring_hint": "2 = hierarchy is clear and fact-driven; 1 = facts present but hierarchy is muddled; 0 = important facts are buried or missing. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
-        },
-        {
-          "id": "robust_consistency_multi_source_fusion_001",
-          "check": "Across repeated runs of multi_source_fusion_001, the same critical facts, exclusions wrong_product_exclusions, ordering rules, and layout constraints must remain consistent.",
-          "points": 4,
-          "scoring_hint": "2 = stable facts and exclusions; 1 = minor wording drift only; 0 = selected facts or exclusions change. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
-        }
-      ],
-      "label": "Information Structuring"
-    },
-    "visual_communication_quality": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "visual_clarity_multi_source_fusion_001",
-          "check": "For multi_source_fusion_001, uses clear visual hierarchy, readable typography, sufficient contrast, and non-crowded spacing at the intended social_media_campaign_image size.",
-          "points": 4,
-          "scoring_hint": "2 = readable and polished; 1 = readable with minor clutter; 0 = unreadable or visually incoherent. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
-        },
-        {
-          "id": "visual_layout_density_multi_source_fusion_001",
-          "check": "The social_media_campaign_image layout has appropriate information density, balanced image/text regions, crisp assets, platform-safe margins, and no placeholder-like areas.",
-          "points": 4,
-          "scoring_hint": "2 = balanced density and crisp assets; 1 = some weak spacing or density; 0 = blank, placeholder-like, or low-resolution. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
-        }
-      ],
-      "label": "Visual Communication Quality"
-    }
+      }
+    ]
   }
 }

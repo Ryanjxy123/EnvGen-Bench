@@ -1,0 +1,93 @@
+{
+  "case_id": "document_brief_006",
+  "task_type": "document_brief",
+  "web_policy": "closed_env",
+  "target_image_type": "coordination_infographic",
+  "difficulty": "hard_balanced_v4",
+  "scenario_date": "2026-02-20",
+  "env_files": [
+    {
+      "path": "env/FEMA_NIMS_2017_Learning_Materials.pptx",
+      "role": "Primary official 52-slide source containing the current model, detailed role and boundary facts, public-information standards, and natural historical/technical distractors.",
+      "format": "pptx",
+      "origin": "official_public_source",
+      "slide_count": 52,
+      "source_url": "https://training.fema.gov/nims/docs/nims.2017.instructor%20student%20learning%20materials.pptx",
+      "retrieved_at": "2026-07-10",
+      "sha256": "d1ac20e40d6bbc99058045e6a367b156034c5241765b321be147fb90f6aa5326"
+    },
+    {
+      "path": "env/Partner_Agency_Orientation_Handoff.docx",
+      "role": "Internal handoff defining the distinct-session prevalence ranking method, multi-part content completeness gates, exact clarification format, scenario use, and editorial exclusions without supplying the selected issue-code ranking.",
+      "format": "docx",
+      "origin": "benchmark_authored",
+      "page_count": 2,
+      "sha256": "a1680265e5e6806df98523eff3f8bbc3f7c9ed14b21ff89cae4f2da8c8f373ee"
+    },
+    {
+      "path": "env/Partner_Orientation_Review_Log.xlsx",
+      "role": "Three-sheet workbook with 458 mixed workflow records. Eligible issue ranking must use distinct completed-session prevalence rather than raw response count; raw volume intentionally produces a different ordering.",
+      "format": "xlsx",
+      "origin": "benchmark_authored",
+      "row_count": 458,
+      "sheet_count": 3,
+      "sha256": "19ac934223c37cf6e48c6f99df3a037d6efb86cfc828f4afdb91d27434639fd8"
+    },
+    {
+      "path": "env/Spring_2026_Partner_Exercise_Scenario.docx",
+      "role": "Approved concurrent four-action scenario requiring detailed role, support-recipient, authority-boundary, public-audience, and JIS/JIC mapping.",
+      "format": "docx",
+      "origin": "benchmark_authored",
+      "page_count": 1,
+      "sha256": "86304708c7f7ab07b895d333074cc5ea14b4bddd680b731fd4e7df650c93167c"
+    },
+    {
+      "path": "env/Orientation_Infographic_Production_Guide.docx",
+      "role": "Existing production standard retained for the unchanged visual-quality VQA.",
+      "format": "docx",
+      "origin": "benchmark_authored",
+      "page_count": 1,
+      "sha256": "dbf77004656d9fd91875a0f3438ad63df8374d261fd9f5f7e80cf87221eba6af"
+    }
+  ],
+  "source_policy": {
+    "agent_visible_files": [
+      "env/",
+      "task.md"
+    ],
+    "evaluator_only_files": [
+      "metadata.json",
+      "expected_facts.json",
+      "scoring_checklist.json"
+    ],
+    "web_usage_note": "Closed-env case. The agent must use only task.md and the files inside env/."
+  },
+  "design_checks": {
+    "long_document_requirement_met": true,
+    "primary_source_slides": 52,
+    "cross_file_reasoning_required": true,
+    "cross_sheet_filtering_required": true,
+    "feedback_records": 458,
+    "scenario_mapping_required": true,
+    "production_constraints_required": true,
+    "historical_and_technical_distractors_present": true,
+    "answer_files_in_env": false,
+    "explicit_include_exclude_column": false,
+    "direct_final_answer_block_in_authored_env": false,
+    "task_vqa_aligned": true,
+    "gap_scoring_used": false,
+    "hard_cap_used": false,
+    "grounded_items_are_content_rational_not_visual": true,
+    "single_visual_vqa_only": true,
+    "visual_vqa_unchanged": true,
+    "duplicate_theme_scoring_avoided": true
+  },
+  "difficulty_calibration": {
+    "latest_run_total": 77.34,
+    "latest_grounded_raw_0_100": 96.67,
+    "latest_visual_raw_0_2": 0,
+    "target_score_band": "40-60",
+    "calibration_rationale": "The latest output passed almost every prior Grounded item because the earlier thresholds accepted abbreviated role statements. This revision keeps the task natural but requires complete source-grounded recipient sets, authority boundaries, public/stakeholder information standards, JIS activities, distinct-session prevalence selection, and detailed scenario preservation. The unchanged visual VQA remains separate. Applied to the latest output, the revised Grounded checklist is expected to reduce several full scores to partial or zero and place the total near the requested band without caps or gap scoring."
+  },
+  "notes": "The task dimension, image-VQA mode, 0.8/0.2 weights, 0/1/2 scoring, and single visual VQA are unchanged. Only Grounded VQAs, task instructions, and agent-visible environment content were strengthened."
+}

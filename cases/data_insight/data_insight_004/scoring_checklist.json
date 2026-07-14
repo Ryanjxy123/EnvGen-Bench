@@ -1,170 +1,74 @@
 {
   "case_id": "data_insight_004",
-  "dimensions": {
-    "task_completion": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "output_type_data_insight_004",
-          "check": "The output should be a finished transit route reliability infographic, not raw CSV rows or a generic dashboard.",
-          "points": 4
-        },
-        {
-          "id": "decision_resolution_data_insight_004",
-          "check": "The infographic should resolve the priority decision using period comparison, rates, normalization, thresholds, and exclusions.",
-          "points": 4
-        }
-      ],
-      "label": "Task Completion"
-    },
-    "grounded_requirement_satisfaction": {
-      "weight": 0.55,
-      "items": [
-        {
-          "id": "critical_score_leader_data_insight_004",
-          "check": "Verify that Airport Rapid is the top score entity with score about 82.9.",
-          "points": 6,
-          "fact_id": "transit_reliability_score_leader"
-        },
-        {
-          "id": "critical_lowest_data_insight_004",
-          "check": "Verify that Harbor Shuttle is the lowest score entity with score about 19.0.",
-          "points": 4,
-          "fact_id": "transit_reliability_lowest_score"
-        },
-        {
-          "id": "critical_change_data_insight_004",
-          "check": "Verify that Airport Rapid has the largest gap-rate increase at about 2.7 percentage points.",
-          "points": 5,
-          "fact_id": "transit_reliability_fastest_gap_change"
-        },
-        {
-          "id": "critical_volume_data_insight_004",
-          "check": "Verify that Market Spine has the highest gap volume at about 540.",
-          "points": 5,
-          "fact_id": "transit_reliability_gap_volume_hotspot"
-        },
-        {
-          "id": "critical_incident_data_insight_004",
-          "check": "Verify that Hill Connector has the highest incident rate at about 49.6 per 1,000.",
-          "points": 5,
-          "fact_id": "transit_reliability_incident_rate_hotspot"
-        },
-        {
-          "id": "critical_group_data_insight_004",
-          "check": "Verify that East is the group hotspot at about 996.",
-          "points": 5,
-          "fact_id": "transit_reliability_group_gap_hotspot"
-        },
-        {
-          "id": "critical_threshold_data_insight_004",
-          "check": "Verify that 2 entities meet the high-priority threshold.",
-          "points": 5,
-          "fact_id": "transit_reliability_threshold_count"
-        },
-        {
-          "id": "negative_distractors_data_insight_004",
-          "check": "Verify that forecast, subtotal, and old-period rows are not used as final metrics.",
-          "points": 4,
-          "fact_id": "transit_reliability_distractor_exclusions"
-        }
-      ],
-      "label": "Grounded Requirement Satisfaction"
-    },
-    "information_structuring": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "priority_hierarchy_data_insight_004",
-          "check": "The image should organize priority score, gap volume, rate change, incident signal, group hotspot, and threshold count into a clear decision hierarchy.",
-          "points": 5,
-          "fact_ids": [
-            "transit_reliability_score_leader",
-            "transit_reliability_lowest_score",
-            "transit_reliability_fastest_gap_change",
-            "transit_reliability_gap_volume_hotspot",
-            "transit_reliability_incident_rate_hotspot",
-            "transit_reliability_group_gap_hotspot",
-            "transit_reliability_threshold_count"
-          ]
-        },
-        {
-          "id": "action_takeaway_data_insight_004",
-          "check": "The takeaway should connect the top priority with at least one supporting operational signal.",
-          "points": 4,
-          "fact_ids": [
-            "transit_reliability_score_leader",
-            "transit_reliability_incident_rate_hotspot",
-            "transit_reliability_gap_volume_hotspot"
-          ]
-        }
-      ],
-      "label": "Information Structuring"
-    },
-    "visual_communication_quality": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "visual_clarity_data_insight_004",
-          "check": "Judge readability, contrast, hierarchy, and label legibility at infographic size.",
-          "points": 4
-        },
-        {
-          "id": "visual_density_data_insight_004",
-          "check": "The layout should be dense enough for operations review while avoiding overlapping labels or raw table dumps.",
-          "points": 4
-        }
-      ],
-      "label": "Visual Communication Quality"
-    }
+  "evaluation_mode": "image_vqa_0_2",
+  "dimension_weights": {
+    "grounded_requirement_satisfaction": 0.8,
+    "visual_rendering_quality": 0.2
   },
-  "score_caps": [
-    {
-      "id": "missing_panel_core_fact",
-      "max_total": 55,
-      "reason": "A required panel critical fact is missing.",
-      "trigger": {
-        "type": "missing_required_count",
-        "fact_ids": [
-          "transit_reliability_score_leader",
-          "transit_reliability_lowest_score",
-          "transit_reliability_fastest_gap_change",
-          "transit_reliability_gap_volume_hotspot",
-          "transit_reliability_incident_rate_hotspot",
-          "transit_reliability_group_gap_hotspot",
-          "transit_reliability_threshold_count"
-        ],
-        "min_missing": 1
+  "grounded_requirement_satisfaction": {
+    "vqa_items": [
+      {
+        "id": "grounded_q01",
+        "question": "Which route corridor is shown as the top attention priority, and what score is attached to it?",
+        "expected_answer": "Hill Connector — 84.0",
+        "acceptance_rule": "Accept Hill Connector with a score near 84.0; case, spacing, and minor rounding differences are allowed."
+      },
+      {
+        "id": "grounded_q02",
+        "question": "Which route corridor is shown as the lowest-attention comparison, and what score is attached to it?",
+        "expected_answer": "Harbor Shuttle — 3.9",
+        "acceptance_rule": "Accept Harbor Shuttle with a score near 3.9; case, spacing, and minor rounding differences are allowed."
+      },
+      {
+        "id": "grounded_q03",
+        "question": "Which corridor is shown as having the fastest worsening reliability rate, and by how much?",
+        "expected_answer": "Hill Connector — about +7.0 percentage points",
+        "acceptance_rule": "Accept Hill Connector with approximately +7.0 pp or percentage points; do not treat 7.0% as equivalent unless clearly labeled as a percentage-point change."
+      },
+      {
+        "id": "grounded_q04",
+        "question": "Which corridor is shown as having the largest late-or-missed trip count, and what count is shown?",
+        "expected_answer": "Airport Rapid — about 780 trips",
+        "acceptance_rule": "Accept Airport Rapid with approximately 780 late-or-missed trips; minor label or number-format differences are allowed."
+      },
+      {
+        "id": "grounded_q05",
+        "question": "Which corridor is shown as having the strongest crowding pressure, and what rate is shown?",
+        "expected_answer": "Campus Loop — about 46.4 per 10,000 boardings",
+        "acceptance_rule": "Accept Campus Loop with approximately 46.4 per 10,000; the denominator must be visible or unambiguous."
+      },
+      {
+        "id": "grounded_q06",
+        "question": "Which service district is shown as having the largest reliability gap, and what value is shown?",
+        "expected_answer": "Core — about 1,080 late-or-missed trips",
+        "acceptance_rule": "Accept Core with approximately 1080 or 1,080 late-or-missed trips; it must be presented as the leading district rather than a corridor."
+      },
+      {
+        "id": "grounded_q07",
+        "question": "How many route corridors are shown in the top attention band?",
+        "expected_answer": "3",
+        "acceptance_rule": "Accept 3 or three when clearly labeled as the top-attention corridor count."
+      },
+      {
+        "id": "grounded_q08",
+        "question": "Does the image present any excluded, invalid, contextual, or non-final material as final service metrics?",
+        "expected_answer": "No",
+        "acceptance_rule": "This is a reverse-scored prohibition check. Only No earns credit. Benign notes explicitly identifying excluded context are allowed."
       }
-    },
-    {
-      "id": "uses_invalid_panel_rows",
-      "max_total": 60,
-      "reason": "The image uses forecast, subtotal, or old-period rows as final results.",
-      "trigger": {
-        "type": "forbidden_final_answer",
-        "patterns": [
-          "99999",
-          "88888",
-          "77777",
-          "forecast result",
-          "subtotal result",
-          "old_period result"
-        ]
+    ]
+  },
+  "visual_rendering_quality": {
+    "image_type": "data_story_infographic",
+    "vqa_items": [
+      {
+        "id": "visual_q01",
+        "question": "As a data-story infographic, does the image communicate one dominant insight through an immediately legible narrative sequence, well-chosen visual evidence, meaningful comparisons, a clear takeaway, and refined publication-quality composition rather than a collection of disconnected cards?",
+        "score_criteria": {
+          "2": "Award 2 only if the infographic is outstanding and publication-ready: one main insight dominates immediately; evidence, comparisons, annotations, and conclusion form a persuasive visual sequence; charts or encodings are purposeful, proportionate, and easy to interpret; all labels, values, units, and notes are readable at normal size; typography, spacing, color, alignment, and density are consistently sophisticated; and the page feels custom-designed, cohesive, and visually memorable without sacrificing accuracy or clarity. There must be no meaningful clutter, generic KPI-card dumping, weak takeaway, misleading encoding, malformed text, clipping, overlap, or rendering residue. Any notable narrative or design weakness prevents 2.",
+          "1": "Award 1 if the infographic is understandable and reasonably well designed, with a visible main message and usable evidence, but it remains ordinary or imperfect—for example, a weak reading order, limited comparison, crowded charts, generic cards, uneven emphasis, small annotations, or a takeaway that is present but not visually decisive.",
+          "0": "Award 0 even if the required numbers appear when the overall visual story fails: there is no clear dominant insight, the page reads as a cluttered dashboard or raw report, comparisons are hard to interpret, charts or labels are confusing, hierarchy is weak, or the composition looks visibly poor and needs substantial redesign. Blank, corrupted, severely unreadable, materially misleading, or largely incoherent outputs are also 0."
+        }
       }
-    },
-    {
-      "id": "raw_panel_dump",
-      "max_total": 40,
-      "reason": "The output is a raw CSV/table dump instead of an infographic.",
-      "trigger": {
-        "type": "forbidden_final_answer",
-        "patterns": [
-          "entity_id,",
-          "scheduled_trips",
-          "record_type,status"
-        ]
-      }
-    }
-  ]
+    ]
+  }
 }

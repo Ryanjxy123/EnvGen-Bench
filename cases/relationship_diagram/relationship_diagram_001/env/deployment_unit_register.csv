@@ -1,0 +1,48 @@
+unit_id,wave_id,atomic_group_id,request_id,apply_order,depends_on_unit_ids,scope,environment
+DU-COV-01,DW-0630-C,G-COVERAGE,CR-4801,10,,Central Service-to-Cash,production
+DU-COV-09,DW-0630-C,G-COVERAGE,CR-4809,11,DU-COV-01,Central Service-to-Cash,production
+DU-COV-10,DW-0630-C,G-COVERAGE,CR-4810,12,DU-COV-01,Central Service-to-Cash,production
+DU-COV-11,DW-0630-C,G-COVERAGE,CR-4811,13,DU-COV-01,Central Service-to-Cash,production
+DU-AGR-02,DW-0630-C,G-AGREEMENT-RETIREMENT,CR-4802,20,DU-COV-01,Central Service-to-Cash,production
+DU-COM-03,DW-0630-C,G-COMMITMENT,CR-4803,30,,Central Service-to-Cash,production
+DU-COM-04,DW-0630-C,G-COMMITMENT,CR-4804,31,DU-COM-03,Central Service-to-Cash,production
+DU-COM-05,DW-0630-C,G-COMMITMENT,CR-4805,32,DU-COM-03,Central Service-to-Cash,production
+DU-GATE-06,DW-0630-C,G-CLOSE-GATE,CR-4806,40,,Central Service-to-Cash,production
+DU-GATE-07,DW-0630-C,G-CLOSE-GATE,CR-4807,41,DU-GATE-06,Central Service-to-Cash,production
+DU-GATE-08,DW-0630-C,G-CLOSE-GATE,CR-4808,42,DU-GATE-06,Central Service-to-Cash,production
+DU-PAY-25,DW-0630-C,G-PAYMENT-FACT,CR-4825,70,,Central Service-to-Cash,production
+DU-SIG-26,DW-0630-C,G-SIGNATURE-FACT,CR-4826,71,,Central Service-to-Cash,production
+DU-X-01,G-DISTRACTOR,CR-4851,101,,Central Service-to-Cash,production,production
+DU-X-02,G-DISTRACTOR,CR-4852,102,,Central Service-to-Cash,production,production
+DU-X-03,G-DISTRACTOR,CR-4853,103,,Central Service-to-Cash,production,production
+DU-X-04,G-DISTRACTOR,CR-4854,104,,Central Service-to-Cash,production,production
+DU-X-05,G-DISTRACTOR,CR-4855,105,,Central Service-to-Cash,production,production
+DU-X-06,G-DISTRACTOR,CR-4856,106,,Central Service-to-Cash,production,production
+DU-X-07,G-DISTRACTOR,CR-4857,107,,Central Service-to-Cash,production,production
+DU-X-08,G-DISTRACTOR,CR-4858,108,,Central Service-to-Cash,production,production
+DU-X-09,G-DISTRACTOR,CR-4859,109,,Central Service-to-Cash,production,production
+DU-X-10,G-DISTRACTOR,CR-4860,110,,Central Service-to-Cash,production,production
+DU-O-01,DW-0701-A,G-O-01,CR-4827,151,,Central Service-to-Cash,production
+DU-O-02,DW-0701-A,G-O-02,CR-4828,152,,Central Service-to-Cash,production
+DU-O-03,DW-0701-A,G-O-03,CR-4829,153,,Central Service-to-Cash,production
+DU-O-04,DW-0701-A,G-O-04,CR-4830,154,,Central Service-to-Cash,production
+DU-O-05,DW-0701-A,G-O-05,CR-4831,155,,Central Service-to-Cash,production
+DU-O-06,DW-0701-A,G-O-06,CR-4832,156,,Central Service-to-Cash,production
+DU-O-07,DW-0701-A,G-O-07,CR-4833,157,,Central Service-to-Cash,production
+DU-O-08,DW-0701-A,G-O-08,CR-4834,158,,Central Service-to-Cash,production
+DU-O-09,DW-0630-P,G-O-09,CR-4835,159,,Post-payment,production
+DU-O-10,DW-0630-P,G-O-10,CR-4836,160,,Collaboration,production
+DU-O-11,DW-0630-P,G-O-11,CR-4837,161,,Installed Base,production
+DU-O-12,DW-0630-P,G-O-12,CR-4838,162,,Procurement,production
+DU-S-01,DW-0630-S,G-S-01,CR-4843,181,,Central Service-to-Cash,staging
+DU-S-02,DW-0630-S,G-S-02,CR-4844,182,,Central Service-to-Cash,staging
+DU-S-03,DW-0630-S,G-S-03,CR-4845,183,,Central Service-to-Cash,staging
+DU-S-04,DW-0630-S,G-S-04,CR-4846,184,,Central Service-to-Cash,staging
+DU-S-05,DW-0630-S,G-S-05,CR-4847,185,,Central Service-to-Cash,staging
+DU-S-06,DW-0630-S,G-S-06,CR-4848,186,,Central Service-to-Cash,staging
+DU-S-07,DW-0630-S,G-S-07,CR-4849,187,,Central Service-to-Cash,staging
+DU-S-08,DW-0630-S,G-S-08,CR-4850,188,,Central Service-to-Cash,staging
+DU-A-01,DW-0630-A,G-A-01,CR-4801,201,,Central Service-to-Cash,production
+DU-A-02,DW-0630-A,G-A-02,CR-4803,202,,Central Service-to-Cash,production
+DU-A-03,DW-0630-A,G-A-03,CR-4806,203,,Central Service-to-Cash,production
+DU-A-04,DW-0630-A,G-A-04,CR-4825,204,,Central Service-to-Cash,production

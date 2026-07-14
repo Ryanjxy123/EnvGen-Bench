@@ -1,0 +1,693 @@
+organization_id,effective_at,revision_no,public_name,registration_status,tax_clearance,conflict_review,insurance_status
+ORG-0343,2026-03-14T12:15-07:00,1,Elmwood Climate Partnership,active,clear,cleared,current
+ORG-0456,2026-03-11T13:45-07:00,1,Glen Community Development Network,active,clear,cleared,current
+ORG-0331,2026-03-21T12:30-07:00,1,Juniper Neighborhood Partnership,active,clear,cleared,current
+ORG-0032,2026-02-11T13:15-07:00,1,Union Resident Council,active,pending,cleared,current
+ORG-0064,2026-03-13T10:30-07:00,1,Yorktown Civic Collaborative,active,pending,cleared,current
+ORG-0477,2026-03-27T10:00-07:00,1,Lincoln Housing Cooperative,active,pending,cleared,current
+ORG-0229,2026-03-10T16:15-07:00,1,Meadow Housing Cooperative,active,clear,cleared,current
+ORG-0087,2026-03-15T12:45-07:00,1,Union Resident Council,active,clear,cleared,current
+ORG-0445,2026-03-11T13:00-07:00,1,Lakeside Climate Partnership,active,clear,cleared,current
+ORG-0279,2026-03-12T11:45-07:00,1,Stonebridge Housing Cooperative,active,clear,cleared,current
+ORG-0213,2026-03-02T13:30-07:00,1,Westhaven Civic Collaborative,active,clear,review_open,current
+ORG-0351,2026-03-27T10:00-07:00,1,Meadow Community Development Network,active,clear,review_open,current
+ORG-0125,2026-03-22T16:15-07:00,1,Maplewood Community Development Network,active,clear,review_open,current
+ORG-0407,2026-03-12T10:30-07:00,1,Grand Civic Collaborative,renewal_pending,clear,cleared,current
+ORG-0410,2026-03-18T14:00-07:00,1,Fairview Climate Partnership,active,clear,cleared,current
+ORG-0332,2026-02-26T09:30-07:00,1,Lakeside Community Land Trust,active,clear,review_open,current
+ORG-0396,2026-03-12T13:45-07:00,1,Kingsley Civic Collaborative,active,clear,cleared,current
+ORG-0264,2026-03-16T16:15-07:00,1,Rosewood Civic Collaborative,renewal_pending,clear,cleared,current
+ORG-0425,2026-03-06T14:15-07:00,1,Lakewood Climate Partnership,active,clear,review_open,current
+ORG-0470,2026-03-01T10:45-07:00,1,Grand Resident Council,active,pending,cleared,current
+ORG-0130,2026-03-13T10:00-07:00,1,Redwood Climate Partnership,active,clear,review_open,current
+ORG-0209,2026-03-05T10:00-07:00,1,University Community Development Network,active,pending,cleared,current
+ORG-0147,2026-02-18T16:00-07:00,1,Magnolia Resident Council,active,pending,cleared,current
+ORG-0091,2026-02-11T15:00-07:00,1,Spring Resident Council,active,clear,review_open,current
+ORG-0257,2026-02-21T10:45-07:00,1,Belmont Community Development Network,renewal_pending,clear,cleared,current
+ORG-0061,2026-03-03T16:15-07:00,1,Franklin Housing Cooperative,active,clear,review_open,current
+ORG-0419,2026-03-20T14:00-07:00,1,Lakewood Housing Cooperative,active,clear,cleared,current
+ORG-0341,2026-02-14T09:30-07:00,1,Kingsley Climate Partnership,active,clear,cleared,expired
+ORG-0011,2026-03-27T10:00-07:00,1,Ashland Community Association,renewal_pending,clear,cleared,current
+ORG-0105,2026-03-15T13:45-07:00,1,Kingston Climate Partnership,active,pending,cleared,current
+ORG-0121,2026-02-24T14:15-07:00,1,Franklin Community Development Network,active,clear,cleared,expired
+ORG-0432,2026-03-14T12:30-07:00,1,Northgate Housing Cooperative,active,pending,cleared,current
+ORG-0083,2026-03-02T10:30-07:00,1,Quarry Civic Collaborative,active,clear,review_open,current
+ORG-0003,2026-03-18T11:15-07:00,1,Eastwood Neighborhood Alliance,active,clear,cleared,current
+ORG-0469,2026-03-22T13:00-07:00,1,West Civic Collaborative,active,clear,cleared,current
+ORG-0370,2026-03-11T11:00-07:00,1,Elmwood Community Development Network,renewal_pending,clear,cleared,current
+ORG-0261,2026-02-24T11:00-07:00,1,Redwood Neighborhood Alliance,active,pending,cleared,current
+ORG-0223,2026-02-07T11:15-07:00,1,Pinehurst Climate Partnership,active,pending,cleared,current
+ORG-0040,2026-03-03T11:45-07:00,1,Ashland Neighborhood Alliance,active,clear,cleared,expired
+ORG-0465,2026-03-12T09:45-07:00,1,Northgate Resident Council,active,clear,cleared,current
+ORG-0280,2026-02-10T14:45-07:00,1,Lakeside Civic Collaborative,active,clear,cleared,current
+ORG-0434,2026-03-20T12:15-07:00,1,Yorktown Climate Partnership,active,clear,cleared,current
+ORG-0185,2026-03-27T10:00-07:00,1,Riverbend Housing Cooperative,active,pending,cleared,current
+ORG-0138,2026-03-11T11:30-07:00,1,Juniper Housing Cooperative,active,clear,cleared,current
+ORG-0235,2026-03-18T13:15-07:00,1,Juniper Housing Cooperative,active,clear,cleared,current
+ORG-0015,2026-03-27T10:00-07:00,1,Lakeside Resident Council,active,pending,cleared,current
+ORG-0388,2026-03-14T14:30-07:00,1,Claremont Civic Collaborative,active,clear,cleared,current
+ORG-0149,2026-02-25T13:00-07:00,1,South Market Shade Partnership,active,clear,cleared,current
+ORG-0129,2026-03-08T12:00-07:00,1,Oak Resident Council,active,clear,cleared,expired
+ORG-0218,2026-02-24T09:00-07:00,1,Parkview Neighborhood Services,active,clear,cleared,expired
+ORG-0448,2026-03-19T12:30-07:00,1,Willow Climate Partnership,active,clear,cleared,expired
+ORG-0147,2026-03-27T10:00-07:00,1,Magnolia Resident Council,renewal_pending,clear,cleared,current
+ORG-0377,2026-03-20T09:15-07:00,1,Hillcrest Civic Collaborative,active,clear,cleared,current
+ORG-0129,2026-02-22T12:00-07:00,1,Oak Resident Council,active,clear,cleared,current
+ORG-0351,2026-03-16T14:15-07:00,1,Meadow Community Development Network,renewal_pending,clear,cleared,current
+ORG-0121,2026-03-21T14:15-07:00,1,Franklin Community Development Network,active,clear,cleared,current
+ORG-0146,2026-02-24T12:15-07:00,1,Highland Housing Cooperative,renewal_pending,clear,cleared,current
+ORG-0272,2026-03-13T10:30-07:00,1,Willow Creek Housing Network,active,clear,cleared,current
+ORG-0175,2026-03-07T15:45-07:00,1,Meadow Resident Council,active,pending,cleared,current
+ORG-0231,2026-03-09T09:30-07:00,1,Crescent Housing Cooperative,active,clear,cleared,current
+ORG-0156,2026-03-19T09:00-07:00,1,Brighton Community Association,active,clear,cleared,current
+ORG-0162,2026-03-03T14:45-07:00,1,Cedar Housing Cooperative,renewal_pending,clear,cleared,current
+ORG-0188,2026-03-27T10:00-07:00,1,Yorktown Community Development Network,renewal_pending,clear,cleared,current
+ORG-0418,2026-02-20T12:00-07:00,1,Fairview Climate Partnership,active,clear,cleared,expired
+ORG-0356,2026-03-17T11:00-07:00,1,Civic Housing Cooperative,active,clear,cleared,current
+ORG-0068,2026-03-27T10:00-07:00,1,Lakeside Housing Cooperative,renewal_pending,clear,cleared,current
+ORG-0131,2026-03-27T10:00-07:00,1,Meadow Housing Cooperative,active,clear,review_open,current
+ORG-0389,2026-03-19T13:30-07:00,1,Cedar Neighborhood Alliance,active,clear,cleared,current
+ORG-0226,2026-03-14T10:30-07:00,1,Crescent Housing Cooperative,active,clear,cleared,current
+ORG-0077,2026-03-12T10:30-07:00,1,Westhaven Housing Cooperative,renewal_pending,clear,cleared,current
+ORG-0032,2026-03-15T13:15-07:00,1,Union Resident Council,active,pending,cleared,current
+ORG-0135,2026-03-12T12:30-07:00,1,Oak Housing Cooperative,active,clear,cleared,current
+ORG-0392,2026-03-13T12:45-07:00,1,Harborview Neighborhood Alliance,active,clear,cleared,current
+ORG-0057,2026-02-17T10:30-07:00,1,Prairie Community Association,active,pending,cleared,current
+ORG-0176,2026-02-25T11:45-07:00,1,Ashland Housing Cooperative,renewal_pending,clear,cleared,current
+ORG-0240,2026-03-14T15:30-07:00,1,Redwood Resident Council,active,clear,cleared,current
+ORG-0401,2026-03-17T12:45-07:00,1,Kingsley Community Association,active,clear,cleared,current
+ORG-0347,2026-03-02T15:15-07:00,1,Kingsley Resident Council,active,pending,cleared,current
+ORG-0424,2026-02-22T12:00-07:00,1,Lakewood Resident Council,renewal_pending,clear,cleared,current
+ORG-0203,2026-03-13T10:00-07:00,1,Eastwood Community Development Network,renewal_pending,clear,cleared,current
+ORG-0350,2026-03-12T11:45-07:00,1,Harborview Civic Collaborative,active,clear,cleared,current
+ORG-0381,2026-03-20T16:00-07:00,1,Lakeside Climate Partnership,active,clear,review_open,current
+ORG-0349,2026-03-16T13:15-07:00,1,Highland Community Association,active,clear,cleared,current
+ORG-0152,2026-03-08T10:30-07:00,1,Northgate Housing Cooperative,active,clear,cleared,current
+ORG-0213,2026-03-09T13:30-07:00,1,Westhaven Civic Collaborative,active,clear,cleared,current
+ORG-0141,2026-03-02T11:00-07:00,1,Valley Community Development Network,active,clear,review_open,current
+ORG-0465,2026-02-19T09:45-07:00,1,Northgate Resident Council,active,pending,cleared,current
+ORG-0483,2026-03-16T09:30-07:00,1,Pinehurst Resident Council,active,clear,cleared,current
+ORG-0405,2026-03-07T16:15-07:00,1,Meadow Civic Collaborative,active,clear,cleared,expired
+ORG-0140,2026-03-08T14:15-07:00,1,Fox Community Development Network,active,clear,cleared,current
+ORG-0123,2026-03-08T09:45-07:00,1,South Climate Partnership,active,clear,cleared,current
+ORG-0084,2026-03-10T14:15-07:00,1,Glenwood Housing Cooperative,active,clear,cleared,current
+ORG-0408,2026-03-04T14:30-07:00,1,Elmwood Community Association,active,clear,cleared,expired
+ORG-0188,2026-03-18T09:30-07:00,1,Yorktown Community Development Network,active,clear,cleared,current
+ORG-0167,2026-03-11T13:30-07:00,1,Terrace Civic Collaborative,renewal_pending,clear,cleared,current
+ORG-0365,2026-03-08T16:00-07:00,1,Claremont Community Association,renewal_pending,clear,cleared,current
+ORG-0482,2026-03-13T15:00-07:00,1,Parkview Housing Cooperative,active,clear,cleared,current
+ORG-0271,2026-03-17T13:00-07:00,1,Hawthorne Climate Partnership,active,clear,cleared,current
+ORG-0059,2026-02-12T16:15-07:00,1,South Housing Cooperative,active,clear,review_open,current
+ORG-0173,2026-02-15T13:15-07:00,1,Northgate Homes Collaborative,active,pending,cleared,current
+ORG-0403,2026-03-11T16:30-07:00,1,Grand Community Development Network,active,clear,cleared,current
+ORG-0432,2026-03-27T10:00-07:00,1,Northgate Housing Cooperative,renewal_pending,pending,cleared,current
+ORG-0163,2026-03-27T10:00-07:00,1,Old Resident Council,active,clear,cleared,expired
+ORG-0278,2026-03-21T11:15-07:00,1,University Housing Cooperative,active,clear,cleared,current
+ORG-0373,2026-03-21T15:00-07:00,1,Claremont Climate Partnership,active,clear,cleared,current
+ORG-0166,2026-03-27T10:00-07:00,1,Glenwood Community Association,renewal_pending,clear,cleared,current
+ORG-0261,2026-03-12T11:00-07:00,1,Redwood Neighborhood Alliance,active,clear,cleared,current
+ORG-0230,2026-03-08T16:30-07:00,1,Maplewood Neighborhood Alliance,active,clear,cleared,current
+ORG-0200,2026-03-10T15:30-07:00,1,Hawthorne Community Association,active,clear,cleared,current
+ORG-0155,2026-02-15T09:15-07:00,1,Wellington Neighborhood Alliance,renewal_pending,clear,cleared,current
+ORG-0375,2026-03-12T13:30-07:00,2,Brookfield Housing Cooperative,active,clear,cleared,current
+ORG-0387,2026-02-11T14:15-07:00,1,Stonebridge Community Association,active,clear,cleared,current
+ORG-0065,2026-03-27T10:00-07:00,1,College Community Development Network,active,pending,cleared,current
+ORG-0208,2026-03-19T12:45-07:00,1,Hawthorne Civic Collaborative,active,clear,cleared,current
+ORG-0130,2026-02-11T10:00-07:00,1,Redwood Climate Partnership,active,clear,cleared,current
+ORG-0422,2026-03-17T09:15-07:00,1,Cedar Resident Council,active,clear,cleared,current
+ORG-0105,2026-03-15T13:45-07:00,2,Kingston Climate Partnership,active,clear,cleared,current
+ORG-0031,2026-03-13T13:00-07:00,1,Crescent Civic Collaborative,active,clear,cleared,current
+ORG-0218,2026-03-10T09:00-07:00,1,Parkview Neighborhood Services,active,clear,cleared,current
+ORG-0476,2026-03-18T16:00-07:00,1,Glen Neighborhood Alliance,active,clear,cleared,current
+ORG-0364,2026-03-14T14:45-07:00,1,Brookfield Housing Cooperative,active,pending,cleared,current
+ORG-0186,2026-03-17T11:30-07:00,1,Meadow Park Green Streets Group,active,clear,cleared,current
+ORG-0204,2026-03-22T12:30-07:00,1,East Market Housing Cooperative,active,clear,cleared,current
+ORG-0397,2026-02-15T12:00-07:00,1,Eastwood Community Development Network,renewal_pending,clear,cleared,current
+ORG-0392,2026-02-27T12:45-07:00,1,Harborview Neighborhood Alliance,active,clear,review_open,current
+ORG-0120,2026-03-27T10:00-07:00,1,Brookfield Housing Cooperative,active,pending,cleared,current
+ORG-0042,2026-03-18T10:45-07:00,1,Monroe Community Association,active,clear,review_open,current
+ORG-0159,2026-02-23T09:45-07:00,1,Cedar Community Association,active,clear,cleared,current
+ORG-0011,2026-02-17T11:00-07:00,1,Ashland Community Association,active,clear,cleared,expired
+ORG-0075,2026-03-13T09:00-07:00,1,Glenwood Climate Partnership,active,clear,cleared,current
+ORG-0019,2026-03-18T11:45-07:00,1,Juniper Climate Partnership,active,clear,cleared,expired
+ORG-0254,2026-03-13T10:45-07:00,1,Glenwood Community Association,active,clear,cleared,current
+ORG-0352,2026-03-08T16:15-07:00,1,Juniper Community Association,active,pending,cleared,current
+ORG-0436,2026-02-22T14:15-07:00,1,West Neighborhood Alliance,renewal_pending,clear,cleared,current
+ORG-0368,2026-03-27T10:00-07:00,1,Northgate Climate Partnership,renewal_pending,clear,cleared,current
+ORG-0069,2026-03-22T10:30-07:00,1,Kingsley Resident Council,active,clear,cleared,current
+ORG-0059,2026-03-13T16:15-07:00,1,South Housing Cooperative,active,clear,cleared,current
+ORG-0207,2026-02-10T14:15-07:00,1,Prairie Climate Partnership,active,pending,cleared,current
+ORG-0468,2026-02-26T09:00-07:00,1,Parkview Housing Cooperative,active,pending,cleared,current
+ORG-0204,2026-03-27T10:00-07:00,1,East Market Housing Cooperative,active,pending,cleared,current
+ORG-0402,2026-03-09T10:45-07:00,1,Cedar Neighborhood Alliance,active,pending,cleared,current
+ORG-0238,2026-03-15T10:15-07:00,1,Lincoln Community Development Network,renewal_pending,clear,cleared,current
+ORG-0377,2026-02-15T09:15-07:00,1,Hillcrest Civic Collaborative,active,clear,cleared,expired
+ORG-0241,2026-03-15T14:30-07:00,1,South Harbor Climate Coalition,active,clear,cleared,current
+ORG-0477,2026-02-21T09:15-07:00,1,Lincoln Housing Cooperative,active,pending,cleared,current
+ORG-0100,2026-03-22T15:15-07:00,1,Sherwood Community Development Network,active,clear,cleared,current
+ORG-0208,2026-02-14T12:45-07:00,1,Hawthorne Civic Collaborative,active,pending,cleared,current
+ORG-0438,2026-03-07T13:15-07:00,1,Yorktown Housing Cooperative,active,clear,review_open,current
+ORG-0014,2026-03-09T09:15-07:00,1,Juniper Civic Collaborative,active,clear,cleared,current
+ORG-0195,2026-03-04T13:00-07:00,1,Harbor Community Development Network,active,clear,cleared,current
+ORG-0131,2026-03-09T09:30-07:00,1,Meadow Housing Cooperative,active,clear,cleared,current
+ORG-0165,2026-03-16T16:15-07:00,1,Harbor Climate Partnership,renewal_pending,clear,cleared,expired
+ORG-0364,2026-02-11T14:45-07:00,1,Brookfield Housing Cooperative,active,clear,cleared,current
+ORG-0117,2026-03-17T15:15-07:00,1,Northside Urban Forestry Alliance,active,clear,cleared,current
+ORG-0453,2026-03-01T15:45-07:00,1,Harborview Civic Collaborative,active,clear,cleared,expired
+ORG-0171,2026-03-09T16:45-07:00,1,Ashland Resident Council,active,clear,cleared,current
+ORG-0078,2026-03-01T09:15-07:00,1,University Housing Cooperative,active,clear,review_open,current
+ORG-0453,2026-03-22T15:45-07:00,1,Harborview Civic Collaborative,active,clear,cleared,current
+ORG-0053,2026-03-11T12:30-07:00,1,Monroe Community Development Network,active,clear,cleared,current
+ORG-0423,2026-03-19T12:00-07:00,1,Kingsley Civic Collaborative,active,clear,cleared,current
+ORG-0128,2026-03-10T12:30-07:00,1,Highland Civic Collaborative,active,clear,cleared,current
+ORG-0452,2026-03-02T13:00-07:00,1,Oak Community Development Network,active,clear,cleared,expired
+ORG-0243,2026-03-22T11:30-07:00,1,Magnolia Climate Partnership,active,clear,cleared,current
+ORG-0424,2026-03-11T12:00-07:00,1,Lakewood Resident Council,active,clear,cleared,current
+ORG-0262,2026-03-22T14:15-07:00,1,Woodland Community Development Network,active,clear,cleared,current
+ORG-0457,2026-02-19T15:30-07:00,1,Fox Neighborhood Alliance,active,clear,cleared,current
+ORG-0385,2026-03-15T16:30-07:00,1,Ashland Community Association,active,clear,cleared,current
+ORG-0455,2026-03-03T14:15-07:00,1,Yorktown Community Development Network,active,clear,review_open,current
+ORG-0459,2026-03-08T13:45-07:00,1,Lakewood Community Development Network,active,clear,cleared,current
+ORG-0027,2026-03-27T10:00-07:00,1,Westhaven Community Development Network,renewal_pending,clear,cleared,current
+ORG-0225,2026-03-10T16:00-07:00,1,Hillcrest Housing Cooperative,active,clear,cleared,current
+ORG-0062,2026-03-22T14:00-07:00,1,Ashland Climate Partnership,active,clear,cleared,current
+ORG-0451,2026-03-16T10:45-07:00,1,Lincoln Neighborhood Alliance,active,clear,cleared,expired
+ORG-0365,2026-03-08T16:00-07:00,2,Claremont Community Association,active,clear,cleared,current
+ORG-0400,2026-03-22T10:30-07:00,1,Grand Resident Council,renewal_pending,clear,cleared,current
+ORG-0182,2026-03-10T11:00-07:00,1,Magnolia Climate Partnership,active,clear,cleared,expired
+ORG-0396,2026-02-12T13:45-07:00,1,Kingsley Civic Collaborative,active,clear,cleared,expired
+ORG-0040,2026-03-18T11:45-07:00,1,Ashland Neighborhood Alliance,active,clear,cleared,current
+ORG-0125,2026-02-22T16:15-07:00,1,Maplewood Community Development Network,active,clear,cleared,current
+ORG-0250,2026-03-14T15:30-07:00,1,Fox Civic Collaborative,active,clear,cleared,current
+ORG-0167,2026-03-11T13:30-07:00,2,Terrace Civic Collaborative,active,clear,cleared,current
+ORG-0436,2026-03-13T14:15-07:00,1,West Neighborhood Alliance,active,pending,cleared,current
+ORG-0082,2026-03-21T10:45-07:00,1,Stonebridge Neighborhood Alliance,active,clear,cleared,current
+ORG-0280,2026-03-15T14:45-07:00,1,Lakeside Civic Collaborative,active,clear,cleared,expired
+ORG-0275,2026-02-17T12:15-07:00,1,Maplewood Resident Council,renewal_pending,clear,cleared,current
+ORG-0102,2026-03-10T09:15-07:00,1,Spring Resident Council,active,clear,review_open,current
+ORG-0363,2026-03-09T10:30-07:00,1,Grand Community Development Network,active,clear,review_open,current
+ORG-0227,2026-03-11T11:30-07:00,1,Magnolia Civic Collaborative,active,clear,cleared,current
+ORG-0209,2026-03-20T10:00-07:00,1,University Community Development Network,active,clear,cleared,current
+ORG-0137,2026-03-19T13:45-07:00,1,Yorktown Civic Collaborative,active,clear,cleared,current
+ORG-0222,2026-03-18T11:45-07:00,1,Fox Neighborhood Alliance,active,clear,cleared,current
+ORG-0460,2026-03-08T15:45-07:00,1,Lakeside Climate Partnership,renewal_pending,clear,cleared,current
+ORG-0371,2026-03-20T16:15-07:00,1,Harborview Neighborhood Alliance,active,clear,cleared,current
+ORG-0103,2026-03-08T10:45-07:00,2,Pleasant Community Association,active,clear,cleared,current
+ORG-0019,2026-03-07T11:45-07:00,1,Juniper Climate Partnership,active,clear,cleared,current
+ORG-0458,2026-03-22T14:45-07:00,2,Fairview Community Association,active,clear,cleared,current
+ORG-0106,2026-03-19T09:15-07:00,1,Fox Community Association,active,clear,cleared,current
+ORG-0216,2026-03-10T16:45-07:00,1,College Civic Collaborative,active,clear,cleared,current
+ORG-0461,2026-02-12T09:15-07:00,1,Grand Civic Collaborative,active,pending,cleared,current
+ORG-0383,2026-02-16T10:15-07:00,1,Civic Community Association,active,clear,review_open,current
+ORG-0463,2026-03-01T11:00-07:00,1,Cedar Resident Council,active,clear,review_open,current
+ORG-0386,2026-02-25T12:15-07:00,1,Northgate Neighborhood Alliance,active,pending,cleared,current
+ORG-0203,2026-02-27T10:00-07:00,1,Eastwood Community Development Network,active,clear,cleared,current
+ORG-0259,2026-02-24T13:45-07:00,1,Laurel Community Development Network,renewal_pending,clear,cleared,current
+ORG-0248,2026-03-13T12:45-07:00,1,Lakeside Neighborhood Alliance,active,clear,cleared,current
+ORG-0332,2026-03-12T09:30-07:00,1,Lakeside Community Land Trust,active,clear,cleared,current
+ORG-0158,2026-03-27T10:00-07:00,1,Kingston Climate Partnership,active,pending,cleared,current
+ORG-0103,2026-03-08T10:45-07:00,1,Pleasant Community Association,active,pending,cleared,current
+ORG-0379,2026-03-08T15:00-07:00,1,Stonebridge Housing Cooperative,active,clear,review_open,current
+ORG-0433,2026-03-18T11:00-07:00,1,Meadow Community Association,active,pending,cleared,current
+ORG-0409,2026-03-05T15:15-07:00,1,Highland Community Development Network,active,pending,cleared,current
+ORG-0116,2026-03-16T12:45-07:00,1,Rosewood Housing Cooperative,active,clear,cleared,current
+ORG-0415,2026-02-28T15:00-07:00,1,Elmwood Resident Council,active,clear,review_open,current
+ORG-0446,2026-03-15T12:00-07:00,1,Elmwood Resident Council,active,clear,cleared,expired
+ORG-0194,2026-02-18T16:00-07:00,1,Eastwood Community Development Network,active,clear,review_open,current
+ORG-0376,2026-03-15T12:45-07:00,1,Yorktown Housing Cooperative,active,clear,cleared,current
+ORG-0375,2026-02-19T13:30-07:00,1,Brookfield Housing Cooperative,renewal_pending,clear,cleared,current
+ORG-0381,2026-03-03T16:00-07:00,1,Lakeside Climate Partnership,renewal_pending,clear,cleared,current
+ORG-0231,2026-03-02T09:30-07:00,1,Crescent Housing Cooperative,active,clear,review_open,current
+ORG-0414,2026-03-22T09:15-07:00,1,West Neighborhood Alliance,active,clear,cleared,current
+ORG-0260,2026-03-15T11:30-07:00,1,Maplewood Civic Collaborative,active,clear,cleared,current
+ORG-0445,2026-03-21T13:00-07:00,1,Lakeside Climate Partnership,active,clear,cleared,expired
+ORG-0346,2026-03-15T09:00-07:00,1,Yorktown Climate Partnership,active,clear,cleared,current
+ORG-0146,2026-03-12T12:15-07:00,1,Highland Housing Cooperative,active,clear,cleared,current
+ORG-0217,2026-03-18T13:45-07:00,1,Lincoln Community Development Network,renewal_pending,clear,cleared,current
+ORG-0269,2026-02-25T16:30-07:00,1,Old Community Association,active,pending,cleared,current
+ORG-0057,2026-03-13T10:30-07:00,1,Prairie Community Association,active,clear,cleared,current
+ORG-0270,2026-03-11T15:15-07:00,1,Terrace Civic Collaborative,active,clear,cleared,current
+ORG-0110,2026-03-12T09:45-07:00,1,New Civic Collaborative,active,clear,cleared,current
+ORG-0161,2026-03-08T15:45-07:00,1,Orchard Climate Partnership,active,clear,cleared,current
+ORG-0264,2026-03-16T16:15-07:00,2,Rosewood Civic Collaborative,active,clear,cleared,current
+ORG-0068,2026-02-05T10:15-07:00,1,Lakeside Housing Cooperative,active,pending,cleared,current
+ORG-0390,2026-03-13T14:00-07:00,1,Ashland Neighborhood Alliance,active,clear,cleared,current
+ORG-0011,2026-03-09T11:00-07:00,1,Ashland Community Association,active,clear,cleared,current
+ORG-0432,2026-03-03T12:30-07:00,1,Northgate Housing Cooperative,active,clear,cleared,current
+ORG-0266,2026-03-20T16:45-07:00,1,Cedar Grove Tenant Council,active,clear,cleared,expired
+ORG-0458,2026-03-27T10:00-07:00,1,Fairview Community Association,renewal_pending,clear,cleared,current
+ORG-0027,2026-03-07T13:30-07:00,1,Westhaven Community Development Network,active,clear,review_open,current
+ORG-0078,2026-03-18T09:15-07:00,1,University Housing Cooperative,active,clear,cleared,current
+ORG-0399,2026-03-08T10:30-07:00,1,Stonebridge Housing Cooperative,active,clear,cleared,current
+ORG-0199,2026-03-12T13:45-07:00,1,Northgate Climate Partnership,active,clear,cleared,current
+ORG-0479,2026-02-08T13:00-07:00,1,Willow Climate Partnership,active,clear,review_open,current
+ORG-0342,2026-03-15T09:30-07:00,1,Oak Resident Council,active,clear,cleared,current
+ORG-0348,2026-03-01T14:45-07:00,1,Stonebridge Civic Collaborative,active,clear,review_open,current
+ORG-0384,2026-03-17T12:15-07:00,1,Riverside Climate Partnership,active,clear,cleared,current
+ORG-0415,2026-03-21T15:00-07:00,1,Elmwood Resident Council,active,clear,cleared,current
+ORG-0436,2026-03-13T14:15-07:00,2,West Neighborhood Alliance,active,clear,cleared,current
+ORG-0221,2026-03-16T14:15-07:00,1,Clearwater Resident Council,active,clear,cleared,current
+ORG-0030,2026-03-09T16:30-07:00,1,University Community Development Network,active,clear,cleared,current
+ORG-0478,2026-03-27T10:00-07:00,1,Northgate Neighborhood Alliance,active,clear,review_open,current
+ORG-0074,2026-03-15T16:30-07:00,1,Laurel Resident Council,active,clear,cleared,current
+ORG-0175,2026-03-19T15:45-07:00,1,Meadow Resident Council,active,clear,cleared,current
+ORG-0108,2026-03-09T09:15-07:00,1,Clearwater Resident Council,active,clear,cleared,current
+ORG-0144,2026-03-12T15:30-07:00,1,Hillcrest Civic Collaborative,active,pending,cleared,current
+ORG-0398,2026-03-18T10:00-07:00,1,Glen Community Development Network,active,clear,cleared,expired
+ORG-0408,2026-03-09T14:30-07:00,1,Elmwood Community Association,active,clear,cleared,current
+ORG-0170,2026-02-22T12:00-07:00,1,Maplewood Housing Cooperative,renewal_pending,clear,cleared,current
+ORG-0476,2026-02-25T16:00-07:00,1,Glen Neighborhood Alliance,active,clear,review_open,current
+ORG-0420,2026-03-21T13:45-07:00,1,Fox Housing Cooperative,active,clear,cleared,current
+ORG-0180,2026-02-17T15:00-07:00,1,Westhaven Community Association,active,clear,review_open,current
+ORG-0122,2026-03-16T09:15-07:00,1,Juniper Housing Cooperative,active,clear,cleared,current
+ORG-0041,2026-03-22T09:15-07:00,1,Hawthorne Climate Partnership,active,clear,review_open,current
+ORG-0448,2026-03-19T12:30-07:00,2,Willow Climate Partnership,active,clear,cleared,current
+ORG-0124,2026-03-15T14:00-07:00,1,Eastwood Civic Collaborative,active,clear,cleared,current
+ORG-0035,2026-03-05T15:30-07:00,1,Bayview Neighborhood Alliance,active,clear,cleared,expired
+ORG-0382,2026-03-12T14:45-07:00,1,Cedar Community Development Network,active,clear,cleared,current
+ORG-0160,2026-03-10T13:00-07:00,1,Maplewood Community Association,renewal_pending,clear,cleared,current
+ORG-0341,2026-03-18T09:30-07:00,1,Kingsley Climate Partnership,active,clear,cleared,current
+ORG-0342,2026-03-27T10:00-07:00,1,Oak Resident Council,active,clear,cleared,expired
+ORG-0446,2026-02-22T12:00-07:00,1,Elmwood Resident Council,active,clear,cleared,current
+ORG-0194,2026-03-10T16:00-07:00,1,Eastwood Community Development Network,active,clear,cleared,current
+ORG-0099,2026-03-18T11:45-07:00,1,Sherwood Neighborhood Alliance,active,clear,cleared,current
+ORG-0249,2026-03-11T13:45-07:00,1,Parkside Community Association,active,clear,cleared,current
+ORG-0270,2026-03-27T10:00-07:00,1,Terrace Civic Collaborative,active,clear,review_open,current
+ORG-0070,2026-03-08T09:45-07:00,1,Terrace Climate Partnership,active,clear,cleared,expired
+ORG-0128,2026-02-14T12:30-07:00,1,Highland Civic Collaborative,active,clear,review_open,current
+ORG-0216,2026-02-13T16:45-07:00,1,College Civic Collaborative,active,clear,review_open,current
+ORG-0002,2026-03-03T12:45-07:00,1,Sherwood Resident Council,active,clear,review_open,current
+ORG-0451,2026-03-27T10:00-07:00,1,Lincoln Neighborhood Alliance,renewal_pending,clear,cleared,expired
+ORG-0407,2026-02-22T10:30-07:00,1,Grand Civic Collaborative,active,clear,review_open,current
+ORG-0421,2026-03-18T11:00-07:00,1,Pinehurst Civic Collaborative,active,clear,cleared,current
+ORG-0210,2026-02-28T12:45-07:00,1,Jefferson Housing Cooperative,renewal_pending,clear,cleared,current
+ORG-0179,2026-03-03T13:45-07:00,1,College Resident Council,renewal_pending,clear,cleared,current
+ORG-0451,2026-02-13T10:45-07:00,1,Lincoln Neighborhood Alliance,active,clear,cleared,current
+ORG-0210,2026-03-11T12:45-07:00,1,Jefferson Housing Cooperative,active,clear,cleared,current
+ORG-0071,2026-03-27T10:00-07:00,1,University Housing Cooperative,active,clear,review_open,current
+ORG-0393,2026-03-22T13:00-07:00,1,Glen Community Development Network,active,clear,cleared,current
+ORG-0161,2026-03-18T15:45-07:00,1,Orchard Climate Partnership,active,clear,review_open,current
+ORG-0344,2026-02-15T10:00-07:00,1,Lincoln Community Association,active,clear,cleared,current
+ORG-0474,2026-02-23T14:30-07:00,1,Stonebridge Housing Cooperative,renewal_pending,clear,cleared,current
+ORG-0084,2026-02-15T14:15-07:00,1,Glenwood Housing Cooperative,active,pending,cleared,current
+ORG-0444,2026-03-18T14:45-07:00,1,Lakeside Resident Council,active,pending,cleared,current
+ORG-0228,2026-02-11T15:15-07:00,1,Ashland Civic Collaborative,active,clear,review_open,current
+ORG-0118,2026-03-06T09:00-07:00,1,Pine Neighborhood Alliance,active,clear,review_open,current
+ORG-0238,2026-03-15T10:15-07:00,2,Lincoln Community Development Network,active,clear,cleared,current
+ORG-0118,2026-03-21T09:00-07:00,1,Pine Neighborhood Alliance,active,clear,cleared,current
+ORG-0269,2026-03-20T16:30-07:00,1,Old Community Association,active,clear,cleared,current
+ORG-0471,2026-03-16T11:15-07:00,1,Kingsley Resident Council,active,clear,cleared,current
+ORG-0448,2026-03-12T12:30-07:00,1,Willow Climate Partnership,renewal_pending,clear,cleared,current
+ORG-0473,2026-02-21T10:00-07:00,1,Grand Climate Partnership,active,clear,cleared,expired
+ORG-0219,2026-03-13T16:45-07:00,1,Crescent Community Development Network,active,clear,cleared,current
+ORG-0421,2026-02-11T11:00-07:00,1,Pinehurst Civic Collaborative,active,pending,cleared,current
+ORG-0400,2026-03-17T10:30-07:00,1,Grand Resident Council,active,clear,cleared,current
+ORG-0150,2026-03-14T10:15-07:00,1,Highland Neighborhood Alliance,active,clear,cleared,expired
+ORG-0122,2026-02-09T09:15-07:00,1,Juniper Housing Cooperative,active,clear,review_open,current
+ORG-0411,2026-03-20T09:15-07:00,1,Hillcrest Housing Cooperative,active,clear,cleared,current
+ORG-0025,2026-03-16T15:00-07:00,1,Lakeside Community Development Network,active,clear,cleared,current
+ORG-0002,2026-03-10T12:45-07:00,1,Sherwood Resident Council,renewal_pending,clear,cleared,current
+ORG-0192,2026-03-08T16:30-07:00,1,Brighton Civic Collaborative,renewal_pending,clear,cleared,current
+ORG-0478,2026-03-13T11:45-07:00,1,Northgate Neighborhood Alliance,active,clear,cleared,current
+ORG-0466,2026-03-13T14:30-07:00,1,Brookfield Resident Council,active,clear,cleared,current
+ORG-0047,2026-03-17T09:45-07:00,1,Grandview Housing Cooperative,renewal_pending,clear,cleared,current
+ORG-0380,2026-03-27T10:00-07:00,1,Lakewood Civic Collaborative,active,clear,review_open,current
+ORG-0384,2026-02-15T12:15-07:00,1,Riverside Climate Partnership,active,clear,review_open,current
+ORG-0405,2026-03-13T16:15-07:00,1,Meadow Civic Collaborative,active,clear,cleared,current
+ORG-0061,2026-03-17T16:15-07:00,1,Franklin Housing Cooperative,active,clear,cleared,current
+ORG-0108,2026-02-03T09:15-07:00,1,Clearwater Resident Council,renewal_pending,clear,cleared,current
+ORG-0181,2026-02-18T14:45-07:00,1,Meadow Housing Cooperative,active,clear,review_open,current
+ORG-0478,2026-02-17T11:45-07:00,1,Northgate Neighborhood Alliance,active,pending,cleared,current
+ORG-0395,2026-03-20T15:30-07:00,1,Lincoln Housing Cooperative,active,clear,cleared,current
+ORG-0153,2026-03-15T11:45-07:00,1,Greenfield Resident Council,active,clear,cleared,current
+ORG-0472,2026-03-08T13:00-07:00,1,Hillcrest Resident Council,active,clear,cleared,current
+ORG-0247,2026-02-23T13:00-07:00,1,Westhaven Housing Cooperative,active,pending,cleared,current
+ORG-0429,2026-02-21T14:30-07:00,1,Fairview Community Development Network,active,pending,cleared,current
+ORG-0452,2026-03-20T13:00-07:00,1,Oak Community Development Network,active,clear,cleared,current
+ORG-0207,2026-03-10T14:15-07:00,1,Prairie Climate Partnership,active,clear,cleared,current
+ORG-0428,2026-03-20T16:30-07:00,1,Juniper Community Association,active,clear,cleared,current
+ORG-0228,2026-03-15T15:15-07:00,1,Ashland Civic Collaborative,active,clear,cleared,current
+ORG-0048,2026-03-12T10:15-07:00,1,College Resident Council,active,clear,cleared,current
+ORG-0433,2026-03-18T11:00-07:00,2,Meadow Community Association,active,clear,cleared,current
+ORG-0345,2026-03-20T15:45-07:00,2,Juniper Resident Council,active,clear,cleared,current
+ORG-0066,2026-03-09T16:15-07:00,2,Willow Civic Collaborative,active,clear,cleared,current
+ORG-0458,2026-03-22T14:45-07:00,1,Fairview Community Association,active,pending,cleared,current
+ORG-0081,2026-03-12T10:30-07:00,1,Meadow Housing Cooperative,active,clear,cleared,current
+ORG-0223,2026-03-12T11:15-07:00,1,Pinehurst Climate Partnership,active,clear,cleared,current
+ORG-0474,2026-03-20T14:30-07:00,1,Stonebridge Housing Cooperative,active,clear,cleared,current
+ORG-0255,2026-03-10T16:15-07:00,1,Oak Community Development Network,active,clear,cleared,current
+ORG-0250,2026-02-24T15:30-07:00,1,Fox Civic Collaborative,active,clear,cleared,expired
+ORG-0008,2026-03-22T13:30-07:00,1,Glenwood Resident Council,active,clear,review_open,current
+ORG-0120,2026-03-14T16:15-07:00,1,Brookfield Housing Cooperative,active,clear,review_open,current
+ORG-0147,2026-03-12T16:00-07:00,1,Magnolia Resident Council,active,clear,cleared,current
+ORG-0160,2026-03-27T10:00-07:00,1,Maplewood Community Association,active,pending,cleared,current
+ORG-0051,2026-03-12T11:00-07:00,1,Laurel Community Development Network,active,clear,cleared,current
+ORG-0271,2026-03-05T13:00-07:00,1,Hawthorne Climate Partnership,active,clear,cleared,expired
+ORG-0379,2026-03-02T15:00-07:00,1,Stonebridge Housing Cooperative,active,clear,cleared,current
+ORG-0247,2026-03-09T13:00-07:00,1,Westhaven Housing Cooperative,active,clear,cleared,current
+ORG-0137,2026-03-14T13:45-07:00,1,Yorktown Civic Collaborative,renewal_pending,clear,cleared,current
+ORG-0370,2026-03-11T11:00-07:00,2,Elmwood Community Development Network,active,clear,cleared,current
+ORG-0192,2026-03-08T16:30-07:00,2,Brighton Civic Collaborative,active,clear,cleared,current
+ORG-0393,2026-03-14T13:00-07:00,1,Glen Community Development Network,active,clear,cleared,expired
+ORG-0468,2026-03-16T09:00-07:00,1,Parkview Housing Cooperative,active,clear,cleared,current
+ORG-0188,2026-03-06T09:30-07:00,1,Yorktown Community Development Network,renewal_pending,clear,cleared,current
+ORG-0024,2026-03-15T10:45-07:00,1,Willow Resident Council,active,clear,cleared,current
+ORG-0475,2026-03-18T14:15-07:00,1,Fox Community Association,active,clear,cleared,current
+ORG-0275,2026-03-17T12:15-07:00,1,Maplewood Resident Council,active,clear,cleared,current
+ORG-0372,2026-03-15T09:30-07:00,1,Hillcrest Neighborhood Alliance,active,clear,cleared,current
+ORG-0217,2026-03-18T13:45-07:00,2,Lincoln Community Development Network,active,clear,cleared,current
+ORG-0189,2026-03-21T12:00-07:00,1,Laurel Civic Collaborative,active,clear,cleared,current
+ORG-0467,2026-03-18T13:15-07:00,1,Parkview Climate Partnership,active,clear,cleared,current
+ORG-0378,2026-03-10T12:15-07:00,1,Glen Resident Council,active,pending,cleared,current
+ORG-0366,2026-02-21T16:00-07:00,1,Ashland Civic Collaborative,active,clear,review_open,current
+ORG-0353,2026-03-08T10:00-07:00,1,Riverside Climate Partnership,active,clear,cleared,current
+ORG-0070,2026-03-08T09:45-07:00,2,Terrace Climate Partnership,active,clear,cleared,current
+ORG-0358,2026-03-18T11:15-07:00,1,Claremont Community Development Network,active,clear,cleared,current
+ORG-0217,2026-02-18T13:45-07:00,1,Lincoln Community Development Network,active,clear,review_open,current
+ORG-0447,2026-03-22T15:00-07:00,1,Maplewood Civic Collaborative,active,clear,cleared,current
+ORG-0102,2026-03-10T09:15-07:00,2,Spring Resident Council,active,clear,cleared,current
+ORG-0240,2026-02-26T15:30-07:00,1,Redwood Resident Council,active,clear,review_open,current
+ORG-0026,2026-03-16T16:45-07:00,1,Elmwood Resident Council,active,clear,cleared,current
+ORG-0241,2026-03-08T14:30-07:00,1,South Harbor Climate Coalition,renewal_pending,clear,cleared,current
+ORG-0143,2026-03-08T15:30-07:00,1,Westhaven Civic Collaborative,active,clear,cleared,current
+ORG-0062,2026-03-16T14:00-07:00,1,Ashland Climate Partnership,active,clear,cleared,expired
+ORG-0355,2026-02-25T12:30-07:00,1,Lincoln Civic Collaborative,active,clear,review_open,current
+ORG-0133,2026-02-28T15:30-07:00,1,Riverside Community Development Network,active,pending,cleared,current
+ORG-0265,2026-03-16T12:45-07:00,1,Meadow Community Development Network,active,clear,cleared,current
+ORG-0006,2026-03-18T09:00-07:00,1,Lakeside Neighborhood Alliance,active,clear,cleared,expired
+ORG-0157,2026-03-16T16:30-07:00,1,Bayview Neighborhood Alliance,active,clear,cleared,current
+ORG-0272,2026-03-07T10:30-07:00,1,Willow Creek Housing Network,active,clear,cleared,expired
+ORG-0355,2026-03-14T12:30-07:00,1,Lincoln Civic Collaborative,active,clear,cleared,current
+ORG-0182,2026-03-10T11:00-07:00,2,Magnolia Climate Partnership,active,clear,cleared,current
+ORG-0082,2026-03-07T10:45-07:00,1,Stonebridge Neighborhood Alliance,active,clear,cleared,expired
+ORG-0037,2026-03-21T11:15-07:00,1,Parkside Community Association,active,clear,cleared,current
+ORG-0047,2026-03-10T09:45-07:00,1,Grandview Housing Cooperative,active,clear,cleared,current
+ORG-0372,2026-03-09T09:30-07:00,1,Hillcrest Neighborhood Alliance,renewal_pending,clear,cleared,current
+ORG-0012,2026-03-13T14:15-07:00,1,Pleasant Climate Partnership,active,clear,cleared,current
+ORG-0455,2026-03-19T14:15-07:00,1,Yorktown Community Development Network,active,clear,cleared,current
+ORG-0064,2026-03-13T10:30-07:00,2,Yorktown Civic Collaborative,active,clear,cleared,current
+ORG-0430,2026-03-02T12:30-07:00,1,Highland Climate Partnership,active,clear,review_open,current
+ORG-0088,2026-03-20T12:30-07:00,1,Riverside Preparedness Network,active,clear,cleared,current
+ORG-0226,2026-03-27T10:00-07:00,1,Crescent Housing Cooperative,active,clear,review_open,current
+ORG-0462,2026-03-13T10:45-07:00,1,Lincoln Community Association,active,clear,cleared,current
+ORG-0225,2026-02-25T16:00-07:00,1,Hillcrest Housing Cooperative,active,pending,cleared,current
+ORG-0102,2026-02-11T09:15-07:00,1,Spring Resident Council,active,clear,review_open,current
+ORG-0117,2026-02-15T15:15-07:00,1,Northside Urban Forestry Alliance,renewal_pending,clear,cleared,current
+ORG-0477,2026-03-08T09:15-07:00,1,Lincoln Housing Cooperative,active,clear,cleared,current
+ORG-0361,2026-03-10T12:15-07:00,1,Elmwood Community Association,active,clear,cleared,current
+ORG-0395,2026-03-13T15:30-07:00,1,Lincoln Housing Cooperative,active,clear,cleared,expired
+ORG-0015,2026-03-02T13:15-07:00,1,Lakeside Resident Council,active,clear,cleared,expired
+ORG-0379,2026-03-27T10:00-07:00,1,Stonebridge Housing Cooperative,active,pending,review_open,current
+ORG-0052,2026-02-28T12:45-07:00,1,Riverbend Community Development Center,active,clear,cleared,expired
+ORG-0107,2026-02-11T15:45-07:00,1,Willow Community Association,active,clear,cleared,expired
+ORG-0257,2026-03-22T10:45-07:00,1,Belmont Community Development Network,active,clear,cleared,current
+ORG-0345,2026-03-20T15:45-07:00,1,Juniper Resident Council,renewal_pending,clear,cleared,current
+ORG-0180,2026-03-13T15:00-07:00,1,Westhaven Community Association,active,clear,cleared,current
+ORG-0472,2026-02-09T13:00-07:00,1,Hillcrest Resident Council,active,clear,review_open,current
+ORG-0357,2026-03-09T11:15-07:00,1,Oak Neighborhood Alliance,active,clear,cleared,current
+ORG-0224,2026-03-18T11:45-07:00,1,Oak Community Association,active,clear,cleared,current
+ORG-0154,2026-02-18T15:15-07:00,1,Bayview Civic Collaborative,renewal_pending,clear,cleared,current
+ORG-0420,2026-02-28T13:45-07:00,1,Fox Housing Cooperative,active,clear,review_open,current
+ORG-0416,2026-03-15T12:15-07:00,1,South Community Association,active,clear,cleared,current
+ORG-0195,2026-03-09T13:00-07:00,1,Harbor Community Development Network,renewal_pending,clear,cleared,current
+ORG-0263,2026-03-16T16:45-07:00,1,Valley Neighborhood Alliance,active,clear,cleared,current
+ORG-0357,2026-02-11T11:15-07:00,1,Oak Neighborhood Alliance,renewal_pending,clear,cleared,current
+ORG-0112,2026-03-08T14:15-07:00,1,Union Resident Council,renewal_pending,clear,cleared,current
+ORG-0063,2026-03-09T16:45-07:00,1,Belmont Neighborhood Alliance,active,clear,cleared,current
+ORG-0333,2026-03-09T10:30-07:00,1,West End Water Action Group,active,clear,cleared,expired
+ORG-0385,2026-02-12T16:30-07:00,1,Ashland Community Association,active,clear,review_open,current
+ORG-0381,2026-03-20T16:00-07:00,2,Lakeside Climate Partnership,active,clear,cleared,current
+ORG-0270,2026-02-06T15:15-07:00,1,Terrace Civic Collaborative,renewal_pending,clear,cleared,current
+ORG-0480,2026-03-09T11:00-07:00,1,Fairview Resident Council,active,pending,cleared,current
+ORG-0369,2026-02-07T13:00-07:00,1,South Neighborhood Alliance,active,clear,cleared,current
+ORG-0066,2026-03-09T16:15-07:00,1,Willow Civic Collaborative,active,clear,review_open,current
+ORG-0417,2026-02-23T10:00-07:00,1,South Community Association,active,clear,cleared,expired
+ORG-0101,2026-03-07T10:00-07:00,1,South Climate Partnership,active,clear,cleared,expired
+ORG-0070,2026-02-17T09:45-07:00,1,Terrace Climate Partnership,active,clear,cleared,expired
+ORG-0066,2026-02-18T16:15-07:00,1,Willow Civic Collaborative,active,clear,review_open,current
+ORG-0374,2026-03-12T09:15-07:00,1,Fox Resident Council,active,clear,cleared,current
+ORG-0141,2026-03-21T11:00-07:00,1,Valley Community Development Network,active,clear,cleared,current
+ORG-0233,2026-03-22T10:30-07:00,1,Greenfield Resident Council,active,clear,cleared,current
+ORG-0352,2026-03-19T16:15-07:00,1,Juniper Community Association,active,clear,cleared,current
+ORG-0266,2026-03-20T16:45-07:00,2,Cedar Grove Tenant Council,active,clear,cleared,current
+ORG-0279,2026-03-27T10:00-07:00,1,Stonebridge Housing Cooperative,active,clear,review_open,current
+ORG-0435,2026-02-17T10:00-07:00,1,Juniper Neighborhood Alliance,active,pending,cleared,current
+ORG-0067,2026-03-27T10:00-07:00,1,Yorktown Housing Cooperative,active,clear,review_open,current
+ORG-0229,2026-02-04T16:15-07:00,1,Meadow Housing Cooperative,active,clear,cleared,expired
+ORG-0427,2026-03-22T13:30-07:00,1,Pinehurst Community Association,active,clear,cleared,current
+ORG-0033,2026-03-03T13:45-07:00,1,Valley Housing Cooperative,active,clear,cleared,current
+ORG-0068,2026-03-12T10:15-07:00,1,Lakeside Housing Cooperative,active,clear,cleared,current
+ORG-0439,2026-03-15T10:00-07:00,1,Cedar Resident Council,active,clear,cleared,current
+ORG-0162,2026-03-22T14:45-07:00,1,Cedar Housing Cooperative,active,clear,cleared,current
+ORG-0185,2026-03-20T14:45-07:00,1,Riverbend Housing Cooperative,active,clear,cleared,current
+ORG-0145,2026-03-17T09:30-07:00,1,Grandview Community Development Network,active,clear,cleared,current
+ORG-0083,2026-03-15T10:30-07:00,1,Quarry Civic Collaborative,active,clear,cleared,current
+ORG-0366,2026-03-17T16:00-07:00,1,Ashland Civic Collaborative,active,clear,cleared,current
+ORG-0008,2026-03-22T13:30-07:00,2,Glenwood Resident Council,active,clear,cleared,current
+ORG-0156,2026-03-01T09:00-07:00,1,Brighton Community Association,active,clear,cleared,expired
+ORG-0176,2026-03-13T11:45-07:00,1,Ashland Housing Cooperative,active,clear,cleared,current
+ORG-0104,2026-03-27T10:00-07:00,1,Greenfield Housing Cooperative,renewal_pending,clear,cleared,current
+ORG-0406,2026-03-11T13:00-07:00,1,West Housing Cooperative,active,clear,review_open,current
+ORG-0442,2026-03-12T15:30-07:00,1,Eastwood Housing Cooperative,active,clear,cleared,current
+ORG-0258,2026-03-08T09:30-07:00,1,Elmwood Civic Collaborative,active,clear,cleared,current
+ORG-0481,2026-03-02T15:00-07:00,1,Yorktown Housing Cooperative,active,clear,cleared,expired
+ORG-0200,2026-02-27T15:30-07:00,1,Hawthorne Community Association,active,clear,cleared,expired
+ORG-0437,2026-03-17T14:00-07:00,1,Maplewood Resident Council,active,clear,cleared,current
+ORG-0056,2026-03-08T13:00-07:00,1,Hillcrest Neighborhood Alliance,active,clear,cleared,current
+ORG-0393,2026-03-27T10:00-07:00,1,Glen Community Development Network,renewal_pending,clear,cleared,current
+ORG-0369,2026-03-12T13:00-07:00,1,South Neighborhood Alliance,renewal_pending,clear,cleared,current
+ORG-0479,2026-03-09T13:00-07:00,1,Willow Climate Partnership,active,clear,cleared,current
+ORG-0085,2026-03-14T09:45-07:00,1,Juniper Civic Collaborative,active,clear,cleared,current
+ORG-0142,2026-03-21T11:45-07:00,1,Prairie Civic Collaborative,active,clear,cleared,current
+ORG-0179,2026-03-08T13:45-07:00,1,College Resident Council,active,clear,cleared,current
+ORG-0072,2026-03-11T11:30-07:00,1,Wellington Community Development Network,active,clear,cleared,current
+ORG-0103,2026-03-27T10:00-07:00,1,Pleasant Community Association,active,clear,review_open,current
+ORG-0160,2026-03-18T13:00-07:00,1,Maplewood Community Association,active,clear,cleared,current
+ORG-0248,2026-03-27T10:00-07:00,1,Lakeside Neighborhood Alliance,active,clear,review_open,current
+ORG-0165,2026-02-24T16:15-07:00,1,Harbor Climate Partnership,active,clear,cleared,current
+ORG-0278,2026-02-21T11:15-07:00,1,University Housing Cooperative,active,clear,cleared,expired
+ORG-0133,2026-03-21T15:30-07:00,1,Riverside Community Development Network,active,clear,cleared,current
+ORG-0131,2026-02-13T09:30-07:00,1,Meadow Housing Cooperative,active,pending,cleared,current
+ORG-0103,2026-02-12T10:45-07:00,1,Pleasant Community Association,active,clear,review_open,current
+ORG-0244,2026-03-04T16:00-07:00,1,Kingston Resident Council,active,clear,review_open,current
+ORG-0128,2026-03-27T10:00-07:00,1,Highland Civic Collaborative,active,clear,cleared,expired
+ORG-0444,2026-03-10T14:45-07:00,1,Lakeside Resident Council,active,clear,cleared,current
+ORG-0104,2026-02-06T16:15-07:00,1,Greenfield Housing Cooperative,active,clear,review_open,current
+ORG-0440,2026-03-13T09:30-07:00,1,Lincoln Community Development Network,active,clear,cleared,current
+ORG-0224,2026-03-01T11:45-07:00,1,Oak Community Association,active,clear,review_open,current
+ORG-0098,2026-03-21T13:30-07:00,1,Crescent Climate Partnership,renewal_pending,clear,cleared,current
+ORG-0172,2026-03-22T13:30-07:00,1,Laurel Community Development Network,active,clear,review_open,current
+ORG-0354,2026-03-14T09:45-07:00,1,Glen Community Development Network,renewal_pending,clear,cleared,current
+ORG-0191,2026-03-18T09:45-07:00,1,Maplewood Resident Council,active,clear,cleared,current
+ORG-0378,2026-03-22T12:15-07:00,1,Glen Resident Council,active,clear,cleared,current
+ORG-0172,2026-03-06T13:30-07:00,1,Laurel Community Development Network,active,clear,cleared,current
+ORG-0182,2026-02-14T11:00-07:00,1,Magnolia Climate Partnership,active,clear,cleared,expired
+ORG-0104,2026-03-12T16:15-07:00,1,Greenfield Housing Cooperative,active,clear,cleared,current
+ORG-0351,2026-03-16T14:15-07:00,2,Meadow Community Development Network,active,clear,cleared,current
+ORG-0030,2026-02-07T16:30-07:00,1,University Community Development Network,active,clear,review_open,current
+ORG-0107,2026-03-14T15:45-07:00,1,Willow Community Association,active,clear,cleared,current
+ORG-0039,2026-03-17T09:30-07:00,1,Hillcrest Climate Partnership,active,clear,cleared,current
+ORG-0277,2026-03-22T09:30-07:00,1,Kingston Neighborhood Alliance,active,clear,cleared,current
+ORG-0112,2026-03-16T14:15-07:00,1,Union Resident Council,active,clear,cleared,current
+ORG-0346,2026-03-04T09:00-07:00,1,Yorktown Climate Partnership,active,pending,cleared,current
+ORG-0221,2026-02-22T14:15-07:00,1,Clearwater Resident Council,renewal_pending,clear,cleared,current
+ORG-0441,2026-02-24T09:45-07:00,1,Grand Resident Council,active,clear,cleared,current
+ORG-0202,2026-02-16T12:30-07:00,1,Millbrook Civic Collaborative,renewal_pending,clear,cleared,current
+ORG-0394,2026-03-12T14:15-07:00,1,Civic Resident Council,active,clear,cleared,current
+ORG-0374,2026-02-18T09:15-07:00,1,Fox Resident Council,active,clear,review_open,current
+ORG-0154,2026-03-22T15:15-07:00,1,Bayview Civic Collaborative,active,clear,cleared,current
+ORG-0454,2026-03-22T16:45-07:00,1,Fairview Resident Council,active,clear,cleared,current
+ORG-0051,2026-03-02T11:00-07:00,1,Laurel Community Development Network,active,clear,review_open,current
+ORG-0116,2026-02-26T12:45-07:00,1,Rosewood Housing Cooperative,active,clear,review_open,current
+ORG-0149,2026-03-27T10:00-07:00,1,South Market Shade Partnership,renewal_pending,pending,cleared,current
+ORG-0419,2026-03-09T14:00-07:00,1,Lakewood Housing Cooperative,active,pending,cleared,current
+ORG-0258,2026-03-02T09:30-07:00,1,Elmwood Civic Collaborative,renewal_pending,clear,cleared,current
+ORG-0035,2026-03-19T15:30-07:00,1,Bayview Neighborhood Alliance,active,clear,cleared,current
+ORG-0135,2026-02-26T12:30-07:00,1,Oak Housing Cooperative,active,clear,cleared,expired
+ORG-0157,2026-03-27T10:00-07:00,1,Bayview Neighborhood Alliance,active,clear,review_open,current
+ORG-0389,2026-03-03T13:30-07:00,1,Cedar Neighborhood Alliance,active,pending,cleared,current
+ORG-0001,2026-03-10T09:00-07:00,1,Oak Resident Council,active,clear,cleared,current
+ORG-0402,2026-03-16T10:45-07:00,1,Cedar Neighborhood Alliance,active,clear,cleared,current
+ORG-0380,2026-02-17T12:15-07:00,1,Lakewood Civic Collaborative,active,clear,cleared,expired
+ORG-0467,2026-02-12T13:15-07:00,1,Parkview Climate Partnership,active,clear,cleared,expired
+ORG-0032,2026-03-15T13:15-07:00,2,Union Resident Council,active,clear,cleared,current
+ORG-0363,2026-03-20T10:30-07:00,2,Grand Community Development Network,active,clear,cleared,current
+ORG-0005,2026-02-27T11:00-07:00,1,Eastwood Community Development Network,active,pending,cleared,current
+ORG-0275,2026-03-27T10:00-07:00,1,Maplewood Resident Council,active,pending,cleared,current
+ORG-0407,2026-03-12T10:30-07:00,2,Grand Civic Collaborative,active,clear,cleared,current
+ORG-0391,2026-03-05T09:15-07:00,1,Grand Climate Partnership,active,clear,cleared,current
+ORG-0340,2026-03-18T14:00-07:00,1,West Community Development Network,active,clear,cleared,current
+ORG-0058,2026-03-11T16:00-07:00,1,Crescent Civic Collaborative,active,clear,cleared,current
+ORG-0067,2026-03-12T16:30-07:00,1,Yorktown Housing Cooperative,active,clear,cleared,current
+ORG-0150,2026-03-20T10:15-07:00,1,Highland Neighborhood Alliance,active,clear,cleared,current
+ORG-0018,2026-02-13T12:30-07:00,1,Willow Community Association,active,clear,cleared,current
+ORG-0101,2026-03-18T10:00-07:00,1,South Climate Partnership,active,clear,cleared,current
+ORG-0403,2026-02-24T16:30-07:00,1,Grand Community Development Network,renewal_pending,clear,cleared,current
+ORG-0440,2026-03-01T09:30-07:00,1,Lincoln Community Development Network,active,clear,cleared,expired
+ORG-0033,2026-03-16T13:45-07:00,1,Valley Housing Cooperative,active,clear,review_open,current
+ORG-0105,2026-02-08T13:45-07:00,1,Kingston Climate Partnership,active,pending,cleared,current
+ORG-0113,2026-03-15T10:45-07:00,1,Bayview Resident Council,active,clear,cleared,current
+ORG-0199,2026-02-27T13:45-07:00,1,Northgate Climate Partnership,renewal_pending,clear,cleared,current
+ORG-0348,2026-03-21T14:45-07:00,1,Stonebridge Civic Collaborative,active,clear,cleared,current
+ORG-0027,2026-03-22T13:30-07:00,1,Westhaven Community Development Network,active,clear,cleared,current
+ORG-0093,2026-03-17T15:30-07:00,1,Yorktown Community Development Network,active,clear,cleared,current
+ORG-0458,2026-03-02T14:45-07:00,1,Fairview Community Association,active,clear,review_open,current
+ORG-0052,2026-03-14T12:45-07:00,1,Riverbend Community Development Center,active,clear,cleared,current
+ORG-0413,2026-03-18T15:45-07:00,1,Lakeside Climate Partnership,active,clear,cleared,current
+ORG-0018,2026-03-10T12:30-07:00,1,Willow Community Association,active,clear,review_open,current
+ORG-0244,2026-03-16T16:00-07:00,1,Kingston Resident Council,active,clear,cleared,current
+ORG-0186,2026-03-27T10:00-07:00,1,Meadow Park Green Streets Group,renewal_pending,clear,cleared,current
+ORG-0214,2026-03-16T10:30-07:00,1,Parkside Resident Council,active,clear,cleared,current
+ORG-0091,2026-03-18T15:00-07:00,1,Spring Resident Council,active,clear,cleared,current
+ORG-0142,2026-02-22T11:45-07:00,1,Prairie Civic Collaborative,renewal_pending,clear,cleared,current
+ORG-0060,2026-02-27T09:15-07:00,1,Greenfield Housing Cooperative,active,clear,review_open,current
+ORG-0373,2026-02-25T15:00-07:00,1,Claremont Climate Partnership,active,clear,cleared,expired
+ORG-0098,2026-03-21T13:30-07:00,2,Crescent Climate Partnership,active,clear,cleared,current
+ORG-0099,2026-03-02T11:45-07:00,1,Sherwood Neighborhood Alliance,active,clear,review_open,current
+ORG-0159,2026-03-12T09:45-07:00,1,Cedar Community Association,renewal_pending,clear,cleared,current
+ORG-0017,2026-03-02T13:45-07:00,1,Fairview Resident Council,renewal_pending,clear,cleared,current
+ORG-0166,2026-03-21T10:15-07:00,1,Glenwood Community Association,active,clear,cleared,current
+ORG-0363,2026-03-20T10:30-07:00,1,Grand Community Development Network,active,clear,review_open,current
+ORG-0394,2026-02-10T14:15-07:00,1,Civic Resident Council,renewal_pending,clear,cleared,current
+ORG-0435,2026-03-20T10:00-07:00,1,Juniper Neighborhood Alliance,active,clear,cleared,current
+ORG-0003,2026-02-13T11:15-07:00,1,Eastwood Neighborhood Alliance,active,clear,cleared,expired
+ORG-0362,2026-03-09T09:00-07:00,1,Glen Community Association,active,clear,review_open,current
+ORG-0461,2026-03-17T09:15-07:00,1,Grand Civic Collaborative,active,clear,cleared,current
+ORG-0395,2026-03-27T10:00-07:00,1,Lincoln Housing Cooperative,renewal_pending,clear,cleared,current
+ORG-0023,2026-03-17T14:00-07:00,1,Sherwood Community Association,active,clear,cleared,current
+ORG-0007,2026-03-08T15:00-07:00,1,Oak Neighborhood Alliance,active,clear,cleared,current
+ORG-0443,2026-02-23T14:30-07:00,1,Bayview Resident Council,renewal_pending,clear,cleared,current
+ORG-0124,2026-02-12T14:00-07:00,1,Eastwood Civic Collaborative,active,clear,review_open,current
+ORG-0358,2026-03-07T11:15-07:00,1,Claremont Community Development Network,active,clear,cleared,expired
+ORG-0098,2026-03-27T10:00-07:00,1,Crescent Climate Partnership,renewal_pending,clear,cleared,current
+ORG-0002,2026-03-10T12:45-07:00,2,Sherwood Resident Council,active,clear,cleared,current
+ORG-0205,2026-03-11T16:00-07:00,1,Greenfield Civic Collaborative,active,clear,cleared,current
+ORG-0088,2026-03-06T12:30-07:00,1,Riverside Preparedness Network,renewal_pending,clear,cleared,current
+ORG-0354,2026-02-11T09:45-07:00,1,Glen Community Development Network,active,clear,cleared,current
+ORG-0383,2026-03-21T10:15-07:00,1,Civic Community Association,active,clear,cleared,current
+ORG-0220,2026-03-14T11:15-07:00,1,Greenfield Resident Council,active,clear,cleared,current
+ORG-0430,2026-03-17T12:30-07:00,1,Highland Climate Partnership,active,clear,cleared,current
+ORG-0373,2026-03-27T10:00-07:00,1,Claremont Climate Partnership,renewal_pending,clear,cleared,current
+ORG-0362,2026-03-18T09:00-07:00,1,Glen Community Association,active,clear,cleared,current
+ORG-0259,2026-03-10T13:45-07:00,1,Laurel Community Development Network,active,clear,cleared,current
+ORG-0360,2026-03-20T13:00-07:00,1,Juniper Climate Partnership,active,clear,cleared,current
+ORG-0412,2026-03-14T10:15-07:00,1,South Neighborhood Alliance,active,clear,cleared,current
+ORG-0271,2026-03-27T10:00-07:00,1,Hawthorne Climate Partnership,active,pending,cleared,current
+ORG-0368,2026-02-08T16:00-07:00,1,Northgate Climate Partnership,active,pending,cleared,current
+ORG-0417,2026-03-10T10:00-07:00,1,South Community Association,active,clear,cleared,current
+ORG-0165,2026-03-16T16:15-07:00,2,Harbor Climate Partnership,renewal_pending,clear,cleared,current
+ORG-0158,2026-03-08T14:30-07:00,1,Kingston Climate Partnership,active,clear,cleared,current
+ORG-0260,2026-02-14T11:30-07:00,1,Maplewood Civic Collaborative,renewal_pending,clear,cleared,current
+ORG-0360,2026-02-21T13:00-07:00,1,Juniper Climate Partnership,renewal_pending,clear,cleared,current
+ORG-0063,2026-02-11T16:45-07:00,1,Belmont Neighborhood Alliance,active,pending,cleared,current
+ORG-0186,2026-03-08T11:30-07:00,1,Meadow Park Green Streets Group,active,pending,cleared,current
+ORG-0152,2026-02-08T10:30-07:00,1,Northgate Housing Cooperative,active,clear,cleared,expired
+ORG-0456,2026-02-09T13:45-07:00,1,Glen Community Development Network,renewal_pending,clear,cleared,current
+ORG-0001,2026-02-10T09:00-07:00,1,Oak Resident Council,active,clear,review_open,current
+ORG-0015,2026-03-14T13:15-07:00,1,Lakeside Resident Council,active,clear,cleared,current
+ORG-0096,2026-03-11T12:45-07:00,1,Lakeside Resident Council,active,clear,cleared,current
+ORG-0404,2026-02-19T16:30-07:00,1,Yorktown Civic Collaborative,active,clear,review_open,current
+ORG-0433,2026-03-04T11:00-07:00,1,Meadow Community Association,active,clear,review_open,current
+ORG-0077,2026-03-21T10:30-07:00,1,Westhaven Housing Cooperative,active,clear,cleared,current
+ORG-0008,2026-02-21T13:30-07:00,1,Glenwood Resident Council,active,clear,cleared,expired
+ORG-0481,2026-03-08T15:00-07:00,1,Yorktown Housing Cooperative,active,clear,cleared,current
+ORG-0471,2026-02-28T11:15-07:00,1,Kingsley Resident Council,active,clear,cleared,expired
+ORG-0397,2026-03-14T12:00-07:00,1,Eastwood Community Development Network,active,clear,cleared,current
+ORG-0139,2026-02-11T16:45-07:00,1,Millbrook Neighborhood Alliance,active,clear,cleared,expired
+ORG-0443,2026-03-10T14:30-07:00,1,Bayview Resident Council,active,clear,cleared,current
+ORG-0173,2026-03-12T13:15-07:00,1,Northgate Homes Collaborative,active,clear,cleared,current
+ORG-0071,2026-03-20T09:30-07:00,1,University Housing Cooperative,active,clear,cleared,current
+ORG-0048,2026-02-09T10:15-07:00,1,College Resident Council,active,clear,cleared,expired
+ORG-0020,2026-03-16T15:30-07:00,1,Eastwood Neighborhood Alliance,active,clear,cleared,current
+ORG-0042,2026-02-12T10:45-07:00,1,Monroe Community Association,active,clear,cleared,current
+ORG-0431,2026-03-13T10:30-07:00,1,Willow Neighborhood Alliance,active,clear,cleared,current
+ORG-0014,2026-02-06T09:15-07:00,1,Juniper Civic Collaborative,renewal_pending,clear,cleared,current
+ORG-0197,2026-03-10T09:30-07:00,1,Northgate Neighborhood Alliance,active,clear,cleared,current
+ORG-0391,2026-03-22T09:15-07:00,1,Grand Climate Partnership,active,clear,cleared,expired
+ORG-0022,2026-03-16T11:15-07:00,1,Riverside Resident Council,active,clear,cleared,current
+ORG-0425,2026-03-13T14:15-07:00,1,Lakewood Climate Partnership,active,clear,cleared,current
+ORG-0037,2026-03-15T11:15-07:00,1,Parkside Community Association,renewal_pending,clear,cleared,current
+ORG-0226,2026-02-07T10:30-07:00,1,Crescent Housing Cooperative,active,pending,cleared,current
+ORG-0140,2026-03-03T14:15-07:00,1,Fox Community Development Network,active,pending,cleared,current
+ORG-0375,2026-03-12T13:30-07:00,1,Brookfield Housing Cooperative,renewal_pending,clear,cleared,current
+ORG-0071,2026-03-06T09:30-07:00,1,University Housing Cooperative,active,pending,cleared,current
+ORG-0155,2026-03-15T09:15-07:00,1,Wellington Neighborhood Alliance,active,clear,cleared,current
+ORG-0367,2026-03-17T11:00-07:00,1,Stonebridge Community Association,active,clear,cleared,current
+ORG-0163,2026-03-22T11:15-07:00,1,Old Resident Council,active,clear,cleared,current
+ORG-0367,2026-02-28T11:00-07:00,1,Stonebridge Community Association,active,clear,review_open,current
+ORG-0409,2026-03-17T15:15-07:00,1,Highland Community Development Network,active,clear,cleared,current
+ORG-0144,2026-03-22T15:30-07:00,1,Hillcrest Civic Collaborative,active,clear,cleared,current
+ORG-0426,2026-02-21T15:00-07:00,1,South Climate Partnership,active,pending,cleared,current
+ORG-0390,2026-02-08T14:00-07:00,1,Ashland Neighborhood Alliance,active,clear,review_open,current
+ORG-0005,2026-03-15T11:00-07:00,1,Eastwood Community Development Network,active,clear,cleared,current
+ORG-0438,2026-03-22T13:15-07:00,1,Yorktown Housing Cooperative,active,clear,cleared,current
+ORG-0120,2026-03-21T16:15-07:00,1,Brookfield Housing Cooperative,active,clear,cleared,current
+ORG-0110,2026-02-22T09:45-07:00,1,New Civic Collaborative,active,clear,cleared,expired
+ORG-0449,2026-03-14T10:30-07:00,1,Highland Resident Council,active,clear,cleared,current
+ORG-0437,2026-02-10T14:00-07:00,1,Maplewood Resident Council,active,clear,cleared,expired
+ORG-0398,2026-03-18T10:00-07:00,2,Glen Community Development Network,active,clear,cleared,current
+ORG-0026,2026-02-23T16:45-07:00,1,Elmwood Resident Council,active,clear,review_open,current
+ORG-0386,2026-03-16T12:15-07:00,1,Northgate Neighborhood Alliance,active,clear,cleared,current
+ORG-0441,2026-03-18T09:45-07:00,1,Grand Resident Council,active,clear,cleared,expired
+ORG-0113,2026-02-15T10:45-07:00,1,Bayview Resident Council,renewal_pending,clear,cleared,current
+ORG-0041,2026-02-16T09:15-07:00,1,Hawthorne Climate Partnership,active,clear,cleared,current
+ORG-0333,2026-02-10T10:30-07:00,1,West End Water Action Group,active,clear,cleared,current
+ORG-0065,2026-03-11T13:45-07:00,1,College Community Development Network,active,clear,cleared,current
+ORG-0460,2026-03-01T15:45-07:00,1,Lakeside Climate Partnership,renewal_pending,clear,cleared,current
+ORG-0344,2026-03-21T10:00-07:00,1,Lincoln Community Association,active,clear,cleared,expired
+ORG-0380,2026-03-12T12:15-07:00,1,Lakewood Civic Collaborative,active,clear,cleared,current
+ORG-0387,2026-03-13T14:15-07:00,1,Stonebridge Community Association,active,clear,cleared,expired
+ORG-0429,2026-03-14T14:30-07:00,1,Fairview Community Development Network,active,clear,cleared,current
+ORG-0205,2026-02-13T16:00-07:00,1,Greenfield Civic Collaborative,renewal_pending,clear,cleared,current
+ORG-0139,2026-03-10T16:45-07:00,1,Millbrook Neighborhood Alliance,active,clear,cleared,current
+ORG-0368,2026-03-15T16:00-07:00,1,Northgate Climate Partnership,active,clear,cleared,current
+ORG-0156,2026-03-27T10:00-07:00,1,Brighton Community Association,active,pending,cleared,current
+ORG-0149,2026-03-21T13:00-07:00,1,South Market Shade Partnership,active,pending,cleared,current
+ORG-0235,2026-02-13T13:15-07:00,1,Juniper Housing Cooperative,renewal_pending,clear,cleared,current
+ORG-0480,2026-02-26T11:00-07:00,1,Fairview Resident Council,active,clear,cleared,current
+ORG-0331,2026-03-27T10:00-07:00,1,Juniper Neighborhood Partnership,active,clear,cleared,expired
+ORG-0482,2026-02-09T15:00-07:00,1,Parkview Housing Cooperative,renewal_pending,clear,cleared,current
+ORG-0227,2026-02-05T11:30-07:00,1,Magnolia Civic Collaborative,active,pending,cleared,current
+ORG-0060,2026-03-21T09:15-07:00,1,Greenfield Housing Cooperative,active,clear,cleared,current
+ORG-0431,2026-02-26T10:30-07:00,1,Willow Neighborhood Alliance,active,clear,cleared,expired
+ORG-0202,2026-03-08T12:30-07:00,1,Millbrook Civic Collaborative,active,clear,cleared,current
+ORG-0125,2026-03-27T10:00-07:00,1,Maplewood Community Development Network,active,clear,review_open,expired
+ORG-0406,2026-03-22T13:00-07:00,1,West Housing Cooperative,active,clear,cleared,current
+ORG-0007,2026-02-21T15:00-07:00,1,Oak Neighborhood Alliance,active,pending,cleared,current
+ORG-0426,2026-03-12T15:00-07:00,1,South Climate Partnership,active,clear,cleared,current
+ORG-0403,2026-03-27T10:00-07:00,1,Grand Community Development Network,renewal_pending,clear,cleared,current
+ORG-0138,2026-03-06T11:30-07:00,1,Juniper Housing Cooperative,active,pending,cleared,current
+ORG-0170,2026-03-13T12:00-07:00,1,Maplewood Housing Cooperative,active,clear,cleared,current
+ORG-0331,2026-03-07T12:30-07:00,1,Juniper Neighborhood Partnership,active,clear,review_open,current
+ORG-0158,2026-02-21T14:30-07:00,1,Kingston Climate Partnership,active,clear,review_open,current
+ORG-0464,2026-03-18T11:15-07:00,1,Willow Neighborhood Alliance,active,clear,cleared,current
+ORG-0006,2026-02-14T09:00-07:00,1,Lakeside Neighborhood Alliance,active,clear,cleared,current
+ORG-0166,2026-03-02T10:15-07:00,1,Glenwood Community Association,active,clear,cleared,expired
+ORG-0181,2026-03-08T14:45-07:00,1,Meadow Housing Cooperative,active,clear,cleared,current
+ORG-0473,2026-03-15T10:00-07:00,1,Grand Climate Partnership,active,clear,cleared,current
+ORG-0136,2026-03-17T11:45-07:00,1,Yorktown Community Association,active,clear,cleared,current
+ORG-0233,2026-02-25T10:30-07:00,1,Greenfield Resident Council,active,clear,cleared,expired
+ORG-0359,2026-03-22T10:00-07:00,1,Pinehurst Climate Partnership,active,clear,cleared,current
+ORG-0040,2026-03-27T10:00-07:00,1,Ashland Neighborhood Alliance,active,pending,cleared,current
+ORG-0418,2026-03-08T12:00-07:00,1,Fairview Climate Partnership,active,clear,cleared,current
+ORG-0454,2026-03-15T16:45-07:00,1,Fairview Resident Council,active,pending,cleared,current
+ORG-0370,2026-02-06T11:00-07:00,1,Elmwood Community Development Network,renewal_pending,clear,cleared,current
+ORG-0404,2026-03-19T16:30-07:00,1,Yorktown Civic Collaborative,active,clear,cleared,current
+ORG-0034,2026-03-12T09:00-07:00,1,Eastwood Mutual Aid Council,active,clear,cleared,current
+ORG-0427,2026-03-27T10:00-07:00,1,Pinehurst Community Association,active,clear,cleared,expired
+ORG-0023,2026-02-18T14:00-07:00,1,Sherwood Community Association,active,pending,cleared,current
+ORG-0347,2026-03-12T15:15-07:00,1,Kingsley Resident Council,active,clear,cleared,current
+ORG-0460,2026-03-08T15:45-07:00,2,Lakeside Climate Partnership,active,clear,cleared,current
+ORG-0376,2026-03-27T10:00-07:00,1,Yorktown Housing Cooperative,active,pending,cleared,current
+ORG-0450,2026-03-12T10:15-07:00,1,Highland Civic Collaborative,active,clear,cleared,current
+ORG-0017,2026-03-08T13:45-07:00,1,Fairview Resident Council,active,clear,cleared,current
+ORG-0470,2026-03-15T10:45-07:00,1,Grand Resident Council,active,clear,cleared,current
+ORG-0475,2026-02-20T14:15-07:00,1,Fox Community Association,active,clear,review_open,current
+ORG-0463,2026-03-10T11:00-07:00,1,Cedar Resident Council,active,clear,cleared,current
+ORG-0457,2026-03-11T15:30-07:00,1,Fox Neighborhood Alliance,active,clear,cleared,expired
+ORG-0601,2026-03-18T10:00-07:00,1,Central Canopy Partnership,active,clear,cleared,current
+ORG-0602,2026-03-19T11:00-07:00,1,Bayview Housing Climate Collaborative,active,clear,cleared,current
+ORG-0602,2026-03-19T11:00-07:00,2,Bayview Housing Climate Collaborative,active,clear,cleared,expired
+ORG-0602,2026-03-25T09:00-07:00,3,Bayview Housing Climate Collaborative,active,clear,cleared,current
+ORG-0603,2026-03-20T12:00-07:00,1,Maple Junction Preparedness Council,active,clear,cleared,current
+ORG-0604,2026-03-20T13:00-07:00,1,West Terrace Neighborhood Alliance,active,clear,cleared,current

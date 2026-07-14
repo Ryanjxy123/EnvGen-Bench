@@ -3,100 +3,810 @@
   "task_type": "relationship_diagram",
   "facts": [
     {
-      "id": "core_entities",
-      "description": "Core checkout entities that should appear in the diagram.",
-      "source": "env/architecture_notes.md + env/dependency_config.yaml",
+      "id": "snapshot_scope_bundle_wave_and_totals",
+      "description": "Controlled correction and production-activation snapshot identity and final model totals.",
+      "source": "task.md + env/correction_bundle_log.csv + env/deployment_wave_log.csv + env/production_activation_rules.md",
+      "importance": "critical",
+      "expected_value": {
+        "title": "Service-to-Cash | Production correction view — 30 Jun 2026 16:30",
+        "catalog_release": "Catalog 4.8",
+        "bundle_id": "CB-0626-B",
+        "deployment_wave_id": "DW-0630-C",
+        "entity_count": 27,
+        "relationship_count": 33,
+        "domain_order": [
+          "Customer & Coverage",
+          "Planning & Dispatch",
+          "Field Execution",
+          "Billing & Cash"
+        ],
+        "domain_entity_counts": {
+          "Customer & Coverage": 6,
+          "Planning & Dispatch": 8,
+          "Field Execution": 8,
+          "Billing & Cash": 5
+        }
+      },
+      "must_appear_in_image": true
+    },
+    {
+      "id": "request_and_activation_resolution",
+      "description": "Request-layer applicability and final production-active corrections after wave, unit, atomic-group, dependency, and rollback resolution.",
+      "source": "env/correction_request_register.csv + env/correction_event_log.csv + env/deployment_wave_log.csv + env/deployment_unit_register.csv + env/deployment_unit_event_log.csv + rules files",
+      "importance": "critical",
+      "expected_value": {
+        "selected_bundle": "CB-0626-B",
+        "request_layer_applicable_ids": [
+          "CR-4801",
+          "CR-4802",
+          "CR-4803",
+          "CR-4804",
+          "CR-4805",
+          "CR-4806",
+          "CR-4807",
+          "CR-4808",
+          "CR-4809",
+          "CR-4810",
+          "CR-4811",
+          "CR-4825",
+          "CR-4826"
+        ],
+        "selected_deployment_wave": "DW-0630-C",
+        "production_active_request_ids": [
+          "CR-4801",
+          "CR-4803",
+          "CR-4804",
+          "CR-4805",
+          "CR-4809",
+          "CR-4810",
+          "CR-4811",
+          "CR-4825",
+          "CR-4826"
+        ],
+        "inactive_atomic_groups": {
+          "G-AGREEMENT-RETIREMENT": "rolled back",
+          "G-CLOSE-GATE": "suspended member caused atomic reversion"
+        },
+        "root_provenance_tags": {
+          "Request Coverage Decision": "CR-4801",
+          "Request Commitment Event": "CR-4803",
+          "Payment Allocation": "CR-4825",
+          "Visit Signature": "CR-4826"
+        }
+      },
+      "must_appear_in_image": false
+    },
+    {
+      "id": "current_entities",
+      "description": "Exact production entities after request and deployment controls are both applied.",
+      "source": "all env files",
       "importance": "critical",
       "expected_value": [
-        "Web App",
-        "Auth Service",
-        "User Database",
-        "Checkout API",
-        "Inventory Service",
-        "Payment Gateway",
-        "Order Queue",
-        "Fulfillment Worker",
-        "Shipment Database"
+        {
+          "name": "Agreement Asset",
+          "group": "Customer & Coverage",
+          "primary_key": "agreement_asset_id",
+          "relationship_foreign_keys": [
+            "agreement_id",
+            "asset_id"
+          ]
+        },
+        {
+          "name": "Asset",
+          "group": "Customer & Coverage",
+          "primary_key": "asset_id",
+          "relationship_foreign_keys": [
+            "location_id"
+          ]
+        },
+        {
+          "name": "Customer",
+          "group": "Customer & Coverage",
+          "primary_key": "customer_id",
+          "relationship_foreign_keys": []
+        },
+        {
+          "name": "Customer Contact",
+          "group": "Customer & Coverage",
+          "primary_key": "contact_id",
+          "relationship_foreign_keys": [
+            "customer_id"
+          ]
+        },
+        {
+          "name": "Service Agreement",
+          "group": "Customer & Coverage",
+          "primary_key": "agreement_id",
+          "relationship_foreign_keys": [
+            "customer_id"
+          ]
+        },
+        {
+          "name": "Service Location",
+          "group": "Customer & Coverage",
+          "primary_key": "location_id",
+          "relationship_foreign_keys": [
+            "customer_id"
+          ]
+        },
+        {
+          "name": "Request Commitment Event",
+          "group": "Planning & Dispatch",
+          "primary_key": "request_commitment_event_id",
+          "relationship_foreign_keys": [
+            "request_id"
+          ]
+        },
+        {
+          "name": "Request Coverage Decision",
+          "group": "Planning & Dispatch",
+          "primary_key": "coverage_decision_id",
+          "relationship_foreign_keys": [
+            "request_id",
+            "agreement_asset_id"
+          ]
+        },
+        {
+          "name": "Service Request",
+          "group": "Planning & Dispatch",
+          "primary_key": "request_id",
+          "relationship_foreign_keys": [
+            "location_id",
+            "requested_by_contact_id",
+            "agreement_id"
+          ]
+        },
+        {
+          "name": "Skill",
+          "group": "Planning & Dispatch",
+          "primary_key": "skill_id",
+          "relationship_foreign_keys": []
+        },
+        {
+          "name": "Technician",
+          "group": "Planning & Dispatch",
+          "primary_key": "technician_id",
+          "relationship_foreign_keys": []
+        },
+        {
+          "name": "Technician Skill",
+          "group": "Planning & Dispatch",
+          "primary_key": "technician_skill_id",
+          "relationship_foreign_keys": [
+            "technician_id",
+            "skill_id"
+          ]
+        },
+        {
+          "name": "Work Order",
+          "group": "Planning & Dispatch",
+          "primary_key": "work_order_id",
+          "relationship_foreign_keys": [
+            "request_id"
+          ]
+        },
+        {
+          "name": "Work Order Assignment",
+          "group": "Planning & Dispatch",
+          "primary_key": "assignment_id",
+          "relationship_foreign_keys": [
+            "work_order_id",
+            "technician_id"
+          ]
+        },
+        {
+          "name": "Part",
+          "group": "Field Execution",
+          "primary_key": "part_id",
+          "relationship_foreign_keys": []
+        },
+        {
+          "name": "Parts Usage",
+          "group": "Field Execution",
+          "primary_key": "parts_usage_id",
+          "relationship_foreign_keys": [
+            "work_order_id",
+            "part_id"
+          ]
+        },
+        {
+          "name": "Time Entry",
+          "group": "Field Execution",
+          "primary_key": "time_entry_id",
+          "relationship_foreign_keys": [
+            "work_order_id",
+            "technician_id"
+          ]
+        },
+        {
+          "name": "Visit",
+          "group": "Field Execution",
+          "primary_key": "visit_id",
+          "relationship_foreign_keys": [
+            "work_order_id",
+            "technician_id"
+          ]
+        },
+        {
+          "name": "Visit Note",
+          "group": "Field Execution",
+          "primary_key": "visit_note_id",
+          "relationship_foreign_keys": [
+            "visit_id"
+          ]
+        },
+        {
+          "name": "Visit Signature",
+          "group": "Field Execution",
+          "primary_key": "visit_signature_id",
+          "relationship_foreign_keys": [
+            "visit_id"
+          ]
+        },
+        {
+          "name": "Work Order Asset",
+          "group": "Field Execution",
+          "primary_key": "work_order_asset_id",
+          "relationship_foreign_keys": [
+            "work_order_id",
+            "asset_id"
+          ]
+        },
+        {
+          "name": "Work Order Checklist",
+          "group": "Field Execution",
+          "primary_key": "work_order_checklist_id",
+          "relationship_foreign_keys": [
+            "work_order_id"
+          ]
+        },
+        {
+          "name": "Invoice",
+          "group": "Billing & Cash",
+          "primary_key": "invoice_id",
+          "relationship_foreign_keys": [
+            "work_order_id"
+          ]
+        },
+        {
+          "name": "Invoice Adjustment",
+          "group": "Billing & Cash",
+          "primary_key": "invoice_adjustment_id",
+          "relationship_foreign_keys": [
+            "invoice_id"
+          ]
+        },
+        {
+          "name": "Invoice Line",
+          "group": "Billing & Cash",
+          "primary_key": "invoice_line_id",
+          "relationship_foreign_keys": [
+            "invoice_id"
+          ]
+        },
+        {
+          "name": "Payment",
+          "group": "Billing & Cash",
+          "primary_key": "payment_id",
+          "relationship_foreign_keys": []
+        },
+        {
+          "name": "Payment Allocation",
+          "group": "Billing & Cash",
+          "primary_key": "payment_allocation_id",
+          "relationship_foreign_keys": [
+            "payment_id",
+            "invoice_id"
+          ]
+        }
       ],
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
+      "must_appear_in_image": true
     },
     {
-      "id": "checkout_edges",
-      "description": "Required checkout flow edges.",
-      "source": "env/architecture_notes.md + env/dependency_config.yaml",
+      "id": "current_relationships",
+      "description": "Exact production relationships, directions, FKs, and cardinalities after deployment rollback and atomic-group handling.",
+      "source": "all env files",
       "importance": "critical",
       "expected_value": [
-        [
-          "Web App",
-          "Auth Service"
-        ],
-        [
-          "Auth Service",
-          "User Database"
-        ],
-        [
-          "Web App",
-          "Checkout API"
-        ],
-        [
-          "Checkout API",
-          "Inventory Service"
-        ],
-        [
-          "Checkout API",
-          "Payment Gateway"
-        ],
-        [
-          "Checkout API",
-          "Order Queue"
-        ],
-        [
-          "Fulfillment Worker",
-          "Order Queue"
-        ],
-        [
-          "Fulfillment Worker",
-          "Shipment Database"
-        ]
+        {
+          "parent": "Customer",
+          "child": "Customer Contact",
+          "parent_end": "1",
+          "child_end": "0..N",
+          "foreign_key": "customer_id",
+          "note": "Each contact belongs to exactly one customer."
+        },
+        {
+          "parent": "Customer",
+          "child": "Service Location",
+          "parent_end": "1",
+          "child_end": "0..N",
+          "foreign_key": "customer_id",
+          "note": "Each location belongs to exactly one customer."
+        },
+        {
+          "parent": "Customer",
+          "child": "Service Agreement",
+          "parent_end": "1",
+          "child_end": "0..N",
+          "foreign_key": "customer_id",
+          "note": "Each agreement belongs to exactly one customer."
+        },
+        {
+          "parent": "Service Location",
+          "child": "Asset",
+          "parent_end": "1",
+          "child_end": "0..N",
+          "foreign_key": "location_id",
+          "note": "Each asset belongs to exactly one location."
+        },
+        {
+          "parent": "Service Agreement",
+          "child": "Agreement Asset",
+          "parent_end": "1",
+          "child_end": "0..N",
+          "foreign_key": "agreement_id",
+          "note": "Each coverage record belongs to one agreement."
+        },
+        {
+          "parent": "Asset",
+          "child": "Agreement Asset",
+          "parent_end": "1",
+          "child_end": "0..N",
+          "foreign_key": "asset_id",
+          "note": "Each coverage record belongs to one asset."
+        },
+        {
+          "parent": "Service Location",
+          "child": "Service Request",
+          "parent_end": "1",
+          "child_end": "0..N",
+          "foreign_key": "location_id",
+          "note": "Each request belongs to exactly one service location."
+        },
+        {
+          "parent": "Customer Contact",
+          "child": "Service Request",
+          "parent_end": "0..1",
+          "child_end": "0..N",
+          "foreign_key": "requested_by_contact_id",
+          "note": "A request may identify zero or one reporting contact."
+        },
+        {
+          "parent": "Service Agreement",
+          "child": "Service Request",
+          "parent_end": "0..1",
+          "child_end": "0..N",
+          "foreign_key": "agreement_id",
+          "note": "A request may reference zero or one service agreement."
+        },
+        {
+          "parent": "Service Request",
+          "child": "Request Commitment Event",
+          "parent_end": "1",
+          "child_end": "0..N",
+          "foreign_key": "request_id",
+          "note": "Each SLA event belongs to exactly one request."
+        },
+        {
+          "parent": "Service Request",
+          "child": "Work Order",
+          "parent_end": "1",
+          "child_end": "0..N",
+          "foreign_key": "request_id",
+          "note": "Each work order belongs to exactly one request."
+        },
+        {
+          "parent": "Work Order",
+          "child": "Work Order Assignment",
+          "parent_end": "1",
+          "child_end": "0..N",
+          "foreign_key": "work_order_id",
+          "note": "Each assignment belongs to one work order."
+        },
+        {
+          "parent": "Technician",
+          "child": "Work Order Assignment",
+          "parent_end": "1",
+          "child_end": "0..N",
+          "foreign_key": "technician_id",
+          "note": "Each assignment belongs to one technician."
+        },
+        {
+          "parent": "Technician",
+          "child": "Technician Skill",
+          "parent_end": "1",
+          "child_end": "0..N",
+          "foreign_key": "technician_id",
+          "note": "Each capability record belongs to one technician."
+        },
+        {
+          "parent": "Skill",
+          "child": "Technician Skill",
+          "parent_end": "1",
+          "child_end": "0..N",
+          "foreign_key": "skill_id",
+          "note": "Each capability record belongs to one skill."
+        },
+        {
+          "parent": "Work Order",
+          "child": "Work Order Checklist",
+          "parent_end": "1",
+          "child_end": "0..N",
+          "foreign_key": "work_order_id",
+          "note": "Each checklist record belongs to one work order."
+        },
+        {
+          "parent": "Work Order",
+          "child": "Visit",
+          "parent_end": "1",
+          "child_end": "0..N",
+          "foreign_key": "work_order_id",
+          "note": "Each visit belongs to one work order."
+        },
+        {
+          "parent": "Technician",
+          "child": "Visit",
+          "parent_end": "1",
+          "child_end": "0..N",
+          "foreign_key": "technician_id",
+          "note": "Each visit records one technician."
+        },
+        {
+          "parent": "Visit",
+          "child": "Visit Note",
+          "parent_end": "1",
+          "child_end": "0..N",
+          "foreign_key": "visit_id",
+          "note": "Each note belongs to one visit."
+        },
+        {
+          "parent": "Visit",
+          "child": "Visit Signature",
+          "parent_end": "1",
+          "child_end": "0..N",
+          "foreign_key": "visit_id",
+          "note": "Each signature belongs to one visit."
+        },
+        {
+          "parent": "Work Order",
+          "child": "Work Order Asset",
+          "parent_end": "1",
+          "child_end": "0..N",
+          "foreign_key": "work_order_id",
+          "note": "Each serviced-equipment record belongs to one work order."
+        },
+        {
+          "parent": "Asset",
+          "child": "Work Order Asset",
+          "parent_end": "1",
+          "child_end": "0..N",
+          "foreign_key": "asset_id",
+          "note": "Each serviced-equipment record belongs to one asset."
+        },
+        {
+          "parent": "Work Order",
+          "child": "Parts Usage",
+          "parent_end": "1",
+          "child_end": "0..N",
+          "foreign_key": "work_order_id",
+          "note": "Each parts-usage record belongs to one work order."
+        },
+        {
+          "parent": "Part",
+          "child": "Parts Usage",
+          "parent_end": "1",
+          "child_end": "0..N",
+          "foreign_key": "part_id",
+          "note": "Each parts-usage record belongs to one part."
+        },
+        {
+          "parent": "Work Order",
+          "child": "Time Entry",
+          "parent_end": "1",
+          "child_end": "0..N",
+          "foreign_key": "work_order_id",
+          "note": "Each time entry belongs to one work order."
+        },
+        {
+          "parent": "Technician",
+          "child": "Time Entry",
+          "parent_end": "1",
+          "child_end": "0..N",
+          "foreign_key": "technician_id",
+          "note": "Each time entry belongs to one technician."
+        },
+        {
+          "parent": "Work Order",
+          "child": "Invoice",
+          "parent_end": "1",
+          "child_end": "0..N",
+          "foreign_key": "work_order_id",
+          "note": "Each invoice belongs to one work order."
+        },
+        {
+          "parent": "Invoice",
+          "child": "Invoice Line",
+          "parent_end": "1",
+          "child_end": "1..N",
+          "foreign_key": "invoice_id",
+          "note": "Each invoice line belongs to one invoice and an issued invoice has at least one line."
+        },
+        {
+          "parent": "Invoice",
+          "child": "Invoice Adjustment",
+          "parent_end": "1",
+          "child_end": "0..N",
+          "foreign_key": "invoice_id",
+          "note": "Each adjustment belongs to one invoice."
+        },
+        {
+          "parent": "Payment",
+          "child": "Payment Allocation",
+          "parent_end": "1",
+          "child_end": "0..N",
+          "foreign_key": "payment_id",
+          "note": "Each allocation belongs to one payment."
+        },
+        {
+          "parent": "Invoice",
+          "child": "Payment Allocation",
+          "parent_end": "1",
+          "child_end": "0..N",
+          "foreign_key": "invoice_id",
+          "note": "Each allocation belongs to one invoice."
+        },
+        {
+          "parent": "Service Request",
+          "child": "Request Coverage Decision",
+          "parent_end": "1",
+          "child_end": "0..N",
+          "foreign_key": "request_id",
+          "note": "Each coverage decision belongs to one request."
+        },
+        {
+          "parent": "Agreement Asset",
+          "child": "Request Coverage Decision",
+          "parent_end": "1",
+          "child_end": "0..N",
+          "foreign_key": "agreement_asset_id",
+          "note": "Each coverage decision belongs to one covered agreement-asset record."
+        }
       ],
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
+      "must_appear_in_image": true
     },
     {
-      "id": "relation_types",
-      "description": "The diagram should distinguish or clearly imply calls, reads, publishes, consumes, and writes where relevant.",
-      "source": "env/architecture_notes.md + env/dependency_config.yaml",
-      "importance": "major",
+      "id": "required_business_fields",
+      "description": "Single approved non-key business fact retained on each controlled bridge or evidence entity.",
+      "source": "baseline model + active request and deployment layers",
+      "importance": "critical",
+      "expected_value": {
+        "Agreement Asset": "coverage_level",
+        "Invoice Adjustment": "adjustment_amount",
+        "Parts Usage": "quantity",
+        "Payment Allocation": "applied_amount",
+        "Request Commitment Event": "commitment_type",
+        "Request Coverage Decision": "decision_state",
+        "Technician Skill": "proficiency_level",
+        "Visit Signature": "acceptance_role",
+        "Work Order Asset": "service_role",
+        "Work Order Assignment": "assignment_role",
+        "Work Order Checklist": "completion_state"
+      },
+      "must_appear_in_image": true
+    },
+    {
+      "id": "key_display",
+      "description": "Current PK and relationship-driving FK set for every active entity.",
+      "source": "current entities and relationships",
+      "importance": "critical",
+      "expected_value": {
+        "Agreement Asset": {
+          "pk": "agreement_asset_id",
+          "fks": [
+            "agreement_id",
+            "asset_id"
+          ]
+        },
+        "Asset": {
+          "pk": "asset_id",
+          "fks": [
+            "location_id"
+          ]
+        },
+        "Customer": {
+          "pk": "customer_id",
+          "fks": []
+        },
+        "Customer Contact": {
+          "pk": "contact_id",
+          "fks": [
+            "customer_id"
+          ]
+        },
+        "Service Agreement": {
+          "pk": "agreement_id",
+          "fks": [
+            "customer_id"
+          ]
+        },
+        "Service Location": {
+          "pk": "location_id",
+          "fks": [
+            "customer_id"
+          ]
+        },
+        "Request Commitment Event": {
+          "pk": "request_commitment_event_id",
+          "fks": [
+            "request_id"
+          ]
+        },
+        "Request Coverage Decision": {
+          "pk": "coverage_decision_id",
+          "fks": [
+            "request_id",
+            "agreement_asset_id"
+          ]
+        },
+        "Service Request": {
+          "pk": "request_id",
+          "fks": [
+            "location_id",
+            "requested_by_contact_id",
+            "agreement_id"
+          ]
+        },
+        "Skill": {
+          "pk": "skill_id",
+          "fks": []
+        },
+        "Technician": {
+          "pk": "technician_id",
+          "fks": []
+        },
+        "Technician Skill": {
+          "pk": "technician_skill_id",
+          "fks": [
+            "technician_id",
+            "skill_id"
+          ]
+        },
+        "Work Order": {
+          "pk": "work_order_id",
+          "fks": [
+            "request_id"
+          ]
+        },
+        "Work Order Assignment": {
+          "pk": "assignment_id",
+          "fks": [
+            "work_order_id",
+            "technician_id"
+          ]
+        },
+        "Part": {
+          "pk": "part_id",
+          "fks": []
+        },
+        "Parts Usage": {
+          "pk": "parts_usage_id",
+          "fks": [
+            "work_order_id",
+            "part_id"
+          ]
+        },
+        "Time Entry": {
+          "pk": "time_entry_id",
+          "fks": [
+            "work_order_id",
+            "technician_id"
+          ]
+        },
+        "Visit": {
+          "pk": "visit_id",
+          "fks": [
+            "work_order_id",
+            "technician_id"
+          ]
+        },
+        "Visit Note": {
+          "pk": "visit_note_id",
+          "fks": [
+            "visit_id"
+          ]
+        },
+        "Visit Signature": {
+          "pk": "visit_signature_id",
+          "fks": [
+            "visit_id"
+          ]
+        },
+        "Work Order Asset": {
+          "pk": "work_order_asset_id",
+          "fks": [
+            "work_order_id",
+            "asset_id"
+          ]
+        },
+        "Work Order Checklist": {
+          "pk": "work_order_checklist_id",
+          "fks": [
+            "work_order_id"
+          ]
+        },
+        "Invoice": {
+          "pk": "invoice_id",
+          "fks": [
+            "work_order_id"
+          ]
+        },
+        "Invoice Adjustment": {
+          "pk": "invoice_adjustment_id",
+          "fks": [
+            "invoice_id"
+          ]
+        },
+        "Invoice Line": {
+          "pk": "invoice_line_id",
+          "fks": [
+            "invoice_id"
+          ]
+        },
+        "Payment": {
+          "pk": "payment_id",
+          "fks": []
+        },
+        "Payment Allocation": {
+          "pk": "payment_allocation_id",
+          "fks": [
+            "payment_id",
+            "invoice_id"
+          ]
+        }
+      },
+      "must_appear_in_image": true
+    },
+    {
+      "id": "inactive_or_reverted_artifacts",
+      "description": "Artifacts that must not be shown as current because their request or production activation did not survive.",
+      "source": "request events + deployment unit events + atomic-group rules",
+      "importance": "critical",
       "expected_value": [
-        "calls",
-        "reads",
-        "publishes",
-        "consumes",
-        "writes"
+        "Work Order Close Gate",
+        "work_order_close_gate_id",
+        "gate_state",
+        "removal of Service Request.agreement_id",
+        "removal of Service Agreement -> Service Request",
+        "Payment Allocation.allocated_amount",
+        "Visit Signature.signer_role"
       ],
-      "must_appear_in_image": true,
-      "evaluation_role": "major_required"
+      "must_appear_in_image": false
     },
     {
-      "id": "exclude_recommendation_path",
-      "description": "Recommendation Service exists but should not be shown as part of checkout flow.",
-      "source": "env/architecture_notes.md",
-      "importance": "major",
-      "expected_value": "Recommendation Service in checkout path",
-      "forbidden_patterns": [
-        "\\brecommendation\\s+service\\b[^.!?\\n;]{0,100}\\bcheckout\\s+(path|flow)\\b",
-        "\\bcheckout\\s+(path|flow)\\b[^.!?\\n;]{0,100}\\brecommendation\\s+service\\b",
-        "\\brecommendation\\s+service\\b[^.!?\\n;]{0,100}\\b(checkout\\s+api|inventory\\s+service|payment\\s+gateway|order\\s+queue)\\b",
-        "\\bproduct\\s+catalog\\b[^.!?\\n;]{0,100}\\bcheckout\\b"
+      "id": "inactive_proposals",
+      "description": "Other inactive, out-of-scope, future, staging, rejected, withdrawn, or unverified proposals.",
+      "source": "all correction and deployment control records",
+      "importance": "important",
+      "expected_value": [
+        "Invoice Settlement",
+        "direct Invoice -> Payment",
+        "Work Order Dependency",
+        "Service Request.agreement_asset_id",
+        "Customer Acceptance",
+        "Payment Method",
+        "Refund",
+        "Request Comment",
+        "remove Invoice Adjustment",
+        "Payment Allocation.allocation_status",
+        "direct Work Order -> Technician",
+        "Work Order Ready Check",
+        "other deployment waves",
+        "staging-only units",
+        "canary-only units",
+        "post-cutoff activation"
       ],
-      "allowed_patterns": [
-        "\\b(do\\s+not|don't|exclude|excluded|unrelated|not)\\b[^.!?\\n;]{0,100}\\brecommendation\\s+service\\b",
-        "\\brecommendation\\s+service\\b[^.!?\\n;]{0,100}\\b(not|excluded|unrelated)\\b[^.!?\\n;]{0,40}\\bcheckout\\s+(path|flow)\\b"
-      ],
-      "must_not_appear_in_image": true,
-      "evaluation_role": "negative_only"
+      "must_appear_in_image": false
     }
-  ],
-  "calculation_notes": "Use architecture_notes.md for prose relationships and dependency_config.yaml for layer and relation confirmation. The checkout path excludes Recommendation Service even though it has valid dependencies elsewhere."
+  ]
 }

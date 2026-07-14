@@ -3,127 +3,402 @@
   "task_type": "data_insight",
   "facts": [
     {
-      "id": "warehouse_quality_score_leader",
-      "description": "Top fulfillment cell by weighted quality_priority_score after exclusions, profile mapping, normalization, and tie-breaks.",
-      "source": "env/fulfillment_panel.csv + env/cell_profiles.csv + env/quality_priority_rules.json",
+      "id": "window_and_cutoff",
+      "description": "Complete-week cutoff, review and baseline windows, and rejected later weeks",
+      "source": "env/warehouse_quality_review.xlsx Weekly Operations + Scorecard Method",
       "importance": "critical",
-      "expected_value": [
-        "Pick East: 82.9",
-        "Pick East top score"
-      ],
-      "canonical_answer": "Pick East is the top priority with score 82.9",
-      "semantic_acceptance": "Accept if Pick East is shown as the highest priority with score near 82.9.",
+      "canonical_answer": "Cutoff week 2027-01-03. Review window 2026-11-15 through 2027-01-03. Baseline window 2026-09-20 through 2026-11-08. Weeks ending 2027-01-10 and 2027-01-17 are incomplete and excluded.",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "warehouse_quality_lowest_score",
-      "description": "Lowest-risk or lowest-priority fulfillment cell by weighted score.",
-      "source": "env/fulfillment_panel.csv + env/cell_profiles.csv + env/quality_priority_rules.json",
+      "id": "network_reconciliation",
+      "description": "Network review-window shipped, accepted, gap and gap rate",
+      "source": "env/warehouse_quality_review.xlsx",
       "importance": "critical",
-      "expected_value": [
-        "Bulk Bay: 19.0",
-        "Bulk Bay lowest score"
-      ],
-      "canonical_answer": "Bulk Bay is the lowest-ranked entity with score 19.0",
-      "semantic_acceptance": "Accept if Bulk Bay is identified as the lowest score entity.",
+      "expected_value": {
+        "shipped_standard_units": 95363.2,
+        "accepted_standard_units": 89753.8,
+        "gap_standard_units": 5609.4,
+        "gap_rate_pct": 5.88
+      },
+      "canonical_answer": "Review totals: 95,363.2 shipped standard units, 89,753.8 accepted standard units, 5,609.4 gap standard units, 5.88% gap rate.",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "warehouse_quality_fastest_gap_change",
-      "description": "Entity with the largest analysis-period gap-rate increase versus baseline.",
-      "source": "env/fulfillment_panel.csv + env/quality_priority_rules.json",
+      "id": "raw_leader",
+      "description": "Highest raw priority score and current action coverage",
+      "source": "env/warehouse_quality_review.xlsx + Intervention Register",
       "importance": "critical",
-      "expected_value": [
-        "Pick East: 2.7 pp",
-        "Pick East fastest gap-rate change"
-      ],
-      "canonical_answer": "Pick East has the fastest gap-rate increase at about 2.7 percentage points",
-      "semantic_acceptance": "Accept if Pick East is identified as largest gap-rate increase.",
+      "canonical_answer": "Pick East (E03) is the raw leader at 97.6 and is covered by Approved / Active action QI-2714.",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "warehouse_quality_gap_volume_hotspot",
-      "description": "Entity with the highest analysis-period gap volume.",
-      "source": "env/fulfillment_panel.csv",
+      "id": "intervention_choice",
+      "description": "Highest-scoring uncovered area for the one new intervention",
+      "source": "env/warehouse_quality_review.xlsx + Intervention Register",
       "importance": "critical",
-      "expected_value": [
-        "Cold Chain: 540",
-        "Cold Chain highest gap volume"
-      ],
-      "canonical_answer": "Cold Chain has the highest analysis-period gap volume at 540",
-      "semantic_acceptance": "Accept if Cold Chain is shown as the gap-volume hotspot near 540.",
+      "canonical_answer": "Cold Chain (E05) is the new intervention at 93.0; it is uncovered and leads the watchlist choice by 6.1 score points.",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "warehouse_quality_incident_rate_hotspot",
-      "description": "Entity with the highest analysis-period incident rate per 1,000 scale units.",
-      "source": "env/fulfillment_panel.csv + env/cell_profiles.csv",
+      "id": "watchlist_choice",
+      "description": "Next highest-scoring uncovered area",
+      "source": "env/warehouse_quality_review.xlsx + Intervention Register",
       "importance": "critical",
-      "expected_value": [
-        "Returns South: 49.6 per 1,000",
-        "Returns South incident-rate hotspot"
-      ],
-      "canonical_answer": "Returns South has the highest incident rate at about 49.6 per 1,000",
-      "semantic_acceptance": "Accept if Returns South is identified as incident-rate hotspot.",
+      "canonical_answer": "Robotics Cell (E13) is the watchlist choice at 87.0; it is uncovered and trails Cold Chain by 6.1 points.",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "warehouse_quality_group_gap_hotspot",
-      "description": "Warehouse Zone with the highest aggregate analysis-period gap volume.",
-      "source": "env/fulfillment_panel.csv + env/cell_profiles.csv",
+      "id": "high_priority_set",
+      "description": "High-priority membership and coverage split",
+      "source": "env/warehouse_quality_review.xlsx + Intervention Register",
       "importance": "critical",
       "expected_value": [
-        "West: 996",
-        "West group hotspot"
+        {
+          "cell_id": "E03",
+          "cell_name": "Pick East",
+          "priority_score": 97.6,
+          "covered": true
+        },
+        {
+          "cell_id": "E05",
+          "cell_name": "Cold Chain",
+          "priority_score": 93.0,
+          "covered": false
+        },
+        {
+          "cell_id": "E13",
+          "cell_name": "Robotics Cell",
+          "priority_score": 87.0,
+          "covered": false
+        },
+        {
+          "cell_id": "E04",
+          "cell_name": "Returns South",
+          "priority_score": 79.6,
+          "covered": true
+        }
       ],
-      "canonical_answer": "West is the group hotspot at 996",
-      "semantic_acceptance": "Accept if West is identified as the leading group hotspot.",
+      "canonical_answer": "Four areas are high priority: Pick East (E03), Cold Chain (E05), Robotics Cell (E13), and Returns South (E04). Pick East and Returns South are covered; Cold Chain and Robotics Cell remain intervention-eligible. Count split: 4 high, 2 covered, 2 eligible.",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "warehouse_quality_threshold_count",
-      "description": "Count of entities at or above the high-priority score threshold.",
-      "source": "env/quality_priority_rules.json + env/fulfillment_panel.csv + env/cell_profiles.csv",
+      "id": "ranking_top7",
+      "description": "Ranks 1 through 7 with scores and action coverage",
+      "source": "env/warehouse_quality_review.xlsx",
       "importance": "critical",
       "expected_value": [
-        "2 high-priority entities",
-        "threshold count 2"
+        {
+          "rank": 1,
+          "cell_id": "E03",
+          "cell_name": "Pick East",
+          "priority_score": 97.6,
+          "action_status": "Approved / Active (QI-2714)"
+        },
+        {
+          "rank": 2,
+          "cell_id": "E05",
+          "cell_name": "Cold Chain",
+          "priority_score": 93.0,
+          "action_status": "No current approved action"
+        },
+        {
+          "rank": 3,
+          "cell_id": "E13",
+          "cell_name": "Robotics Cell",
+          "priority_score": 87.0,
+          "action_status": "No current approved action"
+        },
+        {
+          "rank": 4,
+          "cell_id": "E04",
+          "cell_name": "Returns South",
+          "priority_score": 79.6,
+          "action_status": "Approved / Monitoring (QI-2689)"
+        },
+        {
+          "rank": 5,
+          "cell_id": "E07",
+          "cell_name": "Crossdock West",
+          "priority_score": 53.5,
+          "action_status": "No current approved action"
+        },
+        {
+          "rank": 6,
+          "cell_id": "E12",
+          "cell_name": "Export Dock",
+          "priority_score": 46.9,
+          "action_status": "No current approved action"
+        },
+        {
+          "rank": 7,
+          "cell_id": "E08",
+          "cell_name": "Small Parcel",
+          "priority_score": 41.6,
+          "action_status": "No current approved action"
+        }
       ],
-      "canonical_answer": "2 entities meet the high-priority threshold",
-      "semantic_acceptance": "Accept if the image states that 2 entities are high priority under the configured threshold.",
+      "canonical_answer": "Pick East (E03) 97.6 > Cold Chain (E05) 93.0 > Robotics Cell (E13) 87.0 > Returns South (E04) 79.6 > Crossdock West (E07) 53.5 > Export Dock (E12) 46.9 > Small Parcel (E08) 41.6. Coverage: Pick East is Approved/Active; Returns South is Approved/Monitoring; the other five are uncovered.",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "warehouse_quality_distractor_exclusions",
-      "description": "Do not use forecast, subtotal, test, or old-period rows as final metrics.",
-      "source": "env/fulfillment_panel.csv + env/quality_priority_rules.json",
+      "id": "ranking_bottom7",
+      "description": "Ranks 8 through 14 and low-priority comparison",
+      "source": "env/warehouse_quality_review.xlsx",
+      "importance": "critical",
+      "expected_value": [
+        {
+          "rank": 8,
+          "cell_id": "E11",
+          "cell_name": "Parcel Merge",
+          "priority_score": 35.6,
+          "action_status": "No current approved action"
+        },
+        {
+          "rank": 9,
+          "cell_id": "E02",
+          "cell_name": "Sort Central",
+          "priority_score": 31.4,
+          "action_status": "Approved / Monitoring (QI-2655)"
+        },
+        {
+          "rank": 10,
+          "cell_id": "E10",
+          "cell_name": "Vendor Intake",
+          "priority_score": 25.5,
+          "action_status": "No current approved action"
+        },
+        {
+          "rank": 11,
+          "cell_id": "E01",
+          "cell_name": "Pack North",
+          "priority_score": 24.0,
+          "action_status": "No current approved action"
+        },
+        {
+          "rank": 12,
+          "cell_id": "E14",
+          "cell_name": "Oversize Lane",
+          "priority_score": 18.7,
+          "action_status": "No current approved action"
+        },
+        {
+          "rank": 13,
+          "cell_id": "E09",
+          "cell_name": "Reserve Storage",
+          "priority_score": 10.1,
+          "action_status": "No current approved action"
+        },
+        {
+          "rank": 14,
+          "cell_id": "E06",
+          "cell_name": "Bulk Bay",
+          "priority_score": 0.0,
+          "action_status": "No current approved action"
+        }
+      ],
+      "canonical_answer": "Parcel Merge (E11) 35.6 > Sort Central (E02) 31.4 > Vendor Intake (E10) 25.5 > Pack North (E01) 24.0 > Oversize Lane (E14) 18.7 > Reserve Storage (E09) 10.1 > Bulk Bay (E06) 0.0. Sort Central is Approved/Monitoring; the other six are uncovered. Bulk Bay is the lowest comparison at 0.0.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "top3_gap_comparison",
+      "description": "Baseline and review gap rates for the top three raw-risk areas",
+      "source": "env/warehouse_quality_review.xlsx",
+      "importance": "critical",
+      "expected_value": [
+        {
+          "cell_id": "E03",
+          "cell_name": "Pick East",
+          "baseline_gap_rate_pct": 4.2,
+          "review_gap_rate_pct": 9.0,
+          "change_pp": 4.8
+        },
+        {
+          "cell_id": "E05",
+          "cell_name": "Cold Chain",
+          "baseline_gap_rate_pct": 5.1,
+          "review_gap_rate_pct": 9.2,
+          "change_pp": 4.1
+        },
+        {
+          "cell_id": "E13",
+          "cell_name": "Robotics Cell",
+          "baseline_gap_rate_pct": 4.1,
+          "review_gap_rate_pct": 8.51,
+          "change_pp": 4.41
+        }
+      ],
+      "canonical_answer": "Pick East (E03): 4.20% → 9.00% (+4.80 pp); Cold Chain (E05): 5.10% → 9.20% (+4.10 pp); Robotics Cell (E13): 4.10% → 8.51% (+4.41 pp)",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "largest_gap_volume",
+      "description": "Largest review gap volume, network share and repeat breaches",
+      "source": "env/warehouse_quality_review.xlsx",
+      "importance": "critical",
+      "canonical_answer": "Cold Chain (E05): 808.2 standard-unit gap, 14.4% of network gap, and 7/8 review weeks above its control limit.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "highest_incident_pressure",
+      "description": "Highest severity-weighted production incident rate",
+      "source": "env/warehouse_quality_review.xlsx Incident Tickets + Cell Profile History",
+      "importance": "critical",
+      "canonical_answer": "Returns South (E04): 68.2 severity points per 1,000 scale units, from 8 valid tickets totaling 27 severity points over a 396 scale-unit denominator.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "zone_hotspots",
+      "description": "Top two effective-zone gap totals and margin",
+      "source": "env/warehouse_quality_review.xlsx",
+      "importance": "critical",
+      "expected_value": [
+        {
+          "rank": 1,
+          "zone": "West",
+          "gap_standard_units": 1733.3
+        },
+        {
+          "rank": 2,
+          "zone": "East",
+          "gap_standard_units": 1136.6
+        },
+        {
+          "margin": 596.6
+        }
+      ],
+      "canonical_answer": "West is first at 1,733.3 standard gap units; East is second at 1,136.6; West leads by 596.6.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "material_profile_transitions",
+      "description": "Review-period conversion and zone transitions",
+      "source": "env/warehouse_quality_review.xlsx Cell Profile History",
+      "importance": "critical",
+      "expected_value": [
+        {
+          "cell_id": "E05",
+          "cell_name": "Cold Chain",
+          "effective_date": "2026-12-06",
+          "change": "standard_units_per_reported 10 → 12",
+          "post_change_review_weeks": 5
+        },
+        {
+          "cell_id": "E13",
+          "cell_name": "Robotics Cell",
+          "effective_date": "2026-11-29",
+          "change": "standard_units_per_reported 1 → 1.25",
+          "post_change_review_weeks": 6
+        },
+        {
+          "cell_id": "E07",
+          "cell_name": "Crossdock West",
+          "effective_date": "2026-12-13",
+          "change": "warehouse_zone Central → West",
+          "post_change_review_weeks": 4
+        },
+        {
+          "cell_id": "E12",
+          "cell_name": "Export Dock",
+          "effective_date": "2026-12-27",
+          "change": "warehouse_zone South → East",
+          "post_change_review_weeks": 2
+        }
+      ],
+      "canonical_answer": "Cold Chain (E05) standard_units_per_reported 10 → 12 effective 2026-12-06, 5 review weeks on new profile; Robotics Cell (E13) standard_units_per_reported 1 → 1.25 effective 2026-11-29, 6 review weeks on new profile; Crossdock West (E07) warehouse_zone Central → West effective 2026-12-13, 4 review weeks on new profile; Export Dock (E12) warehouse_zone South → East effective 2026-12-27, 2 review weeks on new profile",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "audit_counts",
+      "description": "Record-selection and incident-filtering audit counts",
+      "source": "env/warehouse_quality_review.xlsx",
+      "importance": "critical",
+      "expected_value": {
+        "selected_records": 224,
+        "earlier_approved_revisions_discarded": 73,
+        "nonapproved_fulfillment_ignored": 59,
+        "nonfulfillment_rows_excluded": 108,
+        "review_date_incident_rows": 216,
+        "valid_incidents": 76,
+        "rejected_incidents": 140
+      },
+      "canonical_answer": "Across baseline plus review: 224 selected area-week records; 73 earlier approved revisions discarded; 59 non-approved Fulfillment revisions ignored; 108 non-Fulfillment rows excluded. Inside the review dates: 216 incident rows, 76 valid and 140 rejected.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "methodology",
+      "description": "Priority, severity, threshold and tie-break conventions",
+      "source": "env/warehouse_quality_review.xlsx Scorecard Method",
+      "importance": "critical",
+      "canonical_answer": "Priority weights are 30% review gap rate, 20% gap-rate worsening, 20% severity-weighted incident rate, 15% average criticality, and 15% repeat-breach share. Severity weights are Minor 1, Major 2, Critical 4. High is at least 75.0; Watch is 55.0–74.9. Tie-break: rounded score, review gap volume, average criticality, then area name.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "packet_distractors",
+      "description": "Working packet values must not be used as final scorecard answers.",
+      "source": "env/ops_packet_extract.csv",
       "importance": "major",
-      "expected_value": [
-        "invalid panel record used"
-      ],
       "forbidden_patterns": [
-        "\\b99,?999\\b",
-        "\\b88,?888\\b",
-        "\\b77,?777\\b",
-        "\\bforecast\\b[^.!?\\n;]{0,80}\\b(result|answer|leader|score|gap)\\b",
-        "\\bsubtotal\\b[^.!?\\n;]{0,80}\\b(result|answer|leader|score|gap)\\b",
-        "\\bold[_ -]?period\\b[^.!?\\n;]{0,80}\\b(result|answer|leader|score|gap)\\b"
-      ],
-      "allowed_patterns": [
-        "\\b(exclude|excluded|excluding|ignore|ignored|not\\s+used)\\b[^.!?\\n;]{0,140}\\b(forecast|subtotal|old)"
+        "\\b94\\.8\\b",
+        "\\b95\\.1\\b",
+        "\\b89\\.9\\b",
+        "\\b84\\.2\\b",
+        "\\b6,?180\\.5\\b",
+        "\\b1,?890\\.7\\b",
+        "\\b101,?844\\b",
+        "\\b91\\b"
       ],
       "must_not_appear_in_image": true,
-      "canonical_answer": "Invalid panel rows must not be used as final metrics.",
-      "semantic_acceptance": "Reject or cap if invalid rows are treated as final metrics. Exclusion notes are allowed.",
+      "canonical_answer": "Do not use early cuts, reconciliation controls, planning scenarios, draft action wording or prior-cycle values as final results.",
       "evaluation_role": "negative_only"
     }
   ],
-  "calculation_notes": "Join fulfillment_panel.csv to cell_profiles.csv by entity_id. Use only actual closed records. Baseline months are 2026-07 through 2026-09; analysis months are 2026-10 through 2026-12. Gap volume is shipped_units minus accepted_units. Gap rate is gap divided by shipped_units. quality_priority_score min-max normalizes analysis gap rate, gap-rate change, incident rate per 1,000, and criticality, then applies configured weights. Tie-break order is rounded score, analysis gap volume, criticality, and entity name. Top score entity is Pick East at 82.9. Lowest score entity is Bulk Bay at 19.0. Fastest gap-rate increase is Pick East at 2.7 percentage points. Gap-volume hotspot is Cold Chain at 540. Incident-rate hotspot is Returns South at 49.6 per 1,000. Group hotspot is West at 996. High-priority count is 2."
+  "calculation_notes": {
+    "latest_complete_week": "2027-01-03",
+    "review_window": [
+      "2026-11-15",
+      "2027-01-03"
+    ],
+    "baseline_window": [
+      "2026-09-20",
+      "2026-11-08"
+    ],
+    "active_area_count": 14,
+    "weights": {
+      "review_gap_rate": 0.3,
+      "gap_rate_worsening": 0.2,
+      "severity_weighted_incident_rate": 0.2,
+      "average_criticality": 0.15,
+      "repeat_breach_share": 0.15
+    },
+    "severity_weights": {
+      "Minor": 1,
+      "Major": 2,
+      "Critical": 4
+    },
+    "priority_thresholds": {
+      "high": 75.0,
+      "watch": 55.0
+    },
+    "selected_record_rule": "Highest Closed and Approved Fulfillment revision per active area-week.",
+    "profile_rule": "Use effective-dated profile for name, zone, unit conversion, exposure, criticality and control limit.",
+    "incident_rule": "Production Quality Defect/Rework; Confirmed/Closed; not duplicate; review-window date; severity-weighted.",
+    "current_action_rule": "Approved Active/Monitoring, approved and started by cutoff, not closed by cutoff.",
+    "tie_break": "Rounded score, review gap volume, average review criticality, area name."
+  }
 }

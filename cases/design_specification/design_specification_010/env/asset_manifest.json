@@ -1,28 +1,28 @@
 {
   "candidate_assets": [
     {
-      "id": "current_matte_oat_kettle_packshot",
+      "id": "current_portal_checkin_card",
       "role": "hero",
-      "allowed_use": "main current packaging/product image",
+      "allowed_use": "main patient portal card for email header",
       "current_campaign_allowed": true
     },
     {
-      "id": "old_chrome_kettle_packshot",
-      "role": "archive",
-      "allowed_use": "old finish; not current launch",
-      "current_campaign_allowed": false
-    },
-    {
-      "id": "energy_star_like_badge",
-      "role": "restricted",
-      "allowed_use": "not certified; do not use",
-      "current_campaign_allowed": false
-    },
-    {
-      "id": "price_badge_launch",
+      "id": "care_team_photo_secondary",
       "role": "support",
-      "allowed_use": "small launch price badge",
+      "allowed_use": "secondary support image only; not the hero",
       "current_campaign_allowed": true
+    },
+    {
+      "id": "old_waiting_room_poster",
+      "role": "archive",
+      "allowed_use": "old vertical clinic poster",
+      "current_campaign_allowed": false
+    },
+    {
+      "id": "medical_aura_badge",
+      "role": "restricted",
+      "allowed_use": "prohibited cure/implied clinical outcome cue",
+      "current_campaign_allowed": false
     }
   ],
   "selection_rule": "Use only assets with current_campaign_allowed=true and allowed_use matching the current platform and visual_rules.json."

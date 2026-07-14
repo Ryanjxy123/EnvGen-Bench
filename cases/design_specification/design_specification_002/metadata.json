@@ -2,50 +2,46 @@
   "case_id": "design_specification_002",
   "task_type": "design_specification",
   "web_policy": "closed_env",
-  "target_image_type": "admissions_story_image",
-  "difficulty": "hard",
+  "target_image_type": "paid_instagram_story_event_creative",
+  "difficulty": "very_hard",
+  "reference_date": "2026-07-01",
+  "creative_freeze": "2026-06-29T17:00:00-07:00",
   "env_files": [
     {
-      "path": "env/latest_update.md",
-      "role": "Latest campaign update with authoritative copy, replacements, and priority order",
-      "format": "md",
-      "origin": "generated",
-      "reproducibility_note": "Generated during design_specification difficulty optimization"
+      "path": "env/Open_Studio_Day_Creative_Brief_v5.0.docx",
+      "role": "Final campaign copy, delivery context, creative freeze, asset-resolution rules, and exclusions",
+      "format": "docx",
+      "origin": "generated"
     },
     {
-      "path": "env/platform_specs.txt",
-      "role": "Current platform size, safe-area, hierarchy, contrast, and placement constraints",
-      "format": "txt",
-      "origin": "generated",
-      "reproducibility_note": "Generated during design_specification difficulty optimization"
+      "path": "env/Northstar_Admissions_Visual_Standards_2026.pdf",
+      "role": "Brand identity, palette, logo treatment, hero crop, hierarchy, contrast, and legacy boundaries",
+      "format": "pdf",
+      "origin": "generated"
     },
     {
-      "path": "env/visual_rules.json",
-      "role": "Current palette, design rules, hero requirements, style constraints, and conditional rules",
-      "format": "json",
-      "origin": "generated",
-      "reproducibility_note": "Generated during design_specification difficulty optimization"
+      "path": "env/Paid_Social_Specs.xlsx",
+      "role": "Placement profiles and revision history; active profile must be resolved at creative freeze",
+      "format": "xlsx",
+      "origin": "generated"
     },
     {
-      "path": "env/asset_manifest.json",
-      "role": "Allowed current logo, hero, icon, badge, or helper assets",
-      "format": "json",
-      "origin": "generated",
-      "reproducibility_note": "Generated during design_specification difficulty optimization"
+      "path": "env/Creative_Asset_Register.xlsx",
+      "role": "Asset index plus approval history, usage matrix, rights, and version-control records",
+      "format": "xlsx",
+      "origin": "generated"
     },
     {
-      "path": "env/deprecated_assets.json",
-      "role": "Deprecated copy, colors, claims, logos, templates, and plausible wrong assets that must not be active",
-      "format": "json",
-      "origin": "generated",
-      "reproducibility_note": "Generated during design_specification difficulty optimization"
+      "path": "env/asset_library/files/",
+      "role": "Opaque-named approved, expired, future, wrong-market, wrong-placement, legacy, and reference visual assets",
+      "format": "image_directory",
+      "origin": "mixed_generated_and_licensed"
     },
     {
-      "path": "env/brand_brief.md",
-      "role": "Compact admissions brand context replacing duplicate archive PDF material",
-      "format": "md",
-      "origin": "generated",
-      "reproducibility_note": "Generated during design_specification difficulty optimization"
+      "path": "env/Event_Activation_Register.xlsx",
+      "role": "Activation and session packages with high-similarity alternatives and latest-status-at-freeze histories",
+      "format": "xlsx",
+      "origin": "generated"
     }
   ],
   "source_policy": {
@@ -58,7 +54,27 @@
       "expected_facts.json",
       "scoring_checklist.json"
     ],
-    "web_usage_note": "Closed-env case: solve only from env files and task.md; do not use the web."
+    "web_usage_note": "Closed-env case. Use only task.md and env/."
   },
-  "notes": "Lightly optimized design-specification case with compact env, latest event update priority, Instagram Story constraints, current palette resolution, allowed assets, and deprecated admissions exclusions."
+  "data_scale": {
+    "asset_index_records": 280,
+    "approval_history_records": 350,
+    "usage_matrix_records": 280,
+    "rights_register_records": 280,
+    "version_control_records": 280,
+    "asset_library_files": 280,
+    "placement_profile_records": 96,
+    "placement_revision_records": 115,
+    "activation_package_records": 120,
+    "activation_status_records": 125,
+    "session_package_records": 120,
+    "session_status_records": 125
+  },
+  "difficulty_notes": [
+    "All asset filenames remain opaque and carry no campaign or version hint.",
+    "The active platform profile, activation package, session package, and four asset roles must be resolved independently at the creative freeze.",
+    "Near-identical pre-freeze superseded, post-freeze approved, wrong-market, wrong-venue, wrong-placement, and out-of-window records are present.",
+    "Activation and session package fields override conflicting base-brief fields, so copying the brief alone produces an internally inconsistent Story.",
+    "Grounded VQA checks exact factual package contents, asset identities, consistency, and exclusions; it does not award points for general visual attractiveness."
+  ]
 }

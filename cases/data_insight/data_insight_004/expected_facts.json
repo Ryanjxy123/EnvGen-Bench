@@ -3,127 +3,116 @@
   "task_type": "data_insight",
   "facts": [
     {
-      "id": "transit_reliability_score_leader",
-      "description": "Top route corridor by weighted reliability_risk_score after exclusions, profile mapping, normalization, and tie-breaks.",
-      "source": "env/route_panel.csv + env/route_profiles.csv + env/reliability_rules.json",
+      "id": "transit_reliability_attention_leader",
+      "description": "Route corridor with the highest service attention score after scope filtering, route lookup, signal indexing, and tie handling.",
+      "source": "env/route_reliability_review.xlsx + env/ops_review_notes.pdf",
       "importance": "critical",
       "expected_value": [
-        "Airport Rapid: 82.9",
-        "Airport Rapid top score"
+        "Hill Connector: 84.0"
       ],
-      "canonical_answer": "Airport Rapid is the top priority with score 82.9",
-      "semantic_acceptance": "Accept if Airport Rapid is shown as the highest priority with score near 82.9.",
+      "canonical_answer": "Hill Connector is the priority corridor with attention score 84.0",
+      "semantic_acceptance": "Accept if Hill Connector is shown as the priority corridor with score near 84.0.",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "transit_reliability_lowest_score",
-      "description": "Lowest-risk or lowest-priority route corridor by weighted score.",
-      "source": "env/route_panel.csv + env/route_profiles.csv + env/reliability_rules.json",
+      "id": "transit_reliability_lowest_attention",
+      "description": "Lowest-attention route corridor by service attention score.",
+      "source": "env/route_reliability_review.xlsx + env/ops_review_notes.pdf",
       "importance": "critical",
       "expected_value": [
-        "Harbor Shuttle: 19.0",
-        "Harbor Shuttle lowest score"
+        "Harbor Shuttle: 3.9"
       ],
-      "canonical_answer": "Harbor Shuttle is the lowest-ranked entity with score 19.0",
-      "semantic_acceptance": "Accept if Harbor Shuttle is identified as the lowest score entity.",
+      "canonical_answer": "Harbor Shuttle is the lowest-attention comparison at 3.9",
+      "semantic_acceptance": "Accept if Harbor Shuttle is identified as the lowest-attention or low-priority comparison.",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "transit_reliability_fastest_gap_change",
-      "description": "Entity with the largest analysis-period gap-rate increase versus baseline.",
-      "source": "env/route_panel.csv + env/reliability_rules.json",
+      "id": "transit_reliability_fastest_worsening",
+      "description": "Route corridor with the largest review-window reliability gap-rate increase versus baseline.",
+      "source": "env/route_reliability_review.xlsx + env/ops_review_notes.pdf",
       "importance": "critical",
       "expected_value": [
-        "Airport Rapid: 2.7 pp",
-        "Airport Rapid fastest gap-rate change"
+        "Hill Connector: 7.0 pp"
       ],
-      "canonical_answer": "Airport Rapid has the fastest gap-rate increase at about 2.7 percentage points",
-      "semantic_acceptance": "Accept if Airport Rapid is identified as largest gap-rate increase.",
+      "canonical_answer": "Hill Connector worsened fastest at about +7.0 percentage points",
+      "semantic_acceptance": "Accept if Hill Connector is shown as the fastest worsening corridor with about 7.0 percentage points.",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "transit_reliability_gap_volume_hotspot",
-      "description": "Entity with the highest analysis-period gap volume.",
-      "source": "env/route_panel.csv",
+      "id": "transit_reliability_gap_count_hotspot",
+      "description": "Route corridor with the largest review-window late-or-missed trip count.",
+      "source": "env/route_reliability_review.xlsx",
       "importance": "critical",
       "expected_value": [
-        "Market Spine: 540",
-        "Market Spine highest gap volume"
+        "Airport Rapid: 780"
       ],
-      "canonical_answer": "Market Spine has the highest analysis-period gap volume at 540",
-      "semantic_acceptance": "Accept if Market Spine is shown as the gap-volume hotspot near 540.",
+      "canonical_answer": "Airport Rapid has the largest review-window reliability gap at 780 trips",
+      "semantic_acceptance": "Accept if Airport Rapid is shown as the largest late-or-missed trip count near 780.",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "transit_reliability_incident_rate_hotspot",
-      "description": "Entity with the highest analysis-period incident rate per 1,000 scale units.",
-      "source": "env/route_panel.csv + env/route_profiles.csv",
+      "id": "transit_reliability_crowding_pressure_hotspot",
+      "description": "Route corridor with the highest review-window crowding report pressure per 10,000 typical monthly boardings.",
+      "source": "env/route_reliability_review.xlsx + env/ops_review_notes.pdf",
       "importance": "critical",
       "expected_value": [
-        "Hill Connector: 49.6 per 1,000",
-        "Hill Connector incident-rate hotspot"
+        "Campus Loop: 46.4 per 10,000"
       ],
-      "canonical_answer": "Hill Connector has the highest incident rate at about 49.6 per 1,000",
-      "semantic_acceptance": "Accept if Hill Connector is identified as incident-rate hotspot.",
+      "canonical_answer": "Campus Loop has the highest crowding pressure at about 46.4 per 10,000 boardings",
+      "semantic_acceptance": "Accept if Campus Loop is identified as the crowding pressure hotspot with approximately 46.4 per 10,000.",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "transit_reliability_group_gap_hotspot",
-      "description": "Service District with the highest aggregate analysis-period gap volume.",
-      "source": "env/route_panel.csv + env/route_profiles.csv",
+      "id": "transit_reliability_district_gap_leader",
+      "description": "Service district with the largest aggregate review-window reliability gap.",
+      "source": "env/route_reliability_review.xlsx Route Lookup + Service Log",
       "importance": "critical",
       "expected_value": [
-        "East: 996",
-        "East group hotspot"
+        "Core: 1080"
       ],
-      "canonical_answer": "East is the group hotspot at 996",
-      "semantic_acceptance": "Accept if East is identified as the leading group hotspot.",
+      "canonical_answer": "Core is the district gap leader at 1080 late-or-missed trips",
+      "semantic_acceptance": "Accept if Core is identified as the service district with the largest reliability gap near 1080.",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "transit_reliability_threshold_count",
-      "description": "Count of entities at or above the high-priority score threshold.",
-      "source": "env/reliability_rules.json + env/route_panel.csv + env/route_profiles.csv",
+      "id": "transit_reliability_attention_band_count",
+      "description": "Count of route corridors in the top attention band.",
+      "source": "env/route_reliability_review.xlsx + env/ops_review_notes.pdf",
       "importance": "critical",
       "expected_value": [
-        "2 high-priority entities",
-        "threshold count 2"
+        "3 corridors in top attention band"
       ],
-      "canonical_answer": "2 entities meet the high-priority threshold",
-      "semantic_acceptance": "Accept if the image states that 2 entities are high priority under the configured threshold.",
+      "canonical_answer": "3 corridors fall into the top attention band",
+      "semantic_acceptance": "Accept if the image states that 3 corridors are in the top attention band.",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "transit_reliability_distractor_exclusions",
-      "description": "Do not use forecast, subtotal, test, or old-period rows as final metrics.",
-      "source": "env/route_panel.csv + env/reliability_rules.json",
+      "id": "transit_reliability_context_exclusions",
+      "description": "Do not use forecast schedules, board rollups, special-event notes, weather exception notes, old comparisons, or dispatcher packet text as final service metrics.",
+      "source": "env/route_reliability_review.xlsx + env/dispatcher_packet.csv",
       "importance": "major",
       "expected_value": [
-        "invalid panel record used"
+        "context record used as final result"
       ],
       "forbidden_patterns": [
-        "\\b99,?999\\b",
-        "\\b88,?888\\b",
-        "\\b77,?777\\b",
-        "\\bforecast\\b[^.!?\\n;]{0,80}\\b(result|answer|leader|score|gap)\\b",
-        "\\bsubtotal\\b[^.!?\\n;]{0,80}\\b(result|answer|leader|score|gap)\\b",
-        "\\bold[_ -]?period\\b[^.!?\\n;]{0,80}\\b(result|answer|leader|score|gap)\\b"
+        "\\bforecast\\s+schedule\\b[^.!?\\n;]{0,80}\\b(result|answer|leader|score|gap|trip)\\b",
+        "\\b(board\\s+rollup|dispatcher\\s+summary|event\\s+note|weather\\s+note|June\\s+comparison)\\b[^.!?\\n;]{0,80}\\b(result|answer|leader|score|gap|trip)\\b"
       ],
       "allowed_patterns": [
-        "\\b(exclude|excluded|excluding|ignore|ignored|not\\s+used)\\b[^.!?\\n;]{0,140}\\b(forecast|subtotal|old)"
+        "\\b(background|context|not\\s+used|excluded|ignore|reference)\\b[^.!?\\n;]{0,140}\\b(forecast|rollup|event|weather|old|packet)"
       ],
       "must_not_appear_in_image": true,
-      "canonical_answer": "Invalid panel rows must not be used as final metrics.",
-      "semantic_acceptance": "Reject or cap if invalid rows are treated as final metrics. Exclusion notes are allowed.",
+      "canonical_answer": "Context rows and dispatcher packet text must not be used as final service metrics.",
+      "semantic_acceptance": "Reject or cap if context rows or packet extracts are treated as final service metrics. Benign context notes are allowed.",
       "evaluation_role": "negative_only"
     }
   ],
-  "calculation_notes": "Join route_panel.csv to route_profiles.csv by entity_id. Use only actual closed records. Baseline months are 2026-07 through 2026-09; analysis months are 2026-10 through 2026-12. Gap volume is scheduled_trips minus on_time_trips. Gap rate is gap divided by scheduled_trips. reliability_risk_score min-max normalizes analysis gap rate, gap-rate change, incident rate per 1,000, and criticality, then applies configured weights. Tie-break order is rounded score, analysis gap volume, criticality, and entity name. Top score entity is Airport Rapid at 82.9. Lowest score entity is Harbor Shuttle at 19.0. Fastest gap-rate increase is Airport Rapid at 2.7 percentage points. Gap-volume hotspot is Market Spine at 540. Incident-rate hotspot is Hill Connector at 49.6 per 1,000. Group hotspot is East at 996. High-priority count is 2."
+  "calculation_notes": "Use posted service rows from the Service Log for July-December 2026. Baseline is 2026-07 through 2026-09; review is 2026-10 through 2026-12. Join Route Lookup by route_id. Reliability gap is scheduled_trips minus on_time_trips. Gap rate is gap divided by scheduled_trips. Crowding pressure is review crowding_reports per 10,000 typical monthly boardings. Index review gap rate, gap-rate worsening, crowding pressure, and rider_sensitivity_index across current routes, then blend 40/25/20/15. Top attention route is Hill Connector at 84.0. Lowest attention route is Harbor Shuttle at 3.9. Fastest worsening is Hill Connector at 7.0 pp. Largest reliability gap is Airport Rapid at 780. Crowding pressure hotspot is Campus Loop at 46.4 per 10,000. District gap leader is Core at 1080. Top attention band count is 3."
 }

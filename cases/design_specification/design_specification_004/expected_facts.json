@@ -1,201 +1,88 @@
 {
   "case_id": "design_specification_004",
   "task_type": "design_specification",
-  "facts": [
-    {
-      "id": "primary_copy_01",
-      "description": "Required visible text: LedgerLite Cash Reserve",
-      "source": "env/latest_update.md",
-      "importance": "critical",
-      "expected_value": "LedgerLite Cash Reserve",
-      "canonical_answer": "LedgerLite Cash Reserve",
-      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image.",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
+  "reference_date": "2026-08-18",
+  "creative_freeze": "2026-08-14T17:00:00Z",
+  "resolved_profile": {
+    "profile_id": "PRF-057",
+    "placement": "Mobile Feed 4:5",
+    "market": "US-EN",
+    "canvas": "1080 x 1350",
+    "aspect_ratio": "4:5",
+    "safe_margin_px": 72,
+    "disclosure_min_px": 26
+  },
+  "resolved_release_package": {
+    "audience_line": "For households tracking 3–5 monthly bills.",
+    "availability_line": "Private beta opens 18 Aug 2026",
+    "badge_id": "BADGE-081",
+    "campaign": "Cash Reserve Beta",
+    "campaign_marker": "HOUSEHOLD PILOT · US",
+    "cta": "Request household beta access",
+    "disclosure_id": "DISC-081",
+    "headline": "Plan the bill week before payday.",
+    "landing_path": "ledgerlite.com/household-beta",
+    "package_id": "PKG-121",
+    "product_name": "LedgerLite Cash Reserve",
+    "support_line": "Review bills, set buffers, and schedule manual reminders."
+  },
+  "resolved_disclosure": "Planning tool only. Not a bank. No automatic transfers. No interest or investment advice.",
+  "resolved_badge": {
+    "line_1": "Manual review only",
+    "line_2": "No autopilot transfers"
+  },
+  "resolved_assets": {
+    "background": {
+      "asset_id": "AST-213",
+      "fingerprint": "light ledger field with three blue left rules, pale mint arcs upper-right, horizontal ledger lines, and navy bottom band"
     },
-    {
-      "id": "primary_copy_02",
-      "description": "Required visible text: Set aside cash without the spreadsheet.",
-      "source": "env/latest_update.md",
-      "importance": "critical",
-      "expected_value": "Set aside cash without the spreadsheet.",
-      "canonical_answer": "Set aside cash without the spreadsheet.",
-      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image.",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
+    "badge": {
+      "asset_id": "AST-283",
+      "fingerprint": "mint rounded badge with blue check icon and the two lines Manual review only / No autopilot transfers"
     },
-    {
-      "id": "primary_copy_03",
-      "description": "Required visible text: Buckets, reminders, and balances in one app.",
-      "source": "env/latest_update.md",
-      "importance": "critical",
-      "expected_value": "Buckets, reminders, and balances in one app.",
-      "canonical_answer": "Buckets, reminders, and balances in one app.",
-      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image.",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
+    "logo": {
+      "asset_id": "AST-037",
+      "fingerprint": "current horizontal LedgerLite mark with blue rounded-square ledger symbol, LedgerLite wordmark, and CASH ORGANIZATION descriptor"
     },
-    {
-      "id": "primary_copy_04",
-      "description": "Required visible text: Join the waitlist",
-      "source": "env/latest_update.md",
-      "importance": "critical",
-      "expected_value": "Join the waitlist",
-      "canonical_answer": "Join the waitlist",
-      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image.",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
+    "phone_ui": {
+      "asset_id": "AST-281",
+      "fingerprint": "Bill Week Beta; $2,730; Rent $1,180 at 74%; Utilities $520 at 49%; Buffer $1,030 at 64%; Utility review reminder dated Aug 24; Move $140 before payday"
     },
-    {
-      "id": "primary_copy_05",
-      "description": "Required visible text: Not a bank. No investment advice.",
-      "source": "env/latest_update.md",
-      "importance": "critical",
-      "expected_value": "Not a bank. No investment advice.",
-      "canonical_answer": "Not a bank. No investment advice.",
-      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image.",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "archive_not_active",
-      "description": "Archive-only finance claims and visuals must not become active final content.",
-      "source": "env/latest_update.md",
-      "importance": "critical",
-      "must_not_appear_in_image": true,
-      "forbidden_patterns": [
-        "Earn 8% automatically",
-        "Get guaranteed returns",
-        "LedgerLite Cash Boost"
-      ],
-      "allowed_patterns": [
-        "Earn 8% automatically.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
-        "Get guaranteed returns.{0,120}(deprecated|do not use|archived|retired|forbidden|old)"
-      ],
-      "evaluation_role": "negative_only"
-    },
-    {
-      "id": "canvas_size",
-      "description": "Final artifact uses the required pixel canvas.",
-      "source": "env/platform_specs.txt",
-      "importance": "critical",
-      "expected_value": "1080 x 1350 px",
-      "evaluation_role": "major_required"
-    },
-    {
-      "id": "aspect_ratio",
-      "description": "Final artifact uses the required aspect ratio.",
-      "source": "env/platform_specs.txt",
-      "importance": "critical",
-      "expected_value": "4:5",
-      "evaluation_role": "major_required"
-    },
-    {
-      "id": "safe_area",
-      "description": "Essential text, logo, and CTA stay inside required safe areas.",
-      "source": "env/platform_specs.txt",
-      "importance": "critical",
-      "expected_value": "72 px",
-      "semantic_acceptance": "Treat small placement deviations as normal checklist deductions, not hard-cap failures, if the content remains readable and broadly inside the safe area.",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "logo_position",
-      "description": "Current logo/wordmark appears in required position.",
-      "source": "env/platform_specs.txt; env/visual_rules.json; env/asset_manifest.json",
-      "importance": "critical",
-      "expected_value": "top-left safe area",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "cta_position",
-      "description": "CTA/helper appears in the required zone and safe area.",
-      "source": "env/platform_specs.txt; env/visual_rules.json",
-      "importance": "critical",
-      "expected_value": "lower third above disclosure",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "palette_tokens",
-      "description": "Current color tokens are used as dominant palette.",
-      "source": "env/visual_rules.json",
-      "importance": "major",
-      "expected_value": [
-        "#172033",
-        "#CFF7E8",
-        "#2F6BFF",
-        "#F7F8FA"
-      ],
-      "semantic_acceptance": "Exact pixel hex matching is not required, but deprecated palettes should not dominate.",
-      "evaluation_role": "major_required"
-    },
-    {
-      "id": "hero_component_1",
-      "description": "phone app interface visible",
-      "source": "env/visual_rules.json; env/asset_manifest.json",
-      "importance": "critical",
-      "expected_value": "phone app interface visible",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "hero_component_2",
-      "description": "cash bucket or balance organization cue visible",
-      "source": "env/visual_rules.json; env/asset_manifest.json",
-      "importance": "critical",
-      "expected_value": "cash bucket or balance organization cue visible",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "hero_component_3",
-      "description": "reminder or calendar cue visible",
-      "source": "env/visual_rules.json; env/asset_manifest.json",
-      "importance": "critical",
-      "expected_value": "reminder or calendar cue visible",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "hero_component_4",
-      "description": "calm household budgeting context visible",
-      "source": "env/visual_rules.json; env/asset_manifest.json",
-      "importance": "critical",
-      "expected_value": "calm household budgeting context visible",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "forbidden_elements_not_active",
-      "description": "Deprecated copy, assets, claims, colors, and old specs are not used as active final design elements.",
-      "source": "env/deprecated_assets.json; env/compliance_rules.txt; env/latest_update.md; env/visual_rules.json",
-      "importance": "critical",
-      "must_not_appear_in_image": true,
-      "forbidden_patterns": [
-        "Earn 8% automatically",
-        "FDIC insured",
-        "guaranteed returns",
-        "crypto yield",
-        "gold bank seal",
-        "green stock chart background",
-        "APY",
-        "risk-free savings"
-      ],
-      "allowed_patterns": [
-        "Earn 8% automatically.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
-        "FDIC insured.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
-        "guaranteed returns.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
-        "crypto yield.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
-        "gold bank seal.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
-        "green stock chart background.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
-        "APY.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
-        "risk-free savings.{0,120}(deprecated|do not use|archived|retired|forbidden|old)"
-      ],
-      "evaluation_role": "negative_only"
+    "photo": {
+      "asset_id": "AST-251",
+      "fingerprint": "close document-planning crop: man holding phone at left, woman writing on forms at right, black calculator lower-left, white mug at right, faces not fully shown"
     }
+  },
+  "selection_logic": {
+    "profile": "Select campaign Cash Reserve Beta / Paid Social / Mobile Feed 4:5 / US-EN profile whose latest revision at or before freeze is Active.",
+    "package": "Select the matching 2026-08-18 release package whose latest status at or before freeze is Approved.",
+    "assets": "Each referenced asset must have latest pre-freeze approval Approved, exact usage scope, active US paid-social rights on launch date, and Released state before freeze without pre-launch withdrawal."
+  },
+  "legacy_content_that_must_not_be_used": [
+    "HOUSEHOLD BETA · US",
+    "Plan for bills before payday.",
+    "Assign cash manually across bills, buffers, and reminders.",
+    "For households managing 2–4 recurring bills.",
+    "Private beta · 18 Aug 2026",
+    "Request beta access",
+    "ledgerlite.com/reserve-beta",
+    "Manual moves only",
+    "No automatic transfers",
+    "$2,615",
+    "Utilities check-in",
+    "Planning tool only. Not a bank. No interest or investment advice."
   ],
-  "calculation_notes": "Facts require multi-source resolution across latest_update, compliance rules, platform specs, visual rules, asset manifest, and deprecated exclusions. Core scoring facts are traceable to task-visible env rules; minor layout deviations should be normal checklist deductions rather than hard-cap failures."
+  "prohibited_claims": [
+    "APY",
+    "interest earnings",
+    "yield",
+    "high yield",
+    "guaranteed returns",
+    "risk-free savings",
+    "FDIC insured",
+    "government backed",
+    "investment advice",
+    "automatic transfers as an active feature",
+    "autopilot transfers as an active feature"
+  ]
 }

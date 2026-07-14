@@ -1,90 +1,74 @@
 {
   "case_id": "relationship_diagram_005",
-  "dimensions": {
-    "task_completion": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "output_type_relationship_diagram_005",
-          "check": "For relationship_diagram_005, the output is a finished mentorship_chart for the node and edge mapping, not a worksheet, raw table, or generic mockup.",
-          "points": 4,
-          "scoring_hint": "2 = correct finished image type; 1 = correct topic but weak format; 0 = wrong artifact type. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
-        },
-        {
-          "id": "operation_depth_relationship_diagram_005",
-          "check": "The image visibly resolves this case's node and edge mapping; reference facts include mentor_edges: Omar Reed, Dana Liu, Priya Shah; advisory_edge: Priya Shah, City Analytics Guild, dotted; lead_node: Dana Liu; wrong_manager: City Analytics Guild must not be shown as a direct manager.",
-          "points": 4,
-          "scoring_hint": "2 = operation is visibly resolved; 1 = operation partly reflected; 0 = copied unsolved source material. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
+  "evaluation_mode": "image_vqa_0_2",
+  "dimension_weights": {
+    "grounded_requirement_satisfaction": 0.8,
+    "visual_rendering_quality": 0.2
+  },
+  "grounded_requirement_satisfaction": {
+    "vqa_items": [
+      {
+        "id": "grounded_q01",
+        "question": "Which nodes, groups, or relationships does the diagram show for Solid mentor relationships?",
+        "expected_answer": "Omar Reed -> Dana Liu | Priya Shah -> Dana Liu | Mina Cole -> Omar Reed",
+        "acceptance_rule": "Accept semantically equivalent visible text. Allow capitalization, spacing, punctuation, and minor formatting differences; numbers, order, direction, units, and named entities must remain materially correct."
+      },
+      {
+        "id": "grounded_q02",
+        "question": "Which nodes, groups, or relationships does the diagram show for advisory edge?",
+        "expected_answer": "Priya Shah | City Analytics Guild | dotted",
+        "acceptance_rule": "Accept semantically equivalent visible text. Allow capitalization, spacing, punctuation, and minor formatting differences; numbers, order, direction, units, and named entities must remain materially correct."
+      },
+      {
+        "id": "grounded_q03",
+        "question": "Which nodes, groups, or relationships does the diagram show for Program lead node?",
+        "expected_answer": "Dana Liu",
+        "acceptance_rule": "Accept semantically equivalent visible text. Allow capitalization, spacing, punctuation, and minor formatting differences; numbers, order, direction, units, and named entities must remain materially correct."
+      },
+      {
+        "id": "grounded_q04",
+        "question": "Does the image actively present any prohibited, excluded, deprecated, or superseded content covered by Advisory group is not a manager? If yes, list it.",
+        "expected_answer": "No",
+        "acceptance_rule": "Only No earns credit; none of the prohibited content may be active in the final image. Prohibited evaluator-only references: City Analytics Guild as a direct manager."
+      },
+      {
+        "id": "grounded_q05",
+        "question": "How many distinct entries are visibly shown for Solid mentor relationships?",
+        "expected_answer": "3",
+        "acceptance_rule": "Accept the exact count when the entries are visibly distinct; words and digits are equivalent."
+      },
+      {
+        "id": "grounded_q06",
+        "question": "How many distinct entries are visibly shown for advisory edge?",
+        "expected_answer": "3",
+        "acceptance_rule": "Accept the exact count when the entries are visibly distinct; words and digits are equivalent."
+      },
+      {
+        "id": "grounded_q07",
+        "question": "Is the information for Solid mentor relationships visibly labeled and unambiguous in the image?",
+        "expected_answer": "Yes",
+        "acceptance_rule": "Accept Yes only when the relevant information is visibly present, identifiable, and not contradicted elsewhere in the image."
+      },
+      {
+        "id": "grounded_q08",
+        "question": "Is the information for advisory edge visibly labeled and unambiguous in the image?",
+        "expected_answer": "Yes",
+        "acceptance_rule": "Accept Yes only when the relevant information is visibly present, identifiable, and not contradicted elsewhere in the image."
+      }
+    ]
+  },
+  "visual_rendering_quality": {
+    "image_type": "relationship_network",
+    "vqa_items": [
+      {
+        "id": "visual_q01",
+        "question": "As a relationship or mentorship network, can every important person or entity, role group, primary and advisory link type, label, and direction be traced without ambiguity through clean spatial organization and professional network-diagram craft?",
+        "score_criteria": {
+          "2": "Award 2 only if the network is exceptionally clear and presentation-ready: nodes and role groups are immediately distinguishable; primary, advisory, and any directional relationships use fully consistent and unmistakable encodings; important links remain traceable despite network density; labels are readable; spacing and grouping reveal structure; and connector routing is balanced with minimal tangling. The result must look deliberately composed, with no ambiguous direction, hidden edge, detached connector, illegible label, unstable node spacing, clipping, or rendering flaw. Any uncertain relationship prevents 2.",
+          "1": "Award 1 if the network structure is understandable and usable, but it has visible imperfections such as some tangled links, small labels, weak role grouping, modest relationship-type distinction, uneven node spacing, or generally generic network styling.",
+          "0": "Award 0 even if nodes and links are present when the network is visually difficult or unreliable to interpret: important connections cannot be traced, relationship types blend together, direction is ambiguous, labels are unreadable, layout is tangled, or substantial redesign is required. Blank, corrupted, severely unreadable, or materially incomplete networks are also 0."
         }
-      ],
-      "label": "Task Completion"
-    },
-    "grounded_requirement_satisfaction": {
-      "weight": 0.55,
-      "items": [
-        {
-          "id": "critical_fact_accuracy_relationship_diagram_005",
-          "check": "For relationship_diagram_005, accurately includes the critical expected facts mentor_edges, advisory_edge using these case values: mentor_edges: Omar Reed, Dana Liu, Priya Shah; advisory_edge: Priya Shah, City Analytics Guild, dotted; lead_node: Dana Liu; wrong_manager: City Analytics Guild must not be shown as a direct manager.",
-          "points": 8,
-          "scoring_hint": "2 = all critical facts correct; 1 = one minor omission or formatting issue; 0 = any critical fact is wrong or missing.",
-          "fact_ids": [
-            "mentor_edges",
-            "advisory_edge"
-          ]
-        },
-        {
-          "id": "required_appear_facts_relationship_diagram_005",
-          "check": "Shows required appear facts mentor_edges, advisory_edge, lead_node for relationship_diagram_005 without replacing them with unsupported alternatives; expected values include mentor_edges: Omar Reed, Dana Liu, Priya Shah; advisory_edge: Priya Shah, City Analytics Guild, dotted; lead_node: Dana Liu; wrong_manager: City Analytics Guild must not be shown as a direct manager.",
-          "points": 6,
-          "scoring_hint": "2 = all required facts appear clearly; 1 = most appear but one is ambiguous; 0 = multiple required facts are absent."
-        },
-        {
-          "id": "negative_exclusion_facts_relationship_diagram_005",
-          "check": "Does not show prohibited or stale facts wrong_manager in relationship_diagram_005; showing City Analytics Guild as a dotted advisory link is required, but showing it as a direct manager is prohibited.",
-          "points": 5,
-          "scoring_hint": "2 = no prohibited facts appear; 1 = one weak/ambiguous distractor; 0 = any explicit prohibited value appears.",
-          "fact_ids": [
-            "wrong_manager"
-          ]
-        }
-      ],
-      "label": "Grounded Requirement Satisfaction"
-    },
-    "information_structuring": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "fact_hierarchy_relationship_diagram_005",
-          "check": "Organizes mentor_edges, advisory_edge as the primary message for relationship_diagram_005; supporting values are mentor_edges: Omar Reed, Dana Liu, Priya Shah; advisory_edge: Priya Shah, City Analytics Guild, dotted; lead_node: Dana Liu; wrong_manager: City Analytics Guild must not be shown as a direct manager.",
-          "points": 5,
-          "scoring_hint": "2 = hierarchy is clear and fact-driven; 1 = facts present but hierarchy is muddled; 0 = important facts are buried or missing. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
-        },
-        {
-          "id": "robust_consistency_relationship_diagram_005",
-          "check": "Across repeated runs of relationship_diagram_005, the same critical facts, exclusions wrong_manager, ordering rules, and layout constraints must remain consistent.",
-          "points": 4,
-          "scoring_hint": "2 = stable facts and exclusions; 1 = minor wording drift only; 0 = selected facts or exclusions change. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
-        }
-      ],
-      "label": "Information Structuring"
-    },
-    "visual_communication_quality": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "visual_clarity_relationship_diagram_005",
-          "check": "For relationship_diagram_005, uses clear visual hierarchy, readable typography, sufficient contrast, and non-crowded spacing at the intended mentorship_chart size.",
-          "points": 4,
-          "scoring_hint": "2 = readable and polished; 1 = readable with minor clutter; 0 = unreadable or visually incoherent. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
-        },
-        {
-          "id": "visual_layout_density_relationship_diagram_005",
-          "check": "The mentorship_chart layout has appropriate information density, balanced image/text regions, crisp assets, platform-safe margins, and no placeholder-like areas.",
-          "points": 4,
-          "scoring_hint": "2 = balanced density and crisp assets; 1 = some weak spacing or density; 0 = blank, placeholder-like, or low-resolution. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
-        }
-      ],
-      "label": "Visual Communication Quality"
-    }
+      }
+    ]
   }
 }

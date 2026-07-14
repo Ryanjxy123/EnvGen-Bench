@@ -1,66 +1,158 @@
 {
   "case_id": "state_change_001",
-  "task_type": "state_change",
+  "task_type": "state_change_reasoning_to_image",
+  "as_of": "2026-07-24T18:00:00",
   "facts": [
     {
-      "id": "latest_event",
-      "description": "Active event to advertise.",
-      "source": "env/current_status.csv",
-      "importance": "critical",
-      "expected_value": "Riverside Night Market",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "latest_date",
-      "description": "Latest valid event date.",
-      "source": "env/changelog.md + env/current_status.csv",
-      "importance": "critical",
-      "expected_value": "May 21, 2026",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "latest_location",
-      "description": "Latest valid location.",
-      "source": "env/changelog.md + env/current_status.csv",
-      "importance": "critical",
-      "expected_value": "Riverside Hall",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "latest_sponsor",
-      "description": "Latest valid sponsor.",
-      "source": "env/changelog.md + env/current_status.csv",
-      "importance": "major",
-      "expected_value": "GreenBridge Market",
-      "must_appear_in_image": true,
-      "evaluation_role": "major_required"
-    },
-    {
-      "id": "latest_theme",
-      "description": "Latest valid theme.",
-      "source": "env/changelog.md + env/current_status.csv",
-      "importance": "critical",
-      "expected_value": "Makers and Music Night",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "stale_details",
-      "description": "Superseded details must not appear.",
-      "source": "env/old_campaign.md + env/changelog.md",
-      "importance": "critical",
+      "id": "identity_build",
       "expected_value": [
-        "May 14, 2026",
-        "Harbor Plaza",
-        "North Pier Foods",
-        "Lantern Tasting Walk"
+        "Northstar Workspace Desktop",
+        "5.8.0",
+        "build 580.1427"
       ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "status_channel_ring",
+      "expected_value": [
+        "General Availability",
+        "Stable",
+        "Managed Release Ring 2"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "default_rollout_window",
+      "expected_value": [
+        "August 31, 2026",
+        "8 business days",
+        "September 10, 2026"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "regional_scope",
+      "expected_value": [
+        "Worldwide except Japan and Brazil",
+        "Japan begins September 16, 2026",
+        "Brazil begins September 21, 2026"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "headline_value",
+      "expected_value": [
+        "Keep every handoff moving",
+        "A dependable workspace for projects, meetings, and recovery across every approved desktop."
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "feature_set",
+      "expected_value": [
+        "Shared project spaces",
+        "AI meeting summaries",
+        "Resilient background sync",
+        "Offline handoff queue"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "eligible_plans",
+      "expected_value": [
+        "Workspace Business Plus",
+        "Workspace Enterprise",
+        "Workspace Education"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "deployment_profile",
+      "expected_value": [
+        "Admin-controlled deployment",
+        "Managed Release Ring 2",
+        "TPM 2.0 and Secure Boot"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "update_timing",
+      "expected_value": [
+        "Administrator opt-in: August 31 through September 10, 2026",
+        "Automatic update: September 14, 2026 at 09:00 UTC"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "platform_install",
+      "expected_value": [
+        "Windows desktop",
+        "Windows 11 23H2 or later",
+        "x64",
+        "MSI"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "payload_totals",
+      "expected_value": [
+        "202 MB clean install",
+        "58 MB update payload"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "support_action",
+      "expected_value": [
+        "support.northstar.example/workspace/5-8/ga-deployment",
+        "Review rollout and prerequisites"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "unsupported_claims_absent",
       "must_not_appear_in_image": true,
-      "evaluation_role": "negative_only"
+      "examples": [
+        "Windows 10",
+        "macOS",
+        "Linux",
+        "ARM",
+        "arm64",
+        "Universal",
+        "32-bit",
+        "EXE",
+        "PKG installer"
+      ]
+    },
+    {
+      "id": "obsolete_or_invalid_values_absent",
+      "must_not_appear_in_image": true,
+      "examples": [
+        "Release Candidate",
+        "Preview Ring",
+        "Long-term Support",
+        "CB-580-X",
+        "RP-580-FUT",
+        "UP-580-AUTO",
+        "SR-580-TEMP",
+        "DP-580-ALL",
+        "NSW-WIN-580-GA3",
+        "Faster focus, simpler sharing",
+        "Turn every idea into momentum",
+        "Smart search filters",
+        "Offline editing",
+        "Live canvas collaboration",
+        "August 18, 2026",
+        "September 7, 2026",
+        "171 MB",
+        "181 MB"
+      ]
+    },
+    {
+      "id": "internal_and_other_release_absent",
+      "must_not_appear_in_image": true,
+      "expected_value": "No internal identifiers, approval or workflow records, source codes, calculations, or competing software releases."
     }
   ],
-  "calculation_notes": "Use current_status.csv as the active/cancelled gate, then use changelog.md to resolve date, location, sponsor, and theme changes. old_campaign.md is superseded unless a value is unchanged and confirmed by current_status.csv."
+  "resolution_notes": "At the cutoff, the valid direct state is General Availability on Stable. Standard-public approval quorum rejects the newer Preview and LTS proposals. Code fallback selects CB-580-CUR, RP-580-GA8, UP-580-MANAGED2, SR-580-GA2, DP-580-RING2, and NSW-WIN-580-GA2 after newer candidates fail feature, validity, channel, expiry, audience, or package-publication checks. The selected rollout runs for 8 Global business days from 2026-08-31 through 2026-09-10, skipping the 2026-09-07 holiday. Regional controls produce Japan 2026-09-16 and Brazil 2026-09-21. Two Global business days after rollout end is 2026-09-14 at 09:00 UTC. Clean-install size is 174+12+9+7=202 MB; update payload is 46+5+4+3=58 MB."
 }

@@ -1,187 +1,92 @@
 {
   "case_id": "design_specification_001",
   "task_type": "design_specification",
-  "facts": [
-    {
-      "id": "primary_copy_01",
-      "description": "Required visible text: FlowForge Sprint",
-      "source": "env/latest_update.md",
-      "importance": "critical",
-      "expected_value": "FlowForge Sprint",
-      "canonical_answer": "FlowForge Sprint",
-      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image.",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "primary_copy_02",
-      "description": "Required visible text: Plan the week in one calm board.",
-      "source": "env/latest_update.md",
-      "importance": "critical",
-      "expected_value": "Plan the week in one calm board.",
-      "canonical_answer": "Plan the week in one calm board.",
-      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image.",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "primary_copy_03",
-      "description": "Required visible text: A focused planning space for small product teams.",
-      "source": "env/latest_update.md",
-      "importance": "critical",
-      "expected_value": "A focused planning space for small product teams.",
-      "canonical_answer": "A focused planning space for small product teams.",
-      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image.",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "primary_copy_04",
-      "description": "Required visible text: Start a sprint preview",
-      "source": "env/latest_update.md",
-      "importance": "critical",
-      "expected_value": "Start a sprint preview",
-      "canonical_answer": "Start a sprint preview",
-      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image.",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "archive_not_active",
-      "description": "Archive-only text must not replace the current launch update.",
-      "source": "env/latest_update.md",
-      "importance": "critical",
-      "must_not_appear_in_image": true,
-      "forbidden_patterns": [
-        "Automate Everything",
-        "Replace every manual process overnight.",
-        "Run it all now",
-        "bottom-centered logo",
-        "purple gradient background",
-        "lightning automation hero"
-      ],
-      "allowed_patterns": [
-        "Automate Everything.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
-        "Replace every manual process overnight.{0,120}(deprecated|do not use|archived|retired|forbidden|old)"
-      ],
-      "evaluation_role": "negative_only"
-    },
-    {
-      "id": "canvas_size",
-      "description": "Final artifact uses the required pixel canvas.",
-      "source": "env/platform_specs.txt",
-      "importance": "critical",
-      "expected_value": "1200 x 627 px",
-      "evaluation_role": "major_required"
-    },
-    {
-      "id": "aspect_ratio",
-      "description": "Final artifact uses the required aspect ratio.",
-      "source": "env/platform_specs.txt",
-      "importance": "critical",
-      "expected_value": "1.91:1",
-      "evaluation_role": "major_required"
-    },
-    {
-      "id": "safe_area",
-      "description": "Essential text, logo, and CTA stay inside required safe areas.",
-      "source": "env/platform_specs.txt",
-      "importance": "critical",
-      "expected_value": "60 px",
-      "semantic_acceptance": "Treat small placement deviations as normal checklist deductions, not hard-cap failures, if the content remains readable and broadly inside the safe area.",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "logo_position",
-      "description": "Current logo/wordmark appears in required position.",
-      "source": "env/platform_specs.txt; env/visual_rules.json; env/asset_manifest.json",
-      "importance": "critical",
-      "expected_value": "top-right safe area",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "cta_position",
-      "description": "CTA/helper appears in the required zone and safe area.",
-      "source": "env/platform_specs.txt; env/visual_rules.json",
-      "importance": "critical",
-      "expected_value": "lower-left safe area",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "palette_tokens",
-      "description": "Current color tokens are used as dominant palette.",
-      "source": "env/visual_rules.json; env/brand_brief.md",
-      "importance": "major",
-      "expected_value": [
-        "#0F2D2E",
-        "#F7F3E8",
-        "#FFB703",
-        "#A8C7B5"
-      ],
-      "semantic_acceptance": "Exact pixel hex matching is not required, but deprecated palettes should not dominate.",
-      "evaluation_role": "major_required"
-    },
-    {
-      "id": "hero_component_1",
-      "description": "planning-board UI visible",
-      "source": "env/visual_rules.json; env/asset_manifest.json",
-      "importance": "critical",
-      "expected_value": "planning-board UI visible",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "hero_component_2",
-      "description": "cards, columns, or weekly lanes visible",
-      "source": "env/visual_rules.json; env/asset_manifest.json",
-      "importance": "critical",
-      "expected_value": "cards, columns, or weekly lanes visible",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "hero_component_3",
-      "description": "current week or focus-state cue visible",
-      "source": "env/visual_rules.json; env/asset_manifest.json",
-      "importance": "critical",
-      "expected_value": "current week or focus-state cue visible",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "hero_component_4",
-      "description": "product interface cue visible",
-      "source": "env/visual_rules.json; env/asset_manifest.json",
-      "importance": "critical",
-      "expected_value": "product interface cue visible",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "forbidden_elements_not_active",
-      "description": "Deprecated copy, assets, claims, colors, and old specs are not used as active final design elements.",
-      "source": "env/deprecated_assets.json; env/latest_update.md; env/visual_rules.json; env/brand_brief.md",
-      "importance": "critical",
-      "must_not_appear_in_image": true,
-      "forbidden_patterns": [
-        "Automate Everything",
-        "purple automation gradient",
-        "bottom-centered FlowForge logo",
-        "lightning automation hero",
-        "busy dashboard wall"
-      ],
-      "allowed_patterns": [
-        "Automate Everything.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
-        "purple automation gradient.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
-        "bottom-centered FlowForge logo.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
-        "lightning automation hero.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
-        "busy dashboard wall.{0,120}(deprecated|do not use|archived|retired|forbidden|old)"
-      ],
-      "evaluation_role": "negative_only"
+  "reference_date": "2026-06-24",
+  "creative_freeze": "2026-06-23T17:00:00Z",
+  "resolved_profile": {
+    "profile_id": "PRF-044",
+    "canvas": [
+      1200,
+      627
+    ],
+    "aspect_ratio": "1.91:1",
+    "market": "GLOBAL-EN",
+    "placement": "LINKEDIN-SPONSORED-SINGLE",
+    "language": "en-GB"
+  },
+  "resolved_base_copy": {
+    "copy_id": "CPY-073",
+    "product_name": "FlowForge Sprint",
+    "headline": "Plan the week in one calm board.",
+    "support_line": "A focused planning space for small product teams."
+  },
+  "resolved_message_package": {
+    "message_id": "MSG-063",
+    "note": "This package is required as the activation parent, but its audience, offer, release, proof, CTA, destination and qualifier are superseded by the final activation."
+  },
+  "resolved_activation": {
+    "activation_id": "ACT-117",
+    "cohort_id": "COH-077",
+    "audience_line": "For product teams coordinating 6–20 contributors",
+    "offer_id": "OFF-083",
+    "offer_line": "21-day launch workspace trial",
+    "evidence_line": "Includes five collaborator seats",
+    "schedule_id": "SCH-091",
+    "release_line": "Opens 24 June · 14:00 UTC",
+    "proof_id": "PROOF-068",
+    "proof_chip": "Built for cross-functional launch weeks",
+    "destination_id": "DEST-074",
+    "cta": "Open the launch-week board",
+    "landing_path": "flowforge.com/launch-week",
+    "qualifier_id": "QLF-059",
+    "qualifier": "Workspace owner approval required",
+    "experiment_id": "EXP-064",
+    "variant_code": "B"
+  },
+  "resolved_board_content": {
+    "board_content_id": "BDC-088",
+    "week_pill": "LAUNCH WEEK",
+    "highlight_lane": "THU",
+    "featured_card": "Ship release",
+    "key_cards": {
+      "MON": "Finalize brief",
+      "TUE": "Approve creative",
+      "WED": "Confirm tracking",
+      "FRI": "Review results"
     }
+  },
+  "resolved_asset_bundle": {
+    "bundle_id": "BND-094",
+    "logo": {
+      "asset_id": "AST-037",
+      "visual_signature": "Separate horizontal FlowForge signature with amber-and-sage folded-path symbol and dark-green wordmark"
+    },
+    "hero": {
+      "asset_id": "AST-282",
+      "visual_signature": "Launch-week board with LAUNCH WEEK pill, highlighted THU lane, and featured Ship release card"
+    },
+    "background": {
+      "asset_id": "AST-283",
+      "visual_signature": "Warm cream fine-grid field with sage upper-right diagonal band, amber stepped lower-right corner, and dark-teal left rail"
+    },
+    "proof_chip": {
+      "asset_id": "AST-284",
+      "visual_signature": "Amber chip with dark-green check and text Built for cross-functional launch weeks"
+    }
+  },
+  "superseded_activation_values": [
+    "For product teams of 5–25",
+    "14-day workspace preview",
+    "Available 24 June · 09:00 UTC",
+    "Built for focused weekly planning",
+    "Preview the Sprint board",
+    "flowforge.com/sprint",
+    "No card required"
   ],
-  "calculation_notes": "Facts require multi-source resolution across latest_update, platform specs, visual rules, asset manifest, brand brief, and deprecated exclusions. Core scoring facts are traceable to task-visible env rules; minor layout deviations should be normal checklist deductions rather than hard-cap failures."
+  "selection_logic": {
+    "activation": "Select the unique activation matching MSG-063, SPRINT-JUNE-2026, PRF-044, GLOBAL-EN, LINKEDIN-SPONSORED-SINGLE and en-GB whose latest status at or before freeze is Active and whose effective window includes launch day.",
+    "catalogs": "All referenced catalog records must be Approved for the required market/language and valid on launch day.",
+    "experiment": "EXP-064 must match the same campaign/profile/market/placement and be Approved on launch day; it controls BND-094 and BDC-088.",
+    "assets": "Each bundle asset must independently satisfy latest pre-freeze approval, exact usage scope, paid-social rights, Released state before freeze, and no withdrawal before launch."
+  }
 }

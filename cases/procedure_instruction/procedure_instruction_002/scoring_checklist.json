@@ -1,91 +1,74 @@
 {
   "case_id": "procedure_instruction_002",
-  "dimensions": {
-    "task_completion": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "output_type_procedure_instruction_002",
-          "check": "For procedure_instruction_002, the output is a finished safety_setup_instruction_image for the ordered procedure sequence, not a worksheet, raw table, or generic mockup.",
-          "points": 4,
-          "scoring_hint": "2 = correct finished image type; 1 = correct topic but weak format; 0 = wrong artifact type. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
-        },
-        {
-          "id": "operation_depth_procedure_instruction_002",
-          "check": "The image visibly resolves this case's ordered procedure sequence; reference facts include step_order: Ventilate, Insert two AA batteries, Wait for green ready light; ventilation_first: Ventilation before Press Test; exclude_bypass: Bypass calibration; exclude_wrong_order: Press Test before green ready light.",
-          "points": 4,
-          "scoring_hint": "2 = operation is visibly resolved; 1 = operation partly reflected; 0 = copied unsolved source material. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
+  "evaluation_mode": "image_vqa_0_2",
+  "dimension_weights": {
+    "grounded_requirement_satisfaction": 0.8,
+    "visual_rendering_quality": 0.2
+  },
+  "grounded_requirement_satisfaction": {
+    "vqa_items": [
+      {
+        "id": "grounded_q01",
+        "question": "What instruction does the image give for Correct 5-step setup order?",
+        "expected_answer": "Ventilate | Insert two AA batteries | Wait for green ready light | Press Test once | Mount above prep station",
+        "acceptance_rule": "Accept semantically equivalent visible text. Allow capitalization, spacing, punctuation, and minor formatting differences; numbers, order, direction, units, and named entities must remain materially correct."
+      },
+      {
+        "id": "grounded_q02",
+        "question": "What instruction does the image give for Ventilation must happen before testing?",
+        "expected_answer": "Ventilation before Press Test",
+        "acceptance_rule": "Accept semantically equivalent visible text. Allow capitalization, spacing, punctuation, and minor formatting differences; numbers, order, direction, units, and named entities must remain materially correct."
+      },
+      {
+        "id": "grounded_q03",
+        "question": "Does the image actively present any prohibited, excluded, deprecated, or superseded content covered by exclude bypass? If yes, list it.",
+        "expected_answer": "No",
+        "acceptance_rule": "Only No earns credit; none of the prohibited content may be active in the final image. Prohibited evaluator-only references: Bypass calibration."
+      },
+      {
+        "id": "grounded_q04",
+        "question": "Does the image actively present any prohibited, excluded, deprecated, or superseded content covered by Do not test before green ready light? If yes, list it.",
+        "expected_answer": "No",
+        "acceptance_rule": "Only No earns credit; none of the prohibited content may be active in the final image. Prohibited evaluator-only references: Press Test before green ready light."
+      },
+      {
+        "id": "grounded_q05",
+        "question": "How many distinct entries are visibly shown for Correct 5-step setup order?",
+        "expected_answer": "5",
+        "acceptance_rule": "Accept the exact count when the entries are visibly distinct; words and digits are equivalent."
+      },
+      {
+        "id": "grounded_q06",
+        "question": "Is the information for Correct 5-step setup order visibly labeled and unambiguous in the image?",
+        "expected_answer": "Yes",
+        "acceptance_rule": "Accept Yes only when the relevant information is visibly present, identifiable, and not contradicted elsewhere in the image."
+      },
+      {
+        "id": "grounded_q07",
+        "question": "Is the information for Ventilation must happen before testing visibly labeled and unambiguous in the image?",
+        "expected_answer": "Yes",
+        "acceptance_rule": "Accept Yes only when the relevant information is visibly present, identifiable, and not contradicted elsewhere in the image."
+      },
+      {
+        "id": "grounded_q08",
+        "question": "Does the image present a complete and internally consistent visible result for Correct 5-step setup order?",
+        "expected_answer": "Yes",
+        "acceptance_rule": "Accept Yes only when all evaluator-listed parts of this requirement are visible, mutually consistent, and not replaced by an incomplete or conflicting version."
+      }
+    ]
+  },
+  "visual_rendering_quality": {
+    "image_type": "instructional_guide",
+    "vqa_items": [
+      {
+        "id": "visual_q01",
+        "question": "As an instructional guide, workflow image, setup card, safety card, care guide, or classroom bench card, does the image transform the procedure into a complete, glance-followable, and operationally safe visual aid rather than a densely typeset instruction sheet? Evaluate whether users can distinguish each action, object, quantity, condition, transition, repetition, warning, checkpoint, and completion cue without repeatedly reading paragraph-like text. Judge the entire artifact at its intended physical viewing size, including the smallest instructional text, the visual encoding of sequence and repeated cycles, the placement of warnings beside the relevant actions, the correspondence of icons or diagrams to the instructions, and the consistency and completeness of the page. Do not award 2 merely because the steps are numbered, factually present, aligned, color-coded, or technically readable.",
+        "score_criteria": {
+          "2": "Award 2 only if **all** of the following real-deployment gates are clearly satisfied. Failure of any one gate limits the score to 1 at most:\n\n  1. **Glance-followable action structure:** Each step must expose the principal action, object, quantity or setting, and immediate outcome through clear visual separation. Users should not need to parse paragraph-like prose or several similarly weighted sentences to determine what to do next.\n  2. **Operational sequence clarity:** The order, phase changes, branches, returns, waits, repetitions, and completion points must be visually unmistakable. Repeated cycles such as washing, checking, tightening, watering, restarting, or waiting must be encoded so that the number of repetitions and the point of return cannot be confused.\n  3. **Action-to-visual correspondence:** Icons, diagrams, illustrations, arrows, panels, or other visual devices must materially clarify tools, orientation, placement, motion, connections, quantities, or expected states. Visuals are not mandatory for every step, but a predominantly text-only guide must demonstrate exceptional typographic process design and cannot resemble a memo, worksheet, manual excerpt, or numbered document.\n  4. **Immediate parameter recognition:** Critical quantities, durations, temperatures, counts, directions, settings, materials, and result criteria must be visually distinct from explanatory text. Important parameters buried inside sentences, long lines, or low-emphasis body copy prevent 2.\n  5. **Contextual warning placement:** Safety warnings, contamination risks, prohibited actions, fragile steps, and irreversible actions must appear at or immediately beside the step where the risk occurs. A general warning block placed only at the bottom or far from the relevant action is insufficient for 2 when users could act before seeing it.\n  6. **Warning hierarchy proportional to risk:** High-risk warnings must be visually more prominent than routine notes and must not rely only on a small icon, pale background, or dense sentence. The user must be able to distinguish danger, caution, timing, optional advice, and ordinary instruction instantly.\n  7. **Normal-size readability under use conditions:** Every meaningful instruction, warning, label, parameter, legend, and result cue must be comfortably readable at the intended print or display size while the user is performing the task. Small body text, tightly packed lines, long text blocks, or narrow line spacing that demand close inspection prevent 2.\n  8. **Controlled information density:** Steps must be concise enough to scan during execution. Dense multi-sentence steps, excessive parenthetical information, long inline lists, repeated procedural prose, or numerous facts with equal visual weight prevent 2 even when no text is technically illegible.\n  9. **Distinct checkpoints and outcomes:** Wait states, validation checks, success conditions, failure conditions, result interpretation, and final completion cues must be visually separated from ordinary actions. Users must know when to stop, verify, repeat, proceed, or seek help without searching through body text.\n  10. **Complete and polished artifact:** The full sequence, final section, warnings, footer, legends, and completion state must be visibly contained and finished. No clipped content, orphaned heading, malformed glyph, inconsistent numbering, ambiguous color coding, weak contrast, unstable alignment, incomplete final step, or visible production residue is allowed.\n\n  A clean numbered page made mainly of bold step titles followed by small explanatory paragraphs, with limited action diagrams and warnings separated from their relevant steps, is an organized instruction sheet rather than an exceptional instructional visual and cannot receive 2.",
+          "1": "Award 1 if the guide is understandable, mostly complete, and generally usable, but still requires visible refinement before dependable real-world deployment. Typical 1-point outputs include clearly numbered but text-heavy procedures; long explanatory lines beneath each step; limited diagrams or action icons; quantities and timings embedded inside prose; repeated cycles explained verbally rather than visually; warnings placed mainly in separate footer boxes; modest distinction between action, parameter, note, and result; small but readable text; generic colored labels; uneven spacing; or a layout that resembles a formatted handout, manual page, checklist, or classroom worksheet. A guide may be accurate, aligned, and logically ordered yet still receive only 1 when users must read carefully rather than act at a glance.",
+          "0": "Award 0 if the guide is visually unreliable, materially difficult to follow, incomplete, or unsafe for practical use. This includes cases where sequence or phase boundaries are confusing; steps, repetitions, quantities, directions, tools, warnings, or result criteria are difficult to locate; essential safety information is visually buried or detached from the risky action; text density or size makes consultation impractical during execution; icons or diagrams conflict with the instructions; the final state is unclear; or substantial redesign is required to prevent mistakes. Blank, corrupted, severely unreadable, clipped, overlapping, misleading, materially incomplete, or otherwise broken outputs are also 0."
         }
-      ],
-      "label": "Task Completion"
-    },
-    "grounded_requirement_satisfaction": {
-      "weight": 0.55,
-      "items": [
-        {
-          "id": "critical_fact_accuracy_procedure_instruction_002",
-          "check": "For procedure_instruction_002, accurately includes the critical expected facts step_order, ventilation_first using these case values: step_order: Ventilate, Insert two AA batteries, Wait for green ready light; ventilation_first: Ventilation before Press Test; exclude_bypass: Bypass calibration; exclude_wrong_order: Press Test before green ready light.",
-          "points": 8,
-          "scoring_hint": "2 = all critical facts correct; 1 = one minor omission or formatting issue; 0 = any critical fact is wrong or missing.",
-          "fact_ids": [
-            "step_order",
-            "ventilation_first"
-          ]
-        },
-        {
-          "id": "required_appear_facts_procedure_instruction_002",
-          "check": "Shows required appear facts step_order, ventilation_first for procedure_instruction_002 without replacing them with unsupported alternatives; expected values include step_order: Ventilate, Insert two AA batteries, Wait for green ready light; ventilation_first: Ventilation before Press Test; exclude_bypass: Bypass calibration; exclude_wrong_order: Press Test before green ready light.",
-          "points": 6,
-          "scoring_hint": "2 = all required facts appear clearly; 1 = most appear but one is ambiguous; 0 = multiple required facts are absent."
-        },
-        {
-          "id": "negative_exclusion_facts_procedure_instruction_002",
-          "check": "Does not show prohibited or stale facts exclude_bypass, exclude_wrong_order in procedure_instruction_002; avoids unsupported claims from distractor env material.",
-          "points": 5,
-          "scoring_hint": "2 = no prohibited facts appear; 1 = one weak/ambiguous distractor; 0 = any explicit prohibited value appears.",
-          "fact_ids": [
-            "exclude_bypass",
-            "exclude_wrong_order"
-          ]
-        }
-      ],
-      "label": "Grounded Requirement Satisfaction"
-    },
-    "information_structuring": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "fact_hierarchy_procedure_instruction_002",
-          "check": "Organizes step_order, ventilation_first as the primary message for procedure_instruction_002; supporting values are step_order: Ventilate, Insert two AA batteries, Wait for green ready light; ventilation_first: Ventilation before Press Test; exclude_bypass: Bypass calibration; exclude_wrong_order: Press Test before green ready light.",
-          "points": 5,
-          "scoring_hint": "2 = hierarchy is clear and fact-driven; 1 = facts present but hierarchy is muddled; 0 = important facts are buried or missing. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
-        },
-        {
-          "id": "robust_consistency_procedure_instruction_002",
-          "check": "Across repeated runs of procedure_instruction_002, the same critical facts, exclusions exclude_bypass, exclude_wrong_order, ordering rules, and layout constraints must remain consistent.",
-          "points": 4,
-          "scoring_hint": "2 = stable facts and exclusions; 1 = minor wording drift only; 0 = selected facts or exclusions change. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
-        }
-      ],
-      "label": "Information Structuring"
-    },
-    "visual_communication_quality": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "visual_clarity_procedure_instruction_002",
-          "check": "For procedure_instruction_002, uses clear visual hierarchy, readable typography, sufficient contrast, and non-crowded spacing at the intended safety_setup_instruction_image size.",
-          "points": 4,
-          "scoring_hint": "2 = readable and polished; 1 = readable with minor clutter; 0 = unreadable or visually incoherent. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
-        },
-        {
-          "id": "visual_layout_density_procedure_instruction_002",
-          "check": "The safety_setup_instruction_image layout has appropriate information density, balanced image/text regions, crisp assets, platform-safe margins, and no placeholder-like areas.",
-          "points": 4,
-          "scoring_hint": "2 = balanced density and crisp assets; 1 = some weak spacing or density; 0 = blank, placeholder-like, or low-resolution. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
-        }
-      ],
-      "label": "Visual Communication Quality"
-    }
+      }
+    ]
   }
 }

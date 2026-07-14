@@ -3,30 +3,112 @@
   "task_type": "document_brief",
   "web_policy": "closed_env",
   "target_image_type": "course_poster",
-  "difficulty": "hard",
+  "difficulty": "medium_hard",
+  "scenario_date": "2026-02-20",
   "env_files": [
     {
-      "path": "env/course_brief.pdf",
-      "role": "Long-form brochure-style course prospectus with final public facts, draft notes, internal remarks, schedule changes, audience guidance, and distractors",
+      "path": "env/Spring_2026_Continuing_Education_Catalog.pdf",
       "format": "pdf",
-      "origin": "mixed",
-      "reproducibility_note": "Generated locally with ReportLab from benchmark-authored text and cached benchmark/public_assets/workshop.jpg.",
-      "source_url": "benchmark/public_assets/workshop.jpg",
-      "retrieved_at": "2026-06-19",
-      "license_note": "Uses the repository's cached public benchmark asset; no web access is needed by the agent.",
-      "conversion_note": "The standalone image file is not exposed as an env file. The PDF intentionally distributes final facts among draft notes, FAQ, module descriptions, and internal remarks.",
-      "asset_path": "benchmark/public_assets/workshop.jpg",
-      "adaptation_note": "Benchmark-authored course prospectus PDF; synthetic, not downloaded.",
-      "whether_original_or_adapted": "synthetic benchmark-authored PDF",
-      "page_count": 7,
-      "text_extract_check": "Text layer is generated with ReportLab and validated by pypdf extraction."
+      "role": "Primary 40-page continuing-education catalog. It provides the PE-087 baseline, location key, term context, course description, neighboring-course distractors, and original scheduling pattern.",
+      "origin": "external_public_source",
+      "source_title": "Garrett College Continuing Education Spring 2026",
+      "page_count": 40,
+      "content_note": "PE-087 appears on PDF page 13; the location key is on PDF page 2. Applicable registrar records override matching fields.",
+      "sha256": "b86e0e0d789bc750d431c7322f779feb8d3310868e9be0741db6e233ba889067"
     },
     {
-      "path": "env/instructor_bio.md",
-      "role": "Brief instructor background note that clarifies teaching responsibility without listing poster facts as an answer table",
-      "format": "md",
-      "origin": "generated",
-      "reproducibility_note": "Generated as part of the document_brief_001 difficulty refresh."
+      "path": "env/Spring_Course_Spotlight_Request.docx",
+      "format": "docx",
+      "role": "One-page internal creative handoff defining the public content, schedule split, participant-preparation requirement, copy progression, and design priorities without supplying updated values.",
+      "origin": "benchmark_authored",
+      "page_count": 1,
+      "sha256": "cf3f03019c64883c89ecbd1742aca00fc702e37c49718b7c0b4987f2a2188b6f"
+    },
+    {
+      "path": "env/Spring_2026_Registrar_Change_Log.xlsx",
+      "format": "xlsx",
+      "role": "Registrar audit workbook with 340 mixed course-change records. The agent must use Approved records effective on or before the scenario date and resolve repeated fields by the latest applicable effective date.",
+      "origin": "benchmark_authored",
+      "row_count": 340,
+      "sheet_count": 2,
+      "content_note": "Seventeen PE-087 records are mixed among unrelated entries; nine are applicable to the February 20 campaign and eight are drafts, withdrawn, superseded, or later-effective distractors.",
+      "sha256": "a7ed06be774cda9b0dab19bd9c066d3a1d83e40b98b52434b744f2533d405c1e"
+    },
+    {
+      "path": "env/Spring_2026_Campaign_Standards.pdf",
+      "format": "pdf",
+      "role": "Three-page campaign standard covering output size, palette, typography, reading order, copy limits, asset rights, brand identity, and source precedence.",
+      "origin": "benchmark_authored",
+      "page_count": 3,
+      "sha256": "8ad5cff2dd7be0057d00a79286f3edd3da718a29b0f3fb993454f11e08be428f"
+    }
+  ],
+  "asset_files": [
+    {
+      "path": "env/assets/media_104.jpg",
+      "format": "jpg",
+      "sha256": "eda90ffff5f8748806ea4a51b6b63c20eb88c41d6768cee3828fd4b4e579de46",
+      "role": "Current fly-fishing stream-casting image; rights cover website and newsletter use on the scenario date."
+    },
+    {
+      "path": "env/assets/media_118.jpg",
+      "format": "jpg",
+      "sha256": "c4ac12e770da5bfc2991744338cf207510b7f1ba08a186192a6395513a323765",
+      "role": "Older crop of the same subject with expired rights; a natural near-match distractor."
+    },
+    {
+      "path": "env/assets/media_203.jpg",
+      "format": "jpg",
+      "sha256": "ee4a05942eaccab48b9691c909ea64b62d98fbe4482840017d60698c149e93e8",
+      "role": "GIEC exterior used for campus-information materials, not course hero use."
+    },
+    {
+      "path": "env/assets/media_221.jpg",
+      "format": "jpg",
+      "sha256": "93311a2ccba1b818abb064925c39a301482b6b03382fd00c447c81a534dbe215",
+      "role": "Fermentation course image."
+    },
+    {
+      "path": "env/assets/media_226.jpg",
+      "format": "jpg",
+      "sha256": "43bfc466a73b0518d8a434c041c405662be9f344779ea4083d8f5c0476b88b4b",
+      "role": "Leadership program image."
+    },
+    {
+      "path": "env/assets/media_233.jpg",
+      "format": "jpg",
+      "sha256": "0d61b2563a6468e6b6af14c64b9642f4dd8f40052ed65eac5abe4f2ce5ef4c2b",
+      "role": "Mountain-bike workshop image."
+    },
+    {
+      "path": "env/assets/media_241.jpg",
+      "format": "jpg",
+      "sha256": "5e9b667cb4856228847d8fb34883394d4fbd669ebbd653a4bada1f66c79df7f7",
+      "role": "Knot workshop image for PE-080."
+    },
+    {
+      "path": "env/assets/media_247.jpg",
+      "format": "jpg",
+      "sha256": "8b28b81ad30373688461e532f81552dc8f6f78092a41bed405dda2c61e57d417",
+      "role": "Wellness course instructor image."
+    },
+    {
+      "path": "env/assets/media_250.jpg",
+      "format": "jpg",
+      "sha256": "d257b8cf82df2372018a8575f7ae66ef7c0ce49daf89c2c97a67d81368669ce1",
+      "role": "Catalog-cover rope image with cover-only rights."
+    },
+    {
+      "path": "env/assets/brand_26_h.png",
+      "format": "png",
+      "sha256": "337030bc0940d078d70ae020d091dc72e9fdfba00ef469e225049ccfa9a55d09",
+      "role": "Current horizontal Garrett College CEWD campaign mark."
+    },
+    {
+      "path": "env/assets/brand_24_s.png",
+      "format": "png",
+      "sha256": "ce450000f855b40b80728dea0329f2d1bad9473335d203a212b30b8c27cf1ea3",
+      "role": "Retired round seal retained as archive reference."
     }
   ],
   "source_policy": {
@@ -39,7 +121,32 @@
       "expected_facts.json",
       "scoring_checklist.json"
     ],
-    "web_usage_note": "Follow web_policy. Closed-env cases should be solved from cached env files only."
+    "web_usage_note": "Closed-env case. Use only the catalog, internal request, registrar audit workbook, campaign standards, and supplied assets."
   },
-  "notes": "Benchmark-authored course prospectus PDF; synthetic, not downloaded. It avoids benchmark labels in the agent-visible PDF while preserving distractors and final facts in natural document language."
+  "design_checks": {
+    "long_document_requirement_met": true,
+    "primary_document_pages": 40,
+    "cross_page_lookup_required": true,
+    "cross_file_reconciliation_required": true,
+    "temporal_filtering_required": true,
+    "version_state_filtering_required": true,
+    "latest_applicable_record_rule_required": true,
+    "registrar_rows": 340,
+    "multiple_file_types_present": true,
+    "stage_specific_location_reconciliation_required": true,
+    "derived_session_dates_required": true,
+    "asset_rights_and_channel_selection_required": true,
+    "neutral_asset_filenames_used": true,
+    "case_specific_visual_constraints_present": true,
+    "answer_files_in_env": false,
+    "explicit_include_exclude_column": false,
+    "direct_final_answer_block_in_authored_env": false,
+    "natural_distractors_present": true,
+    "stale_values_present": true,
+    "task_vqa_aligned": true,
+    "hard_cap_or_gap_mechanism_added": false
+  },
+  "difficulty_rationale": "The case requires a realistic editorial workflow rather than direct transcription: locate PE-087 in a long catalog, expand facility abbreviations, derive the first three session dates, reconcile nine current field updates from a 340-row audit trail, reject eight plausible noncurrent records, distinguish indoor and outdoor meeting places, select a current image and brand mark using rights and channel metadata, and compress the course into a readable campaign poster.",
+  "calibration_note": "The checklist uses 12 nonredundant VQA items. A visually polished poster that copies the catalog baseline and invents its own artwork can still receive credit for course identity, some schedule structure, instructor, takeaways, and absence of unrelated copy, but should generally land around the 40-60 range rather than scoring near 90. Full credit remains achievable by an agent that correctly reconciles the sources and follows the supplied campaign system.",
+  "notes": "Difficulty was increased through natural source reconciliation, stage-specific logistics, temporal versioning, and neutral asset selection. Arbitrary micro-rules and repeated penalties for the same stale value were reduced so the case remains challenging without becoming trick-like."
 }

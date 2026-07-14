@@ -1,7 +1,7 @@
-# Final Case Directory
+# Active Case Directory
 
-This directory will contain the final benchmark cases after the pilot round is
-reviewed.
+This directory contains the active 58-case benchmark dataset. It is the only
+case root used by the current validation and evaluation workflows.
 
 Cases are grouped by task type:
 
@@ -14,5 +14,5 @@ Cases are grouped by task type:
 - `state_change/`
 - `multi_source_fusion/`
 
-Each final case should follow `../case_skeleton.md`.
-
+Each case must follow `../case_skeleton.md`. See the root `README.md` for the
+current case counts and validation commands.

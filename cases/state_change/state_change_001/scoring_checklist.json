@@ -1,92 +1,116 @@
 {
   "case_id": "state_change_001",
-  "dimensions": {
-    "task_completion": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "output_type_state_change_001",
-          "check": "For state_change_001, the output is a finished current_event_poster for the latest-state resolution, not a worksheet, raw table, or generic mockup.",
-          "points": 4,
-          "scoring_hint": "2 = correct finished image type; 1 = correct topic but weak format; 0 = wrong artifact type. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
-        },
-        {
-          "id": "operation_depth_state_change_001",
-          "check": "The image visibly resolves this case's latest-state resolution; reference facts include latest_event: Riverside Night Market; latest_date: May 21, 2026; latest_location: Riverside Hall; latest_sponsor: GreenBridge Market; latest_theme: Makers and Music Night; stale_details: May 14, 2026, Harbor Plaza, North Pier Foods.",
-          "points": 4,
-          "scoring_hint": "2 = operation is visibly resolved; 1 = operation partly reflected; 0 = copied unsolved source material. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
+  "evaluation_mode": "image_vqa_0_2",
+  "dimension_weights": {
+    "grounded_requirement_satisfaction": 0.8,
+    "visual_rendering_quality": 0.2
+  },
+  "grounded_requirement_satisfaction": {
+    "vqa_items": [
+      {
+        "id": "grounded_q01",
+        "question": "What exact product identity, semantic version, and public build are advertised?",
+        "expected_answer": "Northstar Workspace Desktop 5.8.0, build 580.1427.",
+        "acceptance_rule": "Score 2 only if the full product name, exact semantic version 5.8.0, and exact build 580.1427 are all stated as one release, with no competing build or version. Score 1 only if exactly two of the three are complete and correct while the third is omitted, not contradicted. Score 0 if any stated identity component is wrong, a different build/version appears, or fewer than two components are verified."
+      },
+      {
+        "id": "grounded_q02",
+        "question": "What current release status, public channel, and release ring are stated?",
+        "expected_answer": "General Availability, Stable, Managed Release Ring 2.",
+        "acceptance_rule": "Score 2 only if all three values are stated and associated with the current release. Score 1 only if exactly two are correct and the third is omitted with no conflicting maturity, channel, or ring. Score 0 if any stated value is wrong, including Release Candidate, Preview, Long-term Support, Preview Ring, or another ring, or if fewer than two values are verified."
+      },
+      {
+        "id": "grounded_q03",
+        "question": "What are the default public start date, rollout duration, and rollout end date?",
+        "expected_answer": "August 31, 2026; 8 business days; September 10, 2026.",
+        "acceptance_rule": "Score 2 only if the exact start, exact business-day duration, and exact inclusive end date are all stated together. Score 1 only if exactly two are correct and the third is omitted, with no contradictory date or calendar-day duration. Score 0 if any stated component is wrong, if 8 days is presented without the business-day meaning, or if fewer than two components are verified."
+      },
+      {
+        "id": "grounded_q04",
+        "question": "What default rollout scope and dated regional exceptions are stated?",
+        "expected_answer": "Worldwide except Japan and Brazil; Japan begins September 16, 2026; Brazil begins September 21, 2026.",
+        "acceptance_rule": "Score 2 only if the exact default scope and both region-date pairs are all present. Score 1 only if the exact scope plus exactly one complete correct region-date pair are present and the other pair is omitted, with no conflicting region or date. Score 0 if the scope is simply Worldwide, either displayed region/date is wrong, an extra exception is added, or the scope and at least one complete exception cannot be verified."
+      },
+      {
+        "id": "grounded_q05",
+        "question": "What selected launch headline and customer value line are used?",
+        "expected_answer": "“Keep every handoff moving” and “A dependable workspace for projects, meetings, and recovery across every approved desktop.”",
+        "acceptance_rule": "Score 2 only if both selected lines are complete and materially exact, with neither mixed with another copy bundle. Score 1 only if exactly one line is complete and correct and the other is omitted, not paraphrased from an obsolete or invalid bundle. Score 0 if either displayed line comes from another bundle, materially changes the claim, or neither complete selected line is verified."
+      },
+      {
+        "id": "grounded_q06",
+        "question": "Which complete ordered set of current launch features is named?",
+        "expected_answer": "Shared project spaces; AI meeting summaries; Resilient background sync; Offline handoff queue, in that order.",
+        "acceptance_rule": "Score 2 only if all four exact labels appear in the expected order and no substitute, obsolete, invalid, or additional feature is presented as current. Score 1 only if exactly three expected labels appear in the correct relative order, the fourth is omitted, and no wrong or extra feature appears. Score 0 if fewer than three are correct, order is materially changed, or any other feature is included."
+      },
+      {
+        "id": "grounded_q07",
+        "question": "Which customer plans form the complete eligible-plan set?",
+        "expected_answer": "Workspace Business Plus, Workspace Enterprise, and Workspace Education only.",
+        "acceptance_rule": "Score 2 only if all three eligible plans and no other plan are stated. Score 1 only if exactly two eligible plans are stated, the third is omitted, and no ineligible or suspended plan appears. Score 0 if fewer than two are correct or if Workspace Starter, Workspace Business, Frontline, Government, All Workspace plans, or any other plan is included."
+      },
+      {
+        "id": "grounded_q08",
+        "question": "What deployment method, release ring, and customer prerequisites are stated?",
+        "expected_answer": "Admin-controlled deployment through Managed Release Ring 2; TPM 2.0 and Secure Boot are required.",
+        "acceptance_rule": "Score 2 only if the exact deployment method, exact ring, and both prerequisites are all stated. Score 1 only if the method and ring are correct and exactly one prerequisite is omitted, or both prerequisites and one of method/ring are correct with the remaining field omitted; no conflicting value may appear. Score 0 if automatic deployment, another ring, no-prerequisite wording, or any wrong prerequisite is stated, or fewer than three required components are verified."
+      },
+      {
+        "id": "grounded_q09",
+        "question": "What administrator opt-in window and automatic-update start are stated?",
+        "expected_answer": "Administrator opt-in runs from August 31 through September 10, 2026, inclusive; automatic update begins September 14, 2026 at 09:00 UTC.",
+        "acceptance_rule": "Score 2 only if both opt-in boundary dates, the automatic-update date, and 09:00 UTC are all present and correctly associated. Score 1 only if exactly three of those four components are correct and the missing component is omitted, with no conflicting timing. Score 0 if any stated date/time is wrong, automatic updating is described as immediate, or fewer than three components are verified."
+      },
+      {
+        "id": "grounded_q10",
+        "question": "What platform, minimum operating system, architecture, and installer type are stated?",
+        "expected_answer": "Windows desktop; Windows 11 23H2 or later; x64; MSI.",
+        "acceptance_rule": "Score 2 only if all four exact specifications are stated. Score 1 only if exactly three are correct and the fourth is omitted with no contradictory compatibility claim. Score 0 if any stated specification is wrong, including Windows 11 24H2, macOS, Linux, ARM/arm64, Universal, 32-bit, EXE, or PKG, or if fewer than three are verified."
+      },
+      {
+        "id": "grounded_q11",
+        "question": "What clean-install size and update payload are stated?",
+        "expected_answer": "202 MB clean install and 58 MB update payload.",
+        "acceptance_rule": "Score 2 only if both exact totals are stated with the correct clean-install versus update association. Score 1 only if exactly one exact total is correctly labeled and the other is omitted, with no alternative size. Score 0 if either displayed total is wrong, approximate, swapped, unlabeled, or if neither total is verifiable."
+      },
+      {
+        "id": "grounded_q12",
+        "question": "What complete support destination and exact customer action label are provided?",
+        "expected_answer": "support.northstar.example/workspace/5-8/ga-deployment; Review rollout and prerequisites.",
+        "acceptance_rule": "Score 2 only if the complete current destination and exact action label are both present. Score 1 only if exactly one is complete and correct and the other is omitted, with no different, shortened-to-another-route, temporary, internal, or obsolete destination/action. Score 0 if either displayed value is wrong or neither is verified."
+      },
+      {
+        "id": "grounded_q13",
+        "question": "Are lifecycle, package, timing, and deployment facts mutually consistent as one current public state?",
+        "expected_answer": "Yes. General Availability and Stable align with build 580.1427, Managed Release Ring 2, the August 31–September 10 default rollout, the September 14 09:00 UTC automatic update, and the 202/58 MB package totals.",
+        "acceptance_rule": "Score 2 only if every listed association is present without internal contradiction. Score 1 only if all displayed associations are correct but exactly one association group is omitted. Score 0 if any displayed build, ring, timing, lifecycle, channel, or payload fact conflicts with another current-state fact, or if two or more association groups are absent."
+      },
+      {
+        "id": "grounded_q14",
+        "question": "Are any obsolete, invalid, unsupported, or internal values presented as current?",
+        "expected_answer": "No. No rejected or unusable target candidate, archived baseline value, unsupported platform/architecture/installer claim, internal identifier, approval record, source code, or calculation trail should appear.",
+        "acceptance_rule": "Score 2 only if none of those categories appears anywhere as current public information. Score 1 only if one obsolete or unsupported value appears solely inside an unmistakable not-current or not-supported warning and no operational identifier is exposed. Score 0 if any invalid alternative is presented as current, any internal identifier/workflow record is visible, or multiple non-current values appear even as warnings."
+      },
+      {
+        "id": "grounded_q15",
+        "question": "What software releases are advertised, and is the required decision-critical content complete?",
+        "expected_answer": "Only Northstar Workspace Desktop 5.8.0 build 580.1427 is advertised, with identity/state, rollout and exceptions, message/features, eligibility/deployment, update timing, system/payload/prerequisites, and support action all represented.",
+        "acceptance_rule": "Score 2 only if the target release is the sole advertised release and all seven decision-critical content groups are present. Score 1 only if the target is the sole release and exactly one content group is absent, with no conflicting fact. Score 0 if another release competes, the target is ambiguous, two or more content groups are absent, or any group contains a material contradiction."
+      }
+    ]
+  },
+  "visual_rendering_quality": {
+    "image_type": "release_announcement",
+    "vqa_items": [
+      {
+        "id": "visual_q01",
+        "question": "As a current software release or rollout announcement, does the image transform the product identity, version, release state, availability or rollout timing, key improvements, qualifications, and next action into a distinctive, publication-ready launch visual rather than a readable specification sheet? Judge the immediacy of the current-state message, the visual prominence of version and status, the synthesis of launch highlights, the treatment of rollout or availability information, the strength and placement of the CTA, the intentional use of the full canvas, and whether the result feels like a designed customer launch campaign instead of a document, release note, help-center page, or technical fact sheet. Do not award 2 merely because the text is correct, aligned, legible, and separated by section rules.",
+        "score_criteria": {
+          "2": "Award 2 only if **all** of the following launch-quality gates are clearly satisfied; failure of any one gate limits the score to 1 at most:\n\n  1. **Immediate release-state communication:** Product identity, current version or rollout state, maturity or channel, and primary availability timing must be understood within seconds. Version and current status must function as deliberate launch elements, not merely appear inside a large heading or subtitle.\n  2. **Campaign-level visual concept:** The composition must have a distinctive product-launch identity through product imagery, interface visuals, branded illustration, rollout graphics, purposeful iconography, or an exceptionally strong typographic concept. Product imagery is not mandatory, but a text-only design must demonstrate outstanding art direction and cannot resemble a memo, release note, brochure page, or specification sheet.\n  3. **Visual synthesis of information:** Key improvements, rollout stages, eligibility, exceptions, system requirements, and supporting qualifications must be edited and visually grouped according to customer priority. Raw label-value lines, long technical lists, repeated plain text sections, or information separated only by horizontal rules do not constitute exceptional visual communication.\n  4. **Decisive hierarchy:** The release message, customer benefit, launch highlights, rollout timing, qualifications, and action must have clearly different visual weights. Supporting compatibility or deployment details must not compete with the release headline or make the announcement feel like documentation.\n  5. **Integrated and actionable CTA:** The next action must be prominent, specific, visually resolved, and clearly connected to the release message. A plain outlined rectangle, detached footer link, generic text button, or CTA surrounded by excessive empty space prevents 2.\n  6. **Whole-canvas composition:** Content, imagery, negative space, margins, and vertical rhythm must be intentionally balanced across the complete canvas. There may be no conspicuous unused lower region, top-heavy composition, oversized canvas, abrupt end to the designed content, or large blank area that makes the artifact appear unfinished.\n  7. **Premium production finish:** Typography, color, spacing, alignment, section transitions, badges, visual accents, and brand treatment must feel refined and consistent at normal viewing size. No tiny qualification text, weak contrast, awkward line break, generic divider treatment, malformed glyph, clipping, overlap, accidental crop, unstable alignment, or visible cleanup issue is allowed.\n\n  A clean and accurate one-column announcement composed mainly of headings, label-value text, bullet points, horizontal dividers, and a basic CTA is a usable release information sheet, not an exceptional launch artifact, and cannot receive 2.",
+          "1": "Award 1 if the announcement is clear, readable, correct-looking, and substantially usable, but still needs visible creative or compositional refinement before prominent customer publication. Typical 1-point outputs include polished but document-like release summaries; plain single-column layouts; technical details presented as label-value lists; repeated horizontal section dividers; limited product imagery or launch storytelling; generic corporate colors; weak separation between launch highlights and system requirements; modest version or status treatment; a basic or detached CTA; excessive unused space; top-heavy content distribution; or styling that resembles release notes, documentation, a slide, or a help-center article. An artifact may be perfectly legible and free of rendering defects yet still receive only 1 when it communicates information without creating a convincing launch experience.",
+          "0": "Award 0 if the announcement is visually poor, unreliable, materially confusing, or unsuitable for customer publication. This includes cases where product identity, current version, release state, timing, eligibility, rollout scope, or next action is difficult to identify; current and superseded states visually compete; important qualifications are hidden or unreadable; hierarchy is chaotic; the layout is severely empty, crowded, fragmented, or unfinished; the CTA is effectively unusable; or substantial redesign is required. Blank, corrupted, severely unreadable, clipped, overlapping, misleading, or otherwise broken outputs are also 0."
         }
-      ],
-      "label": "Task Completion"
-    },
-    "grounded_requirement_satisfaction": {
-      "weight": 0.55,
-      "items": [
-        {
-          "id": "critical_fact_accuracy_state_change_001",
-          "check": "For state_change_001, accurately includes the critical expected facts latest_event, latest_date, latest_location, latest_theme, stale_details using these case values: latest_event: Riverside Night Market; latest_date: May 21, 2026; latest_location: Riverside Hall; latest_sponsor: GreenBridge Market; latest_theme: Makers and Music Night; stale_details: May 14, 2026, Harbor Plaza, North Pier Foods.",
-          "points": 8,
-          "scoring_hint": "2 = all critical facts correct; 1 = one minor omission or formatting issue; 0 = any critical fact is wrong or missing.",
-          "fact_ids": [
-            "latest_event",
-            "latest_date",
-            "latest_location",
-            "latest_theme"
-          ]
-        },
-        {
-          "id": "required_appear_facts_state_change_001",
-          "check": "Shows required appear facts latest_event, latest_date, latest_location, latest_sponsor, latest_theme for state_change_001 without replacing them with unsupported alternatives; expected values include latest_event: Riverside Night Market; latest_date: May 21, 2026; latest_location: Riverside Hall; latest_sponsor: GreenBridge Market; latest_theme: Makers and Music Night; stale_details: May 14, 2026, Harbor Plaza, North Pier Foods.",
-          "points": 6,
-          "scoring_hint": "2 = all required facts appear clearly; 1 = most appear but one is ambiguous; 0 = multiple required facts are absent."
-        },
-        {
-          "id": "negative_exclusion_facts_state_change_001",
-          "check": "Does not show prohibited or stale facts stale_details in state_change_001; avoids unsupported claims from distractor env material.",
-          "points": 5,
-          "scoring_hint": "2 = no prohibited facts appear; 1 = one weak/ambiguous distractor; 0 = any explicit prohibited value appears.",
-          "fact_ids": [
-            "stale_details"
-          ]
-        }
-      ],
-      "label": "Grounded Requirement Satisfaction"
-    },
-    "information_structuring": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "fact_hierarchy_state_change_001",
-          "check": "Organizes latest_event, latest_date, latest_location, latest_theme as the primary message for state_change_001; supporting values are latest_event: Riverside Night Market; latest_date: May 21, 2026; latest_location: Riverside Hall; latest_sponsor: GreenBridge Market; latest_theme: Makers and Music Night; stale_details: May 14, 2026, Harbor Plaza, North Pier Foods.",
-          "points": 5,
-          "scoring_hint": "2 = hierarchy is clear and fact-driven; 1 = facts present but hierarchy is muddled; 0 = important facts are buried or missing. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
-        },
-        {
-          "id": "robust_consistency_state_change_001",
-          "check": "Across repeated runs of state_change_001, the same critical facts, exclusions stale_details, ordering rules, and layout constraints must remain consistent.",
-          "points": 4,
-          "scoring_hint": "2 = stable facts and exclusions; 1 = minor wording drift only; 0 = selected facts or exclusions change. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
-        }
-      ],
-      "label": "Information Structuring"
-    },
-    "visual_communication_quality": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "visual_clarity_state_change_001",
-          "check": "For state_change_001, uses clear visual hierarchy, readable typography, sufficient contrast, and non-crowded spacing at the intended current_event_poster size.",
-          "points": 4,
-          "scoring_hint": "2 = readable and polished; 1 = readable with minor clutter; 0 = unreadable or visually incoherent. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
-        },
-        {
-          "id": "visual_layout_density_state_change_001",
-          "check": "The current_event_poster layout has appropriate information density, balanced image/text regions, crisp assets, platform-safe margins, and no placeholder-like areas.",
-          "points": 4,
-          "scoring_hint": "2 = balanced density and crisp assets; 1 = some weak spacing or density; 0 = blank, placeholder-like, or low-resolution. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
-        }
-      ],
-      "label": "Visual Communication Quality"
-    }
+      }
+    ]
   }
 }

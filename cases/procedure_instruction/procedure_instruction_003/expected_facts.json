@@ -3,47 +3,152 @@
   "task_type": "procedure_instruction",
   "facts": [
     {
-      "id": "normal_steps",
-      "description": "Normal workflow steps in order.",
-      "source": "env/lab_schedule.csv + env/lab_protocol.pdf",
+      "id": "fact_01",
+      "description": "What approved session identity does the ST-07 card use?",
+      "source": "env/bio214_semester_lab_plan.xlsx",
       "importance": "critical",
-      "expected_value": [
-        "Label sample tubes",
-        "Add buffer solution",
-        "Invert gently ten times",
-        "Rest at room temperature",
-        "Record color band result"
-      ],
+      "expected_value": "BIO 214 Section 02, Outbreak Tracing ELISA, September 16, 2026 at 13:00, room SCI-214, station ST-07.",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "gentle_inversion",
-      "description": "Caution says invert gently, not shake vigorously.",
-      "source": "env/lab_protocol.pdf",
+      "id": "fact_02",
+      "description": "Which active sample token is assigned to each ST-07 seat at class start?",
+      "source": "env/bio214_semester_lab_plan.xlsx",
       "importance": "critical",
-      "expected_value": "Invert gently ten times",
+      "expected_value": "A=S02-K17, B=S02-M04, C=S02-R22, D=S02-V31. S02-T09 is the superseded seat-D token.",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "exclude_recovery",
-      "description": "Heat shock recovery is not a normal step.",
-      "source": "env/lab_schedule.csv + env/lab_protocol.pdf",
+      "id": "fact_03",
+      "description": "Which released bulletins form the current rule basis for this card?",
+      "source": "env/bio214_semester_lab_plan.xlsx + env/bio214_section02_operations_bulletins.md",
       "importance": "major",
-      "expected_value": "Heat shock recovery",
-      "must_not_appear_in_image": true,
-      "evaluation_role": "negative_only"
+      "expected_value": "OPS-27 controls strip topology, control validation, triplicate calls, and tracing; OPS-30 controls token labels, contamination response, result records, safety, and disposal; OPS-34 controls the ST-07 route, kit and lots, lot-specific read window, and dead-volume issue calculation.",
+      "must_appear_in_image": true,
+      "evaluation_role": "major_required"
     },
     {
-      "id": "wrong_action",
-      "description": "Do not say shake vigorously.",
-      "source": "env/lab_protocol.pdf",
+      "id": "fact_04",
+      "description": "What token-based sample-sharing method is shown before the assay begins?",
+      "source": "env/elisa_immuno_explorer_instruction_manual.pdf + env/bio214_section02_operations_bulletins.md",
+      "importance": "critical",
+      "expected_value": "Label the yellow tube and sharing transfer pipet with the active token; transfer the full approximately 750 µl to the scheduled partner, mix gently by pipetting, take back about 750 µl/half, record the partner token in round order, and discard the sharing pipet after round 3.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "fact_05",
+      "description": "What exact three-round exchange route is shown after translating the released seat route to active tokens?",
+      "source": "env/bio214_semester_lab_plan.xlsx",
+      "importance": "critical",
+      "expected_value": "Round 1: S02-K17↔S02-R22 and S02-M04↔S02-V31. Round 2: S02-K17↔S02-M04 and S02-R22↔S02-V31. Round 3: S02-K17↔S02-V31 and S02-M04↔S02-R22. Route ID XR-ST07-B.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "fact_06",
+      "description": "How are the two strips assigned and how is each 12-well strip mapped?",
+      "source": "env/bio214_semester_lab_plan.xlsx + env/bio214_section02_operations_bulletins.md",
+      "importance": "critical",
+      "expected_value": "Strip 1 uses A/S02-K17 and B/S02-M04; Strip 2 uses C/S02-R22 and D/S02-V31. On both strips, wells 1-3 are positive control, 4-6 negative control, 7-9 the first listed token, and 10-12 the second listed token.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "fact_07",
+      "description": "What released station kit and strip-specific P50 equipment are assigned?",
+      "source": "env/bio214_semester_lab_plan.xlsx",
+      "importance": "critical",
+      "expected_value": "Station release REL-ST07-B, equipment kit KIT-ST07-R2, Strip 1 P50-214-17, and Strip 2 P50-214-23.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "fact_08",
+      "description": "Which released reagent lots and substrate read window govern ST-07?",
+      "source": "env/bio214_semester_lab_plan.xlsx + env/bio214_reagent_lot_ledger.csv",
+      "importance": "critical",
+      "expected_value": "Control pack CTRL-26-44, antibody pack AB-26-72, substrate SUB-26-155, with a 6-8 minute read-and-record window after substrate.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "fact_09",
+      "description": "What four assay stages, waits, wash counts, and final no-wash condition are shown?",
+      "source": "env/elisa_immuno_explorer_instruction_manual.pdf + env/elisa_disease_detection_modeling.pptx + env/bio214_section02_operations_bulletins.md + env/bio214_reagent_lot_ledger.csv",
+      "importance": "critical",
+      "expected_value": "Controls and student samples: 50 µl per assigned well, wait 5 minutes, wash twice. Primary antibody: 50 µl to all wells, wait 5 minutes, wash twice. Secondary antibody: 50 µl to all wells, wait 5 minutes, wash three times. Substrate: 50 µl to all wells, read at 6-8 minutes, with no wash afterward.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "fact_10",
+      "description": "What derived timing, wash, and assay-dispense totals are shown for the station?",
+      "source": "env/elisa_immuno_explorer_instruction_manual.pdf + env/bio214_reagent_lot_ledger.csv",
+      "importance": "critical",
+      "expected_value": "21-23 timed minutes; 7 complete wash cycles per strip and 14 for the station; 96 separate 50 µl assay dispenses totaling 4800 µl (4.8 ml), excluding wash buffer and sample sharing.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "fact_11",
+      "description": "What issue quantities result from the active reserve, dead-volume, and rounding rules?",
+      "source": "env/bio214_section02_operations_bulletins.md + env/bio214_reagent_lot_ledger.csv",
+      "importance": "critical",
+      "expected_value": "Positive control 375 µl and negative control 375 µl; primary antibody 1400 µl and secondary antibody 1400 µl; substrate 1400 µl. The method is clean volume +12% reserve + assigned-lot dead volume, then round upward to the lot's 25 µl increment; student samples are not pooled or reserved.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "fact_12",
+      "description": "How does the card define a complete wash and handle a tip or wash-pipet boundary breach?",
+      "source": "env/elisa_immuno_explorer_instruction_manual.pdf + env/bio214_section02_operations_bulletins.md",
+      "importance": "critical",
+      "expected_value": "Drain by inverting and gently tapping over towels, move to a fresh towel/zone, fill every well with wash buffer without cross-well splash, then invert and gently tap again. Keep one wash pipet per strip. Discard and replace a contaminated source tip; remove and replace a breached wash pipet and notify the instructor.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "fact_13",
+      "description": "How are strips validated and student triplicates classified?",
+      "source": "env/bio214_section02_operations_bulletins.md",
+      "importance": "critical",
+      "expected_value": "Each strip passes only with 3/3 blue positive controls and 0/3 blue negative controls. On a valid strip, 3/3 blue student wells are positive, 0/3 blue negative, and 1/3 or 2/3 blue indeterminate. Invalid strips are not interpreted or traced; indeterminate results are not traced.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "fact_14",
+      "description": "What traceability record and transmission-tracing rule does the card require?",
+      "source": "env/bio214_semester_lab_plan.xlsx + env/bio214_section02_operations_bulletins.md + env/bio214_reagent_lot_ledger.csv",
       "importance": "major",
-      "expected_value": "shake vigorously",
-      "must_not_appear_in_image": true,
-      "evaluation_role": "negative_only"
+      "expected_value": "Record route XR-ST07-B, station release REL-ST07-B, kit KIT-ST07-R2, lots CTRL-26-44/AB-26-72/SUB-26-155; for each strip record control status, both tokens, each exact three-well pattern, final calls, and read time. Trace only from a valid strip with a definite positive result, never from invalid or indeterminate results.",
+      "must_appear_in_image": true,
+      "evaluation_role": "major_required"
+    },
+    {
+      "id": "fact_15",
+      "description": "What current safety and end-of-run disposal rules are shown?",
+      "source": "env/bio214_section02_operations_bulletins.md",
+      "importance": "major",
+      "expected_value": "Wear gloves and protective eyewear, keep food/drink out, and wash hands with soap before and after. For an eye splash, start eyewash immediately for at least 15 minutes and alert the instructor. Put used micropipette tips in sharps; put strips, towels, sharing pipets, and wash pipets in the labeled biohazard tray; return no used item to clean supply.",
+      "must_appear_in_image": true,
+      "evaluation_role": "major_required"
     }
   ],
-  "calculation_notes": "Use rows marked normal=yes and preserve numeric phase order. Protocol caution replaces any generic shaking language."
+  "calculation_notes": {
+    "session_resolution": "Use SCH-026 plus approved room change CHG-041; ignore the pending 13:30 change and instructor prep.",
+    "active_roster": "Use latest approved seat rows effective by 13:00. Seat D is ASN-ST07-D-NEW/S02-V31; S02-T09 is superseded.",
+    "route_translation": "XR-ST07-B rounds are A-C/B-D, A-B/C-D, A-D/B-C; translate seats through the active roster.",
+    "release_precedence": "OPS-27 + OPS-30 + OPS-34 are Released. OPS-34 replaces only ST-07 route/kit/lot/read/issue topics.",
+    "kit_and_lots": "REL-ST07-B -> KIT-ST07-R2, P50-214-17, P50-214-23, CTRL-26-44, AB-26-72, SUB-26-155.",
+    "time": "5 + 5 + 5 + substrate 6-8 = 21-23 timed minutes.",
+    "washes": "2 + 2 + 3 = 7 per strip; two strips = 14.",
+    "dispenses": "Two strips × 12 wells × four assay loading rounds = 96 dispenses; 96 × 50 µl = 4800 µl.",
+    "control_issue": "300 µl clean × 1.12 = 336; +15 µl dead volume = 351; round up to 25 = 375 µl for each control.",
+    "antibody_and_substrate_issue": "1200 µl clean × 1.12 = 1344; +35 µl dead volume = 1379; round up to 25 = 1400 µl for each of PA, SA, and substrate.",
+    "planned_supplies": "14 fresh micropipette tips, 4 sharing transfer pipets, and 2 strip-wash transfer pipets; breach replacements are additional."
+  }
 }

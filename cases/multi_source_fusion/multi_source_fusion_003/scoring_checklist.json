@@ -1,90 +1,116 @@
 {
   "case_id": "multi_source_fusion_003",
-  "dimensions": {
-    "task_completion": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "output_type_multi_source_fusion_003",
-          "check": "For multi_source_fusion_003, the output is a finished product_campaign_image for the cross-file fusion and web-bounded sizing, not a worksheet, raw table, or generic mockup.",
-          "points": 4,
-          "scoring_hint": "2 = correct finished image type; 1 = correct topic but weak format; 0 = wrong artifact type. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
-        },
-        {
-          "id": "operation_depth_multi_source_fusion_003",
-          "check": "The image visibly resolves this case's cross-file fusion and web-bounded sizing; reference facts include revenue_winner: NovaPack Pro; supported_points: compression panels, weather-resistant shell, quick-access tech pocket; brand_constraints: #1D3557, #F1FAEE, #E63946; web_required_size: official current feed sizing guidance from Instagram or Meta; wrong_product_exclusions: NovaPack Mini, NovaPack Tag.",
-          "points": 4,
-          "scoring_hint": "2 = operation is visibly resolved; 1 = operation partly reflected; 0 = copied unsolved source material. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
+  "evaluation_mode": "image_vqa_0_2",
+  "dimension_weights": {
+    "grounded_requirement_satisfaction": 0.8,
+    "visual_rendering_quality": 0.2
+  },
+  "grounded_requirement_satisfaction": {
+    "vqa_items": [
+      {
+        "id": "grounded_q01",
+        "question": "Which NovaPack product is named and presented as the only campaign product?",
+        "expected_answer": "NovaPack Trek is shown by its full name and no other NovaPack product is promoted, compared, or co-featured.",
+        "acceptance_rule": "Score 2 only if the full name “NovaPack Trek” is explicit and it is the sole featured NovaPack product. Score 1 only if Trek is clearly identifiable but the full name is incomplete or another NovaPack item appears incidentally without competing for focus. Score 0 if Trek is missing, another product is primary, or multiple NovaPack products compete."
+      },
+      {
+        "id": "grounded_q02",
+        "question": "Does the performance badge preserve the complete current period, accounting scope, metric, and status?",
+        "expected_answer": "The image states “May 2026 Program-Eligible Contribution Leader” or a semantically exact equivalent retaining May, 2026, Program-Eligible, Contribution, and Leader.",
+        "acceptance_rule": "Score 2 only if all five required elements are explicit and correctly combined. Score 1 only if the May 2026 leader meaning is correct and exactly one of Program-Eligible or Contribution is omitted or materially shortened. Score 0 if two or more required elements are missing, the period or metric is wrong, or a generic favorite, top pick, sales leader, or revenue leader badge is used."
+      },
+      {
+        "id": "grounded_q03",
+        "question": "Does the customer-facing audience statement identify the complete selected audience and trip context?",
+        "expected_answer": "The content addresses verified consulting and engineering employees in the Field Consultants segment who are booking 3-7 night client-site trips.",
+        "acceptance_rule": "Score 2 only if all four components are explicit: consulting or engineering employees, verified or employer-qualified participation, 3-7 night duration, and client-site travel. Score 1 only if exactly one component is omitted while the other three are clear and compatible. Score 0 if two or more components are absent or the content targets general consumers, leisure travelers, families, remote-work stays, or a different trip purpose."
+      },
+      {
+        "id": "grounded_q04",
+        "question": "Are the current campaign label and lead benefit both used?",
+        "expected_answer": "The image includes “FIELD MOBILITY PILOT” and communicates “Move from airport to client site with one organized travel pack.”",
+        "acceptance_rule": "Score 2 only if both the campaign label and the complete current lead-benefit meaning are present and tied to NovaPack Trek. Score 1 only if one is complete and the other is clearly recognizable but omits exactly one material qualifier. Score 0 if either element is absent, assigned to another product, replaced by consumer shopping language, or taken from a superseded or future revision."
+      },
+      {
+        "id": "grounded_q05",
+        "question": "Does the image contain exactly the two current supporting proof points?",
+        "expected_answer": "Exactly two proofs are used: clamshell access separates site gear from client-ready clothing, and a padded 16-inch tech sleeve keeps a laptop and charger within reach.",
+        "acceptance_rule": "Score 2 only if both proof meanings are complete, clearly tied to NovaPack Trek, and no third co-equal proof is added. Score 1 only if one proof is complete and the other retains the correct role but omits exactly one material qualifier such as client-ready clothing, 16-inch, laptop, or charger. Score 0 if either proof role is missing or wrong, a NovaPack Pro compression/weather claim is substituted, or an extra co-equal product claim changes the package."
+      },
+      {
+        "id": "grounded_q06",
+        "question": "Are the current CTA and complete audience qualification both present?",
+        "expected_answer": "The CTA is “Check employer travel eligibility,” and the qualification states: “For verified consulting and engineering employees booking 3-7 night client-site trips.”",
+        "acceptance_rule": "Score 2 only if the CTA retains check, employer travel, and eligibility, and the qualification retains all four audience/trip components. Score 1 only if one element is complete and the other omits exactly one required qualifier. Score 0 if the CTA or qualification is missing, generic, shop-oriented, waitlist-oriented, wrong-audience, or materially broader than the approved program."
+      },
+      {
+        "id": "grounded_q07",
+        "question": "Is the complete three-part employer-trial disclosure package included?",
+        "expected_answer": "All three disclosures appear: employer participation and itinerary approval are required; carry-on acceptance varies by airline and aircraft; and laptop, PPE, and tracking accessories are not included.",
+        "acceptance_rule": "Score 2 only if all three disclosure meanings are present and every listed qualifier is retained. Score 1 only if all three themes are identifiable but exactly one qualifier or excluded item is missing, or if two disclosures are complete and the third is nearly complete. Score 0 if a disclosure theme is absent, multiple details are omitted, the package is replaced by a generic terms note, or universal eligibility or carry-on acceptance is implied."
+      },
+      {
+        "id": "grounded_q08",
+        "question": "Does all positive campaign copy consistently use the current employer-trial revision?",
+        "expected_answer": "The image uses only the current BT-R4 Field Consultants employer-trial content and does not use the superseded BT-R3 NovaPack Pro consumer package, the future BT-R5 shorthand, leisure Trek wording, or another objective.",
+        "acceptance_rule": "Score 2 only if every positive claim, badge, CTA, qualification, and disclosure is consistent with the current employer-trial package and none of the named wrong-version or wrong-objective wording appears. Score 1 only if one phrase is shortened ambiguously without changing product, audience, objective, or claim meaning. Score 0 if any explicit consumer shop package, future revision, leisure objective, wrong-product claim, or wrong campaign purpose is used."
+      },
+      {
+        "id": "grounded_q09",
+        "question": "Does the customer-facing content package have the exact required roles and counts?",
+        "expected_answer": "The image has one campaign label, one performance badge, one lead benefit, exactly two supporting proofs, one CTA, one audience qualification, and exactly three disclosures.",
+        "acceptance_rule": "Score 2 only if every listed role is identifiable and the counts are exact, with no extra co-equal benefit, proof, CTA, qualification, or disclosure. Score 1 only if exactly one required role is missing, incomplete, duplicated, or weakly classified while all others are correct. Score 0 if two or more role/count errors occur or the package is reorganized into a different campaign."
+      },
+      {
+        "id": "grounded_q10",
+        "question": "Is the current NovaPack identity used without a retired or competing product identity?",
+        "expected_answer": "The current horizontal NovaPack wordmark and full NovaPack Trek name are present; the retired orbit identity and all other NovaPack product names are absent.",
+        "acceptance_rule": "Score 2 only if the current wordmark and full selected product name both appear and no retired or competing NovaPack identity is used. Score 1 only if the current wordmark is present but the product name is incomplete or identity status is not fully verifiable. Score 0 if the brand is absent, the retired orbit mark is active, or another NovaPack product identity is promoted."
+      },
+      {
+        "id": "grounded_q11",
+        "question": "Does the campaign use the approved current product source for the selected product and objective?",
+        "expected_answer": "The main product is the current NovaPack Trek field-travel pack from the employer-trial asset set; a hard-shell NovaPack Pro suitcase, Mini, Tag, Expand, Fold, reference-only mock, or retired asset is not used as the hero.",
+        "acceptance_rule": "Score 2 only if a field-travel pack consistent with the current Trek employer-trial source is unmistakably the sole product hero and all listed wrong-product or wrong-status alternatives are absent. Score 1 only if the product is clearly Trek-like but the exact current source or objective fit is uncertain. Score 0 if the hero is a hard-shell suitcase, accessory, another product, reference-only concept, retired asset, or no product is shown."
+      },
+      {
+        "id": "grounded_q12",
+        "question": "Does the campaign use the approved audience setting for the selected objective?",
+        "expected_answer": "The setting communicates an airport-to-client-site business or field-travel transition with work-device or site-travel cues; family packing, vacation-only leisure, luxury runway, child-focused, and outdoor-adventure-only settings are absent.",
+        "acceptance_rule": "Score 2 only if the business/client-site transition and at least two compatible work or field-travel cues are clear, with all incompatible settings absent. Score 1 only if a general business-travel setting is clear but one required transition or supporting cue is missing. Score 0 if the setting is generic asphalt/product-only, family or child focused, leisure-only, luxury/runway led, outdoor-adventure-only, or unrelated."
+      },
+      {
+        "id": "grounded_q13",
+        "question": "Does the campaign avoid unsupported, expired, rejected, and draft claims?",
+        "expected_answer": "No 50 percent packing claim, full-waterproof guarantee, lifetime airline-damage replacement, extreme-expedition survival claim, price, discount, or guaranteed carry-on acceptance appears.",
+        "acceptance_rule": "Score 2 only if every listed unsupported, expired, rejected, or draft claim type is absent. Score 1 only if no listed claim appears but one vague overstatement creates limited uncertainty without a number or guarantee. Score 0 if any listed numerical, guaranteed, rejected, retired, draft, or commercial claim appears."
+      },
+      {
+        "id": "grounded_q14",
+        "question": "Does the image keep internal close and workflow information out of the customer-facing creative?",
+        "expected_answer": "No financial amount, unit count, customer or transaction ID, program code, adjustment ID, placement or objective key, revision code, version number, approval state, database field, or working note is shown.",
+        "acceptance_rule": "Score 2 only if all listed internal values, identifiers, and field labels are absent. Score 1 only if no analytical value is exposed but one harmless internal-sounding code fragment remains. Score 0 if any financial result, customer-level detail, transaction or adjustment ID, program/placement/objective/revision code, approval state, version, field name, or working note is visible."
+      },
+      {
+        "id": "grounded_q15",
+        "question": "Is the campaign purpose consistently employer-travel eligibility verification rather than consumer purchase or another action?",
+        "expected_answer": "The label, audience, claims, CTA, qualification, and disclosures consistently support the Field Mobility employer-travel eligibility check, with no Shop Now, Shop NovaPack Pro, waitlist, discount, generic Learn More, leisure exploration, or direct-purchase purpose.",
+        "acceptance_rule": "Score 2 only if every campaign element supports employer-travel eligibility verification and none of the named alternative actions or purposes appears. Score 1 only if the correct employer-trial purpose is clear but one minor generic phrase weakens specificity without introducing a wrong product, audience, or objective. Score 0 if shopping, direct purchase, waitlist, discount, generic learn-more-only, leisure exploration, or another campaign purpose is explicitly used."
+      }
+    ]
+  },
+  "visual_rendering_quality": {
+    "image_type": "social_campaign_creative",
+    "vqa_items": [
+      {
+        "id": "visual_q01",
+        "question": "As a customer-facing social campaign creative, does the image fuse the selected subject or product, audience-relevant setting, campaign message, approved benefit or proof, brand identity, and CTA into one distinctive, platform-native, highly polished feed composition?",
+        "score_criteria": {
+          "2": "Award 2 only if the creative is exceptional and ready for campaign deployment: the subject or product is unmistakably dominant; setting, message, proof, brand, and CTA reinforce one another in a single coherent concept; the crop feels native to the intended feed placement; essential text is readable at feed size; and imagery, typography, color, spacing, and finish are distinctive, premium, and meticulously controlled. No generic campaign template, weak subject focus, disconnected proof, competing copy, detached CTA, awkward crop, malformed text, or rendering flaw is allowed. Any meaningful campaign-quality concern prevents 2.",
+          "1": "Award 1 if the creative is coherent, usable, and visually decent or attractive, but it remains ordinary or visibly imperfect—for example, generic styling, modest product or destination focus, disconnected proof points, competing copy, a weak CTA, or a slightly awkward crop.",
+          "0": "Award 0 even when campaign elements are present if the output looks poor or fails to cohere: subject, setting, message, proof, brand, and CTA feel disconnected; focal hierarchy is weak; text or crop is badly handled; or the composition requires substantial redesign before use. Blank, corrupted, severely unreadable, or broken creatives are also 0."
         }
-      ],
-      "label": "Task Completion"
-    },
-    "grounded_requirement_satisfaction": {
-      "weight": 0.55,
-      "items": [
-        {
-          "id": "critical_fact_accuracy_multi_source_fusion_003",
-          "check": "For multi_source_fusion_003, accurately includes the critical expected facts revenue_winner, supported_points, web_required_size using these case values: revenue_winner: NovaPack Pro; supported_points: compression panels, weather-resistant shell, quick-access tech pocket; brand_constraints: #1D3557, #F1FAEE, #E63946; web_required_size: official current feed sizing guidance from Instagram or Meta; wrong_product_exclusions: NovaPack Mini, NovaPack Tag.",
-          "points": 8,
-          "scoring_hint": "2 = all critical facts correct; 1 = one minor omission or formatting issue; 0 = any critical fact is wrong or missing.",
-          "fact_ids": [
-            "revenue_winner",
-            "supported_points"
-          ]
-        },
-        {
-          "id": "required_appear_facts_multi_source_fusion_003",
-          "check": "Shows required appear facts revenue_winner, supported_points, brand_constraints for multi_source_fusion_003 without replacing them with unsupported alternatives; expected values include revenue_winner: NovaPack Pro; supported_points: compression panels, weather-resistant shell, quick-access tech pocket; brand_constraints: #1D3557, #F1FAEE, #E63946; web_required_size: official current feed sizing guidance from Instagram or Meta; wrong_product_exclusions: NovaPack Mini, NovaPack Tag.",
-          "points": 6,
-          "scoring_hint": "2 = all required facts appear clearly; 1 = most appear but one is ambiguous; 0 = multiple required facts are absent."
-        },
-        {
-          "id": "negative_exclusion_facts_multi_source_fusion_003",
-          "check": "Does not show prohibited or stale facts wrong_product_exclusions in multi_source_fusion_003; avoids unsupported claims from distractor env material.",
-          "points": 5,
-          "scoring_hint": "2 = no prohibited facts appear; 1 = one weak/ambiguous distractor; 0 = any explicit prohibited value appears.",
-          "fact_ids": [
-            "wrong_product_exclusions"
-          ]
-        }
-      ],
-      "label": "Grounded Requirement Satisfaction"
-    },
-    "information_structuring": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "fact_hierarchy_multi_source_fusion_003",
-          "check": "Organizes revenue_winner, supported_points, web_required_size as the primary message for multi_source_fusion_003; supporting values are revenue_winner: NovaPack Pro; supported_points: compression panels, weather-resistant shell, quick-access tech pocket; brand_constraints: #1D3557, #F1FAEE, #E63946; web_required_size: official current feed sizing guidance from Instagram or Meta; wrong_product_exclusions: NovaPack Mini, NovaPack Tag.",
-          "points": 5,
-          "scoring_hint": "2 = hierarchy is clear and fact-driven; 1 = facts present but hierarchy is muddled; 0 = important facts are buried or missing. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
-        },
-        {
-          "id": "robust_consistency_multi_source_fusion_003",
-          "check": "Across repeated runs of multi_source_fusion_003, the same critical facts, exclusions wrong_product_exclusions, ordering rules, and layout constraints must remain consistent.",
-          "points": 4,
-          "scoring_hint": "2 = stable facts and exclusions; 1 = minor wording drift only; 0 = selected facts or exclusions change. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
-        }
-      ],
-      "label": "Information Structuring"
-    },
-    "visual_communication_quality": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "visual_clarity_multi_source_fusion_003",
-          "check": "For multi_source_fusion_003, uses clear visual hierarchy, readable typography, sufficient contrast, and non-crowded spacing at the intended product_campaign_image size.",
-          "points": 4,
-          "scoring_hint": "2 = readable and polished; 1 = readable with minor clutter; 0 = unreadable or visually incoherent. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
-        },
-        {
-          "id": "visual_layout_density_multi_source_fusion_003",
-          "check": "The product_campaign_image layout has appropriate information density, balanced image/text regions, crisp assets, platform-safe margins, and no placeholder-like areas.",
-          "points": 4,
-          "scoring_hint": "2 = balanced density and crisp assets; 1 = some weak spacing or density; 0 = blank, placeholder-like, or low-resolution. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
-        }
-      ],
-      "label": "Visual Communication Quality"
-    }
+      }
+    ]
   }
 }

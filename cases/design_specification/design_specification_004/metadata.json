@@ -3,50 +3,53 @@
   "task_type": "design_specification",
   "web_policy": "closed_env",
   "target_image_type": "finance_app_compliance_ad",
-  "difficulty": "hard",
+  "difficulty": "expert",
+  "reference_date": "2026-08-18",
+  "creative_freeze": "2026-08-14T17:00:00Z",
   "env_files": [
     {
-      "path": "env/latest_update.md",
-      "role": "Latest campaign update with authoritative copy, replacements, and priority order",
-      "format": "md",
-      "origin": "generated",
-      "reproducibility_note": "Generated during design_specification difficulty optimization"
+      "path": "env/LedgerLite_Cash_Reserve_Creative_Brief_v3.2.docx",
+      "role": "Base creative direction plus final-release precedence and resolution instructions",
+      "format": "docx",
+      "origin": "generated"
     },
     {
-      "path": "env/platform_specs.txt",
-      "role": "Current platform size, safe-area, hierarchy, contrast, and placement constraints",
-      "format": "txt",
-      "origin": "generated",
-      "reproducibility_note": "Generated during design_specification difficulty optimization"
+      "path": "env/LedgerLite_Brand_and_Compliance_Guide_2026.pdf",
+      "role": "Brand behavior, product-led imagery direction, platform schematic, and prohibited finance claims",
+      "format": "pdf",
+      "origin": "generated"
     },
     {
-      "path": "env/visual_rules.json",
-      "role": "Current palette, design rules, hero requirements, style constraints, and conditional rules",
-      "format": "json",
-      "origin": "generated",
-      "reproducibility_note": "Generated during design_specification difficulty optimization"
+      "path": "env/Paid_Social_Specs.xlsx",
+      "role": "96 placement profiles with versioned revision events; latest pre-freeze state must be resolved",
+      "format": "xlsx",
+      "origin": "generated"
     },
     {
-      "path": "env/asset_manifest.json",
-      "role": "Allowed current logo, hero, icon, badge, or helper assets",
-      "format": "json",
-      "origin": "generated",
-      "reproducibility_note": "Generated during design_specification difficulty optimization"
+      "path": "env/Campaign_Release_Register.xlsx",
+      "role": "120 release packages, package status events, disclosure catalog, badge catalog, and precedence notes",
+      "format": "xlsx",
+      "origin": "generated"
     },
     {
-      "path": "env/deprecated_assets.json",
-      "role": "Deprecated copy, colors, claims, logos, templates, and plausible wrong assets that must not be active",
-      "format": "json",
-      "origin": "generated",
-      "reproducibility_note": "Generated during design_specification difficulty optimization"
+      "path": "env/Creative_Asset_Register.xlsx",
+      "role": "280 neutral-ID assets with separate approval, usage, rights, and version tables",
+      "format": "xlsx",
+      "origin": "generated"
     },
     {
-      "path": "env/compliance_rules.txt",
-      "role": "Financial compliance disclosure and prohibited-claim rules",
-      "format": "txt",
-      "origin": "generated",
-      "reproducibility_note": "Generated during design_specification difficulty optimization"
+      "path": "env/asset_library/files/",
+      "role": "280 neutral-ID PNG assets containing current and high-similarity near-miss variants",
+      "format": "directory",
+      "origin": "generated_and_licensed"
     }
+  ],
+  "difficulty_design": [
+    "The final release package must be resolved by latest pre-freeze Approved state, while high-similarity legacy and post-freeze distractors remain present.",
+    "The final package overrides the legacy brief on multiple consumer-facing strings, so copying prior ad copy yields many grounded failures.",
+    "The package references separate disclosure, badge, and five asset records that must be resolved consistently.",
+    "Two newly introduced assets are valid only when approval, usage, rights, and version tables are joined correctly.",
+    "Grounded evaluation now checks many exact textual and UI fields simultaneously; score 2 requires near-perfect multi-field agreement."
   ],
   "source_policy": {
     "agent_visible_files": [
@@ -58,7 +61,10 @@
       "expected_facts.json",
       "scoring_checklist.json"
     ],
-    "web_usage_note": "Closed-env case: solve only from env files and task.md; do not use the web."
+    "maintenance_only_files": [
+      "licenses/"
+    ],
+    "web_usage_note": "Closed-env case. Web use is prohibited."
   },
-  "notes": "Lightly optimized design-specification case with compact env, financial compliance rules, latest-update priority, 4:5 platform constraints, current palette resolution, and deprecated exclusions."
+  "notes": "The current valid solution resolves to a new household-pilot package with updated consumer copy, disclosure, badge, and UI asset; legacy beta-package content should score poorly."
 }

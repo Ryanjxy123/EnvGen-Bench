@@ -3,148 +3,513 @@
   "task_type": "data_selection",
   "facts": [
     {
-      "id": "selected_opportunities",
-      "description": "The final featured volunteer opportunities are the top 3 eligible Sunday shifts after all filters and ranking rules.",
-      "source": "env/volunteer_shifts.json + env/assignment_rules.md",
+      "id": "event_context",
       "importance": "critical",
+      "source": "env/site_schedule.json + assignment_rules.md",
+      "expected_value": {
+        "heading": "Sunday Volunteer Opportunities",
+        "event_name": "Riverside Spring Fair",
+        "event_date": "Sunday, April 26, 2026",
+        "meeting_location": "Community Garden Welcome Tent",
+        "registration_deadline": "Friday, April 24, 2026 at 6:00 PM",
+        "registration_url": "riversidefair.org/volunteer",
+        "public_contact": "volunteers@riversidefair.org",
+        "rain_plan_location": "Riverside Community Hall — East Lobby"
+      },
+      "must_appear_in_image": true
+    },
+    {
+      "id": "selected_portfolio",
+      "importance": "critical",
+      "source": "all env files",
       "expected_value": [
         "Garden Guide",
         "Compost Demo",
-        "Welcome Desk"
+        "Welcome Desk",
+        "Elm Exhibit Guide",
+        "Elm Workshop Assistant"
       ],
-      "canonical_answer": {
-        "selected_shift_ids_reference_only": [
-          "V502",
-          "V504",
-          "V513"
-        ],
-        "selected_opportunity_names": [
-          "Garden Guide",
-          "Compost Demo",
-          "Welcome Desk"
-        ]
-      },
-      "semantic_acceptance": "Accept any polished recruitment image that clearly features exactly these three Sunday opportunities. Shift IDs may be omitted; opportunity names must be identifiable and not replaced by unselected shifts.",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
+      "must_appear_in_image": true
     },
     {
-      "id": "ranking_order",
-      "description": "Selected opportunities must be displayed in the rule-based ranking order.",
-      "source": "env/volunteer_shifts.json + env/assignment_rules.md",
+      "id": "selected_records",
       "importance": "critical",
-      "expected_value": "Garden Guide before Compost Demo before Welcome Desk",
-      "canonical_answer": [
-        "1. Garden Guide",
-        "2. Compost Demo",
-        "3. Welcome Desk"
-      ],
-      "semantic_acceptance": "Accept left-to-right, top-to-bottom, numbered cards, or another clear ranking cue as long as the order is Garden Guide, then Compost Demo, then Welcome Desk.",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "selected_opportunity_display_values",
-      "description": "Each selected opportunity must show the correct name, start time, and open capacity.",
-      "source": "env/volunteer_shifts.json",
-      "importance": "critical",
-      "expected_value": [
-        "Garden Guide: 10:00, 4 open spots",
-        "Compost Demo: 11:30, 2 open spots",
-        "Welcome Desk: 09:00, 3 open spots"
-      ],
-      "canonical_answer": {
+      "source": "all env files",
+      "expected_value": {
         "Garden Guide": {
-          "start_time": "10:00",
-          "capacity": 4
+          "rank": 1,
+          "role_area": "Education",
+          "shift": "10:00 AM–12:00 PM",
+          "check_in": "9:30 AM",
+          "meeting_zone": "North Gate Briefing Point",
+          "public_openings": 3,
+          "minimum_age": 16,
+          "orientation_minutes": 15,
+          "fit_tags": [
+            "Step-free route"
+          ],
+          "fit_note": "Light walking; step-free route"
         },
         "Compost Demo": {
-          "start_time": "11:30",
-          "capacity": 2
+          "rank": 2,
+          "role_area": "Sustainability",
+          "shift": "11:30 AM–1:00 PM",
+          "check_in": "11:10 AM",
+          "meeting_zone": "Compost Court Check-in",
+          "public_openings": 2,
+          "minimum_age": 16,
+          "orientation_minutes": 20,
+          "fit_tags": [
+            "Indoor backup"
+          ],
+          "fit_note": "Extended standing; uneven ground"
         },
         "Welcome Desk": {
-          "start_time": "09:00",
-          "capacity": 3
+          "rank": 4,
+          "role_area": "Guest Support",
+          "shift": "9:00 AM–11:00 AM",
+          "check_in": "8:30 AM",
+          "meeting_zone": "North Gate Briefing Point",
+          "public_openings": 3,
+          "minimum_age": 16,
+          "orientation_minutes": 10,
+          "fit_tags": [
+            "Step-free route",
+            "Seated option",
+            "Indoor backup"
+          ],
+          "fit_note": "Seated option; step-free"
+        },
+        "Elm Exhibit Guide": {
+          "rank": 6,
+          "role_area": "Wayfinding",
+          "shift": "1:30 PM–5:00 PM",
+          "check_in": "1:00 PM",
+          "meeting_zone": "Riverside Gallery Desk",
+          "public_openings": 5,
+          "minimum_age": 16,
+          "orientation_minutes": 25,
+          "fit_tags": [
+            "Step-free route",
+            "Indoor backup"
+          ],
+          "fit_note": "Light walking; indoor backup"
+        },
+        "Elm Workshop Assistant": {
+          "rank": 9,
+          "role_area": "Family Activities",
+          "shift": "10:00 AM–12:00 PM",
+          "check_in": "9:40 AM",
+          "meeting_zone": "Workshop Pavilion",
+          "public_openings": 5,
+          "minimum_age": 14,
+          "orientation_minutes": 15,
+          "fit_tags": [
+            "Step-free route",
+            "Seated option",
+            "Indoor backup"
+          ],
+          "fit_note": "Seated option; indoor backup"
         }
       },
-      "semantic_acceptance": "Times may be written in 24-hour or equivalent AM/PM format. Capacity may be labeled open spots, openings, volunteer slots, or similar, but values must be attached to the correct opportunity names.",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
+      "must_appear_in_image": true
     },
     {
-      "id": "unselected_opportunities_not_featured",
-      "description": "Filtered-out shifts and eligible shifts below the top 3 cutoff must not appear as featured opportunities.",
-      "source": "env/volunteer_shifts.json + env/assignment_rules.md",
+      "id": "quick_facts",
+      "importance": "major",
+      "source": "derived selected portfolio",
+      "expected_value": {
+        "earliest_check_in": {
+          "name": "Welcome Desk",
+          "value": "8:30 AM"
+        },
+        "most_public_openings": {
+          "names": [
+            "Elm Exhibit Guide",
+            "Elm Workshop Assistant"
+          ],
+          "value": 5
+        },
+        "shortest_orientation": {
+          "name": "Welcome Desk",
+          "value_minutes": 10
+        },
+        "longest_shift": {
+          "name": "Elm Exhibit Guide",
+          "value_hours": 3.5
+        },
+        "latest_finish": {
+          "name": "Elm Exhibit Guide",
+          "value": "5:00 PM"
+        }
+      },
+      "must_appear_in_image": true
+    },
+    {
+      "id": "fit_sets",
+      "importance": "major",
+      "source": "controlling requirements + selected portfolio",
+      "expected_value": {
+        "ages_14_15": [
+          "Elm Workshop Assistant"
+        ],
+        "seated_option": [
+          "Welcome Desk",
+          "Elm Workshop Assistant"
+        ],
+        "step_free_route": [
+          "Garden Guide",
+          "Welcome Desk",
+          "Elm Exhibit Guide",
+          "Elm Workshop Assistant"
+        ],
+        "indoor_backup": [
+          "Compost Demo",
+          "Welcome Desk",
+          "Elm Exhibit Guide",
+          "Elm Workshop Assistant"
+        ],
+        "check_in_before_10": [
+          "Garden Guide",
+          "Welcome Desk",
+          "Elm Workshop Assistant"
+        ],
+        "end_by_1": [
+          "Garden Guide",
+          "Compost Demo",
+          "Welcome Desk",
+          "Elm Workshop Assistant"
+        ]
+      },
+      "must_appear_in_image": true
+    },
+    {
+      "id": "portfolio_summary",
       "importance": "critical",
-      "expected_value": [
-        "Morning Check-in",
-        "Kids Crafts",
-        "Evening Cleanup",
-        "Seed Swap Helper",
-        "Water Station",
-        "Archived Booth Setup",
-        "Test Greeter Slot",
-        "Cancelled Plant Haul",
-        "Private Donor Tour",
-        "Old Fair Info Desk",
-        "Low Priority Flyer Table",
-        "Draft Mulch Crew",
-        "Monday Tear-down"
-      ],
-      "canonical_answer": "Only Garden Guide, Compost Demo, and Welcome Desk should be featured.",
-      "semantic_acceptance": "The image may use generic volunteer imagery, but it must not label or promote any unselected shift as a featured opportunity.",
-      "must_not_appear_in_image": true,
-      "evaluation_role": "negative_only"
+      "source": "derived selected portfolio",
+      "expected_value": {
+        "featured_count": 5,
+        "total_public_openings": 18,
+        "total_potential_volunteer_hours": 42.5,
+        "overall_range": "8:30 AM–5:00 PM",
+        "average_shift_hours": 2.2,
+        "role_area_count": 5,
+        "meeting_zone_count": 4,
+        "step_free_count": 4,
+        "seated_option_count": 2,
+        "indoor_backup_count": 4,
+        "age_14_or_younger_count": 1
+      },
+      "must_appear_in_image": true
     },
     {
-      "id": "day_window_and_audience_exclusions",
-      "description": "Wrong-day, old-window, or internal-audience shifts are excluded.",
-      "source": "env/volunteer_shifts.json + env/assignment_rules.md",
+      "id": "full_day_pair",
       "importance": "major",
-      "expected_value": [
-        "Morning Check-in Saturday",
-        "Monday Tear-down Monday",
-        "Old Fair Info Desk fall_fair_2025",
-        "Private Donor Tour internal"
-      ],
-      "canonical_answer": "Exclude Morning Check-in and Monday Tear-down for day mismatch; exclude Old Fair Info Desk for the wrong event window; exclude Private Donor Tour because audience is internal.",
-      "semantic_acceptance": "None of these shifts should be featured.",
-      "must_not_appear_in_image": true,
-      "evaluation_role": "negative_only"
+      "source": "derived selected portfolio",
+      "expected_value": {
+        "opportunities": [
+          "Elm Workshop Assistant",
+          "Elm Exhibit Guide"
+        ],
+        "first_check_in": "9:40 AM",
+        "final_finish": "5:00 PM",
+        "combined_shift_hours": 5.5,
+        "combined_public_openings": 10
+      },
+      "must_appear_in_image": true
     },
     {
-      "id": "status_training_and_capacity_exclusions",
-      "description": "Non-open, untrained, and full shifts are excluded.",
-      "source": "env/volunteer_shifts.json + env/assignment_rules.md",
-      "importance": "major",
-      "expected_value": [
-        "Kids Crafts trained_lead_ready false",
-        "Evening Cleanup capacity 0",
-        "Archived Booth Setup archived",
-        "Test Greeter Slot test",
-        "Cancelled Plant Haul cancelled",
-        "Draft Mulch Crew draft"
-      ],
-      "canonical_answer": "Exclude Kids Crafts because trained_lead_ready=false; exclude Evening Cleanup because capacity=0; exclude Archived Booth Setup, Test Greeter Slot, Cancelled Plant Haul, and Draft Mulch Crew because status is not open.",
-      "semantic_acceptance": "None of these shifts should be featured.",
-      "must_not_appear_in_image": true,
-      "evaluation_role": "negative_only"
-    },
-    {
-      "id": "priority_threshold_and_below_top_n",
-      "description": "Priority-threshold shifts and eligible shifts below the top 3 cutoff are not final featured opportunities.",
-      "source": "env/volunteer_shifts.json + env/assignment_rules.md",
-      "importance": "major",
-      "expected_value": [
-        "Low Priority Flyer Table priority 80",
-        "Seed Swap Helper",
-        "Water Station"
-      ],
-      "canonical_answer": "Exclude Low Priority Flyer Table because priority 80 equals the exclusive threshold and is not greater than 80. Seed Swap Helper and Water Station pass filters but rank below the top 3 cutoff.",
-      "semantic_acceptance": "None of these shifts should be promoted as featured opportunities.",
-      "must_not_appear_in_image": true,
-      "evaluation_role": "negative_only"
+      "id": "no_extra_roles",
+      "importance": "critical",
+      "source": "portfolio selection",
+      "expected_value": "Only the five selected opportunities may receive featured, Quick Facts, Find Your Fit, or Full-Day Pair status.",
+      "must_not_appear_in_image": true
     }
   ],
-  "calculation_notes": "Independent calculation: filter volunteer_shifts.json by day=Sunday, status=open, trained_lead_ready=true, capacity>0, audience=public, event_window=spring_fair_2026, and priority>80 because the priority threshold is exclusive. Eligible rows are V502 Garden Guide (priority 96, start 10:00, capacity 4), V504 Compost Demo (priority 93, start 11:30, capacity 2), V513 Welcome Desk (priority 90, start 09:00, capacity 3), V506 Seed Swap Helper (priority 88, start 13:00, capacity 3), and V507 Water Station (priority 84, start 12:00, capacity 6). Sort by priority descending, then start_time ascending, then capacity descending; there are no ties affecting the top 3. Sorted eligible order is V502, V504, V513, V506, V507. Select top 3, so final featured opportunities are Garden Guide (10:00, 4 open spots), Compost Demo (11:30, 2 open spots), and Welcome Desk (09:00, 3 open spots). Exclusions: V501 Saturday; V503 trained_lead_ready=false; V505 capacity 0; V508 archived; V509 test; V510 cancelled; V511 internal audience; V512 fall_fair_2025 wrong event window; V514 priority 80 equals exclusive threshold; V515 draft; V516 Monday; V506 and V507 are eligible but below top 3."
+  "calculation_notes": {
+    "selection_cutoff": "2026-04-23T12:00:00",
+    "eligible_count": 14,
+    "top12": [
+      {
+        "rank": 1,
+        "name": "Garden Guide",
+        "role_family": "education",
+        "score": 96.3,
+        "public_openings": 3
+      },
+      {
+        "rank": 2,
+        "name": "Compost Demo",
+        "role_family": "sustainability",
+        "score": 96.1,
+        "public_openings": 2
+      },
+      {
+        "rank": 3,
+        "name": "Pollinator Walk Assistant",
+        "role_family": "education",
+        "score": 94.75,
+        "public_openings": 4
+      },
+      {
+        "rank": 4,
+        "name": "Welcome Desk",
+        "role_family": "guest_support",
+        "score": 94.0,
+        "public_openings": 3
+      },
+      {
+        "rank": 5,
+        "name": "Eastwood Path Steward",
+        "role_family": "sustainability",
+        "score": 83.0,
+        "public_openings": 3
+      },
+      {
+        "rank": 6,
+        "name": "Elm Exhibit Guide",
+        "role_family": "wayfinding",
+        "score": 82.45,
+        "public_openings": 5
+      },
+      {
+        "rank": 7,
+        "name": "Northgate Family Activity Guide",
+        "role_family": "community_outreach",
+        "score": 81.55,
+        "public_openings": 3
+      },
+      {
+        "rank": 8,
+        "name": "Riverside Recycling Guide",
+        "role_family": "education",
+        "score": 81.3,
+        "public_openings": 4
+      },
+      {
+        "rank": 9,
+        "name": "Elm Workshop Assistant",
+        "role_family": "family_activities",
+        "score": 81.25,
+        "public_openings": 5
+      },
+      {
+        "rank": 10,
+        "name": "Northgate Table Host",
+        "role_family": "family_activities",
+        "score": 79.5,
+        "public_openings": 4
+      },
+      {
+        "rank": 11,
+        "name": "Terrace Workshop Assistant",
+        "role_family": "community_outreach",
+        "score": 79.1,
+        "public_openings": 5
+      },
+      {
+        "rank": 12,
+        "name": "Sunrise Supply Runner",
+        "role_family": "guest_support",
+        "score": 78.45,
+        "public_openings": 4
+      }
+    ],
+    "valid_portfolio_count": 18,
+    "selected_rank_vector": [
+      1,
+      2,
+      4,
+      6,
+      9
+    ],
+    "selected_total_score": 450.1,
+    "selected": [
+      {
+        "rank": 1,
+        "name": "Garden Guide",
+        "role_area": "Education",
+        "shift": "10:00 AM–12:00 PM",
+        "check_in": "9:30 AM",
+        "meeting_zone": "North Gate Briefing Point",
+        "public_openings": 3,
+        "minimum_age": 16,
+        "orientation_minutes": 15,
+        "fit_tags": [
+          "Step-free route"
+        ],
+        "fit_note": "Light walking; step-free route",
+        "duration_hours": 2.0,
+        "potential_hours": 6.0,
+        "start_min": 600,
+        "end_min": 720,
+        "check_min": 570
+      },
+      {
+        "rank": 2,
+        "name": "Compost Demo",
+        "role_area": "Sustainability",
+        "shift": "11:30 AM–1:00 PM",
+        "check_in": "11:10 AM",
+        "meeting_zone": "Compost Court Check-in",
+        "public_openings": 2,
+        "minimum_age": 16,
+        "orientation_minutes": 20,
+        "fit_tags": [
+          "Indoor backup"
+        ],
+        "fit_note": "Extended standing; uneven ground",
+        "duration_hours": 1.5,
+        "potential_hours": 3.0,
+        "start_min": 690,
+        "end_min": 780,
+        "check_min": 670
+      },
+      {
+        "rank": 4,
+        "name": "Welcome Desk",
+        "role_area": "Guest Support",
+        "shift": "9:00 AM–11:00 AM",
+        "check_in": "8:30 AM",
+        "meeting_zone": "North Gate Briefing Point",
+        "public_openings": 3,
+        "minimum_age": 16,
+        "orientation_minutes": 10,
+        "fit_tags": [
+          "Step-free route",
+          "Seated option",
+          "Indoor backup"
+        ],
+        "fit_note": "Seated option; step-free",
+        "duration_hours": 2.0,
+        "potential_hours": 6.0,
+        "start_min": 540,
+        "end_min": 660,
+        "check_min": 510
+      },
+      {
+        "rank": 6,
+        "name": "Elm Exhibit Guide",
+        "role_area": "Wayfinding",
+        "shift": "1:30 PM–5:00 PM",
+        "check_in": "1:00 PM",
+        "meeting_zone": "Riverside Gallery Desk",
+        "public_openings": 5,
+        "minimum_age": 16,
+        "orientation_minutes": 25,
+        "fit_tags": [
+          "Step-free route",
+          "Indoor backup"
+        ],
+        "fit_note": "Light walking; indoor backup",
+        "duration_hours": 3.5,
+        "potential_hours": 17.5,
+        "start_min": 810,
+        "end_min": 1020,
+        "check_min": 780
+      },
+      {
+        "rank": 9,
+        "name": "Elm Workshop Assistant",
+        "role_area": "Family Activities",
+        "shift": "10:00 AM–12:00 PM",
+        "check_in": "9:40 AM",
+        "meeting_zone": "Workshop Pavilion",
+        "public_openings": 5,
+        "minimum_age": 14,
+        "orientation_minutes": 15,
+        "fit_tags": [
+          "Step-free route",
+          "Seated option",
+          "Indoor backup"
+        ],
+        "fit_note": "Seated option; indoor backup",
+        "duration_hours": 2.0,
+        "potential_hours": 10.0,
+        "start_min": 600,
+        "end_min": 720,
+        "check_min": 580
+      }
+    ],
+    "quick_facts": {
+      "earliest_check_in": {
+        "name": "Welcome Desk",
+        "value": "8:30 AM"
+      },
+      "most_public_openings": {
+        "names": [
+          "Elm Exhibit Guide",
+          "Elm Workshop Assistant"
+        ],
+        "value": 5
+      },
+      "shortest_orientation": {
+        "name": "Welcome Desk",
+        "value_minutes": 10
+      },
+      "longest_shift": {
+        "name": "Elm Exhibit Guide",
+        "value_hours": 3.5
+      },
+      "latest_finish": {
+        "name": "Elm Exhibit Guide",
+        "value": "5:00 PM"
+      }
+    },
+    "fit_sets": {
+      "ages_14_15": [
+        "Elm Workshop Assistant"
+      ],
+      "seated_option": [
+        "Welcome Desk",
+        "Elm Workshop Assistant"
+      ],
+      "step_free_route": [
+        "Garden Guide",
+        "Welcome Desk",
+        "Elm Exhibit Guide",
+        "Elm Workshop Assistant"
+      ],
+      "indoor_backup": [
+        "Compost Demo",
+        "Welcome Desk",
+        "Elm Exhibit Guide",
+        "Elm Workshop Assistant"
+      ],
+      "check_in_before_10": [
+        "Garden Guide",
+        "Welcome Desk",
+        "Elm Workshop Assistant"
+      ],
+      "end_by_1": [
+        "Garden Guide",
+        "Compost Demo",
+        "Welcome Desk",
+        "Elm Workshop Assistant"
+      ]
+    },
+    "summary": {
+      "featured_count": 5,
+      "total_public_openings": 18,
+      "total_potential_volunteer_hours": 42.5,
+      "overall_range": "8:30 AM–5:00 PM",
+      "average_shift_hours": 2.2,
+      "role_area_count": 5,
+      "meeting_zone_count": 4,
+      "step_free_count": 4,
+      "seated_option_count": 2,
+      "indoor_backup_count": 4,
+      "age_14_or_younger_count": 1
+    },
+    "full_day_pair": {
+      "opportunities": [
+        "Elm Workshop Assistant",
+        "Elm Exhibit Guide"
+      ],
+      "first_check_in": "9:40 AM",
+      "final_finish": "5:00 PM",
+      "combined_shift_hours": 5.5,
+      "combined_public_openings": 10
+    }
+  }
 }

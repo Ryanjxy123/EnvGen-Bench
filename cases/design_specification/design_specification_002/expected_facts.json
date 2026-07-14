@@ -1,212 +1,124 @@
 {
   "case_id": "design_specification_002",
   "task_type": "design_specification",
-  "facts": [
-    {
-      "id": "primary_copy_01",
-      "description": "Required visible text: Open Studio Day",
-      "source": "env/latest_update.md",
-      "importance": "critical",
-      "expected_value": "Open Studio Day",
-      "canonical_answer": "Open Studio Day",
-      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image.",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
+  "reference_date": "2026-07-01",
+  "creative_freeze": "2026-06-29T17:00:00-07:00",
+  "delivery_context": {
+    "campaign_code": "OSD26",
+    "placement_code": "IG-STORY-PAID",
+    "platform": "Instagram",
+    "placement_name": "Story event ad",
+    "delivery_mode": "Paid",
+    "market_code": "US-EN"
+  },
+  "resolved_platform_profile": {
+    "profile_id": "SP-073",
+    "width_px": 1080,
+    "height_px": 1920,
+    "aspect_ratio": "9:16",
+    "top_safe_px": 170,
+    "bottom_safe_px": 188,
+    "side_safe_px": 76,
+    "max_title_lines": 2,
+    "logo_zone": "x 88-450; y 205-325",
+    "title_zone": "x 88-930; y 360-600",
+    "detail_zone": "x 88-930; y 610-780",
+    "hero_zone": "x 88-992; y 790-1435",
+    "cta_zone": "x 150-930; y 1530-1665"
+  },
+  "resolved_assets": {
+    "logo": {
+      "asset_id": "AST-037",
+      "file_path": "env/asset_library/files/AST-037.png",
+      "visual_identity": "English horizontal Northstar wordmark with the layered orange-and-cyan starburst, NORTHSTAR, and DESIGN SCHOOL."
     },
-    {
-      "id": "primary_copy_02",
-      "description": "Required visible text: Northstar Design School",
-      "source": "env/latest_update.md",
-      "importance": "critical",
-      "expected_value": "Northstar Design School",
-      "canonical_answer": "Northstar Design School",
-      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image.",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
+    "hero": {
+      "asset_id": "AST-148",
+      "file_path": "env/asset_library/files/AST-148.jpg",
+      "visual_identity": "Portrait two-section collage: sketch critique and sculpture busts above; workshop audience below; cyan rail; VISITOR PASS; PORTFOLIO TOUR; navy divider; STUDIO HALL / OPEN DAY footer."
     },
-    {
-      "id": "primary_copy_03",
-      "description": "Required visible text: July 12",
-      "source": "env/latest_update.md",
-      "importance": "critical",
-      "expected_value": "July 12",
-      "canonical_answer": "July 12",
-      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image.",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
+    "background": {
+      "asset_id": "AST-219",
+      "file_path": "env/asset_library/files/AST-219.png",
+      "visual_identity": "Cream blueprint grid with navy top band, orange upper-right diagonal, thin orange left rule, cyan square grid, and pale cyan lower-right circle."
     },
-    {
-      "id": "primary_copy_04",
-      "description": "Required visible text: 10 AM - 2 PM",
-      "source": "env/latest_update.md",
-      "importance": "critical",
-      "expected_value": "10 AM - 2 PM",
-      "canonical_answer": "10 AM - 2 PM",
-      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image.",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "primary_copy_05",
-      "description": "Required visible text: 88 Beacon Ave, Studio Hall",
-      "source": "env/latest_update.md",
-      "importance": "critical",
-      "expected_value": "88 Beacon Ave, Studio Hall",
-      "canonical_answer": "88 Beacon Ave, Studio Hall",
-      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image.",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "primary_copy_06",
-      "description": "Required visible text: RSVP for portfolio tours",
-      "source": "env/latest_update.md",
-      "importance": "critical",
-      "expected_value": "RSVP for portfolio tours",
-      "canonical_answer": "RSVP for portfolio tours",
-      "semantic_acceptance": "Exact or near-exact OCR-readable wording should appear in the final image.",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "archive_not_active",
-      "description": "Archive-only admissions text and layout directions must not become active final content.",
-      "source": "env/latest_update.md",
-      "importance": "critical",
-      "must_not_appear_in_image": true,
-      "forbidden_patterns": [
-        "Northstar Arts Annex",
-        "June 8",
-        "Apply now",
-        "graduation cap stock photo",
-        "old maroon crest",
-        "50% tuition scholarship"
-      ],
-      "allowed_patterns": [
-        "Northstar Arts Annex.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
-        "June 8.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
-        "Apply now.{0,120}(deprecated|do not use|archived|retired|forbidden|old)"
-      ],
-      "evaluation_role": "negative_only"
-    },
-    {
-      "id": "canvas_size",
-      "description": "Final artifact uses the required pixel canvas.",
-      "source": "env/platform_specs.txt",
-      "importance": "critical",
-      "expected_value": "1080 x 1920 px",
-      "evaluation_role": "major_required"
-    },
-    {
-      "id": "aspect_ratio",
-      "description": "Final artifact uses the required aspect ratio.",
-      "source": "env/platform_specs.txt",
-      "importance": "critical",
-      "expected_value": "9:16",
-      "evaluation_role": "major_required"
-    },
-    {
-      "id": "safe_area",
-      "description": "Essential text, logo, and CTA stay inside required safe areas.",
-      "source": "env/platform_specs.txt",
-      "importance": "critical",
-      "expected_value": "72 px side margin; CTA above 176 px bottom safe zone",
-      "semantic_acceptance": "Treat small placement deviations as normal checklist deductions, not hard-cap failures, if the content remains readable and broadly inside the safe area.",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "logo_position",
-      "description": "Current logo/wordmark appears in required position.",
-      "source": "env/platform_specs.txt; env/visual_rules.json; env/asset_manifest.json",
-      "importance": "critical",
-      "expected_value": "upper-left below top UI safe zone",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "cta_position",
-      "description": "CTA/helper appears in the required zone and safe area.",
-      "source": "env/platform_specs.txt; env/visual_rules.json",
-      "importance": "critical",
-      "expected_value": "bottom third above UI safe zone",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "palette_tokens",
-      "description": "Current color tokens are used as dominant palette.",
-      "source": "env/visual_rules.json; env/brand_brief.md",
-      "importance": "major",
-      "expected_value": [
-        "#102A43",
-        "#FFF3D6",
-        "#F28C28",
-        "#2BB3C0"
-      ],
-      "semantic_acceptance": "Exact pixel hex matching is not required, but deprecated palettes should not dominate.",
-      "evaluation_role": "major_required"
-    },
-    {
-      "id": "hero_component_1",
-      "description": "studio workspace visible",
-      "source": "env/visual_rules.json; env/asset_manifest.json",
-      "importance": "critical",
-      "expected_value": "studio workspace visible",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "hero_component_2",
-      "description": "student portfolio or critique wall visible",
-      "source": "env/visual_rules.json; env/asset_manifest.json",
-      "importance": "critical",
-      "expected_value": "student portfolio or critique wall visible",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "hero_component_3",
-      "description": "hands-on design material visible",
-      "source": "env/visual_rules.json; env/asset_manifest.json",
-      "importance": "critical",
-      "expected_value": "hands-on design material visible",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "hero_component_4",
-      "description": "open-day visitor cue visible",
-      "source": "env/visual_rules.json; env/asset_manifest.json",
-      "importance": "critical",
-      "expected_value": "open-day visitor cue visible",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "forbidden_elements_not_active",
-      "description": "Deprecated copy, assets, claims, colors, and old specs are not used as active final design elements.",
-      "source": "env/deprecated_assets.json; env/latest_update.md; env/visual_rules.json; env/brand_brief.md",
-      "importance": "critical",
-      "must_not_appear_in_image": true,
-      "forbidden_patterns": [
-        "Northstar Arts Annex",
-        "June 8",
-        "Apply now",
-        "graduation cap stock photo",
-        "old maroon crest",
-        "50% tuition scholarship"
-      ],
-      "allowed_patterns": [
-        "Northstar Arts Annex.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
-        "June 8.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
-        "Apply now.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
-        "graduation cap stock photo.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
-        "old maroon crest.{0,120}(deprecated|do not use|archived|retired|forbidden|old)",
-        "50% tuition scholarship.{0,120}(deprecated|do not use|archived|retired|forbidden|old)"
-      ],
-      "evaluation_role": "negative_only"
+    "required_badge": {
+      "asset_id": "AST-266",
+      "file_path": "env/asset_library/files/AST-266.png",
+      "visual_identity": "Orange rounded PORTFOLIO TOURS badge.",
+      "required": true
     }
+  },
+  "required_copy": {
+    "event_title": "Open Studio Day",
+    "school_name": "Northstar Design School",
+    "audience_line": "Prospective students ages 16+",
+    "offer_line": "Free admission · Registration required",
+    "date_line": "Saturday, July 12",
+    "time_line": "10 AM–2 PM",
+    "check_in_line": "Check-in opens 9:45 AM",
+    "tour_slots_line": "Portfolio tours: 10:30 AM & 12:30 PM",
+    "location_line": "88 Beacon Ave · Studio Hall",
+    "visitor_instruction": "Enter through the east lobby",
+    "eligibility_line": "Bring up to 3 portfolio pieces",
+    "accessibility_line": "ASL available on request",
+    "rsvp_deadline_line": "RSVP by July 10",
+    "cta": "Reserve a portfolio tour",
+    "landing_path": "northstar.design/openstudio"
+  },
+  "brand_rules": {
+    "logo_width_px_range": [
+      280,
+      360
+    ],
+    "logo_treatment": "Do not crop, stretch, recolor, redraw, or omit descriptor.",
+    "hero_crop_max_percent": 8,
+    "hero_required_visibility": "Both photo sections and at least two identifying campaign cues remain visible.",
+    "background_treatment": "Use full bleed and do not recolor or flatten.",
+    "title_lines_max": 2,
+    "cta_treatment": "Process orange field with navy type or visually equivalent approved high-contrast treatment.",
+    "contrast": "Use a solid field or navy overlay when copy crosses bright photography; all required copy readable at phone size."
+  },
+  "forbidden_content": [
+    "June 8",
+    "July 12 • 10 AM-2 PM as the sole date-time line without the final schedule package",
+    "Northstar Arts Annex",
+    "RSVP for portfolio tours",
+    "Apply Now",
+    "Walk-ins welcome",
+    "50% tuition scholarship",
+    "tuition discount",
+    "guaranteed employment",
+    "guaranteed outcome",
+    "application deadline",
+    "invented QR code",
+    "Spanish wordmark or Spanish campaign labels",
+    "legacy crest or stacked legacy logo",
+    "asset IDs, package IDs, filenames, approval notes, status records, source list, rule summary"
   ],
-  "calculation_notes": "Facts require multi-source resolution across latest_update, platform specs, visual rules, asset manifest, brand brief, and deprecated exclusions. Core scoring facts are traceable to task-visible env rules; minor layout deviations should be normal checklist deductions rather than hard-cap failures."
+  "resolved_activation_package": {
+    "package_id": "ACT-067",
+    "audience_line": "Prospective students ages 16+",
+    "offer_line": "Free admission · Registration required",
+    "check_in_line": "Check-in opens 9:45 AM",
+    "rsvp_deadline_line": "RSVP by July 10",
+    "cta": "Reserve a portfolio tour",
+    "landing_path": "northstar.design/openstudio",
+    "eligibility_line": "Bring up to 3 portfolio pieces",
+    "accessibility_line": "ASL available on request"
+  },
+  "resolved_session_package": {
+    "schedule_id": "SCH-054",
+    "date_line": "Saturday, July 12",
+    "time_line": "10 AM–2 PM",
+    "tour_slots_line": "Portfolio tours: 10:30 AM & 12:30 PM",
+    "location_line": "88 Beacon Ave · Studio Hall",
+    "visitor_instruction": "Enter through the east lobby"
+  },
+  "source_resolution": {
+    "platform_rule": "Use the unique Instagram / Story event ad / Paid / US-EN profile whose latest pre-freeze revision is Active and whose effective window includes launch.",
+    "activation_rule": "Use the matching OSD26 / IG-STORY-PAID / US-EN activation package whose latest status at or before freeze is Approved, not withdrawn, and valid on launch.",
+    "session_rule": "Use the matching OSD26 / STUDIO-HALL / US-EN session package whose latest status at or before freeze is Active, not withdrawn, and valid on launch.",
+    "precedence_rule": "Activation and session package fields override conflicting base-brief values."
+  }
 }

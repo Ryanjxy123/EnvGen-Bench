@@ -1,161 +1,104 @@
 {
   "case_id": "data_selection_002",
-  "dimensions": {
-    "task_completion": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "output_type_data_selection_002",
-          "check": "Use semantic VLM/judge evaluation to decide whether the output is a finished grant_winner_announcement, not a worksheet, source-data screenshot, raw table, or generic mockup.",
-          "points": 4,
-          "scoring_hint": "Full credit when the artifact reads as a polished winner announcement. Partial credit for a styled but weak announcement. No credit for raw data, notes, or a non-image answer. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
-        },
-        {
-          "id": "selection_task_resolution_data_selection_002",
-          "check": "Use semantic VLM/judge evaluation to determine whether the image filters the applications, ranks eligible winners, and announces only the final selected winners.",
-          "points": 4,
-          "scoring_hint": "Full credit when the final winner set is clear. Partial credit when selection is ambiguous. No credit when the source catalog is copied without selection. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
-        }
-      ],
-      "label": "Task Completion"
-    },
-    "grounded_requirement_satisfaction": {
-      "weight": 0.55,
-      "items": [
-        {
-          "id": "critical_selected_set_accuracy_data_selection_002",
-          "check": "Semantic judge must verify that exactly these grant winners are featured: Tree Canopy Fellows, Cool Roof Block, and Flood Ready Neighbors. Application IDs are optional and should not be required.",
-          "points": 8,
-          "scoring_hint": "Full credit for exactly the correct winner set. Partial credit only for minor readability ambiguity. No credit if any winner is replaced or an extra application is announced."
-        },
-        {
-          "id": "critical_ranking_order_data_selection_002",
-          "check": "Semantic judge must verify the visible winner order is Tree Canopy Fellows first, Cool Roof Block second, and Flood Ready Neighbors third. Accept numbered cards, left-to-right, top-to-bottom, or another clear ranking cue.",
-          "points": 6,
-          "scoring_hint": "Full credit when ranking is clear and correct. Partial credit when the set is correct but rank is partly ambiguous. No credit when order is wrong or absent."
-        },
-        {
-          "id": "critical_display_values_data_selection_002",
-          "check": "Semantic judge must verify each winner displays the correct project name, requested grant amount, and score: Tree Canopy Fellows $42,000 score 94; Cool Roof Block $39,000 score 92; Flood Ready Neighbors $50,000 score 89. Accept equivalent whole-dollar formatting and score wording.",
-          "points": 8,
-          "scoring_hint": "Full credit when all names, amounts, and scores are correctly paired. Partial credit for one minor formatting/readability issue. No credit for wrong values or values attached to wrong projects."
-        },
-        {
-          "id": "critical_exclusion_accuracy_data_selection_002",
-          "check": "Semantic judge must verify that unselected applications are not presented as winners, including late, over-budget, incomplete, wrong-sector, wrong-round, test, draft, internal, cancelled, threshold-equal, and below-top-N applications.",
-          "points": 6,
-          "scoring_hint": "Full credit when no unselected application is featured. Partial credit for a faint ambiguous mention. No credit when any unselected application is clearly announced."
-        }
-      ],
-      "label": "Grounded Requirement Satisfaction"
-    },
-    "information_structuring": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "announcement_hierarchy_data_selection_002",
-          "check": "Accept different announcement layouts, including winner cards, ranked badges, podium placement, or banner sections, as long as the selected winners and values are easy to scan.",
-          "points": 5,
-          "scoring_hint": "Full credit for clear hierarchy and scanability. Partial credit for cluttered but understandable layout. No credit when winner selection is buried. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
-        },
-        {
-          "id": "no_unnecessary_process_details_data_selection_002",
-          "check": "Do not require application IDs, full eligibility rules, document status, sector labels, priority values, or filtering process steps. Treat them only as supporting context if present and correct.",
-          "points": 4,
-          "scoring_hint": "Full credit when the image focuses on winners. Partial credit if extra metadata appears but does not dominate. No credit if process details overwhelm the announcement. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
-        }
-      ],
-      "label": "Information Structuring"
-    },
-    "visual_communication_quality": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "visual_clarity_data_selection_002",
-          "check": "Use semantic VLM/judge evaluation for clear hierarchy, readable typography, sufficient contrast, polished announcement styling, and non-crowded spacing.",
-          "points": 4,
-          "scoring_hint": "Full credit for readable polished design. Partial credit for minor clutter or weak styling. No credit for unreadable or visually incoherent output. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
-        },
-        {
-          "id": "visual_layout_density_data_selection_002",
-          "check": "The announcement should have balanced density, clear winner/value pairing, platform-safe margins, and no placeholder-like empty regions.",
-          "points": 4,
-          "scoring_hint": "Full credit for balanced density and clear sections. Partial credit for weak spacing. No credit for blank, placeholder-like, or low-resolution output. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
-        }
-      ],
-      "label": "Visual Communication Quality"
-    }
+  "evaluation_mode": "image_vqa_0_2",
+  "dimension_weights": {
+    "grounded_requirement_satisfaction": 0.8,
+    "visual_rendering_quality": 0.2
   },
-  "score_caps": [
-    {
-      "id": "wrong_selected_grant",
-      "max_total": 60,
-      "reason": "A non-selected application appears without a clear exclusion/not-selected context, indicating it may be announced as a winner.",
-      "trigger": {
-        "type": "forbidden_final_answer",
-        "patterns": [
-          "River Mural Revival",
-          "Storm Drain Mapping",
-          "Heat Pump Co-op",
-          "Home Energy Kits",
-          "Solar Pantry Pilot",
-          "Transit Shade Stops",
-          "Compost Heat Watch",
-          "Archive Rain Barrel",
-          "Test Cooling Hub",
-          "Energy Coach Hotline",
-          "Internal Sensor Trial",
-          "Rain Garden Crew",
-          "Cancelled Cool Bus",
-          "Youth Climate Lab",
-          "Porch Solar Library"
-        ],
-        "allowed_patterns": [
-          "\\b(excluded|exclude|filtered out|not selected|not a winner|not winning|not featured|not announced|ineligible|rejected)\\b[\\s\\S]{0,120}\\b(River Mural Revival|Storm Drain Mapping|Heat Pump Co-op|Home Energy Kits|Solar Pantry Pilot|Transit Shade Stops|Compost Heat Watch|Archive Rain Barrel|Test Cooling Hub|Energy Coach Hotline|Internal Sensor Trial|Rain Garden Crew|Cancelled Cool Bus|Youth Climate Lab|Porch Solar Library)\\b",
-          "\\b(River Mural Revival|Storm Drain Mapping|Heat Pump Co-op|Home Energy Kits|Solar Pantry Pilot|Transit Shade Stops|Compost Heat Watch|Archive Rain Barrel|Test Cooling Hub|Energy Coach Hotline|Internal Sensor Trial|Rain Garden Crew|Cancelled Cool Bus|Youth Climate Lab|Porch Solar Library)\\b[\\s\\S]{0,120}\\b(excluded|exclude|filtered out|not selected|not a winner|not winning|not featured|not announced|ineligible|rejected)\\b"
-        ]
+  "grounded_requirement_satisfaction": {
+    "vqa_items": [
+      {
+        "id": "grounded_q01",
+        "question": "What exact program cycle and selection date are stated?",
+        "expected_answer": "Spring 2026 Neighborhood Climate Microgrant Awardees; selected March 24, 2026.",
+        "acceptance_rule": "Score 2 only if the full program identity, Spring 2026 cycle, and March 24, 2026 selection date are all present and unambiguous. Score 1 if the program/cycle is correct but the date is absent or incomplete. Score 0 if the program or cycle is wrong, or a different date is shown."
+      },
+      {
+        "id": "grounded_q02",
+        "question": "How many projects are presented as awardees, and are any additional projects given selected or funded status?",
+        "expected_answer": "Exactly four awardees and no additional selected or funded project.",
+        "acceptance_rule": "Score 2 only if exactly four distinct awardees are shown and no other project has awardee-equivalent status. Score 1 if four are clearly intended but one status marker is ambiguous. Score 0 if the count differs, an extra project is implied as funded, or the count cannot be determined."
+      },
+      {
+        "id": "grounded_q03",
+        "question": "Which four projects are shown, and what is their admission order?",
+        "expected_answer": "1. Tree Canopy Fellows; 2. Cool Roof Block; 3. Harbor Heat Network; 4. Flood Ready Neighbors.",
+        "acceptance_rule": "Score 2 only if all four identities and all four positions exactly match the expected order. Score 1 if all four identities are correct but exactly one rank marker is missing or ambiguous. Score 0 if any project is missing, replaced, or reordered."
+      },
+      {
+        "id": "grounded_q04",
+        "question": "What complete funding and selection record is shown for Tree Canopy Fellows?",
+        "expected_answer": "Rank 1; Northside Urban Forestry Alliance; North Ridge; Heat relief; requested $49,500; approved $43,500; reduction $6,000 (12.1%); final panel score 96; community priority 95; equity score 93.",
+        "acceptance_rule": "Score 2 only if every listed entity, label, amount, percentage, and score is correct and attached to Tree Canopy Fellows. Score 1 only if exactly one secondary text field (organization, district, or focus label) is omitted while all money values and all three scores are correct. Score 0 if any amount, reduction, percentage, rank, or score is wrong/missing, or two or more fields are defective."
+      },
+      {
+        "id": "grounded_q05",
+        "question": "What complete funding and selection record is shown for Cool Roof Block?",
+        "expected_answer": "Rank 2; East Market Housing Cooperative; East Market; Efficient cooling; requested $45,000; approved $41,000; reduction $4,000 (8.9%); final panel score 95; community priority 97; equity score 91.",
+        "acceptance_rule": "Score 2 only if every listed entity, label, amount, percentage, and score is correct and attached to Cool Roof Block. Score 1 only if exactly one secondary text field (organization, district, or focus label) is omitted while all money values and all three scores are correct. Score 0 if any amount, reduction, percentage, rank, or score is wrong/missing, or two or more fields are defective."
+      },
+      {
+        "id": "grounded_q06",
+        "question": "What complete funding and selection record is shown for Harbor Heat Network?",
+        "expected_answer": "Rank 3; South Harbor Climate Coalition; South Harbor; Heat relief; requested $50,000; approved $48,000; reduction $2,000 (4.0%); final panel score 94; community priority 98; equity score 97.",
+        "acceptance_rule": "Score 2 only if every listed entity, label, amount, percentage, and score is correct and attached to Harbor Heat Network. Score 1 only if exactly one secondary text field (organization, district, or focus label) is omitted while all money values and all three scores are correct. Score 0 if any amount, reduction, percentage, rank, or score is wrong/missing, or two or more fields are defective."
+      },
+      {
+        "id": "grounded_q07",
+        "question": "What complete funding and selection record is shown for Flood Ready Neighbors?",
+        "expected_answer": "Rank 4; Riverside Preparedness Network; River Ward; Flood resilience; requested $52,000; approved $44,500; reduction $7,500 (14.4%); final panel score 94; community priority 97; equity score 96.",
+        "acceptance_rule": "Score 2 only if every listed entity, label, amount, percentage, and score is correct and attached to Flood Ready Neighbors. Score 1 only if exactly one secondary text field (organization, district, or focus label) is omitted while all money values and all three scores are correct. Score 0 if any amount, reduction, percentage, rank, or score is wrong/missing, or two or more fields are defective."
+      },
+      {
+        "id": "grounded_q08",
+        "question": "What complete cohort funding summary is stated?",
+        "expected_answer": "4 awardees; $196,500 requested; $177,000 approved; $19,500 reduction; 9.9% overall reduction; $3,000 remaining under the cap; 4 represented districts.",
+        "acceptance_rule": "Score 2 only if all seven summary facts are correct and explicitly labeled. Score 1 only if exactly one non-count value is absent while the other six are correct. Score 0 if the awardee count is wrong, requested and approved totals are confused, any shown total is wrong, or two or more facts are missing."
+      },
+      {
+        "id": "grounded_q09",
+        "question": "Are requested amounts, approved awards, dollar reductions, and one-decimal reduction percentages correctly distinguished for all four awardees?",
+        "expected_answer": "Tree $49,500 → $43,500, down $6,000 / 12.1%; Cool Roof $45,000 → $41,000, down $4,000 / 8.9%; Harbor $50,000 → $48,000, down $2,000 / 4.0%; Flood Ready $52,000 → $44,500, down $7,500 / 14.4%.",
+        "acceptance_rule": "Score 2 only if all sixteen values and their requested/approved/reduction roles are correct and paired with the right projects. Score 1 only if exactly one percentage has a minor rounding or omission issue while every requested, approved, and dollar-reduction amount is correct. Score 0 if any dollar amount is wrong, roles are confused, a value is attached to the wrong project, or two or more percentages are defective."
+      },
+      {
+        "id": "grounded_q10",
+        "question": "What final-panel, community-priority, and equity scores are shown for each awardee?",
+        "expected_answer": "Tree Canopy Fellows 96 / 95 / 93; Cool Roof Block 95 / 97 / 91; Harbor Heat Network 94 / 98 / 97; Flood Ready Neighbors 94 / 97 / 96.",
+        "acceptance_rule": "Score 2 only if all twelve scores are correct, clearly labeled by score type, and attached to the correct projects. Score 1 only if exactly one secondary score is omitted but the remaining eleven are correct. Score 0 if any displayed score is wrong or exchanged between score types/projects, or two or more scores are missing."
+      },
+      {
+        "id": "grounded_q11",
+        "question": "What district and focus-area combination is shown for the selected cohort?",
+        "expected_answer": "Tree—North Ridge / Heat relief; Cool Roof—East Market / Efficient cooling; Harbor—South Harbor / Heat relief; Flood Ready—River Ward / Flood resilience. This represents four districts and no more than two projects in one focus area.",
+        "acceptance_rule": "Score 2 only if all eight district/focus pairings are correct and the visible set corresponds to four distinct districts with at most two Heat relief projects. Score 1 only if exactly one focus label is omitted while all project/district pairings remain correct. Score 0 if any district is wrong, a focus is attached to the wrong project, or two or more labels are missing."
+      },
+      {
+        "id": "grounded_q12",
+        "question": "Are any high-ranked but excluded projects presented as awardees?",
+        "expected_answer": "No. Central Climate Canopy, Bayview Cooling Commons, Maple Flood Ready Blocks, Juniper Shade Corridors, and West Terrace Shade Corridors are not awardees; no other extra project is selected.",
+        "acceptance_rule": "Score 2 only if none of the named or any other non-selected project has awardee, funded, winner, or ranked-card status. Score 1 if one excluded name appears only in clearly marked non-selected explanatory text. Score 0 if any excluded or extra application is presented or implied as funded."
+      },
+      {
+        "id": "grounded_q13",
+        "question": "Does the displayed cohort satisfy the stated running-cap result after selection?",
+        "expected_answer": "Yes. The four approved awards total $177,000, remain $3,000 below the $180,000 cap, and the final admitted order is Tree Canopy Fellows, Cool Roof Block, Harbor Heat Network, Flood Ready Neighbors.",
+        "acceptance_rule": "Score 2 only if the four-project order and both cap figures ($177,000 total and $3,000 remaining from $180,000) are all correct. Score 1 only if the selected order and $177,000 total are correct but the remaining-cap figure is absent. Score 0 if the order or total is wrong, the cap arithmetic is wrong, or a different cohort is shown."
       }
-    },
-    {
-      "id": "missing_selected_grant",
-      "max_total": 55,
-      "reason": "One or more required selected winners is missing.",
-      "trigger": {
-        "type": "missing_required_count",
-        "fact_ids": [
-          "selected_grants",
-          "selected_grant_display_values"
-        ],
-        "min_missing": 1
+    ]
+  },
+  "visual_rendering_quality": {
+    "image_type": "public_information_poster",
+    "vqa_items": [
+      {
+        "id": "visual_q01",
+        "question": "As a public-information, recruitment, route, award, community, advocacy, or detour poster, does the image transform the public message into an immediately understandable, visually purposeful, and publication-ready poster rather than merely placing readable text into a document-like layout? Judge the clarity of the main takeaway, audience and applicable time, place, route, status, or action details; the strength of visual hierarchy and information grouping; the meaningful use of the full canvas; the suitability of visual devices for the message; and the overall accessibility, specificity, polish, and public-facing credibility.",
+        "score_criteria": {
+          "2": "Award 2 only for an exceptional, professionally art-directed poster that is ready for prominent public distribution without revision. The main public takeaway and any applicable action, audience, time, place, route, award, status, or community detail must be understood within seconds through a decisive focal point and a clearly differentiated reading sequence. Information must be visually synthesized rather than merely listed: typography, scale, grouping, icons, imagery, diagrams, maps, emphasis devices, or other graphic elements must meaningfully help viewers distinguish priorities, categories, routes, winners, changes, or actions. The full canvas must feel intentionally composed, with strong balance, controlled density, efficient use of space, refined alignment, consistent spacing, accessible contrast, and polished margins. The design must feel specific to the message and audience, not like a generic report, slide, form, spreadsheet, or repeated-card template. All visible text must remain comfortably readable at normal viewing size, and no malformed glyph, weak contrast, clipping, overlap, accidental crop, decorative distraction, inconsistent styling, or production residue is allowed. Large dead zones, excessive unused space, monotonous repeated boxes, text-only document composition, weak visual storytelling, generic template styling, or any section that appears unfinished automatically prevents 2.",
+          "1": "Award 1 if the poster is understandable, usable, and visually acceptable or good, but it remains visibly underdesigned or would require professional refinement before prominent public release. This includes clean but document-like or slide-like layouts; mostly textual lists placed inside repeated cards; limited meaningful imagery or visual encoding; weak distinction between primary and secondary information; ordinary or generic styling; excessive empty space; uneven use of the canvas; monotonous section treatment; modest action or takeaway emphasis; small supporting text; or minor spacing, accessibility, balance, and consistency issues. A poster may be fully legible and free of rendering defects yet still receive only 1 when its visual communication is basic rather than exceptional.",
+          "0": "Award 0 if the poster is visually poor, unreliable, or not practically suitable for public use. This includes cases where the essential message, affected audience, applicable timing, location, route, status, or action is difficult to identify; hierarchy and grouping are confusing; typography or contrast materially harms reading; the composition is severely unbalanced or unfinished; decoration competes with information; visual encoding is misleading; or substantial redesign is needed for dependable public communication. Blank, corrupted, severely unreadable, materially misleading, clipped, overlapping, or otherwise broken posters are also 0."
+        }
       }
-    },
-    {
-      "id": "unfiltered_application_catalog",
-      "max_total": 45,
-      "reason": "The output appears to show the unfiltered application table without a clear exclusion/not-selected context.",
-      "trigger": {
-        "type": "forbidden_final_answer",
-        "patterns": [
-          "application_id\\s*,\\s*project_name\\s*,\\s*sector",
-          "sector\\s*,\\s*status\\s*,\\s*documents_complete",
-          "requested_usd\\s*,\\s*submitted_on\\s*,\\s*score",
-          "community_priority\\s*,\\s*program_round"
-        ]
-      }
-    },
-    {
-      "id": "raw_table_instead_of_announcement",
-      "max_total": 40,
-      "reason": "The final artifact is a raw table, worksheet, or data dump instead of a polished announcement image.",
-      "trigger": {
-        "type": "forbidden_final_answer",
-        "patterns": [
-          "\\|\\s*application",
-          "application_id\\s+project_name\\s+sector",
-          "sector\\s+status\\s+documents_complete",
-          "requested_usd\\s*,\\s*submitted_on\\s*,\\s*score"
-        ]
-      }
-    }
-  ]
+    ]
+  }
 }

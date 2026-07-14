@@ -1,173 +1,110 @@
 {
   "case_id": "data_selection_003",
-  "dimensions": {
-    "task_completion": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "output_type_data_selection_003",
-          "check": "Use semantic VLM/judge evaluation to decide whether the output is a finished cafe_lunch_specials_image, not a worksheet, database dump, raw table, or generic mockup.",
-          "points": 4,
-          "scoring_hint": "Full credit when the artifact reads as a polished cafe display. Partial credit for a styled but weak display. No credit for raw data, notes, or a non-image answer. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
-        },
-        {
-          "id": "selection_task_resolution_data_selection_003",
-          "check": "Use semantic VLM/judge evaluation to determine whether the image filters the SQLite menu, ranks eligible items, and features only the final selected lunch specials.",
-          "points": 4,
-          "scoring_hint": "Full credit when the final item set is clear. Partial credit when selection is ambiguous. No credit when the database table is copied without selection. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
-        }
-      ],
-      "label": "Task Completion"
-    },
-    "grounded_requirement_satisfaction": {
-      "weight": 0.55,
-      "items": [
-        {
-          "id": "critical_selected_set_accuracy_data_selection_003",
-          "check": "Semantic judge must verify that exactly these lunch specials are featured: Herbed Lentil Wrap, Citrus Grain Bowl, and Miso Veggie Broth. Item IDs are optional and should not be required.",
-          "points": 8,
-          "scoring_hint": "Full credit for exactly the correct item set. Partial credit only for minor readability ambiguity. No credit if any item is replaced or an extra menu item is featured."
-        },
-        {
-          "id": "critical_ranking_order_data_selection_003",
-          "check": "Semantic judge must verify the visible order is Herbed Lentil Wrap first, Citrus Grain Bowl second, and Miso Veggie Broth third. Accept numbered cards, left-to-right, top-to-bottom, or another clear ranking cue.",
-          "points": 6,
-          "scoring_hint": "Full credit when ranking is clear and correct. Partial credit when the set is correct but rank is partly ambiguous. No credit when order is wrong or absent."
-        },
-        {
-          "id": "critical_display_values_data_selection_003",
-          "check": "Semantic judge must verify each featured item displays the correct item name, price, and prep label: Herbed Lentil Wrap $9.50 8 min; Citrus Grain Bowl $11.00 9 min; Miso Veggie Broth $7.75 6 min. Accept equivalent currency and minute wording.",
-          "points": 8,
-          "scoring_hint": "Full credit when all names, prices, and prep values are correctly paired. Partial credit for one minor formatting/readability issue. No credit for wrong values or values attached to wrong items."
-        },
-        {
-          "id": "critical_nut_free_quick_lunch_copy_data_selection_003",
-          "check": "Semantic judge must verify that the image clearly communicates the required nut-free quick lunch specials theme. Accept equivalent wording such as nut-free quick lunch specials, quick nut-free lunch picks, fast nut-free lunch specials, or similar phrasing.",
-          "points": 4,
-          "scoring_hint": "Full credit when the nut-free quick lunch theme is explicit and readable. Partial credit when the theme is implied but weak. No credit when the theme is absent or contradicts the selected items."
-        },
-        {
-          "id": "critical_exclusion_accuracy_data_selection_003",
-          "check": "Semantic judge must verify that unselected menu items are not promoted as lunch specials, including unavailable, stock-threshold, wrong-meal, nut-containing, slow-prep, draft, test, archived, internal, wrong-window, and below-top-N items.",
-          "points": 6,
-          "scoring_hint": "Full credit when no unselected item is featured. Partial credit for a faint ambiguous mention. No credit when any unselected menu item is clearly promoted.",
-          "fact_ids": [
-            "selected_items",
-            "ranking_order",
-            "selected_item_display_values",
-            "nut_free_quick_lunch_copy"
-          ]
-        }
-      ],
-      "label": "Grounded Requirement Satisfaction"
-    },
-    "information_structuring": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "menu_display_hierarchy_data_selection_003",
-          "check": "Accept different cafe display layouts, including menu cards, ranked specials, banner sections, price tags, or prep-time badges, as long as selected items and values are easy to scan.",
-          "points": 5,
-          "scoring_hint": "Full credit for clear hierarchy and scanability. Partial credit for cluttered but understandable layout. No credit when selected items are buried. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
-        },
-        {
-          "id": "no_unnecessary_process_details_data_selection_003",
-          "check": "Do not require item IDs, SQL text, stock counts, margin scores, service windows, or filtering process steps. Treat them only as supporting context if present and correct.",
-          "points": 4,
-          "scoring_hint": "Full credit when the display focuses on selected specials. Partial credit if extra metadata appears but does not dominate. No credit if process details overwhelm the display. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
-        }
-      ],
-      "label": "Information Structuring"
-    },
-    "visual_communication_quality": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "visual_clarity_data_selection_003",
-          "check": "Use semantic VLM/judge evaluation for readable typography, clear hierarchy, sufficient contrast, polished cafe styling, and non-crowded spacing.",
-          "points": 4,
-          "scoring_hint": "Full credit for readable polished design. Partial credit for minor clutter or weak styling. No credit for unreadable or visually incoherent output. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
-        },
-        {
-          "id": "visual_layout_density_data_selection_003",
-          "check": "The display should have balanced density, clear item/value pairing, platform-safe margins, and no placeholder-like empty regions.",
-          "points": 4,
-          "scoring_hint": "Full credit for balanced density and clear sections. Partial credit for weak spacing. No credit for blank, placeholder-like, or low-resolution output. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
-        }
-      ],
-      "label": "Visual Communication Quality"
-    }
+  "evaluation_mode": "image_vqa_0_2",
+  "dimension_weights": {
+    "grounded_requirement_satisfaction": 0.8,
+    "visual_rendering_quality": 0.2
   },
-  "score_caps": [
-    {
-      "id": "wrong_selected_item",
-      "max_total": 60,
-      "reason": "A non-selected menu item appears without a clear exclusion/not-selected context, indicating it may be featured as a lunch special.",
-      "trigger": {
-        "type": "forbidden_final_answer",
-        "patterns": [
-          "Sesame Noodle Cup",
-          "Tomato Basil Soup",
-          "Sunrise Oat Pot",
-          "Roasted Veg Plate",
-          "Coconut Curry Bowl",
-          "Archived Pita Stack",
-          "Test Falafel Box",
-          "Chickpea Salad Cup",
-          "Nutty Power Salad",
-          "Evening Rice Bowl",
-          "Old Menu Quinoa Cup",
-          "Draft Mezze Plate",
-          "Fast Bean Tacos",
-          "Sold Out Veg Pocket",
-          "Internal Staff Bowl"
-        ],
-        "allowed_patterns": [
-          "\\b(excluded|exclude|filtered out|not selected|not featured|not a lunch special|not promoted|unavailable|ineligible)\\b[\\s\\S]{0,120}\\b(Sesame Noodle Cup|Tomato Basil Soup|Sunrise Oat Pot|Roasted Veg Plate|Coconut Curry Bowl|Archived Pita Stack|Test Falafel Box|Chickpea Salad Cup|Nutty Power Salad|Evening Rice Bowl|Old Menu Quinoa Cup|Draft Mezze Plate|Fast Bean Tacos|Sold Out Veg Pocket|Internal Staff Bowl)\\b",
-          "\\b(Sesame Noodle Cup|Tomato Basil Soup|Sunrise Oat Pot|Roasted Veg Plate|Coconut Curry Bowl|Archived Pita Stack|Test Falafel Box|Chickpea Salad Cup|Nutty Power Salad|Evening Rice Bowl|Old Menu Quinoa Cup|Draft Mezze Plate|Fast Bean Tacos|Sold Out Veg Pocket|Internal Staff Bowl)\\b[\\s\\S]{0,120}\\b(excluded|exclude|filtered out|not selected|not featured|not a lunch special|not promoted|unavailable|ineligible)\\b"
-        ]
+  "grounded_requirement_satisfaction": {
+    "vqa_items": [
+      {
+        "id": "grounded_q01",
+        "question": "What exact promotion heading, service context, and offer-validity statement are stated?",
+        "expected_answer": "Nut-Free Quick Lunch Specials; Downtown — April 15 — 11:00 AM–2:00 PM; Offer valid 11:00 AM–2:00 PM or while supplies last.",
+        "acceptance_rule": "Score 2 only if the full heading, Downtown location, April 15 date, 11:00 AM–2:00 PM window, and complete while-supplies-last statement are all explicit and correct. Score 1 only if the heading, location, date, and time are all correct and the offer statement alone is absent. Score 0 if any identity, location, date, or time element is wrong or missing, the offer wording changes its condition, or two required elements are absent."
+      },
+      {
+        "id": "grounded_q02",
+        "question": "Which five items form the complete selected portfolio, and in what eligibility-rank order are they presented?",
+        "expected_answer": "Herbed Lentil Wrap; Citrus Grain Bowl; Smoky Black Bean Sandwich; Miso Tomato Plate; Cedar Brown Rice Cup. No sixth item is featured.",
+        "acceptance_rule": "Score 2 only if exactly these five identities are the complete featured set in this exact order and no additional item has featured-equivalent status. Score 1 only if the exact five-item set is complete and ordered correctly but one explicit sequence marker is absent while order remains unambiguous. Score 0 if any item is missing, replaced, duplicated, reordered, or joined by an extra featured item."
+      },
+      {
+        "id": "grounded_q03",
+        "question": "What complete customer-facing record is stated for Herbed Lentil Wrap?",
+        "expected_answer": "Vegan; Regular $9.50; Special $8.25; Save $1.25; 13.2% off; 9 min effective prep; 460 calories; 19g protein; 620mg sodium; rating 4.8/5; Open now 23; Projected at noon 14; Balanced; $4.34/10g protein.",
+        "acceptance_rule": "Score 2 only if all fourteen factual elements are correct, role- or unit-labeled, and attached to Herbed Lentil Wrap: controlling dietary label; Regular, Special, Save, and one-decimal discount; station-adjusted effective prep; calories; protein; sodium; rating; Open now after every deduction and lot cap; Projected at noon; service outlook; and dollars per 10g protein. Score 1 only if exactly one of rating, service outlook, or protein-value metric is absent while all prices, discount, effective prep, nutrition, Open now, and Projected at noon are correct. Score 0 if any price, savings, discount, dietary label, effective prep, protein, Open-now, or Projected-at-noon fact is wrong or missing; if raw values are substituted; if roles are exchanged; or if two or more required elements are absent."
+      },
+      {
+        "id": "grounded_q04",
+        "question": "What complete customer-facing record is stated for Citrus Grain Bowl?",
+        "expected_answer": "Vegan • Gluten-free; Regular $11.00; Special $9.50; Save $1.50; 13.6% off; 10 min effective prep; 520 calories; 17g protein; 740mg sodium; rating 4.7/5; Open now 22; Projected at noon 12; At-risk; $5.59/10g protein.",
+        "acceptance_rule": "Score 2 only if all fourteen factual elements are correct, role- or unit-labeled, and attached to Citrus Grain Bowl: controlling dietary label; Regular, Special, Save, and one-decimal discount; station-adjusted effective prep; calories; protein; sodium; rating; Open now after every deduction and lot cap; Projected at noon; service outlook; and dollars per 10g protein. Score 1 only if exactly one of rating, service outlook, or protein-value metric is absent while all prices, discount, effective prep, nutrition, Open now, and Projected at noon are correct. Score 0 if any price, savings, discount, dietary label, effective prep, protein, Open-now, or Projected-at-noon fact is wrong or missing; if raw values are substituted; if roles are exchanged; or if two or more required elements are absent."
+      },
+      {
+        "id": "grounded_q05",
+        "question": "What complete customer-facing record is stated for Smoky Black Bean Sandwich?",
+        "expected_answer": "Vegan • Gluten-free; Regular $12.00; Special $10.44; Save $1.56; 13.0% off; 10 min effective prep; 586 calories; 13g protein; 855mg sodium; rating 4.7/5; Open now 39; Projected at noon 28; Strong; $8.03/10g protein.",
+        "acceptance_rule": "Score 2 only if all fourteen factual elements are correct, role- or unit-labeled, and attached to Smoky Black Bean Sandwich: controlling dietary label; Regular, Special, Save, and one-decimal discount; station-adjusted effective prep; calories; protein; sodium; rating; Open now after every deduction and lot cap; Projected at noon; service outlook; and dollars per 10g protein. Score 1 only if exactly one of rating, service outlook, or protein-value metric is absent while all prices, discount, effective prep, nutrition, Open now, and Projected at noon are correct. Score 0 if any price, savings, discount, dietary label, effective prep, protein, Open-now, or Projected-at-noon fact is wrong or missing; if raw values are substituted; if roles are exchanged; or if two or more required elements are absent."
+      },
+      {
+        "id": "grounded_q06",
+        "question": "What complete customer-facing record is stated for Miso Tomato Plate?",
+        "expected_answer": "Vegetarian • Gluten-free; Regular $7.50; Special $6.53; Save $0.97; 12.9% off; 8 min effective prep; 301 calories; 15g protein; 593mg sodium; rating 4.7/5; Open now 27; Projected at noon 18; Balanced; $4.35/10g protein.",
+        "acceptance_rule": "Score 2 only if all fourteen factual elements are correct, role- or unit-labeled, and attached to Miso Tomato Plate: controlling dietary label; Regular, Special, Save, and one-decimal discount; station-adjusted effective prep; calories; protein; sodium; rating; Open now after every deduction and lot cap; Projected at noon; service outlook; and dollars per 10g protein. Score 1 only if exactly one of rating, service outlook, or protein-value metric is absent while all prices, discount, effective prep, nutrition, Open now, and Projected at noon are correct. Score 0 if any price, savings, discount, dietary label, effective prep, protein, Open-now, or Projected-at-noon fact is wrong or missing; if raw values are substituted; if roles are exchanged; or if two or more required elements are absent."
+      },
+      {
+        "id": "grounded_q07",
+        "question": "What complete customer-facing record is stated for Cedar Brown Rice Cup?",
+        "expected_answer": "Vegan • Gluten-free; Regular $7.75; Special $6.67; Save $1.08; 13.9% off; 9 min effective prep; 600 calories; 20g protein; 626mg sodium; rating 4.2/5; Open now 42; Projected at noon 28; Strong; $3.34/10g protein.",
+        "acceptance_rule": "Score 2 only if all fourteen factual elements are correct, role- or unit-labeled, and attached to Cedar Brown Rice Cup: controlling dietary label; Regular, Special, Save, and one-decimal discount; station-adjusted effective prep; calories; protein; sodium; rating; Open now after every deduction and lot cap; Projected at noon; service outlook; and dollars per 10g protein. Score 1 only if exactly one of rating, service outlook, or protein-value metric is absent while all prices, discount, effective prep, nutrition, Open now, and Projected at noon are correct. Score 0 if any price, savings, discount, dietary label, effective prep, protein, Open-now, or Projected-at-noon fact is wrong or missing; if raw values are substituted; if roles are exchanged; or if two or more required elements are absent."
+      },
+      {
+        "id": "grounded_q08",
+        "question": "Are every Regular price, Special price, Save amount, discount percentage, Open-now count, Projected-at-noon count, and protein-value metric exact for all five selected items?",
+        "expected_answer": "Herbed $9.50→$8.25, save $1.25, 13.2%, Open 23, Noon 14, $4.34/10g; Citrus $11.00→$9.50, save $1.50, 13.6%, Open 22, Noon 12, $5.59/10g; Smoky $12.00→$10.44, save $1.56, 13.0%, Open 39, Noon 28, $8.03/10g; Miso Tomato $7.50→$6.53, save $0.97, 12.9%, Open 27, Noon 18, $4.35/10g; Cedar $7.75→$6.67, save $1.08, 13.9%, Open 42, Noon 28, $3.34/10g.",
+        "acceptance_rule": "Score 2 only if all thirty-five values are present, correctly role-labeled, correctly paired, and exact under the stated rounding rules. Score 1 only if every dollar amount and both service quantities for all five items are exact and exactly one percentage or protein-value metric is absent. Score 0 if any dollar amount, Open-now count, or Projected-at-noon count is wrong; if an inventory, post-hold, or pre-lot quantity is substituted; if any role is reversed; or if two or more secondary metrics are absent."
+      },
+      {
+        "id": "grounded_q09",
+        "question": "What ten Quick Picks are stated for the selected portfolio?",
+        "expected_answer": "Fastest: Miso Tomato Plate—8 min; Highest protein: Cedar Brown Rice Cup—20g; Biggest savings: Smoky Black Bean Sandwich—$1.56; Largest discount: Cedar Brown Rice Cup—13.9%; Lowest Special: Miso Tomato Plate—$6.53; Lowest sodium: Miso Tomato Plate—593mg; Top rating: Herbed Lentil Wrap—4.8/5; Most Open now: Cedar Brown Rice Cup—42; Most Projected at noon: Smoky Black Bean Sandwich and Cedar Brown Rice Cup—28 each; Best protein value: Cedar Brown Rice Cup—$3.34/10g.",
+        "acceptance_rule": "Score 2 only if all ten callouts identify the correct winner or complete tied set and the correct supporting value. Score 1 only if exactly nine callouts are fully correct and the tenth is entirely absent. Score 0 if any shown winner or supporting value is wrong, the projected-noon tie is incomplete, or two or more callouts are absent."
+      },
+      {
+        "id": "grounded_q10",
+        "question": "What complete selected-item sets are stated in the seven Find Your Fit groups?",
+        "expected_answer": "Special under $9: Herbed Lentil Wrap, Miso Tomato Plate, Cedar Brown Rice Cup. At least 18g protein: Herbed Lentil Wrap, Cedar Brown Rice Cup. Under 700mg sodium: Herbed Lentil Wrap, Miso Tomato Plate, Cedar Brown Rice Cup. Gluten-free: Citrus Grain Bowl, Smoky Black Bean Sandwich, Miso Tomato Plate, Cedar Brown Rice Cup. Vegan: Herbed Lentil Wrap, Citrus Grain Bowl, Smoky Black Bean Sandwich, Cedar Brown Rice Cup. Effective prep 9 min or less: Herbed Lentil Wrap, Miso Tomato Plate, Cedar Brown Rice Cup. Projected at noon at least 20: Smoky Black Bean Sandwich, Cedar Brown Rice Cup.",
+        "acceptance_rule": "Score 2 only if all seven group labels and thresholds are correct and every qualifying selected item is included with no non-qualifier added. Score 1 only if six complete groups are correct and the seventh group is entirely absent. Score 0 if any shown group has a missing qualifier, an extra non-qualifier, a wrong threshold, or two or more groups are absent."
+      },
+      {
+        "id": "grounded_q11",
+        "question": "What exact portfolio totals, averages, median, service quantities, extrema, and diversity counts are stated in the Portfolio Snapshot?",
+        "expected_answer": "Combined Regular $47.75; Combined Special $41.39; Combined savings $6.36; blended discount 13.3%; average Special $8.28; median Special $8.25; average effective prep 9.2 min; average protein 16.8g; total protein 84g; total calories 2,467; total sodium 3,434mg; average rating 4.62/5; total Open now 153; total Projected at noon 100; maximum sodium 855mg; 5 formats; 4 stations.",
+        "acceptance_rule": "Score 2 only if all seventeen metrics are explicit, correctly labeled, and exactly derived from the selected five. Score 1 only if exactly one average, median, maximum, or diversity count is absent while every combined money value, total protein, total calories, total sodium, average rating, total Open now, and total Projected at noon is correct. Score 0 if any stated metric is wrong, two or more metrics are absent, totals and averages are confused, or a raw availability quantity replaces a required service quantity."
+      },
+      {
+        "id": "grounded_q12",
+        "question": "What exact Budget Duo, Protein Duo, and Noon-Safe Duo are stated, including every combined supporting value?",
+        "expected_answer": "Budget Duo: Miso Tomato Plate + Cedar Brown Rice Cup; Special $13.20; Save $2.05; 35g protein; 901 calories; Projected at noon 46. Protein Duo: Herbed Lentil Wrap + Cedar Brown Rice Cup; Special $14.92; Save $2.33; 39g protein; 1,060 calories; Projected at noon 42. Noon-Safe Duo: Smoky Black Bean Sandwich + Cedar Brown Rice Cup; Special $17.11; Save $2.64; 33g protein; 1,186 calories; Projected at noon 56.",
+        "acceptance_rule": "Score 2 only if all three pair identities and all fifteen combined supporting values are correct and labeled by role. Score 1 only if all three pair identities, Special totals, savings totals, protein totals, and Projected-at-noon totals are correct but exactly one calories value is absent. Score 0 if any pair is wrong, any Special/savings/protein/noon value is wrong, a non-selected item is used, or two or more supporting values are absent."
+      },
+      {
+        "id": "grounded_q13",
+        "question": "What dietary-mix and service-outlook counts are stated for the selected portfolio?",
+        "expected_answer": "Dietary mix: 4 Vegan, 4 Gluten-free, 5 Vegetarian. Service outlook: 1 At-risk, 2 Balanced, 2 Strong.",
+        "acceptance_rule": "Score 2 only if all six category counts and labels are explicit and correct, including overlapping dietary certifications. Score 1 only if exactly five counts are correct and the sixth category is absent. Score 0 if any stated count is wrong, overlaps are handled incorrectly, outlook labels are confused, or two or more categories are absent."
+      },
+      {
+        "id": "grounded_q14",
+        "question": "Are Miso Veggie Broth, Woodland Squash Tacos, Savory Cauliflower Wrap, South Market Cauliflower Cup, Roasted Barley Bowl, Bright Couscous Plate, Meadow White Bean Cup, Stoneground Cauliflower Cup, or any other non-selected item presented as a special, Quick Pick, filter result, or Pair Idea?",
+        "expected_answer": "No. Only Herbed Lentil Wrap, Citrus Grain Bowl, Smoky Black Bean Sandwich, Miso Tomato Plate, and Cedar Brown Rice Cup receive featured or recommendation status.",
+        "acceptance_rule": "Score 2 only if no named near miss and no other extra item is presented or implied as featured, recommended, grouped, paired, ranked, or specially priced. Score 1 only if one non-selected name appears solely in clearly separated text explicitly marked unavailable or not selected. Score 0 if any additional item receives a featured block, recommendation, filter membership, pair membership, rank, price, or equivalent status."
       }
-    },
-    {
-      "id": "missing_selected_item",
-      "max_total": 55,
-      "reason": "One or more required selected lunch specials is missing.",
-      "trigger": {
-        "type": "missing_required_count",
-        "fact_ids": [
-          "selected_items",
-          "selected_item_display_values"
-        ],
-        "min_missing": 1
+    ]
+  },
+  "visual_rendering_quality": {
+    "image_type": "customer_display_card",
+    "vqa_items": [
+      {
+        "id": "visual_q01",
+        "question": "As a customer-facing menu, resource spotlight, or counter-display card, does the image convert the featured entries and their names, prices or equivalent decision values, categories, availability, and supporting details into a genuinely display-ready visual that can be understood quickly at normal viewing size without zooming? Evaluate the smallest meaningful text, the distinction between primary choices and secondary evidence, the efficiency of comparison, the visual treatment of summaries or recommendations, the use of the full canvas, and whether the result feels intentionally merchandised rather than like a report, worksheet, webpage, or collection of bordered text boxes. Do not award 2 merely because the information is complete, aligned, or free of rendering errors.",
+        "score_criteria": {
+          "2": "Award 2 only if **all** of the following professional-display gates are clearly satisfied; failure of any one gate limits the score to 1 at most:\n\n  1. **Immediate decision hierarchy:** The featured entries, their principal value or benefit, and the most important category, status, price, availability, or recommendation cue can be identified within seconds. Primary, secondary, and tertiary information are unmistakably differentiated rather than presented with nearly equal visual weight.\n  2. **Normal-size readability:** Every meaningful label and supporting value, including the smallest summary, availability, nutrition, metadata, or recommendation text, is comfortably readable at the intended display size without zooming or close inspection. Dense small print, tightly packed lines, or long low-emphasis lists prevent 2.\n  3. **Visual synthesis rather than information dumping:** Comparisons, highlights, summaries, and recommendations are visually distilled through purposeful typography, badges, icons, grouping, concise callouts, charts, imagery, or other appropriate devices. Long bullet inventories, paragraph-like metadata blocks, raw calculations, or report-style summaries cannot receive 2 even when accurate.\n  4. **Refined entry design:** Repeated entries have deliberate rhythm, proportion, internal alignment, and selective emphasis. They must not resemble default bordered rows, spreadsheet records, form fields, plain database cards, or mechanically duplicated text panels. Imagery is not mandatory, but an image-free design must demonstrate exceptional typographic composition and visual merchandising.\n  5. **Whole-canvas composition:** Content density, negative space, margins, and vertical distribution are intentionally balanced across the complete canvas. There may be no conspicuous unused lower region, oversized canvas, large empty areas inside entries, top-heavy arrangement, or visible sense that the design ended before the canvas did.\n  6. **Production finish:** Typography, spacing, dividers, color, contrast, alignment, status treatments, and emphasis are consistently polished, accessible, and specific to the customer context. No malformed glyph, bracket-like placeholder styling, clipping, overlap, accidental crop, weak contrast, unstable baseline, inconsistent column alignment, or visible production residue is allowed.\n\n  A design that is accurate and orderly but text-heavy, generic, repetitive, report-like, sparsely filled, or dependent on numerous small bullet points is not exceptional and must not receive 2.",
+          "1": "Award 1 if the card is understandable, factually presentable, and substantially usable, but requires visible design refinement before professional customer display. Typical 1-point outputs include clean repeated cards with weak visual differentiation; small but technically readable supporting text; dense nutrition, metadata, summary, or recommendation sections; long bullet lists; report-like or worksheet-like organization; ordinary typography; plain bordered panels; weak price, status, or benefit emphasis; inconsistent information density; excessive empty space within or below the content; or a composition that is easy to read only through careful inspection. A result may be complete, aligned, and error-free yet still receive only 1 when it organizes information rather than visually communicating and merchandising it.",
+          "0": "Award 0 if the card is visually poor, amateurish, unreliable, or impractical for customer use. This includes cases where featured entries or their key values are difficult to identify or compare; important text is too small, crowded, or low-contrast for normal viewing; hierarchy is confusing; summaries overwhelm the featured content; the layout is severely empty, dense, repetitive, or badly proportioned; alignment and spacing materially impair scanning; or substantial redesign is required. Blank, corrupted, severely unreadable, clipped, overlapping, misleading, or otherwise broken outputs are also 0."
+        }
       }
-    },
-    {
-      "id": "unfiltered_menu_catalog",
-      "max_total": 45,
-      "reason": "The output appears to show the unfiltered menu inventory without a clear exclusion/not-selected context.",
-      "trigger": {
-        "type": "forbidden_final_answer",
-        "patterns": [
-          "item_id\\s*,\\s*name\\s*,\\s*meal_type",
-          "meal_type\\s*,\\s*status\\s*,\\s*available",
-          "stock\\s*,\\s*contains_nuts\\s*,\\s*prep_minutes",
-          "price_usd\\s*,\\s*margin_score\\s*,\\s*service_window"
-        ]
-      }
-    },
-    {
-      "id": "raw_table_instead_of_display",
-      "max_total": 40,
-      "reason": "The final artifact is a raw table, SQL result, or database dump instead of a polished cafe display image.",
-      "trigger": {
-        "type": "forbidden_final_answer",
-        "patterns": [
-          "\\|\\s*item",
-          "item_id\\s+name\\s+meal_type",
-          "meal_type\\s+status\\s+available",
-          "stock\\s*,\\s*contains_nuts\\s*,\\s*prep_minutes"
-        ]
-      }
-    }
-  ]
+    ]
+  }
 }

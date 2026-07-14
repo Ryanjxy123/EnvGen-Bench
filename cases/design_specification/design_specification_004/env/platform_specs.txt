@@ -1,9 +1,0 @@
-Placement: mobile app install/feed ad
-Required canvas: 1080 x 1350 px
-Required aspect ratio: 4:5 vertical
-Safe margin: 72 px.
-Logo: top-left safe area.
-Headline: upper third, max 2 lines.
-Phone UI mockup: center-right or middle, not covering disclosure.
-CTA: lower third above disclosure.
-Disclosure: bottom safe area, at least 24 px equivalent, high contrast.

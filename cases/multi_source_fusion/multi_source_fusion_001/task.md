@@ -1,6 +1,15 @@
-Use the files in the env folder to create a social media campaign image for the
-monthly sales-winning product. Extract the winning product from sales data,
-combine it with product selling points, brand constraints, and the audience
-profile. Because the platform image-size requirement is not provided in the
-env, use web search to identify the current recommended Instagram feed image
-size or aspect ratio before designing the image.
+Maya needs the June 18 Instagram Portrait Feed image for the current regional residential-energy pilot.
+
+Use only the files in env/. Resolve the controlling request by applying `June_18_Campaign_Change_Control.md` to `Campaign_Request_Maya.docx`.
+
+Start with `May_2026_Sales_Workbook.xlsx` and `Regional_Pilot_Service_Areas.csv`. Apply every cumulative order, customer, state-serviceability, core-line, invoice-window, close-cutoff, discount, Accepted-credit, Program Funding, funding-version, funding-date, product-program, and Add/Subtract/Ignore rule. Rank products by program-eligible net contribution. For the selected product only, rank reporting regions by the same contribution metric.
+
+If the result is HelioGrid Flex in Central, continue with `Central_Load_Track_Eligibility.csv` and `June_18_Central_Load_Track_Routing_Addendum.md`. Keep current eligible routing profiles, rank load tracks by the already calculated selected-line contribution, then rank utility programs inside the winning track. Do not mix the winning track with an alternative device track or utility program.
+
+Construct the final placement under the controlling rules. Resolve the current campaign label, leadership badge, one lead benefit, exactly two proof points, CTA, qualification, disclosure package, background asset, product source, and identity. Superseded generic C-C2 copy, a combined EV-or-heat-pump audience, another utility program, future wording, wrong-region content, wrong-platform content, and organic-education content are not current.
+
+Create one customer-facing 1080 x 1350 Instagram Portrait Feed campaign image. Include the full selected product name and all required customer-facing content from the single winning routing row. Concise semantic equivalents are allowed, but do not broaden a selected device track into an `EV charger or heat pump` alternative. Keep each required disclosure meaning identifiable inside the image.
+
+Use the approved detached rooftop-solar background for the selected region. Use the current selected-product source and apply every asset-register cleanup instruction. Supplier names, third-party marks, warning or test labels, exposed connectors, loose leads, unrelated equipment, retired versions, and reference-room framing must not remain.
+
+Do not expose revenue, contribution, funding, track totals, utility-program totals, units, order counts, calculations, customer-level data, profile IDs, funding/claim/asset IDs, placement keys, program codes, rollout codes, revision codes, or workbook field names. The approved leadership-badge metric wording without a numeric value is permitted. Do not use unsupported prices, savings, capacity, warranty, guaranteed outcomes, universal availability, automatic control of every appliance, no-grid claims, or fear-heavy disaster copy. Return the final image only.

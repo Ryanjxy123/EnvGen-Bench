@@ -1,0 +1,73 @@
+﻿packet_line_id,issue_date,section,label,cell_or_zone,period_label,displayed_value,unit,review_state,owner_note
+PK-001,2026-12-04,Executive draft,Priority score working cut,Pick East,7-week cut,94.8,score,Circulated,Before the final complete week and latest approved revisions
+PK-002,2026-12-04,Executive draft,Priority score working cut,Cold Chain,7-week cut,95.1,score,Circulated,Uses pre-change carton conversion
+PK-003,2026-12-04,Executive draft,Priority score working cut,Robotics Cell,7-week cut,89.9,score,Circulated,Uses old each conversion
+PK-004,2026-12-04,Executive draft,Priority score working cut,Returns South,7-week cut,84.2,score,Circulated,Duplicate tickets not fully removed
+PK-005,2026-12-04,Executive draft,High-priority count,Network,7-week cut,5,areas,Circulated,Working threshold view
+PK-006,2026-12-11,Reconciliation copy,Network shipped control,Network,Current cycle,101844.0,standard units,Working,Includes transfer and recovery rows
+PK-007,2026-12-11,Reconciliation copy,Network gap control,Network,Current cycle,6180.5,standard units,Working,Includes non-fulfillment activity
+PK-008,2026-12-11,Reconciliation copy,West zone working total,West,Current cycle,1890.7,standard units,Working,Old zone mapping for Crossdock West
+PK-009,2026-12-11,Reconciliation copy,East zone working total,East,Current cycle,1244.6,standard units,Working,Profile history not fully applied
+PK-010,2026-12-18,Ticket cleanup,Incident row count,Network,Current cycle,244,tickets,Working,All rows before validity filtering
+PK-011,2026-12-18,Ticket cleanup,Valid incident estimate,Network,Current cycle,91,tickets,Working,Test and duplicate cleanup incomplete
+PK-012,2026-12-18,Close audit,Selected fulfillment row estimate,Network,Current cycle,230,rows,Working,Includes some earlier approved revisions
+PK-013,2027-01-05,Pre-read note,Intervention status,Cold Chain,Decision week,Approved,text,Draft,Pre-read wording; not in approved register
+PK-014,2027-01-05,Pre-read note,Watchlist suggestion,Crossdock West,Decision week,Candidate,text,Draft,Prepared before final score calculation
+PK-015,2027-01-05,Pre-read note,Pick East action,Pick East,Decision week,Closing,text,Draft,Action remains active at scorecard cutoff
+PK-016,2026-11-10,Prior review,Priority leader,Returns South,Prior cycle,81.7,score,Reference,Prior-cycle result
+PK-017,2026-11-10,Prior review,Zone hotspot,South,Prior cycle,1320.0,standard units,Reference,Prior-cycle result
+PK-018,2026-11-10,Prior review,High-priority count,Network,Prior cycle,3,areas,Reference,Prior-cycle result
+PK-019,2027-01-08,Planning scenario,Additional intervention capacity,Network,Next cycle,2,teams,Scenario,Budget scenario only
+PK-020,2027-01-08,Planning scenario,Expected gap reduction,Cold Chain,Next cycle,18,percent,Scenario,Forecast only
+PK-021,2027-01-08,Planning scenario,Expected incident reduction,Robotics Cell,Next cycle,14,percent,Scenario,Forecast only
+PK-022,2027-01-04,Capacity planning,Capacity note,E01,Next cycle,210.2,standard units,Reference,Uses prior profile mapping
+PK-023,2026-11-15,Capacity planning,Control total,E01,Current cycle,1788.5,score,Reference,Control copy only
+PK-024,2026-11-04,Control copy,Owner estimate,E12,Prior reference,1078.4,standard units,Scenario,For discussion only
+PK-025,2026-12-27,Meeting notes,Owner estimate,E02,Current cycle,635.5,count,Scenario,Uses prior profile mapping
+PK-026,2026-12-12,Capacity planning,Priority note,E01,Current cycle,798.6,score,Draft,Control copy only
+PK-027,2026-12-23,Control copy,Priority note,E13,Prior reference,916.2,percent,Working,Uses prior profile mapping
+PK-028,2027-01-07,Meeting notes,Working volume,E02,Prior reference,329.5,count,Reference,Control copy only
+PK-029,2026-11-29,Owner follow-up,Owner estimate,E01,Prior reference,922.3,standard units,Reference,Control copy only
+PK-030,2026-12-25,Owner follow-up,Control total,Network,Next cycle,273.7,count,Draft,Owner-supplied estimate
+PK-031,2026-11-05,Control copy,Working volume,E07,Next cycle,1692.0,tickets,Scenario,Not approved
+PK-032,2026-12-17,Owner follow-up,Priority note,E09,Prior reference,1491.3,percent,Working,Control copy only
+PK-033,2026-12-08,Shift note,Open item count,E12,Prior reference,1630.3,count,Draft,For discussion only
+PK-034,2026-12-10,Shift note,Priority note,E12,Prior reference,340.4,percent,Scenario,Pending reconciliation
+PK-035,2026-12-02,Meeting notes,Priority note,Central,Current cycle,1162.3,standard units,Reference,Pending reconciliation
+PK-036,2026-11-25,Shift note,Open item count,E01,Next cycle,624.7,score,Reference,For discussion only
+PK-037,2027-01-03,Shift note,Capacity note,E13,Current cycle,1160.1,count,Working,For discussion only
+PK-038,2026-11-06,Control copy,Working volume,E03,Next cycle,380.3,tickets,Draft,For discussion only
+PK-039,2026-12-05,Meeting notes,Control total,E14,Prior reference,264.0,standard units,Reference,Pending reconciliation
+PK-040,2026-12-11,Shift note,Working volume,E12,Current cycle,1781.6,count,Reference,Owner-supplied estimate
+PK-041,2026-12-30,Shift note,Priority note,West,Prior reference,1406.3,tickets,Draft,Not approved
+PK-042,2026-11-23,Owner follow-up,Open item count,E01,Prior reference,1756.1,standard units,Draft,For discussion only
+PK-043,2026-11-21,Shift note,Working volume,E09,Prior reference,1760.9,percent,Reference,For discussion only
+PK-044,2026-12-10,Owner follow-up,Control total,East,Prior reference,491.6,standard units,Draft,For discussion only
+PK-045,2026-11-24,Meeting notes,Owner estimate,E05,Prior reference,309.1,score,Draft,Not approved
+PK-046,2026-11-30,Capacity planning,Control total,E14,Prior reference,1069.3,score,Working,Not approved
+PK-047,2026-11-18,Control copy,Capacity note,E12,Next cycle,1657.5,percent,Working,Pending reconciliation
+PK-048,2026-11-15,Owner follow-up,Priority note,E08,Current cycle,957.8,percent,Draft,Control copy only
+PK-049,2026-12-23,Control copy,Owner estimate,E02,Current cycle,229.6,tickets,Scenario,Not approved
+PK-050,2026-12-12,Meeting notes,Capacity note,West,Current cycle,246.1,standard units,Reference,Pending reconciliation
+PK-051,2026-12-20,Owner follow-up,Open item count,E06,Prior reference,773.3,score,Working,Pending reconciliation
+PK-052,2026-11-22,Meeting notes,Control total,E02,Current cycle,631.3,count,Draft,Not approved
+PK-053,2027-01-06,Shift note,Working volume,E06,Prior reference,118.4,standard units,Scenario,Not approved
+PK-054,2026-12-13,Capacity planning,Priority note,E07,Current cycle,205.6,score,Working,Owner-supplied estimate
+PK-055,2026-11-20,Control copy,Working volume,E04,Current cycle,1148.0,standard units,Working,Uses prior profile mapping
+PK-056,2027-01-02,Owner follow-up,Working volume,E08,Next cycle,28.3,standard units,Scenario,Pending reconciliation
+PK-057,2026-11-10,Meeting notes,Control total,Central,Next cycle,1646.8,percent,Reference,Uses prior profile mapping
+PK-058,2026-11-02,Shift note,Priority note,E03,Current cycle,832.6,percent,Scenario,Not approved
+PK-059,2027-01-05,Capacity planning,Working volume,E05,Next cycle,876.4,score,Scenario,Control copy only
+PK-060,2026-12-04,Control copy,Control total,E09,Current cycle,1424.3,standard units,Working,Not approved
+PK-061,2026-12-12,Meeting notes,Capacity note,E10,Current cycle,1629.5,standard units,Draft,Not approved
+PK-062,2026-12-14,Meeting notes,Capacity note,West,Current cycle,1464.7,standard units,Scenario,Owner-supplied estimate
+PK-063,2027-01-01,Meeting notes,Working volume,E09,Current cycle,1383.8,count,Scenario,Not approved
+PK-064,2026-12-30,Shift note,Working volume,E09,Current cycle,1106.0,count,Scenario,Control copy only
+PK-065,2026-12-05,Control copy,Open item count,E11,Current cycle,88.8,tickets,Scenario,Uses prior profile mapping
+PK-066,2026-12-24,Meeting notes,Capacity note,Network,Current cycle,809.0,tickets,Reference,Owner-supplied estimate
+PK-067,2026-12-27,Meeting notes,Capacity note,E04,Next cycle,1508.3,count,Reference,Not approved
+PK-068,2026-12-28,Shift note,Priority note,E07,Next cycle,1279.5,score,Working,Owner-supplied estimate
+PK-069,2026-11-09,Control copy,Control total,E04,Next cycle,846.6,count,Draft,Pending reconciliation
+PK-070,2026-11-23,Meeting notes,Priority note,North,Next cycle,98.9,tickets,Working,Uses prior profile mapping
+PK-071,2026-11-25,Owner follow-up,Capacity note,E13,Current cycle,148.1,score,Reference,Owner-supplied estimate
+PK-072,2026-11-16,Meeting notes,Control total,E13,Prior reference,719.2,score,Working,Not approved

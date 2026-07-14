@@ -1,170 +1,92 @@
 {
   "case_id": "data_insight_005",
-  "dimensions": {
-    "task_completion": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "output_type_data_insight_005",
-          "check": "The output should be a finished grant compliance monitoring infographic, not raw CSV rows or a generic dashboard.",
-          "points": 4
-        },
-        {
-          "id": "decision_resolution_data_insight_005",
-          "check": "The infographic should resolve the priority decision using period comparison, rates, normalization, thresholds, and exclusions.",
-          "points": 4
-        }
-      ],
-      "label": "Task Completion"
-    },
-    "grounded_requirement_satisfaction": {
-      "weight": 0.55,
-      "items": [
-        {
-          "id": "critical_score_leader_data_insight_005",
-          "check": "Verify that Solar Schools is the top score entity with score about 82.9.",
-          "points": 6,
-          "fact_id": "grants_compliance_score_leader"
-        },
-        {
-          "id": "critical_lowest_data_insight_005",
-          "check": "Verify that Rural Mobility is the lowest score entity with score about 19.0.",
-          "points": 4,
-          "fact_id": "grants_compliance_lowest_score"
-        },
-        {
-          "id": "critical_change_data_insight_005",
-          "check": "Verify that Solar Schools has the largest gap-rate increase at about 2.7 percentage points.",
-          "points": 5,
-          "fact_id": "grants_compliance_fastest_gap_change"
-        },
-        {
-          "id": "critical_volume_data_insight_005",
-          "check": "Verify that Digital Skills has the highest gap volume at about 540.",
-          "points": 5,
-          "fact_id": "grants_compliance_gap_volume_hotspot"
-        },
-        {
-          "id": "critical_incident_data_insight_005",
-          "check": "Verify that Food Relief has the highest incident rate at about 49.6 per 1,000.",
-          "points": 5,
-          "fact_id": "grants_compliance_incident_rate_hotspot"
-        },
-        {
-          "id": "critical_group_data_insight_005",
-          "check": "Verify that Housing is the group hotspot at about 996.",
-          "points": 5,
-          "fact_id": "grants_compliance_group_gap_hotspot"
-        },
-        {
-          "id": "critical_threshold_data_insight_005",
-          "check": "Verify that 2 entities meet the high-priority threshold.",
-          "points": 5,
-          "fact_id": "grants_compliance_threshold_count"
-        },
-        {
-          "id": "negative_distractors_data_insight_005",
-          "check": "Verify that forecast, subtotal, and old-period rows are not used as final metrics.",
-          "points": 4,
-          "fact_id": "grants_compliance_distractor_exclusions"
-        }
-      ],
-      "label": "Grounded Requirement Satisfaction"
-    },
-    "information_structuring": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "priority_hierarchy_data_insight_005",
-          "check": "The image should organize priority score, gap volume, rate change, incident signal, group hotspot, and threshold count into a clear decision hierarchy.",
-          "points": 5,
-          "fact_ids": [
-            "grants_compliance_score_leader",
-            "grants_compliance_lowest_score",
-            "grants_compliance_fastest_gap_change",
-            "grants_compliance_gap_volume_hotspot",
-            "grants_compliance_incident_rate_hotspot",
-            "grants_compliance_group_gap_hotspot",
-            "grants_compliance_threshold_count"
-          ]
-        },
-        {
-          "id": "action_takeaway_data_insight_005",
-          "check": "The takeaway should connect the top priority with at least one supporting operational signal.",
-          "points": 4,
-          "fact_ids": [
-            "grants_compliance_score_leader",
-            "grants_compliance_incident_rate_hotspot",
-            "grants_compliance_gap_volume_hotspot"
-          ]
-        }
-      ],
-      "label": "Information Structuring"
-    },
-    "visual_communication_quality": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "visual_clarity_data_insight_005",
-          "check": "Judge readability, contrast, hierarchy, and label legibility at infographic size.",
-          "points": 4
-        },
-        {
-          "id": "visual_density_data_insight_005",
-          "check": "The layout should be dense enough for operations review while avoiding overlapping labels or raw table dumps.",
-          "points": 4
-        }
-      ],
-      "label": "Visual Communication Quality"
-    }
+  "evaluation_mode": "image_vqa_0_2",
+  "dimension_weights": {
+    "grounded_requirement_satisfaction": 0.8,
+    "visual_rendering_quality": 0.2
   },
-  "score_caps": [
-    {
-      "id": "missing_panel_core_fact",
-      "max_total": 55,
-      "reason": "A required panel critical fact is missing.",
-      "trigger": {
-        "type": "missing_required_count",
-        "fact_ids": [
-          "grants_compliance_score_leader",
-          "grants_compliance_lowest_score",
-          "grants_compliance_fastest_gap_change",
-          "grants_compliance_gap_volume_hotspot",
-          "grants_compliance_incident_rate_hotspot",
-          "grants_compliance_group_gap_hotspot",
-          "grants_compliance_threshold_count"
-        ],
-        "min_missing": 1
+  "grounded_requirement_satisfaction": {
+    "vqa_items": [
+      {
+        "id": "grounded_q01",
+        "question": "Which program is shown as the highest-priority compliance follow-up, and what score is shown?",
+        "expected_answer": "Flood Mitigation Grants, 82.1",
+        "acceptance_rule": "Accept if the named program matches the top priority and the score is within 0.2 of the expected rounded score."
+      },
+      {
+        "id": "grounded_q02",
+        "question": "What are the top three programs shown in the compliance priority ranking?",
+        "expected_answer": "Flood Mitigation Grants, Senior Care Access, Housing Navigation Pilot",
+        "acceptance_rule": "Accept if the same three programs are listed in the same descending order."
+      },
+      {
+        "id": "grounded_q03",
+        "question": "Which programs are shown as high-priority items?",
+        "expected_answer": "Flood Mitigation Grants, Senior Care Access",
+        "acceptance_rule": "Accept if all and only the expected high-priority programs are named; order is not required."
+      },
+      {
+        "id": "grounded_q04",
+        "question": "How many programs are shown as meeting the high-priority threshold?",
+        "expected_answer": "2",
+        "acceptance_rule": "Accept only the numeric count of high-priority programs."
+      },
+      {
+        "id": "grounded_q05",
+        "question": "Which programs are shown in the watch tier?",
+        "expected_answer": "Housing Navigation Pilot, Food Pantry Stabilization, Childcare Expansion, Veterans Housing Support",
+        "acceptance_rule": "Accept if all and only the expected watch-tier programs are named; order is not required."
+      },
+      {
+        "id": "grounded_q06",
+        "question": "Which program is shown with the largest gap-rate increase versus the baseline period?",
+        "expected_answer": "Flood Mitigation Grants, 6.7 percentage points",
+        "acceptance_rule": "Accept if the expected program is named and the change is within 0.2 percentage points if shown."
+      },
+      {
+        "id": "grounded_q07",
+        "question": "Which program is shown with the largest analysis-period gap volume?",
+        "expected_answer": "Flood Mitigation Grants, 896k",
+        "acceptance_rule": "Accept if the expected program is named and the gap volume is within 1k if shown."
+      },
+      {
+        "id": "grounded_q08",
+        "question": "Which funding stream is shown as having the largest aggregate gap volume?",
+        "expected_answer": "Housing, 1258k",
+        "acceptance_rule": "Accept if the expected funding stream is named and the value is within 1k if shown."
+      },
+      {
+        "id": "grounded_q09",
+        "question": "Which program is shown with the highest late-report rate per 1,000?",
+        "expected_answer": "Senior Care Access, 50.8 per 1,000",
+        "acceptance_rule": "Accept if the expected program is named and the rate is within 0.3 per 1,000 if shown."
+      },
+      {
+        "id": "grounded_q10",
+        "question": "What baseline and analysis periods are shown or referenced?",
+        "expected_answer": "Baseline April-June 2026; analysis July-September 2026",
+        "acceptance_rule": "Accept if both the baseline period and analysis period are correctly identified."
+      },
+      {
+        "id": "grounded_q11",
+        "question": "Does the image use forecast, subtotal, draft/open, prior-cycle, or inactive-profile records as final metrics?",
+        "expected_answer": "No",
+        "acceptance_rule": "Only No earns credit. Exclusion notes are fine, but excluded records must not be presented as final metrics."
       }
-    },
-    {
-      "id": "uses_invalid_panel_rows",
-      "max_total": 60,
-      "reason": "The image uses forecast, subtotal, or old-period rows as final results.",
-      "trigger": {
-        "type": "forbidden_final_answer",
-        "patterns": [
-          "99999",
-          "88888",
-          "77777",
-          "forecast result",
-          "subtotal result",
-          "old_period result"
-        ]
+    ]
+  },
+  "visual_rendering_quality": {
+    "image_type": "executive_dashboard",
+    "vqa_items": [
+      {
+        "id": "visual_q01",
+        "question": "As an executive dashboard or decision snapshot, does the image surface the primary decision immediately through a disciplined KPI hierarchy, meaningful comparison, aligned values and statuses, restrained emphasis, and highly polished meeting-ready composition?",
+        "score_criteria": {
+          "2": "Award 2 only if the dashboard is exceptional and genuinely executive-ready: the central decision or priority is obvious within seconds; ranked comparisons, statuses, and supporting KPIs are visually coherent and numerically aligned; all values, units, labels, and notes are readable; the grid, spacing, typography, color, and emphasis are precise and restrained; charts and cards are purposeful rather than repetitive; and the whole page feels custom, calm, and authoritative. There must be no disconnected KPI-card dump, raw-worksheet feel, excessive density, weak status encoding, clipping, malformed text, or visible cleanup issue. Any meaningful revision a senior design reviewer would request prevents 2.",
+          "1": "Award 1 if the dashboard is understandable, usable in a meeting, and visually decent, but it has visible shortcomings such as generic card layout, weak comparison, small secondary text, uneven grid spacing, excessive density, modest decision emphasis, or ordinary styling.",
+          "0": "Award 0 even if metrics are shown when the dashboard visually fails as a decision tool: the main decision is buried, values or statuses are hard to compare, the page resembles a raw worksheet, hierarchy is chaotic, density is poorly managed, or the design looks noticeably weak and requires substantial redesign. Blank, corrupted, severely unreadable, or materially misleading outputs are also 0."
+        }
       }
-    },
-    {
-      "id": "raw_panel_dump",
-      "max_total": 40,
-      "reason": "The output is a raw CSV/table dump instead of an infographic.",
-      "trigger": {
-        "type": "forbidden_final_answer",
-        "patterns": [
-          "entity_id,",
-          "approved_budget_k",
-          "record_type,status"
-        ]
-      }
-    }
-  ]
+    ]
+  }
 }

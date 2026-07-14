@@ -119,27 +119,20 @@ It should contain enough information to verify grounded correctness, such as:
 
 ### `scoring_checklist.json`
 
-Per-case scoring checklist aligned with the four benchmark dimensions:
+Per-case scoring checklist aligned with two scored dimensions:
 
-- Task Completion
-- Grounded Requirement Satisfaction
-- Information Structuring
-- Visual Rendering Quality
+- Grounded Requirement Satisfaction (80%)
+- Visual Rendering Quality (20%)
 
 The checklist should be specific enough for human or model-assisted evaluation.
 
-Use the standard weights unless a legacy robustness dimension is still needed:
+Use `image_vqa_0_2`. Grounded contains one or more VQAs. Visual Rendering
+Quality contains exactly one VQA, the task-required canonical
+image type, and explicit criteria for scores 0, 1, and 2. Same-type cases must
+use exactly the same visual VQA and criteria.
 
-- Standard: Task Completion 15%, Grounded Requirement Satisfaction 55%,
-  Information Structuring 15%, Visual Rendering Quality 15%.
-- Robustness-compatible: Task Completion 15%, Grounded Requirement Satisfaction
-  50%, Information Structuring 15%, Visual Quality 10%, Robustness 10%.
-
-Task Completion must check whether the image fulfills the task's core
-env-grounded purpose. A good-looking placeholder, template, empty-field mockup,
-or image saying `coming soon`, `pending`, `unavailable`, `details will be
-available`, `cannot finalize`, or `not accessible` should not score as a
-completed task.
+Task Completion is an execution gate: a missing or invalid rendered image gets
+total score 0 without judge calls.
 
 Grounded Requirement Satisfaction is the main score driver. Facts in
 `expected_facts.json` may use `evaluation_role`:
@@ -151,13 +144,9 @@ Grounded Requirement Satisfaction is the main score driver. Facts in
 - `negative_only`: must not appear; score only when the image explicitly uses
   the forbidden or unsupported detail.
 
-Information Structuring should be evaluated only after core facts are mostly
-correct. It measures selection, ordering, grouping, compression, and emphasis,
-not merely a neat layout.
-
 Visual Rendering Quality should judge only readability, hierarchy, contrast,
-composition, polish, and platform fit. Do not score forbidden facts, missing
-facts, env-read failures, or factual grounding under visual quality.
+composition, polish, type fit, and visible defects. Score 2 requires every
+case-owned gate to pass; any visible cleanup issue or uncertainty prevents 2.
 
 ## Naming
 

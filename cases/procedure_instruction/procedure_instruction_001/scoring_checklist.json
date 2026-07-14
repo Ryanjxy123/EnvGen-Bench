@@ -1,90 +1,116 @@
 {
   "case_id": "procedure_instruction_001",
-  "dimensions": {
-    "task_completion": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "output_type_procedure_instruction_001",
-          "check": "For procedure_instruction_001, the output is a finished onboarding_instruction_image for the ordered procedure sequence, not a worksheet, raw table, or generic mockup.",
-          "points": 4,
-          "scoring_hint": "2 = correct finished image type; 1 = correct topic but weak format; 0 = wrong artifact type. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
-        },
-        {
-          "id": "operation_depth_procedure_instruction_001",
-          "check": "The image visibly resolves this case's ordered procedure sequence; reference facts include step_order: Charge device for at least 20 minutes, Install the LumaHome app, Power on until the blue light pulses twice; first_charge_requirement: Charge for at least 20 minutes before setup.; pairing_cue: Blue indicator light pulses twice before scanning the pairing code.; reset_caution: Do not press the reset pin unless support asks you to do so.; avoid_reset_action: do not present the reset pin as a normal setup or pairing action.",
-          "points": 4,
-          "scoring_hint": "2 = operation is visibly resolved; 1 = operation partly reflected; 0 = copied unsolved source material. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
+  "evaluation_mode": "image_vqa_0_2",
+  "dimension_weights": {
+    "grounded_requirement_satisfaction": 0.8,
+    "visual_rendering_quality": 0.2
+  },
+  "grounded_requirement_satisfaction": {
+    "vqa_items": [
+      {
+        "id": "grounded_q01",
+        "question": "How is the workflow divided, and how many numbered main steps are shown?",
+        "expected_answer": "The image has two distinct sections, First-time room setup and Each presentation, with exactly eight numbered main steps in total. Warnings or small notes are not additional numbered steps.",
+        "acceptance_rule": "Score 2 if both required sections are clearly identifiable and exactly eight numbered main steps are shown. Score 1 if both sections are present but there are seven or nine main steps because of one reasonable merge or split. Score 0 if a section is missing, the sequence cannot be counted, or the count differs substantially."
+      },
+      {
+        "id": "grounded_q02",
+        "question": "What hardware action is shown before the projector can use wireless networking?",
+        "expected_answer": "Remove the wireless LAN module cover screw, insert the optional wireless LAN module into the projector's USB-A port, then reinstall and secure the cover. Showing part number V12H731P02 is optional.",
+        "acceptance_rule": "Score 2 if the optional wireless LAN module, USB-A port, and secured cover are all shown correctly. Score 1 if the module and USB-A location are correct but the cover action is missing or unclear. Score 0 if the hardware action is absent, uses the wrong port, or substitutes a USB flash drive or cable."
+      },
+      {
+        "id": "grounded_q03",
+        "question": "What startup actions and ready-state cue are shown for the projector?",
+        "expected_answer": "Plug in the projector, open the A/V Mute slide fully, press the Power button, and wait for the Status light to flash blue and then remain on.",
+        "acceptance_rule": "Score 2 if all four elements are visible and materially correct. Score 1 if the projector is started correctly but one physical action or the light-state cue is missing. Score 0 if the startup sequence is absent, materially wrong, or instructs the user to keep the A/V Mute slide closed."
+      },
+      {
+        "id": "grounded_q04",
+        "question": "Which network connection mode does the image use for the room-Wi-Fi workflow?",
+        "expected_answer": "Advanced Connection Mode. It is used because the projector and laptop connect through the room's router or wireless access point rather than directly to each other.",
+        "acceptance_rule": "Score 2 if Advanced Connection Mode is clearly shown and associated with the room access-point workflow. Score 1 if connection through the room network is clear but the mode label is missing or partly unreadable. Score 0 if Quick Connection Mode, direct wireless connection, or another mode is presented as the required route."
+      },
+      {
+        "id": "grounded_q05",
+        "question": "What projector menu path and save action are shown for wireless setup?",
+        "expected_answer": "Open Menu > Network, set Wireless LAN to On, open Network Configuration > Wireless LAN, select Advanced and the needed network settings, then choose Complete to save and exit.",
+        "acceptance_rule": "Score 2 if the Network menu, Wireless LAN enabled state, Wireless LAN configuration, Advanced mode, and Complete/save action are all shown. Score 1 if the configuration and save action are correct but part of the menu path is omitted. Score 0 if wireless LAN is not enabled, settings are not saved, or an unrelated menu path is shown."
+      },
+      {
+        "id": "grounded_q06",
+        "question": "What network information does the image say must be obtained or entered?",
+        "expected_answer": "Obtain the room access point's SSID and security settings from the network administrator and use them when configuring the projector. The image should not invent a fixed SSID or password.",
+        "acceptance_rule": "Score 2 if both SSID and security settings are shown as administrator-provided information. Score 1 if the room network is referenced correctly but one of those details or the administrator source is missing. Score 0 if required network information is absent, an unrelated network is used, or fabricated fixed credentials are presented as factual."
+      },
+      {
+        "id": "grounded_q07",
+        "question": "What preparation is shown for the Windows laptop?",
+        "expected_answer": "Install or start Epson iProjection on the Windows 10 laptop and connect the laptop to the same room network as the projector before searching for it.",
+        "acceptance_rule": "Score 2 if Epson iProjection, Windows laptop use, and the same-network prerequisite are all clear. Score 1 if either the software preparation or the same-network requirement is shown correctly but the other is missing. Score 0 if both are absent, the wrong application is named, or the laptop is told to use a different network."
+      },
+      {
+        "id": "grounded_q08",
+        "question": "How does the image place the projector into its network-ready screen?",
+        "expected_answer": "Press LAN or Source Search to switch the projector input to LAN, producing the LAN standby screen.",
+        "acceptance_rule": "Score 2 if LAN or Source Search and the resulting LAN standby screen are both clearly shown. Score 1 if the LAN input is selected but the standby-screen result is missing or unclear. Score 0 if HDMI, VGA, USB, or another input is presented as the required network step."
+      },
+      {
+        "id": "grounded_q09",
+        "question": "What sequence does the image show inside Epson iProjection before joining the projector?",
+        "expected_answer": "Start Epson iProjection, choose Advanced Connection Mode, use Automatic search, select the intended room projector from the Projector List, and click Join.",
+        "acceptance_rule": "Score 2 if all five actions are shown in the correct order. Score 1 if the projector is correctly found and joined but one noncritical label or intermediate action is omitted. Score 0 if the wrong mode is selected, the projector is not selected, Join is absent, or the sequence is materially incorrect."
+      },
+      {
+        "id": "grounded_q10",
+        "question": "What does the image tell the user to do when a connection-verification prompt appears?",
+        "expected_answer": "If the keyword-entry screen appears, enter the Projector Keyword displayed on the projection screen and confirm it. The keyword is conditional, not a fixed password invented by the image.",
+        "acceptance_rule": "Score 2 if the conditional prompt, on-screen Projector Keyword source, and entry action are all correct. Score 1 if a projector keyword or code is shown correctly but its source or conditional nature is unclear. Score 0 if a fixed password is invented, a mobile QR code is required instead, or the verification action contradicts the documents."
+      },
+      {
+        "id": "grounded_q11",
+        "question": "What visible result marks a successful connection?",
+        "expected_answer": "The Windows laptop screen is projected and the Epson iProjection toolbar appears. The projector is using the LAN input, either automatically or after LAN/Source Search is selected.",
+        "acceptance_rule": "Score 2 if projected laptop content and the iProjection toolbar or an equivalently specific success cue are visible. Score 1 if only a generic successful projection state is shown. Score 0 if there is no success cue or a standby or error state is presented as successful projection."
+      },
+      {
+        "id": "grounded_q12",
+        "question": "How does the image tell the user to end a presentation and shut down the projector?",
+        "expected_answer": "Use Leave in Epson iProjection to disconnect the laptop, then press the projector Power button twice to shut it down.",
+        "acceptance_rule": "Score 2 if both actions are shown in that order. Score 1 if only the correct Leave/disconnect action or only the correct two-press shutdown action is shown. Score 0 if neither is shown, shutdown occurs before software disconnection, or the image tells the user to pull the power cord directly."
+      },
+      {
+        "id": "grounded_q13",
+        "question": "Does the numbered workflow include a different connection path from the assigned room-Wi-Fi setup?",
+        "expected_answer": "No. Quick direct connection, HDMI, VGA, USB Display, wired LAN, mobile QR-code projection, MHL, and a Quick Wireless Connection USB key must not appear as required numbered steps.",
+        "acceptance_rule": "Score 2 if none of the alternative paths is presented as a required main step. Score 1 if one appears only in a clearly separated optional comparison or do-not-use note. Score 0 if any alternative path is numbered, required, or mixed into the normal room-Wi-Fi flow."
+      },
+      {
+        "id": "grounded_q14",
+        "question": "Does the numbered workflow include troubleshooting or multi-user collaboration features?",
+        "expected_answer": "No. Troubleshooting, moderator or participant controls, mirroring, multi-projector projection, thumbnail selection, bandwidth control, shortcut creation, and USB-key creation must stay outside the numbered procedure.",
+        "acceptance_rule": "Score 2 if none of these items appears in the numbered workflow. Score 1 if one appears only in a clearly separated optional or support note. Score 0 if troubleshooting or an advanced meeting feature is presented as a mandatory normal step."
+      },
+      {
+        "id": "grounded_q15",
+        "question": "What order does the image show between initial setup, joining the projector, projection, disconnection, and shutdown?",
+        "expected_answer": "Complete the first-time projector and laptop preparation before the recurring session. Show the LAN standby screen before joining, join before projection, use Leave after presenting, and press Power twice only after disconnection. Projector network setup and laptop software preparation may appear in either order within the first-time section.",
+        "acceptance_rule": "Score 2 if all critical dependencies and the final disconnect-before-shutdown order are correct. Score 1 if there is one minor adjacent merge or swap that does not make the process impossible or unsafe. Score 0 if joining precedes required setup, projection precedes joining, shutdown precedes Leave, or multiple major stages are out of order."
+      }
+    ]
+  },
+  "visual_rendering_quality": {
+    "image_type": "instructional_guide",
+    "vqa_items": [
+      {
+        "id": "visual_q01",
+        "question": "As an instructional guide, workflow image, setup card, safety card, care guide, or classroom bench card, does the image transform the procedure into a complete, glance-followable, and operationally safe visual aid rather than a densely typeset instruction sheet? Evaluate whether users can distinguish each action, object, quantity, condition, transition, repetition, warning, checkpoint, and completion cue without repeatedly reading paragraph-like text. Judge the entire artifact at its intended physical viewing size, including the smallest instructional text, the visual encoding of sequence and repeated cycles, the placement of warnings beside the relevant actions, the correspondence of icons or diagrams to the instructions, and the consistency and completeness of the page. Do not award 2 merely because the steps are numbered, factually present, aligned, color-coded, or technically readable.",
+        "score_criteria": {
+          "2": "Award 2 only if **all** of the following real-deployment gates are clearly satisfied. Failure of any one gate limits the score to 1 at most:\n\n  1. **Glance-followable action structure:** Each step must expose the principal action, object, quantity or setting, and immediate outcome through clear visual separation. Users should not need to parse paragraph-like prose or several similarly weighted sentences to determine what to do next.\n  2. **Operational sequence clarity:** The order, phase changes, branches, returns, waits, repetitions, and completion points must be visually unmistakable. Repeated cycles such as washing, checking, tightening, watering, restarting, or waiting must be encoded so that the number of repetitions and the point of return cannot be confused.\n  3. **Action-to-visual correspondence:** Icons, diagrams, illustrations, arrows, panels, or other visual devices must materially clarify tools, orientation, placement, motion, connections, quantities, or expected states. Visuals are not mandatory for every step, but a predominantly text-only guide must demonstrate exceptional typographic process design and cannot resemble a memo, worksheet, manual excerpt, or numbered document.\n  4. **Immediate parameter recognition:** Critical quantities, durations, temperatures, counts, directions, settings, materials, and result criteria must be visually distinct from explanatory text. Important parameters buried inside sentences, long lines, or low-emphasis body copy prevent 2.\n  5. **Contextual warning placement:** Safety warnings, contamination risks, prohibited actions, fragile steps, and irreversible actions must appear at or immediately beside the step where the risk occurs. A general warning block placed only at the bottom or far from the relevant action is insufficient for 2 when users could act before seeing it.\n  6. **Warning hierarchy proportional to risk:** High-risk warnings must be visually more prominent than routine notes and must not rely only on a small icon, pale background, or dense sentence. The user must be able to distinguish danger, caution, timing, optional advice, and ordinary instruction instantly.\n  7. **Normal-size readability under use conditions:** Every meaningful instruction, warning, label, parameter, legend, and result cue must be comfortably readable at the intended print or display size while the user is performing the task. Small body text, tightly packed lines, long text blocks, or narrow line spacing that demand close inspection prevent 2.\n  8. **Controlled information density:** Steps must be concise enough to scan during execution. Dense multi-sentence steps, excessive parenthetical information, long inline lists, repeated procedural prose, or numerous facts with equal visual weight prevent 2 even when no text is technically illegible.\n  9. **Distinct checkpoints and outcomes:** Wait states, validation checks, success conditions, failure conditions, result interpretation, and final completion cues must be visually separated from ordinary actions. Users must know when to stop, verify, repeat, proceed, or seek help without searching through body text.\n  10. **Complete and polished artifact:** The full sequence, final section, warnings, footer, legends, and completion state must be visibly contained and finished. No clipped content, orphaned heading, malformed glyph, inconsistent numbering, ambiguous color coding, weak contrast, unstable alignment, incomplete final step, or visible production residue is allowed.\n\n  A clean numbered page made mainly of bold step titles followed by small explanatory paragraphs, with limited action diagrams and warnings separated from their relevant steps, is an organized instruction sheet rather than an exceptional instructional visual and cannot receive 2.",
+          "1": "Award 1 if the guide is understandable, mostly complete, and generally usable, but still requires visible refinement before dependable real-world deployment. Typical 1-point outputs include clearly numbered but text-heavy procedures; long explanatory lines beneath each step; limited diagrams or action icons; quantities and timings embedded inside prose; repeated cycles explained verbally rather than visually; warnings placed mainly in separate footer boxes; modest distinction between action, parameter, note, and result; small but readable text; generic colored labels; uneven spacing; or a layout that resembles a formatted handout, manual page, checklist, or classroom worksheet. A guide may be accurate, aligned, and logically ordered yet still receive only 1 when users must read carefully rather than act at a glance.",
+          "0": "Award 0 if the guide is visually unreliable, materially difficult to follow, incomplete, or unsafe for practical use. This includes cases where sequence or phase boundaries are confusing; steps, repetitions, quantities, directions, tools, warnings, or result criteria are difficult to locate; essential safety information is visually buried or detached from the risky action; text density or size makes consultation impractical during execution; icons or diagrams conflict with the instructions; the final state is unclear; or substantial redesign is required to prevent mistakes. Blank, corrupted, severely unreadable, clipped, overlapping, misleading, materially incomplete, or otherwise broken outputs are also 0."
         }
-      ],
-      "label": "Task Completion"
-    },
-    "grounded_requirement_satisfaction": {
-      "weight": 0.55,
-      "items": [
-        {
-          "id": "critical_fact_accuracy_procedure_instruction_001",
-          "check": "For procedure_instruction_001, accurately includes the critical expected facts step_order, first_charge_requirement using these case values: step_order: Charge device for at least 20 minutes, Install the LumaHome app, Power on until the blue light pulses twice; first_charge_requirement: Charge for at least 20 minutes before setup.; pairing_cue: Blue indicator light pulses twice before scanning the pairing code.; reset_caution: Do not press the reset pin unless support asks you to do so.; avoid_reset_action: do not present the reset pin as a normal setup or pairing action.",
-          "points": 8,
-          "scoring_hint": "2 = all critical facts correct; 1 = one minor omission or formatting issue; 0 = any critical fact is wrong or missing.",
-          "fact_ids": [
-            "step_order",
-            "first_charge_requirement"
-          ]
-        },
-        {
-          "id": "required_appear_facts_procedure_instruction_001",
-          "check": "Shows required appear facts step_order, first_charge_requirement, pairing_cue, reset_caution for procedure_instruction_001 without replacing them with unsupported alternatives; expected values include step_order: Charge device for at least 20 minutes, Install the LumaHome app, Power on until the blue light pulses twice; first_charge_requirement: Charge for at least 20 minutes before setup.; pairing_cue: Blue indicator light pulses twice before scanning the pairing code.; reset_caution: Do not press the reset pin unless support asks you to do so.; avoid_reset_action: do not present the reset pin as a normal setup or pairing action.",
-          "points": 6,
-          "scoring_hint": "2 = all required facts appear clearly; 1 = most appear but one is ambiguous; 0 = multiple required facts are absent."
-        },
-        {
-          "id": "negative_exclusion_facts_procedure_instruction_001",
-          "check": "Does not show prohibited or stale facts avoid_reset_action in procedure_instruction_001; the reset caution itself is allowed and expected, but reset must not be shown as a normal setup or pairing step.",
-          "points": 5,
-          "scoring_hint": "2 = no prohibited facts appear; 1 = one weak/ambiguous distractor; 0 = any explicit prohibited value appears.",
-          "fact_ids": [
-            "avoid_reset_action"
-          ]
-        }
-      ],
-      "label": "Grounded Requirement Satisfaction"
-    },
-    "information_structuring": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "fact_hierarchy_procedure_instruction_001",
-          "check": "Organizes step_order, first_charge_requirement as the primary message for procedure_instruction_001; supporting values are step_order: Charge device for at least 20 minutes, Install the LumaHome app, Power on until the blue light pulses twice; first_charge_requirement: Charge for at least 20 minutes before setup.; pairing_cue: Blue indicator light pulses twice before scanning the pairing code.; reset_caution: Do not press the reset pin unless support asks you to do so.; avoid_reset_action: do not present the reset pin as a normal setup or pairing action.",
-          "points": 5,
-          "scoring_hint": "2 = hierarchy is clear and fact-driven; 1 = facts present but hierarchy is muddled; 0 = important facts are buried or missing. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
-        },
-        {
-          "id": "robust_consistency_procedure_instruction_001",
-          "check": "Across repeated runs of procedure_instruction_001, the same critical facts, reset caution, exclusions avoid_reset_action, ordering rules, and layout constraints must remain consistent.",
-          "points": 4,
-          "scoring_hint": "2 = stable facts and exclusions; 1 = minor wording drift only; 0 = selected facts or exclusions change. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
-        }
-      ],
-      "label": "Information Structuring"
-    },
-    "visual_communication_quality": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "visual_clarity_procedure_instruction_001",
-          "check": "For procedure_instruction_001, uses clear visual hierarchy, readable typography, sufficient contrast, and non-crowded spacing at the intended onboarding_instruction_image size.",
-          "points": 4,
-          "scoring_hint": "2 = readable and polished; 1 = readable with minor clutter; 0 = unreadable or visually incoherent. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
-        },
-        {
-          "id": "visual_layout_density_procedure_instruction_001",
-          "check": "The onboarding_instruction_image layout has appropriate information density, balanced image/text regions, crisp assets, platform-safe margins, and no placeholder-like areas.",
-          "points": 4,
-          "scoring_hint": "2 = balanced density and crisp assets; 1 = some weak spacing or density; 0 = blank, placeholder-like, or low-resolution. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
-        }
-      ],
-      "label": "Visual Communication Quality"
-    }
+      }
+    ]
   }
 }

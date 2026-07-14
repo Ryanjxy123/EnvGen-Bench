@@ -1,56 +1,197 @@
 {
   "case_id": "state_change_004",
-  "task_type": "state_change",
+  "task_type": "state_change_reasoning_to_image",
+  "as_of": "2026-09-24T19:15:00Z",
   "facts": [
     {
-      "id": "active_event",
-      "description": "Active event.",
-      "source": "env/status.csv",
-      "importance": "critical",
-      "expected_value": "Farmers Market Pop-up",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "current_date",
-      "description": "Latest date.",
-      "source": "env/updates.md",
-      "importance": "critical",
-      "expected_value": "June 11",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "current_location",
-      "description": "Latest location.",
-      "source": "env/updates.md",
-      "importance": "critical",
-      "expected_value": "North Pavilion",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "current_sponsor",
-      "description": "Latest sponsor.",
-      "source": "env/updates.md",
-      "importance": "major",
-      "expected_value": "Local Roots Co-op",
-      "must_appear_in_image": true,
-      "evaluation_role": "major_required"
-    },
-    {
-      "id": "stale_details",
-      "description": "Superseded details.",
-      "source": "env/old_notice.md + env/updates.md",
-      "importance": "major",
+      "id": "identity_and_current_timestamp",
       "expected_value": [
-        "June 4",
-        "East Lawn",
-        "Green Crate"
+        "OrbitDesk Sync 4.12.0",
+        "Current as of September 24, 2026 at 7:15 PM UTC"
       ],
-      "must_not_appear_in_image": true,
-      "evaluation_role": "negative_only"
+      "must_appear_in_image": true
+    },
+    {
+      "id": "availability_state_channel",
+      "expected_value": [
+        "Publicly available September 15, 2026",
+        "Servicing rollout",
+        "Stable"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "stage_previous_checkpoint",
+      "expected_value": [
+        "Wave 4 controlled servicing",
+        "Previous public checkpoint: September 23, 2026 at 6:45 PM UTC"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "next_checkpoint",
+      "expected_value": [
+        "Next checkpoint: September 30, 2026 at 4:00 PM UTC",
+        "September 28 release freeze is skipped"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "manual_current",
+      "expected_value": [
+        "184,500 of 184,500",
+        "100.0%",
+        "download-entitled tenant workspaces",
+        "Worldwide"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "manual_previous_change",
+      "expected_value": [
+        "Previous 184,000 of 184,500",
+        "99.7%",
+        "+500 delivered",
+        "+0.3 percentage points"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "auto_world_current",
+      "expected_value": [
+        "1,090,000 of 1,285,000",
+        "84.8%",
+        "eligible Windows devices",
+        "Worldwide"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "auto_world_previous_change",
+      "expected_value": [
+        "Previous 1,060,950 of 1,280,000",
+        "82.9%",
+        "+29,050 delivered",
+        "+5,000 eligible",
+        "+1.9 percentage points"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "regional_na_europe",
+      "expected_value": [
+        "North America 383,800 of 422,000 (90.9%), +0.9 pp",
+        "Europe 275,000 of 311,000 (88.4%), +1.9 pp"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "regional_apac_japan_latam",
+      "expected_value": [
+        "Asia-Pacific except Japan 223,200 of 282,000 (79.1%), +0.6 pp",
+        "Japan 78,000 of 120,000 (65.0%), +5.0 pp",
+        "Latin America 130,000 of 150,000 (86.7%), +4.7 pp"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "active_qualifications_core",
+      "expected_value": [
+        "Managed Windows devices using legacy proxy authentication — Worldwide — Automatic updates paused — Manual installer available",
+        "Regulated tenants — Germany and Austria — Deferred through September 30, 2026 at 8:00 AM UTC — Admin-controlled deployment available",
+        "Unattended Windows devices — Japan — Pilot ring only — Manual installer available"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "active_qualifications_extension",
+      "expected_value": [
+        "Education tenants — Brazil — Capped at 50% through September 27, 2026 at 12:00 PM UTC — Manual installer available",
+        "Pooled VDI Windows devices — Europe — Paused through September 26, 2026 at 6:00 AM UTC — Admin-controlled deployment available"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "qualification_changes",
+      "expected_value": [
+        "Added: Education tenants in Brazil",
+        "Added: pooled VDI Windows devices in Europe",
+        "Expired: metered-network Windows devices in North America",
+        "Continued: legacy proxy worldwide, regulated tenants in Germany and Austria, unattended Windows devices in Japan"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "copy_and_highlights",
+      "expected_value": [
+        "Move forward with safer sync control.",
+        "Faster recovery, clearer rollout choices, and smaller update transfers.",
+        "Block-level delta transfer",
+        "Metered-network pause and resume",
+        "Resumable background recovery"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "package_spec",
+      "expected_value": [
+        "Windows desktop",
+        "Windows 11 24H2 or later",
+        "x64",
+        "211 MB full installer",
+        "63 MB update payload",
+        "70.1% smaller"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "current_issues",
+      "expected_value": [
+        "High legacy-proxy first-sign-in delay",
+        "Low metered-network background-recovery pause after sleep",
+        "Medium stale completion status after host restart"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "issue_changes",
+      "expected_value": [
+        "Legacy-proxy continues and escalates from Medium to High",
+        "Metered-network continues at Low",
+        "Pooled-VDI newly published",
+        "Duplicate completion notifications after a large-file retry resolved"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "cta",
+      "expected_value": [
+        "Review rollout status and choose an install path",
+        "support.orbitdesk.example/sync/4-12/wave-4-checkpoint"
+      ],
+      "must_appear_in_image": true
+    },
+    {
+      "id": "stage_rationale",
+      "expected_value": [
+        "Manual 100.0%",
+        "Worldwide automatic 84.8%",
+        "Lowest region Japan 65.0%",
+        "All five regions non-decreasing",
+        "Five active non-general qualifications",
+        "One High-severity issue",
+        "Wave 4 passes",
+        "Wave 5 fails"
+      ],
+      "must_appear_in_image": true
     }
   ],
-  "calculation_notes": "Use status.csv to select active event and updates.md for latest details."
+  "resolution_notes": [
+    "Resolve current and previous public checkpoint independently.",
+    "Latest approved code candidate can still fail catalog validation and require fallback.",
+    "Current automatic coverage uses corrected regional counts; worldwide percentage is weighted.",
+    "Stage uses worldwide, regional floor, direction-of-travel, qualification count, and High-severity issue gates.",
+    "Next checkpoint skips weekend dates and the September 28 release freeze.",
+    "Public change summaries compare normalized customer-facing meaning, not internal codes."
+  ]
 }

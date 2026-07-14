@@ -1,173 +1,110 @@
 {
   "case_id": "data_selection_006",
-  "dimensions": {
-    "task_completion": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "output_type_data_selection_006",
-          "check": "Judge whether the output is a finished museum_exhibit_feature_panel, not a worksheet, raw table, source-data screenshot, or generic mockup.",
-          "points": 4,
-          "scoring_hint": "Full credit when the artifact is polished and purpose-fit; no credit for raw data or placeholder content."
-        },
-        {
-          "id": "selection_task_resolution_data_selection_006",
-          "check": "Verify that the image resolves the data-selection task by filtering candidates, ranking them, applying any stated group limit, and featuring only the final selected objects.",
-          "points": 4,
-          "fact_ids": [
-            "selected_objects",
-            "ranking_order",
-            "group_limit_compliance"
-          ],
-          "scoring_hint": "Selection must be visible through the final featured set and order."
-        }
-      ],
-      "label": "Task Completion"
-    },
-    "grounded_requirement_satisfaction": {
-      "weight": 0.55,
-      "items": [
-        {
-          "id": "critical_selected_set_accuracy_data_selection_006",
-          "check": "Verify that exactly these objects are featured: Quilted Harbor Map, Brass Transit Token Set, Flood Ledger Pages, Canal Workers Banner, Neighborhood Radio Mic, Market Stall Ledger.",
-          "points": 8,
-          "fact_id": "selected_objects",
-          "scoring_hint": "No credit if any selected object is replaced or an extra candidate is promoted."
-        },
-        {
-          "id": "critical_ranking_order_data_selection_006",
-          "check": "Verify that visible order or hierarchy is: Quilted Harbor Map > Brass Transit Token Set > Flood Ledger Pages > Canal Workers Banner > Neighborhood Radio Mic > Market Stall Ledger.",
-          "points": 6,
-          "fact_id": "ranking_order",
-          "scoring_hint": "Accept any clear layout order that preserves the ranking."
-        },
-        {
-          "id": "critical_display_values_data_selection_006",
-          "check": "Verify that each selected object displays the required paired values from the source data.",
-          "points": 8,
-          "fact_id": "selected_object_display_values",
-          "scoring_hint": "Values must be attached to the correct selected object names."
-        },
-        {
-          "id": "critical_group_limit_data_selection_006",
-          "check": "Verify that no added featured object or substituted candidate violates the group cap stated in the rules.",
-          "points": 5,
-          "fact_id": "group_limit_compliance",
-          "scoring_hint": "Full credit when the selected set implicitly satisfies the cap."
-        },
-        {
-          "id": "critical_exclusion_accuracy_data_selection_006",
-          "check": "Verify that unselected candidates are not promoted as final featured selections, including eligibility failures, group-cap-blocked rows when applicable, and eligible-but-below-cutoff rows.",
-          "points": 7,
-          "fact_ids": [
-            "unselected_objects_not_featured",
-            "eligibility_exclusions",
-            "group_cap_exclusions",
-            "eligible_below_cutoff"
-          ],
-          "scoring_hint": "Mentioning exclusions is allowed; using them as selected answers is not."
-        }
-      ],
-      "label": "Grounded Requirement Satisfaction"
-    },
-    "information_structuring": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "selection_hierarchy_data_selection_006",
-          "check": "The layout should make the final selection set, ranking hierarchy, and value pairings easy to scan.",
-          "points": 5,
-          "fact_ids": [
-            "selected_objects",
-            "ranking_order",
-            "selected_object_display_values"
-          ]
-        },
-        {
-          "id": "no_process_overload_data_selection_006",
-          "check": "Do not let raw filtering process details, IDs, or table fields overwhelm the requested image artifact.",
-          "points": 4,
-          "scoring_hint": "Supporting details may appear only if the final selected objects remain primary."
-        }
-      ],
-      "label": "Information Structuring"
-    },
-    "visual_communication_quality": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "visual_clarity_data_selection_006",
-          "check": "Judge readability, contrast, visual hierarchy, and clear text-value pairing.",
-          "points": 4
-        },
-        {
-          "id": "visual_density_data_selection_006",
-          "check": "The image should be information-rich but not crowded, blank, or placeholder-like.",
-          "points": 4
-        }
-      ],
-      "label": "Visual Communication Quality"
-    }
+  "evaluation_mode": "image_vqa_0_2",
+  "dimension_weights": {
+    "grounded_requirement_satisfaction": 0.8,
+    "visual_rendering_quality": 0.2
   },
-  "score_caps": [
-    {
-      "id": "wrong_selected_object",
-      "max_total": 60,
-      "reason": "A non-selected candidate appears as a final featured selection.",
-      "trigger": {
-        "type": "forbidden_final_answer",
-        "patterns": [
-          "Draft Streetcar Poster",
-          "Private Donor Medal",
-          "Uncleared Protest Sign",
-          "Winter Loan Lantern",
-          "Fragile Glass Plate",
-          "Oversize Canal Gate",
-          "Archive Test Label",
-          "Internal Staff Badge",
-          "Low Score Handbill",
-          "Slow Install Clock",
-          "Cancelled Photo Album",
-          "Archived Wharf Sketch",
-          "Dockworker Union Sash",
-          "Ceramic Ferry Tile",
-          "Oral History Phone",
-          "Youth Zine Cabinet"
-        ],
-        "allowed_patterns": [
-          "\\b(excluded|exclude|filtered out|not selected|not featured|ineligible|below cutoff|blocked)\\b[\\s\\S]{0,120}\\b(Draft\\ Streetcar\\ Poster|Private\\ Donor\\ Medal|Uncleared\\ Protest\\ Sign|Winter\\ Loan\\ Lantern|Fragile\\ Glass\\ Plate|Oversize\\ Canal\\ Gate|Archive\\ Test\\ Label|Internal\\ Staff\\ Badge|Low\\ Score\\ Handbill|Slow\\ Install\\ Clock|Cancelled\\ Photo\\ Album|Archived\\ Wharf\\ Sketch|Dockworker\\ Union\\ Sash|Ceramic\\ Ferry\\ Tile|Oral\\ History\\ Phone|Youth\\ Zine\\ Cabinet)\\b",
-          "\\b(Draft\\ Streetcar\\ Poster|Private\\ Donor\\ Medal|Uncleared\\ Protest\\ Sign|Winter\\ Loan\\ Lantern|Fragile\\ Glass\\ Plate|Oversize\\ Canal\\ Gate|Archive\\ Test\\ Label|Internal\\ Staff\\ Badge|Low\\ Score\\ Handbill|Slow\\ Install\\ Clock|Cancelled\\ Photo\\ Album|Archived\\ Wharf\\ Sketch|Dockworker\\ Union\\ Sash|Ceramic\\ Ferry\\ Tile|Oral\\ History\\ Phone|Youth\\ Zine\\ Cabinet)\\b[\\s\\S]{0,120}\\b(excluded|exclude|filtered out|not selected|not featured|ineligible|below cutoff|blocked)\\b"
-        ]
+  "grounded_requirement_satisfaction": {
+    "vqa_items": [
+      {
+        "id": "grounded_q01",
+        "question": "What exact panel title, exhibition subtitle, and exhibition date range are stated?",
+        "expected_answer": "Working Waterfront: Featured Objects; Spring 2027 Community History Exhibition; March 20–August 15, 2027.",
+        "acceptance_rule": "Score 2 only if all three identity elements are explicitly stated and correct. Score 1 only if the title and subtitle are fully correct and the date range alone is absent or has one incomplete endpoint. Score 0 if the title or subtitle is materially wrong, either date endpoint is wrong, or two or more elements are absent."
+      },
+      {
+        "id": "grounded_q02",
+        "question": "Which seven objects form the complete featured set, and what is their final curatorial priority order?",
+        "expected_answer": "Exactly seven in this order: 1. Quilted Harbor Map; 2. Brass Transit Token Set; 3. Flood Ledger Pages; 4. Neighborhood Radio Mic; 5. Market Stall Ledger; 6. Canal Workers Banner; 7. Harbor Signal Lantern. No additional object has featured status.",
+        "acceptance_rule": "Score 2 only if all seven identities, all seven positions, the count of seven, and the absence of any extra featured object are correct. Score 1 only if the exact seven-object set is correct and complete but exactly one priority marker is absent while the sequence remains unambiguous. Score 0 if any object is missing, replaced, duplicated, reordered, or joined by an additional featured object."
+      },
+      {
+        "id": "grounded_q03",
+        "question": "What complete public record is stated for Quilted Harbor Map?",
+        "expected_answer": "Priority 1; Quilted Harbor Map; accession CHM.1987.042; 1886; Cotton, wool, and indigo dye; North Gallery / NG-01; Waterfront Work; credit: Gift of the Harbor Quilters Guild; on view March 20, 2027–August 15, 2027; Tactile replica; interpretive hook: Hand-stitched routes trace women’s waterfront labor.",
+        "acceptance_rule": "Score 2 only if the priority, title, accession number, era/year, every named material, gallery, zone ID, story theme, approved public credit line, both on-view endpoints, accessibility feature, and full factual meaning of the interpretive hook are all correct and attached to Quilted Harbor Map. Score 1 only if every core identity, accession, era, gallery/zone, theme, on-view range, and accessibility feature is correct and exactly one secondary field among material, credit line, or hook is absent or slightly incomplete. Score 0 if any core field is wrong or missing, a date or zone is exchanged, the credit belongs to another object, or two or more required fields are absent or unclear."
+      },
+      {
+        "id": "grounded_q04",
+        "question": "What complete public record is stated for Brass Transit Token Set?",
+        "expected_answer": "Priority 2; Brass Transit Token Set; accession CHM.1969.118; 1914; Stamped brass; Transit Alcove / TA-02; Transit and Movement; credit: City Transit Archive transfer; on view March 20, 2027–August 15, 2027; Audio stop; interpretive hook: Fare tokens reveal the city’s shifting transit network.",
+        "acceptance_rule": "Score 2 only if the priority, title, accession number, era/year, every named material, gallery, zone ID, story theme, approved public credit line, both on-view endpoints, accessibility feature, and full factual meaning of the interpretive hook are all correct and attached to Brass Transit Token Set. Score 1 only if every core identity, accession, era, gallery/zone, theme, on-view range, and accessibility feature is correct and exactly one secondary field among material, credit line, or hook is absent or slightly incomplete. Score 0 if any core field is wrong or missing, a date or zone is exchanged, the credit belongs to another object, or two or more required fields are absent or unclear."
+      },
+      {
+        "id": "grounded_q05",
+        "question": "What complete public record is stated for Flood Ledger Pages?",
+        "expected_answer": "Priority 3; Flood Ledger Pages; accession CHM.2002.031; 1937; Ink on bound paper; River Room / RR-01; Flood and Resilience; credit: Riverside Mutual Aid Society papers; on view March 20, 2027–May 31, 2027; Large-print transcript; interpretive hook: Daily entries document the 1937 river emergency.",
+        "acceptance_rule": "Score 2 only if the priority, title, accession number, era/year, every named material, gallery, zone ID, story theme, approved public credit line, both on-view endpoints, accessibility feature, and full factual meaning of the interpretive hook are all correct and attached to Flood Ledger Pages. Score 1 only if every core identity, accession, era, gallery/zone, theme, on-view range, and accessibility feature is correct and exactly one secondary field among material, credit line, or hook is absent or slightly incomplete. Score 0 if any core field is wrong or missing, a date or zone is exchanged, the credit belongs to another object, or two or more required fields are absent or unclear."
+      },
+      {
+        "id": "grounded_q06",
+        "question": "What complete public record is stated for Neighborhood Radio Mic?",
+        "expected_answer": "Priority 4; Neighborhood Radio Mic; accession CHM.1994.205; 1968; Steel, aluminum, and Bakelite; Sound Nook / SN-01; Community Voice; credit: Community Radio 8 collection; on view March 20, 2027–August 15, 2027; Audio stop; interpretive hook: This microphone carried neighborhood voices onto local air.",
+        "acceptance_rule": "Score 2 only if the priority, title, accession number, era/year, every named material, gallery, zone ID, story theme, approved public credit line, both on-view endpoints, accessibility feature, and full factual meaning of the interpretive hook are all correct and attached to Neighborhood Radio Mic. Score 1 only if every core identity, accession, era, gallery/zone, theme, on-view range, and accessibility feature is correct and exactly one secondary field among material, credit line, or hook is absent or slightly incomplete. Score 0 if any core field is wrong or missing, a date or zone is exchanged, the credit belongs to another object, or two or more required fields are absent or unclear."
+      },
+      {
+        "id": "grounded_q07",
+        "question": "What complete public record is stated for Market Stall Ledger?",
+        "expected_answer": "Priority 5; Market Stall Ledger; accession CHM.1956.089; 1922; Pencil and ink on paper; Market Gallery / MG-01; Markets and Exchange; credit: Lina Moretti family deposit; on view June 1, 2027–August 15, 2027; Large-print transcript; interpretive hook: Sales entries map immigrant commerce along the wharf.",
+        "acceptance_rule": "Score 2 only if the priority, title, accession number, era/year, every named material, gallery, zone ID, story theme, approved public credit line, both on-view endpoints, accessibility feature, and full factual meaning of the interpretive hook are all correct and attached to Market Stall Ledger. Score 1 only if every core identity, accession, era, gallery/zone, theme, on-view range, and accessibility feature is correct and exactly one secondary field among material, credit line, or hook is absent or slightly incomplete. Score 0 if any core field is wrong or missing, a date or zone is exchanged, the credit belongs to another object, or two or more required fields are absent or unclear."
+      },
+      {
+        "id": "grounded_q08",
+        "question": "What complete public record is stated for Canal Workers Banner?",
+        "expected_answer": "Priority 6; Canal Workers Banner; accession CHM.1978.064; 1904; Painted silk and cotton braid; North Gallery / NG-02; Waterfront Work; credit: Canal Workers Local 14 collection; on view March 20, 2027–August 15, 2027; Tactile replica; interpretive hook: Union lettering made dockworker solidarity visible.",
+        "acceptance_rule": "Score 2 only if the priority, title, accession number, era/year, every named material, gallery, zone ID, story theme, approved public credit line, both on-view endpoints, accessibility feature, and full factual meaning of the interpretive hook are all correct and attached to Canal Workers Banner. Score 1 only if every core identity, accession, era, gallery/zone, theme, on-view range, and accessibility feature is correct and exactly one secondary field among material, credit line, or hook is absent or slightly incomplete. Score 0 if any core field is wrong or missing, a date or zone is exchanged, the credit belongs to another object, or two or more required fields are absent or unclear."
+      },
+      {
+        "id": "grounded_q09",
+        "question": "What complete public record is stated for Harbor Signal Lantern?",
+        "expected_answer": "Priority 7; Harbor Signal Lantern; accession CHM.1980.143; 1928; Copper, glass, and painted steel; Transit Alcove / TA-03; Transit and Movement; credit: Harbor Master’s Office transfer; on view March 20, 2027–August 15, 2027; Audio stop; interpretive hook: Color signals coordinated harbor traffic before radio.",
+        "acceptance_rule": "Score 2 only if the priority, title, accession number, era/year, every named material, gallery, zone ID, story theme, approved public credit line, both on-view endpoints, accessibility feature, and full factual meaning of the interpretive hook are all correct and attached to Harbor Signal Lantern. Score 1 only if every core identity, accession, era, gallery/zone, theme, on-view range, and accessibility feature is correct and exactly one secondary field among material, credit line, or hook is absent or slightly incomplete. Score 0 if any core field is wrong or missing, a date or zone is exchanged, the credit belongs to another object, or two or more required fields are absent or unclear."
+      },
+      {
+        "id": "grounded_q10",
+        "question": "What complete Rotation Notice is stated for the limited-run documents?",
+        "expected_answer": "Flood Ledger Pages — March 20–May 31, 2027, 73 inclusive days; Market Stall Ledger — June 1–August 15, 2027, 76 inclusive days. These are the only two limited-run rotation objects.",
+        "acceptance_rule": "Score 2 only if both object identities, all four date endpoints, both inclusive day counts, and the fact that there are exactly two limited-run objects are correct. Score 1 only if both identities and date ranges are correct and exactly one day count is absent. Score 0 if an object, endpoint, day count, or rotation count is wrong, or either limited-run object is omitted."
+      },
+      {
+        "id": "grounded_q11",
+        "question": "What complete Plan Your Visit route is stated, including every gallery’s featured objects and count?",
+        "expected_answer": "North Gallery (2): Quilted Harbor Map, Canal Workers Banner; Transit Alcove (2): Brass Transit Token Set, Harbor Signal Lantern; River Room (1): Flood Ledger Pages; Sound Nook (1): Neighborhood Radio Mic; Market Gallery (1): Market Stall Ledger, in that gallery order.",
+        "acceptance_rule": "Score 2 only if all five galleries appear in the exact route order, every selected object is assigned to the correct gallery, and all five gallery counts are correct. Score 1 only if all object-to-gallery memberships and counts are correct but exactly one route-position cue is absent. Score 0 if any object is in the wrong gallery, a gallery or object is missing, a count is wrong, or two route positions are reversed."
+      },
+      {
+        "id": "grounded_q12",
+        "question": "What complete Selection Snapshot totals and span are stated?",
+        "expected_answer": "7 featured objects; 5 galleries; 5 story themes; earliest year 1886; latest year 1968; numeric year span 82 years; 6 distinct object types; 3 Audio stops; 2 Tactile replicas; 2 Large-print transcripts; 5 full-run objects; 2 limited-run rotation objects.",
+        "acceptance_rule": "Score 2 only if all twelve metrics are explicit, correctly labeled, and correct. Score 1 only if exactly one non-count span or feature metric is absent while the other eleven are correct. Score 0 if any stated metric is wrong, earliest/latest years are confused with era labels, the year span is miscalculated, or two or more metrics are absent."
+      },
+      {
+        "id": "grounded_q13",
+        "question": "What complete gallery, theme, and collection distributions are stated for the final seven-object set?",
+        "expected_answer": "Gallery distribution: North Gallery 2, Transit Alcove 2, River Room 1, Sound Nook 1, Market Gallery 1. Theme distribution: Waterfront Work 2, Transit and Movement 2, Flood and Resilience 1, Community Voice 1, Markets and Exchange 1. Collection distribution: Textiles 2, Archives 2, Civic Objects 1, Media 1, Tools and Trades 1.",
+        "acceptance_rule": "Score 2 only if all fifteen category/count pairs are stated and correct, with no extra category. Score 1 only if exactly one complete distribution group is absent while the other two groups are fully correct. Score 0 if any shown category count is wrong, a selected object is counted in the wrong group, an extra category is introduced, or two or more distribution groups are absent."
+      },
+      {
+        "id": "grounded_q14",
+        "question": "Are Dockyard Safety Poster, Wharf Crane Control Lever, River Gauge Plate, Ferry Ticket Punch, Dockside Union Handbill, Port Broadcast Console, Bay Market Receipt Roll, Shipyard Safety Helmet, Canal Toll Booth Sign, or any other non-selected object presented as featured, routed, rotated, or recommended?",
+        "expected_answer": "No. Only Quilted Harbor Map, Brass Transit Token Set, Flood Ledger Pages, Neighborhood Radio Mic, Market Stall Ledger, Canal Workers Banner, and Harbor Signal Lantern receive public featured or route status.",
+        "acceptance_rule": "Score 2 only if no named near-miss and no other extra object receives featured, route, rotation, recommendation, numbered-priority, or equivalent public status. Score 1 only if one non-selected name appears solely in clearly separated text explicitly marked not selected or unavailable. Score 0 if any non-selected object is presented or implied as part of the public feature set."
       }
-    },
-    {
-      "id": "missing_selected_object",
-      "max_total": 55,
-      "reason": "One or more required selected objects is missing.",
-      "trigger": {
-        "type": "missing_required_count",
-        "fact_ids": [
-          "selected_objects",
-          "selected_object_display_values"
-        ],
-        "min_missing": 1
+    ]
+  },
+  "visual_rendering_quality": {
+    "image_type": "exhibit_panel",
+    "vqa_items": [
+      {
+        "id": "visual_q01",
+        "question": "As a museum feature panel or exhibit-introduction graphic, does the image transform objects, stories, themes, locations, and interpretive context into a complete, spatially resolved, visitor-ready exhibit composition rather than a numbered catalog, metadata list, report page, or minimally styled directory? Evaluate the entire canvas at realistic public-viewing distance: title containment and safe margins, visual or narrative anchors, object-to-caption relationships, interpretive hierarchy, visitor reading paths, text density, institutional character, and whether the panel creates understanding or curiosity beyond merely listing object names and fields. Do not award 2 merely because entries are aligned, numbered, readable, consistently separated, or set in formal typography.",
+        "score_criteria": {
+          "2": "Award 2 only if **all** of the following museum-installation gates are clearly satisfied. Failure of any one gate limits the score to 1 at most:\n\n  1. **Complete title and edge-safety gate:** The full exhibition title, subtitle, section headings, object names, captions, summaries, and footer content must be completely contained within the canvas with deliberate safe margins. No major text may touch, cross, or appear cropped by an image edge. Any clipped or partially missing title, subtitle, object name, or primary heading automatically prevents 2; substantial title cropping or loss of identity requires 0.\n  2. **Immediate interpretive proposition:** Visitors must understand within seconds what the panel is about and why the featured material matters. The panel must communicate an interpretive idea, historical relationship, thematic question, or narrative frame—not merely announce a title followed by object metadata.\n  3. **Visual or narrative anchoring:** Objects, stories, places, or themes must be supported by meaningful object imagery, archival material, illustration, maps, diagrams, timelines, spatial groupings, or an equivalently strong typographic narrative device. Imagery is not mandatory in every valid panel, but an entirely image-free design must demonstrate exceptional interpretive art direction and cannot resemble a numbered inventory, index, directory, or database export.\n  4. **Object-to-context integration:** Each featured object or story must have an unmistakable relationship to its caption, era, location, theme, or interpretive text. Metadata fields must be visually integrated into the story rather than repeated as identical label-value lines beneath every entry.\n  5. **Interpretive hierarchy:** Title, introductory context, featured objects or stories, supporting metadata, thematic connections, and concluding takeaway must have clearly different visual roles. Object names, eras, galleries, themes, and summary information must not appear with nearly equal weight or force visitors to decode a repetitive field structure.\n  6. **Visual synthesis rather than catalog listing:** The panel must edit, group, compare, connect, or contextualize its material. A vertical numbered list of names followed by repeated fields such as era, gallery, category, or theme is not sufficient for 2, even when accurate, evenly spaced, and attractively typeset.\n  7. **Visitor-distance readability:** Primary content must be readable from an appropriate standing distance, while captions and supporting text must remain comfortable at normal close viewing. Oversized headings combined with comparatively small metadata, long text lines, or typography that requires visitors to move excessively close prevent 2.\n  8. **Comfortable pacing and dwell structure:** The panel must offer intentional entry points, pauses, focal moments, and a resolved reading path. Repeated rows with identical rhythm, long uninterrupted lists, excessive horizontal rules, or monotonous top-to-bottom scanning prevent 2.\n  9. **Purposeful summary and ending:** Any summary, legend, theme list, object count, era span, or location index must add interpretation or navigation value. A footer that simply repeats information already visible above, or reads like a dataset summary, prevents 2.\n  10. **Distinct institutional character:** Typography, color, imagery, materials, spacing, and composition must feel specifically appropriate to a museum, gallery, archive, science center, or cultural institution. Formal serif typography and muted colors alone do not establish museum-grade design.\n  11. **Whole-canvas resolution:** The panel must feel intentionally composed from edge to edge, with balanced margins, controlled negative space, and a clear visual ending. There may be no accidental cropping, awkward empty bands, excessive unused space, weak alignment, unfinished lower area, or mismatch between content volume and canvas dimensions.\n  12. **Production finish:** No malformed glyph, clipped line, overlapping element, weak crop, detached caption, inconsistent baseline, unstable spacing, ambiguous numbering, low-contrast text, visible placeholder, or other production defect is allowed.\n\n  A clean, readable page consisting mainly of a large heading, a numbered list of object names, repeated metadata lines, separator rules, and a factual footer is an organized catalog page—not an exceptional exhibit panel—and cannot receive 2.",
+          "1": "Award 1 if the panel is readable, informative, mostly complete, and usable as a preliminary visitor graphic, but still requires visible interpretive or visual refinement before installation. Typical 1-point outputs include text-led object directories; repeated name–era–location–theme records; minimal or absent imagery; weak narrative framing; generic institutional styling; monotonous row rhythm; redundant dataset-like summaries; oversized title treatment; limited visual connection among objects; modest visitor pacing; or minor spacing and margin problems. A panel may be accurate, aligned, and professionally typeset yet still receive only 1 when it catalogs information rather than creating a convincing museum interpretation.",
+          "0": "Award 0 if the panel is visually incomplete, materially cropped, difficult to use, misleading, or unsuitable for public installation. This includes a major title, subtitle, object name, caption, or section being cut off by the canvas; object-caption relationships being unclear; interpretive hierarchy being absent; text scale or density making normal viewing impractical; the result functioning primarily as a raw inventory or minimally styled source-data list; or substantial redesign being required. Blank, corrupted, severely unreadable, overlapping, materially incomplete, or otherwise broken panels are also 0."
+        }
       }
-    },
-    {
-      "id": "raw_table_instead_of_image",
-      "max_total": 40,
-      "reason": "The final artifact is a raw table, SQL result, JSON dump, or worksheet rather than the requested image.",
-      "trigger": {
-        "type": "forbidden_final_answer",
-        "patterns": [
-          "\\|\\s*artifact_id",
-          "artifact_id\\s*,\\s*name",
-          "CREATE\\s+TABLE",
-          "SELECT\\s+\\*",
-          "INSERT\\s+INTO",
-          "(?:\\|[^\\n]*){4,}\\n(?:\\|[^\\n]*){4,}"
-        ]
-      }
-    }
-  ]
+    ]
+  }
 }

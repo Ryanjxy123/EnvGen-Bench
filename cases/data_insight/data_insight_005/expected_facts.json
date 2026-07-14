@@ -3,127 +3,115 @@
   "task_type": "data_insight",
   "facts": [
     {
-      "id": "grants_compliance_score_leader",
-      "description": "Top program portfolio by weighted compliance_risk_score after exclusions, profile mapping, normalization, and tie-breaks.",
-      "source": "env/program_panel.csv + env/program_profiles.csv + env/compliance_rules.json",
+      "id": "grant_review_score_leader",
+      "description": "Highest-priority program by compliance_attention_score after closed FY2026 actual filtering, active profile mapping, normalization, and tie-breaks.",
+      "source": "env/program_panel.csv + env/program_profiles.xlsx + env/compliance_rules.json",
       "importance": "critical",
-      "expected_value": [
-        "Solar Schools: 82.9",
-        "Solar Schools top score"
-      ],
-      "canonical_answer": "Solar Schools is the top priority with score 82.9",
-      "semantic_acceptance": "Accept if Solar Schools is shown as the highest priority with score near 82.9.",
+      "canonical_answer": "Flood Mitigation Grants is the top follow-up priority with score 82.1",
+      "semantic_acceptance": "Accept semantically equivalent wording with matching program/category names and rounded values where shown.",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "grants_compliance_lowest_score",
-      "description": "Lowest-risk or lowest-priority program portfolio by weighted score.",
-      "source": "env/program_panel.csv + env/program_profiles.csv + env/compliance_rules.json",
+      "id": "grant_review_top_three_order",
+      "description": "Top three programs in descending compliance attention ranking.",
+      "source": "env/program_panel.csv + env/program_profiles.xlsx + env/compliance_rules.json",
       "importance": "critical",
-      "expected_value": [
-        "Rural Mobility: 19.0",
-        "Rural Mobility lowest score"
-      ],
-      "canonical_answer": "Rural Mobility is the lowest-ranked entity with score 19.0",
-      "semantic_acceptance": "Accept if Rural Mobility is identified as the lowest score entity.",
+      "canonical_answer": "Flood Mitigation Grants, Senior Care Access, Housing Navigation Pilot",
+      "semantic_acceptance": "Accept semantically equivalent wording with matching program/category names and rounded values where shown.",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "grants_compliance_fastest_gap_change",
-      "description": "Entity with the largest analysis-period gap-rate increase versus baseline.",
-      "source": "env/program_panel.csv + env/compliance_rules.json",
+      "id": "grant_review_high_priority_programs",
+      "description": "Programs at or above the high-priority threshold.",
+      "source": "env/program_panel.csv + env/program_profiles.xlsx + env/compliance_rules.json",
       "importance": "critical",
-      "expected_value": [
-        "Solar Schools: 2.7 pp",
-        "Solar Schools fastest gap-rate change"
-      ],
-      "canonical_answer": "Solar Schools has the fastest gap-rate increase at about 2.7 percentage points",
-      "semantic_acceptance": "Accept if Solar Schools is identified as largest gap-rate increase.",
+      "canonical_answer": "Flood Mitigation Grants, Senior Care Access",
+      "semantic_acceptance": "Accept semantically equivalent wording with matching program/category names and rounded values where shown.",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "grants_compliance_gap_volume_hotspot",
-      "description": "Entity with the highest analysis-period gap volume.",
-      "source": "env/program_panel.csv",
+      "id": "grant_review_watch_tier_programs",
+      "description": "Programs in the watch tier below high priority and at or above the watch threshold.",
+      "source": "env/program_panel.csv + env/program_profiles.xlsx + env/compliance_rules.json",
       "importance": "critical",
-      "expected_value": [
-        "Digital Skills: 540",
-        "Digital Skills highest gap volume"
-      ],
-      "canonical_answer": "Digital Skills has the highest analysis-period gap volume at 540",
-      "semantic_acceptance": "Accept if Digital Skills is shown as the gap-volume hotspot near 540.",
+      "canonical_answer": "Housing Navigation Pilot, Food Pantry Stabilization, Childcare Expansion, Veterans Housing Support",
+      "semantic_acceptance": "Accept semantically equivalent wording with matching program/category names and rounded values where shown.",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "grants_compliance_incident_rate_hotspot",
-      "description": "Entity with the highest analysis-period incident rate per 1,000 scale units.",
-      "source": "env/program_panel.csv + env/program_profiles.csv",
+      "id": "grant_review_fastest_gap_change",
+      "description": "Program with the largest analysis-period gap-rate increase versus baseline.",
+      "source": "env/program_panel.csv + env/program_profiles.xlsx + env/compliance_rules.json",
       "importance": "critical",
-      "expected_value": [
-        "Food Relief: 49.6 per 1,000",
-        "Food Relief incident-rate hotspot"
-      ],
-      "canonical_answer": "Food Relief has the highest incident rate at about 49.6 per 1,000",
-      "semantic_acceptance": "Accept if Food Relief is identified as incident-rate hotspot.",
+      "canonical_answer": "Flood Mitigation Grants has the largest gap-rate increase at about 6.7 percentage points",
+      "semantic_acceptance": "Accept semantically equivalent wording with matching program/category names and rounded values where shown.",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "grants_compliance_group_gap_hotspot",
-      "description": "Funding Stream with the highest aggregate analysis-period gap volume.",
-      "source": "env/program_panel.csv + env/program_profiles.csv",
+      "id": "grant_review_gap_volume_hotspot",
+      "description": "Program with the highest analysis-period gap volume.",
+      "source": "env/program_panel.csv + env/program_profiles.xlsx + env/compliance_rules.json",
       "importance": "critical",
-      "expected_value": [
-        "Housing: 996",
-        "Housing group hotspot"
-      ],
-      "canonical_answer": "Housing is the group hotspot at 996",
-      "semantic_acceptance": "Accept if Housing is identified as the leading group hotspot.",
+      "canonical_answer": "Flood Mitigation Grants has the highest analysis-period gap volume at 896k",
+      "semantic_acceptance": "Accept semantically equivalent wording with matching program/category names and rounded values where shown.",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "grants_compliance_threshold_count",
-      "description": "Count of entities at or above the high-priority score threshold.",
-      "source": "env/compliance_rules.json + env/program_panel.csv + env/program_profiles.csv",
-      "importance": "critical",
-      "expected_value": [
-        "2 high-priority entities",
-        "threshold count 2"
-      ],
-      "canonical_answer": "2 entities meet the high-priority threshold",
-      "semantic_acceptance": "Accept if the image states that 2 entities are high priority under the configured threshold.",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "grants_compliance_distractor_exclusions",
-      "description": "Do not use forecast, subtotal, test, or old-period rows as final metrics.",
-      "source": "env/program_panel.csv + env/compliance_rules.json",
+      "id": "grant_review_late_rate_hotspot",
+      "description": "Program with the highest analysis-period late-report rate per 1,000 scale units.",
+      "source": "env/program_panel.csv + env/program_profiles.xlsx + env/compliance_rules.json",
       "importance": "major",
-      "expected_value": [
-        "invalid panel record used"
-      ],
-      "forbidden_patterns": [
-        "\\b99,?999\\b",
-        "\\b88,?888\\b",
-        "\\b77,?777\\b",
-        "\\bforecast\\b[^.!?\\n;]{0,80}\\b(result|answer|leader|score|gap)\\b",
-        "\\bsubtotal\\b[^.!?\\n;]{0,80}\\b(result|answer|leader|score|gap)\\b",
-        "\\bold[_ -]?period\\b[^.!?\\n;]{0,80}\\b(result|answer|leader|score|gap)\\b"
-      ],
-      "allowed_patterns": [
-        "\\b(exclude|excluded|excluding|ignore|ignored|not\\s+used)\\b[^.!?\\n;]{0,140}\\b(forecast|subtotal|old)"
-      ],
-      "must_not_appear_in_image": true,
-      "canonical_answer": "Invalid panel rows must not be used as final metrics.",
-      "semantic_acceptance": "Reject or cap if invalid rows are treated as final metrics. Exclusion notes are allowed.",
-      "evaluation_role": "negative_only"
+      "canonical_answer": "Senior Care Access has the highest late-report rate at about 50.8 per 1,000",
+      "semantic_acceptance": "Accept semantically equivalent wording with matching program/category names and rounded values where shown.",
+      "must_appear_in_image": true,
+      "evaluation_role": "major_required"
+    },
+    {
+      "id": "grant_review_stream_gap_hotspot",
+      "description": "Funding stream with the highest aggregate analysis-period gap volume.",
+      "source": "env/program_panel.csv + env/program_profiles.xlsx + env/compliance_rules.json",
+      "importance": "critical",
+      "canonical_answer": "Housing is the funding-stream gap hotspot at 1258k",
+      "semantic_acceptance": "Accept semantically equivalent wording with matching program/category names and rounded values where shown.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "grant_review_high_priority_count",
+      "description": "Count of active programs at or above the high-priority score threshold.",
+      "source": "env/program_panel.csv + env/program_profiles.xlsx + env/compliance_rules.json",
+      "importance": "critical",
+      "canonical_answer": "2",
+      "semantic_acceptance": "Accept semantically equivalent wording with matching program/category names and rounded values where shown.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "grant_review_period_boundaries",
+      "description": "Correct baseline and analysis periods.",
+      "source": "env/program_panel.csv + env/program_profiles.xlsx + env/compliance_rules.json",
+      "importance": "critical",
+      "canonical_answer": "Baseline is April-June 2026; analysis is July-September 2026",
+      "semantic_acceptance": "Accept semantically equivalent wording with matching program/category names and rounded values where shown.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "grant_review_distractor_exclusions",
+      "description": "Draft, forecast, subtotal, prior-cycle, and inactive-profile records must not be used as final metrics.",
+      "source": "env/program_panel.csv + env/program_profiles.xlsx + env/compliance_rules.json",
+      "importance": "major",
+      "canonical_answer": "No excluded records are used as final metrics",
+      "semantic_acceptance": "Accept semantically equivalent wording with matching program/category names and rounded values where shown.",
+      "must_appear_in_image": true,
+      "evaluation_role": "major_required"
     }
   ],
-  "calculation_notes": "Join program_panel.csv to program_profiles.csv by entity_id. Use only actual closed records. Baseline months are 2026-07 through 2026-09; analysis months are 2026-10 through 2026-12. Gap volume is approved_budget_k minus verified_spend_k. Gap rate is gap divided by approved_budget_k. compliance_risk_score min-max normalizes analysis gap rate, gap-rate change, incident rate per 1,000, and criticality, then applies configured weights. Tie-break order is rounded score, analysis gap volume, criticality, and entity name. Top score entity is Solar Schools at 82.9. Lowest score entity is Rural Mobility at 19.0. Fastest gap-rate increase is Solar Schools at 2.7 percentage points. Gap-volume hotspot is Digital Skills at 540. Incident-rate hotspot is Food Relief at 49.6 per 1,000. Group hotspot is Housing at 996. High-priority count is 2."
+  "calculation_notes": "Join panel records to active profiles by program_id. Include only closed FY2026 actual monthly records from 2026-04 through 2026-09, using 2026-04 to 2026-06 as baseline and 2026-07 to 2026-09 as analysis. Exclude forecast, subtotal, open/draft, prior-cycle, and inactive-profile rows. Compute gap volume, gap rate, gap-rate change, late-report rate per 1,000, finding rate per 1,000, and weighted min-max normalized score. Round displayed values to one decimal."
 }

@@ -1,1 +1,0 @@
-NovaPack Pro is a modular travel organizer with compression panels, weather-resistant shell, and quick-access tech pocket. NovaPack Mini is lower revenue. NovaPack Tag is an accessory, not the main product.

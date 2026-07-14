@@ -1,0 +1,185 @@
+request_id,event_at,state,actor,note
+CR-4801,2026-06-30T12:00:00,SUBMITTED,Architecture PMO,Registered
+CR-4801,2026-06-30T14:20:00,APPROVED,Change Control Board,Approved for controlled bundle
+CR-4801,2026-06-30T15:10:00,IMPLEMENTATION_READY,Release Engineering,Validated for bundle application
+CR-4802,2026-06-30T12:00:00,SUBMITTED,Architecture PMO,Registered
+CR-4802,2026-06-30T14:28:00,APPROVED,Change Control Board,Approved for controlled bundle
+CR-4802,2026-06-30T15:10:00,IMPLEMENTATION_READY,Release Engineering,Validated for bundle application
+CR-4803,2026-06-30T12:00:00,SUBMITTED,Architecture PMO,Registered
+CR-4803,2026-06-30T14:30:00,APPROVED,Change Control Board,Approved for controlled bundle
+CR-4803,2026-06-30T15:10:00,IMPLEMENTATION_READY,Release Engineering,Validated for bundle application
+CR-4804,2026-06-30T12:00:00,SUBMITTED,Architecture PMO,Registered
+CR-4804,2026-06-30T14:31:00,APPROVED,Change Control Board,Approved for controlled bundle
+CR-4804,2026-06-30T15:10:00,IMPLEMENTATION_READY,Release Engineering,Validated for bundle application
+CR-4805,2026-06-30T12:00:00,SUBMITTED,Architecture PMO,Registered
+CR-4805,2026-06-30T14:32:00,APPROVED,Change Control Board,Approved for controlled bundle
+CR-4805,2026-06-30T15:10:00,IMPLEMENTATION_READY,Release Engineering,Validated for bundle application
+CR-4806,2026-06-30T12:00:00,SUBMITTED,Architecture PMO,Registered
+CR-4806,2026-06-30T14:38:00,APPROVED,Change Control Board,Approved for controlled bundle
+CR-4806,2026-06-30T15:10:00,IMPLEMENTATION_READY,Release Engineering,Validated for bundle application
+CR-4807,2026-06-30T12:00:00,SUBMITTED,Architecture PMO,Registered
+CR-4807,2026-06-30T14:39:00,APPROVED,Change Control Board,Approved for controlled bundle
+CR-4807,2026-06-30T15:10:00,IMPLEMENTATION_READY,Release Engineering,Validated for bundle application
+CR-4808,2026-06-30T12:00:00,SUBMITTED,Architecture PMO,Registered
+CR-4808,2026-06-30T14:40:00,APPROVED,Change Control Board,Approved for controlled bundle
+CR-4808,2026-06-30T15:10:00,IMPLEMENTATION_READY,Release Engineering,Validated for bundle application
+CR-4809,2026-06-30T12:00:00,SUBMITTED,Architecture PMO,Registered
+CR-4809,2026-06-30T14:44:00,APPROVED,Change Control Board,Approved for controlled bundle
+CR-4809,2026-06-30T15:10:00,IMPLEMENTATION_READY,Release Engineering,Validated for bundle application
+CR-4810,2026-06-30T12:00:00,SUBMITTED,Architecture PMO,Registered
+CR-4810,2026-06-30T14:45:00,APPROVED,Change Control Board,Approved for controlled bundle
+CR-4810,2026-06-30T15:10:00,IMPLEMENTATION_READY,Release Engineering,Validated for bundle application
+CR-4811,2026-06-30T12:00:00,SUBMITTED,Architecture PMO,Registered
+CR-4811,2026-06-30T14:46:00,APPROVED,Change Control Board,Approved for controlled bundle
+CR-4811,2026-06-30T15:10:00,IMPLEMENTATION_READY,Release Engineering,Validated for bundle application
+CR-4812,2026-06-30T12:10:00,SUBMITTED,Billing Architecture,Registered
+CR-4812,2026-06-30T14:15:00,APPROVED,Change Control Board,Conditional approval
+CR-4812,2026-06-30T15:45:00,WITHDRAWN,Billing Architecture,Settlement design withdrawn before control cutoff
+CR-4813,2026-06-30T12:12:00,SUBMITTED,Billing Architecture,Registered
+CR-4813,2026-06-30T14:18:00,REJECTED,Data Governance,Direct relationship hides allocation evidence
+CR-4814,2026-06-30T13:00:00,SUBMITTED,Dispatch Architecture,Registered
+CR-4814,2026-06-30T14:22:00,APPROVED,Change Control Board,Approved for future release
+CR-4814,2026-06-30T15:12:00,IMPLEMENTATION_READY,Release Engineering,Ready but future effective
+CR-4815,2026-06-30T13:05:00,SUBMITTED,Customer Architecture,Registered
+CR-4815,2026-06-30T15:00:00,PENDING_REVIEW,Change Control Board,Not approved by cutoff
+CR-4816,2026-06-26T10:00:00,SUBMITTED,Customer Architecture,Registered
+CR-4816,2026-06-26T11:00:00,APPROVED,Change Control Board,Approved in prior bundle
+CR-4816,2026-06-30T14:29:00,SUPERSEDED,Change Control Board,Superseded by CR-4802
+CR-4817,2026-06-30T13:10:00,SUBMITTED,Field Architecture,Registered
+CR-4817,2026-06-30T14:25:00,REJECTED,Field Operations,Existing signature semantics retained
+CR-4818,2026-06-30T13:15:00,SUBMITTED,Payments Architecture,Registered
+CR-4818,2026-06-30T15:20:00,APPROVED,Change Control Board,Approved for July bundle
+CR-4818,2026-06-30T15:30:00,IMPLEMENTATION_READY,Release Engineering,Ready for future bundle
+CR-4819,2026-06-30T13:20:00,SUBMITTED,Payments Architecture,Registered
+CR-4819,2026-06-30T14:35:00,APPROVED,Change Control Board,Approved in post-payment scope
+CR-4819,2026-06-30T15:15:00,IMPLEMENTATION_READY,Release Engineering,Ready outside requested scope
+CR-4820,2026-06-30T13:22:00,SUBMITTED,Case Management,Registered
+CR-4820,2026-06-30T14:36:00,APPROVED,Change Control Board,Approved in collaboration scope
+CR-4820,2026-06-30T15:16:00,IMPLEMENTATION_READY,Release Engineering,Ready outside requested scope
+CR-4821,2026-06-30T13:25:00,SUBMITTED,Billing Architecture,Registered
+CR-4821,2026-06-30T14:37:00,REJECTED,Billing Operations,Adjustment remains required before cash application
+CR-4822,2026-06-30T13:26:00,SUBMITTED,Payments Architecture,Registered
+CR-4822,2026-06-30T14:41:00,APPROVED,Change Control Board,Provisional approval
+CR-4822,2026-06-30T15:50:00,WITHDRAWN,Payments Architecture,Amount remains the required fact
+CR-4823,2026-06-30T13:27:00,SUBMITTED,Dispatch Architecture,Registered
+CR-4823,2026-06-30T14:42:00,REJECTED,Data Governance,Assignment bridge remains authoritative
+CR-4824,2026-06-26T10:30:00,SUBMITTED,Field Architecture,Registered
+CR-4824,2026-06-26T11:10:00,APPROVED,Change Control Board,Approved in prior bundle
+CR-4824,2026-06-30T14:39:30,SUPERSEDED,Change Control Board,Superseded by CR-4806
+CR-4825,2026-06-30T14:05:00,SUBMITTED,Payments Architecture,Registered
+CR-4825,2026-06-30T15:00:00,APPROVED,Change Control Board,Approved for production fact correction
+CR-4825,2026-06-30T15:35:00,IMPLEMENTATION_READY,Release Engineering,Validated for deployment wave
+CR-4826,2026-06-30T14:06:00,SUBMITTED,Field Architecture,Registered
+CR-4826,2026-06-30T15:01:00,APPROVED,Change Control Board,Approved for production fact correction
+CR-4826,2026-06-30T15:36:00,IMPLEMENTATION_READY,Release Engineering,Validated for deployment wave
+CR-4827,2026-06-30T14:07:00,SUBMITTED,Architecture PMO,Registered
+CR-4827,2026-06-30T15:00:00,APPROVED,Change Control Board,Approved in its recorded scope
+CR-4827,2026-06-30T15:20:00,IMPLEMENTATION_READY,Release Engineering,Ready in recorded bundle/scope/environment
+CR-4828,2026-06-30T14:08:00,SUBMITTED,Architecture PMO,Registered
+CR-4828,2026-06-30T15:01:00,APPROVED,Change Control Board,Approved in its recorded scope
+CR-4828,2026-06-30T15:21:00,IMPLEMENTATION_READY,Release Engineering,Ready in recorded bundle/scope/environment
+CR-4829,2026-06-30T14:09:00,SUBMITTED,Architecture PMO,Registered
+CR-4829,2026-06-30T15:02:00,APPROVED,Change Control Board,Approved in its recorded scope
+CR-4829,2026-06-30T15:22:00,IMPLEMENTATION_READY,Release Engineering,Ready in recorded bundle/scope/environment
+CR-4830,2026-06-30T14:10:00,SUBMITTED,Architecture PMO,Registered
+CR-4830,2026-06-30T15:03:00,APPROVED,Change Control Board,Approved in its recorded scope
+CR-4830,2026-06-30T15:23:00,IMPLEMENTATION_READY,Release Engineering,Ready in recorded bundle/scope/environment
+CR-4831,2026-06-30T14:11:00,SUBMITTED,Architecture PMO,Registered
+CR-4831,2026-06-30T15:04:00,APPROVED,Change Control Board,Approved in its recorded scope
+CR-4831,2026-06-30T15:24:00,IMPLEMENTATION_READY,Release Engineering,Ready in recorded bundle/scope/environment
+CR-4832,2026-06-30T14:12:00,SUBMITTED,Architecture PMO,Registered
+CR-4832,2026-06-30T15:05:00,APPROVED,Change Control Board,Approved in its recorded scope
+CR-4832,2026-06-30T15:25:00,IMPLEMENTATION_READY,Release Engineering,Ready in recorded bundle/scope/environment
+CR-4833,2026-06-30T14:13:00,SUBMITTED,Architecture PMO,Registered
+CR-4833,2026-06-30T15:06:00,APPROVED,Change Control Board,Approved in its recorded scope
+CR-4833,2026-06-30T15:26:00,IMPLEMENTATION_READY,Release Engineering,Ready in recorded bundle/scope/environment
+CR-4834,2026-06-30T14:14:00,SUBMITTED,Architecture PMO,Registered
+CR-4834,2026-06-30T15:07:00,APPROVED,Change Control Board,Approved in its recorded scope
+CR-4834,2026-06-30T15:27:00,IMPLEMENTATION_READY,Release Engineering,Ready in recorded bundle/scope/environment
+CR-4835,2026-06-30T14:15:00,SUBMITTED,Architecture PMO,Registered
+CR-4835,2026-06-30T15:08:00,APPROVED,Change Control Board,Approved in its recorded scope
+CR-4835,2026-06-30T15:28:00,IMPLEMENTATION_READY,Release Engineering,Ready in recorded bundle/scope/environment
+CR-4836,2026-06-30T14:16:00,SUBMITTED,Architecture PMO,Registered
+CR-4836,2026-06-30T15:09:00,APPROVED,Change Control Board,Approved in its recorded scope
+CR-4836,2026-06-30T15:29:00,IMPLEMENTATION_READY,Release Engineering,Ready in recorded bundle/scope/environment
+CR-4837,2026-06-30T14:17:00,SUBMITTED,Architecture PMO,Registered
+CR-4837,2026-06-30T15:10:00,APPROVED,Change Control Board,Approved in its recorded scope
+CR-4837,2026-06-30T15:30:00,IMPLEMENTATION_READY,Release Engineering,Ready in recorded bundle/scope/environment
+CR-4838,2026-06-30T14:18:00,SUBMITTED,Architecture PMO,Registered
+CR-4838,2026-06-30T15:11:00,APPROVED,Change Control Board,Approved in its recorded scope
+CR-4838,2026-06-30T15:31:00,IMPLEMENTATION_READY,Release Engineering,Ready in recorded bundle/scope/environment
+CR-4839,2026-06-30T14:19:00,SUBMITTED,Architecture PMO,Registered
+CR-4839,2026-06-30T15:12:00,APPROVED,Change Control Board,Approved in its recorded scope
+CR-4839,2026-06-30T15:32:00,IMPLEMENTATION_READY,Release Engineering,Ready in recorded bundle/scope/environment
+CR-4840,2026-06-30T14:20:00,SUBMITTED,Architecture PMO,Registered
+CR-4840,2026-06-30T15:13:00,APPROVED,Change Control Board,Approved in its recorded scope
+CR-4840,2026-06-30T15:33:00,IMPLEMENTATION_READY,Release Engineering,Ready in recorded bundle/scope/environment
+CR-4841,2026-06-30T14:21:00,SUBMITTED,Architecture PMO,Registered
+CR-4841,2026-06-30T15:14:00,APPROVED,Change Control Board,Approved in its recorded scope
+CR-4841,2026-06-30T15:34:00,IMPLEMENTATION_READY,Release Engineering,Ready in recorded bundle/scope/environment
+CR-4842,2026-06-30T14:22:00,SUBMITTED,Architecture PMO,Registered
+CR-4842,2026-06-30T15:15:00,APPROVED,Change Control Board,Approved in its recorded scope
+CR-4842,2026-06-30T15:35:00,IMPLEMENTATION_READY,Release Engineering,Ready in recorded bundle/scope/environment
+CR-4843,2026-06-30T14:23:00,SUBMITTED,Architecture PMO,Registered
+CR-4843,2026-06-30T15:16:00,APPROVED,Change Control Board,Approved in its recorded scope
+CR-4843,2026-06-30T15:36:00,IMPLEMENTATION_READY,Release Engineering,Ready in recorded bundle/scope/environment
+CR-4844,2026-06-30T14:24:00,SUBMITTED,Architecture PMO,Registered
+CR-4844,2026-06-30T15:17:00,APPROVED,Change Control Board,Approved in its recorded scope
+CR-4844,2026-06-30T15:37:00,IMPLEMENTATION_READY,Release Engineering,Ready in recorded bundle/scope/environment
+CR-4845,2026-06-30T14:25:00,SUBMITTED,Architecture PMO,Registered
+CR-4845,2026-06-30T15:18:00,APPROVED,Change Control Board,Approved in its recorded scope
+CR-4845,2026-06-30T15:20:00,IMPLEMENTATION_READY,Release Engineering,Ready in recorded bundle/scope/environment
+CR-4846,2026-06-30T14:26:00,SUBMITTED,Architecture PMO,Registered
+CR-4846,2026-06-30T15:19:00,APPROVED,Change Control Board,Approved in its recorded scope
+CR-4846,2026-06-30T15:21:00,IMPLEMENTATION_READY,Release Engineering,Ready in recorded bundle/scope/environment
+CR-4847,2026-06-30T14:07:00,SUBMITTED,Architecture PMO,Registered
+CR-4847,2026-06-30T15:00:00,APPROVED,Change Control Board,Approved in its recorded scope
+CR-4847,2026-06-30T15:22:00,IMPLEMENTATION_READY,Release Engineering,Ready in recorded bundle/scope/environment
+CR-4848,2026-06-30T14:08:00,SUBMITTED,Architecture PMO,Registered
+CR-4848,2026-06-30T15:01:00,APPROVED,Change Control Board,Approved in its recorded scope
+CR-4848,2026-06-30T15:23:00,IMPLEMENTATION_READY,Release Engineering,Ready in recorded bundle/scope/environment
+CR-4849,2026-06-30T14:09:00,SUBMITTED,Architecture PMO,Registered
+CR-4849,2026-06-30T15:02:00,APPROVED,Change Control Board,Approved in its recorded scope
+CR-4849,2026-06-30T15:24:00,IMPLEMENTATION_READY,Release Engineering,Ready in recorded bundle/scope/environment
+CR-4850,2026-06-30T14:10:00,SUBMITTED,Architecture PMO,Registered
+CR-4850,2026-06-30T15:03:00,APPROVED,Change Control Board,Approved in its recorded scope
+CR-4850,2026-06-30T15:25:00,IMPLEMENTATION_READY,Release Engineering,Ready in recorded bundle/scope/environment
+CR-4851,2026-06-30T14:11:00,SUBMITTED,Architecture PMO,Registered
+CR-4851,2026-06-30T15:10:00,REJECTED,Data Governance,Rejected after architecture review
+CR-4852,2026-06-30T14:12:00,SUBMITTED,Architecture PMO,Registered
+CR-4852,2026-06-30T15:11:00,REJECTED,Data Governance,Rejected after architecture review
+CR-4853,2026-06-30T14:13:00,SUBMITTED,Architecture PMO,Registered
+CR-4853,2026-06-30T15:12:00,REJECTED,Data Governance,Rejected after architecture review
+CR-4854,2026-06-30T14:14:00,SUBMITTED,Architecture PMO,Registered
+CR-4854,2026-06-30T15:13:00,APPROVED,Change Control Board,Conditional approval
+CR-4854,2026-06-30T15:40:00,WITHDRAWN,Owning Architecture,Withdrawn before request cutoff
+CR-4855,2026-06-30T14:15:00,SUBMITTED,Architecture PMO,Registered
+CR-4855,2026-06-30T15:14:00,APPROVED,Change Control Board,Conditional approval
+CR-4855,2026-06-30T15:41:00,WITHDRAWN,Owning Architecture,Withdrawn before request cutoff
+CR-4856,2026-06-30T14:16:00,SUBMITTED,Architecture PMO,Registered
+CR-4856,2026-06-30T15:15:00,APPROVED,Change Control Board,Conditional approval
+CR-4856,2026-06-30T15:42:00,WITHDRAWN,Owning Architecture,Withdrawn before request cutoff
+CR-4857,2026-06-30T14:17:00,SUBMITTED,Architecture PMO,Registered
+CR-4857,2026-06-30T15:15:00,APPROVED,Change Control Board,Approved but not ready by request cutoff
+CR-4857,2026-06-30T16:05:00,IMPLEMENTATION_READY,Release Engineering,Ready after request cutoff
+CR-4858,2026-06-30T14:18:00,SUBMITTED,Architecture PMO,Registered
+CR-4858,2026-06-30T15:16:00,APPROVED,Change Control Board,Approved but not ready by request cutoff
+CR-4858,2026-06-30T16:06:00,IMPLEMENTATION_READY,Release Engineering,Ready after request cutoff
+CR-4859,2026-06-30T14:19:00,SUBMITTED,Architecture PMO,Registered
+CR-4859,2026-06-30T15:17:00,APPROVED,Change Control Board,Approved but not ready by request cutoff
+CR-4859,2026-06-30T16:07:00,IMPLEMENTATION_READY,Release Engineering,Ready after request cutoff
+CR-4860,2026-06-30T14:20:00,SUBMITTED,Architecture PMO,Registered
+CR-4860,2026-06-30T15:18:00,APPROVED,Change Control Board,Approved but not ready by request cutoff
+CR-4860,2026-06-30T16:08:00,IMPLEMENTATION_READY,Release Engineering,Ready after request cutoff
+CR-4861,2026-06-30T14:21:00,SUBMITTED,Architecture PMO,Registered
+CR-4861,2026-06-30T15:18:00,APPROVED,Change Control Board,Approved with dependency
+CR-4861,2026-06-30T15:42:00,IMPLEMENTATION_READY,Release Engineering,Ready but dependency remains inactive
+CR-4862,2026-06-30T14:22:00,SUBMITTED,Architecture PMO,Registered
+CR-4862,2026-06-30T15:19:00,APPROVED,Change Control Board,Approved with dependency
+CR-4862,2026-06-30T15:43:00,IMPLEMENTATION_READY,Release Engineering,Ready but dependency remains inactive
+CR-4863,2026-06-30T14:23:00,SUBMITTED,Architecture PMO,Registered
+CR-4863,2026-06-30T15:20:00,APPROVED,Change Control Board,Approved with dependency
+CR-4863,2026-06-30T15:44:00,IMPLEMENTATION_READY,Release Engineering,Ready but dependency remains inactive
+CR-4864,2026-06-30T14:24:00,SUBMITTED,Architecture PMO,Registered
+CR-4864,2026-06-30T15:21:00,APPROVED,Change Control Board,Approved with dependency
+CR-4864,2026-06-30T15:45:00,IMPLEMENTATION_READY,Release Engineering,Ready but dependency remains inactive

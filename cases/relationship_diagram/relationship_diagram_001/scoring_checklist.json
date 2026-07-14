@@ -1,90 +1,116 @@
 {
   "case_id": "relationship_diagram_001",
-  "dimensions": {
-    "task_completion": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "output_type_relationship_diagram_001",
-          "check": "For relationship_diagram_001, the output is a finished system_architecture_diagram for the node and edge mapping, not a worksheet, raw table, or generic mockup.",
-          "points": 4,
-          "scoring_hint": "2 = correct finished image type; 1 = correct topic but weak format; 0 = wrong artifact type. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
-        },
-        {
-          "id": "operation_depth_relationship_diagram_001",
-          "check": "The image visibly resolves this case's node and edge mapping; reference facts include core_entities: Web App, Auth Service, User Database; checkout_edges: Web App, Auth Service, Auth Service; relation_types: calls, reads, publishes; exclude_recommendation_path: Recommendation Service must not be shown as part of the checkout path.",
-          "points": 4,
-          "scoring_hint": "2 = operation is visibly resolved; 1 = operation partly reflected; 0 = copied unsolved source material. Task completion should drop clearly when required env-grounded content is largely missing, even if the image is visually polished. Placeholder language such as coming soon, unavailable, pending, details will be available, cannot finalize, or not accessible does not count as completion."
+  "evaluation_mode": "image_vqa_0_2",
+  "dimension_weights": {
+    "grounded_requirement_satisfaction": 0.8,
+    "visual_rendering_quality": 0.2
+  },
+  "grounded_requirement_satisfaction": {
+    "vqa_items": [
+      {
+        "id": "grounded_q01",
+        "question": "What exact controlled snapshot, catalog, bundle, and deployment wave are identified?",
+        "expected_answer": "Service-to-Cash | Production correction view — 30 Jun 2026 16:30; Catalog 4.8; bundle CB-0626-B; wave DW-0630-C.",
+        "acceptance_rule": "Judge factual content only. Score 2 only if the title/snapshot, Catalog 4.8, CB-0626-B, and DW-0630-C are all correct. Score 1 if exactly one identifier is missing or abbreviated while none is contradicted. Score 0 if two or more are missing or any displayed snapshot, catalog, bundle, or wave is materially wrong."
+      },
+      {
+        "id": "grounded_q02",
+        "question": "What final entity and relationship totals are stated?",
+        "expected_answer": "27 active entities and 33 active relationships.",
+        "acceptance_rule": "Score 2 only if both totals are present and exact. Score 1 if exactly one total is correct and the other is missing or off by one. Score 0 if both are wrong/missing or either differs by more than one."
+      },
+      {
+        "id": "grounded_q03",
+        "question": "How many active entities are in each domain?",
+        "expected_answer": "Customer & Coverage 6; Planning & Dispatch 8; Field Execution 8; Billing & Cash 5, in that left-to-right order.",
+        "acceptance_rule": "Score 2 only if the four counts and order are exact. Score 1 if the order is correct and exactly one count is off by one. Score 0 if two counts are wrong, a domain is missing, or the order is wrong."
+      },
+      {
+        "id": "grounded_q04",
+        "question": "What is the current foreign-key set on Service Request after production activation?",
+        "expected_answer": "location_id, requested_by_contact_id, and agreement_id—exactly those three.",
+        "acceptance_rule": "Score 2 only if exactly those three FKs are shown. Score 1 if exactly one required FK is missing or one unrelated FK is added. Score 0 if two or more field-set errors occur or agreement_asset_id is shown as current."
+      },
+      {
+        "id": "grounded_q05",
+        "question": "How does Service Agreement connect to Service Request in the production snapshot?",
+        "expected_answer": "A Service Request may reference 0..1 Service Agreement through agreement_id; one Service Agreement can be referenced by 0..N requests.",
+        "acceptance_rule": "Score 2 only if the relationship, agreement_id FK, direction, and optional cardinality are correct. Score 1 if the relationship exists with exactly one FK or cardinality error. Score 0 if the relationship is absent or Agreement Asset is used as the direct parent instead."
+      },
+      {
+        "id": "grounded_q06",
+        "question": "How is Request Coverage Decision represented?",
+        "expected_answer": "Planning & Dispatch entity; PK coverage_decision_id; business fact decision_state; provenance tag CR-4801.",
+        "acceptance_rule": "Score 2 only if the entity is in the correct domain with the correct PK, fact, and tag. Score 1 if exactly one detail is missing or unclear. Score 0 if the entity is absent, misgrouped, or two or more details are wrong."
+      },
+      {
+        "id": "grounded_q07",
+        "question": "Which two parents define Request Coverage Decision?",
+        "expected_answer": "Service Request through request_id and Agreement Asset through agreement_asset_id; each decision belongs to one of each parent.",
+        "acceptance_rule": "Score 2 only if both parent relationships and both FKs are correct. Score 1 if one relationship is fully correct and the other has one endpoint or FK error. Score 0 if a relationship is missing or Service Agreement substitutes for Agreement Asset."
+      },
+      {
+        "id": "grounded_q08",
+        "question": "How is the active request-timing entity represented?",
+        "expected_answer": "Request Commitment Event with PK request_commitment_event_id, business fact commitment_type, and provenance tag CR-4803.",
+        "acceptance_rule": "Score 2 only if the current name, PK, fact, and tag are correct. Score 1 if exactly one is missing or unclear. Score 0 if Request SLA Event, request_sla_event_id, or event_type remains current, or two or more details are wrong."
+      },
+      {
+        "id": "grounded_q09",
+        "question": "Which work-close control entity remains active after deployment resolution?",
+        "expected_answer": "Work Order Checklist with PK work_order_checklist_id and business fact completion_state.",
+        "acceptance_rule": "Score 2 only if the entity name, PK, and fact are all correct. Score 1 if exactly one is missing or unclear. Score 0 if Work Order Close Gate, work_order_close_gate_id, or gate_state is presented as current."
+      },
+      {
+        "id": "grounded_q10",
+        "question": "What business fact and provenance tag are current on Visit Signature?",
+        "expected_answer": "acceptance_role with provenance tag CR-4826.",
+        "acceptance_rule": "Score 2 only if both acceptance_role and CR-4826 are correct. Score 1 if exactly one is present and the other is missing or unclear. Score 0 if signer_role is shown as current or a different tag is attached."
+      },
+      {
+        "id": "grounded_q11",
+        "question": "What business fact and provenance tag are current on Payment Allocation?",
+        "expected_answer": "applied_amount with provenance tag CR-4825.",
+        "acceptance_rule": "Score 2 only if both applied_amount and CR-4825 are correct. Score 1 if exactly one is present and the other is missing or unclear. Score 0 if allocated_amount or allocation_status is shown as current, or a different tag is attached."
+      },
+      {
+        "id": "grounded_q12",
+        "question": "Is technician assignment modeled through the approved association record?",
+        "expected_answer": "Work Order and Technician connect through Work Order Assignment using work_order_id and technician_id; no direct Work Order-to-Technician relationship is active.",
+        "acceptance_rule": "Score 2 only if the bridge, both FKs, and absence of the direct shortcut are correct. Score 1 if the bridge is correct but exactly one FK or the shortcut exclusion is unclear. Score 0 if the bridge is missing or a direct Work Order-to-Technician relationship is active."
+      },
+      {
+        "id": "grounded_q13",
+        "question": "How are Visit Note and Visit Signature attached?",
+        "expected_answer": "Visit has 0..N Visit Notes and 0..N Visit Signatures through visit_id; each child belongs to one Visit.",
+        "acceptance_rule": "Score 2 only if both child relationships, FKs, directions, and cardinalities are correct. Score 1 if one relationship is fully correct and the other has one endpoint/cardinality error. Score 0 if either child is missing or attached to the wrong parent."
+      },
+      {
+        "id": "grounded_q14",
+        "question": "How is Payment Allocation connected in the production model?",
+        "expected_answer": "Payment and Invoice each have 0..N Payment Allocations through payment_id and invoice_id; no direct Invoice-to-Payment relationship is active.",
+        "acceptance_rule": "Score 2 only if both parent relationships, both FKs, and the absence of a direct shortcut are correct. Score 1 if exactly one endpoint/FK or the shortcut exclusion is wrong or unclear. Score 0 if a parent relationship is missing or a direct Invoice-to-Payment link is active."
+      },
+      {
+        "id": "grounded_q15",
+        "question": "Which two deployment changes were reverted rather than made current?",
+        "expected_answer": "The Service Request agreement_id retirement was rolled back, and the Work Order Close Gate rename group was suspended; therefore agreement_id remains and Work Order Checklist remains active.",
+        "acceptance_rule": "Score 2 only if both reverted outcomes are reflected correctly. Score 1 if exactly one outcome is correct. Score 0 if neither is correct or both reverted changes are shown as current."
+      }
+    ]
+  },
+  "visual_rendering_quality": {
+    "image_type": "er_diagram",
+    "vqa_items": [
+      {
+        "id": "visual_q01",
+        "question": "As an ER-style data-model diagram, are entities, keys, attributes where required, relationship labels, cardinalities, domain groupings, and model progression visually precise, technically legible, and polished enough for architecture review?",
+        "score_criteria": {
+          "2": "Award 2 only if the ER diagram is exceptionally clean and review-ready: every entity name, identifier, attribute, relationship label, and cardinality is readable at normal size; notation is consistent everywhere; relationships can be traced without guessing; domain sections and progression are immediately clear; connectors are routed with minimal crossings; and spacing, alignment, box sizing, typography, and visual rhythm are highly controlled. It must feel like a carefully authored architecture artifact, with no ambiguous cardinality, crowded entity, clipped text, unstable alignment, detached line, or rendering defect. Any technically or visually uncertain element prevents 2.",
+          "1": "Award 1 if the model is understandable and usable for discussion, but it has visible issues such as small labels, crowded boxes, inconsistent spacing, modest crossing, weak grouping, slightly ambiguous notation, or generic diagram styling. It may be solid but not exemplary.",
+          "0": "Award 0 even if an ER diagram is present when the model is visually difficult or unreliable to inspect: cardinalities or relationships are ambiguous, entities are crowded or misaligned, connectors are tangled, labels are unreadable, domain grouping fails, or the diagram looks crude and requires substantial reconstruction. Blank, corrupted, severely unreadable, or materially incomplete outputs are also 0."
         }
-      ],
-      "label": "Task Completion"
-    },
-    "grounded_requirement_satisfaction": {
-      "weight": 0.55,
-      "items": [
-        {
-          "id": "critical_fact_accuracy_relationship_diagram_001",
-          "check": "For relationship_diagram_001, accurately includes the critical expected facts core_entities, checkout_edges using these case values: core_entities: Web App, Auth Service, User Database; checkout_edges: Web App, Auth Service, Auth Service; relation_types: calls, reads, publishes; exclude_recommendation_path: Recommendation Service must not be shown as part of the checkout path.",
-          "points": 8,
-          "scoring_hint": "2 = all critical facts correct; 1 = one minor omission or formatting issue; 0 = any critical fact is wrong or missing.",
-          "fact_ids": [
-            "core_entities",
-            "checkout_edges"
-          ]
-        },
-        {
-          "id": "required_appear_facts_relationship_diagram_001",
-          "check": "Shows required appear facts core_entities, checkout_edges, relation_types for relationship_diagram_001 without replacing them with unsupported alternatives; expected values include core_entities: Web App, Auth Service, User Database; checkout_edges: Web App, Auth Service, Auth Service; relation_types: calls, reads, publishes; exclude_recommendation_path: Recommendation Service must not be shown as part of the checkout path.",
-          "points": 6,
-          "scoring_hint": "2 = all required facts appear clearly; 1 = most appear but one is ambiguous; 0 = multiple required facts are absent."
-        },
-        {
-          "id": "negative_exclusion_facts_relationship_diagram_001",
-          "check": "Does not show prohibited or stale facts exclude_recommendation_path in relationship_diagram_001; an exclusion note is acceptable, but Recommendation Service must not appear as a checkout-path dependency.",
-          "points": 5,
-          "scoring_hint": "2 = no prohibited facts appear; 1 = one weak/ambiguous distractor; 0 = any explicit prohibited value appears.",
-          "fact_ids": [
-            "exclude_recommendation_path"
-          ]
-        }
-      ],
-      "label": "Grounded Requirement Satisfaction"
-    },
-    "information_structuring": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "fact_hierarchy_relationship_diagram_001",
-          "check": "Organizes core_entities, checkout_edges as the primary message for relationship_diagram_001; supporting values are core_entities: Web App, Auth Service, User Database; checkout_edges: Web App, Auth Service, Auth Service; relation_types: calls, reads, publishes; exclude_recommendation_path: Recommendation Service must not be shown as part of the checkout path.",
-          "points": 5,
-          "scoring_hint": "2 = hierarchy is clear and fact-driven; 1 = facts present but hierarchy is muddled; 0 = important facts are buried or missing. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
-        },
-        {
-          "id": "robust_consistency_relationship_diagram_001",
-          "check": "Across repeated runs of relationship_diagram_001, the same critical facts, exclusions exclude_recommendation_path, ordering rules, and layout constraints must remain consistent.",
-          "points": 4,
-          "scoring_hint": "2 = stable facts and exclusions; 1 = minor wording drift only; 0 = selected facts or exclusions change. Structuring credit requires mostly correct core env facts; placeholder or generic content should score low even with a tidy layout."
-        }
-      ],
-      "label": "Information Structuring"
-    },
-    "visual_communication_quality": {
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "visual_clarity_relationship_diagram_001",
-          "check": "For relationship_diagram_001, uses clear visual hierarchy, readable typography, sufficient contrast, and non-crowded spacing at the intended system_architecture_diagram size.",
-          "points": 4,
-          "scoring_hint": "2 = readable and polished; 1 = readable with minor clutter; 0 = unreadable or visually incoherent. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
-        },
-        {
-          "id": "visual_layout_density_relationship_diagram_001",
-          "check": "The system_architecture_diagram layout has appropriate information density, balanced image/text regions, crisp assets, platform-safe margins, and no placeholder-like areas.",
-          "points": 4,
-          "scoring_hint": "2 = balanced density and crisp assets; 1 = some weak spacing or density; 0 = blank, placeholder-like, or low-resolution. Score only visual clarity, hierarchy, readability, composition, polish, and platform fit here; do not use this visual item to compensate for missing/incorrect env facts or to penalize forbidden facts."
-        }
-      ],
-      "label": "Visual Communication Quality"
-    }
+      }
+    ]
   }
 }

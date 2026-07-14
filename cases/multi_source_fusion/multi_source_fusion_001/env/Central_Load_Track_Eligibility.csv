@@ -1,0 +1,14 @@
+profile_id,profile_version,order_id,load_track,utility_program,validation_status,enrollment_status,territory_status,posted_date,effective_from,effective_to,note
+CL-0130,1,LG-0130,HEAT_PUMP,LoneStar HeatFlex,Verified,Enrolled,Participating,2026-06-09,2026-06-01,2026-06-17,Superseded profile; keep the later version.
+CL-0130,2,LG-0130,EV_CHARGER,LoneStar FlexCharge,Verified,Enrolled,Participating,2026-06-11,2026-06-18,,Current profile.
+CL-0170,1,LG-0170,HEAT_PUMP,NorthLake HeatFlex,Verified,Enrolled,Participating,2026-06-10,2026-06-18,,Current profile.
+CL-0186,1,LG-0186,EV_CHARGER,LoneStar FlexCharge,Verified,Enrolled,Participating,2026-06-08,2026-06-01,2026-06-17,Superseded profile; keep the later version.
+CL-0186,2,LG-0186,HEAT_PUMP,LoneStar HeatFlex,Verified,Enrolled,Participating,2026-06-11,2026-06-18,,Current profile.
+CL-0351,1,LG-0351,EV_CHARGER,Heartland EV Shift,Verified,Enrolled,Participating,2026-06-10,2026-06-18,,Current profile.
+CL-0352,1,LG-0352,HEAT_PUMP,Heartland HeatFlex,Verified,Enrolled,Participating,2026-06-10,2026-06-18,,Current profile.
+CL-0353,1,LG-0353,EV_CHARGER,Heartland EV Shift,Verified,Enrolled,Participating,2026-06-10,2026-06-18,,Current profile.
+CL-TIE,1,LG-FLEX-TIE,EV_CHARGER,Heartland EV Shift,Verified,Enrolled,Participating,2026-06-08,2026-06-01,,Superseded enrollment state.
+CL-TIE,2,LG-FLEX-TIE,EV_CHARGER,Heartland EV Shift,Verified,Pending,Participating,2026-06-11,2026-06-18,,Latest profile; not enrolled and therefore excluded.
+CL-LATE,1,LG-0351,EV_CHARGER,Heartland EV Shift,Verified,Enrolled,Participating,2026-06-14,2026-06-18,,Late duplicate routing record; posted after the June 13 routing close.
+CL-RESEARCH,1,LG-0353,EV_CHARGER,Prairie EV Research,Verified,Enrolled,Research only,2026-06-10,2026-06-18,,Not a participating customer program.
+CL-FUTURE,1,LG-0130,HEAT_PUMP,LoneStar HeatFlex,Scheduled,Enrolled,Participating,2026-06-11,2026-06-25,,Future-effective planning row.

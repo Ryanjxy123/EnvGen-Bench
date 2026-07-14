@@ -3,21 +3,21 @@
   "task_type": "data_selection",
   "web_policy": "closed_env",
   "target_image_type": "cafe_lunch_specials_image",
-  "difficulty": "medium",
+  "difficulty": "expert",
   "env_files": [
     {
       "path": "env/menu_inventory.sqlite",
-      "role": "SQLite menu inventory table with status, availability, stock, allergens, prep time, price, margin, and service window",
+      "role": "Fourteen-table SQLite menu database with master data and interleaved versioned histories for inventory, demand, allergen, performance, nutrition, promotions, dietary certification, holds, preorders, supplier clearance, ingredient lots, service reserves, and station capacity",
       "format": "sqlite",
-      "origin": "manual",
-      "reproducibility_note": "Manually optimized for stable Data Selection-to-Image filtering, ranking, and distractor coverage"
+      "origin": "benchmark_authored",
+      "reproducibility_note": "Contains same-time higher revisions, post-decision records, wrong-location and wrong-channel decoys, three independent availability limits, and station-level capacity constraints."
     },
     {
       "path": "env/menu_rules.sql",
-      "role": "SQL-like selection requirements",
+      "role": "Business policy for controlling-record resolution, station-adjusted operations, two-time availability, global five-item portfolio selection, and customer-facing calculations",
       "format": "sql",
-      "origin": "manual",
-      "reproducibility_note": "Manually optimized for stable Data Selection-to-Image filtering, ranking, and distractor coverage"
+      "origin": "benchmark_authored",
+      "reproducibility_note": "Contains formulas and constraints but does not disclose selected names or final values."
     }
   ],
   "source_policy": {
@@ -30,7 +30,29 @@
       "expected_facts.json",
       "scoring_checklist.json"
     ],
-    "web_usage_note": "Closed-env case: web access is not allowed; solve from env files only."
+    "web_usage_note": "Closed-env case: web access is not allowed."
   },
-  "notes": "Optimized as a Data Selection-to-Image cafe lunch specials case with evaluator-only semantic acceptance criteria."
+  "data_profile": {
+    "table_counts": {
+      "allergen_assessments": 788,
+      "catering_holds": 867,
+      "dietary_certifications": 828,
+      "ingredient_lot_reviews": 1800,
+      "inventory_snapshots": 1071,
+      "menu_items": 360,
+      "nutrition_reviews": 834,
+      "performance_metrics": 648,
+      "preorder_reservations": 844,
+      "promotion_reviews": 945,
+      "service_forecasts": 761,
+      "service_reserves": 1800,
+      "station_service_levels": 20,
+      "supplier_clearances": 757
+    },
+    "eligible_before_shortlist": 16,
+    "shortlist_size": 16,
+    "feasible_portfolios": 1,
+    "selected_count": 5
+  },
+  "notes": "Strengthened Data Selection-to-Image case with fourteen-table temporal resolution, lot-limited availability, an additional operating reserve, station-adjusted prep and capacity, projected-noon stock, complete combination search, and exact portfolio recommendations. Task dimension and evaluation structure are unchanged."
 }

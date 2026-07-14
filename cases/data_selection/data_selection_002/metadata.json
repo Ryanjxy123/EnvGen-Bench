@@ -3,21 +3,43 @@
   "task_type": "data_selection",
   "web_policy": "closed_env",
   "target_image_type": "grant_winner_announcement",
-  "difficulty": "medium",
+  "difficulty": "hard",
   "env_files": [
     {
       "path": "env/grant_applications.csv",
-      "role": "Grant applications with scores, dates, sector, budget, status, completeness, and program round",
+      "role": "Application identity, requested amount, district, focus area, timing, round, track, and workflow status",
       "format": "csv",
-      "origin": "manual",
-      "reproducibility_note": "Manually optimized for stable Data Selection-to-Image filtering, ranking, and distractor coverage"
+      "origin": "benchmark-authored"
+    },
+    {
+      "path": "env/organization_compliance.csv",
+      "role": "Versioned organization public identity and compliance history",
+      "format": "csv",
+      "origin": "benchmark-authored"
+    },
+    {
+      "path": "env/document_reviews.csv",
+      "role": "Versioned packet, budget-attachment, and site-authorization review history",
+      "format": "csv",
+      "origin": "benchmark-authored"
+    },
+    {
+      "path": "env/panel_reviews.csv",
+      "role": "Screening and versioned final-panel scores, community-priority scores, and equity scores",
+      "format": "csv",
+      "origin": "benchmark-authored"
+    },
+    {
+      "path": "env/award_budget_reviews.csv",
+      "role": "Versioned approved-award and cost-share decisions",
+      "format": "csv",
+      "origin": "benchmark-authored"
     },
     {
       "path": "env/eligibility_rules.yaml",
-      "role": "Selection and exclusion rules",
+      "role": "As-of record resolution, eligibility, ranking, cohort constraints, and announcement fields",
       "format": "yaml",
-      "origin": "manual",
-      "reproducibility_note": "Manually optimized for stable Data Selection-to-Image filtering, ranking, and distractor coverage"
+      "origin": "benchmark-authored"
     }
   ],
   "source_policy": {
@@ -30,7 +52,18 @@
       "expected_facts.json",
       "scoring_checklist.json"
     ],
-    "web_usage_note": "Closed-env case: web access is not allowed; solve from env files only."
+    "web_usage_note": "Closed-env case: web access is not allowed."
   },
-  "notes": "Optimized as a Data Selection-to-Image grant winner announcement case with evaluator-only semantic acceptance criteria."
+  "data_profile": {
+    "row_counts": {
+      "grant_applications.csv": 544,
+      "organization_compliance.csv": 692,
+      "document_reviews.csv": 1033,
+      "panel_reviews.csv": 1502,
+      "award_budget_reviews.csv": 1002
+    },
+    "eligible_before_cohort_constraints": 38,
+    "selected_count": 4
+  },
+  "notes": "Strengthened Data Selection-to-Image case. It preserves the original files and dimension while adding tied-revision traps, after-cutoff corrections, a focus-area cohort limit, a four-awardee selection, and denser but natural public funding disclosure requirements. No source row contains a winner flag or direct exclusion marker."
 }

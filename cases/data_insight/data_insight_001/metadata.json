@@ -7,38 +7,21 @@
   "env_files": [
     {
       "path": "env/sales_2025.xlsx",
-      "role": "Raw order-level and distractor rows with gross revenue, discounts, refunds, statuses, dates, categories, and cities",
+      "role": "Multi-sheet sales export containing raw records, city-to-region lookup, and README-style data dictionary notes",
       "format": "xlsx",
-      "origin": "generated",
-      "reproducibility_note": "Regenerated for harder data_insight_001 case to remove summary answers and require filtering/calculation."
-    },
-    {
-      "path": "env/metric_rules.md",
-      "role": "Metric rules defining net revenue, valid rows, and excluded row types",
-      "format": "md",
-      "origin": "generated",
-      "reproducibility_note": "Regenerated for harder data_insight_001 case."
-    },
-    {
-      "path": "env/region_mapping.json",
-      "role": "Mapping from cities to company reporting regions",
-      "format": "json",
-      "origin": "generated",
-      "reproducibility_note": "Regenerated for harder data_insight_001 case."
+      "origin": "benchmark-authored"
     },
     {
       "path": "env/manager_notes.md",
-      "role": "Natural-language manager requirements with useful constraints and irrelevant planning context",
+      "role": "Natural-language manager request and design context",
       "format": "md",
-      "origin": "generated",
-      "reproducibility_note": "Regenerated for harder data_insight_001 case."
+      "origin": "benchmark-authored"
     },
     {
-      "path": "env/optional_distractors.csv",
-      "role": "Non-canonical forecast, draft summary, old-year, unit, and subtotal distractors",
+      "path": "env/planning_extract.csv",
+      "role": "Planning, forecast, reference, and draft values that may appear near the analysis but are not closed actuals",
       "format": "csv",
-      "origin": "generated",
-      "reproducibility_note": "Regenerated for harder data_insight_001 case."
+      "origin": "benchmark-authored"
     }
   ],
   "source_policy": {
@@ -51,7 +34,7 @@
       "expected_facts.json",
       "scoring_checklist.json"
     ],
-    "web_usage_note": "Follow web_policy. Closed-env cases should be solved from cached env files only."
+    "web_usage_note": "Closed-env case; solve from env files only."
   },
-  "notes": "This case intentionally exposes raw rows plus distractors only. Correct results must be computed from completed 2025 transaction rows using net revenue and city-to-reporting-region mapping."
+  "notes": "Final realistic version keeps the larger data volume and workbook lookup design, while weakening the agent-facing actuals guidance into README/data-dictionary language rather than explicit filter and formula instructions."
 }

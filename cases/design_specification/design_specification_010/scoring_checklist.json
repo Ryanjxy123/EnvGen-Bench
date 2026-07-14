@@ -1,194 +1,98 @@
 {
   "case_id": "design_specification_010",
-  "dimensions": {
-    "task_completion": {
-      "label": "Task Completion",
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "finished_target_image",
-          "check": "Output is a finished ecommerce_product_launch_card, not a rule summary, worksheet, or draft.",
-          "points": 10
-        }
-      ]
-    },
-    "grounded_requirement_satisfaction": {
-      "label": "Grounded Requirement Satisfaction",
-      "weight": 0.55,
-      "items": [
-        {
-          "id": "ocr_copy_accuracy",
-          "fact_ids": [
-            "primary_copy_01",
-            "primary_copy_02",
-            "primary_copy_03",
-            "primary_copy_04",
-            "primary_copy_05"
-          ],
-          "check": "Required latest-update copy is OCR-readable and not replaced by archive copy.",
-          "points": 14
-        },
-        {
-          "id": "platform_and_layout",
-          "fact_ids": [
-            "canvas_size",
-            "aspect_ratio",
-            "safe_area",
-            "logo_position",
-            "cta_position",
-            "text_density"
-          ],
-          "check": "Current platform ratio, safe zones, logo/CTA placement, and text density broadly follow platform specs.",
-          "points": 14,
-          "scoring_hint": "Do not hard-cap minor safe-zone or density drift if the image remains readable."
-        },
-        {
-          "id": "asset_and_visual_requirements",
-          "fact_ids": [
-            "required_asset_usage",
-            "hero_component_1",
-            "hero_component_2",
-            "hero_component_3",
-            "hero_component_4"
-          ],
-          "check": "Uses current allowed assets and required hero elements in appropriate roles.",
-          "points": 12
-        },
-        {
-          "id": "style_and_conditionals",
-          "fact_ids": [
-            "palette_tokens",
-            "conditional_rules"
-          ],
-          "check": "Current palette, tone, and conditional readability rules are followed.",
-          "points": 8
-        },
-        {
-          "id": "forbidden_and_compliance_exclusion",
-          "fact_ids": [
-            "compliance_requirements",
-            "forbidden_elements_not_active"
-          ],
-          "check": "Explicitly forbidden claims, restricted visuals, old assets, old platform specs, and deprecated copy are not active final content.",
-          "points": 12
-        }
-      ]
-    },
-    "information_structuring": {
-      "label": "Information Structuring",
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "conflict_resolution",
-          "fact_ids": [
-            "platform_conflict",
-            "asset_ambiguity",
-            "priority_conflict"
-          ],
-          "check": "Resolves platform, asset, and priority conflicts according to env rules using final platform choice, current asset selection, and exclusion of old elements as evidence.",
-          "points": 8
-        },
-        {
-          "id": "visual_hierarchy",
-          "check": "Primary message, hero, CTA, support copy, and disclosure/source line are organized for the target platform.",
-          "points": 6
-        }
-      ]
-    },
-    "visual_communication_quality": {
-      "label": "Visual Communication Quality",
-      "weight": 0.15,
-      "items": [
-        {
-          "id": "readability",
-          "check": "Text is readable, high contrast, and non-overlapping.",
-          "points": 8
-        },
-        {
-          "id": "composition",
-          "check": "Composition is polished and appropriate to the domain and platform.",
-          "points": 7
-        },
-        {
-          "id": "distractor_resistance",
-          "fact_ids": [
-            "forbidden_elements_not_active",
-            "asset_ambiguity"
-          ],
-          "check": "Resists plausible deprecated assets and conflicting rules.",
-          "points": 6
-        },
-        {
-          "id": "constraint_execution",
-          "check": "Executes nuanced constraints without turning the output into specs or a table.",
-          "points": 4
-        }
-      ]
-    }
+  "evaluation_mode": "image_vqa_0_2",
+  "dimension_weights": {
+    "grounded_requirement_satisfaction": 0.8,
+    "visual_rendering_quality": 0.2
   },
-  "hard_caps": [
-    {
-      "id": "not_target_image_type",
-      "max_total": 45,
-      "reason": "Output is not the requested finished image type.",
-      "trigger": {
-        "type": "wrong_artifact_type",
-        "expected_type": "ecommerce_product_launch_card"
+  "grounded_requirement_satisfaction": {
+    "vqa_items": [
+      {
+        "id": "grounded_q01",
+        "question": "What visible design specification does the image use for these related requirements: primary copy 01; primary copy 02?",
+        "expected_answer": "primary copy 01: Your Check-In Reminder; primary copy 02: Complete the intake form before arrival",
+        "acceptance_rule": "Accept only when every grouped requirement is visibly represented and materially matches its expected value. Allow minor wording and formatting differences, but preserve required names, values, ordering, directions, and constraints."
+      },
+      {
+        "id": "grounded_q02",
+        "question": "What visible design specification does the image use for these related requirements: primary copy 03; primary copy 04?",
+        "expected_answer": "primary copy 03: Secure message available in the portal; primary copy 04: Questions? Call the care team",
+        "acceptance_rule": "Accept only when every grouped requirement is visibly represented and materially matches its expected value. Allow minor wording and formatting differences, but preserve required names, values, ordering, directions, and constraints."
+      },
+      {
+        "id": "grounded_q03",
+        "question": "What visible design specification does the image use for these related requirements: Final artifact uses the current platform pixel canvas; Final artifact uses the current platform aspect ratio?",
+        "expected_answer": "canvas size: 1600 x 600 px; aspect ratio: 8:3 wide horizontal",
+        "acceptance_rule": "Accept only when every grouped requirement is visibly represented and materially matches its expected value. Allow minor wording and formatting differences, but preserve required names, values, ordering, directions, and constraints."
+      },
+      {
+        "id": "grounded_q04",
+        "question": "What visible design specification does the image use for these related requirements: Essential copy, logo, CTA, hero, and disclosure/source line stay broadly inside safe zones; Current logo appears in the required platform position?",
+        "expected_answer": "safe area: top 52 px; bottom 64 px; side 96 px; logo position: top-right inside email header safe zone",
+        "acceptance_rule": "Accept only when every grouped requirement is visibly represented and materially matches its expected value. Allow minor wording and formatting differences, but preserve required names, values, ordering, directions, and constraints."
+      },
+      {
+        "id": "grounded_q05",
+        "question": "What visible design specification does the image use for these related requirements: CTA appears in the required platform position; Text density follows the platform limit?",
+        "expected_answer": "cta position: center-right portal button with phone line below; text density: no more than 6 short text blocks",
+        "acceptance_rule": "Accept only when every grouped requirement is visibly represented and materially matches its expected value. Allow minor wording and formatting differences, but preserve required names, values, ordering, directions, and constraints."
+      },
+      {
+        "id": "grounded_q06",
+        "question": "What visible design specification does the image use for these related requirements: Current palette is dominant and archive palette is not dominant; Required current campaign asset is used in its allowed role?",
+        "expected_answer": "palette tokens: #1F5F75 | #D8F3F0 | #FFFDF8 | #334155; required asset usage: current_portal_checkin_card",
+        "acceptance_rule": "Accept only when every grouped requirement is visibly represented and materially matches its expected value. Allow minor wording and formatting differences, but preserve required names, values, ordering, directions, and constraints."
+      },
+      {
+        "id": "grounded_q07",
+        "question": "What visible design specification does the image use for these related requirements: hero component 1; hero component 2?",
+        "expected_answer": "hero component 1: patient portal card visible; hero component 2: gentle calendar cue visible",
+        "acceptance_rule": "Accept only when every grouped requirement is visibly represented and materially matches its expected value. Allow minor wording and formatting differences, but preserve required names, values, ordering, directions, and constraints."
+      },
+      {
+        "id": "grounded_q08",
+        "question": "What visible design specification does the image use for these related requirements: hero component 3; hero component 4?",
+        "expected_answer": "hero component 3: care team support cue visible; hero component 4: email header layout visible",
+        "acceptance_rule": "Accept only when every grouped requirement is visibly represented and materially matches its expected value. Allow minor wording and formatting differences, but preserve required names, values, ordering, directions, and constraints."
+      },
+      {
+        "id": "grounded_q09",
+        "question": "What visible design specification does the image use for these related requirements: Current platform overrides the old platform spec; Only current-campaign-allowed assets are active final elements?",
+        "expected_answer": "platform conflict: use Email header banner not Clinic poster 4:5 vertical; asset ambiguity: use only current_campaign_allowed assets for active logo/hero/support roles",
+        "acceptance_rule": "Accept only when every grouped requirement is visibly represented and materially matches its expected value. Allow minor wording and formatting differences, but preserve required names, values, ordering, directions, and constraints."
+      },
+      {
+        "id": "grounded_q10",
+        "question": "What visible design specification does the image use for these related requirements: Priority order is resolved in favor of latest_update and current specs; Busy or bright hero backgrounds use a readable copy panel?",
+        "expected_answer": "priority conflict: latest_update.md > platform_specs.txt > visual_rules.json > asset_manifest.json; conditional rules: solid or high-opacity panel when needed",
+        "acceptance_rule": "Accept only when every grouped requirement is visibly represented and materially matches its expected value. Allow minor wording and formatting differences, but preserve required names, values, ordering, directions, and constraints."
+      },
+      {
+        "id": "grounded_q11",
+        "question": "Does the image visibly satisfy the compliance requirement for Domain claim and visual traps are avoided?",
+        "expected_answer": "Yes",
+        "acceptance_rule": "Score from absence of prohibited claims and restricted visual treatments in the final design."
+      },
+      {
+        "id": "grounded_q12",
+        "question": "Does the image actively present any prohibited, excluded, deprecated, or superseded content covered by Deprecated copy, claims, logos, assets, old platform specs, and restricted visuals are not active final content? If yes, list it.",
+        "expected_answer": "No",
+        "acceptance_rule": "Only No earns credit; none of the prohibited content may be active in the final image."
       }
-    },
-    {
-      "id": "wrong_aspect_ratio",
-      "max_total": 75,
-      "reason": "Aspect ratio is clearly wrong for the current platform.",
-      "trigger": {
-        "type": "aspect_ratio_mismatch",
-        "expected": "1:1 square"
+    ]
+  },
+  "visual_rendering_quality": {
+    "image_type": "digital_banner_ad",
+    "vqa_items": [
+      {
+        "id": "visual_q01",
+        "question": "As a digital banner or email-header advertisement, does the narrow composition deliver a single decisive focal path across brand, headline, benefit, hero element, CTA where required, and compliance text, while remaining balanced, readable, and visually premium within the constrained horizontal crop?",
+        "score_criteria": {
+          "2": "Award 2 only if the banner is exceptionally refined and placement-ready: the message is understood almost instantly; brand, headline, benefit, hero element, and CTA are prioritized with precise left-to-right balance; every essential line remains readable at intended display size; crop and safe zones feel intentional; the composition uses the narrow canvas elegantly rather than squeezing a poster into it; and typography, imagery, spacing, contrast, and finish are premium and cohesive. No meaningful tiny text, awkward crop, detached CTA, weak brand separation, clipping, malformed glyph, collision, or generic template feel is allowed. Any uncertainty about real deployment quality prevents 2.",
+          "1": "Award 1 if the banner is clear and usable and looks acceptable or good, but it has visible limitations such as slightly crowded copy, small secondary text, modest brand presence, an ordinary crop, uneven horizontal balance, a somewhat detached CTA, or generally generic execution.",
+          "0": "Award 0 even when the image is valid if the banner format is handled poorly: the core message or identity is not quickly understood, text is squeezed or too small, crop is awkward, balance is visibly weak, CTA or compliance text is unusable, or the composition looks amateurish and needs major redesign. Blank, corrupted, severely unreadable, clipped, or broken banners are also 0."
+        }
       }
-    },
-    {
-      "id": "missing_multiple_core_copy_facts",
-      "max_total": 70,
-      "reason": "Multiple latest-update copy facts are missing or replaced by archive copy.",
-      "trigger": {
-        "type": "aggregate_failure",
-        "fact_ids": [
-          "primary_copy_01",
-          "primary_copy_02",
-          "primary_copy_03",
-          "primary_copy_04",
-          "primary_copy_05"
-        ],
-        "min_failed": 2
-      }
-    },
-    {
-      "id": "active_forbidden_material",
-      "max_total": 65,
-      "reason": "A clearly forbidden claim, logo, asset, or deprecated platform material is active in the final image.",
-      "trigger": {
-        "type": "forbidden_visual_use",
-        "fact_id": "forbidden_elements_not_active",
-        "visual_role": "active_final_design_element"
-      }
-    },
-    {
-      "id": "unreadable_or_raw_spec",
-      "max_total": 55,
-      "reason": "Output is unreadable, raw specs, a table, or a prompt instead of a designed image.",
-      "trigger": {
-        "type": "aggregate_failure",
-        "fact_ids": [
-          "primary_copy_01",
-          "primary_copy_02",
-          "primary_copy_03",
-          "primary_copy_04",
-          "primary_copy_05",
-          "required_asset_usage",
-          "hero_component_1",
-          "hero_component_2"
-        ],
-        "min_failed": 5
-      }
-    }
-  ]
+    ]
+  }
 }

@@ -1,4 +1,7 @@
-Create a Q4 retail location triage infographic for leadership review.
-Use the SQLite operations data, ranking rules, and analyst notes to surface the strongest opportunity, the weakest operating area, and the most important intervention signals.
-The visual should apply the closed-env formulas and include one concise action takeaway without exposing SQL or copying raw tables.
-Ignore records that the closed-env rules exclude, and do not present raw SQL or raw table dumps as the final artifact.
+Leadership needs a one-page Q4 store operations triage snapshot for the next business review.
+
+Use the files in env/ to work out which locations look strongest, which area needs attention, and which signals are worth calling out. The audience should be able to read the final image quickly, so keep it as an executive-style infographic rather than a database export.
+
+The final visual should show the Q4 story against the prior quarter, the main upside location, the main risk/intervention signal, the region-level context, the supporting numbers behind those calls, and one short action takeaway.
+
+Please do not paste SQL, screenshots, or raw tables into the final visual.

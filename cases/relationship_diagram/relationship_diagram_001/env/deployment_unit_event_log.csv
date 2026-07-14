@@ -1,0 +1,109 @@
+unit_id,event_at,state,actor,note
+DU-A-01,2026-06-30T15:20:00,QUEUED,Deployment Control,Unit belongs to another wave
+DU-A-01,2026-06-30T15:40:00,PRODUCTION_VERIFIED,Wave Verification,Verified only in its own wave context
+DU-A-02,2026-06-30T15:20:00,QUEUED,Deployment Control,Unit belongs to another wave
+DU-A-02,2026-06-30T15:40:00,PRODUCTION_VERIFIED,Wave Verification,Verified only in its own wave context
+DU-A-03,2026-06-30T15:20:00,QUEUED,Deployment Control,Unit belongs to another wave
+DU-A-03,2026-06-30T15:40:00,PRODUCTION_VERIFIED,Wave Verification,Verified only in its own wave context
+DU-A-04,2026-06-30T15:20:00,QUEUED,Deployment Control,Unit belongs to another wave
+DU-A-04,2026-06-30T15:40:00,PRODUCTION_VERIFIED,Wave Verification,Verified only in its own wave context
+DU-AGR-02,2026-06-30T15:48:00,QUEUED,Deployment Control,Queued in selected wave
+DU-AGR-02,2026-06-30T15:58:00,CANARY_VERIFIED,Release Engineering,Canary checks passed
+DU-AGR-02,2026-06-30T16:05:00,PRODUCTION_VERIFIED,Production Verification,Initial production verification
+DU-AGR-02,2026-06-30T16:15:00,ROLLED_BACK,Release Engineering,Compatibility rollback completed before cutoff
+DU-COM-03,2026-06-30T15:48:00,QUEUED,Deployment Control,Queued in selected wave
+DU-COM-03,2026-06-30T15:58:00,CANARY_VERIFIED,Release Engineering,Canary checks passed
+DU-COM-03,2026-06-30T16:08:00,PRODUCTION_VERIFIED,Production Verification,Verified in production
+DU-COM-04,2026-06-30T15:48:00,QUEUED,Deployment Control,Queued in selected wave
+DU-COM-04,2026-06-30T15:58:00,CANARY_VERIFIED,Release Engineering,Canary checks passed
+DU-COM-04,2026-06-30T16:08:00,PRODUCTION_VERIFIED,Production Verification,Verified in production
+DU-COM-05,2026-06-30T15:48:00,QUEUED,Deployment Control,Queued in selected wave
+DU-COM-05,2026-06-30T15:58:00,CANARY_VERIFIED,Release Engineering,Canary checks passed
+DU-COM-05,2026-06-30T16:08:00,PRODUCTION_VERIFIED,Production Verification,Verified in production
+DU-COV-01,2026-06-30T15:48:00,QUEUED,Deployment Control,Queued in selected wave
+DU-COV-01,2026-06-30T15:58:00,CANARY_VERIFIED,Release Engineering,Canary checks passed
+DU-COV-01,2026-06-30T16:08:00,PRODUCTION_VERIFIED,Production Verification,Verified in production
+DU-COV-09,2026-06-30T15:48:00,QUEUED,Deployment Control,Queued in selected wave
+DU-COV-09,2026-06-30T15:58:00,CANARY_VERIFIED,Release Engineering,Canary checks passed
+DU-COV-09,2026-06-30T16:08:00,PRODUCTION_VERIFIED,Production Verification,Verified in production
+DU-COV-10,2026-06-30T15:48:00,QUEUED,Deployment Control,Queued in selected wave
+DU-COV-10,2026-06-30T15:58:00,CANARY_VERIFIED,Release Engineering,Canary checks passed
+DU-COV-10,2026-06-30T16:08:00,PRODUCTION_VERIFIED,Production Verification,Verified in production
+DU-COV-11,2026-06-30T15:48:00,QUEUED,Deployment Control,Queued in selected wave
+DU-COV-11,2026-06-30T15:58:00,CANARY_VERIFIED,Release Engineering,Canary checks passed
+DU-COV-11,2026-06-30T16:08:00,PRODUCTION_VERIFIED,Production Verification,Verified in production
+DU-GATE-06,2026-06-30T15:48:00,QUEUED,Deployment Control,Queued in selected wave
+DU-GATE-06,2026-06-30T15:58:00,CANARY_VERIFIED,Release Engineering,Canary checks passed
+DU-GATE-06,2026-06-30T16:06:00,PRODUCTION_VERIFIED,Production Verification,Entity rename verified
+DU-GATE-07,2026-06-30T15:48:00,QUEUED,Deployment Control,Queued in selected wave
+DU-GATE-07,2026-06-30T15:58:00,CANARY_VERIFIED,Release Engineering,Canary checks passed
+DU-GATE-07,2026-06-30T16:07:00,PRODUCTION_VERIFIED,Production Verification,PK rename verified
+DU-GATE-08,2026-06-30T15:48:00,QUEUED,Deployment Control,Queued in selected wave
+DU-GATE-08,2026-06-30T15:58:00,CANARY_VERIFIED,Release Engineering,Canary checks passed
+DU-GATE-08,2026-06-30T16:12:00,SUSPENDED,Field Operations,Fact rename failed compatibility check; atomic group reverts
+DU-O-01,2026-06-30T15:20:00,QUEUED,Deployment Control,Unit belongs to another wave
+DU-O-01,2026-06-30T15:40:00,PRODUCTION_VERIFIED,Wave Verification,Verified only in its own wave context
+DU-O-02,2026-06-30T15:20:00,QUEUED,Deployment Control,Unit belongs to another wave
+DU-O-02,2026-06-30T15:40:00,PRODUCTION_VERIFIED,Wave Verification,Verified only in its own wave context
+DU-O-03,2026-06-30T15:20:00,QUEUED,Deployment Control,Unit belongs to another wave
+DU-O-03,2026-06-30T15:40:00,PRODUCTION_VERIFIED,Wave Verification,Verified only in its own wave context
+DU-O-04,2026-06-30T15:20:00,QUEUED,Deployment Control,Unit belongs to another wave
+DU-O-04,2026-06-30T15:40:00,PRODUCTION_VERIFIED,Wave Verification,Verified only in its own wave context
+DU-O-05,2026-06-30T15:20:00,QUEUED,Deployment Control,Unit belongs to another wave
+DU-O-05,2026-06-30T15:40:00,PRODUCTION_VERIFIED,Wave Verification,Verified only in its own wave context
+DU-O-06,2026-06-30T15:20:00,QUEUED,Deployment Control,Unit belongs to another wave
+DU-O-06,2026-06-30T15:40:00,PRODUCTION_VERIFIED,Wave Verification,Verified only in its own wave context
+DU-O-07,2026-06-30T15:20:00,QUEUED,Deployment Control,Unit belongs to another wave
+DU-O-07,2026-06-30T15:40:00,PRODUCTION_VERIFIED,Wave Verification,Verified only in its own wave context
+DU-O-08,2026-06-30T15:20:00,QUEUED,Deployment Control,Unit belongs to another wave
+DU-O-08,2026-06-30T15:40:00,PRODUCTION_VERIFIED,Wave Verification,Verified only in its own wave context
+DU-O-09,2026-06-30T15:20:00,QUEUED,Deployment Control,Unit belongs to another wave
+DU-O-09,2026-06-30T15:40:00,PRODUCTION_VERIFIED,Wave Verification,Verified only in its own wave context
+DU-O-10,2026-06-30T15:20:00,QUEUED,Deployment Control,Unit belongs to another wave
+DU-O-10,2026-06-30T15:40:00,PRODUCTION_VERIFIED,Wave Verification,Verified only in its own wave context
+DU-O-11,2026-06-30T15:20:00,QUEUED,Deployment Control,Unit belongs to another wave
+DU-O-11,2026-06-30T15:40:00,PRODUCTION_VERIFIED,Wave Verification,Verified only in its own wave context
+DU-O-12,2026-06-30T15:20:00,QUEUED,Deployment Control,Unit belongs to another wave
+DU-O-12,2026-06-30T15:40:00,PRODUCTION_VERIFIED,Wave Verification,Verified only in its own wave context
+DU-PAY-25,2026-06-30T15:48:00,QUEUED,Deployment Control,Queued in selected wave
+DU-PAY-25,2026-06-30T15:58:00,CANARY_VERIFIED,Release Engineering,Canary checks passed
+DU-PAY-25,2026-06-30T16:18:00,PRODUCTION_VERIFIED,Production Verification,Verified in production
+DU-S-01,2026-06-30T15:20:00,QUEUED,Deployment Control,Unit belongs to another wave
+DU-S-01,2026-06-30T15:40:00,PRODUCTION_VERIFIED,Wave Verification,Verified only in its own wave context
+DU-S-02,2026-06-30T15:20:00,QUEUED,Deployment Control,Unit belongs to another wave
+DU-S-02,2026-06-30T15:40:00,PRODUCTION_VERIFIED,Wave Verification,Verified only in its own wave context
+DU-S-03,2026-06-30T15:20:00,QUEUED,Deployment Control,Unit belongs to another wave
+DU-S-03,2026-06-30T15:40:00,PRODUCTION_VERIFIED,Wave Verification,Verified only in its own wave context
+DU-S-04,2026-06-30T15:20:00,QUEUED,Deployment Control,Unit belongs to another wave
+DU-S-04,2026-06-30T15:40:00,PRODUCTION_VERIFIED,Wave Verification,Verified only in its own wave context
+DU-S-05,2026-06-30T15:20:00,QUEUED,Deployment Control,Unit belongs to another wave
+DU-S-05,2026-06-30T15:40:00,PRODUCTION_VERIFIED,Wave Verification,Verified only in its own wave context
+DU-S-06,2026-06-30T15:20:00,QUEUED,Deployment Control,Unit belongs to another wave
+DU-S-06,2026-06-30T15:40:00,PRODUCTION_VERIFIED,Wave Verification,Verified only in its own wave context
+DU-S-07,2026-06-30T15:20:00,QUEUED,Deployment Control,Unit belongs to another wave
+DU-S-07,2026-06-30T15:40:00,PRODUCTION_VERIFIED,Wave Verification,Verified only in its own wave context
+DU-S-08,2026-06-30T15:20:00,QUEUED,Deployment Control,Unit belongs to another wave
+DU-S-08,2026-06-30T15:40:00,PRODUCTION_VERIFIED,Wave Verification,Verified only in its own wave context
+DU-SIG-26,2026-06-30T15:48:00,QUEUED,Deployment Control,Queued in selected wave
+DU-SIG-26,2026-06-30T15:58:00,CANARY_VERIFIED,Release Engineering,Canary checks passed
+DU-SIG-26,2026-06-30T16:19:00,PRODUCTION_VERIFIED,Production Verification,Verified in production
+DU-X-01,2026-06-30T15:50:00,QUEUED,Deployment Control,Unit created from non-applicable request
+DU-X-01,2026-06-30T16:03:00,FAILED,Release Engineering,Not production verified
+DU-X-02,2026-06-30T15:50:00,QUEUED,Deployment Control,Unit created from non-applicable request
+DU-X-02,2026-06-30T16:04:00,CANARY_ONLY,Release Engineering,Not production verified
+DU-X-03,2026-06-30T15:50:00,QUEUED,Deployment Control,Unit created from non-applicable request
+DU-X-03,2026-06-30T16:05:00,FAILED,Release Engineering,Not production verified
+DU-X-04,2026-06-30T15:50:00,QUEUED,Deployment Control,Unit created from non-applicable request
+DU-X-04,2026-06-30T16:06:00,CANARY_ONLY,Release Engineering,Not production verified
+DU-X-05,2026-06-30T15:50:00,QUEUED,Deployment Control,Unit created from non-applicable request
+DU-X-05,2026-06-30T16:07:00,FAILED,Release Engineering,Not production verified
+DU-X-06,2026-06-30T15:50:00,QUEUED,Deployment Control,Unit created from non-applicable request
+DU-X-06,2026-06-30T16:08:00,CANARY_ONLY,Release Engineering,Not production verified
+DU-X-07,2026-06-30T15:50:00,QUEUED,Deployment Control,Unit created from non-applicable request
+DU-X-07,2026-06-30T16:09:00,FAILED,Release Engineering,Not production verified
+DU-X-08,2026-06-30T15:50:00,QUEUED,Deployment Control,Unit created from non-applicable request
+DU-X-08,2026-06-30T16:10:00,CANARY_ONLY,Release Engineering,Not production verified
+DU-X-09,2026-06-30T15:50:00,QUEUED,Deployment Control,Unit created from non-applicable request
+DU-X-09,2026-06-30T16:11:00,FAILED,Release Engineering,Not production verified
+DU-X-10,2026-06-30T15:50:00,QUEUED,Deployment Control,Unit created from non-applicable request
+DU-X-10,2026-06-30T16:12:00,CANARY_ONLY,Release Engineering,Not production verified
