@@ -1,8 +1,13 @@
-# Document Brief Cases
+# Document Brief
 
-Cases where the agent must extract key information from documents before
-generating an image.
+These cases require authoritative fact extraction and amendment handling across
+realistic documents before visual communication.
 
-Do not retain `qa_render/` folders in document brief cases. If a PDF needs to be
-rendered for construction or visual QA, treat the rendered images as temporary
-intermediate artifacts and remove them before finalizing the case.
+| Case | Deliverable | Core operations |
+| --- | --- | --- |
+| `document_brief_001` | Spring 2026 course spotlight poster | Creative request, catalog baseline, approved registrar changes, campaign standards, asset fit. |
+| `document_brief_006` | Partner-orientation quick reference | NIMS authority, feedback-to-session ranking, source correction, scenario mapping, production rules. |
+
+Review emphasis: confirm document authority and amendment order, then verify
+that the image contains the required public facts without source excerpts,
+analysis residue, or lower-priority distractors.

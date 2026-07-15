@@ -3,152 +3,224 @@
   "task_type": "procedure_instruction",
   "facts": [
     {
-      "id": "fact_01",
-      "description": "What approved session identity does the ST-07 card use?",
+      "id": "approved_session_and_station_heading",
+      "description": "Current approved class identity and workstation context in the heading.",
       "source": "env/bio214_semester_lab_plan.xlsx",
       "importance": "critical",
-      "expected_value": "BIO 214 Section 02, Outbreak Tracing ELISA, September 16, 2026 at 13:00, room SCI-214, station ST-07.",
+      "expected_value": {
+        "course": "BIO 214 Section 02",
+        "activity": "Outbreak Tracing ELISA",
+        "date": "2026-09-16",
+        "start_time": "13:00",
+        "room": "SCI-214",
+        "station_context": "four students per workstation"
+      },
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "fact_02",
-      "description": "Which active sample token is assigned to each ST-07 seat at class start?",
-      "source": "env/bio214_semester_lab_plan.xlsx",
+      "id": "current_local_bulletin",
+      "description": "Correct local precedence and current approved station rule.",
+      "source": "env/bio214_section02_operations_bulletins.md",
       "importance": "critical",
-      "expected_value": "A=S02-K17, B=S02-M04, C=S02-R22, D=S02-V31. S02-T09 is the superseded seat-D token.",
+      "expected_value": {
+        "governing_entry": "OPS-27",
+        "status": "Approved",
+        "effective_date": "2026-09-14",
+        "station_topology": "two 12-well strips for one four-student station",
+        "pairing": "A/B on Strip 1 and C/D on Strip 2"
+      },
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "fact_03",
-      "description": "Which released bulletins form the current rule basis for this card?",
-      "source": "env/bio214_semester_lab_plan.xlsx + env/bio214_section02_operations_bulletins.md",
+      "id": "workflow_structure",
+      "description": "Required process organization without inflating the main-step count.",
+      "source": "task.md",
       "importance": "major",
-      "expected_value": "OPS-27 controls strip topology, control validation, triplicate calls, and tracing; OPS-30 controls token labels, contamination response, result records, safety, and disposal; OPS-34 controls the ST-07 route, kit and lots, lot-specific read window, and dead-volume issue calculation.",
+      "expected_value": {
+        "sections": [
+          "Sample sharing",
+          "Run, validate, and report the ELISA"
+        ],
+        "main_step_count_range": [
+          8,
+          10
+        ],
+        "support_block": "calculations and decision checks may be outside the numbered sequence"
+      },
       "must_appear_in_image": true,
       "evaluation_role": "major_required"
     },
     {
-      "id": "fact_04",
-      "description": "What token-based sample-sharing method is shown before the assay begins?",
+      "id": "complete_sample_sharing",
+      "description": "All labeling, exchange, repetition, recording, and disposal requirements.",
+      "source": "env/elisa_immuno_explorer_instruction_manual.pdf",
+      "importance": "critical",
+      "expected_value": "Label the yellow sample tube and sharing transfer pipet with initials; for each exchange transfer the full approximately 750 µl sample, gently mix by pipetting, take back approximately half/about 750 µl, record the partner, repeat with three different partners in order, then discard the sharing pipet.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "two_strip_well_map",
+      "description": "Per-station strip assignment and complete per-strip triplicate pattern.",
+      "source": "env/bio214_section02_operations_bulletins.md + env/elisa_immuno_explorer_instruction_manual.pdf",
+      "importance": "critical",
+      "expected_value": "Two strips per station: Strip 1 serves A/B and Strip 2 serves C/D. Each strip is labeled as 3 positive controls, 3 negative controls, 3 wells for the first student, and 3 wells for the second student.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "sample_control_loading_and_tip_isolation",
+      "description": "Initial 50 µl loading destinations and source-tip isolation.",
       "source": "env/elisa_immuno_explorer_instruction_manual.pdf + env/bio214_section02_operations_bulletins.md",
       "importance": "critical",
-      "expected_value": "Label the yellow tube and sharing transfer pipet with the active token; transfer the full approximately 750 µl to the scheduled partner, mix gently by pipetting, take back about 750 µl/half, record the partner token in round order, and discard the sharing pipet after round 3.",
+      "expected_value": "On each strip load 50 µl into every assigned well: positive control to + wells, negative control to - wells, and each paired student sample to its three wells. Use a dedicated tip for each source liquid on that strip and never move a tip between strips.",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "fact_05",
-      "description": "What exact three-round exchange route is shown after translating the released seat route to active tokens?",
-      "source": "env/bio214_semester_lab_plan.xlsx",
+      "id": "ordered_stage_sequence",
+      "description": "Complete antigen-detection stage order, quantities, waits, and stage wash counts.",
+      "source": "env/elisa_immuno_explorer_instruction_manual.pdf + env/elisa_disease_detection_modeling.pptx",
       "importance": "critical",
-      "expected_value": "Round 1: S02-K17↔S02-R22 and S02-M04↔S02-V31. Round 2: S02-K17↔S02-M04 and S02-R22↔S02-V31. Round 3: S02-K17↔S02-V31 and S02-M04↔S02-R22. Route ID XR-ST07-B.",
+      "expected_value": [
+        "Samples/controls: 50 µl per well, wait 5 minutes, wash 2 times",
+        "Primary antibody: 50 µl per well, wait 5 minutes, wash 2 times",
+        "Secondary antibody: 50 µl per well, wait 5 minutes, wash 3 times",
+        "Substrate: 50 µl per well, wait/read at 5 minutes, no subsequent wash"
+      ],
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "fact_06",
-      "description": "How are the two strips assigned and how is each 12-well strip mapped?",
-      "source": "env/bio214_semester_lab_plan.xlsx + env/bio214_section02_operations_bulletins.md",
-      "importance": "critical",
-      "expected_value": "Strip 1 uses A/S02-K17 and B/S02-M04; Strip 2 uses C/S02-R22 and D/S02-V31. On both strips, wells 1-3 are positive control, 4-6 negative control, 7-9 the first listed token, and 10-12 the second listed token.",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "fact_07",
-      "description": "What released station kit and strip-specific P50 equipment are assigned?",
-      "source": "env/bio214_semester_lab_plan.xlsx",
-      "importance": "critical",
-      "expected_value": "Station release REL-ST07-B, equipment kit KIT-ST07-R2, Strip 1 P50-214-17, and Strip 2 P50-214-23.",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "fact_08",
-      "description": "Which released reagent lots and substrate read window govern ST-07?",
-      "source": "env/bio214_semester_lab_plan.xlsx + env/bio214_reagent_lot_ledger.csv",
-      "importance": "critical",
-      "expected_value": "Control pack CTRL-26-44, antibody pack AB-26-72, substrate SUB-26-155, with a 6-8 minute read-and-record window after substrate.",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "fact_09",
-      "description": "What four assay stages, waits, wash counts, and final no-wash condition are shown?",
-      "source": "env/elisa_immuno_explorer_instruction_manual.pdf + env/elisa_disease_detection_modeling.pptx + env/bio214_section02_operations_bulletins.md + env/bio214_reagent_lot_ledger.csv",
-      "importance": "critical",
-      "expected_value": "Controls and student samples: 50 µl per assigned well, wait 5 minutes, wash twice. Primary antibody: 50 µl to all wells, wait 5 minutes, wash twice. Secondary antibody: 50 µl to all wells, wait 5 minutes, wash three times. Substrate: 50 µl to all wells, read at 6-8 minutes, with no wash afterward.",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "fact_10",
-      "description": "What derived timing, wash, and assay-dispense totals are shown for the station?",
-      "source": "env/elisa_immuno_explorer_instruction_manual.pdf + env/bio214_reagent_lot_ledger.csv",
-      "importance": "critical",
-      "expected_value": "21-23 timed minutes; 7 complete wash cycles per strip and 14 for the station; 96 separate 50 µl assay dispenses totaling 4800 µl (4.8 ml), excluding wash buffer and sample sharing.",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "fact_11",
-      "description": "What issue quantities result from the active reserve, dead-volume, and rounding rules?",
-      "source": "env/bio214_section02_operations_bulletins.md + env/bio214_reagent_lot_ledger.csv",
-      "importance": "critical",
-      "expected_value": "Positive control 375 µl and negative control 375 µl; primary antibody 1400 µl and secondary antibody 1400 µl; substrate 1400 µl. The method is clean volume +12% reserve + assigned-lot dead volume, then round upward to the lot's 25 µl increment; student samples are not pooled or reserved.",
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "fact_12",
-      "description": "How does the card define a complete wash and handle a tip or wash-pipet boundary breach?",
+      "id": "derived_time_and_wash_totals",
+      "description": "Derived timed incubation and wash totals for the active two-strip station.",
       "source": "env/elisa_immuno_explorer_instruction_manual.pdf + env/bio214_section02_operations_bulletins.md",
       "importance": "critical",
-      "expected_value": "Drain by inverting and gently tapping over towels, move to a fresh towel/zone, fill every well with wash buffer without cross-well splash, then invert and gently tap again. Keep one wash pipet per strip. Discard and replace a contaminated source tip; remove and replace a breached wash pipet and notify the instructor.",
+      "expected_value": {
+        "timed_incubation_and_development": "20 minutes total",
+        "wash_cycles_per_strip": 7,
+        "strip_wash_cycles_per_station": 14
+      },
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "fact_13",
-      "description": "How are strips validated and student triplicates classified?",
+      "id": "derived_station_issue_volumes",
+      "description": "Shared liquid issue quantities after the approved 10% reserve.",
+      "source": "env/bio214_section02_operations_bulletins.md + env/elisa_immuno_explorer_instruction_manual.pdf",
+      "importance": "critical",
+      "expected_value": {
+        "positive_control": "330 µl per station",
+        "negative_control": "330 µl per station",
+        "primary_antibody": "1320 µl per station",
+        "secondary_antibody": "1320 µl per station",
+        "substrate": "1320 µl per station",
+        "student_samples": "no pooling and no reserve"
+      },
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "derived_tip_count",
+      "description": "Minimum fresh micropipette-tip count under source and strip isolation.",
       "source": "env/bio214_section02_operations_bulletins.md",
       "importance": "critical",
-      "expected_value": "Each strip passes only with 3/3 blue positive controls and 0/3 blue negative controls. On a valid strip, 3/3 blue student wells are positive, 0/3 blue negative, and 1/3 or 2/3 blue indeterminate. Invalid strips are not interpreted or traced; indeterminate results are not traced.",
+      "expected_value": {
+        "tips_per_strip": 7,
+        "tips_per_station": 14,
+        "components_per_strip": [
+          "positive control",
+          "negative control",
+          "student 1",
+          "student 2",
+          "primary antibody",
+          "secondary antibody",
+          "substrate"
+        ],
+        "excluded_from_count": [
+          "four sample-sharing transfer pipets",
+          "two strip-specific wash transfer pipets"
+        ]
+      },
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "fact_14",
-      "description": "What traceability record and transmission-tracing rule does the card require?",
-      "source": "env/bio214_semester_lab_plan.xlsx + env/bio214_section02_operations_bulletins.md + env/bio214_reagent_lot_ledger.csv",
+      "id": "complete_wash_cycle",
+      "description": "One safe wash cycle and strip-specific wash-pipet rule.",
+      "source": "env/elisa_immuno_explorer_instruction_manual.pdf + env/bio214_section02_operations_bulletins.md",
+      "importance": "critical",
+      "expected_value": "For one strip, invert and gently tap over paper towels to drain, discard the wet top towel or move to a fresh zone, fill every well with wash buffer without splashing into neighboring wells, then invert and gently tap again. Reuse only the wash-buffer transfer pipet assigned to that strip; never use it for samples/reagents or the other strip.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "per_strip_control_gate",
+      "description": "Independent all-replicate control validation and invalid-strip action.",
+      "source": "env/bio214_section02_operations_bulletins.md",
+      "importance": "critical",
+      "expected_value": "Validate each strip independently. A strip is valid only when all three positive-control wells are blue and all three negative-control wells are colorless. If not, mark the strip invalid, do not interpret either student on it, and notify the instructor.",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "triplicate_student_calls",
+      "description": "Exact student replicate decision matrix on a valid strip.",
+      "source": "env/bio214_section02_operations_bulletins.md",
+      "importance": "critical",
+      "expected_value": {
+        "3_of_3_blue": "positive",
+        "0_of_3_blue": "negative",
+        "1_or_2_of_3_blue": "indeterminate",
+        "majority_vote": "prohibited"
+      },
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "read_record_and_trace",
+      "description": "Current read window and validity-gated reporting/tracing rule.",
+      "source": "env/bio214_section02_operations_bulletins.md",
       "importance": "major",
-      "expected_value": "Record route XR-ST07-B, station release REL-ST07-B, kit KIT-ST07-R2, lots CTRL-26-44/AB-26-72/SUB-26-155; for each strip record control status, both tokens, each exact three-well pattern, final calls, and read time. Trace only from a valid strip with a definite positive result, never from invalid or indeterminate results.",
+      "expected_value": "Read and record from 5 through 10 minutes after substrate. Preserve partner order. Trace a possible link only from a valid strip with a definite positive student call; do not trace invalid or indeterminate results.",
       "must_appear_in_image": true,
       "evaluation_role": "major_required"
     },
     {
-      "id": "fact_15",
-      "description": "What current safety and end-of-run disposal rules are shown?",
-      "source": "env/bio214_section02_operations_bulletins.md",
+      "id": "safety_and_negative_selection",
+      "description": "Current safety response plus exclusion of obsolete or out-of-scope material.",
+      "source": "env/bio214_section02_operations_bulletins.md + task.md + env/elisa_immuno_explorer_instruction_manual.pdf",
       "importance": "major",
-      "expected_value": "Wear gloves and protective eyewear, keep food/drink out, and wash hands with soap before and after. For an eye splash, start eyewash immediately for at least 15 minutes and alert the instructor. Put used micropipette tips in sharps; put strips, towels, sharing pipets, and wash pipets in the labeled biohazard tray; return no used item to clean supply.",
+      "expected_value": {
+        "required_safety": [
+          "gloves and protective eyewear",
+          "no food or drink",
+          "wash hands with soap before and after",
+          "eye splash: immediate eyewash for at least 15 minutes and alert instructor"
+        ],
+        "excluded": [
+          "OPS-24 pilot rules",
+          "OPS-29 pending contingency",
+          "instructor preparation",
+          "Protocol II or III",
+          "paper modeling",
+          "optional storage/stopping points",
+          "pre/post-lab questions",
+          "cancelled, makeup, draft, or superseded schedule records"
+        ]
+      },
       "must_appear_in_image": true,
       "evaluation_role": "major_required"
     }
   ],
   "calculation_notes": {
-    "session_resolution": "Use SCH-026 plus approved room change CHG-041; ignore the pending 13:30 change and instructor prep.",
-    "active_roster": "Use latest approved seat rows effective by 13:00. Seat D is ASN-ST07-D-NEW/S02-V31; S02-T09 is superseded.",
-    "route_translation": "XR-ST07-B rounds are A-C/B-D, A-B/C-D, A-D/B-C; translate seats through the active roster.",
-    "release_precedence": "OPS-27 + OPS-30 + OPS-34 are Released. OPS-34 replaces only ST-07 route/kit/lot/read/issue topics.",
-    "kit_and_lots": "REL-ST07-B -> KIT-ST07-R2, P50-214-17, P50-214-23, CTRL-26-44, AB-26-72, SUB-26-155.",
-    "time": "5 + 5 + 5 + substrate 6-8 = 21-23 timed minutes.",
-    "washes": "2 + 2 + 3 = 7 per strip; two strips = 14.",
-    "dispenses": "Two strips × 12 wells × four assay loading rounds = 96 dispenses; 96 × 50 µl = 4800 µl.",
-    "control_issue": "300 µl clean × 1.12 = 336; +15 µl dead volume = 351; round up to 25 = 375 µl for each control.",
-    "antibody_and_substrate_issue": "1200 µl clean × 1.12 = 1344; +35 µl dead volume = 1379; round up to 25 = 1400 µl for each of PA, SA, and substrate.",
-    "planned_supplies": "14 fresh micropipette tips, 4 sharing transfer pipets, and 2 strip-wash transfer pipets; breach replacements are additional."
+    "well_basis": "Two 12-well strips × 12 wells × 50 µl = 1200 µl for each reagent applied to all wells before reserve.",
+    "control_basis": "Two strips × 3 control wells × 50 µl = 300 µl for each control before reserve.",
+    "reserve": "Multiply shared controls and common reagents by 1.10; do not reserve or pool student samples.",
+    "tips": "Seven dedicated source tips per strip × two strips = 14 fresh micropipette tips. Sharing and wash transfer pipets are separate.",
+    "time": "Four 5-minute waits = 20 timed minutes, excluding handling time.",
+    "washes": "2 + 2 + 3 = 7 wash cycles per strip; two strips produce 14 strip-wash cycles."
   }
 }

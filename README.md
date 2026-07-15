@@ -1,124 +1,82 @@
-# Environment-Grounded Image Generation Benchmark
+# EnvGen-Bench
 
-This benchmark evaluates whether an agent can use environment files to produce
-a grounded image plan and final image. The core capability under test is
-retrieving, filtering, calculating, combining, and verifying information before
-image generation—not generic image prompting.
+EnvGen-Bench evaluates whether an image-generation agent can read a task-local
+environment, resolve the required facts and constraints, and produce one
+grounded final image. It tests environment reasoning rather than generic prompt
+following.
 
-The expected workflow is:
+## Active Dataset
 
-```text
-Read environment files
-Understand the task
-Retrieve / filter / calculate / extract / combine / verify facts
-Build image-generation conditions
-Generate the final image
-Score the image against environment-grounded facts
-```
+The repository currently contains **22 optimized cases** across eight task
+dimensions. Only case directories listed below are active; deleted cases and
+the former ZIP copies are not part of the dataset.
 
-## Current Dataset
-
-The active dataset contains 58 cases under `benchmark/cases/`:
-
-| Task type | Cases |
+| Task dimension | Cases |
 | --- | ---: |
-| `data_insight` | 12 |
-| `data_selection` | 10 |
-| `design_specification` | 10 |
-| `document_brief` | 6 |
-| `multi_source_fusion` | 5 |
-| `procedure_instruction` | 5 |
-| `relationship_diagram` | 5 |
-| `state_change` | 5 |
+| `data_insight` | 4 |
+| `data_selection` | 4 |
+| `design_specification` | 4 |
+| `document_brief` | 2 |
+| `multi_source_fusion` | 2 |
+| `procedure_instruction` | 2 |
+| `relationship_diagram` | 2 |
+| `state_change` | 2 |
+| **Total** | **22** |
 
-The former pilot dataset and case-generation artifacts are no longer part of
-the repository. `benchmark/cases/` is the only active case root.
-
-## Directory Layout
-
-```text
-benchmark/
-+-- README.md
-+-- benchmark_blueprint.md
-+-- case_skeleton.md
-+-- environment.genbench.yml
-+-- review_policy.md
-+-- scoring_templates.md
-+-- visual_vqa_catalog.md
-+-- schemas/
-|   +-- metadata.schema.json
-|   +-- expected_facts.schema.json
-|   +-- scoring_checklist.schema.json
-+-- cases/
-    +-- data_insight/
-    +-- data_selection/
-    +-- design_specification/
-    +-- document_brief/
-    +-- multi_source_fusion/
-    +-- procedure_instruction/
-    +-- relationship_diagram/
-    +-- state_change/
-```
+All current cases use `closed_env`: every fact required to solve a task is
+available in its `env/` directory. See [`cases/README.md`](cases/README.md) for
+the complete case index.
 
 ## Case Contract
 
-Every case uses the same outer structure:
-
 ```text
-<case_id>/
-+-- env/
-+-- task.md
-+-- metadata.json
-+-- expected_facts.json
-+-- scoring_checklist.json
+cases/<task_type>/<case_id>/
+├── env/                    # visible to the tested agent
+├── task.md                 # visible to the tested agent
+├── metadata.json           # evaluator-only
+├── expected_facts.json     # evaluator-only
+└── scoring_checklist.json  # evaluator-only
 ```
 
-`env/` contains only the files needed for the task. Cases may use CSV, XLSX,
-JSON, SQLite, PDF, DOCX, PPTX, Markdown, text, YAML, images, and other formats
-appropriate to the task. Consumers must provide the readers or renderers needed
-for the formats used by the selected cases.
+Review caches and evaluator artifacts must not be copied into an agent
+workspace. A valid run returns only `rendered_image.png`.
 
-Files visible to the tested agent:
+## Evaluation
 
-- `env/`
-- `task.md`
+Every case uses `image_vqa_0_2`:
 
-Evaluator-only files:
+- Task completion is a gate: a missing or invalid PNG receives total score 0.
+- Grounded Requirement Satisfaction is weighted 80% and uses case-specific
+  VQAs scored `0/1/2`.
+- Visual Rendering Quality is weighted 20% and uses exactly one canonical VQA
+  for the case's image type, also scored `0/1/2`.
+- Visual polish cannot compensate for missing or incorrect grounded content.
 
-- `metadata.json`
-- `expected_facts.json`
-- `scoring_checklist.json`
-
-Review caches such as `qa_render/` are evaluator-only and must never be copied
-into an agent workspace.
-
-## Validation And Evaluation
-
-Validation and model-evaluation code lives in the sibling
-`envgen-evaluation/` project. Run commands from the workspace root.
-
-Validate all active cases:
+The evaluation runtime lives in the sibling `envgen-evaluation/` repository.
+From this repository, validate the complete active set with:
 
 ```powershell
-python envgen-evaluation/scripts/validate_cases.py --case-root benchmark/cases
+python ..\envgen-evaluation\scripts\validate_cases.py --case-root .\cases
 ```
 
-Validate selected cases:
+To validate a subset:
 
 ```powershell
-python envgen-evaluation/scripts/validate_cases.py `
-  --case-root benchmark/cases `
+python ..\envgen-evaluation\scripts\validate_cases.py `
+  --case-root .\cases `
   --dimension data_insight `
   --cases data_insight_001,data_insight_002
 ```
 
-Generate the visual VQA catalog after adding or changing cases:
+## Authoring References
 
-```powershell
-python envgen-evaluation/scripts/generate_visual_vqa_catalog.py `
-  --case-root benchmark/cases `
-  --output benchmark/visual_vqa_catalog.md
-```
-
-See `envgen-evaluation/README.md` and `envgen-evaluation/RUNBOOK.md` for model
-generation, scoring, and end-to-end evaluation commands.
+- [`benchmark_blueprint.md`](benchmark_blueprint.md): current scope, task
+  dimensions, and benchmark design.
+- [`case_skeleton.md`](case_skeleton.md): required case structure and scoring
+  contract.
+- [`review_policy.md`](review_policy.md): promotion gates for new or revised
+  cases.
+- [`scoring_templates.md`](scoring_templates.md): checklist format and visual
+  VQA reuse rules.
+- [`visual_vqa_catalog.md`](visual_vqa_catalog.md): canonical visual VQAs by
+  image type.

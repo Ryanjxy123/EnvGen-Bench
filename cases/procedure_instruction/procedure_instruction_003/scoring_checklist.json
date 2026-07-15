@@ -9,93 +9,93 @@
     "vqa_items": [
       {
         "id": "grounded_q01",
-        "question": "What approved session identity does the ST-07 card use?",
-        "expected_answer": "BIO 214 Section 02, Outbreak Tracing ELISA, September 16, 2026 at 13:00, room SCI-214, station ST-07.",
-        "acceptance_rule": "Score 2 if the course/section and activity are correct and the date, start time, room, and station all match the approved student session. Score 1 if the correct session is clearly identified but one scheduling or station field is omitted while every shown value is correct. Score 0 if two or more fields are missing, any shown value is wrong, or a makeup, instructor-only, superseded-room, pending-time, or other-protocol record is used."
+        "question": "What exact approved class and station context does the heading identify?",
+        "expected_answer": "BIO 214 Section 02, Outbreak Tracing ELISA, September 16, 2026, 13:00, room SCI-214, for one four-student workstation.",
+        "acceptance_rule": "Score 2 only if all six fields—course/section, activity, date, start time, current room, and four-student station context—are correct with no superseded or pending value. Score 1 only if exactly one non-identity field is omitted while every shown value is correct. Score 0 if two or more fields are missing, any field is wrong, or a draft, makeup, cancelled, superseded, instructor-only, or other-protocol record is used."
       },
       {
         "id": "grounded_q02",
-        "question": "Which active sample token is assigned to each ST-07 seat at class start?",
-        "expected_answer": "A=S02-K17, B=S02-M04, C=S02-R22, D=S02-V31. S02-T09 is the superseded seat-D token.",
-        "acceptance_rule": "Score 2 if all four seat-to-token mappings use the latest approved assignments. Score 1 if exactly three active mappings are correct and the fourth is omitted, with no superseded or pending token shown. Score 0 if two or fewer mappings are correct, any seat is mapped to the wrong token, or S02-T09/S02-X88 is treated as active."
+        "question": "Which local operations bulletin governs the card, and what station topology does it require?",
+        "expected_answer": "OPS-27 is the approved bulletin effective September 14, 2026. It requires two 12-well strips at each four-student station, with A/B on Strip 1 and C/D on Strip 2. OPS-24 and OPS-29 do not apply.",
+        "acceptance_rule": "Score 2 only if the current approved bulletin/effective status and the complete two-strip A/B–C/D topology are all stated or unambiguously implemented, with no pilot or pending rule. Score 1 only if the topology is fully correct but the bulletin identifier/effective-date provenance is omitted. Score 0 if one strip is used for all four students, the pairing is wrong, or any superseded/pending rule changes the card."
       },
       {
         "id": "grounded_q03",
-        "question": "Which released bulletins form the current rule basis for this card?",
-        "expected_answer": "OPS-27 controls strip topology, control validation, triplicate calls, and tracing; OPS-30 controls token labels, contamination response, result records, safety, and disposal; OPS-34 controls the ST-07 route, kit and lots, lot-specific read window, and dead-volume issue calculation.",
-        "acceptance_rule": "Score 2 if OPS-27, OPS-30, and OPS-34 are all identified and their three broad topic groups are assigned correctly. Score 1 if two of the three current bulletins and their scopes are correct and no obsolete bulletin changes the card. Score 0 if only one current bulletin is represented, a current bulletin is replaced by OPS-24/29/31/35, or an obsolete, pending, or draft rule changes an instruction."
+        "question": "Does the card organize the required work into the permitted process structure?",
+        "expected_answer": "Exactly two process sections—Sample sharing and Run, validate, and report the ELISA—with 8 to 10 numbered main steps. Calculations and decision checks may appear in a separate unnumbered support block.",
+        "acceptance_rule": "Score 2 only if both section meanings are present, the numbered sequence contains 8–10 main steps, and support calculations/decision checks are not misrepresented as additional procedural steps. Score 1 only if the process is complete but has exactly one structural deviation such as 7 or 11 steps or a shortened second heading. Score 0 if a phase is missing, the sequence is not countable, or calculations replace required student actions."
       },
       {
         "id": "grounded_q04",
-        "question": "What token-based sample-sharing method is shown before the assay begins?",
-        "expected_answer": "Label the yellow tube and sharing transfer pipet with the active token; transfer the full approximately 750 µl to the scheduled partner, mix gently by pipetting, take back about 750 µl/half, record the partner token in round order, and discard the sharing pipet after round 3.",
-        "acceptance_rule": "Score 2 if the token-label group, transfer/mix/return group, and ordered-record/disposal group are all correct. Score 1 if any two groups are complete and the third is only incomplete, without using names/initials or changing the transfer direction. Score 0 if fewer than two groups are correct, the wrong identifier is required, no sample is returned, or the sharing pipet is reused after the final round."
+        "question": "What complete sample-sharing procedure is given before the ELISA strips are loaded?",
+        "expected_answer": "Label the yellow sample tube and sharing transfer pipet with initials; transfer the full approximately 750 µl to a partner, mix gently by pipetting, take back about 750 µl/half, record the partner, repeat with three different partners in order, and discard the sharing pipet after the third exchange.",
+        "acceptance_rule": "Score 2 only if every listed labeling, amount, direction, mixing, return, three-partner, ordered-recording, and disposal requirement is correct. Score 1 only if the exchange logic and three-partner repetition are correct and exactly one minor detail is omitted. Score 0 if two or more details are absent, the transfer direction/return is wrong, partner order is lost, or the sharing pipet is reused in the ELISA."
       },
       {
         "id": "grounded_q05",
-        "question": "What exact three-round exchange route is shown after translating the released seat route to active tokens?",
-        "expected_answer": "Round 1: S02-K17↔S02-R22 and S02-M04↔S02-V31. Round 2: S02-K17↔S02-M04 and S02-R22↔S02-V31. Round 3: S02-K17↔S02-V31 and S02-M04↔S02-R22. Route ID XR-ST07-B.",
-        "acceptance_rule": "Score 2 if all three rounds use the correct token pairings in the correct order and identify XR-ST07-B. Score 1 if two rounds are correct and the third is omitted or if all three rounds are correct but the route ID is omitted. Score 0 if one or fewer rounds is correct, round order is changed, a superseded token is used, or the superseded/pending route is followed."
+        "question": "How are the two strips paired and how are all 12 wells on each strip assigned?",
+        "expected_answer": "Strip 1 is A/B and Strip 2 is C/D. Each strip has 3 positive-control wells, 3 negative-control wells, 3 wells for the first student, and 3 wells for the second student.",
+        "acceptance_rule": "Score 2 only if both strip-pair assignments and the complete 3+3+3+3 pattern on each strip are correct. Score 1 only if two strips and both pairs are correct but exactly one triplicate count/label is unclear. Score 0 if the card shows only one strip, reverses controls, omits a pair, or uses a materially different well allocation."
       },
       {
         "id": "grounded_q06",
-        "question": "How are the two strips assigned and how is each 12-well strip mapped?",
-        "expected_answer": "Strip 1 uses A/S02-K17 and B/S02-M04; Strip 2 uses C/S02-R22 and D/S02-V31. On both strips, wells 1-3 are positive control, 4-6 negative control, 7-9 the first listed token, and 10-12 the second listed token.",
-        "acceptance_rule": "Score 2 if both active-token strip pairs and the complete common 3+3+3+3 well map are correct. Score 1 if the pair assignments are fully correct but one well range is unclear, or the well map is complete but one token label is omitted. Score 0 if a strip pair is wrong, a superseded token appears, controls are reversed, or the allocation is materially different."
+        "question": "What initial 50 µl loading and tip-isolation rules are shown for both strips?",
+        "expected_answer": "On each strip, 50 µl positive control goes to the three + wells, 50 µl negative control to the three − wells, and 50 µl of each paired student sample to that student’s three wells. Each source has a dedicated tip on its strip and no tip crosses between strips.",
+        "acceptance_rule": "Score 2 only if all liquid destinations, the 50 µl amount, triplicate loading, dedicated-source tips, and no-cross-strip rule are correct for both strips. Score 1 only if all destinations are correct and exactly one handling detail is omitted. Score 0 if a control/sample is misrouted, the amount is wrong, tips are generically “fresh” without strip isolation, or one strip is not covered."
       },
       {
         "id": "grounded_q07",
-        "question": "What released station kit and strip-specific P50 equipment are assigned?",
-        "expected_answer": "Station release REL-ST07-B, equipment kit KIT-ST07-R2, Strip 1 P50-214-17, and Strip 2 P50-214-23.",
-        "acceptance_rule": "Score 2 if the station release ID, equipment-kit ID, and both strip-specific P50 IDs are correct. Score 1 if the release and kit are correct but one P50 ID is omitted, or both P50 IDs are correct but one higher-level release identifier is omitted. Score 0 if two or more identifiers are absent/wrong, the strip equipment is swapped without explanation, or REL-ST07-A/C or KIT-ST07-R1/R3 is used."
+        "question": "What exact reagent order, per-well amount, wait time, and wash count does the card give?",
+        "expected_answer": "Samples/controls: 50 µl, wait 5 minutes, wash twice; primary antibody: 50 µl, wait 5 minutes, wash twice; secondary antibody: 50 µl, wait 5 minutes, wash three times; substrate: 50 µl, wait/read at 5 minutes, with no wash afterward.",
+        "acceptance_rule": "Score 2 only if all four stages are in the correct order and every 50 µl amount, 5-minute wait, 2/2/3 wash count, and no-post-substrate-wash condition is correct. Score 1 only if the order is correct and exactly one single numeric or final-wash detail is omitted. Score 0 if two or more details are missing, antibodies are reversed, a wash count is wrong, or substrate is washed away."
       },
       {
         "id": "grounded_q08",
-        "question": "Which released reagent lots and substrate read window govern ST-07?",
-        "expected_answer": "Control pack CTRL-26-44, antibody pack AB-26-72, substrate SUB-26-155, with a 6-8 minute read-and-record window after substrate.",
-        "acceptance_rule": "Score 2 if all three active lot IDs and the 6-8 minute window are correct. Score 1 if any three of these four facts are correct and no superseded, pending, quarantined, expired, or different-protocol lot is shown. Score 0 if two or fewer facts are correct, SUB-26-144/166 is used, or the read window conflicts with the active substrate QC."
+        "question": "What derived total timed duration and wash totals are stated for the station?",
+        "expected_answer": "20 timed incubation/development minutes; 7 complete wash cycles per strip; 14 strip-wash cycles for the two-strip station.",
+        "acceptance_rule": "Score 2 only if all three derived totals are correct and their per-strip versus per-station scopes are explicit. Score 1 only if exactly two totals are correct with no contradictory total. Score 0 if one or fewer totals is correct, handling time is added as if sourced, or strip and station totals are confused."
       },
       {
         "id": "grounded_q09",
-        "question": "What four assay stages, waits, wash counts, and final no-wash condition are shown?",
-        "expected_answer": "Controls and student samples: 50 µl per assigned well, wait 5 minutes, wash twice. Primary antibody: 50 µl to all wells, wait 5 minutes, wash twice. Secondary antibody: 50 µl to all wells, wait 5 minutes, wash three times. Substrate: 50 µl to all wells, read at 6-8 minutes, with no wash afterward.",
-        "acceptance_rule": "Score 2 if all four stages are in order and each stage has the correct amount, wait/read condition, and wash count. Score 1 if three stages are fully correct and the remaining stage is incomplete but not contradictory. Score 0 if two or fewer stages are correct, antibody order is reversed, a wash count is wrong in a way that changes the procedure, substrate is washed, or the active read window is replaced by an obsolete value."
+        "question": "What station issue quantities are calculated after applying the current reserve rule?",
+        "expected_answer": "330 µl positive control, 330 µl negative control, 1320 µl primary antibody, 1320 µl secondary antibody, and 1320 µl substrate per station. Student samples are neither pooled nor given the 10% reserve.",
+        "acceptance_rule": "Score 2 only if all five quantities, station scope, 10% reserve application, and student-sample exception are correct. Score 1 only if exactly one shared-liquid quantity or the sample exception is omitted while all shown calculations are correct. Score 0 if two or more quantities are missing/wrong, the reserve is 5% or 15%, student samples are pooled/reserved, or values are per strip but labeled per station."
       },
       {
         "id": "grounded_q10",
-        "question": "What derived timing, wash, and assay-dispense totals are shown for the station?",
-        "expected_answer": "21-23 timed minutes; 7 complete wash cycles per strip and 14 for the station; 96 separate 50 µl assay dispenses totaling 4800 µl (4.8 ml), excluding wash buffer and sample sharing.",
-        "acceptance_rule": "Score 2 if the timing group, wash-total group, and dispense/volume group are all correct with their scopes. Score 1 if any two groups are correct and the third is omitted, with no contradictory total. Score 0 if one or fewer groups is correct, per-strip and station scopes are confused, or wash/sample-sharing liquid is included in the 4.8 ml."
+        "question": "What minimum fresh micropipette-tip count is derived, and what is excluded from that count?",
+        "expected_answer": "14 fresh micropipette tips per station: 7 per strip for positive control, negative control, two student samples, primary antibody, secondary antibody, and substrate. The four sharing transfer pipets and two strip-specific wash transfer pipets are separate and excluded; tips never cross strips.",
+        "acceptance_rule": "Score 2 only if 14 per station, 7 per strip, all seven source categories, the two excluded pipet types/counts, and the no-cross-strip rule are all correct. Score 1 only if 14 and 7 are correct and exactly one category or exclusion detail is omitted. Score 0 if the total is wrong, sharing/wash pipets are counted as micropipette tips, or tips may move between strips."
       },
       {
         "id": "grounded_q11",
-        "question": "What issue quantities result from the active reserve, dead-volume, and rounding rules?",
-        "expected_answer": "Positive control 375 µl and negative control 375 µl; primary antibody 1400 µl and secondary antibody 1400 µl; substrate 1400 µl. The method is clean volume +12% reserve + assigned-lot dead volume, then round upward to the lot's 25 µl increment; student samples are not pooled or reserved.",
-        "acceptance_rule": "Score 2 if the control-quantity group, antibody-quantity group, and substrate/method group are all correct. Score 1 if any two groups are correct and the third is omitted, with no use of a conflicting reserve or unrounded value. Score 0 if one or fewer groups is correct, the old 350/1350 values are used as current, student samples are pooled/reserved, or dead volume is ignored while claiming the current rule."
+        "question": "How does the card define one complete safe wash cycle and the wash-pipet boundary?",
+        "expected_answer": "For one strip: invert and gently tap over towels to drain, discard the wet top towel or use a fresh zone, fill every well with wash buffer without cross-well splash, then invert and gently tap again. Reuse only that strip’s dedicated wash-buffer transfer pipet, never for samples/reagents or the other strip.",
+        "acceptance_rule": "Score 2 only if both drains, gentle tapping, fresh towel/zone, complete refill, cross-well precaution, dedicated-strip wash pipet, and prohibited uses are all present. Score 1 only if the drain–fill–drain sequence and strip-specific pipet are correct with exactly one handling detail omitted. Score 0 if two or more elements are missing, vigorous mixing is instructed, or the wash pipet crosses strips or contacts sample/reagent sources."
       },
       {
         "id": "grounded_q12",
-        "question": "How does the card define a complete wash and handle a tip or wash-pipet boundary breach?",
-        "expected_answer": "Drain by inverting and gently tapping over towels, move to a fresh towel/zone, fill every well with wash buffer without cross-well splash, then invert and gently tap again. Keep one wash pipet per strip. Discard and replace a contaminated source tip; remove and replace a breached wash pipet and notify the instructor.",
-        "acceptance_rule": "Score 2 if the drain-fill-drain wash group, strip-specific wash-pipet boundary group, and two breach-response group are all correct. Score 1 if any two groups are complete and the third is incomplete but not unsafe. Score 0 if fewer than two groups are correct, vigorous mixing/cross-well transfer is directed, or a contaminated tip or wash pipet remains in use."
+        "question": "What exact control pattern validates each strip, and what happens when a strip fails?",
+        "expected_answer": "Each strip is validated independently only when all three positive controls are blue and all three negative controls are colorless. Otherwise mark the strip invalid, do not interpret either student, and notify the instructor.",
+        "acceptance_rule": "Score 2 only if the all-three positive and all-three negative conditions, independent per-strip gate, and all three invalid-strip actions are correct. Score 1 only if the control gate is exact but exactly one invalid-strip action is omitted. Score 0 if generic blue/clear wording replaces the replicate gate, one valid strip validates the other, or student results are interpreted after failed controls."
       },
       {
         "id": "grounded_q13",
-        "question": "How are strips validated and student triplicates classified?",
-        "expected_answer": "Each strip passes only with 3/3 blue positive controls and 0/3 blue negative controls. On a valid strip, 3/3 blue student wells are positive, 0/3 blue negative, and 1/3 or 2/3 blue indeterminate. Invalid strips are not interpreted or traced; indeterminate results are not traced.",
-        "acceptance_rule": "Score 2 if the exact control gate, the three-way student-call matrix, and the invalid/indeterminate no-trace handling are all correct. Score 1 if any two groups are complete and the third is omitted without a contradictory call. Score 0 if fewer than two groups are correct, majority voting is used, one strip validates the other, or invalid/indeterminate results are treated as definite traceable results."
+        "question": "How are the three student replicates classified after a strip passes controls?",
+        "expected_answer": "3/3 blue is positive; 0/3 blue is negative; 1/3 or 2/3 blue is indeterminate; majority voting is not allowed.",
+        "acceptance_rule": "Score 2 only if all four decision statements are correct. Score 1 only if positive and negative are exact and the mixed pattern is labeled non-definitive but the explicit no-majority warning is omitted. Score 0 if any mixed pattern is forced to positive/negative, the color meanings are reversed, or triplicate counts are absent."
       },
       {
         "id": "grounded_q14",
-        "question": "What traceability record and transmission-tracing rule does the card require?",
-        "expected_answer": "Record route XR-ST07-B, station release REL-ST07-B, kit KIT-ST07-R2, lots CTRL-26-44/AB-26-72/SUB-26-155; for each strip record control status, both tokens, each exact three-well pattern, final calls, and read time. Trace only from a valid strip with a definite positive result, never from invalid or indeterminate results.",
-        "acceptance_rule": "Score 2 if the release/lot traceability group, the analytical result-record group, and the valid-definite-positive tracing gate are all present. Score 1 if any two groups are complete and the third is omitted, with no incorrect tracing instruction. Score 0 if fewer than two groups are correct, obsolete IDs are recorded as current, exact patterns/read time are both absent, or invalid/indeterminate results can initiate tracing."
+        "question": "What read, record, and transmission-tracing rule is applied to the results?",
+        "expected_answer": "Read and record between 5 and 10 minutes after substrate, retain the three sharing partners in exchange order, and trace only from a valid strip with a definite positive student result—not from invalid or indeterminate results.",
+        "acceptance_rule": "Score 2 only if the complete read window, ordered partner record, valid-definite-positive gate, and both exclusions are correct. Score 1 only if the validity-gated tracing rule is correct and exactly one timing or ordering detail is omitted. Score 0 if the 20-minute pilot rule is used, indeterminate/invalid results are traced, or partner order is discarded."
       },
       {
         "id": "grounded_q15",
-        "question": "What current safety and end-of-run disposal rules are shown?",
-        "expected_answer": "Wear gloves and protective eyewear, keep food/drink out, and wash hands with soap before and after. For an eye splash, start eyewash immediately for at least 15 minutes and alert the instructor. Put used micropipette tips in sharps; put strips, towels, sharing pipets, and wash pipets in the labeled biohazard tray; return no used item to clean supply.",
-        "acceptance_rule": "Score 2 if the PPE/hygiene group, eye-splash response group, and disposal/no-return group are all correct. Score 1 if any two groups are complete and the third is omitted, with no unsafe contradiction. Score 0 if fewer than two groups are correct, the eye response is materially wrong, tips go to biohazard instead of sharps, liquid-waste/sink disposal is adopted, or used items return to clean supply."
+        "question": "Does the card apply the current safety response while excluding all obsolete and out-of-scope material?",
+        "expected_answer": "It requires gloves and protective eyewear, no food/drink, handwashing with soap before and after, and immediate eyewash for at least 15 minutes plus instructor notification after an eye splash. It does not use OPS-24, OPS-29, other ELISA protocols, paper modeling, instructor preparation, optional stops, questions, or non-current schedule records.",
+        "acceptance_rule": "Score 2 only if all four safety elements are correct and none of the listed obsolete/out-of-scope material is presented as required student work. Score 1 only if exactly one safety element is omitted and all exclusions are respected, or one excluded item appears solely as a clearly rejected warning. Score 0 if two or more safety elements are missing, an eye-splash response is wrong, or any obsolete/pending/other-protocol content is adopted as an instruction."
       }
     ]
   },

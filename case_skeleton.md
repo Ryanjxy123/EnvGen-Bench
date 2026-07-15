@@ -1,11 +1,6 @@
 # Case Skeleton
 
-This document defines the minimum outer shell for every benchmark case.
-
-It is intentionally lighter than a template. A skeleton says what every case
-must contain; a template will later say how each task type is usually written.
-
-## Required Layout
+Every benchmark case uses the same outer contract.
 
 ```text
 <case_id>/
@@ -16,161 +11,113 @@ must contain; a template will later say how each task type is usually written.
 └── scoring_checklist.json
 ```
 
-## Required Files
+## Visibility
+
+| Material | Tested agent | Evaluator |
+| --- | ---: | ---: |
+| `env/` | yes | yes |
+| `task.md` | yes | yes |
+| `metadata.json` | no | yes |
+| `expected_facts.json` | no | yes |
+| `scoring_checklist.json` | no | yes |
+| QA renders and audit artifacts | no | temporary only |
+
+## File Requirements
 
 ### `env/`
 
-The environment directory contains all files available to the tested agent.
+Contains only the files needed to solve the task. Use realistic formats and
+enough controlled noise to require the target reasoning, but avoid redundant
+files. Closed-env cases must cache every required source locally.
 
-Allowed file formats depend on the task dimension. A case should include only
-the formats it needs, not every format listed in the high-level plan.
-
-Env files can be:
-
-- generated locally by scripts or manual authoring;
-- downloaded from public sources;
-- crawled from public web pages;
-- derived from another file, such as converting public HTML into PDF or CSV
-  into XLSX;
-- mixed from multiple origins.
-
-If a file is downloaded or crawled, place the cached copy in `env/` and record
-its source details in `metadata.json`. A case should not rely on a live external
-file during evaluation unless its `web_policy` is `web_required`.
-
-Do not put review-generated artifacts in `env/`. In particular, `qa_render/`
-PNGs, PDF preview screenshots, audit images, and files named like
-`public_reference_*.jpg` should not be agent-visible inputs. If a public image is
-used only to make a PDF feel realistic, embed it in the PDF and record the
-source metadata on the PDF env file instead of exposing the standalone source
-photo as another env document.
-
-Do not put generated/manual synthetic visual-reference images in `env/`.
-This includes fake logos, generic product panels, recursive preview/reference
-images, `*_reference.png` placeholders, decorative diagrams, and PNG/JPG files
-whose only purpose is to make the case look visual. If an image is visible to
-the agent as a standalone env file, it must be a real public/official image
-with `origin=public_download` or `origin=public_crawl` plus `source_url`,
-`retrieved_at`, `license_note`, and `conversion_note`. Otherwise embed the
-visual naturally inside a sourced PDF or replace it with text/PDF/JSON rules.
-
-For image or PDF assets sourced from the web, prefer official public sources,
-public-domain material, or clearly licensed Creative-Commons/public
-documentation assets. Record `source_url`, `retrieved_at`, `license_note`, and
-`conversion_note` when applicable. Do not use a real logo, person, or product
-image as a fictional asset unless the case intentionally targets that real
-entity.
-
-Examples:
-
-- Data tasks may use `.csv`, `.xlsx`, `.json`, `.sqlite`, or SQL files.
-- Document tasks may use `.pdf`, `.md`, `.txt`, or `.html` in the v1 benchmark.
-- Design tasks may use `brand_guide.pdf`, `style_guide.md`,
-  `visual_rules.json`, `template.yaml`, or `platform_specs.txt`.
-- Procedure tasks may use manuals, operation guides, support notes, schedules,
-  or mixed documents.
-- Relationship tasks may use architecture notes, dependency configs, team CSVs,
-  service lists, or system docs.
-- State-change tasks may use changelogs, version notes, status tables, diffs,
-  or current-state files.
-- Multi-source tasks should combine multiple relevant file types.
-
-PDF and long-document env files may contain realistic noise. They can include
-irrelevant sections, obsolete facts, secondary examples, tables, captions,
-screenshots, diagrams, logos, or other embedded images. If those elements matter
-for the task or could mislead the agent, `expected_facts.json` should record
-which facts or visual references must appear, which are distractors, and which
-must not appear in the final image.
+Externally sourced material must include provenance and usage information in
+`metadata.json`. Review renders, answer sheets, debug files, and decorative
+placeholder assets are not valid task inputs.
 
 ### `task.md`
 
-The user-facing request given to the agent.
-
-It should specify the image goal but should not directly reveal the computed or
-selected answer.
+States the user goal, output format, decision time or scope, required reasoning,
+and forbidden content. It may identify sources and rules but must not reveal the
+resolved answer.
 
 ### `metadata.json`
 
-Machine-readable case metadata:
+Defines at least:
 
-- case id
-- task type
-- web policy
-- target image type
-- difficulty
-- env file summary, including source origin when relevant
-- evaluator notes
+- `case_id`, `task_type`, `web_policy`, `target_image_type`, and `difficulty`;
+- every agent-visible env file and its role;
+- source provenance when applicable;
+- evaluator notes needed to interpret the case.
 
 ### `expected_facts.json`
 
-Ground-truth facts that the final image should reflect. This file is not shown
-to the tested agent.
-
-It should contain enough information to verify grounded correctness, such as:
-
-- selected objects
-- computed statistics
-- extracted facts
-- required visual constraints
-- ordered procedure steps
-- entity-relation edges
-- latest valid state
-- fused facts from multiple files
+Records reproducible ground truth. Each fact must identify its evidence and
+importance, and should use one evaluation role:
+`critical_required`, `major_required`, `optional`, or `negative_only`.
+Calculated, selected, fused, diagrammed, or current-state facts must preserve
+their derivation or resolution basis.
 
 ### `scoring_checklist.json`
 
-Per-case scoring checklist aligned with two scored dimensions:
+Uses the current two-dimension image VQA contract:
 
-- Grounded Requirement Satisfaction (80%)
-- Visual Rendering Quality (20%)
-
-The checklist should be specific enough for human or model-assisted evaluation.
-
-Use `image_vqa_0_2`. Grounded contains one or more VQAs. Visual Rendering
-Quality contains exactly one VQA, the task-required canonical
-image type, and explicit criteria for scores 0, 1, and 2. Same-type cases must
-use exactly the same visual VQA and criteria.
-
-Task Completion is an execution gate: a missing or invalid rendered image gets
-total score 0 without judge calls.
-
-Grounded Requirement Satisfaction is the main score driver. Facts in
-`expected_facts.json` may use `evaluation_role`:
-
-- `critical_required`: must be visible in the image; missing or wrong values
-  should strongly reduce grounded credit.
-- `major_required`: must be visible but allows minor paraphrase.
-- `optional`: not required; absence should not reduce score.
-- `negative_only`: must not appear; score only when the image explicitly uses
-  the forbidden or unsupported detail.
-
-Visual Rendering Quality should judge only readability, hierarchy, contrast,
-composition, polish, type fit, and visible defects. Score 2 requires every
-case-owned gate to pass; any visible cleanup issue or uncertainty prevents 2.
-
-## Naming
-
-Use stable lowercase ids:
-
-```text
-data_selection_001
-data_insight_001
-document_brief_001
-design_specification_001
-procedure_instruction_001
-relationship_diagram_001
-state_change_001
-multi_source_fusion_001
+```json
+{
+  "case_id": "example_001",
+  "evaluation_mode": "image_vqa_0_2",
+  "dimension_weights": {
+    "grounded_requirement_satisfaction": 0.8,
+    "visual_rendering_quality": 0.2
+  },
+  "grounded_requirement_satisfaction": {
+    "vqa_items": [
+      {
+        "id": "grounded_q01",
+        "question": "Case-specific grounded question.",
+        "expected_answer": "Resolved answer.",
+        "acceptance_rule": "Explicit criteria for scores 0, 1, and 2."
+      }
+    ]
+  },
+  "visual_rendering_quality": {
+    "image_type": "promotional_poster",
+    "vqa_items": [
+      {
+        "id": "visual_q01",
+        "question": "Canonical type-specific visual question.",
+        "score_criteria": {
+          "0": "Broken, unreadable, or unusable.",
+          "1": "Usable with visible revision needs.",
+          "2": "Production-ready with every stated gate satisfied."
+        }
+      }
+    ]
+  }
+}
 ```
 
-## Recommended Case Lifecycle
+Grounded contains one or more case-specific VQAs; visual contains exactly one
+canonical type-specific VQA. Every item is scored `0/1/2`. A missing or invalid
+`rendered_image.png` is a task-completion failure and receives total score 0.
 
-1. Draft the case idea.
-2. Create realistic env files.
-3. Write `task.md` without answer leakage.
-4. Write `expected_facts.json`.
-5. Write `scoring_checklist.json`.
-6. Run schema validation.
-7. Run automated review.
-8. Audit for solvability, groundedness, distractor handling, and scoring
-   feasibility.
+## Naming and Placement
+
+Use `<task_type>_<three-digit-id>` and place the case under the matching task
+dimension, for example:
+
+```text
+cases/data_insight/data_insight_012/
+```
+
+Supported task dimensions are `data_insight`, `data_selection`,
+`design_specification`, `document_brief`, `multi_source_fusion`,
+`procedure_instruction`, `relationship_diagram`, and `state_change`.
+
+## Promotion Checklist
+
+1. Resolve the case independently from agent-visible files.
+2. Confirm task, metadata, facts, and checklist agree.
+3. Check required and forbidden content, source precedence, and cutoff logic.
+4. Reuse the canonical visual VQA for the chosen image type.
+5. Remove ZIP copies, review caches, and temporary artifacts.
+6. Run the validator and apply `review_policy.md`.

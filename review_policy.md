@@ -1,136 +1,76 @@
-# Strict Review Policy
+# Case Review Policy
 
-This document defines the quality gates for case promotion. It is a normative
-authoring policy, not a generated review report. The former
-`benchmark/scripts/strict_review_cases.py` and `auto_review_cases.py` tools are
-no longer present; use the live audit and validation commands below.
+This policy defines when a new or revised case may enter the active benchmark.
+Structural validity alone is not enough: the case must be solvable, grounded,
+non-leaking, visually evaluable, and consistent with the current scoring model.
 
-## Decision Values
+## Decisions
 
-- `pass`: total score is at least 85, all critical gates pass, and no unresolved
-  warnings remain.
-- `revise`: total score is at least 65 but the case has warnings, non-fatal gate
-  failures, weak visual realism, incomplete semantic verification, or checklist
-  usability issues.
-- `reject`: total score is below 65, required files cannot be opened, source
-  traceability is broken, critical facts are obviously wrong, or severe answer
-  leakage is detected.
+- `pass`: every required gate passes; the case may be promoted.
+- `revise`: the case is recoverable but has at least one unresolved gate.
+- `reject`: the case is unsolvable, materially incorrect, severely leaking, or
+  cannot be evaluated reliably.
 
-Visual and semantic gates are hard ceilings: if `visual_asset_quality_gate`,
-`pdf_realism_gate`, or `semantic_consistency_gate` fails without a severe reject
-condition, the highest decision is `revise`.
+## Required Gates
 
-## Score Dimensions
+| Gate | Pass condition |
+| --- | --- |
+| Structure | Required files exist, JSON parses, IDs agree, and every declared env file exists. |
+| Solvability | All required answers are derivable under the declared web policy and cutoff rules. |
+| Grounding | Expected facts trace to cited env evidence; calculations, joins, filtering, precedence, and exclusions are reproducible. |
+| Leakage | `task.md` describes the operation and deliverable without revealing resolved answers. |
+| Scoring | Checklist uses `image_vqa_0_2`, 0.8/0.2 weights, executable grounded VQAs, and one canonical visual VQA. |
+| Asset hygiene | Agent-visible files are task-relevant, readable, legally usable, and free of review caches or answer-key artifacts. |
+| Cross-file consistency | Task, metadata, facts, checklist, source files, dates, and negative requirements agree. |
 
-| Dimension | Points | Purpose |
-| --- | ---: | --- |
-| `structural_validity` | 20 | Required files, schema-level consistency, env file existence, metadata consistency. |
-| `source_traceability` | 15 | Every expected fact cites readable sources; public assets include provenance and license fields. |
-| `semantic_grounding` | 20 | Expected facts are traced or recomputed from env data where possible. |
-| `task_operation_depth` | 10 | The task requires real filtering, calculation, extraction, state resolution, diagramming, or fusion. |
-| `visual_asset_quality` | 15 | PDF/image realism, render density, entropy, edge detail, repetition, and public-source preference. |
-| `scoring_usability` | 10 | Checklist items are executable, fact-mapped, visually specific, and distinguish scoring levels. |
-| `anti_leakage_and_negative_coverage` | 10 | Critical answers are not in task.md; distractors and must-not-appear facts are covered. |
+A failure in solvability, grounding, leakage, or scoring prevents promotion.
 
-## Critical Gates
+## Dimension-Specific Review
 
-- `schema_gate`
-- `source_traceability_gate`
-- `semantic_consistency_gate`
-- `visual_asset_quality_gate`
-- `pdf_realism_gate`
-- `no_answer_leakage_gate`
-- `scoring_usability_gate`
+| Dimension | Evidence the reviewer must reproduce |
+| --- | --- |
+| `data_insight` | Row eligibility, calculation basis, aggregation, ranking, and reported insight. |
+| `data_selection` | Candidate eligibility, ordering, caps, tie-breaks, and final selected set. |
+| `design_specification` | Freeze-time package, copy, platform, rights, and asset resolution. |
+| `document_brief` | Authority order, document extraction, amendments, and required public content. |
+| `multi_source_fusion` | Cross-file joins, common decision basis, routing, and final content/asset package. |
+| `procedure_instruction` | Source precedence, ordered steps, quantities, safety gates, and excluded alternatives. |
+| `relationship_diagram` | Entity set, edge semantics, scope/time resolution, and excluded or inactive links. |
+| `state_change` | As-of state, supersession/fallback rules, previous-vs-current comparison, and stale-fact exclusion. |
 
-The reviewer reports `failed_gates` for each case. A high total score cannot
-override a failed critical gate.
+## Evaluation Checklist
 
-## Agent-Visible Material Hygiene
+Grounded facts should use `evaluation_role` deliberately:
 
-Review artifacts must never become task materials. `qa_render/` images, PDF
-screenshots, audit previews, and other review-generated files are evaluator-only
-cache outputs. They must not be listed in `metadata.env_files`, referenced by
-`task.md`, or embedded as explanatory text inside PDFs.
+- `critical_required`: indispensable visible content.
+- `major_required`: required but may allow a clear semantic equivalent.
+- `optional`: absence does not reduce credit.
+- `negative_only`: scored only when forbidden content appears.
 
-Standalone source images named like `public_reference_*.jpg` should also not be
-agent-visible env documents. When a public image is used only to improve PDF
-realism, embed it naturally inside the relevant PDF and record `source_url`,
-`retrieved_at`, `license_note`, and `conversion_note` on that PDF entry.
+Each grounded VQA must state a question, expected answer, and explicit `0/1/2`
+acceptance rule. The single visual VQA must match the case's canonical image
+type in `visual_vqa_catalog.md`; cases sharing an image type must reuse the same
+visual question and criteria.
 
-Standalone generated/manual synthetic image assets are disallowed by default.
-This includes fake logos, generic product panels, decorative diagrams,
-recursive preview/reference images, and any visual-reference PNG/JPG that is
-not a real sourced public/official asset. Such files should be removed or
-replaced with a task-relevant public document, official asset, or realistic
-embedded visual inside a sourced PDF.
+## Source and Artifact Hygiene
 
-## Visual Quality Rules
+- Keep evaluation offline unless `web_policy` explicitly permits web use.
+- Cache required external sources and record URL, retrieval date, license or
+  usage note, and any conversion.
+- Do not expose QA renders, screenshots, audit reports, answer sheets, or
+  generated placeholder references to the tested agent.
+- Use standalone images only when they are legitimate task assets with clear
+  provenance; embed tone-only reference images inside their source document.
+- Remove temporary build and review artifacts before promotion.
 
-For document, design, multi-source, asset assembly, and persona/image cases,
-prefer realistic public assets over generated placeholders. Good sources include
-official public PDFs, government or school documents, Wikimedia Commons,
-public-domain images, and clearly licensed institutional materials.
+## Promotion Check
 
-When an env file uses `public_download`, `public_crawl`, or `mixed`, metadata
-must include:
-
-- `source_url`
-- `retrieved_at`
-- `license_note`
-- `conversion_note`
-
-Standalone generated or synthetic images must not be agent-visible env files.
-If a standalone image is unavoidable, it must be a real public/official image
-with `origin=public_download` or `origin=public_crawl` and complete source
-metadata. Synthetic PDF visuals are allowed only as fallback material and should
-not receive full realism credit by default.
-
-Reviews may use heuristics including render dimensions, non-white pixel ratio,
-image entropy, edge density, connected component count, dominant-color ratio,
-embedded PDF image count, page render availability, banned placeholder tokens,
-and perceptual hash similarity.
-
-## Semantic Grounding Rules
-
-Expected facts must be more than field-complete. The reviewer attempts to
-re-read available CSV, JSON, YAML, SQLite, SQL, text, Markdown, PDF, and XLSX
-sources. It checks that critical values trace back to cited env files and that
-task-specific notes explain selection, aggregation, state changes, rule
-interpretation, document extraction, asset constraints, relationship edges, and
-web requirements.
-
-If a fact cannot be fully recomputed automatically, the case receives a warning
-and lower score. It should not receive full credit merely because the
-`expected_facts.json` shape is valid.
-
-## Leakage Rules
-
-`task.md` may name files, fields, and rules, but it must not reveal final
-critical expected values. One critical answer value appearing in `task.md`
-forces revision. Multiple critical answer values appearing in `task.md` are a
-reject-level issue.
-
-## Current Commands
-
-Inventory the active dataset:
+Run the repository validator from this repository:
 
 ```powershell
-python skills\genbench-case-builder\scripts\case_inventory.py --cases-root benchmark\cases
+python ..\envgen-evaluation\scripts\validate_cases.py --case-root .\cases
 ```
 
-Run the non-destructive bundle audit:
-
-```powershell
-python skills\genbench-case-builder\scripts\case_bundle_audit.py --cases-root benchmark\cases
-```
-
-Run repository validation:
-
-```powershell
-python envgen-evaluation\scripts\validate_cases.py --case-root benchmark\cases
-```
-
-Do not commit generated audit reports or review caches to the benchmark root.
-Type-specific builders may create temporary files under
-`benchmark/case_build_artifacts/`; remove them after the formal case has been
-promoted unless an audit trail is intentionally being retained.
+Promote only after it reports zero issues and a reviewer has manually verified
+the gates above. Generated audit reports and render caches must not be committed
+to the case.

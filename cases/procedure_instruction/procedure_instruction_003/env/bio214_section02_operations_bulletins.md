@@ -1,164 +1,106 @@
 # BIO 214 Teaching Laboratory Operations Bulletins
 
-The bulletin text below is retained for audit. **Current document status and
-applicability come from the `Document Release Register` worksheet in
-`bio214_semester_lab_plan.xlsx`.** Use only a document whose register status is
-Released and whose effective time is no later than the scheduled class. A later
-released bulletin overrides only the topics it explicitly changes; all
-untouched topics remain controlled by the earlier released bulletin.
+These bulletins are retained together for audit purposes. For a scheduled class,
+use only an entry whose status is **Approved** and whose effective date is on or
+before the class date. If more than one approved entry applies, the entry with
+the latest effective date controls only the topics it explicitly addresses.
+Draft, pending, and superseded entries do not change student instructions.
 
 ---
 
-## OPS-24 — Early pilot configuration
+## OPS-24 - Early pilot configuration
 
-The pilot used one strip for four students, a 5% reserve, an “any blue
-replicate” call, and a 20-minute read. This content is retained only as audit
-history. Consult the release register before using it.
+- Status: **Superseded**
+- Issued: 2026-08-18
+- Effective: 2026-08-24
+- Applies to: BIO 214 outbreak-tracing ELISA pilot
+
+The pilot used one 12-well strip for a four-student station, a 5% shared-reagent
+reserve, and an "any blue replicate" rule. Results were read after 20 minutes.
+This configuration was replaced after the pilot review.
 
 ---
 
-## OPS-27 — Section 02 station and result-control update
+## OPS-27 - Section 02 station and result-control update
 
-Applies to BIO 214 Section 02 Outbreak Tracing ELISA.
+- Status: **Approved**
+- Issued: 2026-09-10
+- Effective: 2026-09-14
+- Applies to: BIO 214 Section 02, Outbreak Tracing ELISA
+- Reference: use with the official Antigen Detection ELISA student procedure
 
-### Base station topology
+### Station layout
 
-Each four-student station uses two 12-well strips. Seats A and B share Strip 1;
-seats C and D share Strip 2. For each strip, keep the wells in this order:
+Each four-student workstation uses two 12-well strips. Students A and B share
+Strip 1; students C and D share Strip 2. On each strip, keep the wells in this
+left-to-right order:
 
-- wells 1–3: positive control,
-- wells 4–6: negative control,
-- wells 7–9: first seat in the strip pair,
-- wells 10–12: second seat in the strip pair.
+1. three positive-control wells,
+2. three negative-control wells,
+3. three wells for the first student in the pair,
+4. three wells for the second student in the pair.
 
-Use 50 µl per assigned well at every assay loading stage.
+The official 50 microliter per-well loading volume is unchanged.
 
-### Source-tip and wash-pipet isolation
+### Issue reserve and tip isolation
 
-For each strip, use a dedicated fresh micropipette tip for each source liquid:
-positive control, negative control, the first student sample, the second student
-sample, primary antibody, secondary antibody, and substrate. Never move a tip
-between strips.
+For station issue quantities, add a 10% reserve to shared positive control,
+shared negative control, primary antibody, secondary antibody, and enzyme
+substrate. Do not apply the reserve to student samples and do not pool student
+samples.
+
+On each strip, use one dedicated fresh micropipette tip for each source liquid:
+positive control, negative control, the first student's sample, the second
+student's sample, primary antibody, secondary antibody, and substrate. A tip
+must never move from one strip to the other. Sample-sharing plastic transfer
+pipets and wash-buffer transfer pipets are separate items and are not included
+in this micropipette-tip count.
 
 Assign one wash-buffer transfer pipet to each strip. It may be reused for wash
-buffer on that strip only. It must not touch a sample or reagent source and must
-not move to the other strip.
+buffer on that same strip throughout the procedure, but it must not touch a
+sample or reagent source and must not be moved to the other strip.
 
-### Control gate and triplicate calls
+### Control validation and replicate calls
 
-Validate each strip independently. A strip is valid only if all three positive
-control wells are blue and all three negative control wells remain colorless.
-A valid strip uses these student calls:
+Validate each strip independently before interpreting either student's wells.
+A strip is valid only when all three positive-control wells are blue and all
+three negative-control wells remain colorless.
 
-- 3/3 blue = positive,
-- 0/3 blue = negative,
-- 1/3 or 2/3 blue = indeterminate.
+For a valid strip:
 
-Do not use majority voting. If controls fail, mark that strip invalid, do not
-interpret either student on it, and notify the instructor. One strip cannot
-validate the other.
+- 3 of 3 blue student wells = positive,
+- 0 of 3 blue student wells = negative,
+- 1 of 3 or 2 of 3 blue student wells = indeterminate.
 
-### Tracing rule
+Do not convert an indeterminate pattern into a positive or negative by majority
+vote. If the controls are invalid, mark the strip invalid, do not interpret
+student wells on that strip, and notify the instructor.
 
-Trace only from a valid strip with a definite positive student call. Do not
-trace from an invalid strip or an indeterminate pattern.
+Read and record the color pattern from 5 through 10 minutes after substrate is
+added. Do not use the pilot's 20-minute reading rule.
 
----
+### Reporting and tracing
 
-## OPS-29 — Proposed room contingency
+Record the three sample-sharing partners in exchange order. Trace a possible
+transmission link only from a valid strip with a definite positive student call.
+Do not trace from an invalid strip or an indeterminate student pattern.
 
-This proposal would move the class to SCI-216 and use a 15% reserve. It has no
-force unless the release register shows a Released status.
+### Local safety reminder
 
----
-
-## OPS-30 — Section 02 station-card material and safety control
-
-Applies to Section 02 station cards. OPS-27 remains controlling for topology,
-well allocation, the control gate, triplicate calls, and tracing.
-
-### Privacy labels and exchange records
-
-Use the active sample token—not a name or initials—on the yellow sample tube,
-sample-sharing transfer pipet, student wells, and result record. Record the
-three exchange partners in round order.
-
-### Boundary-breach response
-
-If a micropipette tip touches the wrong source, a used well, or the other strip,
-discard it immediately and replace it before continuing. If a strip wash pipet
-touches a sample/reagent source or the other strip, remove it from service,
-obtain a replacement, and notify the instructor. Replacements are additional to
-clean-start planned counts.
-
-### Result records
-
-For each strip, record the station/run identity, strip number, control status,
-both active sample tokens, each exact three-well color pattern, each final call,
-and the read time. Retain the three exchange partners in round order.
-
-### Safety and disposal
-
-Wear gloves and protective eyewear. Keep food and drink out of the work area.
-Wash hands with soap before and after the exercise. For an eye splash, start the
-eyewash immediately, rinse for at least 15 minutes, and alert the instructor.
-
-Put used micropipette tips in sharps. Put used strips, paper towels,
-sample-sharing transfer pipets, and strip-wash transfer pipets in the labeled
-biohazard tray. Return no used item to clean supply.
-
-The earlier issue-volume paragraph in this bulletin is not controlling for
-ST-07 when a later released station bulletin replaces it.
+Wear gloves and protective eyewear, keep food and drink out of the work area,
+and wash hands with soap before and after the exercise. For an eye splash,
+start the eyewash immediately, rinse for at least 15 minutes, and alert the
+instructor.
 
 ---
 
-## OPS-31 — Single-strip economy trial
+## OPS-29 - Proposed room contingency
 
-This draft proposes one strip for four students, an 8% reserve, and sink
-disposal. It is retained for review only. Consult the release register.
+- Status: **Pending**
+- Issued: 2026-09-15
+- Proposed effective date: 2026-09-16
+- Applies to: possible move to SCI-216
 
----
-
-## OPS-34 — ST-07 run release reconciliation
-
-Applies only to BIO 214 Section 02, the September 16, 2026 13:00 session, and
-station ST-07. It supplements OPS-27 and OPS-30.
-
-### Authoritative station records
-
-Use the latest approved seat assignment effective by the class start, the
-current Released exchange route, and the current Released station kit from the
-semester workbook. A later approved seat replacement supersedes the earlier
-seat row. Show the active route ID and station release ID on the card.
-
-### Equipment and lot release
-
-Show the current equipment-kit ID and the two strip-specific P50 identifiers
-from the Released station-kit row. Use only the control pack, antibody pack, and
-substrate lot assigned by that row after confirming in
-`bio214_reagent_lot_ledger.csv` that each lot is Released, within date, scoped to
-the antigen-detection procedure, and valid for ST-07. The active substrate lot’s
-QC read window replaces the general read window for this station.
-
-### ST-07 issue calculation
-
-For each shared liquid, first compute the clean procedural volume. Add a 12%
-reserve. Then add that lot’s dead-volume allowance from the lot ledger. Finally,
-round upward to the lot’s stated issue increment. Apply the control-pack dead
-volume separately to positive and negative control. Apply the antibody-pack
-dead volume separately to primary and secondary antibody. Do not pool or add a
-reserve to student samples.
-
-### Exchange route and record traceability
-
-Carry out the three exchange rounds exactly in the order of the current Released
-route. Translate seat pairs to the active sample tokens on the card. The result
-record must include the route ID, station release ID, equipment-kit ID, and all
-three active lot IDs in addition to the OPS-30 result fields.
-
----
-
-## OPS-35 — Extended substrate pilot
-
-The pilot proposes a 12-minute substrate read and a different substrate lot. It
-has no force unless the release register shows Released status before class.
+The proposal would use a 15% reserve, one strip per pair at separate two-person
+stations, and a 15-minute result read. It has not been approved and must not be
+used unless a later approved change record is issued.

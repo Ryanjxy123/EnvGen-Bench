@@ -7,42 +7,37 @@
   "env_files": [
     {
       "path": "env/elisa_immuno_explorer_instruction_manual.pdf",
-      "role": "Official Bio-Rad manual containing the full antigen-detection procedure, safety guidance, other ELISA protocols, instructor material, questions, extensions, and natural distractors.",
+      "role": "Official Bio-Rad kit manual containing three ELISA protocols, instructor material, detailed student laboratory guides, safety guidance, extensions, background content, and natural distractors.",
       "format": "pdf",
       "origin": "official_public_download",
       "source_url": "https://www.bio-rad.com/webroot/web/pdf/lse/literature/4110175.pdf",
       "retrieved_at": "2026-07-11",
-      "conversion_note": "The ready-made Protocol I quick-guide pages remain removed; detailed procedure content remains."
+      "conversion_note": "The three Protocol I Laboratory Quick Guide pages were removed so the env does not expose a ready-made one-page answer; the detailed student guide and unrelated manual sections remain.",
+      "license_note": "Bio-Rad educational material. Classroom duplication and redistribution remain subject to the source terms."
     },
     {
       "path": "env/elisa_disease_detection_modeling.pptx",
-      "role": "Official teaching deck used to corroborate assay order, controls, washes, and color development while retaining unrelated modeling and protocol distractors.",
+      "role": "Official Bio-Rad teaching deck used to verify antigen-detection reagent order, controls, and color development while retaining other modeling and protocol distractors.",
       "format": "pptx",
       "origin": "official_public_download",
       "source_url": "https://www.bio-rad.com/webroot/web/software/lse/Downloads/ELISA%20Disease%20Detection%20Modeling.pptx",
       "retrieved_at": "2026-07-11",
-      "conversion_note": "The unrelated antibody-detection animation page and embedded 58 MB video remain removed."
+      "conversion_note": "The unrelated Antibody Detection ELISA animation slide and its embedded 58 MB video were removed. The removal does not delete any fact required for the Antigen Detection/Outbreak Tracing task and prevents media parsing failures.",
+      "license_note": "Bio-Rad classroom teaching resource. Retain attribution and follow the source educational-use terms."
     },
     {
       "path": "env/bio214_semester_lab_plan.xlsx",
-      "role": "Benchmark-authored controlled workbook for schedule, room status, change log, station assignments, exchange routes, station-kit releases, and bulletin release status.",
+      "role": "Internal semester schedule, room operations records, and change log used to resolve the current approved Section 02 session, start time, room, and four-person workstation context.",
       "format": "xlsx",
       "origin": "benchmark_authored",
-      "reproducibility_note": "Contains seven worksheets and roughly 2,200 operational rows. The active answer requires matching exact session/station keys, latest effective approved replacements, Released routes/kits, and document-control precedence."
-    },
-    {
-      "path": "env/bio214_reagent_lot_ledger.csv",
-      "role": "Benchmark-authored 700-row lot ledger used to validate assigned reagent packs, expiry/protocol/station scope, lot-specific substrate timing, issue increment, and dead volume.",
-      "format": "csv",
-      "origin": "benchmark_authored",
-      "reproducibility_note": "Includes released, pending, quarantined, expired, superseded, and protocol-mismatched lots without a precomputed station answer."
+      "reproducibility_note": "Contains 80 natural scheduling and operations records across three worksheets, including approved, draft, cancelled, superseded, pending, makeup, instructor-only, and different-protocol records. It contains no explicit answer flag."
     },
     {
       "path": "env/bio214_section02_operations_bulletins.md",
-      "role": "Versioned rule text for OPS-27, OPS-30, and station-specific OPS-34 plus obsolete/pending pilot distractors.",
+      "role": "Versioned local operations bulletins containing superseded, currently approved, and pending station rules. The agent must apply status/effective-date precedence and derive station totals from the current entry.",
       "format": "markdown",
       "origin": "benchmark_authored",
-      "reproducibility_note": "The workbook release register controls current status; bulletin prose controls topic-specific rules. Derived quantities are not precomputed."
+      "reproducibility_note": "The current bulletin supplies operational premises but not the requested calculated totals, preserving multi-source reasoning and arithmetic requirements."
     }
   ],
   "source_policy": {
@@ -55,14 +50,13 @@
       "expected_facts.json",
       "scoring_checklist.json"
     ],
-    "web_usage_note": "Closed-env case; use only task.md and env/."
+    "web_usage_note": "This is a closed-env case. The agent should use only task.md and files in env/."
   },
   "design_notes": {
-    "task_alignment": "The case remains a procedure-to-bench-card task. Difficulty is increased through normal laboratory document control, roster replacement, route translation, kit/lot validation, and operational calculations.",
-    "difficulty_upgrade": "Data volume rises from about 320 to more than 2,900 structured records. Correct completion requires interactions across schedule/change records, per-seat replacement logic, a three-round exchange route, document release status, station-kit release, lot QC, and reserve/dead-volume/rounding calculations.",
-    "fairness": "Each grounded VQA tests one coherent operational decision with about two to four logical groups. A single minor omission normally yields 1 rather than 0; 0 is reserved for a wrong core decision, unsafe contradiction, obsolete record, or multiple missing groups.",
-    "leakage_control": "No precomputed active roster summary, token route, lot set, timing total, wash total, dispense total, or issue amount is exposed as an answer table.",
-    "natural_distractors": "Other sessions/stations, superseded seat D, pending routes and kits, obsolete bulletins, unapproved pilots, expired/quarantined lots, instructor records, other protocols, and optional manual content.",
-    "calibration_intent": "Target strong-agent scores around 20-40 by increasing retrieval and cross-source reconciliation difficulty rather than using giant all-or-zero checklists."
+    "task_alignment": "The workbook resolves the active class context; the official PDF and deck provide the base student procedure; the approved local bulletin changes station topology, tip isolation, reserve handling, replicate interpretation, and reporting rules.",
+    "difficulty_upgrade": "The output now requires effective-date/status reconciliation, two-strip workstation mapping, multi-stage arithmetic, control-gated decision logic, triplicate classification, and negative selection under a one-page constraint.",
+    "leakage_control": "No quick guide, precomputed station total, tip-count answer, wash-total answer, elapsed-time answer, expected-facts table, or explicit include/exclude flag is exposed to the agent.",
+    "natural_distractors": "Other ELISA protocols, instructor preparation, questions, paper modeling, optional stopping points, cancelled and makeup records, a superseded pilot bulletin, and a newer but pending room contingency.",
+    "calibration_intent": "Grounded score 2 requires a complete and internally consistent multi-source result; one correct headline fact or generic procedural wording is insufficient."
   }
 }
