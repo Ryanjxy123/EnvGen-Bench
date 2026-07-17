@@ -3,17 +3,17 @@
   "task_type": "data_selection",
   "web_policy": "closed_env",
   "target_image_type": "museum_exhibit_feature_panel",
-  "difficulty": "very_hard",
+  "difficulty": "extreme_but_natural",
   "env_files": [
     {
       "path": "env/spring_2027_object_register.xlsx",
-      "role": "Object register, versioned curatorial reviews, interpretation approvals, and reference lists",
+      "role": "Object register, versioned curatorial and interpretation reviews, controlled reference lists",
       "format": "xlsx",
       "origin": "benchmark-authored"
     },
     {
       "path": "env/loans_rights_tracker.xlsx",
-      "role": "Versioned loan, insurance, rights, usage-scope, and credit approvals",
+      "role": "Versioned loan, insurance, rights-scope, and credit approvals",
       "format": "xlsx",
       "origin": "benchmark-authored"
     },
@@ -25,13 +25,19 @@
     },
     {
       "path": "env/gallery_install_plan.xlsx",
-      "role": "Zones, versioned placements, crew capacity, case inventory, and official visitor route",
+      "role": "Zones, versioned placements, case inventory, crew capacity, and official route limits",
+      "format": "xlsx",
+      "origin": "benchmark-authored"
+    },
+    {
+      "path": "env/public_program_freeze.xlsx",
+      "role": "Versioned program directive, community commitments, placement and route overrides, phase definitions, and frozen public copy",
       "format": "xlsx",
       "origin": "benchmark-authored"
     },
     {
       "path": "env/curatorial_brief.docx",
-      "role": "Controlling as-of, eligibility, ranking, combination, ordered replacement, and public-content rules",
+      "role": "Controlling multi-cutoff selection, overlay, replacement, public-order, and publication rules",
       "format": "docx",
       "origin": "benchmark-authored"
     }
@@ -49,14 +55,19 @@
     "web_usage_note": "Closed-env case: web access is not allowed."
   },
   "data_profile": {
-    "object_count": 240,
-    "total_structured_rows": 3491,
-    "individually_eligible_objects": 12,
-    "provisional_selected_objects": 7,
-    "ordered_resource_conflicts": 2,
+    "object_count": 320,
+    "base_structured_rows": 4546,
+    "new_overlay_structured_rows": 166,
+    "total_structured_rows": 4712,
+    "individually_eligible_objects": 18,
+    "original_operational_selected_objects": 7,
+    "mandatory_program_anchors": 2,
+    "post_operational_replacements": 2,
     "final_selected_objects": 7,
+    "distinct_record_cutoffs": 3,
     "same_timestamp_revision_traps": true,
-    "post_cutoff_records": true
+    "post_cutoff_records": true,
+    "phase_specific_routes": 2
   },
-  "notes": "Strengthened public museum-panel selection case with five versioned workstreams, interpretation approvals, conservation rotations, gallery-route output, ordered group-level replacement, and dense but public-facing object records."
+  "notes": "Second strengthening pass. The original operational set must be completed first, then an approved program overlay forces two lower-ranked mandatory anchors, changes one placement and one route capacity, applies frozen public titles/labels, and requires phase-specific routes. Evaluation mode, 0.8/0.2 weights, fourteen grounded VQAs, and the single visual VQA are preserved."
 }

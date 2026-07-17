@@ -9,75 +9,111 @@
     "vqa_items": [
       {
         "id": "grounded_q01",
-        "question": "Does the poster clearly identify the requested course and term without letting the header dominate the page?",
-        "expected_answer": "Fly Fishing Fundamentals: From Casting to Catching; PE-087; Spring 2026, presented in a compact readable header.",
-        "acceptance_rule": "Score 2 if the full title, PE-087, and Spring 2026 are all clearly readable and the header remains compact, normally within two or three lines. Score 1 if all identity facts are correct but the title is noticeably oversized, or one minor term element is omitted without ambiguity. Score 0 if the course or code is wrong, missing, or unreadable."
+        "state": "Does the poster clearly identify the course as \"Fly Fishing Fundamentals: From Casting to Catching\", show the code \"PE-087\" and the term \"Spring 2026\", and keep this identity in a compact, readable header that does not dominate the page?",
+        "score_criteria": {
+          "2": "Score 2 if the full title, PE-087, and Spring 2026 are all clearly readable and the header remains compact, normally within two or three lines.",
+          "1": "Score 1 if all identity facts are correct but the title is noticeably oversized, or one minor term element is omitted without ambiguity.",
+          "0": "Score 0 if the course or code is wrong, missing, or unreadable."
+        }
       },
       {
         "id": "grounded_q02",
-        "question": "What reconciled overall date range and session count are presented?",
-        "expected_answer": "March 24-April 23, 2026; five sessions.",
-        "acceptance_rule": "Score 2 if the March 24-April 23 run and five-session count are both clear. Score 1 if the range is correct but the year or session count is weak, with Spring 2026 otherwise clear. Score 0 if April 21 is presented as the final date, the count is wrong, or the run is missing."
+        "state": "Does the poster clearly present the reconciled overall course run as March 24–April 23, 2026, with exactly five sessions?",
+        "score_criteria": {
+          "2": "Score 2 if the March 24-April 23 run and five-session count are both clear.",
+          "1": "Score 1 if the range is correct but the year or session count is weak, with Spring 2026 otherwise clear.",
+          "0": "Score 0 if April 21 is presented as the final date, the count is wrong, or the run is missing."
+        }
       },
       {
         "id": "grounded_q03",
-        "question": "How is the indoor foundation stage shown?",
-        "expected_answer": "March 24, March 31, and April 7; 5:30 PM-7:30 PM; Garrett Information Enterprise Center, Room 111, McHenry.",
-        "acceptance_rule": "Score 2 if the three indoor dates, both time endpoints, and GIEC Room 111 or the expanded facility name are clearly grouped as the indoor stage. Score 1 if the first-three indoor sequence and 5:30-7:30 PM time are correct but the dates or updated room are incomplete, including use of the catalog's older McH or McHenry label. Score 0 if the indoor stage is missing, materially wrong, or confused with the outdoor stage."
+        "state": "Does the poster clearly group the indoor foundation stage as March 24, March 31, and April 7, from 5:30 PM to 7:30 PM, at Garrett Information Enterprise Center, Room 111, McHenry?",
+        "score_criteria": {
+          "2": "Score 2 if the three indoor dates, both time endpoints, and GIEC Room 111 or the expanded facility name are clearly grouped as the indoor stage.",
+          "1": "Score 1 if the first-three indoor sequence and 5:30-7:30 PM time are correct but the dates or updated room are incomplete, including use of the catalog's older McH or McHenry label.",
+          "0": "Score 0 if the indoor stage is missing, materially wrong, or confused with the outdoor stage."
+        }
       },
       {
         "id": "grounded_q04",
-        "question": "How is the outdoor practice stage shown?",
-        "expected_answer": "April 14 and April 23; 6:00 PM-8:00 PM; Deep Creek Lake State Park Discovery Center, McHenry; weather dependent.",
-        "acceptance_rule": "Score 2 if both updated dates, both time endpoints, the Discovery Center meeting place, and the weather caveat are grouped as the outdoor stage. Score 1 if the final-two outdoor structure, 6:00-8:00 PM time, weather caveat, and April 14 are correct but April 23 or the updated meeting place is missing or replaced by the catalog's older April 21 or McH detail. Score 0 if the outdoor stage is missing, uses the wrong time or setting, or is confused with the indoor stage."
+        "state": "Does the poster clearly group the outdoor practice stage as April 14 and April 23, from 6:00 PM to 8:00 PM, at Deep Creek Lake State Park Discovery Center in McHenry, and state that the sessions are weather dependent?",
+        "score_criteria": {
+          "2": "Score 2 if both updated dates, both time endpoints, the Discovery Center meeting place, and the weather caveat are grouped as the outdoor stage.",
+          "1": "Score 1 if the final-two outdoor structure, 6:00-8:00 PM time, weather caveat, and April 14 are correct but April 23 or the updated meeting place is missing or replaced by the catalog's older April 21 or McH detail.",
+          "0": "Score 0 if the outdoor stage is missing, uses the wrong time or setting, or is confused with the indoor stage."
+        }
       },
       {
         "id": "grounded_q05",
-        "question": "What current price and registration action are displayed?",
-        "expected_answer": "$95; Register by March 19, 2026; garrettcollege.edu/cewd/register.",
-        "acceptance_rule": "Score 2 if $95, a clearly labeled March 19 deadline, and the exact URL are all readable, with the deadline and URL together as one CTA. Score 1 if all three are correct but separated or one label or year is weak. Score 0 if the URL is missing or wrong, or if $89 or March 17 is presented as current."
+        "state": "Does the poster clearly display the current fee as $95 and present one registration action package with the deadline \"Register by March 19, 2026\" and the exact URL \"garrettcollege.edu/cewd/register\"?",
+        "score_criteria": {
+          "2": "Score 2 if $95, a clearly labeled March 19 deadline, and the exact URL are all readable, with the deadline and URL together as one CTA.",
+          "1": "Score 1 if all three are correct but separated or one label or year is weak.",
+          "0": "Score 0 if the URL is missing or wrong, or if $89 or March 17 is presented as current."
+        }
       },
       {
         "id": "grounded_q06",
-        "question": "Who is the instructor, and who is the course intended for?",
-        "expected_answer": "Instructor Rita Lewis; beginners and people refining existing fly-fishing skills.",
-        "acceptance_rule": "Score 2 if Rita Lewis is clearly identified as instructor and both audience groups are represented in one concise line. Score 1 if the instructor is correct but only one audience group is stated, or both groups are present with a minor readability issue. Score 0 if the instructor is wrong or absent, or no suitable audience is identifiable."
+        "state": "Does the poster clearly identify Rita Lewis as the instructor and state that the course is intended for both beginners and people refining existing fly-fishing skills?",
+        "score_criteria": {
+          "2": "Score 2 if Rita Lewis is clearly identified as instructor and both audience groups are represented in one concise line.",
+          "1": "Score 1 if the instructor is correct but only one audience group is stated, or both groups are present with a minor readability issue.",
+          "0": "Score 0 if the instructor is wrong or absent, or no suitable audience is identifiable."
+        }
       },
       {
         "id": "grounded_q07",
-        "question": "Do the learning takeaways follow the requested count, order, and level of detail?",
-        "expected_answer": "Exactly three concise takeaways ordered as gear choice, rod setup and knots, then casting; they mention equipment such as rods, fly lines, and reels, rod assembly or essential knots, and casting accuracy and distance.",
-        "acceptance_rule": "Score 2 if exactly three takeaways appear in the requested order and all three are specifically grounded. Score 1 if exactly three and all categories are present but one takeaway is generic, slightly long, or out of order. Score 0 if the count is not three, fewer than two categories are grounded, or unsupported outcomes are added."
+        "state": "Does the poster present exactly three concise learning takeaways in this order—gear choice, rod setup and knots, then casting—and specifically mention rods, fly lines, and reels; rod assembly or essential knots; and casting accuracy and distance?",
+        "score_criteria": {
+          "2": "Score 2 if exactly three takeaways appear in the requested order and all three are specifically grounded.",
+          "1": "Score 1 if exactly three and all categories are present but one takeaway is generic, slightly long, or out of order.",
+          "0": "Score 0 if the count is not three, fewer than two categories are grounded, or unsupported outcomes are added."
+        }
       },
       {
         "id": "grounded_q08",
-        "question": "What participant-preparation note is included for the outdoor sessions?",
-        "expected_answer": "Loaner rods are available; participants should bring weather-ready layers and a valid Maryland fishing license for the outdoor sessions.",
-        "acceptance_rule": "Score 2 if loaner rods, weather-ready clothing, and the Maryland fishing-license requirement are all clearly tied to outdoor participation. Score 1 if two of the three ideas are clear and no conflicting instruction appears. Score 0 if the note is missing, says participants must bring their own rod, or omits most of the released instruction."
+        "state": "Does the poster clearly state that loaner rods are available and that participants should bring weather-ready layers and a valid Maryland fishing license for the outdoor sessions?",
+        "score_criteria": {
+          "2": "Score 2 if loaner rods, weather-ready clothing, and the Maryland fishing-license requirement are all clearly tied to outdoor participation.",
+          "1": "Score 1 if two of the three ideas are clear and no conflicting instruction appears.",
+          "0": "Score 0 if the note is missing, says participants must bring their own rod, or omits most of the released instruction."
+        }
       },
       {
         "id": "grounded_q09",
-        "question": "Are the eligible course image and current Garrett College CEWD mark used correctly?",
-        "expected_answer": "The stream-casting image from media_104.jpg appears once as a contained panel or banner, and the horizontal brand_26_h.png mark appears undistorted in the footer; the expired image and retired seal are absent.",
-        "acceptance_rule": "Score 2 if both supplied current assets are recognizable, proportionally correct, and placed according to the campaign treatment. Score 1 if one asset is fully correct and the other is present but weakly cropped, cramped, or slightly distorted. Score 0 if a generated fishing scene, another course image, expired crop, retired seal, invented logo, or missing current mark is used."
+        "state": "Does the poster correctly use the eligible stream-casting image from \"media_104.jpg\" exactly once as a contained panel or banner and place the current horizontal \"brand_26_h.png\" Garrett College CEWD mark undistorted in the footer, while excluding the expired image and retired seal?",
+        "score_criteria": {
+          "2": "Score 2 if both supplied current assets are recognizable, proportionally correct, and placed according to the campaign treatment.",
+          "1": "Score 1 if one asset is fully correct and the other is present but weakly cropped, cramped, or slightly distorted.",
+          "0": "Score 0 if a generated fishing scene, another course image, expired crop, retired seal, invented logo, or missing current mark is used."
+        }
       },
       {
         "id": "grounded_q10",
-        "question": "Does the poster follow the campaign palette and typography?",
-        "expected_answer": "Teal, charcoal, warm gray, and white dominate; yellow is a small deadline accent; typography is clean sans serif with no script or decorative display face.",
-        "acceptance_rule": "Score 2 if the campaign palette and sans-serif system are consistently used. Score 1 if the correct system clearly dominates but one minor off-palette accent or one small non-sans treatment appears. Score 0 if navy or olive dominates, script or serif display type is prominent, or several decorative type styles are mixed."
+        "state": "Does the poster consistently follow the campaign palette and typography by using teal, charcoal, warm gray, and white as the dominant colors, yellow only as a small deadline accent, and clean sans-serif typography without script or decorative display type?",
+        "score_criteria": {
+          "2": "Score 2 if the campaign palette and sans-serif system are consistently used.",
+          "1": "Score 1 if the correct system clearly dominates but one minor off-palette accent or one small non-sans treatment appears.",
+          "0": "Score 0 if navy or olive dominates, script or serif display type is prominent, or several decorative type styles are mixed."
+        }
       },
       {
         "id": "grounded_q11",
-        "question": "Is the poster organized as a readable course spotlight rather than a crowded generic flyer?",
-        "expected_answer": "Compact title, one contained image, two labeled schedule stages, concise key facts, one preparation note, exactly three takeaways, a prominent deadline-plus-URL CTA, and a clear footer mark; important text stays readable at reduced size.",
-        "acceptance_rule": "Score 2 if all major sections are easy to find in a sensible reading order and the schedule and CTA remain prominent and readable. Score 1 if the overall order works but one section is overly dense, too small, or visually secondary. Score 0 if the title or artwork consumes excessive space, the schedule is a prose block, the CTA is buried or absent, or the layout resembles a crowded administrative form."
+        "state": "Is the poster organized as a readable course spotlight with a compact title, one contained image, two labeled schedule stages, concise key facts, one preparation note, exactly three takeaways, a prominent deadline-and-URL CTA, and a clear footer mark, with important text remaining readable at reduced size rather than resembling a crowded generic flyer?",
+        "score_criteria": {
+          "2": "Score 2 if all major sections are easy to find in a sensible reading order and the schedule and CTA remain prominent and readable.",
+          "1": "Score 1 if the overall order works but one section is overly dense, too small, or visually secondary.",
+          "0": "Score 0 if the title or artwork consumes excessive space, the schedule is a prose block, the CTA is buried or absent, or the layout resembles a crowded administrative form."
+        }
       },
       {
         "id": "grounded_q12",
-        "question": "What unrelated course information or internal-only copy is visible?",
-        "expected_answer": "None. No second course title or code, unrelated instructor, phone or email, certification or prerequisite, full instructor biography, full catalog paragraph, or registrar audit note should appear.",
-        "acceptance_rule": "Score 2 if none of the listed unrelated or internal-only material appears. Score 1 if one harmless source reference is tiny, clearly nonactive, and cannot be mistaken for public course information. Score 0 if another course's content, contact details, certification or prerequisite language, biography, copied catalog paragraph, or audit note is presented as part of the poster."
+        "state": "Is the poster free of unrelated course information and internal-only copy, including any second course title or code, unrelated instructor, phone or email, certification or prerequisite, full instructor biography, full catalog paragraph, or registrar audit note?",
+        "score_criteria": {
+          "2": "Score 2 if none of the listed unrelated or internal-only material appears.",
+          "1": "Score 1 if one harmless source reference is tiny, clearly nonactive, and cannot be mistaken for public course information.",
+          "0": "Score 0 if another course's content, contact details, certification or prerequisite language, biography, copied catalog paragraph, or audit note is presented as part of the poster."
+        }
       }
     ]
   },
@@ -86,11 +122,11 @@
     "vqa_items": [
       {
         "id": "visual_q01",
-        "question": "As a promotional poster or recommendation flyer, does the image create an immediate focal offer, clearly prioritize featured items and details, and combine persuasive visual energy with elegant hierarchy, readable action information, and high-end poster craft?",
+        "state": "As a promotional poster or recommendation flyer, does the image create an immediate focal offer, clearly prioritize featured items and supporting details, and combine persuasive visual energy with an elegant hierarchy, readable action information, and high-end poster craft, so that the core offer is understood instantly, the hero focal point is strong, the CTA is easy to find, and the overall composition feels publication-ready rather than generic or unfinished?",
         "score_criteria": {
-          "2": "Award 2 only if the poster is exceptionally compelling and publication-ready: the core offer or recommendation is understood instantly; featured items, prices or details, and action information are clearly separated and easy to scan; the hero focal point is strong; typography, imagery, color, spacing, alignment, and margins are sophisticated and cohesive; promotional emphasis feels deliberate rather than loud or generic; and the whole composition is memorable, balanced, and nearly flawless. No cramped details, unclear CTA, generic sale-template look, weak imagery, malformed text, clipping, overlap, or visible cleanup issue is allowed. Any meaningful professional revision prevents 2.",
-          "1": "Award 1 if the poster is understandable, usable, and visually decent or attractive, but it remains ordinary or has visible flaws such as a modest focal point, cramped details, uneven item emphasis, generic promotional styling, slightly weak CTA, or minor typography and spacing issues.",
-          "0": "Award 0 even when the offer is technically present if the poster looks visibly poor, confusing, or unconvincing: focal hierarchy is weak, items or action details are hard to scan, imagery or typography is crude, composition is cluttered or empty, or the result requires substantial redesign. Blank, corrupted, severely unreadable, clipped, or broken posters are also 0."
+          "2": "Score 2 only if the poster is exceptionally compelling and publication-ready: the core offer or recommendation is understood instantly; featured items, prices or details, and action information are clearly separated and easy to scan; the hero focal point is strong; typography, imagery, color, spacing, alignment, and margins are sophisticated and cohesive; promotional emphasis feels deliberate rather than loud or generic; and the whole composition is memorable, balanced, and nearly flawless. No cramped details, unclear CTA, generic sale-template look, weak imagery, malformed text, clipping, overlap, or visible cleanup issue is allowed. Any meaningful professional revision prevents 2.",
+          "1": "Score 1 if the poster is understandable, usable, and visually decent or attractive, but it remains ordinary or has visible flaws such as a modest focal point, cramped details, uneven item emphasis, generic promotional styling, slightly weak CTA, or minor typography and spacing issues.",
+          "0": "Score 0 even when the offer is technically present if the poster looks visibly poor, confusing, or unconvincing: focal hierarchy is weak, items or action details are hard to scan, imagery or typography is crude, composition is cluttered or empty, or the result requires substantial redesign. Blank, corrupted, severely unreadable, clipped, or broken posters are also 0."
         }
       }
     ]

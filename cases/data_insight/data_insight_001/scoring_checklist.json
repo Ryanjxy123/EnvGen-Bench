@@ -9,75 +9,111 @@
     "vqa_items": [
       {
         "id": "grounded_q01",
-        "question": "What annual period and sales basis does the image show for the summary?",
-        "expected_answer": "Closed full-year 2025 actuals / 2025 net revenue story, not planning, forecast, unit volume, or gross-only recap.",
-        "acceptance_rule": "Score 2 if the image clearly frames the summary as closed/full-year 2025 actuals or 2025 net revenue. Score 1 if it shows 2025 annual sales but the actuals/net basis is weak, incomplete, or only implied. Score 0 if the period is missing, wrong, planning-focused, volume-focused, gross-only, or unreadable."
+        "state": "Does the image clearly present a closed full-year 2025 actuals summary based on 2025 net revenue, rather than a planning, forecast, unit-volume, or gross-only recap?",
+        "score_criteria": {
+          "2": "Score 2 if the image clearly frames the summary as closed/full-year 2025 actuals or 2025 net revenue.",
+          "1": "Score 1 if it shows 2025 annual sales but the actuals/net basis is weak, incomplete, or only implied.",
+          "0": "Score 0 if the period is missing, wrong, planning-focused, volume-focused, gross-only, or unreadable."
+        }
       },
       {
         "id": "grounded_q02",
-        "question": "What full-year 2025 net revenue value is shown in the image?",
-        "expected_answer": "$1,431,000 valid 2025 net revenue, equivalent to $1.431M.",
-        "acceptance_rule": "Score 2 if the image visibly shows $1,431,000, $1.431M, or a clearly equivalent rounded currency value as full-year 2025 net revenue. Score 1 if the value is close but weakly labeled as net revenue or annual actuals, or if rounding is somewhat coarse but still recognizable. Score 0 if the value is absent, unreadable, gross revenue, planning revenue, unit volume, or materially different."
+        "state": "Does the image show full-year 2025 net revenue as $1,431,000, or an equivalent value such as $1.431M?",
+        "score_criteria": {
+          "2": "Score 2 if the image visibly shows $1,431,000, $1.431M, or a clearly equivalent rounded currency value as full-year 2025 net revenue.",
+          "1": "Score 1 if the value is close but weakly labeled as net revenue or annual actuals, or if rounding is somewhat coarse but still recognizable.",
+          "0": "Score 0 if the value is absent, unreadable, gross revenue, planning revenue, unit volume, or materially different."
+        }
       },
       {
         "id": "grounded_q03",
-        "question": "Which month is shown as the standout or highest net-revenue month?",
-        "expected_answer": "November 2025 / Nov 2025.",
-        "acceptance_rule": "Score 2 if November or Nov is clearly shown as the highest or standout net-revenue month. Score 1 if November appears as a strong month but the highest/standout role is ambiguous. Score 0 if another month is identified, the month is absent, or the label is unreadable."
+        "state": "Does the image clearly identify November 2025, or Nov 2025, as the standout or highest net-revenue month?",
+        "score_criteria": {
+          "2": "Score 2 if November or Nov is clearly shown as the highest or standout net-revenue month.",
+          "1": "Score 1 if November appears as a strong month but the highest/standout role is ambiguous.",
+          "0": "Score 0 if another month is identified, the month is absent, or the label is unreadable."
+        }
       },
       {
         "id": "grounded_q04",
-        "question": "What net revenue value is shown for the standout month?",
-        "expected_answer": "About $170,000 / $170K for November 2025.",
-        "acceptance_rule": "Score 2 if November is visibly linked to about $170,000 or $170K net revenue. Score 1 if the value is close but weakly labeled or not clearly tied to November. Score 0 if the value is absent, unreadable, tied to the wrong month, uses a wrong metric, or is materially incorrect."
+        "state": "Does the image clearly link November 2025, the standout month, to approximately $170,000 or $170K in net revenue?",
+        "score_criteria": {
+          "2": "Score 2 if November is visibly linked to about $170,000 or $170K net revenue.",
+          "1": "Score 1 if the value is close but weakly labeled or not clearly tied to November.",
+          "0": "Score 0 if the value is absent, unreadable, tied to the wrong month, uses a wrong metric, or is materially incorrect."
+        }
       },
       {
         "id": "grounded_q05",
-        "question": "Which quarter is shown as the fastest quarter-over-quarter improvement?",
-        "expected_answer": "Q2, compared with Q1.",
-        "acceptance_rule": "Score 2 if Q2 is clearly identified as the fastest quarter-over-quarter improvement, preferably versus Q1. Score 1 if Q2 is highlighted for momentum but the comparison basis is unclear. Score 0 if Q4 or another quarter is presented as fastest, the quarter is absent, or the result is unreadable."
+        "state": "Does the image clearly identify Q2 as the quarter with the fastest quarter-over-quarter improvement, specifically compared with Q1?",
+        "score_criteria": {
+          "2": "Score 2 if Q2 is clearly identified as the fastest quarter-over-quarter improvement, preferably versus Q1.",
+          "1": "Score 1 if Q2 is highlighted for momentum but the comparison basis is unclear.",
+          "0": "Score 0 if Q4 or another quarter is presented as fastest, the quarter is absent, or the result is unreadable."
+        }
       },
       {
         "id": "grounded_q06",
-        "question": "What improvement value is shown for the fastest-improving quarter?",
-        "expected_answer": "Q2 improved by about +38.2% or +$91K versus Q1.",
-        "acceptance_rule": "Score 2 if the image ties Q2 to about +38.2% or +$91K versus Q1. Score 1 if Q2 is correct but the value is rounded, incomplete, or weakly labeled. Score 0 if the value is missing, assigned to the wrong quarter, uses the wrong comparison, or is materially incorrect."
+        "state": "Does the image show that Q2 improved by approximately +38.2% or +$91K versus Q1?",
+        "score_criteria": {
+          "2": "Score 2 if the image ties Q2 to about +38.2% or +$91K versus Q1.",
+          "1": "Score 1 if Q2 is correct but the value is rounded, incomplete, or weakly labeled.",
+          "0": "Score 0 if the value is missing, assigned to the wrong quarter, uses the wrong comparison, or is materially incorrect."
+        }
       },
       {
         "id": "grounded_q07",
-        "question": "What are the top three product categories shown in rank order?",
-        "expected_answer": "Smart Home first, Audio second, Accessories third.",
-        "acceptance_rule": "Score 2 if the top three categories are shown in the order Smart Home, Audio, Accessories. Score 1 if the same three categories appear but order or ranking is partially unclear or one adjacent order is ambiguous. Score 0 if the leader is wrong, one or more categories are missing, extra wrong categories dominate, or the ranking is unreadable."
+        "state": "Does the image show the top three product categories in the correct rank order: Smart Home first, Audio second, and Accessories third?",
+        "score_criteria": {
+          "2": "Score 2 if the top three categories are shown in the order Smart Home, Audio, Accessories.",
+          "1": "Score 1 if the same three categories appear but order or ranking is partially unclear or one adjacent order is ambiguous.",
+          "0": "Score 0 if the leader is wrong, one or more categories are missing, extra wrong categories dominate, or the ranking is unreadable."
+        }
       },
       {
         "id": "grounded_q08",
-        "question": "What revenue or share context is shown for the top three product categories?",
-        "expected_answer": "Smart Home about $428K / 29.9%, Audio about $387K / 27.0%, Accessories about $304.5K / 21.3%.",
-        "acceptance_rule": "Score 2 if each of the three categories has materially correct revenue and/or annual share context: Smart Home about $428K or 29.9%, Audio about $387K or 27.0%, and Accessories about $304.5K or 21.3%. Score 1 if the categories are correct but one value/share is missing, rounded too coarsely, or weakly labeled. Score 0 if most values are missing, wrong, tied to wrong categories, based on a wrong metric, or unreadable."
+        "state": "Does the image show materially correct revenue or annual-share context for all three leading categories: Smart Home at about $428K or 29.9%, Audio at about $387K or 27.0%, and Accessories at about $304.5K or 21.3%?",
+        "score_criteria": {
+          "2": "Score 2 if each of the three categories has materially correct revenue and/or annual share context: Smart Home about $428K or 29.9%, Audio about $387K or 27.0%, and Accessories about $304.5K or 21.3%.",
+          "1": "Score 1 if the categories are correct but one value/share is missing, rounded too coarsely, or weakly labeled.",
+          "0": "Score 0 if most values are missing, wrong, tied to wrong categories, based on a wrong metric, or unreadable."
+        }
       },
       {
         "id": "grounded_q09",
-        "question": "Which company reporting region is shown as the strongest region?",
-        "expected_answer": "West.",
-        "acceptance_rule": "Score 2 if West is clearly shown as the strongest or leading company reporting region. Score 1 if West is highlighted but the leader role is somewhat ambiguous. Score 0 if another region or a city is shown as the leader, or the region result is missing or unreadable."
+        "state": "Does the image clearly identify West as the strongest or leading company reporting region?",
+        "score_criteria": {
+          "2": "Score 2 if West is clearly shown as the strongest or leading company reporting region.",
+          "1": "Score 1 if West is highlighted but the leader role is somewhat ambiguous.",
+          "0": "Score 0 if another region or a city is shown as the leader, or the region result is missing or unreadable."
+        }
       },
       {
         "id": "grounded_q10",
-        "question": "What value or share is shown for the strongest reporting region?",
-        "expected_answer": "West has about $597,000 / $597K net revenue or about 41.7% annual share.",
-        "acceptance_rule": "Score 2 if West is linked to approximately $597K/$597,000 or 41.7%. Score 1 if West is correct but the value/share is rounded, incomplete, or weakly labeled. Score 0 if the value/share is absent, assigned to another region, based on city rather than company reporting region, or materially wrong."
+        "state": "Does the image link West, the strongest company reporting region, to approximately $597,000 or $597K in net revenue, or about 41.7% of annual revenue?",
+        "score_criteria": {
+          "2": "Score 2 if West is linked to approximately $597K/$597,000 or 41.7%.",
+          "1": "Score 1 if West is correct but the value/share is rounded, incomplete, or weakly labeled.",
+          "0": "Score 0 if the value/share is absent, assigned to another region, based on city rather than company reporting region, or materially wrong."
+        }
       },
       {
         "id": "grounded_q11",
-        "question": "What main trend or takeaway sentence is shown in the image?",
-        "expected_answer": "A concise trend insight that correctly notes Q2 as the fastest momentum improvement and/or November as the annual peak.",
-        "acceptance_rule": "Score 2 if the takeaway accurately connects Q2 momentum and/or the November peak to the annual sales story. Score 1 if the sentence is directionally related to annual performance but mentions only one correct signal or is generic. Score 0 if the takeaway is missing, contradicts the computed findings, focuses on planning/volume instead of revenue, or is unreadable."
+        "state": "Does the image include a concise main takeaway that correctly identifies Q2 as the fastest momentum improvement and/or November as the annual revenue peak?",
+        "score_criteria": {
+          "2": "Score 2 if the takeaway accurately connects Q2 momentum and/or the November peak to the annual sales story.",
+          "1": "Score 1 if the sentence is directionally related to annual performance but mentions only one correct signal or is generic.",
+          "0": "Score 0 if the takeaway is missing, contradicts the computed findings, focuses on planning/volume instead of revenue, or is unreadable."
+        }
       },
       {
         "id": "grounded_q12",
-        "question": "Does the image present planning, forecast, subtotal, draft, test, old-year, cancelled, returned, pending, manual-review, adjustment, rollup, snapshot, unit-volume, order-count, or gross-only values as final sales results?",
-        "expected_answer": "No. Invalid/contextual rows and wrong metrics should not be presented as final results.",
-        "acceptance_rule": "Score 2 if none of these invalid or contextual materials are presented as final sales results. Score 1 if such terms appear only as clearly excluded or not-used context. Score 0 if any invalid row, planning number, gross-only total, unit/order count, or old-year value is presented as a final answer, leader, ranking, headline, or recommendation."
+        "state": "Does the image keep all non-final, invalid, or non-net-revenue data separate from the final 2025 actual sales results, so that every final headline, ranking, leader, and takeaway is based only on valid 2025 completed-transaction net revenue?",
+        "score_criteria": {
+          "2": "Score 2 if every final headline, ranking, leader, and takeaway is based on valid 2025 completed-transaction net revenue, with no non-final or alternative metric presented as an answer.",
+          "1": "Score 1 if the final results are correct but one auxiliary label or excluded-data reference is mildly ambiguous, without promoting an incorrect value as final.",
+          "0": "Score 0 if any forecast, planning value, draft, prior-year record, invalid transaction, gross-revenue total, unit count, or order count is presented as a final result, leader, ranking, headline, or recommendation."
+        }
       }
     ]
   },
@@ -86,11 +122,11 @@
     "vqa_items": [
       {
         "id": "visual_q01",
-        "question": "As a data-story infographic, does the image communicate one dominant insight through an immediately legible narrative sequence, well-chosen visual evidence, meaningful comparisons, a clear takeaway, and refined publication-quality composition rather than a collection of disconnected cards?",
+        "state": "As a data-story infographic, does the image communicate one dominant insight through an immediately legible narrative sequence, well-chosen visual evidence, meaningful comparisons, a clear takeaway, and refined publication-quality composition rather than a collection of disconnected cards?",
         "score_criteria": {
-          "2": "Award 2 only if the infographic is outstanding and publication-ready: one main insight dominates immediately; evidence, comparisons, annotations, and conclusion form a persuasive visual sequence; charts or encodings are purposeful, proportionate, and easy to interpret; all labels, values, units, and notes are readable at normal size; typography, spacing, color, alignment, and density are consistently sophisticated; and the page feels custom-designed, cohesive, and visually memorable without sacrificing accuracy or clarity. There must be no meaningful clutter, generic KPI-card dumping, weak takeaway, misleading encoding, malformed text, clipping, overlap, or rendering residue. Any notable narrative or design weakness prevents 2.",
-          "1": "Award 1 if the infographic is understandable and reasonably well designed, with a visible main message and usable evidence, but it remains ordinary or imperfect—for example, a weak reading order, limited comparison, crowded charts, generic cards, uneven emphasis, small annotations, or a takeaway that is present but not visually decisive.",
-          "0": "Award 0 even if the required numbers appear when the overall visual story fails: there is no clear dominant insight, the page reads as a cluttered dashboard or raw report, comparisons are hard to interpret, charts or labels are confusing, hierarchy is weak, or the composition looks visibly poor and needs substantial redesign. Blank, corrupted, severely unreadable, materially misleading, or largely incoherent outputs are also 0."
+          "2": "Score 2 only if the infographic is outstanding and publication-ready: one main insight dominates immediately; evidence, comparisons, annotations, and conclusion form a persuasive visual sequence; charts or encodings are purposeful, proportionate, and easy to interpret; all labels, values, units, and notes are readable at normal size; typography, spacing, color, alignment, and density are consistently sophisticated; and the page feels custom-designed, cohesive, and visually memorable without sacrificing accuracy or clarity. There must be no meaningful clutter, generic KPI-card dumping, weak takeaway, misleading encoding, malformed text, clipping, overlap, or rendering residue. Any notable narrative or design weakness prevents 2.",
+          "1": "Score 1 if the infographic is understandable and reasonably well designed, with a visible main message and usable evidence, but it remains ordinary or imperfect—for example, a weak reading order, limited comparison, crowded charts, generic cards, uneven emphasis, small annotations, or a takeaway that is present but not visually decisive.",
+          "0": "Score 0 even if the required numbers appear when the overall visual story fails: there is no clear dominant insight, the page reads as a cluttered dashboard or raw report, comparisons are hard to interpret, charts or labels are confusing, hierarchy is weak, or the composition looks visibly poor and needs substantial redesign. Blank, corrupted, severely unreadable, materially misleading, or largely incoherent outputs are also 0."
         }
       }
     ]

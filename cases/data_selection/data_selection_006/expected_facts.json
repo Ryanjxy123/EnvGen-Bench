@@ -16,49 +16,49 @@
       "evaluation_role": "critical_required"
     },
     {
-      "id": "final_selected_order",
-      "description": "Final seven-object set after current-record resolution, selection, and two ordered resource replacements.",
+      "id": "final_selected_public_order",
+      "description": "Final set after original feasibility, program commitments, target-theme replacement, and public narrative sequencing.",
       "source": "all env files",
       "importance": "critical",
       "expected_value": [
-        "Quilted Harbor Map",
-        "Brass Transit Token Set",
-        "Flood Ledger Pages",
-        "Neighborhood Radio Mic",
-        "Market Stall Ledger",
-        "Canal Workers Banner",
-        "Harbor Signal Lantern"
+        "Quilted Harbor Routes",
+        "Dockyard Safety Poster",
+        "Brass Transit Tokens",
+        "Flood Ledger: 1937",
+        "River Gauge Plate",
+        "Neighborhood Radio Microphone",
+        "Market Stall Ledger"
       ],
       "canonical_answer": {
-        "eligible_rank_vector": [
+        "final_eligible_rank_vector": [
           1,
           2,
           3,
+          4,
           5,
           7,
-          8,
-          9
+          18
         ],
-        "selected_accession_numbers_reference_only": [
+        "public_priority_accessions": [
           "CHM.1987.042",
+          "CHM.1988.177",
           "CHM.1969.118",
           "CHM.2002.031",
+          "CHM.1990.011",
           "CHM.1994.205",
-          "CHM.1956.089",
-          "CHM.1978.064",
-          "CHM.1980.143"
+          "CHM.1956.089"
         ]
       },
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "selected_object_public_records",
-      "description": "Complete public record required for each final featured object.",
+      "id": "selected_public_records",
+      "description": "Frozen public record for every final object.",
       "source": "all env files",
       "importance": "critical",
       "expected_value": {
-        "Quilted Harbor Map": {
+        "Quilted Harbor Routes": {
           "priority": 1,
           "accession_no": "CHM.1987.042",
           "era_year": "1886",
@@ -70,13 +70,28 @@
           "on_view_start": "2027-03-20",
           "on_view_end": "2027-08-15",
           "inclusive_days": 149,
-          "accessibility_feature": "Tactile replica",
-          "interpretive_hook": "Hand-stitched routes trace women’s waterfront labor.",
-          "eligible_rank": 1,
-          "curatorial_score": 97.4
+          "public_accessibility_label": "Touch replica",
+          "public_hook": "Stitched routes chart women’s work across the waterfront.",
+          "eligible_rank": 1
         },
-        "Brass Transit Token Set": {
+        "Dockyard Safety Poster": {
           "priority": 2,
+          "accession_no": "CHM.1988.177",
+          "era_year": "1946",
+          "primary_material": "Lithograph on paper",
+          "gallery": "Market Gallery",
+          "zone_id": "MG-05",
+          "story_theme": "Waterfront Work",
+          "public_credit_line": "Port Safety Office collection",
+          "on_view_start": "2027-03-20",
+          "on_view_end": "2027-08-15",
+          "inclusive_days": 149,
+          "public_accessibility_label": "Audio story",
+          "public_hook": "Bold warnings show safety becoming a public waterfront campaign.",
+          "eligible_rank": 4
+        },
+        "Brass Transit Tokens": {
+          "priority": 3,
           "accession_no": "CHM.1969.118",
           "era_year": "1914",
           "primary_material": "Stamped brass",
@@ -87,13 +102,12 @@
           "on_view_start": "2027-03-20",
           "on_view_end": "2027-08-15",
           "inclusive_days": 149,
-          "accessibility_feature": "Audio stop",
-          "interpretive_hook": "Fare tokens reveal the city’s shifting transit network.",
-          "eligible_rank": 2,
-          "curatorial_score": 96.55
+          "public_accessibility_label": "Audio story",
+          "public_hook": "Fare tokens trace the city’s changing transit network.",
+          "eligible_rank": 2
         },
-        "Flood Ledger Pages": {
-          "priority": 3,
+        "Flood Ledger: 1937": {
+          "priority": 4,
           "accession_no": "CHM.2002.031",
           "era_year": "1937",
           "primary_material": "Ink on bound paper",
@@ -104,13 +118,28 @@
           "on_view_start": "2027-03-20",
           "on_view_end": "2027-05-31",
           "inclusive_days": 73,
-          "accessibility_feature": "Large-print transcript",
-          "interpretive_hook": "Daily entries document the 1937 river emergency.",
-          "eligible_rank": 3,
-          "curatorial_score": 96.25
+          "public_accessibility_label": "Large-print copy",
+          "public_hook": "Daily entries record the 1937 river emergency.",
+          "eligible_rank": 3
         },
-        "Neighborhood Radio Mic": {
-          "priority": 4,
+        "River Gauge Plate": {
+          "priority": 5,
+          "accession_no": "CHM.1990.011",
+          "era_year": "1902",
+          "primary_material": "Etched brass",
+          "gallery": "River Room",
+          "zone_id": "RR-02",
+          "story_theme": "Flood and Resilience",
+          "public_credit_line": "River Works Department transfer",
+          "on_view_start": "2027-03-20",
+          "on_view_end": "2027-08-15",
+          "inclusive_days": 149,
+          "public_accessibility_label": "Touch replica",
+          "public_hook": "Measurement marks turned river height into shared evidence.",
+          "eligible_rank": 18
+        },
+        "Neighborhood Radio Microphone": {
+          "priority": 6,
           "accession_no": "CHM.1994.205",
           "era_year": "1968",
           "primary_material": "Steel, aluminum, and Bakelite",
@@ -121,327 +150,261 @@
           "on_view_start": "2027-03-20",
           "on_view_end": "2027-08-15",
           "inclusive_days": 149,
-          "accessibility_feature": "Audio stop",
-          "interpretive_hook": "This microphone carried neighborhood voices onto local air.",
-          "eligible_rank": 5,
-          "curatorial_score": 95.8
+          "public_accessibility_label": "Audio story",
+          "public_hook": "The microphone carried neighborhood voices onto local air.",
+          "eligible_rank": 5
         },
         "Market Stall Ledger": {
-          "priority": 5,
+          "priority": 7,
           "accession_no": "CHM.1956.089",
           "era_year": "1922",
           "primary_material": "Pencil and ink on paper",
           "gallery": "Market Gallery",
-          "zone_id": "MG-01",
+          "zone_id": "MG-02",
           "story_theme": "Markets and Exchange",
           "public_credit_line": "Lina Moretti family deposit",
           "on_view_start": "2027-06-01",
           "on_view_end": "2027-08-15",
           "inclusive_days": 76,
-          "accessibility_feature": "Large-print transcript",
-          "interpretive_hook": "Sales entries map immigrant commerce along the wharf.",
-          "eligible_rank": 7,
-          "curatorial_score": 95.1
-        },
-        "Canal Workers Banner": {
-          "priority": 6,
-          "accession_no": "CHM.1978.064",
-          "era_year": "1904",
-          "primary_material": "Painted silk and cotton braid",
-          "gallery": "North Gallery",
-          "zone_id": "NG-02",
-          "story_theme": "Waterfront Work",
-          "public_credit_line": "Canal Workers Local 14 collection",
-          "on_view_start": "2027-03-20",
-          "on_view_end": "2027-08-15",
-          "inclusive_days": 149,
-          "accessibility_feature": "Tactile replica",
-          "interpretive_hook": "Union lettering made dockworker solidarity visible.",
-          "eligible_rank": 8,
-          "curatorial_score": 94.7
-        },
-        "Harbor Signal Lantern": {
-          "priority": 7,
-          "accession_no": "CHM.1980.143",
-          "era_year": "1928",
-          "primary_material": "Copper, glass, and painted steel",
-          "gallery": "Transit Alcove",
-          "zone_id": "TA-03",
-          "story_theme": "Transit and Movement",
-          "public_credit_line": "Harbor Master’s Office transfer",
-          "on_view_start": "2027-03-20",
-          "on_view_end": "2027-08-15",
-          "inclusive_days": 149,
-          "accessibility_feature": "Audio stop",
-          "interpretive_hook": "Color signals coordinated harbor traffic before radio.",
-          "eligible_rank": 9,
-          "curatorial_score": 93.85
+          "public_accessibility_label": "Large-print copy",
+          "public_hook": "Sales entries map immigrant commerce along the wharf.",
+          "eligible_rank": 7
         }
       },
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "rotation_notice",
-      "description": "The approved conservation rotation pair and inclusive on-view durations.",
-      "source": "env/conservation_display_review.xlsx",
-      "importance": "critical",
-      "expected_value": {
-        "Flood Ledger Pages": {
-          "range": "March 20–May 31, 2027",
-          "inclusive_days": 73
-        },
-        "Market Stall Ledger": {
-          "range": "June 1–August 15, 2027",
-          "inclusive_days": 76
-        }
-      },
-      "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
-    },
-    {
-      "id": "visitor_route",
-      "description": "Official gallery route with complete selected membership and counts.",
-      "source": "env/gallery_install_plan.xlsx + final selection",
-      "importance": "critical",
+      "id": "opening_phase_route",
+      "description": "Opening rotation route, March 20–May 31, with six objects visible.",
+      "source": "env/gallery_install_plan.xlsx + env/public_program_freeze.xlsx + final selection",
+      "importance": "high",
       "expected_value": [
         {
           "gallery": "North Gallery",
-          "count": 2,
+          "route_order": 1,
+          "visible_count": 1,
           "objects": [
-            "Quilted Harbor Map",
-            "Canal Workers Banner"
+            "Quilted Harbor Routes"
           ]
         },
         {
           "gallery": "Transit Alcove",
-          "count": 2,
+          "route_order": 2,
+          "visible_count": 1,
           "objects": [
-            "Brass Transit Token Set",
-            "Harbor Signal Lantern"
+            "Brass Transit Tokens"
           ]
         },
         {
           "gallery": "River Room",
-          "count": 1,
+          "route_order": 3,
+          "visible_count": 2,
           "objects": [
-            "Flood Ledger Pages"
+            "Flood Ledger: 1937",
+            "River Gauge Plate"
           ]
         },
         {
           "gallery": "Sound Nook",
-          "count": 1,
+          "route_order": 4,
+          "visible_count": 1,
           "objects": [
-            "Neighborhood Radio Mic"
+            "Neighborhood Radio Microphone"
           ]
         },
         {
           "gallery": "Market Gallery",
-          "count": 1,
+          "route_order": 5,
+          "visible_count": 1,
           "objects": [
+            "Dockyard Safety Poster"
+          ]
+        }
+      ],
+      "must_appear_in_image": true,
+      "evaluation_role": "required"
+    },
+    {
+      "id": "closing_phase_route",
+      "description": "Closing rotation route, June 1–August 15, with six objects visible.",
+      "source": "env/gallery_install_plan.xlsx + env/public_program_freeze.xlsx + final selection",
+      "importance": "high",
+      "expected_value": [
+        {
+          "gallery": "North Gallery",
+          "route_order": 1,
+          "visible_count": 1,
+          "objects": [
+            "Quilted Harbor Routes"
+          ]
+        },
+        {
+          "gallery": "Transit Alcove",
+          "route_order": 2,
+          "visible_count": 1,
+          "objects": [
+            "Brass Transit Tokens"
+          ]
+        },
+        {
+          "gallery": "River Room",
+          "route_order": 3,
+          "visible_count": 1,
+          "objects": [
+            "River Gauge Plate"
+          ]
+        },
+        {
+          "gallery": "Sound Nook",
+          "route_order": 4,
+          "visible_count": 1,
+          "objects": [
+            "Neighborhood Radio Microphone"
+          ]
+        },
+        {
+          "gallery": "Market Gallery",
+          "route_order": 5,
+          "visible_count": 2,
+          "objects": [
+            "Dockyard Safety Poster",
             "Market Stall Ledger"
           ]
         }
       ],
       "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
+      "evaluation_role": "required"
+    },
+    {
+      "id": "rotation_notice",
+      "description": "Approved two-object rotation pair and inclusive durations.",
+      "source": "env/conservation_display_review.xlsx",
+      "importance": "high",
+      "expected_value": [
+        {
+          "public_title": "Flood Ledger: 1937",
+          "on_view_start": "2027-03-20",
+          "on_view_end": "2027-05-31",
+          "inclusive_days": 73
+        },
+        {
+          "public_title": "Market Stall Ledger",
+          "on_view_start": "2027-06-01",
+          "on_view_end": "2027-08-15",
+          "inclusive_days": 76
+        }
+      ],
+      "must_appear_in_image": true,
+      "evaluation_role": "required"
     },
     {
       "id": "selection_snapshot",
-      "description": "All derived public portfolio metrics.",
-      "source": "derived from final selection",
-      "importance": "critical",
+      "description": "Derived portfolio and phase metrics.",
+      "source": "all env files + final selection",
+      "importance": "high",
       "expected_value": {
-        "featured_object_count": 7,
+        "unique_featured_objects": 7,
+        "visible_objects_opening_phase": 6,
+        "visible_objects_closing_phase": 6,
         "gallery_count": 5,
         "theme_count": 5,
-        "earliest_year": 1886,
-        "latest_year": 1968,
-        "numeric_year_span": 82,
-        "gallery_distribution": {
-          "North Gallery": 2,
-          "Transit Alcove": 2,
-          "River Room": 1,
-          "Sound Nook": 1,
-          "Market Gallery": 1
-        },
         "theme_distribution": {
           "Waterfront Work": 2,
-          "Transit and Movement": 2,
-          "Flood and Resilience": 1,
+          "Transit and Movement": 1,
+          "Flood and Resilience": 2,
           "Community Voice": 1,
           "Markets and Exchange": 1
         },
         "collection_distribution": {
-          "Textiles": 2,
-          "Civic Objects": 1,
+          "Textiles": 1,
+          "Photographs": 1,
+          "Civic Objects": 2,
           "Archives": 2,
-          "Media": 1,
-          "Tools and Trades": 1
+          "Media": 1
         },
-        "object_type_count": 6,
-        "audio_stop_count": 3,
-        "tactile_replica_count": 2,
-        "large_print_transcript_count": 2,
-        "full_run_object_count": 5,
-        "limited_run_rotation_object_count": 2
+        "distinct_object_type_count": 6,
+        "earliest_year": 1886,
+        "latest_year": 1968,
+        "year_span": 82,
+        "audio_story_count": 3,
+        "touch_replica_count": 2,
+        "large_print_copy_count": 2,
+        "full_run_count": 5,
+        "limited_run_count": 2
       },
       "must_appear_in_image": true,
-      "evaluation_role": "critical_required"
+      "evaluation_role": "required"
     },
     {
       "id": "no_extra_objects",
-      "description": "No non-selected object may receive featured, route, rotation, or recommendation status.",
+      "description": "No unselected object receives featured, phase-route, rotation, or recommendation status.",
       "source": "final selection",
       "importance": "critical",
-      "expected_value": "Only the seven final selected objects receive public status.",
-      "must_not_appear_in_image": true,
-      "evaluation_role": "negative_only"
+      "expected_value": "Only the seven final public titles may receive public status.",
+      "named_near_misses": [
+        "Dockworkers Union Pennant",
+        "Harbor Dispatch Bell",
+        "Canal Workers Banner",
+        "Harbor Signal Lantern",
+        "Wharf Crane Control Lever",
+        "Ferry Ticket Punch",
+        "Port Broadcast Console",
+        "Pier Ticket Ledger",
+        "Canal Toll Booth Sign",
+        "Harbor Sign 08",
+        "Wharf Signal Flag 59"
+      ],
+      "must_appear_in_image": false,
+      "evaluation_role": "critical_exclusion"
     }
   ],
   "calculation_notes": {
-    "selection_as_of": "2027-02-18T16:00:00",
-    "campaign_rights_start": "2027-02-25",
-    "exhibition_start": "2027-03-20",
-    "exhibition_end": "2027-08-15",
-    "exhibition_days": 149,
-    "structured_row_counts": {
-      "object_register": 240,
-      "curatorial_reviews": 512,
-      "interpretation_reviews": 493,
-      "loan_insurance": 490,
-      "rights_credits": 489,
-      "conservation_assessments": 487,
-      "display_requirements": 240,
-      "rotation_approvals": 240,
-      "gallery_zones": 36,
-      "placement_requests": 240,
-      "install_shifts": 12,
-      "case_inventory": 6,
-      "visitor_route_plan": 6
-    },
-    "individually_eligible_count": 12,
-    "eligible_ranking": [
-      {
-        "rank": 1,
-        "accession_no": "CHM.1987.042",
-        "display_title": "Quilted Harbor Map",
-        "curatorial_score": 97.4,
-        "community_relevance": 99,
-        "crew_minutes": 495
-      },
-      {
-        "rank": 2,
-        "accession_no": "CHM.1969.118",
-        "display_title": "Brass Transit Token Set",
-        "curatorial_score": 96.55,
-        "community_relevance": 98,
-        "crew_minutes": 110
-      },
-      {
-        "rank": 3,
-        "accession_no": "CHM.2002.031",
-        "display_title": "Flood Ledger Pages",
-        "curatorial_score": 96.25,
-        "community_relevance": 98,
-        "crew_minutes": 170
-      },
-      {
-        "rank": 4,
-        "accession_no": "CHM.1988.177",
-        "display_title": "Dockyard Safety Poster",
-        "curatorial_score": 95.8,
-        "community_relevance": 97,
-        "crew_minutes": 80
-      },
-      {
-        "rank": 5,
-        "accession_no": "CHM.1994.205",
-        "display_title": "Neighborhood Radio Mic",
-        "curatorial_score": 95.8,
-        "community_relevance": 97,
-        "crew_minutes": 300
-      },
-      {
-        "rank": 6,
-        "accession_no": "CHM.1971.222",
-        "display_title": "Wharf Crane Control Lever",
-        "curatorial_score": 95.4,
-        "community_relevance": 96,
-        "crew_minutes": 460
-      },
-      {
-        "rank": 7,
-        "accession_no": "CHM.1956.089",
-        "display_title": "Market Stall Ledger",
-        "curatorial_score": 95.1,
-        "community_relevance": 96,
-        "crew_minutes": 140
-      },
-      {
-        "rank": 8,
-        "accession_no": "CHM.1978.064",
-        "display_title": "Canal Workers Banner",
-        "curatorial_score": 94.7,
-        "community_relevance": 95,
-        "crew_minutes": 450
-      },
-      {
-        "rank": 9,
-        "accession_no": "CHM.1980.143",
-        "display_title": "Harbor Signal Lantern",
-        "curatorial_score": 93.85,
-        "community_relevance": 94,
-        "crew_minutes": 160
-      },
-      {
-        "rank": 10,
-        "accession_no": "CHM.1982.244",
-        "display_title": "Canal Toll Booth Sign",
-        "curatorial_score": 90.4,
-        "community_relevance": 90,
-        "crew_minutes": 120
-      },
-      {
-        "rank": 11,
-        "accession_no": "CHM.2004.036",
-        "display_title": "Harbor Sign 08",
-        "curatorial_score": 87.3,
-        "community_relevance": 87,
-        "crew_minutes": 292
-      },
-      {
-        "rank": 12,
-        "accession_no": "CHM.2021.276",
-        "display_title": "Wharf Signal Flag 59",
-        "curatorial_score": 86.15,
-        "community_relevance": 84,
-        "crew_minutes": 180
-      }
-    ],
-    "provisional_set": [
+    "base_record_cutoff": "2027-02-18 16:00",
+    "program_overlay_cutoff": "2027-02-20 17:00",
+    "public_copy_freeze": "2027-02-25 12:00 exclusive",
+    "same_timestamp_rule": "Larger revision_no controls.",
+    "individually_eligible_count": 18,
+    "operational_set_before_program_overlay": [
       "Quilted Harbor Map",
       "Brass Transit Token Set",
       "Flood Ledger Pages",
-      "Dockyard Safety Poster",
       "Neighborhood Radio Mic",
-      "Wharf Crane Control Lever",
-      "Market Stall Ledger"
+      "Market Stall Ledger",
+      "Dockworkers Union Pennant",
+      "Harbor Dispatch Bell"
     ],
-    "resource_replacement_trace": [
-      "Remove Dockyard Safety Poster for zone conflict MG-01.",
-      "Add Harbor Signal Lantern (eligible rank 9).",
-      "Remove Wharf Crane Control Lever for case conflict open_plinth.",
-      "Add Canal Workers Banner (eligible rank 8)."
+    "controlling_mandatory_tier_a_commitments": [
+      "Dockyard Safety Poster",
+      "River Gauge Plate"
     ],
-    "final_eligible_rank_vector": [
-      1,
-      2,
-      3,
-      5,
-      7,
-      8,
-      9
-    ]
+    "program_overlay_replacements": [
+      {
+        "inserted": "Dockyard Safety Poster",
+        "removed": "Dockworkers Union Pennant",
+        "reason": "Waterfront Work exceeded its target after mandatory insertion."
+      },
+      {
+        "inserted": "River Gauge Plate",
+        "removed": "Harbor Dispatch Bell",
+        "reason": "Transit and Movement exceeded its target while Flood and Resilience reached its target."
+      }
+    ],
+    "controlling_theme_vector": {
+      "Waterfront Work": 2,
+      "Transit and Movement": 1,
+      "Flood and Resilience": 2,
+      "Community Voice": 1,
+      "Markets and Exchange": 1
+    },
+    "dockyard_controlling_override": {
+      "gallery": "Market Gallery",
+      "zone_id": "MG-05"
+    },
+    "market_gallery_route_override": {
+      "maximum_audio_stops": 1
+    },
+    "public_sequence": "Theme order, then controlling within-theme sequence.",
+    "inclusive_day_rule": "Count both endpoints."
   }
 }

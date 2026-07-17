@@ -40,7 +40,7 @@
       "description": "Highest-scoring uncovered area for the one new intervention",
       "source": "env/warehouse_quality_review.xlsx + Intervention Register",
       "importance": "critical",
-      "canonical_answer": "Cold Chain (E05) is the new intervention at 93.0; it is uncovered and leads the watchlist choice by 6.1 score points.",
+      "canonical_answer": "Cold Chain (E05) is the new intervention at 93.0; it is uncovered and leads the watchlist choice by 6.1 score points, calculated by subtracting the unrounded priority scores and rounding the margin to one decimal.",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
@@ -49,7 +49,7 @@
       "description": "Next highest-scoring uncovered area",
       "source": "env/warehouse_quality_review.xlsx + Intervention Register",
       "importance": "critical",
-      "canonical_answer": "Robotics Cell (E13) is the watchlist choice at 87.0; it is uncovered and trails Cold Chain by 6.1 points.",
+      "canonical_answer": "Robotics Cell (E13) is the watchlist choice at 87.0; it is uncovered and trails Cold Chain by 6.1 points, calculated by subtracting the unrounded priority scores and rounding the margin to one decimal.",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
@@ -399,6 +399,7 @@
     "profile_rule": "Use effective-dated profile for name, zone, unit conversion, exposure, criticality and control limit.",
     "incident_rule": "Production Quality Defect/Rework; Confirmed/Closed; not duplicate; review-window date; severity-weighted.",
     "current_action_rule": "Approved Active/Monitoring, approved and started by cutoff, not closed by cutoff.",
+    "score_margin_rule": "Subtract unrounded priority scores, then round the resulting margin to one decimal.",
     "tie_break": "Rounded score, review gap volume, average review criticality, area name."
   }
 }

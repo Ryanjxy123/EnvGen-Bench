@@ -9,75 +9,111 @@
     "vqa_items": [
       {
         "id": "grounded_q01",
-        "question": "Does the banner show the complete final desk-trial identity block?",
-        "expected_answer": "It shows all three exact strings: \"BrightBite Protein Oats\", \"APPLE CRUNCH DESK TRIAL · US\", and \"Breakfast before the first calendar alert.\"",
-        "acceptance_rule": "Score 2 only if all three strings are directly readable and materially exact. Score 1 only if the product name and campaign marker are exact and the headline has one minor punctuation or single-character legibility defect. Score 0 if any string is missing, paraphrased, or uses the earlier Apple Crunch Pilot identity or headline."
+        "state": "Does the banner show the complete final desk-trial identity block; specifically, It shows all three exact strings: \"BrightBite Protein Oats\", \"APPLE CRUNCH DESK TRIAL · US\", and \"Breakfast before the first calendar alert.\"?",
+        "score_criteria": {
+          "2": "Score 2 only if all three strings are directly readable and materially exact.",
+          "1": "Score 1 only if the product name and campaign marker are exact and the headline has one minor punctuation or single-character legibility defect.",
+          "0": "Score 0 if any string is missing, paraphrased, or uses the earlier Apple Crunch Pilot identity or headline."
+        }
       },
       {
         "id": "grounded_q02",
-        "question": "Does the banner reproduce the complete approved preparation sentence with all quantities and timings?",
-        "expected_answer": "It reads \"Add 1/2 cup water, microwave 70 seconds, rest 20 seconds, then stir in the apple crunch topper.\"",
-        "acceptance_rule": "Score 2 only if the full sentence is readable and every action, quantity, time, order and topper reference is exact. Score 1 only if the complete sequence remains exact and one insignificant punctuation or spacing defect occurs. Score 0 if any action, 1/2-cup quantity, 70-second time, 20-second rest, order, or topper phrase is missing or changed."
+        "state": "Does the banner reproduce the complete approved preparation sentence with all quantities and timings; specifically, It reads \"Add 1/2 cup water, microwave 70 seconds, rest 20 seconds, then stir in the apple crunch topper.\"?",
+        "score_criteria": {
+          "2": "Score 2 only if the full sentence is readable and every action, quantity, time, order and topper reference is exact.",
+          "1": "Score 1 only if the complete sequence remains exact and one insignificant punctuation or spacing defect occurs.",
+          "0": "Score 0 if any action, 1/2-cup quantity, 70-second time, 20-second rest, order, or topper phrase is missing or changed."
+        }
       },
       {
         "id": "grounded_q03",
-        "question": "Does the banner show the exact audience, trial offer, protein claim and promo code from the resolved package and activation?",
-        "expected_answer": "It states \"For hybrid workdays at home or the office.\", \"4 cups · $10 one-time trial\", \"14g protein per prepared cup\", and promo code \"DESK10\".",
-        "acceptance_rule": "Score 2 only if all four fields are directly visible, readable and exact. Score 1 only if all four are present and exactly one field has a minor punctuation or legibility defect. Score 0 if any field is absent or materially changed, including 3 cups, $8, 13g, or a different promo code."
+        "state": "Does the banner show the exact audience, trial offer, protein claim and promo code from the resolved package and activation; specifically, It states \"For hybrid workdays at home or the office.\", \"4 cups · $10 one-time trial\", \"14g protein per prepared cup\", and promo code \"DESK10\"?",
+        "score_criteria": {
+          "2": "Score 2 only if all four fields are directly visible, readable and exact.",
+          "1": "Score 1 only if all four are present and exactly one field has a minor punctuation or legibility defect.",
+          "0": "Score 0 if any field is absent or materially changed, including 3 cups, $8, 13g, or a different promo code."
+        }
       },
       {
         "id": "grounded_q04",
-        "question": "Does the banner show the exact CTA, landing path and all three fulfillment restrictions?",
-        "expected_answer": "It shows \"Start the 4-cup desk trial\", \"brightbite.com/desk-trial\", \"Online only\", \"US shipping only\", and \"Limit one trial box per household\".",
-        "acceptance_rule": "Score 2 only if all five strings are readable and exact. Score 1 only if all five are present and exactly one has a minor punctuation or legibility defect. Score 0 if any one is missing, replaced, or cannot be verified directly."
+        "state": "Does the banner show the exact CTA, landing path and all three fulfillment restrictions; specifically, It shows \"Start the 4-cup desk trial\", \"brightbite.com/desk-trial\", \"Online only\", \"US shipping only\", and \"Limit one trial box per household\"?",
+        "score_criteria": {
+          "2": "Score 2 only if all five strings are readable and exact.",
+          "1": "Score 1 only if all five are present and exactly one has a minor punctuation or legibility defect.",
+          "0": "Score 0 if any one is missing, replaced, or cannot be verified directly."
+        }
       },
       {
         "id": "grounded_q05",
-        "question": "Does the banner reproduce the complete source and allergen statements from the final desk-trial package?",
-        "expected_answer": "It shows \"Prepared with 1/2 cup water. See pack for full nutrition and allergen information.\" and \"Contains milk and oats. May contain tree nuts.\"",
-        "acceptance_rule": "Score 2 only if both full statements are readable and materially exact, including water quantity, oats, and tree-nut wording. Score 1 only if both are present and exactly one insignificant punctuation or article defect occurs. Score 0 if either statement is shortened, partly omitted, reworded, or unreadable."
+        "state": "Does the banner reproduce the complete source and allergen statements from the final desk-trial package; specifically, It shows \"Prepared with 1/2 cup water. See pack for full nutrition and allergen information.\" and \"Contains milk and oats. May contain tree nuts.\"?",
+        "score_criteria": {
+          "2": "Score 2 only if both full statements are readable and materially exact, including water quantity, oats, and tree-nut wording.",
+          "1": "Score 1 only if both are present and exactly one insignificant punctuation or article defect occurs.",
+          "0": "Score 0 if either statement is shortened, partly omitted, reworded, or unreadable."
+        }
       },
       {
         "id": "grounded_q06",
-        "question": "Does the banner include both exact final badge lines and the complete three-step preparation strip?",
-        "expected_answer": "Badge lines: \"Apple topper packed separately\" and \"One-time purchase · no subscription\". Preparation steps: \"ADD 1/2 CUP WATER\", \"MICROWAVE 70 SEC\", and \"REST 20 SEC + STIR IN TOPPER\".",
-        "acceptance_rule": "Score 2 only if all five required strings are directly readable and exact. Score 1 only if four are exact and the fifth has one minor legibility defect. Score 0 if two or more strings are missing or wrong, or if the earlier Apple topper included / No subscription required badge is used."
+        "state": "Does the banner include both exact final badge lines and the complete three-step preparation strip; specifically, Badge lines: \"Apple topper packed separately\" and \"One-time purchase · no subscription\". Preparation steps: \"ADD 1/2 CUP WATER\", \"MICROWAVE 70 SEC\", and \"REST 20 SEC + STIR IN TOPPER\"?",
+        "score_criteria": {
+          "2": "Score 2 only if all five required strings are directly readable and exact.",
+          "1": "Score 1 only if four are exact and the fifth has one minor legibility defect.",
+          "0": "Score 0 if two or more strings are missing or wrong, or if the earlier Apple topper included / No subscription required badge is used."
+        }
       },
       {
         "id": "grounded_q07",
-        "question": "Does the selected packshot preserve every locked desk-trial package identifier?",
-        "expected_answer": "The packshot visibly shows \"APPLE CINNAMON\", \"14g PROTEIN\", \"READY IN 70 SEC\", \"4-CUP TRIAL\", and the dark vertical nutrition strip.",
-        "acceptance_rule": "Score 2 only if all five identifiers are clearly present. Score 1 only if the correct desk-trial cup is unmistakable and exactly one identifier is partly obscured or slightly unreadable. Score 0 if two or more identifiers are absent or altered, or if the 13g/75-second or 12g/90-second cup is used."
+        "state": "Does the selected packshot preserve every locked desk-trial package identifier; specifically, The packshot visibly shows \"APPLE CINNAMON\", \"14g PROTEIN\", \"READY IN 70 SEC\", \"4-CUP TRIAL\", and the dark vertical nutrition strip?",
+        "score_criteria": {
+          "2": "Score 2 only if all five identifiers are clearly present.",
+          "1": "Score 1 only if the correct desk-trial cup is unmistakable and exactly one identifier is partly obscured or slightly unreadable.",
+          "0": "Score 0 if two or more identifiers are absent or altered, or if the 13g/75-second or 12g/90-second cup is used."
+        }
       },
       {
         "id": "grounded_q08",
-        "question": "Does the claim panel contain the complete approved quantitative and compliance set?",
-        "expected_answer": "The panel shows all eight lines: \"14g protein per prepared cup\", \"4 cups per trial box\", \"70-second microwave\", \"20-second rest\", \"Prepared with 1/2 cup water\", \"Contains milk and oats\", \"May contain tree nuts\", and \"See pack for full nutrition information\".",
-        "acceptance_rule": "Score 2 only if all eight panel lines are directly readable and exact. Score 1 only if seven are exact and the eighth has a minor legibility defect. Score 0 if two or more lines are missing or wrong, if the panel is absent, or if an earlier pilot panel is used."
+        "state": "Does the claim panel contain the complete approved quantitative and compliance set; specifically, The panel shows all eight lines: \"14g protein per prepared cup\", \"4 cups per trial box\", \"70-second microwave\", \"20-second rest\", \"Prepared with 1/2 cup water\", \"Contains milk and oats\", \"May contain tree nuts\", and \"See pack for full nutrition information\"?",
+        "score_criteria": {
+          "2": "Score 2 only if all eight panel lines are directly readable and exact.",
+          "1": "Score 1 only if seven are exact and the eighth has a minor legibility defect.",
+          "0": "Score 0 if two or more lines are missing or wrong, if the panel is absent, or if an earlier pilot panel is used."
+        }
       },
       {
         "id": "grounded_q09",
-        "question": "Does the supporting Apple Crunch photograph contain every required desk-trial identifier?",
-        "expected_answer": "It shows an oatmeal bowl on a navy cloth, a whole red apple, cinnamon sticks, a separate packet labeled \"APPLE CRUNCH\", and a visible \"DESK TRIAL\" cue card.",
-        "acceptance_rule": "Score 2 only if all six identifiers are directly visible. Score 1 only if the exact photo is identifiable and exactly one identifier is cropped or unclear. Score 0 if two or more identifiers are absent or another photo family is used."
+        "state": "Does the supporting Apple Crunch photograph contain every required desk-trial identifier; specifically, It shows an oatmeal bowl on a navy cloth, a whole red apple, cinnamon sticks, a separate packet labeled \"APPLE CRUNCH\", and a visible \"DESK TRIAL\" cue card?",
+        "score_criteria": {
+          "2": "Score 2 only if all six identifiers are directly visible.",
+          "1": "Score 1 only if the exact photo is identifiable and exactly one identifier is cropped or unclear.",
+          "0": "Score 0 if two or more identifiers are absent or another photo family is used."
+        }
       },
       {
         "id": "grounded_q10",
-        "question": "Does the banner use the complete final logo and background family without a near-match substitution?",
-        "expected_answer": "It uses the current horizontal BrightBite Kitchen logo and a background with a warm-cream field, apple-red left rule, sage arcs in the upper-right, visible oat-grain dots, amber folded lower ribbon, and dark-brown footer.",
-        "acceptance_rule": "Score 2 only if the correct logo and all six background identifiers are directly visible. Score 1 only if the correct logo and background are clear and exactly one secondary background cue is mostly covered. Score 0 if two or more cues are missing or either family is replaced."
+        "state": "Does the banner use the complete final logo and background family without a near-match substitution; specifically, It uses the current horizontal BrightBite Kitchen logo and a background with a warm-cream field, apple-red left rule, sage arcs in the upper-right, visible oat-grain dots, amber folded lower ribbon, and dark-brown footer?",
+        "score_criteria": {
+          "2": "Score 2 only if the correct logo and all six background identifiers are directly visible.",
+          "1": "Score 1 only if the correct logo and background are clear and exactly one secondary background cue is mostly covered.",
+          "0": "Score 0 if two or more cues are missing or either family is replaced."
+        }
       },
       {
         "id": "grounded_q11",
-        "question": "Does the final banner contain the complete six-role desk-trial content set rather than a partial or earlier pilot set?",
-        "expected_answer": "The banner contains all six required roles: current BrightBite logo, 14g/70-second/4-cup Apple Cinnamon packshot, desk-trial background, Apple Crunch desk photo, eight-line claim panel, and three-step preparation strip.",
-        "acceptance_rule": "Score 2 only if all six roles are directly identifiable through the stated visible traits. Score 1 only if five roles are correct and the sixth is present but has one limited identifying defect. Score 0 if two or more roles are missing, wrong, or replaced by an earlier pilot, wrong-market, wrong-placement or post-freeze family. Do not require internal asset IDs to be printed in the image."
+        "state": "Does the final banner contain the complete six-role desk-trial content set rather than a partial or earlier pilot set; specifically, The banner contains all six required roles: current BrightBite logo, 14g/70-second/4-cup Apple Cinnamon packshot, desk-trial background, Apple Crunch desk photo, eight-line claim panel, and three-step preparation strip?",
+        "score_criteria": {
+          "2": "Score 2 only if all six roles are directly identifiable through the stated visible traits. Do not require internal asset IDs to be printed in the image.",
+          "1": "Score 1 only if five roles are correct and the sixth is present but has one limited identifying defect.",
+          "0": "Score 0 if two or more roles are missing, wrong, or replaced by an earlier pilot, wrong-market, wrong-placement or post-freeze family."
+        }
       },
       {
         "id": "grounded_q12",
-        "question": "Is the final banner free of every listed legacy pilot string, conflicting value, prohibited claim and internal production identifier?",
-        "expected_answer": "It does not show the earlier marker/headline/prep/offer/CTA/URL/badge values, including \"APPLE CRUNCH PILOT · US\", \"Breakfast before your first meeting.\", 75 seconds, 3 cups, $8, 13g, \"Start the 3-cup trial\", \"brightbite.com/apple-trial\", \"Apple topper included\", or \"No subscription required\"; and it shows no medical, weight-loss, guaranteed-energy, extreme-discount or internal package/activation/asset/profile/status/worksheet identifier.",
-        "acceptance_rule": "Score 2 only if none of the listed legacy, conflicting, prohibited or internal-production content is visible. Score 1 only if one tiny non-core fragment is ambiguous but no explicit conflicting string is readable. Score 0 if any listed legacy string or conflicting numeric value is clearly visible, or if any prohibited claim or internal identifier appears."
+        "state": "Is the final banner free of every listed legacy pilot string, conflicting value, prohibited claim and internal production identifier; specifically, so that It does not show the earlier marker/headline/prep/offer/CTA/URL/badge values, including \"APPLE CRUNCH PILOT · US\", \"Breakfast before your first meeting.\", 75 seconds, 3 cups, $8, 13g, \"Start the 3-cup trial\", \"brightbite.com/apple-trial\", \"Apple topper included\", or \"No subscription required\"; and it shows no medical, weight-loss, guaranteed-energy, extreme-discount or internal package/activation/asset/profile/status/worksheet identifier?",
+        "score_criteria": {
+          "2": "Score 2 only if none of the listed legacy, conflicting, prohibited or internal-production content is visible.",
+          "1": "Score 1 only if one tiny non-core fragment is ambiguous but no explicit conflicting string is readable.",
+          "0": "Score 0 if any listed legacy string or conflicting numeric value is clearly visible, or if any prohibited claim or internal identifier appears."
+        }
       }
     ]
   },
@@ -86,11 +122,11 @@
     "vqa_items": [
       {
         "id": "visual_q01",
-        "question": "As a digital banner or email-header advertisement, does the narrow composition deliver a single decisive focal path across brand, headline, benefit, hero element, CTA where required, and compliance text, while remaining balanced, readable, and visually premium within the constrained horizontal crop?",
+        "state": "As a digital banner or email-header advertisement, does the narrow composition deliver a single decisive focal path across brand, headline, benefit, hero element, CTA where required, and compliance text, while remaining balanced, readable, and visually premium within the constrained horizontal crop?",
         "score_criteria": {
-          "2": "Award 2 only if the banner is exceptionally refined and placement-ready: the message is understood almost instantly; brand, headline, benefit, hero element, and CTA are prioritized with precise left-to-right balance; every essential line remains readable at intended display size; crop and safe zones feel intentional; the composition uses the narrow canvas elegantly rather than squeezing a poster into it; and typography, imagery, spacing, contrast, and finish are premium and cohesive. No meaningful tiny text, awkward crop, detached CTA, weak brand separation, clipping, malformed glyph, collision, or generic template feel is allowed. Any uncertainty about real deployment quality prevents 2.",
-          "1": "Award 1 if the banner is clear and usable and looks acceptable or good, but it has visible limitations such as slightly crowded copy, small secondary text, modest brand presence, an ordinary crop, uneven horizontal balance, a somewhat detached CTA, or generally generic execution.",
-          "0": "Award 0 even when the image is valid if the banner format is handled poorly: the core message or identity is not quickly understood, text is squeezed or too small, crop is awkward, balance is visibly weak, CTA or compliance text is unusable, or the composition looks amateurish and needs major redesign. Blank, corrupted, severely unreadable, clipped, or broken banners are also 0."
+          "2": "Score 2 only if the banner is exceptionally refined and placement-ready: the message is understood almost instantly; brand, headline, benefit, hero element, and CTA are prioritized with precise left-to-right balance; every essential line remains readable at intended display size; crop and safe zones feel intentional; the composition uses the narrow canvas elegantly rather than squeezing a poster into it; and typography, imagery, spacing, contrast, and finish are premium and cohesive. No meaningful tiny text, awkward crop, detached CTA, weak brand separation, clipping, malformed glyph, collision, or generic template feel is allowed. Any uncertainty about real deployment quality prevents 2.",
+          "1": "Score 1 if the banner is clear and usable and looks acceptable or good, but it has visible limitations such as slightly crowded copy, small secondary text, modest brand presence, an ordinary crop, uneven horizontal balance, a somewhat detached CTA, or generally generic execution.",
+          "0": "Score 0 even when the image is valid if the banner format is handled poorly: the core message or identity is not quickly understood, text is squeezed or too small, crop is awkward, balance is visibly weak, CTA or compliance text is unusable, or the composition looks amateurish and needs major redesign. Blank, corrupted, severely unreadable, clipped, or broken banners are also 0."
         }
       }
     ]

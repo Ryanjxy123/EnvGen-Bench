@@ -16,7 +16,7 @@ The finished brief must include all of the following decision evidence:
 1. The cutoff week, exact review and baseline windows, and the later incomplete weeks that were rejected.
 2. A network reconciliation showing review shipped standard units, accepted standard units, gap standard units and gap rate.
 3. The raw priority leader, its exact score and current approved-action status.
-4. The one area recommended for the new intervention and the next uncovered area placed on watch, including both scores and the score margin between them.
+4. The one area recommended for the new intervention and the next uncovered area placed on watch, including both scores and the score margin between them; calculate the margin from the unrounded priority scores, then round the margin to one decimal.
 5. The complete ranked comparison of every active fulfillment area, with cell ID, priority score, priority band and current-action coverage.
 6. Baseline gap rate, review gap rate and percentage-point worsening for the three highest raw-risk areas.
 7. The complete high-priority set, plus the covered-versus-eligible split.

@@ -44,7 +44,7 @@ Across active areas, min-max normalize these five measures:
 - average review-window criticality: 15%;
 - repeat-breach share: 15%.
 
-Priority score is the weighted normalized total multiplied by 100. Use the score rounded to one decimal for ranking. If rounded scores tie, sort by review gap volume, then average review criticality, then area name.
+Priority score is the weighted normalized total multiplied by 100. Use the score rounded to one decimal for ranking. If rounded scores tie, sort by review gap volume, then average review criticality, then area name. For a reported score margin, subtract the unrounded priority scores first, then round the resulting margin to one decimal.
 
 High priority is 75.0 or above. Watch band is 55.0 through 74.9.
 

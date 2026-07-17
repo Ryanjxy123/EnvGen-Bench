@@ -9,69 +9,102 @@
     "vqa_items": [
       {
         "id": "grounded_q01",
-        "question": "Does the Story contain the exact final event identity and schedule header from the resolved packages?",
-        "expected_answer": "It visibly contains all five exact items: \"Open Studio Day\"; \"Northstar Design School\"; \"Saturday, July 12\"; \"10 AM–2 PM\"; and \"88 Beacon Ave · Studio Hall\".",
-        "acceptance_rule": "Score 2 only if the judge can directly quote all five exact items from the image and none is replaced by an older, shortened, or conflicting value. Score 1 only if four are exact and the fifth has one minor punctuation or legibility defect without changing meaning. Score 0 if two or more items are missing or defective, or if any date, time, school, or location value conflicts with the expected package. Do not infer an item from context."
+        "state": "Does the Story visibly contain all five exact final event identity and schedule items—\"Open Studio Day\", \"Northstar Design School\", \"Saturday, July 12\", \"10 AM–2 PM\", and \"88 Beacon Ave · Studio Hall\"—without replacing any of them with an older, shortened, or conflicting value?",
+        "score_criteria": {
+          "2": "Score 2 only if the judge can directly quote all five exact items from the image and none is replaced by an older, shortened, or conflicting value. Do not infer an item from context.",
+          "1": "Score 1 only if four are exact and the fifth has one minor punctuation or legibility defect without changing meaning.",
+          "0": "Score 0 if two or more items are missing or defective, or if any date, time, school, or location value conflicts with the expected package."
+        }
       },
       {
         "id": "grounded_q02",
-        "question": "Does the Story contain the complete resolved audience, admission, portfolio, and accessibility package?",
-        "expected_answer": "It visibly contains all four exact lines: \"Prospective students ages 16+\"; \"Free admission · Registration required\"; \"Bring up to 3 portfolio pieces\"; and \"ASL available on request\".",
-        "acceptance_rule": "Score 2 only if all four exact lines are directly readable. Score 1 only if exactly three are exact and the fourth is missing or has one minor non-material defect. Score 0 if two or more lines are absent, paraphrased, contradicted, or unreadable. General statements such as \"students welcome\" or \"free event\" do not satisfy the specific lines."
+        "state": "Does the Story visibly contain all four exact resolved audience, admission, portfolio, and accessibility lines—\"Prospective students ages 16+\", \"Free admission · Registration required\", \"Bring up to 3 portfolio pieces\", and \"ASL available on request\"?",
+        "score_criteria": {
+          "2": "Score 2 only if all four exact lines are directly readable.",
+          "1": "Score 1 only if exactly three are exact and the fourth is missing or has one minor non-material defect.",
+          "0": "Score 0 if two or more lines are absent, paraphrased, contradicted, or unreadable. General statements such as \"students welcome\" or \"free event\" do not satisfy the specific lines."
+        }
       },
       {
         "id": "grounded_q03",
-        "question": "Does the Story contain the complete arrival and portfolio-tour schedule package?",
-        "expected_answer": "It visibly contains all three exact logistics lines: \"Check-in opens 9:45 AM\"; \"Portfolio tours: 10:30 AM & 12:30 PM\"; and \"Enter through the east lobby\".",
-        "acceptance_rule": "Score 2 only if all three exact logistics lines are directly readable and use the stated times and entrance. Score 1 only if exactly two are exact and the third has one minor punctuation or legibility defect. Score 0 if any time is changed, the entrance differs, two or more lines are missing, or the judge must infer the schedule from other text."
+        "state": "Does the Story visibly contain all three exact arrival and portfolio-tour logistics lines—\"Check-in opens 9:45 AM\", \"Portfolio tours: 10:30 AM & 12:30 PM\", and \"Enter through the east lobby\"?",
+        "score_criteria": {
+          "2": "Score 2 only if all three exact logistics lines are directly readable and use the stated times and entrance.",
+          "1": "Score 1 only if exactly two are exact and the third has one minor punctuation or legibility defect.",
+          "0": "Score 0 if any time is changed, the entrance differs, two or more lines are missing, or the judge must infer the schedule from other text."
+        }
       },
       {
         "id": "grounded_q04",
-        "question": "Does the Story use the final registration action package rather than the superseded CTA?",
-        "expected_answer": "It visibly contains all three exact items: \"RSVP by July 10\"; the CTA \"Reserve a portfolio tour\"; and the landing path \"northstar.design/openstudio\".",
-        "acceptance_rule": "Score 2 only if all three exact items are directly readable and there is no second CTA or conflicting landing path. Score 1 only if the deadline and CTA are exact while the landing path has one minor punctuation or legibility defect. Score 0 if the old CTA \"RSVP for portfolio tours\" is used, if any required item is absent, if a QR code replaces the path, or if multiple actions compete."
+        "state": "Does the Story use the final registration action package by visibly showing \"RSVP by July 10\", the CTA \"Reserve a portfolio tour\", and the landing path \"northstar.design/openstudio\", with no superseded CTA, conflicting path, replacement QR code, or competing action?",
+        "score_criteria": {
+          "2": "Score 2 only if all three exact items are directly readable and there is no second CTA or conflicting landing path.",
+          "1": "Score 1 only if the deadline and CTA are exact while the landing path has one minor punctuation or legibility defect.",
+          "0": "Score 0 if the old CTA \"RSVP for portfolio tours\" is used, if any required item is absent, if a QR code replaces the path, or if multiple actions compete."
+        }
       },
       {
         "id": "grounded_q05",
-        "question": "Does the Story use the exact current English Northstar logo identity?",
-        "expected_answer": "The active logo is the complete English horizontal Northstar signature containing the layered orange-and-cyan starburst, the word NORTHSTAR, and the DESIGN SCHOOL descriptor. It is not the Spanish, crest, stacked, symbol-only, or legacy identity.",
-        "acceptance_rule": "Score 2 only if all three identity parts—starburst, NORTHSTAR, and DESIGN SCHOOL—are directly identifiable and no alternate logo identity is also active. Score 1 only if the correct horizontal identity is unmistakable but exactly one small descriptor or starburst detail is partly obscured. Score 0 if any identity part is missing, another language or legacy form is used, or the mark is only generic or inferred."
+        "state": "Does the Story use the exact current English horizontal Northstar logo identity, with the layered orange-and-cyan starburst, the word \"NORTHSTAR\", and the \"DESIGN SCHOOL\" descriptor, while avoiding Spanish, crest, stacked, symbol-only, or legacy logo variants?",
+        "score_criteria": {
+          "2": "Score 2 only if all three identity parts—starburst, NORTHSTAR, and DESIGN SCHOOL—are directly identifiable and no alternate logo identity is also active.",
+          "1": "Score 1 only if the correct horizontal identity is unmistakable but exactly one small descriptor or starburst detail is partly obscured.",
+          "0": "Score 0 if any identity part is missing, another language or legacy form is used, or the mark is only generic or inferred."
+        }
       },
       {
         "id": "grounded_q06",
-        "question": "Does the Story use the exact approved Open Studio Day hero asset and preserve its identifying content?",
-        "expected_answer": "The hero contains both the upper critique/sketch-and-bust section and the lower workshop-audience section, plus the cyan rail, VISITOR PASS, PORTFOLIO TOUR, navy divider, and STUDIO HALL / OPEN DAY footer.",
-        "acceptance_rule": "Score 2 only if both photo sections and all five named identifying cues are directly visible. Score 1 only if both sections and exactly four of the five cues are visible. Score 0 if a photo section is absent, two or more cues are missing, or a generic or alternate hero is used. Do not award 2 based only on a similar school photograph."
+        "state": "Does the Story use the exact approved Open Studio Day hero asset, preserving both the upper critique/sketch-and-bust section and the lower workshop-audience section, together with the cyan rail, \"VISITOR PASS\", \"PORTFOLIO TOUR\", the navy divider, and the \"STUDIO HALL / OPEN DAY\" footer?",
+        "score_criteria": {
+          "2": "Score 2 only if both photo sections and all five named identifying cues are directly visible. Do not award 2 based only on a similar school photograph.",
+          "1": "Score 1 only if both sections and exactly four of the five cues are visible.",
+          "0": "Score 0 if a photo section is absent, two or more cues are missing, or a generic or alternate hero is used."
+        }
       },
       {
         "id": "grounded_q07",
-        "question": "Does the Story use the complete approved blueprint background asset?",
-        "expected_answer": "The background contains all six identifiers: cream field, navy top band, orange upper-right diagonal, thin orange left rule, cyan square grid, and pale cyan lower-right circle.",
-        "acceptance_rule": "Score 2 only if all six named identifiers are directly visible. Score 1 only if exactly five are visible and the sixth is plausibly covered by required foreground content. Score 0 if two or more identifiers are absent, recolored, or replaced, or if a plain or alternate campaign background is used."
+        "state": "Does the Story use the complete approved blueprint background asset with all six identifying elements: a cream field, navy top band, orange upper-right diagonal, thin orange left rule, cyan square grid, and pale cyan lower-right circle?",
+        "score_criteria": {
+          "2": "Score 2 only if all six named identifiers are directly visible.",
+          "1": "Score 1 only if exactly five are visible and the sixth is plausibly covered by required foreground content.",
+          "0": "Score 0 if two or more identifiers are absent, recolored, or replaced, or if a plain or alternate campaign background is used."
+        }
       },
       {
         "id": "grounded_q08",
-        "question": "Is the required supporting badge the exact approved separate badge?",
-        "expected_answer": "A separate orange rounded badge reading exactly \"PORTFOLIO TOURS\" is present. It is distinct from any PORTFOLIO TOUR text embedded inside the hero and no other supporting badge is used.",
-        "acceptance_rule": "Score 2 only if the separate orange badge, exact plural wording, and absence of any competing badge are all directly verifiable. Score 1 only if the exact separate badge is present but has one minor crop or punctuation defect. Score 0 if it is missing, blue, singular, embedded only in the hero, replaced by another badge, or accompanied by a second badge."
+        "state": "Does the Story include the exact approved separate supporting badge as an orange rounded badge reading \"PORTFOLIO TOURS\", distinct from any \"PORTFOLIO TOUR\" text embedded in the hero and without any competing badge?",
+        "score_criteria": {
+          "2": "Score 2 only if the separate orange badge, exact plural wording, and absence of any competing badge are all directly verifiable.",
+          "1": "Score 1 only if the exact separate badge is present but has one minor crop or punctuation defect.",
+          "0": "Score 0 if it is missing, blue, singular, embedded only in the hero, replaced by another badge, or accompanied by a second badge."
+        }
       },
       {
         "id": "grounded_q09",
-        "question": "Does the final Story use the complete four-role approved asset package?",
-        "expected_answer": "The active package consists of the current English horizontal logo, the exact two-section Open Studio Day hero, the exact blueprint background, and the separate orange PORTFOLIO TOURS badge.",
-        "acceptance_rule": "Score 2 only if all four required asset roles match the exact expected families. Score 1 only if exactly three roles are exact and the fourth is missing or a near-miss. Score 0 if two or more roles are absent, generic, alternate-language, legacy, other-campaign, or otherwise incorrect. Similarity alone is not sufficient."
+        "state": "Does the final Story use the complete four-role approved asset package consisting of the current English horizontal logo, the exact two-section Open Studio Day hero, the exact blueprint background, and the separate orange \"PORTFOLIO TOURS\" badge?",
+        "score_criteria": {
+          "2": "Score 2 only if all four required asset roles match the exact expected families. Similarity alone is not sufficient.",
+          "1": "Score 1 only if exactly three roles are exact and the fourth is missing or a near-miss.",
+          "0": "Score 0 if two or more roles are absent, generic, alternate-language, legacy, other-campaign, or otherwise incorrect."
+        }
       },
       {
         "id": "grounded_q10",
-        "question": "Is the Story free of superseded copy, conflicting logistics, unsupported claims, and invented routing devices?",
-        "expected_answer": "It contains none of these: \"RSVP for portfolio tours\"; June 8; Northstar Arts Annex; Apply Now; Walk-ins welcome; scholarship or tuition-discount claims; guaranteed outcomes; Spanish campaign copy; a second CTA; or an invented QR code.",
-        "acceptance_rule": "Score 2 only if none of the listed excluded items is visible and the active final package is not contradicted. Score 1 only if one tiny ambiguous fragment is present but it does not communicate an excluded value or action. Score 0 if any excluded wording, claim, wrong date or location, competing CTA, Spanish package, or QR code is clearly present."
+        "state": "Is the Story free of all superseded copy, conflicting logistics, unsupported claims, and invented routing devices, including \"RSVP for portfolio tours\", June 8, Northstar Arts Annex, \"Apply Now\", \"Walk-ins welcome\", scholarship or tuition-discount claims, guaranteed outcomes, Spanish campaign copy, a second CTA, and an invented QR code?",
+        "score_criteria": {
+          "2": "Score 2 only if none of the listed excluded items is visible and the active final package is not contradicted.",
+          "1": "Score 1 only if one tiny ambiguous fragment is present but it does not communicate an excluded value or action.",
+          "0": "Score 0 if any excluded wording, claim, wrong date or location, competing CTA, Spanish package, or QR code is clearly present."
+        }
       },
       {
         "id": "grounded_q11",
-        "question": "Does the Story present one internally consistent resolved package without mixing old and new field values or exposing production metadata?",
-        "expected_answer": "There is exactly one event date, one time range, one location, one registration deadline, one CTA, and one landing path, all matching the resolved packages. No asset ID, package ID, filename, approval status, revision record, or selection note is shown.",
-        "acceptance_rule": "Score 2 only if all six field categories are singular and mutually consistent and no production metadata is visible. Score 1 only if the final package is otherwise consistent but exactly one non-core metadata fragment or duplicate punctuation-level value appears. Score 0 if any old and new values are mixed, if two dates, locations, CTAs, deadlines, or paths compete, or if any package/asset/status identifier is exposed."
+        "state": "Does the Story present one internally consistent resolved package with exactly one event date, one time range, one location, one registration deadline, one CTA, and one landing path, all matching the resolved values, while showing no asset ID, package ID, filename, approval status, revision record, or selection note?",
+        "score_criteria": {
+          "2": "Score 2 only if all six field categories are singular and mutually consistent and no production metadata is visible.",
+          "1": "Score 1 only if the final package is otherwise consistent but exactly one non-core metadata fragment or duplicate punctuation-level value appears.",
+          "0": "Score 0 if any old and new values are mixed, if two dates, locations, CTAs, deadlines, or paths compete, or if any package/asset/status identifier is exposed."
+        }
       }
     ]
   },
@@ -80,11 +113,11 @@
     "vqa_items": [
       {
         "id": "visual_q01",
-        "question": "As a paid social-media advertisement, does the image integrate brand, approved hero visual, headline, benefit or event message, proof or compliance content, and CTA into one platform-native, conversion-focused, highly polished composition rather than an internal draft or generic template?",
+        "state": "As a paid social-media advertisement, does the image integrate brand, approved hero visual, headline, benefit or event message, proof or compliance content, and CTA into one platform-native, conversion-focused, highly polished composition rather than an internal draft or generic template?",
         "score_criteria": {
-          "2": "Award 2 only if the ad is exceptional and ready for paid placement without revision: brand, hero, message, benefit or proof, CTA, and required compliance text form one decisive focal hierarchy; the crop feels native to the declared platform; all essential text is readable at intended feed or story size; visual style is distinctive, premium, and coherent; and spacing, typography, imagery, contrast, and safe zones are meticulously controlled. No generic template feel, weak hero, competing copy, detached CTA, undersized disclaimer, malformed glyph, awkward crop, or visible rendering flaw is allowed. Any meaningful campaign-quality concern prevents 2.",
-          "1": "Award 1 if the ad is clear, usable, and looks acceptable or good, but it remains ordinary or visibly imperfect—for example, generic styling, modest brand or hero prominence, slightly small compliance text, competing messages, detached CTA, or a somewhat awkward crop.",
-          "0": "Award 0 even when all expected elements are present if the ad looks visibly poor or would not be credible as paid media: focal hierarchy is weak, brand or offer is unclear, crop is badly handled, text is difficult to read, disclaimer or CTA is unusable, or the composition appears amateurish and needs substantial redesign. Blank, corrupted, severely unreadable, or broken outputs are also 0."
+          "2": "Score 2 only if the ad is exceptional and ready for paid placement without revision: brand, hero, message, benefit or proof, CTA, and required compliance text form one decisive focal hierarchy; the crop feels native to the declared platform; all essential text is readable at intended feed or story size; visual style is distinctive, premium, and coherent; and spacing, typography, imagery, contrast, and safe zones are meticulously controlled. No generic template feel, weak hero, competing copy, detached CTA, undersized disclaimer, malformed glyph, awkward crop, or visible rendering flaw is allowed. Any meaningful campaign-quality concern prevents 2.",
+          "1": "Score 1 if the ad is clear, usable, and looks acceptable or good, but it remains ordinary or visibly imperfect—for example, generic styling, modest brand or hero prominence, slightly small compliance text, competing messages, detached CTA, or a somewhat awkward crop.",
+          "0": "Score 0 even when all expected elements are present if the ad looks visibly poor or would not be credible as paid media: focal hierarchy is weak, brand or offer is unclear, crop is badly handled, text is difficult to read, disclaimer or CTA is unusable, or the composition appears amateurish and needs substantial redesign. Blank, corrupted, severely unreadable, or broken outputs are also 0."
         }
       }
     ]

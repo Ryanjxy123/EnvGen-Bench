@@ -9,93 +9,138 @@
     "vqa_items": [
       {
         "id": "grounded_q01",
-        "question": "What exact operating scope, date, snapshot time, and control cut-off govern the map?",
-        "expected_answer": "Central Campus; Building safety; Weekday business hours; 30 Jun 2026; Snapshot 15:00 local; Control cutoff 14:45 local.",
-        "acceptance_rule": "Score 2 only if all six facts are present and exact. Score 1 only if Central Campus, building safety, weekday business hours, and 30 Jun 2026 are exact but one or both time-control facts are omitted. Score 0 if any campus, procedure, coverage-window, or date fact is wrong or missing."
+        "state": "Does the image accurately show what exact operating scope, date, snapshot time, and control cut-off govern the map; specifically, Central Campus; Building safety; Weekday business hours; 30 Jun 2026; Snapshot 15:00 local; Control cutoff 14:45 local?",
+        "score_criteria": {
+          "2": "Score 2 only if all six facts are present and exact.",
+          "1": "Score 1 only if Central Campus, building safety, weekday business hours, and 30 Jun 2026 are exact but one or both time-control facts are omitted.",
+          "0": "Score 0 if any campus, procedure, coverage-window, or date fact is wrong or missing."
+        }
       },
       {
         "id": "grounded_q02",
-        "question": "Which four operating areas are used?",
-        "expected_answer": "Executive Oversight, Command Spine, Functional Response, and Advisory / External.",
-        "acceptance_rule": "Score 2 only if the exact four-area set is used and no fifth operating area is introduced. Score 1 only if exactly one area label is mildly abbreviated while its meaning remains unambiguous. Score 0 if an area is missing, two labels are materially changed, or nodes are organized under a conflicting area structure."
+        "state": "Does the image accurately identify which four operating areas are used; specifically, Executive Oversight, Command Spine, Functional Response, and Advisory / External?",
+        "score_criteria": {
+          "2": "Score 2 only if the exact four-area set is used and no fifth operating area is introduced.",
+          "1": "Score 1 only if exactly one area label is mildly abbreviated while its meaning remains unambiguous.",
+          "0": "Score 0 if an area is missing, two labels are materially changed, or nodes are organized under a conflicting area structure."
+        }
       },
       {
         "id": "grounded_q03",
-        "question": "Who holds the four Executive Oversight and Command Spine roles at 15:00?",
-        "expected_answer": "Dana Brooks - Executive Sponsor; Mina Torres - Facilities Director; Ari Patel - Site Operations Manager; Marcus Hale - Incident Commander.",
-        "acceptance_rule": "Score 2 only if all four names and roles are exact and the two command roles remain separate. Score 1 only if exactly three of the four name-role pairs are correct and the fourth is omitted or uses the superseded holder for the same role. Score 0 if two or more pairs are wrong, Elena Rossi remains active alongside Marcus Hale, or the command roles are merged."
+        "state": "Does the image accurately identify who holds the four Executive Oversight and Command Spine roles at 15:00; specifically, Dana Brooks - Executive Sponsor; Mina Torres - Facilities Director; Ari Patel - Site Operations Manager; Marcus Hale - Incident Commander?",
+        "score_criteria": {
+          "2": "Score 2 only if all four names and roles are exact and the two command roles remain separate.",
+          "1": "Score 1 only if exactly three of the four name-role pairs are correct and the fourth is omitted or uses the superseded holder for the same role.",
+          "0": "Score 0 if two or more pairs are wrong, Elena Rossi remains active alongside Marcus Hale, or the command roles are merged."
+        }
       },
       {
         "id": "grounded_q04",
-        "question": "What is the exact Functional Response person-role set after all active overrides and bulletins?",
-        "expected_answer": "Amina Shah - Building Systems Lead; Priya Nair - Electrical Response Lead; Mateo Silva - Mechanical Response Lead; Leah Stone - Access Coordinator; Riley West - Logistics Coordinator; Omar Price - Recovery Coordinator; Zoe Kim - Security Liaison; Eli Morgan - Safety Officer; Sofia Reed - Communications Lead; Tessa Wong - Student Affairs Liaison; Dev Chen - IT Continuity Lead.",
-        "acceptance_rule": "Score 2 only if all eleven pairs are exact with no extra active person. Score 1 only if exactly ten are exact and the sole defect is one omitted pair or one superseded holder substituted for the same role. Score 0 if two or more set errors occur, Jun Park or Nadia Cole remains active, or Amina Shah, Omar Price, or Tessa Wong is absent."
+        "state": "Does the image accurately show the exact Functional Response person-role set after all active overrides and bulletins as follows: Amina Shah - Building Systems Lead; Priya Nair - Electrical Response Lead; Mateo Silva - Mechanical Response Lead; Leah Stone - Access Coordinator; Riley West - Logistics Coordinator; Omar Price - Recovery Coordinator; Zoe Kim - Security Liaison; Eli Morgan - Safety Officer; Sofia Reed - Communications Lead; Tessa Wong - Student Affairs Liaison; Dev Chen - IT Continuity Lead?",
+        "score_criteria": {
+          "2": "Score 2 only if all eleven pairs are exact with no extra active person.",
+          "1": "Score 1 only if exactly ten are exact and the sole defect is one omitted pair or one superseded holder substituted for the same role.",
+          "0": "Score 0 if two or more set errors occur, Jun Park or Nadia Cole remains active, or Amina Shah, Omar Price, or Tessa Wong is absent."
+        }
       },
       {
         "id": "grounded_q05",
-        "question": "What is the exact active advisory and external-service node set?",
-        "expected_answer": "Central Emergency Dispatch; Community Advisory Board; EHS Review Council; Accessibility Advisory Panel; Continuity Planning Forum; Capital Works Coordination Cell.",
-        "acceptance_rule": "Score 2 only if all six and no extra advisory/external node are active. Score 1 only if exactly five are correct and the sixth is simply omitted or mildly abbreviated. Score 0 if two or more are missing or wrong, a specialized fire/medical/utility service is substituted, or any advisory body is represented as a person or manager."
+        "state": "Does the image accurately show the exact active advisory and external-service node set as follows: Central Emergency Dispatch; Community Advisory Board; EHS Review Council; Accessibility Advisory Panel; Continuity Planning Forum; Capital Works Coordination Cell?",
+        "score_criteria": {
+          "2": "Score 2 only if all six and no extra advisory/external node are active.",
+          "1": "Score 1 only if exactly five are correct and the sixth is simply omitted or mildly abbreviated.",
+          "0": "Score 0 if two or more are missing or wrong, a specialized fire/medical/utility service is substituted, or any advisory body is represented as a person or manager."
+        }
       },
       {
         "id": "grounded_q06",
-        "question": "Which current-holder and temporary-reporting decisions must be resolved at 15:00?",
-        "expected_answer": "Marcus Hale replaces Elena Rossi as Incident Commander; Amina Shah replaces Jun Park as Building Systems Lead; Tessa Wong replaces Nadia Cole as Student Affairs Liaison; Omar Price is current Recovery Coordinator; Sofia Reed remains Communications Lead; Priya Nair and Mateo Silva temporarily report to Amina Shah; Riley West temporarily reports to Marcus Hale.",
-        "acceptance_rule": "Score 2 only if all seven decisions are correct and no superseded, ended, pending, or future holder is active. Score 1 only if six decisions are correct and the seventh has one holder or endpoint defect. Score 0 if two or more decisions are wrong, bulletin precedence is ignored, or a pending/future decision is treated as current."
+        "state": "Does the image accurately identify which current-holder and temporary-reporting decisions must be resolved at 15:00; specifically, Marcus Hale replaces Elena Rossi as Incident Commander; Amina Shah replaces Jun Park as Building Systems Lead; Tessa Wong replaces Nadia Cole as Student Affairs Liaison; Omar Price is current Recovery Coordinator; Sofia Reed remains Communications Lead; Priya Nair and Mateo Silva temporarily report to Amina Shah; Riley West temporarily reports to Marcus Hale?",
+        "score_criteria": {
+          "2": "Score 2 only if all seven decisions are correct and no superseded, ended, pending, or future holder is active.",
+          "1": "Score 1 only if six decisions are correct and the seventh has one holder or endpoint defect.",
+          "0": "Score 0 if two or more decisions are wrong, bulletin precedence is ignored, or a pending/future decision is treated as current."
+        }
       },
       {
         "id": "grounded_q07",
-        "question": "What is the complete active solid subordinate-to-manager relationship set?",
-        "expected_answer": "Mina Torres -> Dana Brooks; Ari Patel -> Mina Torres; Marcus Hale -> Ari Patel; Amina Shah -> Ari Patel; Leah Stone -> Ari Patel; Omar Price -> Ari Patel; Priya Nair -> Amina Shah; Mateo Silva -> Amina Shah; Riley West -> Marcus Hale.",
-        "acceptance_rule": "Score 2 only if all nine directed edges are exact and no extra solid edge is present. Score 1 only if exactly eight are correct and the sole defect is one missing edge or one reversed endpoint. Score 0 if two or more edge defects occur, any superseded holder remains an endpoint, or an advisory/escalation relationship is converted into reporting."
+        "state": "Does the image accurately show the complete active solid subordinate-to-manager relationship set as follows: Mina Torres -> Dana Brooks; Ari Patel -> Mina Torres; Marcus Hale -> Ari Patel; Amina Shah -> Ari Patel; Leah Stone -> Ari Patel; Omar Price -> Ari Patel; Priya Nair -> Amina Shah; Mateo Silva -> Amina Shah; Riley West -> Marcus Hale?",
+        "score_criteria": {
+          "2": "Score 2 only if all nine directed edges are exact and no extra solid edge is present.",
+          "1": "Score 1 only if exactly eight are correct and the sole defect is one missing edge or one reversed endpoint.",
+          "0": "Score 0 if two or more edge defects occur, any superseded holder remains an endpoint, or an advisory/escalation relationship is converted into reporting."
+        }
       },
       {
         "id": "grounded_q08",
-        "question": "Which ten functional escalation routes are active, including controlling reference, endpoint, trigger, and severity?",
-        "expected_answer": "ER-0001 Amina Shah -> Marcus Hale: Operational impact confirmed / All severities; ER-0002 Leah Stone -> Marcus Hale: Access, crowd, or volunteer impact / All severities; ER-0003 Zoe Kim -> Marcus Hale: Security support requested / All severities; ER-0004 Eli Morgan -> Marcus Hale: Safety or regulatory concern / All severities; ER-0005 Sofia Reed -> Marcus Hale: Public or stakeholder messaging needed / Severity 2-3; ER-0006 Tessa Wong -> Marcus Hale: Student service impact / Severity 2-3; ER-0007 Dev Chen -> Marcus Hale: IT or digital-service dependency / Severity 2-3; ER-0701 Omar Price -> Marcus Hale: Recovery phase declared / Severity 2-3; CB-0003 Priya Nair -> Marcus Hale: Electrical isolation exceeds 30 min / Severity 2-3; CB-0004 Mateo Silva -> Marcus Hale: Mechanical isolation affects occupied space / Severity 2-3.",
-        "acceptance_rule": "Score 2 only if all ten references, sources, Marcus Hale target, directions, triggers, and severity scopes are correct. Score 1 only if nine routes are fully correct and the tenth has one bounded reference, wording, or severity defect. Score 0 if two or more route-level defects occur, any route targets Ari Patel or Elena Rossi, either bulletin-added route is omitted, or route references are broadly absent."
+        "state": "Does the image accurately identify which ten functional escalation routes are active, including controlling reference, endpoint, trigger, and severity; specifically, ER-0001 Amina Shah -> Marcus Hale: Operational impact confirmed / All severities; ER-0002 Leah Stone -> Marcus Hale: Access, crowd, or volunteer impact / All severities; ER-0003 Zoe Kim -> Marcus Hale: Security support requested / All severities; ER-0004 Eli Morgan -> Marcus Hale: Safety or regulatory concern / All severities; ER-0005 Sofia Reed -> Marcus Hale: Public or stakeholder messaging needed / Severity 2-3; ER-0006 Tessa Wong -> Marcus Hale: Student service impact / Severity 2-3; ER-0007 Dev Chen -> Marcus Hale: IT or digital-service dependency / Severity 2-3; ER-0701 Omar Price -> Marcus Hale: Recovery phase declared / Severity 2-3; CB-0003 Priya Nair -> Marcus Hale: Electrical isolation exceeds 30 min / Severity 2-3; CB-0004 Mateo Silva -> Marcus Hale: Mechanical isolation affects occupied space / Severity 2-3?",
+        "score_criteria": {
+          "2": "Score 2 only if all ten references, sources, Marcus Hale target, directions, triggers, and severity scopes are correct.",
+          "1": "Score 1 only if nine routes are fully correct and the tenth has one bounded reference, wording, or severity defect.",
+          "0": "Score 0 if two or more route-level defects occur, any route targets Ari Patel or Elena Rossi, either bulletin-added route is omitted, or route references are broadly absent."
+        }
       },
       {
         "id": "grounded_q09",
-        "question": "Which three higher-level or external notification routes leave the active Incident Commander?",
-        "expected_answer": "ER-0008 Marcus Hale -> Mina Torres: Significant operational impact / Severity 2-3; ER-0009 Marcus Hale -> Dana Brooks: Enterprise or prolonged disruption / Severity 3; ER-0010 Marcus Hale -> Central Emergency Dispatch: Life safety or public emergency / Any severity when triggered.",
-        "acceptance_rule": "Score 2 only if all three references, endpoints, directions, triggers, and severity classes are exact and distinct. Score 1 only if all three endpoints and directions are correct and exactly one label component is missing or mildly generalized. Score 0 if a destination or source is wrong, Marcus Hale is not the source, the three condition classes cannot be distinguished, or the references are absent from two or more routes."
+        "state": "Does the image accurately identify which three higher-level or external notification routes leave the active Incident Commander; specifically, ER-0008 Marcus Hale -> Mina Torres: Significant operational impact / Severity 2-3; ER-0009 Marcus Hale -> Dana Brooks: Enterprise or prolonged disruption / Severity 3; ER-0010 Marcus Hale -> Central Emergency Dispatch: Life safety or public emergency / Any severity when triggered?",
+        "score_criteria": {
+          "2": "Score 2 only if all three references, endpoints, directions, triggers, and severity classes are exact and distinct.",
+          "1": "Score 1 only if all three endpoints and directions are correct and exactly one label component is missing or mildly generalized.",
+          "0": "Score 0 if a destination or source is wrong, Marcus Hale is not the source, the three condition classes cannot be distinguished, or the references are absent from two or more routes."
+        }
       },
       {
         "id": "grounded_q10",
-        "question": "What is the complete current advisory relationship set with controlling reference and mode?",
-        "expected_answer": "SE-0001 Community Advisory Board -> Leah Stone / Consulted; SE-0002 EHS Review Council -> Eli Morgan / Advisory; SE-0003 Accessibility Advisory Panel -> Tessa Wong / Consulted; SE-0801 Continuity Planning Forum -> Omar Price / Advisory; CB-0007 Capital Works Coordination Cell -> Amina Shah / Consulted.",
-        "acceptance_rule": "Score 2 only if all five references, sources, targets, and modes are exact with no extra advisory edge. Score 1 only if exactly four are correct and the sole defect is one omitted or mis-targeted relationship. Score 0 if two or more are wrong, a superseded holder is targeted, the Capital Works relationship is absent, or any advisory edge is shown as reporting or escalation."
+        "state": "Does the image accurately show the complete current advisory relationship set with controlling reference and mode as follows: SE-0001 Community Advisory Board -> Leah Stone / Consulted; SE-0002 EHS Review Council -> Eli Morgan / Advisory; SE-0003 Accessibility Advisory Panel -> Tessa Wong / Consulted; SE-0801 Continuity Planning Forum -> Omar Price / Advisory; CB-0007 Capital Works Coordination Cell -> Amina Shah / Consulted?",
+        "score_criteria": {
+          "2": "Score 2 only if all five references, sources, targets, and modes are exact with no extra advisory edge.",
+          "1": "Score 1 only if exactly four are correct and the sole defect is one omitted or mis-targeted relationship.",
+          "0": "Score 0 if two or more are wrong, a superseded holder is targeted, the Capital Works relationship is absent, or any advisory edge is shown as reporting or escalation."
+        }
       },
       {
         "id": "grounded_q11",
-        "question": "How are the three relationship categories defined?",
-        "expected_answer": "Solid dark line = Direct reporting; dashed red arrow = Incident escalation or emergency notification; dotted gray line = Advisory or consulted relationship.",
-        "acceptance_rule": "Score 2 only if all three categories and meanings are correct and are not swapped. Score 1 only if all three meanings are present but exactly one line pattern, arrow treatment, or wording is ambiguous. Score 0 if a category is missing, meanings are exchanged, or there is no usable three-category legend."
+        "state": "Does the image accurately show how the three relationship categories are defined; specifically, Solid dark line = Direct reporting; dashed red arrow = Incident escalation or emergency notification; dotted gray line = Advisory or consulted relationship?",
+        "score_criteria": {
+          "2": "Score 2 only if all three categories and meanings are correct and are not swapped.",
+          "1": "Score 1 only if all three meanings are present but exactly one line pattern, arrow treatment, or wording is ambiguous.",
+          "0": "Score 0 if a category is missing, meanings are exchanged, or there is no usable three-category legend."
+        }
       },
       {
         "id": "grounded_q12",
-        "question": "What is the exact active relationship inventory after valid additions and substitutions?",
-        "expected_answer": "9 solid reporting relationships, 13 dashed escalation or notification relationships, and 5 dotted advisory relationships; 27 relationships in total, with no unsupported extra or duplicate edge.",
-        "acceptance_rule": "Score 2 only if all three category counts and the total are exact and every active edge belongs to the correct category. Score 1 only if exactly one category count is off by one and there is no wrong-type or duplicate edge. Score 0 if two counts are wrong, the total differs by two or more, or any unsupported duplicate or wrong-type relationship is active."
+        "state": "Does the image accurately show the exact active relationship inventory after valid additions and substitutions as follows: 9 solid reporting relationships, 13 dashed escalation or notification relationships, and 5 dotted advisory relationships; 27 relationships in total, with no unsupported extra or duplicate edge?",
+        "score_criteria": {
+          "2": "Score 2 only if all three category counts and the total are exact and every active edge belongs to the correct category.",
+          "1": "Score 1 only if exactly one category count is off by one and there is no wrong-type or duplicate edge.",
+          "0": "Score 0 if two counts are wrong, the total differs by two or more, or any unsupported duplicate or wrong-type relationship is active."
+        }
       },
       {
         "id": "grounded_q13",
-        "question": "Are superseded holders, invalid bulletins, and unrelated operating views excluded from the active network?",
-        "expected_answer": "Yes. Elena Rossi, Jun Park, and Nadia Cole are not active holders at 15:00; Marin Cole, Maya Lewis, and Marco Ito are not active; and no other-campus, after-hours, specialized-procedure, draft, pending, rejected, withdrawn, expired, scheduled, later-issued, or inactive bulletin record participates.",
-        "acceptance_rule": "Score 2 only if none of the named non-current people or excluded record categories participates in the active network. Score 1 only if one excluded item appears in a clearly separated historical or rejected note with no active relationship. Score 0 if any superseded holder remains active, an invalid bulletin changes the network, or an unrelated operating view contributes an active node or edge."
+        "state": "Are superseded holders, invalid bulletins, and unrelated operating views excluded from the active network; specifically, with all of these required details: Elena Rossi, Jun Park, and Nadia Cole are not active holders at 15:00; Marin Cole, Maya Lewis, and Marco Ito are not active; and no other-campus, after-hours, specialized-procedure, draft, pending, rejected, withdrawn, expired, scheduled, later-issued, or inactive bulletin record participates?",
+        "score_criteria": {
+          "2": "Score 2 only if none of the named non-current people or excluded record categories participates in the active network.",
+          "1": "Score 1 only if one excluded item appears in a clearly separated historical or rejected note with no active relationship.",
+          "0": "Score 0 if any superseded holder remains active, an invalid bulletin changes the network, or an unrelated operating view contributes an active node or edge."
+        }
       },
       {
         "id": "grounded_q14",
-        "question": "Do all non-reporting connectors carry the required audit information?",
-        "expected_answer": "All 13 dashed connectors show the correct ER- or CB- reference, trigger, and severity; all 5 dotted connectors show the correct SE- or CB- reference and relationship mode; temporary reporting is identified by CB-0005, CB-0006, and CB-0008.",
-        "acceptance_rule": "Score 2 only if all 21 required audit-reference applications are correct: 13 dashed labels, 5 dotted labels, and 3 temporary-reporting references. Score 1 only if exactly one application is missing or wrong. Score 0 if two or more are missing or wrong, references are attached to incorrect endpoints, or the diagram broadly omits register references."
+        "state": "Do all non-reporting connectors carry the required audit information; specifically, All 13 dashed connectors show the correct ER- or CB- reference, trigger, and severity; all 5 dotted connectors show the correct SE- or CB- reference and relationship mode; temporary reporting is identified by CB-0005, CB-0006, and CB-0008?",
+        "score_criteria": {
+          "2": "Score 2 only if all 21 required audit-reference applications are correct: 13 dashed labels, 5 dotted labels, and 3 temporary-reporting references.",
+          "1": "Score 1 only if exactly one application is missing or wrong.",
+          "0": "Score 0 if two or more are missing or wrong, references are attached to incorrect endpoints, or the diagram broadly omits register references."
+        }
       },
       {
         "id": "grounded_q15",
-        "question": "Are the temporary systems and command reporting bundles internally consistent?",
-        "expected_answer": "CB-0005 Priya Nair -> Amina Shah and CB-0006 Mateo Silva -> Amina Shah are solid temporary reporting relationships; CB-0008 Riley West -> Marcus Hale is the sole Logistics reporting relationship; Priya and Mateo also retain their distinct CB-0003 and CB-0004 dashed escalations to Marcus Hale; Riley has no duplicate dashed route.",
-        "acceptance_rule": "Score 2 only if every endpoint, direction, relationship type, controlling reference, and no-duplicate condition in all three bundles is exact. Score 1 only if two bundles are exact and the third has one missing reference or edge without a contradictory active relationship. Score 0 if a temporary manager is wrong, Priya or Mateo lacks the added escalation, Riley reports to Elena Rossi, or Riley has a duplicate dashed relationship."
+        "state": "Are the temporary systems and command reporting bundles internally consistent; specifically, CB-0005 Priya Nair -> Amina Shah and CB-0006 Mateo Silva -> Amina Shah are solid temporary reporting relationships; CB-0008 Riley West -> Marcus Hale is the sole Logistics reporting relationship; Priya and Mateo also retain their distinct CB-0003 and CB-0004 dashed escalations to Marcus Hale; Riley has no duplicate dashed route?",
+        "score_criteria": {
+          "2": "Score 2 only if every endpoint, direction, relationship type, controlling reference, and no-duplicate condition in all three bundles is exact.",
+          "1": "Score 1 only if two bundles are exact and the third has one missing reference or edge without a contradictory active relationship.",
+          "0": "Score 0 if a temporary manager is wrong, Priya or Mateo lacks the added escalation, Riley reports to Elena Rossi, or Riley has a duplicate dashed relationship."
+        }
       }
     ]
   },
@@ -104,11 +149,11 @@
     "vqa_items": [
       {
         "id": "visual_q01",
-        "question": "As an escalation hierarchy chart, does the image make authority, command spine, functional response groups, advisory or external roles, escalation direction, and relationship types immediately distinguishable through a disciplined, polished hierarchy?",
+        "state": "As an escalation hierarchy chart, does the image make authority, command spine, functional response groups, advisory or external roles, escalation direction, and relationship types immediately distinguishable through a disciplined, polished hierarchy?",
         "score_criteria": {
-          "2": "Award 2 only if the chart is exceptionally clear and operationally ready: authority levels are unmistakable at a glance; escalation paths can be traced without hesitation; command, advisory, and external relationships use consistent and unmistakably different visual treatments; groups are cleanly separated; labels are readable; and connector routing, spacing, alignment, typography, and balance are highly controlled. The result must look purpose-built for real incident use, with no tangled links, ambiguous direction, weak group boundary, detached connector, clipping, or amateurish layout. Any uncertainty about responsibility prevents 2.",
-          "1": "Award 1 if responsibility and escalation are mostly understandable and the chart is usable, but it has visible imperfections such as modest link tangling, unclear secondary authority, small labels, weak group separation, uneven node spacing, or advisory lines that are not sufficiently distinct.",
-          "0": "Award 0 even when roles and lines are present if the hierarchy is visually unreliable: authority levels are hard to distinguish, escalation direction is ambiguous, link types are confused, groups blend together, or the layout is cluttered, crude, or difficult to use under time pressure. Blank, corrupted, severely unreadable, or materially incomplete charts are also 0."
+          "2": "Score 2 only if the chart is exceptionally clear and operationally ready: authority levels are unmistakable at a glance; escalation paths can be traced without hesitation; command, advisory, and external relationships use consistent and unmistakably different visual treatments; groups are cleanly separated; labels are readable; and connector routing, spacing, alignment, typography, and balance are highly controlled. The result must look purpose-built for real incident use, with no tangled links, ambiguous direction, weak group boundary, detached connector, clipping, or amateurish layout. Any uncertainty about responsibility prevents 2.",
+          "1": "Score 1 if responsibility and escalation are mostly understandable and the chart is usable, but it has visible imperfections such as modest link tangling, unclear secondary authority, small labels, weak group separation, uneven node spacing, or advisory lines that are not sufficiently distinct.",
+          "0": "Score 0 even when roles and lines are present if the hierarchy is visually unreliable: authority levels are hard to distinguish, escalation direction is ambiguous, link types are confused, groups blend together, or the layout is cluttered, crude, or difficult to use under time pressure. Blank, corrupted, severely unreadable, or materially incomplete charts are also 0."
         }
       }
     ]

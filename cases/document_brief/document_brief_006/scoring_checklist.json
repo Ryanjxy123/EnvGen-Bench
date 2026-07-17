@@ -9,93 +9,138 @@
     "vqa_items": [
       {
         "id": "grounded_q01",
-        "question": "Which NIMS edition is used, and which four official command-and-coordination structures does the infographic identify by full name and acronym?",
-        "expected_answer": "NIMS 2017; Incident Command System (ICS), Emergency Operations Centers (EOCs), Multiagency Coordination Group (MAC Group), and Joint Information System (JIS).",
-        "acceptance_rule": "Score 2 only if the NIMS 2017 basis and all four official full names with acronyms are correct. Score 1 if the edition is correct and exactly one name or acronym is incomplete, or all four structures are correct but the edition is not identified as NIMS 2017. Score 0 if the edition is absent or wrong, fewer than three required structures are correct, or another entity replaces a required structure."
+        "state": "Does the image accurately identify which NIMS edition is used, and which four official command-and-coordination structures the infographic identifies by full name and acronym; specifically, NIMS 2017; Incident Command System (ICS), Emergency Operations Centers (EOCs), Multiagency Coordination Group (MAC Group), and Joint Information System (JIS)?",
+        "score_criteria": {
+          "2": "Score 2 only if the NIMS 2017 basis and all four official full names with acronyms are correct.",
+          "1": "Score 1 if the edition is correct and exactly one name or acronym is incomplete, or all four structures are correct but the edition is not identified as NIMS 2017.",
+          "0": "Score 0 if the edition is absent or wrong, fewer than three required structures are correct, or another entity replaces a required structure."
+        }
       },
       {
         "id": "grounded_q02",
-        "question": "What hierarchy does the infographic establish among ICS, EOCs, MAC Group, JIS, JIC, and any use of MACS?",
-        "expected_answer": "ICS, EOCs, MAC Group, and JIS are the four NIMS command-and-coordination structures; JIS operates across and supports ICS, EOCs, and MAC Group; JIC manages or coordinates JIS activities rather than serving as another peer; MACS is omitted or used only as an overarching term for the full system.",
-        "acceptance_rule": "Score 2 only if all four hierarchy conditions are correct. Score 1 if the four main structures and JIS support scope are correct but exactly one JIC or MACS condition is incomplete. Score 0 if JIC or MACS becomes an additional peer, JIS is reduced to a component of only one structure, or the four-structure model is materially changed."
+        "state": "Does the image accurately show what hierarchy the infographic establishes among ICS, EOCs, MAC Group, JIS, JIC, and any use of MACS; specifically, ICS, EOCs, MAC Group, and JIS are the four NIMS command-and-coordination structures; JIS operates across and supports ICS, EOCs, and MAC Group; JIC manages or coordinates JIS activities rather than serving as another peer; MACS is omitted or used only as an overarching term for the full system?",
+        "score_criteria": {
+          "2": "Score 2 only if all four hierarchy conditions are correct.",
+          "1": "Score 1 if the four main structures and JIS support scope are correct but exactly one JIC or MACS condition is incomplete.",
+          "0": "Score 0 if JIC or MACS becomes an additional peer, JIS is reduced to a component of only one structure, or the four-structure model is materially changed."
+        }
       },
       {
         "id": "grounded_q03",
-        "question": "What incident-management role does the infographic assign to ICS?",
-        "expected_answer": "ICS manages incidents on scene at the tactical level; local incident personnel use it to direct operations, establish objectives and command, organize operational functions, and apply Unified Command when multiple authorities share responsibility.",
-        "acceptance_rule": "Score 2 only if on-scene tactical management, incident command or objectives, operational organization, and the multi-authority Unified Command concept are all represented without assigning off-scene policy functions to ICS. Score 1 if the on-scene tactical role and command function are correct but either operational organization or Unified Command is omitted. Score 0 if the on-scene tactical role or command function is absent, or ICS is treated primarily as an off-scene support or policy body."
+        "state": "Does the image accurately show what incident-management role the infographic assigns to ICS; specifically, ICS manages incidents on scene at the tactical level; local incident personnel use it to direct operations, establish objectives and command, organize operational functions, and apply Unified Command when multiple authorities share responsibility?",
+        "score_criteria": {
+          "2": "Score 2 only if on-scene tactical management, incident command or objectives, operational organization, and the multi-authority Unified Command concept are all represented without assigning off-scene policy functions to ICS.",
+          "1": "Score 1 if the on-scene tactical role and command function are correct but either operational organization or Unified Command is omitted.",
+          "0": "Score 0 if the on-scene tactical role or command function is absent, or ICS is treated primarily as an off-scene support or policy body."
+        }
       },
       {
         "id": "grounded_q04",
-        "question": "How does the infographic define the EOC support relationship and its recipients?",
-        "expected_answer": "EOCs provide coordinated off-scene support to incident command, on-scene personnel, and, when applicable, other EOCs; they support rather than take over tactical incident command.",
-        "acceptance_rule": "Score 2 only if off-scene support, incident command, on-scene personnel, other-EOC support, and the non-tactical boundary are all represented. Score 1 if the off-scene support direction and non-tactical boundary are correct but one recipient category is omitted. Score 0 if the support direction is reversed, EOC is assigned tactical incident command, or fewer than two recipient categories are represented."
+        "state": "Does the image accurately show how the infographic defines the EOC support relationship and its recipients; specifically, EOCs provide coordinated off-scene support to incident command, on-scene personnel, and, when applicable, other EOCs; they support rather than take over tactical incident command?",
+        "score_criteria": {
+          "2": "Score 2 only if off-scene support, incident command, on-scene personnel, other-EOC support, and the non-tactical boundary are all represented.",
+          "1": "Score 1 if the off-scene support direction and non-tactical boundary are correct but one recipient category is omitted.",
+          "0": "Score 0 if the support direction is reversed, EOC is assigned tactical incident command, or fewer than two recipient categories are represented."
+        }
       },
       {
         "id": "grounded_q05",
-        "question": "What universal EOC functions and organizational-flexibility distinction does the infographic include?",
-        "expected_answer": "The common EOC functions are information management, resource management, and communicating policy decisions. EOC purpose, authority, composition, and organization can vary, so an ICS-like, Incident Support Model, departmental, or activation-level example must not be presented as the universal definition of an EOC.",
-        "acceptance_rule": "Score 2 only if all three common functions and the distinction between universal functions and variable EOC organization are correct. Score 1 if all three functions are correct but the variability distinction is omitted, or the variability distinction and exactly two functions are correct. Score 0 if fewer than two functions are correct, the functions are assigned elsewhere, or one organization or activation model is stated as the universal EOC definition."
+        "state": "Does the image accurately show what universal EOC functions and organizational-flexibility distinction the infographic includes; specifically, The common EOC functions are information management, resource management, and communicating policy decisions. EOC purpose, authority, composition, and organization can vary, so an ICS-like, Incident Support Model, departmental, or activation-level example must not be presented as the universal definition of an EOC?",
+        "score_criteria": {
+          "2": "Score 2 only if all three common functions and the distinction between universal functions and variable EOC organization are correct.",
+          "1": "Score 1 if all three functions are correct but the variability distinction is omitted, or the variability distinction and exactly two functions are correct.",
+          "0": "Score 0 if fewer than two functions are correct, the functions are assigned elsewhere, or one organization or activation model is stated as the universal EOC definition."
+        }
       },
       {
         "id": "grounded_q06",
-        "question": "Who participates in a MAC Group, and what decision responsibilities does the infographic assign to it?",
-        "expected_answer": "Agency administrators or senior executives, including designees and potentially nongovernmental representatives, provide high-level strategic policy guidance, prioritize or allocate scarce resources, and support cooperative multiagency decisions.",
-        "acceptance_rule": "Score 2 only if senior administrators or executives, at least one supported additional participant category, strategic policy guidance, scarce-resource prioritization or allocation, and cooperative multiagency decision support are all correct. Score 1 if senior participation and both core responsibilities are correct but the additional participation category or cooperative-decision role is omitted. Score 0 if senior participation is absent, fewer than two responsibility elements are correct, or tactical field personnel are presented as the defining membership."
+        "state": "Does the image accurately identify who participates in a MAC Group, and what decision responsibilities the infographic assigns to it; specifically, Agency administrators or senior executives, including designees and potentially nongovernmental representatives, provide high-level strategic policy guidance, prioritize or allocate scarce resources, and support cooperative multiagency decisions?",
+        "score_criteria": {
+          "2": "Score 2 only if senior administrators or executives, at least one supported additional participant category, strategic policy guidance, scarce-resource prioritization or allocation, and cooperative multiagency decision support are all correct.",
+          "1": "Score 1 if senior participation and both core responsibilities are correct but the additional participation category or cooperative-decision role is omitted.",
+          "0": "Score 0 if senior participation is absent, fewer than two responsibility elements are correct, or tactical field personnel are presented as the defining membership."
+        }
       },
       {
         "id": "grounded_q07",
-        "question": "What complete authority boundary does the infographic state for the MAC Group?",
-        "expected_answer": "The MAC Group does not perform incident command functions, direct field tactics, or replace the primary functions of operations, coordination, or dispatch organizations.",
-        "acceptance_rule": "Score 2 only if the non-incident-command boundary, non-tactical boundary, and non-replacement boundary for operations, coordination, or dispatch are all correct. Score 1 if incident command and field tactics are excluded but the non-replacement boundary is omitted, or the non-replacement boundary is correct but only one command boundary is stated. Score 0 if the group is assigned incident command or field direction, or no substantive authority boundary is provided."
+        "state": "Does the image accurately show what complete authority boundary the infographic states for the MAC Group; specifically, The MAC Group does not perform incident command functions, direct field tactics, or replace the primary functions of operations, coordination, or dispatch organizations?",
+        "score_criteria": {
+          "2": "Score 2 only if the non-incident-command boundary, non-tactical boundary, and non-replacement boundary for operations, coordination, or dispatch are all correct.",
+          "1": "Score 1 if incident command and field tactics are excluded but the non-replacement boundary is omitted, or the non-replacement boundary is correct but only one command boundary is stated.",
+          "0": "Score 0 if the group is assigned incident command or field direction, or no substantive authority boundary is provided."
+        }
       },
       {
         "id": "grounded_q08",
-        "question": "What purpose, audience, and information-quality standard does the infographic assign to JIS?",
-        "expected_answer": "JIS integrates incident information and public affairs to provide consistent, coordinated, accurate, accessible, timely, and complete information to the public and stakeholders during incident operations.",
-        "acceptance_rule": "Score 2 only if the integration of incident information and public affairs, both audience groups, and at least four of the six stated information qualities are correct. Score 1 if the integration role and both audiences are correct but fewer than four qualities are included, or the integration role and at least four qualities are correct but one audience group is omitted. Score 0 if JIS is treated only as an internal technical network, the public-facing integration role is absent, or neither public nor stakeholder audience is identified."
+        "state": "Does the image accurately show what purpose, audience, and information-quality standard the infographic assigns to JIS; specifically, JIS integrates incident information and public affairs to provide consistent, coordinated, accurate, accessible, timely, and complete information to the public and stakeholders during incident operations?",
+        "score_criteria": {
+          "2": "Score 2 only if the integration of incident information and public affairs, both audience groups, and at least four of the six stated information qualities are correct.",
+          "1": "Score 1 if the integration role and both audiences are correct but fewer than four qualities are included, or the integration role and at least four qualities are correct but one audience group is omitted.",
+          "0": "Score 0 if JIS is treated only as an internal technical network, the public-facing integration role is absent, or neither public nor stakeholder audience is identified."
+        }
       },
       {
         "id": "grounded_q09",
-        "question": "Across which structures does JIS operate, how is JIC related to it, and which JIS activities are included?",
-        "expected_answer": "JIS operates across and supports ICS, EOCs, and MAC Group. A JIC manages or coordinates JIS activities. Supported activities include interagency messaging, public-information plans and strategies, advising the Incident Commander or Unified Command, EOC director, and MAC Group on public-affairs issues, and managing rumors or inaccurate information.",
-        "acceptance_rule": "Score 2 only if all-three-structure support scope, the JIC-to-JIS management relationship, and at least three distinct supported JIS activities are correct. Score 1 if the support scope and JIC relationship are correct but only one or two activities are included, or at least three activities are correct but one relationship condition is incomplete. Score 0 if JIS supports fewer than two required structures, JIC replaces JIS or becomes a peer, or no supported JIS activity is correct."
+        "state": "Does the image accurately show which structures JIS operates across, how JIC is related to it, and which JIS activities are included; specifically, JIS operates across and supports ICS, EOCs, and MAC Group. A JIC manages or coordinates JIS activities. Supported activities include interagency messaging, public-information plans and strategies, advising the Incident Commander or Unified Command, EOC director, and MAC Group on public-affairs issues, and managing rumors or inaccurate information?",
+        "score_criteria": {
+          "2": "Score 2 only if all-three-structure support scope, the JIC-to-JIS management relationship, and at least three distinct supported JIS activities are correct.",
+          "1": "Score 1 if the support scope and JIC relationship are correct but only one or two activities are included, or at least three activities are correct but one relationship condition is incomplete.",
+          "0": "Score 0 if JIS supports fewer than two required structures, JIC replaces JIS or becomes a peer, or no supported JIS activity is correct."
+        }
       },
       {
         "id": "grounded_q10",
-        "question": "Which three review-log issue themes are selected for the clarification section under the handoff's distinct-session prevalence rule?",
-        "expected_answer": "The selected themes are: MAC Group policy/resource decisions versus operational command; common EOC functions versus a single fixed organization or activation model; and JIS public-information scope, audience, and information standards versus an internal or EOC-only communications function.",
-        "acceptance_rule": "Score 2 only if all three selected themes match the three highest-ranked eligible issue codes under the required distinct-session prevalence method. Score 1 if exactly two selected themes are correct, or all three are represented but one is materially reduced to a different lower-ranked issue. Score 0 if fewer than two themes are correct, raw response volume determines the selection, or a lower-ranked scene-support, JIS/JIC-only, activation-level, workflow, or course topic replaces two or more required themes."
+        "state": "Does the image accurately identify which three review-log issue themes are selected for the clarification section under the handoff's distinct-session prevalence rule; specifically, The selected themes are: MAC Group policy/resource decisions versus operational command; common EOC functions versus a single fixed organization or activation model; and JIS public-information scope, audience, and information standards versus an internal or EOC-only communications function?",
+        "score_criteria": {
+          "2": "Score 2 only if all three selected themes match the three highest-ranked eligible issue codes under the required distinct-session prevalence method.",
+          "1": "Score 1 if exactly two selected themes are correct, or all three are represented but one is materially reduced to a different lower-ranked issue.",
+          "0": "Score 0 if fewer than two themes are correct, raw response volume determines the selection, or a lower-ranked scene-support, JIS/JIC-only, activation-level, workflow, or course topic replaces two or more required themes."
+        }
       },
       {
         "id": "grounded_q11",
-        "question": "How are the three clarification notes framed?",
-        "expected_answer": "There are exactly three notes. Each identifies a mistaken assumption and replaces it with a FEMA-grounded correction; none reproduces a raw quote, displays feedback counts, leaves an unanswered question, or adds a fourth topic.",
-        "acceptance_rule": "Score 2 only if there are exactly three notes and every note contains both the mistaken assumption and its correction without quotes, counts, unanswered questions, or an extra topic. Score 1 if there are exactly three notes but one lacks either the mistaken assumption or the correction, or if there are two or four otherwise complete notes. Score 0 if fewer than two or more than four notes are included, most notes are unresolved feedback, or the section does not function as correction guidance."
+        "state": "Does the image accurately show how the three clarification notes are framed; specifically, There are exactly three notes. Each identifies a mistaken assumption and replaces it with a FEMA-grounded correction; none reproduces a raw quote, displays feedback counts, leaves an unanswered question, or adds a fourth topic?",
+        "score_criteria": {
+          "2": "Score 2 only if there are exactly three notes and every note contains both the mistaken assumption and its correction without quotes, counts, unanswered questions, or an extra topic.",
+          "1": "Score 1 if there are exactly three notes but one lacks either the mistaken assumption or the correction, or if there are two or four otherwise complete notes.",
+          "0": "Score 0 if fewer than two or more than four notes are included, most notes are unresolved feedback, or the section does not function as correction guidance."
+        }
       },
       {
         "id": "grounded_q12",
-        "question": "How are scenario actions A and B mapped and explained?",
-        "expected_answer": "A maps to ICS or Unified Command and preserves incident objectives, rescue and traffic branches, scene-safety priorities, and tactical adjustment. B maps to EOC and preserves information consolidation, support to incident command and on-scene personnel, resource coordination, exchange with another EOC, policy communication, and the boundary against directing scene tactics.",
-        "acceptance_rule": "Score 2 only if both mappings are correct and every listed core action and boundary is preserved. Score 1 if both mappings are correct but one action omits one or more core elements, or one mapping is fully correct and the other preserves most of its action meaning. Score 0 if either action is assigned to the wrong structure, both actions omit their defining operational meaning, or the pair is presented as a sequential transfer of command."
+        "state": "Does the image accurately show how scenario actions A and B are mapped and explained; specifically, A maps to ICS or Unified Command and preserves incident objectives, rescue and traffic branches, scene-safety priorities, and tactical adjustment. B maps to EOC and preserves information consolidation, support to incident command and on-scene personnel, resource coordination, exchange with another EOC, policy communication, and the boundary against directing scene tactics?",
+        "score_criteria": {
+          "2": "Score 2 only if both mappings are correct and every listed core action and boundary is preserved.",
+          "1": "Score 1 if both mappings are correct but one action omits one or more core elements, or one mapping is fully correct and the other preserves most of its action meaning.",
+          "0": "Score 0 if either action is assigned to the wrong structure, both actions omit their defining operational meaning, or the pair is presented as a sequential transfer of command."
+        }
       },
       {
         "id": "grounded_q13",
-        "question": "How are scenario actions C and D mapped and explained?",
-        "expected_answer": "C maps to MAC Group and preserves senior participation, strategic policy guidance, cross-jurisdiction scarce-resource prioritization, and the boundaries against incident command and replacing operations, coordination, or dispatch. D maps to JIS coordinated through a JIC and preserves incident-information/public-affairs integration, public and stakeholder audiences, cross-structure coordination, accurate and accessible updates, leadership advice, and rumor management.",
-        "acceptance_rule": "Score 2 only if both mappings and all listed role and authority elements are correct. Score 1 if both mappings are correct but one action omits at least two required elements, or one action is complete and the other preserves only its basic structure assignment. Score 0 if either mapping is wrong, C is assigned tactical command, D treats JIC as a peer or replacement for JIS, or neither action preserves its defining content."
+        "state": "Does the image accurately show how scenario actions C and D are mapped and explained; specifically, C maps to MAC Group and preserves senior participation, strategic policy guidance, cross-jurisdiction scarce-resource prioritization, and the boundaries against incident command and replacing operations, coordination, or dispatch. D maps to JIS coordinated through a JIC and preserves incident-information/public-affairs integration, public and stakeholder audiences, cross-structure coordination, accurate and accessible updates, leadership advice, and rumor management?",
+        "score_criteria": {
+          "2": "Score 2 only if both mappings and all listed role and authority elements are correct.",
+          "1": "Score 1 if both mappings are correct but one action omits at least two required elements, or one action is complete and the other preserves only its basic structure assignment.",
+          "0": "Score 0 if either mapping is wrong, C is assigned tactical command, D treats JIC as a peer or replacement for JIS, or neither action preserves its defining content."
+        }
       },
       {
         "id": "grounded_q14",
-        "question": "Does the infographic keep the scenario examples concurrent and avoid unsupported local operating instructions?",
-        "expected_answer": "The four actions are concurrent applications of different parts of the model, not a response timeline or reporting chain. The infographic does not invent county reporting lines, activation triggers, contacts, dispatch rules, or emergency instructions.",
-        "acceptance_rule": "Score 2 only if the actions remain concurrent and none of the unsupported local operating additions is included. Score 1 if concurrency is preserved but exactly one minor unsupported local detail is added, or no local detail is added but the actions are described as a loose sequence without transferring authority. Score 0 if the actions become a formal response sequence or reporting chain, or two or more unsupported local operating instructions are included."
+        "state": "Does the infographic keep the scenario examples concurrent and avoid unsupported local operating instructions; specifically, so that The four actions are concurrent applications of different parts of the model, not a response timeline or reporting chain. The infographic does not invent county reporting lines, activation triggers, contacts, dispatch rules, or emergency instructions?",
+        "score_criteria": {
+          "2": "Score 2 only if the actions remain concurrent and none of the unsupported local operating additions is included.",
+          "1": "Score 1 if concurrency is preserved but exactly one minor unsupported local detail is added, or no local detail is added but the actions are described as a loose sequence without transferring authority.",
+          "0": "Score 0 if the actions become a formal response sequence or reporting chain, or two or more unsupported local operating instructions are included."
+        }
       },
       {
         "id": "grounded_q15",
-        "question": "What source attribution and scope exclusions does the infographic apply?",
-        "expected_answer": "The infographic attributes the FEMA NIMS 2017 Learning Materials. It excludes the active 2008 comparison, Planning P, resource-typing or credentialing workflow, EOC activation-level table, detailed EOC organization charts, course-update sequence, unsupported contact, and local logo.",
-        "acceptance_rule": "Score 2 only if the FEMA NIMS 2017 source is identified and none of the excluded or unsupported items is used as current quick-reference content. Score 1 if the source is correct and exactly one excluded item appears only as a nonactive historical or source note. Score 0 if the source is absent or wrong, or any excluded workflow, table, organization chart, course sequence, contact, or local branding is presented as active guidance."
+        "state": "Does the image accurately show what source attribution and scope exclusions the infographic applies; specifically, The infographic attributes the FEMA NIMS 2017 Learning Materials. It excludes the active 2008 comparison, Planning P, resource-typing or credentialing workflow, EOC activation-level table, detailed EOC organization charts, course-update sequence, unsupported contact, and local logo?",
+        "score_criteria": {
+          "2": "Score 2 only if the FEMA NIMS 2017 source is identified and none of the excluded or unsupported items is used as current quick-reference content.",
+          "1": "Score 1 if the source is correct and exactly one excluded item appears only as a nonactive historical or source note.",
+          "0": "Score 0 if the source is absent or wrong, or any excluded workflow, table, organization chart, course sequence, contact, or local branding is presented as active guidance."
+        }
       }
     ]
   },
@@ -104,11 +149,11 @@
     "vqa_items": [
       {
         "id": "visual_q01",
-        "question": "As a partner-orientation quick-reference infographic intended for both projection and print, does the image make the core model, clarification notes, relationship cues, and scenario examples immediately scannable through exceptional hierarchy, legibility, connector clarity, and dual-format production polish?",
+        "state": "As a partner-orientation quick-reference infographic intended for both projection and print, does the image make the core model, clarification notes, relationship cues, and scenario examples immediately scannable through exceptional hierarchy, legibility, connector clarity, and dual-format production polish?",
         "score_criteria": {
-          "2": "Award 2 only if the artifact is outstanding and fully ready for both a projected 16:9 slide and a printed US-letter handout: every title, body line, note, relationship label, and example is comfortably readable at normal use size; the core model, three clarification notes, and four scenario examples are instantly grouped and navigable; connectors and labels are precise and never compete with text; light-canvas requirements, margins, spacing, alignment, typography, density, and contrast are impeccably controlled; and the entire piece feels custom, elegant, and production-finished. Any crowding, small text, generic card layout, weak grouping, awkward connector, rendering artifact, or uncertainty about either projection or print quality prevents 2.",
-          "1": "Award 1 if the artifact is understandable and useful as a quick reference, but a professional reviewer would still revise it before distribution because of issues such as crowded cards, slightly small or uneven text, generic organization, weak grouping, awkward connectors, modest legibility, or inconsistent spacing.",
-          "0": "Award 0 even when most sections are present if the quick reference is visually poor or impractical: projection or print readability is weak, relationships are difficult to follow, section grouping is confusing, density is excessive, or the layout needs substantial redesign. Blank, corrupted, severely unreadable, materially incomplete, or broken outputs are also 0."
+          "2": "Score 2 only if the artifact is outstanding and fully ready for both a projected 16:9 slide and a printed US-letter handout: every title, body line, note, relationship label, and example is comfortably readable at normal use size; the core model, three clarification notes, and four scenario examples are instantly grouped and navigable; connectors and labels are precise and never compete with text; light-canvas requirements, margins, spacing, alignment, typography, density, and contrast are impeccably controlled; and the entire piece feels custom, elegant, and production-finished. Any crowding, small text, generic card layout, weak grouping, awkward connector, rendering artifact, or uncertainty about either projection or print quality prevents 2.",
+          "1": "Score 1 if the artifact is understandable and useful as a quick reference, but a professional reviewer would still revise it before distribution because of issues such as crowded cards, slightly small or uneven text, generic organization, weak grouping, awkward connectors, modest legibility, or inconsistent spacing.",
+          "0": "Score 0 even when most sections are present if the quick reference is visually poor or impractical: projection or print readability is weak, relationships are difficult to follow, section grouping is confusing, density is excessive, or the layout needs substantial redesign. Blank, corrupted, severely unreadable, materially incomplete, or broken outputs are also 0."
         }
       }
     ]

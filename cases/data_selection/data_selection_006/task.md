@@ -1,28 +1,21 @@
-The exhibition team is preparing the public feature panel for Working Waterfront, the Spring 2027 Community History Exhibition.
+The exhibition team is preparing the public feature panel for *Working Waterfront*, the Spring 2027 Community History Exhibition.
 
-This is a closed-environment task. Use every file in env/ and follow curatorial_brief.docx exactly. Resolve every versioned workstream at the stated review cutoff, including the same-timestamp revision rule. Apply individual eligibility, calculate the weighted curatorial ranking, build the seven-object provisional set, and then perform the ordered zone, case-inventory, and installation-capacity replacement review. Do not stop at the initial top-ranked objects.
+This is a closed-environment task. Use every file in `env/`; do not use the web. Follow `curatorial_brief.docx` exactly. The task now has separate base-record, program-overlay, and public-copy cutoffs. Resolve same-timestamp revisions by the larger `revision_no`, complete the original provisional and operational selection, then apply the approved program directive, Tier A commitments, placement and route-capacity overrides, phase rules, and frozen public copy. Do not stop at the first feasible seven.
 
-Create one 1200 × 1600 portrait museum feature panel. It must include:
+Create one **1200 × 1600 portrait museum feature panel** containing:
 
-- exact title: “Working Waterfront: Featured Objects”;
-- exact subtitle: “Spring 2027 Community History Exhibition”;
-- exhibition dates: “March 20–August 15, 2027”;
-- exactly seven final featured objects in final eligible-rank order.
+- exact title: **Working Waterfront: Featured Objects**;
+- exact subtitle: **Spring 2027 Community History Exhibition**;
+- exhibition dates: **March 20–August 15, 2027**;
+- exactly seven unique final featured objects, numbered in the approved public narrative order rather than eligible-rank or replacement order.
 
-For every featured object, show all of these public facts:
-- priority number and display title;
-- accession number;
-- era/year and primary material;
-- gallery and zone ID;
-- story theme;
-- approved public credit line;
-- exact on-view date range;
-- approved accessibility feature;
-- the concise interpretive hook from the Object Register.
+For each featured object, show its frozen public title, accession number, era/year, primary material, controlling gallery and zone ID, story theme, frozen public credit line, exact approved on-view range, frozen public accessibility label, and frozen concise hook.
 
 Also include:
-- a Plan Your Visit route in official gallery-route order, naming every featured object in each gallery and the selected-object count for that gallery;
-- a Rotation Notice naming both limited-run documents, each exact date range, and each inclusive day count;
-- a Selection Snapshot with the featured-object count, gallery count, theme count, earliest year, latest year, numeric year span, full gallery distribution, full theme distribution, full collection distribution, distinct object-type count, Audio-stop count, Tactile-replica count, Large-print-transcript count, full-run count, and limited-run rotation count.
 
-Do not show internal scores, eligibility failures, resource calculations, or replacement reasons. Do not give any unselected object featured, routed, rotation, or recommendation status.
+- **Plan Your Visit — Opening rotation**, listing every selected object visible March 20–May 31 in official gallery-route order with the visible count for each gallery;
+- **Plan Your Visit — Closing rotation**, listing every selected object visible June 1–August 15 in official gallery-route order with the visible count for each gallery;
+- **Rotation Notice** for the two limited-run objects, with exact date ranges and inclusive day counts;
+- **Selection Snapshot** containing the required unique and simultaneous counts, gallery and theme totals, year range/span, distributions, object-type count, frozen accessibility-label counts, and full-run versus limited-run counts.
+
+Do not publish internal scores, eligibility failures, intermediate sets, commitment tiers, override reasons, resource conflicts, or replacement logic. Do not give any unselected object featured, route, rotation, or recommendation status.

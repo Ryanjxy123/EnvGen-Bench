@@ -9,93 +9,138 @@
     "vqa_items": [
       {
         "id": "grounded_q01",
-        "question": "What exact approved class and station context does the heading identify?",
-        "expected_answer": "BIO 214 Section 02, Outbreak Tracing ELISA, September 16, 2026, 13:00, room SCI-214, for one four-student workstation.",
-        "acceptance_rule": "Score 2 only if all six fields—course/section, activity, date, start time, current room, and four-student station context—are correct with no superseded or pending value. Score 1 only if exactly one non-identity field is omitted while every shown value is correct. Score 0 if two or more fields are missing, any field is wrong, or a draft, makeup, cancelled, superseded, instructor-only, or other-protocol record is used."
+        "state": "Does the image accurately show what exact approved class and station context the heading identifies; specifically, BIO 214 Section 02, Outbreak Tracing ELISA, September 16, 2026, 13:00, room SCI-214, for one four-student workstation?",
+        "score_criteria": {
+          "2": "Score 2 only if all six fields—course/section, activity, date, start time, current room, and four-student station context—are correct with no superseded or pending value.",
+          "1": "Score 1 only if exactly one non-identity field is omitted while every shown value is correct.",
+          "0": "Score 0 if two or more fields are missing, any field is wrong, or a draft, makeup, cancelled, superseded, instructor-only, or other-protocol record is used."
+        }
       },
       {
         "id": "grounded_q02",
-        "question": "Which local operations bulletin governs the card, and what station topology does it require?",
-        "expected_answer": "OPS-27 is the approved bulletin effective September 14, 2026. It requires two 12-well strips at each four-student station, with A/B on Strip 1 and C/D on Strip 2. OPS-24 and OPS-29 do not apply.",
-        "acceptance_rule": "Score 2 only if the current approved bulletin/effective status and the complete two-strip A/B–C/D topology are all stated or unambiguously implemented, with no pilot or pending rule. Score 1 only if the topology is fully correct but the bulletin identifier/effective-date provenance is omitted. Score 0 if one strip is used for all four students, the pairing is wrong, or any superseded/pending rule changes the card."
+        "state": "Does the image accurately identify which local operations bulletin governs the card, and what station topology does it require; specifically, OPS-27 is the approved bulletin effective September 14, 2026. It requires two 12-well strips at each four-student station, with A/B on Strip 1 and C/D on Strip 2. OPS-24 and OPS-29 do not apply?",
+        "score_criteria": {
+          "2": "Score 2 only if the current approved bulletin/effective status and the complete two-strip A/B–C/D topology are all stated or unambiguously implemented, with no pilot or pending rule.",
+          "1": "Score 1 only if the topology is fully correct but the bulletin identifier/effective-date provenance is omitted.",
+          "0": "Score 0 if one strip is used for all four students, the pairing is wrong, or any superseded/pending rule changes the card."
+        }
       },
       {
         "id": "grounded_q03",
-        "question": "Does the card organize the required work into the permitted process structure?",
-        "expected_answer": "Exactly two process sections—Sample sharing and Run, validate, and report the ELISA—with 8 to 10 numbered main steps. Calculations and decision checks may appear in a separate unnumbered support block.",
-        "acceptance_rule": "Score 2 only if both section meanings are present, the numbered sequence contains 8–10 main steps, and support calculations/decision checks are not misrepresented as additional procedural steps. Score 1 only if the process is complete but has exactly one structural deviation such as 7 or 11 steps or a shortened second heading. Score 0 if a phase is missing, the sequence is not countable, or calculations replace required student actions."
+        "state": "Does the card organize the required work into the permitted process structure; specifically, Exactly two process sections—Sample sharing and Run, validate, and report the ELISA—with 8 to 10 numbered main steps. Calculations and decision checks may appear in a separate unnumbered support block?",
+        "score_criteria": {
+          "2": "Score 2 only if both section meanings are present, the numbered sequence contains 8–10 main steps, and support calculations/decision checks are not misrepresented as additional procedural steps.",
+          "1": "Score 1 only if the process is complete but has exactly one structural deviation such as 7 or 11 steps or a shortened second heading.",
+          "0": "Score 0 if a phase is missing, the sequence is not countable, or calculations replace required student actions."
+        }
       },
       {
         "id": "grounded_q04",
-        "question": "What complete sample-sharing procedure is given before the ELISA strips are loaded?",
-        "expected_answer": "Label the yellow sample tube and sharing transfer pipet with initials; transfer the full approximately 750 µl to a partner, mix gently by pipetting, take back about 750 µl/half, record the partner, repeat with three different partners in order, and discard the sharing pipet after the third exchange.",
-        "acceptance_rule": "Score 2 only if every listed labeling, amount, direction, mixing, return, three-partner, ordered-recording, and disposal requirement is correct. Score 1 only if the exchange logic and three-partner repetition are correct and exactly one minor detail is omitted. Score 0 if two or more details are absent, the transfer direction/return is wrong, partner order is lost, or the sharing pipet is reused in the ELISA."
+        "state": "Does the image accurately show what complete sample-sharing procedure is given before the ELISA strips are loaded; specifically, Label the yellow sample tube and sharing transfer pipet with initials; transfer the full approximately 750 µl to a partner, mix gently by pipetting, take back about 750 µl/half, record the partner, repeat with three different partners in order, and discard the sharing pipet after the third exchange?",
+        "score_criteria": {
+          "2": "Score 2 only if every listed labeling, amount, direction, mixing, return, three-partner, ordered-recording, and disposal requirement is correct.",
+          "1": "Score 1 only if the exchange logic and three-partner repetition are correct and exactly one minor detail is omitted.",
+          "0": "Score 0 if two or more details are absent, the transfer direction/return is wrong, partner order is lost, or the sharing pipet is reused in the ELISA."
+        }
       },
       {
         "id": "grounded_q05",
-        "question": "How are the two strips paired and how are all 12 wells on each strip assigned?",
-        "expected_answer": "Strip 1 is A/B and Strip 2 is C/D. Each strip has 3 positive-control wells, 3 negative-control wells, 3 wells for the first student, and 3 wells for the second student.",
-        "acceptance_rule": "Score 2 only if both strip-pair assignments and the complete 3+3+3+3 pattern on each strip are correct. Score 1 only if two strips and both pairs are correct but exactly one triplicate count/label is unclear. Score 0 if the card shows only one strip, reverses controls, omits a pair, or uses a materially different well allocation."
+        "state": "Does the image accurately show how the two strips are paired and how all 12 wells on each strip are assigned; specifically, Strip 1 is A/B and Strip 2 is C/D. Each strip has 3 positive-control wells, 3 negative-control wells, 3 wells for the first student, and 3 wells for the second student?",
+        "score_criteria": {
+          "2": "Score 2 only if both strip-pair assignments and the complete 3+3+3+3 pattern on each strip are correct.",
+          "1": "Score 1 only if two strips and both pairs are correct but exactly one triplicate count/label is unclear.",
+          "0": "Score 0 if the card shows only one strip, reverses controls, omits a pair, or uses a materially different well allocation."
+        }
       },
       {
         "id": "grounded_q06",
-        "question": "What initial 50 µl loading and tip-isolation rules are shown for both strips?",
-        "expected_answer": "On each strip, 50 µl positive control goes to the three + wells, 50 µl negative control to the three − wells, and 50 µl of each paired student sample to that student’s three wells. Each source has a dedicated tip on its strip and no tip crosses between strips.",
-        "acceptance_rule": "Score 2 only if all liquid destinations, the 50 µl amount, triplicate loading, dedicated-source tips, and no-cross-strip rule are correct for both strips. Score 1 only if all destinations are correct and exactly one handling detail is omitted. Score 0 if a control/sample is misrouted, the amount is wrong, tips are generically “fresh” without strip isolation, or one strip is not covered."
+        "state": "Does the image accurately show what initial 50 µl loading and tip-isolation rules are shown for both strips; specifically, On each strip, 50 µl positive control goes to the three + wells, 50 µl negative control to the three − wells, and 50 µl of each paired student sample to that student’s three wells. Each source has a dedicated tip on its strip and no tip crosses between strips?",
+        "score_criteria": {
+          "2": "Score 2 only if all liquid destinations, the 50 µl amount, triplicate loading, dedicated-source tips, and no-cross-strip rule are correct for both strips.",
+          "1": "Score 1 only if all destinations are correct and exactly one handling detail is omitted.",
+          "0": "Score 0 if a control/sample is misrouted, the amount is wrong, tips are generically “fresh” without strip isolation, or one strip is not covered."
+        }
       },
       {
         "id": "grounded_q07",
-        "question": "What exact reagent order, per-well amount, wait time, and wash count does the card give?",
-        "expected_answer": "Samples/controls: 50 µl, wait 5 minutes, wash twice; primary antibody: 50 µl, wait 5 minutes, wash twice; secondary antibody: 50 µl, wait 5 minutes, wash three times; substrate: 50 µl, wait/read at 5 minutes, with no wash afterward.",
-        "acceptance_rule": "Score 2 only if all four stages are in the correct order and every 50 µl amount, 5-minute wait, 2/2/3 wash count, and no-post-substrate-wash condition is correct. Score 1 only if the order is correct and exactly one single numeric or final-wash detail is omitted. Score 0 if two or more details are missing, antibodies are reversed, a wash count is wrong, or substrate is washed away."
+        "state": "Does the image accurately show what exact reagent order, per-well amount, wait time, and wash count the card gives; specifically, Samples/controls: 50 µl, wait 5 minutes, wash twice; primary antibody: 50 µl, wait 5 minutes, wash twice; secondary antibody: 50 µl, wait 5 minutes, wash three times; substrate: 50 µl, wait/read at 5 minutes, with no wash afterward?",
+        "score_criteria": {
+          "2": "Score 2 only if all four stages are in the correct order and every 50 µl amount, 5-minute wait, 2/2/3 wash count, and no-post-substrate-wash condition is correct.",
+          "1": "Score 1 only if the order is correct and exactly one single numeric or final-wash detail is omitted.",
+          "0": "Score 0 if two or more details are missing, antibodies are reversed, a wash count is wrong, or substrate is washed away."
+        }
       },
       {
         "id": "grounded_q08",
-        "question": "What derived total timed duration and wash totals are stated for the station?",
-        "expected_answer": "20 timed incubation/development minutes; 7 complete wash cycles per strip; 14 strip-wash cycles for the two-strip station.",
-        "acceptance_rule": "Score 2 only if all three derived totals are correct and their per-strip versus per-station scopes are explicit. Score 1 only if exactly two totals are correct with no contradictory total. Score 0 if one or fewer totals is correct, handling time is added as if sourced, or strip and station totals are confused."
+        "state": "Does the image accurately show what derived total timed duration and wash totals are stated for the station; specifically, 20 timed incubation/development minutes; 7 complete wash cycles per strip; 14 strip-wash cycles for the two-strip station?",
+        "score_criteria": {
+          "2": "Score 2 only if all three derived totals are correct and their per-strip versus per-station scopes are explicit.",
+          "1": "Score 1 only if exactly two totals are correct with no contradictory total.",
+          "0": "Score 0 if one or fewer totals is correct, handling time is added as if sourced, or strip and station totals are confused."
+        }
       },
       {
         "id": "grounded_q09",
-        "question": "What station issue quantities are calculated after applying the current reserve rule?",
-        "expected_answer": "330 µl positive control, 330 µl negative control, 1320 µl primary antibody, 1320 µl secondary antibody, and 1320 µl substrate per station. Student samples are neither pooled nor given the 10% reserve.",
-        "acceptance_rule": "Score 2 only if all five quantities, station scope, 10% reserve application, and student-sample exception are correct. Score 1 only if exactly one shared-liquid quantity or the sample exception is omitted while all shown calculations are correct. Score 0 if two or more quantities are missing/wrong, the reserve is 5% or 15%, student samples are pooled/reserved, or values are per strip but labeled per station."
+        "state": "Does the image accurately show what station issue quantities are calculated after applying the current reserve rule; specifically, 330 µl positive control, 330 µl negative control, 1320 µl primary antibody, 1320 µl secondary antibody, and 1320 µl substrate per station. Student samples are neither pooled nor given the 10% reserve?",
+        "score_criteria": {
+          "2": "Score 2 only if all five quantities, station scope, 10% reserve application, and student-sample exception are correct.",
+          "1": "Score 1 only if exactly one shared-liquid quantity or the sample exception is omitted while all shown calculations are correct.",
+          "0": "Score 0 if two or more quantities are missing/wrong, the reserve is 5% or 15%, student samples are pooled/reserved, or values are per strip but labeled per station."
+        }
       },
       {
         "id": "grounded_q10",
-        "question": "What minimum fresh micropipette-tip count is derived, and what is excluded from that count?",
-        "expected_answer": "14 fresh micropipette tips per station: 7 per strip for positive control, negative control, two student samples, primary antibody, secondary antibody, and substrate. The four sharing transfer pipets and two strip-specific wash transfer pipets are separate and excluded; tips never cross strips.",
-        "acceptance_rule": "Score 2 only if 14 per station, 7 per strip, all seven source categories, the two excluded pipet types/counts, and the no-cross-strip rule are all correct. Score 1 only if 14 and 7 are correct and exactly one category or exclusion detail is omitted. Score 0 if the total is wrong, sharing/wash pipets are counted as micropipette tips, or tips may move between strips."
+        "state": "Does the image accurately show what minimum fresh micropipette-tip count is derived, and what is excluded from that count; specifically, 14 fresh micropipette tips per station: 7 per strip for positive control, negative control, two student samples, primary antibody, secondary antibody, and substrate. The four sharing transfer pipets and two strip-specific wash transfer pipets are separate and excluded; tips never cross strips?",
+        "score_criteria": {
+          "2": "Score 2 only if 14 per station, 7 per strip, all seven source categories, the two excluded pipet types/counts, and the no-cross-strip rule are all correct.",
+          "1": "Score 1 only if 14 and 7 are correct and exactly one category or exclusion detail is omitted.",
+          "0": "Score 0 if the total is wrong, sharing/wash pipets are counted as micropipette tips, or tips may move between strips."
+        }
       },
       {
         "id": "grounded_q11",
-        "question": "How does the card define one complete safe wash cycle and the wash-pipet boundary?",
-        "expected_answer": "For one strip: invert and gently tap over towels to drain, discard the wet top towel or use a fresh zone, fill every well with wash buffer without cross-well splash, then invert and gently tap again. Reuse only that strip’s dedicated wash-buffer transfer pipet, never for samples/reagents or the other strip.",
-        "acceptance_rule": "Score 2 only if both drains, gentle tapping, fresh towel/zone, complete refill, cross-well precaution, dedicated-strip wash pipet, and prohibited uses are all present. Score 1 only if the drain–fill–drain sequence and strip-specific pipet are correct with exactly one handling detail omitted. Score 0 if two or more elements are missing, vigorous mixing is instructed, or the wash pipet crosses strips or contacts sample/reagent sources."
+        "state": "Does the image accurately show how the card defines one complete safe wash cycle and the wash-pipet boundary; specifically, For one strip: invert and gently tap over towels to drain, discard the wet top towel or use a fresh zone, fill every well with wash buffer without cross-well splash, then invert and gently tap again. Reuse only that strip’s dedicated wash-buffer transfer pipet, never for samples/reagents or the other strip?",
+        "score_criteria": {
+          "2": "Score 2 only if both drains, gentle tapping, fresh towel/zone, complete refill, cross-well precaution, dedicated-strip wash pipet, and prohibited uses are all present.",
+          "1": "Score 1 only if the drain–fill–drain sequence and strip-specific pipet are correct with exactly one handling detail omitted.",
+          "0": "Score 0 if two or more elements are missing, vigorous mixing is instructed, or the wash pipet crosses strips or contacts sample/reagent sources."
+        }
       },
       {
         "id": "grounded_q12",
-        "question": "What exact control pattern validates each strip, and what happens when a strip fails?",
-        "expected_answer": "Each strip is validated independently only when all three positive controls are blue and all three negative controls are colorless. Otherwise mark the strip invalid, do not interpret either student, and notify the instructor.",
-        "acceptance_rule": "Score 2 only if the all-three positive and all-three negative conditions, independent per-strip gate, and all three invalid-strip actions are correct. Score 1 only if the control gate is exact but exactly one invalid-strip action is omitted. Score 0 if generic blue/clear wording replaces the replicate gate, one valid strip validates the other, or student results are interpreted after failed controls."
+        "state": "Does the image accurately show what exact control pattern validates each strip, and what happens when a strip fails; specifically, Each strip is validated independently only when all three positive controls are blue and all three negative controls are colorless. Otherwise mark the strip invalid, do not interpret either student, and notify the instructor?",
+        "score_criteria": {
+          "2": "Score 2 only if the all-three positive and all-three negative conditions, independent per-strip gate, and all three invalid-strip actions are correct.",
+          "1": "Score 1 only if the control gate is exact but exactly one invalid-strip action is omitted.",
+          "0": "Score 0 if generic blue/clear wording replaces the replicate gate, one valid strip validates the other, or student results are interpreted after failed controls."
+        }
       },
       {
         "id": "grounded_q13",
-        "question": "How are the three student replicates classified after a strip passes controls?",
-        "expected_answer": "3/3 blue is positive; 0/3 blue is negative; 1/3 or 2/3 blue is indeterminate; majority voting is not allowed.",
-        "acceptance_rule": "Score 2 only if all four decision statements are correct. Score 1 only if positive and negative are exact and the mixed pattern is labeled non-definitive but the explicit no-majority warning is omitted. Score 0 if any mixed pattern is forced to positive/negative, the color meanings are reversed, or triplicate counts are absent."
+        "state": "Does the image accurately show how the three student replicates are classified after a strip passes controls; specifically, 3/3 blue is positive; 0/3 blue is negative; 1/3 or 2/3 blue is indeterminate; majority voting is not allowed?",
+        "score_criteria": {
+          "2": "Score 2 only if all four decision statements are correct.",
+          "1": "Score 1 only if positive and negative are exact and the mixed pattern is labeled non-definitive but the explicit no-majority warning is omitted.",
+          "0": "Score 0 if any mixed pattern is forced to positive/negative, the color meanings are reversed, or triplicate counts are absent."
+        }
       },
       {
         "id": "grounded_q14",
-        "question": "What read, record, and transmission-tracing rule is applied to the results?",
-        "expected_answer": "Read and record between 5 and 10 minutes after substrate, retain the three sharing partners in exchange order, and trace only from a valid strip with a definite positive student result—not from invalid or indeterminate results.",
-        "acceptance_rule": "Score 2 only if the complete read window, ordered partner record, valid-definite-positive gate, and both exclusions are correct. Score 1 only if the validity-gated tracing rule is correct and exactly one timing or ordering detail is omitted. Score 0 if the 20-minute pilot rule is used, indeterminate/invalid results are traced, or partner order is discarded."
+        "state": "Does the image accurately show what read, record, and transmission-tracing rule is applied to the results; specifically, Read and record between 5 and 10 minutes after substrate, retain the three sharing partners in exchange order, and trace only from a valid strip with a definite positive student result—not from invalid or indeterminate results?",
+        "score_criteria": {
+          "2": "Score 2 only if the complete read window, ordered partner record, valid-definite-positive gate, and both exclusions are correct.",
+          "1": "Score 1 only if the validity-gated tracing rule is correct and exactly one timing or ordering detail is omitted.",
+          "0": "Score 0 if the 20-minute pilot rule is used, indeterminate/invalid results are traced, or partner order is discarded."
+        }
       },
       {
         "id": "grounded_q15",
-        "question": "Does the card apply the current safety response while excluding all obsolete and out-of-scope material?",
-        "expected_answer": "It requires gloves and protective eyewear, no food/drink, handwashing with soap before and after, and immediate eyewash for at least 15 minutes plus instructor notification after an eye splash. It does not use OPS-24, OPS-29, other ELISA protocols, paper modeling, instructor preparation, optional stops, questions, or non-current schedule records.",
-        "acceptance_rule": "Score 2 only if all four safety elements are correct and none of the listed obsolete/out-of-scope material is presented as required student work. Score 1 only if exactly one safety element is omitted and all exclusions are respected, or one excluded item appears solely as a clearly rejected warning. Score 0 if two or more safety elements are missing, an eye-splash response is wrong, or any obsolete/pending/other-protocol content is adopted as an instruction."
+        "state": "Does the card apply the current safety response while excluding all obsolete and out-of-scope material; specifically, It requires gloves and protective eyewear, no food/drink, handwashing with soap before and after, and immediate eyewash for at least 15 minutes plus instructor notification after an eye splash. It does not use OPS-24, OPS-29, other ELISA protocols, paper modeling, instructor preparation, optional stops, questions, or non-current schedule records?",
+        "score_criteria": {
+          "2": "Score 2 only if all four safety elements are correct and none of the listed obsolete/out-of-scope material is presented as required student work.",
+          "1": "Score 1 only if exactly one safety element is omitted and all exclusions are respected, or one excluded item appears solely as a clearly rejected warning.",
+          "0": "Score 0 if two or more safety elements are missing, an eye-splash response is wrong, or any obsolete/pending/other-protocol content is adopted as an instruction."
+        }
       }
     ]
   },
@@ -104,11 +149,11 @@
     "vqa_items": [
       {
         "id": "visual_q01",
-        "question": "As an instructional guide, workflow image, setup card, safety card, care guide, or classroom bench card, does the image transform the procedure into a complete, glance-followable, and operationally safe visual aid rather than a densely typeset instruction sheet? Evaluate whether users can distinguish each action, object, quantity, condition, transition, repetition, warning, checkpoint, and completion cue without repeatedly reading paragraph-like text. Judge the entire artifact at its intended physical viewing size, including the smallest instructional text, the visual encoding of sequence and repeated cycles, the placement of warnings beside the relevant actions, the correspondence of icons or diagrams to the instructions, and the consistency and completeness of the page. Do not award 2 merely because the steps are numbered, factually present, aligned, color-coded, or technically readable.",
+        "state": "As an instructional guide, workflow image, setup card, safety card, care guide, or classroom bench card, does the image transform the procedure into a complete, glance-followable, and operationally safe visual aid rather than a densely typeset instruction sheet? Evaluate whether users can distinguish each action, object, quantity, condition, transition, repetition, warning, checkpoint, and completion cue without repeatedly reading paragraph-like text. Judge the entire artifact at its intended physical viewing size, including the smallest instructional text, the visual encoding of sequence and repeated cycles, the placement of warnings beside the relevant actions, the correspondence of icons or diagrams to the instructions, and the consistency and completeness of the page. Do not award 2 merely because the steps are numbered, factually present, aligned, color-coded, or technically readable.",
         "score_criteria": {
-          "2": "Award 2 only if **all** of the following real-deployment gates are clearly satisfied. Failure of any one gate limits the score to 1 at most:\n\n  1. **Glance-followable action structure:** Each step must expose the principal action, object, quantity or setting, and immediate outcome through clear visual separation. Users should not need to parse paragraph-like prose or several similarly weighted sentences to determine what to do next.\n  2. **Operational sequence clarity:** The order, phase changes, branches, returns, waits, repetitions, and completion points must be visually unmistakable. Repeated cycles such as washing, checking, tightening, watering, restarting, or waiting must be encoded so that the number of repetitions and the point of return cannot be confused.\n  3. **Action-to-visual correspondence:** Icons, diagrams, illustrations, arrows, panels, or other visual devices must materially clarify tools, orientation, placement, motion, connections, quantities, or expected states. Visuals are not mandatory for every step, but a predominantly text-only guide must demonstrate exceptional typographic process design and cannot resemble a memo, worksheet, manual excerpt, or numbered document.\n  4. **Immediate parameter recognition:** Critical quantities, durations, temperatures, counts, directions, settings, materials, and result criteria must be visually distinct from explanatory text. Important parameters buried inside sentences, long lines, or low-emphasis body copy prevent 2.\n  5. **Contextual warning placement:** Safety warnings, contamination risks, prohibited actions, fragile steps, and irreversible actions must appear at or immediately beside the step where the risk occurs. A general warning block placed only at the bottom or far from the relevant action is insufficient for 2 when users could act before seeing it.\n  6. **Warning hierarchy proportional to risk:** High-risk warnings must be visually more prominent than routine notes and must not rely only on a small icon, pale background, or dense sentence. The user must be able to distinguish danger, caution, timing, optional advice, and ordinary instruction instantly.\n  7. **Normal-size readability under use conditions:** Every meaningful instruction, warning, label, parameter, legend, and result cue must be comfortably readable at the intended print or display size while the user is performing the task. Small body text, tightly packed lines, long text blocks, or narrow line spacing that demand close inspection prevent 2.\n  8. **Controlled information density:** Steps must be concise enough to scan during execution. Dense multi-sentence steps, excessive parenthetical information, long inline lists, repeated procedural prose, or numerous facts with equal visual weight prevent 2 even when no text is technically illegible.\n  9. **Distinct checkpoints and outcomes:** Wait states, validation checks, success conditions, failure conditions, result interpretation, and final completion cues must be visually separated from ordinary actions. Users must know when to stop, verify, repeat, proceed, or seek help without searching through body text.\n  10. **Complete and polished artifact:** The full sequence, final section, warnings, footer, legends, and completion state must be visibly contained and finished. No clipped content, orphaned heading, malformed glyph, inconsistent numbering, ambiguous color coding, weak contrast, unstable alignment, incomplete final step, or visible production residue is allowed.\n\n  A clean numbered page made mainly of bold step titles followed by small explanatory paragraphs, with limited action diagrams and warnings separated from their relevant steps, is an organized instruction sheet rather than an exceptional instructional visual and cannot receive 2.",
-          "1": "Award 1 if the guide is understandable, mostly complete, and generally usable, but still requires visible refinement before dependable real-world deployment. Typical 1-point outputs include clearly numbered but text-heavy procedures; long explanatory lines beneath each step; limited diagrams or action icons; quantities and timings embedded inside prose; repeated cycles explained verbally rather than visually; warnings placed mainly in separate footer boxes; modest distinction between action, parameter, note, and result; small but readable text; generic colored labels; uneven spacing; or a layout that resembles a formatted handout, manual page, checklist, or classroom worksheet. A guide may be accurate, aligned, and logically ordered yet still receive only 1 when users must read carefully rather than act at a glance.",
-          "0": "Award 0 if the guide is visually unreliable, materially difficult to follow, incomplete, or unsafe for practical use. This includes cases where sequence or phase boundaries are confusing; steps, repetitions, quantities, directions, tools, warnings, or result criteria are difficult to locate; essential safety information is visually buried or detached from the risky action; text density or size makes consultation impractical during execution; icons or diagrams conflict with the instructions; the final state is unclear; or substantial redesign is required to prevent mistakes. Blank, corrupted, severely unreadable, clipped, overlapping, misleading, materially incomplete, or otherwise broken outputs are also 0."
+          "2": "Score 2 only if **all** of the following real-deployment gates are clearly satisfied. Failure of any one gate limits the score to 1 at most:\n\n  1. **Glance-followable action structure:** Each step must expose the principal action, object, quantity or setting, and immediate outcome through clear visual separation. Users should not need to parse paragraph-like prose or several similarly weighted sentences to determine what to do next.\n  2. **Operational sequence clarity:** The order, phase changes, branches, returns, waits, repetitions, and completion points must be visually unmistakable. Repeated cycles such as washing, checking, tightening, watering, restarting, or waiting must be encoded so that the number of repetitions and the point of return cannot be confused.\n  3. **Action-to-visual correspondence:** Icons, diagrams, illustrations, arrows, panels, or other visual devices must materially clarify tools, orientation, placement, motion, connections, quantities, or expected states. Visuals are not mandatory for every step, but a predominantly text-only guide must demonstrate exceptional typographic process design and cannot resemble a memo, worksheet, manual excerpt, or numbered document.\n  4. **Immediate parameter recognition:** Critical quantities, durations, temperatures, counts, directions, settings, materials, and result criteria must be visually distinct from explanatory text. Important parameters buried inside sentences, long lines, or low-emphasis body copy prevent 2.\n  5. **Contextual warning placement:** Safety warnings, contamination risks, prohibited actions, fragile steps, and irreversible actions must appear at or immediately beside the step where the risk occurs. A general warning block placed only at the bottom or far from the relevant action is insufficient for 2 when users could act before seeing it.\n  6. **Warning hierarchy proportional to risk:** High-risk warnings must be visually more prominent than routine notes and must not rely only on a small icon, pale background, or dense sentence. The user must be able to distinguish danger, caution, timing, optional advice, and ordinary instruction instantly.\n  7. **Normal-size readability under use conditions:** Every meaningful instruction, warning, label, parameter, legend, and result cue must be comfortably readable at the intended print or display size while the user is performing the task. Small body text, tightly packed lines, long text blocks, or narrow line spacing that demand close inspection prevent 2.\n  8. **Controlled information density:** Steps must be concise enough to scan during execution. Dense multi-sentence steps, excessive parenthetical information, long inline lists, repeated procedural prose, or numerous facts with equal visual weight prevent 2 even when no text is technically illegible.\n  9. **Distinct checkpoints and outcomes:** Wait states, validation checks, success conditions, failure conditions, result interpretation, and final completion cues must be visually separated from ordinary actions. Users must know when to stop, verify, repeat, proceed, or seek help without searching through body text.\n  10. **Complete and polished artifact:** The full sequence, final section, warnings, footer, legends, and completion state must be visibly contained and finished. No clipped content, orphaned heading, malformed glyph, inconsistent numbering, ambiguous color coding, weak contrast, unstable alignment, incomplete final step, or visible production residue is allowed.\n\n  A clean numbered page made mainly of bold step titles followed by small explanatory paragraphs, with limited action diagrams and warnings separated from their relevant steps, is an organized instruction sheet rather than an exceptional instructional visual and cannot receive 2.",
+          "1": "Score 1 if the guide is understandable, mostly complete, and generally usable, but still requires visible refinement before dependable real-world deployment. Typical 1-point outputs include clearly numbered but text-heavy procedures; long explanatory lines beneath each step; limited diagrams or action icons; quantities and timings embedded inside prose; repeated cycles explained verbally rather than visually; warnings placed mainly in separate footer boxes; modest distinction between action, parameter, note, and result; small but readable text; generic colored labels; uneven spacing; or a layout that resembles a formatted handout, manual page, checklist, or classroom worksheet. A guide may be accurate, aligned, and logically ordered yet still receive only 1 when users must read carefully rather than act at a glance.",
+          "0": "Score 0 if the guide is visually unreliable, materially difficult to follow, incomplete, or unsafe for practical use. This includes cases where sequence or phase boundaries are confusing; steps, repetitions, quantities, directions, tools, warnings, or result criteria are difficult to locate; essential safety information is visually buried or detached from the risky action; text density or size makes consultation impractical during execution; icons or diagrams conflict with the instructions; the final state is unclear; or substantial redesign is required to prevent mistakes. Blank, corrupted, severely unreadable, clipped, overlapping, misleading, materially incomplete, or otherwise broken outputs are also 0."
         }
       }
     ]

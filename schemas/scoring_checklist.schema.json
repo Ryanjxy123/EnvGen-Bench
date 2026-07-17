@@ -89,31 +89,31 @@
     "grounded_item": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "question", "expected_answer", "acceptance_rule"],
+      "required": ["id", "state", "score_criteria"],
       "properties": {
         "id": {"type": "string", "pattern": "^grounded_q[0-9]+$"},
-        "question": {"type": "string", "minLength": 5},
-        "expected_answer": {},
-        "acceptance_rule": {"type": "string", "minLength": 3}
+        "state": {"type": "string", "minLength": 5, "pattern": "\\?"},
+        "score_criteria": {"$ref": "#/$defs/score_criteria"}
       }
     },
     "visual_item": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "question", "score_criteria"],
+      "required": ["id", "state", "score_criteria"],
       "properties": {
         "id": {"const": "visual_q01"},
-        "question": {"type": "string", "minLength": 20},
-        "score_criteria": {
-          "type": "object",
-          "additionalProperties": false,
-          "required": ["0", "1", "2"],
-          "properties": {
-            "0": {"type": "string", "minLength": 20},
-            "1": {"type": "string", "minLength": 20},
-            "2": {"type": "string", "minLength": 20}
-          }
-        }
+        "state": {"type": "string", "minLength": 20, "pattern": "\\?"},
+        "score_criteria": {"$ref": "#/$defs/score_criteria"}
+      }
+    },
+    "score_criteria": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["2", "1", "0"],
+      "properties": {
+        "2": {"type": "string", "minLength": 20, "pattern": "^Score 2\\b"},
+        "1": {"type": "string", "minLength": 20, "pattern": "^Score 1\\b"},
+        "0": {"type": "string", "minLength": 20, "pattern": "^Score 0\\b"}
       }
     }
   }
