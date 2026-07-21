@@ -1,0 +1,13 @@
+profile_id,catalog_release,bundle_id,wave_id,scope,audience,event_at,state,effective_at,manifest_id,note
+ARV-0630-A,4.8,CB-0626-B,DW-0630-C,Central Service-to-Cash,Architecture Review Board,2026-06-30T16:05:00,APPROVED,2026-06-30T16:10:00,VPM-0630-A,Earlier broad review profile
+ARV-0630-A,4.8,CB-0626-B,DW-0630-C,Central Service-to-Cash,Architecture Review Board,2026-06-30T16:12:00,ACTIVATED,2026-06-30T16:12:00,VPM-0630-A,Activated before focused profile
+ARV-0630-A,4.8,CB-0626-B,DW-0630-C,Central Service-to-Cash,Architecture Review Board,2026-06-30T16:22:00,SUPERSEDED,2026-06-30T16:22:00,VPM-0630-A,Replaced by focused profile
+ARV-0630-B,4.8,CB-0626-B,DW-0630-C,Central Service-to-Cash,Implementation Working Group,2026-06-30T16:18:00,ACTIVATED,2026-06-30T16:18:00,VPM-0630-B,Wrong audience
+ARV-0630-C,4.8,CB-0626-B,DW-0630-C,Central Service-to-Cash,Architecture Review Board,2026-06-30T16:20:00,APPROVED,2026-06-30T16:25:00,VPM-0630-C,Focused governed architecture view
+ARV-0630-C,4.8,CB-0626-B,DW-0630-C,Central Service-to-Cash,Architecture Review Board,2026-06-30T16:24:00,ACTIVATED,2026-06-30T16:25:00,VPM-0630-C,Current profile at cutoff
+ARV-0630-C,4.8,CB-0626-B,DW-0630-C,Central Service-to-Cash,Architecture Review Board,2026-06-30T16:31:00,SUPERSEDED,2026-06-30T16:31:00,VPM-0630-C,Post-cutoff event; ignore
+ARV-0630-D,4.8,CB-0626-B,DW-0630-C,Central Service-to-Cash,Architecture Review Board,2026-06-30T16:29:00,ACTIVATED,2026-06-30T16:30:00,VPM-0630-D,Post-cutoff future profile
+ARV-0630-E,4.8,CB-0626-B,DW-0630-C,Regional Service-to-Cash,Architecture Review Board,2026-06-30T16:23:00,ACTIVATED,2026-06-30T16:24:00,VPM-0630-E,Wrong scope
+ARV-0630-F,4.9,CB-0626-B,DW-0630-C,Central Service-to-Cash,Architecture Review Board,2026-06-30T16:23:00,ACTIVATED,2026-06-30T16:24:00,VPM-0630-F,Future catalog
+ARV-0630-G,4.8,CB-0626-A,DW-0630-A,Central Service-to-Cash,Architecture Review Board,2026-06-30T16:21:00,ACTIVATED,2026-06-30T16:22:00,VPM-0630-G,Wrong bundle and wave
+ARV-0630-H,4.8,CB-0626-B,DW-0630-C,Central Service-to-Cash,Architecture Review Board,2026-06-30T16:21:00,CANARY_ONLY,2026-06-30T16:22:00,VPM-0630-H,Not activated

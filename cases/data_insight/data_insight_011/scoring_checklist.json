@@ -9,110 +9,110 @@
     "vqa_items": [
       {
         "id": "grounded_q01",
-        "state": "Does the image accurately show what review period and comparison period are shown in the image; specifically, Q4 2026 review, compared with Q3 2026 or the prior quarter?",
+        "state": "Does the image identify Q4 2026 versus Q3 2026 and state company Q4 adjusted net sales of about $21.02M across 24 active stores?",
         "score_criteria": {
-          "2": "Score 2 if the image clearly shows Q4 2026 as the review period and Q3 2026 or the prior quarter as the comparison period.",
-          "1": "Score 1 if Q4 is visible but the comparison period is vague, shortened, or only implied.",
-          "0": "Score 0 if the period is absent, unreadable, materially wrong, or not tied to a Q4 review."
+          "2": "Score 2 only if both periods, the adjusted-net-sales basis, the approximately $21.02M value, and the 24-active-store scope are explicit and correct.",
+          "1": "Score 1 only if the periods and value are correct and exactly one of the adjusted basis or active-store count is omitted, with no wrong scope or metric.",
+          "0": "Score 0 if a period, value, metric basis, or stated store count is wrong; if planning or gross sales is used; or if two or more required facts are absent."
         }
       },
       {
         "id": "grounded_q02",
-        "state": "Does the image accurately identify which location is shown as the strongest upside or opportunity location, and what Q4 net sales or net revenue value is shown for it; specifically, Central Tech Plaza, about $1,394,441 Q4 net sales / net revenue, equivalent to about $1.39M?",
+        "state": "Does the image show the comparable-company result as 20 stores, about $18.42M Q4 adjusted net sales, about $17.41M Q3 adjusted net sales, and approximately +5.8% quarter lift?",
         "score_criteria": {
-          "2": "Score 2 if Central Tech Plaza is clearly shown as the strongest upside, opportunity, or lead location and is visibly paired with Q4 net sales/net revenue of about $1,394,441 or $1.39M.",
-          "1": "Score 1 if Central Tech Plaza is shown as a major positive callout but either the role or value is weakly labeled, coarsely rounded, or partly unclear.",
-          "0": "Score 0 if another location is shown as the opportunity leader, the value is assigned to the wrong location, the value is materially different, or the information is absent/unreadable."
+          "2": "Score 2 only if the 20-store cohort, both quarter values, and the +5.8% comparable lift are all explicit and materially correct.",
+          "1": "Score 1 only if the cohort and lift are correct and exactly one quarter value is omitted or coarsely rounded, with no wrong value.",
+          "0": "Score 0 if active and comparable scope are confused, the lift or either displayed quarter value is materially wrong, or two or more facts are absent."
         }
       },
       {
         "id": "grounded_q03",
-        "state": "Does the image accurately show what labor productivity value is shown for the strongest opportunity location; specifically, Central Tech Plaza shows about $461.7 net sales per labor hour?",
+        "state": "Does the image identify Northgate Electronics as the single scalable upside opportunity and pair it with about $1.62M Q4 adjusted net sales and +11.8% Q4-over-Q3 growth?",
         "score_criteria": {
-          "2": "Score 2 if Central Tech Plaza is shown with labor productivity around $461.7 net sales per labor hour.",
-          "1": "Score 1 if the correct productivity idea is shown for Central Tech Plaza but with minor rounding, abbreviated labeling, or slight ambiguity.",
-          "0": "Score 0 if productivity is absent, uses the wrong denominator, is assigned to another store, or is materially wrong."
+          "2": "Score 2 only if Northgate Electronics is explicitly the scalable upside and both the approximately $1.62M value and +11.8% growth are correct.",
+          "1": "Score 1 only if Northgate is the clear upside and exactly one supporting value is omitted or slightly rounded, with no conflicting leader.",
+          "0": "Score 0 if another store is the upside, Northgate is only listed without the role, either shown value is materially wrong or misassigned, or two facts are absent."
         }
       },
       {
         "id": "grounded_q04",
-        "state": "Does the image accurately identify which location is shown as the main triage risk or weakest operating location, and what Q4 return rate is shown for it; specifically, Bayview Outlet, about 6.5% Q4 return rate?",
+        "state": "Does the Northgate Electronics evidence show about $493 net sales per labor hour, roughly 12.0% above its $440/hr format benchmark, about 2.2% adjusted returns, and about 97.4% staffing coverage?",
         "score_criteria": {
-          "2": "Score 2 if Bayview Outlet is clearly shown as the main triage risk, weakest operating location, or most attention-needed store and is paired with a Q4 return rate around 6.5%.",
-          "1": "Score 1 if Bayview Outlet appears as a risk callout but the role, period, or percentage is weakly labeled or rounded.",
-          "0": "Score 0 if another store is identified as the main risk, the return rate is assigned to the wrong store, the value is materially different, or the information is absent/unreadable."
+          "2": "Score 2 only if all four gate metrics are attached to Northgate and are materially correct, including the benchmark comparison rather than productivity alone.",
+          "1": "Score 1 only if three metrics are correct and the fourth is omitted or slightly rounded, with no wrong denominator, benchmark, return, or coverage value.",
+          "0": "Score 0 if any shown gate metric is materially wrong or belongs to another store, the benchmark gap is reversed, or two or more metrics are absent."
         }
       },
       {
         "id": "grounded_q05",
-        "state": "Does the image accurately identify which region is shown as the Q4 net sales or net revenue leader, and what value is shown for that region; specifically, Central region, about $3,134,391 Q4 net sales / net revenue, equivalent to about $3.13M?",
+        "state": "Does the image identify Mesa Home Goods as the intervention priority and show about 5.4% adjusted returns, 91.8% staffing coverage, and −6.2% comparable growth?",
         "score_criteria": {
-          "2": "Score 2 if Central is clearly shown as the leading region by Q4 net sales/net revenue with a value around $3,134,391 or $3.13M.",
-          "1": "Score 1 if Central is shown as a leading region but the metric label, value, or leader role is incomplete or coarsely rounded.",
-          "0": "Score 0 if a different region is shown as the leader, the value is assigned to the wrong region, the value is materially different, or the result is absent/unreadable."
+          "2": "Score 2 only if Mesa Home Goods is explicitly the intervention priority and all three operating signals are materially correct.",
+          "1": "Score 1 only if Mesa is the clear intervention store and exactly one signal is omitted or slightly rounded, with no wrong signal.",
+          "0": "Score 0 if another store is the intervention priority, a raw rather than adjusted return rate is used, any shown signal is materially wrong, or two signals are absent."
         }
       },
       {
         "id": "grounded_q06",
-        "state": "Does the image accurately identify which location is shown as having the strongest Q4-over-Q3 net sales growth, and what growth percentage is shown; specifically, Airport Express, about 23.0% Q4-over-Q3 net sales growth?",
+        "state": "Does the image show that Mesa Home Goods breaches all three current risk gates: returns above the 4.2% threshold, coverage below 94.0%, and growth below −3.0%?",
         "score_criteria": {
-          "2": "Score 2 if Airport Express is clearly shown as the strongest Q4-over-Q3 growth location with growth around 23.0%.",
-          "1": "Score 1 if Airport Express appears as a growth callout but the leader role, period comparison, or percentage is weakly labeled or rounded.",
-          "0": "Score 0 if another store is shown as the growth leader, the growth percentage is assigned to another store, the value is materially different, or the result is absent/unreadable."
+          "2": "Score 2 only if all three threshold comparisons and the fact of three breaches are explicit and correct.",
+          "1": "Score 1 only if exactly two threshold comparisons are correct and the third is omitted, with no wrong threshold or direction.",
+          "0": "Score 0 if any displayed threshold is wrong, a comparison direction is reversed, fewer than two correct breaches are shown, or another store is evaluated."
         }
       },
       {
         "id": "grounded_q07",
-        "state": "Does the image accurately identify which region is shown as the staffing coverage watch or lowest staffing coverage region, and what staffing coverage value is shown; specifically, South region, about 95.0% Q4 staffing coverage?",
+        "state": "Does the image identify North as the comparable regional net-sales leader with about $5.12M Q4 adjusted net sales, approximately +8.4% growth, and five comparable stores?",
         "score_criteria": {
-          "2": "Score 2 if South is clearly shown as the staffing coverage watch or lowest staffing coverage region and is paired with Q4 staffing coverage around 95.0%.",
-          "1": "Score 1 if South is shown as a staffing concern but the low-coverage role, period, or value is weakly labeled or rounded.",
-          "0": "Score 0 if another region is shown as the staffing risk, the value is assigned to the wrong region, the value is materially different, or the information is absent/unreadable."
+          "2": "Score 2 only if North, the approximately $5.12M value, +8.4% growth, and five-store comparable scope are all explicit and correct.",
+          "1": "Score 1 only if North and two supporting facts are correct and exactly one supporting fact is omitted or slightly rounded.",
+          "0": "Score 0 if another region is the leader, active and comparable totals are mixed, any shown value/count is materially wrong, or two supporting facts are absent."
         }
       },
       {
         "id": "grounded_q08",
-        "state": "Does the image accurately show what action takeaway is shown, and does it connect the upside location with the risk or intervention signal; specifically, The takeaway connects Central Tech Plaza as the upside opportunity with Bayview Outlet and/or South staffing coverage as the intervention watch?",
+        "state": "Does the image identify Airport Express as the raw growth leader at about +24.8% while explaining that its roughly 93.7% coverage is below the 96.0% opportunity gate?",
         "score_criteria": {
-          "2": "Score 2 if the takeaway clearly connects Central Tech Plaza as the upside opportunity with Bayview Outlet and/or South as the intervention watch.",
-          "1": "Score 1 if the takeaway mentions only the opportunity side or only the risk/intervention side but remains directionally related to the computed signals.",
-          "0": "Score 0 if the takeaway is absent, generic, contradicts the computed signals, focuses on the wrong location/region, or is unreadable."
+          "2": "Score 2 only if Airport Express, +24.8% growth, 93.7% coverage, and the failed 96.0% gate are all explicit and correctly connected.",
+          "1": "Score 1 only if Airport and its growth are correct and exactly one gate value or the failure explanation is omitted, with no claim that Airport is the scalable opportunity.",
+          "0": "Score 0 if another growth leader is shown, Airport is promoted as the scalable opportunity, a displayed value is materially wrong, or two or more facts are absent."
         }
       },
       {
         "id": "grounded_q09",
-        "state": "Does the image keep net sales, labor productivity, return rate, growth percentage, and staffing coverage as distinct metrics; specifically, with all of these required details: Net sales/revenue should be currency, labor productivity should be currency per labor hour, return rate and growth should be percentages, and staffing coverage should be a coverage percentage?",
+        "state": "Does the image identify South as the staffing-watch region with about 94.4% schedule-weighted comparable coverage across five stores, approximately 1.6 percentage points below 96.0%?",
         "score_criteria": {
-          "2": "Score 2 if the image clearly keeps currency net sales/revenue, currency-per-labor-hour productivity, return rate, Q4-over-Q3 growth percentage, and staffing coverage percentage distinct.",
-          "1": "Score 1 if most metrics use the correct units but one metric is weakly labeled or slightly ambiguous.",
-          "0": "Score 0 if multiple units are missing, mixed up, misleading, or unreadable."
+          "2": "Score 2 only if South, 94.4%, the schedule-weighted comparable basis, five-store scope, and 1.6-point gap are all correct.",
+          "1": "Score 1 only if South and 94.4% are correct and exactly one of the weighting/scope/gap details is omitted, with no wrong basis or value.",
+          "0": "Score 0 if another region is the watch, a simple unweighted or all-store figure is presented as final, any shown count/gap/value is materially wrong, or two details are absent."
         }
       },
       {
         "id": "grounded_q10",
-        "state": "Does the final image avoid presenting planning refreshes, district rollup copies, QA rebuilds, cutover archive rows, or the seasonal-pause location as final performance results, so that non-final or out-of-rotation items should not be presented as final performance results?",
+        "state": "Does the main action takeaway direct leadership to scale Northgate Electronics and intervene at Mesa Home Goods on returns and staffing, while keeping Airport Express as a growth signal rather than the chosen opportunity?",
         "score_criteria": {
-          "2": "Score 2 only if none of those non-final or out-of-rotation items are presented as final performance results.",
-          "1": "Score 1 if they appear only in a clearly marked note saying they were not used or were excluded.",
-          "0": "Score 0 if any such item is treated as a final metric, leader, recommendation, ranked result, or headline evidence."
+          "2": "Score 2 only if the takeaway contains the correct upside action, the correct intervention store, both returns and staffing directions, and the correct subordinate role for Airport.",
+          "1": "Score 1 only if the Northgate and Mesa actions are correct and exactly one intervention dimension or the Airport distinction is omitted, with no conflicting action.",
+          "0": "Score 0 if the action favors the wrong store, omits either Northgate or Mesa, treats Airport as the selected opportunity, or is generic without the required operating direction."
         }
       },
       {
         "id": "grounded_q11",
-        "state": "Does the image avoid showing raw SQL, database screenshots, or raw table dumps as the final artifact; specifically, with all of these required details: The final artifact should be an infographic-style summary, not raw SQL, database screenshots, or pasted raw tables?",
+        "state": "Does the image keep adjusted net sales, labor productivity, adjusted return rate, comparable growth, and staffing coverage as distinct metrics with the correct currency, currency-per-hour, and percentage units?",
         "score_criteria": {
-          "2": "Score 2 if the final artifact is an infographic-style summary and does not show raw SQL, database screenshots, or pasted raw tables.",
-          "1": "Score 1 if a tiny supporting note resembles database language but the artifact is still mostly a visual summary.",
-          "0": "Score 0 if SQL, screenshots, raw tables, or spreadsheet-like extracts dominate the image."
+          "2": "Score 2 only if all five metrics are distinctly labeled, use correct units, and retain the adjusted/comparable qualifiers where required.",
+          "1": "Score 1 only if four metrics are correct and exactly one label, unit, or qualifier is weak or omitted, with no metric substitution.",
+          "0": "Score 0 if multiple units or metric bases are mixed, gross sales or raw returns are presented as adjusted results, productivity uses the wrong denominator, or two or more metrics are unclear."
         }
       },
       {
         "id": "grounded_q12",
-        "state": "Does the image show the main triage story across opportunity, risk, regional leader, growth, and staffing signals; specifically, with all of these required details: The image should include Central Tech Plaza opportunity, Bayview Outlet risk/returns, Central region revenue leader, Airport Express growth leader, and South staffing watch?",
+        "state": "Does the image explicitly state a certified-close scope of 24 active and 20 comparable stores using approved adjustments only, without presenting planning, rollup, QA, archive, seasonal-pause, rejected-adjustment, or post-cutoff values as final results?",
         "score_criteria": {
-          "2": "Score 2 if all five triage signals are visibly represented: Central Tech Plaza opportunity, Bayview Outlet risk/return pressure, Central region revenue leadership, Airport Express growth, and South staffing watch.",
-          "1": "Score 1 if at least three of the five signals are visible and no visible signal contradicts the expected results.",
-          "0": "Score 0 if fewer than three signals are visible, the story is dominated by wrong entities, or the triage content is unreadable."
+          "2": "Score 2 only if the certified-close basis, both store counts, approved-adjustment basis, and exclusion of all named non-final contexts are explicit or unambiguously confirmed.",
+          "1": "Score 1 only if the certified-close basis and both counts are correct and exactly one adjustment/exclusion cue is omitted, with no invalid value promoted.",
+          "0": "Score 0 if a count or scope is wrong, the seasonal-pause store or a non-comparable store enters a ranking, a rejected/post-cutoff adjustment changes a result, any non-final feed is used as final evidence, or two scope elements are absent."
         }
       }
     ]
@@ -122,11 +122,11 @@
     "vqa_items": [
       {
         "id": "visual_q01",
-        "state": "As an executive dashboard or decision snapshot, does the image surface the primary decision immediately through a disciplined KPI hierarchy, meaningful comparison, aligned values and statuses, restrained emphasis, and highly polished meeting-ready composition?",
+        "state": "As an executive dashboard or decision snapshot, does the image convert complex operational, financial, quality, energy, or performance data into an immediately actionable leadership view—so that the central decision, opportunity, risk, responsible entity, supporting evidence, and next action are understood within seconds at realistic meeting-screen size—without relying on repetitive KPI cards, dense worksheet-like tables, manual comparison, paragraph-style conclusions, tiny supporting text, or unresolved production defects?",
         "score_criteria": {
-          "2": "Score 2 only if the dashboard is exceptional and genuinely executive-ready: the central decision or priority is obvious within seconds; ranked comparisons, statuses, and supporting KPIs are visually coherent and numerically aligned; all values, units, labels, and notes are readable; the grid, spacing, typography, color, and emphasis are precise and restrained; charts and cards are purposeful rather than repetitive; and the whole page feels custom, calm, and authoritative. There must be no disconnected KPI-card dump, raw-worksheet feel, excessive density, weak status encoding, clipping, malformed text, or visible cleanup issue. Any meaningful revision a senior design reviewer would request prevents 2.",
-          "1": "Score 1 if the dashboard is understandable, usable in a meeting, and visually decent, but it has visible shortcomings such as generic card layout, weak comparison, small secondary text, uneven grid spacing, excessive density, modest decision emphasis, or ordinary styling.",
-          "0": "Score 0 even if metrics are shown when the dashboard visually fails as a decision tool: the main decision is buried, values or statuses are hard to compare, the page resembles a raw worksheet, hierarchy is chaotic, density is poorly managed, or the design looks noticeably weak and requires substantial redesign. Blank, corrupted, severely unreadable, or materially misleading outputs are also 0."
+          "2": "Score 2 only if **all** of the following executive-readiness gates are clearly satisfied. Failure of any one gate limits the score to 1 at most:\n\n  1. **Immediate decision gate:** The principal leadership decision, priority, intervention, opportunity, or recommended action is evident within seconds. The viewer does not need to inspect several cards, compare rows manually, or read a paragraph before understanding what requires attention and why.\n  2. **Decision-to-evidence hierarchy:** The primary conclusion dominates, followed by the few metrics that justify it, while diagnostic details are clearly subordinate. Title, summary KPIs, comparisons, alerts, detailed records, methodology notes, and footnotes do not compete at similar visual weight.\n  3. **Explicit action direction:** When the content supports an intervention or recommendation, the dashboard clearly communicates the affected entity, the required direction of action, and the reason or threshold behind it. A generic or paragraph-style “key takeaway” without a concise action structure prevents 2.\n  4. **Visual synthesis rather than KPI-card accumulation:** Cards, charts, tables, rankings, and callouts each perform a distinct analytical role. Repeated boxes that merely apply the same structure to different values, without adding trend, benchmark, threshold, ranking, or decision context, prevent 2.\n  5. **Meaningful comparison:** Leaders can identify relative performance, exceptions, trends, gaps, and priorities without performing mental arithmetic across distant elements. Rankings, deltas, benchmarks, reference lines, distributions, or tightly aligned comparisons make the analytical relationship explicit.\n  6. **Table restraint:** Any detail table is supporting, visually subordinate, and limited to information needed for verification or follow-up. A spreadsheet-like block with numerous rows or columns, especially when it occupies a major portion of the dashboard or uses small text, prevents 2 even when neatly styled.\n  7. **Meeting-size readability:** Every decision-critical title, KPI, unit, status, label, owner, annotation, takeaway, and necessary table entry remains comfortably readable when the complete dashboard is shown on a normal meeting display or presentation slide. Text that is readable only by zooming into the high-resolution source prevents 2.\n  8. **Concise insight writing:** Takeaways, recommendations, and explanatory notes are edited into short, structured statements, action callouts, or compact evidence chains. Dense multi-line paragraphs, long sentences spanning the page, or several conclusions compressed into one box prevent 2.\n  9. **Controlled metric density:** Only metrics necessary to support the decision receive meaningful visual space. Excessive secondary values, duplicated figures, minor operational details, and numerous low-priority labels that increase scanning effort prevent 2.\n  10. **Coherent status semantics:** Color, icons, borders, labels, and emphasis use a consistent and immediately understandable status system. Positive, neutral, caution, and critical states do not rely on color alone, and the same treatment does not communicate conflicting meanings across sections.\n  11. **Proportional alert emphasis:** The visual strength of each warning or success signal matches its decision importance. Decorative red or green borders, oversized percentages without context, or weakly labeled alerts that exaggerate or obscure the underlying issue prevent 2.\n  12. **Grid and edge safety:** Cards, charts, tables, titles, annotations, and footer notes remain inside deliberate safe margins and align to a coherent grid. No element touches the canvas edge, appears cropped, uses unstable column widths, or creates visibly uneven rhythm.\n  13. **Whole-page resolution:** The dashboard has a clear beginning, analytical middle, and resolved decision ending. No section feels like an unrelated second dashboard, appended worksheet, oversized footer panel, or compressed afterthought.\n  14. **Production integrity:** There are no missing-icon squares, replacement glyphs, placeholder symbols, malformed characters, clipped labels, inconsistent number formats, broken units, weak contrast, overlaps, editor residue, or unreadably small footnotes. Any visible unresolved glyph or rendering defect prevents 2.\n  15. **Calm executive finish:** Typography, spacing, alignment, borders, fills, emphasis, and visual density feel restrained, authoritative, and specific to the decision context. A generic card dashboard, slide-template composition, or decorated spreadsheet cannot receive 2.\n\n  A dashboard that is accurate, aligned, and color-coded but relies on repeated KPI boxes, a dense small-text table, manual comparison, a paragraph-style takeaway, weak action direction, or unresolved glyphs is usable reporting—not exceptional executive communication—and cannot receive 2.",
+          "1": "Score 1 if the dashboard is understandable, substantially usable in a meeting, and visually acceptable or good, but still requires visible refinement before senior-level presentation. Typical 1-point outputs include clean but generic KPI-card layouts; correct status coloring with limited analytical synthesis; a useful but overly detailed table; small secondary labels; manually inferred rankings; modest decision emphasis; a long takeaway paragraph; weak action direction; repeated card structures; minor grid or safe-margin problems; or a composition that presents the data correctly but does not sufficiently reduce leadership interpretation effort. A dashboard may be factually complete, orderly, and free of major corruption yet still receive only 1 when it behaves more like a formatted report or worksheet than a decisive executive brief.",
+          "0": "Score 0 if the dashboard is visually unreliable, materially difficult to interpret, misleading, or unsuitable as a decision tool. This includes cases where the main priority or action is buried or absent; important values, units, statuses, table entries, or conclusions are unreadable at normal viewing size; viewers must reconstruct the story from raw rows; status encoding is contradictory or misleading; worksheet-like detail dominates the page; major sections are clipped, incomplete, or badly aligned; unresolved rendering defects materially affect use; or substantial redesign is required. Blank, corrupted, severely unreadable, overlapping, materially misleading, or otherwise broken outputs are also 0."
         }
       }
     ]

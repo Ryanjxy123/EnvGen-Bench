@@ -9,20 +9,20 @@
     "vqa_items": [
       {
         "id": "grounded_q01",
-        "state": "Does the image accurately show what complete event and registration context is stated; specifically, Sunday Volunteer Opportunities; Riverside Spring Fair; Sunday, April 26, 2026; main meeting location Community Garden Welcome Tent; registration deadline Friday, April 24, 2026 at 6:00 PM; riversidefair.org/volunteer; volunteers@riversidefair.org; rain plan Riverside Community Hall — East Lobby?",
+        "state": "Does the image show the exact public event identity: heading “Sunday Volunteer Opportunities”, event “Riverside Spring Fair”, date “Sunday, April 26, 2026”, and main meeting location “Community Garden Welcome Tent”?",
         "score_criteria": {
-          "2": "Score 2 only if all eight facts are explicit and correct: exact heading, event name, full date, main meeting location, full deadline with weekday/year/time, registration URL, public contact, and rain-plan location.",
-          "1": "Score 1 only if the first five core facts are all correct and exactly one of URL, contact, or rain-plan location is absent.",
-          "0": "Score 0 if any core fact is wrong or missing, or two or more action details are absent."
+          "2": "Score 2 only if all four identity facts are explicit and exact.",
+          "1": "Score 1 only if the heading, event, and full date are exact and the meeting location alone is absent, with no wrong location.",
+          "0": "Score 0 if the heading, event, or date is wrong or missing, if a wrong meeting location is shown, or if two or more facts are absent."
         }
       },
       {
         "id": "grounded_q02",
-        "state": "Does the image accurately identify which five opportunities form the complete featured portfolio, and in what eligibility-rank order; specifically, 1. Garden Guide; 2. Compost Demo; 3. Welcome Desk; 4. Elm Exhibit Guide; 5. Elm Workshop Assistant. No sixth role is featured?",
+        "state": "Does the image feature exactly Garden Guide, Compost Demo, Welcome Desk, Elm Exhibit Guide, and Elm Workshop Assistant in ascending global eligibility-rank order, retaining ranks 1, 2, 4, 6, and 9 if rank markers are shown, with no sixth featured role?",
         "score_criteria": {
-          "2": "Score 2 only if exactly these five identities are the complete featured set in the exact order and no extra role receives featured-equivalent status.",
-          "1": "Score 1 only if the exact five-item set is correct and one rank marker alone is missing while order remains unambiguous.",
-          "0": "Score 0 if any role is missing, replaced, duplicated, reordered, or joined by an extra featured role."
+          "2": "Score 2 only if the exact five-role set is complete, the order is correct, no extra role has featured-equivalent status, and every displayed rank marker uses the correct global rank.",
+          "1": "Score 1 only if the exact set and order are correct with no extra role, but rank markers are entirely omitted.",
+          "0": "Score 0 if any role is missing, replaced, duplicated, reordered, joined by an extra featured role, or assigned an incorrect displayed rank; renumbering the set as 1–5 is incorrect."
         }
       },
       {
@@ -30,8 +30,8 @@
         "state": "Does the image accurately show what complete public recruitment record is stated for Garden Guide; specifically, Education; shift 10:00 AM–12:00 PM; check in 9:30 AM; North Gate Briefing Point; Public openings 3; age 16+; orientation 15 minutes; Step-free route?",
         "score_criteria": {
           "2": "Score 2 only if role area, full shift, calculated check-in, meeting zone, Public-openings count, minimum age, orientation minutes, and every applicable controlled fit tag are all correct, explicitly labeled, and attached to this opportunity.",
-          "1": "Score 1 only if exactly one fit tag is absent while every time, zone, openings, age, orientation, and role fact is correct.",
-          "0": "Score 0 if any time, meeting zone, Public-openings count, age, orientation, or role area is wrong or missing; if raw openings are substituted; if a non-applicable tag is added; or if two or more required facts are absent."
+          "1": "Score 1 only if exactly one non-identity supporting fact or applicable fit tag is absent, while every displayed fact is correct and all times, Public openings, age, and role identity remain unambiguous.",
+          "0": "Score 0 if any displayed value is wrong or borrowed from another opportunity, raw openings replace Public openings, a non-applicable tag is added, or two or more required supporting facts are absent."
         }
       },
       {
@@ -39,8 +39,8 @@
         "state": "Does the image accurately show what complete public recruitment record is stated for Compost Demo; specifically, Sustainability; shift 11:30 AM–1:00 PM; check in 11:10 AM; Compost Court Check-in; Public openings 2; age 16+; orientation 20 minutes; Indoor backup?",
         "score_criteria": {
           "2": "Score 2 only if role area, full shift, calculated check-in, meeting zone, Public-openings count, minimum age, orientation minutes, and every applicable controlled fit tag are all correct, explicitly labeled, and attached to this opportunity.",
-          "1": "Score 1 only if exactly one fit tag is absent while every time, zone, openings, age, orientation, and role fact is correct.",
-          "0": "Score 0 if any time, meeting zone, Public-openings count, age, orientation, or role area is wrong or missing; if raw openings are substituted; if a non-applicable tag is added; or if two or more required facts are absent."
+          "1": "Score 1 only if exactly one non-identity supporting fact or applicable fit tag is absent, while every displayed fact is correct and all times, Public openings, age, and role identity remain unambiguous.",
+          "0": "Score 0 if any displayed value is wrong or borrowed from another opportunity, raw openings replace Public openings, a non-applicable tag is added, or two or more required supporting facts are absent."
         }
       },
       {
@@ -48,8 +48,8 @@
         "state": "Does the image accurately show what complete public recruitment record is stated for Welcome Desk; specifically, Guest Support; shift 9:00 AM–11:00 AM; check in 8:30 AM; North Gate Briefing Point; Public openings 3; age 16+; orientation 10 minutes; Step-free route, Seated option, Indoor backup?",
         "score_criteria": {
           "2": "Score 2 only if role area, full shift, calculated check-in, meeting zone, Public-openings count, minimum age, orientation minutes, and every applicable controlled fit tag are all correct, explicitly labeled, and attached to this opportunity.",
-          "1": "Score 1 only if exactly one fit tag is absent while every time, zone, openings, age, orientation, and role fact is correct.",
-          "0": "Score 0 if any time, meeting zone, Public-openings count, age, orientation, or role area is wrong or missing; if raw openings are substituted; if a non-applicable tag is added; or if two or more required facts are absent."
+          "1": "Score 1 only if exactly one non-identity supporting fact or applicable fit tag is absent, while every displayed fact is correct and all times, Public openings, age, and role identity remain unambiguous.",
+          "0": "Score 0 if any displayed value is wrong or borrowed from another opportunity, raw openings replace Public openings, a non-applicable tag is added, or two or more required supporting facts are absent."
         }
       },
       {
@@ -57,8 +57,8 @@
         "state": "Does the image accurately show what complete public recruitment record is stated for Elm Exhibit Guide; specifically, Wayfinding; shift 1:30 PM–5:00 PM; check in 1:00 PM; Riverside Gallery Desk; Public openings 5; age 16+; orientation 25 minutes; Step-free route, Indoor backup?",
         "score_criteria": {
           "2": "Score 2 only if role area, full shift, calculated check-in, meeting zone, Public-openings count, minimum age, orientation minutes, and every applicable controlled fit tag are all correct, explicitly labeled, and attached to this opportunity.",
-          "1": "Score 1 only if exactly one fit tag is absent while every time, zone, openings, age, orientation, and role fact is correct.",
-          "0": "Score 0 if any time, meeting zone, Public-openings count, age, orientation, or role area is wrong or missing; if raw openings are substituted; if a non-applicable tag is added; or if two or more required facts are absent."
+          "1": "Score 1 only if exactly one non-identity supporting fact or applicable fit tag is absent, while every displayed fact is correct and all times, Public openings, age, and role identity remain unambiguous.",
+          "0": "Score 0 if any displayed value is wrong or borrowed from another opportunity, raw openings replace Public openings, a non-applicable tag is added, or two or more required supporting facts are absent."
         }
       },
       {
@@ -66,8 +66,8 @@
         "state": "Does the image accurately show what complete public recruitment record is stated for Elm Workshop Assistant; specifically, Family Activities; shift 10:00 AM–12:00 PM; check in 9:40 AM; Workshop Pavilion; Public openings 5; age 14+; orientation 15 minutes; Step-free route, Seated option, Indoor backup?",
         "score_criteria": {
           "2": "Score 2 only if role area, full shift, calculated check-in, meeting zone, Public-openings count, minimum age, orientation minutes, and every applicable controlled fit tag are all correct, explicitly labeled, and attached to this opportunity.",
-          "1": "Score 1 only if exactly one fit tag is absent while every time, zone, openings, age, orientation, and role fact is correct.",
-          "0": "Score 0 if any time, meeting zone, Public-openings count, age, orientation, or role area is wrong or missing; if raw openings are substituted; if a non-applicable tag is added; or if two or more required facts are absent."
+          "1": "Score 1 only if exactly one non-identity supporting fact or applicable fit tag is absent, while every displayed fact is correct and all times, Public openings, age, and role identity remain unambiguous.",
+          "0": "Score 0 if any displayed value is wrong or borrowed from another opportunity, raw openings replace Public openings, a non-applicable tag is added, or two or more required supporting facts are absent."
         }
       },
       {
@@ -81,29 +81,29 @@
       },
       {
         "id": "grounded_q09",
-        "state": "Does the image accurately show what five Quick Facts are stated for the selected portfolio; specifically, Earliest check-in: Welcome Desk, 8:30 AM; most Public openings: Elm Exhibit Guide and Elm Workshop Assistant, 5 each; shortest orientation: Welcome Desk, 10 minutes; longest shift: Elm Exhibit Guide, 3.5 hours; latest finish: Elm Exhibit Guide, 5:00 PM?",
+        "state": "Does Quick Facts correctly identify: earliest check-in—Welcome Desk, 8:30 AM; largest Public openings—Elm Exhibit Guide and Elm Workshop Assistant, 5 each; shortest orientation—Welcome Desk, 10 minutes; longest shift—Elm Exhibit Guide, 3.5 hours (equivalently 210 minutes); latest finish—Elm Exhibit Guide, 5:00 PM?",
         "score_criteria": {
-          "2": "Score 2 only if all five callouts identify the correct role or complete tied set and the correct supporting value.",
-          "1": "Score 1 only if exactly four callouts are fully correct and the fifth is absent; an incomplete tie is not correct.",
-          "0": "Score 0 if any stated winner/value is wrong, the tie is incomplete, or two or more callouts are absent."
+          "2": "Score 2 only if all five callouts give the correct role or complete tied set and the correct supporting value; 3.5 hours and 210 minutes are equivalent.",
+          "1": "Score 1 only if exactly four callouts are fully correct and the fifth is entirely absent; an incomplete tie is not correct.",
+          "0": "Score 0 if any displayed winner or value is wrong, the tie is incomplete, role identity is omitted from a displayed callout, or two or more callouts are absent."
         }
       },
       {
         "id": "grounded_q10",
         "state": "Does the image accurately show what complete role sets are stated in the six Find Your Fit groups; specifically, Ages 14–15: Elm Workshop Assistant. Seated option: Welcome Desk, Elm Workshop Assistant. Step-free route: Garden Guide, Welcome Desk, Elm Exhibit Guide, Elm Workshop Assistant. Indoor backup: Compost Demo, Welcome Desk, Elm Exhibit Guide, Elm Workshop Assistant. Check in before 10:00 AM: Welcome Desk, Garden Guide, Elm Workshop Assistant. End by 1:00 PM: Garden Guide, Compost Demo, Welcome Desk, Elm Workshop Assistant?",
         "score_criteria": {
-          "2": "Score 2 only if all six group labels use the correct threshold and contain every qualifying selected role with no extra member.",
-          "1": "Score 1 only if five complete groups are correct and the sixth is entirely absent.",
-          "0": "Score 0 if any shown group omits a qualifier, adds a non-qualifier, uses a wrong threshold, or two or more groups are absent."
+          "2": "Score 2 only if all six group labels use the correct threshold and each contains every qualifying selected role with no extra member.",
+          "1": "Score 1 only if five complete groups are correct and the sixth group is entirely absent, with no incorrect membership in any shown group.",
+          "0": "Score 0 if any shown group has a wrong threshold, omits a qualifying role, adds a non-qualifier, or if two or more complete groups are absent."
         }
       },
       {
         "id": "grounded_q11",
-        "state": "Does the image accurately show what complete Portfolio Summary is stated; specifically, 5 featured opportunities; 18 Public openings; 42.5 potential volunteer-hours; overall range 8:30 AM–5:00 PM; average shift 2.2 hours; 5 role areas; 4 meeting zones; 4 Step-free; 2 Seated-option; 4 Indoor-backup; 1 age-14-or-younger opportunity?",
+        "state": "Does Portfolio Summary correctly state: 5 featured opportunities; 18 Public openings; 42.5 potential volunteer-hours; overall range 8:30 AM–5:00 PM; and average shift length 2.2 hours (equivalently 132 minutes)?",
         "score_criteria": {
-          "2": "Score 2 only if all eleven summary metrics are explicit, correctly labeled, and exact.",
-          "1": "Score 1 only if exactly one average or count is absent while featured count, total openings, volunteer-hours, overall range, role-area count, and meeting-zone count are all correct.",
-          "0": "Score 0 if any displayed metric is wrong, two or more are absent, a time range is confused with shift hours, or raw openings replace Public openings."
+          "2": "Score 2 only if all five summary metrics are explicit, correctly labeled, and exact; 2.2 hours and 132 minutes are equivalent.",
+          "1": "Score 1 only if exactly one metric is absent while the other four are correct and no wrong metric is shown.",
+          "0": "Score 0 if any displayed metric is wrong, raw openings replace Public openings, the overall time range is confused with total shift hours, or two or more metrics are absent."
         }
       },
       {
@@ -135,11 +135,11 @@
       },
       {
         "id": "grounded_q15",
-        "state": "Does the image accurately show what exact registration action line is stated; specifically, Sign up at riversidefair.org/volunteer by Friday, April 24, 2026 at 6:00 PM; contact volunteers@riversidefair.org; rain plan at Riverside Community Hall — East Lobby?",
+        "state": "Does the final registration action information explicitly state riversidefair.org/volunteer; deadline Friday, April 24, 2026 at 6:00 PM; contact volunteers@riversidefair.org; and rain plan Riverside Community Hall — East Lobby?",
         "score_criteria": {
-          "2": "Score 2 only if the registration URL, full deadline, public contact, and rain-plan location are all explicit and correct in the action information.",
-          "1": "Score 1 only if URL and full deadline are correct and exactly one of contact or rain-plan location is absent.",
-          "0": "Score 0 if URL or deadline is wrong/missing, or two or more action elements are absent."
+          "2": "Score 2 only if all four action facts are explicit and exact.",
+          "1": "Score 1 only if the URL and full deadline are exact and exactly one of the contact or rain-plan location is absent.",
+          "0": "Score 0 if the URL or full deadline is wrong or missing, a wrong contact or rain-plan location is shown, or two or more action facts are absent."
         }
       }
     ]

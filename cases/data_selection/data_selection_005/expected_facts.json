@@ -29,7 +29,15 @@
         "Elm Exhibit Guide",
         "Elm Workshop Assistant"
       ],
-      "must_appear_in_image": true
+      "must_appear_in_image": true,
+      "canonical_global_ranks": [
+        1,
+        2,
+        4,
+        6,
+        9
+      ],
+      "ordering_rule": "Ascending global eligibility rank; do not renumber the selected set 1–5."
     },
     {
       "id": "selected_records",
@@ -136,7 +144,8 @@
         },
         "longest_shift": {
           "name": "Elm Exhibit Guide",
-          "value_hours": 3.5
+          "value_hours": 3.5,
+          "equivalent_minutes": 210
         },
         "latest_finish": {
           "name": "Elm Exhibit Guide",
@@ -198,7 +207,8 @@
         "step_free_count": 4,
         "seated_option_count": 2,
         "indoor_backup_count": 4,
-        "age_14_or_younger_count": 1
+        "age_14_or_younger_count": 1,
+        "average_shift_minutes_equivalent": 132
       },
       "must_appear_in_image": true
     },

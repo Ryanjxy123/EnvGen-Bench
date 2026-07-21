@@ -1,21 +1,34 @@
 The exhibition team is preparing the public feature panel for *Working Waterfront*, the Spring 2027 Community History Exhibition.
 
-This is a closed-environment task. Use every file in `env/`; do not use the web. Follow `curatorial_brief.docx` exactly. The task now has separate base-record, program-overlay, and public-copy cutoffs. Resolve same-timestamp revisions by the larger `revision_no`, complete the original provisional and operational selection, then apply the approved program directive, Tier A commitments, placement and route-capacity overrides, phase rules, and frozen public copy. Do not stop at the first feasible seven.
+This is a closed-environment task. Use every file in `env/`; do not use the web. Follow the complete, self-contained rules in `curatorial_brief.docx`.
 
-Create one **1200 × 1600 portrait museum feature panel** containing:
+Resolve:
+- base records at the base-record cutoff;
+- program-overlay records at the overlay cutoff;
+- frozen public copy strictly before the public-copy freeze.
 
-- exact title: **Working Waterfront: Featured Objects**;
-- exact subtitle: **Spring 2027 Community History Exhibition**;
-- exhibition dates: **March 20–August 15, 2027**;
-- exactly seven unique final featured objects, numbered in the approved public narrative order rather than eligible-rank or replacement order.
+For equal timestamps, use the larger `revision_no` and take the controlling row as a whole. Complete base eligibility, ranking, provisional selection, ordered operational feasibility reviews, approved program commitments, placement and route overrides, phase visibility, and frozen public sequencing. Do not stop at the first feasible seven or publish an intermediate set.
 
-For each featured object, show its frozen public title, accession number, era/year, primary material, controlling gallery and zone ID, story theme, frozen public credit line, exact approved on-view range, frozen public accessibility label, and frozen concise hook.
+Create one portrait museum feature panel, preferably **1400 × 2200 pixels or larger**, containing:
+- exact title **Working Waterfront: Featured Objects**;
+- exact subtitle **Spring 2027 Community History Exhibition**;
+- exhibition dates **March 20–August 15, 2027**;
+- exactly seven unique final featured objects in approved public-priority order.
+
+For each featured object show:
+- public priority number and frozen public title;
+- accession number and year;
+- controlling gallery and zone ID;
+- exact approved on-view range;
+- frozen public accessibility label;
+- frozen concise public hook.
+
+Use compact museum-label writing and a visually synthesized exhibit composition rather than repeating internal database fields.
 
 Also include:
+- **Plan Your Visit — Opening rotation**, with all five official galleries in route order, each visible selected-object set, and each visible count;
+- **Plan Your Visit — Closing rotation**, with the same information for the closing phase;
+- **Rotation Notice**, naming the two limited-run objects with exact ranges and inclusive day counts;
+- **Selection Snapshot**, showing seven unique objects, six visible in each phase, the exact theme distribution, frozen accessibility-label totals, and five full-run versus two limited-run objects.
 
-- **Plan Your Visit — Opening rotation**, listing every selected object visible March 20–May 31 in official gallery-route order with the visible count for each gallery;
-- **Plan Your Visit — Closing rotation**, listing every selected object visible June 1–August 15 in official gallery-route order with the visible count for each gallery;
-- **Rotation Notice** for the two limited-run objects, with exact date ranges and inclusive day counts;
-- **Selection Snapshot** containing the required unique and simultaneous counts, gallery and theme totals, year range/span, distributions, object-type count, frozen accessibility-label counts, and full-run versus limited-run counts.
-
-Do not publish internal scores, eligibility failures, intermediate sets, commitment tiers, override reasons, resource conflicts, or replacement logic. Do not give any unselected object featured, route, rotation, or recommendation status.
+Do not publish internal scores, eligibility failures, intermediate sets, commitment tiers, override reasons, resource conflicts, replacement logic, or cutoffs. Do not give any unselected object featured, routed, rotation, recommended, or equivalent public status. Every required section must fit fully inside the canvas without clipping.

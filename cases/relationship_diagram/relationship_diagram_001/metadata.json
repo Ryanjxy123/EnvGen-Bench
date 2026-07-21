@@ -3,7 +3,7 @@
   "task_type": "relationship_diagram",
   "web_policy": "closed_env",
   "target_image_type": "er_style_relationship_diagram",
-  "difficulty": "very_hard",
+  "difficulty": "extreme_but_compact_output",
   "env_files": [
     {
       "path": "env/enterprise_service_data_catalog.xlsx",
@@ -70,6 +70,24 @@
       "role": "Wave selection, unit activation, atomic-group, rollback, and final diagram handoff rules",
       "format": "md",
       "origin": "benchmark-authored"
+    },
+    {
+      "path": "env/architecture_view_profile_log.csv",
+      "role": "Effective-dated architecture-view profile lifecycle records across audiences, scopes, releases, and cutoffs",
+      "format": "csv",
+      "origin": "benchmark-authored"
+    },
+    {
+      "path": "env/architecture_view_manifest.csv",
+      "role": "Versioned governed-view rules for entity visibility, relationship suppression, display aliases, and semantic fact freezes",
+      "format": "csv",
+      "origin": "benchmark-authored"
+    },
+    {
+      "path": "env/architecture_projection_rules.md",
+      "role": "Profile selection, same-timestamp revision, rule precedence, cascade, provenance, and final handoff rules",
+      "format": "md",
+      "origin": "benchmark-authored"
     }
   ],
   "source_policy": {
@@ -92,21 +110,32 @@
     "correction_request_count": 64,
     "correction_event_count": 184,
     "bundle_event_count": 6,
-    "target_entity_count": 27,
-    "target_relationship_count": 33,
+    "target_entity_count": 23,
+    "target_relationship_count": 28,
     "required_business_fact_count": 11,
     "deployment_wave_event_count": 11,
     "deployment_unit_count": 47,
     "deployment_unit_event_count": 108,
     "request_layer_applicable_count": 13,
-    "production_active_request_count": 9
+    "production_active_request_count": 9,
+    "architecture_view_profile_event_count": 12,
+    "architecture_view_manifest_row_count": 140,
+    "view_profile_candidate_count": 8,
+    "controlling_view_rule_count": 11,
+    "production_intermediate_entity_count": 27,
+    "production_intermediate_relationship_count": 33,
+    "hidden_entity_count": 4,
+    "suppressed_relationship_count": 5,
+    "display_name_override_count": 3,
+    "business_fact_override_count": 3,
+    "distinct_control_layers": 4
   },
   "design_notes": [
-    "Difficulty comes from a two-stage state transition: request eligibility followed by production deployment activation.",
-    "An implementation-ready correction is not automatically current; wave selection, unit state, atomic groups, dependencies, rollback, and suspension must also be resolved.",
-    "The dataset contains 64 correction requests and more than 290 request/deployment events across current, future, staging, adjacent-scope, rejected, withdrawn, canary-only, and rolled-back records.",
-    "The final model contains a mix of applied changes and baseline state retained after deployment reversion.",
-    "Each Grounded VQA checks a compact entity, field set, relationship pair, or two-outcome state decision rather than a large all-or-nothing fact bundle.",
-    "No agent-visible file directly states the final entity/relationship set."
+    "Difficulty is no longer increased by adding more final relationships.",
+    "The final diagram is smaller than the production intermediate: 23 entities and 28 relationships.",
+    "The added difficulty comes from selecting one effective view profile, resolving same-timestamp revisions, applying precedence, cascading entity exclusions, suppressing one direct shortcut, and using frozen display names and facts.",
+    "The original production model must still be resolved correctly before applying the governed view.",
+    "Fifteen Grounded VQAs remain, and each checks a compact rational bundle of roughly three to five facts.",
+    "The single visual VQA and its exact 0/1/2 rubric are unchanged."
   ]
 }

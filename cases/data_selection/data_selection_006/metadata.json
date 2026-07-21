@@ -69,5 +69,5 @@
     "post_cutoff_records": true,
     "phase_specific_routes": 2
   },
-  "notes": "Second strengthening pass. The original operational set must be completed first, then an approved program overlay forces two lower-ranked mandatory anchors, changes one placement and one route capacity, applies frozen public titles/labels, and requires phase-specific routes. Evaluation mode, 0.8/0.2 weights, fourteen grounded VQAs, and the single visual VQA are preserved."
+  "notes": "Self-contained strengthening pass. The curatorial brief now states all eligibility thresholds, base portfolio constraints, feasibility order, and replacement rules. Public output requirements were reduced to scored visitor-facing fields and given a larger portrait canvas to avoid catalog-like overflow."
 }

@@ -3,39 +3,55 @@
   "task_type": "design_specification",
   "web_policy": "closed_env",
   "target_image_type": "saas_feature_linkedin_paid_image",
-  "difficulty": "expert",
+  "difficulty": "extreme_but_compact_output",
   "reference_date": "2026-06-24",
   "creative_freeze": "2026-06-23T17:00:00Z",
+  "publication_cutoff": "2026-06-23T18:10:00Z",
   "env_files": [
     {
       "path": "env/Sprint_Launch_Creative_Brief_v5.0.docx",
-      "role": "Version 5.1 launch brief defining decision precedence, message-package assembly, asset checks, and delivery rules",
+      "role": "Base creative precedence and activation assembly rules",
       "format": "docx"
     },
     {
       "path": "env/FlowForge_Brand_Guidelines_2026.pdf",
-      "role": "Brand, crop, hierarchy, CTA, proof-chip, palette, and source-integrity requirements",
+      "role": "Brand, placement, hierarchy, CTA, palette and integrity requirements",
       "format": "pdf"
     },
     {
       "path": "env/Campaign_Operations.xlsx",
-      "role": "Platform, base copy, layout, and launch-message selection data with independent revision histories; includes 96 message packages and 140 package events",
+      "role": "Placement, base copy, layout and message-package state",
+      "format": "xlsx"
+    },
+    {
+      "path": "env/Launch_Activation_Register.xlsx",
+      "role": "Activation, catalogs, experiments, initial board content and initial asset bundle",
       "format": "xlsx"
     },
     {
       "path": "env/Creative_Asset_Register.xlsx",
-      "role": "290 indexed assets with expanded approval, usage, rights, and version records, including activation-specific launch-week variants",
+      "role": "Original asset approval, usage, rights and version controls",
       "format": "xlsx"
     },
     {
-      "path": "env/asset_library/files/",
-      "role": "281 neutral-ID PNG assets containing valid and near-miss logo, interface, background, and proof-chip files",
-      "format": "folder"
+      "path": "env/Paid_Media_Publishing_Register.xlsx",
+      "role": "140 publication packages, lifecycle events, copy overlays, content manifests, priority asset candidates, delivery QA, legal clearance and output specifications",
+      "format": "xlsx"
     },
     {
-      "format": "xlsx",
-      "path": "env/Launch_Activation_Register.xlsx",
-      "role": "160 activation packages, status events, six consumer-message catalogs, experiment assignments, board-content variants, and asset bundles"
+      "path": "env/Publishing_Asset_Addendum.xlsx",
+      "role": "Publication-stage asset approval, usage, rights and release records for neutral-ID assets AST-291 through AST-294 plus distractors",
+      "format": "xlsx"
+    },
+    {
+      "path": "env/paid_media_publication_rules.md",
+      "role": "Controlling publication cutoff, matching, precedence, candidate-pack and final-delivery rules",
+      "format": "md"
+    },
+    {
+      "path": "env/asset_library/files/",
+      "role": "Neutral-ID PNG asset library containing original, publication-stage and near-match assets",
+      "format": "folder"
     }
   ],
   "source_policy": {
@@ -51,11 +67,23 @@
     "web_usage_note": "Closed-env case. Web use is prohibited."
   },
   "difficulty_design": [
-    "The case now adds a post-message activation layer whose latest pre-freeze Active state must be resolved after the base copy, layout, and message package.",
-    "Activation fields are distributed across six catalogs and override the message package, creating a realistic multi-source precedence chain rather than a single lookup.",
-    "An experiment assignment links the activation to a board-content record and an asset bundle; the bundle assets must then pass independent approval, usage, rights, and version checks.",
-    "The activation workbook contains more than one thousand structured records with high-similarity market, language, timing, and status distractors.",
-    "Grounded VQAs use small, rational groups of two to four verifiable facts; score 2 requires complete agreement without using a single oversized all-or-nothing checklist."
+    "The final ad remains concise and does not require additional visible content blocks.",
+    "Difficulty is shifted to a post-activation publication handoff with an independent cutoff and exact-match release selection.",
+    "The publication package overrides activation copy without changing the retained base-copy identity.",
+    "Asset selection requires ordered candidate evaluation, same-timestamp revision resolution, delivery-QA clearance and legal clearance.",
+    "The highest-priority candidate is deliberately near-correct but fails text-integrity and safe-zone QA; the second candidate is the first publishable pack.",
+    "Grounded VQAs remain twelve small rational checks; score 2 requires complete factual agreement.",
+    "The single visual VQA and its exact rubric remain unchanged."
   ],
-  "notes": "The final solution is assembled through base copy -> launch message -> activation -> catalogs -> experiment -> board content and asset bundle. Activation values supersede the earlier message-package values."
+  "data_profile": {
+    "publication_package_count": 140,
+    "publication_status_event_count": 283,
+    "copy_overlay_count": 110,
+    "content_manifest_count": 100,
+    "asset_candidate_row_count": 330,
+    "delivery_qa_event_count": 333,
+    "legal_clearance_row_count": 126,
+    "output_spec_count": 70,
+    "publication_asset_addendum_count": 35
+  }
 }

@@ -3,83 +3,46 @@
   "task_type": "relationship_diagram",
   "facts": [
     {
-      "id": "snapshot_scope_bundle_wave_and_totals",
-      "description": "Controlled correction and production-activation snapshot identity and final model totals.",
-      "source": "task.md + env/correction_bundle_log.csv + env/deployment_wave_log.csv + env/production_activation_rules.md",
+      "id": "snapshot_scope_bundle_wave_profile_and_totals",
+      "description": "Exact governed architecture snapshot identity and current control identifiers.",
+      "source": "all env files",
       "importance": "critical",
       "expected_value": {
-        "title": "Service-to-Cash | Production correction view — 30 Jun 2026 16:30",
-        "catalog_release": "Catalog 4.8",
+        "title": "Service-to-Cash | Governed architecture view — 30 Jun 2026 16:35",
+        "catalog_release": "4.8",
         "bundle_id": "CB-0626-B",
-        "deployment_wave_id": "DW-0630-C",
-        "entity_count": 27,
-        "relationship_count": 33,
+        "wave_id": "DW-0630-C",
+        "view_profile_id": "ARV-0630-C",
+        "entity_count": 23,
+        "relationship_count": 28,
         "domain_order": [
           "Customer & Coverage",
           "Planning & Dispatch",
           "Field Execution",
           "Billing & Cash"
-        ],
-        "domain_entity_counts": {
-          "Customer & Coverage": 6,
-          "Planning & Dispatch": 8,
-          "Field Execution": 8,
-          "Billing & Cash": 5
-        }
+        ]
       },
       "must_appear_in_image": true
     },
     {
-      "id": "request_and_activation_resolution",
-      "description": "Request-layer applicability and final production-active corrections after wave, unit, atomic-group, dependency, and rollback resolution.",
-      "source": "env/correction_request_register.csv + env/correction_event_log.csv + env/deployment_wave_log.csv + env/deployment_unit_register.csv + env/deployment_unit_event_log.csv + rules files",
+      "id": "view_resolution",
+      "description": "Current profile, manifest, cutoffs, and controlling revision behavior.",
+      "source": "architecture view profile, manifest, and projection rules",
       "importance": "critical",
       "expected_value": {
-        "selected_bundle": "CB-0626-B",
-        "request_layer_applicable_ids": [
-          "CR-4801",
-          "CR-4802",
-          "CR-4803",
-          "CR-4804",
-          "CR-4805",
-          "CR-4806",
-          "CR-4807",
-          "CR-4808",
-          "CR-4809",
-          "CR-4810",
-          "CR-4811",
-          "CR-4825",
-          "CR-4826"
-        ],
-        "selected_deployment_wave": "DW-0630-C",
-        "production_active_request_ids": [
-          "CR-4801",
-          "CR-4803",
-          "CR-4804",
-          "CR-4805",
-          "CR-4809",
-          "CR-4810",
-          "CR-4811",
-          "CR-4825",
-          "CR-4826"
-        ],
-        "inactive_atomic_groups": {
-          "G-AGREEMENT-RETIREMENT": "rolled back",
-          "G-CLOSE-GATE": "suspended member caused atomic reversion"
-        },
-        "root_provenance_tags": {
-          "Request Coverage Decision": "CR-4801",
-          "Request Commitment Event": "CR-4803",
-          "Payment Allocation": "CR-4825",
-          "Visit Signature": "CR-4826"
-        }
+        "architecture_snapshot": "2026-06-30 16:35",
+        "view_event_cutoff": "2026-06-30 16:27",
+        "selected_profile": "ARV-0630-C",
+        "selected_manifest": "VPM-0630-C",
+        "same_timestamp_rule": "larger revision_no controls",
+        "controlling_rule_revision": 8
       },
       "must_appear_in_image": false
     },
     {
       "id": "current_entities",
-      "description": "Exact production entities after request and deployment controls are both applied.",
-      "source": "all env files",
+      "description": "Exact 23-entity governed view after profile projection.",
+      "source": "production model + selected architecture view manifest",
       "importance": "critical",
       "expected_value": [
         {
@@ -106,7 +69,7 @@
           "relationship_foreign_keys": []
         },
         {
-          "name": "Customer Contact",
+          "name": "Service Contact",
           "group": "Customer & Coverage",
           "primary_key": "contact_id",
           "relationship_foreign_keys": [
@@ -130,15 +93,7 @@
           ]
         },
         {
-          "name": "Request Commitment Event",
-          "group": "Planning & Dispatch",
-          "primary_key": "request_commitment_event_id",
-          "relationship_foreign_keys": [
-            "request_id"
-          ]
-        },
-        {
-          "name": "Request Coverage Decision",
+          "name": "Coverage Determination",
           "group": "Planning & Dispatch",
           "primary_key": "coverage_decision_id",
           "relationship_foreign_keys": [
@@ -152,30 +107,14 @@
           "primary_key": "request_id",
           "relationship_foreign_keys": [
             "location_id",
-            "requested_by_contact_id",
-            "agreement_id"
+            "requested_by_contact_id"
           ]
-        },
-        {
-          "name": "Skill",
-          "group": "Planning & Dispatch",
-          "primary_key": "skill_id",
-          "relationship_foreign_keys": []
         },
         {
           "name": "Technician",
           "group": "Planning & Dispatch",
           "primary_key": "technician_id",
           "relationship_foreign_keys": []
-        },
-        {
-          "name": "Technician Skill",
-          "group": "Planning & Dispatch",
-          "primary_key": "technician_skill_id",
-          "relationship_foreign_keys": [
-            "technician_id",
-            "skill_id"
-          ]
         },
         {
           "name": "Work Order",
@@ -228,14 +167,6 @@
           ]
         },
         {
-          "name": "Visit Note",
-          "group": "Field Execution",
-          "primary_key": "visit_note_id",
-          "relationship_foreign_keys": [
-            "visit_id"
-          ]
-        },
-        {
           "name": "Visit Signature",
           "group": "Field Execution",
           "primary_key": "visit_signature_id",
@@ -253,7 +184,7 @@
           ]
         },
         {
-          "name": "Work Order Checklist",
+          "name": "Work Completion Checklist",
           "group": "Field Execution",
           "primary_key": "work_order_checklist_id",
           "relationship_foreign_keys": [
@@ -300,17 +231,23 @@
           ]
         }
       ],
+      "domain_counts": {
+        "Customer & Coverage": 6,
+        "Planning & Dispatch": 5,
+        "Field Execution": 7,
+        "Billing & Cash": 5
+      },
       "must_appear_in_image": true
     },
     {
       "id": "current_relationships",
-      "description": "Exact production relationships, directions, FKs, and cardinalities after deployment rollback and atomic-group handling.",
-      "source": "all env files",
+      "description": "Exact 28 surviving governed-view relationships and cardinalities.",
+      "source": "production model + active hide rules",
       "importance": "critical",
       "expected_value": [
         {
           "parent": "Customer",
-          "child": "Customer Contact",
+          "child": "Service Contact",
           "parent_end": "1",
           "child_end": "0..N",
           "foreign_key": "customer_id",
@@ -365,28 +302,12 @@
           "note": "Each request belongs to exactly one service location."
         },
         {
-          "parent": "Customer Contact",
+          "parent": "Service Contact",
           "child": "Service Request",
           "parent_end": "0..1",
           "child_end": "0..N",
           "foreign_key": "requested_by_contact_id",
           "note": "A request may identify zero or one reporting contact."
-        },
-        {
-          "parent": "Service Agreement",
-          "child": "Service Request",
-          "parent_end": "0..1",
-          "child_end": "0..N",
-          "foreign_key": "agreement_id",
-          "note": "A request may reference zero or one service agreement."
-        },
-        {
-          "parent": "Service Request",
-          "child": "Request Commitment Event",
-          "parent_end": "1",
-          "child_end": "0..N",
-          "foreign_key": "request_id",
-          "note": "Each SLA event belongs to exactly one request."
         },
         {
           "parent": "Service Request",
@@ -413,24 +334,8 @@
           "note": "Each assignment belongs to one technician."
         },
         {
-          "parent": "Technician",
-          "child": "Technician Skill",
-          "parent_end": "1",
-          "child_end": "0..N",
-          "foreign_key": "technician_id",
-          "note": "Each capability record belongs to one technician."
-        },
-        {
-          "parent": "Skill",
-          "child": "Technician Skill",
-          "parent_end": "1",
-          "child_end": "0..N",
-          "foreign_key": "skill_id",
-          "note": "Each capability record belongs to one skill."
-        },
-        {
           "parent": "Work Order",
-          "child": "Work Order Checklist",
+          "child": "Work Completion Checklist",
           "parent_end": "1",
           "child_end": "0..N",
           "foreign_key": "work_order_id",
@@ -451,14 +356,6 @@
           "child_end": "0..N",
           "foreign_key": "technician_id",
           "note": "Each visit records one technician."
-        },
-        {
-          "parent": "Visit",
-          "child": "Visit Note",
-          "parent_end": "1",
-          "child_end": "0..N",
-          "foreign_key": "visit_id",
-          "note": "Each note belongs to one visit."
         },
         {
           "parent": "Visit",
@@ -558,7 +455,7 @@
         },
         {
           "parent": "Service Request",
-          "child": "Request Coverage Decision",
+          "child": "Coverage Determination",
           "parent_end": "1",
           "child_end": "0..N",
           "foreign_key": "request_id",
@@ -566,7 +463,7 @@
         },
         {
           "parent": "Agreement Asset",
-          "child": "Request Coverage Decision",
+          "child": "Coverage Determination",
           "parent_end": "1",
           "child_end": "0..N",
           "foreign_key": "agreement_asset_id",
@@ -577,28 +474,26 @@
     },
     {
       "id": "required_business_fields",
-      "description": "Single approved non-key business fact retained on each controlled bridge or evidence entity.",
-      "source": "baseline model + active request and deployment layers",
+      "description": "Single approved fact shown on controlled bridge/evidence records after semantic freeze.",
+      "source": "production facts + active view fact rules",
       "importance": "critical",
       "expected_value": {
         "Agreement Asset": "coverage_level",
         "Invoice Adjustment": "adjustment_amount",
         "Parts Usage": "quantity",
         "Payment Allocation": "applied_amount",
-        "Request Commitment Event": "commitment_type",
-        "Request Coverage Decision": "decision_state",
-        "Technician Skill": "proficiency_level",
-        "Visit Signature": "acceptance_role",
+        "Coverage Determination": "coverage_outcome",
+        "Visit Signature": "accepted_by_role",
         "Work Order Asset": "service_role",
-        "Work Order Assignment": "assignment_role",
-        "Work Order Checklist": "completion_state"
+        "Work Order Assignment": "assignment_function",
+        "Work Completion Checklist": "completion_state"
       },
       "must_appear_in_image": true
     },
     {
       "id": "key_display",
-      "description": "Current PK and relationship-driving FK set for every active entity.",
-      "source": "current entities and relationships",
+      "description": "Current PK and visible relationship-driving FK set for every governed entity.",
+      "source": "governed entities and relationships",
       "importance": "critical",
       "expected_value": {
         "Agreement Asset": {
@@ -618,7 +513,7 @@
           "pk": "customer_id",
           "fks": []
         },
-        "Customer Contact": {
+        "Service Contact": {
           "pk": "contact_id",
           "fks": [
             "customer_id"
@@ -636,13 +531,7 @@
             "customer_id"
           ]
         },
-        "Request Commitment Event": {
-          "pk": "request_commitment_event_id",
-          "fks": [
-            "request_id"
-          ]
-        },
-        "Request Coverage Decision": {
+        "Coverage Determination": {
           "pk": "coverage_decision_id",
           "fks": [
             "request_id",
@@ -653,24 +542,12 @@
           "pk": "request_id",
           "fks": [
             "location_id",
-            "requested_by_contact_id",
-            "agreement_id"
+            "requested_by_contact_id"
           ]
-        },
-        "Skill": {
-          "pk": "skill_id",
-          "fks": []
         },
         "Technician": {
           "pk": "technician_id",
           "fks": []
-        },
-        "Technician Skill": {
-          "pk": "technician_skill_id",
-          "fks": [
-            "technician_id",
-            "skill_id"
-          ]
         },
         "Work Order": {
           "pk": "work_order_id",
@@ -710,12 +587,6 @@
             "technician_id"
           ]
         },
-        "Visit Note": {
-          "pk": "visit_note_id",
-          "fks": [
-            "visit_id"
-          ]
-        },
         "Visit Signature": {
           "pk": "visit_signature_id",
           "fks": [
@@ -729,7 +600,7 @@
             "asset_id"
           ]
         },
-        "Work Order Checklist": {
+        "Work Completion Checklist": {
           "pk": "work_order_checklist_id",
           "fks": [
             "work_order_id"
@@ -768,43 +639,41 @@
       "must_appear_in_image": true
     },
     {
-      "id": "inactive_or_reverted_artifacts",
-      "description": "Artifacts that must not be shown as current because their request or production activation did not survive.",
-      "source": "request events + deployment unit events + atomic-group rules",
+      "id": "required_provenance_tags",
+      "description": "Compact production and view-rule provenance tags on changed entities only.",
+      "source": "active correction roots + controlling VP rules",
       "importance": "critical",
-      "expected_value": [
-        "Work Order Close Gate",
-        "work_order_close_gate_id",
-        "gate_state",
-        "removal of Service Request.agreement_id",
-        "removal of Service Agreement -> Service Request",
-        "Payment Allocation.allocated_amount",
-        "Visit Signature.signer_role"
-      ],
-      "must_appear_in_image": false
+      "expected_value": {
+        "Service Contact": "VP-104",
+        "Service Request": "VP-105",
+        "Coverage Determination": "CR-4801 · VP-106/VP-107",
+        "Work Order Assignment": "VP-108",
+        "Visit Signature": "CR-4826 · VP-111",
+        "Work Completion Checklist": "VP-110",
+        "Payment Allocation": "CR-4825"
+      },
+      "must_appear_in_image": true
     },
     {
-      "id": "inactive_proposals",
-      "description": "Other inactive, out-of-scope, future, staging, rejected, withdrawn, or unverified proposals.",
-      "source": "all correction and deployment control records",
-      "importance": "important",
+      "id": "inactive_or_hidden_content",
+      "description": "Content that must not be presented as current in the governed architecture view.",
+      "source": "active architecture view rules and prior control layers",
+      "importance": "critical",
       "expected_value": [
-        "Invoice Settlement",
-        "direct Invoice -> Payment",
-        "Work Order Dependency",
-        "Service Request.agreement_asset_id",
-        "Customer Acceptance",
-        "Payment Method",
-        "Refund",
-        "Request Comment",
-        "remove Invoice Adjustment",
-        "Payment Allocation.allocation_status",
-        "direct Work Order -> Technician",
-        "Work Order Ready Check",
-        "other deployment waves",
-        "staging-only units",
-        "canary-only units",
-        "post-cutoff activation"
+        "Request Commitment Event",
+        "Skill",
+        "Technician Skill",
+        "Visit Note",
+        "Customer Contact as the final display name",
+        "Request Coverage Decision as the final display name",
+        "Work Order Checklist as the final display name",
+        "Service Request.agreement_id",
+        "Service Agreement -> Service Request direct relationship",
+        "decision_state as the Coverage Determination fact",
+        "assignment_role as the Work Order Assignment fact",
+        "acceptance_role as the Visit Signature fact",
+        "27 entities / 33 relationships as the final governed totals",
+        "inactive or post-cutoff architecture view profiles"
       ],
       "must_appear_in_image": false
     }

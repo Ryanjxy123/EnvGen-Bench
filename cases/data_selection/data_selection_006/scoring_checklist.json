@@ -21,7 +21,7 @@
         "state": "Does the image number public priorities 1–4 in this exact order: Quilted Harbor Routes; Dockyard Safety Poster; Brass Transit Tokens; Flood Ledger: 1937?",
         "score_criteria": {
           "2": "Score 2 only if all four frozen public titles are attached to priorities 1–4 exactly and in the stated order.",
-          "1": "Score 1 only if all four correct objects appear in the correct order and exactly one priority numeral or one non-identity title qualifier is omitted, with no replacement or reordering.",
+          "1": "Score 1 only if the four correct titles appear in the exact order and exactly one priority numeral is omitted; no title may be altered or replaced.",
           "0": "Score 0 if any object is missing, replaced, duplicated, reordered, assigned to the wrong priority, or shown under a materially different title."
         }
       },
@@ -30,71 +30,71 @@
         "state": "Does the image number priorities 5–7 as River Gauge Plate, Neighborhood Radio Microphone, and Market Stall Ledger, while keeping the public feature set at exactly seven unique objects with no extra featured or routed object?",
         "score_criteria": {
           "2": "Score 2 only if all three titles and priorities are correct, the unique-object total is seven, and no unselected object receives featured or route status.",
-          "1": "Score 1 only if the three titles and order are correct and exactly one set-boundary cue—explicit total or independently verifiable absence of extras—is unavailable.",
+          "1": "Score 1 only if priorities 5–7 contain the correct three titles in order and no extra public object appears, but the explicit total of seven is absent.",
           "0": "Score 0 if any of the three titles is missing or reordered, the total is not seven, a duplicate is counted as unique, or any unselected object receives public status."
         }
       },
       {
         "id": "grounded_q04",
-        "state": "Does the Quilted Harbor Routes entry correctly show accession CHM.1987.042, year 1886, zone NG-01, credit Gift of the Harbor Quilters Guild, and the frozen accessibility label Touch replica?",
+        "state": "Does the Quilted Harbor Routes entry correctly show accession CHM.1987.042; year 1886; North Gallery, NG-01; on-view range March 20–August 15, 2027; accessibility label Touch replica; and hook “Stitched routes chart women’s work across the waterfront.”?",
         "score_criteria": {
-          "2": "Score 2 only if all five facts are explicit, correct, and attached to Quilted Harbor Routes.",
-          "1": "Score 1 only if four facts are correct and the fifth is omitted or slightly incomplete, with no wrong or borrowed value.",
-          "0": "Score 0 if any stated identifier, year, zone, credit, or accessibility label is wrong or belongs to another object, or if two or more facts are absent."
+          "2": "Score 2 only if all six required supporting fields are explicit, correct, and attached to Quilted Harbor Routes.",
+          "1": "Score 1 only if exactly one supporting field is absent while every displayed field is correct and the object identity remains unambiguous.",
+          "0": "Score 0 if any displayed value is wrong, borrowed, pre-freeze, post-freeze, or misassigned, or if two or more supporting fields are absent."
         }
       },
       {
         "id": "grounded_q05",
-        "state": "Does the Dockyard Safety Poster entry correctly show accession CHM.1988.177, year 1946, controlling zone MG-05, credit Port Safety Office collection, and the frozen accessibility label Audio story?",
+        "state": "Does the Dockyard Safety Poster entry correctly show accession CHM.1988.177; year 1946; Market Gallery, MG-05; on-view range March 20–August 15, 2027; accessibility label Audio story; and hook “Bold warnings show safety becoming a public waterfront campaign.”?",
         "score_criteria": {
-          "2": "Score 2 only if all five facts are explicit, correct, and attached to Dockyard Safety Poster.",
-          "1": "Score 1 only if four facts are correct and the fifth is omitted or slightly incomplete, with no wrong base-placement or pre-freeze value.",
-          "0": "Score 0 if any stated fact is wrong, MG-02/MG-01/NG-05 is used instead of MG-05, an old accessibility label is used, or two or more facts are absent."
+          "2": "Score 2 only if all six required supporting fields are explicit, correct, and attached to Dockyard Safety Poster.",
+          "1": "Score 1 only if exactly one supporting field is absent while every displayed field is correct and the object identity remains unambiguous.",
+          "0": "Score 0 if any displayed value is wrong, borrowed, pre-freeze, post-freeze, or misassigned, or if two or more supporting fields are absent."
         }
       },
       {
         "id": "grounded_q06",
-        "state": "Does the Brass Transit Tokens entry correctly show accession CHM.1969.118, year 1914, zone TA-02, credit City Transit Archive transfer, and the frozen accessibility label Audio story?",
+        "state": "Does the Brass Transit Tokens entry correctly show accession CHM.1969.118; year 1914; Transit Alcove, TA-02; on-view range March 20–August 15, 2027; accessibility label Audio story; and hook “Fare tokens trace the city’s changing transit network.”?",
         "score_criteria": {
-          "2": "Score 2 only if all five facts are explicit, correct, and attached to Brass Transit Tokens.",
-          "1": "Score 1 only if four facts are correct and the fifth is omitted or slightly incomplete, with no wrong or pre-freeze value.",
-          "0": "Score 0 if any identifier, year, zone, credit, or accessibility label is wrong or misassigned, or if two or more facts are absent."
+          "2": "Score 2 only if all six required supporting fields are explicit, correct, and attached to Brass Transit Tokens.",
+          "1": "Score 1 only if exactly one supporting field is absent while every displayed field is correct and the object identity remains unambiguous.",
+          "0": "Score 0 if any displayed value is wrong, borrowed, pre-freeze, post-freeze, or misassigned, or if two or more supporting fields are absent."
         }
       },
       {
         "id": "grounded_q07",
-        "state": "Does the Flood Ledger: 1937 entry correctly show accession CHM.2002.031, zone RR-01, on-view range March 20–May 31, 2027, 73 inclusive days, and the frozen accessibility label Large-print copy?",
+        "state": "Does the Flood Ledger: 1937 entry correctly show accession CHM.2002.031; year 1937; River Room, RR-01; on-view range March 20–May 31, 2027; accessibility label Large-print copy; and hook “Daily entries record the 1937 river emergency.”?",
         "score_criteria": {
-          "2": "Score 2 only if all five facts are explicit, correct, and attached to Flood Ledger: 1937.",
-          "1": "Score 1 only if four facts are correct and the fifth is omitted, with no wrong endpoint, day count, zone, or label.",
-          "0": "Score 0 if any shown core value is wrong or misassigned, the full exhibition range is substituted, the old Large-print transcript wording is used, or two or more facts are absent."
+          "2": "Score 2 only if all six required supporting fields are explicit, correct, and attached to Flood Ledger: 1937.",
+          "1": "Score 1 only if exactly one supporting field is absent while every displayed field is correct and the object identity remains unambiguous.",
+          "0": "Score 0 if any displayed value is wrong, borrowed, pre-freeze, post-freeze, or misassigned, or if two or more supporting fields are absent."
         }
       },
       {
         "id": "grounded_q08",
-        "state": "Does the River Gauge Plate entry correctly show accession CHM.1990.011, year 1902, zone RR-02, credit River Works Department transfer, and the frozen accessibility label Touch replica?",
+        "state": "Does the River Gauge Plate entry correctly show accession CHM.1990.011; year 1902; River Room, RR-02; on-view range March 20–August 15, 2027; accessibility label Touch replica; and hook “Measurement marks turned river height into shared evidence.”?",
         "score_criteria": {
-          "2": "Score 2 only if all five facts are explicit, correct, and attached to River Gauge Plate.",
-          "1": "Score 1 only if four facts are correct and the fifth is omitted or slightly incomplete, with no wrong or borrowed value.",
-          "0": "Score 0 if any identifier, year, zone, credit, or accessibility label is wrong, the object is omitted from the final set, or two or more facts are absent."
+          "2": "Score 2 only if all six required supporting fields are explicit, correct, and attached to River Gauge Plate.",
+          "1": "Score 1 only if exactly one supporting field is absent while every displayed field is correct and the object identity remains unambiguous.",
+          "0": "Score 0 if any displayed value is wrong, borrowed, pre-freeze, post-freeze, or misassigned, or if two or more supporting fields are absent."
         }
       },
       {
         "id": "grounded_q09",
-        "state": "Does the Neighborhood Radio Microphone entry correctly show accession CHM.1994.205, year 1968, zone SN-01, credit Community Radio 8 collection, and the frozen accessibility label Audio story?",
+        "state": "Does the Neighborhood Radio Microphone entry correctly show accession CHM.1994.205; year 1968; Sound Nook, SN-01; on-view range March 20–August 15, 2027; accessibility label Audio story; and hook “The microphone carried neighborhood voices onto local air.”?",
         "score_criteria": {
-          "2": "Score 2 only if all five facts are explicit, correct, and attached to the frozen public title Neighborhood Radio Microphone.",
-          "1": "Score 1 only if four facts are correct and the fifth is omitted or slightly incomplete, with no wrong title, identifier, zone, credit, or label.",
-          "0": "Score 0 if any stated fact is wrong or misassigned, the old public title or old accessibility wording is used as the final label, or two or more facts are absent."
+          "2": "Score 2 only if all six required supporting fields are explicit, correct, and attached to Neighborhood Radio Microphone.",
+          "1": "Score 1 only if exactly one supporting field is absent while every displayed field is correct and the object identity remains unambiguous.",
+          "0": "Score 0 if any displayed value is wrong, borrowed, pre-freeze, post-freeze, or misassigned, or if two or more supporting fields are absent."
         }
       },
       {
         "id": "grounded_q10",
-        "state": "Does the Market Stall Ledger entry correctly show accession CHM.1956.089, zone MG-02, on-view range June 1–August 15, 2027, 76 inclusive days, and the frozen accessibility label Large-print copy?",
+        "state": "Does the Market Stall Ledger entry correctly show accession CHM.1956.089; year 1922; Market Gallery, MG-02; on-view range June 1–August 15, 2027; accessibility label Large-print copy; and hook “Sales entries map immigrant commerce along the wharf.”?",
         "score_criteria": {
-          "2": "Score 2 only if all five facts are explicit, correct, and attached to Market Stall Ledger.",
-          "1": "Score 1 only if four facts are correct and the fifth is omitted, with no wrong endpoint, day count, zone, or label.",
-          "0": "Score 0 if any shown core value is wrong or misassigned, the object is treated as full-run, the old Large-print transcript wording is used, or two or more facts are absent."
+          "2": "Score 2 only if all six required supporting fields are explicit, correct, and attached to Market Stall Ledger.",
+          "1": "Score 1 only if exactly one supporting field is absent while every displayed field is correct and the object identity remains unambiguous.",
+          "0": "Score 0 if any displayed value is wrong, borrowed, pre-freeze, post-freeze, or misassigned, or if two or more supporting fields are absent."
         }
       },
       {
@@ -126,11 +126,11 @@
       },
       {
         "id": "grounded_q14",
-        "state": "Does the Selection Snapshot correctly state seven unique featured objects, six objects visible in each phase, the theme distribution Waterfront Work 2 / Transit and Movement 1 / Flood and Resilience 2 / Community Voice 1 / Markets and Exchange 1, the frozen accessibility counts Audio story 3 / Touch replica 2 / Large-print copy 2, and five full-run versus two limited-run objects?",
+        "state": "Does Selection Snapshot correctly state: 7 unique featured objects; 6 visible in the opening phase and 6 in the closing phase; theme distribution Waterfront Work 2 / Transit and Movement 1 / Flood and Resilience 2 / Community Voice 1 / Markets and Exchange 1; frozen accessibility totals Audio story 3 / Touch replica 2 / Large-print copy 2; and 5 full-run versus 2 limited-run objects?",
         "score_criteria": {
           "2": "Score 2 only if all five labeled metric groups are explicit and completely correct.",
-          "1": "Score 1 only if four complete metric groups are correct and the fifth group is omitted, with no wrong count, label swap, or old accessibility terminology.",
-          "0": "Score 0 if any shown count is wrong, a theme or accessibility category is exchanged, simultaneous visibility is confused with unique-object count, or two or more metric groups are absent."
+          "1": "Score 1 only if exactly four complete metric groups are correct and the fifth is entirely absent, with no wrong count or label swap.",
+          "0": "Score 0 if any displayed count is wrong, phase visibility is confused with unique-object count, an accessibility label uses old terminology, or two or more metric groups are absent."
         }
       }
     ]

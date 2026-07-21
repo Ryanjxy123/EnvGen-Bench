@@ -3,70 +3,117 @@
   "task_type": "data_insight",
   "facts": [
     {
-      "id": "analysis_period",
-      "description": "Q4 review period with Q3 as comparison quarter.",
-      "source": "env/ops_review_notes.md",
+      "id": "period_and_company_scope",
+      "description": "Certified Q4 review identity and all-active company headline.",
+      "source": "all env files",
       "importance": "critical",
-      "canonical_answer": "Q4 2026, compared with Q3 2026",
+      "canonical_answer": "Q4 2026 versus Q3 2026; company Q4 adjusted net sales $21,020,000 across 24 active stores.",
       "must_appear_in_image": true
     },
     {
-      "id": "strongest_upside_location",
-      "description": "Location called out as the strongest upside opportunity based on Q4 scale and labor productivity.",
-      "source": "env/store_ops.sqlite + env/ops_review_notes.md",
+      "id": "comparable_company_result",
+      "description": "Like-for-like company result.",
+      "source": "store_ops.sqlite + ops_review_notes.md",
       "importance": "critical",
-      "canonical_answer": "Central Tech Plaza is the strongest upside location with Q4 net sales of $1,394,441 and about $461.7 net sales per labor hour.",
+      "canonical_answer": "20 comparable stores produced Q4 adjusted net sales $18,420,000, up 5.8% from Q3 $17,406,622.",
       "must_appear_in_image": true
     },
     {
-      "id": "weakest_triage_location",
-      "description": "Store needing the most direct triage attention because of weak operating health signals.",
-      "source": "env/store_ops.sqlite + env/ops_review_notes.md",
+      "id": "scalable_upside",
+      "description": "Only store passing every current opportunity gate.",
+      "source": "store_ops.sqlite + controlling policy and benchmarks",
       "importance": "critical",
-      "canonical_answer": "Bayview Outlet is the main triage location, with the highest Q4 return rate at about 6.5% and weak staffing coverage around 92.2%.",
+      "canonical_answer": "Northgate Electronics: Q4 adjusted net sales $1,620,000; growth 11.8%; productivity $493/hr (12.0% above $440/hr benchmark); adjusted returns 2.2%; coverage 97.4%.",
       "must_appear_in_image": true
     },
     {
-      "id": "region_net_sales_leader",
-      "description": "Region with highest Q4 net sales across open stores.",
-      "source": "env/store_ops.sqlite",
+      "id": "intervention_priority",
+      "description": "Store with the strongest current multi-signal risk.",
+      "source": "store_ops.sqlite + controlling policy and benchmarks",
       "importance": "critical",
-      "canonical_answer": "Central leads Q4 regional net sales at $3,134,391.",
+      "canonical_answer": "Mesa Home Goods: adjusted returns 5.4%, coverage 91.8%, growth -6.2%; three policy breaches.",
       "must_appear_in_image": true
     },
     {
-      "id": "growth_leader",
-      "description": "Open store with largest Q4 net sales growth versus Q3.",
-      "source": "env/store_ops.sqlite",
-      "importance": "critical",
-      "canonical_answer": "Airport Express has the largest Q4-over-Q3 net sales growth at about 23.0%.",
+      "id": "regional_sales_leader",
+      "description": "Comparable adjusted net-sales leader by region.",
+      "source": "store_ops.sqlite",
+      "importance": "major",
+      "canonical_answer": "North leads with $5,120,000 comparable Q4 adjusted net sales, 8.4% growth across 5 comparable stores.",
+      "must_appear_in_image": true
+    },
+    {
+      "id": "raw_growth_leader",
+      "description": "Largest comparable-store growth and failed opportunity gate.",
+      "source": "store_ops.sqlite + controlling policy",
+      "importance": "major",
+      "canonical_answer": "Airport Express leads raw growth at 24.8% but is not the scalable opportunity because 93.7% coverage is below the 96.0% gate.",
       "must_appear_in_image": true
     },
     {
       "id": "staffing_watch_region",
-      "description": "Region with lowest Q4 staffing coverage across open stores.",
-      "source": "env/store_ops.sqlite",
-      "importance": "critical",
-      "canonical_answer": "South has the lowest Q4 staffing coverage at about 95.0%.",
+      "description": "Lowest schedule-weighted comparable coverage region.",
+      "source": "store_ops.sqlite",
+      "importance": "major",
+      "canonical_answer": "South is the staffing watch at 94.4% schedule-weighted coverage across 5 comparable stores, 1.6 percentage points below 96%.",
       "must_appear_in_image": true
     },
     {
-      "id": "data_scope",
-      "description": "Use open stores and signed-off monthly store-close lines; do not treat planning, rollup, QA, cutover, or paused-location rows as final performance.",
-      "source": "env/store_ops.sqlite + env/ops_review_notes.md + env/close_feed_glossary.md",
-      "importance": "major",
-      "canonical_answer": "The final image should not present planning refreshes, district rollup copies, QA rebuilds, cutover archive rows, or the seasonal-pause location as final metrics.",
-      "must_not_appear_in_image": true
-    },
-    {
-      "id": "action_takeaway",
-      "description": "Concise action takeaway connecting upside and intervention signals.",
-      "source": "env/store_ops.sqlite + env/ops_review_notes.md",
-      "importance": "major",
-      "canonical_answer": "The takeaway should connect Central Tech Plaza as the upside opportunity with Bayview Outlet and/or the South region as the intervention watch.",
+      "id": "scope_and_exclusions",
+      "description": "Final metrics use certified packages, current scope, approved adjustments, and comparable rankings.",
+      "source": "all env files",
+      "importance": "critical",
+      "canonical_answer": "Use monthly_store_close V2 packages, 24 active stores for the company Q4 headline, 20 comparable stores for lift/rankings, approved Bayview return exclusions, and no rejected Airport coverage credit.",
       "must_appear_in_image": true
     }
   ],
-  "calculation_notes_for_evaluator": "Expected values were computed from open stores using signed_off monthly_store_close rows. Q4 is 2026-10 to 2026-12 and Q3 is 2026-07 to 2026-09. Net sales = gross_sales - return_value. Labor productivity = Q4 net sales / Q4 labor_hours. Return rate = Q4 return_value / Q4 gross_sales. Staffing coverage = covered_hours / scheduled_hours. These notes are evaluator-only.",
-  "alignment_note": "Every grounded score-2 requirement is supported by task.md plus env/ops_review_notes.md or env/close_feed_glossary.md: periods, final close context, current operating locations, net sales after returns, quarter lift, labor productivity, return pressure, staffing coverage, region context, and no raw SQL/table export."
+  "calculation_notes_for_evaluator": {
+    "review_cutoff": "2027-01-08T17:00:00",
+    "selected_monthly_packages": {
+      "2026-07": "202607-V2",
+      "2026-08": "202608-V2",
+      "2026-09": "202609-V2",
+      "2026-10": "202610-V2",
+      "2026-11": "202611-V2",
+      "2026-12": "202612-V2"
+    },
+    "policy_revision": 8,
+    "active_store_count": 24,
+    "comparable_store_count": 20,
+    "company_q4_adjusted_net_sales": 21020000.0,
+    "comparable_q3_adjusted_net_sales": 17406622.0,
+    "comparable_q4_adjusted_net_sales": 18420000.0,
+    "comparable_growth_pct": 5.821795865964119,
+    "company_q4_productivity": 405.00699224594797,
+    "upside_store": "Northgate Electronics",
+    "risk_store": "Mesa Home Goods",
+    "region_metrics": {
+      "Central": {
+        "store_count": 5,
+        "q4_net": 4780000.0,
+        "growth_pct": 4.84580647482078,
+        "coverage_pct": 97.16
+      },
+      "West": {
+        "store_count": 5,
+        "q4_net": 4450000.0,
+        "growth_pct": 9.43184461760087,
+        "coverage_pct": 96.36
+      },
+      "North": {
+        "store_count": 5,
+        "q4_net": 5120000.0,
+        "growth_pct": 8.433913553603833,
+        "coverage_pct": 97.16
+      },
+      "South": {
+        "store_count": 5,
+        "q4_net": 4070000.0,
+        "growth_pct": 0.2631476518962117,
+        "coverage_pct": 94.39999999999999
+      }
+    },
+    "growth_leader": "Airport Express",
+    "staffing_watch": "South"
+  }
 }

@@ -9,110 +9,110 @@
     "vqa_items": [
       {
         "id": "grounded_q01",
-        "state": "Does the poster clearly identify the course as \"Fly Fishing Fundamentals: From Casting to Catching\", show the code \"PE-087\" and the term \"Spring 2026\", and keep this identity in a compact, readable header that does not dominate the page?",
+        "state": "Does the image state the full course identity as \"Fly Fishing Fundamentals: From Casting to Catching\", \"PE-087\", and \"Spring 2026\"?",
         "score_criteria": {
-          "2": "Score 2 if the full title, PE-087, and Spring 2026 are all clearly readable and the header remains compact, normally within two or three lines.",
-          "1": "Score 1 if all identity facts are correct but the title is noticeably oversized, or one minor term element is omitted without ambiguity.",
-          "0": "Score 0 if the course or code is wrong, missing, or unreadable."
+          "2": "Score 2 only if all three identity elements are present exactly or with harmless punctuation differences, and no competing course title or code appears.",
+          "1": "Score 1 if PE-087 and Spring 2026 are correct but the title is shortened without changing the course identity, or if the full title is present but one minor term label is omitted.",
+          "0": "Score 0 if the title identifies a different course, PE-087 is absent or wrong, Spring 2026 is contradicted, or two or more identity elements are missing."
         }
       },
       {
         "id": "grounded_q02",
-        "state": "Does the poster clearly present the reconciled overall course run as March 24–April 23, 2026, with exactly five sessions?",
+        "state": "Does the image give the reconciled course run as March 24-April 23, 2026, exactly five sessions, and 10 total scheduled instruction hours?",
         "score_criteria": {
-          "2": "Score 2 if the March 24-April 23 run and five-session count are both clear.",
-          "1": "Score 1 if the range is correct but the year or session count is weak, with Spring 2026 otherwise clear.",
-          "0": "Score 0 if April 21 is presented as the final date, the count is wrong, or the run is missing."
+          "2": "Score 2 only if the start date, updated end date, five-session count, and derived 10-hour total are all present and mutually consistent.",
+          "1": "Score 1 if the date range and session count are correct but the 10-hour total is omitted, or if all four facts are present with only the year implied by an otherwise correct Spring 2026 identity.",
+          "0": "Score 0 if April 21 is used as the end date, the count or hour total is wrong, or two or more required facts are missing."
         }
       },
       {
         "id": "grounded_q03",
-        "state": "Does the poster clearly group the indoor foundation stage as March 24, March 31, and April 7, from 5:30 PM to 7:30 PM, at Garrett Information Enterprise Center, Room 111, McHenry?",
+        "state": "Does the image state the indoor foundation sessions as Tuesday March 24, Tuesday March 31, and Tuesday April 7, from 5:30 PM to 7:30 PM?",
         "score_criteria": {
-          "2": "Score 2 if the three indoor dates, both time endpoints, and GIEC Room 111 or the expanded facility name are clearly grouped as the indoor stage.",
-          "1": "Score 1 if the first-three indoor sequence and 5:30-7:30 PM time are correct but the dates or updated room are incomplete, including use of the catalog's older McH or McHenry label.",
-          "0": "Score 0 if the indoor stage is missing, materially wrong, or confused with the outdoor stage."
+          "2": "Score 2 only if all three dates, the Tuesday weekday pattern, and both time endpoints are correct with no conflicting recurrence label.",
+          "1": "Score 1 if all three dates and the 5:30 PM-7:30 PM time are correct but the weekday is omitted, or if exactly one date is missing while the remaining sequence is not contradicted.",
+          "0": "Score 0 if the image labels the indoor sessions as Mondays or another wrong weekday, uses a wrong time, confuses the stage with outdoor sessions, or omits two or more dates."
         }
       },
       {
         "id": "grounded_q04",
-        "state": "Does the poster clearly group the outdoor practice stage as April 14 and April 23, from 6:00 PM to 8:00 PM, at Deep Creek Lake State Park Discovery Center in McHenry, and state that the sessions are weather dependent?",
+        "state": "Does the image identify the indoor meeting place as Garrett Information Enterprise Center (GIEC), Room 111, 687 Mosser Road, McHenry?",
         "score_criteria": {
-          "2": "Score 2 if both updated dates, both time endpoints, the Discovery Center meeting place, and the weather caveat are grouped as the outdoor stage.",
-          "1": "Score 1 if the final-two outdoor structure, 6:00-8:00 PM time, weather caveat, and April 14 are correct but April 23 or the updated meeting place is missing or replaced by the catalog's older April 21 or McH detail.",
-          "0": "Score 0 if the outdoor stage is missing, uses the wrong time or setting, or is confused with the indoor stage."
+          "2": "Score 2 only if the expanded facility or GIEC plus Garrett Information Enterprise Center context, Room 111, 687 Mosser Road, and McHenry are all supplied without a conflicting campus location.",
+          "1": "Score 1 if the facility and Room 111 are correct but exactly one of the street address or McHenry is omitted, with no wrong location stated.",
+          "0": "Score 0 if only \"GIEC Room 111\" is shown without both public location details, if the room or facility is wrong, or if another campus or outreach center is presented."
         }
       },
       {
         "id": "grounded_q05",
-        "state": "Does the poster clearly display the current fee as $95 and present one registration action package with the deadline \"Register by March 19, 2026\" and the exact URL \"garrettcollege.edu/cewd/register\"?",
+        "state": "Does the image state the outdoor practice sessions as Tuesday April 14 and Thursday April 23, from 6:00 PM to 8:00 PM, and mark them weather dependent?",
         "score_criteria": {
-          "2": "Score 2 if $95, a clearly labeled March 19 deadline, and the exact URL are all readable, with the deadline and URL together as one CTA.",
-          "1": "Score 1 if all three are correct but separated or one label or year is weak.",
-          "0": "Score 0 if the URL is missing or wrong, or if $89 or March 17 is presented as current."
+          "2": "Score 2 only if both dates, the Tuesday/Thursday weekday sequence, both time endpoints, and the weather-dependent condition are all correct.",
+          "1": "Score 1 if both updated dates, time, and weather condition are correct but weekdays are omitted, or if only one weekday is omitted while no wrong weekday is stated.",
+          "0": "Score 0 if April 21 appears as current, both sessions are labeled Monday or Tuesday, the time is wrong, weather dependence is absent together with another omission, or the stage is confused with indoor sessions."
         }
       },
       {
         "id": "grounded_q06",
-        "state": "Does the poster clearly identify Rita Lewis as the instructor and state that the course is intended for both beginners and people refining existing fly-fishing skills?",
+        "state": "Does the image identify the final two sessions as the outdoor stage at Deep Creek Lake State Park Discovery Center in McHenry?",
         "score_criteria": {
-          "2": "Score 2 if Rita Lewis is clearly identified as instructor and both audience groups are represented in one concise line.",
-          "1": "Score 1 if the instructor is correct but only one audience group is stated, or both groups are present with a minor readability issue.",
-          "0": "Score 0 if the instructor is wrong or absent, or no suitable audience is identifiable."
+          "2": "Score 2 only if the image ties sessions four and five or the final two sessions to the full Discovery Center meeting place and McHenry.",
+          "1": "Score 1 if the Discovery Center is correct and clearly tied to the outdoor stage but either the final-two-session relationship or McHenry is omitted.",
+          "0": "Score 0 if the outdoor site is missing, replaced by McH, CARC, Herrington Manor, GIEC, or another location, or is attached to the wrong stage."
         }
       },
       {
         "id": "grounded_q07",
-        "state": "Does the poster present exactly three concise learning takeaways in this order—gear choice, rod setup and knots, then casting—and specifically mention rods, fly lines, and reels; rod assembly or essential knots; and casting accuracy and distance?",
+        "state": "Does the image state the current fee as $95, the registration deadline as March 19, 2026, the exact URL garrettcollege.edu/cewd/register, and that registration is first-come, first-served?",
         "score_criteria": {
-          "2": "Score 2 if exactly three takeaways appear in the requested order and all three are specifically grounded.",
-          "1": "Score 1 if exactly three and all categories are present but one takeaway is generic, slightly long, or out of order.",
-          "0": "Score 0 if the count is not three, fewer than two categories are grounded, or unsupported outcomes are added."
+          "2": "Score 2 only if all four public registration facts are correct and no stale fee, deadline, or alternate URL is presented.",
+          "1": "Score 1 if the fee, deadline, and exact URL are correct but the first-come, first-served basis is omitted, or if exactly one minor label such as the year is implied by Spring 2026.",
+          "0": "Score 0 if $89, $99, $105, March 17, March 18, March 21, or a different URL is presented as current, or if two or more required facts are missing."
         }
       },
       {
         "id": "grounded_q08",
-        "state": "Does the poster clearly state that loaner rods are available and that participants should bring weather-ready layers and a valid Maryland fishing license for the outdoor sessions?",
+        "state": "Does the image name Rita Lewis as instructor, welcome both first-time fly fishers and people refining existing skills, and summarize the course as hands-on instruction progressing from essentials toward experienced techniques?",
         "score_criteria": {
-          "2": "Score 2 if loaner rods, weather-ready clothing, and the Maryland fishing-license requirement are all clearly tied to outdoor participation.",
-          "1": "Score 1 if two of the three ideas are clear and no conflicting instruction appears.",
-          "0": "Score 0 if the note is missing, says participants must bring their own rod, or omits most of the released instruction."
+          "2": "Score 2 only if the instructor, both audience groups, the hands-on format, and the basics-to-experienced-techniques progression are all represented without copying or contradicting the catalog.",
+          "1": "Score 1 if Rita Lewis and both audience groups are correct but the summary omits either the hands-on format or the skill progression, or if the summary is correct but only one audience group is stated.",
+          "0": "Score 0 if the instructor is wrong or absent, no suitable audience is identifiable, the course summary describes a different course, or two or more required ideas are missing."
         }
       },
       {
         "id": "grounded_q09",
-        "state": "Does the poster correctly use the eligible stream-casting image from \"media_104.jpg\" exactly once as a contained panel or banner and place the current horizontal \"brand_26_h.png\" Garrett College CEWD mark undistorted in the footer, while excluding the expired image and retired seal?",
+        "state": "Does the image contain exactly three learning takeaways in the order essential gear, rod setup and knots, then casting?",
         "score_criteria": {
-          "2": "Score 2 if both supplied current assets are recognizable, proportionally correct, and placed according to the campaign treatment.",
-          "1": "Score 1 if one asset is fully correct and the other is present but weakly cropped, cramped, or slightly distorted.",
-          "0": "Score 0 if a generated fishing scene, another course image, expired crop, retired seal, invented logo, or missing current mark is used."
+          "2": "Score 2 only if there are exactly three takeaways and the gear-to-setup/knots-to-casting order is unambiguous, with no extra fourth outcome.",
+          "1": "Score 1 if exactly three correct categories are present but one pair is out of order, or if the order is correct but one category is phrased too generically to confirm fully.",
+          "0": "Score 0 if the count is not three, two or more categories are missing, unsupported outcomes replace a required category, or the progression cannot be determined."
         }
       },
       {
         "id": "grounded_q10",
-        "state": "Does the poster consistently follow the campaign palette and typography by using teal, charcoal, warm gray, and white as the dominant colors, yellow only as a small deadline accent, and clean sans-serif typography without script or decorative display type?",
+        "state": "Do the three learning takeaways collectively mention rods, fly lines, and reels; fly-rod parts and assembly; essential knots or gear assembly; and casting accuracy and distance?",
         "score_criteria": {
-          "2": "Score 2 if the campaign palette and sans-serif system are consistently used.",
-          "1": "Score 1 if the correct system clearly dominates but one minor off-palette accent or one small non-sans treatment appears.",
-          "0": "Score 0 if navy or olive dominates, script or serif display type is prominent, or several decorative type styles are mixed."
+          "2": "Score 2 only if all four catalog-grounded detail groups are represented across the three takeaways and none is replaced by unrelated content.",
+          "1": "Score 1 if exactly one detail group is incomplete or generalized while the other three are specific and correct.",
+          "0": "Score 0 if two or more detail groups are missing, if entomology or another optional highlight displaces required content, or if unsupported outcomes are added as substitutes."
         }
       },
       {
         "id": "grounded_q11",
-        "state": "Is the poster organized as a readable course spotlight with a compact title, one contained image, two labeled schedule stages, concise key facts, one preparation note, exactly three takeaways, a prominent deadline-and-URL CTA, and a clear footer mark, with important text remaining readable at reduced size rather than resembling a crowded generic flyer?",
+        "state": "Does the image state that loaner rods are available, participants should bring weather-ready layers and a valid Maryland fishing license for outdoor sessions, and weather updates are available at 301-387-3198?",
         "score_criteria": {
-          "2": "Score 2 if all major sections are easy to find in a sensible reading order and the schedule and CTA remain prominent and readable.",
-          "1": "Score 1 if the overall order works but one section is overly dense, too small, or visually secondary.",
-          "0": "Score 0 if the title or artwork consumes excessive space, the schedule is a prose block, the CTA is buried or absent, or the layout resembles a crowded administrative form."
+          "2": "Score 2 only if all three preparation requirements plus the exact weather-line number are present and correctly tied to outdoor participation or weather updates.",
+          "1": "Score 1 if the three preparation requirements are all correct but the weather-line number is omitted, or if exactly one preparation element is omitted while the remaining information has no conflict.",
+          "0": "Score 0 if participants are told they must bring their own rod, the license is not identified as Maryland, the phone number is wrong, or two or more required elements are missing."
         }
       },
       {
         "id": "grounded_q12",
-        "state": "Is the poster free of unrelated course information and internal-only copy, including any second course title or code, unrelated instructor, phone or email, certification or prerequisite, full instructor biography, full catalog paragraph, or registrar audit note?",
+        "state": "Does the image state that withdrawal before the registration deadline receives a full refund and that no refund is available after the second class session, while excluding stale alternatives, another course, the instructor biography, registrar audit content, and general office contacts?",
         "score_criteria": {
-          "2": "Score 2 if none of the listed unrelated or internal-only material appears.",
-          "1": "Score 1 if one harmless source reference is tiny, clearly nonactive, and cannot be mistaken for public course information.",
-          "0": "Score 0 if another course's content, contact details, certification or prerequisite language, biography, copied catalog paragraph, or audit note is presented as part of the poster."
+          "2": "Score 2 only if both refund rules are correct and none of the listed stale, unrelated, biographical, audit, or general-contact material is published.",
+          "1": "Score 1 if both refund rules are correct but one harmless internal-looking label appears without exposing audit details, or if exactly one refund rule is omitted while all prohibited content remains absent.",
+          "0": "Score 0 if either refund rule is contradicted, both are absent, or any stale value, neighboring-course content, biography excerpt, registrar ticket/state/note, staff-directory contact, or general registration-office phone/email is presented as public poster content."
         }
       }
     ]

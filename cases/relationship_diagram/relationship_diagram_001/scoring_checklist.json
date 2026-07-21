@@ -9,137 +9,137 @@
     "vqa_items": [
       {
         "id": "grounded_q01",
-        "state": "Does the image accurately show what exact controlled snapshot, catalog, bundle, and deployment wave are identified; specifically, Service-to-Cash | Production correction view — 30 Jun 2026 16:30; Catalog 4.8; bundle CB-0626-B; wave DW-0630-C?",
+        "state": "Does the image state the exact governed snapshot title and identify Catalog 4.8, bundle CB-0626-B, wave DW-0630-C, and profile ARV-0630-C?",
         "score_criteria": {
-          "2": "Score 2 only if the title/snapshot, Catalog 4.8, CB-0626-B, and DW-0630-C are all correct. Judge factual content only.",
-          "1": "Score 1 if exactly one identifier is missing or abbreviated while none is contradicted.",
-          "0": "Score 0 if two or more are missing or any displayed snapshot, catalog, bundle, or wave is materially wrong."
+          "2": "Score 2 only if the exact title and all four control identifiers are explicit and correct.",
+          "1": "Score 1 only if exactly one identifier is omitted or abbreviated while the title and all displayed identifiers remain correct.",
+          "0": "Score 0 if the title is materially wrong, two or more identifiers are absent, or any displayed catalog, bundle, wave, or profile is wrong."
         }
       },
       {
         "id": "grounded_q02",
-        "state": "Does the image accurately show what final entity and relationship totals are stated; specifically, 27 active entities and 33 active relationships?",
+        "state": "Does the image state exactly 23 active entities and 28 active relationships and keep the four approved domains in the required left-to-right order?",
         "score_criteria": {
-          "2": "Score 2 only if both totals are present and exact.",
-          "1": "Score 1 if exactly one total is correct and the other is missing or off by one.",
-          "0": "Score 0 if both are wrong/missing or either differs by more than one."
+          "2": "Score 2 only if both totals and the complete domain order are correct.",
+          "1": "Score 1 only if the domain order is correct and exactly one total is omitted or off by one.",
+          "0": "Score 0 if both totals are wrong or missing, either differs by more than one, or the domain order is wrong."
         }
       },
       {
         "id": "grounded_q03",
-        "state": "Does the image accurately show how many active entities are in each domain; specifically, Customer & Coverage 6; Planning & Dispatch 8; Field Execution 8; Billing & Cash 5, in that left-to-right order?",
+        "state": "Does the image show the exact governed entity counts by domain: Customer & Coverage 6, Planning & Dispatch 5, Field Execution 7, and Billing & Cash 5?",
         "score_criteria": {
-          "2": "Score 2 only if the four counts and order are exact.",
-          "1": "Score 1 if the order is correct and exactly one count is off by one.",
-          "0": "Score 0 if two counts are wrong, a domain is missing, or the order is wrong."
+          "2": "Score 2 only if all four domain counts are explicit and correct.",
+          "1": "Score 1 only if exactly three counts are correct and the fourth is omitted or off by one.",
+          "0": "Score 0 if two or more counts are wrong or absent, or any entity is grouped in the wrong domain."
         }
       },
       {
         "id": "grounded_q04",
-        "state": "Does the image accurately show the current foreign-key set on Service Request after production activation as follows: location_id, requested_by_contact_id, and agreement_id—exactly those three?",
+        "state": "Does Service Request show exactly location_id and requested_by_contact_id as its visible FKs, omit agreement_id, and carry provenance tag VP-105?",
         "score_criteria": {
-          "2": "Score 2 only if exactly those three FKs are shown.",
-          "1": "Score 1 if exactly one required FK is missing or one unrelated FK is added.",
-          "0": "Score 0 if two or more field-set errors occur or agreement_asset_id is shown as current."
+          "2": "Score 2 only if the two-FK set, agreement_id exclusion, and VP-105 tag are all correct.",
+          "1": "Score 1 only if the two correct FKs are shown and exactly one of the exclusion cue or provenance tag is missing, with no extra FK.",
+          "0": "Score 0 if agreement_id or agreement_asset_id is shown as current, either required FK is wrong, or two or more requirements fail."
         }
       },
       {
         "id": "grounded_q05",
-        "state": "Does the image accurately show how Service Agreement connects to Service Request in the production snapshot; specifically, A Service Request may reference 0..1 Service Agreement through agreement_id; one Service Agreement can be referenced by 0..N requests?",
+        "state": "Does the governed contact entity appear as Service Contact with PK contact_id, FK customer_id, and provenance tag VP-104?",
         "score_criteria": {
-          "2": "Score 2 only if the relationship, agreement_id FK, direction, and optional cardinality are correct.",
-          "1": "Score 1 if the relationship exists with exactly one FK or cardinality error.",
-          "0": "Score 0 if the relationship is absent or Agreement Asset is used as the direct parent instead."
+          "2": "Score 2 only if the display name, PK, FK, and tag are all correct.",
+          "1": "Score 1 only if exactly one of the four details is missing or unclear while none is contradicted.",
+          "0": "Score 0 if Customer Contact or Client Contact remains the final name, a key is wrong, or two or more details fail."
         }
       },
       {
         "id": "grounded_q06",
-        "state": "Does the image accurately show how Request Coverage Decision is represented; specifically, Planning & Dispatch entity; PK coverage_decision_id; business fact decision_state; provenance tag CR-4801?",
+        "state": "Does Coverage Determination appear in Planning & Dispatch with PK coverage_decision_id, business fact coverage_outcome, and provenance CR-4801 · VP-106/VP-107?",
         "score_criteria": {
-          "2": "Score 2 only if the entity is in the correct domain with the correct PK, fact, and tag.",
-          "1": "Score 1 if exactly one detail is missing or unclear.",
-          "0": "Score 0 if the entity is absent, misgrouped, or two or more details are wrong."
+          "2": "Score 2 only if the governed name, domain, PK, fact, and combined provenance are all correct.",
+          "1": "Score 1 only if exactly one detail is missing or abbreviated while no old name, old fact, or wrong tag is shown.",
+          "0": "Score 0 if Request Coverage Decision or Coverage Assessment remains current, decision_state or coverage_status is used, the entity is misgrouped, or two or more details fail."
         }
       },
       {
         "id": "grounded_q07",
-        "state": "Does the image accurately identify which two parents define Request Coverage Decision; specifically, Service Request through request_id and Agreement Asset through agreement_asset_id; each decision belongs to one of each parent?",
+        "state": "Does Coverage Determination belong to Service Request through request_id and to Agreement Asset through agreement_asset_id, with each parent having 0..N determinations and each determination belonging to one parent of each type?",
         "score_criteria": {
-          "2": "Score 2 only if both parent relationships and both FKs are correct.",
-          "1": "Score 1 if one relationship is fully correct and the other has one endpoint or FK error.",
-          "0": "Score 0 if a relationship is missing or Service Agreement substitutes for Agreement Asset."
+          "2": "Score 2 only if both parent relationships, both FKs, directions, and cardinalities are correct.",
+          "1": "Score 1 only if one parent relationship is fully correct and the other has exactly one FK or cardinality omission.",
+          "0": "Score 0 if either parent is missing or substituted, an FK is wrong, or two or more relationship details fail."
         }
       },
       {
         "id": "grounded_q08",
-        "state": "Does the image accurately show how the active request-timing entity is represented; specifically, Request Commitment Event with PK request_commitment_event_id, business fact commitment_type, and provenance tag CR-4803?",
+        "state": "Are Request Commitment Event, Skill, and Technician Skill all absent from the governed diagram, with no surviving relationship attached to any of them?",
         "score_criteria": {
-          "2": "Score 2 only if the current name, PK, fact, and tag are correct.",
-          "1": "Score 1 if exactly one is missing or unclear.",
-          "0": "Score 0 if Request SLA Event, request_sla_event_id, or event_type remains current, or two or more details are wrong."
+          "2": "Score 2 only if all three entities and their incident relationships are absent.",
+          "1": "Score 1 only if exactly one hidden entity name appears solely in a clearly excluded or historical note and receives no current relationship.",
+          "0": "Score 0 if any of the three is presented as a current entity or participates in a current relationship."
         }
       },
       {
         "id": "grounded_q09",
-        "state": "Does the image accurately identify which work-close control entity remains active after deployment resolution; specifically, Work Order Checklist with PK work_order_checklist_id and business fact completion_state?",
+        "state": "Does Work Order Assignment show PK assignment_id, FKs work_order_id and technician_id, business fact assignment_function, and provenance tag VP-108?",
         "score_criteria": {
-          "2": "Score 2 only if the entity name, PK, and fact are all correct.",
-          "1": "Score 1 if exactly one is missing or unclear.",
-          "0": "Score 0 if Work Order Close Gate, work_order_close_gate_id, or gate_state is presented as current."
+          "2": "Score 2 only if the PK, both FKs, fact, and tag are all correct.",
+          "1": "Score 1 only if exactly one detail is missing or unclear while no wrong key, old fact, or wrong tag is shown.",
+          "0": "Score 0 if assignment_role or assignment_type is current, either parent FK is wrong, or two or more details fail."
         }
       },
       {
         "id": "grounded_q10",
-        "state": "Does the image accurately show what business fact and provenance tag are current on Visit Signature; specifically, acceptance_role with provenance tag CR-4826?",
+        "state": "Does Work Completion Checklist show PK work_order_checklist_id, FK work_order_id, business fact completion_state, and provenance tag VP-110?",
         "score_criteria": {
-          "2": "Score 2 only if both acceptance_role and CR-4826 are correct.",
-          "1": "Score 1 if exactly one is present and the other is missing or unclear.",
-          "0": "Score 0 if signer_role is shown as current or a different tag is attached."
+          "2": "Score 2 only if the governed name, PK, FK, fact, and tag are all correct.",
+          "1": "Score 1 only if exactly one detail is missing or abbreviated while none is contradicted.",
+          "0": "Score 0 if Work Order Checklist, Work Close Checklist, or Work Order Close Gate is presented as current, a key or fact is wrong, or two or more details fail."
         }
       },
       {
         "id": "grounded_q11",
-        "state": "Does the image accurately show what business fact and provenance tag are current on Payment Allocation; specifically, applied_amount with provenance tag CR-4825?",
+        "state": "Does Visit belong to one Work Order through work_order_id and one Technician through technician_id, while each parent can have 0..N Visits?",
         "score_criteria": {
-          "2": "Score 2 only if both applied_amount and CR-4825 are correct.",
-          "1": "Score 1 if exactly one is present and the other is missing or unclear.",
-          "0": "Score 0 if allocated_amount or allocation_status is shown as current, or a different tag is attached."
+          "2": "Score 2 only if both parent relationships, both FKs, directions, and 0..N parent-side multiplicities are correct.",
+          "1": "Score 1 only if one relationship is fully correct and the other has exactly one FK or cardinality omission.",
+          "0": "Score 0 if either parent is missing or wrong, an FK is incorrect, or two or more relationship details fail."
         }
       },
       {
         "id": "grounded_q12",
-        "state": "Is technician assignment modeled through the approved association record; specifically, Work Order and Technician connect through Work Order Assignment using work_order_id and technician_id; no direct Work Order-to-Technician relationship is active?",
+        "state": "Does Visit Signature show PK visit_signature_id, FK visit_id, business fact accepted_by_role, and provenance CR-4826 · VP-111, while Visit Note is absent?",
         "score_criteria": {
-          "2": "Score 2 only if the bridge, both FKs, and absence of the direct shortcut are correct.",
-          "1": "Score 1 if the bridge is correct but exactly one FK or the shortcut exclusion is unclear.",
-          "0": "Score 0 if the bridge is missing or a direct Work Order-to-Technician relationship is active."
+          "2": "Score 2 only if the PK, FK, governed fact, combined provenance, and Visit Note exclusion are all correct.",
+          "1": "Score 1 only if exactly one requirement is omitted or abbreviated while no old fact, wrong tag, or current Visit Note is shown.",
+          "0": "Score 0 if acceptance_role, acceptor_role, or signer_role is current, Visit Note is shown as current, a key is wrong, or two or more requirements fail."
         }
       },
       {
         "id": "grounded_q13",
-        "state": "Does the image accurately show how Visit Note and Visit Signature are attached; specifically, Visit has 0..N Visit Notes and 0..N Visit Signatures through visit_id; each child belongs to one Visit?",
+        "state": "Does Payment Allocation connect Payment through payment_id and Invoice through invoice_id, with each parent having 0..N allocations and no direct Invoice-to-Payment relationship?",
         "score_criteria": {
-          "2": "Score 2 only if both child relationships, FKs, directions, and cardinalities are correct.",
-          "1": "Score 1 if one relationship is fully correct and the other has one endpoint/cardinality error.",
-          "0": "Score 0 if either child is missing or attached to the wrong parent."
+          "2": "Score 2 only if both parent relationships, both FKs, both 0..N multiplicities, and the direct-shortcut exclusion are correct.",
+          "1": "Score 1 only if both parent relationships are present and exactly one FK, cardinality, or shortcut-exclusion detail is missing.",
+          "0": "Score 0 if either parent relationship is missing, a direct Invoice-to-Payment link is active, an FK is wrong, or two or more details fail."
         }
       },
       {
         "id": "grounded_q14",
-        "state": "Does the image accurately show how is Payment Allocation connected in the production model; specifically, Payment and Invoice each have 0..N Payment Allocations through payment_id and invoice_id; no direct Invoice-to-Payment relationship is active?",
+        "state": "Does the image show Invoice Adjustment with adjustment_amount and Payment Allocation with applied_amount and provenance tag CR-4825, without using allocated_amount or allocation_status as the current allocation fact?",
         "score_criteria": {
-          "2": "Score 2 only if both parent relationships, both FKs, and the absence of a direct shortcut are correct.",
-          "1": "Score 1 if exactly one endpoint/FK or the shortcut exclusion is wrong or unclear.",
-          "0": "Score 0 if a parent relationship is missing or a direct Invoice-to-Payment link is active."
+          "2": "Score 2 only if both approved facts, the Payment Allocation tag, and both old-fact exclusions are correct.",
+          "1": "Score 1 only if both approved facts are correct and exactly one provenance or exclusion cue is missing, with no wrong fact displayed.",
+          "0": "Score 0 if either approved fact is wrong or absent, an old allocation fact is presented as current, the tag is wrong, or two or more requirements fail."
         }
       },
       {
         "id": "grounded_q15",
-        "state": "Does the image accurately identify which two deployment changes were reverted rather than made current; specifically, The Service Request agreement_id retirement was rolled back, and the Work Order Close Gate rename group was suspended; therefore agreement_id remains and Work Order Checklist remains active?",
+        "state": "Does the image use the governed names and view tags Service Contact [VP-104], Service Request [VP-105], and Work Completion Checklist [VP-110], rather than their pre-projection labels or untagged changed states?",
         "score_criteria": {
-          "2": "Score 2 only if both reverted outcomes are reflected correctly.",
-          "1": "Score 1 if exactly one outcome is correct.",
-          "0": "Score 0 if neither is correct or both reverted changes are shown as current."
+          "2": "Score 2 only if all three governed name/tag pairs are explicit and correct.",
+          "1": "Score 1 only if exactly two pairs are fully correct and the third tag alone is omitted, with no old or wrong name.",
+          "0": "Score 0 if any old or wrong final name is used, two tags are missing, or two or more pairs fail."
         }
       }
     ]

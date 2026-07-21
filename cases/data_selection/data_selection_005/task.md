@@ -1,27 +1,40 @@
-The Riverside Spring Fair team needs a single public volunteer recruitment poster for the Sunday event. Work only from the files in `env/`; web use is not allowed.
+The Riverside Spring Fair team needs one public volunteer recruitment poster for the Sunday event. Work only from the files in `env/`; web use is not allowed.
 
-Resolve every versioned record at the selection cutoff in `assignment_rules.md`, including same-timestamp revision ties and records published after the cutoff. Apply all schedule, opportunity, registration, hold, readiness, safety, attendance, and public-requirement rules. Calculate public openings after active group and issued-offer holds, rank qualifying opportunities, then evaluate the required five-opportunity portfolios exactly as specified.
+Resolve every versioned record at the selection cutoff in `assignment_rules.md`. For records sharing the same controlling timestamp, use the greatest revision. Ignore records published after the cutoff. Apply the schedule, opportunity, registration, hold, readiness, safety, attendance, and public-requirement rules exactly.
 
-Create a vertical public-facing poster headed **“Sunday Volunteer Opportunities.”** Use the controlling schedule information and show the event name, full date, main meeting location, registration deadline, registration URL, public contact, and rain-plan location.
+Calculate Public openings after active group holds and issued-offer holds. Rank every qualifying opportunity, keep the ranked top 12, evaluate every valid five-opportunity portfolio, and choose the single winning portfolio under the stated objective and tie-breaks.
 
-Feature exactly the five selected opportunities in eligibility-rank order. For every featured opportunity show all of the following:
+Create a vertical public-facing poster headed **“Sunday Volunteer Opportunities.”** Reserve enough canvas for every required section; no required line, group, or action detail may be clipped or pushed outside the image.
+
+Show the controlling:
+- event name;
+- full event date;
+- main meeting location;
+- full registration deadline including weekday, year, and time;
+- registration URL;
+- public contact;
+- rain-plan location.
+
+Feature exactly the five selected opportunities in ascending **global eligibility rank**. If rank markers are displayed, retain their original global rank values; do not renumber the selected set as 1–5.
+
+For every featured opportunity show:
 - opportunity name and role area;
-- full shift start and end time;
+- full shift start and end;
 - calculated check-in time;
 - meeting zone;
-- current **Public openings** after the controlling holds;
+- current **Public openings**;
 - minimum age;
 - orientation length in minutes;
 - every applicable controlled fit tag: Step-free route, Seated option, and Indoor backup.
 
-Add a **Quick Facts** section identifying, with supporting values:
+Add **Quick Facts** identifying the correct opportunity or complete tied set and supporting value for:
 - earliest check-in;
-- largest Public-openings count, including the complete tie if applicable;
+- largest Public-openings count;
 - shortest orientation;
 - longest shift;
 - latest finish.
 
-Add a **Find Your Fit** section listing the complete selected-item sets for:
+Add **Find Your Fit** with the complete selected-role sets for:
 - Ages 14–15 eligible;
 - Seated option;
 - Step-free route;
@@ -29,15 +42,17 @@ Add a **Find Your Fit** section listing the complete selected-item sets for:
 - Check in before 10:00 AM;
 - End by 1:00 PM.
 
-Add a **Portfolio Summary** showing:
+Add **Portfolio Summary** showing:
 - 5 featured opportunities;
 - total Public openings;
-- total potential volunteer-hours represented by those openings;
+- total potential volunteer-hours;
 - overall check-in-to-finish range;
 - average shift length;
-- number of represented role areas and meeting zones;
-- counts of Step-free, Seated-option, Indoor-backup, and age-14-or-younger opportunities.
+- represented role-area and meeting-zone counts;
+- Step-free, Seated-option, Indoor-backup, and age-14-or-younger counts.
 
-Add a **Full-Day Pair** using the pair rule from `assignment_rules.md`; show both opportunity names, first check-in, final finish, combined shift hours, and combined Public openings.
+For duration summaries, use hours as the primary unit. A mathematically exact minute equivalent may appear in parentheses.
 
-Finish with a clear action line containing the registration URL, exact deadline, public contact, and rain-plan location. Do not present any non-selected opportunity as featured, recommended, grouped, or paired. Do not substitute raw openings, older records, or post-cutoff corrections.
+Add **Full-Day Pair** using the pair rule in `assignment_rules.md`; show both names, first check-in, final finish, combined shift hours, and combined Public openings.
+
+Finish with a clear action line containing the registration URL, exact deadline, public contact, and rain-plan location. Do not give any non-selected opportunity featured, recommended, grouped, or paired status. Do not substitute raw openings, older records, or post-cutoff corrections.

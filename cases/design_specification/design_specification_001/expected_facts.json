@@ -3,6 +3,7 @@
   "task_type": "design_specification",
   "reference_date": "2026-06-24",
   "creative_freeze": "2026-06-23T17:00:00Z",
+  "publication_cutoff": "2026-06-23T18:10:00Z",
   "resolved_profile": {
     "profile_id": "PRF-044",
     "canvas": [
@@ -20,73 +21,64 @@
     "headline": "Plan the week in one calm board.",
     "support_line": "A focused planning space for small product teams."
   },
-  "resolved_message_package": {
-    "message_id": "MSG-063",
-    "note": "This package is required as the activation parent, but its audience, offer, release, proof, CTA, destination and qualifier are superseded by the final activation."
-  },
-  "resolved_activation": {
+  "resolved_activation_parent": {
     "activation_id": "ACT-117",
-    "cohort_id": "COH-077",
-    "audience_line": "For product teams coordinating 6–20 contributors",
-    "offer_id": "OFF-083",
-    "offer_line": "21-day launch workspace trial",
-    "evidence_line": "Includes five collaborator seats",
-    "schedule_id": "SCH-091",
-    "release_line": "Opens 24 June · 14:00 UTC",
-    "proof_id": "PROOF-068",
-    "proof_chip": "Built for cross-functional launch weeks",
-    "destination_id": "DEST-074",
-    "cta": "Open the launch-week board",
-    "landing_path": "flowforge.com/launch-week",
-    "qualifier_id": "QLF-059",
-    "qualifier": "Workspace owner approval required",
-    "experiment_id": "EXP-064",
-    "variant_code": "B"
+    "message_id": "MSG-063",
+    "note": "Activation must be resolved correctly before the publication handoff, but publication overrides its consumer-facing activation fields."
+  },
+  "resolved_publication": {
+    "publication_id": "PUB-118",
+    "overlay_id": "OVR-084",
+    "manifest_id": "MAN-071",
+    "candidate_set_id": "SET-099",
+    "selected_pack_id": "PAC-202",
+    "legal_pack_id": "LEG-066",
+    "output_spec_id": "OUT-044",
+    "audience_line": "For launch teams coordinating 8–24 contributors",
+    "offer_line": "30-day go-live workspace trial",
+    "evidence_line": "Includes eight collaborator seats",
+    "release_line": "Opens 24 June · 16:30 UTC",
+    "proof_chip": "Ready for cross-functional go-live weeks",
+    "cta": "Start the go-live workspace",
+    "landing_path": "flowforge.com/go-live",
+    "qualifier": "Workspace admin approval required"
   },
   "resolved_board_content": {
-    "board_content_id": "BDC-088",
-    "week_pill": "LAUNCH WEEK",
-    "highlight_lane": "THU",
-    "featured_card": "Ship release",
+    "week_pill": "GO-LIVE WEEK",
+    "highlight_lane": "WED",
+    "featured_card": "Publish release",
     "key_cards": {
-      "MON": "Finalize brief",
-      "TUE": "Approve creative",
-      "WED": "Confirm tracking",
-      "FRI": "Review results"
+      "MON": "Lock launch brief",
+      "TUE": "Approve assets",
+      "THU": "Monitor rollout",
+      "FRI": "Review launch data"
     }
   },
-  "resolved_asset_bundle": {
-    "bundle_id": "BND-094",
-    "logo": {
-      "asset_id": "AST-037",
-      "visual_signature": "Separate horizontal FlowForge signature with amber-and-sage folded-path symbol and dark-green wordmark"
-    },
-    "hero": {
-      "asset_id": "AST-282",
-      "visual_signature": "Launch-week board with LAUNCH WEEK pill, highlighted THU lane, and featured Ship release card"
-    },
-    "background": {
-      "asset_id": "AST-283",
-      "visual_signature": "Warm cream fine-grid field with sage upper-right diagonal band, amber stepped lower-right corner, and dark-teal left rail"
-    },
-    "proof_chip": {
-      "asset_id": "AST-284",
-      "visual_signature": "Amber chip with dark-green check and text Built for cross-functional launch weeks"
-    }
+  "resolved_assets": {
+    "logo_asset_id": "AST-037",
+    "hero_asset_id": "AST-292",
+    "background_asset_id": "AST-283",
+    "proof_asset_id": "AST-293",
+    "notes": "PAC-201 has higher candidate priority but fails controlling Delivery QA; PAC-202 is the first candidate passing both QA and legal clearance."
   },
-  "superseded_activation_values": [
-    "For product teams of 5–25",
-    "14-day workspace preview",
-    "Available 24 June · 09:00 UTC",
-    "Built for focused weekly planning",
-    "Preview the Sprint board",
-    "flowforge.com/sprint",
-    "No card required"
+  "superseded_or_rejected_values": [
+    "For product teams coordinating 6–20 contributors",
+    "21-day launch workspace trial",
+    "Includes five collaborator seats",
+    "Opens 24 June · 14:00 UTC",
+    "Built for cross-functional launch weeks",
+    "Open the launch-week board",
+    "flowforge.com/launch-week",
+    "Workspace owner approval required",
+    "LAUNCH WEEK",
+    "THU",
+    "Ship release",
+    "Review results",
+    "Ready for cross-functional launch weeks"
   ],
   "selection_logic": {
-    "activation": "Select the unique activation matching MSG-063, SPRINT-JUNE-2026, PRF-044, GLOBAL-EN, LINKEDIN-SPONSORED-SINGLE and en-GB whose latest status at or before freeze is Active and whose effective window includes launch day.",
-    "catalogs": "All referenced catalog records must be Approved for the required market/language and valid on launch day.",
-    "experiment": "EXP-064 must match the same campaign/profile/market/placement and be Approved on launch day; it controls BND-094 and BDC-088.",
-    "assets": "Each bundle asset must independently satisfy latest pre-freeze approval, exact usage scope, paid-social rights, Released state before freeze, and no withdrawal before launch."
+    "publication": "PUB-118 is the unique exact-match package whose controlling pre-cutoff state is Released.",
+    "candidate_pack": "PAC-201 fails controlling QA; PAC-202 is the first priority-ordered candidate with Passed QA and Cleared legal status.",
+    "assets": "AST-292 and AST-293 pass the publication addendum approval, usage, rights and version controls."
   }
 }

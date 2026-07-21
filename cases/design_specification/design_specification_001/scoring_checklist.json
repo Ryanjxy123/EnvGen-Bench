@@ -9,110 +9,110 @@
     "vqa_items": [
       {
         "id": "grounded_q01",
-        "state": "Does the ad show the approved base-copy identity: product name, headline, and supporting sentence; specifically, It shows \"FlowForge Sprint\", \"Plan the week in one calm board.\", and \"A focused planning space for small product teams.\"?",
+        "state": "Does the ad show the retained base-copy identity: “FlowForge Sprint”, “Plan the week in one calm board.”, and “A focused planning space for small product teams.”?",
         "score_criteria": {
-          "2": "Score 2 if all three strings are clearly readable and materially exact.",
-          "1": "Score 1 if exactly two are exact and the third has a minor defect or is missing.",
-          "0": "Score 0 if fewer than two can be verified or if a different headline/product is used."
+          "2": "Score 2 only if all three retained base-copy strings are readable and materially exact.",
+          "1": "Score 1 only if exactly two strings are exact and the third is omitted or has one minor punctuation defect, with no different product or message.",
+          "0": "Score 0 if fewer than two strings are correct or a different product name, headline, or support message is used."
         }
       },
       {
         "id": "grounded_q02",
-        "state": "Does the ad contain the final activation audience and evidence lines; specifically, It shows \"For product teams coordinating 6–20 contributors\" and \"Includes five collaborator seats\"?",
+        "state": "Does the ad show the publication-stage audience “For launch teams coordinating 8–24 contributors” and evidence line “Includes eight collaborator seats”?",
         "score_criteria": {
-          "2": "Score 2 if both lines are readable and exact.",
-          "1": "Score 1 if both are identifiable but one has a minor punctuation, range, or legibility defect.",
-          "0": "Score 0 if either line is absent or materially different."
+          "2": "Score 2 only if both lines are readable and exact, including the 8–24 range and eight-seat evidence.",
+          "1": "Score 1 only if both lines are identifiable and exactly one has a minor punctuation or numeral-format defect, with no old activation value.",
+          "0": "Score 0 if either line is absent, materially different, or replaced by the 6–20/five-seat activation wording."
         }
       },
       {
         "id": "grounded_q03",
-        "state": "Does the ad contain the final activation offer and release-time lines; specifically, It shows \"21-day launch workspace trial\" and \"Opens 24 June · 14:00 UTC\"?",
+        "state": "Does the ad show the final offer “30-day go-live workspace trial” and release line “Opens 24 June · 16:30 UTC”?",
         "score_criteria": {
-          "2": "Score 2 if both lines are readable and exact, including 21-day and 14:00 UTC.",
-          "1": "Score 1 if both are present and exactly one has a minor punctuation or separator defect.",
-          "0": "Score 0 if either line is absent or uses another duration, date, time, or timezone."
+          "2": "Score 2 only if both lines are readable and exact, including 30-day, 24 June, 16:30 and UTC.",
+          "1": "Score 1 only if both lines are present and exactly one has a minor separator or punctuation defect, with no wrong duration or time.",
+          "0": "Score 0 if either line is missing or uses the earlier 21-day or 14:00 activation value, another date, or another timezone."
         }
       },
       {
         "id": "grounded_q04",
-        "state": "Does the ad use the final activation CTA and destination; specifically, The CTA is \"Open the launch-week board\" and the visible destination is \"flowforge.com/launch-week\"?",
+        "state": "Does the ad use the final CTA “Start the go-live workspace”, destination “flowforge.com/go-live”, and qualifier “Workspace admin approval required”?",
         "score_criteria": {
-          "2": "Score 2 if both strings are readable and exact.",
-          "1": "Score 1 if both are present and exactly one has a minor capitalization, hyphen, slash, or legibility defect.",
-          "0": "Score 0 if either is missing or another action or destination is shown."
+          "2": "Score 2 only if all three strings are readable, exact, and presented as the current action, destination, and qualifier.",
+          "1": "Score 1 only if exactly two are exact and the third is omitted or has one minor hyphen, slash, or capitalization defect, with no old value.",
+          "0": "Score 0 if any displayed string is materially wrong or replaced by Open the launch-week board, flowforge.com/launch-week, or Workspace owner approval required, or if two strings are absent."
         }
       },
       {
         "id": "grounded_q05",
-        "state": "Does the proof area show the final proof claim and final qualifier; specifically, It shows \"Built for cross-functional launch weeks\" and \"Workspace owner approval required\"?",
+        "state": "Does the proof area show “Ready for cross-functional go-live weeks”, and is exactly one complete horizontal FlowForge signature visible outside the product board?",
         "score_criteria": {
-          "2": "Score 2 if both statements are readable and exact.",
-          "1": "Score 1 if both remain identifiable and exactly one has a minor wording or legibility defect.",
-          "0": "Score 0 if either is absent or replaced by an earlier proof or qualifier."
+          "2": "Score 2 only if the exact proof claim and one complete separate symbol-plus-wordmark signature are both clearly present.",
+          "1": "Score 1 only if both are identifiable and exactly one is slightly cropped, small, or has a minor punctuation defect, with no different proof claim.",
+          "0": "Score 0 if the proof uses launch-weeks or focused-planning wording, the separate signature is absent or duplicated, or either required element is not identifiable."
         }
       },
       {
         "id": "grounded_q06",
-        "state": "Does the product board show the final launch-week state selected by the activation experiment; specifically, The board shows the pill \"LAUNCH WEEK\", highlights the THU lane, and features the card \"Ship release\"?",
+        "state": "Does the board show the pill “GO-LIVE WEEK”, highlight the WED lane, and feature the card “Publish release”?",
         "score_criteria": {
-          "2": "Score 2 if all three identifiers are directly visible and exact.",
-          "1": "Score 1 if exactly two are correct and the third is partly obscured or unclear.",
-          "0": "Score 0 if fewer than two are correct or the earlier THIS WEEK / WED / Launch checklist state is used."
+          "2": "Score 2 only if all three board-state identifiers are directly visible and exact.",
+          "1": "Score 1 only if exactly two are correct and the third is omitted or partly obscured, with no conflicting board state.",
+          "0": "Score 0 if fewer than two are correct or LAUNCH WEEK, THU, Ship release, THIS WEEK, or Launch checklist is used as the current state."
         }
       },
       {
         "id": "grounded_q07",
-        "state": "Are the four activation-selected key task cards placed in their required weekday lanes; specifically, MON contains \"Finalize brief\"; TUE contains \"Approve creative\"; WED contains \"Confirm tracking\"; FRI contains \"Review results\"?",
+        "state": "Are the publication-selected key cards placed as MON—“Lock launch brief”, TUE—“Approve assets”, THU—“Monitor rollout”, and FRI—“Review launch data”?",
         "score_criteria": {
-          "2": "Score 2 if all four task-and-lane pairs are readable and correct.",
-          "1": "Score 1 if exactly three pairs are correct.",
-          "0": "Score 0 if two or fewer pairs are correct."
+          "2": "Score 2 only if all four task-and-lane pairs are readable and correct.",
+          "1": "Score 1 only if exactly three pairs are correct and the fourth is omitted or slightly truncated, with no card assigned to the wrong lane.",
+          "0": "Score 0 if two or fewer pairs are correct, any shown key card is assigned to the wrong weekday, or earlier activation cards replace the publication cards."
         }
       },
       {
         "id": "grounded_q08",
-        "state": "Is one complete separate FlowForge campaign signature visible outside the product board; specifically, Exactly one separate horizontal signature with the amber-and-sage folded-path symbol and readable dark-green FlowForge wordmark appears outside the board?",
+        "state": "Does the ad use the approved final asset combination: the safe go-live board without clipped task text, the warm cream grid background with sage upper-right band and amber lower-right corner, and the dark-teal left rail?",
         "score_criteria": {
-          "2": "Score 2 if one complete separate signature is clearly identifiable outside the board.",
-          "1": "Score 1 if the correct signature is present but slightly cropped or small while the wordmark remains identifiable.",
-          "0": "Score 0 if it is absent, malformed, duplicated outside the board, or represented only by a symbol without the FlowForge wordmark."
+          "2": "Score 2 only if the safe board has no clipped task wording and all four specified background/rail features are present.",
+          "1": "Score 1 only if the board is complete and exactly one background feature is substantially covered, or all background features are present and one non-core board task is slightly unclear.",
+          "0": "Score 0 if task text is visibly clipped, a dark or wrong background family is used, two background features are absent, or the board does not match the go-live state."
         }
       },
       {
         "id": "grounded_q09",
-        "state": "Does the ad use the final activation background family; specifically, The background has a warm cream base with a fine pale grid, a sage diagonal band in the upper-right, an amber stepped corner in the lower-right, and a dark-teal left rail?",
+        "state": "Does the delivered ad remain a single wide LinkedIn sponsored image with a 1200 × 627 or equivalent 1.91:1 canvas, one product board, one CTA, and one separate campaign signature?",
         "score_criteria": {
-          "2": "Score 2 if all four identifying features are visible.",
-          "1": "Score 1 if exactly three are visible and the fourth is substantially covered by required content.",
-          "0": "Score 0 if two or fewer are visible or a dark solid/earlier campaign field is used."
+          "2": "Score 2 only if the canvas is the required wide placement and the board, CTA, and separate signature each appear exactly once.",
+          "1": "Score 1 only if the aspect ratio is a nearby compatible wide ratio and all three one-instance requirements are satisfied.",
+          "0": "Score 0 if the image is square, portrait, banner-shaped, or materially cropped, or if the board, CTA, or separate signature is missing or duplicated."
         }
       },
       {
         "id": "grounded_q10",
-        "state": "Does the delivered image use the required LinkedIn sponsored-single output format; specifically, The output is a 1200 × 627 wide image with an aspect ratio close to 1.91:1?",
+        "state": "Does the ad keep the final consumer copy internally consistent by using go-live wording across the offer, proof, CTA, destination, and board state rather than mixing launch-week and go-live packages?",
         "score_criteria": {
-          "2": "Score 2 if the image is exactly 1200 × 627 or clearly verified at that ratio and intended placement.",
-          "1": "Score 1 if it is a nearby wide ratio with no material crop incompatibility.",
-          "0": "Score 0 if it is square, portrait, Story-shaped, banner-shaped, or otherwise incompatible with the required placement."
+          "2": "Score 2 only if the offer, proof, CTA, destination, and board state consistently use the final go-live package with no active launch-week substitute.",
+          "1": "Score 1 only if four of the five components are consistent and exactly one component is omitted, with no conflicting launch-week wording.",
+          "0": "Score 0 if any earlier launch-week component is shown as current alongside the go-live package, two components are missing, or the package is internally contradictory."
         }
       },
       {
         "id": "grounded_q11",
-        "state": "Is the ad free of the earlier message-package values that the activation supersedes; specifically, so that The active campaign copy does not use \"14-day workspace preview\", \"Available 24 June · 09:00 UTC\", \"Built for focused weekly planning\", or \"Preview the Sprint board\"?",
+        "state": "Is the ad free of the superseded activation values “21-day launch workspace trial”, “Opens 24 June · 14:00 UTC”, “Built for cross-functional launch weeks”, and “Open the launch-week board”?",
         "score_criteria": {
-          "2": "Score 2 if none of the four superseded values is visible as active copy.",
-          "1": "Score 1 if exactly one appears only as a tiny accidental remnant while its final replacement is also present.",
-          "0": "Score 0 if any superseded value replaces its final activation value or if two or more superseded values are visible."
+          "2": "Score 2 only if none of the four superseded values is visible as active copy.",
+          "1": "Score 1 only if exactly one appears as a tiny accidental remnant while its final replacement is also clearly present.",
+          "0": "Score 0 if any superseded value replaces its final publication value or if two or more superseded values are visible."
         }
       },
       {
         "id": "grounded_q12",
-        "state": "Is the final image free of internal production identifiers and unrelated campaign copy; specifically, so that no activation, experiment, bundle, asset, profile, approval, revision, or worksheet identifier is visible, and no unrelated campaign slogan or browser fragment appears?",
+        "state": "Is the final image free of publication, activation, overlay, manifest, candidate-pack, asset, QA, legal, profile, approval, revision, worksheet, and other internal production identifiers?",
         "score_criteria": {
-          "2": "Score 2 if none of the listed internal or unrelated content is visible.",
-          "1": "Score 1 if exactly one tiny ambiguous non-core fragment remains but is not a readable identifier or claim.",
-          "0": "Score 0 if a production identifier or unrelated campaign statement is readable, or if multiple source fragments remain."
+          "2": "Score 2 only if no readable internal identifier, status, source field, decision trace, or unrelated campaign fragment is visible.",
+          "1": "Score 1 only if exactly one tiny ambiguous non-core fragment remains but is not a readable identifier, status, or claim.",
+          "0": "Score 0 if any internal production identifier or status is readable, a source/debug fragment appears, or multiple unrelated fragments remain."
         }
       }
     ]

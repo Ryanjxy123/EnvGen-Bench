@@ -31,7 +31,7 @@ These rules are applied **after** the correction-request rules in `controlled_co
 
 ## Diagram handoff
 
-- Subtitle: `Catalog 4.8 | Bundle CB-0626-B | Wave DW-0630-C | 27 entities | 33 relationships`.
+- The production layer resolves to 27 entities and 33 relationships before any later governed architecture-view projection. When `architecture_projection_rules.md` is requested, that later projection controls the final title, subtitle, visible set, and totals.
 - Add a compact root-request provenance tag to an entity when its active entity name or displayed business fact differs from the Catalog 4.8 baseline.
 - Do not show deployment unit IDs, event states, rollback notes, or atomic-group names as diagram nodes.
 - Rolled-back or suspended changes must not appear as the current production state.

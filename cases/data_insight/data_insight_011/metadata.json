@@ -3,37 +3,47 @@
   "task_type": "data_insight",
   "web_policy": "closed_env",
   "target_image_type": "retail_store_triage_infographic",
-  "difficulty": "hard",
+  "difficulty": "extreme_but_natural",
   "data_strength": {
-    "sqlite_total_rows": 287,
+    "sqlite_total_rows": 3381,
     "table_row_counts": {
       "regions": 4,
-      "stores": 13,
-      "sales_ledger": 90,
-      "returns_ledger": 90,
-      "staffing_ledger": 90
+      "stores": 25,
+      "close_package_log": 60,
+      "sales_ledger": 1050,
+      "returns_ledger": 1050,
+      "staffing_ledger": 1050,
+      "store_scope_log": 75,
+      "format_benchmarks": 27,
+      "triage_policy_log": 4,
+      "metric_adjustment_log": 36
     },
-    "valid_open_store_fact_rows": 216,
-    "notes": "12 open stores x 6 months x 3 ledgers = 216 core fact rows, plus one seasonal-pause location and business-noise reconciliation rows."
+    "store_count": 25,
+    "q4_active_store_count": 24,
+    "comparable_store_count": 20,
+    "monthly_close_versions_per_month": 3,
+    "additional_nonfinal_package_types": 4,
+    "review_cutoff": "2027-01-08T17:00:00",
+    "notes": "The final dashboard remains concise, but the result requires point-in-time package resolution, same-timestamp revision precedence, current store scope, format benchmarks, approved adjustments, comparable-cohort aggregation, opportunity gating, risk-breach ranking, and schedule-weighted regional coverage."
   },
   "env_files": [
     {
       "path": "env/store_ops.sqlite",
-      "role": "SQLite operations dataset with store, region, sales, returns, and staffing ledgers. Requires joining by store and month, then aggregating by store and region.",
+      "role": "Versioned Q3/Q4 store-operations database with 25 locations, seven package contexts per month, sales/returns/staffing ledgers, effective store scope, format benchmarks, triage policy, and metric-adjustment history.",
       "format": "sqlite",
-      "origin": "generated"
+      "origin": "benchmark-authored"
     },
     {
       "path": "env/ops_review_notes.md",
-      "role": "Natural-language analyst notes about the Q4 review, valid close context, and business metric meanings. It gives calculation intent in semantic language and includes a few non-headline metric distractors.",
+      "role": "Controlling business rules for close-package resolution, current-scope selection, adjusted metrics, comparable cohort, opportunity gates, intervention ranking, regional context, and required executive output.",
       "format": "md",
-      "origin": "generated"
+      "origin": "benchmark-authored"
     },
     {
       "path": "env/close_feed_glossary.md",
-      "role": "Business glossary for close streams, posting states, and lifecycle terms. It explains source semantics without giving a SQL filter or ranking recipe.",
+      "role": "Business glossary for close states, non-final feed contexts, active/comparable scope, approved return exclusions, staffing credits, and format benchmarks.",
       "format": "md",
-      "origin": "generated"
+      "origin": "benchmark-authored"
     }
   ],
   "source_policy": {
@@ -46,8 +56,14 @@
       "expected_facts.json",
       "scoring_checklist.json"
     ],
-    "web_usage_note": "Closed-env case: web access is not allowed; solve from workspace files only."
+    "web_usage_note": "Closed-env case: web access is not allowed."
   },
-  "design_notes": "No ranking_rules.json is included. Required metric logic is described in ordinary business language: net sales after returns, quarter lift, labor productivity, return pressure, and staffing coverage. The environment also includes unused but plausible close metrics to prevent the notes from becoming a direct answer path. The answer still requires joining sales, returns, staffing, stores, and regions, selecting the current signed-off close context from business semantics, and aggregating Q3/Q4 results.",
-  "version_note": "v4: restores necessary calculation guidance as semantic business metric definitions rather than column-name formulas; adds unused but plausible ops metrics as distractors."
+  "design_notes": [
+    "The final visual does not require more cards or more relationships than the prior case.",
+    "Difficulty is concentrated in state resolution, cohort scope, adjustments, thresholds, and competing signals.",
+    "The raw growth leader is intentionally different from the scalable opportunity.",
+    "The visually obvious raw-return risk is neutralized by an approved adjustment, so the intervention leader must be recomputed.",
+    "Each Grounded VQA checks a compact rational bundle of approximately three to five facts.",
+    "The one visual VQA and its complete 0/1/2 rubric are unchanged."
+  ]
 }

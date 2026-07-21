@@ -1,0 +1,141 @@
+manifest_id,rule_key,recorded_at,revision_no,rule_state,apply_order,action,target_kind,target_name,relationship_parent,relationship_child,foreign_key,replacement_value,note
+VPM-0630-C,VP-101,2026-06-30T16:18:00,6,DRAFT,10,HIDE_ENTITY,entity,Request Commitment Event,,,,,Earlier draft; not controlling
+VPM-0630-C,VP-101,2026-06-30T16:22:00,7,INACTIVE,10,HIDE_ENTITY,entity,Request Commitment Event,,,,,Same-timestamp lower revision
+VPM-0630-C,VP-101,2026-06-30T16:22:00,8,ACTIVE,10,HIDE_ENTITY,entity,Request Commitment Event,,,,,Controlling revision
+VPM-0630-C,VP-101,2026-06-30T16:31:00,9,ACTIVE,10,SHOW_ENTITY,entity,Request Commitment Event,,,,Request Commitment Event,Post-cutoff row; ignore
+VPM-0630-C,VP-102,2026-06-30T16:18:00,6,DRAFT,20,HIDE_ENTITY,entity,Skill,,,,,Earlier draft; not controlling
+VPM-0630-C,VP-102,2026-06-30T16:22:00,7,INACTIVE,20,HIDE_ENTITY,entity,Skill,,,,,Same-timestamp lower revision
+VPM-0630-C,VP-102,2026-06-30T16:22:00,8,ACTIVE,20,HIDE_ENTITY,entity,Skill,,,,,Controlling revision
+VPM-0630-C,VP-102,2026-06-30T16:31:00,9,ACTIVE,20,SHOW_ENTITY,entity,Skill,,,,Skill,Post-cutoff row; ignore
+VPM-0630-C,VP-103,2026-06-30T16:18:00,6,DRAFT,30,HIDE_ENTITY,entity,Technician Skill,,,,,Earlier draft; not controlling
+VPM-0630-C,VP-103,2026-06-30T16:22:00,7,INACTIVE,30,HIDE_ENTITY,entity,Technician Skill,,,,,Same-timestamp lower revision
+VPM-0630-C,VP-103,2026-06-30T16:22:00,8,ACTIVE,30,HIDE_ENTITY,entity,Technician Skill,,,,,Controlling revision
+VPM-0630-C,VP-103,2026-06-30T16:31:00,9,ACTIVE,30,SHOW_ENTITY,entity,Technician Skill,,,,Technician Skill,Post-cutoff row; ignore
+VPM-0630-C,VP-104,2026-06-30T16:18:00,6,DRAFT,40,RENAME_ENTITY,entity,Customer Contact,,,,Client Contact,Earlier draft; not controlling
+VPM-0630-C,VP-104,2026-06-30T16:22:00,7,ACTIVE,40,RENAME_ENTITY,entity,Customer Contact,,,,Client Contact,Same-timestamp lower revision
+VPM-0630-C,VP-104,2026-06-30T16:22:00,8,ACTIVE,40,RENAME_ENTITY,entity,Customer Contact,,,,Service Contact,Controlling revision
+VPM-0630-C,VP-104,2026-06-30T16:31:00,9,ACTIVE,40,RENAME_ENTITY,entity,Customer Contact,,,,Client Contact,Post-cutoff row; ignore
+VPM-0630-C,VP-105,2026-06-30T16:18:00,6,DRAFT,50,HIDE_RELATIONSHIP,relationship,,Service Agreement,Service Request,agreement_id,,Earlier draft; not controlling
+VPM-0630-C,VP-105,2026-06-30T16:22:00,7,INACTIVE,50,HIDE_RELATIONSHIP,relationship,,Service Agreement,Service Request,agreement_id,,Same-timestamp lower revision
+VPM-0630-C,VP-105,2026-06-30T16:22:00,8,ACTIVE,50,HIDE_RELATIONSHIP,relationship,,Service Agreement,Service Request,agreement_id,,Controlling revision
+VPM-0630-C,VP-105,2026-06-30T16:31:00,9,ACTIVE,50,SHOW_RELATIONSHIP,relationship,,Service Agreement,Service Request,agreement_id,,Post-cutoff row; ignore
+VPM-0630-C,VP-106,2026-06-30T16:18:00,6,DRAFT,60,RENAME_ENTITY,entity,Request Coverage Decision,,,,Coverage Assessment,Earlier draft; not controlling
+VPM-0630-C,VP-106,2026-06-30T16:22:00,7,ACTIVE,60,RENAME_ENTITY,entity,Request Coverage Decision,,,,Coverage Assessment,Same-timestamp lower revision
+VPM-0630-C,VP-106,2026-06-30T16:22:00,8,ACTIVE,60,RENAME_ENTITY,entity,Request Coverage Decision,,,,Coverage Determination,Controlling revision
+VPM-0630-C,VP-106,2026-06-30T16:31:00,9,ACTIVE,60,RENAME_ENTITY,entity,Request Coverage Decision,,,,Coverage Assessment,Post-cutoff row; ignore
+VPM-0630-C,VP-107,2026-06-30T16:18:00,6,DRAFT,70,RENAME_FACT,fact,Request Coverage Decision,,,,coverage_status,Earlier draft; not controlling
+VPM-0630-C,VP-107,2026-06-30T16:22:00,7,ACTIVE,70,RENAME_FACT,fact,Request Coverage Decision,,,,coverage_status,Same-timestamp lower revision
+VPM-0630-C,VP-107,2026-06-30T16:22:00,8,ACTIVE,70,RENAME_FACT,fact,Request Coverage Decision,,,,coverage_outcome,Controlling revision
+VPM-0630-C,VP-107,2026-06-30T16:31:00,9,ACTIVE,70,RENAME_FACT,fact,Request Coverage Decision,,,,coverage_status,Post-cutoff row; ignore
+VPM-0630-C,VP-108,2026-06-30T16:18:00,6,DRAFT,80,RENAME_FACT,fact,Work Order Assignment,,,,assignment_type,Earlier draft; not controlling
+VPM-0630-C,VP-108,2026-06-30T16:22:00,7,ACTIVE,80,RENAME_FACT,fact,Work Order Assignment,,,,assignment_type,Same-timestamp lower revision
+VPM-0630-C,VP-108,2026-06-30T16:22:00,8,ACTIVE,80,RENAME_FACT,fact,Work Order Assignment,,,,assignment_function,Controlling revision
+VPM-0630-C,VP-108,2026-06-30T16:31:00,9,ACTIVE,80,RENAME_FACT,fact,Work Order Assignment,,,,assignment_type,Post-cutoff row; ignore
+VPM-0630-C,VP-109,2026-06-30T16:18:00,6,DRAFT,90,HIDE_ENTITY,entity,Visit Note,,,,,Earlier draft; not controlling
+VPM-0630-C,VP-109,2026-06-30T16:22:00,7,INACTIVE,90,HIDE_ENTITY,entity,Visit Note,,,,,Same-timestamp lower revision
+VPM-0630-C,VP-109,2026-06-30T16:22:00,8,ACTIVE,90,HIDE_ENTITY,entity,Visit Note,,,,,Controlling revision
+VPM-0630-C,VP-109,2026-06-30T16:31:00,9,ACTIVE,90,SHOW_ENTITY,entity,Visit Note,,,,Visit Note,Post-cutoff row; ignore
+VPM-0630-C,VP-110,2026-06-30T16:18:00,6,DRAFT,100,RENAME_ENTITY,entity,Work Order Checklist,,,,Work Close Checklist,Earlier draft; not controlling
+VPM-0630-C,VP-110,2026-06-30T16:22:00,7,ACTIVE,100,RENAME_ENTITY,entity,Work Order Checklist,,,,Work Close Checklist,Same-timestamp lower revision
+VPM-0630-C,VP-110,2026-06-30T16:22:00,8,ACTIVE,100,RENAME_ENTITY,entity,Work Order Checklist,,,,Work Completion Checklist,Controlling revision
+VPM-0630-C,VP-110,2026-06-30T16:31:00,9,ACTIVE,100,RENAME_ENTITY,entity,Work Order Checklist,,,,Work Close Checklist,Post-cutoff row; ignore
+VPM-0630-C,VP-111,2026-06-30T16:18:00,6,DRAFT,110,RENAME_FACT,fact,Visit Signature,,,,acceptor_role,Earlier draft; not controlling
+VPM-0630-C,VP-111,2026-06-30T16:22:00,7,ACTIVE,110,RENAME_FACT,fact,Visit Signature,,,,acceptor_role,Same-timestamp lower revision
+VPM-0630-C,VP-111,2026-06-30T16:22:00,8,ACTIVE,110,RENAME_FACT,fact,Visit Signature,,,,accepted_by_role,Controlling revision
+VPM-0630-C,VP-111,2026-06-30T16:31:00,9,ACTIVE,110,RENAME_FACT,fact,Visit Signature,,,,acceptor_role,Post-cutoff row; ignore
+VPM-0630-A,ARCH-001,2026-06-30T16:08:00,3,ACTIVE,201,RENAME_ENTITY,entity,Customer,,,,Customer Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-A,ARCH-002,2026-06-30T16:09:00,4,ACTIVE,202,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-A,ARCH-003,2026-06-30T16:10:00,5,ACTIVE,203,RENAME_ENTITY,entity,Service Agreement,,,,Service Agreement Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-A,ARCH-004,2026-06-30T16:11:00,6,ACTIVE,204,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-A,ARCH-005,2026-06-30T16:12:00,3,ACTIVE,205,RENAME_ENTITY,entity,Agreement Asset,,,,Agreement Asset Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-A,ARCH-006,2026-06-30T16:13:00,4,ACTIVE,206,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-A,ARCH-007,2026-06-30T16:14:00,5,ACTIVE,207,RENAME_ENTITY,entity,Technician,,,,Technician Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-A,ARCH-008,2026-06-30T16:15:00,6,ACTIVE,208,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-A,ARCH-009,2026-06-30T16:16:00,3,ACTIVE,209,RENAME_ENTITY,entity,Part,,,,Part Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-A,ARCH-010,2026-06-30T16:17:00,4,ACTIVE,210,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-A,ARCH-011,2026-06-30T16:18:00,5,ACTIVE,211,RENAME_ENTITY,entity,Time Entry,,,,Time Entry Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-A,ARCH-012,2026-06-30T16:19:00,6,ACTIVE,212,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-A,ARCH-013,2026-06-30T16:20:00,3,ACTIVE,213,RENAME_ENTITY,entity,Visit Signature,,,,Visit Signature Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-A,ARCH-014,2026-06-30T16:21:00,4,ACTIVE,214,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-A,ARCH-015,2026-06-30T16:22:00,5,ACTIVE,215,RENAME_ENTITY,entity,Invoice,,,,Invoice Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-A,ARCH-016,2026-06-30T16:23:00,6,ACTIVE,216,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-A,ARCH-017,2026-06-30T16:24:00,3,ACTIVE,217,RENAME_ENTITY,entity,Invoice Line,,,,Invoice Line Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-A,ARCH-018,2026-06-30T16:25:00,4,ACTIVE,218,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-A,ARCH-019,2026-06-30T16:26:00,5,ACTIVE,219,RENAME_ENTITY,entity,Payment Allocation,,,,Payment Allocation Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-A,ARCH-020,2026-06-30T16:00:00,6,ACTIVE,220,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-A,ARCH-021,2026-06-30T16:01:00,3,ACTIVE,221,RENAME_ENTITY,entity,Refund,,,,Refund Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-A,ARCH-022,2026-06-30T16:02:00,4,ACTIVE,222,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-A,ARCH-023,2026-06-30T16:03:00,5,ACTIVE,223,RENAME_ENTITY,entity,Dispatch Slot,,,,Dispatch Slot Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-A,ARCH-024,2026-06-30T16:04:00,6,ACTIVE,224,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-B,ARCH-025,2026-06-30T16:08:00,3,ACTIVE,225,RENAME_ENTITY,entity,Customer,,,,Customer Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-B,ARCH-026,2026-06-30T16:09:00,4,ACTIVE,226,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-B,ARCH-027,2026-06-30T16:10:00,5,ACTIVE,227,RENAME_ENTITY,entity,Service Agreement,,,,Service Agreement Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-B,ARCH-028,2026-06-30T16:11:00,6,ACTIVE,228,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-B,ARCH-029,2026-06-30T16:12:00,3,ACTIVE,229,RENAME_ENTITY,entity,Agreement Asset,,,,Agreement Asset Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-B,ARCH-030,2026-06-30T16:13:00,4,ACTIVE,230,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-B,ARCH-031,2026-06-30T16:14:00,5,ACTIVE,231,RENAME_ENTITY,entity,Technician,,,,Technician Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-B,ARCH-032,2026-06-30T16:15:00,6,ACTIVE,232,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-B,ARCH-033,2026-06-30T16:16:00,3,ACTIVE,233,RENAME_ENTITY,entity,Part,,,,Part Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-B,ARCH-034,2026-06-30T16:17:00,4,ACTIVE,234,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-B,ARCH-035,2026-06-30T16:18:00,5,ACTIVE,235,RENAME_ENTITY,entity,Time Entry,,,,Time Entry Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-B,ARCH-036,2026-06-30T16:19:00,6,ACTIVE,236,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-B,ARCH-037,2026-06-30T16:20:00,3,ACTIVE,237,RENAME_ENTITY,entity,Visit Signature,,,,Visit Signature Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-B,ARCH-038,2026-06-30T16:21:00,4,ACTIVE,238,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-B,ARCH-039,2026-06-30T16:22:00,5,ACTIVE,239,RENAME_ENTITY,entity,Invoice,,,,Invoice Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-B,ARCH-040,2026-06-30T16:23:00,6,ACTIVE,240,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-B,ARCH-041,2026-06-30T16:24:00,3,ACTIVE,241,RENAME_ENTITY,entity,Invoice Line,,,,Invoice Line Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-B,ARCH-042,2026-06-30T16:25:00,4,ACTIVE,242,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-B,ARCH-043,2026-06-30T16:26:00,5,ACTIVE,243,RENAME_ENTITY,entity,Payment Allocation,,,,Payment Allocation Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-B,ARCH-044,2026-06-30T16:00:00,6,ACTIVE,244,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-B,ARCH-045,2026-06-30T16:01:00,3,ACTIVE,245,RENAME_ENTITY,entity,Refund,,,,Refund Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-B,ARCH-046,2026-06-30T16:02:00,4,ACTIVE,246,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-B,ARCH-047,2026-06-30T16:03:00,5,ACTIVE,247,RENAME_ENTITY,entity,Dispatch Slot,,,,Dispatch Slot Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-B,ARCH-048,2026-06-30T16:04:00,6,ACTIVE,248,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-D,ARCH-049,2026-06-30T16:08:00,3,ACTIVE,249,RENAME_ENTITY,entity,Customer,,,,Customer Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-D,ARCH-050,2026-06-30T16:09:00,4,ACTIVE,250,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-D,ARCH-051,2026-06-30T16:10:00,5,ACTIVE,251,RENAME_ENTITY,entity,Service Agreement,,,,Service Agreement Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-D,ARCH-052,2026-06-30T16:11:00,6,ACTIVE,252,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-D,ARCH-053,2026-06-30T16:12:00,3,ACTIVE,253,RENAME_ENTITY,entity,Agreement Asset,,,,Agreement Asset Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-D,ARCH-054,2026-06-30T16:13:00,4,ACTIVE,254,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-D,ARCH-055,2026-06-30T16:14:00,5,ACTIVE,255,RENAME_ENTITY,entity,Technician,,,,Technician Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-D,ARCH-056,2026-06-30T16:15:00,6,ACTIVE,256,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-D,ARCH-057,2026-06-30T16:16:00,3,ACTIVE,257,RENAME_ENTITY,entity,Part,,,,Part Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-D,ARCH-058,2026-06-30T16:17:00,4,ACTIVE,258,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-D,ARCH-059,2026-06-30T16:18:00,5,ACTIVE,259,RENAME_ENTITY,entity,Time Entry,,,,Time Entry Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-D,ARCH-060,2026-06-30T16:19:00,6,ACTIVE,260,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-D,ARCH-061,2026-06-30T16:20:00,3,ACTIVE,261,RENAME_ENTITY,entity,Visit Signature,,,,Visit Signature Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-D,ARCH-062,2026-06-30T16:21:00,4,ACTIVE,262,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-D,ARCH-063,2026-06-30T16:22:00,5,ACTIVE,263,RENAME_ENTITY,entity,Invoice,,,,Invoice Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-D,ARCH-064,2026-06-30T16:23:00,6,ACTIVE,264,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-D,ARCH-065,2026-06-30T16:24:00,3,ACTIVE,265,RENAME_ENTITY,entity,Invoice Line,,,,Invoice Line Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-D,ARCH-066,2026-06-30T16:25:00,4,ACTIVE,266,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-D,ARCH-067,2026-06-30T16:26:00,5,ACTIVE,267,RENAME_ENTITY,entity,Payment Allocation,,,,Payment Allocation Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-D,ARCH-068,2026-06-30T16:00:00,6,ACTIVE,268,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-D,ARCH-069,2026-06-30T16:01:00,3,ACTIVE,269,RENAME_ENTITY,entity,Refund,,,,Refund Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-D,ARCH-070,2026-06-30T16:02:00,4,ACTIVE,270,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-D,ARCH-071,2026-06-30T16:03:00,5,ACTIVE,271,RENAME_ENTITY,entity,Dispatch Slot,,,,Dispatch Slot Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-D,ARCH-072,2026-06-30T16:04:00,6,ACTIVE,272,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-E,ARCH-073,2026-06-30T16:08:00,3,ACTIVE,273,RENAME_ENTITY,entity,Customer,,,,Customer Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-E,ARCH-074,2026-06-30T16:09:00,4,ACTIVE,274,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-E,ARCH-075,2026-06-30T16:10:00,5,ACTIVE,275,RENAME_ENTITY,entity,Service Agreement,,,,Service Agreement Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-E,ARCH-076,2026-06-30T16:11:00,6,ACTIVE,276,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-E,ARCH-077,2026-06-30T16:12:00,3,ACTIVE,277,RENAME_ENTITY,entity,Agreement Asset,,,,Agreement Asset Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-E,ARCH-078,2026-06-30T16:13:00,4,ACTIVE,278,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-E,ARCH-079,2026-06-30T16:14:00,5,ACTIVE,279,RENAME_ENTITY,entity,Technician,,,,Technician Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-E,ARCH-080,2026-06-30T16:15:00,6,ACTIVE,280,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-E,ARCH-081,2026-06-30T16:16:00,3,ACTIVE,281,RENAME_ENTITY,entity,Part,,,,Part Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-E,ARCH-082,2026-06-30T16:17:00,4,ACTIVE,282,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-E,ARCH-083,2026-06-30T16:18:00,5,ACTIVE,283,RENAME_ENTITY,entity,Time Entry,,,,Time Entry Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-E,ARCH-084,2026-06-30T16:19:00,6,ACTIVE,284,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-E,ARCH-085,2026-06-30T16:20:00,3,ACTIVE,285,RENAME_ENTITY,entity,Visit Signature,,,,Visit Signature Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-E,ARCH-086,2026-06-30T16:21:00,4,ACTIVE,286,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-E,ARCH-087,2026-06-30T16:22:00,5,ACTIVE,287,RENAME_ENTITY,entity,Invoice,,,,Invoice Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-E,ARCH-088,2026-06-30T16:23:00,6,ACTIVE,288,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-E,ARCH-089,2026-06-30T16:24:00,3,ACTIVE,289,RENAME_ENTITY,entity,Invoice Line,,,,Invoice Line Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-E,ARCH-090,2026-06-30T16:25:00,4,ACTIVE,290,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-E,ARCH-091,2026-06-30T16:26:00,5,ACTIVE,291,RENAME_ENTITY,entity,Payment Allocation,,,,Payment Allocation Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-E,ARCH-092,2026-06-30T16:00:00,6,ACTIVE,292,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-E,ARCH-093,2026-06-30T16:01:00,3,ACTIVE,293,RENAME_ENTITY,entity,Refund,,,,Refund Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-E,ARCH-094,2026-06-30T16:02:00,4,ACTIVE,294,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-E,ARCH-095,2026-06-30T16:03:00,5,ACTIVE,295,RENAME_ENTITY,entity,Dispatch Slot,,,,Dispatch Slot Review View,"Archived, wrong audience, future, or wrong-scope manifest rule"
+VPM-0630-E,ARCH-096,2026-06-30T16:04:00,6,ACTIVE,296,HIDE_RELATIONSHIP,relationship,,Invoice,Payment,payment_id,,"Archived, wrong audience, future, or wrong-scope manifest rule"

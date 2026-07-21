@@ -1,15 +1,17 @@
-# Close Feed Glossary
+# Store Operations Close Glossary
 
-`monthly_store_close` is the store-level close stream that remains in the books after store operations finishes the monthly close process.
+`monthly_store_close` is the store-level close feed used for final performance after the controlling package is signed off.
 
-`planning_refresh` is a manager planning view that may still change before close.
+`planning_refresh`, `district_rollup_copy`, `qa_rebuild`, and `cutover_archive` are useful operational or reconciliation contexts, but none is the final store-level close feed.
 
-`district_rollup_copy` is a district-level subtotal or reconciliation copy. It is useful when checking totals, but it is not a single-store final line.
+A package can be `working`, `reopened`, `signed_off`, or `superseded`. A later package version does not control merely because it has a higher version number; its resolved state must be signed off before the review cutoff.
 
-`qa_rebuild` is a quality-control rebuild from the data pipeline.
+`active_q4_flag` determines whether a store belongs in the company Q4 headline after the operating-day minimum is applied.
 
-`cutover_archive` is an older pipeline pull kept for transition checks.
+`comparable_flag` identifies stores with a valid like-for-like Q3 base. New, reopened, renovation-affected, and seasonal-pause locations can have ledger values but must not enter comparable growth, opportunity, risk, or region rankings.
 
-`posting_state` describes where a line was in the close process. `signed_off` means operations has stopped editing that month. Other states are working, rollup, sandbox, or archive views.
+A `return_exclusion_value` is a formally approved amount, such as a vendor-funded recall, that is added back when calculating store-performance net sales and removed from return pressure.
 
-`lifecycle` describes whether a location is in the current operating rotation. A `seasonal_pause` location can still have historical rows, but it is not part of the current operating set that leadership is triaging.
+A `coverage_credit_hours` adjustment counts only when its controlling status is approved. Proposed, rejected, revoked, and post-cutoff rows do not change staffing coverage.
+
+Format benchmarks are point-in-time controls. The current approved productivity floor and return-rate ceiling must be resolved by format before evaluating opportunity and risk.

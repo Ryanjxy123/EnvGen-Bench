@@ -89,5 +89,5 @@
     "valid_portfolios": 18,
     "final_selected": 5
   },
-  "notes": "Strengthened versioned multi-source volunteer portfolio selection with same-time revision traps, post-cutoff decoys, active hold deductions, safety and public-fit controls, constrained five-role portfolio optimization, check-in calculations, set membership, summary metrics, and non-overlapping pair selection."
+  "notes": "Self-contained as-of volunteer selection. Staffing feasibility now explicitly uses expected attendance; global ranks are preserved rather than renumbered; task, expected facts, and VQAs use consistent duration units and non-duplicated event/action checks."
 }

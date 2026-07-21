@@ -4,122 +4,113 @@
   "facts": [
     {
       "id": "course_identity",
-      "description": "Public course identity and term.",
-      "source": "env/Spring_2026_Continuing_Education_Catalog.pdf page 13; env/Spring_Course_Spotlight_Request.docx",
+      "description": "Full catalog course identity.",
+      "source": "env/Spring_2026_Continuing_Education_Catalog.pdf page 13",
       "importance": "critical",
       "expected_value": "Fly Fishing Fundamentals: From Casting to Catching; PE-087; Spring 2026",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "updated_course_run",
-      "description": "Reconciled overall run and session count.",
-      "source": "Catalog page 13 plus applicable registrar records effective by 2026-02-20",
+      "id": "course_run_and_hours",
+      "description": "Reconciled run, count, and derived scheduled hours.",
+      "source": "Catalog page 13 plus applicable registrar end-date record; calculate 3 x 2 indoor hours + 2 x 2 outdoor hours",
       "importance": "critical",
-      "expected_value": "March 24-April 23, 2026; 5 sessions",
-      "semantic_acceptance": "Accept Mar 24-Apr 23 and equivalent date formatting. Spring 2026 may convey the year.",
+      "expected_value": "March 24-April 23, 2026; exactly five sessions; 10 total scheduled instruction hours",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "indoor_stage",
-      "description": "Indoor foundation stage with inferred session dates and updated room.",
-      "source": "Catalog pages 2 and 13 plus applicable registrar records",
+      "id": "indoor_dates_weekdays_time",
+      "description": "Indoor stage dates with derived weekdays and time.",
+      "source": "Catalog page 13 plus calendar derivation",
       "importance": "critical",
-      "expected_value": "March 24, March 31, and April 7; 5:30 PM-7:30 PM; Garrett Information Enterprise Center, Room 111, McHenry",
-      "semantic_acceptance": "Accept GIEC with Room 111 as a concise facility label, but the full public facility name is preferred.",
+      "expected_value": "Tuesday March 24, Tuesday March 31, Tuesday April 7; 5:30 PM-7:30 PM",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "outdoor_stage",
-      "description": "Updated outdoor practice dates, time, meeting place, and caveat.",
-      "source": "Catalog page 13 plus applicable registrar records",
+      "id": "indoor_meeting_place",
+      "description": "Expanded indoor location and public street address.",
+      "source": "Catalog page 2 location key and applicable registrar indoor facility/room records",
       "importance": "critical",
-      "expected_value": "April 14 and April 23; 6:00 PM-8:00 PM; Deep Creek Lake State Park Discovery Center, McHenry; weather dependent",
+      "expected_value": "Garrett Information Enterprise Center (GIEC), Room 111, 687 Mosser Road, McHenry",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "fee_deadline_cta",
-      "description": "Current price and public registration action.",
-      "source": "Applicable registrar records and campaign standards",
+      "id": "outdoor_dates_weekdays_time",
+      "description": "Outdoor dates, derived weekdays, time, and condition.",
+      "source": "Catalog page 13 plus applicable registrar session-five/end-date records and calendar derivation",
       "importance": "critical",
-      "expected_value": "$95; Register by March 19, 2026; garrettcollege.edu/cewd/register",
+      "expected_value": "Tuesday April 14 and Thursday April 23; 6:00 PM-8:00 PM; weather dependent",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "instructor_audience",
-      "description": "Instructor and both intended experience groups.",
+      "id": "outdoor_meeting_place",
+      "description": "Stage relationship and current partner-site meeting place.",
+      "source": "Catalog page 13 plus applicable registrar outdoor facility record",
+      "importance": "critical",
+      "expected_value": "Final two sessions / sessions 4-5 are outdoors at Deep Creek Lake State Park Discovery Center, McHenry",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "registration_package",
+      "description": "Current registration facts plus catalog registration basis.",
+      "source": "Applicable registrar fee, deadline, and URL records plus catalog page 37",
+      "importance": "critical",
+      "expected_value": "$95; March 19, 2026; garrettcollege.edu/cewd/register; registrations are first-come, first-served",
+      "must_appear_in_image": true,
+      "evaluation_role": "critical_required"
+    },
+    {
+      "id": "instructor_audience_summary",
+      "description": "Instructor, audience, and original course-summary meaning.",
       "source": "Catalog page 13 and creative request",
       "importance": "major",
-      "expected_value": "Instructor Rita Lewis; suitable for beginners and people refining existing fly-fishing skills",
+      "expected_value": "Rita Lewis; both first-time fly fishers and people refining existing skills; hands-on instruction progressing from essentials toward experienced techniques",
       "must_appear_in_image": true,
       "evaluation_role": "major_required"
     },
     {
-      "id": "learning_takeaways",
-      "description": "Exactly three ordered and grounded learning takeaways.",
-      "source": "Catalog page 13 and creative request",
+      "id": "takeaway_structure",
+      "description": "Required takeaway count and progression.",
+      "source": "Creative request and campaign standards",
       "importance": "critical",
-      "expected_value": {
-        "count_and_order": "Exactly three, ordered gear choice, setup and knots, then casting",
-        "gear": "Essential equipment, preferably rods, fly lines, and reels",
-        "setup": "Rod assembly plus essential knots or gear assembly",
-        "casting": "Casting accuracy and distance"
-      },
+      "expected_value": "Exactly three takeaways, ordered essential gear; rod setup and knots; casting",
       "must_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "participant_preparation",
-      "description": "Latest released participant-preparation instruction.",
-      "source": "Applicable registrar participant_note record effective 2026-02-19",
-      "importance": "major",
-      "expected_value": "Loaner rods are available; bring weather-ready layers and a valid Maryland fishing license for the outdoor sessions",
-      "semantic_acceptance": "Concise paraphrases are acceptable if all three ideas remain clear.",
-      "must_appear_in_image": true,
-      "evaluation_role": "major_required"
-    },
-    {
-      "id": "eligible_assets",
-      "description": "Current course image and campaign mark selected from the asset library.",
-      "source": "env/Spring_2026_Campaign_Standards.pdf page 3; env/assets/",
+      "id": "takeaway_details",
+      "description": "Catalog-specific detail retained while condensing seven highlights.",
+      "source": "Catalog page 13 course highlights",
       "importance": "critical",
-      "expected_value": "Use media_104.jpg as one contained course image and brand_26_h.png as the undistorted footer mark; do not use media_118.jpg or brand_24_s.png",
+      "expected_value": "Rods, fly lines, and reels; fly-rod parts and assembly; essential knots or gear assembly; casting accuracy and distance",
       "must_appear_in_image": true,
-      "must_not_appear_in_image": true,
       "evaluation_role": "critical_required"
     },
     {
-      "id": "campaign_visual_system",
-      "description": "Case-specific palette and typography.",
-      "source": "env/Spring_2026_Campaign_Standards.pdf pages 1-2",
+      "id": "participant_and_weather_note",
+      "description": "Latest participant preparation plus public inclement-weather contact.",
+      "source": "Applicable registrar participant_note record and catalog page 39",
       "importance": "major",
-      "expected_value": "Teal, charcoal, warm gray, and white dominate; yellow is a small deadline accent; clean sans-serif typography; no script, serif display, brush, western, or novelty type",
-      "must_appear_in_image": true,
-      "must_not_appear_in_image": true,
-      "evaluation_role": "major_required"
-    },
-    {
-      "id": "poster_hierarchy",
-      "description": "Readable public-facing information architecture.",
-      "source": "env/Spring_2026_Campaign_Standards.pdf page 2",
-      "importance": "major",
-      "expected_value": "Compact title, one contained course image, two labeled schedule stages, concise key facts, one participant note, exactly three takeaways, prominent deadline-plus-URL CTA, and unobstructed footer mark",
+      "expected_value": "Loaner rods available; weather-ready layers; valid Maryland fishing license for outdoor sessions; weather line 301-387-3198",
       "must_appear_in_image": true,
       "evaluation_role": "major_required"
     },
     {
-      "id": "exclude_unrelated_copy",
-      "description": "No neighboring-course or internal audit material should be published.",
-      "source": "All env sources",
+      "id": "refund_and_exclusions",
+      "description": "Public refund summary and prohibited stale/internal content.",
+      "source": "Catalog page 37 and all env sources",
       "importance": "major",
-      "expected_value": "No second course title or code, another instructor, phone or email, certification or prerequisite, full instructor biography, full catalog paragraph, or audit note",
+      "expected_value": "Full refund when withdrawing before the registration deadline; no refund after the second class session; no stale alternatives, neighboring-course content, instructor biography, registrar audit content, or general office contacts",
+      "must_appear_in_image": true,
       "must_not_appear_in_image": true,
-      "evaluation_role": "negative_only"
+      "evaluation_role": "major_required"
     }
   ],
-  "calculation_notes": "The agent must reconcile catalog facts with a 340-row audit log under an as-of date. The first three indoor dates are derived from the five-session sequence and the catalog's two stated outdoor dates; the final outdoor date, facilities, fee, deadline, CTA, and preparation note come from applicable registrar records. Asset selection requires matching subject, rights window, channel, and current identity rather than relying on answer-like filenames."
+  "calculation_notes": "The catalog is the primary document. The agent must locate PE-087 on page 13, expand GIEC and the public street address from page 2, retrieve first-come registration and refund rules from page 37, and retrieve the weather-line number from page 39. Current changed fields come from Approved registrar records effective on or before February 20, 2026. Weekdays must be derived from the reconciled 2026 dates, and total hours are 3 indoor sessions x 2 hours plus 2 outdoor sessions x 2 hours = 10 hours."
 }

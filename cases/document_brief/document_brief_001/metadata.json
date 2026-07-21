@@ -3,26 +3,26 @@
   "task_type": "document_brief",
   "web_policy": "closed_env",
   "target_image_type": "course_poster",
-  "difficulty": "medium_hard",
+  "difficulty": "hard",
   "scenario_date": "2026-02-20",
   "env_files": [
     {
       "path": "env/Spring_2026_Continuing_Education_Catalog.pdf",
       "format": "pdf",
-      "role": "Primary 40-page continuing-education catalog. It provides the PE-087 baseline, location key, term context, course description, neighboring-course distractors, and original scheduling pattern.",
+      "role": "Primary 40-page continuing-education catalog. It supplies the PE-087 listing, location key and address, course description and highlights, registration/refund rules, inclement-weather guidance, and realistic neighboring-course distractors.",
       "origin": "external_public_source",
       "source_title": "Garrett College Continuing Education Spring 2026",
       "page_count": 40,
-      "content_note": "PE-087 appears on PDF page 13; the location key is on PDF page 2. Applicable registrar records override matching fields.",
+      "content_note": "PE-087 appears on PDF page 13; location expansion is on page 2; registration and refund guidance is on page 37; the weather line is on page 39. Applicable registrar records override matching course fields.",
       "sha256": "b86e0e0d789bc750d431c7322f779feb8d3310868e9be0741db6e233ba889067"
     },
     {
       "path": "env/Spring_Course_Spotlight_Request.docx",
       "format": "docx",
-      "role": "One-page internal creative handoff defining the public content, schedule split, participant-preparation requirement, copy progression, and design priorities without supplying updated values.",
+      "role": "Two-page internal creative handoff defining the public content, catalog source map, derivations, three-takeaway progression, registration/refund/weather note, and prohibited content without supplying reconciled answer values.",
       "origin": "benchmark_authored",
-      "page_count": 1,
-      "sha256": "cf3f03019c64883c89ecbd1742aca00fc702e37c49718b7c0b4987f2a2188b6f"
+      "page_count": 2,
+      "sha256": "f686bff3d61065775d9b431215581c525fbe474bb4eec8df4b7a56d7a63d580a"
     },
     {
       "path": "env/Spring_2026_Registrar_Change_Log.xlsx",
@@ -37,10 +37,10 @@
     {
       "path": "env/Spring_2026_Campaign_Standards.pdf",
       "format": "pdf",
-      "role": "Three-page campaign standard covering output size, palette, typography, reading order, copy limits, asset rights, brand identity, and source precedence.",
+      "role": "Three-page campaign standard covering output size, visual system, expanded public-content architecture, copy limits, weekday/hour derivations, asset rights, brand identity, and source precedence.",
       "origin": "benchmark_authored",
       "page_count": 3,
-      "sha256": "8ad5cff2dd7be0057d00a79286f3edd3da718a29b0f3fb993454f11e08be428f"
+      "sha256": "670edc6467ed3eef498bf1c350631989c0153593946394fa965edc6880781f01"
     }
   ],
   "asset_files": [
@@ -109,6 +109,286 @@
       "format": "png",
       "sha256": "ce450000f855b40b80728dea0329f2d1bad9473335d203a212b30b8c27cf1ea3",
       "role": "Retired round seal retained as archive reference."
+    },
+    {
+      "path": "env/assets/media_301.jpg",
+      "format": "jpg",
+      "sha256": "3b86843127f36efa4f7cc995ffcf553ccad5935e439a9d44ef731e570f871317",
+      "role": "Catalog page 4 course photograph.",
+      "origin": "catalog_extracted",
+      "source_page": 4
+    },
+    {
+      "path": "env/assets/media_302.jpg",
+      "format": "jpg",
+      "sha256": "aeb01ab8e2bb4745a33353615fc04377ffdd6c9e657b6c13e264f3e7cd6e55ce",
+      "role": "Catalog page 6 instructor photograph.",
+      "origin": "catalog_extracted",
+      "source_page": 6
+    },
+    {
+      "path": "env/assets/media_303.jpg",
+      "format": "jpg",
+      "sha256": "10d101bed7f8c62b82183d6d3716c3d0c1aaa2dbf236334ad0561dcddc6c079f",
+      "role": "Catalog page 7 craft-course photograph.",
+      "origin": "catalog_extracted",
+      "source_page": 7
+    },
+    {
+      "path": "env/assets/media_304.jpg",
+      "format": "jpg",
+      "sha256": "2855a2ca7c051b0842b33cc4726d785e695b5f335f2245a60244079d40cdfdee",
+      "role": "Catalog page 8 art-course photograph.",
+      "origin": "catalog_extracted",
+      "source_page": 8
+    },
+    {
+      "path": "env/assets/media_305.jpg",
+      "format": "jpg",
+      "sha256": "3030069e56842153a9308dfae2fcf343260f34e1d766667d4b12a8b97c84bc49",
+      "role": "Catalog page 9 stained-glass course image.",
+      "origin": "catalog_extracted",
+      "source_page": 9
+    },
+    {
+      "path": "env/assets/media_306.jpg",
+      "format": "jpg",
+      "sha256": "6f66ec76d6b37b3689b916e27270ee8567fb564f2c823be3899d8370ec558de0",
+      "role": "Catalog page 9 stained-glass course image.",
+      "origin": "catalog_extracted",
+      "source_page": 9
+    },
+    {
+      "path": "env/assets/media_307.jpg",
+      "format": "jpg",
+      "sha256": "639994c5472e398d163ddc14015bfe8e08a83787f38b0a58c1c0c736c1ccb44f",
+      "role": "Catalog page 9 stained-glass course image.",
+      "origin": "catalog_extracted",
+      "source_page": 9
+    },
+    {
+      "path": "env/assets/media_308.jpg",
+      "format": "jpg",
+      "sha256": "651188ea137566be24f30b65861619541702d91bc5a7599f6baf8e3be0da5aa0",
+      "role": "Catalog page 10 craft-course photograph.",
+      "origin": "catalog_extracted",
+      "source_page": 10
+    },
+    {
+      "path": "env/assets/media_309.jpg",
+      "format": "jpg",
+      "sha256": "62db7f0a6276a1e69418adb82e8f481cfa3c39c42d33ff7d2623f787e0801852",
+      "role": "Catalog page 10 basket-course photograph.",
+      "origin": "catalog_extracted",
+      "source_page": 10
+    },
+    {
+      "path": "env/assets/media_310.jpg",
+      "format": "jpg",
+      "sha256": "044cafe0f3f74cb9007f57d0f200f9590837af5e7607e39b2b01acb8e839e83d",
+      "role": "Catalog page 11 food-preservation image.",
+      "origin": "catalog_extracted",
+      "source_page": 11
+    },
+    {
+      "path": "env/assets/media_311.jpg",
+      "format": "jpg",
+      "sha256": "848ca6309ac619fd676e2c5070ad08f588c59f725a76432281ca00f4a29665e1",
+      "role": "Catalog page 11 food-course photograph.",
+      "origin": "catalog_extracted",
+      "source_page": 11
+    },
+    {
+      "path": "env/assets/media_312.jpg",
+      "format": "jpg",
+      "sha256": "f6b838043434c8da9967746fb62d164a5bf121dd6810bd6476012d05330ee82a",
+      "role": "Catalog page 11 culinary-course photograph.",
+      "origin": "catalog_extracted",
+      "source_page": 11
+    },
+    {
+      "path": "env/assets/media_313.jpg",
+      "format": "jpg",
+      "sha256": "cc142ebd1af3a085b205056dc1aab548639806fda4a00dac9d06b48bc15e2301",
+      "role": "Catalog page 11 culinary-course photograph.",
+      "origin": "catalog_extracted",
+      "source_page": 11
+    },
+    {
+      "path": "env/assets/media_314.jpg",
+      "format": "jpg",
+      "sha256": "2e4cb2ff8f692471553905af1417c3e68f98e1d116aeac7da88e0775b7920904",
+      "role": "Catalog page 12 instructor photograph.",
+      "origin": "catalog_extracted",
+      "source_page": 12
+    },
+    {
+      "path": "env/assets/media_315.jpg",
+      "format": "jpg",
+      "sha256": "9456aa6fb9cd40f4266d2aedaa48284bf6e9981d47b8306a31714f6363c56964",
+      "role": "Catalog page 12 instructor photograph.",
+      "origin": "catalog_extracted",
+      "source_page": 12
+    },
+    {
+      "path": "env/assets/media_316.jpg",
+      "format": "jpg",
+      "sha256": "0bdaf2a6c8414c7afc71ab7d0b969705d229ebbbc6ea73f77dca304c9dc15510",
+      "role": "Catalog page 12 wellness-course photograph.",
+      "origin": "catalog_extracted",
+      "source_page": 12
+    },
+    {
+      "path": "env/assets/media_317.jpg",
+      "format": "jpg",
+      "sha256": "d53a3102c510ee9e09afff127d932496d9d8d3c8b7558ebd582321c863fafba3",
+      "role": "Catalog page 15 outdoor recreation photograph.",
+      "origin": "catalog_extracted",
+      "source_page": 15
+    },
+    {
+      "path": "env/assets/media_318.jpg",
+      "format": "jpg",
+      "sha256": "e1990caca7f870c6271e1d29174e168db7e12ba193a2472a4f06b77868059551",
+      "role": "Catalog page 20 music-course photograph.",
+      "origin": "catalog_extracted",
+      "source_page": 20
+    },
+    {
+      "path": "env/assets/media_319.jpg",
+      "format": "jpg",
+      "sha256": "685cc2eb44928e9579202117d936de4c80c5fba8021d35e5ae80ffa4ff8d1d0a",
+      "role": "Catalog page 21 music-course banner.",
+      "origin": "catalog_extracted",
+      "source_page": 21
+    },
+    {
+      "path": "env/assets/media_320.jpg",
+      "format": "jpg",
+      "sha256": "24d0c8eea07f7e4b007fafda28fccddf5049d38b335bd1a7ea2db98208816ff3",
+      "role": "Catalog page 25 group-program photograph.",
+      "origin": "catalog_extracted",
+      "source_page": 25
+    },
+    {
+      "path": "env/assets/media_321.jpg",
+      "format": "jpg",
+      "sha256": "bcd0728510f516eedf372d8046e8001947b86c4f2412ec875feee099c1d08b7f",
+      "role": "Catalog page 27 group photograph.",
+      "origin": "catalog_extracted",
+      "source_page": 27
+    },
+    {
+      "path": "env/assets/media_322.jpg",
+      "format": "jpg",
+      "sha256": "7a0c9d901b45c954863d4fdc5222867dc6090c7077d63dff5b11af5d9d54b753",
+      "role": "Catalog page 28 family-program photograph.",
+      "origin": "catalog_extracted",
+      "source_page": 28
+    },
+    {
+      "path": "env/assets/media_323.jpg",
+      "format": "jpg",
+      "sha256": "7c4288702f08ac979762d14781d54f84b0424db09840a4b081754eed6e0278b4",
+      "role": "Catalog page 30 workforce-training photograph.",
+      "origin": "catalog_extracted",
+      "source_page": 30
+    },
+    {
+      "path": "env/assets/media_324.jpg",
+      "format": "jpg",
+      "sha256": "33d26f6aa26fd9418f092e4bc43caa3a464d1c86b12f5cd9dccb380aa0c03eaa",
+      "role": "Catalog page 31 career-event photograph.",
+      "origin": "catalog_extracted",
+      "source_page": 31
+    },
+    {
+      "path": "env/assets/media_325.jpg",
+      "format": "jpg",
+      "sha256": "263865dba7ea43c2771a0a1a5b2b353f946f50b4a5c1617a668a4ee8069d130a",
+      "role": "Catalog page 34 campus exterior photograph.",
+      "origin": "catalog_extracted",
+      "source_page": 34
+    },
+    {
+      "path": "env/assets/media_326.jpg",
+      "format": "jpg",
+      "sha256": "df9adec649b8ddc948b0371f501d8b79053e92952ef10be938bb5d45b64f592b",
+      "role": "Catalog page 34 classroom photograph.",
+      "origin": "catalog_extracted",
+      "source_page": 34
+    },
+    {
+      "path": "env/assets/media_327.jpg",
+      "format": "jpg",
+      "sha256": "041754e559c1fba781b973113a5890b92bc166ee4b48cfea41202c6aa0028402",
+      "role": "Catalog page 34 animal-care course photograph.",
+      "origin": "catalog_extracted",
+      "source_page": 34
+    },
+    {
+      "path": "env/assets/media_401.jpg",
+      "format": "jpg",
+      "sha256": "ca19422ecc0fb1ef45c8ecd6497ced75e7c7670a7367c4f55c79a8fc1fe44df6",
+      "role": "Wikimedia Commons: Bamboo fly rod (CC BY 2.0).",
+      "origin": "external_free_media",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Bamboo_fly_rod_(51481672).jpg"
+    },
+    {
+      "path": "env/assets/media_402.jpg",
+      "format": "jpg",
+      "sha256": "b67f1f1d9ea581fc864119e1ea61c0ad0d124a27b123b97018fe82d83656dd78",
+      "role": "Wikimedia Commons: Fishing rod and reel at Mahamaya Lake (CC BY-SA 4.0).",
+      "origin": "external_free_media",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Fishing_rod_%26_reel,_Mahamaya_Lake_(01).jpg"
+    },
+    {
+      "path": "env/assets/media_403.jpg",
+      "format": "jpg",
+      "sha256": "186e60d4f318036780f67e39e8b0db1b09c3a638c8c221ce6b30cf63fd1f63ae",
+      "role": "Wikimedia Commons: Fishing at East Sooke Park (CC0).",
+      "origin": "external_free_media",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Fishing_East_Sooke_Park_(Unsplash).jpg"
+    },
+    {
+      "path": "env/assets/media_404.jpg",
+      "format": "jpg",
+      "sha256": "b0ebefe78feed113f07397c68ee10acbe30f49e0fcc39672073333101f8c6328",
+      "role": "Wikimedia Commons: Fly dresser workbench (CC0).",
+      "origin": "external_free_media",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Fly_dresser%27s_workbench.JPG"
+    },
+    {
+      "path": "env/assets/media_405.jpg",
+      "format": "jpg",
+      "sha256": "333675cc7c862eb39bbb3ce24a1051f6a8cb2ddf60a3af45ff525c28bee3c45b",
+      "role": "Wikimedia Commons: Fly-fish casting on the Crooked River (CC BY 2.0 / U.S. public-domain status noted by source).",
+      "origin": "external_free_media",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Fly-fish_casting_on_the_Crooked_River_(28374634089).jpg"
+    },
+    {
+      "path": "env/assets/media_406.jpg",
+      "format": "jpg",
+      "sha256": "9c3d1f0f9fecb08ee155eb28cb7d2ed1e3ee5ed576644e1501beb3749f549dc6",
+      "role": "Wikimedia Commons: Fishing reel (CC BY 2.0).",
+      "origin": "external_free_media",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Fishing_reel.jpg"
+    },
+    {
+      "path": "env/assets/media_407.jpg",
+      "format": "jpg",
+      "sha256": "1b9134d2d279ecd60c389433f5d126f597e7c9a6440da683b82362bd46132f1f",
+      "role": "Wikimedia Commons: Fly fishing on the Soca River (CC BY-SA 4.0).",
+      "origin": "external_free_media",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Fly-fishing-the-Soca-river-Slovenia.jpg"
+    },
+    {
+      "path": "env/assets/media_408.jpg",
+      "format": "jpg",
+      "sha256": "8e9cdf734138eae1c0c79ff8cb8429e68555f79d73a51c17e30e92d45a847e70",
+      "role": "Wikimedia Commons / DPLA: Fly fishing in Colorado (public-domain status in the United States).",
+      "origin": "external_free_media",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Fly_Fishing_-_DPLA_-_ba8580ff6ae76cdb07e16d4570d9da30.jpg"
     }
   ],
   "source_policy": {
@@ -126,7 +406,14 @@
   "design_checks": {
     "long_document_requirement_met": true,
     "primary_document_pages": 40,
+    "catalog_is_primary_source": true,
     "cross_page_lookup_required": true,
+    "catalog_sections_required": [
+      "course listing",
+      "location key",
+      "registration and fees",
+      "inclement weather policy"
+    ],
     "cross_file_reconciliation_required": true,
     "temporal_filtering_required": true,
     "version_state_filtering_required": true,
@@ -135,18 +422,23 @@
     "multiple_file_types_present": true,
     "stage_specific_location_reconciliation_required": true,
     "derived_session_dates_required": true,
+    "weekday_derivation_required": true,
+    "instruction_hours_calculation_required": true,
+    "policy_condensation_required": true,
     "asset_rights_and_channel_selection_required": true,
     "neutral_asset_filenames_used": true,
-    "case_specific_visual_constraints_present": true,
     "answer_files_in_env": false,
-    "explicit_include_exclude_column": false,
     "direct_final_answer_block_in_authored_env": false,
     "natural_distractors_present": true,
     "stale_values_present": true,
     "task_vqa_aligned": true,
-    "hard_cap_or_gap_mechanism_added": false
+    "hard_cap_or_gap_mechanism_added": false,
+    "asset_count": 46,
+    "catalog_extracted_asset_count": 27,
+    "external_free_media_distractor_count": 8,
+    "expanded_asset_pool": true
   },
-  "difficulty_rationale": "The case requires a realistic editorial workflow rather than direct transcription: locate PE-087 in a long catalog, expand facility abbreviations, derive the first three session dates, reconcile nine current field updates from a 340-row audit trail, reject eight plausible noncurrent records, distinguish indoor and outdoor meeting places, select a current image and brand mark using rights and channel metadata, and compress the course into a readable campaign poster.",
-  "calibration_note": "The checklist uses 12 nonredundant VQA items. A visually polished poster that copies the catalog baseline and invents its own artwork can still receive credit for course identity, some schedule structure, instructor, takeaways, and absence of unrelated copy, but should generally land around the 40-60 range rather than scoring near 90. Full credit remains achievable by an agent that correctly reconciles the sources and follows the supplied campaign system.",
-  "notes": "Difficulty was increased through natural source reconciliation, stage-specific logistics, temporal versioning, and neutral asset selection. Arbitrary micro-rules and repeated penalties for the same stale value were reduced so the case remains challenging without becoming trick-like."
+  "difficulty_rationale": "The task now centers the 40-page catalog across four nonadjacent sections while retaining realistic registrar reconciliation. The agent must locate and compress the course listing, expand a location and address, retrieve registration/refund and weather guidance, reject stale registrar alternatives, derive mixed weekdays, calculate 10 instruction hours, preserve exact course-highlight details in three takeaways, and fit the result into a usable course poster. The asset pool now contains 46 neutrally named files: the original controlled set, 27 additional catalog-derived course/location images, and 8 freely licensed online near-topic distractors.",
+  "calibration_note": "The previous output would retain partial credit for identity, date range, fee/CTA, instructor/audience, takeaway order, and participant preparation, but would lose full credit for the shortened title, false Monday recurrence, missing address, missing 10-hour calculation, omitted catalog registration/refund/weather facts, and generalized takeaways. With the prior visual score of 1, this is expected to place that output near the mid-30s rather than 80 while keeping every requirement source-grounded and achievable.",
+  "notes": "Grounded VQAs are factual and non-aesthetic. Each item checks a bounded set of three to five related facts. The single visual VQA, evaluation mode, and 0.8/0.2 weights are preserved exactly. Asset expansion changes only env/assets and evaluator provenance; task.md, expected facts, Grounded/Visual VQAs, evaluation mode, weights, and the single visual VQA remain unchanged."
 }

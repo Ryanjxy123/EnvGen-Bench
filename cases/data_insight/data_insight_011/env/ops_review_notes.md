@@ -1,17 +1,70 @@
-# Q4 Ops Review Notes
+# Q4 2026 Store Operations Triage Notes
 
-Leadership is asking for a quick Q4 triage view, not a database audit. In the close meetings, Q4 means the October through December close, and the usual comparison is the full quarter immediately before it.
+Leadership needs a short decision snapshot, not a data-audit page. The review quarter is October through December 2026, compared with July through September 2026. Resolve all source state as of **8 January 2027 at 5:00 PM**.
 
-The store-close tables include the normal monthly close stream and a few copies that operations keeps around while finance, district teams, and data quality checks are still reconciling the month. For a leadership deck, people usually lean on the store-level close lines after the month has been signed off. Planning refreshes, district rollup copies, QA rebuilds, and old cutover pulls are useful background, but they are not the numbers managers normally quote as final performance.
+## 1. Resolve the controlling monthly close
 
-For this triage snapshot, the useful signals are the ones that explain both upside and operating risk:
+The database contains several packages for each month.
 
-- Net sales means the amount of sales left after the value of customer returns is taken out.
-- Quarter lift means comparing the review quarter's net sales with the prior quarter's net sales and expressing the change as a percentage of the prior quarter.
-- Labor productivity means net sales divided by the labor hours used to support those sales.
-- Return pressure means the value of returned merchandise as a share of sales before returns.
-- Staffing coverage means the share of scheduled hours that were actually covered.
+1. In `close_package_log`, resolve each `package_id` using the latest permitted `recorded_at`; when timestamps tie, the larger `revision_no` controls.
+2. Ignore package events after the review cutoff.
+3. For each month, use the highest `package_version` whose resolved state is `signed_off` and whose `feed_type` is `monthly_store_close`.
+4. Planning refreshes, district rollup copies, QA rebuilds, cutover archives, reopened packages, working restatements, and post-cutoff sign-offs are not final store performance.
 
-A few other close metrics sometimes show up in ops chatter, but they are not usually the headline triage signals for this page: average return ticket, returned units per open store, scheduled-hour gap, store age, and labor hours per sales dollar. Use judgment and keep the final story focused.
+Join the selected package rows across sales, returns, and staffing by store and month.
 
-For the final slide, avoid showing database mechanics. Tell the story: the best upside location, the weakest operating signal, the region-level context, and the action leadership should take next.
+## 2. Resolve store scope, benchmarks, policy, and adjustments
+
+For `store_scope_log`, `format_benchmarks`, `triage_policy_log`, and `metric_adjustment_log`, use the latest row at or before the cutoff; when timestamps tie, use the larger `revision_no`.
+
+- Store and benchmark rows must be approved.
+- Apply only adjustments whose controlling status is `approved`.
+- A Q4-active store must meet the controlling policy's Q4 operating-day minimum.
+- A comparable store must also meet both quarter-day minimums and have `comparable_flag = Y`.
+
+The company Q4 headline includes all Q4-active stores. Quarter lift and every store/region ranking use only the comparable cohort.
+
+## 3. Metric definitions
+
+- **Adjusted net sales** = gross sales − return value + approved return-exclusion value.
+- **Comparable quarter lift** = comparable Q4 adjusted net sales versus comparable Q3 adjusted net sales.
+- **Labor productivity** = adjusted net sales ÷ labor hours.
+- **Adjusted return rate** = (return value − approved return-exclusion value) ÷ gross sales.
+- **Adjusted staffing coverage** = (covered hours + approved coverage-credit hours) ÷ scheduled hours.
+- Regional staffing coverage is schedule-weighted, not a simple average.
+
+## 4. Upside opportunity
+
+Use the controlling policy. A scalable upside candidate must:
+
+- be comparable;
+- meet the minimum Q4 adjusted net-sales scale;
+- meet the minimum Q4-over-Q3 growth;
+- exceed its current format productivity benchmark by the required percentage;
+- remain at or below the format return-rate ceiling;
+- meet the staffing-coverage floor.
+
+Rank qualified candidates by Q4 adjusted net sales, then productivity gap, then quarter lift. The raw growth leader is a separate signal and may fail the opportunity gate.
+
+## 5. Intervention priority
+
+For each comparable store, count these policy breaches:
+
+- adjusted return rate is more than the permitted percentage-point margin above the format ceiling;
+- adjusted staffing coverage is below the policy floor;
+- comparable quarter lift is below the policy growth floor.
+
+A store becomes a risk candidate only after reaching the minimum breach count. Rank risk candidates by breach count, then by the combined severity of the three breaches, then by Q4 adjusted net sales.
+
+## 6. Required leadership story
+
+The final image should make these decisions easy to verify without showing SQL or a raw database dump:
+
+- company Q4 adjusted net sales and comparable lift;
+- the single scalable upside location and the metrics that qualify it;
+- the single intervention location and the metrics that trigger it;
+- the comparable regional net-sales leader;
+- the raw store growth leader and any failed opportunity gate;
+- the schedule-weighted staffing-watch region;
+- one concise action takeaway;
+- a compact scope note naming active-store count, comparable-store count, certified-close basis, and approved-adjustment basis.
