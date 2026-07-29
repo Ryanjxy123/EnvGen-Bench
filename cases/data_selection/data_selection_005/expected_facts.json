@@ -5,7 +5,7 @@
     {
       "id": "event_context",
       "importance": "critical",
-      "source": "env/site_schedule.json + assignment_rules.md",
+      "source": "env/site_schedule.txt + assignment_rules.docx",
       "expected_value": {
         "heading": "Sunday Volunteer Opportunities",
         "event_name": "Riverside Spring Fair",

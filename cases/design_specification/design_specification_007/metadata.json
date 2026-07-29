@@ -51,7 +51,7 @@
   "source_policy": {
     "agent_visible_files": [
       "env/",
-      "task.md"
+      "task.txt"
     ],
     "evaluator_only_files": [
       "metadata.json",
@@ -61,7 +61,7 @@
     "maintenance_only_files": [
       "licenses/"
     ],
-    "web_usage_note": "Closed-env case: the agent must solve only from task.md and env/. The stock images have already been downloaded into the asset library."
+    "web_usage_note": "Closed-env case: the agent must solve only from task.txt and env/. The stock images have already been downloaded into the asset library."
   },
   "notes": "The final solution is a desk-trial activation that supersedes the earlier Apple Crunch Pilot. Consumer copy and assets must be resolved across four workbooks.",
   "creative_freeze": "2026-09-14T17:00:00Z",

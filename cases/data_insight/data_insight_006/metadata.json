@@ -36,22 +36,22 @@
       "origin": "benchmark_authored"
     },
     {
-      "path": "env/campus_energy_rules.json",
+      "path": "env/campus_energy_rules.txt",
       "role": "Review-cycle pointers and protocol references without precomputed answers",
-      "format": "json",
+      "format": "txt",
       "origin": "benchmark_authored"
     },
     {
-      "path": "env/energy_review_protocol.md",
+      "path": "env/energy_review_protocol.docx",
       "role": "Natural-language eligibility, deduplication, join, aggregation, normalization, threshold, comparison, and audit instructions",
-      "format": "markdown",
+      "format": "docx",
       "origin": "benchmark_authored"
     }
   ],
   "source_policy": {
     "agent_visible_files": [
       "env/",
-      "task.md"
+      "task.txt"
     ],
     "evaluator_only_files": [
       "metadata.json",

@@ -44,9 +44,9 @@
       "format": "xlsx"
     },
     {
-      "path": "env/paid_media_publication_rules.md",
+      "path": "env/paid_media_publication_rules.docx",
       "role": "Controlling publication cutoff, matching, precedence, candidate-pack and final-delivery rules",
-      "format": "md"
+      "format": "docx"
     },
     {
       "path": "env/asset_library/files/",
@@ -57,7 +57,7 @@
   "source_policy": {
     "agent_visible_files": [
       "env/",
-      "task.md"
+      "task.txt"
     ],
     "evaluator_only_files": [
       "metadata.json",

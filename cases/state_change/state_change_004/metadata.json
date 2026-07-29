@@ -40,15 +40,15 @@
       }
     },
     {
-      "path": "env/public_release_governance.md",
+      "path": "env/public_release_governance.docx",
       "role": "Authoritative current/previous checkpoint resolution, catalog fallback, corrected weighted aggregation, change classification, package arithmetic, multi-gate stage, and business-calendar rules",
-      "format": "md",
+      "format": "docx",
       "origin": "benchmark_authored"
     }
   ],
   "source_policy": {
     "web_access": "forbidden",
-    "authoritative_procedure": "env/public_release_governance.md",
+    "authoritative_procedure": "env/public_release_governance.docx",
     "operational_source": "env/software_release_operations.xlsx",
     "archived_context_only": "env/archived_sync_release_brief.docx",
     "resolution": "independent current/previous checkpoint reconciliation with approval quorum, catalog fallback, corrected weighted telemetry, policy and issue change comparison, package arithmetic, multi-gate stage evaluation, and business-calendar checkpoint calculation"

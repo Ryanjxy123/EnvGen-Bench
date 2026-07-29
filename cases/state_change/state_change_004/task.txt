@@ -2,7 +2,7 @@
 
 Product Marketing needs one customer-facing rollout announcement for **OrbitDesk Sync 4.12.0**.
 
-Use the archived brief only for historical launch context. Use `env/public_release_governance.md` as the authoritative procedure and `env/software_release_operations.xlsx` as the operational source. Resolve release `OD-SYNC-412` exactly as it stood at **7:15 PM UTC on September 24, 2026**.
+Use the archived brief only for historical launch context. Use `env/public_release_governance.docx` as the authoritative procedure and `env/software_release_operations.xlsx` as the operational source. Resolve release `OD-SYNC-412` exactly as it stood at **7:15 PM UTC on September 24, 2026**.
 
 This is a state-change task, not a latest-row lookup. Resolve the current state and the immediately preceding published customer checkpoint independently. Apply approval quorum and latest-action rules, validate code-valued candidates with fallback, apply telemetry corrections, calculate weighted coverage, compare checkpoint-to-checkpoint changes, resolve policy specificity and expirations, validate copy/build/issue/support catalogs, and evaluate the customer stage and next checkpoint.
 

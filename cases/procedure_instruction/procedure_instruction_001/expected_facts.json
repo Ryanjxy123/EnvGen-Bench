@@ -5,7 +5,7 @@
     {
       "id": "phase_structure",
       "description": "The instructional image is divided into one-time setup and recurring presentation use.",
-      "source": "task.md",
+      "source": "task.txt",
       "importance": "critical",
       "expected_value": {
         "sections": ["First-time room setup", "Each presentation"],
@@ -104,7 +104,7 @@
     {
       "id": "exclude_alternative_paths",
       "description": "Connection paths that do not match the assigned room-network workflow are not promoted as numbered steps.",
-      "source": "task.md; both env documents",
+      "source": "task.txt; both env documents",
       "importance": "major",
       "expected_value": "Do not use Quick direct connection, HDMI, VGA, USB Display, wired LAN, mobile QR-code projection, MHL, or a Quick Wireless Connection USB key as required main steps.",
       "must_not_appear_as_main_step": true
@@ -112,7 +112,7 @@
     {
       "id": "exclude_noncore_features",
       "description": "Troubleshooting and optional collaboration features remain outside the normal workflow.",
-      "source": "task.md; env/epson_iprojection_operation_guide.pdf",
+      "source": "task.txt; env/epson_iprojection_operation_guide.pdf",
       "importance": "major",
       "expected_value": "Do not make troubleshooting, moderator mode, participant controls, mirroring, multi-projector projection, thumbnail selection, bandwidth control, shortcut creation, or USB-key creation part of the numbered procedure.",
       "must_not_appear_as_main_step": true

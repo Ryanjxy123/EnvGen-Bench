@@ -5,7 +5,7 @@
     {
       "id": "panel_identity",
       "description": "Exact public panel identity and exhibition dates.",
-      "source": "task.md + env/curatorial_brief.docx",
+      "source": "task.txt + env/curatorial_brief.docx",
       "importance": "critical",
       "expected_value": {
         "title": "Working Waterfront: Featured Objects",

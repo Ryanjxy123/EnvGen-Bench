@@ -53,14 +53,14 @@
   "source_policy": {
     "agent_visible_files": [
       "env/",
-      "task.md"
+      "task.txt"
     ],
     "evaluator_only_files": [
       "metadata.json",
       "expected_facts.json",
       "scoring_checklist.json"
     ],
-    "web_usage_note": "Closed-env case. The agent must use only task.md and the files inside env/."
+    "web_usage_note": "Closed-env case. The agent must use only task.txt and the files inside env/."
   },
   "design_checks": {
     "long_document_requirement_met": true,

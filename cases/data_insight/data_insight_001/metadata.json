@@ -12,9 +12,9 @@
       "origin": "benchmark-authored"
     },
     {
-      "path": "env/manager_notes.md",
+      "path": "env/manager_notes.txt",
       "role": "Natural-language manager request and design context",
-      "format": "md",
+      "format": "txt",
       "origin": "benchmark-authored"
     },
     {
@@ -27,7 +27,7 @@
   "source_policy": {
     "agent_visible_files": [
       "env/",
-      "task.md"
+      "task.txt"
     ],
     "evaluator_only_files": [
       "metadata.json",

@@ -394,7 +394,7 @@
   "source_policy": {
     "agent_visible_files": [
       "env/",
-      "task.md"
+      "task.txt"
     ],
     "evaluator_only_files": [
       "metadata.json",
@@ -440,5 +440,5 @@
   },
   "difficulty_rationale": "The task now centers the 40-page catalog across four nonadjacent sections while retaining realistic registrar reconciliation. The agent must locate and compress the course listing, expand a location and address, retrieve registration/refund and weather guidance, reject stale registrar alternatives, derive mixed weekdays, calculate 10 instruction hours, preserve exact course-highlight details in three takeaways, and fit the result into a usable course poster. The asset pool now contains 46 neutrally named files: the original controlled set, 27 additional catalog-derived course/location images, and 8 freely licensed online near-topic distractors.",
   "calibration_note": "The previous output would retain partial credit for identity, date range, fee/CTA, instructor/audience, takeaway order, and participant preparation, but would lose full credit for the shortened title, false Monday recurrence, missing address, missing 10-hour calculation, omitted catalog registration/refund/weather facts, and generalized takeaways. With the prior visual score of 1, this is expected to place that output near the mid-30s rather than 80 while keeping every requirement source-grounded and achievable.",
-  "notes": "Grounded VQAs are factual and non-aesthetic. Each item checks a bounded set of three to five related facts. The single visual VQA, evaluation mode, and 0.8/0.2 weights are preserved exactly. Asset expansion changes only env/assets and evaluator provenance; task.md, expected facts, Grounded/Visual VQAs, evaluation mode, weights, and the single visual VQA remain unchanged."
+  "notes": "Grounded VQAs are factual and non-aesthetic. Each item checks a bounded set of three to five related facts. The single visual VQA, evaluation mode, and 0.8/0.2 weights are preserved exactly. Asset expansion changes only env/assets and evaluator provenance; task.txt, expected facts, Grounded/Visual VQAs, evaluation mode, weights, and the single visual VQA remain unchanged."
 }

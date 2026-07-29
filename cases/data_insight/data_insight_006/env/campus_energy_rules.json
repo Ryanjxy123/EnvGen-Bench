@@ -1,8 +1,0 @@
-{
-  "analysis_cycle": "OCT-2026",
-  "baseline_cycle": "BASELINE-2026",
-  "calibration_family": "FY2026-R2",
-  "protocol_file": "energy_review_protocol.md",
-  "threshold_file": "demand_thresholds.csv",
-  "audit_note": "The register contains corrections and non-final rows. Apply the protocol before aggregation; do not treat file order as priority."
-}

@@ -33,9 +33,9 @@
       "reproducibility_note": "Contains 80 natural scheduling and operations records across three worksheets, including approved, draft, cancelled, superseded, pending, makeup, instructor-only, and different-protocol records. It contains no explicit answer flag."
     },
     {
-      "path": "env/bio214_section02_operations_bulletins.md",
+      "path": "env/bio214_section02_operations_bulletins.docx",
       "role": "Versioned local operations bulletins containing superseded, currently approved, and pending station rules. The agent must apply status/effective-date precedence and derive station totals from the current entry.",
-      "format": "markdown",
+      "format": "docx",
       "origin": "benchmark_authored",
       "reproducibility_note": "The current bulletin supplies operational premises but not the requested calculated totals, preserving multi-source reasoning and arithmetic requirements."
     }
@@ -43,14 +43,14 @@
   "source_policy": {
     "agent_visible_files": [
       "env/",
-      "task.md"
+      "task.txt"
     ],
     "evaluator_only_files": [
       "metadata.json",
       "expected_facts.json",
       "scoring_checklist.json"
     ],
-    "web_usage_note": "This is a closed-env case. The agent should use only task.md and files in env/."
+    "web_usage_note": "This is a closed-env case. The agent should use only task.txt and files in env/."
   },
   "design_notes": {
     "task_alignment": "The workbook resolves the active class context; the official PDF and deck provide the base student procedure; the approved local bulletin changes station topology, tip isolation, reserve handling, replicate interpretation, and reporting rules.",

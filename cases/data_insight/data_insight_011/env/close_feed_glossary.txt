@@ -1,0 +1,17 @@
+Store Operations Close Glossary
+
+monthly_store_close is the store-level close feed used for final performance after the controlling package is signed off.
+
+planning_refresh, district_rollup_copy, qa_rebuild, and cutover_archive are useful operational or reconciliation contexts, but none is the final store-level close feed.
+
+A package can be working, reopened, signed_off, or superseded. A later package version does not control merely because it has a higher version number; its resolved state must be signed off before the review cutoff.
+
+active_q4_flag determines whether a store belongs in the company Q4 headline after the operating-day minimum is applied.
+
+comparable_flag identifies stores with a valid like-for-like Q3 base. New, reopened, renovation-affected, and seasonal-pause locations can have ledger values but must not enter comparable growth, opportunity, risk, or region rankings.
+
+A return_exclusion_value is a formally approved amount, such as a vendor-funded recall, that is added back when calculating store-performance net sales and removed from return pressure.
+
+A coverage_credit_hours adjustment counts only when its controlling status is approved. Proposed, rejected, revoked, and post-cutoff rows do not change staffing coverage.
+
+Format benchmarks are point-in-time controls. The current approved productivity floor and return-rate ceiling must be resolved by format before evaluating opportunity and risk.

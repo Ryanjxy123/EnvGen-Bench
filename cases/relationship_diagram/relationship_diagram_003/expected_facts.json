@@ -5,7 +5,7 @@
     {
       "id": "scope_and_control_time",
       "description": "Exact operating scope, title, snapshot time, and bulletin cut-off.",
-      "source": "task.md",
+      "source": "task.txt",
       "importance": "critical",
       "expected_value": {
         "title": "Central Campus Building Safety Escalation | Weekday Business Hours | 30 Jun 2026",
@@ -361,7 +361,7 @@
     {
       "id": "legend",
       "description": "Required relationship-type legend.",
-      "source": "task.md + handbook",
+      "source": "task.txt + handbook",
       "importance": "major",
       "expected_value": {
         "solid_dark": "Direct reporting",
@@ -373,7 +373,7 @@
     {
       "id": "audit_labels",
       "description": "Every non-reporting connector carries the correct controlling reference and condition or mode.",
-      "source": "task.md + handbook",
+      "source": "task.txt + handbook",
       "importance": "critical",
       "expected_value": {
         "dashed_label_components": [

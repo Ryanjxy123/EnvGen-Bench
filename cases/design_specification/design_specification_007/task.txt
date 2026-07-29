@@ -1,6 +1,6 @@
 The growth team needs the September home-feed banner for the BrightBite Protein Oats Apple Crunch Desk Trial.
 
-The banner launches on September 17, 2026 for the US-English app audience. This is a closed-env task: do not use the web. Use only task.md and the files under env/.
+The banner launches on September 17, 2026 for the US-English app audience. This is a closed-env task: do not use the web. Use only task.txt and the files under env/.
 
 Use September 14, 2026 at 17:00 UTC as the creative freeze. Events, approvals, package states, activation states, profile revisions, or asset states that first become valid after that time cannot be used.
 

@@ -113,7 +113,7 @@
     {
       "id": "trend_insight",
       "description": "A concise insight explaining the main trend in the computed results.",
-      "source": "env/sales_2025.xlsx + env/manager_notes.md",
+      "source": "env/sales_2025.xlsx + env/manager_notes.txt",
       "importance": "major",
       "expected_value": [
         "Q2 had the sharpest QoQ lift, while November marked the annual peak.",

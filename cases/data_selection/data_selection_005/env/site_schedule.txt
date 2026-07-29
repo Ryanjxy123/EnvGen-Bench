@@ -1,0 +1,7628 @@
+Site Schedule
+=============
+
+Record 1
+--------
+Schedule Id: SCH-0007
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: ORCHARD-GATE
+Service Date: 2026-05-02
+Day Name: Saturday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-03-11T00:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-04-29T17:00:00
+Revision: 1
+
+Record 2
+--------
+Schedule Id: SCH-0297
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-WELCOME
+Service Date: 2026-07-08
+Day Name: Wednesday
+Event Window: autumn_market_2025
+Site Status: paused
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 1
+Effective At: 2026-06-16T00:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-07-06T15:00:00
+Revision: 1
+
+Record 3
+--------
+Schedule Id: SCH-0180
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: RIVER-HALL
+Service Date: 2026-06-04
+Day Name: Thursday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 2
+Effective At: 2026-04-29T21:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-05-31T00:00:00
+Revision: 1
+
+Record 4
+--------
+Schedule Id: SCH-0218
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: ORCHARD-GATE
+Service Date: 2026-06-18
+Day Name: Thursday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-05-24T20:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-06-12T15:00:00
+Revision: 1
+
+Record 5
+--------
+Schedule Id: SCH-0224
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: CG-WELCOME
+Service Date: 2026-05-05
+Day Name: Tuesday
+Event Window: river_fest_2026
+Site Status: paused
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-04-23T15:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-04-29T15:00:00
+Revision: 1
+
+Record 6
+--------
+Schedule Id: SCH-0313
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-WELCOME
+Service Date: 2026-05-29
+Day Name: Friday
+Event Window: autumn_market_2025
+Site Status: paused
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 2
+Effective At: 2026-05-07T22:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-05-24T00:00:00
+Revision: 1
+
+Record 7
+--------
+Schedule Id: SCH-0393
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: RIVER-HALL
+Service Date: 2026-05-19
+Day Name: Tuesday
+Event Window: spring_fair_2026
+Site Status: relocated
+Public Access: No
+Weather Plan Status: not_required
+Schedule Version: 1
+Effective At: 2026-04-08T07:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-05-17T15:00:00
+Revision: 1
+
+Record 8
+--------
+Schedule Id: SCH-0004
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: RIVER-HALL
+Service Date: 2026-06-23
+Day Name: Tuesday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 2
+Effective At: 2026-05-05T23:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-06-19T22:00:00
+Revision: 1
+
+Record 9
+--------
+Schedule Id: SCH-0113
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: RIVER-HALL
+Service Date: 2026-03-22
+Day Name: Sunday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 3
+Effective At: 2026-01-28T09:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-03-18T20:00:00
+Revision: 1
+
+Record 10
+---------
+Schedule Id: SCH-0350
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-EAST
+Service Date: 2026-03-24
+Day Name: Tuesday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-02-16T14:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-03-22T21:00:00
+Revision: 1
+
+Record 11
+---------
+Schedule Id: SCH-0300
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: ORCHARD-GATE
+Service Date: 2026-07-14
+Day Name: Tuesday
+Event Window: river_fest_2026
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-06-08T07:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-07-11T16:00:00
+Revision: 1
+
+Record 12
+---------
+Schedule Id: SCH-0072
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-EAST
+Service Date: 2026-07-10
+Day Name: Friday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 1
+Effective At: 2026-06-22T19:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-07-06T14:00:00
+Revision: 1
+
+Record 13
+---------
+Schedule Id: SCH-0289
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: CG-WELCOME
+Service Date: 2026-06-17
+Day Name: Wednesday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 2
+Effective At: 2026-05-02T18:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-06-12T15:00:00
+Revision: 1
+
+Record 14
+---------
+Schedule Id: SCH-0088
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-EAST
+Service Date: 2026-04-11
+Day Name: Saturday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 2
+Effective At: 2026-02-14T09:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-04-08T20:00:00
+Revision: 1
+
+Record 15
+---------
+Schedule Id: SCH-0079
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: RIVER-HALL
+Service Date: 2026-06-10
+Day Name: Wednesday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-05-27T12:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-06-08T21:00:00
+Revision: 1
+
+Record 16
+---------
+Schedule Id: SCH-0036
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-WELCOME
+Service Date: 2026-07-11
+Day Name: Saturday
+Event Window: spring_fair_2026
+Site Status: relocated
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 4
+Effective At: 2026-06-18T11:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-07-07T21:00:00
+Revision: 1
+
+Record 17
+---------
+Schedule Id: SCH-0021
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-EAST
+Service Date: 2026-07-15
+Day Name: Wednesday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: review
+Schedule Version: 2
+Effective At: 2026-06-26T16:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-07-09T19:00:00
+Revision: 1
+
+Record 18
+---------
+Schedule Id: SCH-0411
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: ORCHARD-GATE
+Service Date: 2026-03-22
+Day Name: Sunday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 2
+Effective At: 2026-02-28T00:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-03-19T17:00:00
+Revision: 1
+
+Record 19
+---------
+Schedule Id: SCH-0220
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: RIVER-HALL
+Service Date: 2026-05-26
+Day Name: Tuesday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-05-02T21:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-05-24T15:00:00
+Revision: 1
+
+Record 20
+---------
+Schedule Id: SCH-0372
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-WELCOME
+Service Date: 2026-07-15
+Day Name: Wednesday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-06-24T13:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-07-12T13:00:00
+Revision: 1
+
+Record 21
+---------
+Schedule Id: SCH-0184
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: ORCHARD-GATE
+Service Date: 2026-05-19
+Day Name: Tuesday
+Event Window: autumn_market_2025
+Site Status: paused
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-04-06T23:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-05-13T15:00:00
+Revision: 1
+
+Record 22
+---------
+Schedule Id: SCH-0376
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: MARKET-LAWN
+Service Date: 2026-04-29
+Day Name: Wednesday
+Event Window: garden_day_2026
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 1
+Effective At: 2026-04-13T00:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-04-23T19:00:00
+Revision: 1
+
+Record 23
+---------
+Schedule Id: SCH-0363
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: MARKET-LAWN
+Service Date: 2026-05-10
+Day Name: Sunday
+Event Window: river_fest_2026
+Site Status: paused
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-04-22T12:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-05-08T18:00:00
+Revision: 1
+
+Record 24
+---------
+Schedule Id: SCH-0024
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: ORCHARD-GATE
+Service Date: 2026-05-15
+Day Name: Friday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-05-04T15:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-05-12T16:00:00
+Revision: 1
+
+Record 25
+---------
+Schedule Id: SCH-0414
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: RIVER-HALL
+Service Date: 2026-03-20
+Day Name: Friday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: No
+Weather Plan Status: review
+Schedule Version: 3
+Effective At: 2026-02-07T11:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-03-18T14:00:00
+Revision: 1
+
+Record 26
+---------
+Schedule Id: SCH-0070
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: RIVER-HALL
+Service Date: 2026-04-20
+Day Name: Monday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-03-16T23:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-04-17T12:00:00
+Revision: 1
+
+Record 27
+---------
+Schedule Id: SCH-0193
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: ORCHARD-GATE
+Service Date: 2026-04-07
+Day Name: Tuesday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: not_required
+Schedule Version: 1
+Effective At: 2026-02-27T18:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-04-04T00:00:00
+Revision: 1
+
+Record 28
+---------
+Schedule Id: SCH-0074
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-EAST
+Service Date: 2026-05-22
+Day Name: Friday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-04-26T09:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-05-17T18:00:00
+Revision: 1
+
+Record 29
+---------
+Schedule Id: SCH-0141
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: MARKET-LAWN
+Service Date: 2026-03-30
+Day Name: Monday
+Event Window: river_fest_2026
+Site Status: relocated
+Public Access: Yes
+Weather Plan Status: review
+Schedule Version: 4
+Effective At: 2026-03-02T13:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-03-25T23:00:00
+Revision: 1
+
+Record 30
+---------
+Schedule Id: SCH-0172
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: MARKET-LAWN
+Service Date: 2026-06-01
+Day Name: Monday
+Event Window: garden_day_2026
+Site Status: relocated
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-05-04T20:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-05-27T19:00:00
+Revision: 1
+
+Record 31
+---------
+Schedule Id: SCH-0183
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-EAST
+Service Date: 2026-03-15
+Day Name: Sunday
+Event Window: garden_day_2026
+Site Status: planned
+Public Access: No
+Weather Plan Status: pending
+Schedule Version: 4
+Effective At: 2026-02-25T08:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-03-10T15:00:00
+Revision: 1
+
+Record 32
+---------
+Schedule Id: SCH-0111
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: RIVER-HALL
+Service Date: 2026-05-25
+Day Name: Monday
+Event Window: garden_day_2026
+Site Status: paused
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 4
+Effective At: 2026-04-11T18:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-05-21T18:00:00
+Revision: 1
+
+Record 33
+---------
+Schedule Id: SCH-0266
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: ORCHARD-GATE
+Service Date: 2026-06-12
+Day Name: Friday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-05-15T13:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-06-09T12:00:00
+Revision: 1
+
+Record 34
+---------
+Schedule Id: SCH-0158
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: MARKET-LAWN
+Service Date: 2026-05-19
+Day Name: Tuesday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-04-09T19:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-05-14T15:00:00
+Revision: 1
+
+Record 35
+---------
+Schedule Id: SCH-0064
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: MARKET-LAWN
+Service Date: 2026-05-27
+Day Name: Wednesday
+Event Window: spring_fair_2026
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 2
+Effective At: 2026-04-18T19:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-05-22T14:00:00
+Revision: 1
+
+Record 36
+---------
+Schedule Id: SCH-0419
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: ORCHARD-GATE
+Service Date: 2026-06-14
+Day Name: Sunday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 2
+Effective At: 2026-05-13T15:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-06-08T12:00:00
+Revision: 1
+
+Record 37
+---------
+Schedule Id: SCH-0168
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: MARKET-LAWN
+Service Date: 2026-04-06
+Day Name: Monday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-04-01T00:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-04-05T00:00:00
+Revision: 1
+
+Record 38
+---------
+Schedule Id: SCH-0151
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: ORCHARD-GATE
+Service Date: 2026-05-15
+Day Name: Friday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-04-22T08:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-05-11T19:00:00
+Revision: 1
+
+Record 39
+---------
+Schedule Id: SCH-0090
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-WELCOME
+Service Date: 2026-05-30
+Day Name: Saturday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 3
+Effective At: 2026-05-02T22:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-05-25T16:00:00
+Revision: 1
+
+Record 40
+---------
+Schedule Id: SCH-0252
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-EAST
+Service Date: 2026-05-29
+Day Name: Friday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 1
+Effective At: 2026-04-23T08:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-05-26T21:00:00
+Revision: 1
+
+Record 41
+---------
+Schedule Id: SCH-0008
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: CG-EAST
+Service Date: 2026-05-31
+Day Name: Sunday
+Event Window: river_fest_2026
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 1
+Effective At: 2026-05-17T13:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-05-29T14:00:00
+Revision: 1
+
+Record 42
+---------
+Schedule Id: SCH-0161
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: CG-EAST
+Service Date: 2026-06-06
+Day Name: Saturday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-05-17T09:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-06-01T12:00:00
+Revision: 1
+
+Record 43
+---------
+Schedule Id: SCH-0237
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-WELCOME
+Service Date: 2026-03-31
+Day Name: Tuesday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 2
+Effective At: 2026-03-21T19:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-03-25T14:00:00
+Revision: 1
+
+Record 44
+---------
+Schedule Id: SCH-0248
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: MARKET-LAWN
+Service Date: 2026-07-13
+Day Name: Monday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 2
+Effective At: 2026-05-19T10:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-07-09T23:00:00
+Revision: 1
+
+Record 45
+---------
+Schedule Id: SCH-0081
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: CG-EAST
+Service Date: 2026-06-28
+Day Name: Sunday
+Event Window: river_fest_2026
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-05-03T09:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-06-22T23:00:00
+Revision: 1
+
+Record 46
+---------
+Schedule Id: SCH-0273
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: MARKET-LAWN
+Service Date: 2026-05-03
+Day Name: Sunday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: No
+Weather Plan Status: not_required
+Schedule Version: 3
+Effective At: 2026-04-02T17:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-04-28T23:00:00
+Revision: 1
+
+Record 47
+---------
+Schedule Id: SCH-0412
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: ORCHARD-GATE
+Service Date: 2026-04-25
+Day Name: Saturday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: not_required
+Schedule Version: 1
+Effective At: 2026-03-15T23:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-04-21T22:00:00
+Revision: 1
+
+Record 48
+---------
+Schedule Id: SCH-0281
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: ORCHARD-GATE
+Service Date: 2026-06-27
+Day Name: Saturday
+Event Window: garden_day_2026
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-05-16T15:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-06-22T16:00:00
+Revision: 1
+
+Record 49
+---------
+Schedule Id: SCH-0104
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: MARKET-LAWN
+Service Date: 2026-04-08
+Day Name: Wednesday
+Event Window: spring_fair_2026
+Site Status: paused
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 1
+Effective At: 2026-02-14T00:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-04-06T17:00:00
+Revision: 1
+
+Record 50
+---------
+Schedule Id: SCH-0346
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: RIVER-HALL
+Service Date: 2026-07-02
+Day Name: Thursday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: not_required
+Schedule Version: 4
+Effective At: 2026-05-18T12:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-06-30T00:00:00
+Revision: 1
+
+Record 51
+---------
+Schedule Id: SCH-0153
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: MARKET-LAWN
+Service Date: 2026-04-05
+Day Name: Sunday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 2
+Effective At: 2026-03-21T17:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-04-02T20:00:00
+Revision: 1
+
+Record 52
+---------
+Schedule Id: SCH-0307
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: MARKET-LAWN
+Service Date: 2026-03-27
+Day Name: Friday
+Event Window: garden_day_2026
+Site Status: paused
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-03-08T16:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-03-25T13:00:00
+Revision: 1
+
+Record 53
+---------
+Schedule Id: SCH-0015
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: CG-WELCOME
+Service Date: 2026-05-18
+Day Name: Monday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 2
+Effective At: 2026-04-02T09:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-05-13T14:00:00
+Revision: 1
+
+Record 54
+---------
+Schedule Id: SCH-0250
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: RIVER-HALL
+Service Date: 2026-03-15
+Day Name: Sunday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-02-25T19:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-03-09T19:00:00
+Revision: 1
+
+Record 55
+---------
+Schedule Id: SCH-0197
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: MARKET-LAWN
+Service Date: 2026-05-10
+Day Name: Sunday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 4
+Effective At: 2026-03-23T12:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-05-06T13:00:00
+Revision: 1
+
+Record 56
+---------
+Schedule Id: SCH-0368
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: CG-WELCOME
+Service Date: 2026-03-19
+Day Name: Thursday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: review
+Schedule Version: 4
+Effective At: 2026-02-15T17:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-03-13T15:00:00
+Revision: 1
+
+Record 57
+---------
+Schedule Id: SCH-0019
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: MARKET-LAWN
+Service Date: 2026-03-27
+Day Name: Friday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 2
+Effective At: 2026-02-24T08:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-03-25T18:00:00
+Revision: 1
+
+Record 58
+---------
+Schedule Id: SCH-0251
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: CG-WELCOME
+Service Date: 2026-06-08
+Day Name: Monday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 1
+Effective At: 2026-05-09T19:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-06-05T14:00:00
+Revision: 1
+
+Record 59
+---------
+Schedule Id: SCH-0119
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: RIVER-HALL
+Service Date: 2026-03-10
+Day Name: Tuesday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 2
+Effective At: 2026-02-08T18:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-03-08T21:00:00
+Revision: 1
+
+Record 60
+---------
+Schedule Id: SCH-0405
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: ORCHARD-GATE
+Service Date: 2026-04-30
+Day Name: Thursday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: not_required
+Schedule Version: 2
+Effective At: 2026-03-30T17:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-04-27T18:00:00
+Revision: 1
+
+Record 61
+---------
+Schedule Id: SCH-0391
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: ORCHARD-GATE
+Service Date: 2026-06-29
+Day Name: Monday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-05-28T12:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-06-24T15:00:00
+Revision: 1
+
+Record 62
+---------
+Schedule Id: SCH-0286
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-WELCOME
+Service Date: 2026-03-08
+Day Name: Sunday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 1
+Effective At: 2026-02-24T23:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-03-02T23:00:00
+Revision: 1
+
+Record 63
+---------
+Schedule Id: SCH-0342
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: MARKET-LAWN
+Service Date: 2026-06-06
+Day Name: Saturday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 2
+Effective At: 2026-05-11T18:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-05-31T14:00:00
+Revision: 1
+
+Record 64
+---------
+Schedule Id: SCH-0091
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-EAST
+Service Date: 2026-03-07
+Day Name: Saturday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 1
+Effective At: 2026-01-27T16:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-03-05T15:00:00
+Revision: 1
+
+Record 65
+---------
+Schedule Id: SCH-0352
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: MARKET-LAWN
+Service Date: 2026-06-11
+Day Name: Thursday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: pending
+Schedule Version: 3
+Effective At: 2026-05-17T15:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-06-09T20:00:00
+Revision: 1
+
+Record 66
+---------
+Schedule Id: SCH-0149
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: CG-WELCOME
+Service Date: 2026-07-12
+Day Name: Sunday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: not_required
+Schedule Version: 4
+Effective At: 2026-06-20T09:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-07-09T20:00:00
+Revision: 1
+
+Record 67
+---------
+Schedule Id: SCH-0065
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-WELCOME
+Service Date: 2026-03-07
+Day Name: Saturday
+Event Window: spring_fair_2026
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 2
+Effective At: 2026-02-01T19:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-03-02T17:00:00
+Revision: 1
+
+Record 68
+---------
+Schedule Id: SCH-0335
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: MARKET-LAWN
+Service Date: 2026-05-30
+Day Name: Saturday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-05-21T11:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-05-28T23:00:00
+Revision: 1
+
+Record 69
+---------
+Schedule Id: SCH-0265
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-EAST
+Service Date: 2026-03-22
+Day Name: Sunday
+Event Window: autumn_market_2025
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-02-24T12:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-03-20T00:00:00
+Revision: 1
+
+Record 70
+---------
+Schedule Id: SCH-0164
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: ORCHARD-GATE
+Service Date: 2026-04-04
+Day Name: Saturday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-03-16T18:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-04-02T13:00:00
+Revision: 1
+
+Record 71
+---------
+Schedule Id: SCH-0148
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: CG-WELCOME
+Service Date: 2026-05-04
+Day Name: Monday
+Event Window: river_fest_2026
+Site Status: planned
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-03-18T08:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-04-30T18:00:00
+Revision: 1
+
+Record 72
+---------
+Schedule Id: SCH-0080
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: ORCHARD-GATE
+Service Date: 2026-05-11
+Day Name: Monday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 3
+Effective At: 2026-04-03T16:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-05-10T00:00:00
+Revision: 1
+
+Record 73
+---------
+Schedule Id: SCH-0102
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-WELCOME
+Service Date: 2026-07-13
+Day Name: Monday
+Event Window: garden_day_2026
+Site Status: paused
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-06-11T07:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-07-12T00:00:00
+Revision: 1
+
+Record 74
+---------
+Schedule Id: SCH-0205
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: RIVER-HALL
+Service Date: 2026-07-04
+Day Name: Saturday
+Event Window: spring_fair_2026
+Site Status: planned
+Public Access: No
+Weather Plan Status: review
+Schedule Version: 3
+Effective At: 2026-05-13T14:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-06-28T17:00:00
+Revision: 1
+
+Record 75
+---------
+Schedule Id: SCH-0126
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: ORCHARD-GATE
+Service Date: 2026-05-26
+Day Name: Tuesday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-04-25T12:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-05-24T15:00:00
+Revision: 1
+
+Record 76
+---------
+Schedule Id: SCH-0387
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: RIVER-HALL
+Service Date: 2026-04-25
+Day Name: Saturday
+Event Window: river_fest_2026
+Site Status: paused
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-04-08T23:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-04-23T20:00:00
+Revision: 1
+
+Record 77
+---------
+Schedule Id: SCH-0209
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: RIVER-HALL
+Service Date: 2026-05-31
+Day Name: Sunday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 3
+Effective At: 2026-04-16T15:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-05-26T14:00:00
+Revision: 1
+
+Record 78
+---------
+Schedule Id: SCH-0198
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: CG-WELCOME
+Service Date: 2026-06-11
+Day Name: Thursday
+Event Window: river_fest_2026
+Site Status: relocated
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 4
+Effective At: 2026-05-27T15:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-06-05T12:00:00
+Revision: 1
+
+Record 79
+---------
+Schedule Id: SCH-0242
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: RIVER-HALL
+Service Date: 2026-06-12
+Day Name: Friday
+Event Window: river_fest_2026
+Site Status: relocated
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-05-08T19:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-06-08T20:00:00
+Revision: 1
+
+Record 80
+---------
+Schedule Id: SCH-0253
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-WELCOME
+Service Date: 2026-05-15
+Day Name: Friday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 1
+Effective At: 2026-03-21T06:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-05-11T12:00:00
+Revision: 1
+
+Record 81
+---------
+Schedule Id: SCH-0190
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: ORCHARD-GATE
+Service Date: 2026-03-29
+Day Name: Sunday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 4
+Effective At: 2026-02-25T20:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-03-23T14:00:00
+Revision: 1
+
+Record 82
+---------
+Schedule Id: SCH-0232
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: MARKET-LAWN
+Service Date: 2026-07-04
+Day Name: Saturday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 3
+Effective At: 2026-06-25T10:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-07-02T12:00:00
+Revision: 1
+
+Record 83
+---------
+Schedule Id: SCH-0196
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-EAST
+Service Date: 2026-03-22
+Day Name: Sunday
+Event Window: garden_day_2026
+Site Status: planned
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-03-04T09:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-03-19T00:00:00
+Revision: 1
+
+Record 84
+---------
+Schedule Id: SCH-0277
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-EAST
+Service Date: 2026-04-09
+Day Name: Thursday
+Event Window: autumn_market_2025
+Site Status: relocated
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 4
+Effective At: 2026-02-18T17:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-04-05T22:00:00
+Revision: 1
+
+Record 85
+---------
+Schedule Id: SCH-0334
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: ORCHARD-GATE
+Service Date: 2026-03-26
+Day Name: Thursday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-02-16T13:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-03-22T18:00:00
+Revision: 1
+
+Record 86
+---------
+Schedule Id: SCH-0366
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: CG-EAST
+Service Date: 2026-06-13
+Day Name: Saturday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 1
+Effective At: 2026-05-14T00:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-06-09T22:00:00
+Revision: 1
+
+Record 87
+---------
+Schedule Id: SCH-0316
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: ORCHARD-GATE
+Service Date: 2026-07-06
+Day Name: Monday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-05-26T15:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-07-01T15:00:00
+Revision: 1
+
+Record 88
+---------
+Schedule Id: SCH-0154
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-EAST
+Service Date: 2026-06-17
+Day Name: Wednesday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 1
+Effective At: 2026-05-23T12:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-06-15T23:00:00
+Revision: 1
+
+Record 89
+---------
+Schedule Id: SCH-0025
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: CG-EAST
+Service Date: 2026-03-08
+Day Name: Sunday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-02-18T16:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-03-06T17:00:00
+Revision: 1
+
+Record 90
+---------
+Schedule Id: SCH-0096
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: MARKET-LAWN
+Service Date: 2026-05-20
+Day Name: Wednesday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-04-18T19:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-05-18T21:00:00
+Revision: 1
+
+Record 91
+---------
+Schedule Id: SCH-0056
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-EAST
+Service Date: 2026-05-19
+Day Name: Tuesday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: not_required
+Schedule Version: 4
+Effective At: 2026-05-02T14:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-05-13T18:00:00
+Revision: 1
+
+Record 92
+---------
+Schedule Id: SCH-0040
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-WELCOME
+Service Date: 2026-06-25
+Day Name: Thursday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 2
+Effective At: 2026-05-04T13:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-06-23T17:00:00
+Revision: 1
+
+Record 93
+---------
+Schedule Id: SCH-0026
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: RIVER-HALL
+Service Date: 2026-05-31
+Day Name: Sunday
+Event Window: river_fest_2026
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 2
+Effective At: 2026-04-06T00:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-05-29T23:00:00
+Revision: 1
+
+Record 94
+---------
+Schedule Id: SCH-0016
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-WELCOME
+Service Date: 2026-06-10
+Day Name: Wednesday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 2
+Effective At: 2026-05-06T14:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-06-05T22:00:00
+Revision: 1
+
+Record 95
+---------
+Schedule Id: SCH-0341
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: RIVER-HALL
+Service Date: 2026-05-13
+Day Name: Wednesday
+Event Window: spring_fair_2026
+Site Status: paused
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-05-02T20:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-05-11T00:00:00
+Revision: 1
+
+Record 96
+---------
+Schedule Id: SCH-0144
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-WELCOME
+Service Date: 2026-05-20
+Day Name: Wednesday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 3
+Effective At: 2026-03-31T13:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-05-18T16:00:00
+Revision: 1
+
+Record 97
+---------
+Schedule Id: SCH-0157
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-WELCOME
+Service Date: 2026-06-17
+Day Name: Wednesday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 1
+Effective At: 2026-05-26T07:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-06-12T19:00:00
+Revision: 1
+
+Record 98
+---------
+Schedule Id: SCH-0360
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: RIVER-HALL
+Service Date: 2026-06-30
+Day Name: Tuesday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-05-16T22:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-06-26T15:00:00
+Revision: 1
+
+Record 99
+---------
+Schedule Id: SCH-0145
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: MARKET-LAWN
+Service Date: 2026-05-09
+Day Name: Saturday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-04-18T22:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-05-07T00:00:00
+Revision: 1
+
+Record 100
+----------
+Schedule Id: SCH-0418
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: RIVER-HALL
+Service Date: 2026-05-06
+Day Name: Wednesday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-03-26T13:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-05-03T19:00:00
+Revision: 1
+
+Record 101
+----------
+Schedule Id: SCH-0347
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-WELCOME
+Service Date: 2026-06-02
+Day Name: Tuesday
+Event Window: garden_day_2026
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-05-16T13:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-05-27T14:00:00
+Revision: 1
+
+Record 102
+----------
+Schedule Id: SCH-0287
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: MARKET-LAWN
+Service Date: 2026-05-22
+Day Name: Friday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-04-15T17:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-05-18T12:00:00
+Revision: 1
+
+Record 103
+----------
+Schedule Id: SCH-0240
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: RIVER-HALL
+Service Date: 2026-06-17
+Day Name: Wednesday
+Event Window: spring_fair_2026
+Site Status: paused
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 2
+Effective At: 2026-05-10T23:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-06-14T16:00:00
+Revision: 1
+
+Record 104
+----------
+Schedule Id: SCH-0170
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: ORCHARD-GATE
+Service Date: 2026-06-12
+Day Name: Friday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 1
+Effective At: 2026-05-19T22:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-06-10T23:00:00
+Revision: 1
+
+Record 105
+----------
+Schedule Id: SCH-0063
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: MARKET-LAWN
+Service Date: 2026-06-29
+Day Name: Monday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-06-19T13:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-06-27T15:00:00
+Revision: 1
+
+Record 106
+----------
+Schedule Id: SCH-0255
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-WELCOME
+Service Date: 2026-04-20
+Day Name: Monday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-03-23T18:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-04-14T18:00:00
+Revision: 1
+
+Record 107
+----------
+Schedule Id: SCH-0373
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-EAST
+Service Date: 2026-06-26
+Day Name: Friday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-05-06T07:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-06-20T18:00:00
+Revision: 1
+
+Record 108
+----------
+Schedule Id: SCH-0192
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-EAST
+Service Date: 2026-06-15
+Day Name: Monday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 3
+Effective At: 2026-05-03T20:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-06-13T14:00:00
+Revision: 1
+
+Record 109
+----------
+Schedule Id: SCH-0365
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: ORCHARD-GATE
+Service Date: 2026-04-20
+Day Name: Monday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: pending
+Schedule Version: 3
+Effective At: 2026-04-10T18:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-04-14T20:00:00
+Revision: 1
+
+Record 110
+----------
+Schedule Id: SCH-0047
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-WELCOME
+Service Date: 2026-07-07
+Day Name: Tuesday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: No
+Weather Plan Status: not_required
+Schedule Version: 2
+Effective At: 2026-05-27T15:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-07-05T12:00:00
+Revision: 1
+
+Record 111
+----------
+Schedule Id: SCH-0060
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: MARKET-LAWN
+Service Date: 2026-04-25
+Day Name: Saturday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-03-05T19:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-04-20T18:00:00
+Revision: 1
+
+Record 112
+----------
+Schedule Id: SCH-0118
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-WELCOME
+Service Date: 2026-05-23
+Day Name: Saturday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 2
+Effective At: 2026-04-09T14:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-05-19T12:00:00
+Revision: 1
+
+Record 113
+----------
+Schedule Id: SCH-0402
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: RIVER-HALL
+Service Date: 2026-04-30
+Day Name: Thursday
+Event Window: autumn_market_2025
+Site Status: paused
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 3
+Effective At: 2026-04-11T11:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-04-26T13:00:00
+Revision: 1
+
+Record 114
+----------
+Schedule Id: SCH-0177
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: ORCHARD-GATE
+Service Date: 2026-05-07
+Day Name: Thursday
+Event Window: garden_day_2026
+Site Status: relocated
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 3
+Effective At: 2026-04-02T18:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-05-04T23:00:00
+Revision: 1
+
+Record 115
+----------
+Schedule Id: SCH-0223
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-EAST
+Service Date: 2026-05-21
+Day Name: Thursday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-04-02T12:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-05-17T21:00:00
+Revision: 1
+
+Record 116
+----------
+Schedule Id: SCH-0203
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: RIVER-HALL
+Service Date: 2026-06-19
+Day Name: Friday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 2
+Effective At: 2026-05-22T21:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-06-15T22:00:00
+Revision: 1
+
+Record 117
+----------
+Schedule Id: SCH-0318
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-EAST
+Service Date: 2026-06-03
+Day Name: Wednesday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: No
+Weather Plan Status: not_required
+Schedule Version: 4
+Effective At: 2026-04-08T14:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-05-31T18:00:00
+Revision: 1
+
+Record 118
+----------
+Schedule Id: SCH-0034
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: MARKET-LAWN
+Service Date: 2026-07-01
+Day Name: Wednesday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: review
+Schedule Version: 2
+Effective At: 2026-05-25T22:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-06-26T17:00:00
+Revision: 1
+
+Record 119
+----------
+Schedule Id: SCH-0071
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-EAST
+Service Date: 2026-03-23
+Day Name: Monday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 2
+Effective At: 2026-02-24T11:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-03-17T15:00:00
+Revision: 1
+
+Record 120
+----------
+Schedule Id: SCH-0127
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-EAST
+Service Date: 2026-06-24
+Day Name: Wednesday
+Event Window: autumn_market_2025
+Site Status: relocated
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-06-09T13:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-06-22T00:00:00
+Revision: 1
+
+Record 121
+----------
+Schedule Id: SCH-0174
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: CG-EAST
+Service Date: 2026-04-25
+Day Name: Saturday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 4
+Effective At: 2026-03-07T10:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-04-19T20:00:00
+Revision: 1
+
+Record 122
+----------
+Schedule Id: SCH-0136
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-WELCOME
+Service Date: 2026-07-10
+Day Name: Friday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-06-01T06:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-07-07T18:00:00
+Revision: 1
+
+Record 123
+----------
+Schedule Id: SCH-0027
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: RIVER-HALL
+Service Date: 2026-05-11
+Day Name: Monday
+Event Window: spring_fair_2026
+Site Status: planned
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-04-22T21:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-05-05T16:00:00
+Revision: 1
+
+Record 124
+----------
+Schedule Id: SCH-0259
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-WELCOME
+Service Date: 2026-07-09
+Day Name: Thursday
+Event Window: spring_fair_2026
+Site Status: relocated
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-06-28T08:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-07-03T14:00:00
+Revision: 1
+
+Record 125
+----------
+Schedule Id: SCH-0130
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-WELCOME
+Service Date: 2026-06-04
+Day Name: Thursday
+Event Window: autumn_market_2025
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 2
+Effective At: 2026-05-29T20:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-05-31T14:00:00
+Revision: 1
+
+Record 126
+----------
+Schedule Id: SCH-0233
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: RIVER-HALL
+Service Date: 2026-03-27
+Day Name: Friday
+Event Window: river_fest_2026
+Site Status: relocated
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-03-02T10:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-03-23T13:00:00
+Revision: 1
+
+Record 127
+----------
+Schedule Id: SCH-0271
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-WELCOME
+Service Date: 2026-05-07
+Day Name: Thursday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-04-22T22:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-05-03T00:00:00
+Revision: 1
+
+Record 128
+----------
+Schedule Id: SCH-0357
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-EAST
+Service Date: 2026-07-02
+Day Name: Thursday
+Event Window: autumn_market_2025
+Site Status: paused
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-06-10T13:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-06-28T21:00:00
+Revision: 1
+
+Record 129
+----------
+Schedule Id: SCH-0006
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: MARKET-LAWN
+Service Date: 2026-03-07
+Day Name: Saturday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 4
+Effective At: 2026-02-11T06:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-03-03T22:00:00
+Revision: 1
+
+Record 130
+----------
+Schedule Id: SCH-0155
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: MARKET-LAWN
+Service Date: 2026-06-07
+Day Name: Sunday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 4
+Effective At: 2026-05-23T10:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-06-01T23:00:00
+Revision: 1
+
+Record 131
+----------
+Schedule Id: SCH-0353
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: RIVER-HALL
+Service Date: 2026-05-22
+Day Name: Friday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 2
+Effective At: 2026-04-29T18:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-05-17T12:00:00
+Revision: 1
+
+Record 132
+----------
+Schedule Id: SCH-0106
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: CG-EAST
+Service Date: 2026-05-09
+Day Name: Saturday
+Event Window: river_fest_2026
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-04-20T16:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-05-08T00:00:00
+Revision: 1
+
+Record 133
+----------
+Schedule Id: SCH-0116
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-WELCOME
+Service Date: 2026-07-08
+Day Name: Wednesday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-06-16T06:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-07-06T13:00:00
+Revision: 1
+
+Record 134
+----------
+Schedule Id: SCH-0343
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: CG-EAST
+Service Date: 2026-04-07
+Day Name: Tuesday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 2
+Effective At: 2026-02-12T16:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-04-03T12:00:00
+Revision: 1
+
+Record 135
+----------
+Schedule Id: SCH-0226
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: ORCHARD-GATE
+Service Date: 2026-06-14
+Day Name: Sunday
+Event Window: river_fest_2026
+Site Status: relocated
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-05-04T08:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-06-08T12:00:00
+Revision: 1
+
+Record 136
+----------
+Schedule Id: SCH-0128
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-WELCOME
+Service Date: 2026-06-30
+Day Name: Tuesday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 2
+Effective At: 2026-06-08T23:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-06-25T23:00:00
+Revision: 1
+
+Record 137
+----------
+Schedule Id: SCH-0200
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-WELCOME
+Service Date: 2026-04-04
+Day Name: Saturday
+Event Window: spring_fair_2026
+Site Status: relocated
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 1
+Effective At: 2026-03-18T20:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-03-30T18:00:00
+Revision: 1
+
+Record 138
+----------
+Schedule Id: SCH-0284
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-EAST
+Service Date: 2026-05-23
+Day Name: Saturday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 2
+Effective At: 2026-04-21T18:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-05-18T23:00:00
+Revision: 1
+
+Record 139
+----------
+Schedule Id: SCH-0275
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: MARKET-LAWN
+Service Date: 2026-04-05
+Day Name: Sunday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-03-22T12:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-04-02T17:00:00
+Revision: 1
+
+Record 140
+----------
+Schedule Id: SCH-0358
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: MARKET-LAWN
+Service Date: 2026-05-01
+Day Name: Friday
+Event Window: garden_day_2026
+Site Status: planned
+Public Access: No
+Weather Plan Status: pending
+Schedule Version: 4
+Effective At: 2026-03-06T20:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-04-28T00:00:00
+Revision: 1
+
+Record 141
+----------
+Schedule Id: SCH-0293
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-EAST
+Service Date: 2026-04-19
+Day Name: Sunday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 2
+Effective At: 2026-04-03T11:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-04-13T13:00:00
+Revision: 1
+
+Record 142
+----------
+Schedule Id: SCH-0354
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: ORCHARD-GATE
+Service Date: 2026-05-25
+Day Name: Monday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: review
+Schedule Version: 4
+Effective At: 2026-04-22T08:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-05-22T22:00:00
+Revision: 1
+
+Record 143
+----------
+Schedule Id: SCH-0344
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-WELCOME
+Service Date: 2026-06-05
+Day Name: Friday
+Event Window: autumn_market_2025
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 4
+Effective At: 2026-05-12T11:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-05-31T20:00:00
+Revision: 1
+
+Record 144
+----------
+Schedule Id: SCH-0075
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: RIVER-HALL
+Service Date: 2026-06-17
+Day Name: Wednesday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-06-03T08:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-06-12T13:00:00
+Revision: 1
+
+Record 145
+----------
+Schedule Id: SCH-0099
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: RIVER-HALL
+Service Date: 2026-06-20
+Day Name: Saturday
+Event Window: autumn_market_2025
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-04-29T06:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-06-16T17:00:00
+Revision: 1
+
+Record 146
+----------
+Schedule Id: SCH-0030
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: ORCHARD-GATE
+Service Date: 2026-05-27
+Day Name: Wednesday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 3
+Effective At: 2026-04-16T20:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-05-23T16:00:00
+Revision: 1
+
+Record 147
+----------
+Schedule Id: SCH-0029
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: RIVER-HALL
+Service Date: 2026-05-03
+Day Name: Sunday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-03-18T13:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-04-27T17:00:00
+Revision: 1
+
+Record 148
+----------
+Schedule Id: SCH-0085
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: MARKET-LAWN
+Service Date: 2026-04-14
+Day Name: Tuesday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 3
+Effective At: 2026-03-11T08:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-04-09T20:00:00
+Revision: 1
+
+Record 149
+----------
+Schedule Id: SCH-0332
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-EAST
+Service Date: 2026-06-21
+Day Name: Sunday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: No
+Weather Plan Status: not_required
+Schedule Version: 3
+Effective At: 2026-05-17T13:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-06-18T17:00:00
+Revision: 1
+
+Record 150
+----------
+Schedule Id: SCH-0137
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-EAST
+Service Date: 2026-05-25
+Day Name: Monday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 3
+Effective At: 2026-04-15T15:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-05-20T16:00:00
+Revision: 1
+
+Record 151
+----------
+Schedule Id: SCH-0276
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: RIVER-HALL
+Service Date: 2026-05-28
+Day Name: Thursday
+Event Window: spring_fair_2026
+Site Status: relocated
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-04-06T12:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-05-24T21:00:00
+Revision: 1
+
+Record 152
+----------
+Schedule Id: SCH-0249
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: CG-EAST
+Service Date: 2026-06-12
+Day Name: Friday
+Event Window: river_fest_2026
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 1
+Effective At: 2026-05-30T09:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-06-06T23:00:00
+Revision: 1
+
+Record 153
+----------
+Schedule Id: SCH-0326
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-WELCOME
+Service Date: 2026-05-04
+Day Name: Monday
+Event Window: spring_fair_2026
+Site Status: planned
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-03-12T13:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-04-30T15:00:00
+Revision: 1
+
+Record 154
+----------
+Schedule Id: SCH-0162
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-EAST
+Service Date: 2026-05-06
+Day Name: Wednesday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 2
+Effective At: 2026-04-27T00:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-05-01T18:00:00
+Revision: 1
+
+Record 155
+----------
+Schedule Id: SCH-0285
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: CG-EAST
+Service Date: 2026-04-04
+Day Name: Saturday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 1
+Effective At: 2026-02-19T16:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-03-29T12:00:00
+Revision: 1
+
+Record 156
+----------
+Schedule Id: SCH-0147
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-EAST
+Service Date: 2026-05-22
+Day Name: Friday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 2
+Effective At: 2026-04-01T14:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-05-16T16:00:00
+Revision: 1
+
+Record 157
+----------
+Schedule Id: SCH-0139
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-EAST
+Service Date: 2026-06-09
+Day Name: Tuesday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-05-29T17:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-06-06T21:00:00
+Revision: 1
+
+Record 158
+----------
+Schedule Id: SCH-0010
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: MARKET-LAWN
+Service Date: 2026-03-21
+Day Name: Saturday
+Event Window: spring_fair_2026
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 1
+Effective At: 2026-03-01T23:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-03-17T22:00:00
+Revision: 1
+
+Record 159
+----------
+Schedule Id: SCH-0415
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-WELCOME
+Service Date: 2026-07-15
+Day Name: Wednesday
+Event Window: garden_day_2026
+Site Status: relocated
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 2
+Effective At: 2026-05-31T19:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-07-12T16:00:00
+Revision: 1
+
+Record 160
+----------
+Schedule Id: SCH-0228
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: ORCHARD-GATE
+Service Date: 2026-03-14
+Day Name: Saturday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-02-21T00:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-03-09T23:00:00
+Revision: 1
+
+Record 161
+----------
+Schedule Id: SCH-0274
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: ORCHARD-GATE
+Service Date: 2026-06-17
+Day Name: Wednesday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 3
+Effective At: 2026-04-24T18:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-06-15T17:00:00
+Revision: 1
+
+Record 162
+----------
+Schedule Id: SCH-0288
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-WELCOME
+Service Date: 2026-04-26
+Day Name: Sunday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-03-24T09:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-04-22T22:00:00
+Revision: 1
+
+Record 163
+----------
+Schedule Id: SCH-0002
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-WELCOME
+Service Date: 2026-04-26
+Day Name: Sunday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 2
+Effective At: 2026-04-05T10:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-04-24T18:00:00
+Revision: 1
+
+Record 164
+----------
+Schedule Id: SCH-0375
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: CG-EAST
+Service Date: 2026-06-08
+Day Name: Monday
+Event Window: river_fest_2026
+Site Status: paused
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-05-31T12:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-06-02T18:00:00
+Revision: 1
+
+Record 165
+----------
+Schedule Id: SCH-0041
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-EAST
+Service Date: 2026-03-07
+Day Name: Saturday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-02-24T09:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-03-03T12:00:00
+Revision: 1
+
+Record 166
+----------
+Schedule Id: SCH-0406
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-WELCOME
+Service Date: 2026-03-20
+Day Name: Friday
+Event Window: autumn_market_2025
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 2
+Effective At: 2026-03-08T18:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-03-14T14:00:00
+Revision: 1
+
+Record 167
+----------
+Schedule Id: SCH-0295
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: ORCHARD-GATE
+Service Date: 2026-04-03
+Day Name: Friday
+Event Window: spring_fair_2026
+Site Status: planned
+Public Access: No
+Weather Plan Status: pending
+Schedule Version: 2
+Effective At: 2026-02-15T13:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-03-30T15:00:00
+Revision: 1
+
+Record 168
+----------
+Schedule Id: SCH-0394
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: ORCHARD-GATE
+Service Date: 2026-04-26
+Day Name: Sunday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: pending
+Schedule Version: 4
+Effective At: 2026-03-14T18:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-04-20T15:00:00
+Revision: 1
+
+Record 169
+----------
+Schedule Id: SCH-0003
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-WELCOME
+Service Date: 2026-04-26
+Day Name: Sunday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-04-20T14:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-04-24T18:00:00
+Revision: 3
+Registration Url: riversidefair.org/volunteer
+Rain Plan Location: Riverside Community Hall — East Lobby
+Public Contact: volunteers@riversidefair.org
+
+Record 170
+----------
+Schedule Id: SCH-0059
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: MARKET-LAWN
+Service Date: 2026-07-04
+Day Name: Saturday
+Event Window: autumn_market_2025
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 2
+Effective At: 2026-05-12T23:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-06-28T19:00:00
+Revision: 1
+
+Record 171
+----------
+Schedule Id: SCH-0389
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: RIVER-HALL
+Service Date: 2026-05-01
+Day Name: Friday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: pending
+Schedule Version: 1
+Effective At: 2026-04-06T07:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-04-29T21:00:00
+Revision: 1
+
+Record 172
+----------
+Schedule Id: SCH-0221
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: CG-EAST
+Service Date: 2026-04-16
+Day Name: Thursday
+Event Window: river_fest_2026
+Site Status: planned
+Public Access: No
+Weather Plan Status: not_required
+Schedule Version: 3
+Effective At: 2026-02-22T16:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-04-14T23:00:00
+Revision: 1
+
+Record 173
+----------
+Schedule Id: SCH-0052
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: MARKET-LAWN
+Service Date: 2026-05-16
+Day Name: Saturday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 1
+Effective At: 2026-04-16T13:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-05-10T12:00:00
+Revision: 1
+
+Record 174
+----------
+Schedule Id: SCH-0420
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: ORCHARD-GATE
+Service Date: 2026-06-09
+Day Name: Tuesday
+Event Window: garden_day_2026
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 4
+Effective At: 2026-06-01T21:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-06-05T16:00:00
+Revision: 1
+
+Record 175
+----------
+Schedule Id: SCH-0159
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: MARKET-LAWN
+Service Date: 2026-06-04
+Day Name: Thursday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 2
+Effective At: 2026-05-03T16:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-05-29T16:00:00
+Revision: 1
+
+Record 176
+----------
+Schedule Id: SCH-0057
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: RIVER-HALL
+Service Date: 2026-06-21
+Day Name: Sunday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: review
+Schedule Version: 2
+Effective At: 2026-06-04T17:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-06-17T22:00:00
+Revision: 1
+
+Record 177
+----------
+Schedule Id: SCH-0129
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: MARKET-LAWN
+Service Date: 2026-04-29
+Day Name: Wednesday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 2
+Effective At: 2026-03-11T00:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-04-25T23:00:00
+Revision: 1
+
+Record 178
+----------
+Schedule Id: SCH-0258
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: MARKET-LAWN
+Service Date: 2026-05-26
+Day Name: Tuesday
+Event Window: autumn_market_2025
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 4
+Effective At: 2026-04-27T09:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-05-22T13:00:00
+Revision: 1
+
+Record 179
+----------
+Schedule Id: SCH-0390
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: MARKET-LAWN
+Service Date: 2026-06-13
+Day Name: Saturday
+Event Window: spring_fair_2026
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-04-23T22:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-06-08T13:00:00
+Revision: 1
+
+Record 180
+----------
+Schedule Id: SCH-0032
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: CG-WELCOME
+Service Date: 2026-05-17
+Day Name: Sunday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: pending
+Schedule Version: 4
+Effective At: 2026-04-17T19:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-05-15T20:00:00
+Revision: 1
+
+Record 181
+----------
+Schedule Id: SCH-0328
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-WELCOME
+Service Date: 2026-04-24
+Day Name: Friday
+Event Window: spring_fair_2026
+Site Status: relocated
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 2
+Effective At: 2026-03-06T21:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-04-21T12:00:00
+Revision: 1
+
+Record 182
+----------
+Schedule Id: SCH-0409
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: CG-WELCOME
+Service Date: 2026-04-25
+Day Name: Saturday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 2
+Effective At: 2026-04-15T07:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-04-23T15:00:00
+Revision: 1
+
+Record 183
+----------
+Schedule Id: SCH-0097
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: MARKET-LAWN
+Service Date: 2026-03-13
+Day Name: Friday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 2
+Effective At: 2026-02-01T19:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-03-09T20:00:00
+Revision: 1
+
+Record 184
+----------
+Schedule Id: SCH-0187
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: MARKET-LAWN
+Service Date: 2026-06-02
+Day Name: Tuesday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 2
+Effective At: 2026-04-11T09:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-05-28T13:00:00
+Revision: 1
+
+Record 185
+----------
+Schedule Id: SCH-0012
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: CG-EAST
+Service Date: 2026-06-20
+Day Name: Saturday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-06-13T09:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-06-16T12:00:00
+Revision: 1
+
+Record 186
+----------
+Schedule Id: SCH-0367
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: MARKET-LAWN
+Service Date: 2026-07-13
+Day Name: Monday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-05-23T06:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-07-09T14:00:00
+Revision: 1
+
+Record 187
+----------
+Schedule Id: SCH-0379
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: MARKET-LAWN
+Service Date: 2026-05-05
+Day Name: Tuesday
+Event Window: garden_day_2026
+Site Status: planned
+Public Access: No
+Weather Plan Status: review
+Schedule Version: 1
+Effective At: 2026-04-22T13:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-05-02T21:00:00
+Revision: 1
+
+Record 188
+----------
+Schedule Id: SCH-0152
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: MARKET-LAWN
+Service Date: 2026-04-03
+Day Name: Friday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 2
+Effective At: 2026-02-14T23:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-03-29T14:00:00
+Revision: 1
+
+Record 189
+----------
+Schedule Id: SCH-0279
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: ORCHARD-GATE
+Service Date: 2026-05-11
+Day Name: Monday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-04-11T07:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-05-06T17:00:00
+Revision: 1
+
+Record 190
+----------
+Schedule Id: SCH-0093
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: MARKET-LAWN
+Service Date: 2026-07-04
+Day Name: Saturday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 2
+Effective At: 2026-05-11T22:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-07-01T13:00:00
+Revision: 1
+
+Record 191
+----------
+Schedule Id: SCH-0320
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-WELCOME
+Service Date: 2026-05-24
+Day Name: Sunday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 1
+Effective At: 2026-04-20T21:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-05-20T21:00:00
+Revision: 1
+
+Record 192
+----------
+Schedule Id: SCH-0302
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: MARKET-LAWN
+Service Date: 2026-04-14
+Day Name: Tuesday
+Event Window: garden_day_2026
+Site Status: paused
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-02-24T20:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-04-08T16:00:00
+Revision: 1
+
+Record 193
+----------
+Schedule Id: SCH-0260
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: MARKET-LAWN
+Service Date: 2026-05-09
+Day Name: Saturday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 4
+Effective At: 2026-03-26T19:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-05-05T22:00:00
+Revision: 1
+
+Record 194
+----------
+Schedule Id: SCH-0160
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: ORCHARD-GATE
+Service Date: 2026-04-08
+Day Name: Wednesday
+Event Window: autumn_market_2025
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 3
+Effective At: 2026-02-18T09:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-04-05T22:00:00
+Revision: 1
+
+Record 195
+----------
+Schedule Id: SCH-0229
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: CG-WELCOME
+Service Date: 2026-04-07
+Day Name: Tuesday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-03-28T06:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-04-03T14:00:00
+Revision: 1
+
+Record 196
+----------
+Schedule Id: SCH-0005
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: MARKET-LAWN
+Service Date: 2026-05-15
+Day Name: Friday
+Event Window: spring_fair_2026
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-04-01T20:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-05-09T16:00:00
+Revision: 1
+
+Record 197
+----------
+Schedule Id: SCH-0378
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: MARKET-LAWN
+Service Date: 2026-07-09
+Day Name: Thursday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: not_required
+Schedule Version: 3
+Effective At: 2026-05-27T14:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-07-06T18:00:00
+Revision: 1
+
+Record 198
+----------
+Schedule Id: SCH-0123
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-EAST
+Service Date: 2026-03-09
+Day Name: Monday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-02-02T16:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-03-06T21:00:00
+Revision: 1
+
+Record 199
+----------
+Schedule Id: SCH-0312
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: RIVER-HALL
+Service Date: 2026-06-03
+Day Name: Wednesday
+Event Window: river_fest_2026
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 3
+Effective At: 2026-04-11T17:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-05-31T21:00:00
+Revision: 1
+
+Record 200
+----------
+Schedule Id: SCH-0131
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: RIVER-HALL
+Service Date: 2026-06-09
+Day Name: Tuesday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 2
+Effective At: 2026-04-29T21:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-06-06T21:00:00
+Revision: 1
+
+Record 201
+----------
+Schedule Id: SCH-0264
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: ORCHARD-GATE
+Service Date: 2026-07-05
+Day Name: Sunday
+Event Window: autumn_market_2025
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 4
+Effective At: 2026-05-26T14:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-07-01T12:00:00
+Revision: 1
+
+Record 202
+----------
+Schedule Id: SCH-0112
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: MARKET-LAWN
+Service Date: 2026-04-05
+Day Name: Sunday
+Event Window: garden_day_2026
+Site Status: relocated
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 4
+Effective At: 2026-02-15T08:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-04-02T12:00:00
+Revision: 1
+
+Record 203
+----------
+Schedule Id: SCH-0051
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: ORCHARD-GATE
+Service Date: 2026-05-08
+Day Name: Friday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 4
+Effective At: 2026-04-24T15:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-05-02T12:00:00
+Revision: 1
+
+Record 204
+----------
+Schedule Id: SCH-0392
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: RIVER-HALL
+Service Date: 2026-04-09
+Day Name: Thursday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: No
+Weather Plan Status: not_required
+Schedule Version: 2
+Effective At: 2026-03-27T13:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-04-04T20:00:00
+Revision: 1
+
+Record 205
+----------
+Schedule Id: SCH-0270
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: ORCHARD-GATE
+Service Date: 2026-06-15
+Day Name: Monday
+Event Window: river_fest_2026
+Site Status: paused
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-06-04T14:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-06-13T21:00:00
+Revision: 1
+
+Record 206
+----------
+Schedule Id: SCH-0206
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: MARKET-LAWN
+Service Date: 2026-06-03
+Day Name: Wednesday
+Event Window: garden_day_2026
+Site Status: relocated
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 2
+Effective At: 2026-05-22T15:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-05-31T00:00:00
+Revision: 1
+
+Record 207
+----------
+Schedule Id: SCH-0133
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: RIVER-HALL
+Service Date: 2026-06-17
+Day Name: Wednesday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-05-04T15:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-06-13T23:00:00
+Revision: 1
+
+Record 208
+----------
+Schedule Id: SCH-0257
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: ORCHARD-GATE
+Service Date: 2026-06-03
+Day Name: Wednesday
+Event Window: garden_day_2026
+Site Status: paused
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 4
+Effective At: 2026-04-08T21:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-06-02T00:00:00
+Revision: 1
+
+Record 209
+----------
+Schedule Id: SCH-0306
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-WELCOME
+Service Date: 2026-04-10
+Day Name: Friday
+Event Window: garden_day_2026
+Site Status: relocated
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-03-24T20:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-04-07T17:00:00
+Revision: 1
+
+Record 210
+----------
+Schedule Id: SCH-0348
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: ORCHARD-GATE
+Service Date: 2026-04-25
+Day Name: Saturday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-02-28T20:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-04-20T19:00:00
+Revision: 1
+
+Record 211
+----------
+Schedule Id: SCH-0244
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-WELCOME
+Service Date: 2026-05-29
+Day Name: Friday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 1
+Effective At: 2026-04-21T16:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-05-26T13:00:00
+Revision: 1
+
+Record 212
+----------
+Schedule Id: SCH-0132
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: RIVER-HALL
+Service Date: 2026-04-07
+Day Name: Tuesday
+Event Window: autumn_market_2025
+Site Status: paused
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-03-06T12:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-04-05T18:00:00
+Revision: 1
+
+Record 213
+----------
+Schedule Id: SCH-0011
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: ORCHARD-GATE
+Service Date: 2026-05-09
+Day Name: Saturday
+Event Window: spring_fair_2026
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 2
+Effective At: 2026-03-31T20:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-05-07T16:00:00
+Revision: 1
+
+Record 214
+----------
+Schedule Id: SCH-0263
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: ORCHARD-GATE
+Service Date: 2026-07-10
+Day Name: Friday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 4
+Effective At: 2026-06-07T00:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-07-08T20:00:00
+Revision: 1
+
+Record 215
+----------
+Schedule Id: SCH-0399
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: MARKET-LAWN
+Service Date: 2026-06-02
+Day Name: Tuesday
+Event Window: spring_fair_2026
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-05-01T06:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-05-29T14:00:00
+Revision: 1
+
+Record 216
+----------
+Schedule Id: SCH-0374
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: MARKET-LAWN
+Service Date: 2026-04-22
+Day Name: Wednesday
+Event Window: garden_day_2026
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: review
+Schedule Version: 2
+Effective At: 2026-03-25T15:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-04-20T19:00:00
+Revision: 1
+
+Record 217
+----------
+Schedule Id: SCH-0134
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: RIVER-HALL
+Service Date: 2026-04-14
+Day Name: Tuesday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-04-06T07:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-04-11T20:00:00
+Revision: 1
+
+Record 218
+----------
+Schedule Id: SCH-0401
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: ORCHARD-GATE
+Service Date: 2026-05-31
+Day Name: Sunday
+Event Window: garden_day_2026
+Site Status: relocated
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 1
+Effective At: 2026-05-20T13:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-05-26T00:00:00
+Revision: 1
+
+Record 219
+----------
+Schedule Id: SCH-0135
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: ORCHARD-GATE
+Service Date: 2026-06-16
+Day Name: Tuesday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 1
+Effective At: 2026-04-27T17:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-06-14T21:00:00
+Revision: 1
+
+Record 220
+----------
+Schedule Id: SCH-0356
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: RIVER-HALL
+Service Date: 2026-05-24
+Day Name: Sunday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 1
+Effective At: 2026-03-30T22:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-05-22T20:00:00
+Revision: 1
+
+Record 221
+----------
+Schedule Id: SCH-0044
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: MARKET-LAWN
+Service Date: 2026-06-18
+Day Name: Thursday
+Event Window: river_fest_2026
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 3
+Effective At: 2026-05-15T21:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-06-13T19:00:00
+Revision: 1
+
+Record 222
+----------
+Schedule Id: SCH-0043
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-WELCOME
+Service Date: 2026-04-13
+Day Name: Monday
+Event Window: garden_day_2026
+Site Status: paused
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 3
+Effective At: 2026-03-07T07:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-04-10T16:00:00
+Revision: 1
+
+Record 223
+----------
+Schedule Id: SCH-0309
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-EAST
+Service Date: 2026-03-16
+Day Name: Monday
+Event Window: spring_fair_2026
+Site Status: relocated
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-01-26T22:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-03-14T18:00:00
+Revision: 1
+
+Record 224
+----------
+Schedule Id: SCH-0225
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: RIVER-HALL
+Service Date: 2026-04-16
+Day Name: Thursday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 2
+Effective At: 2026-02-20T17:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-04-13T16:00:00
+Revision: 1
+
+Record 225
+----------
+Schedule Id: SCH-0329
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: CG-WELCOME
+Service Date: 2026-04-14
+Day Name: Tuesday
+Event Window: river_fest_2026
+Site Status: planned
+Public Access: No
+Weather Plan Status: not_required
+Schedule Version: 4
+Effective At: 2026-03-26T16:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-04-09T22:00:00
+Revision: 1
+
+Record 226
+----------
+Schedule Id: SCH-0175
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-WELCOME
+Service Date: 2026-04-17
+Day Name: Friday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 3
+Effective At: 2026-03-16T18:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-04-15T23:00:00
+Revision: 1
+
+Record 227
+----------
+Schedule Id: SCH-0166
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: ORCHARD-GATE
+Service Date: 2026-04-02
+Day Name: Thursday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-03-05T09:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-03-29T22:00:00
+Revision: 1
+
+Record 228
+----------
+Schedule Id: SCH-0349
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-WELCOME
+Service Date: 2026-04-13
+Day Name: Monday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-02-28T17:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-04-11T16:00:00
+Revision: 1
+
+Record 229
+----------
+Schedule Id: SCH-0400
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: RIVER-HALL
+Service Date: 2026-04-09
+Day Name: Thursday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-03-05T21:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-04-06T16:00:00
+Revision: 1
+
+Record 230
+----------
+Schedule Id: SCH-0061
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: RIVER-HALL
+Service Date: 2026-03-17
+Day Name: Tuesday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 2
+Effective At: 2026-02-08T00:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-03-14T19:00:00
+Revision: 1
+
+Record 231
+----------
+Schedule Id: SCH-0403
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-WELCOME
+Service Date: 2026-05-09
+Day Name: Saturday
+Event Window: spring_fair_2026
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 4
+Effective At: 2026-03-29T15:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-05-04T13:00:00
+Revision: 1
+
+Record 232
+----------
+Schedule Id: SCH-0272
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: CG-WELCOME
+Service Date: 2026-03-09
+Day Name: Monday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 2
+Effective At: 2026-02-20T06:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-03-06T20:00:00
+Revision: 1
+
+Record 233
+----------
+Schedule Id: SCH-0178
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-EAST
+Service Date: 2026-05-07
+Day Name: Thursday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-04-19T16:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-05-03T22:00:00
+Revision: 1
+
+Record 234
+----------
+Schedule Id: SCH-0086
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: RIVER-HALL
+Service Date: 2026-07-04
+Day Name: Saturday
+Event Window: spring_fair_2026
+Site Status: planned
+Public Access: No
+Weather Plan Status: not_required
+Schedule Version: 4
+Effective At: 2026-05-27T19:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-06-29T17:00:00
+Revision: 1
+
+Record 235
+----------
+Schedule Id: SCH-0388
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: RIVER-HALL
+Service Date: 2026-05-12
+Day Name: Tuesday
+Event Window: garden_day_2026
+Site Status: paused
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-03-30T14:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-05-08T17:00:00
+Revision: 1
+
+Record 236
+----------
+Schedule Id: SCH-0169
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-WELCOME
+Service Date: 2026-05-26
+Day Name: Tuesday
+Event Window: garden_day_2026
+Site Status: planned
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-04-11T10:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-05-22T23:00:00
+Revision: 1
+
+Record 237
+----------
+Schedule Id: SCH-0382
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: ORCHARD-GATE
+Service Date: 2026-03-20
+Day Name: Friday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 1
+Effective At: 2026-01-27T11:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-03-15T19:00:00
+Revision: 1
+
+Record 238
+----------
+Schedule Id: SCH-0410
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-EAST
+Service Date: 2026-07-07
+Day Name: Tuesday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: not_required
+Schedule Version: 4
+Effective At: 2026-06-02T09:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-07-03T16:00:00
+Revision: 1
+
+Record 239
+----------
+Schedule Id: SCH-0077
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-EAST
+Service Date: 2026-04-28
+Day Name: Tuesday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 3
+Effective At: 2026-04-17T12:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-04-23T00:00:00
+Revision: 1
+
+Record 240
+----------
+Schedule Id: SCH-0336
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: RIVER-HALL
+Service Date: 2026-06-05
+Day Name: Friday
+Event Window: spring_fair_2026
+Site Status: planned
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-04-19T18:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-06-01T00:00:00
+Revision: 1
+
+Record 241
+----------
+Schedule Id: SCH-0384
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: RIVER-HALL
+Service Date: 2026-04-22
+Day Name: Wednesday
+Event Window: autumn_market_2025
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 3
+Effective At: 2026-03-31T22:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-04-20T00:00:00
+Revision: 1
+
+Record 242
+----------
+Schedule Id: SCH-0023
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: CG-WELCOME
+Service Date: 2026-05-17
+Day Name: Sunday
+Event Window: river_fest_2026
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-04-16T18:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-05-13T21:00:00
+Revision: 1
+
+Record 243
+----------
+Schedule Id: SCH-0100
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: ORCHARD-GATE
+Service Date: 2026-04-13
+Day Name: Monday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: review
+Schedule Version: 2
+Effective At: 2026-04-02T20:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-04-09T12:00:00
+Revision: 1
+
+Record 244
+----------
+Schedule Id: SCH-0364
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: ORCHARD-GATE
+Service Date: 2026-05-28
+Day Name: Thursday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-05-11T13:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-05-26T14:00:00
+Revision: 1
+
+Record 245
+----------
+Schedule Id: SCH-0173
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: RIVER-HALL
+Service Date: 2026-06-20
+Day Name: Saturday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 3
+Effective At: 2026-06-08T11:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-06-15T12:00:00
+Revision: 1
+
+Record 246
+----------
+Schedule Id: SCH-0304
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: MARKET-LAWN
+Service Date: 2026-04-05
+Day Name: Sunday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-03-26T13:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-03-31T22:00:00
+Revision: 1
+
+Record 247
+----------
+Schedule Id: SCH-0407
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-WELCOME
+Service Date: 2026-04-08
+Day Name: Wednesday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: review
+Schedule Version: 1
+Effective At: 2026-02-14T07:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-04-03T13:00:00
+Revision: 1
+
+Record 248
+----------
+Schedule Id: SCH-0291
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-WELCOME
+Service Date: 2026-05-28
+Day Name: Thursday
+Event Window: garden_day_2026
+Site Status: paused
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 1
+Effective At: 2026-04-11T21:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-05-23T15:00:00
+Revision: 1
+
+Record 249
+----------
+Schedule Id: SCH-0308
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-WELCOME
+Service Date: 2026-04-11
+Day Name: Saturday
+Event Window: spring_fair_2026
+Site Status: paused
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 1
+Effective At: 2026-03-11T12:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-04-06T14:00:00
+Revision: 1
+
+Record 250
+----------
+Schedule Id: SCH-0395
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-EAST
+Service Date: 2026-04-10
+Day Name: Friday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 4
+Effective At: 2026-03-31T17:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-04-07T00:00:00
+Revision: 1
+
+Record 251
+----------
+Schedule Id: SCH-0094
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-WELCOME
+Service Date: 2026-06-04
+Day Name: Thursday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-04-30T09:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-05-30T22:00:00
+Revision: 1
+
+Record 252
+----------
+Schedule Id: SCH-0234
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: CG-WELCOME
+Service Date: 2026-03-18
+Day Name: Wednesday
+Event Window: river_fest_2026
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-02-10T19:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-03-17T00:00:00
+Revision: 1
+
+Record 253
+----------
+Schedule Id: SCH-0359
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: RIVER-HALL
+Service Date: 2026-07-02
+Day Name: Thursday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: review
+Schedule Version: 3
+Effective At: 2026-05-17T14:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-06-29T21:00:00
+Revision: 1
+
+Record 254
+----------
+Schedule Id: SCH-0319
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: RIVER-HALL
+Service Date: 2026-04-26
+Day Name: Sunday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-03-25T20:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-04-23T22:00:00
+Revision: 1
+
+Record 255
+----------
+Schedule Id: SCH-0227
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-WELCOME
+Service Date: 2026-05-06
+Day Name: Wednesday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-03-14T08:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-04-30T21:00:00
+Revision: 1
+
+Record 256
+----------
+Schedule Id: SCH-0333
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-EAST
+Service Date: 2026-07-12
+Day Name: Sunday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 1
+Effective At: 2026-05-29T07:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-07-08T13:00:00
+Revision: 1
+
+Record 257
+----------
+Schedule Id: SCH-0217
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-WELCOME
+Service Date: 2026-05-09
+Day Name: Saturday
+Event Window: autumn_market_2025
+Site Status: paused
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 2
+Effective At: 2026-04-21T06:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-05-03T18:00:00
+Revision: 1
+
+Record 258
+----------
+Schedule Id: SCH-0001
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-WELCOME
+Service Date: 2026-04-26
+Day Name: Sunday
+Event Window: spring_fair_2026
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 1
+Effective At: 2026-03-15T09:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-04-24T18:00:00
+Revision: 1
+
+Record 259
+----------
+Schedule Id: SCH-0208
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-EAST
+Service Date: 2026-05-27
+Day Name: Wednesday
+Event Window: garden_day_2026
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 2
+Effective At: 2026-05-04T14:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-05-21T14:00:00
+Revision: 1
+
+Record 260
+----------
+Schedule Id: SCH-0053
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-WELCOME
+Service Date: 2026-05-12
+Day Name: Tuesday
+Event Window: spring_fair_2026
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 3
+Effective At: 2026-03-26T07:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-05-10T19:00:00
+Revision: 1
+
+Record 261
+----------
+Schedule Id: SCH-0188
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: ORCHARD-GATE
+Service Date: 2026-04-09
+Day Name: Thursday
+Event Window: autumn_market_2025
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 2
+Effective At: 2026-02-21T08:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-04-07T19:00:00
+Revision: 1
+
+Record 262
+----------
+Schedule Id: SCH-0241
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: ORCHARD-GATE
+Service Date: 2026-04-21
+Day Name: Tuesday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: review
+Schedule Version: 2
+Effective At: 2026-03-28T17:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-04-18T15:00:00
+Revision: 1
+
+Record 263
+----------
+Schedule Id: SCH-0046
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-EAST
+Service Date: 2026-04-18
+Day Name: Saturday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-02-28T09:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-04-15T23:00:00
+Revision: 1
+
+Record 264
+----------
+Schedule Id: SCH-0324
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: MARKET-LAWN
+Service Date: 2026-04-03
+Day Name: Friday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-03-08T10:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-03-29T15:00:00
+Revision: 1
+
+Record 265
+----------
+Schedule Id: SCH-0199
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: ORCHARD-GATE
+Service Date: 2026-03-13
+Day Name: Friday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 2
+Effective At: 2026-02-02T08:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-03-07T22:00:00
+Revision: 1
+
+Record 266
+----------
+Schedule Id: SCH-0339
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-EAST
+Service Date: 2026-07-11
+Day Name: Saturday
+Event Window: garden_day_2026
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: review
+Schedule Version: 4
+Effective At: 2026-06-16T09:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-07-08T21:00:00
+Revision: 1
+
+Record 267
+----------
+Schedule Id: SCH-0292
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: MARKET-LAWN
+Service Date: 2026-06-01
+Day Name: Monday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-05-24T13:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-05-27T17:00:00
+Revision: 1
+
+Record 268
+----------
+Schedule Id: SCH-0098
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: MARKET-LAWN
+Service Date: 2026-04-15
+Day Name: Wednesday
+Event Window: garden_day_2026
+Site Status: paused
+Public Access: Yes
+Weather Plan Status: review
+Schedule Version: 2
+Effective At: 2026-03-23T09:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-04-10T21:00:00
+Revision: 1
+
+Record 269
+----------
+Schedule Id: SCH-0103
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: RIVER-HALL
+Service Date: 2026-03-31
+Day Name: Tuesday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: not_required
+Schedule Version: 2
+Effective At: 2026-02-06T16:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-03-27T13:00:00
+Revision: 1
+
+Record 270
+----------
+Schedule Id: SCH-0222
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-WELCOME
+Service Date: 2026-06-26
+Day Name: Friday
+Event Window: spring_fair_2026
+Site Status: planned
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-06-09T17:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-06-22T18:00:00
+Revision: 1
+
+Record 271
+----------
+Schedule Id: SCH-0283
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-WELCOME
+Service Date: 2026-04-07
+Day Name: Tuesday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-02-27T11:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-04-01T20:00:00
+Revision: 1
+
+Record 272
+----------
+Schedule Id: SCH-0256
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: MARKET-LAWN
+Service Date: 2026-03-20
+Day Name: Friday
+Event Window: spring_fair_2026
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 1
+Effective At: 2026-03-11T14:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-03-18T20:00:00
+Revision: 1
+
+Record 273
+----------
+Schedule Id: SCH-0337
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-WELCOME
+Service Date: 2026-05-13
+Day Name: Wednesday
+Event Window: spring_fair_2026
+Site Status: relocated
+Public Access: No
+Weather Plan Status: pending
+Schedule Version: 4
+Effective At: 2026-03-25T23:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-05-10T22:00:00
+Revision: 1
+
+Record 274
+----------
+Schedule Id: SCH-0413
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-WELCOME
+Service Date: 2026-05-03
+Day Name: Sunday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 2
+Effective At: 2026-04-25T06:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-04-28T22:00:00
+Revision: 1
+
+Record 275
+----------
+Schedule Id: SCH-0351
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-EAST
+Service Date: 2026-04-02
+Day Name: Thursday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 2
+Effective At: 2026-03-27T10:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-03-28T00:00:00
+Revision: 1
+
+Record 276
+----------
+Schedule Id: SCH-0095
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: ORCHARD-GATE
+Service Date: 2026-07-03
+Day Name: Friday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 2
+Effective At: 2026-06-13T06:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-06-27T15:00:00
+Revision: 1
+
+Record 277
+----------
+Schedule Id: SCH-0269
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: ORCHARD-GATE
+Service Date: 2026-03-15
+Day Name: Sunday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-01-20T14:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-03-09T13:00:00
+Revision: 1
+
+Record 278
+----------
+Schedule Id: SCH-0121
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-WELCOME
+Service Date: 2026-06-25
+Day Name: Thursday
+Event Window: spring_fair_2026
+Site Status: paused
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-06-15T19:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-06-22T15:00:00
+Revision: 1
+
+Record 279
+----------
+Schedule Id: SCH-0038
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-EAST
+Service Date: 2026-07-11
+Day Name: Saturday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: pending
+Schedule Version: 1
+Effective At: 2026-06-20T11:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-07-05T20:00:00
+Revision: 1
+
+Record 280
+----------
+Schedule Id: SCH-0377
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-EAST
+Service Date: 2026-07-04
+Day Name: Saturday
+Event Window: autumn_market_2025
+Site Status: paused
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-05-12T21:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-07-03T00:00:00
+Revision: 1
+
+Record 281
+----------
+Schedule Id: SCH-0138
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: MARKET-LAWN
+Service Date: 2026-06-30
+Day Name: Tuesday
+Event Window: river_fest_2026
+Site Status: paused
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 2
+Effective At: 2026-06-06T12:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-06-24T15:00:00
+Revision: 1
+
+Record 282
+----------
+Schedule Id: SCH-0058
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: MARKET-LAWN
+Service Date: 2026-03-26
+Day Name: Thursday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: No
+Weather Plan Status: pending
+Schedule Version: 3
+Effective At: 2026-02-01T17:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-03-24T23:00:00
+Revision: 1
+
+Record 283
+----------
+Schedule Id: SCH-0254
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: RIVER-HALL
+Service Date: 2026-05-04
+Day Name: Monday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-03-25T08:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-04-29T17:00:00
+Revision: 1
+
+Record 284
+----------
+Schedule Id: SCH-0033
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: CG-EAST
+Service Date: 2026-05-03
+Day Name: Sunday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: review
+Schedule Version: 4
+Effective At: 2026-03-28T16:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-04-29T16:00:00
+Revision: 1
+
+Record 285
+----------
+Schedule Id: SCH-0239
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: CG-EAST
+Service Date: 2026-07-13
+Day Name: Monday
+Event Window: river_fest_2026
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: review
+Schedule Version: 3
+Effective At: 2026-06-09T17:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-07-09T14:00:00
+Revision: 1
+
+Record 286
+----------
+Schedule Id: SCH-0084
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-EAST
+Service Date: 2026-04-05
+Day Name: Sunday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-03-13T14:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-04-03T15:00:00
+Revision: 1
+
+Record 287
+----------
+Schedule Id: SCH-0117
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-WELCOME
+Service Date: 2026-06-25
+Day Name: Thursday
+Event Window: garden_day_2026
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-06-16T09:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-06-23T16:00:00
+Revision: 1
+
+Record 288
+----------
+Schedule Id: SCH-0381
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: RIVER-HALL
+Service Date: 2026-03-12
+Day Name: Thursday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-01-26T15:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-03-08T23:00:00
+Revision: 1
+
+Record 289
+----------
+Schedule Id: SCH-0014
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-WELCOME
+Service Date: 2026-06-20
+Day Name: Saturday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-05-04T09:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-06-17T20:00:00
+Revision: 1
+
+Record 290
+----------
+Schedule Id: SCH-0165
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: RIVER-HALL
+Service Date: 2026-05-03
+Day Name: Sunday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: not_required
+Schedule Version: 4
+Effective At: 2026-04-25T21:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-04-28T22:00:00
+Revision: 1
+
+Record 291
+----------
+Schedule Id: SCH-0261
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: RIVER-HALL
+Service Date: 2026-06-20
+Day Name: Saturday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: review
+Schedule Version: 3
+Effective At: 2026-05-18T13:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-06-14T15:00:00
+Revision: 1
+
+Record 292
+----------
+Schedule Id: SCH-0037
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-EAST
+Service Date: 2026-06-25
+Day Name: Thursday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: review
+Schedule Version: 2
+Effective At: 2026-06-03T13:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-06-19T16:00:00
+Revision: 1
+
+Record 293
+----------
+Schedule Id: SCH-0330
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: RIVER-HALL
+Service Date: 2026-03-07
+Day Name: Saturday
+Event Window: autumn_market_2025
+Site Status: planned
+Public Access: No
+Weather Plan Status: not_required
+Schedule Version: 1
+Effective At: 2026-02-13T13:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-03-01T16:00:00
+Revision: 1
+
+Record 294
+----------
+Schedule Id: SCH-0191
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: RIVER-HALL
+Service Date: 2026-06-27
+Day Name: Saturday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 2
+Effective At: 2026-05-21T17:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-06-21T22:00:00
+Revision: 1
+
+Record 295
+----------
+Schedule Id: SCH-0055
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: RIVER-HALL
+Service Date: 2026-04-14
+Day Name: Tuesday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 2
+Effective At: 2026-02-26T15:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-04-08T23:00:00
+Revision: 1
+
+Record 296
+----------
+Schedule Id: SCH-0235
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-WELCOME
+Service Date: 2026-06-18
+Day Name: Thursday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 1
+Effective At: 2026-06-04T12:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-06-16T14:00:00
+Revision: 1
+
+Record 297
+----------
+Schedule Id: SCH-0340
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: ORCHARD-GATE
+Service Date: 2026-06-24
+Day Name: Wednesday
+Event Window: spring_fair_2026
+Site Status: paused
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 2
+Effective At: 2026-05-27T11:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-06-22T13:00:00
+Revision: 1
+
+Record 298
+----------
+Schedule Id: SCH-0298
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: ORCHARD-GATE
+Service Date: 2026-03-15
+Day Name: Sunday
+Event Window: river_fest_2026
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 2
+Effective At: 2026-01-27T00:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-03-10T14:00:00
+Revision: 1
+
+Record 299
+----------
+Schedule Id: SCH-0380
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-WELCOME
+Service Date: 2026-05-27
+Day Name: Wednesday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: pending
+Schedule Version: 4
+Effective At: 2026-05-15T20:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-05-25T00:00:00
+Revision: 1
+
+Record 300
+----------
+Schedule Id: SCH-0236
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: RIVER-HALL
+Service Date: 2026-04-01
+Day Name: Wednesday
+Event Window: autumn_market_2025
+Site Status: relocated
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-02-05T00:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-03-29T16:00:00
+Revision: 1
+
+Record 301
+----------
+Schedule Id: SCH-0089
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: MARKET-LAWN
+Service Date: 2026-07-02
+Day Name: Thursday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 4
+Effective At: 2026-06-06T10:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-06-29T00:00:00
+Revision: 1
+
+Record 302
+----------
+Schedule Id: SCH-0078
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-EAST
+Service Date: 2026-07-14
+Day Name: Tuesday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: No
+Weather Plan Status: not_required
+Schedule Version: 2
+Effective At: 2026-06-18T15:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-07-09T21:00:00
+Revision: 1
+
+Record 303
+----------
+Schedule Id: SCH-0087
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: ORCHARD-GATE
+Service Date: 2026-04-20
+Day Name: Monday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 3
+Effective At: 2026-04-02T00:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-04-17T16:00:00
+Revision: 1
+
+Record 304
+----------
+Schedule Id: SCH-0182
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: RIVER-HALL
+Service Date: 2026-05-29
+Day Name: Friday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 2
+Effective At: 2026-05-14T07:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-05-27T21:00:00
+Revision: 1
+
+Record 305
+----------
+Schedule Id: SCH-0268
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: ORCHARD-GATE
+Service Date: 2026-05-07
+Day Name: Thursday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 4
+Effective At: 2026-03-22T16:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-05-01T12:00:00
+Revision: 1
+
+Record 306
+----------
+Schedule Id: SCH-0323
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: MARKET-LAWN
+Service Date: 2026-05-21
+Day Name: Thursday
+Event Window: garden_day_2026
+Site Status: paused
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-04-30T21:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-05-16T15:00:00
+Revision: 1
+
+Record 307
+----------
+Schedule Id: SCH-0076
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: MARKET-LAWN
+Service Date: 2026-06-13
+Day Name: Saturday
+Event Window: river_fest_2026
+Site Status: paused
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 3
+Effective At: 2026-04-27T09:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-06-11T17:00:00
+Revision: 1
+
+Record 308
+----------
+Schedule Id: SCH-0345
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: MARKET-LAWN
+Service Date: 2026-06-08
+Day Name: Monday
+Event Window: autumn_market_2025
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-04-14T16:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-06-06T20:00:00
+Revision: 1
+
+Record 309
+----------
+Schedule Id: SCH-0310
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-EAST
+Service Date: 2026-03-14
+Day Name: Saturday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 1
+Effective At: 2026-01-24T12:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-03-10T20:00:00
+Revision: 1
+
+Record 310
+----------
+Schedule Id: SCH-0122
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-EAST
+Service Date: 2026-04-16
+Day Name: Thursday
+Event Window: spring_fair_2026
+Site Status: paused
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-02-26T11:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-04-12T14:00:00
+Revision: 1
+
+Record 311
+----------
+Schedule Id: SCH-0054
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: MARKET-LAWN
+Service Date: 2026-06-07
+Day Name: Sunday
+Event Window: garden_day_2026
+Site Status: paused
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 2
+Effective At: 2026-05-18T11:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-06-01T12:00:00
+Revision: 1
+
+Record 312
+----------
+Schedule Id: SCH-0124
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: CG-WELCOME
+Service Date: 2026-07-04
+Day Name: Saturday
+Event Window: river_fest_2026
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 2
+Effective At: 2026-05-29T20:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-06-28T12:00:00
+Revision: 1
+
+Record 313
+----------
+Schedule Id: SCH-0050
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-EAST
+Service Date: 2026-04-23
+Day Name: Thursday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 2
+Effective At: 2026-04-09T19:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-04-19T15:00:00
+Revision: 1
+
+Record 314
+----------
+Schedule Id: SCH-0022
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-WELCOME
+Service Date: 2026-03-28
+Day Name: Saturday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-03-16T07:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-03-22T17:00:00
+Revision: 1
+
+Record 315
+----------
+Schedule Id: SCH-0385
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-WELCOME
+Service Date: 2026-06-15
+Day Name: Monday
+Event Window: garden_day_2026
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-06-06T21:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-06-12T13:00:00
+Revision: 1
+
+Record 316
+----------
+Schedule Id: SCH-0213
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-WELCOME
+Service Date: 2026-03-30
+Day Name: Monday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 2
+Effective At: 2026-03-05T16:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-03-27T21:00:00
+Revision: 1
+
+Record 317
+----------
+Schedule Id: SCH-0181
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-WELCOME
+Service Date: 2026-03-23
+Day Name: Monday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 1
+Effective At: 2026-02-02T08:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-03-18T19:00:00
+Revision: 1
+
+Record 318
+----------
+Schedule Id: SCH-0202
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: MARKET-LAWN
+Service Date: 2026-05-19
+Day Name: Tuesday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: pending
+Schedule Version: 2
+Effective At: 2026-04-28T07:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-05-16T22:00:00
+Revision: 1
+
+Record 319
+----------
+Schedule Id: SCH-0355
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: MARKET-LAWN
+Service Date: 2026-04-30
+Day Name: Thursday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: review
+Schedule Version: 2
+Effective At: 2026-04-10T20:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-04-24T12:00:00
+Revision: 1
+
+Record 320
+----------
+Schedule Id: SCH-0322
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-EAST
+Service Date: 2026-04-29
+Day Name: Wednesday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-04-08T07:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-04-25T20:00:00
+Revision: 1
+
+Record 321
+----------
+Schedule Id: SCH-0408
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: CG-WELCOME
+Service Date: 2026-04-04
+Day Name: Saturday
+Event Window: river_fest_2026
+Site Status: paused
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-03-18T07:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-03-30T16:00:00
+Revision: 1
+
+Record 322
+----------
+Schedule Id: SCH-0338
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: RIVER-HALL
+Service Date: 2026-05-04
+Day Name: Monday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-04-20T18:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-05-02T13:00:00
+Revision: 1
+
+Record 323
+----------
+Schedule Id: SCH-0231
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: ORCHARD-GATE
+Service Date: 2026-03-27
+Day Name: Friday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-02-21T00:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-03-21T22:00:00
+Revision: 1
+
+Record 324
+----------
+Schedule Id: SCH-0069
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: ORCHARD-GATE
+Service Date: 2026-04-28
+Day Name: Tuesday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 1
+Effective At: 2026-04-01T18:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-04-24T15:00:00
+Revision: 1
+
+Record 325
+----------
+Schedule Id: SCH-0314
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: MARKET-LAWN
+Service Date: 2026-03-30
+Day Name: Monday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-03-07T22:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-03-24T16:00:00
+Revision: 1
+
+Record 326
+----------
+Schedule Id: SCH-0039
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: MARKET-LAWN
+Service Date: 2026-03-15
+Day Name: Sunday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: No
+Weather Plan Status: not_required
+Schedule Version: 4
+Effective At: 2026-02-06T14:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-03-12T15:00:00
+Revision: 1
+
+Record 327
+----------
+Schedule Id: SCH-0109
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: ORCHARD-GATE
+Service Date: 2026-06-17
+Day Name: Wednesday
+Event Window: river_fest_2026
+Site Status: paused
+Public Access: No
+Weather Plan Status: not_required
+Schedule Version: 4
+Effective At: 2026-05-11T12:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-06-12T21:00:00
+Revision: 1
+
+Record 328
+----------
+Schedule Id: SCH-0028
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-EAST
+Service Date: 2026-04-14
+Day Name: Tuesday
+Event Window: spring_fair_2026
+Site Status: paused
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-03-21T19:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-04-10T23:00:00
+Revision: 1
+
+Record 329
+----------
+Schedule Id: SCH-0321
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-WELCOME
+Service Date: 2026-06-24
+Day Name: Wednesday
+Event Window: autumn_market_2025
+Site Status: paused
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-06-01T13:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-06-20T15:00:00
+Revision: 1
+
+Record 330
+----------
+Schedule Id: SCH-0280
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: ORCHARD-GATE
+Service Date: 2026-05-08
+Day Name: Friday
+Event Window: river_fest_2026
+Site Status: relocated
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-04-15T17:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-05-06T22:00:00
+Revision: 1
+
+Record 331
+----------
+Schedule Id: SCH-0247
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: ORCHARD-GATE
+Service Date: 2026-05-09
+Day Name: Saturday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 4
+Effective At: 2026-04-25T14:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-05-07T00:00:00
+Revision: 1
+
+Record 332
+----------
+Schedule Id: SCH-0238
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-EAST
+Service Date: 2026-05-31
+Day Name: Sunday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-04-06T18:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-05-26T19:00:00
+Revision: 1
+
+Record 333
+----------
+Schedule Id: SCH-0115
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: ORCHARD-GATE
+Service Date: 2026-06-13
+Day Name: Saturday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 2
+Effective At: 2026-05-16T19:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-06-11T19:00:00
+Revision: 1
+
+Record 334
+----------
+Schedule Id: SCH-0305
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: MARKET-LAWN
+Service Date: 2026-06-20
+Day Name: Saturday
+Event Window: autumn_market_2025
+Site Status: paused
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-05-01T00:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-06-18T16:00:00
+Revision: 1
+
+Record 335
+----------
+Schedule Id: SCH-0114
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: ORCHARD-GATE
+Service Date: 2026-04-26
+Day Name: Sunday
+Event Window: spring_fair_2026
+Site Status: planned
+Public Access: No
+Weather Plan Status: not_required
+Schedule Version: 1
+Effective At: 2026-03-27T16:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-04-24T13:00:00
+Revision: 1
+
+Record 336
+----------
+Schedule Id: SCH-0267
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-EAST
+Service Date: 2026-06-24
+Day Name: Wednesday
+Event Window: autumn_market_2025
+Site Status: relocated
+Public Access: Yes
+Weather Plan Status: review
+Schedule Version: 2
+Effective At: 2026-06-02T20:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-06-22T15:00:00
+Revision: 1
+
+Record 337
+----------
+Schedule Id: SCH-0143
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: MARKET-LAWN
+Service Date: 2026-04-15
+Day Name: Wednesday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 4
+Effective At: 2026-02-19T09:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-04-13T19:00:00
+Revision: 1
+
+Record 338
+----------
+Schedule Id: SCH-0282
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-WELCOME
+Service Date: 2026-06-13
+Day Name: Saturday
+Event Window: garden_day_2026
+Site Status: paused
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 3
+Effective At: 2026-06-07T14:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-06-07T13:00:00
+Revision: 1
+
+Record 339
+----------
+Schedule Id: SCH-0083
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-WELCOME
+Service Date: 2026-05-11
+Day Name: Monday
+Event Window: autumn_market_2025
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 2
+Effective At: 2026-03-27T06:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-05-08T23:00:00
+Revision: 1
+
+Record 340
+----------
+Schedule Id: SCH-0185
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-EAST
+Service Date: 2026-05-15
+Day Name: Friday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-03-23T16:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-05-10T17:00:00
+Revision: 1
+
+Record 341
+----------
+Schedule Id: SCH-0371
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: ORCHARD-GATE
+Service Date: 2026-07-11
+Day Name: Saturday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-06-07T17:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-07-08T21:00:00
+Revision: 1
+
+Record 342
+----------
+Schedule Id: SCH-0404
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-EAST
+Service Date: 2026-03-07
+Day Name: Saturday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-02-21T11:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-03-03T18:00:00
+Revision: 1
+
+Record 343
+----------
+Schedule Id: SCH-0230
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: RIVER-HALL
+Service Date: 2026-03-31
+Day Name: Tuesday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: not_required
+Schedule Version: 1
+Effective At: 2026-03-25T22:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-03-27T21:00:00
+Revision: 1
+
+Record 344
+----------
+Schedule Id: SCH-0066
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: ORCHARD-GATE
+Service Date: 2026-04-24
+Day Name: Friday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-04-14T19:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-04-20T16:00:00
+Revision: 1
+
+Record 345
+----------
+Schedule Id: SCH-0290
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: RIVER-HALL
+Service Date: 2026-05-30
+Day Name: Saturday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: No
+Weather Plan Status: pending
+Schedule Version: 2
+Effective At: 2026-04-21T14:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-05-25T20:00:00
+Revision: 1
+
+Record 346
+----------
+Schedule Id: SCH-0327
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-WELCOME
+Service Date: 2026-06-13
+Day Name: Saturday
+Event Window: autumn_market_2025
+Site Status: planned
+Public Access: No
+Weather Plan Status: not_required
+Schedule Version: 1
+Effective At: 2026-05-06T08:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-06-07T17:00:00
+Revision: 1
+
+Record 347
+----------
+Schedule Id: SCH-0396
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: ORCHARD-GATE
+Service Date: 2026-06-12
+Day Name: Friday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: review
+Schedule Version: 4
+Effective At: 2026-05-12T22:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-06-09T00:00:00
+Revision: 1
+
+Record 348
+----------
+Schedule Id: SCH-0243
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-EAST
+Service Date: 2026-07-10
+Day Name: Friday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-06-29T13:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-07-06T14:00:00
+Revision: 1
+
+Record 349
+----------
+Schedule Id: SCH-0194
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: MARKET-LAWN
+Service Date: 2026-03-16
+Day Name: Monday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-01-25T10:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-03-13T23:00:00
+Revision: 1
+
+Record 350
+----------
+Schedule Id: SCH-0262
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: CG-EAST
+Service Date: 2026-05-27
+Day Name: Wednesday
+Event Window: river_fest_2026
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 4
+Effective At: 2026-04-08T18:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-05-24T23:00:00
+Revision: 1
+
+Record 351
+----------
+Schedule Id: SCH-0361
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: ORCHARD-GATE
+Service Date: 2026-04-29
+Day Name: Wednesday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 2
+Effective At: 2026-03-15T22:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-04-25T21:00:00
+Revision: 1
+
+Record 352
+----------
+Schedule Id: SCH-0042
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: ORCHARD-GATE
+Service Date: 2026-05-24
+Day Name: Sunday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 1
+Effective At: 2026-04-09T19:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-05-21T21:00:00
+Revision: 1
+
+Record 353
+----------
+Schedule Id: SCH-0186
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-WELCOME
+Service Date: 2026-03-24
+Day Name: Tuesday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-02-02T16:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-03-20T00:00:00
+Revision: 1
+
+Record 354
+----------
+Schedule Id: SCH-0167
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: ORCHARD-GATE
+Service Date: 2026-05-29
+Day Name: Friday
+Event Window: spring_fair_2026
+Site Status: paused
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 3
+Effective At: 2026-05-14T13:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-05-26T23:00:00
+Revision: 1
+
+Record 355
+----------
+Schedule Id: SCH-0176
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: CG-WELCOME
+Service Date: 2026-05-13
+Day Name: Wednesday
+Event Window: river_fest_2026
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 2
+Effective At: 2026-04-11T09:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-05-10T13:00:00
+Revision: 1
+
+Record 356
+----------
+Schedule Id: SCH-0383
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-EAST
+Service Date: 2026-06-24
+Day Name: Wednesday
+Event Window: garden_day_2026
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 3
+Effective At: 2026-06-02T23:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-06-21T23:00:00
+Revision: 1
+
+Record 357
+----------
+Schedule Id: SCH-0067
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: CG-WELCOME
+Service Date: 2026-03-25
+Day Name: Wednesday
+Event Window: river_fest_2026
+Site Status: paused
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-03-12T07:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-03-23T17:00:00
+Revision: 1
+
+Record 358
+----------
+Schedule Id: SCH-0049
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: ORCHARD-GATE
+Service Date: 2026-05-10
+Day Name: Sunday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 2
+Effective At: 2026-04-17T21:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-05-04T13:00:00
+Revision: 1
+
+Record 359
+----------
+Schedule Id: SCH-0062
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: RIVER-HALL
+Service Date: 2026-07-12
+Day Name: Sunday
+Event Window: garden_day_2026
+Site Status: relocated
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 2
+Effective At: 2026-05-26T08:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-07-10T19:00:00
+Revision: 1
+
+Record 360
+----------
+Schedule Id: SCH-0017
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: ORCHARD-GATE
+Service Date: 2026-05-08
+Day Name: Friday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 2
+Effective At: 2026-03-21T00:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-05-06T21:00:00
+Revision: 1
+
+Record 361
+----------
+Schedule Id: SCH-0150
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: ORCHARD-GATE
+Service Date: 2026-06-22
+Day Name: Monday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-05-04T22:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-06-18T00:00:00
+Revision: 1
+
+Record 362
+----------
+Schedule Id: SCH-0013
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: RIVER-HALL
+Service Date: 2026-06-23
+Day Name: Tuesday
+Event Window: autumn_market_2025
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 2
+Effective At: 2026-06-16T10:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-06-21T19:00:00
+Revision: 1
+
+Record 363
+----------
+Schedule Id: SCH-0245
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-EAST
+Service Date: 2026-05-16
+Day Name: Saturday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: not_required
+Schedule Version: 2
+Effective At: 2026-04-29T07:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-05-11T15:00:00
+Revision: 1
+
+Record 364
+----------
+Schedule Id: SCH-0212
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-WELCOME
+Service Date: 2026-04-29
+Day Name: Wednesday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-04-16T17:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-04-25T14:00:00
+Revision: 1
+
+Record 365
+----------
+Schedule Id: SCH-0120
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: RIVER-HALL
+Service Date: 2026-05-12
+Day Name: Tuesday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-04-04T16:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-05-09T17:00:00
+Revision: 1
+
+Record 366
+----------
+Schedule Id: SCH-0204
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: RIVER-HALL
+Service Date: 2026-04-25
+Day Name: Saturday
+Event Window: river_fest_2026
+Site Status: paused
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-03-06T14:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-04-21T15:00:00
+Revision: 1
+
+Record 367
+----------
+Schedule Id: SCH-0219
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: ORCHARD-GATE
+Service Date: 2026-06-17
+Day Name: Wednesday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-05-15T12:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-06-11T16:00:00
+Revision: 1
+
+Record 368
+----------
+Schedule Id: SCH-0362
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: ORCHARD-GATE
+Service Date: 2026-03-31
+Day Name: Tuesday
+Event Window: river_fest_2026
+Site Status: paused
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 3
+Effective At: 2026-02-25T17:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-03-26T21:00:00
+Revision: 1
+
+Record 369
+----------
+Schedule Id: SCH-0101
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-EAST
+Service Date: 2026-05-04
+Day Name: Monday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-03-27T21:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-04-30T00:00:00
+Revision: 1
+
+Record 370
+----------
+Schedule Id: SCH-0317
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-EAST
+Service Date: 2026-05-21
+Day Name: Thursday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-04-05T17:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-05-16T19:00:00
+Revision: 1
+
+Record 371
+----------
+Schedule Id: SCH-0210
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-WELCOME
+Service Date: 2026-06-15
+Day Name: Monday
+Event Window: garden_day_2026
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 3
+Effective At: 2026-05-09T06:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-06-13T13:00:00
+Revision: 1
+
+Record 372
+----------
+Schedule Id: SCH-0009
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: RIVER-HALL
+Service Date: 2026-07-07
+Day Name: Tuesday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: not_required
+Schedule Version: 1
+Effective At: 2026-05-30T20:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-07-03T19:00:00
+Revision: 1
+
+Record 373
+----------
+Schedule Id: SCH-0315
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: RIVER-HALL
+Service Date: 2026-04-14
+Day Name: Tuesday
+Event Window: autumn_market_2025
+Site Status: relocated
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 2
+Effective At: 2026-04-03T22:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-04-12T18:00:00
+Revision: 1
+
+Record 374
+----------
+Schedule Id: SCH-0156
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: RIVER-HALL
+Service Date: 2026-03-30
+Day Name: Monday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: not_required
+Schedule Version: 2
+Effective At: 2026-03-18T14:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-03-25T15:00:00
+Revision: 1
+
+Record 375
+----------
+Schedule Id: SCH-0215
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: RIVER-HALL
+Service Date: 2026-05-08
+Day Name: Friday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 2
+Effective At: 2026-04-23T17:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-05-04T00:00:00
+Revision: 1
+
+Record 376
+----------
+Schedule Id: SCH-0045
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-EAST
+Service Date: 2026-04-27
+Day Name: Monday
+Event Window: spring_fair_2026
+Site Status: relocated
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 3
+Effective At: 2026-03-14T13:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-04-22T21:00:00
+Revision: 1
+
+Record 377
+----------
+Schedule Id: SCH-0369
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-EAST
+Service Date: 2026-05-30
+Day Name: Saturday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 1
+Effective At: 2026-05-09T13:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-05-26T23:00:00
+Revision: 1
+
+Record 378
+----------
+Schedule Id: SCH-0068
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-EAST
+Service Date: 2026-04-20
+Day Name: Monday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 2
+Effective At: 2026-04-10T15:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-04-15T23:00:00
+Revision: 1
+
+Record 379
+----------
+Schedule Id: SCH-0331
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: ORCHARD-GATE
+Service Date: 2026-06-07
+Day Name: Sunday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-05-22T06:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-06-03T17:00:00
+Revision: 1
+
+Record 380
+----------
+Schedule Id: SCH-0018
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-WELCOME
+Service Date: 2026-05-04
+Day Name: Monday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-04-26T15:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-04-30T19:00:00
+Revision: 1
+
+Record 381
+----------
+Schedule Id: SCH-0207
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-WELCOME
+Service Date: 2026-05-31
+Day Name: Sunday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 2
+Effective At: 2026-04-30T10:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-05-26T16:00:00
+Revision: 1
+
+Record 382
+----------
+Schedule Id: SCH-0107
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: RIVER-HALL
+Service Date: 2026-05-21
+Day Name: Thursday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 3
+Effective At: 2026-05-01T07:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-05-18T23:00:00
+Revision: 1
+
+Record 383
+----------
+Schedule Id: SCH-0416
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-EAST
+Service Date: 2026-07-11
+Day Name: Saturday
+Event Window: spring_fair_2026
+Site Status: relocated
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 4
+Effective At: 2026-06-08T23:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-07-08T19:00:00
+Revision: 1
+
+Record 384
+----------
+Schedule Id: SCH-0048
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-WELCOME
+Service Date: 2026-05-06
+Day Name: Wednesday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-04-08T10:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-05-03T16:00:00
+Revision: 1
+
+Record 385
+----------
+Schedule Id: SCH-0073
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-WELCOME
+Service Date: 2026-06-13
+Day Name: Saturday
+Event Window: spring_fair_2026
+Site Status: relocated
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 2
+Effective At: 2026-05-18T20:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-06-08T15:00:00
+Revision: 1
+
+Record 386
+----------
+Schedule Id: SCH-0179
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: RIVER-HALL
+Service Date: 2026-04-09
+Day Name: Thursday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: not_required
+Schedule Version: 3
+Effective At: 2026-03-23T18:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-04-04T22:00:00
+Revision: 1
+
+Record 387
+----------
+Schedule Id: SCH-0189
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-EAST
+Service Date: 2026-05-20
+Day Name: Wednesday
+Event Window: autumn_market_2025
+Site Status: relocated
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 1
+Effective At: 2026-03-30T00:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-05-15T14:00:00
+Revision: 1
+
+Record 388
+----------
+Schedule Id: SCH-0386
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-WELCOME
+Service Date: 2026-06-09
+Day Name: Tuesday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-05-24T12:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-06-04T20:00:00
+Revision: 1
+
+Record 389
+----------
+Schedule Id: SCH-0370
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: ORCHARD-GATE
+Service Date: 2026-06-23
+Day Name: Tuesday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-05-10T08:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-06-21T21:00:00
+Revision: 1
+
+Record 390
+----------
+Schedule Id: SCH-0082
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-EAST
+Service Date: 2026-05-01
+Day Name: Friday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: not_required
+Schedule Version: 2
+Effective At: 2026-03-23T12:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-04-27T14:00:00
+Revision: 1
+
+Record 391
+----------
+Schedule Id: SCH-0311
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: ORCHARD-GATE
+Service Date: 2026-05-03
+Day Name: Sunday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: pending
+Schedule Version: 2
+Effective At: 2026-04-14T12:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-05-02T00:00:00
+Revision: 1
+
+Record 392
+----------
+Schedule Id: SCH-0035
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: MARKET-LAWN
+Service Date: 2026-05-18
+Day Name: Monday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 2
+Effective At: 2026-04-24T09:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-05-15T20:00:00
+Revision: 1
+
+Record 393
+----------
+Schedule Id: SCH-0110
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-EAST
+Service Date: 2026-06-11
+Day Name: Thursday
+Event Window: autumn_market_2025
+Site Status: paused
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 3
+Effective At: 2026-06-05T15:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-06-07T19:00:00
+Revision: 1
+
+Record 394
+----------
+Schedule Id: SCH-0296
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: MARKET-LAWN
+Service Date: 2026-03-29
+Day Name: Sunday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: not_required
+Schedule Version: 4
+Effective At: 2026-03-18T09:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-03-26T21:00:00
+Revision: 1
+
+Record 395
+----------
+Schedule Id: SCH-0398
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: MARKET-LAWN
+Service Date: 2026-06-13
+Day Name: Saturday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 2
+Effective At: 2026-05-12T14:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-06-11T14:00:00
+Revision: 1
+
+Record 396
+----------
+Schedule Id: SCH-0214
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-EAST
+Service Date: 2026-05-10
+Day Name: Sunday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: pending
+Schedule Version: 1
+Effective At: 2026-04-18T19:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-05-08T23:00:00
+Revision: 1
+
+Record 397
+----------
+Schedule Id: SCH-0108
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: RIVER-HALL
+Service Date: 2026-06-20
+Day Name: Saturday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 2
+Effective At: 2026-05-12T16:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-06-15T14:00:00
+Revision: 1
+
+Record 398
+----------
+Schedule Id: SCH-0195
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-EAST
+Service Date: 2026-07-15
+Day Name: Wednesday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 3
+Effective At: 2026-07-06T11:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-07-10T17:00:00
+Revision: 1
+
+Record 399
+----------
+Schedule Id: SCH-0163
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: MARKET-LAWN
+Service Date: 2026-06-29
+Day Name: Monday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: pending
+Schedule Version: 2
+Effective At: 2026-05-19T00:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-06-27T22:00:00
+Revision: 1
+
+Record 400
+----------
+Schedule Id: SCH-0246
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-WELCOME
+Service Date: 2026-06-20
+Day Name: Saturday
+Event Window: spring_fair_2026
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 1
+Effective At: 2026-06-08T09:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-06-17T16:00:00
+Revision: 1
+
+Record 401
+----------
+Schedule Id: SCH-0125
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: RIVER-HALL
+Service Date: 2026-03-12
+Day Name: Thursday
+Event Window: autumn_market_2025
+Site Status: relocated
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-01-22T11:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-03-06T12:00:00
+Revision: 1
+
+Record 402
+----------
+Schedule Id: SCH-0092
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: RIVER-HALL
+Service Date: 2026-06-18
+Day Name: Thursday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 1
+Effective At: 2026-05-20T16:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-06-13T18:00:00
+Revision: 1
+
+Record 403
+----------
+Schedule Id: SCH-0303
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-EAST
+Service Date: 2026-04-23
+Day Name: Thursday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: pending
+Schedule Version: 4
+Effective At: 2026-02-28T17:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-04-19T19:00:00
+Revision: 1
+
+Record 404
+----------
+Schedule Id: SCH-0140
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-WELCOME
+Service Date: 2026-06-11
+Day Name: Thursday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 2
+Effective At: 2026-04-16T11:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-06-08T14:00:00
+Revision: 1
+
+Record 405
+----------
+Schedule Id: SCH-0142
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-WELCOME
+Service Date: 2026-03-11
+Day Name: Wednesday
+Event Window: spring_fair_2026
+Site Status: relocated
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 4
+Effective At: 2026-03-04T21:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-03-07T15:00:00
+Revision: 1
+
+Record 406
+----------
+Schedule Id: SCH-0417
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: MARKET-LAWN
+Service Date: 2026-05-02
+Day Name: Saturday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 2
+Effective At: 2026-03-07T16:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-04-27T00:00:00
+Revision: 1
+
+Record 407
+----------
+Schedule Id: SCH-0171
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: MARKET-LAWN
+Service Date: 2026-04-27
+Day Name: Monday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: not_required
+Schedule Version: 1
+Effective At: 2026-04-05T13:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-04-22T15:00:00
+Revision: 1
+
+Record 408
+----------
+Schedule Id: SCH-0299
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: RIVER-HALL
+Service Date: 2026-07-05
+Day Name: Sunday
+Event Window: river_fest_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 2
+Effective At: 2026-05-27T00:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-07-01T22:00:00
+Revision: 1
+
+Record 409
+----------
+Schedule Id: SCH-0278
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: ORCHARD-GATE
+Service Date: 2026-04-06
+Day Name: Monday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: No
+Weather Plan Status: ready
+Schedule Version: 2
+Effective At: 2026-02-25T17:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-04-03T14:00:00
+Revision: 1
+
+Record 410
+----------
+Schedule Id: SCH-0325
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: ORCHARD-GATE
+Service Date: 2026-06-28
+Day Name: Sunday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: not_required
+Schedule Version: 3
+Effective At: 2026-05-08T17:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-06-23T00:00:00
+Revision: 1
+
+Record 411
+----------
+Schedule Id: SCH-0020
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: ORCHARD-GATE
+Service Date: 2026-06-27
+Day Name: Saturday
+Event Window: autumn_market_2025
+Site Status: paused
+Public Access: Yes
+Weather Plan Status: review
+Schedule Version: 3
+Effective At: 2026-06-03T11:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-06-25T21:00:00
+Revision: 1
+
+Record 412
+----------
+Schedule Id: SCH-0201
+Event Id: RIVER-FEST-2026
+Event Name: River Neighborhood Festival
+Site Id: CG-EAST
+Service Date: 2026-07-03
+Day Name: Friday
+Event Window: river_fest_2026
+Site Status: planned
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 3
+Effective At: 2026-06-17T09:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-07-01T19:00:00
+Revision: 1
+
+Record 413
+----------
+Schedule Id: SCH-0294
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: RIVER-HALL
+Service Date: 2026-05-30
+Day Name: Saturday
+Event Window: spring_fair_2026
+Site Status: paused
+Public Access: Yes
+Weather Plan Status: not_required
+Schedule Version: 3
+Effective At: 2026-05-14T12:00:00
+Meeting Location: Riverside Community Hall
+Registration Deadline: 2026-05-25T21:00:00
+Revision: 1
+
+Record 414
+----------
+Schedule Id: SCH-0211
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-WELCOME
+Service Date: 2026-05-21
+Day Name: Thursday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-04-29T20:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-05-16T21:00:00
+Revision: 1
+
+Record 415
+----------
+Schedule Id: SCH-0301
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: CG-EAST
+Service Date: 2026-06-24
+Day Name: Wednesday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 2
+Effective At: 2026-05-29T20:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-06-19T23:00:00
+Revision: 1
+
+Record 416
+----------
+Schedule Id: SCH-0105
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-WELCOME
+Service Date: 2026-05-20
+Day Name: Wednesday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-04-12T19:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-05-15T20:00:00
+Revision: 1
+
+Record 417
+----------
+Schedule Id: SCH-0397
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-EAST
+Service Date: 2026-03-30
+Day Name: Monday
+Event Window: autumn_market_2025
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 1
+Effective At: 2026-03-09T16:00:00
+Meeting Location: East Garden Pavilion
+Registration Deadline: 2026-03-28T20:00:00
+Revision: 1
+
+Record 418
+----------
+Schedule Id: SCH-0216
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: ORCHARD-GATE
+Service Date: 2026-04-01
+Day Name: Wednesday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: No
+Weather Plan Status: pending
+Schedule Version: 3
+Effective At: 2026-02-14T11:00:00
+Meeting Location: Orchard Gate Volunteer Desk
+Registration Deadline: 2026-03-27T19:00:00
+Revision: 1
+
+Record 419
+----------
+Schedule Id: SCH-0031
+Event Id: GARDEN-DAY-2026
+Event Name: Community Garden Day
+Site Id: MARKET-LAWN
+Service Date: 2026-03-23
+Day Name: Monday
+Event Window: garden_day_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: pending
+Schedule Version: 1
+Effective At: 2026-03-10T07:00:00
+Meeting Location: Market Lawn Check-in Point
+Registration Deadline: 2026-03-21T19:00:00
+Revision: 1
+
+Record 420
+----------
+Schedule Id: SCH-0146
+Event Id: AUTUMN-MARKET-2025
+Event Name: Autumn Community Market
+Site Id: CG-WELCOME
+Service Date: 2026-06-15
+Day Name: Monday
+Event Window: autumn_market_2025
+Site Status: planned
+Public Access: No
+Weather Plan Status: not_required
+Schedule Version: 2
+Effective At: 2026-04-24T18:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-06-10T21:00:00
+Revision: 1
+
+Record 421
+----------
+Schedule Id: SCH-0003-R1
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-WELCOME
+Service Date: 2026-04-26
+Day Name: Sunday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-04-20T14:00:00
+Meeting Location: Community Garden South Gate
+Registration Deadline: 2026-04-24T17:00:00
+Revision: 1
+Registration Url: riversidefair.org/volunteer
+Rain Plan Location: Riverside Community Hall — East Lobby
+Public Contact: volunteers@riversidefair.org
+
+Record 422
+----------
+Schedule Id: SCH-0003-R2
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-WELCOME
+Service Date: 2026-04-26
+Day Name: Sunday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-04-20T14:00:00
+Meeting Location: Community Garden Welcome Tent
+Registration Deadline: 2026-04-24T18:00:00
+Revision: 2
+Registration Url: riversidefair.org/volunteer
+Rain Plan Location: Orchard Pavilion
+Public Contact: volunteers@riversidefair.org
+
+Record 423
+----------
+Schedule Id: SCH-0003-POST
+Event Id: RSF-2026
+Event Name: Riverside Spring Fair
+Site Id: CG-WELCOME
+Service Date: 2026-04-26
+Day Name: Sunday
+Event Window: spring_fair_2026
+Site Status: operational
+Public Access: Yes
+Weather Plan Status: ready
+Schedule Version: 3
+Effective At: 2026-04-23T13:00:00
+Meeting Location: River Hall
+Registration Deadline: 2026-04-25T20:00:00
+Revision: 4
+Registration Url: riversidefair.org/volunteer
+Rain Plan Location: Riverside Community Hall — East Lobby
+Public Contact: volunteers@riversidefair.org

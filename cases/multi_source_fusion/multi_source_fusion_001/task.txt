@@ -1,10 +1,10 @@
 Maya needs the June 18 Instagram Portrait Feed image for the current regional residential-energy pilot.
 
-Use only the files in env/. Resolve the controlling request by applying `June_18_Campaign_Change_Control.md` to `Campaign_Request_Maya.docx`.
+Use only the files in env/. Resolve the controlling request by applying `June_18_Campaign_Change_Control.docx` to `Campaign_Request_Maya.docx`.
 
 Start with `May_2026_Sales_Workbook.xlsx` and `Regional_Pilot_Service_Areas.csv`. Apply every cumulative order, customer, state-serviceability, core-line, invoice-window, close-cutoff, discount, Accepted-credit, Program Funding, funding-version, funding-date, product-program, and Add/Subtract/Ignore rule. Rank products by program-eligible net contribution. For the selected product only, rank reporting regions by the same contribution metric.
 
-If the result is HelioGrid Flex in Central, continue with `Central_Load_Track_Eligibility.csv` and `June_18_Central_Load_Track_Routing_Addendum.md`. Keep current eligible routing profiles, rank load tracks by the already calculated selected-line contribution, then rank utility programs inside the winning track. Do not mix the winning track with an alternative device track or utility program.
+If the result is HelioGrid Flex in Central, continue with `Central_Load_Track_Eligibility.csv` and `June_18_Central_Load_Track_Routing_Addendum.docx`. Keep current eligible routing profiles, rank load tracks by the already calculated selected-line contribution, then rank utility programs inside the winning track. Do not mix the winning track with an alternative device track or utility program.
 
 Construct the final placement under the controlling rules. Resolve the current campaign label, leadership badge, one lead benefit, exactly two proof points, CTA, qualification, disclosure package, background asset, product source, and identity. Superseded generic C-C2 copy, a combined EV-or-heat-pump audience, another utility program, future wording, wrong-region content, wrong-platform content, and organic-education content are not current.
 

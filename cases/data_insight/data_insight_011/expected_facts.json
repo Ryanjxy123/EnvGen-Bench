@@ -13,7 +13,7 @@
     {
       "id": "comparable_company_result",
       "description": "Like-for-like company result.",
-      "source": "store_ops.sqlite + ops_review_notes.md",
+      "source": "store_ops.sqlite + ops_review_notes.docx",
       "importance": "critical",
       "canonical_answer": "20 comparable stores produced Q4 adjusted net sales $18,420,000, up 5.8% from Q3 $17,406,622.",
       "must_appear_in_image": true

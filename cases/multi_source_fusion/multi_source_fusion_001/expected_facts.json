@@ -32,56 +32,56 @@
     },
     {
       "id": "campaign_label",
-      "source": "June_18_Central_Load_Track_Routing_Addendum.md",
+      "source": "June_18_Central_Load_Track_Routing_Addendum.docx",
       "importance": "critical",
       "expected_value": "Central EV Solar Conversion Pilot",
       "must_appear_in_image": true
     },
     {
       "id": "badge",
-      "source": "June_18_Central_Load_Track_Routing_Addendum.md",
+      "source": "June_18_Central_Load_Track_Routing_Addendum.docx",
       "importance": "critical",
       "expected_value": "May 2026 Central EV-Track Program-Eligible Net-Contribution Leader",
       "must_appear_in_image": true
     },
     {
       "id": "lead_benefit",
-      "source": "June_18_Central_Load_Track_Routing_Addendum.md",
+      "source": "June_18_Central_Load_Track_Routing_Addendum.docx",
       "importance": "critical",
       "expected_value": "Coordinate rooftop solar with qualifying Level 2 charging during participating utility event windows, with normal charging schedules outside events.",
       "must_appear_in_image": true
     },
     {
       "id": "proof_charging_profile",
-      "source": "June_18_Central_Load_Track_Routing_Addendum.md",
+      "source": "June_18_Central_Load_Track_Routing_Addendum.docx",
       "importance": "critical",
       "expected_value": "Installer-set EV charging profiles align rooftop-solar input with a compatible Level 2 charger.",
       "must_appear_in_image": true
     },
     {
       "id": "proof_event_status",
-      "source": "June_18_Central_Load_Track_Routing_Addendum.md",
+      "source": "June_18_Central_Load_Track_Routing_Addendum.docx",
       "importance": "critical",
       "expected_value": "App event status shows when charging timing is active and when the normal charging schedule resumes.",
       "must_appear_in_image": true
     },
     {
       "id": "cta",
-      "source": "June_18_Central_Load_Track_Routing_Addendum.md",
+      "source": "June_18_Central_Load_Track_Routing_Addendum.docx",
       "importance": "critical",
       "expected_value": "Check LoneStar EV-flex eligibility",
       "must_appear_in_image": true
     },
     {
       "id": "qualification",
-      "source": "June_18_Central_Load_Track_Routing_Addendum.md",
+      "source": "June_18_Central_Load_Track_Routing_Addendum.docx",
       "importance": "critical",
       "expected_value": "Owner-occupied Central rooftop-solar home in a participating LoneStar FlexCharge territory, compatible inverter pathway, verified qualifying Level 2 EV charger.",
       "must_appear_in_image": true
     },
     {
       "id": "disclosures",
-      "source": "June_18_Central_Load_Track_Routing_Addendum.md",
+      "source": "June_18_Central_Load_Track_Routing_Addendum.docx",
       "importance": "critical",
       "expected_value": "No guarantee; four EV-specific variability factors; eligible LoneStar FlexCharge territories in TX with within-state variation; utility enrollment, site review and charger verification before activation; event-window timing change; override allowed with possible benefit reduction.",
       "must_appear_in_image": true

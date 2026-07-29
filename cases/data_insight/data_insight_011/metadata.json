@@ -34,22 +34,22 @@
       "origin": "benchmark-authored"
     },
     {
-      "path": "env/ops_review_notes.md",
+      "path": "env/ops_review_notes.docx",
       "role": "Controlling business rules for close-package resolution, current-scope selection, adjusted metrics, comparable cohort, opportunity gates, intervention ranking, regional context, and required executive output.",
-      "format": "md",
+      "format": "docx",
       "origin": "benchmark-authored"
     },
     {
-      "path": "env/close_feed_glossary.md",
+      "path": "env/close_feed_glossary.txt",
       "role": "Business glossary for close states, non-final feed contexts, active/comparable scope, approved return exclusions, staffing credits, and format benchmarks.",
-      "format": "md",
+      "format": "txt",
       "origin": "benchmark-authored"
     }
   ],
   "source_policy": {
     "agent_visible_files": [
       "env/",
-      "task.md"
+      "task.txt"
     ],
     "evaluator_only_files": [
       "metadata.json",

@@ -6,64 +6,64 @@
   "difficulty": "very_hard",
   "env_files": [
     {
-      "path": "env/volunteer_opportunities.json",
+      "path": "env/volunteer_opportunities.txt",
       "role": "Opportunity identity, role family, shift, capacity, age and staffing thresholds",
-      "format": "json",
+      "format": "txt",
       "origin": "benchmark-authored"
     },
     {
-      "path": "env/registration_snapshots.json",
+      "path": "env/registration_snapshots.txt",
       "role": "Versioned confirmed, reserved, standby and registration status records",
-      "format": "json",
+      "format": "txt",
       "origin": "benchmark-authored"
     },
     {
-      "path": "env/capacity_holds.json",
+      "path": "env/capacity_holds.txt",
       "role": "Versioned active group and issued-offer holds deducted from public openings",
-      "format": "json",
+      "format": "txt",
       "origin": "benchmark-authored"
     },
     {
-      "path": "env/staffing_readiness.json",
+      "path": "env/staffing_readiness.txt",
       "role": "Versioned lead, orientation, check-in and supervisor readiness",
-      "format": "json",
+      "format": "txt",
       "origin": "benchmark-authored"
     },
     {
-      "path": "env/safety_route_reviews.json",
+      "path": "env/safety_route_reviews.txt",
       "role": "Versioned safety, route, equipment and emergency-plan reviews",
-      "format": "json",
+      "format": "txt",
       "origin": "benchmark-authored"
     },
     {
-      "path": "env/public_requirements.json",
+      "path": "env/public_requirements.txt",
       "role": "Versioned check-in lead time, meeting zone, orientation and fit attributes",
-      "format": "json",
+      "format": "txt",
       "origin": "benchmark-authored"
     },
     {
-      "path": "env/attendance_metrics.json",
+      "path": "env/attendance_metrics.txt",
       "role": "Versioned attendance reliability and recruitment ranking measures",
-      "format": "json",
+      "format": "txt",
       "origin": "benchmark-authored"
     },
     {
-      "path": "env/site_schedule.json",
+      "path": "env/site_schedule.txt",
       "role": "Versioned public event, registration, contact and rain-plan information",
-      "format": "json",
+      "format": "txt",
       "origin": "benchmark-authored"
     },
     {
-      "path": "env/assignment_rules.md",
+      "path": "env/assignment_rules.docx",
       "role": "As-of resolution, eligibility, public openings, ranking, portfolio and public calculation rules",
-      "format": "md",
+      "format": "docx",
       "origin": "benchmark-authored"
     }
   ],
   "source_policy": {
     "agent_visible_files": [
       "env/",
-      "task.md"
+      "task.txt"
     ],
     "evaluator_only_files": [
       "metadata.json",

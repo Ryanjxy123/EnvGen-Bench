@@ -1,0 +1,10 @@
+Campus Energy Review Control Record
+
+Analysis cycle: OCT-2026
+Baseline cycle: BASELINE-2026
+Calibration family: FY2026-R2
+Review protocol: energy_review_protocol.docx
+Demand threshold file: demand_thresholds.csv
+
+Audit note:
+The register contains corrections and non-final rows. Apply the protocol before aggregation; do not treat file order as priority.

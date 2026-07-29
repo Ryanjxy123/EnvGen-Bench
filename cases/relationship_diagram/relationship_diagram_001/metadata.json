@@ -42,9 +42,9 @@
       "origin": "benchmark-authored"
     },
     {
-      "path": "env/controlled_correction_instructions.md",
+      "path": "env/controlled_correction_instructions.docx",
       "role": "Cutoff, precedence, dependency, sequencing, rename-cascade, and handoff rules",
-      "format": "md",
+      "format": "docx",
       "origin": "benchmark-authored"
     },
     {
@@ -66,9 +66,9 @@
       "origin": "benchmark-authored"
     },
     {
-      "path": "env/production_activation_rules.md",
+      "path": "env/production_activation_rules.docx",
       "role": "Wave selection, unit activation, atomic-group, rollback, and final diagram handoff rules",
-      "format": "md",
+      "format": "docx",
       "origin": "benchmark-authored"
     },
     {
@@ -84,23 +84,23 @@
       "origin": "benchmark-authored"
     },
     {
-      "path": "env/architecture_projection_rules.md",
+      "path": "env/architecture_projection_rules.docx",
       "role": "Profile selection, same-timestamp revision, rule precedence, cascade, provenance, and final handoff rules",
-      "format": "md",
+      "format": "docx",
       "origin": "benchmark-authored"
     }
   ],
   "source_policy": {
     "agent_visible_files": [
       "env/",
-      "task.md"
+      "task.txt"
     ],
     "evaluator_only_files": [
       "metadata.json",
       "expected_facts.json",
       "scoring_checklist.json"
     ],
-    "web_usage_note": "Closed environment. Solve only from task.md and env files."
+    "web_usage_note": "Closed environment. Solve only from task.txt and env files."
   },
   "data_profile": {
     "candidate_entity_count": 240,

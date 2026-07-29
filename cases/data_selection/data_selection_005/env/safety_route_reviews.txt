@@ -1,0 +1,8087 @@
+Safety Route Reviews
+====================
+
+Record 1
+--------
+Review Id: SAF-00001-A
+Shift Id: S26-8755
+Reviewed At: 2026-04-03T03:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 2
+--------
+Review Id: SAF-00001-B
+Shift Id: S26-8755
+Reviewed At: 2026-04-13T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 3
+--------
+Review Id: SAF-00002-A
+Shift Id: S26-3389
+Reviewed At: 2026-04-04T06:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 4
+--------
+Review Id: SAF-00002-B
+Shift Id: S26-3389
+Reviewed At: 2026-04-14T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 5
+--------
+Review Id: SAF-00003-A
+Shift Id: S26-3517
+Reviewed At: 2026-04-05T09:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 6
+--------
+Review Id: SAF-00003-B
+Shift Id: S26-3517
+Reviewed At: 2026-04-15T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 7
+--------
+Review Id: SAF-00004-A
+Shift Id: S26-1885
+Reviewed At: 2026-04-06T12:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 8
+--------
+Review Id: SAF-00004-B
+Shift Id: S26-1885
+Reviewed At: 2026-04-16T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 9
+--------
+Review Id: SAF-00005-A
+Shift Id: S26-8590
+Reviewed At: 2026-04-07T15:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 10
+---------
+Review Id: SAF-00005-B
+Shift Id: S26-8590
+Reviewed At: 2026-04-17T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 11
+---------
+Review Id: SAF-00006-A
+Shift Id: S26-2113
+Reviewed At: 2026-04-08T18:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 12
+---------
+Review Id: SAF-00006-B
+Shift Id: S26-2113
+Reviewed At: 2026-04-18T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 13
+---------
+Review Id: SAF-00007-A
+Shift Id: S26-8764
+Reviewed At: 2026-04-09T01:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 14
+---------
+Review Id: SAF-00007-B
+Shift Id: S26-8764
+Reviewed At: 2026-04-19T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 15
+---------
+Review Id: SAF-00008-A
+Shift Id: S26-5714
+Reviewed At: 2026-04-10T04:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 16
+---------
+Review Id: SAF-00008-B
+Shift Id: S26-5714
+Reviewed At: 2026-04-20T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 17
+---------
+Review Id: SAF-00009-A
+Shift Id: S26-2520
+Reviewed At: 2026-04-11T07:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 18
+---------
+Review Id: SAF-00009-B
+Shift Id: S26-2520
+Reviewed At: 2026-04-21T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 19
+---------
+Review Id: SAF-00010-A
+Shift Id: S26-6236
+Reviewed At: 2026-04-12T10:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 20
+---------
+Review Id: SAF-00010-B
+Shift Id: S26-6236
+Reviewed At: 2026-04-12T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: No
+
+Record 21
+---------
+Review Id: SAF-00011-A
+Shift Id: S26-6632
+Reviewed At: 2026-04-13T13:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 22
+---------
+Review Id: SAF-00011-B
+Shift Id: S26-6632
+Reviewed At: 2026-04-13T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: No
+Emergency Plan Ready: No
+
+Record 23
+---------
+Review Id: SAF-00012-A
+Shift Id: S26-7284
+Reviewed At: 2026-04-14T16:00:00
+Revision: 3
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 24
+---------
+Review Id: SAF-00012-B
+Shift Id: S26-7284
+Reviewed At: 2026-04-14T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 25
+---------
+Review Id: SAF-00013-A
+Shift Id: S26-5468
+Reviewed At: 2026-04-15T19:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 26
+---------
+Review Id: SAF-00013-B
+Shift Id: S26-5468
+Reviewed At: 2026-04-15T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 27
+---------
+Review Id: SAF-00014-A
+Shift Id: S26-6720
+Reviewed At: 2026-04-16T02:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 28
+---------
+Review Id: SAF-00014-B
+Shift Id: S26-6720
+Reviewed At: 2026-04-16T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 29
+---------
+Review Id: SAF-00015-A
+Shift Id: S26-8406
+Reviewed At: 2026-04-02T05:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 30
+---------
+Review Id: SAF-00015-B
+Shift Id: S26-8406
+Reviewed At: 2026-04-17T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 31
+---------
+Review Id: SAF-00016-A
+Shift Id: S26-3693
+Reviewed At: 2026-04-03T08:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 32
+---------
+Review Id: SAF-00016-B
+Shift Id: S26-3693
+Reviewed At: 2026-04-18T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 33
+---------
+Review Id: SAF-00017-A
+Shift Id: S26-1341
+Reviewed At: 2026-04-04T11:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 34
+---------
+Review Id: SAF-00017-B
+Shift Id: S26-1341
+Reviewed At: 2026-04-19T05:00:00
+Revision: 2
+Safety Status: pending
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 35
+---------
+Review Id: SAF-00018-A
+Shift Id: S26-1174
+Reviewed At: 2026-04-05T14:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 36
+---------
+Review Id: SAF-00018-B
+Shift Id: S26-1174
+Reviewed At: 2026-04-20T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 37
+---------
+Review Id: SAF-00019-A
+Shift Id: S26-9979
+Reviewed At: 2026-04-06T17:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 38
+---------
+Review Id: SAF-00019-B
+Shift Id: S26-9979
+Reviewed At: 2026-04-21T15:00:00
+Revision: 2
+Safety Status: needs_revision
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 39
+---------
+Review Id: SAF-00020-A
+Shift Id: S26-6035
+Reviewed At: 2026-04-07T00:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 40
+---------
+Review Id: SAF-00020-B
+Shift Id: S26-6035
+Reviewed At: 2026-04-12T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 41
+---------
+Review Id: SAF-00021-A
+Shift Id: S26-4961
+Reviewed At: 2026-04-08T03:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 42
+---------
+Review Id: SAF-00021-B
+Shift Id: S26-4961
+Reviewed At: 2026-04-13T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 43
+---------
+Review Id: SAF-00022-A
+Shift Id: S26-1291
+Reviewed At: 2026-04-09T06:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 44
+---------
+Review Id: SAF-00022-B
+Shift Id: S26-1291
+Reviewed At: 2026-04-14T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 45
+---------
+Review Id: SAF-00023-A
+Shift Id: S26-5505
+Reviewed At: 2026-04-10T09:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 46
+---------
+Review Id: SAF-00023-B
+Shift Id: S26-5505
+Reviewed At: 2026-04-15T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 47
+---------
+Review Id: SAF-00024-A
+Shift Id: S26-7182
+Reviewed At: 2026-04-11T12:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 48
+---------
+Review Id: SAF-00024-B
+Shift Id: S26-7182
+Reviewed At: 2026-04-16T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: No
+
+Record 49
+---------
+Review Id: SAF-00025-A
+Shift Id: S26-6138
+Reviewed At: 2026-04-12T15:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 50
+---------
+Review Id: SAF-00025-B
+Shift Id: S26-6138
+Reviewed At: 2026-04-17T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 51
+---------
+Review Id: SAF-00026-A
+Shift Id: S26-2832
+Reviewed At: 2026-04-13T18:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 52
+---------
+Review Id: SAF-00026-B
+Shift Id: S26-2832
+Reviewed At: 2026-04-18T10:00:00
+Revision: 2
+Safety Status: needs_revision
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 53
+---------
+Review Id: SAF-00027-A
+Shift Id: S26-1232
+Reviewed At: 2026-04-14T01:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 54
+---------
+Review Id: SAF-00027-B
+Shift Id: S26-1232
+Reviewed At: 2026-04-19T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 55
+---------
+Review Id: SAF-00028-A
+Shift Id: S26-1456
+Reviewed At: 2026-04-15T04:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 56
+---------
+Review Id: SAF-00028-B
+Shift Id: S26-1456
+Reviewed At: 2026-04-20T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 57
+---------
+Review Id: SAF-00029-A
+Shift Id: S26-9106
+Reviewed At: 2026-04-16T07:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 58
+---------
+Review Id: SAF-00029-B
+Shift Id: S26-9106
+Reviewed At: 2026-04-21T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 59
+---------
+Review Id: SAF-00030-A
+Shift Id: S26-5053
+Reviewed At: 2026-04-02T10:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 60
+---------
+Review Id: SAF-00030-B
+Shift Id: S26-5053
+Reviewed At: 2026-04-12T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: No
+Emergency Plan Ready: Yes
+
+Record 61
+---------
+Review Id: SAF-00031-A
+Shift Id: S26-7485
+Reviewed At: 2026-04-03T13:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 62
+---------
+Review Id: SAF-00031-B
+Shift Id: S26-7485
+Reviewed At: 2026-04-13T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 63
+---------
+Review Id: SAF-00032-A
+Shift Id: S26-3714
+Reviewed At: 2026-04-04T16:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 64
+---------
+Review Id: SAF-00032-B
+Shift Id: S26-3714
+Reviewed At: 2026-04-14T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 65
+---------
+Review Id: SAF-00033-A
+Shift Id: S26-3814
+Reviewed At: 2026-04-05T19:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 66
+---------
+Review Id: SAF-00033-B
+Shift Id: S26-3814
+Reviewed At: 2026-04-15T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 67
+---------
+Review Id: SAF-00034-A
+Shift Id: S26-4167
+Reviewed At: 2026-04-06T02:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 68
+---------
+Review Id: SAF-00034-B
+Shift Id: S26-4167
+Reviewed At: 2026-04-16T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 69
+---------
+Review Id: SAF-00035-A
+Shift Id: S26-5502
+Reviewed At: 2026-04-07T05:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 70
+---------
+Review Id: SAF-00035-B
+Shift Id: S26-5502
+Reviewed At: 2026-04-17T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 71
+---------
+Review Id: SAF-00036-A
+Shift Id: S26-4343
+Reviewed At: 2026-04-08T08:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 72
+---------
+Review Id: SAF-00036-B
+Shift Id: S26-4343
+Reviewed At: 2026-04-18T00:00:00
+Revision: 2
+Safety Status: needs_revision
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 73
+---------
+Review Id: SAF-00037-A
+Shift Id: S26-6227
+Reviewed At: 2026-04-09T11:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 74
+---------
+Review Id: SAF-00037-B
+Shift Id: S26-6227
+Reviewed At: 2026-04-19T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 75
+---------
+Review Id: SAF-00038-A
+Shift Id: S26-4189
+Reviewed At: 2026-04-10T14:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 76
+---------
+Review Id: SAF-00038-B
+Shift Id: S26-4189
+Reviewed At: 2026-04-20T10:00:00
+Revision: 2
+Safety Status: needs_revision
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 77
+---------
+Review Id: SAF-00039-A
+Shift Id: S26-6613
+Reviewed At: 2026-04-11T17:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 78
+---------
+Review Id: SAF-00039-B
+Shift Id: S26-6613
+Reviewed At: 2026-04-21T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 79
+---------
+Review Id: SAF-00040-A
+Shift Id: S26-1202
+Reviewed At: 2026-04-12T00:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 80
+---------
+Review Id: SAF-00040-B
+Shift Id: S26-1202
+Reviewed At: 2026-04-12T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 81
+---------
+Review Id: SAF-00041-A
+Shift Id: S26-6503
+Reviewed At: 2026-04-13T03:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 82
+---------
+Review Id: SAF-00041-B
+Shift Id: S26-6503
+Reviewed At: 2026-04-13T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 83
+---------
+Review Id: SAF-00042-A
+Shift Id: S26-5317
+Reviewed At: 2026-04-14T06:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 84
+---------
+Review Id: SAF-00042-B
+Shift Id: S26-5317
+Reviewed At: 2026-04-14T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 85
+---------
+Review Id: SAF-00043-A
+Shift Id: S26-5089
+Reviewed At: 2026-04-15T09:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 86
+---------
+Review Id: SAF-00043-B
+Shift Id: S26-5089
+Reviewed At: 2026-04-15T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 87
+---------
+Review Id: SAF-00044-A
+Shift Id: S26-5094
+Reviewed At: 2026-04-16T12:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 88
+---------
+Review Id: SAF-00044-B
+Shift Id: S26-5094
+Reviewed At: 2026-04-16T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 89
+---------
+Review Id: SAF-00045-A
+Shift Id: S26-6377
+Reviewed At: 2026-04-02T15:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 90
+---------
+Review Id: SAF-00045-B
+Shift Id: S26-6377
+Reviewed At: 2026-04-17T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 91
+---------
+Review Id: SAF-00046-A
+Shift Id: S26-4081
+Reviewed At: 2026-04-03T18:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 92
+---------
+Review Id: SAF-00046-B
+Shift Id: S26-4081
+Reviewed At: 2026-04-18T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 93
+---------
+Review Id: SAF-00047-A
+Shift Id: S26-5775
+Reviewed At: 2026-04-04T01:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 94
+---------
+Review Id: SAF-00047-B
+Shift Id: S26-5775
+Reviewed At: 2026-04-19T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: No
+
+Record 95
+---------
+Review Id: SAF-00048-A
+Shift Id: S26-9233
+Reviewed At: 2026-04-05T04:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 96
+---------
+Review Id: SAF-00048-B
+Shift Id: S26-9233
+Reviewed At: 2026-04-20T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 97
+---------
+Review Id: SAF-00049-A
+Shift Id: S26-1507
+Reviewed At: 2026-04-06T07:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 98
+---------
+Review Id: SAF-00049-B
+Shift Id: S26-1507
+Reviewed At: 2026-04-21T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 99
+---------
+Review Id: SAF-00050-A
+Shift Id: S26-2645
+Reviewed At: 2026-04-07T10:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 100
+----------
+Review Id: SAF-00050-B
+Shift Id: S26-2645
+Reviewed At: 2026-04-12T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 101
+----------
+Review Id: SAF-00051-A
+Shift Id: S26-4817
+Reviewed At: 2026-04-08T13:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 102
+----------
+Review Id: SAF-00051-B
+Shift Id: S26-4817
+Reviewed At: 2026-04-13T15:00:00
+Revision: 3
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 103
+----------
+Review Id: SAF-00052-A
+Shift Id: S26-5113
+Reviewed At: 2026-04-09T16:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 104
+----------
+Review Id: SAF-00052-B
+Shift Id: S26-5113
+Reviewed At: 2026-04-14T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: No
+Emergency Plan Ready: Yes
+
+Record 105
+----------
+Review Id: SAF-00053-A
+Shift Id: S26-7672
+Reviewed At: 2026-04-10T19:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 106
+----------
+Review Id: SAF-00053-B
+Shift Id: S26-7672
+Reviewed At: 2026-04-15T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 107
+----------
+Review Id: SAF-00054-A
+Shift Id: S26-5393
+Reviewed At: 2026-04-11T02:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 108
+----------
+Review Id: SAF-00054-B
+Shift Id: S26-5393
+Reviewed At: 2026-04-16T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 109
+----------
+Review Id: SAF-00055-A
+Shift Id: S26-3365
+Reviewed At: 2026-04-12T05:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 110
+----------
+Review Id: SAF-00055-B
+Shift Id: S26-3365
+Reviewed At: 2026-04-17T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 111
+----------
+Review Id: SAF-00056-A
+Shift Id: S26-8130
+Reviewed At: 2026-04-13T08:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 112
+----------
+Review Id: SAF-00056-B
+Shift Id: S26-8130
+Reviewed At: 2026-04-18T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 113
+----------
+Review Id: SAF-00057-A
+Shift Id: S26-1058
+Reviewed At: 2026-04-14T11:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 114
+----------
+Review Id: SAF-00057-B
+Shift Id: S26-1058
+Reviewed At: 2026-04-19T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 115
+----------
+Review Id: SAF-00058-A
+Shift Id: S26-8453
+Reviewed At: 2026-04-15T14:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 116
+----------
+Review Id: SAF-00058-B
+Shift Id: S26-8453
+Reviewed At: 2026-04-20T10:00:00
+Revision: 2
+Safety Status: needs_revision
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 117
+----------
+Review Id: SAF-00059-A
+Shift Id: S26-6932
+Reviewed At: 2026-04-16T17:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 118
+----------
+Review Id: SAF-00059-B
+Shift Id: S26-6932
+Reviewed At: 2026-04-21T15:00:00
+Revision: 2
+Safety Status: needs_revision
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 119
+----------
+Review Id: SAF-00060-A
+Shift Id: S26-4933
+Reviewed At: 2026-04-02T00:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 120
+----------
+Review Id: SAF-00060-B
+Shift Id: S26-4933
+Reviewed At: 2026-04-12T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 121
+----------
+Review Id: SAF-00061-A
+Shift Id: S26-6631
+Reviewed At: 2026-04-03T03:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 122
+----------
+Review Id: SAF-00061-B
+Shift Id: S26-6631
+Reviewed At: 2026-04-13T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 123
+----------
+Review Id: SAF-00062-A
+Shift Id: S26-3006
+Reviewed At: 2026-04-04T06:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 124
+----------
+Review Id: SAF-00062-B
+Shift Id: S26-3006
+Reviewed At: 2026-04-14T10:00:00
+Revision: 3
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 125
+----------
+Review Id: SAF-00063-A
+Shift Id: S26-4516
+Reviewed At: 2026-04-05T09:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 126
+----------
+Review Id: SAF-00063-B
+Shift Id: S26-4516
+Reviewed At: 2026-04-15T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 127
+----------
+Review Id: SAF-00064-A
+Shift Id: S26-2725
+Reviewed At: 2026-04-06T12:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 128
+----------
+Review Id: SAF-00064-B
+Shift Id: S26-2725
+Reviewed At: 2026-04-16T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 129
+----------
+Review Id: SAF-00065-A
+Shift Id: S26-3536
+Reviewed At: 2026-04-07T15:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 130
+----------
+Review Id: SAF-00065-B
+Shift Id: S26-3536
+Reviewed At: 2026-04-17T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 131
+----------
+Review Id: SAF-00066-A
+Shift Id: S26-4850
+Reviewed At: 2026-04-08T18:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 132
+----------
+Review Id: SAF-00066-B
+Shift Id: S26-4850
+Reviewed At: 2026-04-18T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 133
+----------
+Review Id: SAF-00067-A
+Shift Id: S26-4168
+Reviewed At: 2026-04-09T01:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 134
+----------
+Review Id: SAF-00067-B
+Shift Id: S26-4168
+Reviewed At: 2026-04-19T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 135
+----------
+Review Id: SAF-00068-A
+Shift Id: S26-5992
+Reviewed At: 2026-04-10T04:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 136
+----------
+Review Id: SAF-00068-B
+Shift Id: S26-5992
+Reviewed At: 2026-04-20T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 137
+----------
+Review Id: SAF-00069-A
+Shift Id: S26-5659
+Reviewed At: 2026-04-11T07:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 138
+----------
+Review Id: SAF-00069-B
+Shift Id: S26-5659
+Reviewed At: 2026-04-21T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 139
+----------
+Review Id: SAF-00070-A
+Shift Id: S26-5451
+Reviewed At: 2026-04-12T10:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 140
+----------
+Review Id: SAF-00070-B
+Shift Id: S26-5451
+Reviewed At: 2026-04-12T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 141
+----------
+Review Id: SAF-00071-A
+Shift Id: S26-3569
+Reviewed At: 2026-04-13T13:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 142
+----------
+Review Id: SAF-00071-B
+Shift Id: S26-3569
+Reviewed At: 2026-04-13T15:00:00
+Revision: 2
+Safety Status: pending
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 143
+----------
+Review Id: SAF-00072-A
+Shift Id: S26-8848
+Reviewed At: 2026-04-14T16:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 144
+----------
+Review Id: SAF-00072-B
+Shift Id: S26-8848
+Reviewed At: 2026-04-14T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 145
+----------
+Review Id: SAF-00073-A
+Shift Id: S26-2917
+Reviewed At: 2026-04-15T19:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 146
+----------
+Review Id: SAF-00073-B
+Shift Id: S26-2917
+Reviewed At: 2026-04-15T05:00:00
+Revision: 2
+Safety Status: needs_revision
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 147
+----------
+Review Id: SAF-00074-A
+Shift Id: S26-4201
+Reviewed At: 2026-04-16T02:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 148
+----------
+Review Id: SAF-00074-B
+Shift Id: S26-4201
+Reviewed At: 2026-04-16T10:00:00
+Revision: 3
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 149
+----------
+Review Id: SAF-00075-A
+Shift Id: S26-6250
+Reviewed At: 2026-04-02T05:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 150
+----------
+Review Id: SAF-00075-B
+Shift Id: S26-6250
+Reviewed At: 2026-04-17T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 151
+----------
+Review Id: SAF-00076-A
+Shift Id: S26-6459
+Reviewed At: 2026-04-03T08:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 152
+----------
+Review Id: SAF-00076-B
+Shift Id: S26-6459
+Reviewed At: 2026-04-18T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: No
+
+Record 153
+----------
+Review Id: SAF-00077-A
+Shift Id: S26-4339
+Reviewed At: 2026-04-04T11:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 154
+----------
+Review Id: SAF-00077-B
+Shift Id: S26-4339
+Reviewed At: 2026-04-19T05:00:00
+Revision: 2
+Safety Status: needs_revision
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 155
+----------
+Review Id: SAF-00078-A
+Shift Id: S26-1447
+Reviewed At: 2026-04-05T14:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 156
+----------
+Review Id: SAF-00078-B
+Shift Id: S26-1447
+Reviewed At: 2026-04-20T10:00:00
+Revision: 2
+Safety Status: pending
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 157
+----------
+Review Id: SAF-00079-A
+Shift Id: S26-5696
+Reviewed At: 2026-04-06T17:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 158
+----------
+Review Id: SAF-00079-B
+Shift Id: S26-5696
+Reviewed At: 2026-04-21T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 159
+----------
+Review Id: SAF-00080-A
+Shift Id: S26-6148
+Reviewed At: 2026-04-07T00:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 160
+----------
+Review Id: SAF-00080-B
+Shift Id: S26-6148
+Reviewed At: 2026-04-12T00:00:00
+Revision: 3
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 161
+----------
+Review Id: SAF-00081-A
+Shift Id: S26-3989
+Reviewed At: 2026-04-08T03:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 162
+----------
+Review Id: SAF-00081-B
+Shift Id: S26-3989
+Reviewed At: 2026-04-13T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 163
+----------
+Review Id: SAF-00082-A
+Shift Id: S26-3404
+Reviewed At: 2026-04-09T06:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 164
+----------
+Review Id: SAF-00082-B
+Shift Id: S26-3404
+Reviewed At: 2026-04-14T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 165
+----------
+Review Id: SAF-00083-A
+Shift Id: S26-1587
+Reviewed At: 2026-04-10T09:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 166
+----------
+Review Id: SAF-00083-B
+Shift Id: S26-1587
+Reviewed At: 2026-04-15T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 167
+----------
+Review Id: SAF-00084-A
+Shift Id: S26-3411
+Reviewed At: 2026-04-11T12:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 168
+----------
+Review Id: SAF-00084-B
+Shift Id: S26-3411
+Reviewed At: 2026-04-16T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 169
+----------
+Review Id: SAF-00085-A
+Shift Id: S26-2859
+Reviewed At: 2026-04-12T15:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 170
+----------
+Review Id: SAF-00085-B
+Shift Id: S26-2859
+Reviewed At: 2026-04-17T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 171
+----------
+Review Id: SAF-00086-A
+Shift Id: S26-8397
+Reviewed At: 2026-04-13T18:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 172
+----------
+Review Id: SAF-00086-B
+Shift Id: S26-8397
+Reviewed At: 2026-04-18T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: No
+Emergency Plan Ready: Yes
+
+Record 173
+----------
+Review Id: SAF-00087-A
+Shift Id: S26-3125
+Reviewed At: 2026-04-14T01:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 174
+----------
+Review Id: SAF-00087-B
+Shift Id: S26-3125
+Reviewed At: 2026-04-19T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 175
+----------
+Review Id: SAF-00088-A
+Shift Id: S26-7968
+Reviewed At: 2026-04-15T04:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 176
+----------
+Review Id: SAF-00088-B
+Shift Id: S26-7968
+Reviewed At: 2026-04-20T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: No
+Emergency Plan Ready: Yes
+
+Record 177
+----------
+Review Id: SAF-00089-A
+Shift Id: S26-3638
+Reviewed At: 2026-04-16T07:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 178
+----------
+Review Id: SAF-00089-B
+Shift Id: S26-3638
+Reviewed At: 2026-04-21T05:00:00
+Revision: 2
+Safety Status: needs_revision
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: No
+
+Record 179
+----------
+Review Id: SAF-00090-A
+Shift Id: S26-4359
+Reviewed At: 2026-04-02T10:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 180
+----------
+Review Id: SAF-00090-B
+Shift Id: S26-4359
+Reviewed At: 2026-04-12T10:00:00
+Revision: 2
+Safety Status: needs_revision
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 181
+----------
+Review Id: SAF-00091-A
+Shift Id: S26-2079
+Reviewed At: 2026-04-03T13:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 182
+----------
+Review Id: SAF-00091-B
+Shift Id: S26-2079
+Reviewed At: 2026-04-13T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 183
+----------
+Review Id: SAF-00092-A
+Shift Id: S26-2833
+Reviewed At: 2026-04-04T16:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 184
+----------
+Review Id: SAF-00092-B
+Shift Id: S26-2833
+Reviewed At: 2026-04-14T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 185
+----------
+Review Id: SAF-00093-A
+Shift Id: S26-4695
+Reviewed At: 2026-04-05T19:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 186
+----------
+Review Id: SAF-00093-B
+Shift Id: S26-4695
+Reviewed At: 2026-04-15T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: No
+Emergency Plan Ready: Yes
+
+Record 187
+----------
+Review Id: SAF-00094-A
+Shift Id: S26-9611
+Reviewed At: 2026-04-06T02:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 188
+----------
+Review Id: SAF-00094-B
+Shift Id: S26-9611
+Reviewed At: 2026-04-16T10:00:00
+Revision: 2
+Safety Status: pending
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 189
+----------
+Review Id: SAF-00095-A
+Shift Id: S26-8948
+Reviewed At: 2026-04-07T05:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 190
+----------
+Review Id: SAF-00095-B
+Shift Id: S26-8948
+Reviewed At: 2026-04-17T15:00:00
+Revision: 2
+Safety Status: pending
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 191
+----------
+Review Id: SAF-00096-A
+Shift Id: S26-9821
+Reviewed At: 2026-04-08T08:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 192
+----------
+Review Id: SAF-00096-B
+Shift Id: S26-9821
+Reviewed At: 2026-04-18T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 193
+----------
+Review Id: SAF-00097-A
+Shift Id: S26-4150
+Reviewed At: 2026-04-09T11:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 194
+----------
+Review Id: SAF-00097-B
+Shift Id: S26-4150
+Reviewed At: 2026-04-19T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 195
+----------
+Review Id: SAF-00098-A
+Shift Id: S26-6527
+Reviewed At: 2026-04-10T14:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 196
+----------
+Review Id: SAF-00098-B
+Shift Id: S26-6527
+Reviewed At: 2026-04-20T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 197
+----------
+Review Id: SAF-00099-A
+Shift Id: S26-6478
+Reviewed At: 2026-04-11T17:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 198
+----------
+Review Id: SAF-00099-B
+Shift Id: S26-6478
+Reviewed At: 2026-04-21T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 199
+----------
+Review Id: SAF-00100-A
+Shift Id: S26-3063
+Reviewed At: 2026-04-12T00:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 200
+----------
+Review Id: SAF-00100-B
+Shift Id: S26-3063
+Reviewed At: 2026-04-12T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 201
+----------
+Review Id: SAF-00101-A
+Shift Id: S26-6147
+Reviewed At: 2026-04-13T03:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 202
+----------
+Review Id: SAF-00101-B
+Shift Id: S26-6147
+Reviewed At: 2026-04-13T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 203
+----------
+Review Id: SAF-00102-A
+Shift Id: S26-6080
+Reviewed At: 2026-04-14T06:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 204
+----------
+Review Id: SAF-00102-B
+Shift Id: S26-6080
+Reviewed At: 2026-04-14T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 205
+----------
+Review Id: SAF-00103-A
+Shift Id: S26-9381
+Reviewed At: 2026-04-15T09:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 206
+----------
+Review Id: SAF-00103-B
+Shift Id: S26-9381
+Reviewed At: 2026-04-15T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 207
+----------
+Review Id: SAF-00104-A
+Shift Id: S26-3647
+Reviewed At: 2026-04-16T12:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 208
+----------
+Review Id: SAF-00104-B
+Shift Id: S26-3647
+Reviewed At: 2026-04-16T00:00:00
+Revision: 2
+Safety Status: pending
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 209
+----------
+Review Id: SAF-00105-A
+Shift Id: S26-8835
+Reviewed At: 2026-04-02T15:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 210
+----------
+Review Id: SAF-00105-B
+Shift Id: S26-8835
+Reviewed At: 2026-04-17T05:00:00
+Revision: 2
+Safety Status: needs_revision
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 211
+----------
+Review Id: SAF-00106-A
+Shift Id: S26-2636
+Reviewed At: 2026-04-03T18:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 212
+----------
+Review Id: SAF-00106-B
+Shift Id: S26-2636
+Reviewed At: 2026-04-18T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 213
+----------
+Review Id: SAF-00107-A
+Shift Id: S26-3500
+Reviewed At: 2026-04-04T01:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 214
+----------
+Review Id: SAF-00107-B
+Shift Id: S26-3500
+Reviewed At: 2026-04-19T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 215
+----------
+Review Id: SAF-00108-A
+Shift Id: S26-5434
+Reviewed At: 2026-04-05T04:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 216
+----------
+Review Id: SAF-00108-B
+Shift Id: S26-5434
+Reviewed At: 2026-04-20T00:00:00
+Revision: 2
+Safety Status: pending
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 217
+----------
+Review Id: SAF-00109-A
+Shift Id: S26-4124
+Reviewed At: 2026-04-06T07:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 218
+----------
+Review Id: SAF-00109-B
+Shift Id: S26-4124
+Reviewed At: 2026-04-21T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 219
+----------
+Review Id: SAF-00110-A
+Shift Id: S26-4891
+Reviewed At: 2026-04-07T10:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 220
+----------
+Review Id: SAF-00110-B
+Shift Id: S26-4891
+Reviewed At: 2026-04-12T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 221
+----------
+Review Id: SAF-00111-A
+Shift Id: S26-8047
+Reviewed At: 2026-04-08T13:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 222
+----------
+Review Id: SAF-00111-B
+Shift Id: S26-8047
+Reviewed At: 2026-04-13T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 223
+----------
+Review Id: SAF-00112-A
+Shift Id: S26-3206
+Reviewed At: 2026-04-09T16:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 224
+----------
+Review Id: SAF-00112-B
+Shift Id: S26-3206
+Reviewed At: 2026-04-14T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: No
+Emergency Plan Ready: Yes
+
+Record 225
+----------
+Review Id: SAF-00113-A
+Shift Id: S26-4111
+Reviewed At: 2026-04-10T19:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 226
+----------
+Review Id: SAF-00113-B
+Shift Id: S26-4111
+Reviewed At: 2026-04-15T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 227
+----------
+Review Id: SAF-00114-A
+Shift Id: S26-6170
+Reviewed At: 2026-04-11T02:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 228
+----------
+Review Id: SAF-00114-B
+Shift Id: S26-6170
+Reviewed At: 2026-04-16T10:00:00
+Revision: 2
+Safety Status: pending
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 229
+----------
+Review Id: SAF-00115-A
+Shift Id: S26-8638
+Reviewed At: 2026-04-12T05:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 230
+----------
+Review Id: SAF-00115-B
+Shift Id: S26-8638
+Reviewed At: 2026-04-17T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 231
+----------
+Review Id: SAF-00116-A
+Shift Id: S26-5698
+Reviewed At: 2026-04-13T08:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 232
+----------
+Review Id: SAF-00116-B
+Shift Id: S26-5698
+Reviewed At: 2026-04-18T00:00:00
+Revision: 2
+Safety Status: pending
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 233
+----------
+Review Id: SAF-00117-A
+Shift Id: S26-1074
+Reviewed At: 2026-04-14T11:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 234
+----------
+Review Id: SAF-00117-B
+Shift Id: S26-1074
+Reviewed At: 2026-04-19T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 235
+----------
+Review Id: SAF-00118-A
+Shift Id: S26-3810
+Reviewed At: 2026-04-15T14:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 236
+----------
+Review Id: SAF-00118-B
+Shift Id: S26-3810
+Reviewed At: 2026-04-20T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 237
+----------
+Review Id: SAF-00119-A
+Shift Id: S26-7793
+Reviewed At: 2026-04-16T17:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 238
+----------
+Review Id: SAF-00119-B
+Shift Id: S26-7793
+Reviewed At: 2026-04-21T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 239
+----------
+Review Id: SAF-00120-A
+Shift Id: S26-5605
+Reviewed At: 2026-04-02T00:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 240
+----------
+Review Id: SAF-00120-B
+Shift Id: S26-5605
+Reviewed At: 2026-04-12T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: No
+Emergency Plan Ready: Yes
+
+Record 241
+----------
+Review Id: SAF-00121-A
+Shift Id: S26-4377
+Reviewed At: 2026-04-03T03:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 242
+----------
+Review Id: SAF-00121-B
+Shift Id: S26-4377
+Reviewed At: 2026-04-13T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 243
+----------
+Review Id: SAF-00122-A
+Shift Id: S26-7476
+Reviewed At: 2026-04-04T06:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 244
+----------
+Review Id: SAF-00122-B
+Shift Id: S26-7476
+Reviewed At: 2026-04-14T10:00:00
+Revision: 3
+Safety Status: approved
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 245
+----------
+Review Id: SAF-00123-A
+Shift Id: S26-9530
+Reviewed At: 2026-04-05T09:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 246
+----------
+Review Id: SAF-00123-B
+Shift Id: S26-9530
+Reviewed At: 2026-04-15T15:00:00
+Revision: 2
+Safety Status: needs_revision
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 247
+----------
+Review Id: SAF-00124-A
+Shift Id: S26-2043
+Reviewed At: 2026-04-06T12:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 248
+----------
+Review Id: SAF-00124-B
+Shift Id: S26-2043
+Reviewed At: 2026-04-16T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 249
+----------
+Review Id: SAF-00125-A
+Shift Id: S26-1313
+Reviewed At: 2026-04-07T15:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 250
+----------
+Review Id: SAF-00125-B
+Shift Id: S26-1313
+Reviewed At: 2026-04-17T05:00:00
+Revision: 2
+Safety Status: needs_revision
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 251
+----------
+Review Id: SAF-00126-A
+Shift Id: S26-7987
+Reviewed At: 2026-04-08T18:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 252
+----------
+Review Id: SAF-00126-B
+Shift Id: S26-7987
+Reviewed At: 2026-04-18T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 253
+----------
+Review Id: SAF-00127-A
+Shift Id: S26-4672
+Reviewed At: 2026-04-09T01:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 254
+----------
+Review Id: SAF-00127-B
+Shift Id: S26-4672
+Reviewed At: 2026-04-19T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 255
+----------
+Review Id: SAF-00128-A
+Shift Id: S26-4786
+Reviewed At: 2026-04-10T04:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 256
+----------
+Review Id: SAF-00128-B
+Shift Id: S26-4786
+Reviewed At: 2026-04-20T00:00:00
+Revision: 2
+Safety Status: needs_revision
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 257
+----------
+Review Id: SAF-00129-A
+Shift Id: S26-5628
+Reviewed At: 2026-04-11T07:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 258
+----------
+Review Id: SAF-00129-B
+Shift Id: S26-5628
+Reviewed At: 2026-04-21T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 259
+----------
+Review Id: SAF-00130-A
+Shift Id: S26-9903
+Reviewed At: 2026-04-12T10:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 260
+----------
+Review Id: SAF-00130-B
+Shift Id: S26-9903
+Reviewed At: 2026-04-12T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 261
+----------
+Review Id: SAF-00131-A
+Shift Id: S26-2410
+Reviewed At: 2026-04-13T13:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 262
+----------
+Review Id: SAF-00131-B
+Shift Id: S26-2410
+Reviewed At: 2026-04-13T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 263
+----------
+Review Id: SAF-00132-A
+Shift Id: S26-7641
+Reviewed At: 2026-04-14T16:00:00
+Revision: 3
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 264
+----------
+Review Id: SAF-00132-B
+Shift Id: S26-7641
+Reviewed At: 2026-04-14T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 265
+----------
+Review Id: SAF-00133-A
+Shift Id: S26-4350
+Reviewed At: 2026-04-15T19:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 266
+----------
+Review Id: SAF-00133-B
+Shift Id: S26-4350
+Reviewed At: 2026-04-15T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: No
+
+Record 267
+----------
+Review Id: SAF-00134-A
+Shift Id: S26-3532
+Reviewed At: 2026-04-16T02:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 268
+----------
+Review Id: SAF-00134-B
+Shift Id: S26-3532
+Reviewed At: 2026-04-16T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 269
+----------
+Review Id: SAF-00135-A
+Shift Id: S26-9361
+Reviewed At: 2026-04-02T05:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 270
+----------
+Review Id: SAF-00135-B
+Shift Id: S26-9361
+Reviewed At: 2026-04-17T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: restricted
+Equipment Ready: No
+Emergency Plan Ready: Yes
+
+Record 271
+----------
+Review Id: SAF-00136-A
+Shift Id: S26-1397
+Reviewed At: 2026-04-03T08:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 272
+----------
+Review Id: SAF-00136-B
+Shift Id: S26-1397
+Reviewed At: 2026-04-18T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: No
+Emergency Plan Ready: Yes
+
+Record 273
+----------
+Review Id: SAF-00137-A
+Shift Id: S26-3863
+Reviewed At: 2026-04-04T11:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 274
+----------
+Review Id: SAF-00137-B
+Shift Id: S26-3863
+Reviewed At: 2026-04-19T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 275
+----------
+Review Id: SAF-00138-A
+Shift Id: S26-9832
+Reviewed At: 2026-04-05T14:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 276
+----------
+Review Id: SAF-00138-B
+Shift Id: S26-9832
+Reviewed At: 2026-04-20T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 277
+----------
+Review Id: SAF-00139-A
+Shift Id: S26-9695
+Reviewed At: 2026-04-06T17:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 278
+----------
+Review Id: SAF-00139-B
+Shift Id: S26-9695
+Reviewed At: 2026-04-21T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 279
+----------
+Review Id: SAF-00140-A
+Shift Id: S26-7521
+Reviewed At: 2026-04-07T00:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 280
+----------
+Review Id: SAF-00140-B
+Shift Id: S26-7521
+Reviewed At: 2026-04-12T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 281
+----------
+Review Id: SAF-00141-A
+Shift Id: S26-5012
+Reviewed At: 2026-04-08T03:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 282
+----------
+Review Id: SAF-00141-B
+Shift Id: S26-5012
+Reviewed At: 2026-04-13T05:00:00
+Revision: 2
+Safety Status: needs_revision
+Route Status: open
+Equipment Ready: No
+Emergency Plan Ready: No
+
+Record 283
+----------
+Review Id: SAF-00142-A
+Shift Id: S26-2065
+Reviewed At: 2026-04-09T06:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 284
+----------
+Review Id: SAF-00142-B
+Shift Id: S26-2065
+Reviewed At: 2026-04-14T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 285
+----------
+Review Id: SAF-00143-A
+Shift Id: S26-4578
+Reviewed At: 2026-04-10T09:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 286
+----------
+Review Id: SAF-00143-B
+Shift Id: S26-4578
+Reviewed At: 2026-04-15T15:00:00
+Revision: 2
+Safety Status: pending
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 287
+----------
+Review Id: SAF-00144-A
+Shift Id: S26-3144
+Reviewed At: 2026-04-11T12:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 288
+----------
+Review Id: SAF-00144-B
+Shift Id: S26-3144
+Reviewed At: 2026-04-16T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 289
+----------
+Review Id: SAF-00145-A
+Shift Id: S26-8765
+Reviewed At: 2026-04-12T15:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 290
+----------
+Review Id: SAF-00145-B
+Shift Id: S26-8765
+Reviewed At: 2026-04-17T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: No
+
+Record 291
+----------
+Review Id: SAF-00146-A
+Shift Id: S26-6330
+Reviewed At: 2026-04-13T18:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 292
+----------
+Review Id: SAF-00146-B
+Shift Id: S26-6330
+Reviewed At: 2026-04-18T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 293
+----------
+Review Id: SAF-00147-A
+Shift Id: S26-2628
+Reviewed At: 2026-04-14T01:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 294
+----------
+Review Id: SAF-00147-B
+Shift Id: S26-2628
+Reviewed At: 2026-04-19T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 295
+----------
+Review Id: SAF-00148-A
+Shift Id: S26-6918
+Reviewed At: 2026-04-15T04:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 296
+----------
+Review Id: SAF-00148-B
+Shift Id: S26-6918
+Reviewed At: 2026-04-20T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: No
+
+Record 297
+----------
+Review Id: SAF-00149-A
+Shift Id: S26-1977
+Reviewed At: 2026-04-16T07:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 298
+----------
+Review Id: SAF-00149-B
+Shift Id: S26-1977
+Reviewed At: 2026-04-21T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 299
+----------
+Review Id: SAF-00150-A
+Shift Id: S26-8066
+Reviewed At: 2026-04-02T10:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 300
+----------
+Review Id: SAF-00150-B
+Shift Id: S26-8066
+Reviewed At: 2026-04-12T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: No
+
+Record 301
+----------
+Review Id: SAF-00151-A
+Shift Id: S26-1859
+Reviewed At: 2026-04-03T13:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 302
+----------
+Review Id: SAF-00151-B
+Shift Id: S26-1859
+Reviewed At: 2026-04-13T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 303
+----------
+Review Id: SAF-00152-A
+Shift Id: S26-2446
+Reviewed At: 2026-04-04T16:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 304
+----------
+Review Id: SAF-00152-B
+Shift Id: S26-2446
+Reviewed At: 2026-04-14T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 305
+----------
+Review Id: SAF-00153-A
+Shift Id: S26-8865
+Reviewed At: 2026-04-05T19:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 306
+----------
+Review Id: SAF-00153-B
+Shift Id: S26-8865
+Reviewed At: 2026-04-15T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 307
+----------
+Review Id: SAF-00154-A
+Shift Id: S26-1950
+Reviewed At: 2026-04-06T02:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 308
+----------
+Review Id: SAF-00154-B
+Shift Id: S26-1950
+Reviewed At: 2026-04-16T10:00:00
+Revision: 3
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 309
+----------
+Review Id: SAF-00155-A
+Shift Id: S26-8247
+Reviewed At: 2026-04-07T05:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 310
+----------
+Review Id: SAF-00155-B
+Shift Id: S26-8247
+Reviewed At: 2026-04-17T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 311
+----------
+Review Id: SAF-00156-A
+Shift Id: S26-8272
+Reviewed At: 2026-04-08T08:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 312
+----------
+Review Id: SAF-00156-B
+Shift Id: S26-8272
+Reviewed At: 2026-04-18T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 313
+----------
+Review Id: SAF-00157-A
+Shift Id: S26-7572
+Reviewed At: 2026-04-09T11:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 314
+----------
+Review Id: SAF-00157-B
+Shift Id: S26-7572
+Reviewed At: 2026-04-19T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 315
+----------
+Review Id: SAF-00158-A
+Shift Id: S26-3607
+Reviewed At: 2026-04-10T14:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 316
+----------
+Review Id: SAF-00158-B
+Shift Id: S26-3607
+Reviewed At: 2026-04-20T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: No
+
+Record 317
+----------
+Review Id: SAF-00159-A
+Shift Id: S26-9759
+Reviewed At: 2026-04-11T17:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 318
+----------
+Review Id: SAF-00159-B
+Shift Id: S26-9759
+Reviewed At: 2026-04-21T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: No
+
+Record 319
+----------
+Review Id: SAF-00160-A
+Shift Id: S26-5351
+Reviewed At: 2026-04-12T00:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 320
+----------
+Review Id: SAF-00160-B
+Shift Id: S26-5351
+Reviewed At: 2026-04-12T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: No
+
+Record 321
+----------
+Review Id: SAF-00161-A
+Shift Id: S26-2919
+Reviewed At: 2026-04-13T03:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 322
+----------
+Review Id: SAF-00161-B
+Shift Id: S26-2919
+Reviewed At: 2026-04-13T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 323
+----------
+Review Id: SAF-00162-A
+Shift Id: S26-1947
+Reviewed At: 2026-04-14T06:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 324
+----------
+Review Id: SAF-00162-B
+Shift Id: S26-1947
+Reviewed At: 2026-04-14T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 325
+----------
+Review Id: SAF-00163-A
+Shift Id: S26-4077
+Reviewed At: 2026-04-15T09:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 326
+----------
+Review Id: SAF-00163-B
+Shift Id: S26-4077
+Reviewed At: 2026-04-15T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 327
+----------
+Review Id: SAF-00164-A
+Shift Id: S26-8003
+Reviewed At: 2026-04-16T12:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 328
+----------
+Review Id: SAF-00164-B
+Shift Id: S26-8003
+Reviewed At: 2026-04-16T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 329
+----------
+Review Id: SAF-00165-A
+Shift Id: S26-4955
+Reviewed At: 2026-04-02T15:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 330
+----------
+Review Id: SAF-00165-B
+Shift Id: S26-4955
+Reviewed At: 2026-04-17T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 331
+----------
+Review Id: SAF-00166-A
+Shift Id: S26-7058
+Reviewed At: 2026-04-03T18:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 332
+----------
+Review Id: SAF-00166-B
+Shift Id: S26-7058
+Reviewed At: 2026-04-18T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: No
+
+Record 333
+----------
+Review Id: SAF-00167-A
+Shift Id: S26-9986
+Reviewed At: 2026-04-04T01:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 334
+----------
+Review Id: SAF-00167-B
+Shift Id: S26-9986
+Reviewed At: 2026-04-19T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 335
+----------
+Review Id: SAF-00168-A
+Shift Id: S26-3131
+Reviewed At: 2026-04-05T04:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 336
+----------
+Review Id: SAF-00168-B
+Shift Id: S26-3131
+Reviewed At: 2026-04-20T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 337
+----------
+Review Id: SAF-00169-A
+Shift Id: S26-1882
+Reviewed At: 2026-04-06T07:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 338
+----------
+Review Id: SAF-00169-B
+Shift Id: S26-1882
+Reviewed At: 2026-04-21T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 339
+----------
+Review Id: SAF-00170-A
+Shift Id: S26-3253
+Reviewed At: 2026-04-07T10:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 340
+----------
+Review Id: SAF-00170-B
+Shift Id: S26-3253
+Reviewed At: 2026-04-12T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 341
+----------
+Review Id: SAF-00171-A
+Shift Id: S26-5308
+Reviewed At: 2026-04-08T13:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 342
+----------
+Review Id: SAF-00171-B
+Shift Id: S26-5308
+Reviewed At: 2026-04-13T15:00:00
+Revision: 2
+Safety Status: needs_revision
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 343
+----------
+Review Id: SAF-00172-A
+Shift Id: S26-9935
+Reviewed At: 2026-04-09T16:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 344
+----------
+Review Id: SAF-00172-B
+Shift Id: S26-9935
+Reviewed At: 2026-04-14T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 345
+----------
+Review Id: SAF-00173-A
+Shift Id: S26-4296
+Reviewed At: 2026-04-10T19:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 346
+----------
+Review Id: SAF-00173-B
+Shift Id: S26-4296
+Reviewed At: 2026-04-15T05:00:00
+Revision: 2
+Safety Status: pending
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 347
+----------
+Review Id: SAF-00174-A
+Shift Id: S26-1729
+Reviewed At: 2026-04-11T02:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 348
+----------
+Review Id: SAF-00174-B
+Shift Id: S26-1729
+Reviewed At: 2026-04-16T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 349
+----------
+Review Id: SAF-00175-A
+Shift Id: S26-1615
+Reviewed At: 2026-04-12T05:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 350
+----------
+Review Id: SAF-00175-B
+Shift Id: S26-1615
+Reviewed At: 2026-04-17T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: No
+Emergency Plan Ready: Yes
+
+Record 351
+----------
+Review Id: SAF-00176-A
+Shift Id: S26-9024
+Reviewed At: 2026-04-13T08:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 352
+----------
+Review Id: SAF-00176-B
+Shift Id: S26-9024
+Reviewed At: 2026-04-18T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 353
+----------
+Review Id: SAF-00177-A
+Shift Id: S26-7835
+Reviewed At: 2026-04-14T11:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 354
+----------
+Review Id: SAF-00177-B
+Shift Id: S26-7835
+Reviewed At: 2026-04-19T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 355
+----------
+Review Id: SAF-00178-A
+Shift Id: S26-5102
+Reviewed At: 2026-04-15T14:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 356
+----------
+Review Id: SAF-00178-B
+Shift Id: S26-5102
+Reviewed At: 2026-04-20T10:00:00
+Revision: 2
+Safety Status: pending
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 357
+----------
+Review Id: SAF-00179-A
+Shift Id: S26-7915
+Reviewed At: 2026-04-16T17:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 358
+----------
+Review Id: SAF-00179-B
+Shift Id: S26-7915
+Reviewed At: 2026-04-21T15:00:00
+Revision: 2
+Safety Status: needs_revision
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 359
+----------
+Review Id: SAF-00180-A
+Shift Id: S26-3097
+Reviewed At: 2026-04-02T00:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 360
+----------
+Review Id: SAF-00180-B
+Shift Id: S26-3097
+Reviewed At: 2026-04-12T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 361
+----------
+Review Id: SAF-00181-A
+Shift Id: S26-5290
+Reviewed At: 2026-04-03T03:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 362
+----------
+Review Id: SAF-00181-B
+Shift Id: S26-5290
+Reviewed At: 2026-04-13T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 363
+----------
+Review Id: SAF-00182-A
+Shift Id: S26-1154
+Reviewed At: 2026-04-04T06:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 364
+----------
+Review Id: SAF-00182-B
+Shift Id: S26-1154
+Reviewed At: 2026-04-14T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 365
+----------
+Review Id: SAF-00183-A
+Shift Id: S26-8473
+Reviewed At: 2026-04-05T09:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 366
+----------
+Review Id: SAF-00183-B
+Shift Id: S26-8473
+Reviewed At: 2026-04-15T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 367
+----------
+Review Id: SAF-00184-A
+Shift Id: S26-4384
+Reviewed At: 2026-04-06T12:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 368
+----------
+Review Id: SAF-00184-B
+Shift Id: S26-4384
+Reviewed At: 2026-04-16T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 369
+----------
+Review Id: SAF-00185-A
+Shift Id: S26-8135
+Reviewed At: 2026-04-07T15:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 370
+----------
+Review Id: SAF-00185-B
+Shift Id: S26-8135
+Reviewed At: 2026-04-17T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 371
+----------
+Review Id: SAF-00186-A
+Shift Id: S26-3645
+Reviewed At: 2026-04-08T18:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 372
+----------
+Review Id: SAF-00186-B
+Shift Id: S26-3645
+Reviewed At: 2026-04-18T10:00:00
+Revision: 2
+Safety Status: needs_revision
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 373
+----------
+Review Id: SAF-00187-A
+Shift Id: S26-8029
+Reviewed At: 2026-04-09T01:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 374
+----------
+Review Id: SAF-00187-B
+Shift Id: S26-8029
+Reviewed At: 2026-04-19T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 375
+----------
+Review Id: SAF-00188-A
+Shift Id: S26-6070
+Reviewed At: 2026-04-10T04:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 376
+----------
+Review Id: SAF-00188-B
+Shift Id: S26-6070
+Reviewed At: 2026-04-20T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 377
+----------
+Review Id: SAF-00189-A
+Shift Id: S26-2284
+Reviewed At: 2026-04-11T07:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 378
+----------
+Review Id: SAF-00189-B
+Shift Id: S26-2284
+Reviewed At: 2026-04-21T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 379
+----------
+Review Id: SAF-00190-A
+Shift Id: S26-9925
+Reviewed At: 2026-04-12T10:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 380
+----------
+Review Id: SAF-00190-B
+Shift Id: S26-9925
+Reviewed At: 2026-04-12T10:00:00
+Revision: 2
+Safety Status: needs_revision
+Route Status: open
+Equipment Ready: No
+Emergency Plan Ready: Yes
+
+Record 381
+----------
+Review Id: SAF-00191-A
+Shift Id: S26-9510
+Reviewed At: 2026-04-13T13:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 382
+----------
+Review Id: SAF-00191-B
+Shift Id: S26-9510
+Reviewed At: 2026-04-13T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 383
+----------
+Review Id: SAF-00192-A
+Shift Id: S26-4405
+Reviewed At: 2026-04-14T16:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 384
+----------
+Review Id: SAF-00192-B
+Shift Id: S26-4405
+Reviewed At: 2026-04-14T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 385
+----------
+Review Id: SAF-00193-A
+Shift Id: S26-1092
+Reviewed At: 2026-04-15T19:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 386
+----------
+Review Id: SAF-00193-B
+Shift Id: S26-1092
+Reviewed At: 2026-04-15T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 387
+----------
+Review Id: SAF-00194-A
+Shift Id: S26-3067
+Reviewed At: 2026-04-16T02:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 388
+----------
+Review Id: SAF-00194-B
+Shift Id: S26-3067
+Reviewed At: 2026-04-16T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: No
+Emergency Plan Ready: Yes
+
+Record 389
+----------
+Review Id: SAF-00195-A
+Shift Id: S26-6481
+Reviewed At: 2026-04-02T05:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 390
+----------
+Review Id: SAF-00195-B
+Shift Id: S26-6481
+Reviewed At: 2026-04-17T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 391
+----------
+Review Id: SAF-00196-A
+Shift Id: S26-4797
+Reviewed At: 2026-04-03T08:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 392
+----------
+Review Id: SAF-00196-B
+Shift Id: S26-4797
+Reviewed At: 2026-04-18T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 393
+----------
+Review Id: SAF-00197-A
+Shift Id: S26-5300
+Reviewed At: 2026-04-04T11:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 394
+----------
+Review Id: SAF-00197-B
+Shift Id: S26-5300
+Reviewed At: 2026-04-19T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 395
+----------
+Review Id: SAF-00198-A
+Shift Id: S26-9075
+Reviewed At: 2026-04-05T14:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 396
+----------
+Review Id: SAF-00198-B
+Shift Id: S26-9075
+Reviewed At: 2026-04-20T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 397
+----------
+Review Id: SAF-00199-A
+Shift Id: S26-2093
+Reviewed At: 2026-04-06T17:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 398
+----------
+Review Id: SAF-00199-B
+Shift Id: S26-2093
+Reviewed At: 2026-04-21T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 399
+----------
+Review Id: SAF-00200-A
+Shift Id: S26-3475
+Reviewed At: 2026-04-07T00:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 400
+----------
+Review Id: SAF-00200-B
+Shift Id: S26-3475
+Reviewed At: 2026-04-12T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 401
+----------
+Review Id: SAF-00201-A
+Shift Id: S26-4599
+Reviewed At: 2026-04-08T03:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 402
+----------
+Review Id: SAF-00201-B
+Shift Id: S26-4599
+Reviewed At: 2026-04-13T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: restricted
+Equipment Ready: No
+Emergency Plan Ready: Yes
+
+Record 403
+----------
+Review Id: SAF-00202-A
+Shift Id: S26-8554
+Reviewed At: 2026-04-09T06:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 404
+----------
+Review Id: SAF-00202-B
+Shift Id: S26-8554
+Reviewed At: 2026-04-14T10:00:00
+Revision: 2
+Safety Status: needs_revision
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 405
+----------
+Review Id: SAF-00203-A
+Shift Id: S26-5863
+Reviewed At: 2026-04-10T09:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 406
+----------
+Review Id: SAF-00203-B
+Shift Id: S26-5863
+Reviewed At: 2026-04-15T15:00:00
+Revision: 3
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 407
+----------
+Review Id: SAF-00204-A
+Shift Id: S26-7498
+Reviewed At: 2026-04-11T12:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 408
+----------
+Review Id: SAF-00204-B
+Shift Id: S26-7498
+Reviewed At: 2026-04-16T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 409
+----------
+Review Id: SAF-00205-A
+Shift Id: S26-1760
+Reviewed At: 2026-04-12T15:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 410
+----------
+Review Id: SAF-00205-B
+Shift Id: S26-1760
+Reviewed At: 2026-04-17T05:00:00
+Revision: 2
+Safety Status: needs_revision
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 411
+----------
+Review Id: SAF-00206-A
+Shift Id: S26-1126
+Reviewed At: 2026-04-13T18:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 412
+----------
+Review Id: SAF-00206-B
+Shift Id: S26-1126
+Reviewed At: 2026-04-18T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 413
+----------
+Review Id: SAF-00207-A
+Shift Id: S26-6097
+Reviewed At: 2026-04-14T01:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 414
+----------
+Review Id: SAF-00207-B
+Shift Id: S26-6097
+Reviewed At: 2026-04-19T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 415
+----------
+Review Id: SAF-00208-A
+Shift Id: S26-4591
+Reviewed At: 2026-04-15T04:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 416
+----------
+Review Id: SAF-00208-B
+Shift Id: S26-4591
+Reviewed At: 2026-04-20T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: No
+
+Record 417
+----------
+Review Id: SAF-00209-A
+Shift Id: S26-1588
+Reviewed At: 2026-04-16T07:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 418
+----------
+Review Id: SAF-00209-B
+Shift Id: S26-1588
+Reviewed At: 2026-04-21T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 419
+----------
+Review Id: SAF-00210-A
+Shift Id: S26-6297
+Reviewed At: 2026-04-02T10:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 420
+----------
+Review Id: SAF-00210-B
+Shift Id: S26-6297
+Reviewed At: 2026-04-12T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 421
+----------
+Review Id: SAF-00211-A
+Shift Id: S26-1677
+Reviewed At: 2026-04-03T13:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 422
+----------
+Review Id: SAF-00211-B
+Shift Id: S26-1677
+Reviewed At: 2026-04-13T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 423
+----------
+Review Id: SAF-00212-A
+Shift Id: S26-9971
+Reviewed At: 2026-04-04T16:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 424
+----------
+Review Id: SAF-00212-B
+Shift Id: S26-9971
+Reviewed At: 2026-04-14T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 425
+----------
+Review Id: SAF-00213-A
+Shift Id: S26-9747
+Reviewed At: 2026-04-05T19:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 426
+----------
+Review Id: SAF-00213-B
+Shift Id: S26-9747
+Reviewed At: 2026-04-15T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 427
+----------
+Review Id: SAF-00214-A
+Shift Id: S26-2558
+Reviewed At: 2026-04-06T02:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 428
+----------
+Review Id: SAF-00214-B
+Shift Id: S26-2558
+Reviewed At: 2026-04-16T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 429
+----------
+Review Id: SAF-00215-A
+Shift Id: S26-4929
+Reviewed At: 2026-04-07T05:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 430
+----------
+Review Id: SAF-00215-B
+Shift Id: S26-4929
+Reviewed At: 2026-04-17T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 431
+----------
+Review Id: SAF-00216-A
+Shift Id: S26-5486
+Reviewed At: 2026-04-08T08:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 432
+----------
+Review Id: SAF-00216-B
+Shift Id: S26-5486
+Reviewed At: 2026-04-18T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 433
+----------
+Review Id: SAF-00217-A
+Shift Id: S26-5108
+Reviewed At: 2026-04-09T11:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 434
+----------
+Review Id: SAF-00217-B
+Shift Id: S26-5108
+Reviewed At: 2026-04-19T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 435
+----------
+Review Id: SAF-00218-A
+Shift Id: S26-4754
+Reviewed At: 2026-04-10T14:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 436
+----------
+Review Id: SAF-00218-B
+Shift Id: S26-4754
+Reviewed At: 2026-04-20T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 437
+----------
+Review Id: SAF-00219-A
+Shift Id: S26-8798
+Reviewed At: 2026-04-11T17:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 438
+----------
+Review Id: SAF-00219-B
+Shift Id: S26-8798
+Reviewed At: 2026-04-21T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 439
+----------
+Review Id: SAF-00220-A
+Shift Id: S26-3773
+Reviewed At: 2026-04-12T00:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 440
+----------
+Review Id: SAF-00220-B
+Shift Id: S26-3773
+Reviewed At: 2026-04-12T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 441
+----------
+Review Id: SAF-00221-A
+Shift Id: S26-6657
+Reviewed At: 2026-04-13T03:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 442
+----------
+Review Id: SAF-00221-B
+Shift Id: S26-6657
+Reviewed At: 2026-04-13T05:00:00
+Revision: 2
+Safety Status: pending
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 443
+----------
+Review Id: SAF-00222-A
+Shift Id: S26-3045
+Reviewed At: 2026-04-14T06:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 444
+----------
+Review Id: SAF-00222-B
+Shift Id: S26-3045
+Reviewed At: 2026-04-14T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 445
+----------
+Review Id: SAF-00223-A
+Shift Id: S26-2721
+Reviewed At: 2026-04-15T09:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 446
+----------
+Review Id: SAF-00223-B
+Shift Id: S26-2721
+Reviewed At: 2026-04-15T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 447
+----------
+Review Id: SAF-00224-A
+Shift Id: S26-3083
+Reviewed At: 2026-04-16T12:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 448
+----------
+Review Id: SAF-00224-B
+Shift Id: S26-3083
+Reviewed At: 2026-04-16T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: No
+
+Record 449
+----------
+Review Id: SAF-00225-A
+Shift Id: S26-5378
+Reviewed At: 2026-04-02T15:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 450
+----------
+Review Id: SAF-00225-B
+Shift Id: S26-5378
+Reviewed At: 2026-04-17T05:00:00
+Revision: 2
+Safety Status: needs_revision
+Route Status: open
+Equipment Ready: No
+Emergency Plan Ready: Yes
+
+Record 451
+----------
+Review Id: SAF-00226-A
+Shift Id: S26-1023
+Reviewed At: 2026-04-03T18:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 452
+----------
+Review Id: SAF-00226-B
+Shift Id: S26-1023
+Reviewed At: 2026-04-18T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 453
+----------
+Review Id: SAF-00227-A
+Shift Id: S26-4456
+Reviewed At: 2026-04-04T01:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 454
+----------
+Review Id: SAF-00227-B
+Shift Id: S26-4456
+Reviewed At: 2026-04-19T15:00:00
+Revision: 3
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 455
+----------
+Review Id: SAF-00228-A
+Shift Id: S26-1246
+Reviewed At: 2026-04-05T04:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 456
+----------
+Review Id: SAF-00228-B
+Shift Id: S26-1246
+Reviewed At: 2026-04-20T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 457
+----------
+Review Id: SAF-00229-A
+Shift Id: S26-3854
+Reviewed At: 2026-04-06T07:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 458
+----------
+Review Id: SAF-00229-B
+Shift Id: S26-3854
+Reviewed At: 2026-04-21T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 459
+----------
+Review Id: SAF-00230-A
+Shift Id: S26-8785
+Reviewed At: 2026-04-07T10:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 460
+----------
+Review Id: SAF-00230-B
+Shift Id: S26-8785
+Reviewed At: 2026-04-12T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: No
+Emergency Plan Ready: Yes
+
+Record 461
+----------
+Review Id: SAF-00231-A
+Shift Id: S26-9425
+Reviewed At: 2026-04-08T13:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 462
+----------
+Review Id: SAF-00231-B
+Shift Id: S26-9425
+Reviewed At: 2026-04-13T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 463
+----------
+Review Id: SAF-00232-A
+Shift Id: S26-8841
+Reviewed At: 2026-04-09T16:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 464
+----------
+Review Id: SAF-00232-B
+Shift Id: S26-8841
+Reviewed At: 2026-04-14T00:00:00
+Revision: 2
+Safety Status: needs_revision
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 465
+----------
+Review Id: SAF-00233-A
+Shift Id: S26-9512
+Reviewed At: 2026-04-10T19:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 466
+----------
+Review Id: SAF-00233-B
+Shift Id: S26-9512
+Reviewed At: 2026-04-15T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 467
+----------
+Review Id: SAF-00234-A
+Shift Id: S26-1409
+Reviewed At: 2026-04-11T02:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 468
+----------
+Review Id: SAF-00234-B
+Shift Id: S26-1409
+Reviewed At: 2026-04-16T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 469
+----------
+Review Id: SAF-00235-A
+Shift Id: S26-8535
+Reviewed At: 2026-04-12T05:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 470
+----------
+Review Id: SAF-00235-B
+Shift Id: S26-8535
+Reviewed At: 2026-04-17T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 471
+----------
+Review Id: SAF-00236-A
+Shift Id: S26-9872
+Reviewed At: 2026-04-13T08:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 472
+----------
+Review Id: SAF-00236-B
+Shift Id: S26-9872
+Reviewed At: 2026-04-18T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 473
+----------
+Review Id: SAF-00237-A
+Shift Id: S26-1711
+Reviewed At: 2026-04-14T11:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 474
+----------
+Review Id: SAF-00237-B
+Shift Id: S26-1711
+Reviewed At: 2026-04-19T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 475
+----------
+Review Id: SAF-00238-A
+Shift Id: S26-1303
+Reviewed At: 2026-04-15T14:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 476
+----------
+Review Id: SAF-00238-B
+Shift Id: S26-1303
+Reviewed At: 2026-04-20T10:00:00
+Revision: 2
+Safety Status: needs_revision
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 477
+----------
+Review Id: SAF-00239-A
+Shift Id: S26-9190
+Reviewed At: 2026-04-16T17:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 478
+----------
+Review Id: SAF-00239-B
+Shift Id: S26-9190
+Reviewed At: 2026-04-21T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 479
+----------
+Review Id: SAF-00240-A
+Shift Id: S26-8762
+Reviewed At: 2026-04-02T00:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 480
+----------
+Review Id: SAF-00240-B
+Shift Id: S26-8762
+Reviewed At: 2026-04-12T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 481
+----------
+Review Id: SAF-00241-A
+Shift Id: S26-2989
+Reviewed At: 2026-04-03T03:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 482
+----------
+Review Id: SAF-00241-B
+Shift Id: S26-2989
+Reviewed At: 2026-04-13T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 483
+----------
+Review Id: SAF-00242-A
+Shift Id: S26-4157
+Reviewed At: 2026-04-04T06:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 484
+----------
+Review Id: SAF-00242-B
+Shift Id: S26-4157
+Reviewed At: 2026-04-14T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 485
+----------
+Review Id: SAF-00243-A
+Shift Id: S26-7882
+Reviewed At: 2026-04-05T09:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 486
+----------
+Review Id: SAF-00243-B
+Shift Id: S26-7882
+Reviewed At: 2026-04-15T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 487
+----------
+Review Id: SAF-00244-A
+Shift Id: S26-4565
+Reviewed At: 2026-04-06T12:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 488
+----------
+Review Id: SAF-00244-B
+Shift Id: S26-4565
+Reviewed At: 2026-04-16T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 489
+----------
+Review Id: SAF-00245-A
+Shift Id: S26-3081
+Reviewed At: 2026-04-07T15:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 490
+----------
+Review Id: SAF-00245-B
+Shift Id: S26-3081
+Reviewed At: 2026-04-17T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 491
+----------
+Review Id: SAF-00246-A
+Shift Id: S26-9548
+Reviewed At: 2026-04-08T18:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 492
+----------
+Review Id: SAF-00246-B
+Shift Id: S26-9548
+Reviewed At: 2026-04-18T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 493
+----------
+Review Id: SAF-00247-A
+Shift Id: S26-6092
+Reviewed At: 2026-04-09T01:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 494
+----------
+Review Id: SAF-00247-B
+Shift Id: S26-6092
+Reviewed At: 2026-04-19T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 495
+----------
+Review Id: SAF-00248-A
+Shift Id: S26-9833
+Reviewed At: 2026-04-10T04:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 496
+----------
+Review Id: SAF-00248-B
+Shift Id: S26-9833
+Reviewed At: 2026-04-20T00:00:00
+Revision: 2
+Safety Status: pending
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 497
+----------
+Review Id: SAF-00249-A
+Shift Id: S26-8440
+Reviewed At: 2026-04-11T07:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 498
+----------
+Review Id: SAF-00249-B
+Shift Id: S26-8440
+Reviewed At: 2026-04-21T05:00:00
+Revision: 2
+Safety Status: needs_revision
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 499
+----------
+Review Id: SAF-00250-A
+Shift Id: S26-9044
+Reviewed At: 2026-04-12T10:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 500
+----------
+Review Id: SAF-00250-B
+Shift Id: S26-9044
+Reviewed At: 2026-04-12T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 501
+----------
+Review Id: SAF-00251-A
+Shift Id: S26-8068
+Reviewed At: 2026-04-13T13:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 502
+----------
+Review Id: SAF-00251-B
+Shift Id: S26-8068
+Reviewed At: 2026-04-13T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 503
+----------
+Review Id: SAF-00252-A
+Shift Id: S26-8024
+Reviewed At: 2026-04-14T16:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 504
+----------
+Review Id: SAF-00252-B
+Shift Id: S26-8024
+Reviewed At: 2026-04-14T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 505
+----------
+Review Id: SAF-00253-A
+Shift Id: S26-2720
+Reviewed At: 2026-04-15T19:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 506
+----------
+Review Id: SAF-00253-B
+Shift Id: S26-2720
+Reviewed At: 2026-04-15T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 507
+----------
+Review Id: SAF-00254-A
+Shift Id: S26-9674
+Reviewed At: 2026-04-16T02:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 508
+----------
+Review Id: SAF-00254-B
+Shift Id: S26-9674
+Reviewed At: 2026-04-16T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 509
+----------
+Review Id: SAF-00255-A
+Shift Id: S26-2906
+Reviewed At: 2026-04-02T05:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 510
+----------
+Review Id: SAF-00255-B
+Shift Id: S26-2906
+Reviewed At: 2026-04-17T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 511
+----------
+Review Id: SAF-00256-A
+Shift Id: S26-4110
+Reviewed At: 2026-04-03T08:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 512
+----------
+Review Id: SAF-00256-B
+Shift Id: S26-4110
+Reviewed At: 2026-04-18T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 513
+----------
+Review Id: SAF-00257-A
+Shift Id: S26-5805
+Reviewed At: 2026-04-04T11:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 514
+----------
+Review Id: SAF-00257-B
+Shift Id: S26-5805
+Reviewed At: 2026-04-19T05:00:00
+Revision: 2
+Safety Status: needs_revision
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 515
+----------
+Review Id: SAF-00258-A
+Shift Id: S26-8008
+Reviewed At: 2026-04-05T14:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 516
+----------
+Review Id: SAF-00258-B
+Shift Id: S26-8008
+Reviewed At: 2026-04-20T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 517
+----------
+Review Id: SAF-00259-A
+Shift Id: S26-8373
+Reviewed At: 2026-04-06T17:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 518
+----------
+Review Id: SAF-00259-B
+Shift Id: S26-8373
+Reviewed At: 2026-04-21T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 519
+----------
+Review Id: SAF-00260-A
+Shift Id: S26-2515
+Reviewed At: 2026-04-07T00:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 520
+----------
+Review Id: SAF-00260-B
+Shift Id: S26-2515
+Reviewed At: 2026-04-12T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 521
+----------
+Review Id: SAF-00261-A
+Shift Id: S26-1645
+Reviewed At: 2026-04-08T03:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 522
+----------
+Review Id: SAF-00261-B
+Shift Id: S26-1645
+Reviewed At: 2026-04-13T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: No
+Emergency Plan Ready: No
+
+Record 523
+----------
+Review Id: SAF-00262-A
+Shift Id: S26-8680
+Reviewed At: 2026-04-09T06:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 524
+----------
+Review Id: SAF-00262-B
+Shift Id: S26-8680
+Reviewed At: 2026-04-14T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 525
+----------
+Review Id: SAF-00263-A
+Shift Id: S26-6788
+Reviewed At: 2026-04-10T09:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 526
+----------
+Review Id: SAF-00263-B
+Shift Id: S26-6788
+Reviewed At: 2026-04-15T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 527
+----------
+Review Id: SAF-00264-A
+Shift Id: S26-3369
+Reviewed At: 2026-04-11T12:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 528
+----------
+Review Id: SAF-00264-B
+Shift Id: S26-3369
+Reviewed At: 2026-04-16T00:00:00
+Revision: 3
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 529
+----------
+Review Id: SAF-00265-A
+Shift Id: S26-2849
+Reviewed At: 2026-04-12T15:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 530
+----------
+Review Id: SAF-00265-B
+Shift Id: S26-2849
+Reviewed At: 2026-04-17T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 531
+----------
+Review Id: SAF-00266-A
+Shift Id: S26-4460
+Reviewed At: 2026-04-13T18:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 532
+----------
+Review Id: SAF-00266-B
+Shift Id: S26-4460
+Reviewed At: 2026-04-18T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 533
+----------
+Review Id: SAF-00267-A
+Shift Id: S26-7083
+Reviewed At: 2026-04-14T01:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 534
+----------
+Review Id: SAF-00267-B
+Shift Id: S26-7083
+Reviewed At: 2026-04-19T15:00:00
+Revision: 2
+Safety Status: needs_revision
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 535
+----------
+Review Id: SAF-00268-A
+Shift Id: S26-3402
+Reviewed At: 2026-04-15T04:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 536
+----------
+Review Id: SAF-00268-B
+Shift Id: S26-3402
+Reviewed At: 2026-04-20T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 537
+----------
+Review Id: SAF-00269-A
+Shift Id: S26-7727
+Reviewed At: 2026-04-16T07:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 538
+----------
+Review Id: SAF-00269-B
+Shift Id: S26-7727
+Reviewed At: 2026-04-21T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 539
+----------
+Review Id: SAF-00270-A
+Shift Id: S26-4131
+Reviewed At: 2026-04-02T10:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 540
+----------
+Review Id: SAF-00270-B
+Shift Id: S26-4131
+Reviewed At: 2026-04-12T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 541
+----------
+Review Id: SAF-00271-A
+Shift Id: S26-4302
+Reviewed At: 2026-04-03T13:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 542
+----------
+Review Id: SAF-00271-B
+Shift Id: S26-4302
+Reviewed At: 2026-04-13T15:00:00
+Revision: 2
+Safety Status: pending
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 543
+----------
+Review Id: SAF-00272-A
+Shift Id: S26-5259
+Reviewed At: 2026-04-04T16:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 544
+----------
+Review Id: SAF-00272-B
+Shift Id: S26-5259
+Reviewed At: 2026-04-14T00:00:00
+Revision: 3
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 545
+----------
+Review Id: SAF-00273-A
+Shift Id: S26-7334
+Reviewed At: 2026-04-05T19:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 546
+----------
+Review Id: SAF-00273-B
+Shift Id: S26-7334
+Reviewed At: 2026-04-15T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 547
+----------
+Review Id: SAF-00274-A
+Shift Id: S26-2248
+Reviewed At: 2026-04-06T02:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 548
+----------
+Review Id: SAF-00274-B
+Shift Id: S26-2248
+Reviewed At: 2026-04-16T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 549
+----------
+Review Id: SAF-00275-A
+Shift Id: S26-3951
+Reviewed At: 2026-04-07T05:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 550
+----------
+Review Id: SAF-00275-B
+Shift Id: S26-3951
+Reviewed At: 2026-04-17T15:00:00
+Revision: 2
+Safety Status: needs_revision
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 551
+----------
+Review Id: SAF-00276-A
+Shift Id: S26-7103
+Reviewed At: 2026-04-08T08:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 552
+----------
+Review Id: SAF-00276-B
+Shift Id: S26-7103
+Reviewed At: 2026-04-18T00:00:00
+Revision: 2
+Safety Status: needs_revision
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 553
+----------
+Review Id: SAF-00277-A
+Shift Id: S26-4670
+Reviewed At: 2026-04-09T11:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 554
+----------
+Review Id: SAF-00277-B
+Shift Id: S26-4670
+Reviewed At: 2026-04-19T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 555
+----------
+Review Id: SAF-00278-A
+Shift Id: S26-4464
+Reviewed At: 2026-04-10T14:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 556
+----------
+Review Id: SAF-00278-B
+Shift Id: S26-4464
+Reviewed At: 2026-04-20T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 557
+----------
+Review Id: SAF-00279-A
+Shift Id: S26-1491
+Reviewed At: 2026-04-11T17:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 558
+----------
+Review Id: SAF-00279-B
+Shift Id: S26-1491
+Reviewed At: 2026-04-21T15:00:00
+Revision: 3
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 559
+----------
+Review Id: SAF-00280-A
+Shift Id: S26-6748
+Reviewed At: 2026-04-12T00:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 560
+----------
+Review Id: SAF-00280-B
+Shift Id: S26-6748
+Reviewed At: 2026-04-12T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 561
+----------
+Review Id: SAF-00281-A
+Shift Id: S26-4932
+Reviewed At: 2026-04-13T03:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 562
+----------
+Review Id: SAF-00281-B
+Shift Id: S26-4932
+Reviewed At: 2026-04-13T05:00:00
+Revision: 2
+Safety Status: pending
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 563
+----------
+Review Id: SAF-00282-A
+Shift Id: S26-8054
+Reviewed At: 2026-04-14T06:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 564
+----------
+Review Id: SAF-00282-B
+Shift Id: S26-8054
+Reviewed At: 2026-04-14T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 565
+----------
+Review Id: SAF-00283-A
+Shift Id: S26-6692
+Reviewed At: 2026-04-15T09:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 566
+----------
+Review Id: SAF-00283-B
+Shift Id: S26-6692
+Reviewed At: 2026-04-15T15:00:00
+Revision: 2
+Safety Status: needs_revision
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 567
+----------
+Review Id: SAF-00284-A
+Shift Id: S26-4518
+Reviewed At: 2026-04-16T12:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 568
+----------
+Review Id: SAF-00284-B
+Shift Id: S26-4518
+Reviewed At: 2026-04-16T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 569
+----------
+Review Id: SAF-00285-A
+Shift Id: S26-8201
+Reviewed At: 2026-04-02T15:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 570
+----------
+Review Id: SAF-00285-B
+Shift Id: S26-8201
+Reviewed At: 2026-04-17T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: No
+Emergency Plan Ready: Yes
+
+Record 571
+----------
+Review Id: SAF-00286-A
+Shift Id: S26-3474
+Reviewed At: 2026-04-03T18:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 572
+----------
+Review Id: SAF-00286-B
+Shift Id: S26-3474
+Reviewed At: 2026-04-18T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 573
+----------
+Review Id: SAF-00287-A
+Shift Id: S26-5114
+Reviewed At: 2026-04-04T01:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 574
+----------
+Review Id: SAF-00287-B
+Shift Id: S26-5114
+Reviewed At: 2026-04-19T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 575
+----------
+Review Id: SAF-00288-A
+Shift Id: S26-3220
+Reviewed At: 2026-04-05T04:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 576
+----------
+Review Id: SAF-00288-B
+Shift Id: S26-3220
+Reviewed At: 2026-04-20T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 577
+----------
+Review Id: SAF-00289-A
+Shift Id: S26-1690
+Reviewed At: 2026-04-06T07:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 578
+----------
+Review Id: SAF-00289-B
+Shift Id: S26-1690
+Reviewed At: 2026-04-21T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 579
+----------
+Review Id: SAF-00290-A
+Shift Id: S26-8490
+Reviewed At: 2026-04-07T10:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 580
+----------
+Review Id: SAF-00290-B
+Shift Id: S26-8490
+Reviewed At: 2026-04-12T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 581
+----------
+Review Id: SAF-00291-A
+Shift Id: S26-6504
+Reviewed At: 2026-04-08T13:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 582
+----------
+Review Id: SAF-00291-B
+Shift Id: S26-6504
+Reviewed At: 2026-04-13T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 583
+----------
+Review Id: SAF-00292-A
+Shift Id: S26-2872
+Reviewed At: 2026-04-09T16:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 584
+----------
+Review Id: SAF-00292-B
+Shift Id: S26-2872
+Reviewed At: 2026-04-14T00:00:00
+Revision: 2
+Safety Status: pending
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 585
+----------
+Review Id: SAF-00293-A
+Shift Id: S26-3797
+Reviewed At: 2026-04-10T19:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 586
+----------
+Review Id: SAF-00293-B
+Shift Id: S26-3797
+Reviewed At: 2026-04-15T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: No
+
+Record 587
+----------
+Review Id: SAF-00294-A
+Shift Id: S26-7049
+Reviewed At: 2026-04-11T02:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 588
+----------
+Review Id: SAF-00294-B
+Shift Id: S26-7049
+Reviewed At: 2026-04-16T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 589
+----------
+Review Id: SAF-00295-A
+Shift Id: S26-3213
+Reviewed At: 2026-04-12T05:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 590
+----------
+Review Id: SAF-00295-B
+Shift Id: S26-3213
+Reviewed At: 2026-04-17T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 591
+----------
+Review Id: SAF-00296-A
+Shift Id: S26-6219
+Reviewed At: 2026-04-13T08:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 592
+----------
+Review Id: SAF-00296-B
+Shift Id: S26-6219
+Reviewed At: 2026-04-18T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 593
+----------
+Review Id: SAF-00297-A
+Shift Id: S26-7042
+Reviewed At: 2026-04-14T11:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 594
+----------
+Review Id: SAF-00297-B
+Shift Id: S26-7042
+Reviewed At: 2026-04-19T05:00:00
+Revision: 2
+Safety Status: needs_revision
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 595
+----------
+Review Id: SAF-00298-A
+Shift Id: S26-1752
+Reviewed At: 2026-04-15T14:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 596
+----------
+Review Id: SAF-00298-B
+Shift Id: S26-1752
+Reviewed At: 2026-04-20T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 597
+----------
+Review Id: SAF-00299-A
+Shift Id: S26-3143
+Reviewed At: 2026-04-16T17:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 598
+----------
+Review Id: SAF-00299-B
+Shift Id: S26-3143
+Reviewed At: 2026-04-21T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 599
+----------
+Review Id: SAF-00300-A
+Shift Id: S26-9045
+Reviewed At: 2026-04-02T00:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 600
+----------
+Review Id: SAF-00300-B
+Shift Id: S26-9045
+Reviewed At: 2026-04-12T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 601
+----------
+Review Id: SAF-00301-A
+Shift Id: S26-3215
+Reviewed At: 2026-04-03T03:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 602
+----------
+Review Id: SAF-00301-B
+Shift Id: S26-3215
+Reviewed At: 2026-04-13T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: No
+Emergency Plan Ready: Yes
+
+Record 603
+----------
+Review Id: SAF-00302-A
+Shift Id: S26-1295
+Reviewed At: 2026-04-04T06:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 604
+----------
+Review Id: SAF-00302-B
+Shift Id: S26-1295
+Reviewed At: 2026-04-14T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 605
+----------
+Review Id: SAF-00303-A
+Shift Id: S26-5066
+Reviewed At: 2026-04-05T09:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 606
+----------
+Review Id: SAF-00303-B
+Shift Id: S26-5066
+Reviewed At: 2026-04-15T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 607
+----------
+Review Id: SAF-00304-A
+Shift Id: S26-2698
+Reviewed At: 2026-04-06T12:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 608
+----------
+Review Id: SAF-00304-B
+Shift Id: S26-2698
+Reviewed At: 2026-04-16T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: No
+
+Record 609
+----------
+Review Id: SAF-00305-A
+Shift Id: S26-1776
+Reviewed At: 2026-04-07T15:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 610
+----------
+Review Id: SAF-00305-B
+Shift Id: S26-1776
+Reviewed At: 2026-04-17T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 611
+----------
+Review Id: SAF-00306-A
+Shift Id: S26-4196
+Reviewed At: 2026-04-08T18:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 612
+----------
+Review Id: SAF-00306-B
+Shift Id: S26-4196
+Reviewed At: 2026-04-18T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 613
+----------
+Review Id: SAF-00307-A
+Shift Id: S26-3706
+Reviewed At: 2026-04-09T01:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 614
+----------
+Review Id: SAF-00307-B
+Shift Id: S26-3706
+Reviewed At: 2026-04-19T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: No
+Emergency Plan Ready: Yes
+
+Record 615
+----------
+Review Id: SAF-00308-A
+Shift Id: S26-4271
+Reviewed At: 2026-04-10T04:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 616
+----------
+Review Id: SAF-00308-B
+Shift Id: S26-4271
+Reviewed At: 2026-04-20T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 617
+----------
+Review Id: SAF-00309-A
+Shift Id: S26-1988
+Reviewed At: 2026-04-11T07:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 618
+----------
+Review Id: SAF-00309-B
+Shift Id: S26-1988
+Reviewed At: 2026-04-21T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 619
+----------
+Review Id: SAF-00310-A
+Shift Id: S26-5136
+Reviewed At: 2026-04-12T10:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 620
+----------
+Review Id: SAF-00310-B
+Shift Id: S26-5136
+Reviewed At: 2026-04-12T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 621
+----------
+Review Id: SAF-00311-A
+Shift Id: S26-5024
+Reviewed At: 2026-04-13T13:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 622
+----------
+Review Id: SAF-00311-B
+Shift Id: S26-5024
+Reviewed At: 2026-04-13T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 623
+----------
+Review Id: SAF-00312-A
+Shift Id: S26-6697
+Reviewed At: 2026-04-14T16:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 624
+----------
+Review Id: SAF-00312-B
+Shift Id: S26-6697
+Reviewed At: 2026-04-14T00:00:00
+Revision: 2
+Safety Status: pending
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 625
+----------
+Review Id: SAF-00313-A
+Shift Id: S26-9315
+Reviewed At: 2026-04-15T19:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 626
+----------
+Review Id: SAF-00313-B
+Shift Id: S26-9315
+Reviewed At: 2026-04-15T05:00:00
+Revision: 2
+Safety Status: pending
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 627
+----------
+Review Id: SAF-00314-A
+Shift Id: S26-9662
+Reviewed At: 2026-04-16T02:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 628
+----------
+Review Id: SAF-00314-B
+Shift Id: S26-9662
+Reviewed At: 2026-04-16T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: No
+
+Record 629
+----------
+Review Id: SAF-00315-A
+Shift Id: S26-1663
+Reviewed At: 2026-04-02T05:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 630
+----------
+Review Id: SAF-00315-B
+Shift Id: S26-1663
+Reviewed At: 2026-04-17T15:00:00
+Revision: 2
+Safety Status: pending
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 631
+----------
+Review Id: SAF-00316-A
+Shift Id: S26-1311
+Reviewed At: 2026-04-03T08:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 632
+----------
+Review Id: SAF-00316-B
+Shift Id: S26-1311
+Reviewed At: 2026-04-18T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 633
+----------
+Review Id: SAF-00317-A
+Shift Id: S26-1795
+Reviewed At: 2026-04-04T11:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 634
+----------
+Review Id: SAF-00317-B
+Shift Id: S26-1795
+Reviewed At: 2026-04-19T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 635
+----------
+Review Id: SAF-00318-A
+Shift Id: S26-6390
+Reviewed At: 2026-04-05T14:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 636
+----------
+Review Id: SAF-00318-B
+Shift Id: S26-6390
+Reviewed At: 2026-04-20T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 637
+----------
+Review Id: SAF-00319-A
+Shift Id: S26-4072
+Reviewed At: 2026-04-06T17:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 638
+----------
+Review Id: SAF-00319-B
+Shift Id: S26-4072
+Reviewed At: 2026-04-21T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: No
+
+Record 639
+----------
+Review Id: SAF-00320-A
+Shift Id: S26-9105
+Reviewed At: 2026-04-07T00:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 640
+----------
+Review Id: SAF-00320-B
+Shift Id: S26-9105
+Reviewed At: 2026-04-12T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 641
+----------
+Review Id: SAF-00321-A
+Shift Id: S26-9580
+Reviewed At: 2026-04-08T03:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 642
+----------
+Review Id: SAF-00321-B
+Shift Id: S26-9580
+Reviewed At: 2026-04-13T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 643
+----------
+Review Id: SAF-00322-A
+Shift Id: S26-5763
+Reviewed At: 2026-04-09T06:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 644
+----------
+Review Id: SAF-00322-B
+Shift Id: S26-5763
+Reviewed At: 2026-04-14T10:00:00
+Revision: 2
+Safety Status: pending
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 645
+----------
+Review Id: SAF-00323-A
+Shift Id: S26-2095
+Reviewed At: 2026-04-10T09:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 646
+----------
+Review Id: SAF-00323-B
+Shift Id: S26-2095
+Reviewed At: 2026-04-15T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 647
+----------
+Review Id: SAF-00324-A
+Shift Id: S26-3970
+Reviewed At: 2026-04-11T12:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 648
+----------
+Review Id: SAF-00324-B
+Shift Id: S26-3970
+Reviewed At: 2026-04-16T00:00:00
+Revision: 2
+Safety Status: needs_revision
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 649
+----------
+Review Id: SAF-00325-A
+Shift Id: S26-9001
+Reviewed At: 2026-04-12T15:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 650
+----------
+Review Id: SAF-00325-B
+Shift Id: S26-9001
+Reviewed At: 2026-04-17T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 651
+----------
+Review Id: SAF-00326-A
+Shift Id: S26-1072
+Reviewed At: 2026-04-13T18:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 652
+----------
+Review Id: SAF-00326-B
+Shift Id: S26-1072
+Reviewed At: 2026-04-18T10:00:00
+Revision: 2
+Safety Status: pending
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 653
+----------
+Review Id: SAF-00327-A
+Shift Id: S26-2670
+Reviewed At: 2026-04-14T01:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 654
+----------
+Review Id: SAF-00327-B
+Shift Id: S26-2670
+Reviewed At: 2026-04-19T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 655
+----------
+Review Id: SAF-00328-A
+Shift Id: S26-6985
+Reviewed At: 2026-04-15T04:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 656
+----------
+Review Id: SAF-00328-B
+Shift Id: S26-6985
+Reviewed At: 2026-04-20T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 657
+----------
+Review Id: SAF-00329-A
+Shift Id: S26-4996
+Reviewed At: 2026-04-16T07:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 658
+----------
+Review Id: SAF-00329-B
+Shift Id: S26-4996
+Reviewed At: 2026-04-21T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 659
+----------
+Review Id: SAF-00330-A
+Shift Id: S26-9677
+Reviewed At: 2026-04-02T10:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 660
+----------
+Review Id: SAF-00330-B
+Shift Id: S26-9677
+Reviewed At: 2026-04-12T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 661
+----------
+Review Id: SAF-00331-A
+Shift Id: S26-9153
+Reviewed At: 2026-04-03T13:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 662
+----------
+Review Id: SAF-00331-B
+Shift Id: S26-9153
+Reviewed At: 2026-04-13T15:00:00
+Revision: 2
+Safety Status: needs_revision
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 663
+----------
+Review Id: SAF-00332-A
+Shift Id: S26-1904
+Reviewed At: 2026-04-04T16:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 664
+----------
+Review Id: SAF-00332-B
+Shift Id: S26-1904
+Reviewed At: 2026-04-14T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: No
+Emergency Plan Ready: Yes
+
+Record 665
+----------
+Review Id: SAF-00333-A
+Shift Id: S26-9792
+Reviewed At: 2026-04-05T19:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 666
+----------
+Review Id: SAF-00333-B
+Shift Id: S26-9792
+Reviewed At: 2026-04-15T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 667
+----------
+Review Id: SAF-00334-A
+Shift Id: S26-7316
+Reviewed At: 2026-04-06T02:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 668
+----------
+Review Id: SAF-00334-B
+Shift Id: S26-7316
+Reviewed At: 2026-04-16T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 669
+----------
+Review Id: SAF-00335-A
+Shift Id: S26-3778
+Reviewed At: 2026-04-07T05:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 670
+----------
+Review Id: SAF-00335-B
+Shift Id: S26-3778
+Reviewed At: 2026-04-17T15:00:00
+Revision: 2
+Safety Status: needs_revision
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 671
+----------
+Review Id: SAF-00336-A
+Shift Id: S26-3961
+Reviewed At: 2026-04-08T08:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 672
+----------
+Review Id: SAF-00336-B
+Shift Id: S26-3961
+Reviewed At: 2026-04-18T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 673
+----------
+Review Id: SAF-00337-A
+Shift Id: S26-8803
+Reviewed At: 2026-04-09T11:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 674
+----------
+Review Id: SAF-00337-B
+Shift Id: S26-8803
+Reviewed At: 2026-04-19T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: No
+Emergency Plan Ready: Yes
+
+Record 675
+----------
+Review Id: SAF-00338-A
+Shift Id: S26-9191
+Reviewed At: 2026-04-10T14:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 676
+----------
+Review Id: SAF-00338-B
+Shift Id: S26-9191
+Reviewed At: 2026-04-20T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 677
+----------
+Review Id: SAF-00339-A
+Shift Id: S26-9208
+Reviewed At: 2026-04-11T17:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 678
+----------
+Review Id: SAF-00339-B
+Shift Id: S26-9208
+Reviewed At: 2026-04-21T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 679
+----------
+Review Id: SAF-00340-A
+Shift Id: S26-2620
+Reviewed At: 2026-04-12T00:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 680
+----------
+Review Id: SAF-00340-B
+Shift Id: S26-2620
+Reviewed At: 2026-04-12T00:00:00
+Revision: 2
+Safety Status: pending
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 681
+----------
+Review Id: SAF-00341-A
+Shift Id: S26-9645
+Reviewed At: 2026-04-13T03:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 682
+----------
+Review Id: SAF-00341-B
+Shift Id: S26-9645
+Reviewed At: 2026-04-13T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 683
+----------
+Review Id: SAF-00342-A
+Shift Id: S26-2837
+Reviewed At: 2026-04-14T06:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 684
+----------
+Review Id: SAF-00342-B
+Shift Id: S26-2837
+Reviewed At: 2026-04-14T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 685
+----------
+Review Id: SAF-00343-A
+Shift Id: S26-7721
+Reviewed At: 2026-04-15T09:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 686
+----------
+Review Id: SAF-00343-B
+Shift Id: S26-7721
+Reviewed At: 2026-04-15T15:00:00
+Revision: 2
+Safety Status: needs_revision
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 687
+----------
+Review Id: SAF-00344-A
+Shift Id: S26-2539
+Reviewed At: 2026-04-16T12:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 688
+----------
+Review Id: SAF-00344-B
+Shift Id: S26-2539
+Reviewed At: 2026-04-16T00:00:00
+Revision: 2
+Safety Status: needs_revision
+Route Status: open
+Equipment Ready: No
+Emergency Plan Ready: Yes
+
+Record 689
+----------
+Review Id: SAF-00345-A
+Shift Id: S26-1512
+Reviewed At: 2026-04-02T15:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 690
+----------
+Review Id: SAF-00345-B
+Shift Id: S26-1512
+Reviewed At: 2026-04-17T05:00:00
+Revision: 2
+Safety Status: needs_revision
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 691
+----------
+Review Id: SAF-00346-A
+Shift Id: S26-7241
+Reviewed At: 2026-04-03T18:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 692
+----------
+Review Id: SAF-00346-B
+Shift Id: S26-7241
+Reviewed At: 2026-04-18T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 693
+----------
+Review Id: SAF-00347-A
+Shift Id: S26-8952
+Reviewed At: 2026-04-04T01:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 694
+----------
+Review Id: SAF-00347-B
+Shift Id: S26-8952
+Reviewed At: 2026-04-19T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 695
+----------
+Review Id: SAF-00348-A
+Shift Id: S26-4448
+Reviewed At: 2026-04-05T04:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 696
+----------
+Review Id: SAF-00348-B
+Shift Id: S26-4448
+Reviewed At: 2026-04-20T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: No
+
+Record 697
+----------
+Review Id: SAF-00349-A
+Shift Id: S26-6696
+Reviewed At: 2026-04-06T07:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 698
+----------
+Review Id: SAF-00349-B
+Shift Id: S26-6696
+Reviewed At: 2026-04-21T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 699
+----------
+Review Id: SAF-00350-A
+Shift Id: S26-3612
+Reviewed At: 2026-04-07T10:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 700
+----------
+Review Id: SAF-00350-B
+Shift Id: S26-3612
+Reviewed At: 2026-04-12T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 701
+----------
+Review Id: SAF-00351-A
+Shift Id: S26-8913
+Reviewed At: 2026-04-08T13:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 702
+----------
+Review Id: SAF-00351-B
+Shift Id: S26-8913
+Reviewed At: 2026-04-13T15:00:00
+Revision: 2
+Safety Status: pending
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 703
+----------
+Review Id: SAF-00352-A
+Shift Id: S26-4096
+Reviewed At: 2026-04-09T16:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 704
+----------
+Review Id: SAF-00352-B
+Shift Id: S26-4096
+Reviewed At: 2026-04-14T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 705
+----------
+Review Id: SAF-00353-A
+Shift Id: S26-5392
+Reviewed At: 2026-04-10T19:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 706
+----------
+Review Id: SAF-00353-B
+Shift Id: S26-5392
+Reviewed At: 2026-04-15T05:00:00
+Revision: 3
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 707
+----------
+Review Id: SAF-00354-A
+Shift Id: S26-1805
+Reviewed At: 2026-04-11T02:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 708
+----------
+Review Id: SAF-00354-B
+Shift Id: S26-1805
+Reviewed At: 2026-04-16T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: No
+Emergency Plan Ready: Yes
+
+Record 709
+----------
+Review Id: SAF-00355-A
+Shift Id: S26-5747
+Reviewed At: 2026-04-12T05:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 710
+----------
+Review Id: SAF-00355-B
+Shift Id: S26-5747
+Reviewed At: 2026-04-17T15:00:00
+Revision: 2
+Safety Status: pending
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 711
+----------
+Review Id: SAF-00356-A
+Shift Id: S26-4335
+Reviewed At: 2026-04-13T08:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 712
+----------
+Review Id: SAF-00356-B
+Shift Id: S26-4335
+Reviewed At: 2026-04-18T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 713
+----------
+Review Id: SAF-00357-A
+Shift Id: S26-4466
+Reviewed At: 2026-04-14T11:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 714
+----------
+Review Id: SAF-00357-B
+Shift Id: S26-4466
+Reviewed At: 2026-04-19T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 715
+----------
+Review Id: SAF-00358-A
+Shift Id: S26-6948
+Reviewed At: 2026-04-15T14:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 716
+----------
+Review Id: SAF-00358-B
+Shift Id: S26-6948
+Reviewed At: 2026-04-20T10:00:00
+Revision: 2
+Safety Status: pending
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 717
+----------
+Review Id: SAF-00359-A
+Shift Id: S26-1318
+Reviewed At: 2026-04-16T17:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 718
+----------
+Review Id: SAF-00359-B
+Shift Id: S26-1318
+Reviewed At: 2026-04-21T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: No
+Emergency Plan Ready: Yes
+
+Record 719
+----------
+Review Id: SAF-00360-A
+Shift Id: S26-2422
+Reviewed At: 2026-04-02T00:00:00
+Revision: 1
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 720
+----------
+Review Id: SAF-00360-B
+Shift Id: S26-2422
+Reviewed At: 2026-04-12T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 721
+----------
+Review Id: S26-4817-SAF-R2
+Shift Id: S26-4817
+Reviewed At: 2026-04-13T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 722
+----------
+Review Id: S26-5392-SAF-R2
+Shift Id: S26-5392
+Reviewed At: 2026-04-15T05:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 723
+----------
+Review Id: S26-7284-SAF-R2
+Shift Id: S26-7284
+Reviewed At: 2026-04-14T16:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 724
+----------
+Review Id: S26-1950-SAF-R2
+Shift Id: S26-1950
+Reviewed At: 2026-04-16T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 725
+----------
+Review Id: S26-3369-SAF-R2
+Shift Id: S26-3369
+Reviewed At: 2026-04-16T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 726
+----------
+Review Id: S26-6148-SAF-R2
+Shift Id: S26-6148
+Reviewed At: 2026-04-12T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 727
+----------
+Review Id: S26-3006-SAF-R2
+Shift Id: S26-3006
+Reviewed At: 2026-04-14T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 728
+----------
+Review Id: S26-7476-SAF-R2
+Shift Id: S26-7476
+Reviewed At: 2026-04-14T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 729
+----------
+Review Id: S26-4201-SAF-R2
+Shift Id: S26-4201
+Reviewed At: 2026-04-16T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 730
+----------
+Review Id: S26-5259-SAF-R2
+Shift Id: S26-5259
+Reviewed At: 2026-04-14T00:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 731
+----------
+Review Id: S26-5863-SAF-R2
+Shift Id: S26-5863
+Reviewed At: 2026-04-15T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 732
+----------
+Review Id: S26-4456-SAF-R2
+Shift Id: S26-4456
+Reviewed At: 2026-04-19T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 733
+----------
+Review Id: S26-1491-SAF-R2
+Shift Id: S26-1491
+Reviewed At: 2026-04-21T15:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 734
+----------
+Review Id: S26-7641-SAF-R2
+Shift Id: S26-7641
+Reviewed At: 2026-04-14T16:00:00
+Revision: 2
+Safety Status: approved
+Route Status: open
+Equipment Ready: Yes
+Emergency Plan Ready: Yes
+
+Record 735
+----------
+Review Id: S26-7476-SAF-FINAL-R2
+Shift Id: S26-7476
+Reviewed At: 2026-04-14T10:00:00
+Revision: 2
+Safety Status: approved
+Route Status: restricted
+Equipment Ready: Yes
+Emergency Plan Ready: Yes

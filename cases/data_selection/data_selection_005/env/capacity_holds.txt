@@ -1,0 +1,7342 @@
+Capacity Holds
+==============
+
+Record 1
+--------
+Hold Id: HLD-00001-A
+Shift Id: S26-8755
+Recorded At: 2026-04-03T03:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 2
+--------
+Hold Id: HLD-00001-B
+Shift Id: S26-8755
+Recorded At: 2026-04-13T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 3
+--------
+Hold Id: HLD-00002-A
+Shift Id: S26-3389
+Recorded At: 2026-04-04T06:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 4
+--------
+Hold Id: HLD-00002-B
+Shift Id: S26-3389
+Recorded At: 2026-04-14T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 5
+--------
+Hold Id: HLD-00003-A
+Shift Id: S26-3517
+Recorded At: 2026-04-05T09:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 6
+--------
+Hold Id: HLD-00003-B
+Shift Id: S26-3517
+Recorded At: 2026-04-15T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 7
+--------
+Hold Id: HLD-00004-A
+Shift Id: S26-1885
+Recorded At: 2026-04-06T12:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 8
+--------
+Hold Id: HLD-00004-B
+Shift Id: S26-1885
+Recorded At: 2026-04-16T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 9
+--------
+Hold Id: HLD-00005-A
+Shift Id: S26-8590
+Recorded At: 2026-04-07T15:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 10
+---------
+Hold Id: HLD-00005-B
+Shift Id: S26-8590
+Recorded At: 2026-04-17T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 11
+---------
+Hold Id: HLD-00006-A
+Shift Id: S26-2113
+Recorded At: 2026-04-08T18:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 12
+---------
+Hold Id: HLD-00006-B
+Shift Id: S26-2113
+Recorded At: 2026-04-18T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 13
+---------
+Hold Id: HLD-00007-A
+Shift Id: S26-8764
+Recorded At: 2026-04-09T01:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 14
+---------
+Hold Id: HLD-00007-B
+Shift Id: S26-8764
+Recorded At: 2026-04-19T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 15
+---------
+Hold Id: HLD-00008-A
+Shift Id: S26-5714
+Recorded At: 2026-04-10T04:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 16
+---------
+Hold Id: HLD-00008-B
+Shift Id: S26-5714
+Recorded At: 2026-04-20T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 17
+---------
+Hold Id: HLD-00009-A
+Shift Id: S26-2520
+Recorded At: 2026-04-11T07:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 18
+---------
+Hold Id: HLD-00009-B
+Shift Id: S26-2520
+Recorded At: 2026-04-21T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 19
+---------
+Hold Id: HLD-00010-A
+Shift Id: S26-6236
+Recorded At: 2026-04-12T10:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 20
+---------
+Hold Id: HLD-00010-B
+Shift Id: S26-6236
+Recorded At: 2026-04-12T10:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 21
+---------
+Hold Id: HLD-00011-A
+Shift Id: S26-6632
+Recorded At: 2026-04-13T13:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 22
+---------
+Hold Id: HLD-00011-B
+Shift Id: S26-6632
+Recorded At: 2026-04-13T15:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 23
+---------
+Hold Id: HLD-00012-A
+Shift Id: S26-7284
+Recorded At: 2026-04-14T16:00:00
+Revision: 3
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 24
+---------
+Hold Id: HLD-00012-B
+Shift Id: S26-7284
+Recorded At: 2026-04-14T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 25
+---------
+Hold Id: HLD-00013-A
+Shift Id: S26-5468
+Recorded At: 2026-04-15T19:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 26
+---------
+Hold Id: HLD-00013-B
+Shift Id: S26-5468
+Recorded At: 2026-04-15T05:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 27
+---------
+Hold Id: HLD-00014-A
+Shift Id: S26-6720
+Recorded At: 2026-04-16T02:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 28
+---------
+Hold Id: HLD-00014-B
+Shift Id: S26-6720
+Recorded At: 2026-04-16T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 29
+---------
+Hold Id: HLD-00015-A
+Shift Id: S26-8406
+Recorded At: 2026-04-02T05:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 30
+---------
+Hold Id: HLD-00015-B
+Shift Id: S26-8406
+Recorded At: 2026-04-17T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 31
+---------
+Hold Id: HLD-00016-A
+Shift Id: S26-3693
+Recorded At: 2026-04-03T08:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 32
+---------
+Hold Id: HLD-00016-B
+Shift Id: S26-3693
+Recorded At: 2026-04-18T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 33
+---------
+Hold Id: HLD-00017-A
+Shift Id: S26-1341
+Recorded At: 2026-04-04T11:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 34
+---------
+Hold Id: HLD-00017-B
+Shift Id: S26-1341
+Recorded At: 2026-04-19T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 35
+---------
+Hold Id: HLD-00018-A
+Shift Id: S26-1174
+Recorded At: 2026-04-05T14:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 36
+---------
+Hold Id: HLD-00018-B
+Shift Id: S26-1174
+Recorded At: 2026-04-20T10:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 37
+---------
+Hold Id: HLD-00019-A
+Shift Id: S26-9979
+Recorded At: 2026-04-06T17:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 38
+---------
+Hold Id: HLD-00019-B
+Shift Id: S26-9979
+Recorded At: 2026-04-21T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 39
+---------
+Hold Id: HLD-00020-A
+Shift Id: S26-6035
+Recorded At: 2026-04-07T00:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 40
+---------
+Hold Id: HLD-00020-B
+Shift Id: S26-6035
+Recorded At: 2026-04-12T00:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 41
+---------
+Hold Id: HLD-00021-A
+Shift Id: S26-4961
+Recorded At: 2026-04-08T03:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 42
+---------
+Hold Id: HLD-00021-B
+Shift Id: S26-4961
+Recorded At: 2026-04-13T05:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 43
+---------
+Hold Id: HLD-00022-A
+Shift Id: S26-1291
+Recorded At: 2026-04-09T06:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 44
+---------
+Hold Id: HLD-00022-B
+Shift Id: S26-1291
+Recorded At: 2026-04-14T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 45
+---------
+Hold Id: HLD-00023-A
+Shift Id: S26-5505
+Recorded At: 2026-04-10T09:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 46
+---------
+Hold Id: HLD-00023-B
+Shift Id: S26-5505
+Recorded At: 2026-04-15T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 47
+---------
+Hold Id: HLD-00024-A
+Shift Id: S26-7182
+Recorded At: 2026-04-11T12:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 48
+---------
+Hold Id: HLD-00024-B
+Shift Id: S26-7182
+Recorded At: 2026-04-16T00:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 49
+---------
+Hold Id: HLD-00025-A
+Shift Id: S26-6138
+Recorded At: 2026-04-12T15:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 50
+---------
+Hold Id: HLD-00025-B
+Shift Id: S26-6138
+Recorded At: 2026-04-17T05:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 51
+---------
+Hold Id: HLD-00026-A
+Shift Id: S26-2832
+Recorded At: 2026-04-13T18:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 52
+---------
+Hold Id: HLD-00026-B
+Shift Id: S26-2832
+Recorded At: 2026-04-18T10:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 53
+---------
+Hold Id: HLD-00027-A
+Shift Id: S26-1232
+Recorded At: 2026-04-14T01:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 54
+---------
+Hold Id: HLD-00027-B
+Shift Id: S26-1232
+Recorded At: 2026-04-19T15:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 55
+---------
+Hold Id: HLD-00028-A
+Shift Id: S26-1456
+Recorded At: 2026-04-15T04:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 56
+---------
+Hold Id: HLD-00028-B
+Shift Id: S26-1456
+Recorded At: 2026-04-20T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 57
+---------
+Hold Id: HLD-00029-A
+Shift Id: S26-9106
+Recorded At: 2026-04-16T07:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 58
+---------
+Hold Id: HLD-00029-B
+Shift Id: S26-9106
+Recorded At: 2026-04-21T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 59
+---------
+Hold Id: HLD-00030-A
+Shift Id: S26-5053
+Recorded At: 2026-04-02T10:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 60
+---------
+Hold Id: HLD-00030-B
+Shift Id: S26-5053
+Recorded At: 2026-04-12T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 61
+---------
+Hold Id: HLD-00031-A
+Shift Id: S26-7485
+Recorded At: 2026-04-03T13:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 62
+---------
+Hold Id: HLD-00031-B
+Shift Id: S26-7485
+Recorded At: 2026-04-13T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 63
+---------
+Hold Id: HLD-00032-A
+Shift Id: S26-3714
+Recorded At: 2026-04-04T16:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 64
+---------
+Hold Id: HLD-00032-B
+Shift Id: S26-3714
+Recorded At: 2026-04-14T00:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 65
+---------
+Hold Id: HLD-00033-A
+Shift Id: S26-3814
+Recorded At: 2026-04-05T19:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 66
+---------
+Hold Id: HLD-00033-B
+Shift Id: S26-3814
+Recorded At: 2026-04-15T05:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 67
+---------
+Hold Id: HLD-00034-A
+Shift Id: S26-4167
+Recorded At: 2026-04-06T02:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 68
+---------
+Hold Id: HLD-00034-B
+Shift Id: S26-4167
+Recorded At: 2026-04-16T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 69
+---------
+Hold Id: HLD-00035-A
+Shift Id: S26-5502
+Recorded At: 2026-04-07T05:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 70
+---------
+Hold Id: HLD-00035-B
+Shift Id: S26-5502
+Recorded At: 2026-04-17T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 71
+---------
+Hold Id: HLD-00036-A
+Shift Id: S26-4343
+Recorded At: 2026-04-08T08:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 72
+---------
+Hold Id: HLD-00036-B
+Shift Id: S26-4343
+Recorded At: 2026-04-18T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 73
+---------
+Hold Id: HLD-00037-A
+Shift Id: S26-6227
+Recorded At: 2026-04-09T11:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 74
+---------
+Hold Id: HLD-00037-B
+Shift Id: S26-6227
+Recorded At: 2026-04-19T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 75
+---------
+Hold Id: HLD-00038-A
+Shift Id: S26-4189
+Recorded At: 2026-04-10T14:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 76
+---------
+Hold Id: HLD-00038-B
+Shift Id: S26-4189
+Recorded At: 2026-04-20T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 77
+---------
+Hold Id: HLD-00039-A
+Shift Id: S26-6613
+Recorded At: 2026-04-11T17:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 78
+---------
+Hold Id: HLD-00039-B
+Shift Id: S26-6613
+Recorded At: 2026-04-21T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 79
+---------
+Hold Id: HLD-00040-A
+Shift Id: S26-1202
+Recorded At: 2026-04-12T00:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 80
+---------
+Hold Id: HLD-00040-B
+Shift Id: S26-1202
+Recorded At: 2026-04-12T00:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 81
+---------
+Hold Id: HLD-00041-A
+Shift Id: S26-6503
+Recorded At: 2026-04-13T03:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 82
+---------
+Hold Id: HLD-00041-B
+Shift Id: S26-6503
+Recorded At: 2026-04-13T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 83
+---------
+Hold Id: HLD-00042-A
+Shift Id: S26-5317
+Recorded At: 2026-04-14T06:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 84
+---------
+Hold Id: HLD-00042-B
+Shift Id: S26-5317
+Recorded At: 2026-04-14T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 85
+---------
+Hold Id: HLD-00043-A
+Shift Id: S26-5089
+Recorded At: 2026-04-15T09:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 86
+---------
+Hold Id: HLD-00043-B
+Shift Id: S26-5089
+Recorded At: 2026-04-15T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 87
+---------
+Hold Id: HLD-00044-A
+Shift Id: S26-5094
+Recorded At: 2026-04-16T12:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 88
+---------
+Hold Id: HLD-00044-B
+Shift Id: S26-5094
+Recorded At: 2026-04-16T00:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 89
+---------
+Hold Id: HLD-00045-A
+Shift Id: S26-6377
+Recorded At: 2026-04-02T15:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 90
+---------
+Hold Id: HLD-00045-B
+Shift Id: S26-6377
+Recorded At: 2026-04-17T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 91
+---------
+Hold Id: HLD-00046-A
+Shift Id: S26-4081
+Recorded At: 2026-04-03T18:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 92
+---------
+Hold Id: HLD-00046-B
+Shift Id: S26-4081
+Recorded At: 2026-04-18T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 93
+---------
+Hold Id: HLD-00047-A
+Shift Id: S26-5775
+Recorded At: 2026-04-04T01:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 94
+---------
+Hold Id: HLD-00047-B
+Shift Id: S26-5775
+Recorded At: 2026-04-19T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 95
+---------
+Hold Id: HLD-00048-A
+Shift Id: S26-9233
+Recorded At: 2026-04-05T04:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 96
+---------
+Hold Id: HLD-00048-B
+Shift Id: S26-9233
+Recorded At: 2026-04-20T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 97
+---------
+Hold Id: HLD-00049-A
+Shift Id: S26-1507
+Recorded At: 2026-04-06T07:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 98
+---------
+Hold Id: HLD-00049-B
+Shift Id: S26-1507
+Recorded At: 2026-04-21T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 99
+---------
+Hold Id: HLD-00050-A
+Shift Id: S26-2645
+Recorded At: 2026-04-07T10:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 100
+----------
+Hold Id: HLD-00050-B
+Shift Id: S26-2645
+Recorded At: 2026-04-12T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 101
+----------
+Hold Id: HLD-00051-A
+Shift Id: S26-4817
+Recorded At: 2026-04-08T13:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 102
+----------
+Hold Id: HLD-00051-B
+Shift Id: S26-4817
+Recorded At: 2026-04-13T15:00:00
+Revision: 3
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 103
+----------
+Hold Id: HLD-00052-A
+Shift Id: S26-5113
+Recorded At: 2026-04-09T16:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 104
+----------
+Hold Id: HLD-00052-B
+Shift Id: S26-5113
+Recorded At: 2026-04-14T00:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 105
+----------
+Hold Id: HLD-00053-A
+Shift Id: S26-7672
+Recorded At: 2026-04-10T19:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 106
+----------
+Hold Id: HLD-00053-B
+Shift Id: S26-7672
+Recorded At: 2026-04-15T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 107
+----------
+Hold Id: HLD-00054-A
+Shift Id: S26-5393
+Recorded At: 2026-04-11T02:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 108
+----------
+Hold Id: HLD-00054-B
+Shift Id: S26-5393
+Recorded At: 2026-04-16T10:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 109
+----------
+Hold Id: HLD-00055-A
+Shift Id: S26-3365
+Recorded At: 2026-04-12T05:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 110
+----------
+Hold Id: HLD-00055-B
+Shift Id: S26-3365
+Recorded At: 2026-04-17T15:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 111
+----------
+Hold Id: HLD-00056-A
+Shift Id: S26-8130
+Recorded At: 2026-04-13T08:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 112
+----------
+Hold Id: HLD-00056-B
+Shift Id: S26-8130
+Recorded At: 2026-04-18T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 113
+----------
+Hold Id: HLD-00057-A
+Shift Id: S26-1058
+Recorded At: 2026-04-14T11:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 114
+----------
+Hold Id: HLD-00057-B
+Shift Id: S26-1058
+Recorded At: 2026-04-19T05:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 115
+----------
+Hold Id: HLD-00058-A
+Shift Id: S26-8453
+Recorded At: 2026-04-15T14:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 116
+----------
+Hold Id: HLD-00058-B
+Shift Id: S26-8453
+Recorded At: 2026-04-20T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 117
+----------
+Hold Id: HLD-00059-A
+Shift Id: S26-6932
+Recorded At: 2026-04-16T17:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 118
+----------
+Hold Id: HLD-00059-B
+Shift Id: S26-6932
+Recorded At: 2026-04-21T15:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 119
+----------
+Hold Id: HLD-00060-A
+Shift Id: S26-4933
+Recorded At: 2026-04-02T00:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 120
+----------
+Hold Id: HLD-00060-B
+Shift Id: S26-4933
+Recorded At: 2026-04-12T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 121
+----------
+Hold Id: HLD-00061-A
+Shift Id: S26-6631
+Recorded At: 2026-04-03T03:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 122
+----------
+Hold Id: HLD-00061-B
+Shift Id: S26-6631
+Recorded At: 2026-04-13T05:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 123
+----------
+Hold Id: HLD-00062-A
+Shift Id: S26-3006
+Recorded At: 2026-04-04T06:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 124
+----------
+Hold Id: HLD-00062-B
+Shift Id: S26-3006
+Recorded At: 2026-04-14T10:00:00
+Revision: 3
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 125
+----------
+Hold Id: HLD-00063-A
+Shift Id: S26-4516
+Recorded At: 2026-04-05T09:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 126
+----------
+Hold Id: HLD-00063-B
+Shift Id: S26-4516
+Recorded At: 2026-04-15T15:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 127
+----------
+Hold Id: HLD-00064-A
+Shift Id: S26-2725
+Recorded At: 2026-04-06T12:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 128
+----------
+Hold Id: HLD-00064-B
+Shift Id: S26-2725
+Recorded At: 2026-04-16T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 129
+----------
+Hold Id: HLD-00065-A
+Shift Id: S26-3536
+Recorded At: 2026-04-07T15:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 130
+----------
+Hold Id: HLD-00065-B
+Shift Id: S26-3536
+Recorded At: 2026-04-17T05:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 131
+----------
+Hold Id: HLD-00066-A
+Shift Id: S26-4850
+Recorded At: 2026-04-08T18:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 132
+----------
+Hold Id: HLD-00066-B
+Shift Id: S26-4850
+Recorded At: 2026-04-18T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 133
+----------
+Hold Id: HLD-00067-A
+Shift Id: S26-4168
+Recorded At: 2026-04-09T01:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 134
+----------
+Hold Id: HLD-00067-B
+Shift Id: S26-4168
+Recorded At: 2026-04-19T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 135
+----------
+Hold Id: HLD-00068-A
+Shift Id: S26-5992
+Recorded At: 2026-04-10T04:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 136
+----------
+Hold Id: HLD-00068-B
+Shift Id: S26-5992
+Recorded At: 2026-04-20T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 137
+----------
+Hold Id: HLD-00069-A
+Shift Id: S26-5659
+Recorded At: 2026-04-11T07:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 138
+----------
+Hold Id: HLD-00069-B
+Shift Id: S26-5659
+Recorded At: 2026-04-21T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 139
+----------
+Hold Id: HLD-00070-A
+Shift Id: S26-5451
+Recorded At: 2026-04-12T10:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 140
+----------
+Hold Id: HLD-00070-B
+Shift Id: S26-5451
+Recorded At: 2026-04-12T10:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 141
+----------
+Hold Id: HLD-00071-A
+Shift Id: S26-3569
+Recorded At: 2026-04-13T13:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 142
+----------
+Hold Id: HLD-00071-B
+Shift Id: S26-3569
+Recorded At: 2026-04-13T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 143
+----------
+Hold Id: HLD-00072-A
+Shift Id: S26-8848
+Recorded At: 2026-04-14T16:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 144
+----------
+Hold Id: HLD-00072-B
+Shift Id: S26-8848
+Recorded At: 2026-04-14T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 145
+----------
+Hold Id: HLD-00073-A
+Shift Id: S26-2917
+Recorded At: 2026-04-15T19:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 146
+----------
+Hold Id: HLD-00073-B
+Shift Id: S26-2917
+Recorded At: 2026-04-15T05:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 147
+----------
+Hold Id: HLD-00074-A
+Shift Id: S26-4201
+Recorded At: 2026-04-16T02:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 148
+----------
+Hold Id: HLD-00074-B
+Shift Id: S26-4201
+Recorded At: 2026-04-16T10:00:00
+Revision: 3
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 149
+----------
+Hold Id: HLD-00075-A
+Shift Id: S26-6250
+Recorded At: 2026-04-02T05:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 150
+----------
+Hold Id: HLD-00075-B
+Shift Id: S26-6250
+Recorded At: 2026-04-17T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 151
+----------
+Hold Id: HLD-00076-A
+Shift Id: S26-6459
+Recorded At: 2026-04-03T08:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 152
+----------
+Hold Id: HLD-00076-B
+Shift Id: S26-6459
+Recorded At: 2026-04-18T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 153
+----------
+Hold Id: HLD-00077-A
+Shift Id: S26-4339
+Recorded At: 2026-04-04T11:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 154
+----------
+Hold Id: HLD-00077-B
+Shift Id: S26-4339
+Recorded At: 2026-04-19T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 155
+----------
+Hold Id: HLD-00078-A
+Shift Id: S26-1447
+Recorded At: 2026-04-05T14:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 156
+----------
+Hold Id: HLD-00078-B
+Shift Id: S26-1447
+Recorded At: 2026-04-20T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 157
+----------
+Hold Id: HLD-00079-A
+Shift Id: S26-5696
+Recorded At: 2026-04-06T17:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 158
+----------
+Hold Id: HLD-00079-B
+Shift Id: S26-5696
+Recorded At: 2026-04-21T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 159
+----------
+Hold Id: HLD-00080-A
+Shift Id: S26-6148
+Recorded At: 2026-04-07T00:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 160
+----------
+Hold Id: HLD-00080-B
+Shift Id: S26-6148
+Recorded At: 2026-04-12T00:00:00
+Revision: 3
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 161
+----------
+Hold Id: HLD-00081-A
+Shift Id: S26-3989
+Recorded At: 2026-04-08T03:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 162
+----------
+Hold Id: HLD-00081-B
+Shift Id: S26-3989
+Recorded At: 2026-04-13T05:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 163
+----------
+Hold Id: HLD-00082-A
+Shift Id: S26-3404
+Recorded At: 2026-04-09T06:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 164
+----------
+Hold Id: HLD-00082-B
+Shift Id: S26-3404
+Recorded At: 2026-04-14T10:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 165
+----------
+Hold Id: HLD-00083-A
+Shift Id: S26-1587
+Recorded At: 2026-04-10T09:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 166
+----------
+Hold Id: HLD-00083-B
+Shift Id: S26-1587
+Recorded At: 2026-04-15T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 167
+----------
+Hold Id: HLD-00084-A
+Shift Id: S26-3411
+Recorded At: 2026-04-11T12:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 168
+----------
+Hold Id: HLD-00084-B
+Shift Id: S26-3411
+Recorded At: 2026-04-16T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 169
+----------
+Hold Id: HLD-00085-A
+Shift Id: S26-2859
+Recorded At: 2026-04-12T15:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 170
+----------
+Hold Id: HLD-00085-B
+Shift Id: S26-2859
+Recorded At: 2026-04-17T05:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 171
+----------
+Hold Id: HLD-00086-A
+Shift Id: S26-8397
+Recorded At: 2026-04-13T18:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 172
+----------
+Hold Id: HLD-00086-B
+Shift Id: S26-8397
+Recorded At: 2026-04-18T10:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 173
+----------
+Hold Id: HLD-00087-A
+Shift Id: S26-3125
+Recorded At: 2026-04-14T01:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 174
+----------
+Hold Id: HLD-00087-B
+Shift Id: S26-3125
+Recorded At: 2026-04-19T15:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 175
+----------
+Hold Id: HLD-00088-A
+Shift Id: S26-7968
+Recorded At: 2026-04-15T04:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 176
+----------
+Hold Id: HLD-00088-B
+Shift Id: S26-7968
+Recorded At: 2026-04-20T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 177
+----------
+Hold Id: HLD-00089-A
+Shift Id: S26-3638
+Recorded At: 2026-04-16T07:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 178
+----------
+Hold Id: HLD-00089-B
+Shift Id: S26-3638
+Recorded At: 2026-04-21T05:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 179
+----------
+Hold Id: HLD-00090-A
+Shift Id: S26-4359
+Recorded At: 2026-04-02T10:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 180
+----------
+Hold Id: HLD-00090-B
+Shift Id: S26-4359
+Recorded At: 2026-04-12T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 181
+----------
+Hold Id: HLD-00091-A
+Shift Id: S26-2079
+Recorded At: 2026-04-03T13:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 182
+----------
+Hold Id: HLD-00091-B
+Shift Id: S26-2079
+Recorded At: 2026-04-13T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 183
+----------
+Hold Id: HLD-00092-A
+Shift Id: S26-2833
+Recorded At: 2026-04-04T16:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 184
+----------
+Hold Id: HLD-00092-B
+Shift Id: S26-2833
+Recorded At: 2026-04-14T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 185
+----------
+Hold Id: HLD-00093-A
+Shift Id: S26-4695
+Recorded At: 2026-04-05T19:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 186
+----------
+Hold Id: HLD-00093-B
+Shift Id: S26-4695
+Recorded At: 2026-04-15T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 187
+----------
+Hold Id: HLD-00094-A
+Shift Id: S26-9611
+Recorded At: 2026-04-06T02:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 188
+----------
+Hold Id: HLD-00094-B
+Shift Id: S26-9611
+Recorded At: 2026-04-16T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 189
+----------
+Hold Id: HLD-00095-A
+Shift Id: S26-8948
+Recorded At: 2026-04-07T05:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 190
+----------
+Hold Id: HLD-00095-B
+Shift Id: S26-8948
+Recorded At: 2026-04-17T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 191
+----------
+Hold Id: HLD-00096-A
+Shift Id: S26-9821
+Recorded At: 2026-04-08T08:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 192
+----------
+Hold Id: HLD-00096-B
+Shift Id: S26-9821
+Recorded At: 2026-04-18T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 193
+----------
+Hold Id: HLD-00097-A
+Shift Id: S26-4150
+Recorded At: 2026-04-09T11:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 194
+----------
+Hold Id: HLD-00097-B
+Shift Id: S26-4150
+Recorded At: 2026-04-19T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 195
+----------
+Hold Id: HLD-00098-A
+Shift Id: S26-6527
+Recorded At: 2026-04-10T14:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 196
+----------
+Hold Id: HLD-00098-B
+Shift Id: S26-6527
+Recorded At: 2026-04-20T10:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 197
+----------
+Hold Id: HLD-00099-A
+Shift Id: S26-6478
+Recorded At: 2026-04-11T17:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 198
+----------
+Hold Id: HLD-00099-B
+Shift Id: S26-6478
+Recorded At: 2026-04-21T15:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 199
+----------
+Hold Id: HLD-00100-A
+Shift Id: S26-3063
+Recorded At: 2026-04-12T00:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 200
+----------
+Hold Id: HLD-00100-B
+Shift Id: S26-3063
+Recorded At: 2026-04-12T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 201
+----------
+Hold Id: HLD-00101-A
+Shift Id: S26-6147
+Recorded At: 2026-04-13T03:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 202
+----------
+Hold Id: HLD-00101-B
+Shift Id: S26-6147
+Recorded At: 2026-04-13T05:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 203
+----------
+Hold Id: HLD-00102-A
+Shift Id: S26-6080
+Recorded At: 2026-04-14T06:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 204
+----------
+Hold Id: HLD-00102-B
+Shift Id: S26-6080
+Recorded At: 2026-04-14T10:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 205
+----------
+Hold Id: HLD-00103-A
+Shift Id: S26-9381
+Recorded At: 2026-04-15T09:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 206
+----------
+Hold Id: HLD-00103-B
+Shift Id: S26-9381
+Recorded At: 2026-04-15T15:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 207
+----------
+Hold Id: HLD-00104-A
+Shift Id: S26-3647
+Recorded At: 2026-04-16T12:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 208
+----------
+Hold Id: HLD-00104-B
+Shift Id: S26-3647
+Recorded At: 2026-04-16T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 209
+----------
+Hold Id: HLD-00105-A
+Shift Id: S26-8835
+Recorded At: 2026-04-02T15:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 210
+----------
+Hold Id: HLD-00105-B
+Shift Id: S26-8835
+Recorded At: 2026-04-17T05:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 211
+----------
+Hold Id: HLD-00106-A
+Shift Id: S26-2636
+Recorded At: 2026-04-03T18:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 212
+----------
+Hold Id: HLD-00106-B
+Shift Id: S26-2636
+Recorded At: 2026-04-18T10:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 213
+----------
+Hold Id: HLD-00107-A
+Shift Id: S26-3500
+Recorded At: 2026-04-04T01:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 214
+----------
+Hold Id: HLD-00107-B
+Shift Id: S26-3500
+Recorded At: 2026-04-19T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 215
+----------
+Hold Id: HLD-00108-A
+Shift Id: S26-5434
+Recorded At: 2026-04-05T04:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 216
+----------
+Hold Id: HLD-00108-B
+Shift Id: S26-5434
+Recorded At: 2026-04-20T00:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 217
+----------
+Hold Id: HLD-00109-A
+Shift Id: S26-4124
+Recorded At: 2026-04-06T07:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 218
+----------
+Hold Id: HLD-00109-B
+Shift Id: S26-4124
+Recorded At: 2026-04-21T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 219
+----------
+Hold Id: HLD-00110-A
+Shift Id: S26-4891
+Recorded At: 2026-04-07T10:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 220
+----------
+Hold Id: HLD-00110-B
+Shift Id: S26-4891
+Recorded At: 2026-04-12T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 221
+----------
+Hold Id: HLD-00111-A
+Shift Id: S26-8047
+Recorded At: 2026-04-08T13:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 222
+----------
+Hold Id: HLD-00111-B
+Shift Id: S26-8047
+Recorded At: 2026-04-13T15:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 223
+----------
+Hold Id: HLD-00112-A
+Shift Id: S26-3206
+Recorded At: 2026-04-09T16:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 224
+----------
+Hold Id: HLD-00112-B
+Shift Id: S26-3206
+Recorded At: 2026-04-14T00:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 225
+----------
+Hold Id: HLD-00113-A
+Shift Id: S26-4111
+Recorded At: 2026-04-10T19:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 226
+----------
+Hold Id: HLD-00113-B
+Shift Id: S26-4111
+Recorded At: 2026-04-15T05:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 227
+----------
+Hold Id: HLD-00114-A
+Shift Id: S26-6170
+Recorded At: 2026-04-11T02:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 228
+----------
+Hold Id: HLD-00114-B
+Shift Id: S26-6170
+Recorded At: 2026-04-16T10:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 229
+----------
+Hold Id: HLD-00115-A
+Shift Id: S26-8638
+Recorded At: 2026-04-12T05:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 230
+----------
+Hold Id: HLD-00115-B
+Shift Id: S26-8638
+Recorded At: 2026-04-17T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 231
+----------
+Hold Id: HLD-00116-A
+Shift Id: S26-5698
+Recorded At: 2026-04-13T08:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 232
+----------
+Hold Id: HLD-00116-B
+Shift Id: S26-5698
+Recorded At: 2026-04-18T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 233
+----------
+Hold Id: HLD-00117-A
+Shift Id: S26-1074
+Recorded At: 2026-04-14T11:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 234
+----------
+Hold Id: HLD-00117-B
+Shift Id: S26-1074
+Recorded At: 2026-04-19T05:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 235
+----------
+Hold Id: HLD-00118-A
+Shift Id: S26-3810
+Recorded At: 2026-04-15T14:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 236
+----------
+Hold Id: HLD-00118-B
+Shift Id: S26-3810
+Recorded At: 2026-04-20T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 237
+----------
+Hold Id: HLD-00119-A
+Shift Id: S26-7793
+Recorded At: 2026-04-16T17:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 238
+----------
+Hold Id: HLD-00119-B
+Shift Id: S26-7793
+Recorded At: 2026-04-21T15:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 239
+----------
+Hold Id: HLD-00120-A
+Shift Id: S26-5605
+Recorded At: 2026-04-02T00:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 240
+----------
+Hold Id: HLD-00120-B
+Shift Id: S26-5605
+Recorded At: 2026-04-12T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 241
+----------
+Hold Id: HLD-00121-A
+Shift Id: S26-4377
+Recorded At: 2026-04-03T03:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 242
+----------
+Hold Id: HLD-00121-B
+Shift Id: S26-4377
+Recorded At: 2026-04-13T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 243
+----------
+Hold Id: HLD-00122-A
+Shift Id: S26-7476
+Recorded At: 2026-04-04T06:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 244
+----------
+Hold Id: HLD-00122-B
+Shift Id: S26-7476
+Recorded At: 2026-04-14T10:00:00
+Revision: 3
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 245
+----------
+Hold Id: HLD-00123-A
+Shift Id: S26-9530
+Recorded At: 2026-04-05T09:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 246
+----------
+Hold Id: HLD-00123-B
+Shift Id: S26-9530
+Recorded At: 2026-04-15T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 247
+----------
+Hold Id: HLD-00124-A
+Shift Id: S26-2043
+Recorded At: 2026-04-06T12:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 248
+----------
+Hold Id: HLD-00124-B
+Shift Id: S26-2043
+Recorded At: 2026-04-16T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 249
+----------
+Hold Id: HLD-00125-A
+Shift Id: S26-1313
+Recorded At: 2026-04-07T15:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 250
+----------
+Hold Id: HLD-00125-B
+Shift Id: S26-1313
+Recorded At: 2026-04-17T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 251
+----------
+Hold Id: HLD-00126-A
+Shift Id: S26-7987
+Recorded At: 2026-04-08T18:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 252
+----------
+Hold Id: HLD-00126-B
+Shift Id: S26-7987
+Recorded At: 2026-04-18T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 253
+----------
+Hold Id: HLD-00127-A
+Shift Id: S26-4672
+Recorded At: 2026-04-09T01:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 254
+----------
+Hold Id: HLD-00127-B
+Shift Id: S26-4672
+Recorded At: 2026-04-19T15:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 255
+----------
+Hold Id: HLD-00128-A
+Shift Id: S26-4786
+Recorded At: 2026-04-10T04:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 256
+----------
+Hold Id: HLD-00128-B
+Shift Id: S26-4786
+Recorded At: 2026-04-20T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 257
+----------
+Hold Id: HLD-00129-A
+Shift Id: S26-5628
+Recorded At: 2026-04-11T07:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 258
+----------
+Hold Id: HLD-00129-B
+Shift Id: S26-5628
+Recorded At: 2026-04-21T05:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 259
+----------
+Hold Id: HLD-00130-A
+Shift Id: S26-9903
+Recorded At: 2026-04-12T10:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 260
+----------
+Hold Id: HLD-00130-B
+Shift Id: S26-9903
+Recorded At: 2026-04-12T10:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 261
+----------
+Hold Id: HLD-00131-A
+Shift Id: S26-2410
+Recorded At: 2026-04-13T13:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 262
+----------
+Hold Id: HLD-00131-B
+Shift Id: S26-2410
+Recorded At: 2026-04-13T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 263
+----------
+Hold Id: HLD-00132-A
+Shift Id: S26-7641
+Recorded At: 2026-04-14T16:00:00
+Revision: 3
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 264
+----------
+Hold Id: HLD-00132-B
+Shift Id: S26-7641
+Recorded At: 2026-04-14T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 265
+----------
+Hold Id: HLD-00133-A
+Shift Id: S26-4350
+Recorded At: 2026-04-15T19:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 266
+----------
+Hold Id: HLD-00133-B
+Shift Id: S26-4350
+Recorded At: 2026-04-15T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 267
+----------
+Hold Id: HLD-00134-A
+Shift Id: S26-3532
+Recorded At: 2026-04-16T02:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 268
+----------
+Hold Id: HLD-00134-B
+Shift Id: S26-3532
+Recorded At: 2026-04-16T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 269
+----------
+Hold Id: HLD-00135-A
+Shift Id: S26-9361
+Recorded At: 2026-04-02T05:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 270
+----------
+Hold Id: HLD-00135-B
+Shift Id: S26-9361
+Recorded At: 2026-04-17T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 271
+----------
+Hold Id: HLD-00136-A
+Shift Id: S26-1397
+Recorded At: 2026-04-03T08:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 272
+----------
+Hold Id: HLD-00136-B
+Shift Id: S26-1397
+Recorded At: 2026-04-18T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 273
+----------
+Hold Id: HLD-00137-A
+Shift Id: S26-3863
+Recorded At: 2026-04-04T11:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 274
+----------
+Hold Id: HLD-00137-B
+Shift Id: S26-3863
+Recorded At: 2026-04-19T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 275
+----------
+Hold Id: HLD-00138-A
+Shift Id: S26-9832
+Recorded At: 2026-04-05T14:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 276
+----------
+Hold Id: HLD-00138-B
+Shift Id: S26-9832
+Recorded At: 2026-04-20T10:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 277
+----------
+Hold Id: HLD-00139-A
+Shift Id: S26-9695
+Recorded At: 2026-04-06T17:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 278
+----------
+Hold Id: HLD-00139-B
+Shift Id: S26-9695
+Recorded At: 2026-04-21T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 279
+----------
+Hold Id: HLD-00140-A
+Shift Id: S26-7521
+Recorded At: 2026-04-07T00:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 280
+----------
+Hold Id: HLD-00140-B
+Shift Id: S26-7521
+Recorded At: 2026-04-12T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 281
+----------
+Hold Id: HLD-00141-A
+Shift Id: S26-5012
+Recorded At: 2026-04-08T03:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 282
+----------
+Hold Id: HLD-00141-B
+Shift Id: S26-5012
+Recorded At: 2026-04-13T05:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 283
+----------
+Hold Id: HLD-00142-A
+Shift Id: S26-2065
+Recorded At: 2026-04-09T06:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 284
+----------
+Hold Id: HLD-00142-B
+Shift Id: S26-2065
+Recorded At: 2026-04-14T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 285
+----------
+Hold Id: HLD-00143-A
+Shift Id: S26-4578
+Recorded At: 2026-04-10T09:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 286
+----------
+Hold Id: HLD-00143-B
+Shift Id: S26-4578
+Recorded At: 2026-04-15T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 287
+----------
+Hold Id: HLD-00144-A
+Shift Id: S26-3144
+Recorded At: 2026-04-11T12:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 288
+----------
+Hold Id: HLD-00144-B
+Shift Id: S26-3144
+Recorded At: 2026-04-16T00:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 289
+----------
+Hold Id: HLD-00145-A
+Shift Id: S26-8765
+Recorded At: 2026-04-12T15:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 290
+----------
+Hold Id: HLD-00145-B
+Shift Id: S26-8765
+Recorded At: 2026-04-17T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 291
+----------
+Hold Id: HLD-00146-A
+Shift Id: S26-6330
+Recorded At: 2026-04-13T18:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 292
+----------
+Hold Id: HLD-00146-B
+Shift Id: S26-6330
+Recorded At: 2026-04-18T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 293
+----------
+Hold Id: HLD-00147-A
+Shift Id: S26-2628
+Recorded At: 2026-04-14T01:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 294
+----------
+Hold Id: HLD-00147-B
+Shift Id: S26-2628
+Recorded At: 2026-04-19T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 295
+----------
+Hold Id: HLD-00148-A
+Shift Id: S26-6918
+Recorded At: 2026-04-15T04:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 296
+----------
+Hold Id: HLD-00148-B
+Shift Id: S26-6918
+Recorded At: 2026-04-20T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 297
+----------
+Hold Id: HLD-00149-A
+Shift Id: S26-1977
+Recorded At: 2026-04-16T07:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 298
+----------
+Hold Id: HLD-00149-B
+Shift Id: S26-1977
+Recorded At: 2026-04-21T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 299
+----------
+Hold Id: HLD-00150-A
+Shift Id: S26-8066
+Recorded At: 2026-04-02T10:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 300
+----------
+Hold Id: HLD-00150-B
+Shift Id: S26-8066
+Recorded At: 2026-04-12T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 301
+----------
+Hold Id: HLD-00151-A
+Shift Id: S26-1859
+Recorded At: 2026-04-03T13:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 302
+----------
+Hold Id: HLD-00151-B
+Shift Id: S26-1859
+Recorded At: 2026-04-13T15:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 303
+----------
+Hold Id: HLD-00152-A
+Shift Id: S26-2446
+Recorded At: 2026-04-04T16:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 304
+----------
+Hold Id: HLD-00152-B
+Shift Id: S26-2446
+Recorded At: 2026-04-14T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 305
+----------
+Hold Id: HLD-00153-A
+Shift Id: S26-8865
+Recorded At: 2026-04-05T19:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 306
+----------
+Hold Id: HLD-00153-B
+Shift Id: S26-8865
+Recorded At: 2026-04-15T05:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 307
+----------
+Hold Id: HLD-00154-A
+Shift Id: S26-1950
+Recorded At: 2026-04-06T02:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 308
+----------
+Hold Id: HLD-00154-B
+Shift Id: S26-1950
+Recorded At: 2026-04-16T10:00:00
+Revision: 3
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 309
+----------
+Hold Id: HLD-00155-A
+Shift Id: S26-8247
+Recorded At: 2026-04-07T05:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 310
+----------
+Hold Id: HLD-00155-B
+Shift Id: S26-8247
+Recorded At: 2026-04-17T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 311
+----------
+Hold Id: HLD-00156-A
+Shift Id: S26-8272
+Recorded At: 2026-04-08T08:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 312
+----------
+Hold Id: HLD-00156-B
+Shift Id: S26-8272
+Recorded At: 2026-04-18T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 313
+----------
+Hold Id: HLD-00157-A
+Shift Id: S26-7572
+Recorded At: 2026-04-09T11:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 314
+----------
+Hold Id: HLD-00157-B
+Shift Id: S26-7572
+Recorded At: 2026-04-19T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 315
+----------
+Hold Id: HLD-00158-A
+Shift Id: S26-3607
+Recorded At: 2026-04-10T14:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 316
+----------
+Hold Id: HLD-00158-B
+Shift Id: S26-3607
+Recorded At: 2026-04-20T10:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 317
+----------
+Hold Id: HLD-00159-A
+Shift Id: S26-9759
+Recorded At: 2026-04-11T17:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 318
+----------
+Hold Id: HLD-00159-B
+Shift Id: S26-9759
+Recorded At: 2026-04-21T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 319
+----------
+Hold Id: HLD-00160-A
+Shift Id: S26-5351
+Recorded At: 2026-04-12T00:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 320
+----------
+Hold Id: HLD-00160-B
+Shift Id: S26-5351
+Recorded At: 2026-04-12T00:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 321
+----------
+Hold Id: HLD-00161-A
+Shift Id: S26-2919
+Recorded At: 2026-04-13T03:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 322
+----------
+Hold Id: HLD-00161-B
+Shift Id: S26-2919
+Recorded At: 2026-04-13T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 323
+----------
+Hold Id: HLD-00162-A
+Shift Id: S26-1947
+Recorded At: 2026-04-14T06:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 324
+----------
+Hold Id: HLD-00162-B
+Shift Id: S26-1947
+Recorded At: 2026-04-14T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 325
+----------
+Hold Id: HLD-00163-A
+Shift Id: S26-4077
+Recorded At: 2026-04-15T09:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 326
+----------
+Hold Id: HLD-00163-B
+Shift Id: S26-4077
+Recorded At: 2026-04-15T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 327
+----------
+Hold Id: HLD-00164-A
+Shift Id: S26-8003
+Recorded At: 2026-04-16T12:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 328
+----------
+Hold Id: HLD-00164-B
+Shift Id: S26-8003
+Recorded At: 2026-04-16T00:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 329
+----------
+Hold Id: HLD-00165-A
+Shift Id: S26-4955
+Recorded At: 2026-04-02T15:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 330
+----------
+Hold Id: HLD-00165-B
+Shift Id: S26-4955
+Recorded At: 2026-04-17T05:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 331
+----------
+Hold Id: HLD-00166-A
+Shift Id: S26-7058
+Recorded At: 2026-04-03T18:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 332
+----------
+Hold Id: HLD-00166-B
+Shift Id: S26-7058
+Recorded At: 2026-04-18T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 333
+----------
+Hold Id: HLD-00167-A
+Shift Id: S26-9986
+Recorded At: 2026-04-04T01:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 334
+----------
+Hold Id: HLD-00167-B
+Shift Id: S26-9986
+Recorded At: 2026-04-19T15:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 335
+----------
+Hold Id: HLD-00168-A
+Shift Id: S26-3131
+Recorded At: 2026-04-05T04:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 336
+----------
+Hold Id: HLD-00168-B
+Shift Id: S26-3131
+Recorded At: 2026-04-20T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 337
+----------
+Hold Id: HLD-00169-A
+Shift Id: S26-1882
+Recorded At: 2026-04-06T07:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 338
+----------
+Hold Id: HLD-00169-B
+Shift Id: S26-1882
+Recorded At: 2026-04-21T05:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 339
+----------
+Hold Id: HLD-00170-A
+Shift Id: S26-3253
+Recorded At: 2026-04-07T10:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 340
+----------
+Hold Id: HLD-00170-B
+Shift Id: S26-3253
+Recorded At: 2026-04-12T10:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 341
+----------
+Hold Id: HLD-00171-A
+Shift Id: S26-5308
+Recorded At: 2026-04-08T13:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 342
+----------
+Hold Id: HLD-00171-B
+Shift Id: S26-5308
+Recorded At: 2026-04-13T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 343
+----------
+Hold Id: HLD-00172-A
+Shift Id: S26-9935
+Recorded At: 2026-04-09T16:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 344
+----------
+Hold Id: HLD-00172-B
+Shift Id: S26-9935
+Recorded At: 2026-04-14T00:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 345
+----------
+Hold Id: HLD-00173-A
+Shift Id: S26-4296
+Recorded At: 2026-04-10T19:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 346
+----------
+Hold Id: HLD-00173-B
+Shift Id: S26-4296
+Recorded At: 2026-04-15T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 347
+----------
+Hold Id: HLD-00174-A
+Shift Id: S26-1729
+Recorded At: 2026-04-11T02:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 348
+----------
+Hold Id: HLD-00174-B
+Shift Id: S26-1729
+Recorded At: 2026-04-16T10:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 349
+----------
+Hold Id: HLD-00175-A
+Shift Id: S26-1615
+Recorded At: 2026-04-12T05:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 350
+----------
+Hold Id: HLD-00175-B
+Shift Id: S26-1615
+Recorded At: 2026-04-17T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 351
+----------
+Hold Id: HLD-00176-A
+Shift Id: S26-9024
+Recorded At: 2026-04-13T08:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 352
+----------
+Hold Id: HLD-00176-B
+Shift Id: S26-9024
+Recorded At: 2026-04-18T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 353
+----------
+Hold Id: HLD-00177-A
+Shift Id: S26-7835
+Recorded At: 2026-04-14T11:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 354
+----------
+Hold Id: HLD-00177-B
+Shift Id: S26-7835
+Recorded At: 2026-04-19T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 355
+----------
+Hold Id: HLD-00178-A
+Shift Id: S26-5102
+Recorded At: 2026-04-15T14:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 356
+----------
+Hold Id: HLD-00178-B
+Shift Id: S26-5102
+Recorded At: 2026-04-20T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 357
+----------
+Hold Id: HLD-00179-A
+Shift Id: S26-7915
+Recorded At: 2026-04-16T17:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 358
+----------
+Hold Id: HLD-00179-B
+Shift Id: S26-7915
+Recorded At: 2026-04-21T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 359
+----------
+Hold Id: HLD-00180-A
+Shift Id: S26-3097
+Recorded At: 2026-04-02T00:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 360
+----------
+Hold Id: HLD-00180-B
+Shift Id: S26-3097
+Recorded At: 2026-04-12T00:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 361
+----------
+Hold Id: HLD-00181-A
+Shift Id: S26-5290
+Recorded At: 2026-04-03T03:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 362
+----------
+Hold Id: HLD-00181-B
+Shift Id: S26-5290
+Recorded At: 2026-04-13T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 363
+----------
+Hold Id: HLD-00182-A
+Shift Id: S26-1154
+Recorded At: 2026-04-04T06:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 364
+----------
+Hold Id: HLD-00182-B
+Shift Id: S26-1154
+Recorded At: 2026-04-14T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 365
+----------
+Hold Id: HLD-00183-A
+Shift Id: S26-8473
+Recorded At: 2026-04-05T09:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 366
+----------
+Hold Id: HLD-00183-B
+Shift Id: S26-8473
+Recorded At: 2026-04-15T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 367
+----------
+Hold Id: HLD-00184-A
+Shift Id: S26-4384
+Recorded At: 2026-04-06T12:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 368
+----------
+Hold Id: HLD-00184-B
+Shift Id: S26-4384
+Recorded At: 2026-04-16T00:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 369
+----------
+Hold Id: HLD-00185-A
+Shift Id: S26-8135
+Recorded At: 2026-04-07T15:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 370
+----------
+Hold Id: HLD-00185-B
+Shift Id: S26-8135
+Recorded At: 2026-04-17T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 371
+----------
+Hold Id: HLD-00186-A
+Shift Id: S26-3645
+Recorded At: 2026-04-08T18:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 372
+----------
+Hold Id: HLD-00186-B
+Shift Id: S26-3645
+Recorded At: 2026-04-18T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 373
+----------
+Hold Id: HLD-00187-A
+Shift Id: S26-8029
+Recorded At: 2026-04-09T01:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 374
+----------
+Hold Id: HLD-00187-B
+Shift Id: S26-8029
+Recorded At: 2026-04-19T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 375
+----------
+Hold Id: HLD-00188-A
+Shift Id: S26-6070
+Recorded At: 2026-04-10T04:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 376
+----------
+Hold Id: HLD-00188-B
+Shift Id: S26-6070
+Recorded At: 2026-04-20T00:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 377
+----------
+Hold Id: HLD-00189-A
+Shift Id: S26-2284
+Recorded At: 2026-04-11T07:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 378
+----------
+Hold Id: HLD-00189-B
+Shift Id: S26-2284
+Recorded At: 2026-04-21T05:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 379
+----------
+Hold Id: HLD-00190-A
+Shift Id: S26-9925
+Recorded At: 2026-04-12T10:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 380
+----------
+Hold Id: HLD-00190-B
+Shift Id: S26-9925
+Recorded At: 2026-04-12T10:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 381
+----------
+Hold Id: HLD-00191-A
+Shift Id: S26-9510
+Recorded At: 2026-04-13T13:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 382
+----------
+Hold Id: HLD-00191-B
+Shift Id: S26-9510
+Recorded At: 2026-04-13T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 383
+----------
+Hold Id: HLD-00192-A
+Shift Id: S26-4405
+Recorded At: 2026-04-14T16:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 384
+----------
+Hold Id: HLD-00192-B
+Shift Id: S26-4405
+Recorded At: 2026-04-14T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 385
+----------
+Hold Id: HLD-00193-A
+Shift Id: S26-1092
+Recorded At: 2026-04-15T19:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 386
+----------
+Hold Id: HLD-00193-B
+Shift Id: S26-1092
+Recorded At: 2026-04-15T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 387
+----------
+Hold Id: HLD-00194-A
+Shift Id: S26-3067
+Recorded At: 2026-04-16T02:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 388
+----------
+Hold Id: HLD-00194-B
+Shift Id: S26-3067
+Recorded At: 2026-04-16T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 389
+----------
+Hold Id: HLD-00195-A
+Shift Id: S26-6481
+Recorded At: 2026-04-02T05:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 390
+----------
+Hold Id: HLD-00195-B
+Shift Id: S26-6481
+Recorded At: 2026-04-17T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 391
+----------
+Hold Id: HLD-00196-A
+Shift Id: S26-4797
+Recorded At: 2026-04-03T08:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 392
+----------
+Hold Id: HLD-00196-B
+Shift Id: S26-4797
+Recorded At: 2026-04-18T00:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 393
+----------
+Hold Id: HLD-00197-A
+Shift Id: S26-5300
+Recorded At: 2026-04-04T11:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 394
+----------
+Hold Id: HLD-00197-B
+Shift Id: S26-5300
+Recorded At: 2026-04-19T05:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 395
+----------
+Hold Id: HLD-00198-A
+Shift Id: S26-9075
+Recorded At: 2026-04-05T14:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 396
+----------
+Hold Id: HLD-00198-B
+Shift Id: S26-9075
+Recorded At: 2026-04-20T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 397
+----------
+Hold Id: HLD-00199-A
+Shift Id: S26-2093
+Recorded At: 2026-04-06T17:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 398
+----------
+Hold Id: HLD-00199-B
+Shift Id: S26-2093
+Recorded At: 2026-04-21T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 399
+----------
+Hold Id: HLD-00200-A
+Shift Id: S26-3475
+Recorded At: 2026-04-07T00:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 400
+----------
+Hold Id: HLD-00200-B
+Shift Id: S26-3475
+Recorded At: 2026-04-12T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 401
+----------
+Hold Id: HLD-00201-A
+Shift Id: S26-4599
+Recorded At: 2026-04-08T03:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 402
+----------
+Hold Id: HLD-00201-B
+Shift Id: S26-4599
+Recorded At: 2026-04-13T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 403
+----------
+Hold Id: HLD-00202-A
+Shift Id: S26-8554
+Recorded At: 2026-04-09T06:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 404
+----------
+Hold Id: HLD-00202-B
+Shift Id: S26-8554
+Recorded At: 2026-04-14T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 405
+----------
+Hold Id: HLD-00203-A
+Shift Id: S26-5863
+Recorded At: 2026-04-10T09:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 406
+----------
+Hold Id: HLD-00203-B
+Shift Id: S26-5863
+Recorded At: 2026-04-15T15:00:00
+Revision: 3
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 407
+----------
+Hold Id: HLD-00204-A
+Shift Id: S26-7498
+Recorded At: 2026-04-11T12:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 408
+----------
+Hold Id: HLD-00204-B
+Shift Id: S26-7498
+Recorded At: 2026-04-16T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 409
+----------
+Hold Id: HLD-00205-A
+Shift Id: S26-1760
+Recorded At: 2026-04-12T15:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 410
+----------
+Hold Id: HLD-00205-B
+Shift Id: S26-1760
+Recorded At: 2026-04-17T05:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 411
+----------
+Hold Id: HLD-00206-A
+Shift Id: S26-1126
+Recorded At: 2026-04-13T18:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 412
+----------
+Hold Id: HLD-00206-B
+Shift Id: S26-1126
+Recorded At: 2026-04-18T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 413
+----------
+Hold Id: HLD-00207-A
+Shift Id: S26-6097
+Recorded At: 2026-04-14T01:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 414
+----------
+Hold Id: HLD-00207-B
+Shift Id: S26-6097
+Recorded At: 2026-04-19T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 415
+----------
+Hold Id: HLD-00208-A
+Shift Id: S26-4591
+Recorded At: 2026-04-15T04:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 416
+----------
+Hold Id: HLD-00208-B
+Shift Id: S26-4591
+Recorded At: 2026-04-20T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 417
+----------
+Hold Id: HLD-00209-A
+Shift Id: S26-1588
+Recorded At: 2026-04-16T07:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 418
+----------
+Hold Id: HLD-00209-B
+Shift Id: S26-1588
+Recorded At: 2026-04-21T05:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 419
+----------
+Hold Id: HLD-00210-A
+Shift Id: S26-6297
+Recorded At: 2026-04-02T10:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 420
+----------
+Hold Id: HLD-00210-B
+Shift Id: S26-6297
+Recorded At: 2026-04-12T10:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 421
+----------
+Hold Id: HLD-00211-A
+Shift Id: S26-1677
+Recorded At: 2026-04-03T13:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 422
+----------
+Hold Id: HLD-00211-B
+Shift Id: S26-1677
+Recorded At: 2026-04-13T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 423
+----------
+Hold Id: HLD-00212-A
+Shift Id: S26-9971
+Recorded At: 2026-04-04T16:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 424
+----------
+Hold Id: HLD-00212-B
+Shift Id: S26-9971
+Recorded At: 2026-04-14T00:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 425
+----------
+Hold Id: HLD-00213-A
+Shift Id: S26-9747
+Recorded At: 2026-04-05T19:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 426
+----------
+Hold Id: HLD-00213-B
+Shift Id: S26-9747
+Recorded At: 2026-04-15T05:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 427
+----------
+Hold Id: HLD-00214-A
+Shift Id: S26-2558
+Recorded At: 2026-04-06T02:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 428
+----------
+Hold Id: HLD-00214-B
+Shift Id: S26-2558
+Recorded At: 2026-04-16T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 429
+----------
+Hold Id: HLD-00215-A
+Shift Id: S26-4929
+Recorded At: 2026-04-07T05:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 430
+----------
+Hold Id: HLD-00215-B
+Shift Id: S26-4929
+Recorded At: 2026-04-17T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 431
+----------
+Hold Id: HLD-00216-A
+Shift Id: S26-5486
+Recorded At: 2026-04-08T08:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 432
+----------
+Hold Id: HLD-00216-B
+Shift Id: S26-5486
+Recorded At: 2026-04-18T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 433
+----------
+Hold Id: HLD-00217-A
+Shift Id: S26-5108
+Recorded At: 2026-04-09T11:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 434
+----------
+Hold Id: HLD-00217-B
+Shift Id: S26-5108
+Recorded At: 2026-04-19T05:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 435
+----------
+Hold Id: HLD-00218-A
+Shift Id: S26-4754
+Recorded At: 2026-04-10T14:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 436
+----------
+Hold Id: HLD-00218-B
+Shift Id: S26-4754
+Recorded At: 2026-04-20T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 437
+----------
+Hold Id: HLD-00219-A
+Shift Id: S26-8798
+Recorded At: 2026-04-11T17:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 438
+----------
+Hold Id: HLD-00219-B
+Shift Id: S26-8798
+Recorded At: 2026-04-21T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 439
+----------
+Hold Id: HLD-00220-A
+Shift Id: S26-3773
+Recorded At: 2026-04-12T00:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 440
+----------
+Hold Id: HLD-00220-B
+Shift Id: S26-3773
+Recorded At: 2026-04-12T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 441
+----------
+Hold Id: HLD-00221-A
+Shift Id: S26-6657
+Recorded At: 2026-04-13T03:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 442
+----------
+Hold Id: HLD-00221-B
+Shift Id: S26-6657
+Recorded At: 2026-04-13T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 443
+----------
+Hold Id: HLD-00222-A
+Shift Id: S26-3045
+Recorded At: 2026-04-14T06:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 444
+----------
+Hold Id: HLD-00222-B
+Shift Id: S26-3045
+Recorded At: 2026-04-14T10:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 445
+----------
+Hold Id: HLD-00223-A
+Shift Id: S26-2721
+Recorded At: 2026-04-15T09:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 446
+----------
+Hold Id: HLD-00223-B
+Shift Id: S26-2721
+Recorded At: 2026-04-15T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 447
+----------
+Hold Id: HLD-00224-A
+Shift Id: S26-3083
+Recorded At: 2026-04-16T12:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 448
+----------
+Hold Id: HLD-00224-B
+Shift Id: S26-3083
+Recorded At: 2026-04-16T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 449
+----------
+Hold Id: HLD-00225-A
+Shift Id: S26-5378
+Recorded At: 2026-04-02T15:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 450
+----------
+Hold Id: HLD-00225-B
+Shift Id: S26-5378
+Recorded At: 2026-04-17T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 451
+----------
+Hold Id: HLD-00226-A
+Shift Id: S26-1023
+Recorded At: 2026-04-03T18:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 452
+----------
+Hold Id: HLD-00226-B
+Shift Id: S26-1023
+Recorded At: 2026-04-18T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 453
+----------
+Hold Id: HLD-00227-A
+Shift Id: S26-4456
+Recorded At: 2026-04-04T01:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 454
+----------
+Hold Id: HLD-00227-B
+Shift Id: S26-4456
+Recorded At: 2026-04-19T15:00:00
+Revision: 3
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 455
+----------
+Hold Id: HLD-00228-A
+Shift Id: S26-1246
+Recorded At: 2026-04-05T04:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 456
+----------
+Hold Id: HLD-00228-B
+Shift Id: S26-1246
+Recorded At: 2026-04-20T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 457
+----------
+Hold Id: HLD-00229-A
+Shift Id: S26-3854
+Recorded At: 2026-04-06T07:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 458
+----------
+Hold Id: HLD-00229-B
+Shift Id: S26-3854
+Recorded At: 2026-04-21T05:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 459
+----------
+Hold Id: HLD-00230-A
+Shift Id: S26-8785
+Recorded At: 2026-04-07T10:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 460
+----------
+Hold Id: HLD-00230-B
+Shift Id: S26-8785
+Recorded At: 2026-04-12T10:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 461
+----------
+Hold Id: HLD-00231-A
+Shift Id: S26-9425
+Recorded At: 2026-04-08T13:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 462
+----------
+Hold Id: HLD-00231-B
+Shift Id: S26-9425
+Recorded At: 2026-04-13T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 463
+----------
+Hold Id: HLD-00232-A
+Shift Id: S26-8841
+Recorded At: 2026-04-09T16:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 464
+----------
+Hold Id: HLD-00232-B
+Shift Id: S26-8841
+Recorded At: 2026-04-14T00:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 465
+----------
+Hold Id: HLD-00233-A
+Shift Id: S26-9512
+Recorded At: 2026-04-10T19:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 466
+----------
+Hold Id: HLD-00233-B
+Shift Id: S26-9512
+Recorded At: 2026-04-15T05:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 467
+----------
+Hold Id: HLD-00234-A
+Shift Id: S26-1409
+Recorded At: 2026-04-11T02:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 468
+----------
+Hold Id: HLD-00234-B
+Shift Id: S26-1409
+Recorded At: 2026-04-16T10:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 469
+----------
+Hold Id: HLD-00235-A
+Shift Id: S26-8535
+Recorded At: 2026-04-12T05:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 470
+----------
+Hold Id: HLD-00235-B
+Shift Id: S26-8535
+Recorded At: 2026-04-17T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 471
+----------
+Hold Id: HLD-00236-A
+Shift Id: S26-9872
+Recorded At: 2026-04-13T08:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 472
+----------
+Hold Id: HLD-00236-B
+Shift Id: S26-9872
+Recorded At: 2026-04-18T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 473
+----------
+Hold Id: HLD-00237-A
+Shift Id: S26-1711
+Recorded At: 2026-04-14T11:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 474
+----------
+Hold Id: HLD-00237-B
+Shift Id: S26-1711
+Recorded At: 2026-04-19T05:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 475
+----------
+Hold Id: HLD-00238-A
+Shift Id: S26-1303
+Recorded At: 2026-04-15T14:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 476
+----------
+Hold Id: HLD-00238-B
+Shift Id: S26-1303
+Recorded At: 2026-04-20T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 477
+----------
+Hold Id: HLD-00239-A
+Shift Id: S26-9190
+Recorded At: 2026-04-16T17:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 478
+----------
+Hold Id: HLD-00239-B
+Shift Id: S26-9190
+Recorded At: 2026-04-21T15:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 479
+----------
+Hold Id: HLD-00240-A
+Shift Id: S26-8762
+Recorded At: 2026-04-02T00:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 480
+----------
+Hold Id: HLD-00240-B
+Shift Id: S26-8762
+Recorded At: 2026-04-12T00:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 481
+----------
+Hold Id: HLD-00241-A
+Shift Id: S26-2989
+Recorded At: 2026-04-03T03:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 482
+----------
+Hold Id: HLD-00241-B
+Shift Id: S26-2989
+Recorded At: 2026-04-13T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 483
+----------
+Hold Id: HLD-00242-A
+Shift Id: S26-4157
+Recorded At: 2026-04-04T06:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 484
+----------
+Hold Id: HLD-00242-B
+Shift Id: S26-4157
+Recorded At: 2026-04-14T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 485
+----------
+Hold Id: HLD-00243-A
+Shift Id: S26-7882
+Recorded At: 2026-04-05T09:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 486
+----------
+Hold Id: HLD-00243-B
+Shift Id: S26-7882
+Recorded At: 2026-04-15T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 487
+----------
+Hold Id: HLD-00244-A
+Shift Id: S26-4565
+Recorded At: 2026-04-06T12:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 488
+----------
+Hold Id: HLD-00244-B
+Shift Id: S26-4565
+Recorded At: 2026-04-16T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 489
+----------
+Hold Id: HLD-00245-A
+Shift Id: S26-3081
+Recorded At: 2026-04-07T15:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 490
+----------
+Hold Id: HLD-00245-B
+Shift Id: S26-3081
+Recorded At: 2026-04-17T05:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 491
+----------
+Hold Id: HLD-00246-A
+Shift Id: S26-9548
+Recorded At: 2026-04-08T18:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 492
+----------
+Hold Id: HLD-00246-B
+Shift Id: S26-9548
+Recorded At: 2026-04-18T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 493
+----------
+Hold Id: HLD-00247-A
+Shift Id: S26-6092
+Recorded At: 2026-04-09T01:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 494
+----------
+Hold Id: HLD-00247-B
+Shift Id: S26-6092
+Recorded At: 2026-04-19T15:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 495
+----------
+Hold Id: HLD-00248-A
+Shift Id: S26-9833
+Recorded At: 2026-04-10T04:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 496
+----------
+Hold Id: HLD-00248-B
+Shift Id: S26-9833
+Recorded At: 2026-04-20T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 497
+----------
+Hold Id: HLD-00249-A
+Shift Id: S26-8440
+Recorded At: 2026-04-11T07:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 498
+----------
+Hold Id: HLD-00249-B
+Shift Id: S26-8440
+Recorded At: 2026-04-21T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 499
+----------
+Hold Id: HLD-00250-A
+Shift Id: S26-9044
+Recorded At: 2026-04-12T10:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 500
+----------
+Hold Id: HLD-00250-B
+Shift Id: S26-9044
+Recorded At: 2026-04-12T10:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 501
+----------
+Hold Id: HLD-00251-A
+Shift Id: S26-8068
+Recorded At: 2026-04-13T13:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 502
+----------
+Hold Id: HLD-00251-B
+Shift Id: S26-8068
+Recorded At: 2026-04-13T15:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 503
+----------
+Hold Id: HLD-00252-A
+Shift Id: S26-8024
+Recorded At: 2026-04-14T16:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 504
+----------
+Hold Id: HLD-00252-B
+Shift Id: S26-8024
+Recorded At: 2026-04-14T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 505
+----------
+Hold Id: HLD-00253-A
+Shift Id: S26-2720
+Recorded At: 2026-04-15T19:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 506
+----------
+Hold Id: HLD-00253-B
+Shift Id: S26-2720
+Recorded At: 2026-04-15T05:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 507
+----------
+Hold Id: HLD-00254-A
+Shift Id: S26-9674
+Recorded At: 2026-04-16T02:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 508
+----------
+Hold Id: HLD-00254-B
+Shift Id: S26-9674
+Recorded At: 2026-04-16T10:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 509
+----------
+Hold Id: HLD-00255-A
+Shift Id: S26-2906
+Recorded At: 2026-04-02T05:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 510
+----------
+Hold Id: HLD-00255-B
+Shift Id: S26-2906
+Recorded At: 2026-04-17T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 511
+----------
+Hold Id: HLD-00256-A
+Shift Id: S26-4110
+Recorded At: 2026-04-03T08:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 512
+----------
+Hold Id: HLD-00256-B
+Shift Id: S26-4110
+Recorded At: 2026-04-18T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 513
+----------
+Hold Id: HLD-00257-A
+Shift Id: S26-5805
+Recorded At: 2026-04-04T11:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 514
+----------
+Hold Id: HLD-00257-B
+Shift Id: S26-5805
+Recorded At: 2026-04-19T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 515
+----------
+Hold Id: HLD-00258-A
+Shift Id: S26-8008
+Recorded At: 2026-04-05T14:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 516
+----------
+Hold Id: HLD-00258-B
+Shift Id: S26-8008
+Recorded At: 2026-04-20T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 517
+----------
+Hold Id: HLD-00259-A
+Shift Id: S26-8373
+Recorded At: 2026-04-06T17:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 518
+----------
+Hold Id: HLD-00259-B
+Shift Id: S26-8373
+Recorded At: 2026-04-21T15:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 519
+----------
+Hold Id: HLD-00260-A
+Shift Id: S26-2515
+Recorded At: 2026-04-07T00:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 520
+----------
+Hold Id: HLD-00260-B
+Shift Id: S26-2515
+Recorded At: 2026-04-12T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 521
+----------
+Hold Id: HLD-00261-A
+Shift Id: S26-1645
+Recorded At: 2026-04-08T03:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 522
+----------
+Hold Id: HLD-00261-B
+Shift Id: S26-1645
+Recorded At: 2026-04-13T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 523
+----------
+Hold Id: HLD-00262-A
+Shift Id: S26-8680
+Recorded At: 2026-04-09T06:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 524
+----------
+Hold Id: HLD-00262-B
+Shift Id: S26-8680
+Recorded At: 2026-04-14T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 525
+----------
+Hold Id: HLD-00263-A
+Shift Id: S26-6788
+Recorded At: 2026-04-10T09:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 526
+----------
+Hold Id: HLD-00263-B
+Shift Id: S26-6788
+Recorded At: 2026-04-15T15:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 527
+----------
+Hold Id: HLD-00264-A
+Shift Id: S26-3369
+Recorded At: 2026-04-11T12:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 528
+----------
+Hold Id: HLD-00264-B
+Shift Id: S26-3369
+Recorded At: 2026-04-16T00:00:00
+Revision: 3
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 529
+----------
+Hold Id: HLD-00265-A
+Shift Id: S26-2849
+Recorded At: 2026-04-12T15:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 530
+----------
+Hold Id: HLD-00265-B
+Shift Id: S26-2849
+Recorded At: 2026-04-17T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 531
+----------
+Hold Id: HLD-00266-A
+Shift Id: S26-4460
+Recorded At: 2026-04-13T18:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 532
+----------
+Hold Id: HLD-00266-B
+Shift Id: S26-4460
+Recorded At: 2026-04-18T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 533
+----------
+Hold Id: HLD-00267-A
+Shift Id: S26-7083
+Recorded At: 2026-04-14T01:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 534
+----------
+Hold Id: HLD-00267-B
+Shift Id: S26-7083
+Recorded At: 2026-04-19T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 535
+----------
+Hold Id: HLD-00268-A
+Shift Id: S26-3402
+Recorded At: 2026-04-15T04:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 536
+----------
+Hold Id: HLD-00268-B
+Shift Id: S26-3402
+Recorded At: 2026-04-20T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 537
+----------
+Hold Id: HLD-00269-A
+Shift Id: S26-7727
+Recorded At: 2026-04-16T07:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 538
+----------
+Hold Id: HLD-00269-B
+Shift Id: S26-7727
+Recorded At: 2026-04-21T05:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 539
+----------
+Hold Id: HLD-00270-A
+Shift Id: S26-4131
+Recorded At: 2026-04-02T10:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 540
+----------
+Hold Id: HLD-00270-B
+Shift Id: S26-4131
+Recorded At: 2026-04-12T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 541
+----------
+Hold Id: HLD-00271-A
+Shift Id: S26-4302
+Recorded At: 2026-04-03T13:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 542
+----------
+Hold Id: HLD-00271-B
+Shift Id: S26-4302
+Recorded At: 2026-04-13T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 543
+----------
+Hold Id: HLD-00272-A
+Shift Id: S26-5259
+Recorded At: 2026-04-04T16:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 544
+----------
+Hold Id: HLD-00272-B
+Shift Id: S26-5259
+Recorded At: 2026-04-14T00:00:00
+Revision: 3
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 545
+----------
+Hold Id: HLD-00273-A
+Shift Id: S26-7334
+Recorded At: 2026-04-05T19:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 546
+----------
+Hold Id: HLD-00273-B
+Shift Id: S26-7334
+Recorded At: 2026-04-15T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 547
+----------
+Hold Id: HLD-00274-A
+Shift Id: S26-2248
+Recorded At: 2026-04-06T02:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 548
+----------
+Hold Id: HLD-00274-B
+Shift Id: S26-2248
+Recorded At: 2026-04-16T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 549
+----------
+Hold Id: HLD-00275-A
+Shift Id: S26-3951
+Recorded At: 2026-04-07T05:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 550
+----------
+Hold Id: HLD-00275-B
+Shift Id: S26-3951
+Recorded At: 2026-04-17T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 551
+----------
+Hold Id: HLD-00276-A
+Shift Id: S26-7103
+Recorded At: 2026-04-08T08:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 552
+----------
+Hold Id: HLD-00276-B
+Shift Id: S26-7103
+Recorded At: 2026-04-18T00:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 553
+----------
+Hold Id: HLD-00277-A
+Shift Id: S26-4670
+Recorded At: 2026-04-09T11:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 554
+----------
+Hold Id: HLD-00277-B
+Shift Id: S26-4670
+Recorded At: 2026-04-19T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 555
+----------
+Hold Id: HLD-00278-A
+Shift Id: S26-4464
+Recorded At: 2026-04-10T14:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 556
+----------
+Hold Id: HLD-00278-B
+Shift Id: S26-4464
+Recorded At: 2026-04-20T10:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 557
+----------
+Hold Id: HLD-00279-A
+Shift Id: S26-1491
+Recorded At: 2026-04-11T17:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 558
+----------
+Hold Id: HLD-00279-B
+Shift Id: S26-1491
+Recorded At: 2026-04-21T15:00:00
+Revision: 3
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 559
+----------
+Hold Id: HLD-00280-A
+Shift Id: S26-6748
+Recorded At: 2026-04-12T00:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 560
+----------
+Hold Id: HLD-00280-B
+Shift Id: S26-6748
+Recorded At: 2026-04-12T00:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 561
+----------
+Hold Id: HLD-00281-A
+Shift Id: S26-4932
+Recorded At: 2026-04-13T03:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 562
+----------
+Hold Id: HLD-00281-B
+Shift Id: S26-4932
+Recorded At: 2026-04-13T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 563
+----------
+Hold Id: HLD-00282-A
+Shift Id: S26-8054
+Recorded At: 2026-04-14T06:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 564
+----------
+Hold Id: HLD-00282-B
+Shift Id: S26-8054
+Recorded At: 2026-04-14T10:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 565
+----------
+Hold Id: HLD-00283-A
+Shift Id: S26-6692
+Recorded At: 2026-04-15T09:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 566
+----------
+Hold Id: HLD-00283-B
+Shift Id: S26-6692
+Recorded At: 2026-04-15T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 567
+----------
+Hold Id: HLD-00284-A
+Shift Id: S26-4518
+Recorded At: 2026-04-16T12:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 568
+----------
+Hold Id: HLD-00284-B
+Shift Id: S26-4518
+Recorded At: 2026-04-16T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 569
+----------
+Hold Id: HLD-00285-A
+Shift Id: S26-8201
+Recorded At: 2026-04-02T15:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 570
+----------
+Hold Id: HLD-00285-B
+Shift Id: S26-8201
+Recorded At: 2026-04-17T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 571
+----------
+Hold Id: HLD-00286-A
+Shift Id: S26-3474
+Recorded At: 2026-04-03T18:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 572
+----------
+Hold Id: HLD-00286-B
+Shift Id: S26-3474
+Recorded At: 2026-04-18T10:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 573
+----------
+Hold Id: HLD-00287-A
+Shift Id: S26-5114
+Recorded At: 2026-04-04T01:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 574
+----------
+Hold Id: HLD-00287-B
+Shift Id: S26-5114
+Recorded At: 2026-04-19T15:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 575
+----------
+Hold Id: HLD-00288-A
+Shift Id: S26-3220
+Recorded At: 2026-04-05T04:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 576
+----------
+Hold Id: HLD-00288-B
+Shift Id: S26-3220
+Recorded At: 2026-04-20T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 577
+----------
+Hold Id: HLD-00289-A
+Shift Id: S26-1690
+Recorded At: 2026-04-06T07:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 578
+----------
+Hold Id: HLD-00289-B
+Shift Id: S26-1690
+Recorded At: 2026-04-21T05:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 579
+----------
+Hold Id: HLD-00290-A
+Shift Id: S26-8490
+Recorded At: 2026-04-07T10:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 580
+----------
+Hold Id: HLD-00290-B
+Shift Id: S26-8490
+Recorded At: 2026-04-12T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 581
+----------
+Hold Id: HLD-00291-A
+Shift Id: S26-6504
+Recorded At: 2026-04-08T13:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 582
+----------
+Hold Id: HLD-00291-B
+Shift Id: S26-6504
+Recorded At: 2026-04-13T15:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 583
+----------
+Hold Id: HLD-00292-A
+Shift Id: S26-2872
+Recorded At: 2026-04-09T16:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 584
+----------
+Hold Id: HLD-00292-B
+Shift Id: S26-2872
+Recorded At: 2026-04-14T00:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 585
+----------
+Hold Id: HLD-00293-A
+Shift Id: S26-3797
+Recorded At: 2026-04-10T19:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 586
+----------
+Hold Id: HLD-00293-B
+Shift Id: S26-3797
+Recorded At: 2026-04-15T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 587
+----------
+Hold Id: HLD-00294-A
+Shift Id: S26-7049
+Recorded At: 2026-04-11T02:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 588
+----------
+Hold Id: HLD-00294-B
+Shift Id: S26-7049
+Recorded At: 2026-04-16T10:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 589
+----------
+Hold Id: HLD-00295-A
+Shift Id: S26-3213
+Recorded At: 2026-04-12T05:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 590
+----------
+Hold Id: HLD-00295-B
+Shift Id: S26-3213
+Recorded At: 2026-04-17T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 591
+----------
+Hold Id: HLD-00296-A
+Shift Id: S26-6219
+Recorded At: 2026-04-13T08:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 592
+----------
+Hold Id: HLD-00296-B
+Shift Id: S26-6219
+Recorded At: 2026-04-18T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 593
+----------
+Hold Id: HLD-00297-A
+Shift Id: S26-7042
+Recorded At: 2026-04-14T11:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 594
+----------
+Hold Id: HLD-00297-B
+Shift Id: S26-7042
+Recorded At: 2026-04-19T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 595
+----------
+Hold Id: HLD-00298-A
+Shift Id: S26-1752
+Recorded At: 2026-04-15T14:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 596
+----------
+Hold Id: HLD-00298-B
+Shift Id: S26-1752
+Recorded At: 2026-04-20T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 597
+----------
+Hold Id: HLD-00299-A
+Shift Id: S26-3143
+Recorded At: 2026-04-16T17:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 598
+----------
+Hold Id: HLD-00299-B
+Shift Id: S26-3143
+Recorded At: 2026-04-21T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 599
+----------
+Hold Id: HLD-00300-A
+Shift Id: S26-9045
+Recorded At: 2026-04-02T00:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 600
+----------
+Hold Id: HLD-00300-B
+Shift Id: S26-9045
+Recorded At: 2026-04-12T00:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 601
+----------
+Hold Id: HLD-00301-A
+Shift Id: S26-3215
+Recorded At: 2026-04-03T03:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 602
+----------
+Hold Id: HLD-00301-B
+Shift Id: S26-3215
+Recorded At: 2026-04-13T05:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 603
+----------
+Hold Id: HLD-00302-A
+Shift Id: S26-1295
+Recorded At: 2026-04-04T06:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 604
+----------
+Hold Id: HLD-00302-B
+Shift Id: S26-1295
+Recorded At: 2026-04-14T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 605
+----------
+Hold Id: HLD-00303-A
+Shift Id: S26-5066
+Recorded At: 2026-04-05T09:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 606
+----------
+Hold Id: HLD-00303-B
+Shift Id: S26-5066
+Recorded At: 2026-04-15T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 607
+----------
+Hold Id: HLD-00304-A
+Shift Id: S26-2698
+Recorded At: 2026-04-06T12:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 608
+----------
+Hold Id: HLD-00304-B
+Shift Id: S26-2698
+Recorded At: 2026-04-16T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 609
+----------
+Hold Id: HLD-00305-A
+Shift Id: S26-1776
+Recorded At: 2026-04-07T15:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 610
+----------
+Hold Id: HLD-00305-B
+Shift Id: S26-1776
+Recorded At: 2026-04-17T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 611
+----------
+Hold Id: HLD-00306-A
+Shift Id: S26-4196
+Recorded At: 2026-04-08T18:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 612
+----------
+Hold Id: HLD-00306-B
+Shift Id: S26-4196
+Recorded At: 2026-04-18T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 613
+----------
+Hold Id: HLD-00307-A
+Shift Id: S26-3706
+Recorded At: 2026-04-09T01:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 614
+----------
+Hold Id: HLD-00307-B
+Shift Id: S26-3706
+Recorded At: 2026-04-19T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 615
+----------
+Hold Id: HLD-00308-A
+Shift Id: S26-4271
+Recorded At: 2026-04-10T04:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 616
+----------
+Hold Id: HLD-00308-B
+Shift Id: S26-4271
+Recorded At: 2026-04-20T00:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 617
+----------
+Hold Id: HLD-00309-A
+Shift Id: S26-1988
+Recorded At: 2026-04-11T07:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 618
+----------
+Hold Id: HLD-00309-B
+Shift Id: S26-1988
+Recorded At: 2026-04-21T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 619
+----------
+Hold Id: HLD-00310-A
+Shift Id: S26-5136
+Recorded At: 2026-04-12T10:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 620
+----------
+Hold Id: HLD-00310-B
+Shift Id: S26-5136
+Recorded At: 2026-04-12T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 621
+----------
+Hold Id: HLD-00311-A
+Shift Id: S26-5024
+Recorded At: 2026-04-13T13:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 622
+----------
+Hold Id: HLD-00311-B
+Shift Id: S26-5024
+Recorded At: 2026-04-13T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 623
+----------
+Hold Id: HLD-00312-A
+Shift Id: S26-6697
+Recorded At: 2026-04-14T16:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 624
+----------
+Hold Id: HLD-00312-B
+Shift Id: S26-6697
+Recorded At: 2026-04-14T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 625
+----------
+Hold Id: HLD-00313-A
+Shift Id: S26-9315
+Recorded At: 2026-04-15T19:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 626
+----------
+Hold Id: HLD-00313-B
+Shift Id: S26-9315
+Recorded At: 2026-04-15T05:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 627
+----------
+Hold Id: HLD-00314-A
+Shift Id: S26-9662
+Recorded At: 2026-04-16T02:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 628
+----------
+Hold Id: HLD-00314-B
+Shift Id: S26-9662
+Recorded At: 2026-04-16T10:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 629
+----------
+Hold Id: HLD-00315-A
+Shift Id: S26-1663
+Recorded At: 2026-04-02T05:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 630
+----------
+Hold Id: HLD-00315-B
+Shift Id: S26-1663
+Recorded At: 2026-04-17T15:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 631
+----------
+Hold Id: HLD-00316-A
+Shift Id: S26-1311
+Recorded At: 2026-04-03T08:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 632
+----------
+Hold Id: HLD-00316-B
+Shift Id: S26-1311
+Recorded At: 2026-04-18T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 633
+----------
+Hold Id: HLD-00317-A
+Shift Id: S26-1795
+Recorded At: 2026-04-04T11:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 634
+----------
+Hold Id: HLD-00317-B
+Shift Id: S26-1795
+Recorded At: 2026-04-19T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 635
+----------
+Hold Id: HLD-00318-A
+Shift Id: S26-6390
+Recorded At: 2026-04-05T14:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 636
+----------
+Hold Id: HLD-00318-B
+Shift Id: S26-6390
+Recorded At: 2026-04-20T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 637
+----------
+Hold Id: HLD-00319-A
+Shift Id: S26-4072
+Recorded At: 2026-04-06T17:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 638
+----------
+Hold Id: HLD-00319-B
+Shift Id: S26-4072
+Recorded At: 2026-04-21T15:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 639
+----------
+Hold Id: HLD-00320-A
+Shift Id: S26-9105
+Recorded At: 2026-04-07T00:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 640
+----------
+Hold Id: HLD-00320-B
+Shift Id: S26-9105
+Recorded At: 2026-04-12T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 641
+----------
+Hold Id: HLD-00321-A
+Shift Id: S26-9580
+Recorded At: 2026-04-08T03:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 642
+----------
+Hold Id: HLD-00321-B
+Shift Id: S26-9580
+Recorded At: 2026-04-13T05:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 643
+----------
+Hold Id: HLD-00322-A
+Shift Id: S26-5763
+Recorded At: 2026-04-09T06:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 644
+----------
+Hold Id: HLD-00322-B
+Shift Id: S26-5763
+Recorded At: 2026-04-14T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 645
+----------
+Hold Id: HLD-00323-A
+Shift Id: S26-2095
+Recorded At: 2026-04-10T09:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 646
+----------
+Hold Id: HLD-00323-B
+Shift Id: S26-2095
+Recorded At: 2026-04-15T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 647
+----------
+Hold Id: HLD-00324-A
+Shift Id: S26-3970
+Recorded At: 2026-04-11T12:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 648
+----------
+Hold Id: HLD-00324-B
+Shift Id: S26-3970
+Recorded At: 2026-04-16T00:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 649
+----------
+Hold Id: HLD-00325-A
+Shift Id: S26-9001
+Recorded At: 2026-04-12T15:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 650
+----------
+Hold Id: HLD-00325-B
+Shift Id: S26-9001
+Recorded At: 2026-04-17T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 651
+----------
+Hold Id: HLD-00326-A
+Shift Id: S26-1072
+Recorded At: 2026-04-13T18:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 652
+----------
+Hold Id: HLD-00326-B
+Shift Id: S26-1072
+Recorded At: 2026-04-18T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 653
+----------
+Hold Id: HLD-00327-A
+Shift Id: S26-2670
+Recorded At: 2026-04-14T01:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 654
+----------
+Hold Id: HLD-00327-B
+Shift Id: S26-2670
+Recorded At: 2026-04-19T15:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 655
+----------
+Hold Id: HLD-00328-A
+Shift Id: S26-6985
+Recorded At: 2026-04-15T04:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 656
+----------
+Hold Id: HLD-00328-B
+Shift Id: S26-6985
+Recorded At: 2026-04-20T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 657
+----------
+Hold Id: HLD-00329-A
+Shift Id: S26-4996
+Recorded At: 2026-04-16T07:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 658
+----------
+Hold Id: HLD-00329-B
+Shift Id: S26-4996
+Recorded At: 2026-04-21T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 659
+----------
+Hold Id: HLD-00330-A
+Shift Id: S26-9677
+Recorded At: 2026-04-02T10:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 660
+----------
+Hold Id: HLD-00330-B
+Shift Id: S26-9677
+Recorded At: 2026-04-12T10:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 661
+----------
+Hold Id: HLD-00331-A
+Shift Id: S26-9153
+Recorded At: 2026-04-03T13:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 662
+----------
+Hold Id: HLD-00331-B
+Shift Id: S26-9153
+Recorded At: 2026-04-13T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 663
+----------
+Hold Id: HLD-00332-A
+Shift Id: S26-1904
+Recorded At: 2026-04-04T16:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 664
+----------
+Hold Id: HLD-00332-B
+Shift Id: S26-1904
+Recorded At: 2026-04-14T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 665
+----------
+Hold Id: HLD-00333-A
+Shift Id: S26-9792
+Recorded At: 2026-04-05T19:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 666
+----------
+Hold Id: HLD-00333-B
+Shift Id: S26-9792
+Recorded At: 2026-04-15T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 667
+----------
+Hold Id: HLD-00334-A
+Shift Id: S26-7316
+Recorded At: 2026-04-06T02:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 668
+----------
+Hold Id: HLD-00334-B
+Shift Id: S26-7316
+Recorded At: 2026-04-16T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 669
+----------
+Hold Id: HLD-00335-A
+Shift Id: S26-3778
+Recorded At: 2026-04-07T05:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 670
+----------
+Hold Id: HLD-00335-B
+Shift Id: S26-3778
+Recorded At: 2026-04-17T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 671
+----------
+Hold Id: HLD-00336-A
+Shift Id: S26-3961
+Recorded At: 2026-04-08T08:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 672
+----------
+Hold Id: HLD-00336-B
+Shift Id: S26-3961
+Recorded At: 2026-04-18T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 673
+----------
+Hold Id: HLD-00337-A
+Shift Id: S26-8803
+Recorded At: 2026-04-09T11:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 674
+----------
+Hold Id: HLD-00337-B
+Shift Id: S26-8803
+Recorded At: 2026-04-19T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 675
+----------
+Hold Id: HLD-00338-A
+Shift Id: S26-9191
+Recorded At: 2026-04-10T14:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 676
+----------
+Hold Id: HLD-00338-B
+Shift Id: S26-9191
+Recorded At: 2026-04-20T10:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 677
+----------
+Hold Id: HLD-00339-A
+Shift Id: S26-9208
+Recorded At: 2026-04-11T17:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 678
+----------
+Hold Id: HLD-00339-B
+Shift Id: S26-9208
+Recorded At: 2026-04-21T15:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 679
+----------
+Hold Id: HLD-00340-A
+Shift Id: S26-2620
+Recorded At: 2026-04-12T00:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 680
+----------
+Hold Id: HLD-00340-B
+Shift Id: S26-2620
+Recorded At: 2026-04-12T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 681
+----------
+Hold Id: HLD-00341-A
+Shift Id: S26-9645
+Recorded At: 2026-04-13T03:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 682
+----------
+Hold Id: HLD-00341-B
+Shift Id: S26-9645
+Recorded At: 2026-04-13T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 683
+----------
+Hold Id: HLD-00342-A
+Shift Id: S26-2837
+Recorded At: 2026-04-14T06:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 684
+----------
+Hold Id: HLD-00342-B
+Shift Id: S26-2837
+Recorded At: 2026-04-14T10:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 685
+----------
+Hold Id: HLD-00343-A
+Shift Id: S26-7721
+Recorded At: 2026-04-15T09:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 686
+----------
+Hold Id: HLD-00343-B
+Shift Id: S26-7721
+Recorded At: 2026-04-15T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 687
+----------
+Hold Id: HLD-00344-A
+Shift Id: S26-2539
+Recorded At: 2026-04-16T12:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 688
+----------
+Hold Id: HLD-00344-B
+Shift Id: S26-2539
+Recorded At: 2026-04-16T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 689
+----------
+Hold Id: HLD-00345-A
+Shift Id: S26-1512
+Recorded At: 2026-04-02T15:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 690
+----------
+Hold Id: HLD-00345-B
+Shift Id: S26-1512
+Recorded At: 2026-04-17T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 691
+----------
+Hold Id: HLD-00346-A
+Shift Id: S26-7241
+Recorded At: 2026-04-03T18:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 692
+----------
+Hold Id: HLD-00346-B
+Shift Id: S26-7241
+Recorded At: 2026-04-18T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 693
+----------
+Hold Id: HLD-00347-A
+Shift Id: S26-8952
+Recorded At: 2026-04-04T01:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 694
+----------
+Hold Id: HLD-00347-B
+Shift Id: S26-8952
+Recorded At: 2026-04-19T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 695
+----------
+Hold Id: HLD-00348-A
+Shift Id: S26-4448
+Recorded At: 2026-04-05T04:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 696
+----------
+Hold Id: HLD-00348-B
+Shift Id: S26-4448
+Recorded At: 2026-04-20T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 697
+----------
+Hold Id: HLD-00349-A
+Shift Id: S26-6696
+Recorded At: 2026-04-06T07:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 698
+----------
+Hold Id: HLD-00349-B
+Shift Id: S26-6696
+Recorded At: 2026-04-21T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 699
+----------
+Hold Id: HLD-00350-A
+Shift Id: S26-3612
+Recorded At: 2026-04-07T10:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 700
+----------
+Hold Id: HLD-00350-B
+Shift Id: S26-3612
+Recorded At: 2026-04-12T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 701
+----------
+Hold Id: HLD-00351-A
+Shift Id: S26-8913
+Recorded At: 2026-04-08T13:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 0
+
+Record 702
+----------
+Hold Id: HLD-00351-B
+Shift Id: S26-8913
+Recorded At: 2026-04-13T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 703
+----------
+Hold Id: HLD-00352-A
+Shift Id: S26-4096
+Recorded At: 2026-04-09T16:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 704
+----------
+Hold Id: HLD-00352-B
+Shift Id: S26-4096
+Recorded At: 2026-04-14T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 705
+----------
+Hold Id: HLD-00353-A
+Shift Id: S26-5392
+Recorded At: 2026-04-10T19:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 706
+----------
+Hold Id: HLD-00353-B
+Shift Id: S26-5392
+Recorded At: 2026-04-15T05:00:00
+Revision: 3
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 707
+----------
+Hold Id: HLD-00354-A
+Shift Id: S26-1805
+Recorded At: 2026-04-11T02:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 708
+----------
+Hold Id: HLD-00354-B
+Shift Id: S26-1805
+Recorded At: 2026-04-16T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 709
+----------
+Hold Id: HLD-00355-A
+Shift Id: S26-5747
+Recorded At: 2026-04-12T05:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 710
+----------
+Hold Id: HLD-00355-B
+Shift Id: S26-5747
+Recorded At: 2026-04-17T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 711
+----------
+Hold Id: HLD-00356-A
+Shift Id: S26-4335
+Recorded At: 2026-04-13T08:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 712
+----------
+Hold Id: HLD-00356-B
+Shift Id: S26-4335
+Recorded At: 2026-04-18T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 713
+----------
+Hold Id: HLD-00357-A
+Shift Id: S26-4466
+Recorded At: 2026-04-14T11:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 714
+----------
+Hold Id: HLD-00357-B
+Shift Id: S26-4466
+Recorded At: 2026-04-19T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 715
+----------
+Hold Id: HLD-00358-A
+Shift Id: S26-6948
+Recorded At: 2026-04-15T14:00:00
+Revision: 1
+Hold Status: released
+Approved Group Hold Count: 2
+Issued Offer Hold Count: 1
+
+Record 716
+----------
+Hold Id: HLD-00358-B
+Shift Id: S26-6948
+Recorded At: 2026-04-20T10:00:00
+Revision: 2
+Hold Status: released
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 717
+----------
+Hold Id: HLD-00359-A
+Shift Id: S26-1318
+Recorded At: 2026-04-16T17:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 718
+----------
+Hold Id: HLD-00359-B
+Shift Id: S26-1318
+Recorded At: 2026-04-21T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 719
+----------
+Hold Id: HLD-00360-A
+Shift Id: S26-2422
+Recorded At: 2026-04-02T00:00:00
+Revision: 1
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 720
+----------
+Hold Id: HLD-00360-B
+Shift Id: S26-2422
+Recorded At: 2026-04-12T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 721
+----------
+Hold Id: S26-4817-HLD-R2
+Shift Id: S26-4817
+Recorded At: 2026-04-13T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 722
+----------
+Hold Id: S26-5392-HLD-R2
+Shift Id: S26-5392
+Recorded At: 2026-04-15T05:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 723
+----------
+Hold Id: S26-7284-HLD-R2
+Shift Id: S26-7284
+Recorded At: 2026-04-14T16:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 724
+----------
+Hold Id: S26-1950-HLD-R2
+Shift Id: S26-1950
+Recorded At: 2026-04-16T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 725
+----------
+Hold Id: S26-3369-HLD-R2
+Shift Id: S26-3369
+Recorded At: 2026-04-16T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 726
+----------
+Hold Id: S26-6148-HLD-R2
+Shift Id: S26-6148
+Recorded At: 2026-04-12T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 727
+----------
+Hold Id: S26-3006-HLD-R2
+Shift Id: S26-3006
+Recorded At: 2026-04-14T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 1
+
+Record 728
+----------
+Hold Id: S26-7476-HLD-R2
+Shift Id: S26-7476
+Recorded At: 2026-04-14T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 729
+----------
+Hold Id: S26-4201-HLD-R2
+Shift Id: S26-4201
+Recorded At: 2026-04-16T10:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 0
+
+Record 730
+----------
+Hold Id: S26-5259-HLD-R2
+Shift Id: S26-5259
+Recorded At: 2026-04-14T00:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 731
+----------
+Hold Id: S26-5863-HLD-R2
+Shift Id: S26-5863
+Recorded At: 2026-04-15T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 732
+----------
+Hold Id: S26-4456-HLD-R2
+Shift Id: S26-4456
+Recorded At: 2026-04-19T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1
+
+Record 733
+----------
+Hold Id: S26-1491-HLD-R2
+Shift Id: S26-1491
+Recorded At: 2026-04-21T15:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 0
+Issued Offer Hold Count: 0
+
+Record 734
+----------
+Hold Id: S26-7641-HLD-R2
+Shift Id: S26-7641
+Recorded At: 2026-04-14T16:00:00
+Revision: 2
+Hold Status: active
+Approved Group Hold Count: 1
+Issued Offer Hold Count: 1

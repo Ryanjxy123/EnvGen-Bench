@@ -18,16 +18,16 @@
       "origin": "benchmark-authored"
     },
     {
-      "path": "env/quality_notes.md",
+      "path": "env/quality_notes.docx",
       "role": "Natural-language operating guidance for close selection, effective-dated conversion, incident validity, severity weighting, action eligibility and ranking.",
-      "format": "md",
+      "format": "docx",
       "origin": "benchmark-authored"
     }
   ],
   "source_policy": {
     "agent_visible_files": [
       "env/",
-      "task.md"
+      "task.txt"
     ],
     "evaluator_only_files": [
       "metadata.json",

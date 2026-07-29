@@ -21,7 +21,7 @@
     {
       "id": "current_local_bulletin",
       "description": "Correct local precedence and current approved station rule.",
-      "source": "env/bio214_section02_operations_bulletins.md",
+      "source": "env/bio214_section02_operations_bulletins.docx",
       "importance": "critical",
       "expected_value": {
         "governing_entry": "OPS-27",
@@ -36,7 +36,7 @@
     {
       "id": "workflow_structure",
       "description": "Required process organization without inflating the main-step count.",
-      "source": "task.md",
+      "source": "task.txt",
       "importance": "major",
       "expected_value": {
         "sections": [
@@ -64,7 +64,7 @@
     {
       "id": "two_strip_well_map",
       "description": "Per-station strip assignment and complete per-strip triplicate pattern.",
-      "source": "env/bio214_section02_operations_bulletins.md + env/elisa_immuno_explorer_instruction_manual.pdf",
+      "source": "env/bio214_section02_operations_bulletins.docx + env/elisa_immuno_explorer_instruction_manual.pdf",
       "importance": "critical",
       "expected_value": "Two strips per station: Strip 1 serves A/B and Strip 2 serves C/D. Each strip is labeled as 3 positive controls, 3 negative controls, 3 wells for the first student, and 3 wells for the second student.",
       "must_appear_in_image": true,
@@ -73,7 +73,7 @@
     {
       "id": "sample_control_loading_and_tip_isolation",
       "description": "Initial 50 µl loading destinations and source-tip isolation.",
-      "source": "env/elisa_immuno_explorer_instruction_manual.pdf + env/bio214_section02_operations_bulletins.md",
+      "source": "env/elisa_immuno_explorer_instruction_manual.pdf + env/bio214_section02_operations_bulletins.docx",
       "importance": "critical",
       "expected_value": "On each strip load 50 µl into every assigned well: positive control to + wells, negative control to - wells, and each paired student sample to its three wells. Use a dedicated tip for each source liquid on that strip and never move a tip between strips.",
       "must_appear_in_image": true,
@@ -96,7 +96,7 @@
     {
       "id": "derived_time_and_wash_totals",
       "description": "Derived timed incubation and wash totals for the active two-strip station.",
-      "source": "env/elisa_immuno_explorer_instruction_manual.pdf + env/bio214_section02_operations_bulletins.md",
+      "source": "env/elisa_immuno_explorer_instruction_manual.pdf + env/bio214_section02_operations_bulletins.docx",
       "importance": "critical",
       "expected_value": {
         "timed_incubation_and_development": "20 minutes total",
@@ -109,7 +109,7 @@
     {
       "id": "derived_station_issue_volumes",
       "description": "Shared liquid issue quantities after the approved 10% reserve.",
-      "source": "env/bio214_section02_operations_bulletins.md + env/elisa_immuno_explorer_instruction_manual.pdf",
+      "source": "env/bio214_section02_operations_bulletins.docx + env/elisa_immuno_explorer_instruction_manual.pdf",
       "importance": "critical",
       "expected_value": {
         "positive_control": "330 µl per station",
@@ -125,7 +125,7 @@
     {
       "id": "derived_tip_count",
       "description": "Minimum fresh micropipette-tip count under source and strip isolation.",
-      "source": "env/bio214_section02_operations_bulletins.md",
+      "source": "env/bio214_section02_operations_bulletins.docx",
       "importance": "critical",
       "expected_value": {
         "tips_per_strip": 7,
@@ -150,7 +150,7 @@
     {
       "id": "complete_wash_cycle",
       "description": "One safe wash cycle and strip-specific wash-pipet rule.",
-      "source": "env/elisa_immuno_explorer_instruction_manual.pdf + env/bio214_section02_operations_bulletins.md",
+      "source": "env/elisa_immuno_explorer_instruction_manual.pdf + env/bio214_section02_operations_bulletins.docx",
       "importance": "critical",
       "expected_value": "For one strip, invert and gently tap over paper towels to drain, discard the wet top towel or move to a fresh zone, fill every well with wash buffer without splashing into neighboring wells, then invert and gently tap again. Reuse only the wash-buffer transfer pipet assigned to that strip; never use it for samples/reagents or the other strip.",
       "must_appear_in_image": true,
@@ -159,7 +159,7 @@
     {
       "id": "per_strip_control_gate",
       "description": "Independent all-replicate control validation and invalid-strip action.",
-      "source": "env/bio214_section02_operations_bulletins.md",
+      "source": "env/bio214_section02_operations_bulletins.docx",
       "importance": "critical",
       "expected_value": "Validate each strip independently. A strip is valid only when all three positive-control wells are blue and all three negative-control wells are colorless. If not, mark the strip invalid, do not interpret either student on it, and notify the instructor.",
       "must_appear_in_image": true,
@@ -168,7 +168,7 @@
     {
       "id": "triplicate_student_calls",
       "description": "Exact student replicate decision matrix on a valid strip.",
-      "source": "env/bio214_section02_operations_bulletins.md",
+      "source": "env/bio214_section02_operations_bulletins.docx",
       "importance": "critical",
       "expected_value": {
         "3_of_3_blue": "positive",
@@ -182,7 +182,7 @@
     {
       "id": "read_record_and_trace",
       "description": "Current read window and validity-gated reporting/tracing rule.",
-      "source": "env/bio214_section02_operations_bulletins.md",
+      "source": "env/bio214_section02_operations_bulletins.docx",
       "importance": "major",
       "expected_value": "Read and record from 5 through 10 minutes after substrate. Preserve partner order. Trace a possible link only from a valid strip with a definite positive student call; do not trace invalid or indeterminate results.",
       "must_appear_in_image": true,
@@ -191,7 +191,7 @@
     {
       "id": "safety_and_negative_selection",
       "description": "Current safety response plus exclusion of obsolete or out-of-scope material.",
-      "source": "env/bio214_section02_operations_bulletins.md + task.md + env/elisa_immuno_explorer_instruction_manual.pdf",
+      "source": "env/bio214_section02_operations_bulletins.docx + task.txt + env/elisa_immuno_explorer_instruction_manual.pdf",
       "importance": "major",
       "expected_value": {
         "required_safety": [

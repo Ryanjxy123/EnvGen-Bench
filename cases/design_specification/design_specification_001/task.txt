@@ -1,8 +1,8 @@
 增长团队将在 2026 年 6 月 24 日上线 FlowForge Sprint 的付费社交发布素材，需要制作一张用于 LinkedIn sponsored single image 的横版产品发布图。
 
-closed-env，禁止使用 web。只允许使用 task.md 和 env/ 中的文件。
+closed-env，禁止使用 web。只允许使用 task.txt 和 env/ 中的文件。
 
-先按原有流程解析 Campaign_Operations.xlsx、Launch_Activation_Register.xlsx、Creative_Asset_Register.xlsx、创意简报和品牌指南，得到创意冻结时的基础文案、Activation Package、实验内容和候选素材。随后必须继续执行 paid_media_publication_rules.md 中的发布交接流程；Activation 结果不是最终发布版本。
+先按原有流程解析 Campaign_Operations.xlsx、Launch_Activation_Register.xlsx、Creative_Asset_Register.xlsx、创意简报和品牌指南，得到创意冻结时的基础文案、Activation Package、实验内容和候选素材。随后必须继续执行 paid_media_publication_rules.docx 中的发布交接流程；Activation 结果不是最终发布版本。
 
 以 2026 年 6 月 23 日 18:10 UTC 为发布截止时间：
 

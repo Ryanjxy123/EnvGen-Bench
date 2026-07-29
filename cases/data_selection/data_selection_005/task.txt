@@ -1,6 +1,6 @@
 The Riverside Spring Fair team needs one public volunteer recruitment poster for the Sunday event. Work only from the files in `env/`; web use is not allowed.
 
-Resolve every versioned record at the selection cutoff in `assignment_rules.md`. For records sharing the same controlling timestamp, use the greatest revision. Ignore records published after the cutoff. Apply the schedule, opportunity, registration, hold, readiness, safety, attendance, and public-requirement rules exactly.
+Resolve every versioned record at the selection cutoff in `assignment_rules.docx`. For records sharing the same controlling timestamp, use the greatest revision. Ignore records published after the cutoff. Apply the schedule, opportunity, registration, hold, readiness, safety, attendance, and public-requirement rules exactly.
 
 Calculate Public openings after active group holds and issued-offer holds. Rank every qualifying opportunity, keep the ranked top 12, evaluate every valid five-opportunity portfolio, and choose the single winning portfolio under the stated objective and tie-breaks.
 
@@ -53,6 +53,6 @@ Add **Portfolio Summary** showing:
 
 For duration summaries, use hours as the primary unit. A mathematically exact minute equivalent may appear in parentheses.
 
-Add **Full-Day Pair** using the pair rule in `assignment_rules.md`; show both names, first check-in, final finish, combined shift hours, and combined Public openings.
+Add **Full-Day Pair** using the pair rule in `assignment_rules.docx`; show both names, first check-in, final finish, combined shift hours, and combined Public openings.
 
 Finish with a clear action line containing the registration URL, exact deadline, public contact, and rain-plan location. Do not give any non-selected opportunity featured, recommended, grouped, or paired status. Do not substitute raw openings, older records, or post-cutoff corrections.

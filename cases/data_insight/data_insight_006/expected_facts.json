@@ -5,7 +5,7 @@
     {
       "id": "energy_scope_basis",
       "description": "Correct review and baseline cycles plus final-row protocol.",
-      "source": "env/campus_energy_register.csv + env/facility_profiles.csv + env/meter_registry.csv + env/meter_calibration.csv + env/demand_thresholds.csv + env/campus_energy_rules.json + env/energy_review_protocol.md",
+      "source": "env/campus_energy_register.csv + env/facility_profiles.csv + env/meter_registry.csv + env/meter_calibration.csv + env/demand_thresholds.csv + env/campus_energy_rules.txt + env/energy_review_protocol.docx",
       "importance": "critical",
       "canonical_answer": "October 2026 / OCT-2026 analysis against BASELINE-2026; retain the latest eligible posted, approved, operational interval-meter revision that has an active meter mapping, an in-scope active facility profile, and an approved FY2026-R2 calibration valid on the reading date.",
       "semantic_acceptance": "Accept only semantically equivalent wording that preserves the required entity-value associations, ordering, units, signs, and stated rounding tolerance.",
@@ -15,7 +15,7 @@
     {
       "id": "energy_review_coverage",
       "description": "Post-filter coverage and rejection audit.",
-      "source": "env/campus_energy_register.csv + env/facility_profiles.csv + env/meter_registry.csv + env/meter_calibration.csv + env/demand_thresholds.csv + env/campus_energy_rules.json + env/energy_review_protocol.md",
+      "source": "env/campus_energy_register.csv + env/facility_profiles.csv + env/meter_registry.csv + env/meter_calibration.csv + env/demand_thresholds.csv + env/campus_energy_rules.txt + env/energy_review_protocol.docx",
       "importance": "critical",
       "canonical_answer": "22 included facilities, 30 contributing meters, 150 retained October meter-period rows, and 54 rejected OCT-2026 candidate rows.",
       "semantic_acceptance": "Accept only semantically equivalent wording that preserves the required entity-value associations, ordering, units, signs, and stated rounding tolerance.",
@@ -25,7 +25,7 @@
     {
       "id": "energy_total_and_baseline_change",
       "description": "Adjusted October total, five-week baseline-equivalent, and campus change.",
-      "source": "env/campus_energy_register.csv + env/facility_profiles.csv + env/meter_registry.csv + env/meter_calibration.csv + env/demand_thresholds.csv + env/campus_energy_rules.json + env/energy_review_protocol.md",
+      "source": "env/campus_energy_register.csv + env/facility_profiles.csv + env/meter_registry.csv + env/meter_calibration.csv + env/demand_thresholds.csv + env/campus_energy_rules.txt + env/energy_review_protocol.docx",
       "importance": "critical",
       "canonical_answer": "349,178 adjusted kWh versus a 312,500 kWh five-week baseline-equivalent, an increase of 11.7%.",
       "semantic_acceptance": "Accept only semantically equivalent wording that preserves the required entity-value associations, ordering, units, signs, and stated rounding tolerance.",
@@ -35,7 +35,7 @@
     {
       "id": "energy_peak_period",
       "description": "Peak campus week and monthly share.",
-      "source": "env/campus_energy_register.csv + env/facility_profiles.csv + env/meter_registry.csv + env/meter_calibration.csv + env/demand_thresholds.csv + env/campus_energy_rules.json + env/energy_review_protocol.md",
+      "source": "env/campus_energy_register.csv + env/facility_profiles.csv + env/meter_registry.csv + env/meter_calibration.csv + env/demand_thresholds.csv + env/campus_energy_rules.txt + env/energy_review_protocol.docx",
       "importance": "critical",
       "canonical_answer": "2026-10-31 is the peak week at 78,914 adjusted kWh, representing 22.6% of October use.",
       "semantic_acceptance": "Accept only semantically equivalent wording that preserves the required entity-value associations, ordering, units, signs, and stated rounding tolerance.",
@@ -45,7 +45,7 @@
     {
       "id": "energy_top_three_facilities",
       "description": "Top three facilities by adjusted October use.",
-      "source": "env/campus_energy_register.csv + env/facility_profiles.csv + env/meter_registry.csv + env/meter_calibration.csv + env/demand_thresholds.csv + env/campus_energy_rules.json + env/energy_review_protocol.md",
+      "source": "env/campus_energy_register.csv + env/facility_profiles.csv + env/meter_registry.csv + env/meter_calibration.csv + env/demand_thresholds.csv + env/campus_energy_rules.txt + env/energy_review_protocol.docx",
       "importance": "critical",
       "canonical_answer": "Research Computing Lab 25,545 kWh; Whitaker Science Hall 24,780 kWh; Data Sciences Center 24,480 kWh, in that order.",
       "semantic_acceptance": "Accept only semantically equivalent wording that preserves the required entity-value associations, ordering, units, signs, and stated rounding tolerance.",
@@ -55,7 +55,7 @@
     {
       "id": "energy_top_three_shares",
       "description": "Individual and combined shares for the top three.",
-      "source": "env/campus_energy_register.csv + env/facility_profiles.csv + env/meter_registry.csv + env/meter_calibration.csv + env/demand_thresholds.csv + env/campus_energy_rules.json + env/energy_review_protocol.md",
+      "source": "env/campus_energy_register.csv + env/facility_profiles.csv + env/meter_registry.csv + env/meter_calibration.csv + env/demand_thresholds.csv + env/campus_energy_rules.txt + env/energy_review_protocol.docx",
       "importance": "major",
       "canonical_answer": "Research Computing Lab 7.3%; Whitaker Science Hall 7.1%; Data Sciences Center 7.0%; combined 21.4%.",
       "semantic_acceptance": "Accept only semantically equivalent wording that preserves the required entity-value associations, ordering, units, signs, and stated rounding tolerance.",
@@ -65,7 +65,7 @@
     {
       "id": "energy_leading_area",
       "description": "Leading campus area by adjusted October use.",
-      "source": "env/campus_energy_register.csv + env/facility_profiles.csv + env/meter_registry.csv + env/meter_calibration.csv + env/demand_thresholds.csv + env/campus_energy_rules.json + env/energy_review_protocol.md",
+      "source": "env/campus_energy_register.csv + env/facility_profiles.csv + env/meter_registry.csv + env/meter_calibration.csv + env/demand_thresholds.csv + env/campus_energy_rules.txt + env/energy_review_protocol.docx",
       "importance": "major",
       "canonical_answer": "Labs leads at 123,385 adjusted kWh, 35.3% of campus October use.",
       "semantic_acceptance": "Accept only semantically equivalent wording that preserves the required entity-value associations, ordering, units, signs, and stated rounding tolerance.",
@@ -75,7 +75,7 @@
     {
       "id": "energy_intensity_top_two",
       "description": "Two highest eligible normalized intensities.",
-      "source": "env/campus_energy_register.csv + env/facility_profiles.csv + env/meter_registry.csv + env/meter_calibration.csv + env/demand_thresholds.csv + env/campus_energy_rules.json + env/energy_review_protocol.md",
+      "source": "env/campus_energy_register.csv + env/facility_profiles.csv + env/meter_registry.csv + env/meter_calibration.csv + env/demand_thresholds.csv + env/campus_energy_rules.txt + env/energy_review_protocol.docx",
       "importance": "critical",
       "canonical_answer": "Research Computing Lab 1,216.4 and Network Operations Center 933.3 kWh per 1,000 occupied square feet.",
       "semantic_acceptance": "Accept only semantically equivalent wording that preserves the required entity-value associations, ordering, units, signs, and stated rounding tolerance.",
@@ -85,7 +85,7 @@
     {
       "id": "energy_demand_watch_set",
       "description": "Exact demand-watch facility set.",
-      "source": "env/campus_energy_register.csv + env/facility_profiles.csv + env/meter_registry.csv + env/meter_calibration.csv + env/demand_thresholds.csv + env/campus_energy_rules.json + env/energy_review_protocol.md",
+      "source": "env/campus_energy_register.csv + env/facility_profiles.csv + env/meter_registry.csv + env/meter_calibration.csv + env/demand_thresholds.csv + env/campus_energy_rules.txt + env/energy_review_protocol.docx",
       "importance": "critical",
       "canonical_answer": "Research Computing Lab, Central Plant, Data Sciences Center, Network Operations Center, and Whitaker Science Hall.",
       "semantic_acceptance": "Accept only semantically equivalent wording that preserves the required entity-value associations, ordering, units, signs, and stated rounding tolerance.",
@@ -95,7 +95,7 @@
     {
       "id": "energy_demand_watch_details",
       "description": "Demand, matched threshold, and exceedance for each watch facility.",
-      "source": "env/campus_energy_register.csv + env/facility_profiles.csv + env/meter_registry.csv + env/meter_calibration.csv + env/demand_thresholds.csv + env/campus_energy_rules.json + env/energy_review_protocol.md",
+      "source": "env/campus_energy_register.csv + env/facility_profiles.csv + env/meter_registry.csv + env/meter_calibration.csv + env/demand_thresholds.csv + env/campus_energy_rules.txt + env/energy_review_protocol.docx",
       "importance": "critical",
       "canonical_answer": "Research Computing Lab 748.6 kW vs 650.0 (+15.2%); Central Plant 731.8 vs 690.0 (+6.1%); Data Sciences Center 712.4 vs 660.0 (+7.9%); Network Operations Center 624.9 vs 560.0 (+11.6%); Whitaker Science Hall 563.5 vs 540.0 (+4.4%).",
       "semantic_acceptance": "Accept only semantically equivalent wording that preserves the required entity-value associations, ordering, units, signs, and stated rounding tolerance.",
@@ -105,7 +105,7 @@
     {
       "id": "energy_increase_leaders",
       "description": "Two strongest baseline increases.",
-      "source": "env/campus_energy_register.csv + env/facility_profiles.csv + env/meter_registry.csv + env/meter_calibration.csv + env/demand_thresholds.csv + env/campus_energy_rules.json + env/energy_review_protocol.md",
+      "source": "env/campus_energy_register.csv + env/facility_profiles.csv + env/meter_registry.csv + env/meter_calibration.csv + env/demand_thresholds.csv + env/campus_energy_rules.txt + env/energy_review_protocol.docx",
       "importance": "critical",
       "canonical_answer": "Data Sciences Center +36.0%; Research Computing Lab +31.0%.",
       "semantic_acceptance": "Accept only semantically equivalent wording that preserves the required entity-value associations, ordering, units, signs, and stated rounding tolerance.",
@@ -115,7 +115,7 @@
     {
       "id": "energy_decrease_leaders",
       "description": "Two largest baseline decreases.",
-      "source": "env/campus_energy_register.csv + env/facility_profiles.csv + env/meter_registry.csv + env/meter_calibration.csv + env/demand_thresholds.csv + env/campus_energy_rules.json + env/energy_review_protocol.md",
+      "source": "env/campus_energy_register.csv + env/facility_profiles.csv + env/meter_registry.csv + env/meter_calibration.csv + env/demand_thresholds.csv + env/campus_energy_rules.txt + env/energy_review_protocol.docx",
       "importance": "major",
       "canonical_answer": "Performing Arts Annex -12.0%; Campus Bookstore -7.0%.",
       "semantic_acceptance": "Accept only semantically equivalent wording that preserves the required entity-value associations, ordering, units, signs, and stated rounding tolerance.",
@@ -125,7 +125,7 @@
     {
       "id": "energy_method_consistency",
       "description": "Correct multi-meter, demand, baseline, and intensity treatment.",
-      "source": "env/campus_energy_register.csv + env/facility_profiles.csv + env/meter_registry.csv + env/meter_calibration.csv + env/demand_thresholds.csv + env/campus_energy_rules.json + env/energy_review_protocol.md",
+      "source": "env/campus_energy_register.csv + env/facility_profiles.csv + env/meter_registry.csv + env/meter_calibration.csv + env/demand_thresholds.csv + env/campus_energy_rules.txt + env/energy_review_protocol.docx",
       "importance": "major",
       "canonical_answer": "Sum adjusted meters by facility and week; use the maximum weekly facility demand for threshold comparison; compare October and baseline weekly averages; calculate intensity only for eligible facilities.",
       "semantic_acceptance": "Accept only semantically equivalent wording that preserves the required entity-value associations, ordering, units, signs, and stated rounding tolerance.",
@@ -135,7 +135,7 @@
     {
       "id": "energy_exclusion_audit",
       "description": "Non-final and out-of-scope data handling.",
-      "source": "env/campus_energy_register.csv + env/facility_profiles.csv + env/meter_registry.csv + env/meter_calibration.csv + env/demand_thresholds.csv + env/campus_energy_rules.json + env/energy_review_protocol.md",
+      "source": "env/campus_energy_register.csv + env/facility_profiles.csv + env/meter_registry.csv + env/meter_calibration.csv + env/demand_thresholds.csv + env/campus_energy_rules.txt + env/energy_review_protocol.docx",
       "importance": "major",
       "canonical_answer": "Earlier eligible revisions, pending/estimated/provisional/reference rows, retired mappings, invalid calibration rows, Alumni Conference Center, and Storage Annex are excluded from final metrics.",
       "semantic_acceptance": "Accept only semantically equivalent wording that preserves the required entity-value associations, ordering, units, signs, and stated rounding tolerance.",
@@ -143,5 +143,5 @@
       "evaluation_role": "major_required"
     }
   ],
-  "calculation_notes": "Apply env/energy_review_protocol.md exactly. The evaluator recomputes all values from the interleaved register, temporal meter mappings, facility profiles, valid FY2026-R2 calibration records, and composite demand thresholds. Display rounding: kWh whole numbers; demand, intensity, shares, and percentage changes to one decimal."
+  "calculation_notes": "Apply env/energy_review_protocol.docx exactly. The evaluator recomputes all values from the interleaved register, temporal meter mappings, facility profiles, valid FY2026-R2 calibration records, and composite demand thresholds. Display rounding: kWh whole numbers; demand, intensity, shares, and percentage changes to one decimal."
 }

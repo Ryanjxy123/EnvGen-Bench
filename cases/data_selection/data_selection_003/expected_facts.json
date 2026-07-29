@@ -5,7 +5,7 @@
     {
       "id": "announcement_identity",
       "description": "Exact promotion identity, service context, and offer condition.",
-      "source": "task.md + env/menu_rules.sql",
+      "source": "task.txt + env/menu_rules.sql",
       "importance": "critical",
       "expected_value": {
         "heading": "Nut-Free Quick Lunch Specials",

@@ -1,0 +1,7952 @@
+Attendance Metrics
+==================
+
+Record 1
+--------
+Metric Id: MET-00131
+Shift Id: S26-7968
+Period End: 2026-03-28
+Historical Show Rate: 0.61
+Late Cancel Rate: 0.09
+Visitor Impact Score: 47
+Coordinator Urgency: 76
+Recent Signup Velocity: 1.51
+Staffing Gap Score: 62
+Attendance Reliability Score: 69
+Signup Momentum Score: 95
+Revision: 1
+
+Record 2
+--------
+Metric Id: MET-00165
+Shift Id: S26-4891
+Period End: 2026-03-26
+Historical Show Rate: 0.91
+Late Cancel Rate: 0.19
+Visitor Impact Score: 88
+Coordinator Urgency: 52
+Recent Signup Velocity: 2.75
+Staffing Gap Score: 72
+Attendance Reliability Score: 76
+Signup Momentum Score: 85
+Revision: 1
+
+Record 3
+--------
+Metric Id: MET-00238
+Shift Id: S26-1947
+Period End: 2026-04-19
+Historical Show Rate: 0.69
+Late Cancel Rate: 0.17
+Visitor Impact Score: 60
+Coordinator Urgency: 63
+Recent Signup Velocity: 0.81
+Staffing Gap Score: 45
+Attendance Reliability Score: 62
+Signup Momentum Score: 52
+Revision: 1
+
+Record 4
+--------
+Metric Id: MET-00262
+Shift Id: S26-7915
+Period End: 2026-03-26
+Historical Show Rate: 0.7
+Late Cancel Rate: 0.04
+Visitor Impact Score: 88
+Coordinator Urgency: 79
+Recent Signup Velocity: 0.45
+Staffing Gap Score: 95
+Attendance Reliability Score: 79
+Signup Momentum Score: 82
+Revision: 1
+
+Record 5
+--------
+Metric Id: MET-00195
+Shift Id: S26-3532
+Period End: 2026-03-24
+Historical Show Rate: 0.85
+Late Cancel Rate: 0.24
+Visitor Impact Score: 53
+Coordinator Urgency: 98
+Recent Signup Velocity: 1.54
+Staffing Gap Score: 63
+Attendance Reliability Score: 64
+Signup Momentum Score: 85
+Revision: 1
+
+Record 6
+--------
+Metric Id: MET-00048
+Shift Id: S26-3714
+Period End: 2026-04-16
+Historical Show Rate: 0.61
+Late Cancel Rate: 0.23
+Visitor Impact Score: 46
+Coordinator Urgency: 56
+Recent Signup Velocity: 0.2
+Staffing Gap Score: 93
+Attendance Reliability Score: 79
+Signup Momentum Score: 94
+Revision: 1
+
+Record 7
+--------
+Metric Id: MET-00094
+Shift Id: S26-4516
+Period End: 2026-04-08
+Historical Show Rate: 0.86
+Late Cancel Rate: 0.21
+Visitor Impact Score: 96
+Coordinator Urgency: 46
+Recent Signup Velocity: 1.34
+Staffing Gap Score: 86
+Attendance Reliability Score: 60
+Signup Momentum Score: 62
+Revision: 1
+
+Record 8
+--------
+Metric Id: MET-00407
+Shift Id: S26-4932
+Period End: 2026-03-30
+Historical Show Rate: 0.63
+Late Cancel Rate: 0.18
+Visitor Impact Score: 92
+Coordinator Urgency: 63
+Recent Signup Velocity: 2.1
+Staffing Gap Score: 88
+Attendance Reliability Score: 85
+Signup Momentum Score: 71
+Revision: 1
+
+Record 9
+--------
+Metric Id: MET-00404
+Shift Id: S26-4464
+Period End: 2026-04-21
+Historical Show Rate: 0.88
+Late Cancel Rate: 0.04
+Visitor Impact Score: 67
+Coordinator Urgency: 89
+Recent Signup Velocity: 1.43
+Staffing Gap Score: 85
+Attendance Reliability Score: 56
+Signup Momentum Score: 56
+Revision: 1
+
+Record 10
+---------
+Metric Id: MET-00305
+Shift Id: S26-6097
+Period End: 2026-04-01
+Historical Show Rate: 0.7
+Late Cancel Rate: 0.1
+Visitor Impact Score: 60
+Coordinator Urgency: 66
+Recent Signup Velocity: 2.56
+Staffing Gap Score: 91
+Attendance Reliability Score: 64
+Signup Momentum Score: 78
+Revision: 1
+
+Record 11
+---------
+Metric Id: MET-00264
+Shift Id: S26-3097
+Period End: 2026-04-18
+Historical Show Rate: 0.65
+Late Cancel Rate: 0.19
+Visitor Impact Score: 84
+Coordinator Urgency: 53
+Recent Signup Velocity: 2.34
+Staffing Gap Score: 54
+Attendance Reliability Score: 58
+Signup Momentum Score: 53
+Revision: 1
+
+Record 12
+---------
+Metric Id: MET-00394
+Shift Id: S26-5259
+Period End: 2026-03-19
+Historical Show Rate: 0.86
+Late Cancel Rate: 0.15
+Visitor Impact Score: 83
+Coordinator Urgency: 79
+Recent Signup Velocity: 2.65
+Staffing Gap Score: 86
+Attendance Reliability Score: 74
+Signup Momentum Score: 64
+Revision: 1
+
+Record 13
+---------
+Metric Id: MET-00119
+Shift Id: S26-6148
+Period End: 2026-03-25
+Historical Show Rate: 0.79
+Late Cancel Rate: 0.22
+Visitor Impact Score: 61
+Coordinator Urgency: 55
+Recent Signup Velocity: 0.77
+Staffing Gap Score: 48
+Attendance Reliability Score: 94
+Signup Momentum Score: 85
+Revision: 1
+
+Record 14
+---------
+Metric Id: MET-00483
+Shift Id: S26-4996
+Period End: 2026-03-28
+Historical Show Rate: 0.62
+Late Cancel Rate: 0.06
+Visitor Impact Score: 88
+Coordinator Urgency: 75
+Recent Signup Velocity: 1.59
+Staffing Gap Score: 56
+Attendance Reliability Score: 79
+Signup Momentum Score: 58
+Revision: 1
+
+Record 15
+---------
+Metric Id: MET-00369
+Shift Id: S26-2720
+Period End: 2026-04-07
+Historical Show Rate: 0.7
+Late Cancel Rate: 0.1
+Visitor Impact Score: 73
+Coordinator Urgency: 61
+Recent Signup Velocity: 0.71
+Staffing Gap Score: 72
+Attendance Reliability Score: 91
+Signup Momentum Score: 96
+Revision: 1
+
+Record 16
+---------
+Metric Id: MET-00503
+Shift Id: S26-7721
+Period End: 2026-04-14
+Historical Show Rate: 0.63
+Late Cancel Rate: 0.23
+Visitor Impact Score: 55
+Coordinator Urgency: 70
+Recent Signup Velocity: 2.41
+Staffing Gap Score: 46
+Attendance Reliability Score: 58
+Signup Momentum Score: 96
+Revision: 1
+
+Record 17
+---------
+Metric Id: MET-00057
+Shift Id: S26-6613
+Period End: 2026-04-03
+Historical Show Rate: 0.82
+Late Cancel Rate: 0.16
+Visitor Impact Score: 83
+Coordinator Urgency: 48
+Recent Signup Velocity: 0.62
+Staffing Gap Score: 57
+Attendance Reliability Score: 64
+Signup Momentum Score: 62
+Revision: 1
+
+Record 18
+---------
+Metric Id: MET-00099
+Shift Id: S26-4850
+Period End: 2026-03-21
+Historical Show Rate: 0.93
+Late Cancel Rate: 0.08
+Visitor Impact Score: 51
+Coordinator Urgency: 55
+Recent Signup Velocity: 2.24
+Staffing Gap Score: 89
+Attendance Reliability Score: 70
+Signup Momentum Score: 86
+Revision: 1
+
+Record 19
+---------
+Metric Id: MET-00364
+Shift Id: S26-9044
+Period End: 2026-04-11
+Historical Show Rate: 0.6
+Late Cancel Rate: 0.15
+Visitor Impact Score: 50
+Coordinator Urgency: 79
+Recent Signup Velocity: 2.5
+Staffing Gap Score: 78
+Attendance Reliability Score: 83
+Signup Momentum Score: 73
+Revision: 1
+
+Record 20
+---------
+Metric Id: MET-00258
+Shift Id: S26-9024
+Period End: 2026-04-04
+Historical Show Rate: 0.8
+Late Cancel Rate: 0.14
+Visitor Impact Score: 82
+Coordinator Urgency: 83
+Recent Signup Velocity: 1.61
+Staffing Gap Score: 79
+Attendance Reliability Score: 90
+Signup Momentum Score: 92
+Revision: 1
+
+Record 21
+---------
+Metric Id: MET-00061
+Shift Id: S26-5317
+Period End: 2026-03-26
+Historical Show Rate: 0.83
+Late Cancel Rate: 0.06
+Visitor Impact Score: 83
+Coordinator Urgency: 67
+Recent Signup Velocity: 2.76
+Staffing Gap Score: 71
+Attendance Reliability Score: 82
+Signup Momentum Score: 62
+Revision: 1
+
+Record 22
+---------
+Metric Id: MET-00182
+Shift Id: S26-9530
+Period End: 2026-03-24
+Historical Show Rate: 0.63
+Late Cancel Rate: 0.12
+Visitor Impact Score: 57
+Coordinator Urgency: 57
+Recent Signup Velocity: 1.28
+Staffing Gap Score: 66
+Attendance Reliability Score: 56
+Signup Momentum Score: 66
+Revision: 1
+
+Record 23
+---------
+Metric Id: MET-00347
+Shift Id: S26-9190
+Period End: 2026-04-15
+Historical Show Rate: 0.92
+Late Cancel Rate: 0.05
+Visitor Impact Score: 94
+Coordinator Urgency: 90
+Recent Signup Velocity: 2.66
+Staffing Gap Score: 88
+Attendance Reliability Score: 96
+Signup Momentum Score: 64
+Revision: 1
+
+Record 24
+---------
+Metric Id: MET-00291
+Shift Id: S26-9075
+Period End: 2026-04-02
+Historical Show Rate: 0.79
+Late Cancel Rate: 0.26
+Visitor Impact Score: 87
+Coordinator Urgency: 82
+Recent Signup Velocity: 0.94
+Staffing Gap Score: 91
+Attendance Reliability Score: 70
+Signup Momentum Score: 91
+Revision: 1
+
+Record 25
+---------
+Metric Id: MET-00422
+Shift Id: S26-2872
+Period End: 2026-04-04
+Historical Show Rate: 0.63
+Late Cancel Rate: 0.14
+Visitor Impact Score: 57
+Coordinator Urgency: 97
+Recent Signup Velocity: 0.58
+Staffing Gap Score: 72
+Attendance Reliability Score: 59
+Signup Momentum Score: 78
+Revision: 1
+
+Record 26
+---------
+Metric Id: MET-00137
+Shift Id: S26-4695
+Period End: 2026-04-04
+Historical Show Rate: 0.56
+Late Cancel Rate: 0.04
+Visitor Impact Score: 52
+Coordinator Urgency: 62
+Recent Signup Velocity: 0.33
+Staffing Gap Score: 67
+Attendance Reliability Score: 89
+Signup Momentum Score: 53
+Revision: 1
+
+Record 27
+---------
+Metric Id: MET-00374
+Shift Id: S26-4110
+Period End: 2026-03-23
+Historical Show Rate: 0.86
+Late Cancel Rate: 0.23
+Visitor Impact Score: 48
+Coordinator Urgency: 66
+Recent Signup Velocity: 1.05
+Staffing Gap Score: 89
+Attendance Reliability Score: 84
+Signup Momentum Score: 90
+Revision: 1
+
+Record 28
+---------
+Metric Id: MET-00163
+Shift Id: S26-4124
+Period End: 2026-04-07
+Historical Show Rate: 0.63
+Late Cancel Rate: 0.2
+Visitor Impact Score: 61
+Coordinator Urgency: 79
+Recent Signup Velocity: 1.55
+Staffing Gap Score: 87
+Attendance Reliability Score: 68
+Signup Momentum Score: 96
+Revision: 1
+
+Record 29
+---------
+Metric Id: MET-00451
+Shift Id: S26-1988
+Period End: 2026-04-09
+Historical Show Rate: 0.95
+Late Cancel Rate: 0.12
+Visitor Impact Score: 50
+Coordinator Urgency: 67
+Recent Signup Velocity: 2.3
+Staffing Gap Score: 56
+Attendance Reliability Score: 60
+Signup Momentum Score: 66
+Revision: 1
+
+Record 30
+---------
+Metric Id: MET-00038
+Shift Id: S26-6138
+Period End: 2026-04-07
+Historical Show Rate: 0.83
+Late Cancel Rate: 0.13
+Visitor Impact Score: 49
+Coordinator Urgency: 96
+Recent Signup Velocity: 1.96
+Staffing Gap Score: 66
+Attendance Reliability Score: 87
+Signup Momentum Score: 63
+Revision: 1
+
+Record 31
+---------
+Metric Id: MET-00461
+Shift Id: S26-1663
+Period End: 2026-03-19
+Historical Show Rate: 0.93
+Late Cancel Rate: 0.26
+Visitor Impact Score: 95
+Coordinator Urgency: 90
+Recent Signup Velocity: 0.35
+Staffing Gap Score: 57
+Attendance Reliability Score: 78
+Signup Momentum Score: 58
+Revision: 1
+
+Record 32
+---------
+Metric Id: MET-00259
+Shift Id: S26-9024
+Period End: 2026-04-16
+Historical Show Rate: 0.62
+Late Cancel Rate: 0.18
+Visitor Impact Score: 83
+Coordinator Urgency: 96
+Recent Signup Velocity: 1.7
+Staffing Gap Score: 50
+Attendance Reliability Score: 84
+Signup Momentum Score: 86
+Revision: 1
+
+Record 33
+---------
+Metric Id: MET-00493
+Shift Id: S26-3961
+Period End: 2026-04-14
+Historical Show Rate: 0.65
+Late Cancel Rate: 0.07
+Visitor Impact Score: 85
+Coordinator Urgency: 70
+Recent Signup Velocity: 1.59
+Staffing Gap Score: 62
+Attendance Reliability Score: 75
+Signup Momentum Score: 52
+Revision: 1
+
+Record 34
+---------
+Metric Id: MET-00031
+Shift Id: S26-6035
+Period End: 2026-04-04
+Historical Show Rate: 0.72
+Late Cancel Rate: 0.26
+Visitor Impact Score: 59
+Coordinator Urgency: 85
+Recent Signup Velocity: 2.27
+Staffing Gap Score: 74
+Attendance Reliability Score: 89
+Signup Momentum Score: 80
+Revision: 1
+
+Record 35
+---------
+Metric Id: MET-00421
+Shift Id: S26-2872
+Period End: 2026-04-03
+Historical Show Rate: 0.76
+Late Cancel Rate: 0.1
+Visitor Impact Score: 76
+Coordinator Urgency: 60
+Recent Signup Velocity: 1.41
+Staffing Gap Score: 57
+Attendance Reliability Score: 45
+Signup Momentum Score: 72
+Revision: 1
+
+Record 36
+---------
+Metric Id: MET-00121
+Shift Id: S26-3989
+Period End: 2026-03-21
+Historical Show Rate: 0.92
+Late Cancel Rate: 0.07
+Visitor Impact Score: 78
+Coordinator Urgency: 75
+Recent Signup Velocity: 1.76
+Staffing Gap Score: 79
+Attendance Reliability Score: 56
+Signup Momentum Score: 69
+Revision: 1
+
+Record 37
+---------
+Metric Id: MET-00050
+Shift Id: S26-4167
+Period End: 2026-04-03
+Historical Show Rate: 0.95
+Late Cancel Rate: 0.24
+Visitor Impact Score: 67
+Coordinator Urgency: 67
+Recent Signup Velocity: 0.47
+Staffing Gap Score: 90
+Attendance Reliability Score: 66
+Signup Momentum Score: 77
+Revision: 1
+
+Record 38
+---------
+Metric Id: MET-00211
+Shift Id: S26-8765
+Period End: 2026-04-11
+Historical Show Rate: 0.89
+Late Cancel Rate: 0.2
+Visitor Impact Score: 73
+Coordinator Urgency: 57
+Recent Signup Velocity: 2.77
+Staffing Gap Score: 67
+Attendance Reliability Score: 66
+Signup Momentum Score: 64
+Revision: 1
+
+Record 39
+---------
+Metric Id: MET-00177
+Shift Id: S26-7793
+Period End: 2026-04-09
+Historical Show Rate: 0.89
+Late Cancel Rate: 0.11
+Visitor Impact Score: 77
+Coordinator Urgency: 60
+Recent Signup Velocity: 0.95
+Staffing Gap Score: 45
+Attendance Reliability Score: 62
+Signup Momentum Score: 87
+Revision: 1
+
+Record 40
+---------
+Metric Id: MET-00186
+Shift Id: S26-7987
+Period End: 2026-04-11
+Historical Show Rate: 0.74
+Late Cancel Rate: 0.19
+Visitor Impact Score: 79
+Coordinator Urgency: 97
+Recent Signup Velocity: 2.47
+Staffing Gap Score: 88
+Attendance Reliability Score: 88
+Signup Momentum Score: 57
+Revision: 1
+
+Record 41
+---------
+Metric Id: MET-00021
+Shift Id: S26-6720
+Period End: 2026-04-06
+Historical Show Rate: 0.63
+Late Cancel Rate: 0.12
+Visitor Impact Score: 45
+Coordinator Urgency: 90
+Recent Signup Velocity: 0.34
+Staffing Gap Score: 45
+Attendance Reliability Score: 85
+Signup Momentum Score: 60
+Revision: 1
+
+Record 42
+---------
+Metric Id: MET-00360
+Shift Id: S26-9833
+Period End: 2026-03-23
+Historical Show Rate: 0.91
+Late Cancel Rate: 0.09
+Visitor Impact Score: 97
+Coordinator Urgency: 49
+Recent Signup Velocity: 1.19
+Staffing Gap Score: 94
+Attendance Reliability Score: 84
+Signup Momentum Score: 66
+Revision: 1
+
+Record 43
+---------
+Metric Id: MET-00181
+Shift Id: S26-7476
+Period End: 2026-04-15
+Historical Show Rate: 0.81
+Late Cancel Rate: 0.07
+Visitor Impact Score: 84
+Coordinator Urgency: 80
+Recent Signup Velocity: 0.55
+Staffing Gap Score: 81
+Attendance Reliability Score: 76
+Signup Momentum Score: 86
+Revision: 1
+
+Record 44
+---------
+Metric Id: MET-00349
+Shift Id: S26-8762
+Period End: 2026-04-22
+Historical Show Rate: 0.9
+Late Cancel Rate: 0.18
+Visitor Impact Score: 51
+Coordinator Urgency: 91
+Recent Signup Velocity: 1.36
+Staffing Gap Score: 70
+Attendance Reliability Score: 85
+Signup Momentum Score: 86
+Revision: 1
+
+Record 45
+---------
+Metric Id: MET-00313
+Shift Id: S26-9747
+Period End: 2026-04-14
+Historical Show Rate: 0.62
+Late Cancel Rate: 0.22
+Visitor Impact Score: 66
+Coordinator Urgency: 47
+Recent Signup Velocity: 0.93
+Staffing Gap Score: 83
+Attendance Reliability Score: 51
+Signup Momentum Score: 72
+Revision: 1
+
+Record 46
+---------
+Metric Id: MET-00244
+Shift Id: S26-7058
+Period End: 2026-03-31
+Historical Show Rate: 0.6
+Late Cancel Rate: 0.27
+Visitor Impact Score: 59
+Coordinator Urgency: 57
+Recent Signup Velocity: 0.73
+Staffing Gap Score: 65
+Attendance Reliability Score: 71
+Signup Momentum Score: 51
+Revision: 1
+
+Record 47
+---------
+Metric Id: MET-00281
+Shift Id: S26-4405
+Period End: 2026-03-22
+Historical Show Rate: 0.88
+Late Cancel Rate: 0.08
+Visitor Impact Score: 69
+Coordinator Urgency: 97
+Recent Signup Velocity: 1.96
+Staffing Gap Score: 75
+Attendance Reliability Score: 96
+Signup Momentum Score: 41
+Revision: 1
+
+Record 48
+---------
+Metric Id: MET-00465
+Shift Id: S26-6390
+Period End: 2026-03-21
+Historical Show Rate: 0.89
+Late Cancel Rate: 0.23
+Visitor Impact Score: 71
+Coordinator Urgency: 81
+Recent Signup Velocity: 2.31
+Staffing Gap Score: 87
+Attendance Reliability Score: 89
+Signup Momentum Score: 40
+Revision: 1
+
+Record 49
+---------
+Metric Id: MET-00012
+Shift Id: S26-2520
+Period End: 2026-03-25
+Historical Show Rate: 0.65
+Late Cancel Rate: 0.23
+Visitor Impact Score: 98
+Coordinator Urgency: 95
+Recent Signup Velocity: 2.49
+Staffing Gap Score: 70
+Attendance Reliability Score: 93
+Signup Momentum Score: 71
+Revision: 1
+
+Record 50
+---------
+Metric Id: MET-00052
+Shift Id: S26-5502
+Period End: 2026-04-07
+Historical Show Rate: 0.81
+Late Cancel Rate: 0.04
+Visitor Impact Score: 91
+Coordinator Urgency: 80
+Recent Signup Velocity: 1.1
+Staffing Gap Score: 90
+Attendance Reliability Score: 95
+Signup Momentum Score: 57
+Revision: 1
+
+Record 51
+---------
+Metric Id: MET-00105
+Shift Id: S26-5659
+Period End: 2026-04-03
+Historical Show Rate: 0.65
+Late Cancel Rate: 0.21
+Visitor Impact Score: 70
+Coordinator Urgency: 52
+Recent Signup Velocity: 1.3
+Staffing Gap Score: 65
+Attendance Reliability Score: 59
+Signup Momentum Score: 52
+Revision: 1
+
+Record 52
+---------
+Metric Id: MET-00254
+Shift Id: S26-4296
+Period End: 2026-04-01
+Historical Show Rate: 0.58
+Late Cancel Rate: 0.13
+Visitor Impact Score: 72
+Coordinator Urgency: 95
+Recent Signup Velocity: 1.39
+Staffing Gap Score: 71
+Attendance Reliability Score: 89
+Signup Momentum Score: 42
+Revision: 1
+
+Record 53
+---------
+Metric Id: MET-00528
+Shift Id: S26-6948
+Period End: 2026-04-16
+Historical Show Rate: 0.92
+Late Cancel Rate: 0.22
+Visitor Impact Score: 98
+Coordinator Urgency: 87
+Recent Signup Velocity: 2.04
+Staffing Gap Score: 94
+Attendance Reliability Score: 85
+Signup Momentum Score: 67
+Revision: 1
+
+Record 54
+---------
+Metric Id: MET-00499
+Shift Id: S26-2620
+Period End: 2026-03-30
+Historical Show Rate: 0.84
+Late Cancel Rate: 0.08
+Visitor Impact Score: 69
+Coordinator Urgency: 60
+Recent Signup Velocity: 0.8
+Staffing Gap Score: 77
+Attendance Reliability Score: 91
+Signup Momentum Score: 44
+Revision: 1
+
+Record 55
+---------
+Metric Id: MET-00193
+Shift Id: S26-7641
+Period End: 2026-04-21
+Historical Show Rate: 0.83
+Late Cancel Rate: 0.07
+Visitor Impact Score: 71
+Coordinator Urgency: 71
+Recent Signup Velocity: 0.58
+Staffing Gap Score: 76
+Attendance Reliability Score: 86
+Signup Momentum Score: 70
+Revision: 1
+
+Record 56
+---------
+Metric Id: MET-00481
+Shift Id: S26-6985
+Period End: 2026-04-19
+Historical Show Rate: 0.81
+Late Cancel Rate: 0.27
+Visitor Impact Score: 75
+Coordinator Urgency: 84
+Recent Signup Velocity: 2.42
+Staffing Gap Score: 46
+Attendance Reliability Score: 55
+Signup Momentum Score: 62
+Revision: 1
+
+Record 57
+---------
+Metric Id: MET-00221
+Shift Id: S26-2446
+Period End: 2026-04-18
+Historical Show Rate: 0.65
+Late Cancel Rate: 0.27
+Visitor Impact Score: 49
+Coordinator Urgency: 45
+Recent Signup Velocity: 1.37
+Staffing Gap Score: 82
+Attendance Reliability Score: 85
+Signup Momentum Score: 80
+Revision: 1
+
+Record 58
+---------
+Metric Id: MET-00433
+Shift Id: S26-1752
+Period End: 2026-04-08
+Historical Show Rate: 0.94
+Late Cancel Rate: 0.23
+Visitor Impact Score: 95
+Coordinator Urgency: 61
+Recent Signup Velocity: 0.81
+Staffing Gap Score: 90
+Attendance Reliability Score: 48
+Signup Momentum Score: 64
+Revision: 1
+
+Record 59
+---------
+Metric Id: MET-00522
+Shift Id: S26-1805
+Period End: 2026-03-25
+Historical Show Rate: 0.77
+Late Cancel Rate: 0.18
+Visitor Impact Score: 80
+Coordinator Urgency: 61
+Recent Signup Velocity: 0.79
+Staffing Gap Score: 77
+Attendance Reliability Score: 87
+Signup Momentum Score: 95
+Revision: 1
+
+Record 60
+---------
+Metric Id: MET-00520
+Shift Id: S26-4096
+Period End: 2026-04-20
+Historical Show Rate: 0.55
+Late Cancel Rate: 0.25
+Visitor Impact Score: 45
+Coordinator Urgency: 49
+Recent Signup Velocity: 0.99
+Staffing Gap Score: 60
+Attendance Reliability Score: 63
+Signup Momentum Score: 75
+Revision: 1
+
+Record 61
+---------
+Metric Id: MET-00518
+Shift Id: S26-8913
+Period End: 2026-04-17
+Historical Show Rate: 0.92
+Late Cancel Rate: 0.28
+Visitor Impact Score: 76
+Coordinator Urgency: 62
+Recent Signup Velocity: 2.43
+Staffing Gap Score: 83
+Attendance Reliability Score: 59
+Signup Momentum Score: 94
+Revision: 1
+
+Record 62
+---------
+Metric Id: MET-00383
+Shift Id: S26-3369
+Period End: 2026-04-19
+Historical Show Rate: 0.6
+Late Cancel Rate: 0.07
+Visitor Impact Score: 77
+Coordinator Urgency: 59
+Recent Signup Velocity: 2.75
+Staffing Gap Score: 83
+Attendance Reliability Score: 92
+Signup Momentum Score: 64
+Revision: 1
+
+Record 63
+---------
+Metric Id: MET-00209
+Shift Id: S26-4578
+Period End: 2026-03-30
+Historical Show Rate: 0.71
+Late Cancel Rate: 0.06
+Visitor Impact Score: 57
+Coordinator Urgency: 68
+Recent Signup Velocity: 1.56
+Staffing Gap Score: 84
+Attendance Reliability Score: 58
+Signup Momentum Score: 51
+Revision: 1
+
+Record 64
+---------
+Metric Id: MET-00397
+Shift Id: S26-7334
+Period End: 2026-04-11
+Historical Show Rate: 0.69
+Late Cancel Rate: 0.05
+Visitor Impact Score: 79
+Coordinator Urgency: 60
+Recent Signup Velocity: 1.72
+Staffing Gap Score: 67
+Attendance Reliability Score: 53
+Signup Momentum Score: 56
+Revision: 1
+
+Record 65
+---------
+Metric Id: MET-00224
+Shift Id: S26-1950
+Period End: 2026-04-18
+Historical Show Rate: 0.92
+Late Cancel Rate: 0.06
+Visitor Impact Score: 80
+Coordinator Urgency: 77
+Recent Signup Velocity: 0.27
+Staffing Gap Score: 85
+Attendance Reliability Score: 91
+Signup Momentum Score: 82
+Revision: 1
+
+Record 66
+---------
+Metric Id: MET-00361
+Shift Id: S26-9833
+Period End: 2026-03-23
+Historical Show Rate: 0.8
+Late Cancel Rate: 0.18
+Visitor Impact Score: 74
+Coordinator Urgency: 60
+Recent Signup Velocity: 2.36
+Staffing Gap Score: 73
+Attendance Reliability Score: 70
+Signup Momentum Score: 47
+Revision: 1
+
+Record 67
+---------
+Metric Id: MET-00340
+Shift Id: S26-1409
+Period End: 2026-03-23
+Historical Show Rate: 0.72
+Late Cancel Rate: 0.12
+Visitor Impact Score: 63
+Coordinator Urgency: 49
+Recent Signup Velocity: 1.27
+Staffing Gap Score: 51
+Attendance Reliability Score: 54
+Signup Momentum Score: 51
+Revision: 1
+
+Record 68
+---------
+Metric Id: MET-00098
+Shift Id: S26-3536
+Period End: 2026-04-11
+Historical Show Rate: 0.82
+Late Cancel Rate: 0.23
+Visitor Impact Score: 53
+Coordinator Urgency: 89
+Recent Signup Velocity: 0.84
+Staffing Gap Score: 88
+Attendance Reliability Score: 85
+Signup Momentum Score: 43
+Revision: 1
+
+Record 69
+---------
+Metric Id: MET-00124
+Shift Id: S26-3411
+Period End: 2026-03-28
+Historical Show Rate: 0.56
+Late Cancel Rate: 0.1
+Visitor Impact Score: 90
+Coordinator Urgency: 97
+Recent Signup Velocity: 0.58
+Staffing Gap Score: 63
+Attendance Reliability Score: 69
+Signup Momentum Score: 69
+Revision: 1
+
+Record 70
+---------
+Metric Id: MET-00316
+Shift Id: S26-5486
+Period End: 2026-03-23
+Historical Show Rate: 0.55
+Late Cancel Rate: 0.17
+Visitor Impact Score: 61
+Coordinator Urgency: 78
+Recent Signup Velocity: 1.23
+Staffing Gap Score: 74
+Attendance Reliability Score: 82
+Signup Momentum Score: 77
+Revision: 1
+
+Record 71
+---------
+Metric Id: MET-00463
+Shift Id: S26-1311
+Period End: 2026-04-13
+Historical Show Rate: 0.68
+Late Cancel Rate: 0.28
+Visitor Impact Score: 85
+Coordinator Urgency: 59
+Recent Signup Velocity: 1.96
+Staffing Gap Score: 91
+Attendance Reliability Score: 84
+Signup Momentum Score: 91
+Revision: 1
+
+Record 72
+---------
+Metric Id: MET-00308
+Shift Id: S26-1588
+Period End: 2026-04-01
+Historical Show Rate: 0.86
+Late Cancel Rate: 0.11
+Visitor Impact Score: 54
+Coordinator Urgency: 62
+Recent Signup Velocity: 0.21
+Staffing Gap Score: 89
+Attendance Reliability Score: 52
+Signup Momentum Score: 89
+Revision: 1
+
+Record 73
+---------
+Metric Id: MET-00198
+Shift Id: S26-1397
+Period End: 2026-04-09
+Historical Show Rate: 0.96
+Late Cancel Rate: 0.07
+Visitor Impact Score: 66
+Coordinator Urgency: 98
+Recent Signup Velocity: 1.5
+Staffing Gap Score: 56
+Attendance Reliability Score: 52
+Signup Momentum Score: 56
+Revision: 1
+
+Record 74
+---------
+Metric Id: MET-00249
+Shift Id: S26-3253
+Period End: 2026-03-20
+Historical Show Rate: 0.63
+Late Cancel Rate: 0.17
+Visitor Impact Score: 80
+Coordinator Urgency: 97
+Recent Signup Velocity: 0.21
+Staffing Gap Score: 77
+Attendance Reliability Score: 48
+Signup Momentum Score: 49
+Revision: 1
+
+Record 75
+---------
+Metric Id: MET-00020
+Shift Id: S26-6720
+Period End: 2026-03-24
+Historical Show Rate: 0.77
+Late Cancel Rate: 0.18
+Visitor Impact Score: 68
+Coordinator Urgency: 72
+Recent Signup Velocity: 2.8
+Staffing Gap Score: 50
+Attendance Reliability Score: 48
+Signup Momentum Score: 90
+Revision: 1
+
+Record 76
+---------
+Metric Id: MET-00492
+Shift Id: S26-3961
+Period End: 2026-04-11
+Historical Show Rate: 0.69
+Late Cancel Rate: 0.16
+Visitor Impact Score: 50
+Coordinator Urgency: 67
+Recent Signup Velocity: 1.13
+Staffing Gap Score: 58
+Attendance Reliability Score: 88
+Signup Momentum Score: 40
+Revision: 1
+
+Record 77
+---------
+Metric Id: MET-00296
+Shift Id: S26-4599
+Period End: 2026-04-02
+Historical Show Rate: 0.77
+Late Cancel Rate: 0.11
+Visitor Impact Score: 78
+Coordinator Urgency: 85
+Recent Signup Velocity: 2.49
+Staffing Gap Score: 64
+Attendance Reliability Score: 85
+Signup Momentum Score: 47
+Revision: 1
+
+Record 78
+---------
+Metric Id: MET-00135
+Shift Id: S26-2833
+Period End: 2026-04-15
+Historical Show Rate: 0.93
+Late Cancel Rate: 0.05
+Visitor Impact Score: 75
+Coordinator Urgency: 67
+Recent Signup Velocity: 2.45
+Staffing Gap Score: 45
+Attendance Reliability Score: 62
+Signup Momentum Score: 84
+Revision: 1
+
+Record 79
+---------
+Metric Id: MET-00524
+Shift Id: S26-4335
+Period End: 2026-03-29
+Historical Show Rate: 0.73
+Late Cancel Rate: 0.27
+Visitor Impact Score: 52
+Coordinator Urgency: 65
+Recent Signup Velocity: 2.05
+Staffing Gap Score: 46
+Attendance Reliability Score: 89
+Signup Momentum Score: 85
+Revision: 1
+
+Record 80
+---------
+Metric Id: MET-00267
+Shift Id: S26-1154
+Period End: 2026-03-23
+Historical Show Rate: 0.87
+Late Cancel Rate: 0.14
+Visitor Impact Score: 97
+Coordinator Urgency: 80
+Recent Signup Velocity: 1.88
+Staffing Gap Score: 55
+Attendance Reliability Score: 96
+Signup Momentum Score: 58
+Revision: 1
+
+Record 81
+---------
+Metric Id: MET-00250
+Shift Id: S26-3253
+Period End: 2026-04-19
+Historical Show Rate: 0.63
+Late Cancel Rate: 0.09
+Visitor Impact Score: 61
+Coordinator Urgency: 75
+Recent Signup Velocity: 0.39
+Staffing Gap Score: 47
+Attendance Reliability Score: 45
+Signup Momentum Score: 80
+Revision: 1
+
+Record 82
+---------
+Metric Id: MET-00102
+Shift Id: S26-4168
+Period End: 2026-04-03
+Historical Show Rate: 0.88
+Late Cancel Rate: 0.22
+Visitor Impact Score: 63
+Coordinator Urgency: 69
+Recent Signup Velocity: 1.08
+Staffing Gap Score: 66
+Attendance Reliability Score: 45
+Signup Momentum Score: 78
+Revision: 1
+
+Record 83
+---------
+Metric Id: MET-00445
+Shift Id: S26-1776
+Period End: 2026-03-28
+Historical Show Rate: 0.87
+Late Cancel Rate: 0.21
+Visitor Impact Score: 74
+Coordinator Urgency: 63
+Recent Signup Velocity: 2.12
+Staffing Gap Score: 81
+Attendance Reliability Score: 85
+Signup Momentum Score: 79
+Revision: 1
+
+Record 84
+---------
+Metric Id: MET-00430
+Shift Id: S26-6219
+Period End: 2026-04-13
+Historical Show Rate: 0.72
+Late Cancel Rate: 0.18
+Visitor Impact Score: 56
+Coordinator Urgency: 89
+Recent Signup Velocity: 1.44
+Staffing Gap Score: 93
+Attendance Reliability Score: 88
+Signup Momentum Score: 84
+Revision: 1
+
+Record 85
+---------
+Metric Id: MET-00367
+Shift Id: S26-8024
+Period End: 2026-04-02
+Historical Show Rate: 0.73
+Late Cancel Rate: 0.07
+Visitor Impact Score: 57
+Coordinator Urgency: 54
+Recent Signup Velocity: 1.12
+Staffing Gap Score: 67
+Attendance Reliability Score: 51
+Signup Momentum Score: 71
+Revision: 1
+
+Record 86
+---------
+Metric Id: MET-00149
+Shift Id: S26-3063
+Period End: 2026-04-12
+Historical Show Rate: 0.61
+Late Cancel Rate: 0.11
+Visitor Impact Score: 83
+Coordinator Urgency: 81
+Recent Signup Velocity: 2.66
+Staffing Gap Score: 74
+Attendance Reliability Score: 54
+Signup Momentum Score: 94
+Revision: 1
+
+Record 87
+---------
+Metric Id: MET-00175
+Shift Id: S26-1074
+Period End: 2026-04-11
+Historical Show Rate: 0.95
+Late Cancel Rate: 0.28
+Visitor Impact Score: 83
+Coordinator Urgency: 59
+Recent Signup Velocity: 0.22
+Staffing Gap Score: 95
+Attendance Reliability Score: 74
+Signup Momentum Score: 58
+Revision: 1
+
+Record 88
+---------
+Metric Id: MET-00111
+Shift Id: S26-4201
+Period End: 2026-04-10
+Historical Show Rate: 0.93
+Late Cancel Rate: 0.04
+Visitor Impact Score: 79
+Coordinator Urgency: 76
+Recent Signup Velocity: 0.52
+Staffing Gap Score: 89
+Attendance Reliability Score: 82
+Signup Momentum Score: 70
+Revision: 1
+
+Record 89
+---------
+Metric Id: MET-00178
+Shift Id: S26-5605
+Period End: 2026-04-21
+Historical Show Rate: 0.62
+Late Cancel Rate: 0.27
+Visitor Impact Score: 50
+Coordinator Urgency: 62
+Recent Signup Velocity: 0.98
+Staffing Gap Score: 91
+Attendance Reliability Score: 56
+Signup Momentum Score: 61
+Revision: 1
+
+Record 90
+---------
+Metric Id: MET-00096
+Shift Id: S26-2725
+Period End: 2026-03-31
+Historical Show Rate: 0.58
+Late Cancel Rate: 0.2
+Visitor Impact Score: 90
+Coordinator Urgency: 78
+Recent Signup Velocity: 0.39
+Staffing Gap Score: 82
+Attendance Reliability Score: 62
+Signup Momentum Score: 91
+Revision: 1
+
+Record 91
+---------
+Metric Id: MET-00454
+Shift Id: S26-5024
+Period End: 2026-03-21
+Historical Show Rate: 0.71
+Late Cancel Rate: 0.23
+Visitor Impact Score: 86
+Coordinator Urgency: 63
+Recent Signup Velocity: 1.66
+Staffing Gap Score: 50
+Attendance Reliability Score: 72
+Signup Momentum Score: 62
+Revision: 1
+
+Record 92
+---------
+Metric Id: MET-00438
+Shift Id: S26-3215
+Period End: 2026-04-07
+Historical Show Rate: 0.67
+Late Cancel Rate: 0.11
+Visitor Impact Score: 83
+Coordinator Urgency: 49
+Recent Signup Velocity: 1.54
+Staffing Gap Score: 59
+Attendance Reliability Score: 84
+Signup Momentum Score: 82
+Revision: 1
+
+Record 93
+---------
+Metric Id: MET-00093
+Shift Id: S26-4516
+Period End: 2026-03-26
+Historical Show Rate: 0.84
+Late Cancel Rate: 0.21
+Visitor Impact Score: 91
+Coordinator Urgency: 71
+Recent Signup Velocity: 0.21
+Staffing Gap Score: 90
+Attendance Reliability Score: 55
+Signup Momentum Score: 76
+Revision: 1
+
+Record 94
+---------
+Metric Id: MET-00346
+Shift Id: S26-1303
+Period End: 2026-03-28
+Historical Show Rate: 0.68
+Late Cancel Rate: 0.19
+Visitor Impact Score: 52
+Coordinator Urgency: 92
+Recent Signup Velocity: 0.81
+Staffing Gap Score: 46
+Attendance Reliability Score: 65
+Signup Momentum Score: 68
+Revision: 1
+
+Record 95
+---------
+Metric Id: MET-00202
+Shift Id: S26-9695
+Period End: 2026-03-28
+Historical Show Rate: 0.82
+Late Cancel Rate: 0.18
+Visitor Impact Score: 77
+Coordinator Urgency: 73
+Recent Signup Velocity: 2.36
+Staffing Gap Score: 86
+Attendance Reliability Score: 55
+Signup Momentum Score: 83
+Revision: 1
+
+Record 96
+---------
+Metric Id: MET-00431
+Shift Id: S26-7042
+Period End: 2026-04-18
+Historical Show Rate: 0.75
+Late Cancel Rate: 0.04
+Visitor Impact Score: 67
+Coordinator Urgency: 59
+Recent Signup Velocity: 1.07
+Staffing Gap Score: 53
+Attendance Reliability Score: 81
+Signup Momentum Score: 66
+Revision: 1
+
+Record 97
+---------
+Metric Id: MET-00104
+Shift Id: S26-5992
+Period End: 2026-04-17
+Historical Show Rate: 0.79
+Late Cancel Rate: 0.2
+Visitor Impact Score: 80
+Coordinator Urgency: 53
+Recent Signup Velocity: 0.77
+Staffing Gap Score: 54
+Attendance Reliability Score: 70
+Signup Momentum Score: 54
+Revision: 1
+
+Record 98
+---------
+Metric Id: MET-00418
+Shift Id: S26-1690
+Period End: 2026-04-04
+Historical Show Rate: 0.95
+Late Cancel Rate: 0.21
+Visitor Impact Score: 95
+Coordinator Urgency: 90
+Recent Signup Velocity: 2.57
+Staffing Gap Score: 77
+Attendance Reliability Score: 74
+Signup Momentum Score: 58
+Revision: 1
+
+Record 99
+---------
+Metric Id: MET-00101
+Shift Id: S26-4168
+Period End: 2026-04-02
+Historical Show Rate: 0.59
+Late Cancel Rate: 0.18
+Visitor Impact Score: 97
+Coordinator Urgency: 52
+Recent Signup Velocity: 2.73
+Staffing Gap Score: 59
+Attendance Reliability Score: 57
+Signup Momentum Score: 63
+Revision: 1
+
+Record 100
+----------
+Metric Id: MET-00229
+Shift Id: S26-7572
+Period End: 2026-04-08
+Historical Show Rate: 0.7
+Late Cancel Rate: 0.12
+Visitor Impact Score: 84
+Coordinator Urgency: 48
+Recent Signup Velocity: 1.01
+Staffing Gap Score: 53
+Attendance Reliability Score: 62
+Signup Momentum Score: 81
+Revision: 1
+
+Record 101
+----------
+Metric Id: MET-00319
+Shift Id: S26-8798
+Period End: 2026-03-28
+Historical Show Rate: 0.92
+Late Cancel Rate: 0.05
+Visitor Impact Score: 66
+Coordinator Urgency: 52
+Recent Signup Velocity: 1.59
+Staffing Gap Score: 58
+Attendance Reliability Score: 56
+Signup Momentum Score: 43
+Revision: 1
+
+Record 102
+----------
+Metric Id: MET-00087
+Shift Id: S26-6932
+Period End: 2026-04-06
+Historical Show Rate: 0.86
+Late Cancel Rate: 0.16
+Visitor Impact Score: 70
+Coordinator Urgency: 93
+Recent Signup Velocity: 1.26
+Staffing Gap Score: 73
+Attendance Reliability Score: 95
+Signup Momentum Score: 79
+Revision: 1
+
+Record 103
+----------
+Metric Id: MET-00526
+Shift Id: S26-4466
+Period End: 2026-03-26
+Historical Show Rate: 0.65
+Late Cancel Rate: 0.2
+Visitor Impact Score: 87
+Coordinator Urgency: 60
+Recent Signup Velocity: 2.75
+Staffing Gap Score: 58
+Attendance Reliability Score: 46
+Signup Momentum Score: 81
+Revision: 1
+
+Record 104
+----------
+Metric Id: MET-00145
+Shift Id: S26-4150
+Period End: 2026-04-06
+Historical Show Rate: 0.66
+Late Cancel Rate: 0.1
+Visitor Impact Score: 78
+Coordinator Urgency: 86
+Recent Signup Velocity: 2.62
+Staffing Gap Score: 73
+Attendance Reliability Score: 83
+Signup Momentum Score: 78
+Revision: 1
+
+Record 105
+----------
+Metric Id: MET-00476
+Shift Id: S26-9001
+Period End: 2026-04-14
+Historical Show Rate: 0.75
+Late Cancel Rate: 0.05
+Visitor Impact Score: 67
+Coordinator Urgency: 65
+Recent Signup Velocity: 1.21
+Staffing Gap Score: 68
+Attendance Reliability Score: 81
+Signup Momentum Score: 83
+Revision: 1
+
+Record 106
+----------
+Metric Id: MET-00419
+Shift Id: S26-8490
+Period End: 2026-04-01
+Historical Show Rate: 0.76
+Late Cancel Rate: 0.08
+Visitor Impact Score: 87
+Coordinator Urgency: 73
+Recent Signup Velocity: 2.37
+Staffing Gap Score: 70
+Attendance Reliability Score: 64
+Signup Momentum Score: 65
+Revision: 1
+
+Record 107
+----------
+Metric Id: MET-00303
+Shift Id: S26-1126
+Period End: 2026-03-21
+Historical Show Rate: 0.66
+Late Cancel Rate: 0.19
+Visitor Impact Score: 96
+Coordinator Urgency: 49
+Recent Signup Velocity: 0.26
+Staffing Gap Score: 67
+Attendance Reliability Score: 56
+Signup Momentum Score: 55
+Revision: 1
+
+Record 108
+----------
+Metric Id: MET-00233
+Shift Id: S26-9759
+Period End: 2026-04-05
+Historical Show Rate: 0.69
+Late Cancel Rate: 0.12
+Visitor Impact Score: 70
+Coordinator Urgency: 71
+Recent Signup Velocity: 1.94
+Staffing Gap Score: 60
+Attendance Reliability Score: 58
+Signup Momentum Score: 63
+Revision: 1
+
+Record 109
+----------
+Metric Id: MET-00388
+Shift Id: S26-7083
+Period End: 2026-04-15
+Historical Show Rate: 0.72
+Late Cancel Rate: 0.14
+Visitor Impact Score: 93
+Coordinator Urgency: 55
+Recent Signup Velocity: 1.6
+Staffing Gap Score: 94
+Attendance Reliability Score: 66
+Signup Momentum Score: 58
+Revision: 1
+
+Record 110
+----------
+Metric Id: MET-00024
+Shift Id: S26-3693
+Period End: 2026-04-16
+Historical Show Rate: 0.61
+Late Cancel Rate: 0.18
+Visitor Impact Score: 84
+Coordinator Urgency: 80
+Recent Signup Velocity: 2.42
+Staffing Gap Score: 54
+Attendance Reliability Score: 60
+Signup Momentum Score: 55
+Revision: 1
+
+Record 111
+----------
+Metric Id: MET-00458
+Shift Id: S26-9315
+Period End: 2026-03-28
+Historical Show Rate: 0.9
+Late Cancel Rate: 0.16
+Visitor Impact Score: 82
+Coordinator Urgency: 88
+Recent Signup Velocity: 2.75
+Staffing Gap Score: 66
+Attendance Reliability Score: 76
+Signup Momentum Score: 80
+Revision: 1
+
+Record 112
+----------
+Metric Id: MET-00348
+Shift Id: S26-8762
+Period End: 2026-03-29
+Historical Show Rate: 0.78
+Late Cancel Rate: 0.16
+Visitor Impact Score: 49
+Coordinator Urgency: 55
+Recent Signup Velocity: 1.43
+Staffing Gap Score: 64
+Attendance Reliability Score: 47
+Signup Momentum Score: 73
+Revision: 1
+
+Record 113
+----------
+Metric Id: MET-00113
+Shift Id: S26-6459
+Period End: 2026-03-22
+Historical Show Rate: 0.67
+Late Cancel Rate: 0.09
+Visitor Impact Score: 46
+Coordinator Urgency: 89
+Recent Signup Velocity: 0.77
+Staffing Gap Score: 55
+Attendance Reliability Score: 69
+Signup Momentum Score: 69
+Revision: 1
+
+Record 114
+----------
+Metric Id: MET-00323
+Shift Id: S26-3045
+Period End: 2026-04-13
+Historical Show Rate: 0.95
+Late Cancel Rate: 0.21
+Visitor Impact Score: 64
+Coordinator Urgency: 84
+Recent Signup Velocity: 1.86
+Staffing Gap Score: 53
+Attendance Reliability Score: 66
+Signup Momentum Score: 60
+Revision: 1
+
+Record 115
+----------
+Metric Id: MET-00100
+Shift Id: S26-4850
+Period End: 2026-04-19
+Historical Show Rate: 0.92
+Late Cancel Rate: 0.13
+Visitor Impact Score: 76
+Coordinator Urgency: 84
+Recent Signup Velocity: 1.91
+Staffing Gap Score: 84
+Attendance Reliability Score: 89
+Signup Momentum Score: 71
+Revision: 1
+
+Record 116
+----------
+Metric Id: MET-00043
+Shift Id: S26-1456
+Period End: 2026-04-15
+Historical Show Rate: 0.82
+Late Cancel Rate: 0.25
+Visitor Impact Score: 96
+Coordinator Urgency: 72
+Recent Signup Velocity: 2.17
+Staffing Gap Score: 74
+Attendance Reliability Score: 81
+Signup Momentum Score: 61
+Revision: 1
+
+Record 117
+----------
+Metric Id: MET-00015
+Shift Id: S26-6632
+Period End: 2026-04-06
+Historical Show Rate: 0.66
+Late Cancel Rate: 0.27
+Visitor Impact Score: 65
+Coordinator Urgency: 60
+Recent Signup Velocity: 0.67
+Staffing Gap Score: 95
+Attendance Reliability Score: 90
+Signup Momentum Score: 43
+Revision: 1
+
+Record 118
+----------
+Metric Id: MET-00051
+Shift Id: S26-5502
+Period End: 2026-04-02
+Historical Show Rate: 0.55
+Late Cancel Rate: 0.14
+Visitor Impact Score: 58
+Coordinator Urgency: 82
+Recent Signup Velocity: 0.66
+Staffing Gap Score: 50
+Attendance Reliability Score: 83
+Signup Momentum Score: 44
+Revision: 1
+
+Record 119
+----------
+Metric Id: MET-00153
+Shift Id: S26-9381
+Period End: 2026-04-12
+Historical Show Rate: 0.76
+Late Cancel Rate: 0.23
+Visitor Impact Score: 59
+Coordinator Urgency: 69
+Recent Signup Velocity: 1.45
+Staffing Gap Score: 45
+Attendance Reliability Score: 91
+Signup Momentum Score: 95
+Revision: 1
+
+Record 120
+----------
+Metric Id: MET-00530
+Shift Id: S26-2422
+Period End: 2026-03-21
+Historical Show Rate: 0.68
+Late Cancel Rate: 0.24
+Visitor Impact Score: 94
+Coordinator Urgency: 92
+Recent Signup Velocity: 2.71
+Staffing Gap Score: 95
+Attendance Reliability Score: 61
+Signup Momentum Score: 42
+Revision: 1
+
+Record 121
+----------
+Metric Id: MET-00117
+Shift Id: S26-1447
+Period End: 2026-04-14
+Historical Show Rate: 0.57
+Late Cancel Rate: 0.08
+Visitor Impact Score: 51
+Coordinator Urgency: 90
+Recent Signup Velocity: 1.93
+Staffing Gap Score: 56
+Attendance Reliability Score: 60
+Signup Momentum Score: 91
+Revision: 1
+
+Record 122
+----------
+Metric Id: MET-00412
+Shift Id: S26-4518
+Period End: 2026-04-11
+Historical Show Rate: 0.89
+Late Cancel Rate: 0.26
+Visitor Impact Score: 63
+Coordinator Urgency: 75
+Recent Signup Velocity: 0.61
+Staffing Gap Score: 46
+Attendance Reliability Score: 90
+Signup Momentum Score: 66
+Revision: 1
+
+Record 123
+----------
+Metric Id: MET-00381
+Shift Id: S26-8680
+Period End: 2026-04-09
+Historical Show Rate: 0.95
+Late Cancel Rate: 0.05
+Visitor Impact Score: 70
+Coordinator Urgency: 73
+Recent Signup Velocity: 2.43
+Staffing Gap Score: 88
+Attendance Reliability Score: 77
+Signup Momentum Score: 75
+Revision: 1
+
+Record 124
+----------
+Metric Id: MET-00436
+Shift Id: S26-9045
+Period End: 2026-03-27
+Historical Show Rate: 0.7
+Late Cancel Rate: 0.2
+Visitor Impact Score: 68
+Coordinator Urgency: 46
+Recent Signup Velocity: 1.23
+Staffing Gap Score: 64
+Attendance Reliability Score: 88
+Signup Momentum Score: 90
+Revision: 1
+
+Record 125
+----------
+Metric Id: MET-00351
+Shift Id: S26-2989
+Period End: 2026-04-17
+Historical Show Rate: 0.68
+Late Cancel Rate: 0.2
+Visitor Impact Score: 45
+Coordinator Urgency: 65
+Recent Signup Velocity: 2.12
+Staffing Gap Score: 59
+Attendance Reliability Score: 94
+Signup Momentum Score: 58
+Revision: 1
+
+Record 126
+----------
+Metric Id: MET-00517
+Shift Id: S26-3612
+Period End: 2026-04-13
+Historical Show Rate: 0.89
+Late Cancel Rate: 0.11
+Visitor Impact Score: 69
+Coordinator Urgency: 72
+Recent Signup Velocity: 0.37
+Staffing Gap Score: 61
+Attendance Reliability Score: 77
+Signup Momentum Score: 51
+Revision: 1
+
+Record 127
+----------
+Metric Id: MET-00063
+Shift Id: S26-5089
+Period End: 2026-04-21
+Historical Show Rate: 0.7
+Late Cancel Rate: 0.08
+Visitor Impact Score: 63
+Coordinator Urgency: 73
+Recent Signup Velocity: 1.54
+Staffing Gap Score: 58
+Attendance Reliability Score: 68
+Signup Momentum Score: 59
+Revision: 1
+
+Record 128
+----------
+Metric Id: MET-00389
+Shift Id: S26-3402
+Period End: 2026-03-24
+Historical Show Rate: 0.91
+Late Cancel Rate: 0.21
+Visitor Impact Score: 48
+Coordinator Urgency: 71
+Recent Signup Velocity: 0.93
+Staffing Gap Score: 84
+Attendance Reliability Score: 69
+Signup Momentum Score: 53
+Revision: 1
+
+Record 129
+----------
+Metric Id: MET-00174
+Shift Id: S26-5698
+Period End: 2026-04-10
+Historical Show Rate: 0.93
+Late Cancel Rate: 0.18
+Visitor Impact Score: 67
+Coordinator Urgency: 54
+Recent Signup Velocity: 0.87
+Staffing Gap Score: 91
+Attendance Reliability Score: 89
+Signup Momentum Score: 40
+Revision: 1
+
+Record 130
+----------
+Metric Id: MET-00220
+Shift Id: S26-2446
+Period End: 2026-04-15
+Historical Show Rate: 0.74
+Late Cancel Rate: 0.21
+Visitor Impact Score: 85
+Coordinator Urgency: 91
+Recent Signup Velocity: 1.84
+Staffing Gap Score: 51
+Attendance Reliability Score: 90
+Signup Momentum Score: 86
+Revision: 1
+
+Record 131
+----------
+Metric Id: MET-00132
+Shift Id: S26-3638
+Period End: 2026-04-06
+Historical Show Rate: 0.57
+Late Cancel Rate: 0.22
+Visitor Impact Score: 62
+Coordinator Urgency: 49
+Recent Signup Velocity: 1.61
+Staffing Gap Score: 60
+Attendance Reliability Score: 56
+Signup Momentum Score: 63
+Revision: 1
+
+Record 132
+----------
+Metric Id: MET-00239
+Shift Id: S26-4077
+Period End: 2026-04-07
+Historical Show Rate: 0.85
+Late Cancel Rate: 0.27
+Visitor Impact Score: 50
+Coordinator Urgency: 48
+Recent Signup Velocity: 0.33
+Staffing Gap Score: 72
+Attendance Reliability Score: 56
+Signup Momentum Score: 45
+Revision: 1
+
+Record 133
+----------
+Metric Id: MET-00189
+Shift Id: S26-5628
+Period End: 2026-03-27
+Historical Show Rate: 0.79
+Late Cancel Rate: 0.11
+Visitor Impact Score: 67
+Coordinator Urgency: 88
+Recent Signup Velocity: 1.8
+Staffing Gap Score: 63
+Attendance Reliability Score: 94
+Signup Momentum Score: 87
+Revision: 1
+
+Record 134
+----------
+Metric Id: MET-00235
+Shift Id: S26-5351
+Period End: 2026-04-15
+Historical Show Rate: 0.73
+Late Cancel Rate: 0.05
+Visitor Impact Score: 63
+Coordinator Urgency: 60
+Recent Signup Velocity: 0.86
+Staffing Gap Score: 66
+Attendance Reliability Score: 57
+Signup Momentum Score: 41
+Revision: 1
+
+Record 135
+----------
+Metric Id: MET-00185
+Shift Id: S26-7987
+Period End: 2026-04-09
+Historical Show Rate: 0.67
+Late Cancel Rate: 0.17
+Visitor Impact Score: 51
+Coordinator Urgency: 77
+Recent Signup Velocity: 1.05
+Staffing Gap Score: 46
+Attendance Reliability Score: 69
+Signup Momentum Score: 85
+Revision: 1
+
+Record 136
+----------
+Metric Id: MET-00278
+Shift Id: S26-9925
+Period End: 2026-04-18
+Historical Show Rate: 0.62
+Late Cancel Rate: 0.06
+Visitor Impact Score: 56
+Coordinator Urgency: 63
+Recent Signup Velocity: 0.96
+Staffing Gap Score: 71
+Attendance Reliability Score: 53
+Signup Momentum Score: 60
+Revision: 1
+
+Record 137
+----------
+Metric Id: MET-00320
+Shift Id: S26-3773
+Period End: 2026-03-27
+Historical Show Rate: 0.96
+Late Cancel Rate: 0.21
+Visitor Impact Score: 92
+Coordinator Urgency: 54
+Recent Signup Velocity: 1.84
+Staffing Gap Score: 51
+Attendance Reliability Score: 92
+Signup Momentum Score: 75
+Revision: 1
+
+Record 138
+----------
+Metric Id: MET-00485
+Shift Id: S26-9677
+Period End: 2026-03-31
+Historical Show Rate: 0.8
+Late Cancel Rate: 0.11
+Visitor Impact Score: 77
+Coordinator Urgency: 79
+Recent Signup Velocity: 1.39
+Staffing Gap Score: 94
+Attendance Reliability Score: 90
+Signup Momentum Score: 84
+Revision: 1
+
+Record 139
+----------
+Metric Id: MET-00074
+Shift Id: S26-4817
+Period End: 2026-04-08
+Historical Show Rate: 0.83
+Late Cancel Rate: 0.25
+Visitor Impact Score: 86
+Coordinator Urgency: 65
+Recent Signup Velocity: 2.58
+Staffing Gap Score: 93
+Attendance Reliability Score: 62
+Signup Momentum Score: 86
+Revision: 1
+
+Record 140
+----------
+Metric Id: MET-00359
+Shift Id: S26-6092
+Period End: 2026-04-15
+Historical Show Rate: 0.55
+Late Cancel Rate: 0.04
+Visitor Impact Score: 84
+Coordinator Urgency: 52
+Recent Signup Velocity: 1.42
+Staffing Gap Score: 80
+Attendance Reliability Score: 68
+Signup Momentum Score: 73
+Revision: 1
+
+Record 141
+----------
+Metric Id: MET-00482
+Shift Id: S26-6985
+Period End: 2026-04-22
+Historical Show Rate: 0.7
+Late Cancel Rate: 0.25
+Visitor Impact Score: 79
+Coordinator Urgency: 65
+Recent Signup Velocity: 2.09
+Staffing Gap Score: 88
+Attendance Reliability Score: 65
+Signup Momentum Score: 45
+Revision: 1
+
+Record 142
+----------
+Metric Id: MET-00396
+Shift Id: S26-7334
+Period End: 2026-03-29
+Historical Show Rate: 0.68
+Late Cancel Rate: 0.25
+Visitor Impact Score: 79
+Coordinator Urgency: 59
+Recent Signup Velocity: 0.46
+Staffing Gap Score: 95
+Attendance Reliability Score: 93
+Signup Momentum Score: 90
+Revision: 1
+
+Record 143
+----------
+Metric Id: MET-00417
+Shift Id: S26-3220
+Period End: 2026-04-02
+Historical Show Rate: 0.79
+Late Cancel Rate: 0.07
+Visitor Impact Score: 45
+Coordinator Urgency: 59
+Recent Signup Velocity: 2.24
+Staffing Gap Score: 47
+Attendance Reliability Score: 52
+Signup Momentum Score: 79
+Revision: 1
+
+Record 144
+----------
+Metric Id: MET-00004
+Shift Id: S26-3517
+Period End: 2026-04-08
+Historical Show Rate: 0.63
+Late Cancel Rate: 0.21
+Visitor Impact Score: 85
+Coordinator Urgency: 93
+Recent Signup Velocity: 2.46
+Staffing Gap Score: 82
+Attendance Reliability Score: 91
+Signup Momentum Score: 77
+Revision: 1
+
+Record 145
+----------
+Metric Id: MET-00103
+Shift Id: S26-5992
+Period End: 2026-03-23
+Historical Show Rate: 0.64
+Late Cancel Rate: 0.05
+Visitor Impact Score: 80
+Coordinator Urgency: 78
+Recent Signup Velocity: 0.64
+Staffing Gap Score: 87
+Attendance Reliability Score: 63
+Signup Momentum Score: 68
+Revision: 1
+
+Record 146
+----------
+Metric Id: MET-00084
+Shift Id: S26-1058
+Period End: 2026-04-11
+Historical Show Rate: 0.92
+Late Cancel Rate: 0.12
+Visitor Impact Score: 77
+Coordinator Urgency: 72
+Recent Signup Velocity: 2.37
+Staffing Gap Score: 74
+Attendance Reliability Score: 85
+Signup Momentum Score: 75
+Revision: 1
+
+Record 147
+----------
+Metric Id: MET-00036
+Shift Id: S26-7182
+Period End: 2026-04-01
+Historical Show Rate: 0.72
+Late Cancel Rate: 0.19
+Visitor Impact Score: 93
+Coordinator Urgency: 53
+Recent Signup Velocity: 0.49
+Staffing Gap Score: 67
+Attendance Reliability Score: 80
+Signup Momentum Score: 93
+Revision: 1
+
+Record 148
+----------
+Metric Id: MET-00495
+Shift Id: S26-8803
+Period End: 2026-04-14
+Historical Show Rate: 0.85
+Late Cancel Rate: 0.08
+Visitor Impact Score: 73
+Coordinator Urgency: 75
+Recent Signup Velocity: 0.81
+Staffing Gap Score: 86
+Attendance Reliability Score: 68
+Signup Momentum Score: 87
+Revision: 1
+
+Record 149
+----------
+Metric Id: MET-00006
+Shift Id: S26-1885
+Period End: 2026-04-21
+Historical Show Rate: 0.88
+Late Cancel Rate: 0.14
+Visitor Impact Score: 92
+Coordinator Urgency: 72
+Recent Signup Velocity: 0.92
+Staffing Gap Score: 81
+Attendance Reliability Score: 84
+Signup Momentum Score: 53
+Revision: 1
+
+Record 150
+----------
+Metric Id: MET-00276
+Shift Id: S26-6070
+Period End: 2026-04-06
+Historical Show Rate: 0.6
+Late Cancel Rate: 0.2
+Visitor Impact Score: 80
+Coordinator Urgency: 65
+Recent Signup Velocity: 1.99
+Staffing Gap Score: 83
+Attendance Reliability Score: 50
+Signup Momentum Score: 93
+Revision: 1
+
+Record 151
+----------
+Metric Id: MET-00188
+Shift Id: S26-4786
+Period End: 2026-04-18
+Historical Show Rate: 0.72
+Late Cancel Rate: 0.11
+Visitor Impact Score: 89
+Coordinator Urgency: 53
+Recent Signup Velocity: 0.3
+Staffing Gap Score: 79
+Attendance Reliability Score: 55
+Signup Momentum Score: 52
+Revision: 1
+
+Record 152
+----------
+Metric Id: MET-00334
+Shift Id: S26-8785
+Period End: 2026-04-11
+Historical Show Rate: 0.57
+Late Cancel Rate: 0.21
+Visitor Impact Score: 78
+Coordinator Urgency: 69
+Recent Signup Velocity: 1.97
+Staffing Gap Score: 87
+Attendance Reliability Score: 51
+Signup Momentum Score: 62
+Revision: 1
+
+Record 153
+----------
+Metric Id: MET-00009
+Shift Id: S26-8764
+Period End: 2026-03-29
+Historical Show Rate: 0.86
+Late Cancel Rate: 0.21
+Visitor Impact Score: 45
+Coordinator Urgency: 56
+Recent Signup Velocity: 1.24
+Staffing Gap Score: 62
+Attendance Reliability Score: 63
+Signup Momentum Score: 46
+Revision: 1
+
+Record 154
+----------
+Metric Id: MET-00139
+Shift Id: S26-9611
+Period End: 2026-04-03
+Historical Show Rate: 0.61
+Late Cancel Rate: 0.24
+Visitor Impact Score: 79
+Coordinator Urgency: 56
+Recent Signup Velocity: 1.72
+Staffing Gap Score: 68
+Attendance Reliability Score: 77
+Signup Momentum Score: 88
+Revision: 1
+
+Record 155
+----------
+Metric Id: MET-00382
+Shift Id: S26-6788
+Period End: 2026-03-25
+Historical Show Rate: 0.72
+Late Cancel Rate: 0.19
+Visitor Impact Score: 46
+Coordinator Urgency: 81
+Recent Signup Velocity: 2.08
+Staffing Gap Score: 57
+Attendance Reliability Score: 57
+Signup Momentum Score: 93
+Revision: 1
+
+Record 156
+----------
+Metric Id: MET-00398
+Shift Id: S26-2248
+Period End: 2026-03-27
+Historical Show Rate: 0.89
+Late Cancel Rate: 0.09
+Visitor Impact Score: 72
+Coordinator Urgency: 54
+Recent Signup Velocity: 0.74
+Staffing Gap Score: 89
+Attendance Reliability Score: 48
+Signup Momentum Score: 88
+Revision: 1
+
+Record 157
+----------
+Metric Id: MET-00294
+Shift Id: S26-3475
+Period End: 2026-04-18
+Historical Show Rate: 0.76
+Late Cancel Rate: 0.17
+Visitor Impact Score: 62
+Coordinator Urgency: 62
+Recent Signup Velocity: 0.35
+Staffing Gap Score: 53
+Attendance Reliability Score: 90
+Signup Momentum Score: 79
+Revision: 1
+
+Record 158
+----------
+Metric Id: MET-00274
+Shift Id: S26-3645
+Period End: 2026-03-31
+Historical Show Rate: 0.63
+Late Cancel Rate: 0.22
+Visitor Impact Score: 60
+Coordinator Urgency: 98
+Recent Signup Velocity: 1.63
+Staffing Gap Score: 55
+Attendance Reliability Score: 51
+Signup Momentum Score: 84
+Revision: 1
+
+Record 159
+----------
+Metric Id: MET-00366
+Shift Id: S26-8068
+Period End: 2026-04-02
+Historical Show Rate: 0.85
+Late Cancel Rate: 0.08
+Visitor Impact Score: 86
+Coordinator Urgency: 49
+Recent Signup Velocity: 2.75
+Staffing Gap Score: 62
+Attendance Reliability Score: 94
+Signup Momentum Score: 81
+Revision: 1
+
+Record 160
+----------
+Metric Id: MET-00230
+Shift Id: S26-3607
+Period End: 2026-04-01
+Historical Show Rate: 0.81
+Late Cancel Rate: 0.14
+Visitor Impact Score: 63
+Coordinator Urgency: 96
+Recent Signup Velocity: 1.11
+Staffing Gap Score: 64
+Attendance Reliability Score: 68
+Signup Momentum Score: 80
+Revision: 1
+
+Record 161
+----------
+Metric Id: MET-00332
+Shift Id: S26-1246
+Period End: 2026-04-17
+Historical Show Rate: 0.65
+Late Cancel Rate: 0.15
+Visitor Impact Score: 81
+Coordinator Urgency: 70
+Recent Signup Velocity: 2.61
+Staffing Gap Score: 50
+Attendance Reliability Score: 49
+Signup Momentum Score: 84
+Revision: 1
+
+Record 162
+----------
+Metric Id: MET-00046
+Shift Id: S26-5053
+Period End: 2026-04-06
+Historical Show Rate: 0.61
+Late Cancel Rate: 0.18
+Visitor Impact Score: 45
+Coordinator Urgency: 98
+Recent Signup Velocity: 0.51
+Staffing Gap Score: 84
+Attendance Reliability Score: 93
+Signup Momentum Score: 77
+Revision: 1
+
+Record 163
+----------
+Metric Id: MET-00497
+Shift Id: S26-9208
+Period End: 2026-04-03
+Historical Show Rate: 0.65
+Late Cancel Rate: 0.08
+Visitor Impact Score: 57
+Coordinator Urgency: 97
+Recent Signup Velocity: 0.78
+Staffing Gap Score: 49
+Attendance Reliability Score: 45
+Signup Momentum Score: 80
+Revision: 1
+
+Record 164
+----------
+Metric Id: MET-00287
+Shift Id: S26-4797
+Period End: 2026-04-11
+Historical Show Rate: 0.58
+Late Cancel Rate: 0.16
+Visitor Impact Score: 69
+Coordinator Urgency: 86
+Recent Signup Velocity: 2.75
+Staffing Gap Score: 60
+Attendance Reliability Score: 93
+Signup Momentum Score: 51
+Revision: 1
+
+Record 165
+----------
+Metric Id: MET-00432
+Shift Id: S26-1752
+Period End: 2026-04-06
+Historical Show Rate: 0.62
+Late Cancel Rate: 0.2
+Visitor Impact Score: 87
+Coordinator Urgency: 58
+Recent Signup Velocity: 1.36
+Staffing Gap Score: 51
+Attendance Reliability Score: 54
+Signup Momentum Score: 56
+Revision: 1
+
+Record 166
+----------
+Metric Id: MET-00210
+Shift Id: S26-3144
+Period End: 2026-03-29
+Historical Show Rate: 0.6
+Late Cancel Rate: 0.21
+Visitor Impact Score: 81
+Coordinator Urgency: 47
+Recent Signup Velocity: 1.45
+Staffing Gap Score: 91
+Attendance Reliability Score: 64
+Signup Momentum Score: 92
+Revision: 1
+
+Record 167
+----------
+Metric Id: MET-00171
+Shift Id: S26-6170
+Period End: 2026-04-09
+Historical Show Rate: 0.85
+Late Cancel Rate: 0.13
+Visitor Impact Score: 65
+Coordinator Urgency: 56
+Recent Signup Velocity: 2.51
+Staffing Gap Score: 80
+Attendance Reliability Score: 61
+Signup Momentum Score: 68
+Revision: 1
+
+Record 168
+----------
+Metric Id: MET-00112
+Shift Id: S26-6250
+Period End: 2026-03-26
+Historical Show Rate: 0.91
+Late Cancel Rate: 0.14
+Visitor Impact Score: 53
+Coordinator Urgency: 51
+Recent Signup Velocity: 0.39
+Staffing Gap Score: 88
+Attendance Reliability Score: 60
+Signup Momentum Score: 40
+Revision: 1
+
+Record 169
+----------
+Metric Id: MET-00116
+Shift Id: S26-1447
+Period End: 2026-04-14
+Historical Show Rate: 0.91
+Late Cancel Rate: 0.22
+Visitor Impact Score: 60
+Coordinator Urgency: 46
+Recent Signup Velocity: 2.46
+Staffing Gap Score: 63
+Attendance Reliability Score: 91
+Signup Momentum Score: 49
+Revision: 1
+
+Record 170
+----------
+Metric Id: MET-00154
+Shift Id: S26-3647
+Period End: 2026-03-23
+Historical Show Rate: 0.84
+Late Cancel Rate: 0.17
+Visitor Impact Score: 97
+Coordinator Urgency: 55
+Recent Signup Velocity: 2.0
+Staffing Gap Score: 84
+Attendance Reliability Score: 74
+Signup Momentum Score: 93
+Revision: 1
+
+Record 171
+----------
+Metric Id: MET-00213
+Shift Id: S26-2628
+Period End: 2026-04-11
+Historical Show Rate: 0.62
+Late Cancel Rate: 0.25
+Visitor Impact Score: 54
+Coordinator Urgency: 65
+Recent Signup Velocity: 2.3
+Staffing Gap Score: 81
+Attendance Reliability Score: 79
+Signup Momentum Score: 68
+Revision: 1
+
+Record 172
+----------
+Metric Id: MET-00507
+Shift Id: S26-1512
+Period End: 2026-04-10
+Historical Show Rate: 0.61
+Late Cancel Rate: 0.07
+Visitor Impact Score: 45
+Coordinator Urgency: 68
+Recent Signup Velocity: 0.31
+Staffing Gap Score: 59
+Attendance Reliability Score: 94
+Signup Momentum Score: 40
+Revision: 1
+
+Record 173
+----------
+Metric Id: MET-00427
+Shift Id: S26-3213
+Period End: 2026-03-20
+Historical Show Rate: 0.72
+Late Cancel Rate: 0.2
+Visitor Impact Score: 63
+Coordinator Urgency: 45
+Recent Signup Velocity: 2.27
+Staffing Gap Score: 53
+Attendance Reliability Score: 86
+Signup Momentum Score: 67
+Revision: 1
+
+Record 174
+----------
+Metric Id: MET-00042
+Shift Id: S26-1232
+Period End: 2026-04-02
+Historical Show Rate: 0.93
+Late Cancel Rate: 0.11
+Visitor Impact Score: 48
+Coordinator Urgency: 71
+Recent Signup Velocity: 0.43
+Staffing Gap Score: 56
+Attendance Reliability Score: 76
+Signup Momentum Score: 61
+Revision: 1
+
+Record 175
+----------
+Metric Id: MET-00410
+Shift Id: S26-6692
+Period End: 2026-04-01
+Historical Show Rate: 0.56
+Late Cancel Rate: 0.24
+Visitor Impact Score: 91
+Coordinator Urgency: 81
+Recent Signup Velocity: 1.33
+Staffing Gap Score: 61
+Attendance Reliability Score: 74
+Signup Momentum Score: 67
+Revision: 1
+
+Record 176
+----------
+Metric Id: MET-00225
+Shift Id: S26-8247
+Period End: 2026-04-14
+Historical Show Rate: 0.85
+Late Cancel Rate: 0.2
+Visitor Impact Score: 56
+Coordinator Urgency: 95
+Recent Signup Velocity: 2.23
+Staffing Gap Score: 70
+Attendance Reliability Score: 95
+Signup Momentum Score: 92
+Revision: 1
+
+Record 177
+----------
+Metric Id: MET-00279
+Shift Id: S26-9510
+Period End: 2026-03-23
+Historical Show Rate: 0.57
+Late Cancel Rate: 0.12
+Visitor Impact Score: 63
+Coordinator Urgency: 79
+Recent Signup Velocity: 0.48
+Staffing Gap Score: 83
+Attendance Reliability Score: 92
+Signup Momentum Score: 85
+Revision: 1
+
+Record 178
+----------
+Metric Id: MET-00077
+Shift Id: S26-7672
+Period End: 2026-03-27
+Historical Show Rate: 0.67
+Late Cancel Rate: 0.11
+Visitor Impact Score: 96
+Coordinator Urgency: 87
+Recent Signup Velocity: 2.74
+Staffing Gap Score: 78
+Attendance Reliability Score: 52
+Signup Momentum Score: 87
+Revision: 1
+
+Record 179
+----------
+Metric Id: MET-00496
+Shift Id: S26-9191
+Period End: 2026-04-08
+Historical Show Rate: 0.94
+Late Cancel Rate: 0.17
+Visitor Impact Score: 67
+Coordinator Urgency: 59
+Recent Signup Velocity: 0.22
+Staffing Gap Score: 66
+Attendance Reliability Score: 83
+Signup Momentum Score: 73
+Revision: 1
+
+Record 180
+----------
+Metric Id: MET-00297
+Shift Id: S26-8554
+Period End: 2026-03-21
+Historical Show Rate: 0.93
+Late Cancel Rate: 0.07
+Visitor Impact Score: 57
+Coordinator Urgency: 86
+Recent Signup Velocity: 0.3
+Staffing Gap Score: 58
+Attendance Reliability Score: 61
+Signup Momentum Score: 74
+Revision: 1
+
+Record 181
+----------
+Metric Id: MET-00318
+Shift Id: S26-4754
+Period End: 2026-04-10
+Historical Show Rate: 0.79
+Late Cancel Rate: 0.14
+Visitor Impact Score: 65
+Coordinator Urgency: 80
+Recent Signup Velocity: 0.48
+Staffing Gap Score: 81
+Attendance Reliability Score: 56
+Signup Momentum Score: 46
+Revision: 1
+
+Record 182
+----------
+Metric Id: MET-00080
+Shift Id: S26-5393
+Period End: 2026-04-06
+Historical Show Rate: 0.6
+Late Cancel Rate: 0.06
+Visitor Impact Score: 90
+Coordinator Urgency: 66
+Recent Signup Velocity: 0.73
+Staffing Gap Score: 83
+Attendance Reliability Score: 94
+Signup Momentum Score: 78
+Revision: 1
+
+Record 183
+----------
+Metric Id: MET-00022
+Shift Id: S26-8406
+Period End: 2026-03-31
+Historical Show Rate: 0.81
+Late Cancel Rate: 0.04
+Visitor Impact Score: 45
+Coordinator Urgency: 53
+Recent Signup Velocity: 0.53
+Staffing Gap Score: 85
+Attendance Reliability Score: 90
+Signup Momentum Score: 86
+Revision: 1
+
+Record 184
+----------
+Metric Id: MET-00509
+Shift Id: S26-7241
+Period End: 2026-03-30
+Historical Show Rate: 0.84
+Late Cancel Rate: 0.13
+Visitor Impact Score: 46
+Coordinator Urgency: 69
+Recent Signup Velocity: 2.39
+Staffing Gap Score: 64
+Attendance Reliability Score: 66
+Signup Momentum Score: 59
+Revision: 1
+
+Record 185
+----------
+Metric Id: MET-00180
+Shift Id: S26-7476
+Period End: 2026-03-24
+Historical Show Rate: 0.87
+Late Cancel Rate: 0.04
+Visitor Impact Score: 87
+Coordinator Urgency: 53
+Recent Signup Velocity: 1.35
+Staffing Gap Score: 58
+Attendance Reliability Score: 57
+Signup Momentum Score: 71
+Revision: 1
+
+Record 186
+----------
+Metric Id: MET-00206
+Shift Id: S26-5012
+Period End: 2026-04-07
+Historical Show Rate: 0.75
+Late Cancel Rate: 0.14
+Visitor Impact Score: 72
+Coordinator Urgency: 81
+Recent Signup Velocity: 1.45
+Staffing Gap Score: 75
+Attendance Reliability Score: 83
+Signup Momentum Score: 81
+Revision: 1
+
+Record 187
+----------
+Metric Id: MET-00143
+Shift Id: S26-9821
+Period End: 2026-04-10
+Historical Show Rate: 0.79
+Late Cancel Rate: 0.13
+Visitor Impact Score: 67
+Coordinator Urgency: 82
+Recent Signup Velocity: 0.73
+Staffing Gap Score: 92
+Attendance Reliability Score: 51
+Signup Momentum Score: 45
+Revision: 1
+
+Record 188
+----------
+Metric Id: MET-00045
+Shift Id: S26-5053
+Period End: 2026-03-21
+Historical Show Rate: 0.58
+Late Cancel Rate: 0.16
+Visitor Impact Score: 47
+Coordinator Urgency: 50
+Recent Signup Velocity: 2.7
+Staffing Gap Score: 88
+Attendance Reliability Score: 90
+Signup Momentum Score: 92
+Revision: 1
+
+Record 189
+----------
+Metric Id: MET-00442
+Shift Id: S26-5066
+Period End: 2026-03-27
+Historical Show Rate: 0.89
+Late Cancel Rate: 0.12
+Visitor Impact Score: 71
+Coordinator Urgency: 49
+Recent Signup Velocity: 1.35
+Staffing Gap Score: 62
+Attendance Reliability Score: 74
+Signup Momentum Score: 71
+Revision: 1
+
+Record 190
+----------
+Metric Id: MET-00379
+Shift Id: S26-2515
+Period End: 2026-03-29
+Historical Show Rate: 0.94
+Late Cancel Rate: 0.12
+Visitor Impact Score: 92
+Coordinator Urgency: 56
+Recent Signup Velocity: 2.45
+Staffing Gap Score: 52
+Attendance Reliability Score: 95
+Signup Momentum Score: 69
+Revision: 1
+
+Record 191
+----------
+Metric Id: MET-00336
+Shift Id: S26-9425
+Period End: 2026-04-11
+Historical Show Rate: 0.81
+Late Cancel Rate: 0.15
+Visitor Impact Score: 83
+Coordinator Urgency: 96
+Recent Signup Velocity: 2.11
+Staffing Gap Score: 88
+Attendance Reliability Score: 92
+Signup Momentum Score: 56
+Revision: 1
+
+Record 192
+----------
+Metric Id: MET-00049
+Shift Id: S26-3814
+Period End: 2026-04-12
+Historical Show Rate: 0.55
+Late Cancel Rate: 0.25
+Visitor Impact Score: 64
+Coordinator Urgency: 77
+Recent Signup Velocity: 2.06
+Staffing Gap Score: 88
+Attendance Reliability Score: 46
+Signup Momentum Score: 62
+Revision: 1
+
+Record 193
+----------
+Metric Id: MET-00054
+Shift Id: S26-6227
+Period End: 2026-03-22
+Historical Show Rate: 0.77
+Late Cancel Rate: 0.16
+Visitor Impact Score: 94
+Coordinator Urgency: 79
+Recent Signup Velocity: 1.93
+Staffing Gap Score: 87
+Attendance Reliability Score: 67
+Signup Momentum Score: 77
+Revision: 1
+
+Record 194
+----------
+Metric Id: MET-00342
+Shift Id: S26-8535
+Period End: 2026-03-27
+Historical Show Rate: 0.6
+Late Cancel Rate: 0.07
+Visitor Impact Score: 61
+Coordinator Urgency: 66
+Recent Signup Velocity: 2.03
+Staffing Gap Score: 91
+Attendance Reliability Score: 48
+Signup Momentum Score: 75
+Revision: 1
+
+Record 195
+----------
+Metric Id: MET-00288
+Shift Id: S26-5300
+Period End: 2026-03-31
+Historical Show Rate: 0.68
+Late Cancel Rate: 0.2
+Visitor Impact Score: 53
+Coordinator Urgency: 97
+Recent Signup Velocity: 0.22
+Staffing Gap Score: 89
+Attendance Reliability Score: 67
+Signup Momentum Score: 74
+Revision: 1
+
+Record 196
+----------
+Metric Id: MET-00047
+Shift Id: S26-7485
+Period End: 2026-04-19
+Historical Show Rate: 0.91
+Late Cancel Rate: 0.21
+Visitor Impact Score: 76
+Coordinator Urgency: 45
+Recent Signup Velocity: 2.18
+Staffing Gap Score: 76
+Attendance Reliability Score: 69
+Signup Momentum Score: 95
+Revision: 1
+
+Record 197
+----------
+Metric Id: MET-00525
+Shift Id: S26-4466
+Period End: 2026-03-21
+Historical Show Rate: 0.56
+Late Cancel Rate: 0.05
+Visitor Impact Score: 66
+Coordinator Urgency: 64
+Recent Signup Velocity: 1.96
+Staffing Gap Score: 64
+Attendance Reliability Score: 64
+Signup Momentum Score: 87
+Revision: 1
+
+Record 198
+----------
+Metric Id: MET-00446
+Shift Id: S26-4196
+Period End: 2026-04-06
+Historical Show Rate: 0.73
+Late Cancel Rate: 0.18
+Visitor Impact Score: 89
+Coordinator Urgency: 78
+Recent Signup Velocity: 1.35
+Staffing Gap Score: 50
+Attendance Reliability Score: 56
+Signup Momentum Score: 79
+Revision: 1
+
+Record 199
+----------
+Metric Id: MET-00216
+Shift Id: S26-1977
+Period End: 2026-04-18
+Historical Show Rate: 0.77
+Late Cancel Rate: 0.19
+Visitor Impact Score: 50
+Coordinator Urgency: 56
+Recent Signup Velocity: 1.29
+Staffing Gap Score: 59
+Attendance Reliability Score: 89
+Signup Momentum Score: 81
+Revision: 1
+
+Record 200
+----------
+Metric Id: MET-00378
+Shift Id: S26-8373
+Period End: 2026-04-12
+Historical Show Rate: 0.71
+Late Cancel Rate: 0.2
+Visitor Impact Score: 72
+Coordinator Urgency: 98
+Recent Signup Velocity: 0.6
+Staffing Gap Score: 47
+Attendance Reliability Score: 95
+Signup Momentum Score: 49
+Revision: 1
+
+Record 201
+----------
+Metric Id: MET-00354
+Shift Id: S26-7882
+Period End: 2026-04-01
+Historical Show Rate: 0.71
+Late Cancel Rate: 0.21
+Visitor Impact Score: 60
+Coordinator Urgency: 78
+Recent Signup Velocity: 1.73
+Staffing Gap Score: 54
+Attendance Reliability Score: 55
+Signup Momentum Score: 89
+Revision: 1
+
+Record 202
+----------
+Metric Id: MET-00147
+Shift Id: S26-6478
+Period End: 2026-04-06
+Historical Show Rate: 0.58
+Late Cancel Rate: 0.26
+Visitor Impact Score: 47
+Coordinator Urgency: 89
+Recent Signup Velocity: 0.75
+Staffing Gap Score: 68
+Attendance Reliability Score: 76
+Signup Momentum Score: 72
+Revision: 1
+
+Record 203
+----------
+Metric Id: MET-00257
+Shift Id: S26-1615
+Period End: 2026-04-19
+Historical Show Rate: 0.58
+Late Cancel Rate: 0.18
+Visitor Impact Score: 91
+Coordinator Urgency: 80
+Recent Signup Velocity: 2.77
+Staffing Gap Score: 86
+Attendance Reliability Score: 92
+Signup Momentum Score: 73
+Revision: 1
+
+Record 204
+----------
+Metric Id: MET-00486
+Shift Id: S26-9153
+Period End: 2026-03-29
+Historical Show Rate: 0.69
+Late Cancel Rate: 0.27
+Visitor Impact Score: 97
+Coordinator Urgency: 63
+Recent Signup Velocity: 2.44
+Staffing Gap Score: 78
+Attendance Reliability Score: 67
+Signup Momentum Score: 60
+Revision: 1
+
+Record 205
+----------
+Metric Id: MET-00081
+Shift Id: S26-3365
+Period End: 2026-04-05
+Historical Show Rate: 0.89
+Late Cancel Rate: 0.24
+Visitor Impact Score: 61
+Coordinator Urgency: 68
+Recent Signup Velocity: 2.72
+Staffing Gap Score: 85
+Attendance Reliability Score: 49
+Signup Momentum Score: 70
+Revision: 1
+
+Record 206
+----------
+Metric Id: MET-00162
+Shift Id: S26-4124
+Period End: 2026-03-19
+Historical Show Rate: 0.93
+Late Cancel Rate: 0.2
+Visitor Impact Score: 94
+Coordinator Urgency: 90
+Recent Signup Velocity: 0.55
+Staffing Gap Score: 54
+Attendance Reliability Score: 60
+Signup Momentum Score: 60
+Revision: 1
+
+Record 207
+----------
+Metric Id: MET-00289
+Shift Id: S26-5300
+Period End: 2026-04-09
+Historical Show Rate: 0.75
+Late Cancel Rate: 0.03
+Visitor Impact Score: 82
+Coordinator Urgency: 64
+Recent Signup Velocity: 1.76
+Staffing Gap Score: 84
+Attendance Reliability Score: 62
+Signup Momentum Score: 92
+Revision: 1
+
+Record 208
+----------
+Metric Id: MET-00173
+Shift Id: S26-5698
+Period End: 2026-03-27
+Historical Show Rate: 0.62
+Late Cancel Rate: 0.04
+Visitor Impact Score: 57
+Coordinator Urgency: 78
+Recent Signup Velocity: 1.21
+Staffing Gap Score: 76
+Attendance Reliability Score: 62
+Signup Momentum Score: 91
+Revision: 1
+
+Record 209
+----------
+Metric Id: MET-00358
+Shift Id: S26-9548
+Period End: 2026-03-25
+Historical Show Rate: 0.94
+Late Cancel Rate: 0.15
+Visitor Impact Score: 68
+Coordinator Urgency: 79
+Recent Signup Velocity: 2.22
+Staffing Gap Score: 65
+Attendance Reliability Score: 46
+Signup Momentum Score: 85
+Revision: 1
+
+Record 210
+----------
+Metric Id: MET-00490
+Shift Id: S26-7316
+Period End: 2026-03-21
+Historical Show Rate: 0.92
+Late Cancel Rate: 0.16
+Visitor Impact Score: 70
+Coordinator Urgency: 57
+Recent Signup Velocity: 1.47
+Staffing Gap Score: 55
+Attendance Reliability Score: 69
+Signup Momentum Score: 43
+Revision: 1
+
+Record 211
+----------
+Metric Id: MET-00156
+Shift Id: S26-8835
+Period End: 2026-03-30
+Historical Show Rate: 0.75
+Late Cancel Rate: 0.15
+Visitor Impact Score: 53
+Coordinator Urgency: 46
+Recent Signup Velocity: 2.69
+Staffing Gap Score: 74
+Attendance Reliability Score: 74
+Signup Momentum Score: 51
+Revision: 1
+
+Record 212
+----------
+Metric Id: MET-00025
+Shift Id: S26-1341
+Period End: 2026-04-10
+Historical Show Rate: 0.79
+Late Cancel Rate: 0.07
+Visitor Impact Score: 93
+Coordinator Urgency: 67
+Recent Signup Velocity: 1.29
+Staffing Gap Score: 86
+Attendance Reliability Score: 61
+Signup Momentum Score: 85
+Revision: 1
+
+Record 213
+----------
+Metric Id: MET-00065
+Shift Id: S26-6377
+Period End: 2026-03-22
+Historical Show Rate: 0.64
+Late Cancel Rate: 0.21
+Visitor Impact Score: 96
+Coordinator Urgency: 76
+Recent Signup Velocity: 2.45
+Staffing Gap Score: 56
+Attendance Reliability Score: 53
+Signup Momentum Score: 74
+Revision: 1
+
+Record 214
+----------
+Metric Id: MET-00265
+Shift Id: S26-5290
+Period End: 2026-04-03
+Historical Show Rate: 0.9
+Late Cancel Rate: 0.27
+Visitor Impact Score: 98
+Coordinator Urgency: 46
+Recent Signup Velocity: 2.05
+Staffing Gap Score: 78
+Attendance Reliability Score: 87
+Signup Momentum Score: 61
+Revision: 1
+
+Record 215
+----------
+Metric Id: MET-00293
+Shift Id: S26-2093
+Period End: 2026-04-10
+Historical Show Rate: 0.66
+Late Cancel Rate: 0.23
+Visitor Impact Score: 56
+Coordinator Urgency: 97
+Recent Signup Velocity: 0.46
+Staffing Gap Score: 61
+Attendance Reliability Score: 82
+Signup Momentum Score: 43
+Revision: 1
+
+Record 216
+----------
+Metric Id: MET-00256
+Shift Id: S26-1615
+Period End: 2026-03-23
+Historical Show Rate: 0.91
+Late Cancel Rate: 0.22
+Visitor Impact Score: 79
+Coordinator Urgency: 97
+Recent Signup Velocity: 0.98
+Staffing Gap Score: 92
+Attendance Reliability Score: 91
+Signup Momentum Score: 75
+Revision: 1
+
+Record 217
+----------
+Metric Id: MET-00443
+Shift Id: S26-2698
+Period End: 2026-03-31
+Historical Show Rate: 0.86
+Late Cancel Rate: 0.05
+Visitor Impact Score: 51
+Coordinator Urgency: 59
+Recent Signup Velocity: 1.74
+Staffing Gap Score: 89
+Attendance Reliability Score: 65
+Signup Momentum Score: 85
+Revision: 1
+
+Record 218
+----------
+Metric Id: MET-00277
+Shift Id: S26-2284
+Period End: 2026-04-10
+Historical Show Rate: 0.74
+Late Cancel Rate: 0.21
+Visitor Impact Score: 71
+Coordinator Urgency: 69
+Recent Signup Velocity: 1.11
+Staffing Gap Score: 49
+Attendance Reliability Score: 90
+Signup Momentum Score: 68
+Revision: 1
+
+Record 219
+----------
+Metric Id: MET-00194
+Shift Id: S26-4350
+Period End: 2026-04-03
+Historical Show Rate: 0.77
+Late Cancel Rate: 0.2
+Visitor Impact Score: 87
+Coordinator Urgency: 76
+Recent Signup Velocity: 2.42
+Staffing Gap Score: 46
+Attendance Reliability Score: 77
+Signup Momentum Score: 68
+Revision: 1
+
+Record 220
+----------
+Metric Id: MET-00190
+Shift Id: S26-5628
+Period End: 2026-04-08
+Historical Show Rate: 0.74
+Late Cancel Rate: 0.15
+Visitor Impact Score: 75
+Coordinator Urgency: 84
+Recent Signup Velocity: 0.21
+Staffing Gap Score: 77
+Attendance Reliability Score: 92
+Signup Momentum Score: 78
+Revision: 1
+
+Record 221
+----------
+Metric Id: MET-00474
+Shift Id: S26-3970
+Period End: 2026-03-20
+Historical Show Rate: 0.92
+Late Cancel Rate: 0.17
+Visitor Impact Score: 62
+Coordinator Urgency: 86
+Recent Signup Velocity: 2.36
+Staffing Gap Score: 87
+Attendance Reliability Score: 61
+Signup Momentum Score: 84
+Revision: 1
+
+Record 222
+----------
+Metric Id: MET-00152
+Shift Id: S26-6080
+Period End: 2026-03-30
+Historical Show Rate: 0.59
+Late Cancel Rate: 0.15
+Visitor Impact Score: 96
+Coordinator Urgency: 82
+Recent Signup Velocity: 1.08
+Staffing Gap Score: 66
+Attendance Reliability Score: 82
+Signup Momentum Score: 73
+Revision: 1
+
+Record 223
+----------
+Metric Id: MET-00478
+Shift Id: S26-1072
+Period End: 2026-03-29
+Historical Show Rate: 0.87
+Late Cancel Rate: 0.18
+Visitor Impact Score: 70
+Coordinator Urgency: 53
+Recent Signup Velocity: 2.74
+Staffing Gap Score: 57
+Attendance Reliability Score: 92
+Signup Momentum Score: 95
+Revision: 1
+
+Record 224
+----------
+Metric Id: MET-00214
+Shift Id: S26-6918
+Period End: 2026-03-29
+Historical Show Rate: 0.81
+Late Cancel Rate: 0.13
+Visitor Impact Score: 47
+Coordinator Urgency: 54
+Recent Signup Velocity: 1.72
+Staffing Gap Score: 48
+Attendance Reliability Score: 92
+Signup Momentum Score: 54
+Revision: 1
+
+Record 225
+----------
+Metric Id: MET-00219
+Shift Id: S26-1859
+Period End: 2026-04-16
+Historical Show Rate: 0.89
+Late Cancel Rate: 0.03
+Visitor Impact Score: 86
+Coordinator Urgency: 68
+Recent Signup Velocity: 1.95
+Staffing Gap Score: 84
+Attendance Reliability Score: 75
+Signup Momentum Score: 51
+Revision: 1
+
+Record 226
+----------
+Metric Id: MET-00440
+Shift Id: S26-1295
+Period End: 2026-04-11
+Historical Show Rate: 0.64
+Late Cancel Rate: 0.26
+Visitor Impact Score: 50
+Coordinator Urgency: 46
+Recent Signup Velocity: 1.66
+Staffing Gap Score: 88
+Attendance Reliability Score: 82
+Signup Momentum Score: 49
+Revision: 1
+
+Record 227
+----------
+Metric Id: MET-00411
+Shift Id: S26-6692
+Period End: 2026-04-17
+Historical Show Rate: 0.88
+Late Cancel Rate: 0.19
+Visitor Impact Score: 81
+Coordinator Urgency: 72
+Recent Signup Velocity: 0.25
+Staffing Gap Score: 71
+Attendance Reliability Score: 48
+Signup Momentum Score: 87
+Revision: 1
+
+Record 228
+----------
+Metric Id: MET-00426
+Shift Id: S26-7049
+Period End: 2026-04-19
+Historical Show Rate: 0.91
+Late Cancel Rate: 0.08
+Visitor Impact Score: 47
+Coordinator Urgency: 83
+Recent Signup Velocity: 1.41
+Staffing Gap Score: 54
+Attendance Reliability Score: 63
+Signup Momentum Score: 90
+Revision: 1
+
+Record 229
+----------
+Metric Id: MET-00150
+Shift Id: S26-6147
+Period End: 2026-04-07
+Historical Show Rate: 0.88
+Late Cancel Rate: 0.24
+Visitor Impact Score: 69
+Coordinator Urgency: 63
+Recent Signup Velocity: 0.35
+Staffing Gap Score: 80
+Attendance Reliability Score: 51
+Signup Momentum Score: 62
+Revision: 1
+
+Record 230
+----------
+Metric Id: MET-00312
+Shift Id: S26-9971
+Period End: 2026-03-20
+Historical Show Rate: 0.89
+Late Cancel Rate: 0.13
+Visitor Impact Score: 75
+Coordinator Urgency: 60
+Recent Signup Velocity: 2.15
+Staffing Gap Score: 48
+Attendance Reliability Score: 90
+Signup Momentum Score: 79
+Revision: 1
+
+Record 231
+----------
+Metric Id: MET-00282
+Shift Id: S26-4405
+Period End: 2026-03-29
+Historical Show Rate: 0.83
+Late Cancel Rate: 0.12
+Visitor Impact Score: 78
+Coordinator Urgency: 78
+Recent Signup Velocity: 2.75
+Staffing Gap Score: 68
+Attendance Reliability Score: 58
+Signup Momentum Score: 66
+Revision: 1
+
+Record 232
+----------
+Metric Id: MET-00090
+Shift Id: S26-4933
+Period End: 2026-03-19
+Historical Show Rate: 0.74
+Late Cancel Rate: 0.1
+Visitor Impact Score: 88
+Coordinator Urgency: 57
+Recent Signup Velocity: 1.67
+Staffing Gap Score: 68
+Attendance Reliability Score: 88
+Signup Momentum Score: 54
+Revision: 1
+
+Record 233
+----------
+Metric Id: MET-00203
+Shift Id: S26-9695
+Period End: 2026-04-03
+Historical Show Rate: 0.93
+Late Cancel Rate: 0.05
+Visitor Impact Score: 79
+Coordinator Urgency: 73
+Recent Signup Velocity: 1.1
+Staffing Gap Score: 61
+Attendance Reliability Score: 67
+Signup Momentum Score: 42
+Revision: 1
+
+Record 234
+----------
+Metric Id: MET-00344
+Shift Id: S26-1711
+Period End: 2026-04-02
+Historical Show Rate: 0.65
+Late Cancel Rate: 0.28
+Visitor Impact Score: 87
+Coordinator Urgency: 83
+Recent Signup Velocity: 2.58
+Staffing Gap Score: 69
+Attendance Reliability Score: 65
+Signup Momentum Score: 87
+Revision: 1
+
+Record 235
+----------
+Metric Id: MET-00488
+Shift Id: S26-9792
+Period End: 2026-03-22
+Historical Show Rate: 0.83
+Late Cancel Rate: 0.15
+Visitor Impact Score: 85
+Coordinator Urgency: 68
+Recent Signup Velocity: 0.36
+Staffing Gap Score: 72
+Attendance Reliability Score: 46
+Signup Momentum Score: 54
+Revision: 1
+
+Record 236
+----------
+Metric Id: MET-00234
+Shift Id: S26-5351
+Period End: 2026-04-15
+Historical Show Rate: 0.67
+Late Cancel Rate: 0.04
+Visitor Impact Score: 56
+Coordinator Urgency: 46
+Recent Signup Velocity: 2.72
+Staffing Gap Score: 84
+Attendance Reliability Score: 77
+Signup Momentum Score: 53
+Revision: 1
+
+Record 237
+----------
+Metric Id: MET-00484
+Shift Id: S26-9677
+Period End: 2026-03-25
+Historical Show Rate: 0.65
+Late Cancel Rate: 0.26
+Visitor Impact Score: 45
+Coordinator Urgency: 49
+Recent Signup Velocity: 1.72
+Staffing Gap Score: 62
+Attendance Reliability Score: 84
+Signup Momentum Score: 54
+Revision: 1
+
+Record 238
+----------
+Metric Id: MET-00236
+Shift Id: S26-2919
+Period End: 2026-04-18
+Historical Show Rate: 0.75
+Late Cancel Rate: 0.19
+Visitor Impact Score: 67
+Coordinator Urgency: 90
+Recent Signup Velocity: 1.49
+Staffing Gap Score: 62
+Attendance Reliability Score: 83
+Signup Momentum Score: 65
+Revision: 1
+
+Record 239
+----------
+Metric Id: MET-00286
+Shift Id: S26-6481
+Period End: 2026-04-01
+Historical Show Rate: 0.89
+Late Cancel Rate: 0.13
+Visitor Impact Score: 85
+Coordinator Urgency: 64
+Recent Signup Velocity: 2.12
+Staffing Gap Score: 86
+Attendance Reliability Score: 96
+Signup Momentum Score: 41
+Revision: 1
+
+Record 240
+----------
+Metric Id: MET-00511
+Shift Id: S26-8952
+Period End: 2026-03-23
+Historical Show Rate: 0.92
+Late Cancel Rate: 0.27
+Visitor Impact Score: 48
+Coordinator Urgency: 48
+Recent Signup Velocity: 1.68
+Staffing Gap Score: 47
+Attendance Reliability Score: 52
+Signup Momentum Score: 63
+Revision: 1
+
+Record 241
+----------
+Metric Id: MET-00444
+Shift Id: S26-1776
+Period End: 2026-03-20
+Historical Show Rate: 0.74
+Late Cancel Rate: 0.18
+Visitor Impact Score: 54
+Coordinator Urgency: 67
+Recent Signup Velocity: 0.3
+Staffing Gap Score: 90
+Attendance Reliability Score: 53
+Signup Momentum Score: 70
+Revision: 1
+
+Record 242
+----------
+Metric Id: MET-00144
+Shift Id: S26-4150
+Period End: 2026-03-29
+Historical Show Rate: 0.83
+Late Cancel Rate: 0.18
+Visitor Impact Score: 50
+Coordinator Urgency: 58
+Recent Signup Velocity: 0.2
+Staffing Gap Score: 83
+Attendance Reliability Score: 59
+Signup Momentum Score: 84
+Revision: 1
+
+Record 243
+----------
+Metric Id: MET-00039
+Shift Id: S26-6138
+Period End: 2026-04-10
+Historical Show Rate: 0.62
+Late Cancel Rate: 0.05
+Visitor Impact Score: 85
+Coordinator Urgency: 45
+Recent Signup Velocity: 2.56
+Staffing Gap Score: 48
+Attendance Reliability Score: 74
+Signup Momentum Score: 90
+Revision: 1
+
+Record 244
+----------
+Metric Id: MET-00321
+Shift Id: S26-6657
+Period End: 2026-03-26
+Historical Show Rate: 0.63
+Late Cancel Rate: 0.13
+Visitor Impact Score: 88
+Coordinator Urgency: 56
+Recent Signup Velocity: 0.34
+Staffing Gap Score: 88
+Attendance Reliability Score: 63
+Signup Momentum Score: 44
+Revision: 1
+
+Record 245
+----------
+Metric Id: MET-00179
+Shift Id: S26-4377
+Period End: 2026-04-01
+Historical Show Rate: 0.78
+Late Cancel Rate: 0.2
+Visitor Impact Score: 97
+Coordinator Urgency: 61
+Recent Signup Velocity: 0.86
+Staffing Gap Score: 59
+Attendance Reliability Score: 71
+Signup Momentum Score: 68
+Revision: 1
+
+Record 246
+----------
+Metric Id: MET-00095
+Shift Id: S26-2725
+Period End: 2026-03-24
+Historical Show Rate: 0.74
+Late Cancel Rate: 0.07
+Visitor Impact Score: 91
+Coordinator Urgency: 54
+Recent Signup Velocity: 1.91
+Staffing Gap Score: 87
+Attendance Reliability Score: 82
+Signup Momentum Score: 60
+Revision: 1
+
+Record 247
+----------
+Metric Id: MET-00079
+Shift Id: S26-5393
+Period End: 2026-03-31
+Historical Show Rate: 0.64
+Late Cancel Rate: 0.11
+Visitor Impact Score: 71
+Coordinator Urgency: 64
+Recent Signup Velocity: 1.2
+Staffing Gap Score: 76
+Attendance Reliability Score: 46
+Signup Momentum Score: 79
+Revision: 1
+
+Record 248
+----------
+Metric Id: MET-00241
+Shift Id: S26-8003
+Period End: 2026-03-20
+Historical Show Rate: 0.81
+Late Cancel Rate: 0.26
+Visitor Impact Score: 83
+Coordinator Urgency: 77
+Recent Signup Velocity: 1.57
+Staffing Gap Score: 79
+Attendance Reliability Score: 95
+Signup Momentum Score: 85
+Revision: 1
+
+Record 249
+----------
+Metric Id: MET-00501
+Shift Id: S26-9645
+Period End: 2026-04-09
+Historical Show Rate: 0.83
+Late Cancel Rate: 0.22
+Visitor Impact Score: 93
+Coordinator Urgency: 61
+Recent Signup Velocity: 1.69
+Staffing Gap Score: 65
+Attendance Reliability Score: 60
+Signup Momentum Score: 62
+Revision: 1
+
+Record 250
+----------
+Metric Id: MET-00467
+Shift Id: S26-4072
+Period End: 2026-03-27
+Historical Show Rate: 0.71
+Late Cancel Rate: 0.13
+Visitor Impact Score: 69
+Coordinator Urgency: 57
+Recent Signup Velocity: 0.32
+Staffing Gap Score: 48
+Attendance Reliability Score: 47
+Signup Momentum Score: 42
+Revision: 1
+
+Record 251
+----------
+Metric Id: MET-00016
+Shift Id: S26-7284
+Period End: 2026-03-26
+Historical Show Rate: 0.78
+Late Cancel Rate: 0.16
+Visitor Impact Score: 80
+Coordinator Urgency: 84
+Recent Signup Velocity: 0.4
+Staffing Gap Score: 60
+Attendance Reliability Score: 65
+Signup Momentum Score: 61
+Revision: 1
+
+Record 252
+----------
+Metric Id: MET-00070
+Shift Id: S26-9233
+Period End: 2026-04-07
+Historical Show Rate: 0.79
+Late Cancel Rate: 0.08
+Visitor Impact Score: 98
+Coordinator Urgency: 97
+Recent Signup Velocity: 2.5
+Staffing Gap Score: 68
+Attendance Reliability Score: 62
+Signup Momentum Score: 93
+Revision: 1
+
+Record 253
+----------
+Metric Id: MET-00402
+Shift Id: S26-7103
+Period End: 2026-04-18
+Historical Show Rate: 0.63
+Late Cancel Rate: 0.2
+Visitor Impact Score: 52
+Coordinator Urgency: 59
+Recent Signup Velocity: 1.9
+Staffing Gap Score: 65
+Attendance Reliability Score: 55
+Signup Momentum Score: 50
+Revision: 1
+
+Record 254
+----------
+Metric Id: MET-00053
+Shift Id: S26-4343
+Period End: 2026-04-09
+Historical Show Rate: 0.78
+Late Cancel Rate: 0.19
+Visitor Impact Score: 61
+Coordinator Urgency: 59
+Recent Signup Velocity: 0.62
+Staffing Gap Score: 86
+Attendance Reliability Score: 54
+Signup Momentum Score: 83
+Revision: 1
+
+Record 255
+----------
+Metric Id: MET-00088
+Shift Id: S26-6932
+Period End: 2026-04-09
+Historical Show Rate: 0.66
+Late Cancel Rate: 0.14
+Visitor Impact Score: 87
+Coordinator Urgency: 95
+Recent Signup Velocity: 0.6
+Staffing Gap Score: 88
+Attendance Reliability Score: 73
+Signup Momentum Score: 41
+Revision: 1
+
+Record 256
+----------
+Metric Id: MET-00091
+Shift Id: S26-6631
+Period End: 2026-03-26
+Historical Show Rate: 0.69
+Late Cancel Rate: 0.13
+Visitor Impact Score: 88
+Coordinator Urgency: 58
+Recent Signup Velocity: 2.45
+Staffing Gap Score: 47
+Attendance Reliability Score: 93
+Signup Momentum Score: 90
+Revision: 1
+
+Record 257
+----------
+Metric Id: MET-00515
+Shift Id: S26-6696
+Period End: 2026-04-08
+Historical Show Rate: 0.93
+Late Cancel Rate: 0.19
+Visitor Impact Score: 90
+Coordinator Urgency: 59
+Recent Signup Velocity: 2.78
+Staffing Gap Score: 45
+Attendance Reliability Score: 88
+Signup Momentum Score: 47
+Revision: 1
+
+Record 258
+----------
+Metric Id: MET-00263
+Shift Id: S26-3097
+Period End: 2026-03-28
+Historical Show Rate: 0.89
+Late Cancel Rate: 0.1
+Visitor Impact Score: 73
+Coordinator Urgency: 56
+Recent Signup Velocity: 0.88
+Staffing Gap Score: 61
+Attendance Reliability Score: 56
+Signup Momentum Score: 62
+Revision: 1
+
+Record 259
+----------
+Metric Id: MET-00037
+Shift Id: S26-7182
+Period End: 2026-04-07
+Historical Show Rate: 0.85
+Late Cancel Rate: 0.16
+Visitor Impact Score: 46
+Coordinator Urgency: 50
+Recent Signup Velocity: 2.25
+Staffing Gap Score: 52
+Attendance Reliability Score: 61
+Signup Momentum Score: 81
+Revision: 1
+
+Record 260
+----------
+Metric Id: MET-00529
+Shift Id: S26-1318
+Period End: 2026-04-14
+Historical Show Rate: 0.63
+Late Cancel Rate: 0.27
+Visitor Impact Score: 76
+Coordinator Urgency: 69
+Recent Signup Velocity: 2.6
+Staffing Gap Score: 66
+Attendance Reliability Score: 71
+Signup Momentum Score: 61
+Revision: 1
+
+Record 261
+----------
+Metric Id: MET-00425
+Shift Id: S26-7049
+Period End: 2026-04-05
+Historical Show Rate: 0.73
+Late Cancel Rate: 0.05
+Visitor Impact Score: 97
+Coordinator Urgency: 98
+Recent Signup Velocity: 1.02
+Staffing Gap Score: 69
+Attendance Reliability Score: 88
+Signup Momentum Score: 41
+Revision: 1
+
+Record 262
+----------
+Metric Id: MET-00227
+Shift Id: S26-8272
+Period End: 2026-04-20
+Historical Show Rate: 0.88
+Late Cancel Rate: 0.11
+Visitor Impact Score: 65
+Coordinator Urgency: 45
+Recent Signup Velocity: 1.75
+Staffing Gap Score: 55
+Attendance Reliability Score: 75
+Signup Momentum Score: 49
+Revision: 1
+
+Record 263
+----------
+Metric Id: MET-00127
+Shift Id: S26-2859
+Period End: 2026-04-16
+Historical Show Rate: 0.93
+Late Cancel Rate: 0.22
+Visitor Impact Score: 67
+Coordinator Urgency: 54
+Recent Signup Velocity: 0.37
+Staffing Gap Score: 46
+Attendance Reliability Score: 80
+Signup Momentum Score: 81
+Revision: 1
+
+Record 264
+----------
+Metric Id: MET-00007
+Shift Id: S26-8590
+Period End: 2026-04-05
+Historical Show Rate: 0.56
+Late Cancel Rate: 0.14
+Visitor Impact Score: 72
+Coordinator Urgency: 56
+Recent Signup Velocity: 0.43
+Staffing Gap Score: 92
+Attendance Reliability Score: 81
+Signup Momentum Score: 50
+Revision: 1
+
+Record 265
+----------
+Metric Id: MET-00018
+Shift Id: S26-5468
+Period End: 2026-03-25
+Historical Show Rate: 0.83
+Late Cancel Rate: 0.11
+Visitor Impact Score: 75
+Coordinator Urgency: 53
+Recent Signup Velocity: 1.5
+Staffing Gap Score: 56
+Attendance Reliability Score: 89
+Signup Momentum Score: 80
+Revision: 1
+
+Record 266
+----------
+Metric Id: MET-00521
+Shift Id: S26-5392
+Period End: 2026-03-20
+Historical Show Rate: 0.84
+Late Cancel Rate: 0.09
+Visitor Impact Score: 98
+Coordinator Urgency: 96
+Recent Signup Velocity: 2.24
+Staffing Gap Score: 96
+Attendance Reliability Score: 93
+Signup Momentum Score: 95
+Revision: 1
+
+Record 267
+----------
+Metric Id: MET-00491
+Shift Id: S26-3778
+Period End: 2026-03-24
+Historical Show Rate: 0.67
+Late Cancel Rate: 0.15
+Visitor Impact Score: 90
+Coordinator Urgency: 74
+Recent Signup Velocity: 1.45
+Staffing Gap Score: 85
+Attendance Reliability Score: 66
+Signup Momentum Score: 46
+Revision: 1
+
+Record 268
+----------
+Metric Id: MET-00304
+Shift Id: S26-1126
+Period End: 2026-04-20
+Historical Show Rate: 0.67
+Late Cancel Rate: 0.19
+Visitor Impact Score: 46
+Coordinator Urgency: 90
+Recent Signup Velocity: 0.32
+Staffing Gap Score: 74
+Attendance Reliability Score: 81
+Signup Momentum Score: 74
+Revision: 1
+
+Record 269
+----------
+Metric Id: MET-00459
+Shift Id: S26-9315
+Period End: 2026-04-05
+Historical Show Rate: 0.77
+Late Cancel Rate: 0.23
+Visitor Impact Score: 82
+Coordinator Urgency: 90
+Recent Signup Velocity: 1.52
+Staffing Gap Score: 71
+Attendance Reliability Score: 49
+Signup Momentum Score: 94
+Revision: 1
+
+Record 270
+----------
+Metric Id: MET-00069
+Shift Id: S26-5775
+Period End: 2026-03-26
+Historical Show Rate: 0.83
+Late Cancel Rate: 0.19
+Visitor Impact Score: 88
+Coordinator Urgency: 67
+Recent Signup Velocity: 1.35
+Staffing Gap Score: 79
+Attendance Reliability Score: 77
+Signup Momentum Score: 60
+Revision: 1
+
+Record 271
+----------
+Metric Id: MET-00460
+Shift Id: S26-9662
+Period End: 2026-04-09
+Historical Show Rate: 0.75
+Late Cancel Rate: 0.13
+Visitor Impact Score: 77
+Coordinator Urgency: 59
+Recent Signup Velocity: 2.2
+Staffing Gap Score: 54
+Attendance Reliability Score: 95
+Signup Momentum Score: 47
+Revision: 1
+
+Record 272
+----------
+Metric Id: MET-00166
+Shift Id: S26-8047
+Period End: 2026-03-28
+Historical Show Rate: 0.78
+Late Cancel Rate: 0.11
+Visitor Impact Score: 46
+Coordinator Urgency: 64
+Recent Signup Velocity: 0.21
+Staffing Gap Score: 48
+Attendance Reliability Score: 50
+Signup Momentum Score: 70
+Revision: 1
+
+Record 273
+----------
+Metric Id: MET-00040
+Shift Id: S26-2832
+Period End: 2026-03-19
+Historical Show Rate: 0.61
+Late Cancel Rate: 0.11
+Visitor Impact Score: 72
+Coordinator Urgency: 78
+Recent Signup Velocity: 2.51
+Staffing Gap Score: 58
+Attendance Reliability Score: 62
+Signup Momentum Score: 75
+Revision: 1
+
+Record 274
+----------
+Metric Id: MET-00027
+Shift Id: S26-1174
+Period End: 2026-03-31
+Historical Show Rate: 0.89
+Late Cancel Rate: 0.28
+Visitor Impact Score: 55
+Coordinator Urgency: 60
+Recent Signup Velocity: 1.16
+Staffing Gap Score: 86
+Attendance Reliability Score: 74
+Signup Momentum Score: 66
+Revision: 1
+
+Record 275
+----------
+Metric Id: MET-00032
+Shift Id: S26-4961
+Period End: 2026-04-16
+Historical Show Rate: 0.87
+Late Cancel Rate: 0.14
+Visitor Impact Score: 49
+Coordinator Urgency: 89
+Recent Signup Velocity: 1.82
+Staffing Gap Score: 83
+Attendance Reliability Score: 96
+Signup Momentum Score: 68
+Revision: 1
+
+Record 276
+----------
+Metric Id: MET-00356
+Shift Id: S26-4565
+Period End: 2026-04-11
+Historical Show Rate: 0.66
+Late Cancel Rate: 0.26
+Visitor Impact Score: 81
+Coordinator Urgency: 81
+Recent Signup Velocity: 0.31
+Staffing Gap Score: 75
+Attendance Reliability Score: 46
+Signup Momentum Score: 70
+Revision: 1
+
+Record 277
+----------
+Metric Id: MET-00403
+Shift Id: S26-4670
+Period End: 2026-04-07
+Historical Show Rate: 0.56
+Late Cancel Rate: 0.25
+Visitor Impact Score: 46
+Coordinator Urgency: 81
+Recent Signup Velocity: 2.16
+Staffing Gap Score: 51
+Attendance Reliability Score: 85
+Signup Momentum Score: 51
+Revision: 1
+
+Record 278
+----------
+Metric Id: MET-00268
+Shift Id: S26-8473
+Period End: 2026-04-02
+Historical Show Rate: 0.77
+Late Cancel Rate: 0.17
+Visitor Impact Score: 46
+Coordinator Urgency: 52
+Recent Signup Velocity: 1.39
+Staffing Gap Score: 70
+Attendance Reliability Score: 83
+Signup Momentum Score: 83
+Revision: 1
+
+Record 279
+----------
+Metric Id: MET-00001
+Shift Id: S26-8755
+Period End: 2026-04-07
+Historical Show Rate: 0.72
+Late Cancel Rate: 0.21
+Visitor Impact Score: 87
+Coordinator Urgency: 46
+Recent Signup Velocity: 2.74
+Staffing Gap Score: 51
+Attendance Reliability Score: 81
+Signup Momentum Score: 77
+Revision: 1
+
+Record 280
+----------
+Metric Id: MET-00164
+Shift Id: S26-4891
+Period End: 2026-03-24
+Historical Show Rate: 0.94
+Late Cancel Rate: 0.12
+Visitor Impact Score: 86
+Coordinator Urgency: 74
+Recent Signup Velocity: 1.98
+Staffing Gap Score: 63
+Attendance Reliability Score: 63
+Signup Momentum Score: 94
+Revision: 1
+
+Record 281
+----------
+Metric Id: MET-00527
+Shift Id: S26-6948
+Period End: 2026-04-07
+Historical Show Rate: 0.92
+Late Cancel Rate: 0.13
+Visitor Impact Score: 64
+Coordinator Urgency: 87
+Recent Signup Velocity: 2.7
+Staffing Gap Score: 47
+Attendance Reliability Score: 76
+Signup Momentum Score: 76
+Revision: 1
+
+Record 282
+----------
+Metric Id: MET-00176
+Shift Id: S26-3810
+Period End: 2026-04-03
+Historical Show Rate: 0.77
+Late Cancel Rate: 0.19
+Visitor Impact Score: 57
+Coordinator Urgency: 59
+Recent Signup Velocity: 1.12
+Staffing Gap Score: 51
+Attendance Reliability Score: 64
+Signup Momentum Score: 61
+Revision: 1
+
+Record 283
+----------
+Metric Id: MET-00062
+Shift Id: S26-5317
+Period End: 2026-04-20
+Historical Show Rate: 0.58
+Late Cancel Rate: 0.19
+Visitor Impact Score: 59
+Coordinator Urgency: 70
+Recent Signup Velocity: 1.95
+Staffing Gap Score: 74
+Attendance Reliability Score: 93
+Signup Momentum Score: 93
+Revision: 1
+
+Record 284
+----------
+Metric Id: MET-00205
+Shift Id: S26-7521
+Period End: 2026-03-23
+Historical Show Rate: 0.56
+Late Cancel Rate: 0.22
+Visitor Impact Score: 79
+Coordinator Urgency: 79
+Recent Signup Velocity: 0.25
+Staffing Gap Score: 75
+Attendance Reliability Score: 69
+Signup Momentum Score: 55
+Revision: 1
+
+Record 285
+----------
+Metric Id: MET-00071
+Shift Id: S26-9233
+Period End: 2026-04-09
+Historical Show Rate: 0.72
+Late Cancel Rate: 0.05
+Visitor Impact Score: 53
+Coordinator Urgency: 86
+Recent Signup Velocity: 1.86
+Staffing Gap Score: 91
+Attendance Reliability Score: 83
+Signup Momentum Score: 70
+Revision: 1
+
+Record 286
+----------
+Metric Id: MET-00184
+Shift Id: S26-1313
+Period End: 2026-04-03
+Historical Show Rate: 0.96
+Late Cancel Rate: 0.09
+Visitor Impact Score: 91
+Coordinator Urgency: 61
+Recent Signup Velocity: 0.71
+Staffing Gap Score: 85
+Attendance Reliability Score: 57
+Signup Momentum Score: 53
+Revision: 1
+
+Record 287
+----------
+Metric Id: MET-00114
+Shift Id: S26-6459
+Period End: 2026-04-17
+Historical Show Rate: 0.77
+Late Cancel Rate: 0.24
+Visitor Impact Score: 85
+Coordinator Urgency: 65
+Recent Signup Velocity: 1.06
+Staffing Gap Score: 93
+Attendance Reliability Score: 77
+Signup Momentum Score: 53
+Revision: 1
+
+Record 288
+----------
+Metric Id: MET-00108
+Shift Id: S26-8848
+Period End: 2026-04-10
+Historical Show Rate: 0.62
+Late Cancel Rate: 0.26
+Visitor Impact Score: 72
+Coordinator Urgency: 86
+Recent Signup Velocity: 1.43
+Staffing Gap Score: 87
+Attendance Reliability Score: 92
+Signup Momentum Score: 68
+Revision: 1
+
+Record 289
+----------
+Metric Id: MET-00183
+Shift Id: S26-2043
+Period End: 2026-04-10
+Historical Show Rate: 0.65
+Late Cancel Rate: 0.16
+Visitor Impact Score: 45
+Coordinator Urgency: 70
+Recent Signup Velocity: 2.0
+Staffing Gap Score: 62
+Attendance Reliability Score: 77
+Signup Momentum Score: 52
+Revision: 1
+
+Record 290
+----------
+Metric Id: MET-00169
+Shift Id: S26-4111
+Period End: 2026-04-10
+Historical Show Rate: 0.88
+Late Cancel Rate: 0.25
+Visitor Impact Score: 78
+Coordinator Urgency: 53
+Recent Signup Velocity: 0.51
+Staffing Gap Score: 56
+Attendance Reliability Score: 60
+Signup Momentum Score: 65
+Revision: 1
+
+Record 291
+----------
+Metric Id: MET-00406
+Shift Id: S26-6748
+Period End: 2026-04-21
+Historical Show Rate: 0.82
+Late Cancel Rate: 0.07
+Visitor Impact Score: 98
+Coordinator Urgency: 89
+Recent Signup Velocity: 1.35
+Staffing Gap Score: 76
+Attendance Reliability Score: 45
+Signup Momentum Score: 60
+Revision: 1
+
+Record 292
+----------
+Metric Id: MET-00322
+Shift Id: S26-3045
+Period End: 2026-04-10
+Historical Show Rate: 0.85
+Late Cancel Rate: 0.11
+Visitor Impact Score: 92
+Coordinator Urgency: 87
+Recent Signup Velocity: 1.84
+Staffing Gap Score: 56
+Attendance Reliability Score: 88
+Signup Momentum Score: 71
+Revision: 1
+
+Record 293
+----------
+Metric Id: MET-00068
+Shift Id: S26-4081
+Period End: 2026-04-07
+Historical Show Rate: 0.68
+Late Cancel Rate: 0.06
+Visitor Impact Score: 87
+Coordinator Urgency: 45
+Recent Signup Velocity: 1.19
+Staffing Gap Score: 79
+Attendance Reliability Score: 67
+Signup Momentum Score: 80
+Revision: 1
+
+Record 294
+----------
+Metric Id: MET-00516
+Shift Id: S26-6696
+Period End: 2026-04-11
+Historical Show Rate: 0.9
+Late Cancel Rate: 0.21
+Visitor Impact Score: 49
+Coordinator Urgency: 89
+Recent Signup Velocity: 0.3
+Staffing Gap Score: 85
+Attendance Reliability Score: 78
+Signup Momentum Score: 96
+Revision: 1
+
+Record 295
+----------
+Metric Id: MET-00462
+Shift Id: S26-1663
+Period End: 2026-04-16
+Historical Show Rate: 0.58
+Late Cancel Rate: 0.18
+Visitor Impact Score: 67
+Coordinator Urgency: 48
+Recent Signup Velocity: 2.26
+Staffing Gap Score: 95
+Attendance Reliability Score: 45
+Signup Momentum Score: 76
+Revision: 1
+
+Record 296
+----------
+Metric Id: MET-00391
+Shift Id: S26-7727
+Period End: 2026-04-06
+Historical Show Rate: 0.63
+Late Cancel Rate: 0.21
+Visitor Impact Score: 57
+Coordinator Urgency: 74
+Recent Signup Velocity: 2.05
+Staffing Gap Score: 58
+Attendance Reliability Score: 47
+Signup Momentum Score: 94
+Revision: 1
+
+Record 297
+----------
+Metric Id: MET-00122
+Shift Id: S26-3404
+Period End: 2026-03-29
+Historical Show Rate: 0.92
+Late Cancel Rate: 0.03
+Visitor Impact Score: 53
+Coordinator Urgency: 96
+Recent Signup Velocity: 0.41
+Staffing Gap Score: 80
+Attendance Reliability Score: 48
+Signup Momentum Score: 59
+Revision: 1
+
+Record 298
+----------
+Metric Id: MET-00329
+Shift Id: S26-4456
+Period End: 2026-03-23
+Historical Show Rate: 0.55
+Late Cancel Rate: 0.26
+Visitor Impact Score: 98
+Coordinator Urgency: 90
+Recent Signup Velocity: 0.52
+Staffing Gap Score: 80
+Attendance Reliability Score: 78
+Signup Momentum Score: 96
+Revision: 1
+
+Record 299
+----------
+Metric Id: MET-00017
+Shift Id: S26-7284
+Period End: 2026-04-11
+Historical Show Rate: 0.88
+Late Cancel Rate: 0.06
+Visitor Impact Score: 94
+Coordinator Urgency: 94
+Recent Signup Velocity: 0.69
+Staffing Gap Score: 94
+Attendance Reliability Score: 96
+Signup Momentum Score: 92
+Revision: 1
+
+Record 300
+----------
+Metric Id: MET-00506
+Shift Id: S26-2539
+Period End: 2026-04-07
+Historical Show Rate: 0.68
+Late Cancel Rate: 0.27
+Visitor Impact Score: 58
+Coordinator Urgency: 55
+Recent Signup Velocity: 1.53
+Staffing Gap Score: 74
+Attendance Reliability Score: 77
+Signup Momentum Score: 79
+Revision: 1
+
+Record 301
+----------
+Metric Id: MET-00082
+Shift Id: S26-8130
+Period End: 2026-03-23
+Historical Show Rate: 0.81
+Late Cancel Rate: 0.24
+Visitor Impact Score: 82
+Coordinator Urgency: 94
+Recent Signup Velocity: 0.48
+Staffing Gap Score: 88
+Attendance Reliability Score: 79
+Signup Momentum Score: 55
+Revision: 1
+
+Record 302
+----------
+Metric Id: MET-00246
+Shift Id: S26-3131
+Period End: 2026-03-24
+Historical Show Rate: 0.7
+Late Cancel Rate: 0.12
+Visitor Impact Score: 89
+Coordinator Urgency: 87
+Recent Signup Velocity: 0.74
+Staffing Gap Score: 50
+Attendance Reliability Score: 86
+Signup Momentum Score: 89
+Revision: 1
+
+Record 303
+----------
+Metric Id: MET-00375
+Shift Id: S26-5805
+Period End: 2026-04-20
+Historical Show Rate: 0.93
+Late Cancel Rate: 0.07
+Visitor Impact Score: 83
+Coordinator Urgency: 90
+Recent Signup Velocity: 2.02
+Staffing Gap Score: 71
+Attendance Reliability Score: 80
+Signup Momentum Score: 75
+Revision: 1
+
+Record 304
+----------
+Metric Id: MET-00223
+Shift Id: S26-1950
+Period End: 2026-04-13
+Historical Show Rate: 0.78
+Late Cancel Rate: 0.15
+Visitor Impact Score: 57
+Coordinator Urgency: 55
+Recent Signup Velocity: 0.39
+Staffing Gap Score: 66
+Attendance Reliability Score: 96
+Signup Momentum Score: 51
+Revision: 1
+
+Record 305
+----------
+Metric Id: MET-00504
+Shift Id: S26-7721
+Period End: 2026-04-15
+Historical Show Rate: 0.92
+Late Cancel Rate: 0.09
+Visitor Impact Score: 83
+Coordinator Urgency: 72
+Recent Signup Velocity: 0.62
+Staffing Gap Score: 79
+Attendance Reliability Score: 89
+Signup Momentum Score: 83
+Revision: 1
+
+Record 306
+----------
+Metric Id: MET-00245
+Shift Id: S26-9986
+Period End: 2026-04-03
+Historical Show Rate: 0.67
+Late Cancel Rate: 0.27
+Visitor Impact Score: 47
+Coordinator Urgency: 67
+Recent Signup Velocity: 1.12
+Staffing Gap Score: 75
+Attendance Reliability Score: 93
+Signup Momentum Score: 48
+Revision: 1
+
+Record 307
+----------
+Metric Id: MET-00435
+Shift Id: S26-9045
+Period End: 2026-03-24
+Historical Show Rate: 0.88
+Late Cancel Rate: 0.2
+Visitor Impact Score: 66
+Coordinator Urgency: 76
+Recent Signup Velocity: 0.4
+Staffing Gap Score: 82
+Attendance Reliability Score: 79
+Signup Momentum Score: 73
+Revision: 1
+
+Record 308
+----------
+Metric Id: MET-00310
+Shift Id: S26-6297
+Period End: 2026-03-28
+Historical Show Rate: 0.91
+Late Cancel Rate: 0.08
+Visitor Impact Score: 96
+Coordinator Urgency: 75
+Recent Signup Velocity: 2.21
+Staffing Gap Score: 86
+Attendance Reliability Score: 82
+Signup Momentum Score: 49
+Revision: 1
+
+Record 309
+----------
+Metric Id: MET-00028
+Shift Id: S26-9979
+Period End: 2026-03-24
+Historical Show Rate: 0.92
+Late Cancel Rate: 0.08
+Visitor Impact Score: 54
+Coordinator Urgency: 71
+Recent Signup Velocity: 0.48
+Staffing Gap Score: 79
+Attendance Reliability Score: 67
+Signup Momentum Score: 59
+Revision: 1
+
+Record 310
+----------
+Metric Id: MET-00513
+Shift Id: S26-4448
+Period End: 2026-03-28
+Historical Show Rate: 0.68
+Late Cancel Rate: 0.21
+Visitor Impact Score: 78
+Coordinator Urgency: 95
+Recent Signup Velocity: 2.22
+Staffing Gap Score: 45
+Attendance Reliability Score: 76
+Signup Momentum Score: 88
+Revision: 1
+
+Record 311
+----------
+Metric Id: MET-00167
+Shift Id: S26-3206
+Period End: 2026-04-06
+Historical Show Rate: 0.75
+Late Cancel Rate: 0.2
+Visitor Impact Score: 90
+Coordinator Urgency: 87
+Recent Signup Velocity: 2.25
+Staffing Gap Score: 46
+Attendance Reliability Score: 87
+Signup Momentum Score: 49
+Revision: 1
+
+Record 312
+----------
+Metric Id: MET-00372
+Shift Id: S26-2906
+Period End: 2026-03-20
+Historical Show Rate: 0.93
+Late Cancel Rate: 0.06
+Visitor Impact Score: 45
+Coordinator Urgency: 73
+Recent Signup Velocity: 2.26
+Staffing Gap Score: 59
+Attendance Reliability Score: 79
+Signup Momentum Score: 57
+Revision: 1
+
+Record 313
+----------
+Metric Id: MET-00228
+Shift Id: S26-7572
+Period End: 2026-03-23
+Historical Show Rate: 0.94
+Late Cancel Rate: 0.03
+Visitor Impact Score: 62
+Coordinator Urgency: 94
+Recent Signup Velocity: 2.13
+Staffing Gap Score: 64
+Attendance Reliability Score: 69
+Signup Momentum Score: 61
+Revision: 1
+
+Record 314
+----------
+Metric Id: MET-00041
+Shift Id: S26-2832
+Period End: 2026-04-20
+Historical Show Rate: 0.72
+Late Cancel Rate: 0.09
+Visitor Impact Score: 47
+Coordinator Urgency: 59
+Recent Signup Velocity: 2.2
+Staffing Gap Score: 75
+Attendance Reliability Score: 62
+Signup Momentum Score: 73
+Revision: 1
+
+Record 315
+----------
+Metric Id: MET-00470
+Shift Id: S26-9105
+Period End: 2026-04-14
+Historical Show Rate: 0.69
+Late Cancel Rate: 0.25
+Visitor Impact Score: 69
+Coordinator Urgency: 60
+Recent Signup Velocity: 1.58
+Staffing Gap Score: 54
+Attendance Reliability Score: 52
+Signup Momentum Score: 50
+Revision: 1
+
+Record 316
+----------
+Metric Id: MET-00353
+Shift Id: S26-4157
+Period End: 2026-04-21
+Historical Show Rate: 0.77
+Late Cancel Rate: 0.04
+Visitor Impact Score: 50
+Coordinator Urgency: 62
+Recent Signup Velocity: 1.92
+Staffing Gap Score: 87
+Attendance Reliability Score: 59
+Signup Momentum Score: 86
+Revision: 1
+
+Record 317
+----------
+Metric Id: MET-00146
+Shift Id: S26-6527
+Period End: 2026-04-21
+Historical Show Rate: 0.65
+Late Cancel Rate: 0.15
+Visitor Impact Score: 93
+Coordinator Urgency: 60
+Recent Signup Velocity: 0.67
+Staffing Gap Score: 83
+Attendance Reliability Score: 84
+Signup Momentum Score: 70
+Revision: 1
+
+Record 318
+----------
+Metric Id: MET-00416
+Shift Id: S26-5114
+Period End: 2026-04-13
+Historical Show Rate: 0.58
+Late Cancel Rate: 0.11
+Visitor Impact Score: 88
+Coordinator Urgency: 48
+Recent Signup Velocity: 1.75
+Staffing Gap Score: 85
+Attendance Reliability Score: 45
+Signup Momentum Score: 66
+Revision: 1
+
+Record 319
+----------
+Metric Id: MET-00328
+Shift Id: S26-1023
+Period End: 2026-04-07
+Historical Show Rate: 0.57
+Late Cancel Rate: 0.03
+Visitor Impact Score: 81
+Coordinator Urgency: 51
+Recent Signup Velocity: 0.76
+Staffing Gap Score: 69
+Attendance Reliability Score: 71
+Signup Momentum Score: 55
+Revision: 1
+
+Record 320
+----------
+Metric Id: MET-00338
+Shift Id: S26-9512
+Period End: 2026-03-24
+Historical Show Rate: 0.74
+Late Cancel Rate: 0.16
+Visitor Impact Score: 63
+Coordinator Urgency: 90
+Recent Signup Velocity: 1.9
+Staffing Gap Score: 70
+Attendance Reliability Score: 47
+Signup Momentum Score: 83
+Revision: 1
+
+Record 321
+----------
+Metric Id: MET-00456
+Shift Id: S26-6697
+Period End: 2026-03-25
+Historical Show Rate: 0.86
+Late Cancel Rate: 0.04
+Visitor Impact Score: 54
+Coordinator Urgency: 96
+Recent Signup Velocity: 2.27
+Staffing Gap Score: 46
+Attendance Reliability Score: 53
+Signup Momentum Score: 66
+Revision: 1
+
+Record 322
+----------
+Metric Id: MET-00170
+Shift Id: S26-6170
+Period End: 2026-03-30
+Historical Show Rate: 0.93
+Late Cancel Rate: 0.04
+Visitor Impact Score: 95
+Coordinator Urgency: 94
+Recent Signup Velocity: 1.36
+Staffing Gap Score: 50
+Attendance Reliability Score: 52
+Signup Momentum Score: 66
+Revision: 1
+
+Record 323
+----------
+Metric Id: MET-00327
+Shift Id: S26-5378
+Period End: 2026-04-06
+Historical Show Rate: 0.6
+Late Cancel Rate: 0.14
+Visitor Impact Score: 53
+Coordinator Urgency: 89
+Recent Signup Velocity: 1.57
+Staffing Gap Score: 55
+Attendance Reliability Score: 53
+Signup Momentum Score: 92
+Revision: 1
+
+Record 324
+----------
+Metric Id: MET-00197
+Shift Id: S26-1397
+Period End: 2026-03-30
+Historical Show Rate: 0.73
+Late Cancel Rate: 0.05
+Visitor Impact Score: 78
+Coordinator Urgency: 98
+Recent Signup Velocity: 1.33
+Staffing Gap Score: 65
+Attendance Reliability Score: 86
+Signup Momentum Score: 89
+Revision: 1
+
+Record 325
+----------
+Metric Id: MET-00337
+Shift Id: S26-8841
+Period End: 2026-04-10
+Historical Show Rate: 0.67
+Late Cancel Rate: 0.24
+Visitor Impact Score: 89
+Coordinator Urgency: 85
+Recent Signup Velocity: 1.9
+Staffing Gap Score: 59
+Attendance Reliability Score: 68
+Signup Momentum Score: 54
+Revision: 1
+
+Record 326
+----------
+Metric Id: MET-00260
+Shift Id: S26-7835
+Period End: 2026-03-21
+Historical Show Rate: 0.58
+Late Cancel Rate: 0.22
+Visitor Impact Score: 93
+Coordinator Urgency: 78
+Recent Signup Velocity: 0.88
+Staffing Gap Score: 90
+Attendance Reliability Score: 81
+Signup Momentum Score: 83
+Revision: 1
+
+Record 327
+----------
+Metric Id: MET-00199
+Shift Id: S26-3863
+Period End: 2026-03-30
+Historical Show Rate: 0.59
+Late Cancel Rate: 0.21
+Visitor Impact Score: 65
+Coordinator Urgency: 49
+Recent Signup Velocity: 1.67
+Staffing Gap Score: 63
+Attendance Reliability Score: 65
+Signup Momentum Score: 93
+Revision: 1
+
+Record 328
+----------
+Metric Id: MET-00452
+Shift Id: S26-1988
+Period End: 2026-04-21
+Historical Show Rate: 0.67
+Late Cancel Rate: 0.06
+Visitor Impact Score: 92
+Coordinator Urgency: 67
+Recent Signup Velocity: 0.58
+Staffing Gap Score: 54
+Attendance Reliability Score: 96
+Signup Momentum Score: 93
+Revision: 1
+
+Record 329
+----------
+Metric Id: MET-00231
+Shift Id: S26-3607
+Period End: 2026-04-15
+Historical Show Rate: 0.72
+Late Cancel Rate: 0.28
+Visitor Impact Score: 59
+Coordinator Urgency: 85
+Recent Signup Velocity: 0.38
+Staffing Gap Score: 50
+Attendance Reliability Score: 82
+Signup Momentum Score: 49
+Revision: 1
+
+Record 330
+----------
+Metric Id: MET-00335
+Shift Id: S26-9425
+Period End: 2026-03-31
+Historical Show Rate: 0.96
+Late Cancel Rate: 0.25
+Visitor Impact Score: 70
+Coordinator Urgency: 47
+Recent Signup Velocity: 1.98
+Staffing Gap Score: 48
+Attendance Reliability Score: 65
+Signup Momentum Score: 63
+Revision: 1
+
+Record 331
+----------
+Metric Id: MET-00232
+Shift Id: S26-9759
+Period End: 2026-03-28
+Historical Show Rate: 0.71
+Late Cancel Rate: 0.25
+Visitor Impact Score: 76
+Coordinator Urgency: 60
+Recent Signup Velocity: 1.56
+Staffing Gap Score: 69
+Attendance Reliability Score: 71
+Signup Momentum Score: 91
+Revision: 1
+
+Record 332
+----------
+Metric Id: MET-00405
+Shift Id: S26-1491
+Period End: 2026-04-22
+Historical Show Rate: 0.84
+Late Cancel Rate: 0.04
+Visitor Impact Score: 77
+Coordinator Urgency: 84
+Recent Signup Velocity: 0.74
+Staffing Gap Score: 75
+Attendance Reliability Score: 76
+Signup Momentum Score: 85
+Revision: 1
+
+Record 333
+----------
+Metric Id: MET-00106
+Shift Id: S26-5451
+Period End: 2026-04-11
+Historical Show Rate: 0.63
+Late Cancel Rate: 0.11
+Visitor Impact Score: 73
+Coordinator Urgency: 54
+Recent Signup Velocity: 2.26
+Staffing Gap Score: 81
+Attendance Reliability Score: 77
+Signup Momentum Score: 52
+Revision: 1
+
+Record 334
+----------
+Metric Id: MET-00290
+Shift Id: S26-9075
+Period End: 2026-04-01
+Historical Show Rate: 0.71
+Late Cancel Rate: 0.16
+Visitor Impact Score: 82
+Coordinator Urgency: 86
+Recent Signup Velocity: 1.03
+Staffing Gap Score: 56
+Attendance Reliability Score: 84
+Signup Momentum Score: 96
+Revision: 1
+
+Record 335
+----------
+Metric Id: MET-00011
+Shift Id: S26-5714
+Period End: 2026-04-11
+Historical Show Rate: 0.93
+Late Cancel Rate: 0.18
+Visitor Impact Score: 97
+Coordinator Urgency: 75
+Recent Signup Velocity: 2.42
+Staffing Gap Score: 54
+Attendance Reliability Score: 78
+Signup Momentum Score: 74
+Revision: 1
+
+Record 336
+----------
+Metric Id: MET-00413
+Shift Id: S26-8201
+Period End: 2026-04-18
+Historical Show Rate: 0.59
+Late Cancel Rate: 0.07
+Visitor Impact Score: 86
+Coordinator Urgency: 89
+Recent Signup Velocity: 2.25
+Staffing Gap Score: 77
+Attendance Reliability Score: 76
+Signup Momentum Score: 93
+Revision: 1
+
+Record 337
+----------
+Metric Id: MET-00283
+Shift Id: S26-1092
+Period End: 2026-03-29
+Historical Show Rate: 0.93
+Late Cancel Rate: 0.17
+Visitor Impact Score: 69
+Coordinator Urgency: 86
+Recent Signup Velocity: 2.19
+Staffing Gap Score: 68
+Attendance Reliability Score: 52
+Signup Momentum Score: 57
+Revision: 1
+
+Record 338
+----------
+Metric Id: MET-00003
+Shift Id: S26-3517
+Period End: 2026-04-04
+Historical Show Rate: 0.86
+Late Cancel Rate: 0.25
+Visitor Impact Score: 98
+Coordinator Urgency: 47
+Recent Signup Velocity: 0.69
+Staffing Gap Score: 58
+Attendance Reliability Score: 50
+Signup Momentum Score: 91
+Revision: 1
+
+Record 339
+----------
+Metric Id: MET-00393
+Shift Id: S26-4302
+Period End: 2026-04-08
+Historical Show Rate: 0.78
+Late Cancel Rate: 0.22
+Visitor Impact Score: 55
+Coordinator Urgency: 84
+Recent Signup Velocity: 0.77
+Staffing Gap Score: 87
+Attendance Reliability Score: 47
+Signup Momentum Score: 44
+Revision: 1
+
+Record 340
+----------
+Metric Id: MET-00125
+Shift Id: S26-3411
+Period End: 2026-04-08
+Historical Show Rate: 0.71
+Late Cancel Rate: 0.26
+Visitor Impact Score: 48
+Coordinator Urgency: 77
+Recent Signup Velocity: 2.27
+Staffing Gap Score: 91
+Attendance Reliability Score: 77
+Signup Momentum Score: 41
+Revision: 1
+
+Record 341
+----------
+Metric Id: MET-00464
+Shift Id: S26-1795
+Period End: 2026-03-24
+Historical Show Rate: 0.58
+Late Cancel Rate: 0.13
+Visitor Impact Score: 59
+Coordinator Urgency: 66
+Recent Signup Velocity: 2.51
+Staffing Gap Score: 54
+Attendance Reliability Score: 91
+Signup Momentum Score: 41
+Revision: 1
+
+Record 342
+----------
+Metric Id: MET-00314
+Shift Id: S26-2558
+Period End: 2026-04-04
+Historical Show Rate: 0.74
+Late Cancel Rate: 0.22
+Visitor Impact Score: 55
+Coordinator Urgency: 57
+Recent Signup Velocity: 2.04
+Staffing Gap Score: 95
+Attendance Reliability Score: 87
+Signup Momentum Score: 47
+Revision: 1
+
+Record 343
+----------
+Metric Id: MET-00237
+Shift Id: S26-1947
+Period End: 2026-04-02
+Historical Show Rate: 0.66
+Late Cancel Rate: 0.21
+Visitor Impact Score: 60
+Coordinator Urgency: 57
+Recent Signup Velocity: 1.37
+Staffing Gap Score: 52
+Attendance Reliability Score: 53
+Signup Momentum Score: 52
+Revision: 1
+
+Record 344
+----------
+Metric Id: MET-00343
+Shift Id: S26-9872
+Period End: 2026-04-11
+Historical Show Rate: 0.76
+Late Cancel Rate: 0.09
+Visitor Impact Score: 57
+Coordinator Urgency: 81
+Recent Signup Velocity: 1.62
+Staffing Gap Score: 62
+Attendance Reliability Score: 54
+Signup Momentum Score: 65
+Revision: 1
+
+Record 345
+----------
+Metric Id: MET-00390
+Shift Id: S26-7727
+Period End: 2026-04-06
+Historical Show Rate: 0.69
+Late Cancel Rate: 0.22
+Visitor Impact Score: 68
+Coordinator Urgency: 57
+Recent Signup Velocity: 2.79
+Staffing Gap Score: 75
+Attendance Reliability Score: 92
+Signup Momentum Score: 47
+Revision: 1
+
+Record 346
+----------
+Metric Id: MET-00075
+Shift Id: S26-4817
+Period End: 2026-04-15
+Historical Show Rate: 0.86
+Late Cancel Rate: 0.08
+Visitor Impact Score: 96
+Coordinator Urgency: 96
+Recent Signup Velocity: 0.41
+Staffing Gap Score: 98
+Attendance Reliability Score: 94
+Signup Momentum Score: 94
+Revision: 1
+
+Record 347
+----------
+Metric Id: MET-00269
+Shift Id: S26-4384
+Period End: 2026-03-24
+Historical Show Rate: 0.84
+Late Cancel Rate: 0.23
+Visitor Impact Score: 87
+Coordinator Urgency: 57
+Recent Signup Velocity: 0.54
+Staffing Gap Score: 73
+Attendance Reliability Score: 83
+Signup Momentum Score: 46
+Revision: 1
+
+Record 348
+----------
+Metric Id: MET-00469
+Shift Id: S26-9105
+Period End: 2026-04-03
+Historical Show Rate: 0.81
+Late Cancel Rate: 0.14
+Visitor Impact Score: 77
+Coordinator Urgency: 87
+Recent Signup Velocity: 2.56
+Staffing Gap Score: 91
+Attendance Reliability Score: 55
+Signup Momentum Score: 83
+Revision: 1
+
+Record 349
+----------
+Metric Id: MET-00118
+Shift Id: S26-5696
+Period End: 2026-04-11
+Historical Show Rate: 0.77
+Late Cancel Rate: 0.24
+Visitor Impact Score: 56
+Coordinator Urgency: 89
+Recent Signup Velocity: 1.31
+Staffing Gap Score: 92
+Attendance Reliability Score: 93
+Signup Momentum Score: 86
+Revision: 1
+
+Record 350
+----------
+Metric Id: MET-00192
+Shift Id: S26-2410
+Period End: 2026-03-27
+Historical Show Rate: 0.86
+Late Cancel Rate: 0.19
+Visitor Impact Score: 74
+Coordinator Urgency: 79
+Recent Signup Velocity: 1.16
+Staffing Gap Score: 77
+Attendance Reliability Score: 45
+Signup Momentum Score: 51
+Revision: 1
+
+Record 351
+----------
+Metric Id: MET-00034
+Shift Id: S26-5505
+Period End: 2026-03-28
+Historical Show Rate: 0.68
+Late Cancel Rate: 0.22
+Visitor Impact Score: 65
+Coordinator Urgency: 45
+Recent Signup Velocity: 0.55
+Staffing Gap Score: 94
+Attendance Reliability Score: 84
+Signup Momentum Score: 44
+Revision: 1
+
+Record 352
+----------
+Metric Id: MET-00333
+Shift Id: S26-3854
+Period End: 2026-04-18
+Historical Show Rate: 0.82
+Late Cancel Rate: 0.25
+Visitor Impact Score: 68
+Coordinator Urgency: 64
+Recent Signup Velocity: 2.11
+Staffing Gap Score: 80
+Attendance Reliability Score: 70
+Signup Momentum Score: 93
+Revision: 1
+
+Record 353
+----------
+Metric Id: MET-00339
+Shift Id: S26-9512
+Period End: 2026-04-01
+Historical Show Rate: 0.85
+Late Cancel Rate: 0.12
+Visitor Impact Score: 80
+Coordinator Urgency: 59
+Recent Signup Velocity: 1.17
+Staffing Gap Score: 89
+Attendance Reliability Score: 76
+Signup Momentum Score: 53
+Revision: 1
+
+Record 354
+----------
+Metric Id: MET-00072
+Shift Id: S26-1507
+Period End: 2026-04-07
+Historical Show Rate: 0.67
+Late Cancel Rate: 0.17
+Visitor Impact Score: 73
+Coordinator Urgency: 84
+Recent Signup Velocity: 1.46
+Staffing Gap Score: 62
+Attendance Reliability Score: 83
+Signup Momentum Score: 94
+Revision: 1
+
+Record 355
+----------
+Metric Id: MET-00437
+Shift Id: S26-3215
+Period End: 2026-04-01
+Historical Show Rate: 0.78
+Late Cancel Rate: 0.11
+Visitor Impact Score: 64
+Coordinator Urgency: 97
+Recent Signup Velocity: 1.81
+Staffing Gap Score: 93
+Attendance Reliability Score: 65
+Signup Momentum Score: 88
+Revision: 1
+
+Record 356
+----------
+Metric Id: MET-00341
+Shift Id: S26-1409
+Period End: 2026-04-05
+Historical Show Rate: 0.75
+Late Cancel Rate: 0.26
+Visitor Impact Score: 50
+Coordinator Urgency: 91
+Recent Signup Velocity: 0.46
+Staffing Gap Score: 95
+Attendance Reliability Score: 64
+Signup Momentum Score: 79
+Revision: 1
+
+Record 357
+----------
+Metric Id: MET-00502
+Shift Id: S26-2837
+Period End: 2026-04-21
+Historical Show Rate: 0.89
+Late Cancel Rate: 0.09
+Visitor Impact Score: 58
+Coordinator Urgency: 76
+Recent Signup Velocity: 1.61
+Staffing Gap Score: 46
+Attendance Reliability Score: 82
+Signup Momentum Score: 55
+Revision: 1
+
+Record 358
+----------
+Metric Id: MET-00029
+Shift Id: S26-9979
+Period End: 2026-04-09
+Historical Show Rate: 0.89
+Late Cancel Rate: 0.26
+Visitor Impact Score: 61
+Coordinator Urgency: 46
+Recent Signup Velocity: 1.19
+Staffing Gap Score: 71
+Attendance Reliability Score: 49
+Signup Momentum Score: 86
+Revision: 1
+
+Record 359
+----------
+Metric Id: MET-00126
+Shift Id: S26-2859
+Period End: 2026-04-04
+Historical Show Rate: 0.92
+Late Cancel Rate: 0.14
+Visitor Impact Score: 89
+Coordinator Urgency: 97
+Recent Signup Velocity: 2.22
+Staffing Gap Score: 69
+Attendance Reliability Score: 69
+Signup Momentum Score: 41
+Revision: 1
+
+Record 360
+----------
+Metric Id: MET-00023
+Shift Id: S26-8406
+Period End: 2026-04-05
+Historical Show Rate: 0.69
+Late Cancel Rate: 0.19
+Visitor Impact Score: 92
+Coordinator Urgency: 90
+Recent Signup Velocity: 0.63
+Staffing Gap Score: 46
+Attendance Reliability Score: 87
+Signup Momentum Score: 71
+Revision: 1
+
+Record 361
+----------
+Metric Id: MET-00324
+Shift Id: S26-2721
+Period End: 2026-03-19
+Historical Show Rate: 0.59
+Late Cancel Rate: 0.28
+Visitor Impact Score: 92
+Coordinator Urgency: 51
+Recent Signup Velocity: 2.72
+Staffing Gap Score: 67
+Attendance Reliability Score: 79
+Signup Momentum Score: 41
+Revision: 1
+
+Record 362
+----------
+Metric Id: MET-00428
+Shift Id: S26-3213
+Period End: 2026-04-08
+Historical Show Rate: 0.91
+Late Cancel Rate: 0.08
+Visitor Impact Score: 81
+Coordinator Urgency: 82
+Recent Signup Velocity: 2.53
+Staffing Gap Score: 76
+Attendance Reliability Score: 83
+Signup Momentum Score: 73
+Revision: 1
+
+Record 363
+----------
+Metric Id: MET-00365
+Shift Id: S26-8068
+Period End: 2026-03-19
+Historical Show Rate: 0.92
+Late Cancel Rate: 0.21
+Visitor Impact Score: 69
+Coordinator Urgency: 93
+Recent Signup Velocity: 0.49
+Staffing Gap Score: 74
+Attendance Reliability Score: 76
+Signup Momentum Score: 63
+Revision: 1
+
+Record 364
+----------
+Metric Id: MET-00270
+Shift Id: S26-4384
+Period End: 2026-04-10
+Historical Show Rate: 0.69
+Late Cancel Rate: 0.08
+Visitor Impact Score: 50
+Coordinator Urgency: 87
+Recent Signup Velocity: 2.59
+Staffing Gap Score: 61
+Attendance Reliability Score: 96
+Signup Momentum Score: 44
+Revision: 1
+
+Record 365
+----------
+Metric Id: MET-00385
+Shift Id: S26-2849
+Period End: 2026-03-24
+Historical Show Rate: 0.8
+Late Cancel Rate: 0.13
+Visitor Impact Score: 92
+Coordinator Urgency: 63
+Recent Signup Velocity: 2.62
+Staffing Gap Score: 52
+Attendance Reliability Score: 79
+Signup Momentum Score: 71
+Revision: 1
+
+Record 366
+----------
+Metric Id: MET-00392
+Shift Id: S26-4131
+Period End: 2026-04-15
+Historical Show Rate: 0.95
+Late Cancel Rate: 0.21
+Visitor Impact Score: 55
+Coordinator Urgency: 64
+Recent Signup Velocity: 1.15
+Staffing Gap Score: 78
+Attendance Reliability Score: 75
+Signup Momentum Score: 42
+Revision: 1
+
+Record 367
+----------
+Metric Id: MET-00302
+Shift Id: S26-1760
+Period End: 2026-04-21
+Historical Show Rate: 0.9
+Late Cancel Rate: 0.26
+Visitor Impact Score: 85
+Coordinator Urgency: 74
+Recent Signup Velocity: 2.6
+Staffing Gap Score: 60
+Attendance Reliability Score: 48
+Signup Momentum Score: 75
+Revision: 1
+
+Record 368
+----------
+Metric Id: MET-00155
+Shift Id: S26-3647
+Period End: 2026-04-14
+Historical Show Rate: 0.68
+Late Cancel Rate: 0.22
+Visitor Impact Score: 97
+Coordinator Urgency: 77
+Recent Signup Velocity: 2.58
+Staffing Gap Score: 46
+Attendance Reliability Score: 53
+Signup Momentum Score: 51
+Revision: 1
+
+Record 369
+----------
+Metric Id: MET-00387
+Shift Id: S26-7083
+Period End: 2026-04-13
+Historical Show Rate: 0.6
+Late Cancel Rate: 0.09
+Visitor Impact Score: 89
+Coordinator Urgency: 45
+Recent Signup Velocity: 2.67
+Staffing Gap Score: 76
+Attendance Reliability Score: 48
+Signup Momentum Score: 94
+Revision: 1
+
+Record 370
+----------
+Metric Id: MET-00447
+Shift Id: S26-4196
+Period End: 2026-04-20
+Historical Show Rate: 0.57
+Late Cancel Rate: 0.24
+Visitor Impact Score: 79
+Coordinator Urgency: 96
+Recent Signup Velocity: 1.92
+Staffing Gap Score: 89
+Attendance Reliability Score: 53
+Signup Momentum Score: 60
+Revision: 1
+
+Record 371
+----------
+Metric Id: MET-00158
+Shift Id: S26-2636
+Period End: 2026-03-20
+Historical Show Rate: 0.79
+Late Cancel Rate: 0.16
+Visitor Impact Score: 69
+Coordinator Urgency: 77
+Recent Signup Velocity: 1.88
+Staffing Gap Score: 69
+Attendance Reliability Score: 83
+Signup Momentum Score: 75
+Revision: 1
+
+Record 372
+----------
+Metric Id: MET-00218
+Shift Id: S26-1859
+Period End: 2026-03-27
+Historical Show Rate: 0.71
+Late Cancel Rate: 0.09
+Visitor Impact Score: 98
+Coordinator Urgency: 78
+Recent Signup Velocity: 1.06
+Staffing Gap Score: 82
+Attendance Reliability Score: 52
+Signup Momentum Score: 79
+Revision: 1
+
+Record 373
+----------
+Metric Id: MET-00222
+Shift Id: S26-8865
+Period End: 2026-04-16
+Historical Show Rate: 0.76
+Late Cancel Rate: 0.15
+Visitor Impact Score: 96
+Coordinator Urgency: 67
+Recent Signup Velocity: 0.51
+Staffing Gap Score: 60
+Attendance Reliability Score: 62
+Signup Momentum Score: 89
+Revision: 1
+
+Record 374
+----------
+Metric Id: MET-00315
+Shift Id: S26-4929
+Period End: 2026-03-21
+Historical Show Rate: 0.61
+Late Cancel Rate: 0.03
+Visitor Impact Score: 55
+Coordinator Urgency: 81
+Recent Signup Velocity: 0.87
+Staffing Gap Score: 79
+Attendance Reliability Score: 50
+Signup Momentum Score: 89
+Revision: 1
+
+Record 375
+----------
+Metric Id: MET-00120
+Shift Id: S26-6148
+Period End: 2026-04-08
+Historical Show Rate: 0.83
+Late Cancel Rate: 0.1
+Visitor Impact Score: 96
+Coordinator Urgency: 94
+Recent Signup Velocity: 2.39
+Staffing Gap Score: 95
+Attendance Reliability Score: 93
+Signup Momentum Score: 94
+Revision: 1
+
+Record 376
+----------
+Metric Id: MET-00251
+Shift Id: S26-5308
+Period End: 2026-03-21
+Historical Show Rate: 0.61
+Late Cancel Rate: 0.12
+Visitor Impact Score: 75
+Coordinator Urgency: 60
+Recent Signup Velocity: 0.51
+Staffing Gap Score: 60
+Attendance Reliability Score: 56
+Signup Momentum Score: 93
+Revision: 1
+
+Record 377
+----------
+Metric Id: MET-00494
+Shift Id: S26-8803
+Period End: 2026-03-22
+Historical Show Rate: 0.95
+Late Cancel Rate: 0.24
+Visitor Impact Score: 58
+Coordinator Urgency: 48
+Recent Signup Velocity: 1.57
+Staffing Gap Score: 93
+Attendance Reliability Score: 50
+Signup Momentum Score: 76
+Revision: 1
+
+Record 378
+----------
+Metric Id: MET-00215
+Shift Id: S26-1977
+Period End: 2026-04-15
+Historical Show Rate: 0.74
+Late Cancel Rate: 0.28
+Visitor Impact Score: 64
+Coordinator Urgency: 96
+Recent Signup Velocity: 1.32
+Staffing Gap Score: 83
+Attendance Reliability Score: 70
+Signup Momentum Score: 96
+Revision: 1
+
+Record 379
+----------
+Metric Id: MET-00362
+Shift Id: S26-8440
+Period End: 2026-04-18
+Historical Show Rate: 0.66
+Late Cancel Rate: 0.2
+Visitor Impact Score: 81
+Coordinator Urgency: 50
+Recent Signup Velocity: 2.49
+Staffing Gap Score: 80
+Attendance Reliability Score: 75
+Signup Momentum Score: 86
+Revision: 1
+
+Record 380
+----------
+Metric Id: MET-00271
+Shift Id: S26-8135
+Period End: 2026-04-19
+Historical Show Rate: 0.7
+Late Cancel Rate: 0.15
+Visitor Impact Score: 94
+Coordinator Urgency: 97
+Recent Signup Velocity: 1.12
+Staffing Gap Score: 80
+Attendance Reliability Score: 96
+Signup Momentum Score: 77
+Revision: 1
+
+Record 381
+----------
+Metric Id: MET-00457
+Shift Id: S26-6697
+Period End: 2026-04-05
+Historical Show Rate: 0.7
+Late Cancel Rate: 0.22
+Visitor Impact Score: 66
+Coordinator Urgency: 46
+Recent Signup Velocity: 2.53
+Staffing Gap Score: 49
+Attendance Reliability Score: 92
+Signup Momentum Score: 41
+Revision: 1
+
+Record 382
+----------
+Metric Id: MET-00196
+Shift Id: S26-9361
+Period End: 2026-04-01
+Historical Show Rate: 0.55
+Late Cancel Rate: 0.25
+Visitor Impact Score: 76
+Coordinator Urgency: 84
+Recent Signup Velocity: 0.74
+Staffing Gap Score: 85
+Attendance Reliability Score: 91
+Signup Momentum Score: 54
+Revision: 1
+
+Record 383
+----------
+Metric Id: MET-00168
+Shift Id: S26-4111
+Period End: 2026-04-09
+Historical Show Rate: 0.83
+Late Cancel Rate: 0.13
+Visitor Impact Score: 54
+Coordinator Urgency: 74
+Recent Signup Velocity: 1.35
+Staffing Gap Score: 85
+Attendance Reliability Score: 67
+Signup Momentum Score: 61
+Revision: 1
+
+Record 384
+----------
+Metric Id: MET-00479
+Shift Id: S26-2670
+Period End: 2026-03-23
+Historical Show Rate: 0.82
+Late Cancel Rate: 0.24
+Visitor Impact Score: 73
+Coordinator Urgency: 71
+Recent Signup Velocity: 0.58
+Staffing Gap Score: 89
+Attendance Reliability Score: 53
+Signup Momentum Score: 87
+Revision: 1
+
+Record 385
+----------
+Metric Id: MET-00512
+Shift Id: S26-8952
+Period End: 2026-04-15
+Historical Show Rate: 0.67
+Late Cancel Rate: 0.07
+Visitor Impact Score: 71
+Coordinator Urgency: 85
+Recent Signup Velocity: 0.36
+Staffing Gap Score: 90
+Attendance Reliability Score: 64
+Signup Momentum Score: 51
+Revision: 1
+
+Record 386
+----------
+Metric Id: MET-00326
+Shift Id: S26-3083
+Period End: 2026-04-11
+Historical Show Rate: 0.9
+Late Cancel Rate: 0.1
+Visitor Impact Score: 87
+Coordinator Urgency: 75
+Recent Signup Velocity: 1.11
+Staffing Gap Score: 82
+Attendance Reliability Score: 92
+Signup Momentum Score: 69
+Revision: 1
+
+Record 387
+----------
+Metric Id: MET-00285
+Shift Id: S26-3067
+Period End: 2026-03-24
+Historical Show Rate: 0.86
+Late Cancel Rate: 0.13
+Visitor Impact Score: 95
+Coordinator Urgency: 85
+Recent Signup Velocity: 1.68
+Staffing Gap Score: 55
+Attendance Reliability Score: 85
+Signup Momentum Score: 96
+Revision: 1
+
+Record 388
+----------
+Metric Id: MET-00371
+Shift Id: S26-9674
+Period End: 2026-03-28
+Historical Show Rate: 0.6
+Late Cancel Rate: 0.1
+Visitor Impact Score: 93
+Coordinator Urgency: 98
+Recent Signup Velocity: 0.26
+Staffing Gap Score: 45
+Attendance Reliability Score: 63
+Signup Momentum Score: 57
+Revision: 1
+
+Record 389
+----------
+Metric Id: MET-00429
+Shift Id: S26-6219
+Period End: 2026-04-09
+Historical Show Rate: 0.79
+Late Cancel Rate: 0.23
+Visitor Impact Score: 77
+Coordinator Urgency: 56
+Recent Signup Velocity: 2.21
+Staffing Gap Score: 54
+Attendance Reliability Score: 66
+Signup Momentum Score: 41
+Revision: 1
+
+Record 390
+----------
+Metric Id: MET-00301
+Shift Id: S26-7498
+Period End: 2026-03-19
+Historical Show Rate: 0.83
+Late Cancel Rate: 0.26
+Visitor Impact Score: 95
+Coordinator Urgency: 49
+Recent Signup Velocity: 0.9
+Staffing Gap Score: 47
+Attendance Reliability Score: 47
+Signup Momentum Score: 70
+Revision: 1
+
+Record 391
+----------
+Metric Id: MET-00030
+Shift Id: S26-6035
+Period End: 2026-03-28
+Historical Show Rate: 0.62
+Late Cancel Rate: 0.06
+Visitor Impact Score: 51
+Coordinator Urgency: 98
+Recent Signup Velocity: 0.35
+Staffing Gap Score: 76
+Attendance Reliability Score: 65
+Signup Momentum Score: 73
+Revision: 1
+
+Record 392
+----------
+Metric Id: MET-00523
+Shift Id: S26-5747
+Period End: 2026-03-31
+Historical Show Rate: 0.91
+Late Cancel Rate: 0.1
+Visitor Impact Score: 81
+Coordinator Urgency: 75
+Recent Signup Velocity: 0.95
+Staffing Gap Score: 72
+Attendance Reliability Score: 76
+Signup Momentum Score: 48
+Revision: 1
+
+Record 393
+----------
+Metric Id: MET-00423
+Shift Id: S26-3797
+Period End: 2026-03-23
+Historical Show Rate: 0.72
+Late Cancel Rate: 0.05
+Visitor Impact Score: 87
+Coordinator Urgency: 65
+Recent Signup Velocity: 0.69
+Staffing Gap Score: 72
+Attendance Reliability Score: 56
+Signup Momentum Score: 49
+Revision: 1
+
+Record 394
+----------
+Metric Id: MET-00273
+Shift Id: S26-3645
+Period End: 2026-03-30
+Historical Show Rate: 0.71
+Late Cancel Rate: 0.04
+Visitor Impact Score: 51
+Coordinator Urgency: 50
+Recent Signup Velocity: 1.72
+Staffing Gap Score: 85
+Attendance Reliability Score: 58
+Signup Momentum Score: 81
+Revision: 1
+
+Record 395
+----------
+Metric Id: MET-00208
+Shift Id: S26-2065
+Period End: 2026-04-09
+Historical Show Rate: 0.64
+Late Cancel Rate: 0.08
+Visitor Impact Score: 45
+Coordinator Urgency: 85
+Recent Signup Velocity: 2.4
+Staffing Gap Score: 71
+Attendance Reliability Score: 66
+Signup Momentum Score: 81
+Revision: 1
+
+Record 396
+----------
+Metric Id: MET-00450
+Shift Id: S26-4271
+Period End: 2026-04-22
+Historical Show Rate: 0.64
+Late Cancel Rate: 0.19
+Visitor Impact Score: 91
+Coordinator Urgency: 96
+Recent Signup Velocity: 0.33
+Staffing Gap Score: 65
+Attendance Reliability Score: 84
+Signup Momentum Score: 63
+Revision: 1
+
+Record 397
+----------
+Metric Id: MET-00138
+Shift Id: S26-4695
+Period End: 2026-04-16
+Historical Show Rate: 0.58
+Late Cancel Rate: 0.07
+Visitor Impact Score: 67
+Coordinator Urgency: 50
+Recent Signup Velocity: 0.92
+Staffing Gap Score: 70
+Attendance Reliability Score: 75
+Signup Momentum Score: 94
+Revision: 1
+
+Record 398
+----------
+Metric Id: MET-00480
+Shift Id: S26-2670
+Period End: 2026-04-08
+Historical Show Rate: 0.73
+Late Cancel Rate: 0.04
+Visitor Impact Score: 65
+Coordinator Urgency: 98
+Recent Signup Velocity: 2.74
+Staffing Gap Score: 68
+Attendance Reliability Score: 70
+Signup Momentum Score: 76
+Revision: 1
+
+Record 399
+----------
+Metric Id: MET-00142
+Shift Id: S26-9821
+Period End: 2026-03-27
+Historical Show Rate: 0.86
+Late Cancel Rate: 0.28
+Visitor Impact Score: 55
+Coordinator Urgency: 80
+Recent Signup Velocity: 1.42
+Staffing Gap Score: 46
+Attendance Reliability Score: 95
+Signup Momentum Score: 50
+Revision: 1
+
+Record 400
+----------
+Metric Id: MET-00266
+Shift Id: S26-5290
+Period End: 2026-04-14
+Historical Show Rate: 0.88
+Late Cancel Rate: 0.18
+Visitor Impact Score: 87
+Coordinator Urgency: 53
+Recent Signup Velocity: 1.95
+Staffing Gap Score: 48
+Attendance Reliability Score: 71
+Signup Momentum Score: 78
+Revision: 1
+
+Record 401
+----------
+Metric Id: MET-00134
+Shift Id: S26-2079
+Period End: 2026-04-13
+Historical Show Rate: 0.77
+Late Cancel Rate: 0.13
+Visitor Impact Score: 46
+Coordinator Urgency: 73
+Recent Signup Velocity: 1.65
+Staffing Gap Score: 75
+Attendance Reliability Score: 79
+Signup Momentum Score: 90
+Revision: 1
+
+Record 402
+----------
+Metric Id: MET-00498
+Shift Id: S26-2620
+Period End: 2026-03-22
+Historical Show Rate: 0.81
+Late Cancel Rate: 0.24
+Visitor Impact Score: 91
+Coordinator Urgency: 89
+Recent Signup Velocity: 0.86
+Staffing Gap Score: 65
+Attendance Reliability Score: 47
+Signup Momentum Score: 92
+Revision: 1
+
+Record 403
+----------
+Metric Id: MET-00477
+Shift Id: S26-1072
+Period End: 2026-03-23
+Historical Show Rate: 0.8
+Late Cancel Rate: 0.08
+Visitor Impact Score: 81
+Coordinator Urgency: 73
+Recent Signup Velocity: 1.42
+Staffing Gap Score: 94
+Attendance Reliability Score: 46
+Signup Momentum Score: 72
+Revision: 1
+
+Record 404
+----------
+Metric Id: MET-00014
+Shift Id: S26-6236
+Period End: 2026-03-29
+Historical Show Rate: 0.92
+Late Cancel Rate: 0.17
+Visitor Impact Score: 75
+Coordinator Urgency: 89
+Recent Signup Velocity: 1.48
+Staffing Gap Score: 58
+Attendance Reliability Score: 82
+Signup Momentum Score: 96
+Revision: 1
+
+Record 405
+----------
+Metric Id: MET-00401
+Shift Id: S26-7103
+Period End: 2026-04-18
+Historical Show Rate: 0.73
+Late Cancel Rate: 0.09
+Visitor Impact Score: 51
+Coordinator Urgency: 97
+Recent Signup Velocity: 1.14
+Staffing Gap Score: 89
+Attendance Reliability Score: 68
+Signup Momentum Score: 85
+Revision: 1
+
+Record 406
+----------
+Metric Id: MET-00357
+Shift Id: S26-3081
+Period End: 2026-04-22
+Historical Show Rate: 0.72
+Late Cancel Rate: 0.18
+Visitor Impact Score: 74
+Coordinator Urgency: 59
+Recent Signup Velocity: 1.05
+Staffing Gap Score: 92
+Attendance Reliability Score: 51
+Signup Momentum Score: 80
+Revision: 1
+
+Record 407
+----------
+Metric Id: MET-00076
+Shift Id: S26-5113
+Period End: 2026-04-08
+Historical Show Rate: 0.68
+Late Cancel Rate: 0.23
+Visitor Impact Score: 82
+Coordinator Urgency: 46
+Recent Signup Velocity: 1.04
+Staffing Gap Score: 89
+Attendance Reliability Score: 86
+Signup Momentum Score: 71
+Revision: 1
+
+Record 408
+----------
+Metric Id: MET-00187
+Shift Id: S26-4672
+Period End: 2026-03-28
+Historical Show Rate: 0.65
+Late Cancel Rate: 0.13
+Visitor Impact Score: 90
+Coordinator Urgency: 63
+Recent Signup Velocity: 1.93
+Staffing Gap Score: 73
+Attendance Reliability Score: 88
+Signup Momentum Score: 93
+Revision: 1
+
+Record 409
+----------
+Metric Id: MET-00363
+Shift Id: S26-9044
+Period End: 2026-04-05
+Historical Show Rate: 0.75
+Late Cancel Rate: 0.16
+Visitor Impact Score: 86
+Coordinator Urgency: 77
+Recent Signup Velocity: 0.54
+Staffing Gap Score: 69
+Attendance Reliability Score: 50
+Signup Momentum Score: 59
+Revision: 1
+
+Record 410
+----------
+Metric Id: MET-00466
+Shift Id: S26-6390
+Period End: 2026-04-08
+Historical Show Rate: 0.63
+Late Cancel Rate: 0.25
+Visitor Impact Score: 81
+Coordinator Urgency: 94
+Recent Signup Velocity: 0.31
+Staffing Gap Score: 95
+Attendance Reliability Score: 74
+Signup Momentum Score: 53
+Revision: 1
+
+Record 411
+----------
+Metric Id: MET-00453
+Shift Id: S26-5136
+Period End: 2026-04-18
+Historical Show Rate: 0.73
+Late Cancel Rate: 0.24
+Visitor Impact Score: 56
+Coordinator Urgency: 91
+Recent Signup Velocity: 1.4
+Staffing Gap Score: 71
+Attendance Reliability Score: 80
+Signup Momentum Score: 70
+Revision: 1
+
+Record 412
+----------
+Metric Id: MET-00201
+Shift Id: S26-9832
+Period End: 2026-03-26
+Historical Show Rate: 0.8
+Late Cancel Rate: 0.03
+Visitor Impact Score: 94
+Coordinator Urgency: 93
+Recent Signup Velocity: 1.34
+Staffing Gap Score: 65
+Attendance Reliability Score: 65
+Signup Momentum Score: 64
+Revision: 1
+
+Record 413
+----------
+Metric Id: MET-00475
+Shift Id: S26-9001
+Period End: 2026-03-30
+Historical Show Rate: 0.59
+Late Cancel Rate: 0.23
+Visitor Impact Score: 68
+Coordinator Urgency: 46
+Recent Signup Velocity: 0.67
+Staffing Gap Score: 77
+Attendance Reliability Score: 72
+Signup Momentum Score: 83
+Revision: 1
+
+Record 414
+----------
+Metric Id: MET-00519
+Shift Id: S26-4096
+Period End: 2026-03-28
+Historical Show Rate: 0.86
+Late Cancel Rate: 0.25
+Visitor Impact Score: 72
+Coordinator Urgency: 85
+Recent Signup Velocity: 1.48
+Staffing Gap Score: 45
+Attendance Reliability Score: 65
+Signup Momentum Score: 77
+Revision: 1
+
+Record 415
+----------
+Metric Id: MET-00441
+Shift Id: S26-5066
+Period End: 2026-03-20
+Historical Show Rate: 0.56
+Late Cancel Rate: 0.13
+Visitor Impact Score: 86
+Coordinator Urgency: 87
+Recent Signup Velocity: 0.54
+Staffing Gap Score: 79
+Attendance Reliability Score: 55
+Signup Momentum Score: 63
+Revision: 1
+
+Record 416
+----------
+Metric Id: MET-00400
+Shift Id: S26-3951
+Period End: 2026-04-14
+Historical Show Rate: 0.87
+Late Cancel Rate: 0.11
+Visitor Impact Score: 67
+Coordinator Urgency: 82
+Recent Signup Velocity: 1.72
+Staffing Gap Score: 75
+Attendance Reliability Score: 66
+Signup Momentum Score: 65
+Revision: 1
+
+Record 417
+----------
+Metric Id: MET-00151
+Shift Id: S26-6080
+Period End: 2026-03-23
+Historical Show Rate: 0.59
+Late Cancel Rate: 0.18
+Visitor Impact Score: 98
+Coordinator Urgency: 64
+Recent Signup Velocity: 0.82
+Staffing Gap Score: 92
+Attendance Reliability Score: 66
+Signup Momentum Score: 54
+Revision: 1
+
+Record 418
+----------
+Metric Id: MET-00345
+Shift Id: S26-1711
+Period End: 2026-04-14
+Historical Show Rate: 0.68
+Late Cancel Rate: 0.2
+Visitor Impact Score: 59
+Coordinator Urgency: 50
+Recent Signup Velocity: 1.09
+Staffing Gap Score: 81
+Attendance Reliability Score: 76
+Signup Momentum Score: 52
+Revision: 1
+
+Record 419
+----------
+Metric Id: MET-00448
+Shift Id: S26-3706
+Period End: 2026-04-20
+Historical Show Rate: 0.93
+Late Cancel Rate: 0.09
+Visitor Impact Score: 98
+Coordinator Urgency: 65
+Recent Signup Velocity: 2.07
+Staffing Gap Score: 50
+Attendance Reliability Score: 60
+Signup Momentum Score: 90
+Revision: 1
+
+Record 420
+----------
+Metric Id: MET-00092
+Shift Id: S26-3006
+Period End: 2026-04-20
+Historical Show Rate: 0.75
+Late Cancel Rate: 0.1
+Visitor Impact Score: 90
+Coordinator Urgency: 79
+Recent Signup Velocity: 2.31
+Staffing Gap Score: 84
+Attendance Reliability Score: 79
+Signup Momentum Score: 74
+Revision: 1
+
+Record 421
+----------
+Metric Id: MET-00026
+Shift Id: S26-1341
+Period End: 2026-04-12
+Historical Show Rate: 0.96
+Late Cancel Rate: 0.23
+Visitor Impact Score: 68
+Coordinator Urgency: 61
+Recent Signup Velocity: 0.26
+Staffing Gap Score: 82
+Attendance Reliability Score: 63
+Signup Momentum Score: 61
+Revision: 1
+
+Record 422
+----------
+Metric Id: MET-00331
+Shift Id: S26-1246
+Period End: 2026-04-12
+Historical Show Rate: 0.7
+Late Cancel Rate: 0.11
+Visitor Impact Score: 63
+Coordinator Urgency: 80
+Recent Signup Velocity: 0.67
+Staffing Gap Score: 49
+Attendance Reliability Score: 56
+Signup Momentum Score: 58
+Revision: 1
+
+Record 423
+----------
+Metric Id: MET-00300
+Shift Id: S26-5863
+Period End: 2026-04-10
+Historical Show Rate: 0.83
+Late Cancel Rate: 0.05
+Visitor Impact Score: 84
+Coordinator Urgency: 75
+Recent Signup Velocity: 2.03
+Staffing Gap Score: 76
+Attendance Reliability Score: 76
+Signup Momentum Score: 89
+Revision: 1
+
+Record 424
+----------
+Metric Id: MET-00035
+Shift Id: S26-5505
+Period End: 2026-04-21
+Historical Show Rate: 0.64
+Late Cancel Rate: 0.17
+Visitor Impact Score: 59
+Coordinator Urgency: 53
+Recent Signup Velocity: 1.68
+Staffing Gap Score: 49
+Attendance Reliability Score: 46
+Signup Momentum Score: 76
+Revision: 1
+
+Record 425
+----------
+Metric Id: MET-00128
+Shift Id: S26-8397
+Period End: 2026-03-24
+Historical Show Rate: 0.8
+Late Cancel Rate: 0.09
+Visitor Impact Score: 96
+Coordinator Urgency: 51
+Recent Signup Velocity: 0.88
+Staffing Gap Score: 60
+Attendance Reliability Score: 85
+Signup Momentum Score: 44
+Revision: 1
+
+Record 426
+----------
+Metric Id: MET-00295
+Shift Id: S26-4599
+Period End: 2026-03-20
+Historical Show Rate: 0.76
+Late Cancel Rate: 0.27
+Visitor Impact Score: 71
+Coordinator Urgency: 56
+Recent Signup Velocity: 2.23
+Staffing Gap Score: 81
+Attendance Reliability Score: 67
+Signup Momentum Score: 60
+Revision: 1
+
+Record 427
+----------
+Metric Id: MET-00083
+Shift Id: S26-8130
+Period End: 2026-03-29
+Historical Show Rate: 0.61
+Late Cancel Rate: 0.11
+Visitor Impact Score: 72
+Coordinator Urgency: 77
+Recent Signup Velocity: 1.26
+Staffing Gap Score: 83
+Attendance Reliability Score: 57
+Signup Momentum Score: 96
+Revision: 1
+
+Record 428
+----------
+Metric Id: MET-00468
+Shift Id: S26-4072
+Period End: 2026-04-09
+Historical Show Rate: 0.68
+Late Cancel Rate: 0.15
+Visitor Impact Score: 86
+Coordinator Urgency: 97
+Recent Signup Velocity: 1.24
+Staffing Gap Score: 79
+Attendance Reliability Score: 81
+Signup Momentum Score: 49
+Revision: 1
+
+Record 429
+----------
+Metric Id: MET-00089
+Shift Id: S26-4933
+Period End: 2026-03-19
+Historical Show Rate: 0.89
+Late Cancel Rate: 0.23
+Visitor Impact Score: 68
+Coordinator Urgency: 92
+Recent Signup Velocity: 1.65
+Staffing Gap Score: 64
+Attendance Reliability Score: 87
+Signup Momentum Score: 46
+Revision: 1
+
+Record 430
+----------
+Metric Id: MET-00240
+Shift Id: S26-4077
+Period End: 2026-04-12
+Historical Show Rate: 0.67
+Late Cancel Rate: 0.07
+Visitor Impact Score: 97
+Coordinator Urgency: 80
+Recent Signup Velocity: 1.88
+Staffing Gap Score: 87
+Attendance Reliability Score: 63
+Signup Momentum Score: 92
+Revision: 1
+
+Record 431
+----------
+Metric Id: MET-00272
+Shift Id: S26-8135
+Period End: 2026-04-21
+Historical Show Rate: 0.77
+Late Cancel Rate: 0.21
+Visitor Impact Score: 69
+Coordinator Urgency: 88
+Recent Signup Velocity: 2.1
+Staffing Gap Score: 71
+Attendance Reliability Score: 89
+Signup Momentum Score: 67
+Revision: 1
+
+Record 432
+----------
+Metric Id: MET-00157
+Shift Id: S26-8835
+Period End: 2026-03-31
+Historical Show Rate: 0.74
+Late Cancel Rate: 0.26
+Visitor Impact Score: 45
+Coordinator Urgency: 64
+Recent Signup Velocity: 1.81
+Staffing Gap Score: 85
+Attendance Reliability Score: 84
+Signup Momentum Score: 61
+Revision: 1
+
+Record 433
+----------
+Metric Id: MET-00059
+Shift Id: S26-1202
+Period End: 2026-04-22
+Historical Show Rate: 0.59
+Late Cancel Rate: 0.13
+Visitor Impact Score: 89
+Coordinator Urgency: 70
+Recent Signup Velocity: 0.56
+Staffing Gap Score: 45
+Attendance Reliability Score: 45
+Signup Momentum Score: 69
+Revision: 1
+
+Record 434
+----------
+Metric Id: MET-00311
+Shift Id: S26-1677
+Period End: 2026-04-17
+Historical Show Rate: 0.89
+Late Cancel Rate: 0.22
+Visitor Impact Score: 79
+Coordinator Urgency: 68
+Recent Signup Velocity: 2.76
+Staffing Gap Score: 53
+Attendance Reliability Score: 90
+Signup Momentum Score: 94
+Revision: 1
+
+Record 435
+----------
+Metric Id: MET-00067
+Shift Id: S26-4081
+Period End: 2026-03-20
+Historical Show Rate: 0.9
+Late Cancel Rate: 0.1
+Visitor Impact Score: 67
+Coordinator Urgency: 58
+Recent Signup Velocity: 1.15
+Staffing Gap Score: 86
+Attendance Reliability Score: 85
+Signup Momentum Score: 61
+Revision: 1
+
+Record 436
+----------
+Metric Id: MET-00424
+Shift Id: S26-3797
+Period End: 2026-04-11
+Historical Show Rate: 0.67
+Late Cancel Rate: 0.15
+Visitor Impact Score: 81
+Coordinator Urgency: 48
+Recent Signup Velocity: 1.69
+Staffing Gap Score: 60
+Attendance Reliability Score: 84
+Signup Momentum Score: 53
+Revision: 1
+
+Record 437
+----------
+Metric Id: MET-00330
+Shift Id: S26-4456
+Period End: 2026-04-04
+Historical Show Rate: 0.84
+Late Cancel Rate: 0.13
+Visitor Impact Score: 86
+Coordinator Urgency: 70
+Recent Signup Velocity: 1.25
+Staffing Gap Score: 81
+Attendance Reliability Score: 75
+Signup Momentum Score: 71
+Revision: 1
+
+Record 438
+----------
+Metric Id: MET-00097
+Shift Id: S26-3536
+Period End: 2026-04-11
+Historical Show Rate: 0.69
+Late Cancel Rate: 0.22
+Visitor Impact Score: 73
+Coordinator Urgency: 97
+Recent Signup Velocity: 1.26
+Staffing Gap Score: 95
+Attendance Reliability Score: 62
+Signup Momentum Score: 58
+Revision: 1
+
+Record 439
+----------
+Metric Id: MET-00352
+Shift Id: S26-4157
+Period End: 2026-04-19
+Historical Show Rate: 0.7
+Late Cancel Rate: 0.13
+Visitor Impact Score: 94
+Coordinator Urgency: 54
+Recent Signup Velocity: 1.82
+Staffing Gap Score: 78
+Attendance Reliability Score: 53
+Signup Momentum Score: 41
+Revision: 1
+
+Record 440
+----------
+Metric Id: MET-00307
+Shift Id: S26-4591
+Period End: 2026-04-21
+Historical Show Rate: 0.79
+Late Cancel Rate: 0.24
+Visitor Impact Score: 50
+Coordinator Urgency: 71
+Recent Signup Velocity: 2.54
+Staffing Gap Score: 86
+Attendance Reliability Score: 51
+Signup Momentum Score: 56
+Revision: 1
+
+Record 441
+----------
+Metric Id: MET-00415
+Shift Id: S26-3474
+Period End: 2026-04-08
+Historical Show Rate: 0.63
+Late Cancel Rate: 0.22
+Visitor Impact Score: 65
+Coordinator Urgency: 56
+Recent Signup Velocity: 0.96
+Staffing Gap Score: 66
+Attendance Reliability Score: 64
+Signup Momentum Score: 60
+Revision: 1
+
+Record 442
+----------
+Metric Id: MET-00350
+Shift Id: S26-2989
+Period End: 2026-04-17
+Historical Show Rate: 0.7
+Late Cancel Rate: 0.03
+Visitor Impact Score: 60
+Coordinator Urgency: 50
+Recent Signup Velocity: 1.03
+Staffing Gap Score: 73
+Attendance Reliability Score: 82
+Signup Momentum Score: 86
+Revision: 1
+
+Record 443
+----------
+Metric Id: MET-00306
+Shift Id: S26-4591
+Period End: 2026-04-20
+Historical Show Rate: 0.72
+Late Cancel Rate: 0.04
+Visitor Impact Score: 89
+Coordinator Urgency: 95
+Recent Signup Velocity: 2.72
+Staffing Gap Score: 69
+Attendance Reliability Score: 50
+Signup Momentum Score: 78
+Revision: 1
+
+Record 444
+----------
+Metric Id: MET-00508
+Shift Id: S26-1512
+Period End: 2026-04-12
+Historical Show Rate: 0.75
+Late Cancel Rate: 0.25
+Visitor Impact Score: 85
+Coordinator Urgency: 65
+Recent Signup Velocity: 2.48
+Staffing Gap Score: 55
+Attendance Reliability Score: 73
+Signup Momentum Score: 62
+Revision: 1
+
+Record 445
+----------
+Metric Id: MET-00056
+Shift Id: S26-6613
+Period End: 2026-03-30
+Historical Show Rate: 0.82
+Late Cancel Rate: 0.22
+Visitor Impact Score: 49
+Coordinator Urgency: 78
+Recent Signup Velocity: 0.7
+Staffing Gap Score: 85
+Attendance Reliability Score: 69
+Signup Momentum Score: 48
+Revision: 1
+
+Record 446
+----------
+Metric Id: MET-00207
+Shift Id: S26-2065
+Period End: 2026-04-02
+Historical Show Rate: 0.58
+Late Cancel Rate: 0.13
+Visitor Impact Score: 45
+Coordinator Urgency: 88
+Recent Signup Velocity: 0.5
+Staffing Gap Score: 72
+Attendance Reliability Score: 67
+Signup Momentum Score: 60
+Revision: 1
+
+Record 447
+----------
+Metric Id: MET-00115
+Shift Id: S26-4339
+Period End: 2026-03-31
+Historical Show Rate: 0.68
+Late Cancel Rate: 0.15
+Visitor Impact Score: 87
+Coordinator Urgency: 54
+Recent Signup Velocity: 0.57
+Staffing Gap Score: 93
+Attendance Reliability Score: 63
+Signup Momentum Score: 76
+Revision: 1
+
+Record 448
+----------
+Metric Id: MET-00078
+Shift Id: S26-7672
+Period End: 2026-04-14
+Historical Show Rate: 0.55
+Late Cancel Rate: 0.12
+Visitor Impact Score: 95
+Coordinator Urgency: 62
+Recent Signup Velocity: 1.65
+Staffing Gap Score: 77
+Attendance Reliability Score: 80
+Signup Momentum Score: 82
+Revision: 1
+
+Record 449
+----------
+Metric Id: MET-00140
+Shift Id: S26-8948
+Period End: 2026-03-29
+Historical Show Rate: 0.73
+Late Cancel Rate: 0.27
+Visitor Impact Score: 72
+Coordinator Urgency: 66
+Recent Signup Velocity: 0.74
+Staffing Gap Score: 75
+Attendance Reliability Score: 94
+Signup Momentum Score: 73
+Revision: 1
+
+Record 450
+----------
+Metric Id: MET-00247
+Shift Id: S26-3131
+Period End: 2026-04-11
+Historical Show Rate: 0.69
+Late Cancel Rate: 0.27
+Visitor Impact Score: 91
+Coordinator Urgency: 76
+Recent Signup Velocity: 1.68
+Staffing Gap Score: 63
+Attendance Reliability Score: 59
+Signup Momentum Score: 52
+Revision: 1
+
+Record 451
+----------
+Metric Id: MET-00373
+Shift Id: S26-2906
+Period End: 2026-04-11
+Historical Show Rate: 0.87
+Late Cancel Rate: 0.05
+Visitor Impact Score: 68
+Coordinator Urgency: 60
+Recent Signup Velocity: 1.66
+Staffing Gap Score: 53
+Attendance Reliability Score: 50
+Signup Momentum Score: 76
+Revision: 1
+
+Record 452
+----------
+Metric Id: MET-00377
+Shift Id: S26-8373
+Period End: 2026-04-11
+Historical Show Rate: 0.57
+Late Cancel Rate: 0.23
+Visitor Impact Score: 57
+Coordinator Urgency: 52
+Recent Signup Velocity: 2.2
+Staffing Gap Score: 61
+Attendance Reliability Score: 52
+Signup Momentum Score: 64
+Revision: 1
+
+Record 453
+----------
+Metric Id: MET-00395
+Shift Id: S26-5259
+Period End: 2026-04-10
+Historical Show Rate: 0.82
+Late Cancel Rate: 0.12
+Visitor Impact Score: 86
+Coordinator Urgency: 89
+Recent Signup Velocity: 1.77
+Staffing Gap Score: 72
+Attendance Reliability Score: 77
+Signup Momentum Score: 73
+Revision: 1
+
+Record 454
+----------
+Metric Id: MET-00439
+Shift Id: S26-1295
+Period End: 2026-04-07
+Historical Show Rate: 0.75
+Late Cancel Rate: 0.24
+Visitor Impact Score: 63
+Coordinator Urgency: 53
+Recent Signup Velocity: 1.88
+Staffing Gap Score: 91
+Attendance Reliability Score: 51
+Signup Momentum Score: 95
+Revision: 1
+
+Record 455
+----------
+Metric Id: MET-00073
+Shift Id: S26-2645
+Period End: 2026-04-07
+Historical Show Rate: 0.96
+Late Cancel Rate: 0.06
+Visitor Impact Score: 87
+Coordinator Urgency: 64
+Recent Signup Velocity: 1.43
+Staffing Gap Score: 58
+Attendance Reliability Score: 56
+Signup Momentum Score: 71
+Revision: 1
+
+Record 456
+----------
+Metric Id: MET-00110
+Shift Id: S26-4201
+Period End: 2026-03-28
+Historical Show Rate: 0.71
+Late Cancel Rate: 0.03
+Visitor Impact Score: 90
+Coordinator Urgency: 57
+Recent Signup Velocity: 2.76
+Staffing Gap Score: 77
+Attendance Reliability Score: 63
+Signup Momentum Score: 48
+Revision: 1
+
+Record 457
+----------
+Metric Id: MET-00204
+Shift Id: S26-7521
+Period End: 2026-03-19
+Historical Show Rate: 0.56
+Late Cancel Rate: 0.04
+Visitor Impact Score: 56
+Coordinator Urgency: 54
+Recent Signup Velocity: 0.59
+Staffing Gap Score: 85
+Attendance Reliability Score: 66
+Signup Momentum Score: 92
+Revision: 1
+
+Record 458
+----------
+Metric Id: MET-00217
+Shift Id: S26-8066
+Period End: 2026-03-29
+Historical Show Rate: 0.82
+Late Cancel Rate: 0.06
+Visitor Impact Score: 46
+Coordinator Urgency: 92
+Recent Signup Velocity: 2.73
+Staffing Gap Score: 59
+Attendance Reliability Score: 76
+Signup Momentum Score: 46
+Revision: 1
+
+Record 459
+----------
+Metric Id: MET-00064
+Shift Id: S26-5094
+Period End: 2026-03-20
+Historical Show Rate: 0.77
+Late Cancel Rate: 0.2
+Visitor Impact Score: 76
+Coordinator Urgency: 47
+Recent Signup Velocity: 2.61
+Staffing Gap Score: 75
+Attendance Reliability Score: 89
+Signup Momentum Score: 45
+Revision: 1
+
+Record 460
+----------
+Metric Id: MET-00414
+Shift Id: S26-3474
+Period End: 2026-03-21
+Historical Show Rate: 0.6
+Late Cancel Rate: 0.26
+Visitor Impact Score: 62
+Coordinator Urgency: 79
+Recent Signup Velocity: 0.29
+Staffing Gap Score: 66
+Attendance Reliability Score: 95
+Signup Momentum Score: 83
+Revision: 1
+
+Record 461
+----------
+Metric Id: MET-00013
+Shift Id: S26-6236
+Period End: 2026-03-20
+Historical Show Rate: 0.59
+Late Cancel Rate: 0.22
+Visitor Impact Score: 73
+Coordinator Urgency: 61
+Recent Signup Velocity: 2.72
+Staffing Gap Score: 77
+Attendance Reliability Score: 61
+Signup Momentum Score: 67
+Revision: 1
+
+Record 462
+----------
+Metric Id: MET-00284
+Shift Id: S26-1092
+Period End: 2026-04-04
+Historical Show Rate: 0.93
+Late Cancel Rate: 0.11
+Visitor Impact Score: 50
+Coordinator Urgency: 70
+Recent Signup Velocity: 1.47
+Staffing Gap Score: 87
+Attendance Reliability Score: 87
+Signup Momentum Score: 64
+Revision: 1
+
+Record 463
+----------
+Metric Id: MET-00510
+Shift Id: S26-7241
+Period End: 2026-04-07
+Historical Show Rate: 0.69
+Late Cancel Rate: 0.13
+Visitor Impact Score: 87
+Coordinator Urgency: 70
+Recent Signup Velocity: 2.3
+Staffing Gap Score: 77
+Attendance Reliability Score: 95
+Signup Momentum Score: 78
+Revision: 1
+
+Record 464
+----------
+Metric Id: MET-00107
+Shift Id: S26-3569
+Period End: 2026-04-11
+Historical Show Rate: 0.73
+Late Cancel Rate: 0.12
+Visitor Impact Score: 78
+Coordinator Urgency: 56
+Recent Signup Velocity: 2.77
+Staffing Gap Score: 92
+Attendance Reliability Score: 61
+Signup Momentum Score: 55
+Revision: 1
+
+Record 465
+----------
+Metric Id: MET-00129
+Shift Id: S26-8397
+Period End: 2026-04-02
+Historical Show Rate: 0.92
+Late Cancel Rate: 0.2
+Visitor Impact Score: 67
+Coordinator Urgency: 89
+Recent Signup Velocity: 1.27
+Staffing Gap Score: 81
+Attendance Reliability Score: 81
+Signup Momentum Score: 72
+Revision: 1
+
+Record 466
+----------
+Metric Id: MET-00136
+Shift Id: S26-2833
+Period End: 2026-04-19
+Historical Show Rate: 0.71
+Late Cancel Rate: 0.17
+Visitor Impact Score: 93
+Coordinator Urgency: 97
+Recent Signup Velocity: 1.66
+Staffing Gap Score: 86
+Attendance Reliability Score: 63
+Signup Momentum Score: 65
+Revision: 1
+
+Record 467
+----------
+Metric Id: MET-00010
+Shift Id: S26-8764
+Period End: 2026-03-31
+Historical Show Rate: 0.87
+Late Cancel Rate: 0.22
+Visitor Impact Score: 81
+Coordinator Urgency: 50
+Recent Signup Velocity: 1.67
+Staffing Gap Score: 87
+Attendance Reliability Score: 46
+Signup Momentum Score: 58
+Revision: 1
+
+Record 468
+----------
+Metric Id: MET-00487
+Shift Id: S26-1904
+Period End: 2026-04-03
+Historical Show Rate: 0.83
+Late Cancel Rate: 0.18
+Visitor Impact Score: 55
+Coordinator Urgency: 64
+Recent Signup Velocity: 1.08
+Staffing Gap Score: 84
+Attendance Reliability Score: 70
+Signup Momentum Score: 63
+Revision: 1
+
+Record 469
+----------
+Metric Id: MET-00019
+Shift Id: S26-5468
+Period End: 2026-04-12
+Historical Show Rate: 0.82
+Late Cancel Rate: 0.09
+Visitor Impact Score: 79
+Coordinator Urgency: 85
+Recent Signup Velocity: 2.35
+Staffing Gap Score: 73
+Attendance Reliability Score: 77
+Signup Momentum Score: 92
+Revision: 1
+
+Record 470
+----------
+Metric Id: MET-00200
+Shift Id: S26-9832
+Period End: 2026-03-24
+Historical Show Rate: 0.59
+Late Cancel Rate: 0.19
+Visitor Impact Score: 70
+Coordinator Urgency: 50
+Recent Signup Velocity: 1.88
+Staffing Gap Score: 70
+Attendance Reliability Score: 69
+Signup Momentum Score: 87
+Revision: 1
+
+Record 471
+----------
+Metric Id: MET-00058
+Shift Id: S26-1202
+Period End: 2026-03-22
+Historical Show Rate: 0.62
+Late Cancel Rate: 0.07
+Visitor Impact Score: 83
+Coordinator Urgency: 62
+Recent Signup Velocity: 2.12
+Staffing Gap Score: 55
+Attendance Reliability Score: 93
+Signup Momentum Score: 48
+Revision: 1
+
+Record 472
+----------
+Metric Id: MET-00212
+Shift Id: S26-6330
+Period End: 2026-03-24
+Historical Show Rate: 0.57
+Late Cancel Rate: 0.07
+Visitor Impact Score: 50
+Coordinator Urgency: 67
+Recent Signup Velocity: 0.51
+Staffing Gap Score: 58
+Attendance Reliability Score: 58
+Signup Momentum Score: 44
+Revision: 1
+
+Record 473
+----------
+Metric Id: MET-00370
+Shift Id: S26-9674
+Period End: 2026-03-19
+Historical Show Rate: 0.57
+Late Cancel Rate: 0.04
+Visitor Impact Score: 47
+Coordinator Urgency: 77
+Recent Signup Velocity: 1.94
+Staffing Gap Score: 85
+Attendance Reliability Score: 77
+Signup Momentum Score: 91
+Revision: 1
+
+Record 474
+----------
+Metric Id: MET-00172
+Shift Id: S26-8638
+Period End: 2026-04-19
+Historical Show Rate: 0.75
+Late Cancel Rate: 0.17
+Visitor Impact Score: 52
+Coordinator Urgency: 46
+Recent Signup Velocity: 1.15
+Staffing Gap Score: 89
+Attendance Reliability Score: 51
+Signup Momentum Score: 95
+Revision: 1
+
+Record 475
+----------
+Metric Id: MET-00386
+Shift Id: S26-4460
+Period End: 2026-04-02
+Historical Show Rate: 0.64
+Late Cancel Rate: 0.26
+Visitor Impact Score: 46
+Coordinator Urgency: 67
+Recent Signup Velocity: 1.0
+Staffing Gap Score: 86
+Attendance Reliability Score: 51
+Signup Momentum Score: 48
+Revision: 1
+
+Record 476
+----------
+Metric Id: MET-00368
+Shift Id: S26-8024
+Period End: 2026-04-07
+Historical Show Rate: 0.55
+Late Cancel Rate: 0.21
+Visitor Impact Score: 57
+Coordinator Urgency: 50
+Recent Signup Velocity: 1.43
+Staffing Gap Score: 94
+Attendance Reliability Score: 85
+Signup Momentum Score: 54
+Revision: 1
+
+Record 477
+----------
+Metric Id: MET-00325
+Shift Id: S26-2721
+Period End: 2026-04-13
+Historical Show Rate: 0.6
+Late Cancel Rate: 0.27
+Visitor Impact Score: 47
+Coordinator Urgency: 67
+Recent Signup Velocity: 2.32
+Staffing Gap Score: 94
+Attendance Reliability Score: 83
+Signup Momentum Score: 89
+Revision: 1
+
+Record 478
+----------
+Metric Id: MET-00055
+Shift Id: S26-4189
+Period End: 2026-04-14
+Historical Show Rate: 0.78
+Late Cancel Rate: 0.22
+Visitor Impact Score: 79
+Coordinator Urgency: 78
+Recent Signup Velocity: 2.53
+Staffing Gap Score: 81
+Attendance Reliability Score: 80
+Signup Momentum Score: 44
+Revision: 1
+
+Record 479
+----------
+Metric Id: MET-00252
+Shift Id: S26-9935
+Period End: 2026-03-19
+Historical Show Rate: 0.75
+Late Cancel Rate: 0.15
+Visitor Impact Score: 76
+Coordinator Urgency: 71
+Recent Signup Velocity: 1.74
+Staffing Gap Score: 82
+Attendance Reliability Score: 70
+Signup Momentum Score: 77
+Revision: 1
+
+Record 480
+----------
+Metric Id: MET-00002
+Shift Id: S26-3389
+Period End: 2026-04-03
+Historical Show Rate: 0.85
+Late Cancel Rate: 0.04
+Visitor Impact Score: 58
+Coordinator Urgency: 72
+Recent Signup Velocity: 1.81
+Staffing Gap Score: 48
+Attendance Reliability Score: 45
+Signup Momentum Score: 51
+Revision: 1
+
+Record 481
+----------
+Metric Id: MET-00384
+Shift Id: S26-3369
+Period End: 2026-04-20
+Historical Show Rate: 0.88
+Late Cancel Rate: 0.07
+Visitor Impact Score: 82
+Coordinator Urgency: 79
+Recent Signup Velocity: 2.11
+Staffing Gap Score: 81
+Attendance Reliability Score: 83
+Signup Momentum Score: 83
+Revision: 1
+
+Record 482
+----------
+Metric Id: MET-00253
+Shift Id: S26-4296
+Period End: 2026-03-29
+Historical Show Rate: 0.57
+Late Cancel Rate: 0.2
+Visitor Impact Score: 96
+Coordinator Urgency: 91
+Recent Signup Velocity: 0.84
+Staffing Gap Score: 73
+Attendance Reliability Score: 68
+Signup Momentum Score: 86
+Revision: 1
+
+Record 483
+----------
+Metric Id: MET-00005
+Shift Id: S26-1885
+Period End: 2026-04-08
+Historical Show Rate: 0.57
+Late Cancel Rate: 0.21
+Visitor Impact Score: 88
+Coordinator Urgency: 58
+Recent Signup Velocity: 1.12
+Staffing Gap Score: 46
+Attendance Reliability Score: 69
+Signup Momentum Score: 54
+Revision: 1
+
+Record 484
+----------
+Metric Id: MET-00472
+Shift Id: S26-5763
+Period End: 2026-04-03
+Historical Show Rate: 0.78
+Late Cancel Rate: 0.22
+Visitor Impact Score: 72
+Coordinator Urgency: 48
+Recent Signup Velocity: 2.09
+Staffing Gap Score: 61
+Attendance Reliability Score: 54
+Signup Momentum Score: 68
+Revision: 1
+
+Record 485
+----------
+Metric Id: MET-00309
+Shift Id: S26-6297
+Period End: 2026-03-28
+Historical Show Rate: 0.55
+Late Cancel Rate: 0.07
+Visitor Impact Score: 92
+Coordinator Urgency: 97
+Recent Signup Velocity: 1.12
+Staffing Gap Score: 84
+Attendance Reliability Score: 93
+Signup Momentum Score: 88
+Revision: 1
+
+Record 486
+----------
+Metric Id: MET-00226
+Shift Id: S26-8247
+Period End: 2026-04-22
+Historical Show Rate: 0.9
+Late Cancel Rate: 0.07
+Visitor Impact Score: 93
+Coordinator Urgency: 89
+Recent Signup Velocity: 2.75
+Staffing Gap Score: 53
+Attendance Reliability Score: 45
+Signup Momentum Score: 63
+Revision: 1
+
+Record 487
+----------
+Metric Id: MET-00471
+Shift Id: S26-9580
+Period End: 2026-04-05
+Historical Show Rate: 0.78
+Late Cancel Rate: 0.06
+Visitor Impact Score: 60
+Coordinator Urgency: 55
+Recent Signup Velocity: 1.0
+Staffing Gap Score: 51
+Attendance Reliability Score: 83
+Signup Momentum Score: 69
+Revision: 1
+
+Record 488
+----------
+Metric Id: MET-00355
+Shift Id: S26-7882
+Period End: 2026-04-07
+Historical Show Rate: 0.68
+Late Cancel Rate: 0.16
+Visitor Impact Score: 97
+Coordinator Urgency: 67
+Recent Signup Velocity: 2.36
+Staffing Gap Score: 56
+Attendance Reliability Score: 50
+Signup Momentum Score: 65
+Revision: 1
+
+Record 489
+----------
+Metric Id: MET-00455
+Shift Id: S26-5024
+Period End: 2026-03-22
+Historical Show Rate: 0.8
+Late Cancel Rate: 0.21
+Visitor Impact Score: 93
+Coordinator Urgency: 65
+Recent Signup Velocity: 0.46
+Staffing Gap Score: 88
+Attendance Reliability Score: 50
+Signup Momentum Score: 43
+Revision: 1
+
+Record 490
+----------
+Metric Id: MET-00514
+Shift Id: S26-4448
+Period End: 2026-03-28
+Historical Show Rate: 0.89
+Late Cancel Rate: 0.11
+Visitor Impact Score: 58
+Coordinator Urgency: 57
+Recent Signup Velocity: 1.55
+Staffing Gap Score: 92
+Attendance Reliability Score: 67
+Signup Momentum Score: 96
+Revision: 1
+
+Record 491
+----------
+Metric Id: MET-00298
+Shift Id: S26-8554
+Period End: 2026-03-24
+Historical Show Rate: 0.64
+Late Cancel Rate: 0.09
+Visitor Impact Score: 68
+Coordinator Urgency: 90
+Recent Signup Velocity: 0.95
+Staffing Gap Score: 71
+Attendance Reliability Score: 46
+Signup Momentum Score: 54
+Revision: 1
+
+Record 492
+----------
+Metric Id: MET-00085
+Shift Id: S26-8453
+Period End: 2026-04-01
+Historical Show Rate: 0.91
+Late Cancel Rate: 0.22
+Visitor Impact Score: 48
+Coordinator Urgency: 52
+Recent Signup Velocity: 2.79
+Staffing Gap Score: 57
+Attendance Reliability Score: 87
+Signup Momentum Score: 96
+Revision: 1
+
+Record 493
+----------
+Metric Id: MET-00191
+Shift Id: S26-9903
+Period End: 2026-03-20
+Historical Show Rate: 0.71
+Late Cancel Rate: 0.19
+Visitor Impact Score: 58
+Coordinator Urgency: 48
+Recent Signup Velocity: 2.3
+Staffing Gap Score: 91
+Attendance Reliability Score: 82
+Signup Momentum Score: 79
+Revision: 1
+
+Record 494
+----------
+Metric Id: MET-00408
+Shift Id: S26-4932
+Period End: 2026-04-01
+Historical Show Rate: 0.91
+Late Cancel Rate: 0.23
+Visitor Impact Score: 59
+Coordinator Urgency: 85
+Recent Signup Velocity: 1.27
+Staffing Gap Score: 66
+Attendance Reliability Score: 83
+Signup Momentum Score: 63
+Revision: 1
+
+Record 495
+----------
+Metric Id: MET-00243
+Shift Id: S26-4955
+Period End: 2026-04-19
+Historical Show Rate: 0.79
+Late Cancel Rate: 0.24
+Visitor Impact Score: 53
+Coordinator Urgency: 53
+Recent Signup Velocity: 1.57
+Staffing Gap Score: 78
+Attendance Reliability Score: 76
+Signup Momentum Score: 65
+Revision: 1
+
+Record 496
+----------
+Metric Id: MET-00008
+Shift Id: S26-2113
+Period End: 2026-04-09
+Historical Show Rate: 0.63
+Late Cancel Rate: 0.1
+Visitor Impact Score: 75
+Coordinator Urgency: 67
+Recent Signup Velocity: 2.05
+Staffing Gap Score: 90
+Attendance Reliability Score: 58
+Signup Momentum Score: 84
+Revision: 1
+
+Record 497
+----------
+Metric Id: MET-00161
+Shift Id: S26-5434
+Period End: 2026-04-02
+Historical Show Rate: 0.78
+Late Cancel Rate: 0.22
+Visitor Impact Score: 48
+Coordinator Urgency: 63
+Recent Signup Velocity: 0.21
+Staffing Gap Score: 45
+Attendance Reliability Score: 67
+Signup Momentum Score: 52
+Revision: 1
+
+Record 498
+----------
+Metric Id: MET-00130
+Shift Id: S26-3125
+Period End: 2026-04-02
+Historical Show Rate: 0.64
+Late Cancel Rate: 0.2
+Visitor Impact Score: 50
+Coordinator Urgency: 78
+Recent Signup Velocity: 1.67
+Staffing Gap Score: 89
+Attendance Reliability Score: 61
+Signup Momentum Score: 73
+Revision: 1
+
+Record 499
+----------
+Metric Id: MET-00248
+Shift Id: S26-1882
+Period End: 2026-03-26
+Historical Show Rate: 0.83
+Late Cancel Rate: 0.27
+Visitor Impact Score: 90
+Coordinator Urgency: 61
+Recent Signup Velocity: 0.29
+Staffing Gap Score: 52
+Attendance Reliability Score: 76
+Signup Momentum Score: 43
+Revision: 1
+
+Record 500
+----------
+Metric Id: MET-00299
+Shift Id: S26-5863
+Period End: 2026-04-03
+Historical Show Rate: 0.83
+Late Cancel Rate: 0.13
+Visitor Impact Score: 66
+Coordinator Urgency: 87
+Recent Signup Velocity: 2.59
+Staffing Gap Score: 79
+Attendance Reliability Score: 81
+Signup Momentum Score: 54
+Revision: 1
+
+Record 501
+----------
+Metric Id: MET-00242
+Shift Id: S26-4955
+Period End: 2026-04-19
+Historical Show Rate: 0.86
+Late Cancel Rate: 0.19
+Visitor Impact Score: 80
+Coordinator Urgency: 91
+Recent Signup Velocity: 0.88
+Staffing Gap Score: 78
+Attendance Reliability Score: 88
+Signup Momentum Score: 47
+Revision: 1
+
+Record 502
+----------
+Metric Id: MET-00141
+Shift Id: S26-8948
+Period End: 2026-04-14
+Historical Show Rate: 0.83
+Late Cancel Rate: 0.21
+Visitor Impact Score: 54
+Coordinator Urgency: 48
+Recent Signup Velocity: 0.23
+Staffing Gap Score: 60
+Attendance Reliability Score: 69
+Signup Momentum Score: 57
+Revision: 1
+
+Record 503
+----------
+Metric Id: MET-00409
+Shift Id: S26-8054
+Period End: 2026-04-20
+Historical Show Rate: 0.96
+Late Cancel Rate: 0.23
+Visitor Impact Score: 85
+Coordinator Urgency: 60
+Recent Signup Velocity: 0.65
+Staffing Gap Score: 81
+Attendance Reliability Score: 84
+Signup Momentum Score: 75
+Revision: 1
+
+Record 504
+----------
+Metric Id: MET-00399
+Shift Id: S26-3951
+Period End: 2026-04-10
+Historical Show Rate: 0.77
+Late Cancel Rate: 0.24
+Visitor Impact Score: 62
+Coordinator Urgency: 94
+Recent Signup Velocity: 1.81
+Staffing Gap Score: 93
+Attendance Reliability Score: 74
+Signup Momentum Score: 65
+Revision: 1
+
+Record 505
+----------
+Metric Id: MET-00109
+Shift Id: S26-2917
+Period End: 2026-03-19
+Historical Show Rate: 0.83
+Late Cancel Rate: 0.11
+Visitor Impact Score: 74
+Coordinator Urgency: 57
+Recent Signup Velocity: 1.32
+Staffing Gap Score: 77
+Attendance Reliability Score: 47
+Signup Momentum Score: 85
+Revision: 1
+
+Record 506
+----------
+Metric Id: MET-00255
+Shift Id: S26-1729
+Period End: 2026-04-03
+Historical Show Rate: 0.68
+Late Cancel Rate: 0.2
+Visitor Impact Score: 52
+Coordinator Urgency: 60
+Recent Signup Velocity: 2.14
+Staffing Gap Score: 86
+Attendance Reliability Score: 49
+Signup Momentum Score: 74
+Revision: 1
+
+Record 507
+----------
+Metric Id: MET-00280
+Shift Id: S26-9510
+Period End: 2026-03-26
+Historical Show Rate: 0.6
+Late Cancel Rate: 0.06
+Visitor Impact Score: 89
+Coordinator Urgency: 92
+Recent Signup Velocity: 2.41
+Staffing Gap Score: 51
+Attendance Reliability Score: 66
+Signup Momentum Score: 82
+Revision: 1
+
+Record 508
+----------
+Metric Id: MET-00420
+Shift Id: S26-6504
+Period End: 2026-04-19
+Historical Show Rate: 0.92
+Late Cancel Rate: 0.28
+Visitor Impact Score: 46
+Coordinator Urgency: 91
+Recent Signup Velocity: 0.3
+Staffing Gap Score: 59
+Attendance Reliability Score: 56
+Signup Momentum Score: 78
+Revision: 1
+
+Record 509
+----------
+Metric Id: MET-00060
+Shift Id: S26-6503
+Period End: 2026-04-17
+Historical Show Rate: 0.61
+Late Cancel Rate: 0.14
+Visitor Impact Score: 78
+Coordinator Urgency: 63
+Recent Signup Velocity: 0.96
+Staffing Gap Score: 65
+Attendance Reliability Score: 53
+Signup Momentum Score: 53
+Revision: 1
+
+Record 510
+----------
+Metric Id: MET-00449
+Shift Id: S26-4271
+Period End: 2026-03-27
+Historical Show Rate: 0.86
+Late Cancel Rate: 0.24
+Visitor Impact Score: 74
+Coordinator Urgency: 51
+Recent Signup Velocity: 0.85
+Staffing Gap Score: 86
+Attendance Reliability Score: 96
+Signup Momentum Score: 83
+Revision: 1
+
+Record 511
+----------
+Metric Id: MET-00033
+Shift Id: S26-1291
+Period End: 2026-04-06
+Historical Show Rate: 0.74
+Late Cancel Rate: 0.1
+Visitor Impact Score: 88
+Coordinator Urgency: 96
+Recent Signup Velocity: 0.43
+Staffing Gap Score: 92
+Attendance Reliability Score: 85
+Signup Momentum Score: 91
+Revision: 1
+
+Record 512
+----------
+Metric Id: MET-00376
+Shift Id: S26-8008
+Period End: 2026-03-28
+Historical Show Rate: 0.93
+Late Cancel Rate: 0.16
+Visitor Impact Score: 61
+Coordinator Urgency: 88
+Recent Signup Velocity: 2.59
+Staffing Gap Score: 55
+Attendance Reliability Score: 96
+Signup Momentum Score: 54
+Revision: 1
+
+Record 513
+----------
+Metric Id: MET-00317
+Shift Id: S26-5108
+Period End: 2026-04-21
+Historical Show Rate: 0.96
+Late Cancel Rate: 0.19
+Visitor Impact Score: 96
+Coordinator Urgency: 83
+Recent Signup Velocity: 0.36
+Staffing Gap Score: 59
+Attendance Reliability Score: 80
+Signup Momentum Score: 62
+Revision: 1
+
+Record 514
+----------
+Metric Id: MET-00066
+Shift Id: S26-6377
+Period End: 2026-04-02
+Historical Show Rate: 0.93
+Late Cancel Rate: 0.22
+Visitor Impact Score: 52
+Coordinator Urgency: 71
+Recent Signup Velocity: 1.02
+Staffing Gap Score: 46
+Attendance Reliability Score: 70
+Signup Momentum Score: 84
+Revision: 1
+
+Record 515
+----------
+Metric Id: MET-00044
+Shift Id: S26-9106
+Period End: 2026-04-08
+Historical Show Rate: 0.62
+Late Cancel Rate: 0.24
+Visitor Impact Score: 49
+Coordinator Urgency: 90
+Recent Signup Velocity: 1.16
+Staffing Gap Score: 94
+Attendance Reliability Score: 58
+Signup Momentum Score: 66
+Revision: 1
+
+Record 516
+----------
+Metric Id: MET-00292
+Shift Id: S26-2093
+Period End: 2026-04-09
+Historical Show Rate: 0.73
+Late Cancel Rate: 0.05
+Visitor Impact Score: 51
+Coordinator Urgency: 51
+Recent Signup Velocity: 1.99
+Staffing Gap Score: 53
+Attendance Reliability Score: 56
+Signup Momentum Score: 86
+Revision: 1
+
+Record 517
+----------
+Metric Id: MET-00148
+Shift Id: S26-6478
+Period End: 2026-04-09
+Historical Show Rate: 0.92
+Late Cancel Rate: 0.12
+Visitor Impact Score: 98
+Coordinator Urgency: 65
+Recent Signup Velocity: 1.83
+Staffing Gap Score: 81
+Attendance Reliability Score: 52
+Signup Momentum Score: 41
+Revision: 1
+
+Record 518
+----------
+Metric Id: MET-00473
+Shift Id: S26-2095
+Period End: 2026-04-17
+Historical Show Rate: 0.73
+Late Cancel Rate: 0.28
+Visitor Impact Score: 56
+Coordinator Urgency: 47
+Recent Signup Velocity: 0.74
+Staffing Gap Score: 62
+Attendance Reliability Score: 56
+Signup Momentum Score: 48
+Revision: 1
+
+Record 519
+----------
+Metric Id: MET-00489
+Shift Id: S26-9792
+Period End: 2026-04-18
+Historical Show Rate: 0.91
+Late Cancel Rate: 0.04
+Visitor Impact Score: 52
+Coordinator Urgency: 68
+Recent Signup Velocity: 0.24
+Staffing Gap Score: 55
+Attendance Reliability Score: 75
+Signup Momentum Score: 81
+Revision: 1
+
+Record 520
+----------
+Metric Id: MET-00261
+Shift Id: S26-5102
+Period End: 2026-04-14
+Historical Show Rate: 0.62
+Late Cancel Rate: 0.17
+Visitor Impact Score: 88
+Coordinator Urgency: 65
+Recent Signup Velocity: 0.22
+Staffing Gap Score: 83
+Attendance Reliability Score: 64
+Signup Momentum Score: 92
+Revision: 1
+
+Record 521
+----------
+Metric Id: MET-00275
+Shift Id: S26-8029
+Period End: 2026-03-19
+Historical Show Rate: 0.58
+Late Cancel Rate: 0.27
+Visitor Impact Score: 71
+Coordinator Urgency: 61
+Recent Signup Velocity: 0.79
+Staffing Gap Score: 53
+Attendance Reliability Score: 65
+Signup Momentum Score: 78
+Revision: 1
+
+Record 522
+----------
+Metric Id: MET-00123
+Shift Id: S26-1587
+Period End: 2026-03-24
+Historical Show Rate: 0.88
+Late Cancel Rate: 0.12
+Visitor Impact Score: 47
+Coordinator Urgency: 86
+Recent Signup Velocity: 0.97
+Staffing Gap Score: 78
+Attendance Reliability Score: 78
+Signup Momentum Score: 48
+Revision: 1
+
+Record 523
+----------
+Metric Id: MET-00133
+Shift Id: S26-4359
+Period End: 2026-04-13
+Historical Show Rate: 0.56
+Late Cancel Rate: 0.12
+Visitor Impact Score: 79
+Coordinator Urgency: 69
+Recent Signup Velocity: 0.88
+Staffing Gap Score: 65
+Attendance Reliability Score: 77
+Signup Momentum Score: 72
+Revision: 1
+
+Record 524
+----------
+Metric Id: MET-00434
+Shift Id: S26-3143
+Period End: 2026-04-07
+Historical Show Rate: 0.57
+Late Cancel Rate: 0.04
+Visitor Impact Score: 66
+Coordinator Urgency: 87
+Recent Signup Velocity: 2.03
+Staffing Gap Score: 85
+Attendance Reliability Score: 88
+Signup Momentum Score: 92
+Revision: 1
+
+Record 525
+----------
+Metric Id: MET-00159
+Shift Id: S26-3500
+Period End: 2026-03-19
+Historical Show Rate: 0.92
+Late Cancel Rate: 0.18
+Visitor Impact Score: 67
+Coordinator Urgency: 98
+Recent Signup Velocity: 0.47
+Staffing Gap Score: 76
+Attendance Reliability Score: 54
+Signup Momentum Score: 69
+Revision: 1
+
+Record 526
+----------
+Metric Id: MET-00505
+Shift Id: S26-2539
+Period End: 2026-03-31
+Historical Show Rate: 0.92
+Late Cancel Rate: 0.2
+Visitor Impact Score: 56
+Coordinator Urgency: 54
+Recent Signup Velocity: 0.89
+Staffing Gap Score: 87
+Attendance Reliability Score: 66
+Signup Momentum Score: 93
+Revision: 1
+
+Record 527
+----------
+Metric Id: MET-00086
+Shift Id: S26-8453
+Period End: 2026-04-21
+Historical Show Rate: 0.88
+Late Cancel Rate: 0.15
+Visitor Impact Score: 75
+Coordinator Urgency: 82
+Recent Signup Velocity: 0.72
+Staffing Gap Score: 91
+Attendance Reliability Score: 50
+Signup Momentum Score: 61
+Revision: 1
+
+Record 528
+----------
+Metric Id: MET-00500
+Shift Id: S26-9645
+Period End: 2026-03-22
+Historical Show Rate: 0.63
+Late Cancel Rate: 0.1
+Visitor Impact Score: 60
+Coordinator Urgency: 70
+Recent Signup Velocity: 0.32
+Staffing Gap Score: 56
+Attendance Reliability Score: 63
+Signup Momentum Score: 91
+Revision: 1
+
+Record 529
+----------
+Metric Id: MET-00160
+Shift Id: S26-3500
+Period End: 2026-04-18
+Historical Show Rate: 0.96
+Late Cancel Rate: 0.13
+Visitor Impact Score: 84
+Coordinator Urgency: 68
+Recent Signup Velocity: 1.61
+Staffing Gap Score: 48
+Attendance Reliability Score: 50
+Signup Momentum Score: 47
+Revision: 1
+
+Record 530
+----------
+Metric Id: MET-00380
+Shift Id: S26-1645
+Period End: 2026-04-20
+Historical Show Rate: 0.66
+Late Cancel Rate: 0.22
+Visitor Impact Score: 72
+Coordinator Urgency: 83
+Recent Signup Velocity: 1.15
+Staffing Gap Score: 69
+Attendance Reliability Score: 63
+Signup Momentum Score: 62
+Revision: 1

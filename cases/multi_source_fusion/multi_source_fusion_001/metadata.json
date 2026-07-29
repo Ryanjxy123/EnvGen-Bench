@@ -25,9 +25,9 @@
       "origin": "benchmark-authored"
     },
     {
-      "path": "env/June_18_Campaign_Change_Control.md",
+      "path": "env/June_18_Campaign_Change_Control.docx",
       "role": "Controlling contribution formula, funding-version/date treatment, program-specific objective-key construction, R5 revision, and content-package rules",
-      "format": "md",
+      "format": "docx",
       "origin": "benchmark-authored"
     },
     {
@@ -73,16 +73,16 @@
       "origin": "benchmark-authored"
     },
     {
-      "path": "env/June_18_Central_Load_Track_Routing_Addendum.md",
+      "path": "env/June_18_Central_Load_Track_Routing_Addendum.docx",
       "role": "Two-stage load-track and utility-program routing rules plus current and alternate customer-facing copy rows",
-      "format": "md",
+      "format": "docx",
       "origin": "benchmark-authored"
     }
   ],
   "source_policy": {
     "agent_visible_files": [
       "env/",
-      "task.md"
+      "task.txt"
     ],
     "evaluator_only_files": [
       "metadata.json",
